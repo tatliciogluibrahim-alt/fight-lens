@@ -1,5 +1,6 @@
 import type { Fighter, StyleProfile } from "@/lib/types";
 import { CountryFlag } from "./CountryFlag";
+import { SaveSectionButton } from "./SaveSectionButton";
 
 const rows: Array<{ key: keyof StyleProfile; label: string }> = [
   { key: "strikingVolume", label: "striking volume" },
@@ -53,7 +54,12 @@ function RadarSketch({ fighterA, fighterB }: StyleComparisonBarsProps) {
     axes.map((_, index) => point(index, scale).join(",")).join(" ");
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} className="mx-auto size-full max-h-72 max-w-72" role="img">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox={`0 0 ${size} ${size}`}
+      className="mx-auto size-full max-h-72 max-w-72"
+      role="img"
+    >
       <title>style overlap radar</title>
       <desc>Six-axis radar comparing the two fighters&apos; style profiles.</desc>
       {[20, 40, 60, 80, 100].map((value) => (
@@ -136,12 +142,13 @@ function CreatorOverlapCard({ fighterA, fighterB }: StyleComparisonBarsProps) {
 
 export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsProps) {
   return (
-    <section id="style-clash" className="module-card scroll-mt-28">
+    <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">02 / style clash</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the overlap.</h2>
         </div>
+        <SaveSectionButton elementId="section-overlap" filename="fight-lens-overlap" />
       </div>
 
       <div className="module-body space-y-6">

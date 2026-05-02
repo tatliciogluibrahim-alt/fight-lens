@@ -1,4 +1,5 @@
 import type { Fight } from "@/lib/types";
+import { SaveSectionButton } from "./SaveSectionButton";
 
 interface KeyStatEdgesProps {
   fight: Fight;
@@ -6,7 +7,7 @@ interface KeyStatEdgesProps {
 
 export function KeyStatEdges({ fight }: KeyStatEdgesProps) {
   return (
-    <section id="key-edges" className="module-card scroll-mt-28">
+    <section id="section-edges" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">05 / key edges</p>
@@ -14,6 +15,7 @@ export function KeyStatEdges({ fight }: KeyStatEdgesProps) {
             head-to-head deltas.
           </h2>
         </div>
+        <SaveSectionButton elementId="section-edges" filename="fight-lens-edges" />
       </div>
 
       <div className="module-body divide-y divide-line rounded-2xl border border-line bg-background/35">

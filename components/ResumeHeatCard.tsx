@@ -1,4 +1,5 @@
 import type { Fighter } from "@/lib/types";
+import { SaveSectionButton } from "./SaveSectionButton";
 
 interface ResumeHeatCardProps {
   fighterA: Fighter;
@@ -45,7 +46,7 @@ function HeatCard({ fighter, accent = false }: { fighter: Fighter; accent?: bool
 
 export function ResumeHeatCard({ fighterA, fighterB }: ResumeHeatCardProps) {
   return (
-    <section id="resume-heat" className="module-card scroll-mt-28">
+    <section id="section-resume" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">04 / resume heat</p>
@@ -53,6 +54,7 @@ export function ResumeHeatCard({ fighterA, fighterB }: ResumeHeatCardProps) {
             opponent quality.
           </h2>
         </div>
+        <SaveSectionButton elementId="section-resume" filename="fight-lens-resume" />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <HeatCard fighter={fighterA} accent />

@@ -6,11 +6,11 @@ import { event } from "@/lib/data";
 
 const modules = [
   ["01", "fight shape", "the first read: short collision, long minutes, or layered swing points", "fight-shape"],
-  ["02", "style clash", "overlap visual, side-by-side pressure, volume, control, and defense", "style-clash"],
-  ["03", "recent momentum", "named opponents and form context from recent fights", "last-five-trend"],
-  ["04", "resume heat", "opponent quality without hype", "resume-heat"],
-  ["05", "key edges", "measurable deltas that explain the matchup", "key-edges"],
-  ["06", "paths to victory", "tactical routes, not predictions", "paths-to-victory"]
+  ["02", "style clash", "overlap visual, side-by-side pressure, volume, control, and defense", "section-overlap"],
+  ["03", "recent momentum", "named opponents and form context from recent fights", "section-momentum"],
+  ["04", "resume heat", "opponent quality without hype", "section-resume"],
+  ["05", "key edges", "measurable deltas that explain the matchup", "section-edges"],
+  ["06", "paths to victory", "tactical routes, not predictions", "section-paths"]
 ];
 
 export default function Home() {

@@ -1,4 +1,5 @@
 import type { FightPath, Fighter } from "@/lib/types";
+import { SaveSectionButton } from "./SaveSectionButton";
 
 interface PathsToVictoryProps {
   fighterA: Fighter;
@@ -36,7 +37,7 @@ function PathList({ fighter, paths, accent = false }: { fighter: Fighter; paths:
 
 export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVictoryProps) {
   return (
-    <section id="paths-to-victory" className="module-card scroll-mt-28">
+    <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">06 / paths to victory</p>
@@ -48,6 +49,7 @@ export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVi
             clearly each route shows up in the matchup shape.
           </p>
         </div>
+        <SaveSectionButton elementId="section-paths" filename="fight-lens-paths" />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <PathList fighter={fighterA} paths={pathsA} accent />

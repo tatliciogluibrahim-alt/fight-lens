@@ -1,4 +1,5 @@
 import type { Fighter } from "@/lib/types";
+import { SaveSectionButton } from "./SaveSectionButton";
 
 export interface SourcedLastFiveFight {
   result?: string | null;
@@ -101,7 +102,7 @@ function FighterTrend({ fighter, sourced }: { fighter: Fighter; sourced?: Source
 
 export function LastFiveTrend({ fighterA, fighterB, sourcedA, sourcedB }: LastFiveTrendProps) {
   return (
-    <section id="last-five-trend" className="module-card scroll-mt-28">
+    <section id="section-momentum" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">03 / last 5 trend</p>
@@ -109,6 +110,7 @@ export function LastFiveTrend({ fighterA, fighterB, sourcedA, sourcedB }: LastFi
             recent momentum.
           </h2>
         </div>
+        <SaveSectionButton elementId="section-momentum" filename="fight-lens-momentum" />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <FighterTrend fighter={fighterA} sourced={sourcedA} />
