@@ -1,0 +1,32 @@
+{
+  "name": "fight-lens",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build --webpack",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "ingest:ufcstats": "node scripts/ingest/ufcstats.mjs",
+    "normalize:data": "node scripts/ingest/build-normalized-event.mjs",
+    "backtest:islam-jdm": "node scripts/ingest/build-islam-jdm-backtest.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "next": "16.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.2.4",
+    "postcss": "8.5.10",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.8.3"
+  }
+}

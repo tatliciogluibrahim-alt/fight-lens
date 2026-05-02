@@ -1,0 +1,2262 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-02T18:59:59.437Z",
+  "event": {
+    "id": "ufc-328",
+    "ufcstatsId": "9eedac48b497de5a",
+    "name": "UFC 328: Chimaev vs. Strickland",
+    "date": "May 09, 2026",
+    "location": "Newark, New Jersey, USA",
+    "source": {
+      "provenance": "sourced",
+      "sourceName": "ufcstats",
+      "sourceUrl": "http://www.ufcstats.com/event-details/9eedac48b497de5a",
+      "fetchedAt": "2026-05-02T15:39:05.987Z"
+    }
+  },
+  "assetPolicy": {
+    "fighterImages": "Manual licensed assets only. Do not scrape or copy fighter images into the repo.",
+    "fallback": "Use abstract asset slots with small country markers until licensed images are provided."
+  },
+  "modeling": {
+    "principle": "Make source stats easy to scan without pretending missing samples prove weakness.",
+    "formulas": {
+      "earlyThreat": "round-one wins as a share of sourced wins, softened by total completed sample",
+      "lateEvidence": "late-round appearances plus average fight time; confidence measure only",
+      "styleProfile": "UFCStats career rates normalized to 0-100 with manual opponent-quality snapshot"
+    }
+  },
+  "fights": [
+    {
+      "id": "chimaev-strickland",
+      "ufcstatsFightId": "70f1621080b3435c",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/70f1621080b3435c",
+      "cardPlacement": "Main Card",
+      "rounds": 5,
+      "weightClass": "Middleweight",
+      "status": "scheduled",
+      "styleClashLabel": "control storm vs pressure jab",
+      "matchupQuestion": "Can Strickland keep the fight in repeatable boxing minutes before Chimaev compresses the space?",
+      "fightShapeSummary": "The clean read is not early equals good and late equals bad. Chimaev's source profile creates an early control alarm; Strickland's source profile creates a minutes-and-volume test.",
+      "manualRead": "If Chimaev has a round-one-heavy resume, that raises early danger. It does not automatically lower his round-three-to-five ability; it lowers confidence because there is less late-round evidence.",
+      "fighters": {
+        "fighterA": {
+          "id": "khamzat-chimaev",
+          "ufcstatsId": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "ranking": "C",
+          "record": "15-0-0",
+          "height": "6' 2\"",
+          "weight": "185 lbs.",
+          "reach": "75\"",
+          "stance": "Orthodox",
+          "dob": "May 01, 1994",
+          "country": {
+            "code": "AE/SE",
+            "label": "uae / sweden",
+            "colors": [
+              "#CE1126",
+              "#00732F",
+              "#F5EFE6",
+              "#11100E"
+            ]
+          },
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": {
+            "slpm": 4.04,
+            "strikingAccuracy": 60,
+            "sapm": 2.32,
+            "strikingDefense": 43,
+            "takedownAverage": 5.29,
+            "takedownAccuracy": 55,
+            "takedownDefense": 85,
+            "submissionAverage": 1.8
+          },
+          "styleProfile": {
+            "strikingVolume": 58,
+            "strikingDefense": 50,
+            "wrestlingOffense": 77,
+            "takedownDefense": 85,
+            "controlThreat": 84,
+            "submissionThreat": 72,
+            "opponentQuality": 86,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [
+            {
+              "result": "win",
+              "opponent": "Dricus Du Plessis",
+              "method": "U-DEC",
+              "round": 5,
+              "time": "5:00",
+              "event": "UFC 319: Du Plessis vs. Chimaev",
+              "date": "Aug. 16, 2025",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Robert Whittaker",
+              "method": "SUB Rear Naked Choke",
+              "round": 1,
+              "time": "3:34",
+              "event": "UFC 308: Topuria vs. Holloway",
+              "date": "Oct. 26, 2024",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Kamaru Usman",
+              "method": "M-DEC",
+              "round": 3,
+              "time": "5:00",
+              "event": "UFC 294: Makhachev vs. Volkanovski 2",
+              "date": "Oct. 21, 2023",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Kevin Holland",
+              "method": "SUB D'Arce Choke",
+              "round": 1,
+              "time": "2:13",
+              "event": "UFC 279: Diaz vs. Ferguson",
+              "date": "Sep. 10, 2022",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Gilbert Burns",
+              "method": "U-DEC",
+              "round": 3,
+              "time": "5:00",
+              "event": "UFC 273: Volkanovski vs. The Korean Zombie",
+              "date": "Apr. 09, 2022",
+              "provenance": "sourced"
+            }
+          ],
+          "roundModel": {
+            "completedHistoryCount": 9,
+            "winCount": 9,
+            "roundOneWinCount": 5,
+            "lateRoundSampleCount": 3,
+            "averageFightTime": "8:11",
+            "earlyThreat": 66,
+            "lateEvidence": 65,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-profile-and-event"
+        },
+        "fighterB": {
+          "id": "sean-strickland",
+          "ufcstatsId": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "ranking": "#3",
+          "record": "30-7-0",
+          "height": "6' 1\"",
+          "weight": "185 lbs.",
+          "reach": "76\"",
+          "stance": "Orthodox",
+          "dob": "Feb 27, 1991",
+          "country": {
+            "code": "US",
+            "label": "united states",
+            "colors": [
+              "#9B1C31",
+              "#F5EFE6",
+              "#243B6B",
+              "#11100E"
+            ]
+          },
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": {
+            "slpm": 6.04,
+            "strikingAccuracy": 42,
+            "sapm": 4.57,
+            "strikingDefense": 60,
+            "takedownAverage": 0.71,
+            "takedownAccuracy": 64,
+            "takedownDefense": 76,
+            "submissionAverage": 0.2
+          },
+          "styleProfile": {
+            "strikingVolume": 86,
+            "strikingDefense": 53,
+            "wrestlingOffense": 30,
+            "takedownDefense": 76,
+            "controlThreat": 11,
+            "submissionThreat": 8,
+            "opponentQuality": 90,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [
+            {
+              "result": "win",
+              "opponent": "Anthony Hernandez",
+              "method": "KO/TKO Punches",
+              "round": 3,
+              "time": "2:23",
+              "event": "UFC Fight Night: Strickland vs. Hernandez",
+              "date": "Feb. 21, 2026",
+              "provenance": "sourced"
+            },
+            {
+              "result": "loss",
+              "opponent": "Dricus Du Plessis",
+              "method": "U-DEC",
+              "round": 5,
+              "time": "5:00",
+              "event": "UFC 312: Du Plessis vs. Strickland 2",
+              "date": "Feb. 08, 2025",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Paulo Costa",
+              "method": "S-DEC",
+              "round": 5,
+              "time": "5:00",
+              "event": "UFC 302: Makhachev vs. Poirier",
+              "date": "Jun. 01, 2024",
+              "provenance": "sourced"
+            },
+            {
+              "result": "loss",
+              "opponent": "Dricus Du Plessis",
+              "method": "S-DEC",
+              "round": 5,
+              "time": "5:00",
+              "event": "UFC 297: Strickland vs. Du Plessis",
+              "date": "Jan. 20, 2024",
+              "provenance": "sourced"
+            },
+            {
+              "result": "win",
+              "opponent": "Israel Adesanya",
+              "method": "U-DEC",
+              "round": 5,
+              "time": "5:00",
+              "event": "UFC 293: Adesanya vs. Strickland",
+              "date": "Sep. 09, 2023",
+              "provenance": "sourced"
+            }
+          ],
+          "roundModel": {
+            "completedHistoryCount": 24,
+            "winCount": 17,
+            "roundOneWinCount": 1,
+            "lateRoundSampleCount": 18,
+            "averageFightTime": "15:54",
+            "earlyThreat": 34,
+            "lateEvidence": 100,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-profile-and-event"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": 4.04,
+          "fighterB": 6.04,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": 43,
+          "fighterB": 60,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": 5.29,
+          "fighterB": 0.71,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": 55,
+          "fighterB": 64,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": 85,
+          "fighterB": 76,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": 1.8,
+          "fighterB": 0.2,
+          "provenance": "sourced"
+        }
+      ],
+      "paths": {
+        "fighterA": [
+          {
+            "label": "win first contact and stack control before open-space reads settle",
+            "weight": 91
+          },
+          {
+            "label": "force Strickland to defend grips instead of building jab volume",
+            "weight": 84
+          },
+          {
+            "label": "bank control minutes without chasing low-percentage finishes",
+            "weight": 72
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "deny the first entry and make resets immediate",
+            "weight": 86
+          },
+          {
+            "label": "turn every safe minute into jab volume and body work",
+            "weight": 81
+          },
+          {
+            "label": "extend the fight without treating survival as scoring",
+            "weight": 74
+          }
+        ]
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "sourced",
+        "styleTags": "manual",
+        "paths": "manual",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "van-taira",
+      "ufcstatsFightId": "c85b530861145935",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/c85b530861145935",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Flyweight",
+      "status": "scheduled",
+      "styleClashLabel": "volume boxer vs back-take chain",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "joshua-van",
+          "ufcstatsId": "17e97649403ba428",
+          "name": "Joshua Van",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "tatsuro-taira",
+          "ufcstatsId": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "volkov-cortes",
+      "ufcstatsFightId": "22ba4f1b0aafbf82",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/22ba4f1b0aafbf82",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Heavyweight",
+      "status": "scheduled",
+      "styleClashLabel": "range tower vs pocket burst",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "alexander-volkov",
+          "ufcstatsId": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "waldo-cortes-acosta",
+          "ufcstatsId": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "brady-buckley",
+      "ufcstatsFightId": "845b8653f9cf839c",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/845b8653f9cf839c",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Welterweight",
+      "status": "scheduled",
+      "styleClashLabel": "chain wrestle vs power pace",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "sean-brady",
+          "ufcstatsId": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "joaquin-buckley",
+          "ufcstatsId": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "green-stephens",
+      "ufcstatsFightId": "1158a27a1a04b971",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/1158a27a1a04b971",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Lightweight",
+      "status": "scheduled",
+      "styleClashLabel": "touch volume vs single-shot damage",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "king-green",
+          "ufcstatsId": "887961364be5ceb3",
+          "name": "King Green",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "jeremy-stephens",
+          "ufcstatsId": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "gautier-diaz",
+      "ufcstatsFightId": "770c5302e32916ea",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/770c5302e32916ea",
+      "cardPlacement": "Prelims",
+      "rounds": 3,
+      "weightClass": "Middleweight",
+      "status": "scheduled",
+      "styleClashLabel": "long southpaw pop vs durable counter",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "ateba-gautier",
+          "ufcstatsId": "2f815ed5f8278ba6",
+          "name": "Ateba Gautier",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "ozzy-diaz",
+          "ufcstatsId": "6967153c7edb4d87",
+          "name": "Ozzy Diaz",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "alvarez-amosov",
+      "ufcstatsFightId": "f88dc6e0c29cff1d",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/f88dc6e0c29cff1d",
+      "cardPlacement": "Prelims",
+      "rounds": 3,
+      "weightClass": "Welterweight",
+      "status": "scheduled",
+      "styleClashLabel": "submission range vs pressure wrestling",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "joel-alvarez",
+          "ufcstatsId": "58bbef3770bb2dfc",
+          "name": "Joel Alvarez",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "yaroslav-amosov",
+          "ufcstatsId": "f139d6836efd43dd",
+          "name": "Yaroslav Amosov",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "dawson-rebecki",
+      "ufcstatsFightId": "ffcb47e17eebe6a6",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/ffcb47e17eebe6a6",
+      "cardPlacement": "Prelims",
+      "rounds": 3,
+      "weightClass": "Lightweight",
+      "status": "scheduled",
+      "styleClashLabel": "mat returns vs pocket pressure",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "grant-dawson",
+          "ufcstatsId": "99bd51917728c25d",
+          "name": "Grant Dawson",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "mateusz-rebecki",
+          "ufcstatsId": "849c5d9979df5357",
+          "name": "Mateusz Rebecki",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "miller-gordon",
+      "ufcstatsFightId": "e50857173607d631",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/e50857173607d631",
+      "cardPlacement": "Prelims",
+      "rounds": 3,
+      "weightClass": "Lightweight",
+      "status": "scheduled",
+      "styleClashLabel": "veteran submission craft vs pressure minutes",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "jim-miller",
+          "ufcstatsId": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "jared-gordon",
+          "ufcstatsId": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "kopylov-tulio",
+      "ufcstatsFightId": "9d35723a53749931",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/9d35723a53749931",
+      "cardPlacement": "Early Prelims",
+      "rounds": 3,
+      "weightClass": "Middleweight",
+      "status": "scheduled",
+      "styleClashLabel": "southpaw kickboxing vs pressure blend",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "roman-kopylov",
+          "ufcstatsId": "9d83f6da776ff7d6",
+          "name": "Roman Kopylov",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "marco-tulio",
+          "ufcstatsId": "9384e71bca6c409d",
+          "name": "Marco Tulio",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "sabatini-gomis",
+      "ufcstatsFightId": "303018d7459323b4",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/303018d7459323b4",
+      "cardPlacement": "Early Prelims",
+      "rounds": 3,
+      "weightClass": "Featherweight",
+      "status": "scheduled",
+      "styleClashLabel": "grappling squeeze vs long-range denial",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "pat-sabatini",
+          "ufcstatsId": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "william-gomis",
+          "ufcstatsId": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "susurkaev-santos",
+      "ufcstatsFightId": "1f5d0b106385b2ac",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/1f5d0b106385b2ac",
+      "cardPlacement": "Early Prelims",
+      "rounds": 3,
+      "weightClass": "Middleweight",
+      "status": "scheduled",
+      "styleClashLabel": "prospect pressure vs balanced counter",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "baisangur-susurkaev",
+          "ufcstatsId": "d1feea7a4bdcd503",
+          "name": "Baisangur Susurkaev",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "djorden-santos",
+          "ufcstatsId": "312f7d7b2b2f7de4",
+          "name": "Djorden Santos",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    },
+    {
+      "id": "carpenter-ochoa",
+      "ufcstatsFightId": "e92d89cb2d69235e",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/e92d89cb2d69235e",
+      "cardPlacement": "Early Prelims",
+      "rounds": 3,
+      "weightClass": "Flyweight",
+      "status": "scheduled",
+      "styleClashLabel": "scramble control vs switch-stance pop",
+      "matchupQuestion": "What shape does the source data create?",
+      "fightShapeSummary": "Source facts are available; manual fight-shape copy still needs review.",
+      "manualRead": null,
+      "fighters": {
+        "fighterA": {
+          "id": "clayton-carpenter",
+          "ufcstatsId": "b62d5280966b2460",
+          "name": "Clayton Carpenter",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        },
+        "fighterB": {
+          "id": "jose-ochoa",
+          "ufcstatsId": "88be62d6c1e6dadb",
+          "name": "Jose Ochoa",
+          "ranking": null,
+          "record": null,
+          "height": null,
+          "weight": null,
+          "reach": null,
+          "stance": null,
+          "dob": null,
+          "country": null,
+          "image": {
+            "url": null,
+            "status": "pending_licensed_asset",
+            "credit": null
+          },
+          "careerStats": null,
+          "styleProfile": {
+            "strikingVolume": null,
+            "strikingDefense": 9,
+            "wrestlingOffense": null,
+            "takedownDefense": null,
+            "controlThreat": null,
+            "submissionThreat": null,
+            "opponentQuality": null,
+            "provenance": "derived",
+            "note": "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+          },
+          "lastFive": [],
+          "roundModel": {
+            "completedHistoryCount": 0,
+            "winCount": 0,
+            "roundOneWinCount": 0,
+            "lateRoundSampleCount": 0,
+            "averageFightTime": null,
+            "earlyThreat": 0,
+            "lateEvidence": 0,
+            "interpretation": "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+          },
+          "sourceCoverage": "ufcstats-event-only"
+        }
+      },
+      "keyEdges": [
+        {
+          "shortLabel": "SLpM",
+          "label": "strikes landed/min",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Str. Def",
+          "label": "striking defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Avg",
+          "label": "takedowns/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Acc",
+          "label": "takedown accuracy",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "TD Def",
+          "label": "takedown defense",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        },
+        {
+          "shortLabel": "Sub Avg",
+          "label": "sub attempts/15",
+          "fighterA": null,
+          "fighterB": null,
+          "provenance": "missing"
+        }
+      ],
+      "paths": {
+        "fighterA": [],
+        "fighterB": []
+      },
+      "modelNotes": [
+        "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
+        "Early finish history raises early-threat signal only.",
+        "Late-round scarcity means lower evidence, not an automatic late-round penalty."
+      ],
+      "sourceMix": {
+        "eventStructure": "sourced",
+        "fighterProfiles": "partial",
+        "styleTags": "manual",
+        "paths": "missing",
+        "images": "manual-required"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "eventId": "ufc-328",
+  "sourceEventFile": "data/generated/ufcstats/events/ufc-328-chimaev-vs-strickland.json",
+  "assetPolicy": {
+    "fighterImages": "Manual licensed assets only. Do not scrape or copy fighter images into the repo.",
+    "fallback": "Use abstract asset slots with small country markers until licensed images are provided."
+  },
+  "fighters": {
+    "767755fd74662dbf": {
+      "displayName": "Khamzat Chimaev",
+      "ranking": "C",
+      "opponentQualityScore": 86,
+      "country": {
+        "code": "AE/SE",
+        "label": "uae / sweden",
+        "colors": ["#CE1126", "#00732F", "#F5EFE6", "#11100E"]
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      }
+    },
+    "0d8011111be000b2": {
+      "displayName": "Sean Strickland",
+      "ranking": "#3",
+      "opponentQualityScore": 90,
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      }
+    }
+  },
+  "fights": {
+    "70f1621080b3435c": {
+      "routeId": "chimaev-strickland",
+      "cardPlacement": "Main Card",
+      "rounds": 5,
+      "styleClashLabel": "control storm vs pressure jab",
+      "matchupQuestion": "Can Strickland keep the fight in repeatable boxing minutes before Chimaev compresses the space?",
+      "fightShapeSummary": "The clean read is not early equals good and late equals bad. Chimaev's source profile creates an early control alarm; Strickland's source profile creates a minutes-and-volume test.",
+      "manualRead": "If Chimaev has a round-one-heavy resume, that raises early danger. It does not automatically lower his round-three-to-five ability; it lowers confidence because there is less late-round evidence.",
+      "paths": {
+        "fighterA": [
+          { "label": "win first contact and stack control before open-space reads settle", "weight": 91 },
+          { "label": "force Strickland to defend grips instead of building jab volume", "weight": 84 },
+          { "label": "bank control minutes without chasing low-percentage finishes", "weight": 72 }
+        ],
+        "fighterB": [
+          { "label": "deny the first entry and make resets immediate", "weight": 86 },
+          { "label": "turn every safe minute into jab volume and body work", "weight": 81 },
+          { "label": "extend the fight without treating survival as scoring", "weight": 74 }
+        ]
+      }
+    },
+    "c85b530861145935": { "routeId": "van-taira", "cardPlacement": "Main Card", "rounds": 3, "styleClashLabel": "volume boxer vs back-take chain" },
+    "22ba4f1b0aafbf82": { "routeId": "volkov-cortes", "cardPlacement": "Main Card", "rounds": 3, "styleClashLabel": "range tower vs pocket burst" },
+    "845b8653f9cf839c": { "routeId": "brady-buckley", "cardPlacement": "Main Card", "rounds": 3, "styleClashLabel": "chain wrestle vs power pace" },
+    "1158a27a1a04b971": { "routeId": "green-stephens", "cardPlacement": "Main Card", "rounds": 3, "styleClashLabel": "touch volume vs single-shot damage" },
+    "770c5302e32916ea": { "routeId": "gautier-diaz", "cardPlacement": "Prelims", "rounds": 3, "styleClashLabel": "long southpaw pop vs durable counter" },
+    "f88dc6e0c29cff1d": { "routeId": "alvarez-amosov", "cardPlacement": "Prelims", "rounds": 3, "styleClashLabel": "submission range vs pressure wrestling" },
+    "ffcb47e17eebe6a6": { "routeId": "dawson-rebecki", "cardPlacement": "Prelims", "rounds": 3, "styleClashLabel": "mat returns vs pocket pressure" },
+    "e50857173607d631": { "routeId": "miller-gordon", "cardPlacement": "Prelims", "rounds": 3, "styleClashLabel": "veteran submission craft vs pressure minutes" },
+    "9d35723a53749931": { "routeId": "kopylov-tulio", "cardPlacement": "Early Prelims", "rounds": 3, "styleClashLabel": "southpaw kickboxing vs pressure blend" },
+    "303018d7459323b4": { "routeId": "sabatini-gomis", "cardPlacement": "Early Prelims", "rounds": 3, "styleClashLabel": "grappling squeeze vs long-range denial" },
+    "1f5d0b106385b2ac": { "routeId": "susurkaev-santos", "cardPlacement": "Early Prelims", "rounds": 3, "styleClashLabel": "prospect pressure vs balanced counter" },
+    "e92d89cb2d69235e": { "routeId": "carpenter-ochoa", "cardPlacement": "Early Prelims", "rounds": 3, "styleClashLabel": "scramble control vs switch-stance pop" }
+  }
+}

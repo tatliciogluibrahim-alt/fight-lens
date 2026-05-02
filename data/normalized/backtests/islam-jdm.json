@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-02T18:59:59.437Z",
+  "id": "islam-jdm",
+  "title": "Islam Makhachev vs. Jack Della Maddalena",
+  "event": {
+    "name": "UFC 322: Della Maddalena vs. Makhachev",
+    "date": "November 15, 2025",
+    "location": "New York City, New York, USA",
+    "source": {
+      "provenance": "sourced",
+      "sourceName": "ufcstats",
+      "sourceUrl": "http://www.ufcstats.com/event-details/8db1b36dde268ef6",
+      "fetchedAt": "2026-05-02T15:59:44.506Z"
+    }
+  },
+  "fight": {
+    "id": "856f6ee049373843",
+    "source": {
+      "provenance": "sourced",
+      "sourceName": "ufcstats",
+      "sourceUrl": "http://www.ufcstats.com/fight-details/856f6ee049373843",
+      "fetchedAt": "2026-05-02T15:59:45.050Z"
+    },
+    "cutoffDate": "2025-11-15",
+    "question": "Could JDM keep the fight in boxing minutes, or would Islam's wrestling convert welterweight size into control?",
+    "keyRead": "The pre-fight model was directionally right on Islam's control route and too generous to JDM's striking-volume path once takedown threat changed the exchanges.",
+    "modelCaveat": "This is not a pick engine. It compares pre-fight tendencies to the actual fight shape and separates tendency from confidence."
+  },
+  "fighters": {
+    "islam": {
+      "id": "275aca31f61ba28c",
+      "name": "Islam Makhachev",
+      "shortName": "Islam",
+      "role": "challenger",
+      "country": {
+        "code": "RU",
+        "label": "russia",
+        "colors": [
+          "#F5EFE6",
+          "#3456A4",
+          "#B72B2D",
+          "#11100E"
+        ]
+      },
+      "priors": {
+        "poundForPoundRank": 1,
+        "strikingSkill": 82,
+        "opponentQuality": 94,
+        "note": "Manual context prior: elite pound-for-pound status and opponent quality keep low-volume striking from being treated as low-skill striking."
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      },
+      "sourceRecord": "28-1-0",
+      "sample": {
+        "cutoffDate": "before fight date",
+        "fights": 17,
+        "wins": 16,
+        "losses": 1,
+        "roundOneWins": 6,
+        "finishes": 11,
+        "lateSamples": 8,
+        "averageFightSeconds": 612
+      },
+      "rawTendencies": {
+        "avgSigLanded": 26.8,
+        "avgTdLanded": 2.2,
+        "avgSubAttempts": 0.8,
+        "winRate": 94.1,
+        "roundOneWinRate": 37.5,
+        "finishRate": 68.8,
+        "lateSampleRate": 47.1,
+        "strikingActivity": 53
+      },
+      "modelScores": {
+        "strikingVolume": 74,
+        "wrestlingPressure": 78,
+        "finishUrgency": 48,
+        "lateEvidence": 46,
+        "controlReliability": 74
+      },
+      "modelScoreNotes": {
+        "strikingVolume": "Context-adjusted striking signal = 55% sourced striking activity + 35% manual striking-skill prior + small pound-for-pound/opponent-quality adjustment."
+      },
+      "lastFiveBeforeFight": [
+        {
+          "result": "win",
+          "opponent": "Renato Moicano",
+          "method": "SUB D'Arce Choke",
+          "round": 1,
+          "time": "4:05",
+          "event": "UFC 311: Makhachev vs. Moicano",
+          "date": "Jan. 18, 2025"
+        },
+        {
+          "result": "win",
+          "opponent": "Dustin Poirier",
+          "method": "SUB D'Arce Choke",
+          "round": 5,
+          "time": "2:42",
+          "event": "UFC 302: Makhachev vs. Poirier",
+          "date": "Jun. 01, 2024"
+        },
+        {
+          "result": "win",
+          "opponent": "Alexander Volkanovski",
+          "method": "KO/TKO Kick",
+          "round": 1,
+          "time": "3:06",
+          "event": "UFC 294: Makhachev vs. Volkanovski 2",
+          "date": "Oct. 21, 2023"
+        },
+        {
+          "result": "win",
+          "opponent": "Alexander Volkanovski",
+          "method": "U-DEC",
+          "round": 5,
+          "time": "5:00",
+          "event": "UFC 284: Makhachev vs. Volkanovski",
+          "date": "Feb. 11, 2023"
+        },
+        {
+          "result": "win",
+          "opponent": "Charles Oliveira",
+          "method": "SUB Arm Triangle",
+          "round": 2,
+          "time": "3:16",
+          "event": "UFC 280: Oliveira vs. Makhachev",
+          "date": "Oct. 22, 2022"
+        }
+      ]
+    },
+    "jdm": {
+      "id": "6b453bc35a823c3f",
+      "name": "Jack Della Maddalena",
+      "shortName": "JDM",
+      "role": "champion",
+      "country": {
+        "code": "AU",
+        "label": "australia",
+        "colors": [
+          "#12395D",
+          "#F5EFE6",
+          "#C7A73B",
+          "#11100E"
+        ]
+      },
+      "priors": {
+        "poundForPoundRank": null,
+        "strikingSkill": 95,
+        "opponentQuality": 86,
+        "note": "Manual context prior: boxing volume and quality wins keep JDM's striking signal elite without turning the model into a winner call."
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      },
+      "sourceRecord": "18-4-0",
+      "sample": {
+        "cutoffDate": "before fight date",
+        "fights": 9,
+        "wins": 9,
+        "losses": 0,
+        "roundOneWins": 4,
+        "finishes": 5,
+        "lateSamples": 5,
+        "averageFightSeconds": 632
+      },
+      "rawTendencies": {
+        "avgSigLanded": 72.1,
+        "avgTdLanded": 0.1,
+        "avgSubAttempts": 0.1,
+        "winRate": 100,
+        "roundOneWinRate": 44.4,
+        "finishRate": 55.6,
+        "lateSampleRate": 55.6,
+        "strikingActivity": 100
+      },
+      "modelScores": {
+        "strikingVolume": 92,
+        "wrestlingPressure": 22,
+        "finishUrgency": 48,
+        "lateEvidence": 52,
+        "controlReliability": 32
+      },
+      "modelScoreNotes": {
+        "strikingVolume": "Context-adjusted striking signal = 55% sourced striking activity + 35% manual striking-skill prior + small pound-for-pound/opponent-quality adjustment."
+      },
+      "lastFiveBeforeFight": [
+        {
+          "result": "win",
+          "opponent": "Belal Muhammad",
+          "method": "U-DEC",
+          "round": 5,
+          "time": "5:00",
+          "event": "UFC 315: Muhammad vs. Della Maddalena",
+          "date": "May. 10, 2025"
+        },
+        {
+          "result": "win",
+          "opponent": "Gilbert Burns",
+          "method": "KO/TKO Elbows",
+          "round": 3,
+          "time": "3:43",
+          "event": "UFC 299: O'Malley vs. Vera 2",
+          "date": "Mar. 09, 2024"
+        },
+        {
+          "result": "win",
+          "opponent": "Kevin Holland",
+          "method": "S-DEC",
+          "round": 3,
+          "time": "5:00",
+          "event": "UFC Fight Night: Grasso vs. Shevchenko 2",
+          "date": "Sep. 16, 2023"
+        },
+        {
+          "result": "win",
+          "opponent": "Bassil Hafez",
+          "method": "S-DEC",
+          "round": 3,
+          "time": "5:00",
+          "event": "UFC Fight Night: Holm vs. Bueno Silva",
+          "date": "Jul. 15, 2023"
+        },
+        {
+          "result": "win",
+          "opponent": "Randy Brown",
+          "method": "SUB Rear Naked Choke",
+          "round": 1,
+          "time": "2:13",
+          "event": "UFC 284: Makhachev vs. Volkanovski",
+          "date": "Feb. 11, 2023"
+        }
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "label": "striking signal",
+      "islam": 74,
+      "jdm": 92,
+      "actualIslam": 30,
+      "actualJdm": 18,
+      "unit": "sig",
+      "preFightLeader": "JDM",
+      "actualLeader": "Islam",
+      "read": "missed or flipped under fight conditions"
+    },
+    {
+      "label": "wrestling pressure",
+      "islam": 78,
+      "jdm": 22,
+      "actualIslam": 4,
+      "actualJdm": 0,
+      "unit": "td",
+      "preFightLeader": "Islam",
+      "actualLeader": "Islam",
+      "read": "confirmed"
+    },
+    {
+      "label": "control reliability",
+      "islam": 74,
+      "jdm": 32,
+      "actualIslam": 19,
+      "actualJdm": 0,
+      "unit": "min ctrl",
+      "preFightLeader": "Islam",
+      "actualLeader": "Islam",
+      "read": "confirmed"
+    },
+    {
+      "label": "late evidence",
+      "islam": 46,
+      "jdm": 52,
+      "actualIslam": 5,
+      "actualJdm": 0,
+      "unit": "rounds",
+      "preFightLeader": "JDM",
+      "actualLeader": "Islam",
+      "read": "missed or flipped under fight conditions"
+    }
+  ],
+  "actual": {
+    "method": "Decision - Unanimous",
+    "round": 5,
+    "time": "5:00",
+    "title": "UFC Welterweight Title Bout",
+    "totals": {
+      "islam": {
+        "sigLanded": 30,
+        "sigAttempts": 57,
+        "totalLanded": 140,
+        "takedowns": 4,
+        "takedownAttempts": 4,
+        "controlSeconds": 1150
+      },
+      "jdm": {
+        "sigLanded": 18,
+        "sigAttempts": 61,
+        "totalLanded": 30,
+        "takedowns": 0,
+        "takedownAttempts": 1,
+        "controlSeconds": 0
+      }
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "islamScore": 15.7,
+        "jdmScore": 4,
+        "marginToIslam": 11.7,
+        "islam": {
+          "sigLanded": 3,
+          "takedowns": 1,
+          "controlSeconds": 232
+        },
+        "jdm": {
+          "sigLanded": 4,
+          "takedowns": 0,
+          "controlSeconds": 0
+        }
+      },
+      {
+        "round": 2,
+        "islamScore": 17.2,
+        "jdmScore": 3,
+        "marginToIslam": 14.2,
+        "islam": {
+          "sigLanded": 9,
+          "takedowns": 0,
+          "controlSeconds": 245
+        },
+        "jdm": {
+          "sigLanded": 3,
+          "takedowns": 0,
+          "controlSeconds": 0
+        }
+      },
+      {
+        "round": 3,
+        "islamScore": 22.2,
+        "jdmScore": 9,
+        "marginToIslam": 13.2,
+        "islam": {
+          "sigLanded": 11,
+          "takedowns": 1,
+          "controlSeconds": 186
+        },
+        "jdm": {
+          "sigLanded": 9,
+          "takedowns": 0,
+          "controlSeconds": 0
+        }
+      },
+      {
+        "round": 4,
+        "islamScore": 18.8,
+        "jdmScore": 1,
+        "marginToIslam": 17.8,
+        "islam": {
+          "sigLanded": 7,
+          "takedowns": 1,
+          "controlSeconds": 204
+        },
+        "jdm": {
+          "sigLanded": 1,
+          "takedowns": 0,
+          "controlSeconds": 0
+        }
+      },
+      {
+        "round": 5,
+        "islamScore": 14.4,
+        "jdmScore": 1,
+        "marginToIslam": 13.4,
+        "islam": {
+          "sigLanded": 0,
+          "takedowns": 1,
+          "controlSeconds": 283
+        },
+        "jdm": {
+          "sigLanded": 1,
+          "takedowns": 0,
+          "controlSeconds": 0
+        }
+      }
+    ]
+  },
+  "modelingNotes": [
+    "The pre-fight model excludes the Islam vs JDM fight and any later fights from fighter histories.",
+    "Round-one wins raise finish urgency but do not create a late-round weakness.",
+    "Striking signal is context-adjusted so low-volume grappling wins are not scored as low-skill striking.",
+    "Late evidence is a confidence measure based on sampled rounds and fight duration.",
+    "Actual dominance score per round = sig strikes landed + control seconds / 30 + takedowns * 5."
+  ]
+}

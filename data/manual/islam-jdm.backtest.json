@@ -1,0 +1,61 @@
+{
+  "id": "islam-jdm",
+  "title": "Islam Makhachev vs. Jack Della Maddalena",
+  "eventFile": "data/generated/ufcstats/events/ufc-322-della-maddalena-vs-makhachev.json",
+  "fightFile": "data/generated/ufcstats/fights/ufc-322-della-maddalena-vs-makhachev-jack-della-maddalena-vs-islam-makhachev.json",
+  "fighterFiles": {
+    "islam": "data/generated/ufcstats/fighters/islam-makhachev.json",
+    "jdm": "data/generated/ufcstats/fighters/jack-della-maddalena.json"
+  },
+  "cutoffDate": "2025-11-15",
+  "actualFightId": "856f6ee049373843",
+  "fighters": {
+    "islam": {
+      "displayName": "Islam Makhachev",
+      "shortName": "Islam",
+      "role": "challenger",
+      "country": {
+        "code": "RU",
+        "label": "russia",
+        "colors": ["#F5EFE6", "#3456A4", "#B72B2D", "#11100E"]
+      },
+      "priors": {
+        "poundForPoundRank": 1,
+        "strikingSkill": 82,
+        "opponentQuality": 94,
+        "note": "Manual context prior: elite pound-for-pound status and opponent quality keep low-volume striking from being treated as low-skill striking."
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      }
+    },
+    "jdm": {
+      "displayName": "Jack Della Maddalena",
+      "shortName": "JDM",
+      "role": "champion",
+      "country": {
+        "code": "AU",
+        "label": "australia",
+        "colors": ["#12395D", "#F5EFE6", "#C7A73B", "#11100E"]
+      },
+      "priors": {
+        "poundForPoundRank": null,
+        "strikingSkill": 95,
+        "opponentQuality": 86,
+        "note": "Manual context prior: boxing volume and quality wins keep JDM's striking signal elite without turning the model into a winner call."
+      },
+      "image": {
+        "url": null,
+        "status": "pending_licensed_asset",
+        "credit": null
+      }
+    }
+  },
+  "manualContext": {
+    "question": "Could JDM keep the fight in boxing minutes, or would Islam's wrestling convert welterweight size into control?",
+    "modelCaveat": "This is not a pick engine. It compares pre-fight tendencies to the actual fight shape and separates tendency from confidence.",
+    "keyRead": "The pre-fight model was directionally right on Islam's control route and too generous to JDM's striking-volume path once takedown threat changed the exchanges."
+  }
+}
