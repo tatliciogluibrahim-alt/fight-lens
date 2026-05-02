@@ -77,6 +77,18 @@ See the shape of the fight.
 Product stance:
 Fight Lens is not a betting product. It does not give picks, odds, parlays, locks, or betting advice.
 
+Current state:
+Fight Lens is now an existing Next.js prototype, not a blank-slate brief. Future work should iterate the current app, preserve working routes, and avoid rebuilding from scratch unless the user explicitly asks for a restart.
+
+Active routes include:
+- `/`
+- `/events/ufc-328`
+- `/events/ufc-328/[fightId]`
+- `/backtests/islam-jdm`
+
+Styling:
+This repo uses Tailwind CSS. Earlier concept notes may mention no Tailwind, but for this repo Tailwind is the accepted styling system unless the user explicitly changes direction.
+
 The app should help users understand:
 - style clash
 - matchup pressure points
@@ -90,10 +102,13 @@ Design should feel:
 - premium
 - tactical
 - calm
+- bold when it improves clarity
 - data-first
 - creator-friendly
 - screenshot-friendly
 - more film room than sportsbook
+
+Edgy is allowed when it means sharper hierarchy, stronger contrast, more decisive composition, and a premium editorial feel. Avoid fake edginess, cosplay fight-poster design, and anything that makes the app feel like a sportsbook or hype account.
 
 Avoid:
 - sportsbook vibes
@@ -116,6 +131,18 @@ Preferred language:
 - Opponent Quality
 - Momentum
 
+Data stance:
+- Mock/prototype values must be labeled clearly.
+- Prefer provenance labels: `mock`, `manual`, `sourced`, and `derived`.
+- Public source data should be cached and normalized outside the UI.
+- Do not scrape from React components or Next.js page render paths.
+- Manual context is allowed and expected for style tags, rankings, opponent tiers, route labels, and analyst notes.
+
+Source of truth:
+- Treat `AGENTS.md` and the current repo structure as the source of truth.
+- If an old prompt assumes the app has not been built yet, adapt it into an iteration prompt.
+- Preserve existing routes, components, and data fallbacks unless the user asks for a deeper refactor.
+
 ## Review Standard
 
 Before finalizing work, check:
@@ -128,6 +155,7 @@ Before finalizing work, check:
 - Is the copy useful and not corny?
 - Is the code beginner-readable?
 - Are mock/prototype elements clearly labeled?
+- Are sourced/manual/derived values labeled honestly?
 - Does the app build successfully?
 
 ## Commands
@@ -136,5 +164,6 @@ Use repo-specific commands if available.
 
 Default commands:
 - npm run dev
+- npm run typecheck
 - npm run lint
 - npm run build

@@ -1,6 +1,9 @@
 # Fight Lens Data Ingestion TODO
 
-Do not start scraping until the planning and validation pieces below are done.
+Status update:
+A first lightweight UFCStats utility already exists under `scripts/ingest`. Future work should not treat ingestion as unstarted. The next step is to make the data contract, validation, provenance labels, and app fallback path clearer before expanding scraping.
+
+Do not add new public-source scraping beyond the current lightweight utility until the planning and validation pieces below are done.
 
 ## Phase 0: Policy And Product Guardrails
 
@@ -27,6 +30,7 @@ Do not start scraping until the planning and validation pieces below are done.
 ## Phase 3: Validation
 
 - [ ] Add validation scripts that run without network access.
+- [ ] Add one beginner-readable app data loader that prefers normalized data and falls back to prototype data.
 - [ ] Validate that every fight references two known fighters.
 - [ ] Validate expected numeric ranges.
 - [ ] Validate round arrays and fight result fields.
@@ -43,7 +47,10 @@ Do not start scraping until the planning and validation pieces below are done.
 
 ## Phase 5: Live Fetching
 
-- [ ] Add a fetch wrapper with rate limiting and a clear user agent.
+Current status: `scripts/ingest/ufcstats.mjs` is the first lightweight fetch/parser utility. Expand it carefully instead of adding a second scraping path.
+
+- [ ] Confirm the current UFCStats utility still respects rate limits, caching, and request caps.
+- [ ] Add or document a fetch wrapper with rate limiting and a clear user agent.
 - [ ] Add cache metadata: source URL, fetched timestamp, HTTP status, parser version, and content hash.
 - [ ] Add `--refresh` to bypass cache intentionally.
 - [ ] Add backoff and failure logging.

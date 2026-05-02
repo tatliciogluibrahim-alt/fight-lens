@@ -1,6 +1,6 @@
 # Fight Lens Data Ingestion Plan
 
-This is the safe architecture plan for replacing mock data with public data where possible. It is intentionally documentation-only. Do not add scraping code until the TODO checklist is completed.
+This is the safe architecture plan for replacing mock data with public data where possible. It started as documentation-only, but the repo now includes a first lightweight UFCStats utility. Do not expand scraping beyond that utility until the TODO checklist, validation, and provenance rules are tightened.
 
 ## Goals
 
@@ -76,7 +76,7 @@ Do not ingest:
 
 - odds, betting widgets, sportsbook labels, or any market data shown on UFC pages
 - marketing copy that would make Fight Lens feel promotional
-- images for v1, because the product uses abstract FighterMark blocks
+- fighter photos unless they are licensed, user-provided, or otherwise cleared for use
 
 Limitations:
 

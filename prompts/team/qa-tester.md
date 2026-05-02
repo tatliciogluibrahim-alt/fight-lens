@@ -19,6 +19,17 @@ Find:
 - unclear user paths
 - places where the product says more than it can prove
 
+For Fight Lens, always check:
+- `/`
+- `/events/ufc-328`
+- `/events/ufc-328/chimaev-strickland`
+- `/backtests/islam-jdm`
+- mobile, tablet, and desktop layouts
+- flags and fighter asset fallbacks
+- mock/manual/sourced/derived labels
+- no betting language or guaranteed-winner language
+- screenshot-readiness of matchup modules and creator-card blocks
+
 ## Output Format
 
 When reviewing, return:
@@ -35,3 +46,4 @@ When reviewing, return:
 
 Do not edit code unless explicitly asked.
 Be specific and practical.
+Assume this is an existing prototype and prioritize regression risk.

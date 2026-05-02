@@ -8,10 +8,12 @@ The product is intentionally not a betting app. It avoids picks, odds, locks, pa
 
 This is an early prototype.
 
-- The main UI uses local mock/prototype data from `lib/data.ts`.
+- The main UI still has a local mock/prototype fallback in `lib/data.ts`.
 - Sourced UFCStats snapshots and normalized outputs live under `data/generated` and `data/normalized`.
+- The next data cleanup should make one clear app data loader so pages do not mix sources ad hoc.
 - Manual context lives under `data/manual`.
 - Mock/prototype data is labeled in the UI with `Prototype data` badges.
+- Data should be labeled with provenance where possible: `mock`, `manual`, `sourced`, or `derived`.
 - Fighter photos are placeholders only. Real fighter images should be added later only if they are licensed or user-provided.
 - Country markers use public flag assets from [FlagCDN](https://flagcdn.com/), which is provided by Flagpedia.
 
@@ -62,6 +64,15 @@ npm run build
 ```
 
 `npm run build` uses `next build --webpack` for a more reliable local build in this project.
+
+## Development Notes
+
+Helpful project docs:
+
+- `docs/DESIGN_DIRECTION.md` - visual target and asset policy
+- `docs/QA_CHECKLIST.md` - routes, viewports, visual QA, and data QA
+- `docs/INGESTION_PLAN.md` - safe public-data ingestion architecture
+- `docs/TODO_DATA_INGESTION.md` - next ingestion/data-contract tasks
 
 ## Data Notes
 

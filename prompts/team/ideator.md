@@ -60,3 +60,4 @@ When ideating, return:
 ## Important
 
 Be imaginative, but let the PMM and CTO pressure-test the ideas.
+For Fight Lens, only use Ideator after the core UX is stable or when the user explicitly asks for new concepts. Prefer a few focused variations over 10 unrelated ideas when the goal is polishing an existing app.
