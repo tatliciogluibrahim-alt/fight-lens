@@ -24,10 +24,14 @@ export function CountryFlag({ code, colors, label, size = "sm" }: CountryFlagPro
           key={countryCode}
           className={`${dimensions} relative inline-flex overflow-hidden rounded-[3px] border border-foreground/20 bg-surface-2 bg-cover bg-center shadow-[0_0_0_1px_rgba(0,0,0,0.22)]`}
           style={{
-            backgroundImage: `linear-gradient(135deg, ${a} 0 33%, ${b} 33% 66%, ${c} 66% 100%), url("https://flagcdn.com/${countryCode}.svg")`
+            backgroundColor: a,
+            backgroundImage: `url("https://flagcdn.com/${countryCode}.svg")`
           }}
         >
-          <span className="absolute inset-0 bg-gradient-to-b from-white/8 to-black/10" />
+          <span
+            className="absolute inset-0 -z-10"
+            style={{ background: `linear-gradient(135deg, ${a} 0 33%, ${b} 33% 66%, ${c} 66% 100%)` }}
+          />
         </span>
       ))}
       <span className="sr-only">{code}</span>
