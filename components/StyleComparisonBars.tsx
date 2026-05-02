@@ -16,6 +16,7 @@ const rows: Array<{ key: keyof StyleProfile; label: string }> = [
 interface StyleComparisonBarsProps {
   fighterA: Fighter;
   fighterB: Fighter;
+  styleClashLabel?: string;
 }
 
 function axisScore(profile: StyleProfile, axis: string) {
@@ -140,7 +141,9 @@ function CreatorOverlapCard({ fighterA, fighterB }: StyleComparisonBarsProps) {
   );
 }
 
-export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsProps) {
+export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: StyleComparisonBarsProps) {
+  const hasFighterData = Boolean(fighterA.name && fighterB.name);
+
   return (
     <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
@@ -156,19 +159,36 @@ export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsP
 
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
         <div>
-          <p className="text-sm leading-6 text-muted">
-            0-100 placeholder scouting bars compare pressure, defense, control, finishing threat,
-            and opponent quality. The intent is fast read first, detail second.
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-3">
-            <div className="rounded-2xl border border-line bg-background/45 p-4">
+          {!hasFighterData ? (
+            <p className="text-sm leading-6 text-muted">
+              0-100 placeholder scouting bars compare pressure, defense, control, finishing threat,
+              and opponent quality. The intent is fast read first, detail second.
+            </p>
+          ) : null}
+          <div className={hasFighterData ? "space-y-6" : "mt-6 space-y-6"}>
+            <div>
               <p className="mono-label">fighter a</p>
-              <p className="mt-2 text-lg font-semibold tracking-tight text-accent">{fighterA.name}</p>
+              <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] md:text-4xl text-accent">
+                {fighterA.name}
+              </h3>
+              <p className="data-text mt-2 text-sm text-muted">
+                {fighterA.record} / {fighterA.stance}
+              </p>
             </div>
-            <div className="rounded-2xl border border-line bg-background/45 p-4">
+            <div>
               <p className="mono-label">fighter b</p>
-              <p className="mt-2 text-lg font-semibold tracking-tight text-muted">{fighterB.name}</p>
+              <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] md:text-4xl text-foreground">
+                {fighterB.name}
+              </h3>
+              <p className="data-text mt-2 text-sm text-muted">
+                {fighterB.record} / {fighterB.stance}
+              </p>
             </div>
+            {styleClashLabel ? (
+              <span className="inline-flex rounded-full border border-line bg-surface-2 px-3 py-2 font-mono text-[11px] uppercase tracking-[0.1em] text-muted">
+                {styleClashLabel}
+              </span>
+            ) : null}
           </div>
         </div>
 

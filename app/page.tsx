@@ -29,9 +29,8 @@ export default function Home() {
                 <span className="block text-accent">just shape.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens is a clean matchup intelligence dashboard for creators, analysts, and
-                fight teams. It compresses style, momentum, resume heat, and tactical routes into
-                visual blocks built to screenshot.
+                Fight Lens is a matchup intelligence tool built for creators and analysts. No odds.
+                No picks. Just the read.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link

@@ -122,7 +122,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
           <FightShapeSummary fight={fight} fighterA={fighterA} fighterB={fighterB} />
           <DataModelReadout fight={normalizedFight} />
-          <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} />
+          <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} styleClashLabel={fight.styleClashLabel} />
           <LastFiveTrend
             fighterA={fighterA}
             fighterB={fighterB}
