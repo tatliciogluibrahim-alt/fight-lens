@@ -2,7 +2,6 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { CreatorCardSamples } from "@/components/CreatorCardSamples";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { PrototypeBadge } from "@/components/PrototypeBadge";
 import backtest from "@/data/normalized/backtests/islam-jdm.json";
 
 type FighterKey = "islam" | "jdm";
@@ -246,7 +245,6 @@ export default function IslamJdmBacktestPage() {
         <section className="mt-6 border border-line bg-surface shadow-glow">
           <div className="border-b border-line p-5 md:p-7">
             <div className="flex flex-wrap items-center gap-3">
-              <PrototypeBadge />
               <p className="mono-label">backtest / sourced from ufcstats</p>
             </div>
             <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[0.96] tracking-[-0.055em] md:text-7xl">

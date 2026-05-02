@@ -7,8 +7,7 @@ import { PrototypeBadge } from "./PrototypeBadge";
 const links = [
   { href: "/", label: "overview" },
   { href: "/events/ufc-328", label: "card" },
-  { href: "/events/ufc-328/chimaev-strickland", label: "matchup" },
-  { href: "/backtests/islam-jdm", label: "backtest" }
+  { href: "/events/ufc-328/chimaev-strickland", label: "matchup" }
 ];
 
 export function AppHeader() {
@@ -33,8 +32,7 @@ export function AppHeader() {
           {links.map((link) => {
             const isActive =
               pathname === link.href ||
-              (link.label === "matchup" && pathname.startsWith("/events/ufc-328/")) ||
-              (link.label === "backtest" && pathname.startsWith("/backtests/"));
+              (link.label === "matchup" && pathname.startsWith("/events/ufc-328/"));
 
             return (
               <Link

@@ -1,6 +1,5 @@
 import type { Fight, Fighter } from "@/lib/types";
 import { CountryFlag } from "./CountryFlag";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface ExportCardButtonsProps {
   fight: Fight;
@@ -31,7 +30,6 @@ export function ExportCardButtons({ fight, fighterA, fighterB }: ExportCardButto
             is the main export candidate; these show how the same read can collapse into content.
           </p>
         </div>
-        <PrototypeBadge />
       </div>
 
       <div className="module-body grid gap-4 xl:grid-cols-[1.25fr_0.75fr]">

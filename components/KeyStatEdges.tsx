@@ -1,5 +1,4 @@
 import type { Fight } from "@/lib/types";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface KeyStatEdgesProps {
   fight: Fight;
@@ -15,7 +14,6 @@ export function KeyStatEdges({ fight }: KeyStatEdgesProps) {
             head-to-head deltas.
           </h2>
         </div>
-        <PrototypeBadge />
       </div>
 
       <div className="module-body divide-y divide-line rounded-2xl border border-line bg-background/35">

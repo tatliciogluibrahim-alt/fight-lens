@@ -3,13 +3,11 @@ import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { DataModelReadout } from "@/components/DataModelReadout";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { ExportCardButtons } from "@/components/ExportCardButtons";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { KeyStatEdges } from "@/components/KeyStatEdges";
 import { LastFiveTrend } from "@/components/LastFiveTrend";
 import { PathsToVictory } from "@/components/PathsToVictory";
-import { PrototypeBadge } from "@/components/PrototypeBadge";
 import { ResumeHeatCard } from "@/components/ResumeHeatCard";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { event, fights, getFight, getFighter } from "@/lib/data";
@@ -99,7 +97,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 {fighterA.name.toLowerCase()} vs. {fighterB.name.toLowerCase()}
               </h1>
             </div>
-            <PrototypeBadge />
           </div>
 
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
@@ -126,7 +123,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <FightShapeSummary fight={fight} fighterA={fighterA} fighterB={fighterB} />
           <DataModelReadout fight={normalizedFight} />
           <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} />
-          <ExportCardButtons fighterA={fighterA} fighterB={fighterB} fight={fight} />
           <LastFiveTrend
             fighterA={fighterA}
             fighterB={fighterB}

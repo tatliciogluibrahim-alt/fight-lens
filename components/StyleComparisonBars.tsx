@@ -1,6 +1,5 @@
 import type { Fighter, StyleProfile } from "@/lib/types";
 import { CountryFlag } from "./CountryFlag";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 const rows: Array<{ key: keyof StyleProfile; label: string }> = [
   { key: "strikingVolume", label: "striking volume" },
@@ -143,7 +142,6 @@ export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsP
           <p className="mono-label">02 / style clash</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the overlap.</h2>
         </div>
-        <PrototypeBadge />
       </div>
 
       <div className="module-body space-y-6">

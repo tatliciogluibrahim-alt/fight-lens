@@ -1,5 +1,4 @@
 import type { FightPath, Fighter } from "@/lib/types";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface PathsToVictoryProps {
   fighterA: Fighter;
@@ -49,7 +48,6 @@ export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVi
             clearly each route shows up in the matchup shape.
           </p>
         </div>
-        <PrototypeBadge />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <PathList fighter={fighterA} paths={pathsA} accent />

@@ -1,4 +1,3 @@
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface CreatorMetric {
   label: string;
@@ -41,7 +40,6 @@ export function CreatorCardSamples({
             These are static previews for feedback: strong headline, one proof layer, clean metadata.
           </p>
         </div>
-        <PrototypeBadge />
       </div>
 
       <div className="module-body grid gap-4 xl:grid-cols-[1.2fr_0.8fr]">

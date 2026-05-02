@@ -2,7 +2,6 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
-import { PrototypeBadge } from "@/components/PrototypeBadge";
 import { event } from "@/lib/data";
 
 const modules = [
@@ -11,8 +10,7 @@ const modules = [
   ["03", "recent momentum", "named opponents and form context from recent fights", "last-five-trend"],
   ["04", "resume heat", "opponent quality without hype", "resume-heat"],
   ["05", "key edges", "measurable deltas that explain the matchup", "key-edges"],
-  ["06", "paths to victory", "tactical routes, not predictions", "paths-to-victory"],
-  ["07", "creator cards", "export-style visuals built from the matchup read", "creator-cards"]
+  ["06", "paths to victory", "tactical routes, not predictions", "paths-to-victory"]
 ];
 
 export default function Home() {
@@ -24,7 +22,6 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div className="max-w-4xl">
               <div className="flex flex-wrap items-center gap-3">
-                <PrototypeBadge />
                 <p className="mono-label">ufc 328 / no betting layer</p>
               </div>
               <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
@@ -52,26 +49,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lens-card p-5 md:p-6">
-              <p className="mono-label">creator output</p>
-              <div className="mt-5 grid grid-cols-3 gap-3">
-                {[
-                  ["01", "shape"],
-                  ["02", "style"],
-                  ["03", "edges"]
-                ].map(([number, label]) => (
-                  <div key={label} className="rounded-2xl border border-line bg-background/45 p-4 text-center">
-                    <p className="data-text text-2xl text-foreground">{number}</p>
-                    <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
-                      {label}
-                    </p>
-                  </div>
-                ))}
+            <div className="lens-card p-4 md:p-5">
+              <div className="flex aspect-video items-center justify-center rounded-2xl border border-line bg-background/70">
+                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+                  OVERLAP CARD / PREVIEW PENDING
+                </p>
               </div>
-              <p className="mt-5 text-sm leading-6 text-muted">
-                Every module is framed as an exportable read: one question, one visual, one useful
-                line.
-              </p>
             </div>
           </div>
         </section>
@@ -83,7 +66,7 @@ export default function Home() {
             <div>
               <p className="mono-label">index</p>
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-                seven blocks per fight.
+                six blocks per fight.
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-6 text-muted">

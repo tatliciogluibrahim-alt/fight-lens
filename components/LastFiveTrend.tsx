@@ -1,5 +1,4 @@
 import type { Fighter } from "@/lib/types";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 export interface SourcedLastFiveFight {
   result?: string | null;
@@ -110,7 +109,6 @@ export function LastFiveTrend({ fighterA, fighterB, sourcedA, sourcedB }: LastFi
             recent momentum.
           </h2>
         </div>
-        <PrototypeBadge />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <FighterTrend fighter={fighterA} sourced={sourcedA} />

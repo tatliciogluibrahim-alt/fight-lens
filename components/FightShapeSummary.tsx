@@ -1,5 +1,4 @@
 import type { Fight, Fighter } from "@/lib/types";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface FightShapeSummaryProps {
   fight: Fight;
@@ -15,7 +14,6 @@ export function FightShapeSummary({ fight, fighterA, fighterB }: FightShapeSumma
           <p className="mono-label">01 / fight shape</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the read.</h2>
         </div>
-        <PrototypeBadge />
       </div>
 
       <div className="module-body grid gap-5 lg:grid-cols-[1.35fr_0.85fr]">

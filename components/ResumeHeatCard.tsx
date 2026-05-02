@@ -1,5 +1,4 @@
 import type { Fighter } from "@/lib/types";
-import { PrototypeBadge } from "./PrototypeBadge";
 
 interface ResumeHeatCardProps {
   fighterA: Fighter;
@@ -54,7 +53,6 @@ export function ResumeHeatCard({ fighterA, fighterB }: ResumeHeatCardProps) {
             opponent quality.
           </h2>
         </div>
-        <PrototypeBadge />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <HeatCard fighter={fighterA} accent />
