@@ -1,6 +1,6 @@
 import type { Fighter, StyleProfile } from "@/lib/types";
-import { SaveSectionButton } from "./SaveSectionButton";
 import { StyleClashExportCard } from "./StyleClashExportCard";
+import { StyleClashSaveButton } from "./StyleClashSaveButton";
 
 const rows: Array<{ key: keyof StyleProfile; label: string }> = [
   { key: "strikingVolume", label: "striking volume" },
@@ -29,21 +29,12 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
           <p className="mono-label">02 / style clash</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the overlap.</h2>
         </div>
-        <SaveSectionButton elementId="export-style-clash-card" filename="fight-lens-overlap" />
+        <StyleClashSaveButton fighterA={fighterA} fighterB={fighterB} />
       </div>
 
       <div className="module-body space-y-6">
         <div className="rounded-2xl border border-line bg-background/45 p-3 md:p-4">
           <StyleClashExportCard fighterA={fighterA} fighterB={fighterB} />
-        </div>
-
-        <div aria-hidden="true" style={{ position: "fixed", left: -2200, top: 0, width: 1920, height: 1080, pointerEvents: "none" }}>
-          <StyleClashExportCard
-            id="export-style-clash-card"
-            fighterA={fighterA}
-            fighterB={fighterB}
-            mode="source"
-          />
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
