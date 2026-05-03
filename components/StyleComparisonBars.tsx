@@ -1,5 +1,7 @@
 import { fightShapeMetricDefinitions, hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
+import { FighterStyleRadarCard } from "./FighterStyleRadarCard";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import { StyleClashExportCard } from "./StyleClashExportCard";
 import { StyleClashSaveButton } from "./StyleClashSaveButton";
@@ -7,10 +9,11 @@ import { StyleClashSaveButton } from "./StyleClashSaveButton";
 interface StyleComparisonBarsProps {
   fighterA: SourcedFighter;
   fighterB: SourcedFighter;
+  modelOutput: FightShapeModelOutput;
   styleClashLabel?: string;
 }
 
-export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: StyleComparisonBarsProps) {
+export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClashLabel }: StyleComparisonBarsProps) {
   const comparableRows = fightShapeMetricDefinitions.filter((row) => {
     const a = fighterA.styleProfile[row.key];
     const b = fighterB.styleProfile[row.key];
@@ -27,9 +30,12 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
   return (
     <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="mono-label">02 / style clash</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the overlap.</h2>
+        <div className="max-w-2xl">
+          <p className="mono-label">02 / style radar</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">style fingerprints.</h2>
+          <p className="mt-3 text-sm leading-6 text-muted">
+            Eight-dimension style shape for each fighter, built from the available profile model.
+          </p>
         </div>
         {canExport ? (
           <StyleClashSaveButton fighterA={exportFighterA!} fighterB={exportFighterB!} />
@@ -37,8 +43,27 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
       </div>
 
       <div className="module-body space-y-6">
+        <div className="grid gap-4 xl:grid-cols-2">
+          <FighterStyleRadarCard
+            fighter={fighterA}
+            metric={modelOutput.metrics.stylePressureIndex.fighterA}
+            tone="accent"
+          />
+          <FighterStyleRadarCard
+            fighter={fighterB}
+            metric={modelOutput.metrics.stylePressureIndex.fighterB}
+            tone="muted"
+          />
+        </div>
+
         {canExport ? (
           <div className="rounded-2xl border border-line bg-background/45 p-3 md:p-4">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-3 px-1">
+              <div>
+                <p className="mono-label">matchup export</p>
+                <p className="mt-1 text-sm text-muted">Export the shape as a creator-ready overlap card.</p>
+              </div>
+            </div>
             <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} />
           </div>
         ) : (
@@ -50,11 +75,11 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
         )}
 
         {comparableRows.length ? (
-          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div className="grid gap-8 rounded-2xl border border-line bg-background/30 p-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
             <div className="space-y-6">
               <div>
-                <p className="mono-label">fighter a</p>
+                <p className="mono-label">axis detail / fighter a</p>
                 <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">
                   {fighterA.name}
                 </h3>
@@ -63,7 +88,7 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
                 </p>
               </div>
               <div>
-                <p className="mono-label">fighter b</p>
+                <p className="mono-label">axis detail / fighter b</p>
                 <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-foreground md:text-4xl">
                   {fighterB.name}
                 </h3>

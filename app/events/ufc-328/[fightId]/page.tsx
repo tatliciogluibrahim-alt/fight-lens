@@ -116,7 +116,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
 
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
           <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
-          <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} styleClashLabel={fight.styleClashLabel ?? undefined} />
+          <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} styleClashLabel={fight.styleClashLabel ?? undefined} />
           <FormResumeModule fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
           <RoundTrendModule modelOutput={fightShapeModel} />
           <PathsToVictory fight={fight} modelOutput={fightShapeModel} />

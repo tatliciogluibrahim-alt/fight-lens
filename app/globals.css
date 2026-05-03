@@ -28,7 +28,10 @@ html {
 body {
   min-height: 100vh;
   background:
+    linear-gradient(rgba(245, 239, 230, 0.018) 1px, transparent 1px) 0 0 / 88px 88px,
+    linear-gradient(90deg, rgba(245, 239, 230, 0.016) 1px, transparent 1px) 0 0 / 88px 88px,
     radial-gradient(circle at 12% 0%, rgba(200, 91, 63, 0.09), transparent 24rem),
+    radial-gradient(circle at 90% 12%, rgba(245, 239, 230, 0.035), transparent 20rem),
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 16rem),
     var(--background);
   color: var(--foreground);
@@ -41,6 +44,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 button,
@@ -60,6 +73,8 @@ a {
 }
 
 .lens-card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
@@ -69,6 +84,7 @@ a {
 }
 
 .module-card {
+  position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 0.95rem;
@@ -78,6 +94,22 @@ a {
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.04) inset,
     0 14px 44px rgba(0, 0, 0, 0.22);
+}
+
+.module-card::before,
+.lens-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent, rgba(245, 239, 230, 0.035), transparent) 0 0 / 100% 1px no-repeat,
+    radial-gradient(circle at 0% 0%, rgba(200, 91, 63, 0.08), transparent 18rem);
+}
+
+.module-card > *,
+.lens-card > * {
+  position: relative;
 }
 
 .module-header {
@@ -106,6 +138,85 @@ a {
   min-height: 44px;
 }
 
+.export-button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(26, 24, 20, 0.72);
+  padding: 0 0.9rem;
+  font-family: var(--font-geist-mono), Consolas, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.export-button:hover {
+  border-color: var(--accent);
+  background: rgba(200, 91, 63, 0.12);
+  color: var(--foreground);
+}
+
+.export-button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.radar-card {
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.014)),
+    rgba(9, 9, 8, 0.42);
+  padding: 1.25rem;
+}
+
+.radar-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(245, 239, 230, 0.05), transparent 32%),
+    radial-gradient(circle at 50% 42%, rgba(200, 91, 63, 0.08), transparent 17rem);
+}
+
+.radar-card > * {
+  position: relative;
+}
+
+.lens-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-2);
+}
+
+.lens-mark::before {
+  content: "";
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.25rem;
+  transform: rotate(45deg);
+  box-shadow:
+    inset 0 0 0 3px var(--surface-2),
+    inset 0 0 0 6px var(--accent),
+    0 0 24px rgba(200, 91, 63, 0.35);
+}
+
 @media (min-width: 768px) {
   .section-shell {
     width: min(1184px, calc(100% - 48px));
@@ -114,5 +225,9 @@ a {
   .module-header,
   .module-body {
     padding: 1.75rem;
+  }
+
+  .radar-card {
+    padding: 1.5rem;
   }
 }

@@ -183,12 +183,21 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
               placeItems: "center",
               width: source ? 70 : 34,
               height: source ? 70 : 34,
-              borderRadius: 10,
+              borderRadius: source ? 18 : 10,
               border: `1px solid ${exportColors.lineStrong}`,
               background: exportColors.panelAlt
             }}
           >
-            <span style={{ width: source ? 22 : 10, height: source ? 22 : 10, borderRadius: 3, background: exportColors.accent }} />
+            <span
+              style={{
+                width: source ? 28 : 13,
+                height: source ? 28 : 13,
+                borderRadius: 5,
+                border: `2px solid ${exportColors.accent}`,
+                transform: "rotate(45deg)",
+                boxShadow: `inset 0 0 0 ${source ? 7 : 3}px ${exportColors.panelAlt}, inset 0 0 0 ${source ? 12 : 5}px ${exportColors.accent}`
+              }}
+            />
           </span>
           <div>
             <p style={{ margin: 0, fontSize: source ? 32 : 15, fontWeight: 700, letterSpacing: "-0.03em" }}>fight lens</p>
@@ -288,7 +297,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
               letterSpacing: "-0.055em"
             }}
           >
-            inverted profiles. pressure axis vs volume denial.
+            style overlap. pressure points in shared axes.
           </h1>
 
           <div style={{ display: "grid", gap: source ? 18 : 8, marginTop: source ? 58 : "clamp(16px, 3vw, 28px)" }}>

@@ -3,7 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Fight Lens",
-  description: "See the shape of the fight."
+  description: "See the shape of the fight.",
+  icons: {
+    icon: "/icon.svg"
+  }
 };
 
 export default function RootLayout({

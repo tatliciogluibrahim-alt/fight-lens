@@ -120,9 +120,14 @@ function drawWrappedText(ctx: CanvasRenderingContext2D, text: string, x: number,
 }
 
 function drawLogo(ctx: CanvasRenderingContext2D) {
-  fillRoundRect(ctx, 80, 70, 76, 76, 14, C.panelSoft);
-  strokeRoundRect(ctx, 80, 70, 76, 76, 14, C.lineStrong, 2);
-  fillRoundRect(ctx, 108, 98, 22, 22, 4, C.accent);
+  fillRoundRect(ctx, 80, 70, 76, 76, 18, C.panelSoft);
+  strokeRoundRect(ctx, 80, 70, 76, 76, 18, C.lineStrong, 2);
+  ctx.save();
+  ctx.translate(118, 108);
+  ctx.rotate(Math.PI / 4);
+  strokeRoundRect(ctx, -16, -16, 32, 32, 5, C.accent, 4);
+  fillRoundRect(ctx, -6, -6, 12, 12, 3, C.accent);
+  ctx.restore();
   drawText(ctx, "fight lens", 178, 104, {
     font: "700 30px Arial, Helvetica, sans-serif",
     color: C.fg,
@@ -262,7 +267,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
   drawLogo(ctx);
   fillRoundRect(ctx, 1500, 70, 340, 60, 999, rgba(C.panel, 0.72));
   strokeRoundRect(ctx, 1500, 70, 340, 60, 999, C.lineStrong, 2);
-  drawText(ctx, "PROTOTYPE DATA / 16:9", 1670, 108, {
+  drawText(ctx, "FIGHT LENS / 16:9", 1670, 108, {
     font: "400 18px ui-monospace, SFMono-Regular, Consolas, monospace",
     color: C.accent,
     align: "center",
@@ -295,7 +300,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
 
   const headlineHeight = drawWrappedText(
     ctx,
-    "inverted profiles. pressure axis vs volume denial.",
+    "style overlap. pressure points in shared axes.",
     right.x,
     right.y + 150,
     right.w - 30,
