@@ -1,35 +1,10 @@
-import type { Event, Fighter, StyleProfile } from "@/lib/types";
+import { fightShapeExportAxes, getFightShapeAxisScore } from "@/lib/fight-shape";
+import type { Event, Fighter } from "@/lib/types";
 import { RosterStyleMapSaveButton } from "./RosterStyleMapSaveButton";
 
 interface RosterStyleMapProps {
   event: Event;
   fighters: Record<string, Fighter>;
-}
-
-const axes: Array<{ key: string; label: string }> = [
-  { key: "striking", label: "striking" },
-  { key: "wrestling", label: "wrestling" },
-  { key: "grappling", label: "grappling" },
-  { key: "cardio", label: "cardio" },
-  { key: "defense", label: "defense" },
-  { key: "output", label: "output" }
-];
-
-function axisScore(profile: StyleProfile, axis: string) {
-  switch (axis) {
-    case "striking":
-      return Math.round((profile.strikingVolume + profile.strikingDefense) / 2);
-    case "wrestling":
-      return profile.wrestlingOffense;
-    case "grappling":
-      return Math.round((profile.controlThreat + profile.submissionThreat) / 2);
-    case "cardio":
-      return profile.cardioConsistency;
-    case "defense":
-      return Math.round((profile.strikingDefense + profile.takedownDefense) / 2);
-    default:
-      return profile.strikingVolume;
-  }
 }
 
 function uniqueRoster(event: Event, fighters: Record<string, Fighter>) {
@@ -59,7 +34,7 @@ export function RosterStyleMap({ event, fighters }: RosterStyleMapProps) {
         <div className="module-body overflow-hidden">
           <div className="hidden gap-3 border-b border-line pb-3 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle md:grid md:grid-cols-[minmax(180px,1.2fr)_repeat(6,1fr)]">
             <span>fighter</span>
-            {axes.map((axis) => (
+            {fightShapeExportAxes.map((axis) => (
               <span key={axis.key}>{axis.label}</span>
             ))}
           </div>
@@ -70,8 +45,8 @@ export function RosterStyleMap({ event, fighters }: RosterStyleMapProps) {
                   <p className="font-semibold tracking-tight">{fighter.name}</p>
                   <p className="data-text mt-1 text-xs text-subtle">{fighter.record} / {fighter.ranking || "nr"}</p>
                 </div>
-                {axes.map((axis) => {
-                  const value = axisScore(fighter.styleProfile, axis.key);
+                {fightShapeExportAxes.map((axis) => {
+                  const value = getFightShapeAxisScore(fighter.styleProfile, axis.key);
                   return (
                     <div key={axis.key} className="grid grid-cols-[72px_1fr_32px] items-center gap-2 md:block">
                       <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle md:hidden">{axis.label}</span>

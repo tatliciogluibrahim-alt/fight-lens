@@ -26,15 +26,15 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div className="max-w-4xl">
               <div className="flex flex-wrap items-center gap-3">
-                <p className="mono-label">ufc 328 / no betting layer</p>
+                <p className="mono-label">ufc 328 / matchup lens</p>
               </div>
               <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
-              no picks.
-                <span className="block text-accent">just shape.</span>
+                see the fight.
+                <span className="block text-accent">as shape.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens is a matchup intelligence tool built for creators and analysts. No odds.
-                Big dick pics. Just the read.
+                Fight Lens is a matchup intelligence tool built for creators and analysts. It turns
+                style, form, and round trends into a clean read.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link

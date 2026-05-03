@@ -168,7 +168,8 @@ export function RoundTrendModule({ fight, fighterA, fighterB, normalizedFight }:
         </h2>
         {isSourced ? (
           <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            Weighted trend blends recent striking differential, control time, takedowns, opponent tier, and recency. Early finishes raise early threat; they do not automatically mark late rounds as weak.
+            Recent round signals are weighted by opponent tier and recency. Thin late samples
+            lower confidence; they do not become a weakness claim.
           </p>
         ) : null}
       </div>

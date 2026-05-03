@@ -44,7 +44,7 @@ export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVi
             tactical routes.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Tactical routes, not picks. Weights show how clearly each control route appears in the matchup shape.
+            Weights show how clearly each tactical route appears in the matchup shape.
           </p>
         </div>
       </div>

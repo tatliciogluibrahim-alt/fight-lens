@@ -52,6 +52,7 @@ Useful routes:
 - `/events/ufc-328` - UFC 328 card dashboard
 - `/events/ufc-328/chimaev-strickland` - main matchup lens
 - `/backtests/islam-jdm` - Islam vs. JDM forecast-vs-actual backtest
+- `/methodology` - public methodology and Fight Shape metric definitions
 
 ## Quality Checks
 

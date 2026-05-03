@@ -1,4 +1,5 @@
-import type { Fighter, StyleProfile } from "./types";
+import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
+import type { Fighter } from "./types";
 
 const W = 1920;
 const H = 1080;
@@ -15,25 +16,6 @@ const C = {
   accent: "#c85b3f",
   track: "#1b1915"
 };
-
-const axes = ["striking", "wrestling", "grappling", "cardio", "defense", "output"];
-
-function axisScore(profile: StyleProfile, axis: string) {
-  switch (axis) {
-    case "striking":
-      return Math.round((profile.strikingVolume + profile.strikingDefense) / 2);
-    case "wrestling":
-      return profile.wrestlingOffense;
-    case "grappling":
-      return Math.round((profile.controlThreat + profile.submissionThreat) / 2);
-    case "cardio":
-      return profile.cardioConsistency;
-    case "defense":
-      return Math.round((profile.strikingDefense + profile.takedownDefense) / 2);
-    default:
-      return profile.strikingVolume;
-  }
-}
 
 function rgba(hex: string, alpha: number) {
   const clean = hex.replace("#", "");
@@ -173,17 +155,18 @@ function drawLegend(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: 
 
 function drawRadar(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fighter, cx: number, cy: number, radius: number) {
   const point = (index: number, value: number) => {
-    const angle = -Math.PI / 2 + (index / axes.length) * Math.PI * 2;
+    const angle = -Math.PI / 2 + (index / fightShapeExportAxes.length) * Math.PI * 2;
     const scaled = (value / 100) * radius;
     return [cx + Math.cos(angle) * scaled, cy + Math.sin(angle) * scaled] as const;
   };
 
-  const polygon = (fighter: Fighter) => axes.map((axis, index) => point(index, axisScore(fighter.styleProfile, axis)));
+  const polygon = (fighter: Fighter) =>
+    fightShapeExportAxes.map((axis, index) => point(index, getFightShapeAxisScore(fighter.styleProfile, axis.key)));
 
   ctx.save();
   ctx.lineWidth = 2;
   for (const value of [20, 40, 60, 80, 100]) {
-    const points = axes.map((_, index) => point(index, value));
+    const points = fightShapeExportAxes.map((_, index) => point(index, value));
     ctx.beginPath();
     points.forEach(([x, y], index) => (index === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y)));
     ctx.closePath();
@@ -191,9 +174,9 @@ function drawRadar(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: F
     ctx.stroke();
   }
 
-  axes.forEach((axis, index) => {
+  fightShapeExportAxes.forEach((axis, index) => {
     const [x, y] = point(index, 115);
-    drawText(ctx, axis.toUpperCase(), x, y + 6, {
+    drawText(ctx, axis.label.toUpperCase(), x, y + 6, {
       font: "400 24px ui-monospace, SFMono-Regular, Consolas, monospace",
       color: C.subtle,
       align: "center",
@@ -322,9 +305,17 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fi
   );
 
   const startY = right.y + 150 + headlineHeight + 82;
-  axes.forEach((axis, index) => {
+  fightShapeExportAxes.forEach((axis, index) => {
     const y = startY + index * 78;
-    drawCompareRow(ctx, axis, axisScore(fighterA.styleProfile, axis), axisScore(fighterB.styleProfile, axis), right.x, y, right.w - 10);
+    drawCompareRow(
+      ctx,
+      axis.label,
+      getFightShapeAxisScore(fighterA.styleProfile, axis.key),
+      getFightShapeAxisScore(fighterB.styleProfile, axis.key),
+      right.x,
+      y,
+      right.w - 10
+    );
   });
 }
 

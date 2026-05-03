@@ -50,9 +50,17 @@ export function AppHeader() {
           })}
         </div>
 
-        {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && (
-          <PrototypeBadge className="order-2 md:order-3" />
-        )}
+        <div className="order-2 flex items-center gap-3 md:order-3">
+          <Link
+            href="/methodology"
+            className={`font-mono text-[10px] uppercase tracking-[0.14em] transition ${
+              pathname === "/methodology" ? "text-accent" : "text-subtle hover:text-foreground"
+            }`}
+          >
+            methodology
+          </Link>
+          {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && <PrototypeBadge />}
+        </div>
       </nav>
     </header>
   );

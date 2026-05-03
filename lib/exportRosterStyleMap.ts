@@ -1,4 +1,5 @@
-import type { Fighter, StyleProfile } from "./types";
+import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
+import type { Fighter } from "./types";
 
 const W = 1920;
 const H = 2160;
@@ -15,25 +16,6 @@ const C = {
   accent: "#c85b3f",
   track: "#1b1915"
 };
-
-const axes = ["striking", "wrestling", "grappling", "cardio", "defense", "output"];
-
-function axisScore(profile: StyleProfile, axis: string) {
-  switch (axis) {
-    case "striking":
-      return Math.round((profile.strikingVolume + profile.strikingDefense) / 2);
-    case "wrestling":
-      return profile.wrestlingOffense;
-    case "grappling":
-      return Math.round((profile.controlThreat + profile.submissionThreat) / 2);
-    case "cardio":
-      return profile.cardioConsistency;
-    case "defense":
-      return Math.round((profile.strikingDefense + profile.takedownDefense) / 2);
-    default:
-      return profile.strikingVolume;
-  }
-}
 
 function rgba(hex: string, alpha: number) {
   const clean = hex.replace("#", "");
@@ -121,8 +103,8 @@ function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: Fi
   const axisW = 165;
   const gap = 28;
 
-  axes.forEach((axis, index) => {
-    drawText(ctx, axis.toUpperCase(), axisStart + index * (axisW + gap), startY - 52, "400 17px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle, "center");
+  fightShapeExportAxes.forEach((axis, index) => {
+    drawText(ctx, axis.label.toUpperCase(), axisStart + index * (axisW + gap), startY - 52, "400 17px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle, "center");
   });
 
   fighters.forEach((fighter, index) => {
@@ -134,8 +116,8 @@ function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: Fi
     drawText(ctx, fighter.name, nameX, y, "600 25px Arial, Helvetica, sans-serif", C.fg);
     drawText(ctx, `${fighter.record} / ${fighter.ranking || "nr"}`, recordX, y, "400 18px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle);
 
-    axes.forEach((axis, axisIndex) => {
-      const score = axisScore(fighter.styleProfile, axis);
+    fightShapeExportAxes.forEach((axis, axisIndex) => {
+      const score = getFightShapeAxisScore(fighter.styleProfile, axis.key);
       const x = axisStart + axisIndex * (axisW + gap) - axisW / 2;
       drawAxisBar(ctx, x, y - 5, axisW, score, index % 2 === 0 ? C.accent : C.muted);
       drawText(ctx, String(score), x + axisW + 12, y, "400 14px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle);

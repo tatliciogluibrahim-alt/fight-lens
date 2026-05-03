@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
-import type { Fighter, StyleProfile } from "@/lib/types";
+import { fightShapeExportAxes, getFightShapeAxisScore } from "@/lib/fight-shape";
+import type { Fighter } from "@/lib/types";
 
 const exportColors = {
   background: "#090908",
@@ -12,30 +13,11 @@ const exportColors = {
   accent: "#c85b3f"
 };
 
-const exportAxes = ["striking", "wrestling", "grappling", "cardio", "defense", "output"];
-
 interface StyleClashExportCardProps {
   fighterA: Fighter;
   fighterB: Fighter;
   id?: string;
   mode?: "preview" | "source";
-}
-
-function axisScore(profile: StyleProfile, axis: string) {
-  switch (axis) {
-    case "striking":
-      return Math.round((profile.strikingVolume + profile.strikingDefense) / 2);
-    case "wrestling":
-      return profile.wrestlingOffense;
-    case "grappling":
-      return Math.round((profile.controlThreat + profile.submissionThreat) / 2);
-    case "cardio":
-      return profile.cardioConsistency;
-    case "defense":
-      return Math.round((profile.strikingDefense + profile.takedownDefense) / 2);
-    default:
-      return profile.strikingVolume;
-  }
 }
 
 function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighterB: Fighter; source: boolean }) {
@@ -44,15 +26,17 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
   const radius = 124;
 
   const point = (index: number, value: number) => {
-    const angle = -Math.PI / 2 + (index / exportAxes.length) * Math.PI * 2;
+    const angle = -Math.PI / 2 + (index / fightShapeExportAxes.length) * Math.PI * 2;
     const scaled = (value / 100) * radius;
     return [center + Math.cos(angle) * scaled, center + Math.sin(angle) * scaled];
   };
 
   const polygon = (fighter: Fighter) =>
-    exportAxes.map((axis, index) => point(index, axisScore(fighter.styleProfile, axis)).join(",")).join(" ");
+    fightShapeExportAxes
+      .map((axis, index) => point(index, getFightShapeAxisScore(fighter.styleProfile, axis.key)).join(","))
+      .join(" ");
 
-  const ring = (scale: number) => exportAxes.map((_, index) => point(index, scale).join(",")).join(" ");
+  const ring = (scale: number) => fightShapeExportAxes.map((_, index) => point(index, scale).join(",")).join(" ");
 
   return (
     <svg
@@ -66,11 +50,11 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
       {[20, 40, 60, 80, 100].map((value) => (
         <polygon key={value} points={ring(value)} fill="none" stroke={exportColors.lineStrong} strokeWidth="1.2" />
       ))}
-      {exportAxes.map((axis, index) => {
+      {fightShapeExportAxes.map((axis, index) => {
         const [x, y] = point(index, 114);
         return (
           <text
-            key={axis}
+            key={axis.key}
             x={x}
             y={y}
             textAnchor="middle"
@@ -80,7 +64,7 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
             fontSize={source ? 15 : 11}
             letterSpacing="2"
           >
-            {axis.toUpperCase()}
+            {axis.label.toUpperCase()}
           </text>
         );
       })}
@@ -308,12 +292,12 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
           </h1>
 
           <div style={{ display: "grid", gap: source ? 18 : 8, marginTop: source ? 58 : "clamp(16px, 3vw, 28px)" }}>
-            {exportAxes.map((axis) => (
+            {fightShapeExportAxes.map((axis) => (
               <CompareLine
-                key={axis}
-                label={axis}
-                a={axisScore(fighterA.styleProfile, axis)}
-                b={axisScore(fighterB.styleProfile, axis)}
+                key={axis.key}
+                label={axis.label}
+                a={getFightShapeAxisScore(fighterA.styleProfile, axis.key)}
+                b={getFightShapeAxisScore(fighterB.styleProfile, axis.key)}
                 source={source}
               />
             ))}

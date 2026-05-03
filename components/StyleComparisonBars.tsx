@@ -1,17 +1,7 @@
-import type { Fighter, StyleProfile } from "@/lib/types";
+import { fightShapeMetricDefinitions } from "@/lib/fight-shape";
+import type { Fighter } from "@/lib/types";
 import { StyleClashExportCard } from "./StyleClashExportCard";
 import { StyleClashSaveButton } from "./StyleClashSaveButton";
-
-const rows: Array<{ key: keyof StyleProfile; label: string }> = [
-  { key: "strikingVolume", label: "striking volume" },
-  { key: "strikingDefense", label: "striking defense" },
-  { key: "wrestlingOffense", label: "wrestling offense" },
-  { key: "takedownDefense", label: "takedown defense" },
-  { key: "controlThreat", label: "control threat" },
-  { key: "submissionThreat", label: "submission threat" },
-  { key: "cardioConsistency", label: "cardio" },
-  { key: "opponentQuality", label: "opponent quality" }
-];
 
 interface StyleComparisonBarsProps {
   fighterA: Fighter;
@@ -65,7 +55,7 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
           </div>
 
           <div className="divide-y divide-line rounded-2xl border border-line bg-background/35">
-            {rows.map((row) => {
+            {fightShapeMetricDefinitions.map((row) => {
               const a = fighterA.styleProfile[row.key];
               const b = fighterB.styleProfile[row.key];
               const max = Math.max(a, b, 1);

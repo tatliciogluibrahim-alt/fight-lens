@@ -88,3 +88,89 @@ export interface Event {
   promotion: string;
   fights: Fight[];
 }
+
+export type DataProvenance = "mock" | "manual" | "sourced" | "derived";
+
+export type PublicLensModelOutputKind =
+  | "fight-shape"
+  | "style-clash"
+  | "form-resume"
+  | "round-trend"
+  | "tactical-routes"
+  | "creator-card-brief";
+
+export type LensModelOutputKind = PublicLensModelOutputKind | "internal-read";
+export type LensModelOutputConfidence = "low" | "medium" | "high";
+
+export interface LensModelOutputBase {
+  id: string;
+  kind: LensModelOutputKind;
+  fightId?: string;
+  eventId?: string;
+  title: string;
+  summary: string;
+  provenance: DataProvenance;
+  confidence?: LensModelOutputConfidence;
+  visibility: "public" | "private";
+}
+
+export interface FightShapeLensOutput extends LensModelOutputBase {
+  kind: "fight-shape";
+  visibility: "public";
+  pressurePoints: string[];
+}
+
+export interface StyleClashLensOutput extends LensModelOutputBase {
+  kind: "style-clash";
+  visibility: "public";
+  axisDeltas: KeyStatEdge[];
+}
+
+export interface FormResumeLensOutput extends LensModelOutputBase {
+  kind: "form-resume";
+  visibility: "public";
+  resumeNotes: string[];
+}
+
+export interface RoundTrendLensOutput extends LensModelOutputBase {
+  kind: "round-trend";
+  visibility: "public";
+  roundSignals: Array<{
+    round: number;
+    fighterA: number | null;
+    fighterB: number | null;
+  }>;
+}
+
+export interface TacticalRoutesLensOutput extends LensModelOutputBase {
+  kind: "tactical-routes";
+  visibility: "public";
+  routes: {
+    fighterA: FightPath[];
+    fighterB: FightPath[];
+  };
+}
+
+export interface CreatorCardBriefLensOutput extends LensModelOutputBase {
+  kind: "creator-card-brief";
+  visibility: "public";
+  exportFormat: "16:9" | "9:16" | "1:1" | "compact" | "roster";
+  sourceOutputIds: string[];
+}
+
+interface PrivateInternalReadOutput extends LensModelOutputBase {
+  kind: "internal-read";
+  visibility: "private";
+  summary: "";
+  privatePlaceholderOnly: true;
+}
+
+export type PublicLensModelOutput =
+  | FightShapeLensOutput
+  | StyleClashLensOutput
+  | FormResumeLensOutput
+  | RoundTrendLensOutput
+  | TacticalRoutesLensOutput
+  | CreatorCardBriefLensOutput;
+
+export type LensModelOutput = PublicLensModelOutput | PrivateInternalReadOutput;

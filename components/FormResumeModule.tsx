@@ -156,7 +156,8 @@ export function FormResumeModule({ fighterA, fighterB, sourcedA, sourcedB }: For
           recent form, weighted by who it came against.
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-          Last-five rows name the opponent first, then add method, round, time, and context. The resume score sits beside form so opponent quality does not become a separate scavenger hunt.
+          Last-five rows keep the opponent first. Resume strength adds opponent-quality context
+          without turning the module into a stat wall.
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
