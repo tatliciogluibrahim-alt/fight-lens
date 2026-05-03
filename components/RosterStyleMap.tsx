@@ -1,19 +1,37 @@
-import { fightShapeExportAxes, getFightShapeAxisScore } from "@/lib/fight-shape";
-import type { Event, Fighter } from "@/lib/types";
+import { fightShapeExportAxes, getNullableFightShapeAxisScore, hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import type { StyleExportFighter } from "@/lib/fight-shape";
+import type { SourcedEvent, SourcedFighter } from "@/lib/sourced-event";
 import { RosterStyleMapSaveButton } from "./RosterStyleMapSaveButton";
 
 interface RosterStyleMapProps {
-  event: Event;
-  fighters: Record<string, Fighter>;
+  event: SourcedEvent;
 }
 
-function uniqueRoster(event: Event, fighters: Record<string, Fighter>) {
-  const ids = event.fights.flatMap((fight) => [fight.fighterAId, fight.fighterBId]);
-  return Array.from(new Set(ids)).map((id) => fighters[id]).filter(Boolean);
+function uniqueRoster(event: SourcedEvent) {
+  const fighters = event.fights.flatMap((fight) => [fight.fighters.fighterA, fight.fighters.fighterB]);
+  return Array.from(new Map(fighters.map((fighter) => [fighter.ufcstatsId, fighter])).values());
 }
 
-export function RosterStyleMap({ event, fighters }: RosterStyleMapProps) {
-  const roster = uniqueRoster(event, fighters);
+function exportableRoster(roster: SourcedFighter[]) {
+  const exportable: StyleExportFighter[] = [];
+
+  for (const fighter of roster) {
+    if (hasCompleteExportStyleProfile(fighter.styleProfile)) {
+      exportable.push({
+        name: fighter.name,
+        record: fighter.record,
+        ranking: fighter.ranking,
+        styleProfile: fighter.styleProfile
+      });
+    }
+  }
+
+  return exportable;
+}
+
+export function RosterStyleMap({ event }: RosterStyleMapProps) {
+  const roster = uniqueRoster(event);
+  const exportable = exportableRoster(roster);
 
   return (
     <section className="section-shell py-8 md:py-12">
@@ -28,7 +46,9 @@ export function RosterStyleMap({ event, fighters }: RosterStyleMapProps) {
               One scannable card-wide visual: every fighter, six style axes, ready to export as a creator reference.
             </p>
           </div>
-          <RosterStyleMapSaveButton eventName={event.name} fighters={roster} />
+          {exportable.length ? (
+            <RosterStyleMapSaveButton eventName={event.event.name} fighters={exportable} />
+          ) : null}
         </div>
 
         <div className="module-body overflow-hidden">
@@ -46,17 +66,17 @@ export function RosterStyleMap({ event, fighters }: RosterStyleMapProps) {
                   <p className="data-text mt-1 text-xs text-subtle">{fighter.record} / {fighter.ranking || "nr"}</p>
                 </div>
                 {fightShapeExportAxes.map((axis) => {
-                  const value = getFightShapeAxisScore(fighter.styleProfile, axis.key);
+                  const value = getNullableFightShapeAxisScore(fighter.styleProfile, axis.key);
                   return (
                     <div key={axis.key} className="grid grid-cols-[72px_1fr_32px] items-center gap-2 md:block">
                       <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle md:hidden">{axis.label}</span>
                       <div className="h-2.5 rounded-full bg-background">
                         <div
                           className={`h-2.5 rounded-full ${index % 2 === 0 ? "bg-accent" : "bg-muted"}`}
-                          style={{ width: `${value}%` }}
+                          style={{ width: `${value ?? 0}%` }}
                         />
                       </div>
-                      <span className="data-text text-right text-xs text-subtle md:mt-1 md:block md:text-left">{value}</span>
+                      <span className="data-text text-right text-xs text-subtle md:mt-1 md:block md:text-left">{value ?? "n/a"}</span>
                     </div>
                   );
                 })}

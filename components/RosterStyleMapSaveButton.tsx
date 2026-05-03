@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import type { Fighter } from "@/lib/types";
+import type { StyleExportFighter } from "@/lib/fight-shape";
 
 interface RosterStyleMapSaveButtonProps {
   eventName: string;
-  fighters: Fighter[];
+  fighters: StyleExportFighter[];
 }
 
 export function RosterStyleMapSaveButton({ eventName, fighters }: RosterStyleMapSaveButtonProps) {

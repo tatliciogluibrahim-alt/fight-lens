@@ -1,5 +1,5 @@
 import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
-import type { Fighter } from "./types";
+import type { StyleExportFighter } from "./fight-shape";
 
 const W = 1920;
 const H = 1080;
@@ -136,7 +136,7 @@ function drawLogo(ctx: CanvasRenderingContext2D) {
   });
 }
 
-function drawLegend(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fighter, x: number, y: number) {
+function drawLegend(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, fighterB: StyleExportFighter, x: number, y: number) {
   fillRoundRect(ctx, x, y - 9, 14, 14, 4, C.accent);
   drawText(ctx, fighterA.name, x + 28, y, {
     font: "400 23px Arial, Helvetica, sans-serif",
@@ -153,14 +153,14 @@ function drawLegend(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: 
   });
 }
 
-function drawRadar(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fighter, cx: number, cy: number, radius: number) {
+function drawRadar(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, fighterB: StyleExportFighter, cx: number, cy: number, radius: number) {
   const point = (index: number, value: number) => {
     const angle = -Math.PI / 2 + (index / fightShapeExportAxes.length) * Math.PI * 2;
     const scaled = (value / 100) * radius;
     return [cx + Math.cos(angle) * scaled, cy + Math.sin(angle) * scaled] as const;
   };
 
-  const polygon = (fighter: Fighter) =>
+  const polygon = (fighter: StyleExportFighter) =>
     fightShapeExportAxes.map((axis, index) => point(index, getFightShapeAxisScore(fighter.styleProfile, axis.key)));
 
   ctx.save();
@@ -243,7 +243,7 @@ function drawCompareRow(ctx: CanvasRenderingContext2D, label: string, a: number,
   });
 }
 
-function drawCard(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fighter) {
+function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, fighterB: StyleExportFighter) {
   ctx.fillStyle = C.bg;
   ctx.fillRect(0, 0, W, H);
 
@@ -319,7 +319,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fi
   });
 }
 
-export async function exportStyleClashCardAsPNG(fighterA: Fighter, fighterB: Fighter, filename = "fight-lens-overlap") {
+export async function exportStyleClashCardAsPNG(fighterA: StyleExportFighter, fighterB: StyleExportFighter, filename = "fight-lens-overlap") {
   if (document.fonts?.ready) {
     await document.fonts.ready;
   }

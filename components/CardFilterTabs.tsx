@@ -2,17 +2,17 @@
 
 import { useMemo, useState } from "react";
 import { FightCard } from "./FightCard";
-import type { CardPlacement, Fight, Fighter } from "@/lib/types";
+import type { CardPlacement } from "@/lib/types";
+import type { SourcedFight } from "@/lib/sourced-event";
 
 const tabs: Array<CardPlacement | "All"> = ["All", "Main Card", "Prelims", "Early Prelims"];
 
 interface CardFilterTabsProps {
-  fights: Fight[];
-  fighters: Record<string, Fighter>;
+  fights: SourcedFight[];
   eventId: string;
 }
 
-export function CardFilterTabs({ fights, fighters, eventId }: CardFilterTabsProps) {
+export function CardFilterTabs({ fights, eventId }: CardFilterTabsProps) {
   const [activeTab, setActiveTab] = useState<CardPlacement | "All">("All");
 
   const visibleFights = useMemo(() => {
@@ -51,8 +51,6 @@ export function CardFilterTabs({ fights, fighters, eventId }: CardFilterTabsProp
             key={fight.id}
             eventId={eventId}
             fight={fight}
-            fighterA={fighters[fight.fighterAId]}
-            fighterB={fighters[fight.fighterBId]}
           />
         ))}
       </div>

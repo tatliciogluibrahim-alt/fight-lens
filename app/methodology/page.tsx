@@ -12,20 +12,16 @@ export const metadata: Metadata = {
 
 const provenanceRows = [
   {
-    label: "sourced",
-    body: "Public stat snapshots, currently centered on UFCStats where the data exists."
+    label: "public stats",
+    body: "Public stat snapshots are used where they are available and complete enough."
   },
   {
-    label: "manual",
+    label: "reviewed context",
     body: "Human-reviewed context for style tags, opponent tiers, route labels, and corrections."
   },
   {
-    label: "derived",
-    body: "Readable 0-100 signals built from sourced values plus reviewed context."
-  },
-  {
-    label: "mock",
-    body: "Prototype fallback values used only when the real source layer is not ready."
+    label: "computed signals",
+    body: "Readable 0-100 signals built from measured values plus reviewed context."
   }
 ];
 
@@ -52,7 +48,7 @@ const outputRows = [
   },
   {
     label: "creator-card-brief",
-    body: "A portable summary for export formats once each source module is stable."
+    body: "A portable summary for export formats once each module is stable."
   }
 ];
 
@@ -65,6 +61,11 @@ function NumberPill({ children }: { children: React.ReactNode }) {
 }
 
 export default function MethodologyPage() {
+  const showDebug = process.env.NEXT_PUBLIC_DEBUG_MODE === "true";
+  const metricGridClass = showDebug
+    ? "grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr_92px] lg:items-start"
+    : "grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr] lg:items-start";
+
   return (
     <>
       <AppHeader />
@@ -84,7 +85,7 @@ export default function MethodologyPage() {
                 how Fight Lens reads a matchup.
               </h1>
               <p className="mt-6 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens turns source stats, reviewed context, and derived signals into a
+                Fight Lens turns public stats, reviewed context, and computed signals into a
                 visual read. The goal is not certainty. The goal is to show the shape of the
                 matchup clearly enough that a creator, analyst, or serious fan can explain what
                 matters.
@@ -123,7 +124,7 @@ export default function MethodologyPage() {
             {fightShapeMetricDefinitions.map((metric, index) => (
               <div
                 key={metric.key}
-                className="grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr_92px] lg:items-start"
+                className={metricGridClass}
               >
                 <NumberPill>{String(index + 1).padStart(2, "0")}</NumberPill>
                 <div>
@@ -137,9 +138,11 @@ export default function MethodologyPage() {
                 <p className="data-text text-xs leading-6 text-subtle">
                   {metric.inputs.join(" / ")}
                 </p>
-                <p className="data-text text-xs uppercase tracking-[0.12em] text-accent">
-                  {metric.provenance}
-                </p>
+                {showDebug ? (
+                  <p className="data-text text-xs uppercase tracking-[0.12em] text-accent">
+                    {metric.provenance}
+                  </p>
+                ) : null}
               </div>
             ))}
           </div>

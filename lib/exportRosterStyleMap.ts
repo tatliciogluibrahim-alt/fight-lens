@@ -1,5 +1,5 @@
 import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
-import type { Fighter } from "./types";
+import type { StyleExportFighter } from "./fight-shape";
 
 const W = 1920;
 const H = 2160;
@@ -77,7 +77,7 @@ function drawAxisBar(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
   fillRoundRect(ctx, x, y, (w * score) / 100, 10, 999, color);
 }
 
-function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: Fighter[]) {
+function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: StyleExportFighter[]) {
   ctx.fillStyle = C.bg;
   ctx.fillRect(0, 0, W, H);
 
@@ -125,7 +125,7 @@ function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: Fi
   });
 }
 
-export async function exportRosterStyleMapAsPNG(eventName: string, fighters: Fighter[], filename = "fight-lens-roster-style-map") {
+export async function exportRosterStyleMapAsPNG(eventName: string, fighters: StyleExportFighter[], filename = "fight-lens-roster-style-map") {
   if (document.fonts?.ready) {
     await document.fonts.ready;
   }

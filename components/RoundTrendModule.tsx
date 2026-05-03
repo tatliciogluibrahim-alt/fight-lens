@@ -1,113 +1,53 @@
-import type { Fight, Fighter, FightResult } from "@/lib/types";
-import type { NormalizedFight } from "@/lib/normalized-event";
+import type { SourcedFight, SourcedFighter, SourcedRoundScore } from "@/lib/sourced-event";
 
 interface RoundTrendModuleProps {
-  fight: Fight;
-  fighterA: Fighter;
-  fighterB: Fighter;
-  normalizedFight?: NormalizedFight;
+  fight: SourcedFight;
 }
 
-interface RoundModelFallback {
-  earlyThreat: number | null;
-  lateEvidence: number | null;
-  averageFightTime?: string | null;
-  roundOneWinCount?: number | null;
-  winCount?: number | null;
-  lateRoundSampleCount?: number | null;
-  interpretation?: string | null;
+function hasEnoughRoundData(fighter: SourcedFighter) {
+  return Boolean(
+    fighter.roundModel.earlyThreat != null &&
+      fighter.roundModel.lateRoundSampleCount >= 3 &&
+      fighter.roundModel.hasEnoughForTrend
+  );
 }
 
-const tierWeight = {
-  "Top 10": 1.2,
-  Ranked: 1,
-  Unranked: 0.85
-} as const;
-
-function clamp(value: number) {
-  return Math.max(0, Math.min(100, Math.round(value)));
-}
-
-function rawRoundSignal(fight: FightResult, roundIndex: number) {
-  const strike = fight.sigStrikeDifferentialByRound[roundIndex] ?? 0;
-  const takedowns = fight.takedownsByRound[roundIndex] ?? 0;
-  const control = fight.controlTimeByRound[roundIndex] ?? 0;
-  return strike + takedowns * 6 + control / 18;
-}
-
-function weightedRoundScores(fighter: Fighter, rounds: 3 | 5) {
-  const totals = Array.from({ length: rounds }, () => 0);
-  const weights = Array.from({ length: rounds }, () => 0);
-
-  fighter.lastFiveFights.slice(0, 5).forEach((fight, fightIndex) => {
-    const recency = 1 - fightIndex * 0.12;
-    const opponent = tierWeight[fight.opponentTier];
-    const sampleWeight = recency * opponent;
-
-    for (let round = 0; round < rounds; round += 1) {
-      const availableRound = Math.min(round, fight.sigStrikeDifferentialByRound.length - 1);
-      totals[round] += rawRoundSignal(fight, availableRound) * sampleWeight;
-      weights[round] += sampleWeight;
-    }
-  });
-
-  return totals.map((total, index) => {
-    const base = weights[index] ? total / weights[index] : 0;
-    return clamp(50 + base * 4.2 + fighter.styleProfile.cardioConsistency * 0.12);
-  });
-}
-
-function normalizedRoundModel(normalizedFight: NormalizedFight | undefined, side: "fighterA" | "fighterB"): RoundModelFallback | undefined {
-  return normalizedFight?.fighters[side].roundModel;
-}
-
-function modelValue(model: RoundModelFallback | undefined, key: "earlyThreat" | "lateEvidence") {
-  const value = model?.[key];
-  return typeof value === "number" && value > 0 ? value : null;
-}
-
-function trendStats(fighter: Fighter, model: RoundModelFallback | undefined, scores: number[]) {
-  const early = modelValue(model, "earlyThreat") ?? scores[0] ?? 0;
-  const mid = scores.length >= 3 ? Math.round((scores[1] + scores[2]) / 2) : scores[1] ?? scores[0] ?? 0;
-  const late = modelValue(model, "lateEvidence") ?? Math.round((scores[scores.length - 2] + scores[scores.length - 1]) / 2);
-  return {
-    early: clamp(early),
-    mid: clamp(mid),
-    late: clamp(late),
-    note: model?.interpretation ?? null
-  };
-}
-
-function TrendBars({ fighter, scores, accent = false }: { fighter: Fighter; scores: number[]; accent?: boolean }) {
+function TrendBars({ fighter, scores, accent = false }: { fighter: SourcedFighter; scores: SourcedRoundScore[]; accent?: boolean }) {
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
       <div className="mb-5">
         <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-        <p className="mono-label mt-1">weighted round trend</p>
+        <p className="mono-label mt-1">round trend</p>
       </div>
       <div className="space-y-3">
-        {scores.map((score, index) => (
-          <div key={`${fighter.id}-r${index + 1}`} className="grid grid-cols-[44px_1fr_44px] items-center gap-3">
-            <span className="data-text text-xs text-subtle">r{index + 1}</span>
-            <div className="h-3 rounded-full bg-surface-2">
-              <div
-                className={`h-3 rounded-full ${accent ? "bg-accent" : "bg-muted"}`}
-                style={{ width: `${score}%` }}
-              />
+        {scores.map((round) => {
+          const score = round.score ?? 0;
+
+          return (
+            <div key={`${fighter.id}-r${round.round}`} className="grid grid-cols-[44px_1fr_74px] items-center gap-3">
+              <span className="data-text text-xs text-subtle">r{round.round}</span>
+              <div className="h-3 rounded-full bg-surface-2">
+                <div
+                  className={`h-3 rounded-full ${accent ? "bg-accent" : "bg-muted"}`}
+                  style={{ width: `${score}%` }}
+                />
+              </div>
+              <span className={`data-text text-right text-xs ${accent ? "text-accent" : "text-foreground"}`}>
+                {round.score ?? "n/a"} / {round.sampleCount}
+              </span>
             </div>
-            <span className={`data-text text-right text-xs ${accent ? "text-accent" : "text-foreground"}`}>{score}</span>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
 }
 
-function SignalTiles({ statsA, statsB }: { statsA: ReturnType<typeof trendStats>; statsB: ReturnType<typeof trendStats> }) {
+function SignalTiles({ fighterA, fighterB }: { fighterA: SourcedFighter; fighterB: SourcedFighter }) {
   const rows = [
-    ["early threat", statsA.early, statsB.early],
-    ["middle stability", statsA.mid, statsB.mid],
-    ["late evidence", statsA.late, statsB.late]
+    ["early threat", fighterA.roundModel.earlyThreat, fighterB.roundModel.earlyThreat],
+    ["late evidence", fighterA.roundModel.lateEvidence, fighterB.roundModel.lateEvidence],
+    ["round samples", fighterA.roundModel.roundSampleCount, fighterB.roundModel.roundSampleCount]
   ] as const;
 
   return (
@@ -115,20 +55,20 @@ function SignalTiles({ statsA, statsB }: { statsA: ReturnType<typeof trendStats>
       <p className="mono-label">round model signals</p>
       <div className="mt-5 space-y-4">
         {rows.map(([label, a, b]) => {
-          const max = Math.max(a, b, 1);
+          const max = Math.max(a ?? 0, b ?? 0, 1);
           return (
             <div key={label}>
               <div className="mb-2 flex items-center justify-between gap-4">
-                <span className={`data-text text-sm ${a >= b ? "text-accent" : "text-muted"}`}>{a}</span>
+                <span className={`data-text text-sm ${(a ?? 0) >= (b ?? 0) ? "text-accent" : "text-muted"}`}>{a ?? "n/a"}</span>
                 <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">{label}</span>
-                <span className={`data-text text-sm ${b > a ? "text-foreground" : "text-muted"}`}>{b}</span>
+                <span className={`data-text text-sm ${(b ?? 0) > (a ?? 0) ? "text-foreground" : "text-muted"}`}>{b ?? "n/a"}</span>
               </div>
               <div className="grid grid-cols-2 gap-1">
                 <div className="flex justify-end rounded-l-full bg-surface-2">
-                  <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${(a / max) * 100}%` }} />
+                  <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${((a ?? 0) / max) * 100}%` }} />
                 </div>
                 <div className="rounded-r-full bg-surface-2">
-                  <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${(b / max) * 100}%` }} />
+                  <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${((b ?? 0) / max) * 100}%` }} />
                 </div>
               </div>
             </div>
@@ -139,25 +79,10 @@ function SignalTiles({ statsA, statsB }: { statsA: ReturnType<typeof trendStats>
   );
 }
 
-function hasSourcedRoundData(model: RoundModelFallback | undefined): boolean {
-  return Boolean(
-    model &&
-    typeof model.earlyThreat === "number" &&
-    model.earlyThreat > 0 &&
-    typeof model.lateRoundSampleCount === "number" &&
-    model.lateRoundSampleCount >= 3
-  );
-}
-
-export function RoundTrendModule({ fight, fighterA, fighterB, normalizedFight }: RoundTrendModuleProps) {
-  const modelA = normalizedRoundModel(normalizedFight, "fighterA");
-  const modelB = normalizedRoundModel(normalizedFight, "fighterB");
-  const isSourced = hasSourcedRoundData(modelA) && hasSourcedRoundData(modelB);
-
-  const scoresA = weightedRoundScores(fighterA, fight.rounds);
-  const scoresB = weightedRoundScores(fighterB, fight.rounds);
-  const statsA = trendStats(fighterA, modelA, scoresA);
-  const statsB = trendStats(fighterB, modelB, scoresB);
+export function RoundTrendModule({ fight }: RoundTrendModuleProps) {
+  const fighterA = fight.fighters.fighterA;
+  const fighterB = fight.fighters.fighterB;
+  const canShowTrend = hasEnoughRoundData(fighterA) && hasEnoughRoundData(fighterB);
 
   return (
     <section id="section-round-trend" className="module-card scroll-mt-28">
@@ -166,22 +91,19 @@ export function RoundTrendModule({ fight, fighterA, fighterB, normalizedFight }:
         <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           where the fight changes by round.
         </h2>
-        {isSourced ? (
+        {canShowTrend ? (
           <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            Recent round signals are weighted by opponent tier and recency. Thin late samples
-            lower confidence; they do not become a weakness claim.
+            Round trend uses completed fight-detail rounds only. Missing rounds stay out of the chart.
           </p>
         ) : null}
       </div>
-      {isSourced ? (
+      {canShowTrend ? (
         <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
-          <TrendBars fighter={fighterA} scores={scoresA} accent />
-          <TrendBars fighter={fighterB} scores={scoresB} />
+          <TrendBars fighter={fighterA} scores={fighterA.roundModel.roundScores} accent />
+          <TrendBars fighter={fighterB} scores={fighterB.roundModel.roundScores} />
           <div className="lg:col-span-2">
-            <SignalTiles statsA={statsA} statsB={statsB} />
-            {statsA.note ? (
-              <p className="data-text mt-4 text-xs leading-6 text-subtle">{statsA.note}</p>
-            ) : null}
+            <SignalTiles fighterA={fighterA} fighterB={fighterB} />
+            <p className="data-text mt-4 text-xs leading-6 text-subtle">{fighterA.roundModel.interpretation}</p>
           </div>
         </div>
       ) : (

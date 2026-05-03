@@ -1,8 +1,8 @@
-import type { NormalizedFighter } from "@/lib/normalized-event";
+import type { SourcedFighter } from "@/lib/sourced-event";
 import { CountryFlag } from "./CountryFlag";
 
 interface FighterAssetSlotProps {
-  fighter: NormalizedFighter | null | undefined;
+  fighter: SourcedFighter | null | undefined;
   fallbackName: string;
   fallbackCountry?: CountryAsset | null;
   tone?: "accent" | "muted";
@@ -15,13 +15,13 @@ interface CountryAsset {
   colors?: string[];
 }
 
-type FighterWithCountry = NormalizedFighter & {
+type FighterWithCountry = SourcedFighter & {
   country?: CountryAsset | null;
 };
 
 const defaultColors = ["#c85b3f", "#f5efe6", "#403a31"];
 
-function getCountry(fighter: NormalizedFighter | null | undefined): CountryAsset | null {
+function getCountry(fighter: SourcedFighter | null | undefined): CountryAsset | null {
   return (fighter as FighterWithCountry | null | undefined)?.country ?? null;
 }
 

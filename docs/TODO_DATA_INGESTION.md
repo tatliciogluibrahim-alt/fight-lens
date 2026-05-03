@@ -30,7 +30,7 @@ Do not add new public-source scraping beyond the current lightweight utility unt
 ## Phase 3: Validation
 
 - [ ] Add validation scripts that run without network access.
-- [ ] Add one beginner-readable app data loader that prefers normalized data and falls back to prototype data.
+- [x] Add one beginner-readable app data loader that prefers normalized data and uses empty states for missing evidence.
 - [ ] Validate that every fight references two known fighters.
 - [ ] Validate expected numeric ranges.
 - [ ] Validate round arrays and fight result fields.
@@ -71,4 +71,3 @@ Current status: `scripts/ingest/ufcstats.mjs` is the first lightweight fetch/par
 - [ ] Ingest historical UFCStats data for fighters on that card.
 - [ ] Generate matchup pages from normalized data.
 - [ ] Review every module for misleading precision before publishing.
-

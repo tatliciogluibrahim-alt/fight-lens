@@ -34,6 +34,12 @@ Safe defaults:
   --max-requests 12      Stop before too many network requests happen.
   --max-fights 3         Limit detail fetches from an event page.
   --max-fighters 6       Limit fighter profile fetches from an event page.
+  --include-history-fights
+                         Fetch recent completed fight detail pages from fighter profiles.
+  --max-history-fights-per-fighter 5
+                         Recent completed fight links to consider per fighter.
+  --max-history-fight-details 40
+                         Total unique history fight detail pages to fetch.
 `);
 }
 
@@ -45,7 +51,10 @@ function parseArgs(argv) {
     delayMs: DEFAULT_DELAY_MS,
     maxRequests: DEFAULT_MAX_REQUESTS,
     maxFights: 3,
-    maxFighters: 6
+    maxFighters: 6,
+    includeHistoryFights: false,
+    maxHistoryFightsPerFighter: 5,
+    maxHistoryFightDetails: 40
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -80,6 +89,14 @@ function parseArgs(argv) {
       index += 1;
     } else if (arg === "--max-fighters") {
       args.maxFighters = Number(next);
+      index += 1;
+    } else if (arg === "--include-history-fights") {
+      args.includeHistoryFights = true;
+    } else if (arg === "--max-history-fights-per-fighter") {
+      args.maxHistoryFightsPerFighter = Number(next);
+      index += 1;
+    } else if (arg === "--max-history-fight-details") {
+      args.maxHistoryFightDetails = Number(next);
       index += 1;
     } else {
       throw new Error(`Unknown argument: ${arg}`);
@@ -175,7 +192,7 @@ async function fetchHtml(url, options) {
 
   const response = await fetch(normalizedUrl, {
     headers: {
-      "user-agent": "Fight Lens prototype ingestion (local development)",
+      "user-agent": "Fight Lens UFCStats ingestion (local development)",
       accept: "text/html,application/xhtml+xml"
     }
   });
@@ -610,6 +627,8 @@ async function ingestEvent(url, options) {
     }
   }
 
+  const ingestedProfiles = [];
+
   if (options.includeFighters) {
     const uniqueFighters = new Map();
     for (const fight of event.fights) {
@@ -618,8 +637,12 @@ async function ingestEvent(url, options) {
     }
 
     for (const fighter of [...uniqueFighters.values()].slice(0, options.maxFighters)) {
-      await ingestFighter(fighter.url, options);
+      ingestedProfiles.push(await ingestFighter(fighter.url, options));
     }
+  }
+
+  if (options.includeHistoryFights) {
+    await ingestHistoryFightDetails(ingestedProfiles, options);
   }
 }
 
@@ -630,6 +653,7 @@ async function ingestFighter(url, options) {
   await writeJson(fighterPath, fighter);
 
   console.log(`Wrote fighter: ${path.relative(REPO_ROOT, fighterPath)} (${summarizeParse(fighter, "fighter")})`);
+  return fighter;
 }
 
 async function ingestFight(url, options) {
@@ -640,6 +664,31 @@ async function ingestFight(url, options) {
   await writeJson(fightPath, fight);
 
   console.log(`Wrote fight: ${path.relative(REPO_ROOT, fightPath)} (${summarizeParse(fight, "fight")})`);
+  return fight;
+}
+
+function isCompletedHistoryFight(fight) {
+  const result = cleanText(fight?.result).toLowerCase();
+  return Boolean(fight?.fightUrl && result && result !== "next");
+}
+
+async function ingestHistoryFightDetails(profiles, options) {
+  const uniqueFightUrls = new Map();
+
+  for (const profile of profiles) {
+    for (const fight of (profile?.fightHistory ?? [])
+      .filter(isCompletedHistoryFight)
+      .slice(0, options.maxHistoryFightsPerFighter)) {
+      uniqueFightUrls.set(fight.fightId, fight.fightUrl);
+    }
+  }
+
+  const selectedUrls = [...uniqueFightUrls.values()].slice(0, options.maxHistoryFightDetails);
+  console.log(`Fetching ${selectedUrls.length} recent history fight detail pages.`);
+
+  for (const fightUrl of selectedUrls) {
+    await ingestFight(fightUrl, options);
+  }
 }
 
 async function main() {
@@ -668,6 +717,6 @@ async function main() {
 main().catch((error) => {
   console.error("\nIngestion stopped safely.");
   console.error(error.message);
-  console.error("\nThe app was not changed. Mock data remains the UI fallback.");
+  console.error("\nGenerated app data was not normalized. The last valid normalized JSON remains in place.");
   process.exitCode = 1;
 });

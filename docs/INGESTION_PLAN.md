@@ -124,7 +124,7 @@ These fields should not be treated as reliably scrapable in v1:
 
 A first UFCStats-only utility now exists at `scripts/ingest/ufcstats.mjs`.
 
-It is intentionally separate from the app and writes to `data/generated/ufcstats`. The app still reads mock data from `lib/data.ts`, so failed or missing ingestion output will not break the UI.
+It is intentionally separate from the app and writes to `data/generated/ufcstats`. The public UFC 328 UI reads normalized JSON from `data/normalized`, and missing evidence renders as empty states instead of filler data.
 
 Run instructions live in `scripts/ingest/README.md`.
 

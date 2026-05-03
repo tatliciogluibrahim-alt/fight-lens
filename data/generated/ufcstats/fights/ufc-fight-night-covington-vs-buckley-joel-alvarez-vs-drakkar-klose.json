@@ -1,0 +1,404 @@
+{
+  "id": "b0be38110c2d8b84",
+  "url": "http://www.ufcstats.com/fight-details/b0be38110c2d8b84",
+  "event": {
+    "id": "72c9c2eadfc3277e",
+    "name": "UFC Fight Night: Covington vs. Buckley",
+    "url": "http://www.ufcstats.com/event-details/72c9c2eadfc3277e"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "58bbef3770bb2dfc",
+      "name": "Joel Alvarez",
+      "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc",
+      "nickname": "El Fenomeno",
+      "result": "W"
+    },
+    {
+      "id": "7cbf7c78d3b34218",
+      "name": "Drakkar Klose",
+      "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:48",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "58bbef3770bb2dfc",
+        "name": "Joel Alvarez",
+        "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+      },
+      {
+        "id": "7cbf7c78d3b34218",
+        "name": "Drakkar Klose",
+        "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "58bbef3770bb2dfc",
+          "name": "Joel Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 24,
+          "raw": "20 of 24"
+        },
+        "significantStrikePercent": 83,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 44,
+          "raw": "39 of 44"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "7cbf7c78d3b34218",
+          "name": "Drakkar Klose",
+          "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 23,
+          "raw": "16 of 23"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:08",
+        "controlSeconds": 68
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "58bbef3770bb2dfc",
+          "name": "Joel Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+        },
+        {
+          "id": "7cbf7c78d3b34218",
+          "name": "Drakkar Klose",
+          "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "58bbef3770bb2dfc",
+            "name": "Joel Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 24,
+            "raw": "20 of 24"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 44,
+            "raw": "39 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "7cbf7c78d3b34218",
+            "name": "Drakkar Klose",
+            "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 23,
+            "raw": "16 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:08",
+          "controlSeconds": 68
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "58bbef3770bb2dfc",
+        "name": "Joel Alvarez",
+        "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+      },
+      {
+        "id": "7cbf7c78d3b34218",
+        "name": "Drakkar Klose",
+        "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "58bbef3770bb2dfc",
+          "name": "Joel Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 24,
+          "raw": "20 of 24"
+        },
+        "significantStrikePercent": 83,
+        "head": {
+          "landed": 15,
+          "attempted": 19,
+          "raw": "15 of 19"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7cbf7c78d3b34218",
+          "name": "Drakkar Klose",
+          "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "58bbef3770bb2dfc",
+          "name": "Joel Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+        },
+        {
+          "id": "7cbf7c78d3b34218",
+          "name": "Drakkar Klose",
+          "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "58bbef3770bb2dfc",
+            "name": "Joel Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 24,
+            "raw": "20 of 24"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 16,
+            "raw": "12 of 16"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7cbf7c78d3b34218",
+            "name": "Drakkar Klose",
+            "url": "http://www.ufcstats.com/fighter-details/7cbf7c78d3b34218"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b0be38110c2d8b84",
+    "fetchedAt": "2026-05-03T14:13:55.976Z"
+  }
+}

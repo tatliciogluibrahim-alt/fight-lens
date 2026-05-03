@@ -1,0 +1,764 @@
+{
+  "id": "5538d15c4eeac3b3",
+  "url": "http://www.ufcstats.com/fight-details/5538d15c4eeac3b3",
+  "event": {
+    "id": "754968e325d6f60d",
+    "name": "UFC Fight Night: Walker vs. Zhang",
+    "url": "http://www.ufcstats.com/event-details/754968e325d6f60d"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f14cf73e51b29254",
+      "name": "Sergei Pavlovich",
+      "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "fc08099550072fe4",
+      "name": "Waldo Cortes Acosta",
+      "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4",
+      "nickname": "Salsa Boy",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f14cf73e51b29254",
+        "name": "Sergei Pavlovich",
+        "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+      },
+      {
+        "id": "fc08099550072fe4",
+        "name": "Waldo Cortes Acosta",
+        "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 133,
+          "raw": "61 of 133"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 63,
+          "attempted": 136,
+          "raw": "63 of 136"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      },
+      {
+        "fighter": {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 117,
+          "raw": "45 of 117"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 117,
+          "raw": "45 of 117"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 43,
+            "raw": "22 of 43"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 43,
+            "raw": "22 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 62,
+            "raw": "30 of 62"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 62,
+            "raw": "30 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f14cf73e51b29254",
+        "name": "Sergei Pavlovich",
+        "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+      },
+      {
+        "id": "fc08099550072fe4",
+        "name": "Waldo Cortes Acosta",
+        "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 133,
+          "raw": "61 of 133"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 35,
+          "attempted": 104,
+          "raw": "35 of 104"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 14,
+          "raw": "12 of 14"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 15,
+          "raw": "14 of 15"
+        },
+        "distance": {
+          "landed": 60,
+          "attempted": 131,
+          "raw": "60 of 131"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 117,
+          "raw": "45 of 117"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 27,
+          "attempted": 88,
+          "raw": "27 of 88"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 19,
+          "raw": "14 of 19"
+        },
+        "distance": {
+          "landed": 45,
+          "attempted": 114,
+          "raw": "45 of 114"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 43,
+            "raw": "22 of 43"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 13,
+            "attempted": 32,
+            "raw": "13 of 32"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 43,
+            "raw": "22 of 43"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 15,
+            "attempted": 32,
+            "raw": "15 of 32"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 62,
+            "raw": "30 of 62"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 16,
+            "attempted": 48,
+            "raw": "16 of 48"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 62,
+            "raw": "30 of 62"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 7,
+            "attempted": 36,
+            "raw": "7 of 36"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5538d15c4eeac3b3",
+    "fetchedAt": "2026-05-03T14:13:40.262Z"
+  }
+}

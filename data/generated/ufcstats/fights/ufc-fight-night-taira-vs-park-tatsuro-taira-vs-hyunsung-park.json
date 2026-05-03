@@ -1,0 +1,584 @@
+{
+  "id": "282c8c6c1ed82bfb",
+  "url": "http://www.ufcstats.com/fight-details/282c8c6c1ed82bfb",
+  "event": {
+    "id": "f2c934689243fe4e",
+    "name": "UFC Fight Night: Taira vs. Park",
+    "url": "http://www.ufcstats.com/event-details/f2c934689243fe4e"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4461d7e47375a895",
+      "name": "Tatsuro Taira",
+      "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895",
+      "nickname": "The Best",
+      "result": "W"
+    },
+    {
+      "id": "b671bdf981ad527d",
+      "name": "HyunSung Park",
+      "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d",
+      "nickname": "Peace of Mind",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:06",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4461d7e47375a895",
+        "name": "Tatsuro Taira",
+        "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+      },
+      {
+        "id": "b671bdf981ad527d",
+        "name": "HyunSung Park",
+        "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 20,
+          "raw": "13 of 20"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "takedownPercent": 80,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "4:41",
+        "controlSeconds": 281
+      },
+      {
+        "fighter": {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 21,
+          "raw": "15 of 21"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:56",
+          "controlSeconds": 236
+        },
+        {
+          "fighter": {
+            "id": "b671bdf981ad527d",
+            "name": "HyunSung Park",
+            "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "b671bdf981ad527d",
+            "name": "HyunSung Park",
+            "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4461d7e47375a895",
+        "name": "Tatsuro Taira",
+        "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+      },
+      {
+        "id": "b671bdf981ad527d",
+        "name": "HyunSung Park",
+        "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b671bdf981ad527d",
+            "name": "HyunSung Park",
+            "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        {
+          "id": "b671bdf981ad527d",
+          "name": "HyunSung Park",
+          "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b671bdf981ad527d",
+            "name": "HyunSung Park",
+            "url": "http://www.ufcstats.com/fighter-details/b671bdf981ad527d"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/282c8c6c1ed82bfb",
+    "fetchedAt": "2026-05-03T14:13:34.769Z"
+  }
+}

@@ -1,0 +1,958 @@
+{
+  "eventId": "ufc-328",
+  "eventName": "UFC 328: Chimaev vs. Strickland",
+  "generatedAt": "2026-05-03T20:01:20.206Z",
+  "normalizedGeneratedAt": "2026-05-03T14:16:26.617Z",
+  "summary": {
+    "fights": 13,
+    "fighters": 26,
+    "matchedFighters": 26,
+    "fightersWithHistory": 26,
+    "fightersWithRoundStats": 19
+  },
+  "fighterSlugMap": {
+    "khamzat-chimaev": "Khamzat Chimaev",
+    "sean-strickland": "Sean Strickland",
+    "joshua-van": "Joshua Van",
+    "tatsuro-taira": "Tatsuro Taira",
+    "alexander-volkov": "Alexander Volkov",
+    "waldo-cortes-acosta": "Waldo Cortes Acosta",
+    "sean-brady": "Sean Brady",
+    "joaquin-buckley": "Joaquin Buckley",
+    "king-green": "King Green",
+    "jeremy-stephens": "Jeremy Stephens",
+    "ateba-gautier": "Ateba Gautier",
+    "ozzy-diaz": "Ozzy Diaz",
+    "joel-alvarez": "Joel Alvarez",
+    "yaroslav-amosov": "Yaroslav Amosov",
+    "grant-dawson": "Grant Dawson",
+    "mateusz-rebecki": "Mateusz Rebecki",
+    "jim-miller": "Jim Miller",
+    "jared-gordon": "Jared Gordon",
+    "roman-kopylov": "Roman Kopylov",
+    "marco-tulio": "Marco Tulio",
+    "pat-sabatini": "Pat Sabatini",
+    "william-gomis": "William Gomis",
+    "baisangur-susurkaev": "Baisangur Susurkaev",
+    "djorden-santos": "Djorden Santos",
+    "clayton-carpenter": "Clayton Carpenter",
+    "jose-ochoa": "Jose Ochoa"
+  },
+  "fightCardMap": {
+    "chimaev-strickland": {
+      "fighterA": "Khamzat Chimaev",
+      "fighterB": "Sean Strickland",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/70f1621080b3435c",
+      "cardPlacement": "Main Card"
+    },
+    "van-taira": {
+      "fighterA": "Joshua Van",
+      "fighterB": "Tatsuro Taira",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/c85b530861145935",
+      "cardPlacement": "Main Card"
+    },
+    "volkov-cortes": {
+      "fighterA": "Alexander Volkov",
+      "fighterB": "Waldo Cortes Acosta",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/22ba4f1b0aafbf82",
+      "cardPlacement": "Main Card"
+    },
+    "brady-buckley": {
+      "fighterA": "Sean Brady",
+      "fighterB": "Joaquin Buckley",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/845b8653f9cf839c",
+      "cardPlacement": "Main Card"
+    },
+    "green-stephens": {
+      "fighterA": "King Green",
+      "fighterB": "Jeremy Stephens",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/1158a27a1a04b971",
+      "cardPlacement": "Main Card"
+    },
+    "gautier-diaz": {
+      "fighterA": "Ateba Gautier",
+      "fighterB": "Ozzy Diaz",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/770c5302e32916ea",
+      "cardPlacement": "Prelims"
+    },
+    "alvarez-amosov": {
+      "fighterA": "Joel Alvarez",
+      "fighterB": "Yaroslav Amosov",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/f88dc6e0c29cff1d",
+      "cardPlacement": "Prelims"
+    },
+    "dawson-rebecki": {
+      "fighterA": "Grant Dawson",
+      "fighterB": "Mateusz Rebecki",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/ffcb47e17eebe6a6",
+      "cardPlacement": "Prelims"
+    },
+    "miller-gordon": {
+      "fighterA": "Jim Miller",
+      "fighterB": "Jared Gordon",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/e50857173607d631",
+      "cardPlacement": "Prelims"
+    },
+    "kopylov-tulio": {
+      "fighterA": "Roman Kopylov",
+      "fighterB": "Marco Tulio",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/9d35723a53749931",
+      "cardPlacement": "Early Prelims"
+    },
+    "sabatini-gomis": {
+      "fighterA": "Pat Sabatini",
+      "fighterB": "William Gomis",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/303018d7459323b4",
+      "cardPlacement": "Early Prelims"
+    },
+    "susurkaev-santos": {
+      "fighterA": "Baisangur Susurkaev",
+      "fighterB": "Djorden Santos",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/1f5d0b106385b2ac",
+      "cardPlacement": "Early Prelims"
+    },
+    "carpenter-ochoa": {
+      "fighterA": "Clayton Carpenter",
+      "fighterB": "Jose Ochoa",
+      "ufcstatsFightUrl": "http://www.ufcstats.com/fight-details/e92d89cb2d69235e",
+      "cardPlacement": "Early Prelims"
+    }
+  },
+  "missingFighterReport": [],
+  "fighters": [
+    {
+      "id": "khamzat-chimaev",
+      "ufcstatsId": "767755fd74662dbf",
+      "name": "Khamzat Chimaev",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 13,
+      "lateRoundSampleCount": 5,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+    },
+    {
+      "id": "sean-strickland",
+      "ufcstatsId": "0d8011111be000b2",
+      "name": "Sean Strickland",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 23,
+      "lateRoundSampleCount": 13,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+    },
+    {
+      "id": "joshua-van",
+      "ufcstatsId": "17e97649403ba428",
+      "name": "Joshua Van",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 13,
+      "lateRoundSampleCount": 4,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/17e97649403ba428"
+    },
+    {
+      "id": "tatsuro-taira",
+      "ufcstatsId": "4461d7e47375a895",
+      "name": "Tatsuro Taira",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 13,
+      "lateRoundSampleCount": 3,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+    },
+    {
+      "id": "alexander-volkov",
+      "ufcstatsId": "279566840aa55bf2",
+      "name": "Alexander Volkov",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 12,
+      "lateRoundSampleCount": 3,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+    },
+    {
+      "id": "waldo-cortes-acosta",
+      "ufcstatsId": "fc08099550072fe4",
+      "name": "Waldo Cortes Acosta",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 10,
+      "lateRoundSampleCount": 2,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+    },
+    {
+      "id": "sean-brady",
+      "ufcstatsId": "45f7cb591c3ab00b",
+      "name": "Sean Brady",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 15,
+      "lateRoundSampleCount": 6,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+    },
+    {
+      "id": "joaquin-buckley",
+      "ufcstatsId": "b9437600497350f3",
+      "name": "Joaquin Buckley",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 16,
+      "lateRoundSampleCount": 6,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+    },
+    {
+      "id": "king-green",
+      "ufcstatsId": "887961364be5ceb3",
+      "name": "King Green",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 10,
+      "lateRoundSampleCount": 2,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/887961364be5ceb3"
+    },
+    {
+      "id": "jeremy-stephens",
+      "ufcstatsId": "18968f97ad34f15c",
+      "name": "Jeremy Stephens",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 10,
+      "lateRoundSampleCount": 2,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+    },
+    {
+      "id": "ateba-gautier",
+      "ufcstatsId": "2f815ed5f8278ba6",
+      "name": "Ateba Gautier",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 8,
+      "lateRoundSampleCount": 1,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/2f815ed5f8278ba6"
+    },
+    {
+      "id": "ozzy-diaz",
+      "ufcstatsId": "6967153c7edb4d87",
+      "name": "Ozzy Diaz",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 3,
+      "roundSampleCount": 6,
+      "lateRoundSampleCount": 1,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/6967153c7edb4d87"
+    },
+    {
+      "id": "joel-alvarez",
+      "ufcstatsId": "58bbef3770bb2dfc",
+      "name": "Joel Alvarez",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 11,
+      "lateRoundSampleCount": 2,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+    },
+    {
+      "id": "yaroslav-amosov",
+      "ufcstatsId": "f139d6836efd43dd",
+      "name": "Yaroslav Amosov",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 1,
+      "roundSampleCount": 1,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/f139d6836efd43dd"
+    },
+    {
+      "id": "grant-dawson",
+      "ufcstatsId": "99bd51917728c25d",
+      "name": "Grant Dawson",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 10,
+      "lateRoundSampleCount": 2,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/99bd51917728c25d"
+    },
+    {
+      "id": "mateusz-rebecki",
+      "ufcstatsId": "849c5d9979df5357",
+      "name": "Mateusz Rebecki",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 13,
+      "lateRoundSampleCount": 4,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/849c5d9979df5357"
+    },
+    {
+      "id": "jim-miller",
+      "ufcstatsId": "d1941565abf50b16",
+      "name": "Jim Miller",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 11,
+      "lateRoundSampleCount": 3,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+    },
+    {
+      "id": "jared-gordon",
+      "ufcstatsId": "7026eca45f65377b",
+      "name": "Jared Gordon",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 5,
+      "roundSampleCount": 4,
+      "lateRoundSampleCount": 1,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+    },
+    {
+      "id": "roman-kopylov",
+      "ufcstatsId": "9d83f6da776ff7d6",
+      "name": "Roman Kopylov",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 5,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/9d83f6da776ff7d6"
+    },
+    {
+      "id": "marco-tulio",
+      "ufcstatsId": "9384e71bca6c409d",
+      "name": "Marco Tulio",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 5,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+    },
+    {
+      "id": "pat-sabatini",
+      "ufcstatsId": "b8bbdeff718dbb7d",
+      "name": "Pat Sabatini",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 5,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+    },
+    {
+      "id": "william-gomis",
+      "ufcstatsId": "e1d40e8782d80bc2",
+      "name": "William Gomis",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 5,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+    },
+    {
+      "id": "baisangur-susurkaev",
+      "ufcstatsId": "d1feea7a4bdcd503",
+      "name": "Baisangur Susurkaev",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 3,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/d1feea7a4bdcd503"
+    },
+    {
+      "id": "djorden-santos",
+      "ufcstatsId": "312f7d7b2b2f7de4",
+      "name": "Djorden Santos",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": true,
+      "hasRoundStats": true,
+      "lastFiveCount": 3,
+      "roundSampleCount": 3,
+      "lateRoundSampleCount": 1,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/312f7d7b2b2f7de4"
+    },
+    {
+      "id": "clayton-carpenter",
+      "ufcstatsId": "b62d5280966b2460",
+      "name": "Clayton Carpenter",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 5,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+    },
+    {
+      "id": "jose-ochoa",
+      "ufcstatsId": "88be62d6c1e6dadb",
+      "name": "Jose Ochoa",
+      "matchedUfcStats": true,
+      "hasFightHistory": true,
+      "hasFightTotals": false,
+      "hasRoundStats": false,
+      "lastFiveCount": 3,
+      "roundSampleCount": 0,
+      "lateRoundSampleCount": 0,
+      "sourceUrl": "http://www.ufcstats.com/fighter-details/88be62d6c1e6dadb"
+    }
+  ],
+  "fights": [
+    {
+      "id": "chimaev-strickland",
+      "label": "Khamzat Chimaev vs. Sean Strickland",
+      "modules": {
+        "fightShape": "display",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "display",
+        "tacticalRoutes": "display",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "khamzat-chimaev",
+        "ufcstatsId": "767755fd74662dbf",
+        "name": "Khamzat Chimaev",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 5,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+      },
+      "fighterB": {
+        "id": "sean-strickland",
+        "ufcstatsId": "0d8011111be000b2",
+        "name": "Sean Strickland",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 23,
+        "lateRoundSampleCount": 13,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+      }
+    },
+    {
+      "id": "van-taira",
+      "label": "Joshua Van vs. Tatsuro Taira",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "display",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "joshua-van",
+        "ufcstatsId": "17e97649403ba428",
+        "name": "Joshua Van",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 4,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/17e97649403ba428"
+      },
+      "fighterB": {
+        "id": "tatsuro-taira",
+        "ufcstatsId": "4461d7e47375a895",
+        "name": "Tatsuro Taira",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 3,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+      }
+    },
+    {
+      "id": "volkov-cortes",
+      "label": "Alexander Volkov vs. Waldo Cortes Acosta",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "alexander-volkov",
+        "ufcstatsId": "279566840aa55bf2",
+        "name": "Alexander Volkov",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 12,
+        "lateRoundSampleCount": 3,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+      },
+      "fighterB": {
+        "id": "waldo-cortes-acosta",
+        "ufcstatsId": "fc08099550072fe4",
+        "name": "Waldo Cortes Acosta",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+      }
+    },
+    {
+      "id": "brady-buckley",
+      "label": "Sean Brady vs. Joaquin Buckley",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "display",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "sean-brady",
+        "ufcstatsId": "45f7cb591c3ab00b",
+        "name": "Sean Brady",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 15,
+        "lateRoundSampleCount": 6,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+      },
+      "fighterB": {
+        "id": "joaquin-buckley",
+        "ufcstatsId": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 16,
+        "lateRoundSampleCount": 6,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      }
+    },
+    {
+      "id": "green-stephens",
+      "label": "King Green vs. Jeremy Stephens",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "king-green",
+        "ufcstatsId": "887961364be5ceb3",
+        "name": "King Green",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/887961364be5ceb3"
+      },
+      "fighterB": {
+        "id": "jeremy-stephens",
+        "ufcstatsId": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      }
+    },
+    {
+      "id": "gautier-diaz",
+      "label": "Ateba Gautier vs. Ozzy Diaz",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "ateba-gautier",
+        "ufcstatsId": "2f815ed5f8278ba6",
+        "name": "Ateba Gautier",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 8,
+        "lateRoundSampleCount": 1,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/2f815ed5f8278ba6"
+      },
+      "fighterB": {
+        "id": "ozzy-diaz",
+        "ufcstatsId": "6967153c7edb4d87",
+        "name": "Ozzy Diaz",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 3,
+        "roundSampleCount": 6,
+        "lateRoundSampleCount": 1,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/6967153c7edb4d87"
+      }
+    },
+    {
+      "id": "alvarez-amosov",
+      "label": "Joel Alvarez vs. Yaroslav Amosov",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "joel-alvarez",
+        "ufcstatsId": "58bbef3770bb2dfc",
+        "name": "Joel Alvarez",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 11,
+        "lateRoundSampleCount": 2,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/58bbef3770bb2dfc"
+      },
+      "fighterB": {
+        "id": "yaroslav-amosov",
+        "ufcstatsId": "f139d6836efd43dd",
+        "name": "Yaroslav Amosov",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 1,
+        "roundSampleCount": 1,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/f139d6836efd43dd"
+      }
+    },
+    {
+      "id": "dawson-rebecki",
+      "label": "Grant Dawson vs. Mateusz Rebecki",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "grant-dawson",
+        "ufcstatsId": "99bd51917728c25d",
+        "name": "Grant Dawson",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/99bd51917728c25d"
+      },
+      "fighterB": {
+        "id": "mateusz-rebecki",
+        "ufcstatsId": "849c5d9979df5357",
+        "name": "Mateusz Rebecki",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 4,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/849c5d9979df5357"
+      }
+    },
+    {
+      "id": "miller-gordon",
+      "label": "Jim Miller vs. Jared Gordon",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "jim-miller",
+        "ufcstatsId": "d1941565abf50b16",
+        "name": "Jim Miller",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 11,
+        "lateRoundSampleCount": 3,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+      },
+      "fighterB": {
+        "id": "jared-gordon",
+        "ufcstatsId": "7026eca45f65377b",
+        "name": "Jared Gordon",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 5,
+        "roundSampleCount": 4,
+        "lateRoundSampleCount": 1,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+      }
+    },
+    {
+      "id": "kopylov-tulio",
+      "label": "Roman Kopylov vs. Marco Tulio",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "roman-kopylov",
+        "ufcstatsId": "9d83f6da776ff7d6",
+        "name": "Roman Kopylov",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/9d83f6da776ff7d6"
+      },
+      "fighterB": {
+        "id": "marco-tulio",
+        "ufcstatsId": "9384e71bca6c409d",
+        "name": "Marco Tulio",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+      }
+    },
+    {
+      "id": "sabatini-gomis",
+      "label": "Pat Sabatini vs. William Gomis",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "pat-sabatini",
+        "ufcstatsId": "b8bbdeff718dbb7d",
+        "name": "Pat Sabatini",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+      },
+      "fighterB": {
+        "id": "william-gomis",
+        "ufcstatsId": "e1d40e8782d80bc2",
+        "name": "William Gomis",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+      }
+    },
+    {
+      "id": "susurkaev-santos",
+      "label": "Baisangur Susurkaev vs. Djorden Santos",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "baisangur-susurkaev",
+        "ufcstatsId": "d1feea7a4bdcd503",
+        "name": "Baisangur Susurkaev",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 3,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/d1feea7a4bdcd503"
+      },
+      "fighterB": {
+        "id": "djorden-santos",
+        "ufcstatsId": "312f7d7b2b2f7de4",
+        "name": "Djorden Santos",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": true,
+        "hasRoundStats": true,
+        "lastFiveCount": 3,
+        "roundSampleCount": 3,
+        "lateRoundSampleCount": 1,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/312f7d7b2b2f7de4"
+      }
+    },
+    {
+      "id": "carpenter-ochoa",
+      "label": "Clayton Carpenter vs. Jose Ochoa",
+      "modules": {
+        "fightShape": "empty",
+        "styleClash": "display",
+        "formResume": "display",
+        "roundTrend": "empty",
+        "tacticalRoutes": "empty",
+        "resumeHeat": "empty"
+      },
+      "fighterA": {
+        "id": "clayton-carpenter",
+        "ufcstatsId": "b62d5280966b2460",
+        "name": "Clayton Carpenter",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+      },
+      "fighterB": {
+        "id": "jose-ochoa",
+        "ufcstatsId": "88be62d6c1e6dadb",
+        "name": "Jose Ochoa",
+        "matchedUfcStats": true,
+        "hasFightHistory": true,
+        "hasFightTotals": false,
+        "hasRoundStats": false,
+        "lastFiveCount": 3,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0,
+        "sourceUrl": "http://www.ufcstats.com/fighter-details/88be62d6c1e6dadb"
+      }
+    }
+  ]
+}

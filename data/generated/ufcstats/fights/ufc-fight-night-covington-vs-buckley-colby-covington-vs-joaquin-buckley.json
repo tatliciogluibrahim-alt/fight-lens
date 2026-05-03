@@ -1,0 +1,764 @@
+{
+  "id": "00c6a2ef07ca51da",
+  "url": "http://www.ufcstats.com/fight-details/00c6a2ef07ca51da",
+  "event": {
+    "id": "72c9c2eadfc3277e",
+    "name": "UFC Fight Night: Covington vs. Buckley",
+    "url": "http://www.ufcstats.com/event-details/72c9c2eadfc3277e"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "dc9572dd6ec74859",
+      "name": "Colby Covington",
+      "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859",
+      "nickname": "Chaos",
+      "result": "L"
+    },
+    {
+      "id": "b9437600497350f3",
+      "name": "Joaquin Buckley",
+      "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3",
+      "nickname": "New Mansa",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "TKO - Doctor's Stoppage",
+    "round": 3,
+    "time": "4:42",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "dc9572dd6ec74859",
+        "name": "Colby Covington",
+        "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+      },
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 124,
+          "raw": "37 of 124"
+        },
+        "significantStrikePercent": 29,
+        "totalStrikes": {
+          "landed": 71,
+          "attempted": 161,
+          "raw": "71 of 161"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "takedownPercent": 12,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:40",
+        "controlSeconds": 220
+      },
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 151,
+          "raw": "75 of 151"
+        },
+        "significantStrikePercent": 49,
+        "totalStrikes": {
+          "landed": 81,
+          "attempted": 160,
+          "raw": "81 of 160"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:18",
+        "controlSeconds": 78
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "significantStrikePercent": 19,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:22",
+          "controlSeconds": 22
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 55,
+            "raw": "23 of 55"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 55,
+            "raw": "23 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 56,
+            "raw": "25 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:28",
+          "controlSeconds": 88
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 55,
+            "raw": "28 of 55"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 56,
+            "raw": "29 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 54,
+            "raw": "36 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:50",
+          "controlSeconds": 110
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 41,
+            "raw": "24 of 41"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 49,
+            "raw": "29 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:08",
+          "controlSeconds": 68
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "dc9572dd6ec74859",
+        "name": "Colby Covington",
+        "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+      },
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 124,
+          "raw": "37 of 124"
+        },
+        "significantStrikePercent": 29,
+        "head": {
+          "landed": 26,
+          "attempted": 108,
+          "raw": "26 of 108"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 120,
+          "raw": "33 of 120"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 151,
+          "raw": "75 of 151"
+        },
+        "significantStrikePercent": 49,
+        "head": {
+          "landed": 59,
+          "attempted": 131,
+          "raw": "59 of 131"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 65,
+          "attempted": 135,
+          "raw": "65 of 135"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "significantStrikePercent": 19,
+          "head": {
+            "landed": 5,
+            "attempted": 42,
+            "raw": "5 of 42"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 55,
+            "raw": "23 of 55"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 18,
+            "attempted": 47,
+            "raw": "18 of 47"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 13,
+            "attempted": 43,
+            "raw": "13 of 43"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 48,
+            "raw": "17 of 48"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 55,
+            "raw": "28 of 55"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 50,
+            "raw": "24 of 50"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "dc9572dd6ec74859",
+          "name": "Colby Covington",
+          "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "dc9572dd6ec74859",
+            "name": "Colby Covington",
+            "url": "http://www.ufcstats.com/fighter-details/dc9572dd6ec74859"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 21,
+            "raw": "6 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 41,
+            "raw": "24 of 41"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 21,
+            "attempted": 38,
+            "raw": "21 of 38"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 36,
+            "raw": "21 of 36"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/00c6a2ef07ca51da",
+    "fetchedAt": "2026-05-03T14:13:45.334Z"
+  }
+}

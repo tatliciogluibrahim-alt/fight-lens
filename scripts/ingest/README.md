@@ -1,8 +1,8 @@
 # UFCStats Ingestion Utility
 
-This folder contains the first lightweight ingestion script for Fight Lens.
+This folder contains the UFCStats ingestion scripts for Fight Lens.
 
-It is intentionally separate from the Next.js app. Running it writes JSON files under `data/generated/ufcstats`, but the UI still uses the current mock data fallback in `lib/data.ts`.
+It is intentionally separate from the Next.js app. Running it writes JSON files under `data/generated/ufcstats`; the UI reads app-ready normalized JSON from `data/normalized`.
 
 ## What It Can Fetch
 
@@ -29,6 +29,12 @@ Event page with a tiny detail sample:
 npm run ingest:ufcstats -- --event-url http://www.ufcstats.com/event-details/9eedac48b497de5a --include-fights --include-fighters --max-fights 1 --max-fighters 2
 ```
 
+UFC 328 card refresh:
+
+```txt
+npm run ingest:ufcstats -- --event-url http://www.ufcstats.com/event-details/9eedac48b497de5a --include-fights --include-fighters --include-history-fights --max-fights 13 --max-fighters 26 --max-history-fights-per-fighter 5 --max-history-fight-details 80 --max-requests 150 --delay-ms 450
+```
+
 Fighter profile:
 
 ```txt
@@ -49,6 +55,12 @@ npm run ingest:ufcstats -- --fight-url http://www.ufcstats.com/fight-details/394
 --max-requests 12      Stop before too many network requests happen.
 --max-fights 3         Limit detail fetches from an event page.
 --max-fighters 6       Limit fighter profile fetches from an event page.
+--include-history-fights
+                       Fetch recent completed fight details from fighter profiles.
+--max-history-fights-per-fighter 5
+                       Recent completed fight links to consider per fighter.
+--max-history-fight-details 40
+                       Total unique history fight detail pages to fetch.
 ```
 
 ## Output
@@ -84,6 +96,20 @@ data/normalized/events/ufc-328.json
 
 The normalizer adds a readable model layer. For example, round-one wins become an early-threat signal, but a limited late-round sample becomes lower confidence, not a claim that the fighter is weak late.
 
+Then generate the readable report and data index:
+
+```txt
+npm run data:report
+```
+
+That writes:
+
+```txt
+data/generated/ufcstats/reports/ufc-328-data-report.md
+data/generated/ufcstats/reports/ufc-328-data-report.json
+data/generated/ufcstats/index/ufc-328.index.json
+```
+
 ## Fighter Images
 
 The UI now has fighter image slots, but the ingestion utility does not scrape photos. Add only licensed or user-provided image URLs in manual override files.
@@ -91,7 +117,6 @@ The UI now has fighter image slots, but the ingestion utility does not scrape ph
 ## Important Notes
 
 - Do not scrape from the app runtime.
-- Do not remove mock data yet.
 - Do not ingest odds or betting fields.
 - Do not scrape or copy fighter photos into the repo unless you have rights to use them.
 - Upcoming UFCStats fight pages may only provide a matchup preview, not round-level stats.

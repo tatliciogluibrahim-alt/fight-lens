@@ -1,0 +1,584 @@
+{
+  "id": "de12349f334c964e",
+  "url": "http://www.ufcstats.com/fight-details/de12349f334c964e",
+  "event": {
+    "id": "dba230fe33011201",
+    "name": "UFC Fight Night: Blanchfield vs. Fiorot",
+    "url": "http://www.ufcstats.com/event-details/dba230fe33011201"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6d4b63c767106d3a",
+      "name": "Vicente Luque",
+      "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a",
+      "nickname": "The Silent Assassin",
+      "result": "L"
+    },
+    {
+      "id": "b9437600497350f3",
+      "name": "Joaquin Buckley",
+      "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3",
+      "nickname": "New Mansa",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:17",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 63,
+          "raw": "21 of 63"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 65,
+          "raw": "22 of 65"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      },
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 131,
+          "raw": "55 of 131"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 63,
+          "attempted": 142,
+          "raw": "63 of 142"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:49",
+        "controlSeconds": 49
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 42,
+            "raw": "15 of 42"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 42,
+            "raw": "15 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 21,
+            "raw": "6 of 21"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 88,
+            "raw": "40 of 88"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 48,
+            "attempted": 99,
+            "raw": "48 of 99"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:49",
+          "controlSeconds": 49
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 63,
+          "raw": "21 of 63"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 7,
+          "attempted": 45,
+          "raw": "7 of 45"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 63,
+          "raw": "21 of 63"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 131,
+          "raw": "55 of 131"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 42,
+          "attempted": 112,
+          "raw": "42 of 112"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 75,
+          "raw": "21 of 75"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 34,
+          "attempted": 56,
+          "raw": "34 of 56"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 42,
+            "raw": "15 of 42"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 4,
+            "attempted": 27,
+            "raw": "4 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 42,
+            "raw": "15 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 7,
+            "attempted": 33,
+            "raw": "7 of 33"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 21,
+            "raw": "6 of 21"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 3,
+            "attempted": 18,
+            "raw": "3 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 21,
+            "raw": "6 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 88,
+            "raw": "40 of 88"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 35,
+            "attempted": 79,
+            "raw": "35 of 79"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 32,
+            "raw": "6 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 34,
+            "attempted": 56,
+            "raw": "34 of 56"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/de12349f334c964e",
+    "fetchedAt": "2026-05-03T14:13:46.635Z"
+  }
+}

@@ -1,6 +1,16 @@
 import type { StyleProfile } from "./types";
 
 export type FightShapeMetricKey = keyof StyleProfile;
+export type NullableStyleProfile = Record<FightShapeMetricKey, number | null>;
+export type ExportStyleProfile = Record<Exclude<FightShapeMetricKey, "opponentQuality">, number> &
+  Pick<NullableStyleProfile, "opponentQuality">;
+
+export interface StyleExportFighter {
+  name: string;
+  record?: string | null;
+  ranking?: string | null;
+  styleProfile: ExportStyleProfile;
+}
 
 export interface FightShapeMetricDefinition {
   key: FightShapeMetricKey;
@@ -135,7 +145,7 @@ export const fightShapeExportAxes: FightShapeAxisDefinition[] = [
   }
 ];
 
-export function getFightShapeAxisScore(profile: StyleProfile, axis: FightShapeAxisKey) {
+export function getFightShapeAxisScore(profile: ExportStyleProfile, axis: FightShapeAxisKey) {
   switch (axis) {
     case "striking":
       return Math.round((profile.strikingVolume + profile.strikingDefense) / 2);
@@ -150,4 +160,35 @@ export function getFightShapeAxisScore(profile: StyleProfile, axis: FightShapeAx
     case "output":
       return profile.strikingVolume;
   }
+}
+
+function hasMetric(profile: NullableStyleProfile, key: FightShapeMetricKey): profile is NullableStyleProfile & Record<typeof key, number> {
+  return typeof profile[key] === "number" && Number.isFinite(profile[key]);
+}
+
+export function getNullableFightShapeAxisScore(profile: NullableStyleProfile, axis: FightShapeAxisKey) {
+  switch (axis) {
+    case "striking":
+      return hasMetric(profile, "strikingVolume") && hasMetric(profile, "strikingDefense")
+        ? Math.round((profile.strikingVolume + profile.strikingDefense) / 2)
+        : null;
+    case "wrestling":
+      return hasMetric(profile, "wrestlingOffense") ? profile.wrestlingOffense : null;
+    case "grappling":
+      return hasMetric(profile, "controlThreat") && hasMetric(profile, "submissionThreat")
+        ? Math.round((profile.controlThreat + profile.submissionThreat) / 2)
+        : null;
+    case "cardio":
+      return hasMetric(profile, "cardioConsistency") ? profile.cardioConsistency : null;
+    case "defense":
+      return hasMetric(profile, "strikingDefense") && hasMetric(profile, "takedownDefense")
+        ? Math.round((profile.strikingDefense + profile.takedownDefense) / 2)
+        : null;
+    case "output":
+      return hasMetric(profile, "strikingVolume") ? profile.strikingVolume : null;
+  }
+}
+
+export function hasCompleteExportStyleProfile(profile: NullableStyleProfile): profile is ExportStyleProfile {
+  return fightShapeExportAxes.every((axis) => getNullableFightShapeAxisScore(profile, axis.key) != null);
 }

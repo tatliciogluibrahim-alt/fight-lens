@@ -1,0 +1,584 @@
+{
+  "id": "fbbb9e72900b71f5",
+  "url": "http://www.ufcstats.com/fight-details/fbbb9e72900b71f5",
+  "event": {
+    "id": "bd92cf5da5413d2a",
+    "name": "UFC 323: Dvalishvili vs. Yan 2",
+    "url": "http://www.ufcstats.com/event-details/bd92cf5da5413d2a"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "792be9a24df82ed6",
+      "name": "Brandon Moreno",
+      "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6",
+      "nickname": "The Assassin Baby",
+      "result": "L"
+    },
+    {
+      "id": "4461d7e47375a895",
+      "name": "Tatsuro Taira",
+      "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895",
+      "nickname": "The Best",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:24",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "4461d7e47375a895",
+        "name": "Tatsuro Taira",
+        "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 17,
+          "raw": "9 of 17"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 17,
+          "raw": "9 of 17"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:05",
+        "controlSeconds": 5
+      },
+      {
+        "fighter": {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 48,
+          "raw": "28 of 48"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 65,
+          "raw": "45 of 65"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "4:27",
+        "controlSeconds": 267
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "3:33",
+          "controlSeconds": 213
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 40,
+            "raw": "27 of 40"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:54",
+          "controlSeconds": 54
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "4461d7e47375a895",
+        "name": "Tatsuro Taira",
+        "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 17,
+          "raw": "9 of 17"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 8,
+          "attempted": 14,
+          "raw": "8 of 14"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 15,
+          "raw": "7 of 15"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 48,
+          "raw": "28 of 48"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 23,
+          "attempted": 42,
+          "raw": "23 of 42"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 19,
+          "raw": "7 of 19"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "ground": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4461d7e47375a895",
+            "name": "Tatsuro Taira",
+            "url": "http://www.ufcstats.com/fighter-details/4461d7e47375a895"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 22,
+            "attempted": 35,
+            "raw": "22 of 35"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 23,
+            "raw": "18 of 23"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/fbbb9e72900b71f5",
+    "fetchedAt": "2026-05-03T14:13:34.334Z"
+  }
+}

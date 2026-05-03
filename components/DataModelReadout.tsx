@@ -100,10 +100,9 @@ export function DataModelReadout({ fight }: DataModelReadoutProps) {
             <span className="text-foreground">model note:</span> {fighterA.roundModel.interpretation}
           </p>
           <p className="data-text text-xs leading-6 text-subtle">
-            {fighterA.name}: r1 wins {fighterA.roundModel.roundOneWinCount}/{fighterA.roundModel.winCount} · late samples{" "}
-            {fighterA.roundModel.lateRoundSampleCount}. {fighterB.name}: r1 wins{" "}
-            {fighterB.roundModel.roundOneWinCount}/{fighterB.roundModel.winCount} · late samples{" "}
-            {fighterB.roundModel.lateRoundSampleCount}.
+            {fighterA.name}: round samples {fighterA.roundModel.roundSampleCount} · late samples{" "}
+            {fighterA.roundModel.lateRoundSampleCount}. {fighterB.name}: round samples{" "}
+            {fighterB.roundModel.roundSampleCount} · late samples {fighterB.roundModel.lateRoundSampleCount}.
           </p>
         </div>
       </div>

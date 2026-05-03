@@ -32,7 +32,7 @@ Confirm:
 ## Data QA
 
 Confirm:
-- mock/prototype data is clearly labeled
+- no filler data appears as sourced analysis
 - manual, sourced, and derived values are not presented as certain facts without context
 - missing data does not break the page
 - charts do not invent values when input data is absent

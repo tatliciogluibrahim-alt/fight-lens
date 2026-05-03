@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import type { Fighter } from "@/lib/types";
+import type { StyleExportFighter } from "@/lib/fight-shape";
 
 interface StyleClashSaveButtonProps {
-  fighterA: Fighter;
-  fighterB: Fighter;
+  fighterA: StyleExportFighter;
+  fighterB: StyleExportFighter;
   filename?: string;
 }
 

@@ -1,13 +1,12 @@
-import type { FightPath, Fighter } from "@/lib/types";
+import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
+import type { FightPath } from "@/lib/types";
+import { ModuleEmptyState } from "./ModuleEmptyState";
 
 interface PathsToVictoryProps {
-  fighterA: Fighter;
-  fighterB: Fighter;
-  pathsA: FightPath[];
-  pathsB: FightPath[];
+  fight: SourcedFight;
 }
 
-function PathList({ fighter, paths, accent = false }: { fighter: Fighter; paths: FightPath[]; accent?: boolean }) {
+function PathList({ fighter, paths, accent = false }: { fighter: SourcedFighter; paths: FightPath[]; accent?: boolean }) {
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
       <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
@@ -34,7 +33,13 @@ function PathList({ fighter, paths, accent = false }: { fighter: Fighter; paths:
   );
 }
 
-export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVictoryProps) {
+export function PathsToVictory({ fight }: PathsToVictoryProps) {
+  const fighterA = fight.fighters.fighterA;
+  const fighterB = fight.fighters.fighterB;
+  const pathsA = fight.paths?.fighterA ?? [];
+  const pathsB = fight.paths?.fighterB ?? [];
+  const hasPaths = pathsA.length > 0 || pathsB.length > 0;
+
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
@@ -48,10 +53,20 @@ export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVi
           </p>
         </div>
       </div>
-      <div className="module-body grid gap-4 lg:grid-cols-2">
-        <PathList fighter={fighterA} paths={pathsA} accent />
-        <PathList fighter={fighterB} paths={pathsB} />
-      </div>
+      {hasPaths ? (
+        <div className="module-body grid gap-4 lg:grid-cols-2">
+          <PathList fighter={fighterA} paths={pathsA} accent />
+          <PathList fighter={fighterB} paths={pathsB} />
+        </div>
+      ) : (
+        <div className="module-body">
+          <ModuleEmptyState
+            label="manual routes"
+            title="Tactical routes pending."
+            body="This matchup does not have reviewed route labels yet."
+          />
+        </div>
+      )}
     </section>
   );
 }

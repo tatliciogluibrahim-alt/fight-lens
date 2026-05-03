@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { fightShapeExportAxes, getFightShapeAxisScore } from "@/lib/fight-shape";
-import type { Fighter } from "@/lib/types";
+import type { StyleExportFighter } from "@/lib/fight-shape";
 
 const exportColors = {
   background: "#090908",
@@ -14,13 +14,13 @@ const exportColors = {
 };
 
 interface StyleClashExportCardProps {
-  fighterA: Fighter;
-  fighterB: Fighter;
+  fighterA: StyleExportFighter;
+  fighterB: StyleExportFighter;
   id?: string;
   mode?: "preview" | "source";
 }
 
-function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighterB: Fighter; source: boolean }) {
+function RadarExport({ fighterA, fighterB, source }: { fighterA: StyleExportFighter; fighterB: StyleExportFighter; source: boolean }) {
   const size = 360;
   const center = size / 2;
   const radius = 124;
@@ -31,7 +31,7 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
     return [center + Math.cos(angle) * scaled, center + Math.sin(angle) * scaled];
   };
 
-  const polygon = (fighter: Fighter) =>
+  const polygon = (fighter: StyleExportFighter) =>
     fightShapeExportAxes
       .map((axis, index) => point(index, getFightShapeAxisScore(fighter.styleProfile, axis.key)).join(","))
       .join(" ");
@@ -75,7 +75,7 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
   );
 }
 
-function Legend({ fighterA, fighterB, source }: { fighterA: Fighter; fighterB: Fighter; source: boolean }) {
+function Legend({ fighterA, fighterB, source }: { fighterA: StyleExportFighter; fighterB: StyleExportFighter; source: boolean }) {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: source ? 24 : 12, alignItems: "center" }}>
       <span style={{ display: "inline-flex", alignItems: "center", gap: source ? 12 : 8, color: exportColors.foreground, fontSize: source ? 22 : 12 }}>

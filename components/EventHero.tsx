@@ -1,8 +1,8 @@
 import Link from "next/link";
-import type { Event } from "@/lib/types";
+import type { SourcedEvent } from "@/lib/sourced-event";
 
 interface EventHeroProps {
-  event: Event;
+  event: SourcedEvent;
 }
 
 export function EventHero({ event }: EventHeroProps) {
@@ -11,10 +11,10 @@ export function EventHero({ event }: EventHeroProps) {
       <div className="grid gap-5 lg:grid-cols-[1.45fr_0.75fr]">
         <div className="lens-card p-5 md:p-8">
           <div className="flex flex-wrap items-center gap-3">
-            <p className="mono-label">{event.promotion} / card dashboard</p>
+            <p className="mono-label">{event.event.promotion.toLowerCase()} / card dashboard</p>
           </div>
           <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-6xl">
-            {event.name.toLowerCase()}
+            {event.event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
             A clean card view for matchup shape, style clash, form plus resume context, round trend,
@@ -22,8 +22,8 @@ export function EventHero({ event }: EventHeroProps) {
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[
-              ["date", event.date],
-              ["location", event.location],
+              ["date", event.event.date ?? "date pending"],
+              ["location", event.event.location ?? "location pending"],
               ["bouts", `${event.fights.length}`]
             ].map(([label, value]) => (
               <div key={label} className="rounded-2xl border border-line bg-background/45 p-4">

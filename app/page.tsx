@@ -2,8 +2,10 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
+import { ModuleEmptyState } from "@/components/ModuleEmptyState";
 import { StyleClashExportCard } from "@/components/StyleClashExportCard";
-import { event, getFighter } from "@/lib/data";
+import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import { sourcedEvent } from "@/lib/sourced-event";
 
 const modules = [
   ["01", "fight shape", "the first read: short collision, long minutes, or layered swing points", "fight-shape"],
@@ -14,9 +16,16 @@ const modules = [
 ];
 
 export default function Home() {
-  const mainFight = event.fights[0];
-  const fighterA = getFighter(mainFight.fighterAId);
-  const fighterB = getFighter(mainFight.fighterBId);
+  const mainFight = sourcedEvent.fights[0];
+  const fighterA = mainFight.fighters.fighterA;
+  const fighterB = mainFight.fighters.fighterB;
+  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
+    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
+    : null;
+  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
+    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
+    : null;
+  const canShowPreview = Boolean(exportFighterA && exportFighterB);
 
   return (
     <>
@@ -53,12 +62,23 @@ export default function Home() {
             </div>
 
             <div className="lens-card p-4 md:p-5">
-              <StyleClashExportCard fighterA={fighterA} fighterB={fighterB} />
+              {canShowPreview ? (
+                <StyleClashExportCard
+                  fighterA={exportFighterA!}
+                  fighterB={exportFighterB!}
+                />
+              ) : (
+                <ModuleEmptyState
+                  label="main lens"
+                  title="Style preview pending."
+                  body="This preview needs complete style metrics before it can draw the matchup card."
+                />
+              )}
             </div>
           </div>
         </section>
 
-        <EventHero event={event} />
+        <EventHero event={sourcedEvent} />
 
         <section className="section-shell py-8 md:py-12">
           <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">

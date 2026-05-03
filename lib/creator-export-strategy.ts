@@ -1,6 +1,6 @@
 import type { PublicLensModelOutputKind } from "./types";
 
-export type CreatorExportStatus = "ready" | "prototype" | "planned";
+export type CreatorExportStatus = "ready" | "draft" | "planned";
 export type CreatorExportFormat = "16:9" | "9:16" | "1:1" | "compact" | "roster";
 
 export interface CreatorExportStrategyItem {
@@ -18,11 +18,11 @@ export interface CreatorExportStrategyItem {
 }
 
 export const creatorExportStrategy = {
-  principle: "Creator exports should carry one clear read, one proof layer, and quiet provenance.",
+  principle: "Creator exports should carry one clear read, one proof layer, and a quiet confidence cue.",
   guardrails: [
     "Keep current PNG export functions stable while new formats are added.",
     "Use public matchup, event, or backtest outputs as sources.",
-    "Show prototype, sourced, manual, or derived context without labeling every number.",
+    "Show source context in debug views without labeling every number.",
     "Avoid result calls, hype language, and scoreboard-style framing."
   ],
   items: [
@@ -57,7 +57,7 @@ export const creatorExportStrategy = {
       label: "Fight Shape story",
       format: "9:16",
       sourceOutputKind: "fight-shape",
-      status: "prototype",
+      status: "draft",
       surface: "matchup",
       purpose: "Vertical creator cut for the matchup summary and strongest pressure point."
     },
@@ -68,7 +68,7 @@ export const creatorExportStrategy = {
       sourceOutputKind: "round-trend",
       status: "planned",
       surface: "backtest",
-      purpose: "Small proof card for what changed across rounds after sourced results exist."
+      purpose: "Small proof card for what changed across rounds after completed results exist."
     },
     {
       id: "creator-brief",
@@ -77,7 +77,7 @@ export const creatorExportStrategy = {
       sourceOutputKind: "creator-card-brief",
       status: "planned",
       surface: "matchup",
-      purpose: "Square brief that packages headline, matchup metadata, and provenance."
+      purpose: "Square brief that packages headline, matchup metadata, and confidence context."
     }
   ] satisfies CreatorExportStrategyItem[]
 };

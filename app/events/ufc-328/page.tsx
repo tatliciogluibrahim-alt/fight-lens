@@ -3,16 +3,16 @@ import { CardFilterTabs } from "@/components/CardFilterTabs";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
 import { RosterStyleMap } from "@/components/RosterStyleMap";
-import { event, fighters } from "@/lib/data";
+import { sourcedEvent } from "@/lib/sourced-event";
 
 export default function EventPage() {
   return (
     <>
       <AppHeader />
       <main>
-        <EventHero event={event} />
-        <RosterStyleMap event={event} fighters={fighters} />
-        <CardFilterTabs eventId={event.id} fights={event.fights} fighters={fighters} />
+        <EventHero event={sourcedEvent} />
+        <RosterStyleMap event={sourcedEvent} />
+        <CardFilterTabs eventId={sourcedEvent.event.id} fights={sourcedEvent.fights} />
       </main>
       <DisclaimerFooter />
     </>

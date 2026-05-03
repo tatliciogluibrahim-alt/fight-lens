@@ -11,6 +11,17 @@ const GENERATED_ROOT = path.join(REPO_ROOT, "data/generated/ufcstats");
 const NORMALIZED_ROOT = path.join(REPO_ROOT, "data/normalized/events");
 const BANNED_NORMALIZED_KEYS = ["odds", "bet", "parlay", "lock", "moneyline", "spread"];
 
+const styleMetricKeys = [
+  "strikingVolume",
+  "strikingDefense",
+  "wrestlingOffense",
+  "takedownDefense",
+  "controlThreat",
+  "submissionThreat",
+  "cardioConsistency",
+  "opponentQuality"
+];
+
 function cleanText(value) {
   return String(value ?? "")
     .replace(/\s+/g, " ")
@@ -64,31 +75,66 @@ function clamp(value, min = 0, max = 100) {
   return Math.max(min, Math.min(max, Math.round(value)));
 }
 
+function average(values) {
+  const valid = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+  if (!valid.length) return null;
+  return valid.reduce((sum, value) => sum + value, 0) / valid.length;
+}
+
 function valueFromPreview(preview, label, fighterIndex) {
   const row = preview?.rows?.find((item) => item.label.toLowerCase() === label.toLowerCase());
   if (!row) return null;
   return fighterIndex === 0 ? row.fighterA : row.fighterB;
 }
 
+function hasNumber(value) {
+  return typeof value === "number" && Number.isFinite(value);
+}
+
+function scored(value, sourceFields) {
+  const hasInput = sourceFields.some(hasNumber);
+  return {
+    value: hasInput ? clamp(value) : null,
+    provenance: hasInput ? "derived" : "missing"
+  };
+}
+
 function scoreFromCareerStats(careerStats = {}, opponentQualityScore = null) {
-  const slpm = careerStats.slpm;
-  const sapm = careerStats.sapm;
-  const strDef = careerStats.strikingDefense;
-  const tdAvg = careerStats.takedownAverage;
-  const tdAcc = careerStats.takedownAccuracy;
-  const tdDef = careerStats.takedownDefense;
-  const subAvg = careerStats.submissionAverage;
+  const slpm = careerStats?.slpm;
+  const sapm = careerStats?.sapm;
+  const strDef = careerStats?.strikingDefense;
+  const tdAvg = careerStats?.takedownAverage;
+  const tdAcc = careerStats?.takedownAccuracy;
+  const tdDef = careerStats?.takedownDefense;
+  const subAvg = careerStats?.submissionAverage;
+
+  const strikingVolume = scored((slpm / 7) * 100, [slpm]);
+  const strikingDefense = scored((strDef ?? 0) * 0.7 + Math.max(0, 100 - (sapm ?? 5) * 14) * 0.3, [strDef, sapm]);
+  const wrestlingOffense = scored(Math.min(100, ((tdAvg ?? 0) / 6) * 100) * 0.65 + (tdAcc ?? 0) * 0.35, [tdAvg, tdAcc]);
+  const takedownDefense = scored(tdDef, [tdDef]);
+  const controlThreat = scored(Math.min(100, ((tdAvg ?? 0) / 6) * 100) * 0.72 + Math.min(100, ((subAvg ?? 0) / 2.5) * 100) * 0.28, [tdAvg, subAvg]);
+  const submissionThreat = scored(((subAvg ?? 0) / 2.5) * 100, [subAvg]);
+  const cardioConsistency = scored((100 - Math.min(100, (sapm ?? 5) * 12)) * 0.35 + (strDef ?? 0) * 0.25 + Math.min(100, (slpm ?? 0) * 10) * 0.4, [slpm, sapm, strDef]);
+  const opponentQuality = {
+    value: clamp(opponentQualityScore),
+    provenance: opponentQualityScore != null ? "manual" : "missing"
+  };
+
+  const metrics = {
+    strikingVolume,
+    strikingDefense,
+    wrestlingOffense,
+    takedownDefense,
+    controlThreat,
+    submissionThreat,
+    cardioConsistency,
+    opponentQuality
+  };
 
   return {
-    strikingVolume: clamp((slpm / 7) * 100),
-    strikingDefense: clamp((strDef ?? 0) * 0.7 + Math.max(0, 100 - (sapm ?? 5) * 14) * 0.3),
-    wrestlingOffense: clamp(Math.min(100, (tdAvg / 6) * 100) * 0.65 + (tdAcc ?? 0) * 0.35),
-    takedownDefense: clamp(tdDef),
-    controlThreat: clamp(Math.min(100, (tdAvg / 6) * 100) * 0.72 + Math.min(100, (subAvg / 2.5) * 100) * 0.28),
-    submissionThreat: clamp((subAvg / 2.5) * 100),
-    opponentQuality: clamp(opponentQualityScore),
-    provenance: "derived",
-    note: "Derived from UFCStats career rates plus manual opponent-quality snapshot. Missing source fields stay null."
+    ...Object.fromEntries(styleMetricKeys.map((key) => [key, metrics[key].value])),
+    provenance: Object.fromEntries(styleMetricKeys.map((key) => [key, metrics[key].provenance])),
+    note: "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
   };
 }
 
@@ -96,31 +142,156 @@ function historyWithoutUpcoming(profile) {
   return (profile?.fightHistory ?? []).filter((fight) => fight.result && fight.result !== "next");
 }
 
-function buildRoundModel(profile, averageFightTimeText) {
-  const history = historyWithoutUpcoming(profile);
-  const wins = history.filter((fight) => fight.result === "win");
-  const roundOneWins = wins.filter((fight) => fight.round === 1).length;
-  const lateSamples = history.filter((fight) => (fight.round ?? 0) >= 3).length;
-  const averageFightSeconds = parseClockToSeconds(averageFightTimeText);
+function statForFighter(row, fighterId) {
+  return row?.stats?.find((stat) => stat?.fighter?.id === fighterId) ?? null;
+}
 
-  const earlyThreat = clamp((roundOneWins / Math.max(1, wins.length)) * 70 + Math.min(30, wins.length * 3), 0, 100);
-  const lateEvidence = clamp(lateSamples * 18 + Math.min(28, (averageFightSeconds ?? 0) / 45), 0, 100);
+function normalizeLandedAttempted(value) {
+  if (!value) return null;
+  return {
+    landed: hasNumber(value.landed) ? value.landed : null,
+    attempted: hasNumber(value.attempted) ? value.attempted : null,
+    raw: value.raw ?? null
+  };
+}
+
+function normalizeTotalsStat(stat) {
+  if (!stat) return null;
 
   return {
-    completedHistoryCount: history.length,
-    winCount: wins.length,
-    roundOneWinCount: roundOneWins,
-    lateRoundSampleCount: lateSamples,
-    averageFightTime: averageFightTimeText ?? null,
-    earlyThreat,
-    lateEvidence,
-    interpretation: "Early finishes increase early-threat signal. Low late-round sample lowers confidence only; it is not scored as late-round weakness."
+    kd: stat.kd ?? null,
+    significantStrikes: normalizeLandedAttempted(stat.significantStrikes),
+    significantStrikePercent: stat.significantStrikePercent ?? null,
+    totalStrikes: normalizeLandedAttempted(stat.totalStrikes),
+    takedowns: normalizeLandedAttempted(stat.takedowns),
+    takedownPercent: stat.takedownPercent ?? null,
+    submissionAttempts: stat.submissionAttempts ?? null,
+    reversals: stat.reversals ?? null,
+    control: stat.control ?? null,
+    controlSeconds: stat.controlSeconds ?? null
+  };
+}
+
+function normalizeSignificantStat(stat) {
+  if (!stat) return null;
+
+  return {
+    significantStrikes: normalizeLandedAttempted(stat.significantStrikes),
+    significantStrikePercent: stat.significantStrikePercent ?? null,
+    head: normalizeLandedAttempted(stat.head),
+    body: normalizeLandedAttempted(stat.body),
+    leg: normalizeLandedAttempted(stat.leg),
+    distance: normalizeLandedAttempted(stat.distance),
+    clinch: normalizeLandedAttempted(stat.clinch),
+    ground: normalizeLandedAttempted(stat.ground)
+  };
+}
+
+function totalsForFighter(detail, fighterId) {
+  const totals = normalizeTotalsStat(statForFighter(detail?.totals, fighterId));
+  const significant = normalizeSignificantStat(statForFighter(detail?.significantStrikes, fighterId));
+  if (!totals && !significant) return null;
+  return { totals, significant };
+}
+
+function roundStatsForFighter(detail, fighterId) {
+  if (!detail?.roundStats?.length) return [];
+
+  return detail.roundStats
+    .map((roundRow) => {
+      const sigRound = detail.significantStrikesByRound?.find((item) => item.round === roundRow.round);
+      const totals = normalizeTotalsStat(statForFighter(roundRow, fighterId));
+      const significant = normalizeSignificantStat(statForFighter(sigRound, fighterId));
+      if (!totals && !significant) return null;
+      return {
+        round: roundRow.round,
+        totals,
+        significant
+      };
+    })
+    .filter(Boolean);
+}
+
+function buildHistoryItem(fight, detail, fighterId) {
+  const roundStats = roundStatsForFighter(detail, fighterId);
+
+  return {
+    opponentName: fight.opponent?.name ?? null,
+    opponentUrl: fight.opponent?.url ?? null,
+    eventName: fight.event?.name ?? null,
+    eventUrl: fight.event?.url ?? null,
+    date: fight.event?.date ?? null,
+    result: fight.result ?? null,
+    method: fight.method ?? null,
+    round: fight.round ?? null,
+    time: fight.time ?? null,
+    fightUrl: fight.fightUrl,
+    totals: totalsForFighter(detail, fighterId),
+    roundStats,
+    source: "ufcstats",
+    sourceUrl: fight.fightUrl
+  };
+}
+
+function roundSignal(round) {
+  const totals = round?.totals;
+  if (!totals) return null;
+
+  const significantLanded = totals.significantStrikes?.landed ?? 0;
+  const totalLanded = totals.totalStrikes?.landed ?? 0;
+  const takedownsLanded = totals.takedowns?.landed ?? 0;
+  const controlSeconds = totals.controlSeconds ?? 0;
+  const knockdowns = totals.kd ?? 0;
+  const submissions = totals.submissionAttempts ?? 0;
+
+  return significantLanded + totalLanded * 0.25 + takedownsLanded * 5 + controlSeconds / 25 + knockdowns * 8 + submissions * 5;
+}
+
+function normalizeRoundSignal(value) {
+  return clamp(18 + value * 2.15);
+}
+
+function buildRoundModel(historyItems, scheduledRounds) {
+  const detailedRounds = historyItems.flatMap((fight) => fight.roundStats ?? []);
+  const roundSampleCount = detailedRounds.length;
+  const roundScores = [];
+
+  for (let round = 1; round <= scheduledRounds; round += 1) {
+    const signals = detailedRounds
+      .filter((item) => item.round === round)
+      .map(roundSignal)
+      .filter(hasNumber);
+    const avgSignal = average(signals);
+
+    roundScores.push({
+      round,
+      sampleCount: signals.length,
+      score: avgSignal == null ? null : normalizeRoundSignal(avgSignal)
+    });
+  }
+
+  const roundOneScore = roundScores.find((item) => item.round === 1);
+  const lateRoundSamples = detailedRounds.filter((item) => item.round >= 3).length;
+  const lateSignals = detailedRounds
+    .filter((item) => item.round >= 3)
+    .map(roundSignal)
+    .filter(hasNumber);
+  const averageLateSignal = average(lateSignals);
+
+  return {
+    roundSampleCount,
+    lateRoundSampleCount: lateRoundSamples,
+    earlyThreat: roundOneScore?.score ?? null,
+    lateEvidence: averageLateSignal == null ? null : clamp(24 + lateRoundSamples * 5 + averageLateSignal * 1.2),
+    roundScores,
+    hasEnoughForTrend: Boolean(roundOneScore?.score != null && lateRoundSamples >= 3),
+    interpretation: "Round trend uses fetched UFCStats fight-detail rounds only. Missing rounds stay missing."
   };
 }
 
 function keyEdgesFromProfiles(a, b) {
-  const statsA = a.careerStats ?? {};
-  const statsB = b.careerStats ?? {};
+  const statsA = a.aggregateStats ?? {};
+  const statsB = b.aggregateStats ?? {};
 
   return [
     ["SLpM", "strikes landed/min", statsA.slpm, statsB.slpm],
@@ -138,14 +309,34 @@ function keyEdgesFromProfiles(a, b) {
   }));
 }
 
-function buildFighter(eventFighter, profile, override, fighterIndex, preview) {
+function buildDataCompleteness(profile, historyItems, roundModel) {
+  const lastFiveCount = historyItems.slice(0, 5).length;
+  const hasFightTotals = historyItems.some((fight) => Boolean(fight.totals?.totals));
+  const hasRoundStats = roundModel.roundSampleCount > 0;
+
+  return {
+    hasProfile: Boolean(profile),
+    hasFightHistory: historyItems.length > 0,
+    hasFightTotals,
+    hasRoundStats,
+    lastFiveCount,
+    roundSampleCount: roundModel.roundSampleCount,
+    lateRoundSampleCount: roundModel.lateRoundSampleCount
+  };
+}
+
+function buildFighter(eventFighter, profile, override, fighterIndex, preview, detailsById, scheduledRounds) {
+  const historyItems = historyWithoutUpcoming(profile).map((fight) =>
+    buildHistoryItem(fight, detailsById.get(fight.fightId), eventFighter.id)
+  );
   const averageFightTime = valueFromPreview(preview, "Average Fight Time", fighterIndex);
-  const profileScore = scoreFromCareerStats(profile?.careerStats, override?.opponentQualityScore ?? null);
+  const roundModel = buildRoundModel(historyItems.slice(0, 5), scheduledRounds);
 
   return {
     id: slugify(override?.displayName ?? profile?.name ?? eventFighter.name),
     ufcstatsId: eventFighter.id,
     name: override?.displayName ?? profile?.name ?? eventFighter.name,
+    nickname: profile?.nickname ?? null,
     ranking: override?.ranking ?? null,
     record: profile?.record ?? valueFromPreview(preview, "Wins/Losses/Draws", fighterIndex) ?? null,
     height: profile?.height ?? valueFromPreview(preview, "Height", fighterIndex) ?? null,
@@ -159,57 +350,52 @@ function buildFighter(eventFighter, profile, override, fighterIndex, preview) {
       status: "pending_licensed_asset",
       credit: null
     },
-    careerStats: profile?.careerStats ?? null,
-    styleProfile: profileScore,
-    lastFive: historyWithoutUpcoming(profile)
-      .slice(0, 5)
-      .map((fight) => ({
-        result: fight.result,
-        opponent: fight.opponent?.name ?? null,
-        method: fight.method,
-        round: fight.round,
-        time: fight.time,
-        event: fight.event?.name ?? null,
-        date: fight.event?.date ?? null,
-        provenance: "sourced"
-      })),
-    roundModel: buildRoundModel(profile, averageFightTime),
+    ufcstatsUrl: eventFighter.url,
+    source: "ufcstats",
+    sourceUrl: eventFighter.url,
+    scrapedAt: profile?.source?.fetchedAt ?? null,
+    aggregateStats: profile?.careerStats ?? null,
+    styleProfile: scoreFromCareerStats(profile?.careerStats, override?.opponentQualityScore ?? null),
+    fightHistory: historyItems,
+    lastFive: historyItems.slice(0, 5),
+    resumeHeat: null,
+    roundModel: {
+      ...roundModel,
+      averageFightTime: averageFightTime ?? null
+    },
+    dataCompleteness: buildDataCompleteness(profile, historyItems, roundModel),
     sourceCoverage: profile ? "ufcstats-profile-and-event" : "ufcstats-event-only"
   };
 }
 
 function buildFight(sourceFight, override, profilesById, detailsById, manualFighters) {
   const fightDetails = detailsById.get(sourceFight.id);
-  const fighterAProfile = profilesById.get(sourceFight.fighterA.id);
-  const fighterBProfile = profilesById.get(sourceFight.fighterB.id);
+  const rounds = override?.rounds ?? 3;
   const preview = fightDetails?.matchupPreview ?? null;
-  const fighterA = buildFighter(sourceFight.fighterA, fighterAProfile, manualFighters[sourceFight.fighterA.id], 0, preview);
-  const fighterB = buildFighter(sourceFight.fighterB, fighterBProfile, manualFighters[sourceFight.fighterB.id], 1, preview);
+  const fighterA = buildFighter(sourceFight.fighterA, profilesById.get(sourceFight.fighterA.id), manualFighters[sourceFight.fighterA.id], 0, preview, detailsById, rounds);
+  const fighterB = buildFighter(sourceFight.fighterB, profilesById.get(sourceFight.fighterB.id), manualFighters[sourceFight.fighterB.id], 1, preview, detailsById, rounds);
 
   return {
     id: override?.routeId ?? slugify(`${sourceFight.fighterA.name}-${sourceFight.fighterB.name}`),
     ufcstatsFightId: sourceFight.id,
     ufcstatsFightUrl: sourceFight.url,
     cardPlacement: override?.cardPlacement ?? "Main Card",
-    rounds: override?.rounds ?? 3,
+    rounds,
     weightClass: sourceFight.weightClass,
     status: sourceFight.status,
-    styleClashLabel: override?.styleClashLabel ?? "style data pending",
-    matchupQuestion: override?.matchupQuestion ?? "What shape does the source data create?",
-    fightShapeSummary: override?.fightShapeSummary ?? "Source facts are available; manual fight-shape copy still needs review.",
+    styleClashLabel: override?.styleClashLabel ?? null,
+    matchupQuestion: override?.matchupQuestion ?? null,
+    fightShapeSummary: override?.fightShapeSummary ?? null,
     manualRead: override?.manualRead ?? null,
     fighters: { fighterA, fighterB },
     keyEdges: keyEdgesFromProfiles(fighterA, fighterB),
-    paths: override?.paths ?? { fighterA: [], fighterB: [] },
-    modelNotes: [
-      "Round distribution is treated as tendency plus confidence, not as proof of skill or weakness.",
-      "Early finish history raises early-threat signal only.",
-      "Late-round scarcity means lower evidence, not an automatic late-round penalty."
-    ],
+    paths: override?.paths ?? null,
     sourceMix: {
       eventStructure: "sourced",
-      fighterProfiles: fighterAProfile && fighterBProfile ? "sourced" : "partial",
-      styleTags: "manual",
+      fighterProfiles: fighterA.dataCompleteness.hasProfile && fighterB.dataCompleteness.hasProfile ? "sourced" : "partial",
+      styleMetrics: "derived",
+      styleTags: override?.styleClashLabel ? "manual" : "missing",
+      fightShapeCopy: override?.fightShapeSummary ? "manual" : "missing",
       paths: override?.paths ? "manual" : "missing",
       images: "manual-required"
     }
@@ -233,6 +419,9 @@ function validateNormalizedEvent(event) {
     if (!fight.fighters?.fighterA?.name || !fight.fighters?.fighterB?.name) {
       errors.push(`Fight ${fight.id} is missing fighter names.`);
     }
+    if (!fight.fighters?.fighterA?.dataCompleteness || !fight.fighters?.fighterB?.dataCompleteness) {
+      errors.push(`Fight ${fight.id} is missing data completeness.`);
+    }
     if (!fight.sourceMix) errors.push(`Fight ${fight.id} is missing sourceMix.`);
   }
 
@@ -252,7 +441,7 @@ async function buildNormalizedEvent(eventId) {
   const detailsById = new Map(fightDetails.map((fight) => [fight.id, fight]));
 
   const normalized = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt: new Date().toISOString(),
     event: {
       id: eventId,
@@ -260,15 +449,16 @@ async function buildNormalizedEvent(eventId) {
       name: sourceEvent.name,
       date: sourceEvent.date,
       location: sourceEvent.location,
+      promotion: "UFC",
       source: sourceEvent.source
     },
     assetPolicy: overrides.assetPolicy,
     modeling: {
-      principle: "Make source stats easy to scan without pretending missing samples prove weakness.",
+      principle: "Use sourced UFCStats values where available, derived signals where formulas are documented, manual context where public sources do not provide it, and empty states where evidence is insufficient.",
       formulas: {
-        earlyThreat: "round-one wins as a share of sourced wins, softened by total completed sample",
-        lateEvidence: "late-round appearances plus average fight time; confidence measure only",
-        styleProfile: "UFCStats career rates normalized to 0-100 with manual opponent-quality snapshot"
+        styleProfile: "Career-rate metrics are normalized to 0-100 from UFCStats profile rates. Opponent quality remains manual.",
+        roundTrend: "Fetched fight-detail rounds only: significant strikes + total strikes * 0.25 + takedowns * 5 + control seconds / 25 + knockdowns * 8 + submission attempts * 5.",
+        roundTrendGate: "A round trend chart requires earlyThreat plus at least 3 late-round samples for each fighter."
       }
     },
     fights: sourceEvent.fights.map((sourceFight) =>

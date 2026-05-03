@@ -1,11 +1,9 @@
-import type { Fighter, FightResult } from "@/lib/types";
-import type { SourcedLastFiveFight } from "./LastFiveTrend";
+import type { SourcedFighter } from "@/lib/sourced-event";
+import { ModuleEmptyState } from "./ModuleEmptyState";
 
 interface FormResumeModuleProps {
-  fighterA: Fighter;
-  fighterB: Fighter;
-  sourcedA?: SourcedLastFiveFight[];
-  sourcedB?: SourcedLastFiveFight[];
+  fighterA: SourcedFighter;
+  fighterB: SourcedFighter;
 }
 
 interface TrendFight {
@@ -15,7 +13,6 @@ interface TrendFight {
   roundLabel: string;
   time: string;
   context: string;
-  source: "ufcstats" | "prototype";
 }
 
 function resultLabel(result: string | null | undefined): "W" | "L" | "D" {
@@ -25,76 +22,53 @@ function resultLabel(result: string | null | undefined): "W" | "L" | "D" {
   return "D";
 }
 
-function fromMockFight(fight: FightResult): TrendFight {
-  return {
-    result: fight.result,
-    opponent: fight.opponent,
-    method: fight.method,
-    roundLabel: `r${fight.round}`,
-    time: fight.time,
-    context: fight.opponentTier.toLowerCase(),
-    source: "prototype"
-  };
+function buildTrendFights(fighter: SourcedFighter): TrendFight[] {
+  return fighter.lastFive.slice(0, 5).map((fight, index) => ({
+    result: resultLabel(fight.result),
+    opponent: fight.opponentName ?? `opponent ${index + 1}`,
+    method: fight.method ?? "method pending",
+    roundLabel: fight.round ? `r${fight.round}` : "round pending",
+    time: fight.time ?? "--:--",
+    context: fight.eventName ?? fight.date ?? "fight history"
+  }));
 }
 
-function buildTrendFights(fighter: Fighter, sourced?: SourcedLastFiveFight[]): TrendFight[] {
-  if (sourced?.length) {
-    return sourced.slice(0, 5).map((fight, index) => ({
-      result: resultLabel(fight.result),
-      opponent: fight.opponent ?? `opponent ${index + 1}`,
-      method: fight.method ?? "method n/a",
-      roundLabel: fight.round ? `r${fight.round}` : "round n/a",
-      time: fight.time ?? "--:--",
-      context: fight.event ?? fight.date ?? "ufcstats history",
-      source: fight.provenance === "sourced" ? "ufcstats" : "prototype"
-    }));
-  }
-
-  return fighter.lastFiveFights.slice(0, 5).map(fromMockFight);
-}
-
-function sourceLabel(rows: TrendFight[]) {
-  return rows.some((row) => row.source === "ufcstats") ? "ufcstats + manual" : null;
-}
-
-function ResumeMeter({ fighter, accent = false }: { fighter: Fighter; accent?: boolean }) {
-  const filled = Math.round(fighter.resumeHeat.score / 8.33);
+function ResumeSourceCard({ fighter, accent = false }: { fighter: SourcedFighter; accent?: boolean }) {
+  const wins = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "W").length;
+  const losses = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "L").length;
 
   return (
     <div className="rounded-2xl border border-line bg-surface/45 p-4">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="mono-label">resume strength</p>
-          <p className="mt-2 text-sm text-muted">{fighter.resumeHeat.label}</p>
+          <p className="mono-label">resume sample</p>
+          <p className="mt-2 text-sm text-muted">Completed fight history</p>
         </div>
         <p className={`data-text text-3xl ${accent ? "text-accent" : "text-foreground"}`}>
-          {fighter.resumeHeat.score}
+          {fighter.dataCompleteness.lastFiveCount}
         </p>
       </div>
-      <div className="mt-4 grid grid-cols-12 gap-1">
-        {Array.from({ length: 12 }).map((_, index) => (
-          <span
-            key={index}
-            className={`h-4 rounded-sm ${index < filled ? (accent ? "bg-accent" : "bg-muted") : "bg-background"}`}
-          />
-        ))}
+      <div className="mt-4 grid gap-2 sm:grid-cols-3">
+        <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
+          / {fighter.fightHistory.length} completed rows
+        </p>
+        <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
+          / {wins} wins
+        </p>
+        <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
+          / {losses} losses
+        </p>
       </div>
-      <p className="mt-4 text-sm leading-6 text-muted">{fighter.resumeHeat.explanation}</p>
-      <div className="mt-3 grid gap-2 sm:grid-cols-3">
-        {fighter.resumeHeat.factors.map((factor) => (
-          <p key={factor} className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
-            / {factor}
-          </p>
-        ))}
-      </div>
+      <p className="mt-4 text-sm leading-6 text-muted">
+        Résumé Heat is held back until opponent-tier context is modeled cleanly.
+      </p>
     </div>
   );
 }
 
-function FighterFormCard({ fighter, sourced, accent = false }: { fighter: Fighter; sourced?: SourcedLastFiveFight[]; accent?: boolean }) {
-  const hasSourced = Boolean(sourced?.length);
-  const rows = hasSourced ? buildTrendFights(fighter, sourced) : [];
-  const label = hasSourced ? sourceLabel(rows) : null;
+function FighterFormCard({ fighter, accent = false }: { fighter: SourcedFighter; accent?: boolean }) {
+  const rows = buildTrendFights(fighter);
+  const hasSourced = rows.length > 0;
 
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
@@ -102,7 +76,7 @@ function FighterFormCard({ fighter, sourced, accent = false }: { fighter: Fighte
         <div>
           <h3 className="text-base font-semibold tracking-tight">{fighter.name}</h3>
           <p className="data-text mt-1 text-xs text-subtle">
-            {fighter.record}{label ? ` / ${label}` : ""}
+            {fighter.record ?? "record pending"}
           </p>
         </div>
         <span className={`rounded-full border border-line px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] ${accent ? "text-accent" : "text-muted"}`}>
@@ -141,13 +115,21 @@ function FighterFormCard({ fighter, sourced, accent = false }: { fighter: Fighte
       )}
 
       <div className="mt-4">
-        <ResumeMeter fighter={fighter} accent={accent} />
+        {fighter.fightHistory.length ? (
+          <ResumeSourceCard fighter={fighter} accent={accent} />
+        ) : (
+          <ModuleEmptyState
+            label="resume heat"
+            title="Resume context pending."
+            body="Opponent-tier context is not modeled yet, so Fight Lens is holding this score back."
+          />
+        )}
       </div>
     </div>
   );
 }
 
-export function FormResumeModule({ fighterA, fighterB, sourcedA, sourcedB }: FormResumeModuleProps) {
+export function FormResumeModule({ fighterA, fighterB }: FormResumeModuleProps) {
   return (
     <section id="section-form-resume" className="module-card scroll-mt-28">
       <div className="module-header">
@@ -161,8 +143,8 @@ export function FormResumeModule({ fighterA, fighterB, sourcedA, sourcedB }: For
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
-        <FighterFormCard fighter={fighterA} sourced={sourcedA} accent />
-        <FighterFormCard fighter={fighterB} sourced={sourcedB} />
+        <FighterFormCard fighter={fighterA} accent />
+        <FighterFormCard fighter={fighterB} />
       </div>
     </section>
   );
