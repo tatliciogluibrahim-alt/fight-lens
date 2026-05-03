@@ -74,19 +74,16 @@ function trendStats(fighter: Fighter, model: RoundModelFallback | undefined, sco
     early: clamp(early),
     mid: clamp(mid),
     late: clamp(late),
-    note: model?.interpretation ?? "Prototype round trend blends recent form, control time, takedowns, and striking differential. Early success raises early threat; missing late samples reduce confidence rather than creating a weakness."
+    note: model?.interpretation ?? null
   };
 }
 
 function TrendBars({ fighter, scores, accent = false }: { fighter: Fighter; scores: number[]; accent?: boolean }) {
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
-      <div className="mb-5 flex items-start justify-between gap-4">
-        <div>
-          <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-          <p className="mono-label mt-1">weighted round trend</p>
-        </div>
-        <span className="data-text text-xs text-subtle">prototype</span>
+      <div className="mb-5">
+        <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
+        <p className="mono-label mt-1">weighted round trend</p>
       </div>
       <div className="space-y-3">
         {scores.map((score, index) => (
@@ -142,11 +139,25 @@ function SignalTiles({ statsA, statsB }: { statsA: ReturnType<typeof trendStats>
   );
 }
 
+function hasSourcedRoundData(model: RoundModelFallback | undefined): boolean {
+  return Boolean(
+    model &&
+    typeof model.earlyThreat === "number" &&
+    model.earlyThreat > 0 &&
+    typeof model.lateRoundSampleCount === "number" &&
+    model.lateRoundSampleCount >= 3
+  );
+}
+
 export function RoundTrendModule({ fight, fighterA, fighterB, normalizedFight }: RoundTrendModuleProps) {
+  const modelA = normalizedRoundModel(normalizedFight, "fighterA");
+  const modelB = normalizedRoundModel(normalizedFight, "fighterB");
+  const isSourced = hasSourcedRoundData(modelA) && hasSourcedRoundData(modelB);
+
   const scoresA = weightedRoundScores(fighterA, fight.rounds);
   const scoresB = weightedRoundScores(fighterB, fight.rounds);
-  const statsA = trendStats(fighterA, normalizedRoundModel(normalizedFight, "fighterA"), scoresA);
-  const statsB = trendStats(fighterB, normalizedRoundModel(normalizedFight, "fighterB"), scoresB);
+  const statsA = trendStats(fighterA, modelA, scoresA);
+  const statsB = trendStats(fighterB, modelB, scoresB);
 
   return (
     <section id="section-round-trend" className="module-card scroll-mt-28">
@@ -155,20 +166,30 @@ export function RoundTrendModule({ fight, fighterA, fighterB, normalizedFight }:
         <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           where the fight changes by round.
         </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-          Weighted trend blends recent striking differential, control time, takedowns, opponent tier, and recency. Early finishes raise early threat; they do not automatically mark late rounds as weak.
-        </p>
+        {isSourced ? (
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
+            Weighted trend blends recent striking differential, control time, takedowns, opponent tier, and recency. Early finishes raise early threat; they do not automatically mark late rounds as weak.
+          </p>
+        ) : null}
       </div>
-      <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
-        <TrendBars fighter={fighterA} scores={scoresA} accent />
-        <TrendBars fighter={fighterB} scores={scoresB} />
-        <div className="lg:col-span-2">
-          <SignalTiles statsA={statsA} statsB={statsB} />
-          <p className="data-text mt-4 text-xs leading-6 text-subtle">
-            {statsA.note}
+      {isSourced ? (
+        <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
+          <TrendBars fighter={fighterA} scores={scoresA} accent />
+          <TrendBars fighter={fighterB} scores={scoresB} />
+          <div className="lg:col-span-2">
+            <SignalTiles statsA={statsA} statsB={statsB} />
+            {statsA.note ? (
+              <p className="data-text mt-4 text-xs leading-6 text-subtle">{statsA.note}</p>
+            ) : null}
+          </div>
+        </div>
+      ) : (
+        <div className="module-body">
+          <p className="text-xs text-subtle">
+            Not enough data to see the shape of this fight by round.
           </p>
         </div>
-      </div>
+      )}
     </section>
   );
 }

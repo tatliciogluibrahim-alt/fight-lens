@@ -20,8 +20,6 @@ interface StyleComparisonBarsProps {
 }
 
 export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: StyleComparisonBarsProps) {
-  const hasFighterData = Boolean(fighterA.name && fighterB.name);
-
   return (
     <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
@@ -39,13 +37,7 @@ export function StyleComparisonBars({ fighterA, fighterB, styleClashLabel }: Sty
 
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
-            {!hasFighterData ? (
-              <p className="text-sm leading-6 text-muted">
-                0-100 placeholder scouting bars compare pressure, defense, control, finishing threat,
-                and opponent quality. The intent is fast read first, detail second.
-              </p>
-            ) : null}
-            <div className={hasFighterData ? "space-y-6" : "mt-6 space-y-6"}>
+            <div className="space-y-6">
               <div>
                 <p className="mono-label">fighter a</p>
                 <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">

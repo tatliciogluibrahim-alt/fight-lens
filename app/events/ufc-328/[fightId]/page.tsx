@@ -91,9 +91,9 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
             <div>
               <p className="mono-label">{event.name.toLowerCase()}</p>
-              <h1 className="mt-2 text-2xl font-semibold tracking-[-0.04em] md:text-4xl">
-                {fighterA.name.toLowerCase()} vs. {fighterB.name.toLowerCase()}
-              </h1>
+              <p className="mt-2 text-sm text-muted">
+                {fight.weightClass.toLowerCase()} · {fight.rounds} rounds · {fight.cardPlacement.toLowerCase()}
+              </p>
             </div>
           </div>
 

@@ -42,17 +42,15 @@ function PortraitFallback({
         isAccent ? "border-accent/35 bg-accent-soft" : "border-line-strong bg-surface-2"
       }`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,255,255,0.18),transparent_22%),linear-gradient(180deg,rgba(255,255,255,0.08),transparent_40%)]" />
-      <div className={`absolute inset-x-0 bottom-0 h-24 ${isAccent ? "bg-accent/12" : "bg-foreground/7"}`} />
-      <div className={`absolute left-1/2 top-10 size-14 -translate-x-1/2 rounded-full ${isAccent ? "bg-accent/22" : "bg-foreground/12"}`} />
-      <div className="absolute left-1/2 top-12 size-10 -translate-x-1/2 rounded-full bg-background/70 shadow-[0_0_0_1px_rgba(245,239,230,0.1)]" />
-      <div className="absolute bottom-0 left-1/2 h-20 w-28 -translate-x-1/2 rounded-t-[44px] bg-background/78 shadow-[0_0_0_1px_rgba(245,239,230,0.08)]" />
-      <div className={`absolute -left-8 bottom-10 h-16 w-40 -rotate-12 ${isAccent ? "bg-accent/16" : "bg-foreground/7"}`} />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,255,255,0.08),transparent_55%)]" />
+      {/* Lens aperture mark */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className={`size-12 rounded-full border-2 ${isAccent ? "border-accent/40" : "border-foreground/15"}`} />
+        <div className={`absolute left-1/2 top-1/2 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full ${isAccent ? "bg-accent/30" : "bg-foreground/12"}`} />
+        <div className={`absolute left-1/2 top-1/2 size-6 -translate-x-1/2 -translate-y-1/2 rounded-full border ${isAccent ? "border-accent/25" : "border-foreground/10"}`} />
+      </div>
       <span className="absolute right-2 top-2">
         <CountryFlag code={country?.code ?? "TBD"} colors={colors} label={country?.label} />
-      </span>
-      <span className="absolute bottom-2 left-2 right-2 rounded-full border border-foreground/10 bg-background/60 px-2 py-1 text-center font-mono text-[9px] uppercase tracking-[0.12em] text-subtle">
-        photo pending
       </span>
     </div>
   );
@@ -80,10 +78,7 @@ export function FighterAssetSlot({
         )}
       </div>
       <div className={isRight ? "lg:text-right" : ""}>
-        <p className="mono-label">{country?.label ?? "asset slot"}</p>
-        <p className="mt-1 max-w-[18ch] text-xs leading-5 text-subtle">
-          {imageUrl ? "licensed image loaded" : "fighter photo placeholder"}
-        </p>
+        <p className="mono-label">{country?.label ?? ""}</p>
       </div>
     </div>
   );

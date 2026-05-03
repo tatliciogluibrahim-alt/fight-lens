@@ -236,7 +236,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
             textTransform: "uppercase"
           }}
         >
-          prototype data / 16:9
+          fight lens / 16:9
         </div>
       </div>
 

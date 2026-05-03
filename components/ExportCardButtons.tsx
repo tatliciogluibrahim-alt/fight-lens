@@ -81,7 +81,7 @@ export function ExportCardButtons({ fight, fighterA, fighterB }: ExportCardButto
                 short fight or long fight. nothing in between.
               </h3>
               <p className="data-text text-xs text-subtle">
-                prototype card · data cut pending export pipeline
+                fight lens · creator card
               </p>
             </div>
           </div>

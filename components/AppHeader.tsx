@@ -50,7 +50,9 @@ export function AppHeader() {
           })}
         </div>
 
-        <PrototypeBadge className="order-2 md:order-3" />
+        {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && (
+          <PrototypeBadge className="order-2 md:order-3" />
+        )}
       </nav>
     </header>
   );

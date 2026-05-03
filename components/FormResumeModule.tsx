@@ -54,7 +54,7 @@ function buildTrendFights(fighter: Fighter, sourced?: SourcedLastFiveFight[]): T
 }
 
 function sourceLabel(rows: TrendFight[]) {
-  return rows.some((row) => row.source === "ufcstats") ? "ufcstats + manual" : "prototype";
+  return rows.some((row) => row.source === "ufcstats") ? "ufcstats + manual" : null;
 }
 
 function ResumeMeter({ fighter, accent = false }: { fighter: Fighter; accent?: boolean }) {
@@ -92,43 +92,53 @@ function ResumeMeter({ fighter, accent = false }: { fighter: Fighter; accent?: b
 }
 
 function FighterFormCard({ fighter, sourced, accent = false }: { fighter: Fighter; sourced?: SourcedLastFiveFight[]; accent?: boolean }) {
-  const rows = buildTrendFights(fighter, sourced);
+  const hasSourced = Boolean(sourced?.length);
+  const rows = hasSourced ? buildTrendFights(fighter, sourced) : [];
+  const label = hasSourced ? sourceLabel(rows) : null;
 
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
       <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h3 className="text-xl font-semibold tracking-tight">{fighter.name}</h3>
-          <p className="data-text mt-1 text-xs text-subtle">{fighter.record} / {sourceLabel(rows)}</p>
+          <h3 className="text-base font-semibold tracking-tight">{fighter.name}</h3>
+          <p className="data-text mt-1 text-xs text-subtle">
+            {fighter.record}{label ? ` / ${label}` : ""}
+          </p>
         </div>
         <span className={`rounded-full border border-line px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] ${accent ? "text-accent" : "text-muted"}`}>
           last five + resume
         </span>
       </div>
 
-      <div className="space-y-2">
-        {rows.map((fight, index) => (
-          <div
-            key={`${fighter.id}-${fight.opponent}-${index}`}
-            className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border border-line bg-surface/45 p-3"
-          >
-            <span
-              className={`grid size-8 place-items-center rounded-full text-xs font-bold ${
-                fight.result === "W" ? (accent ? "bg-accent text-white" : "bg-muted text-background") : "border border-line text-muted"
-              }`}
+      {hasSourced ? (
+        <div className="space-y-2">
+          {rows.map((fight, index) => (
+            <div
+              key={`${fighter.id}-${fight.opponent}-${index}`}
+              className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-2xl border border-line bg-surface/45 p-3"
             >
-              {fight.result}
-            </span>
-            <div className="min-w-0">
-              <p className="truncate text-sm text-foreground">{fight.opponent}</p>
-              <p className="data-text text-xs text-subtle">
-                {fight.method} / {fight.roundLabel} / {fight.context}
-              </p>
+              <span
+                className={`grid size-8 place-items-center rounded-full text-xs font-bold ${
+                  fight.result === "W" ? (accent ? "bg-accent text-white" : "bg-muted text-background") : "border border-line text-muted"
+                }`}
+              >
+                {fight.result}
+              </span>
+              <div className="min-w-0">
+                <p className="truncate text-sm text-foreground">{fight.opponent}</p>
+                <p className="data-text text-xs text-subtle">
+                  {fight.method} / {fight.roundLabel} / {fight.context}
+                </p>
+              </div>
+              <span className="data-text text-xs text-muted">{fight.time}</span>
             </div>
-            <span className="data-text text-xs text-muted">{fight.time}</span>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <p className="py-4 text-xs text-subtle">
+          Fight history sourced for upcoming events.
+        </p>
+      )}
 
       <div className="mt-4">
         <ResumeMeter fighter={fighter} accent={accent} />

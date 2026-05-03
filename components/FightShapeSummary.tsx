@@ -11,7 +11,7 @@ export function FightShapeSummary({ fight, fighterA, fighterB }: FightShapeSumma
     <section id="fight-shape" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="mono-label">01 / fight shape</p>
+          <p className="mono-label">01 / shape of the fight</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the read.</h2>
         </div>
       </div>
