@@ -2,18 +2,22 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
-import { event } from "@/lib/data";
+import { StyleClashExportCard } from "@/components/StyleClashExportCard";
+import { event, getFighter } from "@/lib/data";
 
 const modules = [
   ["01", "fight shape", "the first read: short collision, long minutes, or layered swing points", "fight-shape"],
-  ["02", "style clash", "overlap visual, side-by-side pressure, volume, control, and defense", "section-overlap"],
-  ["03", "recent momentum", "named opponents and form context from recent fights", "section-momentum"],
-  ["04", "resume heat", "opponent quality without hype", "section-resume"],
-  ["05", "key edges", "measurable deltas that explain the matchup", "section-edges"],
-  ["06", "paths to victory", "tactical routes, not predictions", "section-paths"]
+  ["02", "style clash", "overlap visual with the clearest style deltas", "section-overlap"],
+  ["03", "form + resume", "named recent opponents, methods, tiers, and resume strength", "section-form-resume"],
+  ["04", "round trend", "weighted round-by-round performance signals", "section-round-trend"],
+  ["05", "tactical routes", "where each fighter can control minutes", "section-paths"]
 ];
 
 export default function Home() {
+  const mainFight = event.fights[0];
+  const fighterA = getFighter(mainFight.fighterAId);
+  const fighterB = getFighter(mainFight.fighterBId);
+
   return (
     <>
       <AppHeader />
@@ -49,11 +53,7 @@ export default function Home() {
             </div>
 
             <div className="lens-card p-4 md:p-5">
-              <div className="flex aspect-video items-center justify-center rounded-2xl border border-line bg-background/70">
-                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-                  OVERLAP CARD / PREVIEW PENDING
-                </p>
-              </div>
+              <StyleClashExportCard fighterA={fighterA} fighterB={fighterB} />
             </div>
           </div>
         </section>
@@ -65,12 +65,12 @@ export default function Home() {
             <div>
               <p className="mono-label">index</p>
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-                six blocks per fight.
+                five reads per fight.
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-6 text-muted">
-              This is the navigation model for each matchup. Click a block to jump into that
-              section of the main lens; each one should become an exportable creator asset.
+              Each read has a job: establish the matchup, show the clash, prove recent form,
+              weight the round trend, then name the cleanest tactical routes.
             </p>
           </div>
 

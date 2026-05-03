@@ -24,7 +24,14 @@ const profile = (
 });
 
 const lastFive = (seed: number): FightResult[] => {
-  const opponents = ["recent ranked win", "pace test", "short-notice bout", "top-ten look", "veteran check"];
+  const opponentPools = [
+    ["Marcus Vale", "Elias Prado", "Niko Sato", "Rafael Nunes", "Damon Price"],
+    ["Andre Keller", "Musa Karim", "Tomas Varga", "Luis Ortega", "Kai Bennett"],
+    ["Jordan Hale", "Mateo Silva", "Omar Reyes", "Felix Grant", "Samir Haddad"],
+    ["Dante Brooks", "Ilya Romanov", "Aiden Park", "Victor Marin", "Noah Ellis"]
+  ];
+  const opponents = opponentPools[seed % opponentPools.length];
+
   return opponents.map((opponent, index) => {
     const result = (seed + index) % 4 === 0 ? "L" : "W";
     return {
@@ -38,7 +45,7 @@ const lastFive = (seed: number): FightResult[] => {
       sigStrikeDifferentialByRound: [seed - 3 + index, seed + 1 - index, seed - 1],
       takedownsByRound: [index % 2, (seed + index) % 2, index === 0 ? 1 : 0],
       controlTimeByRound: [35 + seed * 4, 18 + index * 12, 44 - index * 5],
-      notes: "mock trend line"
+      notes: "prototype trend line"
     };
   });
 };
@@ -145,14 +152,14 @@ const fight = (
   ],
   pathsToVictory: {
     fighterA: [
-      { label: "own the first exchange and force the first layer", weight: Math.min(96, fighters[fighterAId].styleProfile.controlThreat + 6) },
-      { label: "make the best axis show up every round", weight: Math.min(92, fighters[fighterAId].styleProfile.wrestlingOffense + 4) },
-      { label: "bank clean minutes before the reset", weight: Math.min(86, fighters[fighterAId].styleProfile.cardioConsistency) }
+      { label: "first contact to control", weight: Math.min(96, fighters[fighterAId].styleProfile.controlThreat + 6) },
+      { label: "repeat the strongest axis", weight: Math.min(92, fighters[fighterAId].styleProfile.wrestlingOffense + 4) },
+      { label: "bank minutes between resets", weight: Math.min(86, fighters[fighterAId].styleProfile.cardioConsistency) }
     ],
     fighterB: [
-      { label: "deny the first entry and keep the feet active", weight: Math.min(96, fighters[fighterBId].styleProfile.takedownDefense + 5) },
-      { label: "make volume decide the quiet minutes", weight: Math.min(92, fighters[fighterBId].styleProfile.strikingVolume + 3) },
-      { label: "turn late rounds into repeatable reads", weight: Math.min(86, fighters[fighterBId].styleProfile.cardioConsistency) }
+      { label: "deny entries, keep feet active", weight: Math.min(96, fighters[fighterBId].styleProfile.takedownDefense + 5) },
+      { label: "volume in quiet minutes", weight: Math.min(92, fighters[fighterBId].styleProfile.strikingVolume + 3) },
+      { label: "repeatable late-round reads", weight: Math.min(86, fighters[fighterBId].styleProfile.cardioConsistency) }
     ]
   }
 });

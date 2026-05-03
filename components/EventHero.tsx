@@ -17,8 +17,8 @@ export function EventHero({ event }: EventHeroProps) {
             {event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            A clean card view for matchup shape, style clashes, recent form, resume heat, and
-            creator-ready export ideas.
+            A clean card view for matchup shape, style clash, form plus resume context, round trend,
+            and tactical routes.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[

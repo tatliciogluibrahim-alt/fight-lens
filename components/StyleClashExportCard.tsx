@@ -38,65 +38,6 @@ function axisScore(profile: StyleProfile, axis: string) {
   }
 }
 
-function localFlagSwatches(fighter: Fighter) {
-  const codes = fighter.countryCode
-    .split("/")
-    .map((code) => code.trim())
-    .filter(Boolean);
-
-  return codes.map((code) => ({ code, colors: fighter.countryColors }));
-}
-
-function FlagSwatch({ colors, code, compact = false }: { colors: string[]; code: string; compact?: boolean }) {
-  const [a = exportColors.accent, b = exportColors.foreground, c = exportColors.lineStrong] = colors;
-
-  return (
-    <span
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: compact ? 34 : 64,
-        height: compact ? 24 : 44,
-        borderRadius: 4,
-        border: `1px solid ${exportColors.muted}`,
-        background: `linear-gradient(135deg, ${a} 0 33%, ${b} 33% 66%, ${c} 66% 100%)`,
-        color: exportColors.background,
-        fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
-        fontSize: compact ? 8 : 13,
-        fontWeight: 800,
-        letterSpacing: "0.08em",
-        textTransform: "uppercase",
-        boxShadow: "0 0 0 1px rgba(0,0,0,0.35)"
-      }}
-      aria-hidden="true"
-    >
-      {code}
-    </span>
-  );
-}
-
-function FighterFlagGroup({ fighter, compact = false }: { fighter: Fighter; compact?: boolean }) {
-  return (
-    <span style={{ display: "inline-flex", alignItems: "center", gap: compact ? 5 : 7 }}>
-      {localFlagSwatches(fighter).map((flag) => (
-        <FlagSwatch key={`${fighter.id}-${flag.code}`} code={flag.code} colors={flag.colors} compact={compact} />
-      ))}
-      <span
-        style={{
-          fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
-          fontSize: compact ? 10 : 17,
-          letterSpacing: "0.12em",
-          textTransform: "uppercase",
-          color: exportColors.subtle
-        }}
-      >
-        {fighter.countryLabel}
-      </span>
-    </span>
-  );
-}
-
 function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighterB: Fighter; source: boolean }) {
   const size = 360;
   const center = size / 2;
@@ -143,10 +84,25 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: Fighter; fighte
           </text>
         );
       })}
-      <polygon points={polygon(fighterA)} fill={exportColors.accent} fillOpacity="0.24" stroke={exportColors.accent} strokeWidth="3" />
       <polygon points={polygon(fighterB)} fill={exportColors.muted} fillOpacity="0.12" stroke={exportColors.muted} strokeWidth="3" />
+      <polygon points={polygon(fighterA)} fill={exportColors.accent} fillOpacity="0.24" stroke={exportColors.accent} strokeWidth="3" />
       <circle cx={center} cy={center} r="4" fill={exportColors.subtle} />
     </svg>
+  );
+}
+
+function Legend({ fighterA, fighterB, source }: { fighterA: Fighter; fighterB: Fighter; source: boolean }) {
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: source ? 24 : 12, alignItems: "center" }}>
+      <span style={{ display: "inline-flex", alignItems: "center", gap: source ? 12 : 8, color: exportColors.foreground, fontSize: source ? 22 : 12 }}>
+        <span style={{ width: source ? 14 : 9, height: source ? 14 : 9, borderRadius: 4, background: exportColors.accent }} />
+        {fighterA.name}
+      </span>
+      <span style={{ display: "inline-flex", alignItems: "center", gap: source ? 12 : 8, color: exportColors.muted, fontSize: source ? 22 : 12 }}>
+        <span style={{ width: source ? 14 : 9, height: source ? 14 : 9, borderRadius: 4, background: exportColors.muted }} />
+        {fighterB.name}
+      </span>
+    </div>
   );
 }
 
@@ -234,14 +190,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
   };
 
   return (
-    <article
-      id={id}
-      data-export-card={source ? "true" : undefined}
-      data-export-width={source ? "1920" : undefined}
-      data-export-height={source ? "1080" : undefined}
-      style={cardStyle}
-      aria-label={`${title} style clash creator card`}
-    >
+    <article id={id} style={cardStyle} aria-label={`${title} style clash creator card`}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 20 }}>
         <div style={{ display: "flex", alignItems: "center", gap: source ? 22 : 10 }}>
           <span
@@ -303,7 +252,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
         <section
           style={{
             display: "grid",
-            gridTemplateRows: "auto 1fr auto",
+            gridTemplateRows: "auto 1fr",
             minWidth: 0,
             border: `1px solid ${exportColors.line}`,
             borderRadius: source ? 32 : 14,
@@ -311,62 +260,39 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
             padding: source ? 44 : "clamp(14px, 3vw, 24px)"
           }}
         >
-          <div>
-            <p
-              style={{
-                margin: 0,
-                color: exportColors.subtle,
-                fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
-                fontSize: source ? 20 : 9,
-                letterSpacing: "0.16em",
-                textTransform: "uppercase"
-              }}
-            >
-              style overlap radar
-            </p>
-            <h2
-              style={{
-                margin: source ? "16px 0 0" : "6px 0 0",
-                fontSize: source ? 42 : "clamp(15px, 2.5vw, 22px)",
-                lineHeight: 1.02,
-                letterSpacing: "-0.035em"
-              }}
-            >
-              {title}
-            </h2>
-          </div>
+          <p
+            style={{
+              margin: 0,
+              color: exportColors.subtle,
+              fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
+              fontSize: source ? 20 : 9,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase"
+            }}
+          >
+            overlap radar
+          </p>
 
-          <div style={{ alignSelf: "center", justifySelf: "center", width: source ? 575 : "min(72%, 340px)", aspectRatio: "1 / 1" }}>
+          <div style={{ alignSelf: "center", justifySelf: "center", width: source ? 610 : "min(78%, 360px)", aspectRatio: "1 / 1" }}>
             <RadarExport fighterA={fighterA} fighterB={fighterB} source={source} />
-          </div>
-
-          <div style={{ display: "flex", flexWrap: "wrap", gap: source ? 26 : 10, justifyContent: "center" }}>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: 8, color: exportColors.muted, fontSize: source ? 22 : 10 }}>
-              <span style={{ width: 9, height: 9, borderRadius: 3, background: exportColors.accent }} />
-              {fighterA.name}
-            </span>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: 8, color: exportColors.muted, fontSize: source ? 22 : 10 }}>
-              <span style={{ width: 9, height: 9, borderRadius: 3, background: exportColors.muted }} />
-              {fighterB.name}
-            </span>
           </div>
         </section>
 
         <section style={{ display: "flex", minWidth: 0, flexDirection: "column", justifyContent: "center" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: source ? 26 : 10 }}>
-            <FighterFlagGroup fighter={fighterA} compact={!source} />
-            <span
-              style={{
-                color: exportColors.subtle,
-                fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
-                fontSize: source ? 18 : 9,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase"
-              }}
-            >
-              vs
-            </span>
-            <FighterFlagGroup fighter={fighterB} compact={!source} />
+          <p
+            style={{
+              margin: 0,
+              color: exportColors.subtle,
+              fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
+              fontSize: source ? 20 : 10,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase"
+            }}
+          >
+            {title}
+          </p>
+          <div style={{ marginTop: source ? 18 : 8 }}>
+            <Legend fighterA={fighterA} fighterB={fighterB} source={source} />
           </div>
 
           <h1

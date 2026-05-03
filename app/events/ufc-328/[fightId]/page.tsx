@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
-import { DataModelReadout } from "@/components/DataModelReadout";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
+import { FormResumeModule } from "@/components/FormResumeModule";
 import { FighterAssetSlot } from "@/components/FighterAssetSlot";
-import { KeyStatEdges } from "@/components/KeyStatEdges";
-import { LastFiveTrend } from "@/components/LastFiveTrend";
 import { PathsToVictory } from "@/components/PathsToVictory";
-import { ResumeHeatCard } from "@/components/ResumeHeatCard";
+import { RoundTrendModule } from "@/components/RoundTrendModule";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { event, fights, getFight, getFighter } from "@/lib/data";
 import { getNormalizedFight } from "@/lib/normalized-event";
@@ -121,16 +119,19 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
 
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
           <FightShapeSummary fight={fight} fighterA={fighterA} fighterB={fighterB} />
-          <DataModelReadout fight={normalizedFight} />
           <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} styleClashLabel={fight.styleClashLabel} />
-          <LastFiveTrend
+          <FormResumeModule
             fighterA={fighterA}
             fighterB={fighterB}
             sourcedA={normalizedFight?.fighters.fighterA.lastFive}
             sourcedB={normalizedFight?.fighters.fighterB.lastFive}
           />
-          <ResumeHeatCard fighterA={fighterA} fighterB={fighterB} />
-          <KeyStatEdges fight={fight} />
+          <RoundTrendModule
+            fight={fight}
+            fighterA={fighterA}
+            fighterB={fighterB}
+            normalizedFight={normalizedFight}
+          />
           <PathsToVictory
             fighterA={fighterA}
             fighterB={fighterB}

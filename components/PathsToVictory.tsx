@@ -1,5 +1,4 @@
 import type { FightPath, Fighter } from "@/lib/types";
-import { SaveSectionButton } from "./SaveSectionButton";
 
 interface PathsToVictoryProps {
   fighterA: Fighter;
@@ -40,16 +39,14 @@ export function PathsToVictory({ fighterA, fighterB, pathsA, pathsB }: PathsToVi
     <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="mono-label">06 / paths to victory</p>
+          <p className="mono-label">05 / tactical routes</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
             tactical routes.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Tactical routes, not predictions. The weights are placeholder scouting scores for how
-            clearly each route shows up in the matchup shape.
+            Tactical routes, not picks. Weights show how clearly each control route appears in the matchup shape.
           </p>
         </div>
-        <SaveSectionButton elementId="section-paths" filename="fight-lens-paths" />
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
         <PathList fighter={fighterA} paths={pathsA} accent />

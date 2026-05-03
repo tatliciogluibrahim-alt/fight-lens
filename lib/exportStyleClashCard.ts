@@ -18,23 +18,6 @@ const C = {
 
 const axes = ["striking", "wrestling", "grappling", "cardio", "defense", "output"];
 
-const flagPalettes: Record<string, string[]> = {
-  AE: ["#CE1126", "#00732F", "#FFFFFF", "#000000"],
-  SE: ["#006AA7", "#FECC00", "#006AA7"],
-  US: ["#B22234", "#FFFFFF", "#3C3B6E"],
-  MM: ["#FECB00", "#34B233", "#EA2839"],
-  JP: ["#FFFFFF", "#BC002D", "#FFFFFF"],
-  RU: ["#FFFFFF", "#0039A6", "#D52B1E"],
-  DO: ["#CE1126", "#FFFFFF", "#002D62"],
-  FR: ["#0055A4", "#FFFFFF", "#EF4135"],
-  CM: ["#007A5E", "#FCD116", "#CE1126"],
-  ES: ["#AA151B", "#F1BF00", "#AA151B"],
-  UA: ["#0057B7", "#FFD700", "#0057B7"],
-  PL: ["#FFFFFF", "#DC143C", "#DC143C"],
-  BR: ["#009B3A", "#FFDF00", "#002776"],
-  PE: ["#D91023", "#FFFFFF", "#D91023"]
-};
-
 function axisScore(profile: StyleProfile, axis: string) {
   switch (axis) {
     case "striking":
@@ -154,54 +137,6 @@ function drawWrappedText(ctx: CanvasRenderingContext2D, text: string, x: number,
   return lines.length * lineHeight;
 }
 
-function flagCodes(fighter: Fighter) {
-  return fighter.countryCode
-    .split("/")
-    .map((code) => code.trim().toUpperCase())
-    .filter(Boolean);
-}
-
-function drawFlag(ctx: CanvasRenderingContext2D, code: string, x: number, y: number, w = 58, h = 38) {
-  const colors = flagPalettes[code] ?? [C.accent, C.fg, C.lineStrong];
-  ctx.save();
-  roundRect(ctx, x, y, w, h, 5);
-  ctx.clip();
-  colors.forEach((color, index) => {
-    ctx.fillStyle = color;
-    ctx.fillRect(x + (w / colors.length) * index, y, w / colors.length + 1, h);
-  });
-  ctx.restore();
-  strokeRoundRect(ctx, x, y, w, h, 5, rgba(C.fg, 0.45), 1.5);
-  drawText(ctx, code, x + w / 2, y + h / 2 + 5, {
-    font: "700 12px ui-monospace, SFMono-Regular, Consolas, monospace",
-    color: C.bg,
-    align: "center",
-    baseline: "middle",
-    letterSpacing: 0.8
-  });
-}
-
-function drawFlagGroup(ctx: CanvasRenderingContext2D, fighter: Fighter, x: number, y: number) {
-  let cursor = x;
-  for (const code of flagCodes(fighter)) {
-    drawFlag(ctx, code, cursor, y);
-    cursor += 66;
-  }
-  const compactLabel = fighter.countryCode.replaceAll("/", " / ").toUpperCase();
-  drawText(ctx, compactLabel, cursor + 8, y + 24, {
-    font: "400 18px ui-monospace, SFMono-Regular, Consolas, monospace",
-    color: C.subtle,
-    baseline: "middle",
-    letterSpacing: 2.3
-  });
-
-  ctx.save();
-  ctx.font = "400 18px ui-monospace, SFMono-Regular, Consolas, monospace";
-  const labelWidth = ctx.measureText(compactLabel).width + compactLabel.length * 2.3;
-  ctx.restore();
-  return cursor + 8 + labelWidth;
-}
-
 function drawLogo(ctx: CanvasRenderingContext2D) {
   fillRoundRect(ctx, 80, 70, 76, 76, 14, C.panelSoft);
   strokeRoundRect(ctx, 80, 70, 76, 76, 14, C.lineStrong, 2);
@@ -216,6 +151,23 @@ function drawLogo(ctx: CanvasRenderingContext2D) {
     color: C.subtle,
     baseline: "middle",
     letterSpacing: 3.5
+  });
+}
+
+function drawLegend(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fighter, x: number, y: number) {
+  fillRoundRect(ctx, x, y - 9, 14, 14, 4, C.accent);
+  drawText(ctx, fighterA.name, x + 28, y, {
+    font: "400 23px Arial, Helvetica, sans-serif",
+    color: C.fg,
+    baseline: "middle"
+  });
+
+  const secondX = x + 300;
+  fillRoundRect(ctx, secondX, y - 9, 14, 14, 4, C.muted);
+  drawText(ctx, fighterB.name, secondX + 28, y, {
+    font: "400 23px Arial, Helvetica, sans-serif",
+    color: C.muted,
+    baseline: "middle"
   });
 }
 
@@ -341,42 +293,22 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: Fighter, fighterB: Fi
   fillRoundRect(ctx, left.x, left.y, left.w, left.h, 28, rgba(C.panel, 0.72));
   strokeRoundRect(ctx, left.x, left.y, left.w, left.h, 28, C.line, 2);
 
-  drawText(ctx, "STYLE OVERLAP RADAR", left.x + 48, left.y + 70, {
+  drawText(ctx, "OVERLAP RADAR", left.x + 48, left.y + 70, {
     font: "400 20px ui-monospace, SFMono-Regular, Consolas, monospace",
     color: C.subtle,
     baseline: "middle",
     letterSpacing: 3.8
   });
-  drawText(ctx, `${fighterA.name.toLowerCase()} vs. ${fighterB.name.toLowerCase()}`, left.x + 48, left.y + 118, {
-    font: "500 40px Arial, Helvetica, sans-serif",
-    color: C.fg,
-    baseline: "middle"
-  });
 
-  drawRadar(ctx, fighterA, fighterB, left.x + left.w / 2, left.y + 455, 185);
+  drawRadar(ctx, fighterA, fighterB, left.x + left.w / 2, left.y + 455, 215);
 
-  const legendY = left.y + left.h - 75;
-  fillRoundRect(ctx, left.x + 240, legendY, 12, 12, 3, C.accent);
-  drawText(ctx, fighterA.name, left.x + 265, legendY + 10, {
-    font: "400 20px Arial, Helvetica, sans-serif",
-    color: C.muted,
-    baseline: "middle"
-  });
-  fillRoundRect(ctx, left.x + 455, legendY, 12, 12, 3, C.muted);
-  drawText(ctx, fighterB.name, left.x + 480, legendY + 10, {
-    font: "400 20px Arial, Helvetica, sans-serif",
-    color: C.muted,
-    baseline: "middle"
-  });
-
-  const countryEnd = drawFlagGroup(ctx, fighterA, right.x, right.y + 42);
-  drawText(ctx, "VS", countryEnd + 28, right.y + 66, {
-    font: "400 18px ui-monospace, SFMono-Regular, Consolas, monospace",
+  drawText(ctx, `${fighterA.name.toLowerCase()} vs. ${fighterB.name.toLowerCase()}`, right.x, right.y + 38, {
+    font: "400 20px ui-monospace, SFMono-Regular, Consolas, monospace",
     color: C.subtle,
     baseline: "middle",
-    letterSpacing: 2
+    letterSpacing: 2.7
   });
-  drawFlagGroup(ctx, fighterB, countryEnd + 78, right.y + 42);
+  drawLegend(ctx, fighterA, fighterB, right.x, right.y + 88);
 
   const headlineHeight = drawWrappedText(
     ctx,
