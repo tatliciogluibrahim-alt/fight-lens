@@ -34,7 +34,7 @@ export default function Home() {
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
                 Fight Lens is a matchup intelligence tool built for creators and analysts. No odds.
-                No picks. Just the read.
+                Big dick pics. Just the read.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
