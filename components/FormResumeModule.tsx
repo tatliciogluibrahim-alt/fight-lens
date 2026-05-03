@@ -1,9 +1,12 @@
 import type { SourcedFighter } from "@/lib/sourced-event";
+import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
+import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 
 interface FormResumeModuleProps {
   fighterA: SourcedFighter;
   fighterB: SourcedFighter;
+  modelOutput: FightShapeModelOutput;
 }
 
 interface TrendFight {
@@ -33,20 +36,35 @@ function buildTrendFights(fighter: SourcedFighter): TrendFight[] {
   }));
 }
 
-function ResumeSourceCard({ fighter, accent = false }: { fighter: SourcedFighter; accent?: boolean }) {
+function FormMetricCard({ fighter, metric, accent = false }: { fighter: SourcedFighter; metric: FighterMetricScore; accent?: boolean }) {
   const wins = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "W").length;
   const losses = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "L").length;
+
+  if (metric.status === "insufficient" || metric.score == null) {
+    return (
+      <ModuleEmptyState
+        label="adjusted form"
+        title="Adjusted form pending."
+        body="This needs at least three sourced recent fights before Fight Lens scores form."
+      />
+    );
+  }
 
   return (
     <div className="rounded-2xl border border-line bg-surface/45 p-4">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="mono-label">resume sample</p>
-          <p className="mt-2 text-sm text-muted">Completed fight history</p>
+          <p className="mono-label">adjusted form</p>
+          <p className="mt-2 text-sm text-muted">{metric.label}</p>
         </div>
-        <p className={`data-text text-3xl ${accent ? "text-accent" : "text-foreground"}`}>
-          {fighter.dataCompleteness.lastFiveCount}
-        </p>
+        <div className="text-right">
+          <p className={`data-text text-3xl ${accent ? "text-accent" : "text-foreground"}`}>
+            {metric.score}
+          </p>
+          <div className="mt-2">
+            <ConfidenceBadge label={metric.confidence} />
+          </div>
+        </div>
       </div>
       <div className="mt-4 grid gap-2 sm:grid-cols-3">
         <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
@@ -60,13 +78,13 @@ function ResumeSourceCard({ fighter, accent = false }: { fighter: SourcedFighter
         </p>
       </div>
       <p className="mt-4 text-sm leading-6 text-muted">
-        Résumé Heat is held back until opponent-tier context is modeled cleanly.
+        {metric.explanation}
       </p>
     </div>
   );
 }
 
-function FighterFormCard({ fighter, accent = false }: { fighter: SourcedFighter; accent?: boolean }) {
+function FighterFormCard({ fighter, metric, accent = false }: { fighter: SourcedFighter; metric: FighterMetricScore; accent?: boolean }) {
   const rows = buildTrendFights(fighter);
   const hasSourced = rows.length > 0;
 
@@ -116,7 +134,7 @@ function FighterFormCard({ fighter, accent = false }: { fighter: SourcedFighter;
 
       <div className="mt-4">
         {fighter.fightHistory.length ? (
-          <ResumeSourceCard fighter={fighter} accent={accent} />
+          <FormMetricCard fighter={fighter} metric={metric} accent={accent} />
         ) : (
           <ModuleEmptyState
             label="resume heat"
@@ -129,7 +147,10 @@ function FighterFormCard({ fighter, accent = false }: { fighter: SourcedFighter;
   );
 }
 
-export function FormResumeModule({ fighterA, fighterB }: FormResumeModuleProps) {
+export function FormResumeModule({ fighterA, fighterB, modelOutput }: FormResumeModuleProps) {
+  const formA = modelOutput.metrics.opponentQualityAdjustedForm.fighterA;
+  const formB = modelOutput.metrics.opponentQualityAdjustedForm.fighterB;
+
   return (
     <section id="section-form-resume" className="module-card scroll-mt-28">
       <div className="module-header">
@@ -143,8 +164,8 @@ export function FormResumeModule({ fighterA, fighterB }: FormResumeModuleProps) 
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
-        <FighterFormCard fighter={fighterA} accent />
-        <FighterFormCard fighter={fighterB} />
+        <FighterFormCard fighter={fighterA} metric={formA} accent />
+        <FighterFormCard fighter={fighterB} metric={formB} />
       </div>
     </section>
   );

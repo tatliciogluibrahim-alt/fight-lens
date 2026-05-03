@@ -100,6 +100,7 @@ Then generate the readable report and data index:
 
 ```txt
 npm run data:report
+npm run model:report
 ```
 
 That writes:
@@ -107,6 +108,8 @@ That writes:
 ```txt
 data/generated/ufcstats/reports/ufc-328-data-report.md
 data/generated/ufcstats/reports/ufc-328-data-report.json
+data/generated/ufcstats/reports/ufc-328-fight-shape-model-report.md
+data/generated/ufcstats/reports/ufc-328-fight-shape-model-report.json
 data/generated/ufcstats/index/ufc-328.index.json
 ```
 

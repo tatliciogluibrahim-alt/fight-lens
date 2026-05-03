@@ -11,7 +11,7 @@ export function DisclaimerFooter() {
           </p>
         </div>
         <div className="max-w-xl font-mono text-xs leading-6 text-subtle md:text-right">
-          <p>independent matchup intelligence. not affiliated with ufc. no odds, no picks, no betting language.</p>
+          <p>independent matchup intelligence. not affiliated with ufc. built for shape, pressure, and context.</p>
           <Link href="/methodology" className="text-subtle underline decoration-line underline-offset-4 hover:text-foreground">
             methodology
           </Link>

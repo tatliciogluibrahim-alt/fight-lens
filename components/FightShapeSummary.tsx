@@ -1,17 +1,42 @@
 import type { SourcedFight } from "@/lib/sourced-event";
+import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
+import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 
 interface FightShapeSummaryProps {
   fight: SourcedFight;
+  modelOutput: FightShapeModelOutput;
 }
 
-export function FightShapeSummary({ fight }: FightShapeSummaryProps) {
-  const fighterA = fight.fighters.fighterA;
-  const fighterB = fight.fighters.fighterB;
-  const controlThreat = fighterA.styleProfile.controlThreat;
-  const takedownDefense = fighterB.styleProfile.takedownDefense;
-  const wrestlingOffense = fighterA.styleProfile.wrestlingOffense;
-  const hasPressurePoint = controlThreat != null && takedownDefense != null && wrestlingOffense != null;
+function PressureRow({ metric, accent = false }: { metric: FighterMetricScore; accent?: boolean }) {
+  const score = metric.score ?? 0;
+
+  return (
+    <div>
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <div>
+          <p className="text-sm font-semibold tracking-tight">{metric.fighterName}</p>
+          <p className="data-text mt-1 text-xs text-subtle">{metric.label}</p>
+        </div>
+        <p className={`data-text text-2xl ${accent ? "text-accent" : "text-foreground"}`}>
+          {metric.score ?? "n/a"}
+        </p>
+      </div>
+      <div className="h-2.5 rounded-full bg-surface-2">
+        <div
+          className={`h-2.5 rounded-full ${accent ? "bg-accent" : "bg-muted"}`}
+          style={{ width: `${score}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps) {
+  const pressureA = modelOutput.metrics.stylePressureIndex.fighterA;
+  const pressureB = modelOutput.metrics.stylePressureIndex.fighterB;
+  const hasPressurePoint = pressureA.status !== "insufficient" || pressureB.status !== "insufficient";
+  const showDebug = process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && modelOutput.debug;
 
   return (
     <section id="fight-shape" className="module-card scroll-mt-28">
@@ -24,15 +49,24 @@ export function FightShapeSummary({ fight }: FightShapeSummaryProps) {
 
       <div className="module-body grid gap-5 lg:grid-cols-[1.35fr_0.85fr]">
         <div>
-          {fight.fightShapeSummary ? (
-            <p className="text-xl leading-8 text-foreground md:text-2xl md:leading-9">
-              {fight.fightShapeSummary}
-            </p>
+          {modelOutput.publicSummary ? (
+            <div>
+              <div className="mb-4 flex flex-wrap items-center gap-2">
+                <p className="mono-label">Style Pressure Index</p>
+                <ConfidenceBadge label={modelOutput.dataConfidence.label} />
+              </div>
+              <p className="text-xl leading-8 text-foreground md:text-2xl md:leading-9">
+                {modelOutput.publicSummary}
+              </p>
+              {fight.fightShapeSummary ? (
+                <p className="mt-5 max-w-3xl text-sm leading-6 text-muted">{fight.fightShapeSummary}</p>
+              ) : null}
+            </div>
           ) : (
             <ModuleEmptyState
               label="fight shape"
               title="Fight Shape read pending."
-              body="The profile data is ready, but this matchup still needs reviewed fight-shape copy."
+              body="The current sourced sample is not enough for a public Fight Shape read."
             />
           )}
           <div className="mt-6 flex flex-wrap gap-2">
@@ -51,23 +85,24 @@ export function FightShapeSummary({ fight }: FightShapeSummaryProps) {
           {hasPressurePoint ? (
             <>
               <p className="mono-label">pressure point</p>
-              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em]">first layer</h3>
-              <p className="mt-3 text-sm leading-6 text-muted">
-                {fighterA.name.split(" ")[0]} control threat:{" "}
-                <span className="data-text text-foreground">{controlThreat}</span>.{" "}
-                {fighterB.name.split(" ")[0]} takedown defense:{" "}
-                <span className="data-text text-foreground">{takedownDefense}</span>.
-              </p>
-              <div className="mt-5 grid grid-cols-2 gap-3">
-                <div className="rounded-2xl border border-line bg-surface/70 p-4">
-                  <p className="mono-label">a axis</p>
-                  <p className="data-text mt-2 text-3xl text-accent">{wrestlingOffense}</p>
-                </div>
-                <div className="rounded-2xl border border-line bg-surface/70 p-4">
-                  <p className="mono-label">b denial</p>
-                  <p className="data-text mt-2 text-3xl">{takedownDefense}</p>
-                </div>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+                <h3 className="text-2xl font-semibold tracking-[-0.03em]">matchup stress</h3>
+                <ConfidenceBadge label={pressureA.confidence === "Insufficient" ? pressureB.confidence : pressureA.confidence} />
               </div>
+              <div className="mt-5 space-y-5">
+                <PressureRow metric={pressureA} accent />
+                <PressureRow metric={pressureB} />
+              </div>
+              <p className="mt-5 text-sm leading-6 text-muted">
+                {pressureA.score != null && (pressureA.score ?? 0) >= (pressureB.score ?? 0)
+                  ? pressureA.explanation
+                  : pressureB.explanation}
+              </p>
+              {showDebug ? (
+                <p className="data-text mt-4 text-xs leading-6 text-subtle">
+                  {modelOutput.debug?.modelVersion}: {modelOutput.debug?.notes.join(" ")}
+                </p>
+              ) : null}
             </>
           ) : (
             <ModuleEmptyState

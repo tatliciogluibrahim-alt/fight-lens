@@ -23,9 +23,21 @@ export interface SourcedTotals {
   controlSeconds: number | null;
 }
 
+export interface SourcedSignificantTotals {
+  significantStrikes: SourcedLandedAttempted | null;
+  significantStrikePercent: number | null;
+  head: SourcedLandedAttempted | null;
+  body: SourcedLandedAttempted | null;
+  leg: SourcedLandedAttempted | null;
+  distance: SourcedLandedAttempted | null;
+  clinch: SourcedLandedAttempted | null;
+  ground: SourcedLandedAttempted | null;
+}
+
 export interface SourcedRoundStat {
   round: number;
   totals: SourcedTotals | null;
+  significant?: SourcedSignificantTotals | null;
 }
 
 export interface SourcedFightHistoryItem {
@@ -41,6 +53,7 @@ export interface SourcedFightHistoryItem {
   fightUrl: string;
   totals: {
     totals: SourcedTotals | null;
+    significant?: SourcedSignificantTotals | null;
   } | null;
   roundStats: SourcedRoundStat[];
   source: "ufcstats";

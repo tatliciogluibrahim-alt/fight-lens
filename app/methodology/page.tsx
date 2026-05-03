@@ -52,6 +52,34 @@ const outputRows = [
   }
 ];
 
+const modelRows = [
+  {
+    label: "Style Pressure Index",
+    status: "real",
+    body: "Uses profile rates and recent control evidence to show which style creates matchup stress. It is not an outcome score."
+  },
+  {
+    label: "Opponent Quality Adjusted Form",
+    status: "partial",
+    body: "Uses recent sourced results, methods, and recency. Opponent tiers are held out until that context is modeled cleanly."
+  },
+  {
+    label: "Round Sustainability",
+    status: "real when sampled",
+    body: "Uses completed round stats to compare early, middle, and late signals. It stays hidden when late-round samples are thin."
+  },
+  {
+    label: "Path Reliability",
+    status: "partial",
+    body: "Combines pressure, form, and sustainability only when all three have usable samples."
+  },
+  {
+    label: "Context Signal Score",
+    status: "deferred",
+    body: "Reserved for Context Lens and Source Scout. No public context signal is added yet."
+  }
+];
+
 function NumberPill({ children }: { children: React.ReactNode }) {
   return (
     <span className="data-text inline-flex min-w-10 justify-center rounded-full border border-line bg-surface-2 px-3 py-2 text-xs text-subtle">
@@ -102,6 +130,31 @@ export default function MethodologyPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-shell py-8 md:py-12">
+          <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr]">
+            <div>
+              <p className="mono-label">fight shape model</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-normal md:text-4xl">
+                first model pass.
+              </h2>
+              <p className="mt-4 text-sm leading-6 text-muted">
+                The model explains pressure, form, sustainability, and confidence. It does not
+                publish outcome calls, and it returns Insufficient when the sample is too thin.
+              </p>
+            </div>
+
+            <div className="overflow-hidden border border-line bg-surface/70">
+              {modelRows.map((row) => (
+                <div key={row.label} className="grid gap-3 border-b border-line p-5 last:border-b-0 md:grid-cols-[220px_120px_1fr]">
+                  <h3 className="font-semibold tracking-normal">{row.label}</h3>
+                  <p className="data-text text-xs uppercase tracking-[0.12em] text-accent">{row.status}</p>
+                  <p className="text-sm leading-6 text-muted">{row.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

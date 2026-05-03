@@ -42,6 +42,7 @@ Run:
 
 ```bash
 npm run data:report
+npm run model:report
 ```
 
 This writes:
@@ -49,10 +50,12 @@ This writes:
 ```text
 data/generated/ufcstats/reports/ufc-328-data-report.md
 data/generated/ufcstats/reports/ufc-328-data-report.json
+data/generated/ufcstats/reports/ufc-328-fight-shape-model-report.md
+data/generated/ufcstats/reports/ufc-328-fight-shape-model-report.json
 data/generated/ufcstats/index/ufc-328.index.json
 ```
 
-The Markdown report is the fastest way to see which fighters matched, which have sourced fight history, which have round stats, and which modules should display or stay empty.
+The Markdown reports are the fastest way to see which fighters matched, which have sourced fight history, which have round stats, and which Fight Shape Model metrics should display or stay empty.
 
 ## Guardrails
 

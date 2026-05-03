@@ -8,6 +8,7 @@ import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { RoundTrendModule } from "@/components/RoundTrendModule";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
+import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -70,6 +71,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
 
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
+  const fightShapeModel = buildFightShapeModel(fight);
 
   return (
     <>
@@ -113,11 +115,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         </section>
 
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
-          <FightShapeSummary fight={fight} />
+          <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
           <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} styleClashLabel={fight.styleClashLabel ?? undefined} />
-          <FormResumeModule fighterA={fighterA} fighterB={fighterB} />
-          <RoundTrendModule fight={fight} />
-          <PathsToVictory fight={fight} />
+          <FormResumeModule fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
+          <RoundTrendModule modelOutput={fightShapeModel} />
+          <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
         </div>
       </main>
       <DisclaimerFooter />

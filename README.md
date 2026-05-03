@@ -91,6 +91,7 @@ Run ingestion/normalization scripts only when intentionally refreshing data:
 npm run ingest:ufcstats
 npm run normalize:data
 npm run data:report
+npm run model:report
 npm run backtest:islam-jdm
 ```
 

@@ -11,6 +11,7 @@
     "ingest:ufcstats": "node scripts/ingest/ufcstats.mjs",
     "normalize:data": "node scripts/ingest/build-normalized-event.mjs",
     "data:report": "node scripts/ingest/report-ufcstats.mjs",
+    "model:report": "node scripts/ingest/report-fight-shape-model.mjs",
     "backtest:islam-jdm": "node scripts/ingest/build-islam-jdm-backtest.mjs"
   },
   "dependencies": {

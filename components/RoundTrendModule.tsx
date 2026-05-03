@@ -1,31 +1,33 @@
-import type { SourcedFight, SourcedFighter, SourcedRoundScore } from "@/lib/sourced-event";
+import type { FightShapeModelOutput, RoundSustainabilityScore } from "@/lib/fight-shape-model/types";
+import { ConfidenceBadge } from "./ConfidenceBadge";
 
 interface RoundTrendModuleProps {
-  fight: SourcedFight;
+  modelOutput: FightShapeModelOutput;
 }
 
-function hasEnoughRoundData(fighter: SourcedFighter) {
-  return Boolean(
-    fighter.roundModel.earlyThreat != null &&
-      fighter.roundModel.lateRoundSampleCount >= 3 &&
-      fighter.roundModel.hasEnoughForTrend
-  );
-}
+function TrendBars({ metric, accent = false }: { metric: RoundSustainabilityScore; accent?: boolean }) {
+  const rows = [
+    ["early", metric.earlySignal],
+    ["middle", metric.middleSignal],
+    ["late", metric.lateSignal]
+  ] as const;
 
-function TrendBars({ fighter, scores, accent = false }: { fighter: SourcedFighter; scores: SourcedRoundScore[]; accent?: boolean }) {
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5">
-      <div className="mb-5">
-        <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-        <p className="mono-label mt-1">round trend</p>
+      <div className="mb-5 flex items-start justify-between gap-4">
+        <div>
+          <h3 className="font-semibold tracking-tight">{metric.fighterName}</h3>
+          <p className="mono-label mt-1">{metric.label}</p>
+        </div>
+        <ConfidenceBadge label={metric.confidence} />
       </div>
       <div className="space-y-3">
-        {scores.map((round) => {
-          const score = round.score ?? 0;
+        {rows.map(([label, value]) => {
+          const score = value ?? 0;
 
           return (
-            <div key={`${fighter.id}-r${round.round}`} className="grid grid-cols-[44px_1fr_74px] items-center gap-3">
-              <span className="data-text text-xs text-subtle">r{round.round}</span>
+            <div key={`${metric.fighterId}-${label}`} className="grid grid-cols-[64px_1fr_48px] items-center gap-3">
+              <span className="data-text text-xs text-subtle">{label}</span>
               <div className="h-3 rounded-full bg-surface-2">
                 <div
                   className={`h-3 rounded-full ${accent ? "bg-accent" : "bg-muted"}`}
@@ -33,7 +35,7 @@ function TrendBars({ fighter, scores, accent = false }: { fighter: SourcedFighte
                 />
               </div>
               <span className={`data-text text-right text-xs ${accent ? "text-accent" : "text-foreground"}`}>
-                {round.score ?? "n/a"} / {round.sampleCount}
+                {value ?? "n/a"}
               </span>
             </div>
           );
@@ -43,11 +45,11 @@ function TrendBars({ fighter, scores, accent = false }: { fighter: SourcedFighte
   );
 }
 
-function SignalTiles({ fighterA, fighterB }: { fighterA: SourcedFighter; fighterB: SourcedFighter }) {
+function SignalTiles({ fighterA, fighterB }: { fighterA: RoundSustainabilityScore; fighterB: RoundSustainabilityScore }) {
   const rows = [
-    ["early threat", fighterA.roundModel.earlyThreat, fighterB.roundModel.earlyThreat],
-    ["late evidence", fighterA.roundModel.lateEvidence, fighterB.roundModel.lateEvidence],
-    ["round samples", fighterA.roundModel.roundSampleCount, fighterB.roundModel.roundSampleCount]
+    ["early", fighterA.earlySignal, fighterB.earlySignal],
+    ["middle", fighterA.middleSignal, fighterB.middleSignal],
+    ["late", fighterA.lateSignal, fighterB.lateSignal]
   ] as const;
 
   return (
@@ -79,31 +81,31 @@ function SignalTiles({ fighterA, fighterB }: { fighterA: SourcedFighter; fighter
   );
 }
 
-export function RoundTrendModule({ fight }: RoundTrendModuleProps) {
-  const fighterA = fight.fighters.fighterA;
-  const fighterB = fight.fighters.fighterB;
-  const canShowTrend = hasEnoughRoundData(fighterA) && hasEnoughRoundData(fighterB);
+export function RoundTrendModule({ modelOutput }: RoundTrendModuleProps) {
+  const fighterA = modelOutput.metrics.roundSustainability.fighterA;
+  const fighterB = modelOutput.metrics.roundSustainability.fighterB;
+  const canShowTrend = fighterA.status !== "insufficient" && fighterB.status !== "insufficient";
 
   return (
     <section id="section-round-trend" className="module-card scroll-mt-28">
       <div className="module-header">
         <p className="mono-label">04 / round trend</p>
         <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-          where the fight changes by round.
+          sustainability by round.
         </h2>
         {canShowTrend ? (
           <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            Round trend uses completed fight-detail rounds only. Missing rounds stay out of the chart.
+            The model compares early, middle, and late signals from completed round data only.
           </p>
         ) : null}
       </div>
       {canShowTrend ? (
         <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
-          <TrendBars fighter={fighterA} scores={fighterA.roundModel.roundScores} accent />
-          <TrendBars fighter={fighterB} scores={fighterB.roundModel.roundScores} />
+          <TrendBars metric={fighterA} accent />
+          <TrendBars metric={fighterB} />
           <div className="lg:col-span-2">
             <SignalTiles fighterA={fighterA} fighterB={fighterB} />
-            <p className="data-text mt-4 text-xs leading-6 text-subtle">{fighterA.roundModel.interpretation}</p>
+            <p className="data-text mt-4 text-xs leading-6 text-subtle">{fighterA.explanation}</p>
           </div>
         </div>
       ) : (

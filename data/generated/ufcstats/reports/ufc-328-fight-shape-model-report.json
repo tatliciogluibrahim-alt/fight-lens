@@ -1,0 +1,418 @@
+{
+  "eventId": "ufc-328",
+  "eventName": "UFC 328: Chimaev vs. Strickland",
+  "generatedAt": "2026-05-03T21:46:02.463Z",
+  "summary": {
+    "fights": 13,
+    "stylePressureReady": 13,
+    "adjustedFormReady": 12,
+    "roundSustainabilityReady": 3,
+    "pathReliabilityReady": 3,
+    "contextSignalsReady": 0
+  },
+  "fights": [
+    {
+      "id": "chimaev-strickland",
+      "label": "Khamzat Chimaev vs. Sean Strickland",
+      "fighterA": {
+        "name": "Khamzat Chimaev",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 5
+      },
+      "fighterB": {
+        "name": "Sean Strickland",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 23,
+        "lateRoundSampleCount": 13
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "real",
+        "pathReliability": "partial",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "van-taira",
+      "label": "Joshua Van vs. Tatsuro Taira",
+      "fighterA": {
+        "name": "Joshua Van",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 4
+      },
+      "fighterB": {
+        "name": "Tatsuro Taira",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 3
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "real",
+        "pathReliability": "partial",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "volkov-cortes",
+      "label": "Alexander Volkov vs. Waldo Cortes Acosta",
+      "fighterA": {
+        "name": "Alexander Volkov",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 12,
+        "lateRoundSampleCount": 3
+      },
+      "fighterB": {
+        "name": "Waldo Cortes Acosta",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "brady-buckley",
+      "label": "Sean Brady vs. Joaquin Buckley",
+      "fighterA": {
+        "name": "Sean Brady",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 15,
+        "lateRoundSampleCount": 6
+      },
+      "fighterB": {
+        "name": "Joaquin Buckley",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 16,
+        "lateRoundSampleCount": 6
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "real",
+        "pathReliability": "partial",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "green-stephens",
+      "label": "King Green vs. Jeremy Stephens",
+      "fighterA": {
+        "name": "King Green",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2
+      },
+      "fighterB": {
+        "name": "Jeremy Stephens",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "gautier-diaz",
+      "label": "Ateba Gautier vs. Ozzy Diaz",
+      "fighterA": {
+        "name": "Ateba Gautier",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 8,
+        "lateRoundSampleCount": 1
+      },
+      "fighterB": {
+        "name": "Ozzy Diaz",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 3,
+        "roundSampleCount": 6,
+        "lateRoundSampleCount": 1
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "alvarez-amosov",
+      "label": "Joel Alvarez vs. Yaroslav Amosov",
+      "fighterA": {
+        "name": "Joel Alvarez",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 11,
+        "lateRoundSampleCount": 2
+      },
+      "fighterB": {
+        "name": "Yaroslav Amosov",
+        "stylePressure": "real",
+        "adjustedForm": "insufficient",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 1,
+        "roundSampleCount": 1,
+        "lateRoundSampleCount": 0
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "insufficient",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "dawson-rebecki",
+      "label": "Grant Dawson vs. Mateusz Rebecki",
+      "fighterA": {
+        "name": "Grant Dawson",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 10,
+        "lateRoundSampleCount": 2
+      },
+      "fighterB": {
+        "name": "Mateusz Rebecki",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 13,
+        "lateRoundSampleCount": 4
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "miller-gordon",
+      "label": "Jim Miller vs. Jared Gordon",
+      "fighterA": {
+        "name": "Jim Miller",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "real",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 11,
+        "lateRoundSampleCount": 3
+      },
+      "fighterB": {
+        "name": "Jared Gordon",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 4,
+        "lateRoundSampleCount": 1
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "kopylov-tulio",
+      "label": "Roman Kopylov vs. Marco Tulio",
+      "fighterA": {
+        "name": "Roman Kopylov",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "fighterB": {
+        "name": "Marco Tulio",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "sabatini-gomis",
+      "label": "Pat Sabatini vs. William Gomis",
+      "fighterA": {
+        "name": "Pat Sabatini",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "fighterB": {
+        "name": "William Gomis",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "susurkaev-santos",
+      "label": "Baisangur Susurkaev vs. Djorden Santos",
+      "fighterA": {
+        "name": "Baisangur Susurkaev",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 3,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "fighterB": {
+        "name": "Djorden Santos",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 3,
+        "roundSampleCount": 3,
+        "lateRoundSampleCount": 1
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    },
+    {
+      "id": "carpenter-ochoa",
+      "label": "Clayton Carpenter vs. Jose Ochoa",
+      "fighterA": {
+        "name": "Clayton Carpenter",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 5,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "fighterB": {
+        "name": "Jose Ochoa",
+        "stylePressure": "real",
+        "adjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "contextSignal": "deferred",
+        "historyCount": 3,
+        "roundSampleCount": 0,
+        "lateRoundSampleCount": 0
+      },
+      "metrics": {
+        "stylePressureIndex": "real",
+        "opponentQualityAdjustedForm": "partial",
+        "roundSustainability": "insufficient",
+        "pathReliability": "insufficient",
+        "contextSignalScore": "deferred"
+      }
+    }
+  ]
+}
