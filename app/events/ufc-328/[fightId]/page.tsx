@@ -8,6 +8,7 @@ import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { RoundTrendModule } from "@/components/RoundTrendModule";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
+import { ExportStudio } from "@/components/export/ExportStudio";
 import { StyleClashLabel } from "@/components/StyleClashLabel";
 import { formatRanking } from "@/lib/display";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
@@ -119,6 +120,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
           <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
           <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} styleClashLabel={fight.styleClashLabel ?? undefined} />
+          <ExportStudio fight={fight} fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
           <FormResumeModule fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
           <RoundTrendModule modelOutput={fightShapeModel} />
           <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
