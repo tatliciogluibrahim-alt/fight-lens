@@ -5,6 +5,10 @@ export function formatRanking(ranking: string | null | undefined) {
     return "UNRANKED";
   }
 
+  if (value.toUpperCase() === "C") {
+    return "CHAMPION";
+  }
+
   return value.toUpperCase();
 }
 
