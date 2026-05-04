@@ -43,7 +43,7 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
     <section id="fight-shape" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="mono-label">01 / shape of the fight</p>
+          <p className="mono-label">shape of the fight</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the read.</h2>
         </div>
       </div>
@@ -53,7 +53,6 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
           {modelOutput.publicSummary ? (
             <div>
               <div className="mb-4 flex flex-wrap items-center gap-2">
-                <p className="mono-label">Style Pressure Index</p>
                 <ConfidenceBadge label={modelOutput.dataConfidence.label} />
               </div>
               <p className="text-xl leading-8 text-foreground md:text-2xl md:leading-9">

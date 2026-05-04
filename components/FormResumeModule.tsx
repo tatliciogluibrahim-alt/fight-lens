@@ -154,7 +154,7 @@ export function FormResumeModule({ fighterA, fighterB, modelOutput }: FormResume
   return (
     <section id="section-form-resume" className="module-card scroll-mt-28">
       <div className="module-header">
-        <p className="mono-label">03 / form + resume</p>
+        <p className="mono-label">form check</p>
         <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           recent form, weighted by who it came against.
         </h2>

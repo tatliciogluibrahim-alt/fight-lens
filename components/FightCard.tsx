@@ -65,7 +65,7 @@ export function FightCard({ fight, eventId }: FightCardProps) {
       </div>
 
       <div className="rounded-2xl border border-line bg-background/35 px-4 py-3 md:text-right">
-        <StyleClashLabel label={fight.styleClashLabel} className="text-accent" />
+        <StyleClashLabel label={fight.styleClashLabel} copyable className="text-accent" />
         <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle group-hover:text-muted">
           open lens
         </p>

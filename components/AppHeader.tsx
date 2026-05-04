@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 import { PrototypeBadge } from "./PrototypeBadge";
 
 const links = [
-  { href: "/", label: "overview" },
-  { href: "/events/ufc-328", label: "card" },
-  { href: "/events/ufc-328/chimaev-strickland", label: "matchup" }
+  { href: "/", label: "home" },
+  { href: "/events/ufc-328", label: "matchups" },
+  { href: "/methodology", label: "methodology" }
 ];
 
 export function AppHeader() {
@@ -30,7 +30,7 @@ export function AppHeader() {
           {links.map((link) => {
             const isActive =
               pathname === link.href ||
-              (link.label === "matchup" && pathname.startsWith("/events/ufc-328/"));
+              (link.href === "/events/ufc-328" && pathname.startsWith("/events/"));
 
             return (
               <Link
@@ -48,17 +48,11 @@ export function AppHeader() {
           })}
         </div>
 
-        <div className="order-2 flex items-center gap-3 md:order-3">
-          <Link
-            href="/methodology"
-            className={`font-mono text-[10px] uppercase tracking-[0.14em] transition ${
-              pathname === "/methodology" ? "text-accent" : "text-subtle hover:text-foreground"
-            }`}
-          >
-            methodology
-          </Link>
-          {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && <PrototypeBadge />}
-        </div>
+        {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && (
+          <div className="order-2 md:order-3">
+            <PrototypeBadge />
+          </div>
+        )}
       </nav>
     </header>
   );

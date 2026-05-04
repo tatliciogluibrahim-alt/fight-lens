@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
+import { CreatorActions } from "@/components/CreatorActions";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
-import { RoundTrendModule } from "@/components/RoundTrendModule";
-import { StyleComparisonBars } from "@/components/StyleComparisonBars";
-import { ExportStudio } from "@/components/export/ExportStudio";
 import { StyleClashLabel } from "@/components/StyleClashLabel";
+import { StyleClashSaveButton } from "@/components/StyleClashSaveButton";
+import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking } from "@/lib/display";
+import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
@@ -76,6 +77,14 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fighterB = fight.fighters.fighterB;
   const fightShapeModel = buildFightShapeModel(fight);
 
+  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
+    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
+    : null;
+  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
+    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
+    : null;
+  const canExport = Boolean(exportFighterA && exportFighterB);
+
   return (
     <>
       <AppHeader />
@@ -84,9 +93,10 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           href="/events/ufc-328"
           className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
         >
-          back to card
+          ← back to matchups
         </Link>
 
+        {/* Hero panel */}
         <section className="mt-6 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
             <div>
@@ -100,30 +110,49 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-          <div className="grid min-h-[240px] border-y border-line bg-background/45 p-5 text-center lg:min-h-[390px] lg:border-x lg:border-y-0">
-            <div className="m-auto">
-              <p className="mono-label">matchup lens</p>
-              <p className="my-3 text-6xl font-light tracking-[-0.08em] text-subtle md:text-7xl">vs</p>
-              <p className="data-text text-sm text-muted">
-                {fight.weightClass ?? "weight class pending"} / {fight.rounds} rounds
-              </p>
-              <div className="mx-auto mt-4 flex max-w-[30ch] justify-center">
-                <StyleClashLabel label={fight.styleClashLabel} copyable />
+            <div className="grid min-h-[240px] border-y border-line bg-background/45 p-5 text-center lg:min-h-[390px] lg:border-x lg:border-y-0">
+              <div className="m-auto space-y-4">
+                <p className="mono-label">matchup lens</p>
+                <p className="text-6xl font-light tracking-[-0.08em] text-subtle md:text-7xl">vs</p>
+                <p className="data-text text-sm text-muted">
+                  {fight.weightClass ?? "weight class pending"} / {fight.rounds} rounds
+                </p>
+                <div className="flex justify-center">
+                  <StyleClashLabel label={fight.styleClashLabel} copyable />
+                </div>
+                {canExport && (
+                  <div className="pt-1">
+                    <StyleClashSaveButton
+                      fighterA={exportFighterA!}
+                      fighterB={exportFighterB!}
+                      styleClashLabel={fight.styleClashLabel ?? undefined}
+                    />
+                  </div>
+                )}
               </div>
             </div>
-          </div>
 
-          <FighterHeroPanel fighter={fighterB} align="right" />
+            <FighterHeroPanel fighter={fighterB} align="right" />
           </div>
         </section>
 
+        {/* Analysis sections */}
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
           <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
-          <StyleComparisonBars fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} styleClashLabel={fight.styleClashLabel ?? undefined} />
-          <ExportStudio fight={fight} fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
+          <StyleComparisonBars
+            fighterA={fighterA}
+            fighterB={fighterB}
+            modelOutput={fightShapeModel}
+            styleClashLabel={fight.styleClashLabel ?? undefined}
+          />
           <FormResumeModule fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
-          <RoundTrendModule modelOutput={fightShapeModel} />
           <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+          <CreatorActions
+            fight={fight}
+            fighterA={fighterA}
+            fighterB={fighterB}
+            modelOutput={fightShapeModel}
+          />
         </div>
       </main>
       <DisclaimerFooter />

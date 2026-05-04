@@ -11,7 +11,7 @@ export function EventHero({ event }: EventHeroProps) {
       <div className="grid gap-5 lg:grid-cols-[1.45fr_0.75fr]">
         <div className="lens-card p-5 md:p-8">
           <div className="flex flex-wrap items-center gap-3">
-            <p className="mono-label">{event.event.promotion.toLowerCase()} / card dashboard</p>
+            <p className="mono-label">{event.event.promotion.toLowerCase()} / fight lens</p>
           </div>
           <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-6xl">
             {event.event.name.toLowerCase()}

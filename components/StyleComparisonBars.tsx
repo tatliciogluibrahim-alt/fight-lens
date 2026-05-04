@@ -3,7 +3,6 @@ import { formatRanking } from "@/lib/display";
 import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions } from "@/lib/style-radar";
-import { FighterStyleRadarCard } from "./FighterStyleRadarCard";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import { StyleClashExportCard } from "./StyleClashExportCard";
 import { StyleClashLabel } from "./StyleClashLabel";
@@ -35,7 +34,7 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
     <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div className="max-w-2xl">
-          <p className="mono-label">02 / style radar</p>
+          <p className="mono-label">the clash</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">style fingerprints.</h2>
           <p className="mt-3 text-sm leading-6 text-muted">
             Creator read: this radar reflects recent sourced and derived signals, not a full-career scouting grade.
@@ -47,19 +46,6 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
       </div>
 
       <div className="module-body space-y-6">
-        <div className="grid gap-4 xl:grid-cols-2">
-          <FighterStyleRadarCard
-            fighter={fighterA}
-            metric={modelOutput.metrics.stylePressureIndex.fighterA}
-            tone="accent"
-          />
-          <FighterStyleRadarCard
-            fighter={fighterB}
-            metric={modelOutput.metrics.stylePressureIndex.fighterB}
-            tone="muted"
-          />
-        </div>
-
         {canExport ? (
           <div className="rounded-2xl border border-line bg-background/45 p-3 md:p-4">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3 px-1">
