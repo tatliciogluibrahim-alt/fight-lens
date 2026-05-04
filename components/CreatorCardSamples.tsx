@@ -75,7 +75,7 @@ export function CreatorCardSamples({
               <div>
                 <p className="data-text text-sm text-accent">{fightLabel}</p>
                 <h3 className="mt-3 text-4xl font-semibold leading-[0.94] tracking-[-0.055em]">
-                  forecast vs actual.
+                  model vs actual.
                 </h3>
               </div>
               <div className="space-y-3">

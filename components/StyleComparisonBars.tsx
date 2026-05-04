@@ -1,9 +1,12 @@
-import { fightShapeMetricDefinitions, hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import { formatRanking } from "@/lib/display";
 import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
+import { getStyleRadarDimensions } from "@/lib/style-radar";
 import { FighterStyleRadarCard } from "./FighterStyleRadarCard";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import { StyleClashExportCard } from "./StyleClashExportCard";
+import { StyleClashLabel } from "./StyleClashLabel";
 import { StyleClashSaveButton } from "./StyleClashSaveButton";
 
 interface StyleComparisonBarsProps {
@@ -14,10 +17,11 @@ interface StyleComparisonBarsProps {
 }
 
 export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClashLabel }: StyleComparisonBarsProps) {
-  const comparableRows = fightShapeMetricDefinitions.filter((row) => {
-    const a = fighterA.styleProfile[row.key];
-    const b = fighterB.styleProfile[row.key];
-    return a != null || b != null;
+  const fighterADimensions = getStyleRadarDimensions(fighterA.styleProfile);
+  const fighterBDimensions = getStyleRadarDimensions(fighterB.styleProfile);
+  const comparableRows = fighterADimensions.flatMap((row) => {
+    const b = fighterBDimensions.find((dimension) => dimension.key === row.key);
+    return row.hasData || b?.hasData ? [{ a: row, b }] : [];
   });
   const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
     ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
@@ -34,11 +38,11 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
           <p className="mono-label">02 / style radar</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">style fingerprints.</h2>
           <p className="mt-3 text-sm leading-6 text-muted">
-            Eight-dimension style shape for each fighter, built from the available profile model.
+            Creator read: this radar reflects recent sourced and derived signals, not a full-career scouting grade.
           </p>
         </div>
         {canExport ? (
-          <StyleClashSaveButton fighterA={exportFighterA!} fighterB={exportFighterB!} />
+          <StyleClashSaveButton fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
         ) : null}
       </div>
 
@@ -63,8 +67,9 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                 <p className="mono-label">matchup export</p>
                 <p className="mt-1 text-sm text-muted">Export the shape as a creator-ready overlap card.</p>
               </div>
+              {styleClashLabel ? <StyleClashLabel label={styleClashLabel} copyable /> : null}
             </div>
-            <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} />
+            <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
           </div>
         ) : (
           <ModuleEmptyState
@@ -84,7 +89,7 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                   {fighterA.name}
                 </h3>
                 <p className="data-text mt-2 text-sm text-muted">
-                  {fighterA.record} / {fighterA.stance}
+                  {fighterA.record} / {formatRanking(fighterA.ranking)} / {fighterA.stance}
                 </p>
               </div>
               <div>
@@ -93,42 +98,43 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                   {fighterB.name}
                 </h3>
                 <p className="data-text mt-2 text-sm text-muted">
-                  {fighterB.record} / {fighterB.stance}
+                  {fighterB.record} / {formatRanking(fighterB.ranking)} / {fighterB.stance}
                 </p>
               </div>
               {styleClashLabel ? (
-                <span className="inline-flex rounded-full border border-line bg-surface-2 px-3 py-2 font-mono text-[11px] uppercase tracking-[0.1em] text-muted">
-                  {styleClashLabel}
-                </span>
+                <StyleClashLabel label={styleClashLabel} copyable />
               ) : null}
             </div>
           </div>
 
             <div className="divide-y divide-line rounded-2xl border border-line bg-background/35">
-              {comparableRows.map((row) => {
-              const a = fighterA.styleProfile[row.key];
-              const b = fighterB.styleProfile[row.key];
-              const max = Math.max(a ?? 0, b ?? 0, 1);
+              {comparableRows.map(({ a, b }) => {
+              const aValue = a.hasData ? a.value : null;
+              const bValue = b?.hasData ? b.value ?? null : null;
+              const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
 
               return (
-                <div key={row.key} className="p-4">
+                <div key={a.key} className="p-4">
                   <div className="mb-3 flex items-center justify-between gap-3">
-                    <span className={`data-text text-sm ${(a ?? 0) >= (b ?? 0) ? "text-accent" : "text-muted"}`}>
-                      {a ?? "n/a"}
+                    <span className={`data-text text-sm ${(aValue ?? 0) >= (bValue ?? 0) ? "text-accent" : "text-muted"}`}>
+                      {a.displayValue}
                     </span>
-                    <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">{row.label}</span>
-                    <span className={`data-text text-sm ${(b ?? 0) > (a ?? 0) ? "text-foreground" : "text-muted"}`}>
-                      {b ?? "n/a"}
+                    <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">{a.label}</span>
+                    <span className={`data-text text-sm ${(bValue ?? 0) > (aValue ?? 0) ? "text-foreground" : "text-muted"}`}>
+                      {b?.displayValue ?? "Insufficient sample"}
                     </span>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
                     <div className="flex justify-end rounded-l-full bg-background">
-                      <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${((a ?? 0) / max) * 100}%` }} />
+                      {aValue != null ? <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${(aValue / max) * 100}%` }} /> : null}
                     </div>
                     <div className="rounded-r-full bg-background">
-                      <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${((b ?? 0) / max) * 100}%` }} />
+                      {bValue != null ? <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${(bValue / max) * 100}%` }} /> : null}
                     </div>
                   </div>
+                  <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
+                    {a.signalLabel} / {b?.signalLabel ?? "not modeled yet"}
+                  </p>
                 </div>
               );
               })}

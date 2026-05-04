@@ -249,7 +249,7 @@ export default function IslamJdmBacktestPage() {
             </div>
             <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[0.96] tracking-[-0.055em] md:text-7xl">
               islam vs. jdm
-              <span className="block text-accent">forecast vs actual.</span>
+              <span className="block text-accent">model vs actual.</span>
             </h1>
             <p className="mt-5 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
               {backtest.fight.keyRead}

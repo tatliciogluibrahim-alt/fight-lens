@@ -44,7 +44,7 @@
         "poundForPoundRank": null,
         "strikingSkill": 95,
         "opponentQuality": 86,
-        "note": "Manual context prior: boxing volume and quality wins keep JDM's striking signal elite without turning the model into a winner call."
+        "note": "Manual context prior: boxing volume and quality resume context keep JDM's striking signal high without turning the model into an outcome call."
       },
       "image": {
         "url": null,
@@ -55,7 +55,7 @@
   },
   "manualContext": {
     "question": "Could JDM keep the fight in boxing minutes, or would Islam's wrestling convert welterweight size into control?",
-    "modelCaveat": "This is not a pick engine. It compares pre-fight tendencies to the actual fight shape and separates tendency from confidence.",
+    "modelCaveat": "This is a route-comparison backtest. It compares pre-fight tendencies to the actual fight shape and separates tendency from confidence.",
     "keyRead": "The pre-fight model was directionally right on Islam's control route and too generous to JDM's striking-volume path once takedown threat changed the exchanges."
   }
 }

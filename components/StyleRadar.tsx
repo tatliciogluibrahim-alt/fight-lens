@@ -28,14 +28,14 @@ function pointsToString(points: Array<{ x: number; y: number }>) {
 
 export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps) {
   const dimensions = getStyleRadarDimensions(profile);
-  const canFill = hasEnoughStyleRadarData(profile) && dimensions.every((dimension) => dimension.value != null);
+  const canFill = hasEnoughStyleRadarData(profile) && dimensions.every((dimension) => dimension.hasData);
   const stroke = tone === "accent" ? "var(--accent)" : "var(--muted)";
   const fill = tone === "accent" ? "rgba(200,91,63,0.18)" : "rgba(170,161,150,0.12)";
   const count = dimensions.length;
 
   const availablePoints = dimensions
     .map((dimension, index) => (
-      dimension.value == null
+      !dimension.hasData || dimension.value == null
         ? null
         : {
             ...point(index, dimension.value, count),
@@ -70,7 +70,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       {dimensions.map((dimension, index) => {
         const end = point(index, 100, count);
         const labelPoint = point(index, 100, count, LABEL_RADIUS);
-        const hasValue = dimension.value != null;
+      const hasValue = dimension.hasData;
 
         return (
           <g key={dimension.key}>
@@ -103,18 +103,6 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
           fill={fill}
           stroke={stroke}
           strokeWidth={2.4}
-          strokeLinejoin="round"
-        />
-      ) : null}
-
-      {!canFill && availablePoints.length > 1 ? (
-        <polyline
-          points={pointsToString(availablePoints)}
-          fill="none"
-          stroke={stroke}
-          strokeWidth={2.2}
-          strokeDasharray="4 5"
-          strokeLinecap="round"
           strokeLinejoin="round"
         />
       ) : null}

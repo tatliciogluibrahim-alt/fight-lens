@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { formatStyleClashLabel } from "@/lib/display";
 import { fightShapeExportAxes, getFightShapeAxisScore } from "@/lib/fight-shape";
 import type { StyleExportFighter } from "@/lib/fight-shape";
 
@@ -18,6 +19,7 @@ interface StyleClashExportCardProps {
   fighterB: StyleExportFighter;
   id?: string;
   mode?: "preview" | "source";
+  styleClashLabel?: string | null;
 }
 
 function RadarExport({ fighterA, fighterB, source }: { fighterA: StyleExportFighter; fighterB: StyleExportFighter; source: boolean }) {
@@ -153,9 +155,10 @@ function CompareLine({ label, a, b, source }: { label: string; a: number; b: num
   );
 }
 
-export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" }: StyleClashExportCardProps) {
+export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview", styleClashLabel }: StyleClashExportCardProps) {
   const source = mode === "source";
   const title = `${fighterA.name.toLowerCase()} vs. ${fighterB.name.toLowerCase()}`;
+  const clashLabel = styleClashLabel ? formatStyleClashLabel(styleClashLabel) : null;
 
   const cardStyle: CSSProperties = {
     width: source ? 1920 : "100%",
@@ -287,11 +290,29 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview" 
           <div style={{ marginTop: source ? 18 : 8 }}>
             <Legend fighterA={fighterA} fighterB={fighterB} source={source} />
           </div>
+          {clashLabel ? (
+            <div
+              style={{
+                width: "fit-content",
+                marginTop: source ? 38 : "clamp(12px, 2vw, 20px)",
+                border: `1px solid ${exportColors.lineStrong}`,
+                borderRadius: 999,
+                color: exportColors.accent,
+                fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace",
+                fontSize: source ? 20 : 10,
+                letterSpacing: "0.14em",
+                padding: source ? "16px 22px" : "7px 10px",
+                textTransform: "uppercase"
+              }}
+            >
+              {clashLabel}
+            </div>
+          ) : null}
 
           <h1
             style={{
               maxWidth: source ? 930 : "100%",
-              margin: source ? "46px 0 0" : "clamp(14px, 3vw, 24px) 0 0",
+              margin: source ? "34px 0 0" : "clamp(12px, 2vw, 20px) 0 0",
               fontSize: source ? 86 : "clamp(24px, 5vw, 46px)",
               lineHeight: 0.98,
               letterSpacing: "-0.055em"

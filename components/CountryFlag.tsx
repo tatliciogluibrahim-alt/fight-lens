@@ -1,13 +1,23 @@
 interface CountryFlagProps {
   code: string;
-  colors: string[];
   label?: string;
   size?: "sm" | "md";
 }
 
-export function CountryFlag({ code, colors, label, size = "sm" }: CountryFlagProps) {
-  const [a = "#c85b3f", b = "#f5efe6", c = "#403a31"] = colors;
-  const dimensions = size === "md" ? "h-7 w-10" : "h-5 w-7";
+function flagEmoji(countryCode: string) {
+  const normalized = countryCode.trim().toUpperCase();
+
+  if (!/^[A-Z]{2}$/.test(normalized)) {
+    return normalized === "TBD" ? "—" : normalized.slice(0, 3);
+  }
+
+  return Array.from(normalized)
+    .map((char) => String.fromCodePoint(127397 + char.charCodeAt(0)))
+    .join("");
+}
+
+export function CountryFlag({ code, label, size = "sm" }: CountryFlagProps) {
+  const dimensions = size === "md" ? "min-h-7 min-w-10 px-2 text-base" : "min-h-5 min-w-7 px-1.5 text-xs";
   const codes = code
     .split("/")
     .map((item) => item.trim().toLowerCase())
@@ -15,23 +25,16 @@ export function CountryFlag({ code, colors, label, size = "sm" }: CountryFlagPro
 
   return (
     <span
-      aria-label={label ? `${label} flag marker` : `${code} flag marker`}
+      aria-label={label ? `${label} country marker` : `${code} country marker`}
       title={label ?? code}
       className="inline-flex shrink-0 items-center gap-0.5 align-middle"
     >
       {codes.map((countryCode) => (
         <span
           key={countryCode}
-          className={`${dimensions} relative inline-flex overflow-hidden rounded-[3px] border border-foreground/20 bg-surface-2 bg-cover bg-center shadow-[0_0_0_1px_rgba(0,0,0,0.22)]`}
-          style={{
-            backgroundColor: a,
-            backgroundImage: `url("https://flagcdn.com/${countryCode}.svg")`
-          }}
+          className={`${dimensions} inline-flex items-center justify-center rounded-[4px] border border-line bg-background/65 font-mono font-semibold uppercase leading-none text-foreground shadow-[0_0_0_1px_rgba(0,0,0,0.2)]`}
         >
-          <span
-            className="absolute inset-0 -z-10"
-            style={{ background: `linear-gradient(135deg, ${a} 0 33%, ${b} 33% 66%, ${c} 66% 100%)` }}
-          />
+          {flagEmoji(countryCode)}
         </span>
       ))}
       <span className="sr-only">{code}</span>

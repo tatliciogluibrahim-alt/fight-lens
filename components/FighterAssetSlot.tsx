@@ -1,4 +1,5 @@
 import type { SourcedFighter } from "@/lib/sourced-event";
+import { getCountryDisplay } from "@/lib/display";
 import { CountryFlag } from "./CountryFlag";
 
 interface FighterAssetSlotProps {
@@ -19,10 +20,9 @@ type FighterWithCountry = SourcedFighter & {
   country?: CountryAsset | null;
 };
 
-const defaultColors = ["#c85b3f", "#f5efe6", "#403a31"];
-
 function getCountry(fighter: SourcedFighter | null | undefined): CountryAsset | null {
-  return (fighter as FighterWithCountry | null | undefined)?.country ?? null;
+  if (!fighter) return null;
+  return getCountryDisplay(fighter as FighterWithCountry);
 }
 
 function PortraitFallback({
@@ -32,7 +32,6 @@ function PortraitFallback({
   country: CountryAsset | null;
   tone: "accent" | "muted";
 }) {
-  const colors = country?.colors?.length ? country.colors : defaultColors;
   const isAccent = tone === "accent";
 
   return (
@@ -50,7 +49,7 @@ function PortraitFallback({
         <div className={`absolute left-1/2 top-1/2 size-6 -translate-x-1/2 -translate-y-1/2 rounded-full border ${isAccent ? "border-accent/25" : "border-foreground/10"}`} />
       </div>
       <span className="absolute right-2 top-2">
-        <CountryFlag code={country?.code ?? "TBD"} colors={colors} label={country?.label} />
+        <CountryFlag code={country?.code ?? "TBD"} label={country?.label} />
       </span>
     </div>
   );

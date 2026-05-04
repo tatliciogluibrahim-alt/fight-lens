@@ -1,5 +1,6 @@
 import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
 import type { StyleExportFighter } from "./fight-shape";
+import { formatStyleClashLabel } from "./display";
 
 const W = 1920;
 const H = 1080;
@@ -248,7 +249,7 @@ function drawCompareRow(ctx: CanvasRenderingContext2D, label: string, a: number,
   });
 }
 
-function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, fighterB: StyleExportFighter) {
+function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, fighterB: StyleExportFighter, styleClashLabel?: string | null) {
   ctx.fillStyle = C.bg;
   ctx.fillRect(0, 0, W, H);
 
@@ -298,18 +299,34 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
   });
   drawLegend(ctx, fighterA, fighterB, right.x, right.y + 88);
 
+  if (styleClashLabel) {
+    const label = formatStyleClashLabel(styleClashLabel);
+    ctx.save();
+    ctx.font = "400 19px ui-monospace, SFMono-Regular, Consolas, monospace";
+    const labelWidth = Math.min(820, ctx.measureText(label).width + 62);
+    ctx.restore();
+    fillRoundRect(ctx, right.x, right.y + 128, labelWidth, 58, 999, rgba(C.panel, 0.72));
+    strokeRoundRect(ctx, right.x, right.y + 128, labelWidth, 58, 999, C.lineStrong, 2);
+    drawText(ctx, label, right.x + 31, right.y + 157, {
+      font: "400 19px ui-monospace, SFMono-Regular, Consolas, monospace",
+      color: C.accent,
+      baseline: "middle",
+      letterSpacing: 2.6
+    });
+  }
+
   const headlineHeight = drawWrappedText(
     ctx,
     "style overlap. pressure points in shared axes.",
     right.x,
-    right.y + 150,
+    styleClashLabel ? right.y + 218 : right.y + 150,
     right.w - 30,
     88,
     "600 84px Arial, Helvetica, sans-serif",
     C.fg
   );
 
-  const startY = right.y + 150 + headlineHeight + 82;
+  const startY = (styleClashLabel ? right.y + 218 : right.y + 150) + headlineHeight + 82;
   fightShapeExportAxes.forEach((axis, index) => {
     const y = startY + index * 78;
     drawCompareRow(
@@ -324,7 +341,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
   });
 }
 
-export async function exportStyleClashCardAsPNG(fighterA: StyleExportFighter, fighterB: StyleExportFighter, filename = "fight-lens-overlap") {
+export async function exportStyleClashCardAsPNG(fighterA: StyleExportFighter, fighterB: StyleExportFighter, filename = "fight-lens-overlap", styleClashLabel?: string | null) {
   if (document.fonts?.ready) {
     await document.fonts.ready;
   }
@@ -338,7 +355,7 @@ export async function exportStyleClashCardAsPNG(fighterA: StyleExportFighter, fi
     throw new Error("Could not create export canvas.");
   }
 
-  drawCard(ctx, fighterA, fighterB);
+  drawCard(ctx, fighterA, fighterB, styleClashLabel);
 
   const blob = await new Promise<Blob>((resolve, reject) => {
     canvas.toBlob((result) => {

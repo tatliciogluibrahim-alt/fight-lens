@@ -11,8 +11,8 @@ export default function EventPage() {
       <AppHeader />
       <main>
         <EventHero event={sourcedEvent} />
-        <RosterStyleMap event={sourcedEvent} />
         <CardFilterTabs eventId={sourcedEvent.event.id} fights={sourcedEvent.fights} />
+        <RosterStyleMap event={sourcedEvent} />
       </main>
       <DisclaimerFooter />
     </>

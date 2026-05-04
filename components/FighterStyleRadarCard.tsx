@@ -1,5 +1,6 @@
 import type { SourcedFighter } from "@/lib/sourced-event";
 import type { FighterMetricScore } from "@/lib/fight-shape-model/types";
+import { formatRanking } from "@/lib/display";
 import { getStyleRadarCompleteness, getStyleRadarRead } from "@/lib/style-radar";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
@@ -32,7 +33,7 @@ export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: Figh
     <article className="radar-card">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="mono-label">{fighter.ranking ?? "nr"} / {fighter.stance ?? "stance pending"}</p>
+          <p className="mono-label">{formatRanking(fighter.ranking)} / {fighter.stance ?? "stance pending"}</p>
           <h3 className={`mt-2 text-2xl font-semibold leading-tight tracking-[-0.035em] ${tone === "accent" ? "text-accent" : "text-foreground"}`}>
             {fighter.name}
           </h3>
@@ -44,11 +45,11 @@ export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: Figh
         <StyleRadar profile={fighter.styleProfile} title={fighter.name} tone={tone} />
       </div>
 
-      <p className="text-sm leading-6 text-muted">{styleRead}</p>
+      <p className="text-sm leading-6 text-muted">Creator read: {styleRead}</p>
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
         <p className="data-text text-xs text-subtle">
-          {completeness.present}/{completeness.total} dimensions
+          {completeness.present}/{completeness.total} dimensions · UFCStats scope
         </p>
         <StyleRadarSaveButton
           fighter={{

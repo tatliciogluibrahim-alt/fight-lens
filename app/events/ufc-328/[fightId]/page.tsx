@@ -8,6 +8,8 @@ import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { RoundTrendModule } from "@/components/RoundTrendModule";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
+import { StyleClashLabel } from "@/components/StyleClashLabel";
+import { formatRanking } from "@/lib/display";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
@@ -48,7 +50,7 @@ function FighterHeroPanel({
       </div>
 
       <div className="mt-6">
-        <p className="mono-label">{fighter.ranking || "nr"} / {fighter.stance ?? "stance pending"}</p>
+        <p className="mono-label">{formatRanking(fighter.ranking)} / {fighter.stance ?? "stance pending"}</p>
         <h2 className="mt-3 min-h-[1.92em] text-4xl font-semibold leading-[0.96] tracking-[-0.05em] md:text-6xl">
           {fighter.name}
         </h2>
@@ -104,9 +106,9 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               <p className="data-text text-sm text-muted">
                 {fight.weightClass ?? "weight class pending"} / {fight.rounds} rounds
               </p>
-              <p className="mx-auto mt-4 max-w-[24ch] text-sm leading-6 text-muted">
-                {fight.styleClashLabel ?? "matchup data ready"}
-              </p>
+              <div className="mx-auto mt-4 flex max-w-[30ch] justify-center">
+                <StyleClashLabel label={fight.styleClashLabel} copyable />
+              </div>
             </div>
           </div>
 

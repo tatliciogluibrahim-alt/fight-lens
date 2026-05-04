@@ -1,5 +1,6 @@
 import { fightShapeExportAxes, getFightShapeAxisScore } from "./fight-shape";
 import type { StyleExportFighter } from "./fight-shape";
+import { formatRanking } from "./display";
 
 const W = 1920;
 const H = 2160;
@@ -67,7 +68,12 @@ function strokeRoundRect(ctx: CanvasRenderingContext2D, x: number, y: number, w:
 function drawLogo(ctx: CanvasRenderingContext2D) {
   fillRoundRect(ctx, 80, 70, 76, 76, 14, C.panelSoft);
   strokeRoundRect(ctx, 80, 70, 76, 76, 14, C.lineStrong, 2);
-  fillRoundRect(ctx, 108, 98, 22, 22, 4, C.accent);
+  ctx.save();
+  ctx.translate(118, 108);
+  ctx.rotate(Math.PI / 4);
+  strokeRoundRect(ctx, -16, -16, 32, 32, 5, C.accent, 4);
+  fillRoundRect(ctx, -6, -6, 12, 12, 3, C.accent);
+  ctx.restore();
   drawText(ctx, "fight lens", 178, 104, "700 30px Arial, Helvetica, sans-serif");
   drawText(ctx, "CARD STYLE MAP", 178, 143, "400 17px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle);
 }
@@ -90,7 +96,7 @@ function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: St
   drawLogo(ctx);
   fillRoundRect(ctx, 1500, 70, 340, 60, 999, rgba(C.panel, 0.72));
   strokeRoundRect(ctx, 1500, 70, 340, 60, 999, C.lineStrong, 2);
-  drawText(ctx, "PROTOTYPE DATA / ROSTER", 1670, 108, "400 18px ui-monospace, SFMono-Regular, Consolas, monospace", C.accent, "center");
+  drawText(ctx, "FIGHT LENS / ROSTER", 1670, 108, "400 18px ui-monospace, SFMono-Regular, Consolas, monospace", C.accent, "center");
 
   drawText(ctx, eventName.toLowerCase(), 80, 245, "600 78px Arial, Helvetica, sans-serif");
   drawText(ctx, "every fighter fingerprinted across six style axes", 84, 315, "400 24px Arial, Helvetica, sans-serif", C.muted);
@@ -114,7 +120,7 @@ function drawCard(ctx: CanvasRenderingContext2D, eventName: string, fighters: St
     }
 
     drawText(ctx, fighter.name, nameX, y, "600 25px Arial, Helvetica, sans-serif", C.fg);
-    drawText(ctx, `${fighter.record} / ${fighter.ranking || "nr"}`, recordX, y, "400 18px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle);
+    drawText(ctx, `${fighter.record} / ${formatRanking(fighter.ranking)}`, recordX, y, "400 18px ui-monospace, SFMono-Regular, Consolas, monospace", C.subtle);
 
     fightShapeExportAxes.forEach((axis, axisIndex) => {
       const score = getFightShapeAxisScore(fighter.styleProfile, axis.key);

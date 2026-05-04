@@ -7,14 +7,6 @@ import { StyleClashExportCard } from "@/components/StyleClashExportCard";
 import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { sourcedEvent } from "@/lib/sourced-event";
 
-const modules = [
-  ["01", "fight shape", "the first read: short collision, long minutes, or layered swing points", "fight-shape"],
-  ["02", "style clash", "overlap visual with the clearest style deltas", "section-overlap"],
-  ["03", "form + resume", "named recent opponents, methods, tiers, and resume strength", "section-form-resume"],
-  ["04", "round trend", "weighted round-by-round performance signals", "section-round-trend"],
-  ["05", "tactical routes", "where each fighter can control minutes", "section-paths"]
-];
-
 export default function Home() {
   const mainFight = sourcedEvent.fights[0];
   const fighterA = mainFight.fighters.fighterA;
@@ -66,6 +58,7 @@ export default function Home() {
                 <StyleClashExportCard
                   fighterA={exportFighterA!}
                   fighterB={exportFighterB!}
+                  styleClashLabel={mainFight.styleClashLabel}
                 />
               ) : (
                 <ModuleEmptyState
@@ -79,36 +72,6 @@ export default function Home() {
         </section>
 
         <EventHero event={sourcedEvent} />
-
-        <section className="section-shell py-8 md:py-12">
-          <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="mono-label">index</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-                five reads per fight.
-              </h2>
-            </div>
-            <p className="max-w-xl text-sm leading-6 text-muted">
-              Each read has a job: establish the matchup, show the clash, prove recent form,
-              weight the round trend, then name the cleanest tactical routes.
-            </p>
-          </div>
-
-          <div className="overflow-hidden rounded-[1.35rem] border border-line bg-surface/70">
-            {modules.map(([number, title, description, target]) => (
-              <Link
-                key={number}
-                href={`/events/ufc-328/chimaev-strickland#${target}`}
-                className="grid gap-3 border-b border-line p-5 transition last:border-b-0 hover:bg-surface-2 md:grid-cols-[80px_1fr_2fr_auto] md:items-center"
-              >
-                <span className="data-text text-sm text-subtle">/ {number}</span>
-                <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
-                <p className="font-mono text-xs leading-6 text-muted">{description}</p>
-                <span className="font-mono text-xs uppercase tracking-[0.14em] text-accent">jump</span>
-              </Link>
-            ))}
-          </div>
-        </section>
       </main>
       <DisclaimerFooter />
     </>

@@ -2,7 +2,6 @@ import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { FightPath } from "@/lib/types";
 import { ConfidenceBadge } from "./ConfidenceBadge";
-import { ModuleEmptyState } from "./ModuleEmptyState";
 
 interface PathsToVictoryProps {
   fight: SourcedFight;
@@ -20,6 +19,18 @@ function PathList({
   paths: FightPath[];
   accent?: boolean;
 }) {
+  if (metric.status === "insufficient" || metric.score == null) {
+    return (
+      <div className="rounded-2xl border border-line bg-background/45 p-5">
+        <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
+        <p className="mono-label mt-2">insufficient sample</p>
+        <p className="mt-5 text-sm leading-6 text-muted">
+          Route reliability needs more sourced pressure, form, and round data.
+        </p>
+      </div>
+    );
+  }
+
   const score = metric.score ?? 0;
 
   return (
@@ -69,6 +80,17 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   const pathB = modelOutput.metrics.pathReliability.fighterB;
   const hasPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
 
+  if (!hasPaths) {
+    return (
+      <section id="section-paths" className="scroll-mt-28 rounded-xl border border-line bg-surface/45 px-4 py-3">
+        <p className="mono-label">05 / tactical routes</p>
+        <p className="mt-2 text-sm leading-6 text-muted">
+          Route reliability needs sourced pressure, form, and round data.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
@@ -82,20 +104,10 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
           </p>
         </div>
       </div>
-      {hasPaths ? (
-        <div className="module-body grid gap-4 lg:grid-cols-2">
-          <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
-          <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
-        </div>
-      ) : (
-        <div className="module-body">
-          <ModuleEmptyState
-            label="path reliability"
-            title="Path reliability pending."
-            body="This needs enough pressure, form, and round data before Fight Lens shows route reliability."
-          />
-        </div>
-      )}
+      <div className="module-body grid gap-4 lg:grid-cols-2">
+        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
+        <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
+      </div>
     </section>
   );
 }

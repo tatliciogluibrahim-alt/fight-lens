@@ -1,5 +1,6 @@
 import { getStyleRadarDimensions } from "./style-radar";
 import type { StyleRadarExportFighter } from "./style-radar";
+import { formatRanking } from "./display";
 
 const W = 1920;
 const H = 1080;
@@ -150,7 +151,7 @@ function radarPoint(index: number, value: number, count: number, cx: number, cy:
 function drawRadar(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFighter, cx: number, cy: number, radius: number) {
   const dimensions = getStyleRadarDimensions(fighter.styleProfile);
   const count = dimensions.length;
-  const available = dimensions.filter((dimension) => dimension.value != null);
+  const available = dimensions.filter((dimension) => dimension.hasData && dimension.value != null);
 
   ctx.save();
   ctx.lineWidth = 2;
@@ -175,7 +176,7 @@ function drawRadar(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFight
     const [labelX, labelY] = radarPoint(index, 119, count, cx, cy, radius);
     drawText(ctx, dimension.shortLabel.toUpperCase(), labelX, labelY + 6, {
       font: "400 21px ui-monospace, SFMono-Regular, Consolas, monospace",
-      color: dimension.value == null ? rgba(C.subtle, 0.55) : C.subtle,
+      color: dimension.hasData ? C.subtle : rgba(C.subtle, 0.55),
       align: "center",
       baseline: "middle",
       letterSpacing: 2.6
@@ -195,7 +196,7 @@ function drawRadar(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFight
   }
 
   dimensions.forEach((dimension, index) => {
-    if (dimension.value == null) return;
+    if (!dimension.hasData || dimension.value == null) return;
     const [x, y] = radarPoint(index, dimension.value, count, cx, cy, radius);
     ctx.fillStyle = C.bg;
     ctx.strokeStyle = C.accent;
@@ -218,15 +219,15 @@ function drawMetricRows(ctx: CanvasRenderingContext2D, fighter: StyleRadarExport
 
   dimensions.forEach((dimension, index) => {
     const rowY = y + index * 54;
-    const value = dimension.value;
+    const value = dimension.hasData ? dimension.value : null;
     drawText(ctx, dimension.label.toUpperCase(), x, rowY + 9, {
       font: "400 16px ui-monospace, SFMono-Regular, Consolas, monospace",
       color: C.subtle,
       baseline: "middle",
       letterSpacing: 2
     });
-    drawText(ctx, value == null ? "N/A" : String(value), x + w, rowY + 9, {
-      font: "400 24px ui-monospace, SFMono-Regular, Consolas, monospace",
+    drawText(ctx, value == null ? dimension.displayValue.toUpperCase() : String(value), x + w, rowY + 9, {
+      font: value == null ? "400 15px ui-monospace, SFMono-Regular, Consolas, monospace" : "400 24px ui-monospace, SFMono-Regular, Consolas, monospace",
       color: value == null ? C.subtle : C.fg,
       align: "right",
       baseline: "middle"
@@ -300,7 +301,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFighte
     color: C.fg,
     baseline: "middle"
   });
-  drawText(ctx, `${fighter.ranking ?? "NR"} / ${fighter.stance ?? "STANCE PENDING"} / ${fighter.confidence.toUpperCase()} CONFIDENCE`, right.x + 52, right.y + 228, {
+  drawText(ctx, `${formatRanking(fighter.ranking)} / ${fighter.stance ?? "STANCE PENDING"} / ${fighter.confidence.toUpperCase()} CONFIDENCE`, right.x + 52, right.y + 228, {
     font: "400 18px ui-monospace, SFMono-Regular, Consolas, monospace",
     color: C.accent,
     baseline: "middle",

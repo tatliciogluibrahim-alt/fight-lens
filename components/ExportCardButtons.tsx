@@ -42,9 +42,9 @@ export function ExportCardButtons({ fight, fighterA, fighterB }: ExportCardButto
 
             <div>
               <div className="mb-4 flex items-center gap-3">
-                <CountryFlag code={fighterA.countryCode} colors={fighterA.countryColors} label={fighterA.countryLabel} size="md" />
+                <CountryFlag code={fighterA.countryCode} label={fighterA.countryLabel} size="md" />
                 <span className="data-text text-xs text-subtle">vs</span>
-                <CountryFlag code={fighterB.countryCode} colors={fighterB.countryColors} label={fighterB.countryLabel} size="md" />
+                <CountryFlag code={fighterB.countryCode} label={fighterB.countryLabel} size="md" />
               </div>
               <p className="data-text text-sm text-accent">{fighterA.name.toLowerCase()} vs. {fighterB.name.toLowerCase()}</p>
               <h3 className="mt-3 max-w-3xl text-4xl font-semibold leading-[0.92] tracking-[-0.055em] md:text-6xl">

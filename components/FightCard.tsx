@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { CountryFlag } from "./CountryFlag";
+import { StyleClashLabel } from "./StyleClashLabel";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 
 interface FightCardProps {
@@ -8,11 +10,10 @@ interface FightCardProps {
 }
 
 function FighterCountry({ fighter }: { fighter: SourcedFighter }) {
-  const country = fighter.country;
+  const country = getCountryDisplay(fighter);
   return (
     <CountryFlag
       code={country?.code ?? "TBD"}
-      colors={country?.colors ?? ["#c85b3f", "#f5efe6", "#403a31"]}
       label={country?.label ?? "country pending"}
     />
   );
@@ -21,7 +22,7 @@ function FighterCountry({ fighter }: { fighter: SourcedFighter }) {
 function RecordLine({ fighter }: { fighter: SourcedFighter }) {
   return (
     <p className="data-text text-xs text-subtle">
-      {fighter.record ?? "record pending"} / {fighter.ranking || "nr"}
+      {fighter.record ?? "record pending"} / {formatRanking(fighter.ranking)}
     </p>
   );
 }
@@ -64,9 +65,7 @@ export function FightCard({ fight, eventId }: FightCardProps) {
       </div>
 
       <div className="rounded-2xl border border-line bg-background/35 px-4 py-3 md:text-right">
-        <p className="font-mono text-xs uppercase tracking-[0.14em] text-accent">
-          {fight.styleClashLabel ?? "matchup data ready"}
-        </p>
+        <StyleClashLabel label={fight.styleClashLabel} className="text-accent" />
         <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle group-hover:text-muted">
           open lens
         </p>

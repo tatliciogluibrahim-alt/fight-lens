@@ -86,6 +86,17 @@ export function RoundTrendModule({ modelOutput }: RoundTrendModuleProps) {
   const fighterB = modelOutput.metrics.roundSustainability.fighterB;
   const canShowTrend = fighterA.status !== "insufficient" && fighterB.status !== "insufficient";
 
+  if (!canShowTrend) {
+    return (
+      <section id="section-round-trend" className="scroll-mt-28 rounded-xl border border-line bg-surface/45 px-4 py-3">
+        <p className="mono-label">04 / round sustainability</p>
+        <p className="mt-2 text-sm leading-6 text-muted">
+          Not enough sourced data for this matchup.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section id="section-round-trend" className="module-card scroll-mt-28">
       <div className="module-header">
@@ -93,28 +104,18 @@ export function RoundTrendModule({ modelOutput }: RoundTrendModuleProps) {
         <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           sustainability by round.
         </h2>
-        {canShowTrend ? (
-          <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            The model compares early, middle, and late signals from completed round data only.
-          </p>
-        ) : null}
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
+          The model compares early, middle, and late signals from completed round data only.
+        </p>
       </div>
-      {canShowTrend ? (
-        <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
-          <TrendBars metric={fighterA} accent />
-          <TrendBars metric={fighterB} />
-          <div className="lg:col-span-2">
-            <SignalTiles fighterA={fighterA} fighterB={fighterB} />
-            <p className="data-text mt-4 text-xs leading-6 text-subtle">{fighterA.explanation}</p>
-          </div>
+      <div className="module-body grid gap-4 lg:grid-cols-[1fr_1fr]">
+        <TrendBars metric={fighterA} accent />
+        <TrendBars metric={fighterB} />
+        <div className="lg:col-span-2">
+          <SignalTiles fighterA={fighterA} fighterB={fighterB} />
+          <p className="data-text mt-4 text-xs leading-6 text-subtle">{fighterA.explanation}</p>
         </div>
-      ) : (
-        <div className="module-body">
-          <p className="text-xs text-subtle">
-            Not enough data to see the shape of this fight by round.
-          </p>
-        </div>
-      )}
+      </div>
     </section>
   );
 }
