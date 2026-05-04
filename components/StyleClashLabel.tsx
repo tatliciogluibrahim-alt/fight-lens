@@ -30,9 +30,9 @@ export function StyleClashLabel({ label, copyable = false, className = "" }: Sty
 
   return (
     <span
-      className={`inline-flex max-w-full items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted md:text-[11px] ${className}`}
+      className={`inline-flex flex-wrap items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted md:text-[11px] ${className}`}
     >
-      <span className="min-w-0 truncate">{displayLabel}</span>
+      <span>{displayLabel}</span>
       {copyable ? (
         <button
           type="button"

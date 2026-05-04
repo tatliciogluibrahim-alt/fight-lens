@@ -27,20 +27,15 @@ export function StyleClashSaveButton({ fighterA, fighterB, filename = "fight-len
   }
 
   return (
-    <div className="flex flex-col items-end gap-1">
-      <button
-        type="button"
-        disabled={isSaving}
-        onClick={() => {
-          void handleClick();
-        }}
-        className="export-button"
-      >
-        {isSaving ? "Exporting" : "Export Matchup Radar"}
-      </button>
-      <span className="font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/60">
-        export the shape of this matchup
-      </span>
-    </div>
+    <button
+      type="button"
+      disabled={isSaving}
+      onClick={() => {
+        void handleClick();
+      }}
+      className="export-button"
+    >
+      {isSaving ? "Exporting" : "Export Matchup Radar"}
+    </button>
   );
 }

@@ -17,8 +17,7 @@ export function EventHero({ event }: EventHeroProps) {
             {event.event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Move between matchups quickly, open the lens, and export the clearest shape when the
-            sourced sample supports it.
+            Every fight on the card. Open the lens, see the shape, take the read.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[

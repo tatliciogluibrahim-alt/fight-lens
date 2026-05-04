@@ -31,7 +31,7 @@ export default function Home() {
                 <span className="block text-accent">as shape.</span>
               </h1>
               <p className="mt-6 max-w-xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens turns UFC matchups into clean visual reads — the clash, the cleaner path, and the swing factor. Built for creators and serious fans.
+                Fight Lens turns UFC matchups into clean visual reads. The clash, the form, and the shape of each fight. Built for creators and serious fans.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link

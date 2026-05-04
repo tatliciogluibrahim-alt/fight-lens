@@ -17,7 +17,7 @@ export function AppHeader() {
     <header className="sticky top-0 z-30 border-b border-line bg-background/86 backdrop-blur-xl">
       <nav className="section-shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-3 md:flex-nowrap">
         <Link href="/" className="flex min-h-11 items-center gap-3">
-          <span className="lens-mark size-9" />
+          <span className="lens-mark size-7" />
           <span className="leading-none">
             <span className="block text-base font-semibold tracking-[-0.03em]">fight lens</span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-subtle">

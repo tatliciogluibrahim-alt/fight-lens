@@ -71,8 +71,8 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">cleaner path</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-            who wins and how.
+          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+            most repeatable path.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
             The clearest visible route to a finish or decision, based on sourced style signals.

@@ -44,7 +44,7 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">shape of the fight</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">the read.</h2>
+          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">the read.</h2>
         </div>
       </div>
 

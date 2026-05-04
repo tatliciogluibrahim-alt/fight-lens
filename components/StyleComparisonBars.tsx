@@ -35,9 +35,12 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div className="max-w-2xl">
           <p className="mono-label">the clash</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">style fingerprints.</h2>
+          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">style fingerprints.</h2>
           <p className="mt-3 text-sm leading-6 text-muted">
             Creator read: this radar reflects recent sourced and derived signals, not a full-career scouting grade.
+          </p>
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">
+            Scores derived from UFCStats data · opponent quality manually weighted
           </p>
         </div>
         {canExport ? (
@@ -122,9 +125,11 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                         {bValue != null ? <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${(bValue / max) * 100}%` }} /> : null}
                       </div>
                     </div>
-                    <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
-                      {a.signalLabel} / {b?.signalLabel ?? "not modeled yet"}
-                    </p>
+                    {(a.provenance === "manual" || b?.provenance === "manual") ? (
+                      <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
+                        manual
+                      </p>
+                    ) : null}
                   </div>
                 );
               })}

@@ -318,8 +318,8 @@ function drawCard(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFighte
     baseline: "middle",
     letterSpacing: 2.8
   });
-  drawWrappedText(ctx, fighter.styleRead, right.x + 52, right.y + 286, right.w - 104, 52, "400 38px Arial, Helvetica, sans-serif", C.muted, 2);
-  drawMetricRows(ctx, fighter, right.x + 52, right.y + 444, right.w - 104);
+  drawWrappedText(ctx, fighter.styleRead, right.x + 52, right.y + 286, right.w - 104, 52, "400 38px Arial, Helvetica, sans-serif", C.muted, 3);
+  drawMetricRows(ctx, fighter, right.x + 52, right.y + 496, right.w - 104);
 }
 
 export async function exportStyleRadarCardAsPNG(fighter: StyleRadarExportFighter, filename = "fight-lens-style-radar") {

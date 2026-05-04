@@ -110,26 +110,25 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="grid min-h-[240px] border-y border-line bg-background/45 p-5 text-center lg:min-h-[390px] lg:border-x lg:border-y-0">
-              <div className="m-auto space-y-4">
-                <p className="mono-label">matchup lens</p>
-                <p className="text-6xl font-light tracking-[-0.08em] text-subtle md:text-7xl">vs</p>
+            <div className="flex min-h-[240px] flex-col border-y border-line bg-background/45 p-5 text-center lg:min-h-[390px] lg:border-x lg:border-y-0">
+              <div className="flex flex-1 flex-col items-center justify-center space-y-4">
+                <p className="text-8xl font-light tracking-[-0.08em] text-subtle/35">vs</p>
                 <p className="data-text text-sm text-muted">
                   {fight.weightClass ?? "weight class pending"} / {fight.rounds} rounds
                 </p>
                 <div className="flex justify-center">
                   <StyleClashLabel label={fight.styleClashLabel} copyable />
                 </div>
-                {canExport && (
-                  <div className="pt-1">
-                    <StyleClashSaveButton
-                      fighterA={exportFighterA!}
-                      fighterB={exportFighterB!}
-                      styleClashLabel={fight.styleClashLabel ?? undefined}
-                    />
-                  </div>
-                )}
               </div>
+              {canExport && (
+                <div className="mt-6 flex justify-center">
+                  <StyleClashSaveButton
+                    fighterA={exportFighterA!}
+                    fighterB={exportFighterB!}
+                    styleClashLabel={fight.styleClashLabel ?? undefined}
+                  />
+                </div>
+              )}
             </div>
 
             <FighterHeroPanel fighter={fighterB} align="right" />
