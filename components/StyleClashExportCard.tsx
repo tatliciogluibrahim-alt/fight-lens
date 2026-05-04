@@ -49,8 +49,16 @@ function RadarExport({ fighterA, fighterB, source }: { fighterA: StyleExportFigh
       role="img"
       aria-label="Six-axis style overlap radar"
     >
+      <circle cx={center} cy={center} r={radius + 28} fill="rgba(200,91,63,0.035)" />
       {[20, 40, 60, 80, 100].map((value) => (
-        <polygon key={value} points={ring(value)} fill="none" stroke={exportColors.lineStrong} strokeWidth="1.2" />
+        <polygon
+          key={value}
+          points={ring(value)}
+          fill="none"
+          stroke={exportColors.lineStrong}
+          strokeOpacity={value === 100 ? 0.9 : 0.52}
+          strokeWidth={value === 100 ? "1.4" : "1"}
+        />
       ))}
       {fightShapeExportAxes.map((axis, index) => {
         const [x, y] = point(index, 114);
@@ -168,7 +176,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview",
     border: `1px solid ${exportColors.lineStrong}`,
     borderRadius: source ? 0 : 18,
     background:
-      "radial-gradient(circle at 0% 0%, rgba(200,91,63,0.16), transparent 360px), linear-gradient(180deg, #11100e 0%, #090908 100%)",
+      "linear-gradient(rgba(245,239,230,0.025) 1px, transparent 1px) 0 0 / 64px 64px, linear-gradient(90deg, rgba(245,239,230,0.02) 1px, transparent 1px) 0 0 / 64px 64px, radial-gradient(circle at 0% 0%, rgba(200,91,63,0.16), transparent 360px), linear-gradient(180deg, #11100e 0%, #090908 100%)",
     color: exportColors.foreground,
     fontFamily: "Inter, Geist, Arial, Helvetica, sans-serif",
     position: "relative",
@@ -240,9 +248,9 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview",
         style={{
           display: "grid",
           gridTemplateColumns: "0.92fr 1.08fr",
-          gap: source ? 68 : "clamp(18px, 4vw, 34px)",
-          height: source ? 820 : "calc(100% - 140px)",
-          marginTop: source ? 54 : "clamp(18px, 4vw, 30px)"
+          gap: source ? 58 : "clamp(18px, 4vw, 34px)",
+          height: source ? 820 : "calc(100% - 132px)",
+          marginTop: source ? 48 : "clamp(16px, 3vw, 26px)"
         }}
       >
         <section
@@ -294,7 +302,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview",
             <div
               style={{
                 width: "fit-content",
-                marginTop: source ? 38 : "clamp(12px, 2vw, 20px)",
+                marginTop: source ? 30 : "clamp(12px, 2vw, 18px)",
                 border: `1px solid ${exportColors.lineStrong}`,
                 borderRadius: 999,
                 color: exportColors.accent,
@@ -312,8 +320,8 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview",
           <h1
             style={{
               maxWidth: source ? 930 : "100%",
-              margin: source ? "34px 0 0" : "clamp(12px, 2vw, 20px) 0 0",
-              fontSize: source ? 86 : "clamp(24px, 5vw, 46px)",
+              margin: source ? "28px 0 0" : "clamp(10px, 2vw, 18px) 0 0",
+              fontSize: source ? 78 : "clamp(24px, 5vw, 42px)",
               lineHeight: 0.98,
               letterSpacing: "-0.055em"
             }}
@@ -321,7 +329,7 @@ export function StyleClashExportCard({ fighterA, fighterB, id, mode = "preview",
             style overlap. pressure points in shared axes.
           </h1>
 
-          <div style={{ display: "grid", gap: source ? 18 : 8, marginTop: source ? 58 : "clamp(16px, 3vw, 28px)" }}>
+          <div style={{ display: "grid", gap: source ? 14 : 7, marginTop: source ? 42 : "clamp(14px, 3vw, 24px)" }}>
             {fightShapeExportAxes.map((axis) => (
               <CompareLine
                 key={axis.key}

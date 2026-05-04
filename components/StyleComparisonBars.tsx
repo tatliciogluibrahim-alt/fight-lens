@@ -69,7 +69,11 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
               </div>
               {styleClashLabel ? <StyleClashLabel label={styleClashLabel} copyable /> : null}
             </div>
-            <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
+            <div className="overflow-x-auto pb-1">
+              <div className="min-w-[720px] md:min-w-0">
+                <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
+              </div>
+            </div>
           </div>
         ) : (
           <ModuleEmptyState
@@ -81,62 +85,62 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
 
         {comparableRows.length ? (
           <div className="grid gap-8 rounded-2xl border border-line bg-background/30 p-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div>
-            <div className="space-y-6">
-              <div>
-                <p className="mono-label">axis detail / fighter a</p>
-                <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">
-                  {fighterA.name}
-                </h3>
-                <p className="data-text mt-2 text-sm text-muted">
-                  {fighterA.record} / {formatRanking(fighterA.ranking)} / {fighterA.stance}
-                </p>
+            <div>
+              <div className="space-y-6">
+                <div>
+                  <p className="mono-label">axis detail / fighter a</p>
+                  <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">
+                    {fighterA.name}
+                  </h3>
+                  <p className="data-text mt-2 text-sm text-muted">
+                    {fighterA.record} / {formatRanking(fighterA.ranking)} / {fighterA.stance}
+                  </p>
+                </div>
+                <div>
+                  <p className="mono-label">axis detail / fighter b</p>
+                  <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-foreground md:text-4xl">
+                    {fighterB.name}
+                  </h3>
+                  <p className="data-text mt-2 text-sm text-muted">
+                    {fighterB.record} / {formatRanking(fighterB.ranking)} / {fighterB.stance}
+                  </p>
+                </div>
+                {styleClashLabel ? (
+                  <StyleClashLabel label={styleClashLabel} copyable />
+                ) : null}
               </div>
-              <div>
-                <p className="mono-label">axis detail / fighter b</p>
-                <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-foreground md:text-4xl">
-                  {fighterB.name}
-                </h3>
-                <p className="data-text mt-2 text-sm text-muted">
-                  {fighterB.record} / {formatRanking(fighterB.ranking)} / {fighterB.stance}
-                </p>
-              </div>
-              {styleClashLabel ? (
-                <StyleClashLabel label={styleClashLabel} copyable />
-              ) : null}
             </div>
-          </div>
 
             <div className="divide-y divide-line rounded-2xl border border-line bg-background/35">
               {comparableRows.map(({ a, b }) => {
-              const aValue = a.hasData ? a.value : null;
-              const bValue = b?.hasData ? b.value ?? null : null;
-              const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
+                const aValue = a.hasData ? a.value : null;
+                const bValue = b?.hasData ? b.value ?? null : null;
+                const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
 
-              return (
-                <div key={a.key} className="p-4">
-                  <div className="mb-3 flex items-center justify-between gap-3">
-                    <span className={`data-text text-sm ${(aValue ?? 0) >= (bValue ?? 0) ? "text-accent" : "text-muted"}`}>
-                      {a.displayValue}
-                    </span>
-                    <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">{a.label}</span>
-                    <span className={`data-text text-sm ${(bValue ?? 0) > (aValue ?? 0) ? "text-foreground" : "text-muted"}`}>
-                      {b?.displayValue ?? "Insufficient sample"}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-1">
-                    <div className="flex justify-end rounded-l-full bg-background">
-                      {aValue != null ? <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${(aValue / max) * 100}%` }} /> : null}
+                return (
+                  <div key={a.key} className="p-4">
+                    <div className="mb-3 flex items-center justify-between gap-3">
+                      <span className={`data-text text-sm ${(aValue ?? 0) >= (bValue ?? 0) ? "text-accent" : "text-muted"}`}>
+                        {a.displayValue}
+                      </span>
+                      <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">{a.label}</span>
+                      <span className={`data-text text-sm ${(bValue ?? 0) > (aValue ?? 0) ? "text-foreground" : "text-muted"}`}>
+                        {b?.displayValue ?? "Insufficient sample"}
+                      </span>
                     </div>
-                    <div className="rounded-r-full bg-background">
-                      {bValue != null ? <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${(bValue / max) * 100}%` }} /> : null}
+                    <div className="grid grid-cols-2 gap-1">
+                      <div className="flex justify-end rounded-l-full bg-background">
+                        {aValue != null ? <div className="h-2.5 rounded-l-full bg-accent" style={{ width: `${(aValue / max) * 100}%` }} /> : null}
+                      </div>
+                      <div className="rounded-r-full bg-background">
+                        {bValue != null ? <div className="h-2.5 rounded-r-full bg-muted" style={{ width: `${(bValue / max) * 100}%` }} /> : null}
+                      </div>
                     </div>
+                    <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
+                      {a.signalLabel} / {b?.signalLabel ?? "not modeled yet"}
+                    </p>
                   </div>
-                  <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
-                    {a.signalLabel} / {b?.signalLabel ?? "not modeled yet"}
-                  </p>
-                </div>
-              );
+                );
               })}
             </div>
           </div>

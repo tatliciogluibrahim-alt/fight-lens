@@ -120,6 +120,21 @@ function drawWrappedText(ctx: CanvasRenderingContext2D, text: string, x: number,
   ctx.restore();
 }
 
+function drawFittedText(ctx: CanvasRenderingContext2D, text: string, x: number, y: number, maxWidth: number, maxSize: number, minSize: number, weight = 700) {
+  let size = maxSize;
+  ctx.save();
+  do {
+    ctx.font = `${weight} ${size}px Arial, Helvetica, sans-serif`;
+    if (ctx.measureText(text).width <= maxWidth || size <= minSize) break;
+    size -= 4;
+  } while (size > minSize);
+
+  ctx.fillStyle = C.fg;
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, x, y);
+  ctx.restore();
+}
+
 function drawLogo(ctx: CanvasRenderingContext2D) {
   fillRoundRect(ctx, 80, 70, 76, 76, 18, C.panelSoft);
   strokeRoundRect(ctx, 80, 70, 76, 76, 18, C.lineStrong, 2);
@@ -296,11 +311,7 @@ function drawCard(ctx: CanvasRenderingContext2D, fighter: StyleRadarExportFighte
     baseline: "middle",
     letterSpacing: 3.8
   });
-  drawText(ctx, fighter.name, right.x + 48, right.y + 156, {
-    font: "700 84px Arial, Helvetica, sans-serif",
-    color: C.fg,
-    baseline: "middle"
-  });
+  drawFittedText(ctx, fighter.name, right.x + 48, right.y + 156, right.w - 96, 84, 52);
   drawText(ctx, `${formatRanking(fighter.ranking)} / ${fighter.stance ?? "STANCE PENDING"} / ${fighter.confidence.toUpperCase()} CONFIDENCE`, right.x + 52, right.y + 228, {
     font: "400 18px ui-monospace, SFMono-Regular, Consolas, monospace",
     color: C.accent,

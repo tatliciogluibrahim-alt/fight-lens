@@ -162,8 +162,19 @@ export function getFightShapeAxisScore(profile: ExportStyleProfile, axis: FightS
   }
 }
 
+type ProfileWithOptionalProvenance = NullableStyleProfile & {
+  provenance?: Partial<Record<FightShapeMetricKey, string>>;
+};
+
 function hasMetric(profile: NullableStyleProfile, key: FightShapeMetricKey): profile is NullableStyleProfile & Record<typeof key, number> {
-  return typeof profile[key] === "number" && Number.isFinite(profile[key]);
+  const value = profile[key];
+  const provenance = (profile as ProfileWithOptionalProvenance).provenance?.[key];
+
+  if (value === 0 && provenance && provenance !== "sourced") {
+    return false;
+  }
+
+  return typeof value === "number" && Number.isFinite(value);
 }
 
 export function getNullableFightShapeAxisScore(profile: NullableStyleProfile, axis: FightShapeAxisKey) {

@@ -10,7 +10,7 @@ interface StyleRadarProps {
 const SIZE = 340;
 const CENTER = SIZE / 2;
 const RADIUS = 104;
-const LABEL_RADIUS = 142;
+const LABEL_RADIUS = 136;
 const RINGS = [25, 50, 75, 100];
 
 function point(index: number, value: number, count: number, radius = RADIUS) {
@@ -45,7 +45,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
     ))
     .filter(Boolean) as Array<{ x: number; y: number; label: string; value: number }>;
 
-  const polygonPoints = dimensions.map((dimension, index) => point(index, dimension.value ?? 0, count));
+  const polygonPoints = dimensions.map((dimension, index) => point(index, dimension.hasData ? dimension.value ?? 0 : 0, count));
 
   return (
     <svg
@@ -55,6 +55,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       aria-label={`${title} style radar`}
     >
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 18} fill={tone === "accent" ? "rgba(200,91,63,0.05)" : "rgba(245,239,230,0.045)"} />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 28} fill="none" stroke="var(--line)" strokeOpacity={0.52} strokeDasharray="2 7" />
 
       {RINGS.map((ring) => (
         <polygon
@@ -70,7 +71,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       {dimensions.map((dimension, index) => {
         const end = point(index, 100, count);
         const labelPoint = point(index, 100, count, LABEL_RADIUS);
-      const hasValue = dimension.hasData;
+        const hasValue = dimension.hasData;
 
         return (
           <g key={dimension.key}>
@@ -93,6 +94,13 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
             >
               {dimension.shortLabel}
             </text>
+            <circle
+              cx={end.x}
+              cy={end.y}
+              r={hasValue ? 2.2 : 1.6}
+              fill={hasValue ? stroke : "var(--line-strong)"}
+              opacity={hasValue ? 0.75 : 0.45}
+            />
           </g>
         );
       })}

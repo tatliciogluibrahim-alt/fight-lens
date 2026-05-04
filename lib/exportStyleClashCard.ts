@@ -171,6 +171,11 @@ function drawRadar(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, 
 
   ctx.save();
   ctx.lineWidth = 2;
+  ctx.fillStyle = rgba(C.accent, 0.035);
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius + 48, 0, Math.PI * 2);
+  ctx.fill();
+
   for (const value of [20, 40, 60, 80, 100]) {
     const points = fightShapeExportAxes.map((_, index) => point(index, value));
     ctx.beginPath();
@@ -265,6 +270,23 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
   ctx.fillStyle = vertical;
   ctx.fillRect(0, 0, W, H);
 
+  ctx.save();
+  ctx.strokeStyle = rgba(C.lineStrong, 0.14);
+  ctx.lineWidth = 1;
+  for (let x = 0; x <= W; x += 96) {
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, H);
+    ctx.stroke();
+  }
+  for (let y = 0; y <= H; y += 96) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(W, y);
+    ctx.stroke();
+  }
+  ctx.restore();
+
   drawLogo(ctx);
   fillRoundRect(ctx, 1500, 70, 340, 60, 999, rgba(C.panel, 0.72));
   strokeRoundRect(ctx, 1500, 70, 340, 60, 999, C.lineStrong, 2);
@@ -315,20 +337,21 @@ function drawCard(ctx: CanvasRenderingContext2D, fighterA: StyleExportFighter, f
     });
   }
 
+  const headlineY = styleClashLabel ? right.y + 204 : right.y + 150;
   const headlineHeight = drawWrappedText(
     ctx,
     "style overlap. pressure points in shared axes.",
     right.x,
-    styleClashLabel ? right.y + 218 : right.y + 150,
+    headlineY,
     right.w - 30,
-    88,
-    "600 84px Arial, Helvetica, sans-serif",
+    78,
+    "600 76px Arial, Helvetica, sans-serif",
     C.fg
   );
 
-  const startY = (styleClashLabel ? right.y + 218 : right.y + 150) + headlineHeight + 82;
+  const startY = headlineY + headlineHeight + 54;
   fightShapeExportAxes.forEach((axis, index) => {
-    const y = startY + index * 78;
+    const y = startY + index * 64;
     drawCompareRow(
       ctx,
       axis.label,

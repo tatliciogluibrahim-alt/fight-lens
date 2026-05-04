@@ -1,7 +1,7 @@
 import type { SourcedFighter } from "@/lib/sourced-event";
 import type { FighterMetricScore } from "@/lib/fight-shape-model/types";
 import { formatRanking } from "@/lib/display";
-import { getStyleRadarCompleteness, getStyleRadarRead } from "@/lib/style-radar";
+import { getStyleRadarCompleteness, getStyleRadarDimensions, getStyleRadarRead } from "@/lib/style-radar";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import { StyleRadar } from "./StyleRadar";
@@ -15,9 +15,11 @@ interface FighterStyleRadarCardProps {
 
 export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: FighterStyleRadarCardProps) {
   const completeness = getStyleRadarCompleteness(fighter.styleProfile);
+  const dimensions = getStyleRadarDimensions(fighter.styleProfile);
   const styleRead = getStyleRadarRead(fighter.name, fighter.styleProfile);
   const canShowRadar = completeness.present >= 3;
   const showDebug = process.env.NEXT_PUBLIC_DEBUG_MODE === "true";
+  const limitedCount = dimensions.filter((dimension) => !dimension.hasData).length;
 
   if (!canShowRadar) {
     return (
@@ -45,11 +47,20 @@ export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: Figh
         <StyleRadar profile={fighter.styleProfile} title={fighter.name} tone={tone} />
       </div>
 
+      <div className="mb-4 grid gap-2 rounded-xl border border-line bg-background/35 p-3 sm:grid-cols-2">
+        <p className="data-text text-[10px] uppercase tracking-[0.1em] text-subtle">
+          solid shape · modeled signal
+        </p>
+        <p className="data-text text-[10px] uppercase tracking-[0.1em] text-subtle sm:text-right">
+          muted axes · limited signal
+        </p>
+      </div>
+
       <p className="text-sm leading-6 text-muted">Creator read: {styleRead}</p>
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
         <p className="data-text text-xs text-subtle">
-          {completeness.present}/{completeness.total} dimensions · UFCStats scope
+          {completeness.present}/{completeness.total} dimensions · {limitedCount ? `${limitedCount} limited` : "UFCStats scope"}
         </p>
         <StyleRadarSaveButton
           fighter={{

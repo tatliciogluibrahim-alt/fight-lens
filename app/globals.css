@@ -61,6 +61,10 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--foreground);
   outline-offset: 3px;
@@ -152,6 +156,7 @@ a {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+  white-space: nowrap;
   transition: background 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
