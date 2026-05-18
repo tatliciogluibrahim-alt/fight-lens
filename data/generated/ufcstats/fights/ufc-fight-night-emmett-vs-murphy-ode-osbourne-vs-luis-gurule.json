@@ -1,0 +1,584 @@
+{
+  "id": "de9422207df2de64",
+  "url": "http://www.ufcstats.com/fight-details/de9422207df2de64",
+  "event": {
+    "id": "86b30a86664cb6e4",
+    "name": "UFC Fight Night: Emmett vs. Murphy",
+    "url": "http://www.ufcstats.com/event-details/86b30a86664cb6e4"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6d68c1afe954f121",
+      "name": "Ode Osbourne",
+      "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121",
+      "nickname": "The Jamaican Sensation",
+      "result": "W"
+    },
+    {
+      "id": "29162be25ebef5f0",
+      "name": "Luis Gurule",
+      "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0",
+      "nickname": "Grim",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:54",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6d68c1afe954f121",
+        "name": "Ode Osbourne",
+        "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+      },
+      {
+        "id": "29162be25ebef5f0",
+        "name": "Luis Gurule",
+        "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 50,
+          "raw": "22 of 50"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 34,
+          "raw": "12 of 34"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 49,
+          "raw": "26 of 49"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:17",
+        "controlSeconds": 137
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "29162be25ebef5f0",
+            "name": "Luis Gurule",
+            "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:07",
+          "controlSeconds": 127
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "29162be25ebef5f0",
+            "name": "Luis Gurule",
+            "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6d68c1afe954f121",
+        "name": "Ode Osbourne",
+        "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+      },
+      {
+        "id": "29162be25ebef5f0",
+        "name": "Luis Gurule",
+        "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 11,
+          "attempted": 33,
+          "raw": "11 of 33"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 37,
+          "raw": "14 of 37"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 34,
+          "raw": "12 of 34"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 7,
+          "raw": "0 of 7"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 32,
+          "raw": "11 of 32"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 1,
+            "attempted": 13,
+            "raw": "1 of 13"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "29162be25ebef5f0",
+            "name": "Luis Gurule",
+            "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        {
+          "id": "29162be25ebef5f0",
+          "name": "Luis Gurule",
+          "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "29162be25ebef5f0",
+            "name": "Luis Gurule",
+            "url": "http://www.ufcstats.com/fighter-details/29162be25ebef5f0"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/de9422207df2de64",
+    "fetchedAt": "2026-05-18T16:57:42.179Z"
+  }
+}

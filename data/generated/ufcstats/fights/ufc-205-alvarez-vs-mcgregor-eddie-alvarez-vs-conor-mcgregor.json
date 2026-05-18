@@ -1,0 +1,584 @@
+{
+  "id": "1d7015553debd1c8",
+  "url": "http://www.ufcstats.com/fight-details/1d7015553debd1c8",
+  "event": {
+    "id": "4956f60b7fa57c1a",
+    "name": "UFC 205: Alvarez vs McGregor",
+    "url": "http://www.ufcstats.com/event-details/4956f60b7fa57c1a"
+  },
+  "title": "UFC Lightweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "33a331684283900f",
+      "name": "Eddie Alvarez",
+      "url": "http://www.ufcstats.com/fighter-details/33a331684283900f",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "f4c49976c75c5ab2",
+      "name": "Conor McGregor",
+      "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2",
+      "nickname": "The Notorious",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:04",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "John McCarthy",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "33a331684283900f",
+        "name": "Eddie Alvarez",
+        "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+      },
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 41,
+          "raw": "9 of 41"
+        },
+        "significantStrikePercent": 21,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 46,
+          "raw": "12 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      },
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "kd": 3,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 84,
+          "raw": "32 of 84"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 93,
+          "raw": "40 of 93"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:54",
+        "controlSeconds": 54
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "33a331684283900f",
+            "name": "Eddie Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 57,
+            "raw": "18 of 57"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 60,
+            "raw": "20 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:52",
+          "controlSeconds": 52
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "33a331684283900f",
+            "name": "Eddie Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:57",
+          "controlSeconds": 57
+        },
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 33,
+            "raw": "20 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "33a331684283900f",
+        "name": "Eddie Alvarez",
+        "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+      },
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 41,
+          "raw": "9 of 41"
+        },
+        "significantStrikePercent": 21,
+        "head": {
+          "landed": 2,
+          "attempted": 27,
+          "raw": "2 of 27"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 41,
+          "raw": "9 of 41"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 84,
+          "raw": "32 of 84"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 24,
+          "attempted": 71,
+          "raw": "24 of 71"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 67,
+          "raw": "24 of 67"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 12,
+          "raw": "5 of 12"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "33a331684283900f",
+            "name": "Eddie Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 1,
+            "attempted": 18,
+            "raw": "1 of 18"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 57,
+            "raw": "18 of 57"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 15,
+            "attempted": 51,
+            "raw": "15 of 51"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 45,
+            "raw": "13 of 45"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "33a331684283900f",
+          "name": "Eddie Alvarez",
+          "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+        },
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "33a331684283900f",
+            "name": "Eddie Alvarez",
+            "url": "http://www.ufcstats.com/fighter-details/33a331684283900f"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/1d7015553debd1c8",
+    "fetchedAt": "2026-05-18T16:56:44.548Z"
+  }
+}

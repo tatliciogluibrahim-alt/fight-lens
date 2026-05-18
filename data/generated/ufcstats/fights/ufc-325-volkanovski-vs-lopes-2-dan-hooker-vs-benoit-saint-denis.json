@@ -1,0 +1,584 @@
+{
+  "id": "a7ae8f6eb5fc3a79",
+  "url": "http://www.ufcstats.com/fight-details/a7ae8f6eb5fc3a79",
+  "event": {
+    "id": "30ad2050273d016a",
+    "name": "UFC 325: Volkanovski vs. Lopes 2",
+    "url": "http://www.ufcstats.com/event-details/30ad2050273d016a"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "193b9d1858bc4df3",
+      "name": "Dan Hooker",
+      "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3",
+      "nickname": "The Hangman",
+      "result": "L"
+    },
+    {
+      "id": "c2299ec916bc7c56",
+      "name": "Benoit Saint Denis",
+      "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56",
+      "nickname": "God of War",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:45",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "193b9d1858bc4df3",
+        "name": "Dan Hooker",
+        "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+      },
+      {
+        "id": "c2299ec916bc7c56",
+        "name": "Benoit Saint Denis",
+        "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 68,
+          "raw": "51 of 68"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:28",
+        "controlSeconds": 28
+      },
+      {
+        "fighter": {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 97,
+          "attempted": 127,
+          "raw": "97 of 127"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 170,
+          "attempted": 205,
+          "raw": "170 of 205"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "takedownPercent": 22,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "6:14",
+        "controlSeconds": 374
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 41,
+            "raw": "26 of 41"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 49,
+            "raw": "34 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:22",
+          "controlSeconds": 22
+        },
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 46,
+            "raw": "35 of 46"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 62,
+            "attempted": 73,
+            "raw": "62 of 73"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:55",
+          "controlSeconds": 115
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 62,
+            "attempted": 81,
+            "raw": "62 of 81"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 108,
+            "attempted": 132,
+            "raw": "108 of 132"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "4:19",
+          "controlSeconds": 259
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "193b9d1858bc4df3",
+        "name": "Dan Hooker",
+        "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+      },
+      {
+        "id": "c2299ec916bc7c56",
+        "name": "Benoit Saint Denis",
+        "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 44,
+          "raw": "28 of 44"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        "significantStrikes": {
+          "landed": 97,
+          "attempted": 127,
+          "raw": "97 of 127"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 83,
+          "attempted": 113,
+          "raw": "83 of 113"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 14,
+          "raw": "14 of 14"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 32,
+          "raw": "20 of 32"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "ground": {
+          "landed": 67,
+          "attempted": 84,
+          "raw": "67 of 84"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 41,
+            "raw": "26 of 41"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 38,
+            "raw": "24 of 38"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 46,
+            "raw": "35 of 46"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 24,
+            "attempted": 35,
+            "raw": "24 of 35"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "significantStrikes": {
+            "landed": 62,
+            "attempted": 81,
+            "raw": "62 of 81"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 59,
+            "attempted": 78,
+            "raw": "59 of 78"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 56,
+            "attempted": 73,
+            "raw": "56 of 73"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/a7ae8f6eb5fc3a79",
+    "fetchedAt": "2026-05-18T16:56:48.596Z"
+  }
+}

@@ -21,6 +21,18 @@ import kopylovTulio from "@/data/predictions/kopylov-tulio.json";
 import sabatiniGomis from "@/data/predictions/sabatini-gomis.json";
 import susurkaevSantos from "@/data/predictions/susurkaev-santos.json";
 import carpenterOchoa from "@/data/predictions/carpenter-ochoa.json";
+// UFC 329: McGregor vs. Holloway 2
+import mcgregorHolloway from "@/data/predictions/mcgregor-holloway.json";
+import saintDenisPimblett from "@/data/predictions/saint-denis-pimblett.json";
+import sandhagenBautista from "@/data/predictions/sandhagen-bautista.json";
+import royvalKavanagh from "@/data/predictions/royval-kavanagh.json";
+import stevesonEllison from "@/data/predictions/steveson-ellison.json";
+import whittakerKrylov from "@/data/predictions/whittaker-krylov.json";
+import rileyKamaka from "@/data/predictions/riley-kamaka.json";
+import pinasAlmeida from "@/data/predictions/pinas-almeida.json";
+import garbrandtYanez from "@/data/predictions/garbrandt-yanez.json";
+import cortezWang from "@/data/predictions/cortez-wang.json";
+import osbourneDurden from "@/data/predictions/osbourne-durden.json";
 import { computeAccuracyMetrics } from "./calculator";
 import type { AccuracyMetrics, PredictionRecord } from "./types";
 
@@ -39,6 +51,18 @@ const allRecords: PredictionRecord[] = [
   sabatiniGomis as PredictionRecord,
   susurkaevSantos as PredictionRecord,
   carpenterOchoa as PredictionRecord,
+  // UFC 329
+  mcgregorHolloway as PredictionRecord,
+  saintDenisPimblett as PredictionRecord,
+  sandhagenBautista as PredictionRecord,
+  royvalKavanagh as PredictionRecord,
+  stevesonEllison as PredictionRecord,
+  whittakerKrylov as PredictionRecord,
+  rileyKamaka as PredictionRecord,
+  pinasAlmeida as PredictionRecord,
+  garbrandtYanez as PredictionRecord,
+  cortezWang as PredictionRecord,
+  osbourneDurden as PredictionRecord,
 ];
 
 export function getAllPredictions(): PredictionRecord[] {

@@ -1,0 +1,21 @@
+{
+  "fightId": "whittaker-krylov",
+  "event": "UFC 329: McGregor vs. Holloway 2",
+  "fighters": {
+    "fighterA": "Robert Whittaker",
+    "fighterB": "Nikita Krylov"
+  },
+  "generatedAt": "2026-05-18T20:00:00.000Z",
+  "modelVersion": "outcome-v0.2",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 45,
+    "fighterBWinProbability": 55,
+    "methodBreakdown": {
+      "decision": 41,
+      "koTko": 41,
+      "submission": 18
+    }
+  },
+  "outcome": null
+}

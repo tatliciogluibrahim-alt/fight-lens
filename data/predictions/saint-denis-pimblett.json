@@ -1,0 +1,21 @@
+{
+  "fightId": "saint-denis-pimblett",
+  "event": "UFC 329: McGregor vs. Holloway 2",
+  "fighters": {
+    "fighterA": "Benoît Saint Denis",
+    "fighterB": "Paddy Pimblett"
+  },
+  "generatedAt": "2026-05-18T20:00:00.000Z",
+  "modelVersion": "outcome-v0.2",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 59,
+    "fighterBWinProbability": 41,
+    "methodBreakdown": {
+      "decision": 20,
+      "koTko": 40,
+      "submission": 40
+    }
+  },
+  "outcome": null
+}

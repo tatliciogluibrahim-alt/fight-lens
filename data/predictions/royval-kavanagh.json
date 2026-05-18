@@ -1,0 +1,21 @@
+{
+  "fightId": "royval-kavanagh",
+  "event": "UFC 329: McGregor vs. Holloway 2",
+  "fighters": {
+    "fighterA": "Brandon Royval",
+    "fighterB": "Lone'er Kavanagh"
+  },
+  "generatedAt": "2026-05-18T20:00:00.000Z",
+  "modelVersion": "outcome-v0.2",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 42,
+    "fighterBWinProbability": 58,
+    "methodBreakdown": {
+      "decision": 85,
+      "koTko": 15,
+      "submission": 0
+    }
+  },
+  "outcome": null
+}

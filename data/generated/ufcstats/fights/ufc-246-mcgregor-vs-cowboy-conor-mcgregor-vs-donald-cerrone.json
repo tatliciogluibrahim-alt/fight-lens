@@ -1,0 +1,404 @@
+{
+  "id": "eed6c9aff2234b7a",
+  "url": "http://www.ufcstats.com/fight-details/eed6c9aff2234b7a",
+  "event": {
+    "id": "0c1773639c795466",
+    "name": "UFC 246: McGregor vs. Cowboy",
+    "url": "http://www.ufcstats.com/event-details/0c1773639c795466"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f4c49976c75c5ab2",
+      "name": "Conor McGregor",
+      "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2",
+      "nickname": "The Notorious",
+      "result": "W"
+    },
+    {
+      "id": "1d00756835ca67c9",
+      "name": "Donald Cerrone",
+      "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9",
+      "nickname": "Cowboy",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:40",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      },
+      {
+        "id": "1d00756835ca67c9",
+        "name": "Donald Cerrone",
+        "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 26,
+          "raw": "19 of 26"
+        },
+        "significantStrikePercent": 73,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 27,
+          "raw": "20 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      },
+      {
+        "fighter": {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "significantStrikePercent": 0,
+        "totalStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 26,
+            "raw": "19 of 26"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 27,
+            "raw": "20 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        },
+        {
+          "fighter": {
+            "id": "1d00756835ca67c9",
+            "name": "Donald Cerrone",
+            "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      },
+      {
+        "id": "1d00756835ca67c9",
+        "name": "Donald Cerrone",
+        "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 26,
+          "raw": "19 of 26"
+        },
+        "significantStrikePercent": 73,
+        "head": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        },
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "significantStrikePercent": 0,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 26,
+            "raw": "19 of 26"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 19,
+            "attempted": 25,
+            "raw": "19 of 25"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1d00756835ca67c9",
+            "name": "Donald Cerrone",
+            "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/eed6c9aff2234b7a",
+    "fetchedAt": "2026-05-18T16:56:42.633Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "d421f3cd158fd055",
+  "url": "http://www.ufcstats.com/fight-details/d421f3cd158fd055",
+  "event": {
+    "id": "e60d773a0a42048a",
+    "name": "UFC Fight Night: Sterling vs. Zalal",
+    "url": "http://www.ufcstats.com/event-details/e60d773a0a42048a"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "65adf3856c4d9256",
+      "name": "Jafel Filho",
+      "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256",
+      "nickname": "Pastor",
+      "result": "L"
+    },
+    {
+      "id": "7f6ed67d3ed3c036",
+      "name": "Cody Durden",
+      "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036",
+      "nickname": "Custom Made",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "65adf3856c4d9256",
+        "name": "Jafel Filho",
+        "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+      },
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 63,
+          "raw": "23 of 63"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 50,
+          "attempted": 93,
+          "raw": "50 of 93"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:08",
+        "controlSeconds": 188
+      },
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 72,
+          "raw": "34 of 72"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 91,
+          "attempted": 136,
+          "raw": "91 of 136"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "5:14",
+        "controlSeconds": 314
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "2:00",
+          "controlSeconds": 120
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 50,
+            "raw": "36 of 50"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:20",
+          "controlSeconds": 80
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 28,
+            "raw": "8 of 28"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 39,
+            "raw": "17 of 39"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 41,
+            "raw": "21 of 41"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 36,
+            "raw": "24 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:24",
+          "controlSeconds": 24
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 45,
+            "raw": "34 of 45"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:17",
+          "controlSeconds": 197
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "65adf3856c4d9256",
+        "name": "Jafel Filho",
+        "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+      },
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 63,
+          "raw": "23 of 63"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 10,
+          "attempted": 44,
+          "raw": "10 of 44"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 54,
+          "raw": "16 of 54"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 72,
+          "raw": "34 of 72"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 21,
+          "attempted": 54,
+          "raw": "21 of 54"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 61,
+          "raw": "24 of 61"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 28,
+            "raw": "8 of 28"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 26,
+            "raw": "7 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65adf3856c4d9256",
+          "name": "Jafel Filho",
+          "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65adf3856c4d9256",
+            "name": "Jafel Filho",
+            "url": "http://www.ufcstats.com/fighter-details/65adf3856c4d9256"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d421f3cd158fd055",
+    "fetchedAt": "2026-05-18T16:57:44.965Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "78b506e5092a27fd",
+  "url": "http://www.ufcstats.com/fight-details/78b506e5092a27fd",
+  "event": {
+    "id": "0c01568b1ac77bff",
+    "name": "UFC 306: Riyadh Season Noche UFC",
+    "url": "http://www.ufcstats.com/event-details/0c01568b1ac77bff"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f2900678e98f6d6a",
+      "name": "Ronaldo Rodriguez",
+      "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a",
+      "nickname": "Lazy Boy",
+      "result": "W"
+    },
+    {
+      "id": "6d68c1afe954f121",
+      "name": "Ode Osbourne",
+      "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121",
+      "nickname": "The Jamaican Sensation",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f2900678e98f6d6a",
+        "name": "Ronaldo Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+      },
+      {
+        "id": "6d68c1afe954f121",
+        "name": "Ode Osbourne",
+        "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 69,
+          "raw": "35 of 69"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 68,
+          "attempted": 117,
+          "raw": "68 of 117"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "9:14",
+        "controlSeconds": 554
+      },
+      {
+        "fighter": {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 68,
+          "raw": "37 of 68"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 93,
+          "raw": "55 of 93"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "1:07",
+        "controlSeconds": 67
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 37,
+            "raw": "25 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "4:14",
+          "controlSeconds": 254
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 45,
+            "raw": "30 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 24,
+            "raw": "19 of 24"
+          },
+          "significantStrikePercent": 79,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 40,
+            "raw": "29 of 40"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:10",
+          "controlSeconds": 250
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "0:22",
+          "controlSeconds": 22
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 31,
+            "raw": "10 of 31"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 40,
+            "raw": "14 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:50",
+          "controlSeconds": 50
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 38,
+            "raw": "19 of 38"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f2900678e98f6d6a",
+        "name": "Ronaldo Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+      },
+      {
+        "id": "6d68c1afe954f121",
+        "name": "Ode Osbourne",
+        "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 69,
+          "raw": "35 of 69"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 29,
+          "attempted": 61,
+          "raw": "29 of 61"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 31,
+          "raw": "10 of 31"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 25,
+          "attempted": 38,
+          "raw": "25 of 38"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 68,
+          "raw": "37 of 68"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 28,
+          "attempted": 59,
+          "raw": "28 of 59"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 22,
+          "attempted": 46,
+          "raw": "22 of 46"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 15,
+          "attempted": 22,
+          "raw": "15 of 22"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 24,
+            "raw": "19 of 24"
+          },
+          "significantStrikePercent": 79,
+          "head": {
+            "landed": 18,
+            "attempted": 23,
+            "raw": "18 of 23"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 22,
+            "raw": "18 of 22"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "6d68c1afe954f121",
+          "name": "Ode Osbourne",
+          "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 31,
+            "raw": "10 of 31"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 7,
+            "attempted": 27,
+            "raw": "7 of 27"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d68c1afe954f121",
+            "name": "Ode Osbourne",
+            "url": "http://www.ufcstats.com/fighter-details/6d68c1afe954f121"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/78b506e5092a27fd",
+    "fetchedAt": "2026-05-18T16:57:43.121Z"
+  }
+}

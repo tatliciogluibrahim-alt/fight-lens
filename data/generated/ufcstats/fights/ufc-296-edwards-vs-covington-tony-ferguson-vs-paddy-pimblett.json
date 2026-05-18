@@ -1,0 +1,764 @@
+{
+  "id": "ac8628d945a78b03",
+  "url": "http://www.ufcstats.com/fight-details/ac8628d945a78b03",
+  "event": {
+    "id": "a8e8587a06e73c87",
+    "name": "UFC 296: Edwards vs. Covington",
+    "url": "http://www.ufcstats.com/event-details/a8e8587a06e73c87"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "22a92d7f62195791",
+      "name": "Tony Ferguson",
+      "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791",
+      "nickname": "El Cucuy",
+      "result": "L"
+    },
+    {
+      "id": "7826923b47f8d72a",
+      "name": "Paddy Pimblett",
+      "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a",
+      "nickname": "The Baddy",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "22a92d7f62195791",
+        "name": "Tony Ferguson",
+        "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+      },
+      {
+        "id": "7826923b47f8d72a",
+        "name": "Paddy Pimblett",
+        "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 105,
+          "raw": "62 of 105"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 90,
+          "attempted": 134,
+          "raw": "90 of 134"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 106,
+          "attempted": 165,
+          "raw": "106 of 165"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 151,
+          "attempted": 217,
+          "raw": "151 of 217"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "8:53",
+        "controlSeconds": 533
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 57,
+            "raw": "31 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 104,
+            "raw": "70 of 104"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 76,
+            "attempted": 110,
+            "raw": "76 of 110"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:55",
+          "controlSeconds": 55
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 27,
+            "raw": "19 of 27"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 58,
+            "raw": "46 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:20",
+          "controlSeconds": 260
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 32,
+            "raw": "22 of 32"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 52,
+            "raw": "41 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 49,
+            "raw": "29 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:38",
+          "controlSeconds": 218
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "22a92d7f62195791",
+        "name": "Tony Ferguson",
+        "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+      },
+      {
+        "id": "7826923b47f8d72a",
+        "name": "Paddy Pimblett",
+        "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 105,
+          "raw": "62 of 105"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 35,
+          "attempted": 66,
+          "raw": "35 of 66"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 35,
+          "raw": "23 of 35"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 51,
+          "attempted": 91,
+          "raw": "51 of 91"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        },
+        "significantStrikes": {
+          "landed": 106,
+          "attempted": 165,
+          "raw": "106 of 165"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 73,
+          "attempted": 127,
+          "raw": "73 of 127"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "leg": {
+          "landed": 20,
+          "attempted": 21,
+          "raw": "20 of 21"
+        },
+        "distance": {
+          "landed": 66,
+          "attempted": 109,
+          "raw": "66 of 109"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 40,
+          "attempted": 56,
+          "raw": "40 of 56"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 16,
+            "attempted": 32,
+            "raw": "16 of 32"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 104,
+            "raw": "70 of 104"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 43,
+            "attempted": 72,
+            "raw": "43 of 72"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "leg": {
+            "landed": 16,
+            "attempted": 17,
+            "raw": "16 of 17"
+          },
+          "distance": {
+            "landed": 54,
+            "attempted": 82,
+            "raw": "54 of 82"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 27,
+            "raw": "19 of 27"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 16,
+            "attempted": 24,
+            "raw": "16 of 24"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 15,
+            "attempted": 18,
+            "raw": "15 of 18"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "22a92d7f62195791",
+          "name": "Tony Ferguson",
+          "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+        },
+        {
+          "id": "7826923b47f8d72a",
+          "name": "Paddy Pimblett",
+          "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "22a92d7f62195791",
+            "name": "Tony Ferguson",
+            "url": "http://www.ufcstats.com/fighter-details/22a92d7f62195791"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 32,
+            "raw": "22 of 32"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 25,
+            "raw": "16 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7826923b47f8d72a",
+            "name": "Paddy Pimblett",
+            "url": "http://www.ufcstats.com/fighter-details/7826923b47f8d72a"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 16,
+            "raw": "9 of 16"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ac8628d945a78b03",
+    "fetchedAt": "2026-05-18T16:56:53.421Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "4d56bcd82438e632",
+  "url": "http://www.ufcstats.com/fight-details/4d56bcd82438e632",
+  "event": {
+    "id": "992c82450d96f726",
+    "name": "UFC Fight Night: Smith vs. Clark",
+    "url": "http://www.ufcstats.com/event-details/992c82450d96f726"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "87c0b1c696ddfb43",
+      "name": "Jonathan Pearce",
+      "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43",
+      "nickname": "JSP",
+      "result": "W"
+    },
+    {
+      "id": "eee0ef3e2b14816b",
+      "name": "Kai Kamaka III",
+      "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b",
+      "nickname": "Da Fighting Hawaiian",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:28",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "87c0b1c696ddfb43",
+        "name": "Jonathan Pearce",
+        "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+      },
+      {
+        "id": "eee0ef3e2b14816b",
+        "name": "Kai Kamaka III",
+        "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 100,
+          "raw": "51 of 100"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 113,
+          "attempted": 172,
+          "raw": "113 of 172"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "takedownPercent": 71,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:26",
+        "controlSeconds": 206
+      },
+      {
+        "fighter": {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 83,
+          "raw": "47 of 83"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 84,
+          "raw": "48 of 84"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "0:33",
+        "controlSeconds": 33
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "87c0b1c696ddfb43",
+            "name": "Jonathan Pearce",
+            "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 55,
+            "raw": "22 of 55"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 56,
+            "raw": "23 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "eee0ef3e2b14816b",
+            "name": "Kai Kamaka III",
+            "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 64,
+            "raw": "35 of 64"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 65,
+            "raw": "36 of 65"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "87c0b1c696ddfb43",
+            "name": "Jonathan Pearce",
+            "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 45,
+            "raw": "29 of 45"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 90,
+            "attempted": 116,
+            "raw": "90 of 116"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:51",
+          "controlSeconds": 171
+        },
+        {
+          "fighter": {
+            "id": "eee0ef3e2b14816b",
+            "name": "Kai Kamaka III",
+            "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "0:22",
+          "controlSeconds": 22
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "87c0b1c696ddfb43",
+        "name": "Jonathan Pearce",
+        "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+      },
+      {
+        "id": "eee0ef3e2b14816b",
+        "name": "Kai Kamaka III",
+        "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 100,
+          "raw": "51 of 100"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 34,
+          "attempted": 76,
+          "raw": "34 of 76"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 19,
+          "raw": "12 of 19"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 71,
+          "raw": "27 of 71"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "ground": {
+          "landed": 18,
+          "attempted": 20,
+          "raw": "18 of 20"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 83,
+          "raw": "47 of 83"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 20,
+          "attempted": 51,
+          "raw": "20 of 51"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 25,
+          "raw": "20 of 25"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 44,
+          "attempted": 79,
+          "raw": "44 of 79"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "87c0b1c696ddfb43",
+            "name": "Jonathan Pearce",
+            "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 55,
+            "raw": "22 of 55"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 10,
+            "attempted": 37,
+            "raw": "10 of 37"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 51,
+            "raw": "19 of 51"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eee0ef3e2b14816b",
+            "name": "Kai Kamaka III",
+            "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 64,
+            "raw": "35 of 64"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 13,
+            "attempted": 37,
+            "raw": "13 of 37"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 35,
+            "attempted": 64,
+            "raw": "35 of 64"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "87c0b1c696ddfb43",
+          "name": "Jonathan Pearce",
+          "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+        },
+        {
+          "id": "eee0ef3e2b14816b",
+          "name": "Kai Kamaka III",
+          "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "87c0b1c696ddfb43",
+            "name": "Jonathan Pearce",
+            "url": "http://www.ufcstats.com/fighter-details/87c0b1c696ddfb43"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 45,
+            "raw": "29 of 45"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 24,
+            "attempted": 39,
+            "raw": "24 of 39"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 20,
+            "raw": "18 of 20"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eee0ef3e2b14816b",
+            "name": "Kai Kamaka III",
+            "url": "http://www.ufcstats.com/fighter-details/eee0ef3e2b14816b"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4d56bcd82438e632",
+    "fetchedAt": "2026-05-18T16:57:20.389Z"
+  }
+}
