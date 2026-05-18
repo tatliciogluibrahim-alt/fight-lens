@@ -65,8 +65,8 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
           ) : (
             <ModuleEmptyState
               label="fight shape"
-              title="Fight Shape read pending."
-              body="The current sourced sample is not enough for a public Fight Shape read."
+              title="Fight shape pending."
+              body="No fight stats sourced yet — check back closer to the event."
             />
           )}
           <div className="mt-6 flex flex-wrap gap-2">
@@ -109,7 +109,7 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
             <ModuleEmptyState
               label="pressure point"
               title="Pressure point pending."
-              body="This needs enough profile rates for both sides before Fight Lens shows a pressure tile."
+              body="Stats not yet sourced."
             />
           )}
         </aside>

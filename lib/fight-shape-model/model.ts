@@ -416,7 +416,7 @@ function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, press
   const fighterB = fight.fighters.fighterB;
 
   if (pressureA.score == null && pressureB.score == null) {
-    return "The current sourced sample is too thin to shape the pressure points for this matchup.";
+    return null;
   }
 
   const leader = (pressureA.score ?? 0) >= (pressureB.score ?? 0) ? pressureA : pressureB;

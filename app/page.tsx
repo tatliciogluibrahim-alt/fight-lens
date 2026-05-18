@@ -93,8 +93,9 @@ export default function Home() {
                 );
               });
 
-              // Determine event slug for linking
-              const isUfc328 = eventName.toLowerCase().includes("328");
+              // Derive event slug from name ("UFC 328: ..." → "ufc-328")
+              const ufcMatch = eventName.match(/UFC\s+(\d+)/i);
+              const eventSlug = ufcMatch ? `ufc-${ufcMatch[1]}` : null;
 
               return (
                 <div
@@ -112,9 +113,9 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="flex gap-2">
-                      {isUfc328 && (
+                      {eventSlug && (
                         <Link
-                          href="/events/ufc-328"
+                          href={`/events/${eventSlug}`}
                           className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:text-foreground"
                         >
                           view matchups
@@ -142,6 +143,9 @@ export default function Home() {
                         p.prediction.fighterBWinProbability
                       );
                       const hasOutcome = p.outcome !== null;
+                      const fightHref = eventSlug
+                        ? `/events/${eventSlug}/${p.fightId}`
+                        : `/backtests/${p.fightId}`;
 
                       return (
                         <div
@@ -160,22 +164,12 @@ export default function Home() {
                             <p className="font-mono text-[10px] text-subtle">
                               lean: {favName} {favProb}%
                             </p>
-                            {isUfc328 && (
                             <Link
-                              href={`/events/ufc-328/${p.fightId}`}
+                              href={fightHref}
                               className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
                             >
                               lens →
                             </Link>
-                          )}
-                          {!isUfc328 && (
-                            <Link
-                              href={`/backtests/${p.fightId}`}
-                              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
-                            >
-                              lens →
-                            </Link>
-                          )}
                           </div>
                         </div>
                       );

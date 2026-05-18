@@ -25,8 +25,8 @@ export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: Figh
     return (
       <ModuleEmptyState
         label={fighter.name}
-        title="Style radar pending."
-        body="This fighter needs more complete profile dimensions before Fight Lens draws a radar."
+        title="Style shape pending."
+        body="Not enough data to draw a radar yet."
       />
     );
   }

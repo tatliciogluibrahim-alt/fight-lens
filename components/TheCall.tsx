@@ -135,12 +135,12 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           </h2>
         </div>
         <div className="module-body">
-          <div className="rounded-2xl border border-line bg-background/35 p-6 text-center">
+          <div className="rounded-2xl border border-line bg-background/35 p-5 text-center">
             <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">
-              insufficient data
+              data pending
             </p>
-            <p className="mt-3 text-sm leading-6 text-muted">
-              The model needs complete style pressure and form scores for both fighters to generate outcome probabilities. Check back once more fight data is sourced.
+            <p className="mt-2 text-sm text-muted">
+              Probabilities load once fighter stats are sourced.
             </p>
           </div>
         </div>
@@ -159,8 +159,8 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
             fight outcome model.
           </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Win probabilities and method breakdown derived from style shape, recent form, and stat differentials. Signal-based — not a guarantee.
+          <p className="mt-3 text-sm text-muted">
+            Style shape · form · stat differentials. Signal-based, not a guarantee.
           </p>
         </div>
         <div className="flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-2">

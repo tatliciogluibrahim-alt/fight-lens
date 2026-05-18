@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description: "Every Fight Lens prediction tracked against real outcomes. Full transparency."
 };
 
+function eventSlug(eventName: string): string | null {
+  const match = eventName.match(/UFC\s+(\d+)/i);
+  return match ? `ufc-${match[1]}` : null;
+}
+
 function methodLabel(method: string): string {
   switch (method) {
     case "ko_tko": return "KO/TKO";
@@ -110,12 +115,22 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
 
       {/* Link */}
       <div>
-        <Link
-          href={`/events/ufc-328/${record.fightId}`}
-          className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
-        >
-          view lens →
-        </Link>
+        {(() => {
+          const slug = eventSlug(record.event);
+          const href = slug
+            ? `/events/${slug}/${record.fightId}`
+            : record.isBacktestReconstruction
+              ? `/backtests/${record.fightId}`
+              : null;
+          return href ? (
+            <Link
+              href={href}
+              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+            >
+              view lens →
+            </Link>
+          ) : null;
+        })()}
       </div>
     </div>
   );
@@ -156,24 +171,22 @@ export default function RecordPage() {
             <h1 className="mt-5 text-5xl font-semibold leading-none tracking-[-0.05em] md:text-7xl">
               every pick. tracked.
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-muted">
-              Full transparency on what the model called before each fight and what actually happened.
-              No post-hoc edits. Outcomes recorded as fights resolve.
+            <p className="mt-4 text-sm text-muted">
+              What the model called before each fight — locked in before the first bell. No edits.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-4">
-              <div className="rounded-xl border border-line bg-surface/70 px-5 py-3">
-                <p className="data-text text-2xl text-foreground">{predictions.length}</p>
-                <p className="mono-label mt-1">total predictions</p>
-              </div>
-              <div className="rounded-xl border border-line bg-surface/70 px-5 py-3">
-                <p className="data-text text-2xl text-accent">{resolvedCount}</p>
-                <p className="mono-label mt-1">scored</p>
-              </div>
-              <div className="rounded-xl border border-line bg-surface/70 px-5 py-3">
-                <p className="data-text text-2xl text-muted">{pendingCount}</p>
-                <p className="mono-label mt-1">pending outcomes</p>
-              </div>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
+                {predictions.length} predictions
+              </span>
+              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-accent">
+                {resolvedCount} scored
+              </span>
+              {pendingCount > 0 && (
+                <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
+                  {pendingCount} pending
+                </span>
+              )}
             </div>
           </div>
         </section>

@@ -20,9 +20,17 @@ function FighterCountry({ fighter }: { fighter: SourcedFighter }) {
 }
 
 function RecordLine({ fighter }: { fighter: SourcedFighter }) {
+  const ranking = formatRanking(fighter.ranking);
+  const parts = [
+    fighter.record ?? null,
+    ranking !== "UNRANKED" ? ranking : null,
+  ].filter(Boolean);
+
+  if (!parts.length) return null;
+
   return (
     <p className="data-text text-xs text-subtle">
-      {fighter.record ?? "record pending"} / {formatRanking(fighter.ranking)}
+      {parts.join(" · ")}
     </p>
   );
 }
@@ -48,10 +56,8 @@ export function FightCard({ fight, eventId }: FightCardProps) {
 
       <div className="rounded-2xl border border-line bg-background/60 px-4 py-3 text-center">
         <p className="font-mono text-xs uppercase tracking-[0.18em] text-subtle">vs</p>
-        <p className="mt-1 text-sm font-medium text-foreground">{fight.weightClass ?? "weight class pending"}</p>
-        <p className="data-text mt-1 text-xs text-muted">
-          {fight.rounds} rounds / {fight.cardPlacement.toLowerCase()}
-        </p>
+        <p className="mt-1 text-sm font-medium text-foreground">{fight.weightClass ?? "weight pending"}</p>
+        <p className="data-text mt-1 text-xs text-muted">{fight.rounds}R</p>
       </div>
 
       <div className="flex min-w-0 items-center gap-4 md:justify-start">

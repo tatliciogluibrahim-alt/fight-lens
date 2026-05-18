@@ -36,11 +36,8 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
         <div className="max-w-2xl">
           <p className="mono-label">the clash</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">style fingerprints.</h2>
-          <p className="mt-3 text-sm leading-6 text-muted">
-            Creator read: this radar reflects recent sourced and derived signals, not a full-career scouting grade.
-          </p>
           <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">
-            Scores derived from UFCStats data · opponent quality manually weighted
+            Recent sourced signals · not a full-career scouting grade · opponent quality manually weighted
           </p>
         </div>
         {canExport ? (
@@ -67,8 +64,8 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
         ) : (
           <ModuleEmptyState
             label="style data"
-            title="Style radar pending."
-            body="The profile rates are not complete enough to draw the export radar for this matchup."
+            title="Style shape pending."
+            body="Full fighter data not yet sourced."
           />
         )}
 

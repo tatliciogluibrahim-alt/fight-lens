@@ -85,7 +85,7 @@ export interface FightShapeModelOutput {
   dataConfidence: FightShapeDataConfidence;
   generatedAt: string;
   warnings: string[];
-  publicSummary: string;
+  publicSummary: string | null;
   debug?: {
     modelVersion: string;
     notes: string[];

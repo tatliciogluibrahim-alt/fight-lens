@@ -23,7 +23,7 @@ export function EventHero({ event }: EventHeroProps) {
             {event.event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Every fight on the card. Open the lens, see the shape, take the read.
+            Every fight on the card. Open a matchup, see the shape.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[
@@ -50,7 +50,7 @@ export function EventHero({ event }: EventHeroProps) {
                 <p className="mono-label mt-3 text-accent">{mainFightClash}</p>
               )}
               <p className="mt-4 text-sm leading-6 text-muted">
-                {mainFight.matchupQuestion ?? "Analysis loading — check back once fighter data is sourced."}
+                {mainFight.matchupQuestion ?? "Fighter stats pending — analysis loads closer to the event."}
               </p>
             </div>
             <Link
