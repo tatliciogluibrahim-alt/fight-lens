@@ -1,8 +1,10 @@
+import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { formatRanking } from "@/lib/display";
 import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions } from "@/lib/style-radar";
 import { ModuleEmptyState } from "./ModuleEmptyState";
+import { StyleClashExportCard } from "./StyleClashExportCard";
 import { StyleClashLabel } from "./StyleClashLabel";
 
 interface StyleComparisonBarsProps {
@@ -20,6 +22,14 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
     return row.hasData || b?.hasData ? [{ a: row, b }] : [];
   });
 
+  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
+    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
+    : null;
+  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
+    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
+    : null;
+  const canShowRadar = Boolean(exportFighterA && exportFighterB);
+
   return (
     <section id="section-overlap" className="module-card scroll-mt-28">
       <div className="module-header">
@@ -33,32 +43,44 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
       </div>
 
       <div className="module-body space-y-6">
+        {/* Radar shape card — display only */}
+        {canShowRadar ? (
+          <div className="overflow-x-auto rounded-2xl border border-line bg-background/45 pb-1">
+            <div className="min-w-[720px] md:min-w-0">
+              <StyleClashExportCard
+                fighterA={exportFighterA!}
+                fighterB={exportFighterB!}
+                styleClashLabel={styleClashLabel}
+              />
+            </div>
+          </div>
+        ) : null}
+
+        {/* Comparison bars */}
         {comparableRows.length ? (
           <div className="grid gap-8 rounded-2xl border border-line bg-background/30 p-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-            <div>
-              <div className="space-y-6">
-                <div>
-                  <p className="mono-label">axis detail / fighter a</p>
-                  <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">
-                    {fighterA.name}
-                  </h3>
-                  <p className="data-text mt-2 text-sm text-muted">
-                    {fighterA.record} / {formatRanking(fighterA.ranking)} / {fighterA.stance}
-                  </p>
-                </div>
-                <div>
-                  <p className="mono-label">axis detail / fighter b</p>
-                  <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-foreground md:text-4xl">
-                    {fighterB.name}
-                  </h3>
-                  <p className="data-text mt-2 text-sm text-muted">
-                    {fighterB.record} / {formatRanking(fighterB.ranking)} / {fighterB.stance}
-                  </p>
-                </div>
-                {styleClashLabel ? (
-                  <StyleClashLabel label={styleClashLabel} />
-                ) : null}
+            <div className="space-y-6">
+              <div>
+                <p className="mono-label">axis detail / fighter a</p>
+                <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-accent md:text-4xl">
+                  {fighterA.name}
+                </h3>
+                <p className="data-text mt-2 text-sm text-muted">
+                  {fighterA.record} / {formatRanking(fighterA.ranking)} / {fighterA.stance}
+                </p>
               </div>
+              <div>
+                <p className="mono-label">axis detail / fighter b</p>
+                <h3 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.045em] text-foreground md:text-4xl">
+                  {fighterB.name}
+                </h3>
+                <p className="data-text mt-2 text-sm text-muted">
+                  {fighterB.record} / {formatRanking(fighterB.ranking)} / {fighterB.stance}
+                </p>
+              </div>
+              {styleClashLabel ? (
+                <StyleClashLabel label={styleClashLabel} />
+              ) : null}
             </div>
 
             <div className="divide-y divide-line rounded-2xl border border-line bg-background/35">
@@ -87,9 +109,7 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                       </div>
                     </div>
                     {(a.provenance === "manual" || b?.provenance === "manual") ? (
-                      <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">
-                        manual
-                      </p>
+                      <p className="data-text mt-2 text-[10px] uppercase tracking-[0.08em] text-subtle">manual</p>
                     ) : null}
                   </div>
                 );

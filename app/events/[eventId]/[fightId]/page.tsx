@@ -9,7 +9,6 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
-import { StyleClashLabel } from "@/components/StyleClashLabel";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
@@ -148,13 +147,10 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="flex flex-col items-center justify-center gap-4 border-y border-line bg-background/30 px-5 py-8 text-center lg:border-x lg:border-y-0">
+            <div className="flex items-center justify-center border-y border-line bg-background/30 px-5 py-8 text-center lg:border-x lg:border-y-0">
               <p className="text-[3.5rem] font-light leading-none tracking-[-0.08em] text-subtle/20 md:text-[5rem]">
                 vs
               </p>
-              {fight.styleClashLabel && (
-                <StyleClashLabel label={fight.styleClashLabel} />
-              )}
             </div>
 
             <FighterHeroPanel fighter={fighterB} align="right" />

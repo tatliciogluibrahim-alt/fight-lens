@@ -18,13 +18,17 @@ function PathList({
   paths: FightPath[];
   accent?: boolean;
 }) {
-  if (metric.status === "insufficient" || metric.score == null) {
+  const hasCuratedPaths = paths.length > 0;
+  const hasModelSignal = metric.status !== "insufficient" && metric.score != null;
+
+  // Nothing at all — show pending state
+  if (!hasCuratedPaths && !hasModelSignal) {
     return (
       <div className="rounded-2xl border border-line bg-background/45 p-5">
         <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-        <p className="mono-label mt-2">insufficient sample</p>
-        <p className="mt-5 text-sm leading-6 text-muted">
-          Route reliability needs more sourced pressure, form, and round data.
+        <p className="mono-label mt-2">path analysis pending</p>
+        <p className="mt-4 text-sm leading-6 text-muted">
+          Path reliability loads once round-trend and form data are sourced. Check back closer to the event.
         </p>
       </div>
     );
@@ -34,10 +38,12 @@ function PathList({
     <div className="rounded-2xl border border-line bg-background/45 p-5">
       <div>
         <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-        <p className="mono-label mt-2">{metric.label}</p>
+        {hasModelSignal && <p className="mono-label mt-2">{metric.label}</p>}
       </div>
-      <p className="mt-5 text-sm leading-6 text-muted">{metric.explanation}</p>
-      {paths.length ? (
+      {hasModelSignal && (
+        <p className="mt-5 text-sm leading-6 text-muted">{metric.explanation}</p>
+      )}
+      {hasCuratedPaths && (
         <div className="mt-5 flex flex-wrap gap-2">
           {paths.slice(0, 3).map((path) => (
             <span
@@ -48,7 +54,7 @@ function PathList({
             </span>
           ))}
         </div>
-      ) : null}
+      )}
     </div>
   );
 }
@@ -60,7 +66,8 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   const pathsB = fight.paths?.fighterB ?? [];
   const pathA = modelOutput.metrics.pathReliability.fighterA;
   const pathB = modelOutput.metrics.pathReliability.fighterB;
-  // Show paths if curated data exists OR model has sufficient signal
+
+  // Show content if either curated paths or model signal exists for either fighter
   const hasCuratedPaths = pathsA.length > 0 || pathsB.length > 0;
   const hasModelPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
   const hasPaths = hasCuratedPaths || hasModelPaths;
@@ -76,26 +83,10 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
           The clearest visible route to a finish or decision, based on sourced style signals.
         </p>
       </div>
-      {hasPaths ? (
-        <div className="module-body grid gap-4 lg:grid-cols-2">
-          <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
-          <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
-        </div>
-      ) : (
-        <div className="module-body">
-          <div className="grid gap-4 lg:grid-cols-2">
-            {[fighterA, fighterB].map((fighter) => (
-              <div key={fighter.id} className="rounded-2xl border border-line bg-background/40 p-5">
-                <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-                <p className="mono-label mt-2">path analysis pending</p>
-                <p className="mt-4 text-sm leading-6 text-muted">
-                  Path reliability loads once round-trend and form data are sourced. Check back closer to the event.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      <div className="module-body grid gap-4 lg:grid-cols-2">
+        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
+        <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
+      </div>
     </section>
   );
 }
