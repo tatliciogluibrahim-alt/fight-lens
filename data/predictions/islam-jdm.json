@@ -1,0 +1,27 @@
+{
+  "fightId": "islam-jdm",
+  "event": "UFC 322: Della Maddalena vs. Makhachev",
+  "fighters": {
+    "fighterA": "Islam Makhachev",
+    "fighterB": "Jack Della Maddalena"
+  },
+  "generatedAt": "2025-11-14T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": true,
+  "prediction": {
+    "fighterAWinProbability": 66,
+    "fighterBWinProbability": 34,
+    "methodBreakdown": {
+      "decision": 58,
+      "koTko": 18,
+      "submission": 24
+    }
+  },
+  "outcome": {
+    "winner": "fighterA",
+    "method": "decision",
+    "round": 5,
+    "time": "5:00",
+    "recordedAt": "2025-11-15T23:30:00.000Z"
+  }
+}

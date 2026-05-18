@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { creatorExportStrategy } from "@/lib/creator-export-strategy";
 import { fightShapeExportAxes, fightShapeMetricDefinitions } from "@/lib/fight-shape";
+import { getAccuracyMetrics } from "@/lib/accuracy";
 
 export const metadata: Metadata = {
   title: "Methodology | Fight Lens",
@@ -273,6 +275,14 @@ export default function MethodologyPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Model accuracy */}
+        <section className="section-shell py-10 md:py-16">
+          {(() => {
+            const metrics = getAccuracyMetrics();
+            return <ModelAccuracyCard metrics={metrics} />;
+          })()}
         </section>
       </main>
       <DisclaimerFooter />

@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { ModelAccuracyBadge } from "@/components/ModelAccuracyCard";
 import { ModuleEmptyState } from "@/components/ModuleEmptyState";
 import { StyleClashExportCard } from "@/components/StyleClashExportCard";
 import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
+import { getAccuracyMetrics } from "@/lib/accuracy";
 import { sourcedEvent } from "@/lib/sourced-event";
 
 export default function Home() {
+  const accuracyMetrics = getAccuracyMetrics();
   const mainFight = sourcedEvent.fights[0];
   const fighterA = mainFight.fighters.fighterA;
   const fighterB = mainFight.fighters.fighterB;
@@ -25,7 +28,10 @@ export default function Home() {
         <section className="section-shell py-10 md:py-20">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="max-w-3xl">
-              <p className="mono-label">fight lens / ufc 328</p>
+              <div className="flex items-center gap-3">
+                <p className="mono-label">fight lens / ufc 328</p>
+                <ModelAccuracyBadge metrics={accuracyMetrics} />
+              </div>
               <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
                 see the fight.
                 <span className="block text-accent">as shape.</span>
