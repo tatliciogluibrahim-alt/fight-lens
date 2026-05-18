@@ -38,7 +38,7 @@ function factor(label: string, value: string, impact: FightShapeFactor["impact"]
 }
 
 export function fighterBaseConfidence(fighter: SourcedFighter): FightShapeDataConfidence {
-  if (!fighter.dataCompleteness.hasProfile) {
+  if (!fighter.dataCompleteness?.hasProfile) {
     return {
       label: "Insufficient",
       score: 0,
@@ -47,10 +47,10 @@ export function fighterBaseConfidence(fighter: SourcedFighter): FightShapeDataCo
     };
   }
 
-  const historyScore = Math.min(fighter.dataCompleteness.lastFiveCount, 5) * 7;
-  const roundScore = Math.min(fighter.dataCompleteness.roundSampleCount, 15) * 1.5;
-  const lateScore = Math.min(fighter.dataCompleteness.lateRoundSampleCount, 5) * 4;
-  const totalScore = fighter.dataCompleteness.hasFightTotals ? 12 : 0;
+  const historyScore = Math.min(fighter.dataCompleteness?.lastFiveCount ?? 0, 5) * 7;
+  const roundScore = Math.min(fighter.dataCompleteness?.roundSampleCount ?? 0, 15) * 1.5;
+  const lateScore = Math.min(fighter.dataCompleteness?.lateRoundSampleCount ?? 0, 5) * 4;
+  const totalScore = fighter.dataCompleteness?.hasFightTotals ?? false ? 12 : 0;
   const score = clampScore(28 + historyScore + roundScore + lateScore + totalScore) ?? 0;
 
   return {
@@ -59,9 +59,9 @@ export function fighterBaseConfidence(fighter: SourcedFighter): FightShapeDataCo
     explanation: "Confidence reflects profile coverage, recent history, fight totals, and round samples.",
     factors: [
       factor("profile", "matched", "positive"),
-      factor("recent history", `${fighter.dataCompleteness.lastFiveCount} rows`, fighter.dataCompleteness.lastFiveCount >= 3 ? "positive" : "negative"),
-      factor("round sample", `${fighter.dataCompleteness.roundSampleCount} rounds`, fighter.dataCompleteness.roundSampleCount >= 8 ? "positive" : "neutral"),
-      factor("late sample", `${fighter.dataCompleteness.lateRoundSampleCount} late rounds`, fighter.dataCompleteness.lateRoundSampleCount >= 3 ? "positive" : "negative")
+      factor("recent history", `${fighter.dataCompleteness?.lastFiveCount ?? 0} rows`, fighter.dataCompleteness?.lastFiveCount ?? 0 >= 3 ? "positive" : "negative"),
+      factor("round sample", `${fighter.dataCompleteness?.roundSampleCount ?? 0} rounds`, fighter.dataCompleteness?.roundSampleCount ?? 0 >= 8 ? "positive" : "neutral"),
+      factor("late sample", `${fighter.dataCompleteness?.lateRoundSampleCount ?? 0} late rounds`, fighter.dataCompleteness?.lateRoundSampleCount ?? 0 >= 3 ? "positive" : "negative")
     ]
   };
 }
@@ -78,8 +78,8 @@ export function profileMetricConfidence(fighter: SourcedFighter, opponent: Sourc
 }
 
 export function formMetricConfidence(fighter: SourcedFighter) {
-  if (fighter.dataCompleteness.lastFiveCount < 3) return "Insufficient";
-  const base = 42 + Math.min(fighter.dataCompleteness.lastFiveCount, 5) * 7 + (fighter.dataCompleteness.hasFightTotals ? 8 : 0);
+  if (fighter.dataCompleteness?.lastFiveCount ?? 0 < 3) return "Insufficient";
+  const base = 42 + Math.min(fighter.dataCompleteness?.lastFiveCount ?? 0, 5) * 7 + (fighter.dataCompleteness?.hasFightTotals ?? false ? 8 : 0);
   const label = scoreToConfidence(base);
 
   // Opponent tiers are intentionally not modeled yet, so the first form metric is capped.
@@ -87,8 +87,8 @@ export function formMetricConfidence(fighter: SourcedFighter) {
 }
 
 export function roundMetricConfidence(fighter: SourcedFighter) {
-  const roundCount = fighter.dataCompleteness.roundSampleCount;
-  const lateCount = fighter.dataCompleteness.lateRoundSampleCount;
+  const roundCount = fighter.dataCompleteness?.roundSampleCount ?? 0;
+  const lateCount = fighter.dataCompleteness?.lateRoundSampleCount ?? 0;
 
   if (roundCount < 8 || lateCount < 3) return "Insufficient";
   if (roundCount >= 15 && lateCount >= 5) return "High";

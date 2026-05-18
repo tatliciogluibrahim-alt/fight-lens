@@ -119,12 +119,12 @@ export interface SourcedFighter {
   sourceUrl: string;
   scrapedAt: string | null;
   aggregateStats: Record<string, number | null> | null;
-  styleProfile: SourcedStyleProfile;
+  styleProfile: SourcedStyleProfile | null;
   fightHistory: SourcedFightHistoryItem[];
   lastFive: SourcedFightHistoryItem[];
   resumeHeat: null;
   roundModel: SourcedRoundModel;
-  dataCompleteness: DataCompleteness;
+  dataCompleteness: DataCompleteness | null;
   sourceCoverage: string;
 }
 

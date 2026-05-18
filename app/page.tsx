@@ -3,6 +3,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getAccuracyMetrics, getAllPredictions } from "@/lib/accuracy";
+import { getLatestEvent } from "@/lib/events/registry";
 
 function StatusDot({ resolved }: { resolved: boolean }) {
   return (
@@ -15,6 +16,7 @@ function StatusDot({ resolved }: { resolved: boolean }) {
 export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
   const predictions = getAllPredictions();
+  const latestEvent = getLatestEvent();
 
   // Group predictions by event
   const eventGroups = predictions.reduce<Record<string, typeof predictions>>(
@@ -43,10 +45,10 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/events/ufc-328"
+                href={`/events/${latestEvent.event.id}`}
                 className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-white transition hover:brightness-110"
               >
-                UFC 328 Matchups
+                {latestEvent.event.name.split(":")[0]} Matchups
               </Link>
               <Link
                 href="/record"

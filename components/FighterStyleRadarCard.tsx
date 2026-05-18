@@ -69,14 +69,14 @@ export function FighterStyleRadarCard({ fighter, metric, tone = "accent" }: Figh
             record: fighter.record,
             stance: fighter.stance,
             ranking: fighter.ranking,
-            styleProfile: fighter.styleProfile,
+            styleProfile: fighter.styleProfile!,
             confidence: metric.confidence,
             styleRead
           }}
         />
       </div>
 
-      {showDebug ? (
+      {showDebug && fighter.styleProfile ? (
         <p className="data-text mt-4 text-[10px] leading-5 text-subtle">
           {Object.entries(fighter.styleProfile.provenance).map(([key, value]) => `${key}:${value}`).join(" / ")}
         </p>

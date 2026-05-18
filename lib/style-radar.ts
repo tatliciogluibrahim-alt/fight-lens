@@ -41,7 +41,21 @@ function isModeledZero(profile: RadarStyleProfile, key: FightShapeMetricKey) {
   return profile[key] === 0 && provenance !== "sourced";
 }
 
-export function getStyleRadarDimensions(profile: RadarStyleProfile): StyleRadarDimension[] {
+export function getStyleRadarDimensions(profile: RadarStyleProfile | null | undefined): StyleRadarDimension[] {
+  if (!profile) {
+    return fightShapeMetricDefinitions.map((metric) => ({
+      key: metric.key,
+      label: metric.label,
+      shortLabel: metric.shortLabel,
+      value: null,
+      hasData: false,
+      confidence: "missing" as const,
+      sourceScope: "not modeled" as const,
+      provenance: "missing" as const,
+      displayValue: "Insufficient sample",
+      signalLabel: "Not modeled yet"
+    }));
+  }
   return fightShapeMetricDefinitions.map((metric) => {
     const value = profile[metric.key];
     const provenance = getProvenance(profile, metric.key);
@@ -63,11 +77,11 @@ export function getStyleRadarDimensions(profile: RadarStyleProfile): StyleRadarD
   });
 }
 
-export function hasEnoughStyleRadarData(profile: RadarStyleProfile) {
+export function hasEnoughStyleRadarData(profile: RadarStyleProfile | null | undefined) {
   return getStyleRadarDimensions(profile).filter((dimension) => dimension.hasData).length >= 3;
 }
 
-export function getStyleRadarCompleteness(profile: RadarStyleProfile) {
+export function getStyleRadarCompleteness(profile: RadarStyleProfile | null | undefined) {
   const dimensions = getStyleRadarDimensions(profile);
   const present = dimensions.filter((dimension) => dimension.hasData).length;
 
@@ -78,7 +92,7 @@ export function getStyleRadarCompleteness(profile: RadarStyleProfile) {
   };
 }
 
-export function getStyleRadarRead(name: string, profile: RadarStyleProfile) {
+export function getStyleRadarRead(name: string, profile: RadarStyleProfile | null | undefined) {
   const top = getStyleRadarDimensions(profile)
     .filter((dimension): dimension is StyleRadarDimension & { value: number } => dimension.hasData && dimension.value != null)
     .sort((a, b) => b.value - a.value)

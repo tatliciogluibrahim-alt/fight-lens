@@ -26,8 +26,8 @@ export function CreatorActions({ fight, fighterA, fighterB, modelOutput }: Creat
 
   const completenessA = getStyleRadarCompleteness(fighterA.styleProfile);
   const completenessB = getStyleRadarCompleteness(fighterB.styleProfile);
-  const canExportRadarA = completenessA.present >= 3;
-  const canExportRadarB = completenessB.present >= 3;
+  const canExportRadarA = completenessA.present >= 3 && fighterA.styleProfile != null;
+  const canExportRadarB = completenessB.present >= 3 && fighterB.styleProfile != null;
 
   const radarFighterA = canExportRadarA
     ? {
@@ -35,7 +35,7 @@ export function CreatorActions({ fight, fighterA, fighterB, modelOutput }: Creat
         record: fighterA.record,
         stance: fighterA.stance,
         ranking: fighterA.ranking,
-        styleProfile: fighterA.styleProfile,
+        styleProfile: fighterA.styleProfile!,
         confidence: modelOutput.metrics.stylePressureIndex.fighterA.confidence,
         styleRead: getStyleRadarRead(fighterA.name, fighterA.styleProfile)
       }
@@ -47,7 +47,7 @@ export function CreatorActions({ fight, fighterA, fighterB, modelOutput }: Creat
         record: fighterB.record,
         stance: fighterB.stance,
         ranking: fighterB.ranking,
-        styleProfile: fighterB.styleProfile,
+        styleProfile: fighterB.styleProfile!,
         confidence: modelOutput.metrics.stylePressureIndex.fighterB.confidence,
         styleRead: getStyleRadarRead(fighterB.name, fighterB.styleProfile)
       }

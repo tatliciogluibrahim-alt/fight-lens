@@ -177,7 +177,8 @@ function hasMetric(profile: NullableStyleProfile, key: FightShapeMetricKey): pro
   return typeof value === "number" && Number.isFinite(value);
 }
 
-export function getNullableFightShapeAxisScore(profile: NullableStyleProfile, axis: FightShapeAxisKey) {
+export function getNullableFightShapeAxisScore(profile: NullableStyleProfile | null | undefined, axis: FightShapeAxisKey) {
+  if (!profile) return null;
   switch (axis) {
     case "striking":
       return hasMetric(profile, "strikingVolume") && hasMetric(profile, "strikingDefense")
@@ -200,6 +201,7 @@ export function getNullableFightShapeAxisScore(profile: NullableStyleProfile, ax
   }
 }
 
-export function hasCompleteExportStyleProfile(profile: NullableStyleProfile): profile is ExportStyleProfile {
+export function hasCompleteExportStyleProfile(profile: NullableStyleProfile | null | undefined): profile is ExportStyleProfile {
+  if (!profile) return false;
   return fightShapeExportAxes.every((axis) => getNullableFightShapeAxisScore(profile, axis.key) != null);
 }

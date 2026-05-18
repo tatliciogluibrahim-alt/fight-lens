@@ -6,6 +6,12 @@ interface EventHeroProps {
 }
 
 export function EventHero({ event }: EventHeroProps) {
+  const mainFight = event.fights[0];
+  const mainFightLabel = mainFight
+    ? `${mainFight.fighters.fighterA.name.split(" ").pop()?.toLowerCase()} vs. ${mainFight.fighters.fighterB.name.split(" ").pop()?.toLowerCase()}`
+    : null;
+  const mainFightClash = mainFight?.styleClashLabel ?? null;
+
   return (
     <section className="section-shell py-8 md:py-12">
       <div className="grid gap-5 lg:grid-cols-[1.45fr_0.75fr]">
@@ -33,24 +39,28 @@ export function EventHero({ event }: EventHeroProps) {
           </div>
         </div>
 
-        <div className="lens-card flex flex-col justify-between p-5 md:p-8">
-          <div>
-            <p className="mono-label">main lens</p>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.04em]">
-              chimaev vs. strickland
-            </h2>
-            <p className="mt-4 text-sm leading-6 text-muted">
-              Control storm versus pressure jab. The first read is whether the fight becomes a
-              short collision or a long minute-winning test.
-            </p>
+        {mainFight && (
+          <div className="lens-card flex flex-col justify-between p-5 md:p-8">
+            <div>
+              <p className="mono-label">main event</p>
+              <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.04em]">
+                {mainFightLabel}
+              </h2>
+              {mainFightClash && (
+                <p className="mono-label mt-3 text-accent">{mainFightClash}</p>
+              )}
+              <p className="mt-4 text-sm leading-6 text-muted">
+                {mainFight.matchupQuestion ?? "Analysis loading — check back once fighter data is sourced."}
+              </p>
+            </div>
+            <Link
+              href={`/events/${event.event.id}/${mainFight.id}`}
+              className="tap-target mt-8 inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-white transition hover:brightness-110"
+            >
+              open main lens
+            </Link>
           </div>
-          <Link
-            href="/events/ufc-328/chimaev-strickland"
-            className="tap-target mt-8 inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-white transition hover:brightness-110"
-          >
-            open main lens
-          </Link>
-        </div>
+        )}
       </div>
     </section>
   );

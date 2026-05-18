@@ -4,9 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PrototypeBadge } from "./PrototypeBadge";
 
+// Updated whenever a new event goes live — single source of truth for the nav
+const LATEST_EVENT_ID = "ufc-329";
+
 const links = [
   { href: "/", label: "home" },
-  { href: "/events/ufc-328", label: "matchups" },
+  { href: `/events/${LATEST_EVENT_ID}`, label: "matchups" },
   { href: "/record", label: "record" },
   { href: "/methodology", label: "methodology" },
 ];

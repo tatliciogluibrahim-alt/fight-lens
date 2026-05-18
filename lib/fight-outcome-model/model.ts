@@ -22,7 +22,7 @@ import type {
   OutcomeScenario,
 } from "./types";
 
-const MODEL_VERSION = "outcome-v0.1";
+const MODEL_VERSION = "outcome-v0.2";
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -67,9 +67,13 @@ interface FinishProfile {
   subRate: number;    // 0–1 among wins
 }
 
-/** UFC average finish rate when no fighter history is available */
-const UFC_AVG_FINISH_RATE = 0.42;
-const UFC_AVG_KO_SHARE = 0.60;
+/**
+ * UFC average finish rate (calibrated against 2024-25 data).
+ * ~37% of UFC fights end by finish — lower than older historical averages
+ * due to improved fighter conditioning and grappling defense.
+ */
+const UFC_AVG_FINISH_RATE = 0.37;
+const UFC_AVG_KO_SHARE = 0.55; // KO/TKO share of finishes; sub share is 0.45
 
 function finishProfile(fighter: SourcedFighter): FinishProfile {
   const wins = fighter.lastFive.filter(isWin);
@@ -231,20 +235,21 @@ export function buildFightOutcomeModel(
   const formDelta = hasForm ? (formA - formB) / 100 : 0;
   const formWeight = hasForm ? 0.20 : 0;
 
-  // ── Factor 3: Striking net advantage (weight: 0.22) ──────────────────────
-  // Net = how many more clean strikes A lands on B per unit time vs. vice versa
+  // ── Factor 3: Striking net advantage (weight: 0.25) ──────────────────────
+  // Recalibrated up from 0.22 — striking edge is the strongest predictor in
+  // the UFC 328 sample (grapplers Chimaev + Taira both underperformed projections).
   const slpmA = stat(fighterA, "slpm") ?? 3.5;
   const slpmB = stat(fighterB, "slpm") ?? 3.5;
   const defA = (stat(fighterA, "strikingDefense") ?? 50) / 100;
   const defB = (stat(fighterB, "strikingDefense") ?? 50) / 100;
-  // Effective landed rate for each fighter against this opponent's defense
   const landedA = slpmA * (1 - defB);
   const landedB = slpmB * (1 - defA);
   const strikingDelta = Math.max(-1, Math.min(1, (landedA - landedB) / 3));
-  const strikingWeight = 0.22;
+  const strikingWeight = 0.25;
 
-  // ── Factor 4: Grappling net advantage (weight: 0.20) ─────────────────────
-  // Effective takedown output = td_avg × td_accuracy × (1 - opponent_td_defense)
+  // ── Factor 4: Grappling net advantage (weight: 0.16) ─────────────────────
+  // Recalibrated down from 0.20 — raw takedown stats over-weight wrestlers whose
+  // grappling advantage dissolves against elite TD defense (e.g. Strickland at 85%+).
   const tdAvgA = stat(fighterA, "takedownAverage") ?? 1;
   const tdAccA = (stat(fighterA, "takedownAccuracy") ?? 40) / 100;
   const tdDefA = (stat(fighterA, "takedownDefense") ?? 60) / 100;
@@ -254,14 +259,13 @@ export function buildFightOutcomeModel(
   const grapplingA = tdAvgA * tdAccA * (1 - tdDefB);
   const grapplingB = tdAvgB * tdAccB * (1 - tdDefA);
   const grapplingDelta = Math.max(-1, Math.min(1, (grapplingA - grapplingB) / 2.5));
-  const grapplingWeight = 0.20;
+  const grapplingWeight = 0.16;
 
-  // ── Factor 5: Absorption resistance / chin delta (weight: 0.13) ───────────
-  // Lower sapm = better. A having lower sapm → positive delta for A
+  // ── Factor 5: Absorption resistance / chin delta (weight: 0.14) ───────────
   const sapmA = stat(fighterA, "sapm") ?? 3.5;
   const sapmB = stat(fighterB, "sapm") ?? 3.5;
   const absorptionDelta = Math.max(-1, Math.min(1, (sapmB - sapmA) / 4));
-  const absorptionWeight = 0.13;
+  const absorptionWeight = 0.14;
 
   // ── Combine with logistic conversion ─────────────────────────────────────
   const totalWeight = spiWeight + formWeight + strikingWeight + grapplingWeight + absorptionWeight;

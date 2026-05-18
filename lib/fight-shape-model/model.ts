@@ -193,8 +193,8 @@ function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricS
       confidence,
       status: "insufficient",
       explanation: explainForm(fighter.name, confidence),
-      factors: [factor("recent history", `${fighter.dataCompleteness.lastFiveCount} rows`, "negative", fighter.dataCompleteness.lastFiveCount ? "sourced" : "missing")],
-      provenance: [fighter.dataCompleteness.lastFiveCount ? "sourced" : "missing"]
+      factors: [factor("recent history", `${fighter.dataCompleteness?.lastFiveCount ?? 0} rows`, "negative", fighter.dataCompleteness?.lastFiveCount ?? 0 ? "sourced" : "missing")],
+      provenance: [fighter.dataCompleteness?.lastFiveCount ?? 0 ? "sourced" : "missing"]
     };
   }
 
@@ -215,7 +215,7 @@ function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricS
     status: metricStatus(clamped, confidence),
     explanation: explainForm(fighter.name, confidence),
     factors: [
-      factor("recent result shape", `${fighter.dataCompleteness.lastFiveCount} fights`, "positive", "sourced"),
+      factor("recent result shape", `${fighter.dataCompleteness?.lastFiveCount ?? 0} fights`, "positive", "sourced"),
       factor("method context", "finish/decision only", "neutral", "sourced"),
       factor("opponent tier context", "not modeled", "negative", "missing")
     ],
@@ -294,10 +294,10 @@ function roundSustainabilityFor(fighter: SourcedFighter): RoundSustainabilitySco
       status: "insufficient",
       explanation: explainSustainability(fighter.name, confidence),
       factors: [
-        factor("round sample", `${fighter.dataCompleteness.roundSampleCount} rounds`, "negative", fighter.dataCompleteness.roundSampleCount ? "sourced" : "missing"),
-        factor("late-round sample", `${fighter.dataCompleteness.lateRoundSampleCount} late rounds`, "negative", fighter.dataCompleteness.lateRoundSampleCount ? "sourced" : "missing")
+        factor("round sample", `${fighter.dataCompleteness?.roundSampleCount ?? 0} rounds`, "negative", fighter.dataCompleteness?.roundSampleCount ?? 0 ? "sourced" : "missing"),
+        factor("late-round sample", `${fighter.dataCompleteness?.lateRoundSampleCount ?? 0} late rounds`, "negative", fighter.dataCompleteness?.lateRoundSampleCount ?? 0 ? "sourced" : "missing")
       ],
-      provenance: [fighter.dataCompleteness.roundSampleCount ? "sourced" : "missing"]
+      provenance: [fighter.dataCompleteness?.roundSampleCount ?? 0 ? "sourced" : "missing"]
     };
   }
 
@@ -327,7 +327,7 @@ function roundSustainabilityFor(fighter: SourcedFighter): RoundSustainabilitySco
       factor("early signal", `${earlySignal ?? "n/a"} score`, "neutral", earlySignal == null ? "missing" : "derived"),
       factor("middle signal", `${middleSignal ?? "n/a"} score`, "neutral", middleSignal == null ? "missing" : "derived"),
       factor("late signal", `${lateSignal ?? "n/a"} score`, lateSignal != null && earlySignal != null && lateSignal >= earlySignal ? "positive" : "neutral", lateSignal == null ? "missing" : "derived"),
-      factor("late-round sample", `${fighter.dataCompleteness.lateRoundSampleCount} late rounds`, "positive", "sourced")
+      factor("late-round sample", `${fighter.dataCompleteness?.lateRoundSampleCount ?? 0} late rounds`, "positive", "sourced")
     ],
     provenance: ["sourced", "derived"]
   };

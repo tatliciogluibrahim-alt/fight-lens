@@ -2,7 +2,7 @@ import { getStyleRadarDimensions, hasEnoughStyleRadarData } from "@/lib/style-ra
 import type { NullableStyleProfile } from "@/lib/fight-shape";
 
 interface StyleRadarProps {
-  profile: NullableStyleProfile;
+  profile: NullableStyleProfile | null | undefined;
   tone?: "accent" | "muted";
   title: string;
 }
