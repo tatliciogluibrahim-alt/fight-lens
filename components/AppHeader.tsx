@@ -32,7 +32,7 @@ export function AppHeader() {
             const isActive =
               pathname === link.href ||
               (link.href === "/events/ufc-328" && pathname.startsWith("/events/")) ||
-              (link.href === "/record" && pathname.startsWith("/record"));
+              (link.href === "/record" && (pathname.startsWith("/record") || pathname.startsWith("/backtests")));
 
             return (
               <Link

@@ -11,69 +11,52 @@ function ProbabilityBar({
   probB,
   nameA,
   nameB,
-  leanA,
-  leanB,
   tooClose,
 }: {
   probA: number;
   probB: number;
   nameA: string;
   nameB: string;
-  leanA: string;
-  leanB: string;
   tooClose: boolean;
 }) {
+  const favName = probA >= probB ? nameA : nameB;
+  const favProb = Math.max(probA, probB);
+
   return (
     <div className="rounded-2xl border border-line bg-background/45 p-5 md:p-7">
-      {/* Fighter labels */}
-      <div className="mb-5 grid grid-cols-[1fr_auto_1fr] items-end gap-4">
-        <div>
-          <p className="mono-label text-accent">{leanA}</p>
-          <h3 className="mt-1.5 text-xl font-semibold leading-tight tracking-[-0.03em] md:text-2xl">
-            {nameA}
-          </h3>
-        </div>
-        <p className="mb-0.5 font-mono text-[11px] uppercase tracking-[0.18em] text-subtle">vs</p>
-        <div className="text-right">
-          <p className="mono-label">{leanB}</p>
-          <h3 className="mt-1.5 text-xl font-semibold leading-tight tracking-[-0.03em] md:text-2xl">
-            {nameB}
-          </h3>
-        </div>
+      {/* Fighter names */}
+      <div className="mb-6 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <h3 className="text-lg font-semibold leading-tight tracking-[-0.03em]">{nameA}</h3>
+        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-subtle">vs</p>
+        <h3 className="text-right text-lg font-semibold leading-tight tracking-[-0.03em]">{nameB}</h3>
       </div>
 
-      {/* Probability numbers */}
-      <div className="mb-3 grid grid-cols-[auto_1fr_auto] items-center gap-3">
-        <span className="data-text text-4xl font-light text-accent md:text-5xl">
+      {/* Probability numbers + bar */}
+      <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3">
+        <span className={`data-text text-5xl font-light ${!tooClose && probA >= probB ? "text-accent" : "text-muted"}`}>
           {probA}%
         </span>
-        <div className="relative h-3 overflow-hidden rounded-full bg-surface-2">
+        <div className="relative h-2 overflow-hidden rounded-full bg-surface-2">
           {tooClose ? (
-            /* Even match — neutral bar */
-            <div className="absolute inset-0 rounded-full bg-muted/30" />
+            <div className="absolute inset-0 rounded-full bg-muted/25" />
           ) : (
-            <>
-              <div
-                className="absolute left-0 top-0 h-full rounded-l-full bg-accent transition-all"
-                style={{ width: `${probA}%` }}
-              />
-              <div
-                className="absolute right-0 top-0 h-full rounded-r-full bg-muted/50 transition-all"
-                style={{ width: `${probB}%` }}
-              />
-            </>
+            <div
+              className="absolute left-0 top-0 h-full rounded-full bg-accent transition-all"
+              style={{ width: `${probA}%` }}
+            />
           )}
         </div>
-        <span className="data-text text-4xl font-light text-muted md:text-5xl">
+        <span className={`data-text text-5xl font-light ${!tooClose && probB > probA ? "text-accent" : "text-muted"}`}>
           {probB}%
         </span>
       </div>
 
-      {tooClose && (
-        <p className="mt-2 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">
-          model sees no reliable lean — too close to separate
-        </p>
-      )}
+      {/* Single lean statement */}
+      <p className="mt-4 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">
+        {tooClose
+          ? "too close to separate — either side viable"
+          : `model leans ${favName} · ${favProb}% win probability`}
+      </p>
     </div>
   );
 }
@@ -203,8 +186,6 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           probB={fighterB.winProbability}
           nameA={fighterA.fighterName}
           nameB={fighterB.fighterName}
-          leanA={fighterA.leanLabel}
-          leanB={fighterB.leanLabel}
           tooClose={tooClose}
         />
 

@@ -81,7 +81,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            {Object.entries(eventGroups).map(([eventName, eventPredictions]) => {
+            {Object.entries(eventGroups).reverse().map(([eventName, eventPredictions]) => {
               const resolved = eventPredictions.filter((p) => p.outcome !== null);
               const correct = resolved.filter((p) => {
                 if (!p.outcome || p.outcome.winner === "draw" || p.outcome.winner === "nc") return false;
@@ -93,7 +93,6 @@ export default function Home() {
 
               // Determine event slug for linking
               const isUfc328 = eventName.toLowerCase().includes("328");
-              const isUfc322 = eventName.toLowerCase().includes("322");
 
               return (
                 <div
@@ -159,12 +158,22 @@ export default function Home() {
                             <p className="font-mono text-[10px] text-subtle">
                               lean: {favName} {favProb}%
                             </p>
+                            {isUfc328 && (
                             <Link
                               href={`/events/ufc-328/${p.fightId}`}
                               className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
                             >
                               lens →
                             </Link>
+                          )}
+                          {!isUfc328 && (
+                            <Link
+                              href={`/backtests/${p.fightId}`}
+                              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+                            >
+                              lens →
+                            </Link>
+                          )}
                           </div>
                         </div>
                       );

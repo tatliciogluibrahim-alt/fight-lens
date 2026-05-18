@@ -67,25 +67,18 @@ export function FighterAssetSlot({
   fallbackName,
   fallbackCountry,
   tone = "accent",
-  align = "left"
 }: FighterAssetSlotProps) {
   const imageUrl = fighter?.image?.url;
-  const isRight = align === "right";
   const country = getCountry(fighter) ?? fallbackCountry ?? null;
 
   return (
-    <div className={`flex items-center gap-4 ${isRight ? "lg:flex-row-reverse" : ""}`}>
-      <div className="relative overflow-hidden rounded-xl border border-line-strong bg-background/65 p-2">
-        {imageUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={imageUrl} alt={fighter?.name ?? fallbackName} className="h-36 w-28 object-cover grayscale" />
-        ) : (
-          <PortraitFallback country={country} tone={tone} />
-        )}
-      </div>
-      <div className={isRight ? "lg:text-right" : ""}>
-        <p className="mono-label">{country?.label ?? ""}</p>
-      </div>
+    <div className="relative overflow-hidden rounded-xl border border-line-strong bg-background/65 p-2">
+      {imageUrl ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={imageUrl} alt={fighter?.name ?? fallbackName} className="h-36 w-28 object-cover grayscale" />
+      ) : (
+        <PortraitFallback country={country} tone={tone} />
+      )}
     </div>
   );
 }

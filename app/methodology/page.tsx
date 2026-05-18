@@ -102,10 +102,10 @@ export default function MethodologyPage() {
       <main>
         <section className="section-shell py-10 md:py-16">
           <Link
-            href="/events/ufc-328/chimaev-strickland"
+            href="/events/ufc-328"
             className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
           >
-            back to main lens
+            ← back to matchups
           </Link>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-end">

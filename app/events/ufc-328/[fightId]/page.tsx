@@ -40,30 +40,33 @@ function FighterHeroPanel({
   const isRight = align === "right";
 
   return (
-    <div className={`flex min-h-[390px] flex-col p-5 md:p-7 ${isRight ? "lg:text-right" : ""}`}>
-      <div className={isRight ? "lg:ml-auto lg:w-fit" : ""}>
-        <FighterAssetSlot
-          fighter={fighter}
-          fallbackName={fighter.name}
-          fallbackCountry={{
-            code: fighter.country?.code,
-            label: fighter.country?.label,
-            colors: fighter.country?.colors
-          }}
-          tone={isRight ? "muted" : "accent"}
-          align={align}
-        />
-      </div>
+    <div className={`flex min-h-[340px] flex-col gap-5 p-5 md:p-8 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
+      <FighterAssetSlot
+        fighter={fighter}
+        fallbackName={fighter.name}
+        fallbackCountry={{
+          code: fighter.country?.code,
+          label: fighter.country?.label,
+          colors: fighter.country?.colors
+        }}
+        tone={isRight ? "muted" : "accent"}
+      />
 
-      <div className="mt-6">
-        <p className="mono-label">{formatRanking(fighter.ranking)} / {fighter.stance ?? "stance pending"}</p>
-        <h2 className="mt-3 min-h-[1.92em] text-4xl font-semibold leading-[0.96] tracking-[-0.05em] md:text-6xl">
+      <div className="flex-1">
+        <p className="mono-label">
+          {formatRanking(fighter.ranking)}
+          {fighter.stance ? ` · ${fighter.stance}` : ""}
+          {fighter.country?.label ? ` · ${fighter.country.label}` : ""}
+        </p>
+        <h2 className="mt-3 text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl">
           {fighter.name}
         </h2>
       </div>
 
-      <p className="data-text mt-auto pt-6 text-sm text-muted">
-        {fighter.record ?? "record pending"} / {fighter.height ?? "height pending"} / {fighter.reach ?? "reach pending"} reach
+      <p className="data-text text-xs text-subtle">
+        {[fighter.record, fighter.height, fighter.reach ? `${fighter.reach} reach` : null]
+          .filter(Boolean)
+          .join(" · ")}
       </p>
     </div>
   );
@@ -117,24 +120,24 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="flex min-h-[240px] flex-col border-y border-line bg-background/45 p-5 text-center lg:min-h-[390px] lg:border-x lg:border-y-0">
-              <div className="flex flex-1 flex-col items-center justify-center space-y-4">
-                <p className="text-8xl font-light tracking-[-0.08em] text-subtle/35">vs</p>
-                <p className="data-text text-sm text-muted">
-                  {fight.weightClass ?? "weight class pending"} / {fight.rounds} rounds
+            <div className="flex min-h-[240px] flex-col items-center justify-between border-y border-line bg-background/30 py-8 px-5 text-center lg:min-h-[340px] lg:border-x lg:border-y-0">
+              <div />
+              <div className="flex flex-col items-center gap-5">
+                <p className="text-[5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[7rem]">
+                  vs
                 </p>
-                <div className="flex justify-center">
+                {fight.styleClashLabel && (
                   <StyleClashLabel label={fight.styleClashLabel} copyable />
-                </div>
+                )}
               </div>
-              {canExport && (
-                <div className="mt-6 flex justify-center">
-                  <StyleClashSaveButton
-                    fighterA={exportFighterA!}
-                    fighterB={exportFighterB!}
-                    styleClashLabel={fight.styleClashLabel ?? undefined}
-                  />
-                </div>
+              {canExport ? (
+                <StyleClashSaveButton
+                  fighterA={exportFighterA!}
+                  fighterB={exportFighterB!}
+                  styleClashLabel={fight.styleClashLabel ?? undefined}
+                />
+              ) : (
+                <div />
               )}
             </div>
 
