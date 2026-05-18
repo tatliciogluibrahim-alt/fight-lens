@@ -51,9 +51,9 @@ export function FightResultBanner({ prediction }: FightResultBannerProps) {
     <div
       className={`border-b border-line px-5 py-4 md:px-6 ${
         wasCorrect === true
-          ? "bg-accent/8"
+          ? "bg-success-soft"
           : wasCorrect === false
-            ? "bg-surface-2/60"
+            ? "bg-wrong-soft"
             : "bg-surface/60"
       }`}
     >
@@ -83,15 +83,15 @@ export function FightResultBanner({ prediction }: FightResultBannerProps) {
             <span
               className={`rounded-full px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] ${
                 wasCorrect
-                  ? "bg-accent/15 text-accent"
-                  : "bg-surface-2 text-muted"
+                  ? "bg-success-soft text-success"
+                  : "bg-wrong-soft text-wrong"
               }`}
             >
               model {wasCorrect ? "✓ correct" : "✗ incorrect"}
             </span>
           )}
           {methodCorrect && (
-            <span className="rounded-full bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
+            <span className="rounded-full bg-success-soft px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-success">
               method ✓
             </span>
           )}

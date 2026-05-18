@@ -18,7 +18,11 @@ const config: Config = {
         muted: "var(--muted)",
         subtle: "var(--subtle)",
         accent: "var(--accent)",
-        "accent-soft": "var(--accent-soft)"
+        "accent-soft": "var(--accent-soft)",
+        success: "var(--success)",
+        "success-soft": "var(--success-soft)",
+        wrong: "var(--wrong)",
+        "wrong-soft": "var(--wrong-soft)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "Arial", "sans-serif"],

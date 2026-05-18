@@ -52,7 +52,7 @@ function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) 
           {p.fighters.fighterA} <span className="font-normal text-subtle">vs</span> {p.fighters.fighterB}
         </p>
         {verdictText ? (
-          <p className={`font-mono text-[11px] ${winnerCorrect ? "text-accent" : "text-muted"}`}>
+          <p className={`font-mono text-[11px] ${winnerCorrect ? "text-success" : "text-wrong"}`}>
             {winnerCorrect ? "✓" : "✗"} {verdictText}
           </p>
         ) : (

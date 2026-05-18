@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
-import { CreatorActions } from "@/components/CreatorActions";
 import { FightResultBanner } from "@/components/FightResultBanner";
+import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
@@ -123,23 +123,41 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
         </section>
 
-        {/* Analysis sections */}
-        <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
-          <TheCall outcomeModel={outcomeModel} />
-          <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
-          <StyleComparisonBars
-            fighterA={fighterA}
-            fighterB={fighterB}
-            modelOutput={fightShapeModel}
-            styleClashLabel={fight.styleClashLabel ?? undefined}
-          />
-          <FormResumeModule fighterA={fighterA} fighterB={fighterB} modelOutput={fightShapeModel} />
-          <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
-          <CreatorActions
-            fight={fight}
-            fighterA={fighterA}
-            fighterB={fighterB}
-            modelOutput={fightShapeModel}
+        {/* Analysis tabs */}
+        <div className="mt-6 md:mt-8">
+          <FightPageTabs
+            tabs={[
+              { id: "call", label: "the call" },
+              { id: "shape", label: "shape" },
+              { id: "form", label: "form" },
+              { id: "paths", label: "paths" },
+            ]}
+            panels={{
+              call: (
+                <>
+                  <TheCall outcomeModel={outcomeModel} />
+                  <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
+                </>
+              ),
+              shape: (
+                <StyleComparisonBars
+                  fighterA={fighterA}
+                  fighterB={fighterB}
+                  modelOutput={fightShapeModel}
+                  styleClashLabel={fight.styleClashLabel ?? undefined}
+                />
+              ),
+              form: (
+                <FormResumeModule
+                  fighterA={fighterA}
+                  fighterB={fighterB}
+                  modelOutput={fightShapeModel}
+                />
+              ),
+              paths: (
+                <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+              ),
+            }}
           />
         </div>
       </main>

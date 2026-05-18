@@ -71,7 +71,7 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
           {fighters.fighterA} <span className="font-normal text-subtle">vs</span> {fighters.fighterB}
         </p>
         {verdictText ? (
-          <p className={`font-mono text-[11px] ${wasCorrect ? "text-accent" : "text-muted"}`}>
+          <p className={`font-mono text-[11px] ${wasCorrect ? "text-success" : "text-wrong"}`}>
             {verdictText}
           </p>
         ) : outcome ? (
