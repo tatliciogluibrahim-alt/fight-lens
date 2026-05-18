@@ -60,7 +60,10 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   const pathsB = fight.paths?.fighterB ?? [];
   const pathA = modelOutput.metrics.pathReliability.fighterA;
   const pathB = modelOutput.metrics.pathReliability.fighterB;
-  const hasPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
+  // Show paths if curated data exists OR model has sufficient signal
+  const hasCuratedPaths = pathsA.length > 0 || pathsB.length > 0;
+  const hasModelPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
+  const hasPaths = hasCuratedPaths || hasModelPaths;
 
   return (
     <section id="section-paths" className="module-card scroll-mt-28">

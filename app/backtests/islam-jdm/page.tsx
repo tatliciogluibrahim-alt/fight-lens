@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
-import { CreatorCardSamples } from "@/components/CreatorCardSamples";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import backtest from "@/data/normalized/backtests/islam-jdm.json";
 
@@ -264,20 +263,6 @@ export default function IslamJdmBacktestPage() {
         </section>
 
         <ReadLadder />
-
-        <div className="mt-6">
-          <CreatorCardSamples
-            fightLabel="islam vs. jdm"
-            eventLabel={backtest.event.name}
-            keyRead={backtest.fight.keyRead}
-            resultLabel={`${backtest.actual.method} · r${backtest.actual.round} · ${backtest.actual.time}`}
-            metrics={[
-              { label: "islam sig", value: `${actual.islam.sigLanded}/${actual.islam.sigAttempts}` },
-              { label: "jdm sig", value: `${actual.jdm.sigLanded}/${actual.jdm.sigAttempts}` },
-              { label: "control", value: `${formatControl(actual.islam.controlSeconds)} / ${formatControl(actual.jdm.controlSeconds)}` }
-            ]}
-          />
-        </div>
 
         <section className="module-card mt-6">
           <div className="module-header">

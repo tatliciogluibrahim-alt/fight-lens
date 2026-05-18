@@ -70,7 +70,7 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
             />
           )}
           <div className="mt-6 flex flex-wrap gap-2">
-            {fight.styleClashLabel ? <StyleClashLabel label={fight.styleClashLabel} copyable /> : null}
+            {fight.styleClashLabel ? <StyleClashLabel label={fight.styleClashLabel} /> : null}
             {[`${fight.rounds} rounds`, fight.weightClass].flatMap((label) => label ? [label] : []).map((label) => (
               <span
                 key={label}

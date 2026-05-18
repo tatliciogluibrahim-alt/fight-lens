@@ -122,7 +122,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 vs
               </p>
               {fight.styleClashLabel && (
-                <StyleClashLabel label={fight.styleClashLabel} copyable />
+                <StyleClashLabel label={fight.styleClashLabel} />
               )}
             </div>
 

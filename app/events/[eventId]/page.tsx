@@ -4,7 +4,6 @@ import { AppHeader } from "@/components/AppHeader";
 import { CardFilterTabs } from "@/components/CardFilterTabs";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
-import { RosterStyleMap } from "@/components/RosterStyleMap";
 import { getAllEventIds, getEvent } from "@/lib/events/registry";
 import { getAllPredictions } from "@/lib/accuracy";
 
@@ -40,7 +39,6 @@ export default async function EventPage({ params }: EventPageProps) {
       <main>
         <EventHero event={event} />
         <CardFilterTabs eventId={event.event.id} fights={event.fights} predictions={predictions} />
-        <RosterStyleMap event={event} />
       </main>
       <DisclaimerFooter />
     </>

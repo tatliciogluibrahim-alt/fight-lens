@@ -76,7 +76,7 @@ export function CreatorActions({ fight, fighterA, fighterB, modelOutput }: Creat
         {fight.styleClashLabel ? (
           <div className="flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-background/45 p-4">
             <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">copy hook</p>
-            <StyleClashLabel label={fight.styleClashLabel} copyable />
+            <StyleClashLabel label={fight.styleClashLabel} />
           </div>
         ) : null}
 

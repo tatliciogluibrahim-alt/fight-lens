@@ -1,12 +1,9 @@
-import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { formatRanking } from "@/lib/display";
 import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions } from "@/lib/style-radar";
 import { ModuleEmptyState } from "./ModuleEmptyState";
-import { StyleClashExportCard } from "./StyleClashExportCard";
 import { StyleClashLabel } from "./StyleClashLabel";
-import { StyleClashSaveButton } from "./StyleClashSaveButton";
 
 interface StyleComparisonBarsProps {
   fighterA: SourcedFighter;
@@ -22,17 +19,10 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
     const b = fighterBDimensions.find((dimension) => dimension.key === row.key);
     return row.hasData || b?.hasData ? [{ a: row, b }] : [];
   });
-  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
-    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
-    : null;
-  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
-    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
-    : null;
-  const canExport = Boolean(exportFighterA && exportFighterB);
 
   return (
     <section id="section-overlap" className="module-card scroll-mt-28">
-      <div className="module-header flex flex-wrap items-start justify-between gap-4">
+      <div className="module-header">
         <div className="max-w-2xl">
           <p className="mono-label">the clash</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">style fingerprints.</h2>
@@ -40,35 +30,9 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
             Recent sourced signals · not a full-career scouting grade · opponent quality manually weighted
           </p>
         </div>
-        {canExport ? (
-          <StyleClashSaveButton fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
-        ) : null}
       </div>
 
       <div className="module-body space-y-6">
-        {canExport ? (
-          <div className="rounded-2xl border border-line bg-background/45 p-3 md:p-4">
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-3 px-1">
-              <div>
-                <p className="mono-label">matchup export</p>
-                <p className="mt-1 text-sm text-muted">Export the shape as a creator-ready overlap card.</p>
-              </div>
-              {styleClashLabel ? <StyleClashLabel label={styleClashLabel} copyable /> : null}
-            </div>
-            <div className="overflow-x-auto pb-1">
-              <div className="min-w-[720px] md:min-w-0">
-                <StyleClashExportCard fighterA={exportFighterA!} fighterB={exportFighterB!} styleClashLabel={styleClashLabel} />
-              </div>
-            </div>
-          </div>
-        ) : (
-          <ModuleEmptyState
-            label="style data"
-            title="Style shape pending."
-            body="Full fighter data not yet sourced."
-          />
-        )}
-
         {comparableRows.length ? (
           <div className="grid gap-8 rounded-2xl border border-line bg-background/30 p-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
@@ -92,7 +56,7 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
                   </p>
                 </div>
                 {styleClashLabel ? (
-                  <StyleClashLabel label={styleClashLabel} copyable />
+                  <StyleClashLabel label={styleClashLabel} />
                 ) : null}
               </div>
             </div>
@@ -132,7 +96,13 @@ export function StyleComparisonBars({ fighterA, fighterB, modelOutput, styleClas
               })}
             </div>
           </div>
-        ) : null}
+        ) : (
+          <ModuleEmptyState
+            label="style data"
+            title="Style shape pending."
+            body="Full fighter data not yet sourced."
+          />
+        )}
       </div>
     </section>
   );
