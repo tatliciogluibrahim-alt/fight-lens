@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { CreatorActions } from "@/components/CreatorActions";
+import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
@@ -13,6 +14,7 @@ import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking } from "@/lib/display";
 import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
+import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -76,6 +78,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const fightShapeModel = buildFightShapeModel(fight);
+  const outcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
 
   const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
     ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
@@ -137,6 +140,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
 
         {/* Analysis sections */}
         <div className="mt-6 space-y-5 md:mt-8 md:space-y-6">
+          <TheCall outcomeModel={outcomeModel} />
           <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
           <StyleComparisonBars
             fighterA={fighterA}
