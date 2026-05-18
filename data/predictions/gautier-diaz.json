@@ -1,0 +1,21 @@
+{
+  "fightId": "gautier-diaz",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Ateba Gautier",
+    "fighterB": "Ozzy Diaz"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 52,
+    "fighterBWinProbability": 48,
+    "methodBreakdown": {
+      "decision": 44,
+      "koTko": 32,
+      "submission": 24
+    }
+  },
+  "outcome": null
+}

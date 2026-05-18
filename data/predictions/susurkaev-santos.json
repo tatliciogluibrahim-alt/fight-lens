@@ -1,0 +1,21 @@
+{
+  "fightId": "susurkaev-santos",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Baisangur Susurkaev",
+    "fighterB": "Djorden Santos"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 62,
+    "fighterBWinProbability": 38,
+    "methodBreakdown": {
+      "decision": 34,
+      "koTko": 38,
+      "submission": 28
+    }
+  },
+  "outcome": null
+}

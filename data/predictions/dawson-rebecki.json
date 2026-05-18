@@ -1,0 +1,21 @@
+{
+  "fightId": "dawson-rebecki",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Grant Dawson",
+    "fighterB": "Mateusz Rebecki"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 58,
+    "fighterBWinProbability": 42,
+    "methodBreakdown": {
+      "decision": 48,
+      "koTko": 18,
+      "submission": 34
+    }
+  },
+  "outcome": null
+}

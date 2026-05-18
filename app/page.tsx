@@ -1,75 +1,185 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { ModelAccuracyBadge } from "@/components/ModelAccuracyCard";
-import { ModuleEmptyState } from "@/components/ModuleEmptyState";
-import { StyleClashExportCard } from "@/components/StyleClashExportCard";
-import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
-import { getAccuracyMetrics } from "@/lib/accuracy";
-import { sourcedEvent } from "@/lib/sourced-event";
+import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
+import { getAccuracyMetrics, getAllPredictions } from "@/lib/accuracy";
+
+function StatusDot({ resolved }: { resolved: boolean }) {
+  return (
+    <span
+      className={`inline-block size-1.5 rounded-full ${resolved ? "bg-accent" : "bg-subtle"}`}
+    />
+  );
+}
 
 export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
-  const mainFight = sourcedEvent.fights[0];
-  const fighterA = mainFight.fighters.fighterA;
-  const fighterB = mainFight.fighters.fighterB;
-  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
-    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
-    : null;
-  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
-    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
-    : null;
-  const canShowPreview = Boolean(exportFighterA && exportFighterB);
+  const predictions = getAllPredictions();
+
+  // Group predictions by event
+  const eventGroups = predictions.reduce<Record<string, typeof predictions>>(
+    (acc, p) => {
+      if (!acc[p.event]) acc[p.event] = [];
+      acc[p.event].push(p);
+      return acc;
+    },
+    {}
+  );
 
   return (
     <>
       <AppHeader />
       <main>
-        <section className="section-shell py-10 md:py-20">
-          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-            <div className="max-w-3xl">
-              <div className="flex items-center gap-3">
-                <p className="mono-label">fight lens / ufc 328</p>
-                <ModelAccuracyBadge metrics={accuracyMetrics} />
-              </div>
-              <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
-                see the fight.
-                <span className="block text-accent">as shape.</span>
-              </h1>
-              <p className="mt-6 max-w-xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens turns UFC matchups into clean visual reads. The clash, the form, and the shape of each fight. Built for creators and serious fans.
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="/events/ufc-328"
-                  className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-white transition hover:brightness-110"
-                >
-                  View UFC 328 Matchups
-                </Link>
-                <Link
-                  href="/events/ufc-328/chimaev-strickland"
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface/70 px-6 text-muted transition hover:bg-surface-2 hover:text-foreground"
-                >
-                  Main Event Read
-                </Link>
-              </div>
+        {/* Hero */}
+        <section className="section-shell py-12 md:py-20">
+          <div className="max-w-4xl">
+            <p className="mono-label">fight lens · predictive analysis</p>
+            <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
+              predictive analysis.
+              <span className="block text-accent">every outcome tracked.</span>
+            </h1>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+              Fight Lens models UFC matchups before each card. Win probabilities, method breakdowns, and scenario paths — built from style shape, form, and stat differentials. Every call logged. Every outcome checked.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/events/ufc-328"
+                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-white transition hover:brightness-110"
+              >
+                UFC 328 Matchups
+              </Link>
+              <Link
+                href="/record"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface/70 px-6 text-muted transition hover:bg-surface-2 hover:text-foreground"
+              >
+                Model Record
+              </Link>
             </div>
+          </div>
+        </section>
 
-            <div className="lens-card p-4 md:p-5">
-              {canShowPreview ? (
-                <StyleClashExportCard
-                  fighterA={exportFighterA!}
-                  fighterB={exportFighterB!}
-                  styleClashLabel={mainFight.styleClashLabel}
-                />
-              ) : (
-                <ModuleEmptyState
-                  label="main event"
-                  title="Preview pending."
-                  body="Style metrics not complete enough to draw the matchup card."
-                />
-              )}
+        {/* Model accuracy */}
+        <section className="section-shell py-4 md:py-8">
+          <ModelAccuracyCard metrics={accuracyMetrics} />
+        </section>
+
+        {/* Events analyzed */}
+        <section className="section-shell py-10 md:py-16">
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="mono-label">events analyzed</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
+                {Object.keys(eventGroups).length} event{Object.keys(eventGroups).length !== 1 ? "s" : ""} in the model.
+              </h2>
             </div>
+            <Link
+              href="/record"
+              className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
+            >
+              full record →
+            </Link>
+          </div>
+
+          <div className="space-y-4">
+            {Object.entries(eventGroups).map(([eventName, eventPredictions]) => {
+              const resolved = eventPredictions.filter((p) => p.outcome !== null);
+              const correct = resolved.filter((p) => {
+                if (!p.outcome || p.outcome.winner === "draw" || p.outcome.winner === "nc") return false;
+                return (
+                  (p.outcome.winner === "fighterA" && p.prediction.fighterAWinProbability > p.prediction.fighterBWinProbability) ||
+                  (p.outcome.winner === "fighterB" && p.prediction.fighterBWinProbability > p.prediction.fighterAWinProbability)
+                );
+              });
+
+              // Determine event slug for linking
+              const isUfc328 = eventName.toLowerCase().includes("328");
+              const isUfc322 = eventName.toLowerCase().includes("322");
+
+              return (
+                <div
+                  key={eventName}
+                  className="overflow-hidden border border-line bg-surface/70"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line p-5">
+                    <div>
+                      <h3 className="font-semibold tracking-tight">{eventName}</h3>
+                      <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+                        {eventPredictions.length} fight{eventPredictions.length !== 1 ? "s" : ""} modeled
+                        {resolved.length > 0
+                          ? ` · ${correct.length}/${resolved.length} correct`
+                          : " · outcomes pending"}
+                      </p>
+                    </div>
+                    <div className="flex gap-2">
+                      {isUfc328 && (
+                        <Link
+                          href="/events/ufc-328"
+                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:text-foreground"
+                        >
+                          view matchups
+                        </Link>
+                      )}
+                      {resolved.length > 0 && (
+                        <Link
+                          href="/record"
+                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:text-foreground"
+                        >
+                          see record
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="divide-y divide-line">
+                    {eventPredictions.slice(0, 5).map((p) => {
+                      const favName =
+                        p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability
+                          ? p.fighters.fighterA
+                          : p.fighters.fighterB;
+                      const favProb = Math.max(
+                        p.prediction.fighterAWinProbability,
+                        p.prediction.fighterBWinProbability
+                      );
+                      const hasOutcome = p.outcome !== null;
+
+                      return (
+                        <div
+                          key={p.fightId}
+                          className="flex flex-wrap items-center justify-between gap-3 px-5 py-3"
+                        >
+                          <div className="flex items-center gap-3">
+                            <StatusDot resolved={hasOutcome} />
+                            <p className="text-sm">
+                              {p.fighters.fighterA}{" "}
+                              <span className="text-subtle">vs</span>{" "}
+                              {p.fighters.fighterB}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <p className="font-mono text-[10px] text-subtle">
+                              lean: {favName} {favProb}%
+                            </p>
+                            <Link
+                              href={`/events/ufc-328/${p.fightId}`}
+                              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+                            >
+                              lens →
+                            </Link>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    {eventPredictions.length > 5 && (
+                      <div className="px-5 py-3">
+                        <p className="font-mono text-[10px] text-subtle/60">
+                          + {eventPredictions.length - 5} more fights
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>

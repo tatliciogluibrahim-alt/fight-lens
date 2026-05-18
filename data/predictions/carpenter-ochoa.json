@@ -1,0 +1,21 @@
+{
+  "fightId": "carpenter-ochoa",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Clayton Carpenter",
+    "fighterB": "Jose Ochoa"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 52,
+    "fighterBWinProbability": 48,
+    "methodBreakdown": {
+      "decision": 36,
+      "koTko": 40,
+      "submission": 24
+    }
+  },
+  "outcome": null
+}

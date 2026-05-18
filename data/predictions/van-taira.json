@@ -1,0 +1,21 @@
+{
+  "fightId": "van-taira",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Joshua Van",
+    "fighterB": "Tatsuro Taira"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 42,
+    "fighterBWinProbability": 58,
+    "methodBreakdown": {
+      "decision": 38,
+      "koTko": 12,
+      "submission": 50
+    }
+  },
+  "outcome": null
+}

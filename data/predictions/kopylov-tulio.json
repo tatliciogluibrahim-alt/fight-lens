@@ -1,0 +1,21 @@
+{
+  "fightId": "kopylov-tulio",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Roman Kopylov",
+    "fighterB": "Marco Tulio"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 58,
+    "fighterBWinProbability": 42,
+    "methodBreakdown": {
+      "decision": 36,
+      "koTko": 48,
+      "submission": 16
+    }
+  },
+  "outcome": null
+}

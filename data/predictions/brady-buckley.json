@@ -1,0 +1,21 @@
+{
+  "fightId": "brady-buckley",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Sean Brady",
+    "fighterB": "Joaquin Buckley"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 56,
+    "fighterBWinProbability": 44,
+    "methodBreakdown": {
+      "decision": 52,
+      "koTko": 20,
+      "submission": 28
+    }
+  },
+  "outcome": null
+}

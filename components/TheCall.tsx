@@ -114,7 +114,7 @@ function MethodBreakdown({
 
 // ─── Scenario card ────────────────────────────────────────────────────────────
 
-function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
+function ScenarioCard({ scenario, suppressFighterLabel = false }: { scenario: OutcomeScenario; suppressFighterLabel?: boolean }) {
   const accentIds: OutcomeScenario["id"][] = ["lean"];
   const isAccent = accentIds.includes(scenario.id);
 
@@ -129,7 +129,7 @@ function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
       <p className={`mono-label ${isAccent ? "text-accent" : ""}`}>
         {scenario.title}
       </p>
-      {scenario.fighterLabel ? (
+      {!suppressFighterLabel && scenario.fighterLabel ? (
         <p className="text-base font-semibold leading-tight tracking-[-0.02em]">
           {scenario.fighterLabel}
         </p>
@@ -218,13 +218,17 @@ export function TheCall({ outcomeModel }: TheCallProps) {
         {/* 3 scenario cards */}
         <div className="grid gap-4 md:grid-cols-3">
           {scenarios.map((scenario) => (
-            <ScenarioCard key={scenario.id} scenario={scenario} />
+            <ScenarioCard
+              key={scenario.id}
+              scenario={scenario}
+              suppressFighterLabel={tooClose && scenario.id === "lean"}
+            />
           ))}
         </div>
 
         {/* Model footer */}
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-          {modelVersion} · signal-based · not financial advice
+          {modelVersion} · signal-based · not a guarantee
         </p>
       </div>
     </section>

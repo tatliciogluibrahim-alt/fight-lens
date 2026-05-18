@@ -1,0 +1,21 @@
+{
+  "fightId": "alvarez-amosov",
+  "event": "UFC 328: Chimaev vs. Strickland",
+  "fighters": {
+    "fighterA": "Joel Alvarez",
+    "fighterB": "Yaroslav Amosov"
+  },
+  "generatedAt": "2026-05-01T12:00:00.000Z",
+  "modelVersion": "outcome-v0.1",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 38,
+    "fighterBWinProbability": 62,
+    "methodBreakdown": {
+      "decision": 50,
+      "koTko": 16,
+      "submission": 34
+    }
+  },
+  "outcome": null
+}

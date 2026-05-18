@@ -68,18 +68,15 @@ function FormMetricCard({ fighter, metric, accent = false }: { fighter: SourcedF
       </div>
       <div className="mt-4 grid gap-2 sm:grid-cols-3">
         <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
-          / {fighter.fightHistory.length} completed rows
+          {fighter.fightHistory.length} fights
         </p>
         <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
-          / {wins} wins
+          {wins} wins
         </p>
         <p className="data-text rounded-xl border border-line bg-background/55 px-3 py-2 text-xs text-subtle">
-          / {losses} losses
+          {losses} losses
         </p>
       </div>
-      <p className="mt-4 text-sm leading-6 text-muted">
-        {metric.explanation}
-      </p>
     </div>
   );
 }

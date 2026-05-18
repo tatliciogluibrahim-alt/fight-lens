@@ -190,9 +190,9 @@ function buildScenarios(
 
   let upsetDesc: string;
   if (topUnderdogPath) {
-    upsetDesc = `${underdog.name} wins if the fight stays in the range where ${topUnderdogPath} is viable. The path is specific, but the probability is real — the model gives them ${pct((1 - favProb) * 100)}%.`;
+    upsetDesc = `${underdog.name}'s clearest path: "${topUnderdogPath}". The route is specific, but the probability is real — the model gives them ${pct((1 - favProb) * 100)}%.`;
   } else {
-    upsetDesc = `${underdog.name}'s route is narrower, but it exists. Keep the fight away from ${favorite.name}'s structural advantage and force a different tempo. The model gives them ${pct((1 - favProb) * 100)}%.`;
+    upsetDesc = `${underdog.name}'s route is narrower, but it exists. The clearest option is keeping the fight away from ${favorite.name}'s structural advantage and forcing a different tempo. The model gives them ${pct((1 - favProb) * 100)}%.`;
   }
 
   // Swing scenario

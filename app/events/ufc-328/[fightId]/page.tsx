@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { CreatorActions } from "@/components/CreatorActions";
+import { FightResultBanner } from "@/components/FightResultBanner";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
@@ -15,6 +16,7 @@ import { formatRanking } from "@/lib/display";
 import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
+import { getPredictionByFightId } from "@/lib/accuracy";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -79,6 +81,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fighterB = fight.fighters.fighterB;
   const fightShapeModel = buildFightShapeModel(fight);
   const outcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
+  const prediction = getPredictionByFightId(fightId);
 
   const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
     ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
@@ -109,6 +112,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               </p>
             </div>
           </div>
+          {prediction && <FightResultBanner prediction={prediction} />}
 
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
