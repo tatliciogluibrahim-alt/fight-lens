@@ -29,109 +29,69 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
   const { outcome, prediction, fighters } = record;
 
   const modelPick =
-    prediction.fighterAWinProbability > prediction.fighterBWinProbability
+    prediction.fighterAWinProbability >= prediction.fighterBWinProbability
       ? fighters.fighterA
       : fighters.fighterB;
-  const modelProb = Math.max(
-    prediction.fighterAWinProbability,
-    prediction.fighterBWinProbability
-  );
+  const modelProb = Math.max(prediction.fighterAWinProbability, prediction.fighterBWinProbability);
 
-  const wasCorrect = outcome
-    ? outcome.winner === "draw" || outcome.winner === "nc"
-      ? null
-      : (outcome.winner === "fighterA" && prediction.fighterAWinProbability > prediction.fighterBWinProbability) ||
-        (outcome.winner === "fighterB" && prediction.fighterBWinProbability > prediction.fighterAWinProbability)
+  const wasCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc"
+    ? (outcome.winner === "fighterA" && prediction.fighterAWinProbability >= prediction.fighterBWinProbability) ||
+      (outcome.winner === "fighterB" && prediction.fighterBWinProbability > prediction.fighterAWinProbability)
     : null;
 
   const actualWinner = outcome
-    ? outcome.winner === "fighterA"
-      ? fighters.fighterA
-      : outcome.winner === "fighterB"
-        ? fighters.fighterB
-        : outcome.winner === "draw"
-          ? "Draw"
-          : "NC"
+    ? outcome.winner === "fighterA" ? fighters.fighterA
+      : outcome.winner === "fighterB" ? fighters.fighterB
+      : outcome.winner === "draw" ? "Draw" : "NC"
     : null;
 
+  const slug = eventSlug(record.event);
+  const href = slug
+    ? `/events/${slug}/${record.fightId}`
+    : record.isBacktestReconstruction
+      ? `/backtests/${record.fightId}`
+      : null;
+
+  // Inline verdict string
+  let verdictText: string | null = null;
+  if (outcome && actualWinner) {
+    const method = methodLabel(outcome.method);
+    if (wasCorrect === true) {
+      verdictText = `✓  ${actualWinner} · ${method} · R${outcome.round}`;
+    } else if (wasCorrect === false) {
+      verdictText = `✗  picked ${modelPick} · ${actualWinner} won · ${method}`;
+    }
+  }
+
   return (
-    <div className="grid gap-3 border-b border-line p-4 last:border-b-0 md:grid-cols-[1fr_auto_auto_auto_auto] md:items-center">
-      {/* Fight */}
-      <div>
-        <p className="text-sm font-semibold">
-          {fighters.fighterA} <span className="font-normal text-muted">vs</span> {fighters.fighterB}
+    <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-b border-line px-5 py-3 last:border-b-0">
+      {/* Fight name + inline verdict */}
+      <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-3 gap-y-0.5">
+        <p className="shrink-0 text-sm font-semibold">
+          {fighters.fighterA} <span className="font-normal text-subtle">vs</span> {fighters.fighterB}
         </p>
-        <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-          {record.event}
-          {record.isBacktestReconstruction ? " · backtest" : ""}
-        </p>
-      </div>
-
-      {/* Model pick */}
-      <div className="text-right md:text-left">
-        <p className="text-sm text-muted">{modelPick}</p>
-        <p className="font-mono text-[10px] text-subtle">{modelProb}% confidence</p>
-      </div>
-
-      {/* Actual result */}
-      <div className="text-right md:text-left">
-        {actualWinner ? (
-          <>
-            <p className="text-sm text-muted">{actualWinner}</p>
-            {outcome && (
-              <p className="font-mono text-[10px] text-subtle">
-                {methodLabel(outcome.method)} · R{outcome.round}
-              </p>
-            )}
-          </>
+        {verdictText ? (
+          <p className={`font-mono text-[11px] ${wasCorrect ? "text-accent" : "text-muted"}`}>
+            {verdictText}
+          </p>
+        ) : outcome ? (
+          <p className="font-mono text-[10px] text-subtle">n/a</p>
         ) : (
-          <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/60">pending</p>
-        )}
-      </div>
-
-      {/* Outcome badge */}
-      <div>
-        {wasCorrect === true && (
-          <span className="rounded-full bg-accent/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-accent">
-            ✓ correct
-          </span>
-        )}
-        {wasCorrect === false && (
-          <span className="rounded-full bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
-            ✗ wrong
-          </span>
-        )}
-        {wasCorrect === null && outcome && (
-          <span className="rounded-full bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-            n/a
-          </span>
-        )}
-        {!outcome && (
-          <span className="rounded-full border border-line px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/60">
-            —
-          </span>
+          <p className="font-mono text-[10px] text-subtle/60">
+            pick: {modelPick} · {modelProb}%
+          </p>
         )}
       </div>
 
       {/* Link */}
-      <div>
-        {(() => {
-          const slug = eventSlug(record.event);
-          const href = slug
-            ? `/events/${slug}/${record.fightId}`
-            : record.isBacktestReconstruction
-              ? `/backtests/${record.fightId}`
-              : null;
-          return href ? (
-            <Link
-              href={href}
-              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
-            >
-              view lens →
-            </Link>
-          ) : null;
-        })()}
-      </div>
+      {href && (
+        <Link
+          href={href}
+          className="shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+        >
+          lens →
+        </Link>
+      )}
     </div>
   );
 }
