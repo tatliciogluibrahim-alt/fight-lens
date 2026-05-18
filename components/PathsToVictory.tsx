@@ -62,27 +62,37 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   const pathB = modelOutput.metrics.pathReliability.fighterB;
   const hasPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
 
-  if (!hasPaths) {
-    return null;
-  }
-
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
-      <div className="module-header flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="mono-label">cleaner path</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            most repeatable path.
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            The clearest visible route to a finish or decision, based on sourced style signals.
-          </p>
+      <div className="module-header">
+        <p className="mono-label">cleaner path</p>
+        <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+          most repeatable path.
+        </h2>
+        <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
+          The clearest visible route to a finish or decision, based on sourced style signals.
+        </p>
+      </div>
+      {hasPaths ? (
+        <div className="module-body grid gap-4 lg:grid-cols-2">
+          <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
+          <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
         </div>
-      </div>
-      <div className="module-body grid gap-4 lg:grid-cols-2">
-        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
-        <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
-      </div>
+      ) : (
+        <div className="module-body">
+          <div className="grid gap-4 lg:grid-cols-2">
+            {[fighterA, fighterB].map((fighter) => (
+              <div key={fighter.id} className="rounded-2xl border border-line bg-background/40 p-5">
+                <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
+                <p className="mono-label mt-2">path analysis pending</p>
+                <p className="mt-4 text-sm leading-6 text-muted">
+                  Path reliability loads once round-trend and form data are sourced. Check back closer to the event.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -110,7 +110,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface/70 px-6 text-muted transition hover:bg-surface-2 hover:text-foreground"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40 hover:bg-surface-2"
               >
                 Model Record
               </Link>

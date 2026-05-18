@@ -38,7 +38,7 @@ function FighterHeroPanel({
   const isRight = align === "right";
 
   return (
-    <div className={`flex min-h-[340px] flex-col gap-5 p-5 md:p-8 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
+    <div className={`flex flex-col gap-5 p-5 md:p-8 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
       <FighterAssetSlot
         fighter={fighter}
         fallbackName={fighter.name}

@@ -61,7 +61,7 @@ function FighterHeroPanel({
 
   return (
     <div
-      className={`flex min-h-[340px] flex-col gap-5 p-5 md:p-8 ${
+      className={`flex flex-col gap-5 p-5 md:p-8 ${
         isRight ? "lg:items-end lg:text-right" : ""
       }`}
     >
