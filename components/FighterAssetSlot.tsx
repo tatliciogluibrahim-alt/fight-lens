@@ -47,17 +47,19 @@ function PortraitFallback({
   return (
     <div
       aria-hidden="true"
-      className={`relative flex h-36 w-28 items-center justify-center overflow-hidden rounded-lg border ${
-        isAccent ? "border-accent/35 bg-accent-soft" : "border-line-strong bg-surface-2"
+      className={`relative flex h-44 w-32 items-center justify-center overflow-hidden rounded-xl ${
+        isAccent ? "bg-accent/8" : "bg-surface-2/60"
       }`}
     >
       {emoji ? (
-        <span className="select-none text-5xl leading-none">{emoji}</span>
+        <span className="select-none text-6xl leading-none">{emoji}</span>
       ) : abbr ? (
-        <span className={`select-none font-mono text-2xl font-semibold ${isAccent ? "text-accent" : "text-muted"}`}>
+        <span className={`select-none font-mono text-3xl font-semibold ${isAccent ? "text-accent/50" : "text-muted/50"}`}>
           {abbr}
         </span>
-      ) : null}
+      ) : (
+        <span className="select-none font-mono text-2xl text-subtle/30">?</span>
+      )}
     </div>
   );
 }
@@ -71,14 +73,15 @@ export function FighterAssetSlot({
   const imageUrl = fighter?.image?.url;
   const country = getCountry(fighter) ?? fallbackCountry ?? null;
 
-  return (
-    <div className="relative overflow-hidden rounded-xl border border-line-strong bg-background/65 p-2">
-      {imageUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
+  if (imageUrl) {
+    return (
+      <div className="relative overflow-hidden rounded-xl border border-line-strong bg-background/65 p-2">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={imageUrl} alt={fighter?.name ?? fallbackName} className="h-36 w-28 object-cover grayscale" />
-      ) : (
-        <PortraitFallback country={country} tone={tone} />
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
+
+  // No image — render fallback directly without the double-bordered wrapper
+  return <PortraitFallback country={country} tone={tone} />;
 }

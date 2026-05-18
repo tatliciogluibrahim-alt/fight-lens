@@ -4,12 +4,77 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getAccuracyMetrics, getAllPredictions } from "@/lib/accuracy";
 import { getLatestEvent } from "@/lib/events/registry";
+import type { PredictionRecord } from "@/lib/accuracy/types";
 
-function StatusDot({ resolved }: { resolved: boolean }) {
+function methodLabel(method: string): string {
+  switch (method) {
+    case "ko_tko": return "KO/TKO";
+    case "submission": return "SUB";
+    case "decision": return "DEC";
+    default: return method.toUpperCase();
+  }
+}
+
+function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) {
+  const modelPick =
+    p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability
+      ? p.fighters.fighterA
+      : p.fighters.fighterB;
+
+  const outcome = p.outcome;
+  const actualWinner = outcome
+    ? outcome.winner === "fighterA" ? p.fighters.fighterA
+      : outcome.winner === "fighterB" ? p.fighters.fighterB
+      : outcome.winner
+    : null;
+
+  const winnerCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc"
+    ? (outcome.winner === "fighterA" && p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability) ||
+      (outcome.winner === "fighterB" && p.prediction.fighterBWinProbability > p.prediction.fighterAWinProbability)
+    : null;
+
   return (
-    <span
-      className={`inline-block size-1.5 rounded-full ${resolved ? "bg-accent" : "bg-subtle"}`}
-    />
+    <div className="grid grid-cols-[1fr_auto] items-center gap-3 border-b border-line px-5 py-3 last:border-b-0 sm:grid-cols-[1.4fr_1fr_1fr_auto]">
+      {/* Fight names */}
+      <p className="text-sm font-medium">
+        {p.fighters.fighterA} <span className="text-subtle font-normal">vs</span> {p.fighters.fighterB}
+      </p>
+
+      {/* Predicted */}
+      <div className="hidden sm:block">
+        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">predicted</p>
+        <p className="mt-0.5 text-sm text-muted">{modelPick}</p>
+      </div>
+
+      {/* Outcome */}
+      <div className="hidden sm:block">
+        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">outcome</p>
+        {actualWinner ? (
+          <p className="mt-0.5 text-sm text-muted">
+            {actualWinner}
+            {outcome && <span className="ml-1 text-subtle">· {methodLabel(outcome.method)}</span>}
+          </p>
+        ) : (
+          <p className="mt-0.5 font-mono text-[10px] text-subtle/60">pending</p>
+        )}
+      </div>
+
+      {/* Verdict + lens link */}
+      <div className="flex items-center gap-3">
+        {winnerCorrect === true && (
+          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-accent">✓</span>
+        )}
+        {winnerCorrect === false && (
+          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-muted">✗</span>
+        )}
+        <Link
+          href={fightHref}
+          className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+        >
+          lens →
+        </Link>
+      </div>
+    </div>
   );
 }
 
@@ -132,47 +197,12 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="divide-y divide-line">
+                  <div>
                     {eventPredictions.slice(0, 5).map((p) => {
-                      const favName =
-                        p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability
-                          ? p.fighters.fighterA
-                          : p.fighters.fighterB;
-                      const favProb = Math.max(
-                        p.prediction.fighterAWinProbability,
-                        p.prediction.fighterBWinProbability
-                      );
-                      const hasOutcome = p.outcome !== null;
                       const fightHref = eventSlug
                         ? `/events/${eventSlug}/${p.fightId}`
                         : `/backtests/${p.fightId}`;
-
-                      return (
-                        <div
-                          key={p.fightId}
-                          className="flex flex-wrap items-center justify-between gap-3 px-5 py-3"
-                        >
-                          <div className="flex items-center gap-3">
-                            <StatusDot resolved={hasOutcome} />
-                            <p className="text-sm">
-                              {p.fighters.fighterA}{" "}
-                              <span className="text-subtle">vs</span>{" "}
-                              {p.fighters.fighterB}
-                            </p>
-                          </div>
-                          <div className="flex items-center gap-4">
-                            <p className="font-mono text-[10px] text-subtle">
-                              lean: {favName} {favProb}%
-                            </p>
-                            <Link
-                              href={fightHref}
-                              className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
-                            >
-                              lens →
-                            </Link>
-                          </div>
-                        </div>
-                      );
+                      return <FightRow key={p.fightId} p={p} fightHref={fightHref} />;
                     })}
                     {eventPredictions.length > 5 && (
                       <div className="px-5 py-3">

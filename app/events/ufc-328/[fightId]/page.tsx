@@ -10,10 +10,8 @@ import { FormResumeModule } from "@/components/FormResumeModule";
 import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleClashLabel } from "@/components/StyleClashLabel";
-import { StyleClashSaveButton } from "@/components/StyleClashSaveButton";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking } from "@/lib/display";
-import { hasCompleteExportStyleProfile } from "@/lib/fight-shape";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import { getPredictionByFightId } from "@/lib/accuracy";
@@ -86,14 +84,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const outcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
   const prediction = getPredictionByFightId(fightId);
 
-  const exportFighterA = hasCompleteExportStyleProfile(fighterA.styleProfile)
-    ? { name: fighterA.name, styleProfile: fighterA.styleProfile }
-    : null;
-  const exportFighterB = hasCompleteExportStyleProfile(fighterB.styleProfile)
-    ? { name: fighterB.name, styleProfile: fighterB.styleProfile }
-    : null;
-  const canExport = Boolean(exportFighterA && exportFighterB);
-
   return (
     <>
       <AppHeader />
@@ -120,24 +110,12 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="flex min-h-[240px] flex-col items-center justify-between border-y border-line bg-background/30 py-8 px-5 text-center lg:min-h-[340px] lg:border-x lg:border-y-0">
-              <div />
-              <div className="flex flex-col items-center gap-5">
-                <p className="text-[5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[7rem]">
-                  vs
-                </p>
-                {fight.styleClashLabel && (
-                  <StyleClashLabel label={fight.styleClashLabel} copyable />
-                )}
-              </div>
-              {canExport ? (
-                <StyleClashSaveButton
-                  fighterA={exportFighterA!}
-                  fighterB={exportFighterB!}
-                  styleClashLabel={fight.styleClashLabel ?? undefined}
-                />
-              ) : (
-                <div />
+            <div className="flex min-h-[240px] flex-col items-center justify-center gap-5 border-y border-line bg-background/30 py-8 px-5 text-center lg:min-h-[340px] lg:border-x lg:border-y-0">
+              <p className="text-[5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[7rem]">
+                vs
+              </p>
+              {fight.styleClashLabel && (
+                <StyleClashLabel label={fight.styleClashLabel} copyable />
               )}
             </div>
 

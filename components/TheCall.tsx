@@ -202,7 +202,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
             <ScenarioCard
               key={scenario.id}
               scenario={scenario}
-              suppressFighterLabel={tooClose && scenario.id === "lean"}
+              suppressFighterLabel={tooClose && (scenario.id === "lean" || scenario.id === "upset")}
             />
           ))}
         </div>
