@@ -8,11 +8,10 @@ import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
-import { FighterAssetSlot } from "@/components/FighterAssetSlot";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleClashLabel } from "@/components/StyleClashLabel";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
-import { formatRanking } from "@/lib/display";
+import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import { getPredictionByFightId } from "@/lib/accuracy";
@@ -48,6 +47,15 @@ export async function generateMetadata({ params }: MatchupPageProps): Promise<Me
   };
 }
 
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+function flagEmoji(code: string | undefined): string | null {
+  if (!code) return null;
+  const c = code.split("/")[0].trim().toUpperCase();
+  if (!/^[A-Z]{2}$/.test(c)) return null;
+  return Array.from(c).map((ch) => String.fromCodePoint(127397 + ch.charCodeAt(0))).join("");
+}
+
 // ─── Fighter hero panel ──────────────────────────────────────────────────────
 
 function FighterHeroPanel({
@@ -58,44 +66,42 @@ function FighterHeroPanel({
   align?: "left" | "right";
 }) {
   const isRight = align === "right";
+  const country = getCountryDisplay(fighter);
+  const ranking = formatRanking(fighter.ranking);
+
+  const meta = [
+    ranking !== "UNRANKED" ? ranking : null,
+    fighter.stance ?? null,
+    country?.label ?? null,
+  ].filter(Boolean).join(" · ");
+
+  const physicals = [
+    fighter.record,
+    fighter.height,
+    fighter.reach ? `${fighter.reach} reach` : null,
+  ].filter(Boolean).join(" · ");
 
   return (
-    <div
-      className={`flex flex-col gap-5 p-5 md:p-8 ${
-        isRight ? "lg:items-end lg:text-right" : ""
-      }`}
-    >
-      <FighterAssetSlot
-        fighter={fighter}
-        fallbackName={fighter.name}
-        fallbackCountry={{
-          code: fighter.country?.code,
-          label: fighter.country?.label,
-          colors: fighter.country?.colors,
-        }}
-        tone={isRight ? "muted" : "accent"}
-      />
-
-      <div className="flex-1">
-        <p className="mono-label">
-          {formatRanking(fighter.ranking)}
-          {fighter.stance ? ` · ${fighter.stance}` : ""}
-          {fighter.country?.label ? ` · ${fighter.country.label}` : ""}
-        </p>
-        <h2 className="mt-3 text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl">
-          {fighter.name}
-        </h2>
+    <div className={`flex flex-col justify-center gap-3 p-5 py-8 md:p-8 md:py-10 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
+      {/* Flag + meta */}
+      <div className={`flex items-center gap-2 ${isRight ? "lg:flex-row-reverse" : ""}`}>
+        {country?.code && (
+          <span className="text-base leading-none" aria-hidden="true">
+            {flagEmoji(country.code)}
+          </span>
+        )}
+        <p className="mono-label">{meta}</p>
       </div>
 
-      <p className="data-text text-xs text-subtle">
-        {[
-          fighter.record,
-          fighter.height,
-          fighter.reach ? `${fighter.reach} reach` : null,
-        ]
-          .filter(Boolean)
-          .join(" · ")}
-      </p>
+      {/* Name */}
+      <h2 className="text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
+        {fighter.name}
+      </h2>
+
+      {/* Physicals */}
+      {physicals && (
+        <p className="data-text text-xs text-subtle">{physicals}</p>
+      )}
     </div>
   );
 }
@@ -142,8 +148,8 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="flex min-h-[240px] flex-col items-center justify-center gap-5 border-y border-line bg-background/30 px-5 py-8 text-center lg:min-h-[340px] lg:border-x lg:border-y-0">
-              <p className="text-[5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[7rem]">
+            <div className="flex flex-col items-center justify-center gap-4 border-y border-line bg-background/30 px-5 py-8 text-center lg:border-x lg:border-y-0">
+              <p className="text-[3.5rem] font-light leading-none tracking-[-0.08em] text-subtle/20 md:text-[5rem]">
                 vs
               </p>
               {fight.styleClashLabel && (
