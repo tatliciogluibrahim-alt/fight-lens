@@ -15,6 +15,7 @@ import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import { pinToLockedPrediction } from "@/lib/fight-outcome-model/pin-to-locked";
 import { getPredictionByFightId } from "@/lib/accuracy";
+import { buildPredictionViewModel } from "@/lib/predictionViewModel";
 import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registry";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -120,12 +121,22 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fightShapeModel = buildFightShapeModel(fight);
   const liveOutcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
   const prediction = getPredictionByFightId(fightId);
-  // For completed fights, display the locked pre-fight probabilities so
-  // TheCall matches the FightResultBanner verdict. Narratives stay live.
+  // For completed fights with a locked call, display the locked pre-fight
+  // probabilities so TheCall matches the FightResultBanner verdict.
+  // pinToLockedPrediction now also re-aligns the lean/upset scenarios so
+  // "the call" names the locked favorite (Chimaev/Strickland contradiction fix).
   const outcomeModel =
     prediction && fight.status === "completed"
       ? pinToLockedPrediction(liveOutcomeModel, prediction)
       : liveOutcomeModel;
+
+  // Canonical view model — single source of truth for predictedWinner, etc.
+  const vm = buildPredictionViewModel({
+    eventId,
+    fight,
+    outcomeModel,
+    lockedPrediction: prediction,
+  });
 
   return (
     <>
@@ -176,7 +187,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               call: (
                 <>
                   <TheCall outcomeModel={outcomeModel} />
-                  <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
+                  <FightShapeSummary
+                    fight={fight}
+                    modelOutput={fightShapeModel}
+                    predictedWinnerId={vm.predictedWinner?.id ?? null}
+                  />
                 </>
               ),
               shape: (
@@ -193,7 +208,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                     fighterB={fighterB}
                     modelOutput={fightShapeModel}
                   />
-                  <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+                  <PathsToVictory
+                    fight={fight}
+                    modelOutput={fightShapeModel}
+                    predictedWinnerId={vm.predictedWinner?.id ?? null}
+                  />
                 </>
               ),
             }}

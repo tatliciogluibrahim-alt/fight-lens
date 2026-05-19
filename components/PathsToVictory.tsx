@@ -5,6 +5,12 @@ import type { FightPath } from "@/lib/types";
 interface PathsToVictoryProps {
   fight: SourcedFight;
   modelOutput: FightShapeModelOutput;
+  /**
+   * Canonical predicted-winner fighter id. Used to ensure the layout reads
+   * left-to-right as "model call" → "live path" without contradicting the
+   * winner forecast.
+   */
+  predictedWinnerId?: string | null;
 }
 
 function PathList({
@@ -59,7 +65,7 @@ function PathList({
   );
 }
 
-export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
+export function PathsToVictory({ fight, modelOutput, predictedWinnerId = null }: PathsToVictoryProps) {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const pathsA = fight.paths?.fighterA ?? [];
@@ -67,10 +73,10 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   const pathA = modelOutput.metrics.pathReliability.fighterA;
   const pathB = modelOutput.metrics.pathReliability.fighterB;
 
-  // Show content if either curated paths or model signal exists for either fighter
-  const hasCuratedPaths = pathsA.length > 0 || pathsB.length > 0;
-  const hasModelPaths = pathA.status !== "insufficient" || pathB.status !== "insufficient";
-  const hasPaths = hasCuratedPaths || hasModelPaths;
+  // Accent the model-call winner — keeps the page internally consistent. When
+  // no winner exists (pending/data-light), no row gets accented.
+  const accentA = predictedWinnerId === fighterA.id;
+  const accentB = predictedWinnerId === fighterB.id;
 
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
@@ -84,8 +90,8 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
-        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent />
-        <PathList fighter={fighterB} metric={pathB} paths={pathsB} />
+        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent={accentA} />
+        <PathList fighter={fighterB} metric={pathB} paths={pathsB} accent={accentB} />
       </div>
     </section>
   );

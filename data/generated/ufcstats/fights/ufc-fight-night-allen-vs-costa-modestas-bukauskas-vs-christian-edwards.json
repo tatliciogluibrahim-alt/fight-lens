@@ -1,0 +1,764 @@
+{
+  "id": "57bd683efc797fc1",
+  "url": "http://www.ufcstats.com/fight-details/57bd683efc797fc1",
+  "event": {
+    "id": "73abb7a5c57fb443",
+    "name": "UFC Fight Night: Allen vs. Costa",
+    "url": "http://www.ufcstats.com/event-details/73abb7a5c57fb443"
+  },
+  "title": "Catch Weight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "476fe566d2df676e",
+      "name": "Modestas Bukauskas",
+      "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e",
+      "nickname": "The Baltic Gladiator",
+      "result": "W"
+    },
+    {
+      "id": "f5d82eccdea4e2dd",
+      "name": "Christian Edwards",
+      "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd",
+      "nickname": "Pain",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "f5d82eccdea4e2dd",
+        "name": "Christian Edwards",
+        "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 80,
+          "raw": "36 of 80"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 99,
+          "raw": "52 of 99"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:15",
+        "controlSeconds": 135
+      },
+      {
+        "fighter": {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 71,
+          "raw": "36 of 71"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 89,
+          "raw": "51 of 89"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:22",
+        "controlSeconds": 262
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 38,
+            "raw": "19 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:47",
+          "controlSeconds": 107
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 28,
+            "raw": "16 of 28"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:15",
+          "controlSeconds": 135
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 27,
+            "raw": "20 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:27",
+          "controlSeconds": 147
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "f5d82eccdea4e2dd",
+        "name": "Christian Edwards",
+        "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 80,
+          "raw": "36 of 80"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 21,
+          "attempted": 64,
+          "raw": "21 of 64"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 74,
+          "raw": "30 of 74"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 71,
+          "raw": "36 of 71"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 13,
+          "attempted": 41,
+          "raw": "13 of 41"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 20,
+          "raw": "17 of 20"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 61,
+          "raw": "27 of 61"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 4,
+            "attempted": 22,
+            "raw": "4 of 22"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 2,
+            "attempted": 16,
+            "raw": "2 of 16"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 28,
+            "raw": "16 of 28"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "f5d82eccdea4e2dd",
+          "name": "Christian Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 20,
+            "raw": "7 of 20"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f5d82eccdea4e2dd",
+            "name": "Christian Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f5d82eccdea4e2dd"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/57bd683efc797fc1",
+    "fetchedAt": "2026-05-19T13:30:00.516Z"
+  }
+}

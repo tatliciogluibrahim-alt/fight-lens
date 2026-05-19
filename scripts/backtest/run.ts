@@ -57,7 +57,7 @@ import type {
   LeakageCheckReport,
 } from "@/lib/backtest/types";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
-import type { PredictionRecord } from "@/lib/accuracy/types";
+import type { MethodType, PredictionRecord } from "@/lib/accuracy/types";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -160,6 +160,97 @@ function loadPredictions(): Map<string, PredictionFile> {
   return map;
 }
 
+// ─── Load fight-detail outcomes ───────────────────────────────────────────────
+//
+// For backtest expansion: pulling outcomes directly from UFCStats fight-detail
+// JSONs avoids the need to author dozens of prediction files for past events.
+// The outcome is keyed by the *UFCStats fight ID* (the same id used in the
+// normalized event JSON as `ufcstatsFightId`).
+
+interface FightDetailFile {
+  id: string;
+  result: { method: string; round: number | null; time: string | null } | null;
+  fighters: Array<{ id: string; name: string; result: "W" | "L" | "D" | null }>;
+}
+
+// Mirrors lib/accuracy/types FightOutcome — used to build an outcome from
+// UFCStats fight-detail JSONs. Draws/NCs are intentionally never returned
+// from outcomeFromDetail (caller skips them), so method narrows to MethodType.
+interface DetailOutcome {
+  winner: "fighterA" | "fighterB" | "draw" | "nc";
+  method: MethodType;
+  round: number;
+  time: string;
+  recordedAt: string;
+}
+
+function normalizeMethod(raw: string | null | undefined): MethodType | "draw" | "nc" | null {
+  if (!raw) return null;
+  const m = raw.toLowerCase();
+  if (m.includes("ko/tko") || m.includes("ko-tko") || m === "ko" || m === "tko") return "ko_tko";
+  if (m.includes("sub")) return "submission";
+  if (m.includes("dec") || m === "u-dec" || m === "s-dec" || m === "m-dec") return "decision";
+  if (m.includes("draw")) return "draw";
+  if (m.includes("nc") || m.includes("no contest") || m.includes("overturned") || m.includes("dq")) return "nc";
+  // Default conservatively to "other" so the fight stays scoreable
+  return "other";
+}
+
+function loadFightDetails(): Map<string, FightDetailFile> {
+  const detailsDir = repoPath("data/generated/ufcstats/fights");
+  if (!fs.existsSync(detailsDir)) return new Map();
+  const files = fs.readdirSync(detailsDir).filter((f) => f.endsWith(".json"));
+  const map = new Map<string, FightDetailFile>();
+  for (const file of files) {
+    try {
+      const detail = readJson<FightDetailFile>(path.join(detailsDir, file));
+      if (detail.id) map.set(detail.id, detail);
+    } catch {
+      // Silently skip malformed detail files — they shouldn't block the backtest
+    }
+  }
+  return map;
+}
+
+/**
+ * Build a backtest outcome from a fight-detail file matched to a normalized fight.
+ * Returns null if the fight didn't have a clean result (draw, NC, or missing data).
+ *
+ * Key choice: we resolve the winner by matching fighter UFCStats IDs, not by
+ * relying on array order. The detail file may list fighters in either order.
+ */
+function outcomeFromDetail(
+  detail: FightDetailFile,
+  fight: SourcedFight,
+): DetailOutcome | null {
+  if (!detail.result || !detail.fighters?.length) return null;
+
+  const idA = fight.fighters.fighterA.ufcstatsId;
+  const idB = fight.fighters.fighterB.ufcstatsId;
+  const fa = detail.fighters.find((f) => f.id === idA);
+  const fb = detail.fighters.find((f) => f.id === idB);
+  if (!fa || !fb) return null;
+
+  let winner: DetailOutcome["winner"];
+  if (fa.result === "W" && fb.result === "L") winner = "fighterA";
+  else if (fb.result === "W" && fa.result === "L") winner = "fighterB";
+  else if (fa.result === "D" || fb.result === "D") winner = "draw";
+  else return null; // Inconclusive — skip rather than guess
+
+  const method = normalizeMethod(detail.result.method);
+  if (!method) return null;
+  // Draws/NCs flow into winner already; method must align with MethodType for typing
+  const methodType: MethodType = method === "draw" || method === "nc" ? "other" : method;
+
+  return {
+    winner,
+    method: methodType,
+    round: detail.result.round ?? 0,
+    time: detail.result.time ?? "--:--",
+    recordedAt: new Date().toISOString(),
+  };
+}
+
 // ─── Baseline: better-record picker ──────────────────────────────────────────
 
 function parseRecord(record: string | null | undefined): { wins: number; losses: number } {
@@ -190,18 +281,27 @@ function moreExperiencePick(fight: SourcedFight): "fighterA" | "fighterB" | "coi
 
 // ─── Missing data flags ───────────────────────────────────────────────────────
 
+// Stats the backtest considers — kept here so feature-coverage stays in sync
+const TRACKED_STATS = [
+  "slpm",
+  "strikingAccuracy",
+  "sapm",
+  "strikingDefense",
+  "takedownAverage",
+  "takedownAccuracy",
+  "takedownDefense",
+  "submissionAverage",
+] as const;
+
 function extractMissingFlags(features: AsOfFightFeatures): string[] {
   const flags: string[] = [];
-  const stats = features.fighterA.aggregateStats;
-  if (stats.sapm == null) flags.push("fighterA.sapm missing");
-  if (stats.strikingDefense == null) flags.push("fighterA.strikingDefense missing");
-  if (stats.takedownDefense == null) flags.push("fighterA.takedownDefense missing");
-  const statsB = features.fighterB.aggregateStats;
-  if (statsB.sapm == null) flags.push("fighterB.sapm missing");
-  if (statsB.strikingDefense == null) flags.push("fighterB.strikingDefense missing");
-  if (statsB.takedownDefense == null) flags.push("fighterB.takedownDefense missing");
-  if (features.fighterA.fightHistoryCount === 0) flags.push("fighterA has no prior fight history");
-  if (features.fighterB.fightHistoryCount === 0) flags.push("fighterB has no prior fight history");
+  for (const side of ["fighterA", "fighterB"] as const) {
+    const stats = features[side].aggregateStats;
+    for (const key of TRACKED_STATS) {
+      if (stats[key] == null) flags.push(`${side}.${key} missing`);
+    }
+    if (features[side].fightHistoryCount === 0) flags.push(`${side} has no prior fight history`);
+  }
   return flags;
 }
 
@@ -217,10 +317,16 @@ async function main() {
   const predictions = loadPredictions();
   console.log(`  Loaded ${predictions.size} prediction files`);
 
+  console.log(`\nLoading fight-detail files for outcome backfill...`);
+  const fightDetails = loadFightDetails();
+  console.log(`  Loaded ${fightDetails.size} fight-detail files`);
+
   // Step 2: Process each fight
   const rows: BacktestRow[] = [];
   const leakageReports: LeakageCheckReport[] = [];
   const missingDataReport: Array<{ fightId: string; flags: string[]; dataWarnings: { fighterA: string[]; fighterB: string[] } }> = [];
+  const skipReport: Array<{ event: string; fightId: string; reason: string }> = [];
+  const outcomeSourceById = new Map<string, "prediction-file" | "fight-detail">();
 
   for (const event of events) {
     const eventDateIso = parseEventDate(event.event.date);
@@ -232,15 +338,36 @@ async function main() {
     console.log(`\nProcessing ${event.event.name} (${eventDateIso})`);
 
     for (const fight of event.fights) {
+      // Resolve outcome — prefer locked prediction files, fall back to UFCStats detail
       const pred = predictions.get(fight.id);
+      let resolvedOutcome: PredictionRecord["outcome"] | null = pred?.outcome ?? null;
+      let outcomeSource: "prediction-file" | "fight-detail" = "prediction-file";
 
-      // Only backtest fights with a recorded outcome
-      if (!pred?.outcome) {
+      if (!resolvedOutcome) {
+        const detail = fightDetails.get(fight.ufcstatsFightId);
+        if (detail) {
+          const derived = outcomeFromDetail(detail, fight);
+          if (derived) {
+            resolvedOutcome = derived;
+            outcomeSource = "fight-detail";
+          }
+        }
+      }
+
+      if (!resolvedOutcome) {
         console.log(`  SKIP ${fight.id}: no outcome recorded`);
+        skipReport.push({ event: event.event.name, fightId: fight.id, reason: "no outcome (no prediction file, no fight-detail result)" });
         continue;
       }
 
-      console.log(`  Processing ${fight.id}...`);
+      if (resolvedOutcome.winner === "draw" || resolvedOutcome.winner === "nc") {
+        console.log(`  SKIP ${fight.id}: ${resolvedOutcome.winner} outcome — not scored`);
+        skipReport.push({ event: event.event.name, fightId: fight.id, reason: `outcome was ${resolvedOutcome.winner} — not directional` });
+        continue;
+      }
+
+      outcomeSourceById.set(fight.id, outcomeSource);
+      console.log(`  Processing ${fight.id}${outcomeSource === "fight-detail" ? " [detail-derived]" : ""}...`);
 
       // Step 3: Build as-of features (leakage firewall)
       let features: AsOfFightFeatures;
@@ -270,7 +397,7 @@ async function main() {
       }
 
       // Step 6: Score
-      const score = scorePrediction(prediction, pred.outcome);
+      const score = scorePrediction(prediction, resolvedOutcome);
 
       // Step 7: Extract missing data flags
       const missingFlags = extractMissingFlags(features);
@@ -284,7 +411,7 @@ async function main() {
           fighterB: fight.fighters.fighterB.name,
         },
         prediction,
-        outcome: pred.outcome,
+        outcome: resolvedOutcome,
         score,
         leakageReport,
         dataWarnings: {
@@ -304,7 +431,7 @@ async function main() {
         });
       }
 
-      const winner = pred.outcome.winner;
+      const winner = resolvedOutcome.winner;
       const modelPickA = prediction.fighterAWinProbability >= prediction.fighterBWinProbability;
       const correct = score.correct;
       const fA = fight.fighters.fighterA.name.split(" ").slice(-1)[0];
@@ -479,6 +606,116 @@ async function main() {
   });
   console.log("Wrote: data/generated/backtests/leakage-reports.json");
 
+  // ─── Feature coverage report ──────────────────────────────────────────────
+  //
+  // Counts how often each stat is real (sourced from history) vs missing
+  // (model falls back to UFC averages). The brief calls for a per-feature
+  // breakdown so we can see exactly where the data pipeline is thin.
+
+  const featureCoverage: Record<string, { real: number; missing: number; coverageRate: number | null }> = {};
+  const physicalCoverage = { reach: { real: 0, missing: 0 }, stance: { real: 0, missing: 0 }, dob: { real: 0, missing: 0 }, daysSinceLastFight: { real: 0, missing: 0 } };
+  const totalFighterRows = rows.length * 2; // 2 fighters per fight
+
+  for (const key of TRACKED_STATS) {
+    featureCoverage[key] = { real: 0, missing: 0, coverageRate: null };
+  }
+  for (const row of rows) {
+    const fight = fightLookup.get(row.fightId);
+    if (!fight) continue;
+    for (const side of ["fighterA", "fighterB"] as const) {
+      const fighter = fight.fighters[side];
+      // Aggregate stats — we need the as-of features again. They aren't on the row,
+      // so recompute lightly: read the missingDataFlags string to infer.
+      for (const key of TRACKED_STATS) {
+        if (row.missingDataFlags.includes(`${side}.${key} missing`)) {
+          featureCoverage[key].missing++;
+        } else {
+          featureCoverage[key].real++;
+        }
+      }
+      // Physicals come from the fighter profile, not the as-of computation
+      if (fighter.reach) physicalCoverage.reach.real++; else physicalCoverage.reach.missing++;
+      if (fighter.stance) physicalCoverage.stance.real++; else physicalCoverage.stance.missing++;
+      if (fighter.dob) physicalCoverage.dob.real++; else physicalCoverage.dob.missing++;
+      // days-since-last-fight: derive from history
+      const lastFightDate = fighter.fightHistory?.[0]?.date ?? null;
+      if (lastFightDate) physicalCoverage.daysSinceLastFight.real++; else physicalCoverage.daysSinceLastFight.missing++;
+    }
+  }
+  for (const key of Object.keys(featureCoverage)) {
+    const fc = featureCoverage[key];
+    const total = fc.real + fc.missing;
+    fc.coverageRate = total > 0 ? Math.round((fc.real / total) * 100) : null;
+  }
+
+  // Opponent quality is currently always derived/manual — record-keeping
+  const opponentQualityNote = "opponentQuality is a manual override (when present) or model-defaulted; not part of the leakage-safe as-of computation in this pipeline";
+
+  writeJsonAtomic(path.join(outDir, "feature-coverage.json"), {
+    generatedAt: new Date().toISOString(),
+    totalFighterRows,
+    aggregateStats: featureCoverage,
+    physicals: Object.fromEntries(
+      Object.entries(physicalCoverage).map(([k, v]) => {
+        const total = v.real + v.missing;
+        return [k, { ...v, coverageRate: total > 0 ? Math.round((v.real / total) * 100) : null }];
+      }),
+    ),
+    notes: {
+      missing: "Model falls back to UFC-average defaults when a stat is missing",
+      opponentQuality: opponentQualityNote,
+    },
+  });
+  console.log("Wrote: data/generated/backtests/feature-coverage.json");
+
+  // ─── Event-by-event performance ───────────────────────────────────────────
+
+  const byEvent = new Map<string, BacktestRow[]>();
+  for (const row of rows) {
+    const list = byEvent.get(row.event) ?? [];
+    list.push(row);
+    byEvent.set(row.event, list);
+  }
+
+  const eventPerformance = Array.from(byEvent.entries()).map(([eventName, eventRows]) => {
+    const scored = eventRows.filter((r) => r.score.correct !== null);
+    const correct = scored.filter((r) => r.score.correct === true).length;
+    const methodScored = eventRows.filter((r) => r.score.methodCorrect !== null);
+    const methodCorrect = methodScored.filter((r) => r.score.methodCorrect === true).length;
+    const brierTotal = eventRows.reduce((sum, r) => sum + (r.score.brierContribution ?? 0), 0);
+    const brierCount = eventRows.filter((r) => r.score.brierContribution !== null).length;
+    return {
+      event: eventName,
+      asOfDate: eventRows[0]?.asOfDate ?? null,
+      totalFights: eventRows.length,
+      scoredFights: scored.length,
+      winnerAccuracy: scored.length > 0 ? Math.round((correct / scored.length) * 100) : null,
+      methodAccuracy: methodScored.length > 0 ? Math.round((methodCorrect / methodScored.length) * 100) : null,
+      brierScore: brierCount > 0 ? Number((brierTotal / brierCount).toFixed(3)) : null,
+      outcomeSourceMix: {
+        predictionFile: eventRows.filter((r) => outcomeSourceById.get(r.fightId) === "prediction-file").length,
+        fightDetail: eventRows.filter((r) => outcomeSourceById.get(r.fightId) === "fight-detail").length,
+      },
+    };
+  });
+
+  writeJsonAtomic(path.join(outDir, "event-performance.json"), {
+    generatedAt: new Date().toISOString(),
+    modelVersion: BACKTEST_MODEL_VERSION,
+    eventCount: eventPerformance.length,
+    events: eventPerformance,
+  });
+  console.log("Wrote: data/generated/backtests/event-performance.json");
+
+  // ─── Skip report ──────────────────────────────────────────────────────────
+
+  writeJsonAtomic(path.join(outDir, "skip-report.json"), {
+    generatedAt: new Date().toISOString(),
+    skippedCount: skipReport.length,
+    skipped: skipReport,
+  });
+  console.log("Wrote: data/generated/backtests/skip-report.json");
+
   // ─── Print summary ────────────────────────────────────────────────────────
 
   console.log("\n=== BACKTEST SUMMARY ===\n");
@@ -502,6 +739,20 @@ async function main() {
     const actual = b.count > 0 ? Math.round(b.actualWinRate * 100) : null;
     console.log(`    ${b.rangeLabel}: predicted ${Math.round(b.predictedMidpoint * 100)}% | actual ${actual ?? "n/a"}% | n=${b.count}`);
   }
+
+  console.log("\n  Event-by-event:");
+  for (const ev of eventPerformance) {
+    console.log(
+      `    ${ev.event} (${ev.asOfDate}): ${ev.winnerAccuracy ?? "n/a"}% on ${ev.scoredFights}/${ev.totalFights}` +
+      ` · brier ${ev.brierScore ?? "n/a"} · method ${ev.methodAccuracy ?? "n/a"}%`,
+    );
+  }
+
+  const sources = Array.from(outcomeSourceById.values());
+  const fromPredFile = sources.filter((s) => s === "prediction-file").length;
+  const fromDetail = sources.filter((s) => s === "fight-detail").length;
+  console.log(`\n  Outcome source: ${fromPredFile} from prediction files · ${fromDetail} from UFCStats fight details`);
+  console.log(`  Skipped fights: ${skipReport.length}`);
 
   console.log("\n  Sample predictions:");
   for (const row of rows.slice(0, 5)) {

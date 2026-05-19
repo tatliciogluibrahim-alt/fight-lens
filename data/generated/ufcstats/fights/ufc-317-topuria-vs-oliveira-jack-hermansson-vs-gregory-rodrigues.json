@@ -1,0 +1,404 @@
+{
+  "id": "958522de54ccc536",
+  "url": "http://www.ufcstats.com/fight-details/958522de54ccc536",
+  "event": {
+    "id": "66766984842c13dc",
+    "name": "UFC 317: Topuria vs. Oliveira",
+    "url": "http://www.ufcstats.com/event-details/66766984842c13dc"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0a1942069c9ad6b6",
+      "name": "Jack Hermansson",
+      "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6",
+      "nickname": "The Joker",
+      "result": "L"
+    },
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": "Robocop",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:21",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 63,
+          "raw": "18 of 63"
+        },
+        "significantStrikePercent": 28,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 63,
+          "raw": "18 of 63"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 63,
+            "raw": "18 of 63"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 63,
+            "raw": "18 of 63"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 24,
+          "attempted": 49,
+          "raw": "24 of 49"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 54,
+          "raw": "30 of 54"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 63,
+          "raw": "18 of 63"
+        },
+        "significantStrikePercent": 28,
+        "head": {
+          "landed": 11,
+          "attempted": 54,
+          "raw": "11 of 54"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 63,
+          "raw": "18 of 63"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 24,
+            "attempted": 49,
+            "raw": "24 of 49"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 54,
+            "raw": "30 of 54"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 63,
+            "raw": "18 of 63"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 11,
+            "attempted": 54,
+            "raw": "11 of 54"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 63,
+            "raw": "18 of 63"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/958522de54ccc536",
+    "fetchedAt": "2026-05-19T13:32:19.777Z"
+  }
+}

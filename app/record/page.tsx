@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
-import { getAllPredictions, getAccuracyMetrics } from "@/lib/accuracy";
+import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracyMetrics } from "@/lib/accuracy";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 export const metadata: Metadata = {
@@ -151,11 +151,15 @@ function groupByEvent(records: PredictionRecord[]): Map<string, PredictionRecord
 
 export default function RecordPage() {
   const metrics = getAccuracyMetrics();
-  const predictions = getAllPredictions();
-  const byEvent = groupByEvent(predictions);
+  // Public Model Record shows LOCKED calls only — pre-fight predictions
+  // committed before the bell. Historical backtest reconstructions live
+  // below in a separate, clearly labeled section.
+  const lockedCalls = getLockedPredictions();
+  const backtestReconstructions = getHistoricalBacktestReconstructions();
+  const byEvent = groupByEvent(lockedCalls);
 
-  const resolvedCount = predictions.filter((r) => r.outcome !== null).length;
-  const pendingCount = predictions.filter((r) => r.outcome === null).length;
+  const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
+  const pendingCount = lockedCalls.filter((r) => r.outcome === null).length;
 
   return (
     <>
@@ -181,7 +185,7 @@ export default function RecordPage() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="rounded-full border border-line bg-surface/70 px-4 py-2 text-xs font-medium text-muted">
-                {predictions.length} calls
+                {lockedCalls.length} calls
               </span>
               <span className="rounded-full border border-accent/30 bg-accent/[0.08] px-4 py-2 text-xs font-medium text-accent">
                 {resolvedCount} scored
@@ -194,8 +198,8 @@ export default function RecordPage() {
             </div>
 
             <p className="mt-5 max-w-2xl text-xs leading-6 text-subtle">
-              Early sample. The model improved after defensive opponent totals were added to the
-              data pipeline, but the record needs more scored fights before any grade unlocks.
+              Model Record tracks calls logged before fights. Historical backtests are separate
+              validation runs using only pre-fight data — they appear in a dedicated section below.
             </p>
           </div>
         </section>
@@ -227,6 +231,34 @@ export default function RecordPage() {
             signal-based forecast · not a guarantee · outcome-v0.2
           </p>
         </section>
+
+        {/* Historical backtest — clearly separated from the public Model Record */}
+        {backtestReconstructions.length > 0 && (
+          <section className="section-shell py-8 md:py-12">
+            <div className="rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
+              <p className="mono-label">historical backtest</p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
+                separate validation runs.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
+                These are retroactive model runs on completed fights using only data that
+                was available before each fight. They are <span className="text-foreground">not</span> the
+                same as logged calls — they were never publicly published before the bell, so they
+                do not count toward the public Model Record above.
+              </p>
+
+              <div className="mt-5 overflow-hidden rounded-xl border border-line bg-background/30">
+                {backtestReconstructions.map((record) => (
+                  <PredictionRow key={record.fightId} record={record} />
+                ))}
+              </div>
+
+              <p className="mt-4 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
+                For the full historical backtest (n=76 across 6 events), see the methodology page.
+              </p>
+            </div>
+          </section>
+        )}
       </main>
       <DisclaimerFooter />
     </>

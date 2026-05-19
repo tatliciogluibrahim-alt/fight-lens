@@ -1,0 +1,764 @@
+{
+  "id": "0f20c1d7c44fa5fe",
+  "url": "http://www.ufcstats.com/fight-details/0f20c1d7c44fa5fe",
+  "event": {
+    "id": "0f7210aa8d61af8d",
+    "name": "UFC Fight Night: Moreno vs. Erceg",
+    "url": "http://www.ufcstats.com/event-details/0f7210aa8d61af8d"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fe2babf95de24fb1",
+      "name": "Raul Rosas Jr.",
+      "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1",
+      "nickname": "El Nino Problema",
+      "result": "W"
+    },
+    {
+      "id": "37098a6e6c27fb66",
+      "name": "Vince Morales",
+      "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66",
+      "nickname": "Vandetta",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fe2babf95de24fb1",
+        "name": "Raul Rosas Jr.",
+        "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+      },
+      {
+        "id": "37098a6e6c27fb66",
+        "name": "Vince Morales",
+        "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 39,
+          "raw": "20 of 39"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 46,
+          "raw": "26 of 46"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "9:38",
+        "controlSeconds": 578
+      },
+      {
+        "fighter": {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 53,
+          "raw": "39 of 53"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "2:14",
+        "controlSeconds": 134
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 22,
+            "raw": "15 of 22"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:33",
+          "controlSeconds": 213
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:28",
+          "controlSeconds": 208
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 17,
+            "raw": "11 of 17"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 23,
+            "raw": "17 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:37",
+          "controlSeconds": 157
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 18,
+            "raw": "14 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fe2babf95de24fb1",
+        "name": "Raul Rosas Jr.",
+        "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+      },
+      {
+        "id": "37098a6e6c27fb66",
+        "name": "Vince Morales",
+        "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 39,
+          "raw": "20 of 39"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 12,
+          "attempted": 30,
+          "raw": "12 of 30"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 34,
+          "raw": "16 of 34"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 15,
+          "attempted": 28,
+          "raw": "15 of 28"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 30,
+          "raw": "16 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 17,
+            "raw": "11 of 17"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 17,
+            "raw": "11 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+        },
+        {
+          "id": "37098a6e6c27fb66",
+          "name": "Vince Morales",
+          "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fe2babf95de24fb1",
+            "name": "Raul Rosas Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/fe2babf95de24fb1"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "37098a6e6c27fb66",
+            "name": "Vince Morales",
+            "url": "http://www.ufcstats.com/fighter-details/37098a6e6c27fb66"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/0f20c1d7c44fa5fe",
+    "fetchedAt": "2026-05-19T13:29:43.551Z"
+  }
+}

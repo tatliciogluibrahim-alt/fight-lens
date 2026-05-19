@@ -1,0 +1,404 @@
+{
+  "id": "c8fe721ddc70ecdf",
+  "url": "http://www.ufcstats.com/fight-details/c8fe721ddc70ecdf",
+  "event": {
+    "id": "edfe95e3c33a4bf8",
+    "name": "DWCS 9.2",
+    "url": "http://www.ufcstats.com/event-details/edfe95e3c33a4bf8"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f295d50c56339ab6",
+      "name": "Brandon Holmes",
+      "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "8ebc3a8da015d70c",
+      "name": "Cam Rowston",
+      "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Blake Grice",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f295d50c56339ab6",
+        "name": "Brandon Holmes",
+        "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+      },
+      {
+        "id": "8ebc3a8da015d70c",
+        "name": "Cam Rowston",
+        "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f295d50c56339ab6",
+          "name": "Brandon Holmes",
+          "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 31,
+          "raw": "14 of 31"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 31,
+          "raw": "14 of 31"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "8ebc3a8da015d70c",
+          "name": "Cam Rowston",
+          "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 52,
+          "raw": "26 of 52"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 55,
+          "raw": "29 of 55"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:52",
+        "controlSeconds": 52
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f295d50c56339ab6",
+          "name": "Brandon Holmes",
+          "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+        },
+        {
+          "id": "8ebc3a8da015d70c",
+          "name": "Cam Rowston",
+          "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f295d50c56339ab6",
+            "name": "Brandon Holmes",
+            "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "8ebc3a8da015d70c",
+            "name": "Cam Rowston",
+            "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 52,
+            "raw": "26 of 52"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:52",
+          "controlSeconds": 52
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f295d50c56339ab6",
+        "name": "Brandon Holmes",
+        "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+      },
+      {
+        "id": "8ebc3a8da015d70c",
+        "name": "Cam Rowston",
+        "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f295d50c56339ab6",
+          "name": "Brandon Holmes",
+          "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 31,
+          "raw": "14 of 31"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 2,
+          "attempted": 16,
+          "raw": "2 of 16"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 31,
+          "raw": "14 of 31"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "8ebc3a8da015d70c",
+          "name": "Cam Rowston",
+          "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 52,
+          "raw": "26 of 52"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 19,
+          "attempted": 43,
+          "raw": "19 of 43"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 41,
+          "raw": "19 of 41"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f295d50c56339ab6",
+          "name": "Brandon Holmes",
+          "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+        },
+        {
+          "id": "8ebc3a8da015d70c",
+          "name": "Cam Rowston",
+          "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f295d50c56339ab6",
+            "name": "Brandon Holmes",
+            "url": "http://www.ufcstats.com/fighter-details/f295d50c56339ab6"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 2,
+            "attempted": 16,
+            "raw": "2 of 16"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8ebc3a8da015d70c",
+            "name": "Cam Rowston",
+            "url": "http://www.ufcstats.com/fighter-details/8ebc3a8da015d70c"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 52,
+            "raw": "26 of 52"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 19,
+            "attempted": 43,
+            "raw": "19 of 43"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 41,
+            "raw": "19 of 41"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/c8fe721ddc70ecdf",
+    "fetchedAt": "2026-05-19T13:29:35.550Z"
+  }
+}

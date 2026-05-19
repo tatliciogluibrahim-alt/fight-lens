@@ -1,0 +1,404 @@
+{
+  "id": "43bbaf06603b0f0c",
+  "url": "http://www.ufcstats.com/fight-details/43bbaf06603b0f0c",
+  "event": {
+    "id": "80dbeb1dd5b53e64",
+    "name": "UFC Fight Night: Adesanya vs. Imavov",
+    "url": "http://www.ufcstats.com/event-details/80dbeb1dd5b53e64"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6747ccd6d1acd266",
+      "name": "Shamil Gaziev",
+      "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "764d39074a352e33",
+      "name": "Thomas Petersen",
+      "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33",
+      "nickname": "The Train",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:12",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6747ccd6d1acd266",
+        "name": "Shamil Gaziev",
+        "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+      },
+      {
+        "id": "764d39074a352e33",
+        "name": "Thomas Petersen",
+        "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      },
+      {
+        "fighter": {
+          "id": "764d39074a352e33",
+          "name": "Thomas Petersen",
+          "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 34,
+          "raw": "19 of 34"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 35,
+          "raw": "19 of 35"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        {
+          "id": "764d39074a352e33",
+          "name": "Thomas Petersen",
+          "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "764d39074a352e33",
+            "name": "Thomas Petersen",
+            "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6747ccd6d1acd266",
+        "name": "Shamil Gaziev",
+        "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+      },
+      {
+        "id": "764d39074a352e33",
+        "name": "Thomas Petersen",
+        "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 9,
+          "attempted": 27,
+          "raw": "9 of 27"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 30,
+          "raw": "13 of 30"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "764d39074a352e33",
+          "name": "Thomas Petersen",
+          "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 34,
+          "raw": "19 of 34"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 4,
+          "attempted": 18,
+          "raw": "4 of 18"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 31,
+          "raw": "18 of 31"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        {
+          "id": "764d39074a352e33",
+          "name": "Thomas Petersen",
+          "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "764d39074a352e33",
+            "name": "Thomas Petersen",
+            "url": "http://www.ufcstats.com/fighter-details/764d39074a352e33"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 4,
+            "attempted": 18,
+            "raw": "4 of 18"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 31,
+            "raw": "18 of 31"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/43bbaf06603b0f0c",
+    "fetchedAt": "2026-05-19T13:29:31.543Z"
+  }
+}

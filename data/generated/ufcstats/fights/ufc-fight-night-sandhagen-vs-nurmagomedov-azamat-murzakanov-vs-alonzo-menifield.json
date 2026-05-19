@@ -1,0 +1,584 @@
+{
+  "id": "fbbb703581440496",
+  "url": "http://www.ufcstats.com/fight-details/fbbb703581440496",
+  "event": {
+    "id": "fe435e440b5de0ff",
+    "name": "UFC Fight Night: Sandhagen vs. Nurmagomedov",
+    "url": "http://www.ufcstats.com/event-details/fe435e440b5de0ff"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e90a2f22417af68e",
+      "name": "Azamat Murzakanov",
+      "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e",
+      "nickname": "The Professional",
+      "result": "W"
+    },
+    {
+      "id": "a495f599e787614f",
+      "name": "Alonzo Menifield",
+      "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f",
+      "nickname": "Atomic",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e90a2f22417af68e",
+        "name": "Azamat Murzakanov",
+        "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+      },
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 85,
+          "raw": "45 of 85"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 88,
+          "raw": "48 of 88"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:44",
+        "controlSeconds": 44
+      },
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 74,
+          "raw": "15 of 74"
+        },
+        "significantStrikePercent": 20,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 80,
+          "raw": "19 of 80"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:51",
+        "controlSeconds": 51
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 43,
+            "raw": "25 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 35,
+            "raw": "10 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 42,
+            "raw": "7 of 42"
+          },
+          "significantStrikePercent": 16,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 45,
+            "raw": "9 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:39",
+          "controlSeconds": 39
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e90a2f22417af68e",
+        "name": "Azamat Murzakanov",
+        "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+      },
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 85,
+          "raw": "45 of 85"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 34,
+          "attempted": 69,
+          "raw": "34 of 69"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 43,
+          "attempted": 82,
+          "raw": "43 of 82"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 74,
+          "raw": "15 of 74"
+        },
+        "significantStrikePercent": 20,
+        "head": {
+          "landed": 14,
+          "attempted": 73,
+          "raw": "14 of 73"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 73,
+          "raw": "15 of 73"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 42,
+            "raw": "21 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 42,
+            "raw": "7 of 42"
+          },
+          "significantStrikePercent": 16,
+          "head": {
+            "landed": 6,
+            "attempted": 41,
+            "raw": "6 of 41"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 41,
+            "raw": "7 of 41"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/fbbb703581440496",
+    "fetchedAt": "2026-05-19T13:31:23.557Z"
+  }
+}

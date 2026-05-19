@@ -1,0 +1,584 @@
+{
+  "id": "bca5d01f8775f852",
+  "url": "http://www.ufcstats.com/fight-details/bca5d01f8775f852",
+  "event": {
+    "id": "f3743d8ef5dde970",
+    "name": "UFC 303: Pereira vs. Prochazka 2",
+    "url": "http://www.ufcstats.com/event-details/f3743d8ef5dde970"
+  },
+  "title": "UFC Light Heavyweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e5549c82bfb5582d",
+      "name": "Alex Pereira",
+      "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d",
+      "nickname": "Poatan",
+      "result": "W"
+    },
+    {
+      "id": "009341ed974bad72",
+      "name": "Jiri Prochazka",
+      "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:13",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e5549c82bfb5582d",
+        "name": "Alex Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+      },
+      {
+        "id": "009341ed974bad72",
+        "name": "Jiri Prochazka",
+        "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 50,
+          "raw": "38 of 50"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 49,
+          "attempted": 61,
+          "raw": "49 of 61"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:11",
+        "controlSeconds": 71
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 37,
+            "raw": "27 of 37"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 48,
+            "raw": "38 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "009341ed974bad72",
+            "name": "Jiri Prochazka",
+            "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:11",
+          "controlSeconds": 71
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "significantStrikePercent": 84,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "009341ed974bad72",
+            "name": "Jiri Prochazka",
+            "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e5549c82bfb5582d",
+        "name": "Alex Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+      },
+      {
+        "id": "009341ed974bad72",
+        "name": "Jiri Prochazka",
+        "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 50,
+          "raw": "38 of 50"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 21,
+          "attempted": 32,
+          "raw": "21 of 32"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        }
+      },
+      {
+        "fighter": {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "head": {
+          "landed": 4,
+          "attempted": 20,
+          "raw": "4 of 20"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 37,
+            "raw": "27 of 37"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "009341ed974bad72",
+            "name": "Jiri Prochazka",
+            "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 4,
+            "attempted": 20,
+            "raw": "4 of 20"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "009341ed974bad72",
+          "name": "Jiri Prochazka",
+          "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "significantStrikePercent": 84,
+          "head": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          }
+        },
+        {
+          "fighter": {
+            "id": "009341ed974bad72",
+            "name": "Jiri Prochazka",
+            "url": "http://www.ufcstats.com/fighter-details/009341ed974bad72"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/bca5d01f8775f852",
+    "fetchedAt": "2026-05-19T13:31:21.316Z"
+  }
+}

@@ -463,6 +463,12 @@ function contextSignalScore(): ContextSignalScore {
 }
 
 function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, pressureB: FighterMetricScore, dataConfidence: string) {
+  // IMPORTANT: this summary describes style pressure only — never the model's
+  // winner call. The fight-shape model is a separate read from the outcome
+  // model; if we let it name a "leader" by style pressure, that can disagree
+  // with the model call on the same page (e.g. higher-pressure fighter is not
+  // the win-probability favorite). The QA-observed Chimaev/Strickland
+  // contradiction came from that. Phrase this as a style note, not a verdict.
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
 
@@ -470,11 +476,20 @@ function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, press
     return null;
   }
 
-  const leader = (pressureA.score ?? 0) >= (pressureB.score ?? 0) ? pressureA : pressureB;
-  const other = leader.fighterId === fighterA.id ? fighterB : fighterA;
-  const factorName = topFactor(leader.factors)?.label.toLowerCase() ?? "style pressure";
+  const factorA = topFactor(pressureA.factors)?.label.toLowerCase() ?? null;
+  const factorB = topFactor(pressureB.factors)?.label.toLowerCase() ?? null;
 
-  return `${leader.fighterName} shows the clearest ${factorName} signal in the current model. ${other.name} still has to be read through the same pressure, form, and sustainability lenses. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+  // Both sides described neutrally. No "leader" framing.
+  if (factorA && factorB) {
+    return `${fighterA.name} brings ${factorA}; ${fighterB.name} brings ${factorB}. This is a style-pressure read — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+  }
+  if (factorA) {
+    return `${fighterA.name} brings ${factorA}. Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+  }
+  if (factorB) {
+    return `${fighterB.name} brings ${factorB}. Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+  }
+  return `Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
 }
 
 function warningsFor(fight: SourcedFight, roundA: RoundSustainabilityScore, roundB: RoundSustainabilityScore) {

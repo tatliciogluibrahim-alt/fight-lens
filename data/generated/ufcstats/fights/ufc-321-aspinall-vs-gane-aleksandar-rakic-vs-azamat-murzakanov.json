@@ -1,0 +1,404 @@
+{
+  "id": "ef12d2aaaadaf6d0",
+  "url": "http://www.ufcstats.com/fight-details/ef12d2aaaadaf6d0",
+  "event": {
+    "id": "7956f026e2672c47",
+    "name": "UFC 321: Aspinall vs. Gane",
+    "url": "http://www.ufcstats.com/event-details/7956f026e2672c47"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "333b9e5c723ac873",
+      "name": "Aleksandar Rakic",
+      "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873",
+      "nickname": "Rocket",
+      "result": "L"
+    },
+    {
+      "id": "e90a2f22417af68e",
+      "name": "Azamat Murzakanov",
+      "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e",
+      "nickname": "The Professional",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:11",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rich Mitchell",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "333b9e5c723ac873",
+        "name": "Aleksandar Rakic",
+        "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+      },
+      {
+        "id": "e90a2f22417af68e",
+        "name": "Azamat Murzakanov",
+        "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "333b9e5c723ac873",
+          "name": "Aleksandar Rakic",
+          "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:36",
+        "controlSeconds": 36
+      },
+      {
+        "fighter": {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "333b9e5c723ac873",
+          "name": "Aleksandar Rakic",
+          "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+        },
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "333b9e5c723ac873",
+            "name": "Aleksandar Rakic",
+            "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "333b9e5c723ac873",
+        "name": "Aleksandar Rakic",
+        "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+      },
+      {
+        "id": "e90a2f22417af68e",
+        "name": "Azamat Murzakanov",
+        "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "333b9e5c723ac873",
+          "name": "Aleksandar Rakic",
+          "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "333b9e5c723ac873",
+          "name": "Aleksandar Rakic",
+          "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+        },
+        {
+          "id": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "333b9e5c723ac873",
+            "name": "Aleksandar Rakic",
+            "url": "http://www.ufcstats.com/fighter-details/333b9e5c723ac873"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e90a2f22417af68e",
+            "name": "Azamat Murzakanov",
+            "url": "http://www.ufcstats.com/fighter-details/e90a2f22417af68e"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ef12d2aaaadaf6d0",
+    "fetchedAt": "2026-05-19T13:31:22.459Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "5531317352862978",
+  "url": "http://www.ufcstats.com/fight-details/5531317352862978",
+  "event": {
+    "id": "89a407032911e27e",
+    "name": "UFC Fight Night: Holloway vs. The Korean Zombie",
+    "url": "http://www.ufcstats.com/event-details/89a407032911e27e"
+  },
+  "title": "Women's Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "669970f7feba8ecd",
+      "name": "Erin Blanchfield",
+      "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd",
+      "nickname": "Cold Blooded",
+      "result": "W"
+    },
+    {
+      "id": "f7467152fd9f18a2",
+      "name": "Taila Santos",
+      "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Thomas Fan",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "669970f7feba8ecd",
+        "name": "Erin Blanchfield",
+        "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+      },
+      {
+        "id": "f7467152fd9f18a2",
+        "name": "Taila Santos",
+        "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 128,
+          "raw": "61 of 128"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 119,
+          "attempted": 210,
+          "raw": "119 of 210"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 14,
+          "raw": "0 of 14"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "8:08",
+        "controlSeconds": 488
+      },
+      {
+        "fighter": {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 151,
+          "raw": "55 of 151"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 96,
+          "attempted": 202,
+          "raw": "96 of 202"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 69,
+            "raw": "36 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 71,
+            "raw": "25 of 71"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 80,
+            "raw": "31 of 80"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 58,
+            "raw": "34 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:01",
+          "controlSeconds": 241
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 48,
+            "raw": "32 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 49,
+            "attempted": 83,
+            "raw": "49 of 83"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:45",
+          "controlSeconds": 165
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 74,
+            "raw": "33 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "669970f7feba8ecd",
+        "name": "Erin Blanchfield",
+        "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+      },
+      {
+        "id": "f7467152fd9f18a2",
+        "name": "Taila Santos",
+        "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 128,
+          "raw": "61 of 128"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 37,
+          "attempted": 99,
+          "raw": "37 of 99"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 23,
+          "raw": "18 of 23"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 43,
+          "attempted": 102,
+          "raw": "43 of 102"
+        },
+        "clinch": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 151,
+          "raw": "55 of 151"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 28,
+          "attempted": 118,
+          "raw": "28 of 118"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        },
+        "leg": {
+          "landed": 18,
+          "attempted": 18,
+          "raw": "18 of 18"
+        },
+        "distance": {
+          "landed": 46,
+          "attempted": 133,
+          "raw": "46 of 133"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 18,
+          "raw": "9 of 18"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 16,
+            "attempted": 45,
+            "raw": "16 of 45"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 71,
+            "raw": "25 of 71"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 13,
+            "attempted": 56,
+            "raw": "13 of 56"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 63,
+            "raw": "21 of 63"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+        },
+        {
+          "id": "f7467152fd9f18a2",
+          "name": "Taila Santos",
+          "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "669970f7feba8ecd",
+            "name": "Erin Blanchfield",
+            "url": "http://www.ufcstats.com/fighter-details/669970f7feba8ecd"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 18,
+            "attempted": 45,
+            "raw": "18 of 45"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 44,
+            "raw": "18 of 44"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f7467152fd9f18a2",
+            "name": "Taila Santos",
+            "url": "http://www.ufcstats.com/fighter-details/f7467152fd9f18a2"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 10,
+            "attempted": 46,
+            "raw": "10 of 46"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 51,
+            "raw": "17 of 51"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5531317352862978",
+    "fetchedAt": "2026-05-19T13:36:18.753Z"
+  }
+}

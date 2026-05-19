@@ -1,0 +1,404 @@
+{
+  "id": "93ca562453f65b8d",
+  "url": "http://www.ufcstats.com/fight-details/93ca562453f65b8d",
+  "event": {
+    "id": "bc0f994de0521926",
+    "name": "UFC Fight Night: Royval vs. Kape",
+    "url": "http://www.ufcstats.com/event-details/bc0f994de0521926"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "20bccc9bb4ceb23e",
+      "name": "Melquizael Costa",
+      "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e",
+      "nickname": "The Dalmatian",
+      "result": "W"
+    },
+    {
+      "id": "5b03b61f9d90125e",
+      "name": "Morgan Charriere",
+      "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e",
+      "nickname": "The Last Pirate",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:14",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Eric McMahon",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "20bccc9bb4ceb23e",
+        "name": "Melquizael Costa",
+        "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+      },
+      {
+        "id": "5b03b61f9d90125e",
+        "name": "Morgan Charriere",
+        "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "5b03b61f9d90125e",
+          "name": "Morgan Charriere",
+          "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        {
+          "id": "5b03b61f9d90125e",
+          "name": "Morgan Charriere",
+          "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "5b03b61f9d90125e",
+            "name": "Morgan Charriere",
+            "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "20bccc9bb4ceb23e",
+        "name": "Melquizael Costa",
+        "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+      },
+      {
+        "id": "5b03b61f9d90125e",
+        "name": "Morgan Charriere",
+        "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5b03b61f9d90125e",
+          "name": "Morgan Charriere",
+          "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        {
+          "id": "5b03b61f9d90125e",
+          "name": "Morgan Charriere",
+          "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5b03b61f9d90125e",
+            "name": "Morgan Charriere",
+            "url": "http://www.ufcstats.com/fighter-details/5b03b61f9d90125e"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/93ca562453f65b8d",
+    "fetchedAt": "2026-05-19T13:30:23.945Z"
+  }
+}

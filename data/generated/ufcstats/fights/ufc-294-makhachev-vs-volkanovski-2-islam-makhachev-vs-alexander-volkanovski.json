@@ -1,0 +1,404 @@
+{
+  "id": "0ea435ddf02deb60",
+  "url": "http://www.ufcstats.com/fight-details/0ea435ddf02deb60",
+  "event": {
+    "id": "13a0fb8fbdafb54f",
+    "name": "UFC 294: Makhachev vs. Volkanovski 2",
+    "url": "http://www.ufcstats.com/event-details/13a0fb8fbdafb54f"
+  },
+  "title": "UFC Lightweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "275aca31f61ba28c",
+      "name": "Islam Makhachev",
+      "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e1248941344b3288",
+      "name": "Alexander Volkanovski",
+      "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288",
+      "nickname": "The Great",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:06",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "275aca31f61ba28c",
+        "name": "Islam Makhachev",
+        "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+      },
+      {
+        "id": "e1248941344b3288",
+        "name": "Alexander Volkanovski",
+        "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "275aca31f61ba28c",
+          "name": "Islam Makhachev",
+          "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 29,
+          "raw": "24 of 29"
+        },
+        "significantStrikePercent": 82,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 46,
+          "raw": "39 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:19",
+        "controlSeconds": 19
+      },
+      {
+        "fighter": {
+          "id": "e1248941344b3288",
+          "name": "Alexander Volkanovski",
+          "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 18,
+          "raw": "11 of 18"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:49",
+        "controlSeconds": 49
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "275aca31f61ba28c",
+          "name": "Islam Makhachev",
+          "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+        },
+        {
+          "id": "e1248941344b3288",
+          "name": "Alexander Volkanovski",
+          "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "275aca31f61ba28c",
+            "name": "Islam Makhachev",
+            "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 29,
+            "raw": "24 of 29"
+          },
+          "significantStrikePercent": 82,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 46,
+            "raw": "39 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "e1248941344b3288",
+            "name": "Alexander Volkanovski",
+            "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:49",
+          "controlSeconds": 49
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "275aca31f61ba28c",
+        "name": "Islam Makhachev",
+        "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+      },
+      {
+        "id": "e1248941344b3288",
+        "name": "Alexander Volkanovski",
+        "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "275aca31f61ba28c",
+          "name": "Islam Makhachev",
+          "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 29,
+          "raw": "24 of 29"
+        },
+        "significantStrikePercent": 82,
+        "head": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 11,
+          "raw": "9 of 11"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e1248941344b3288",
+          "name": "Alexander Volkanovski",
+          "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "275aca31f61ba28c",
+          "name": "Islam Makhachev",
+          "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+        },
+        {
+          "id": "e1248941344b3288",
+          "name": "Alexander Volkanovski",
+          "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "275aca31f61ba28c",
+            "name": "Islam Makhachev",
+            "url": "http://www.ufcstats.com/fighter-details/275aca31f61ba28c"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 29,
+            "raw": "24 of 29"
+          },
+          "significantStrikePercent": 82,
+          "head": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e1248941344b3288",
+            "name": "Alexander Volkanovski",
+            "url": "http://www.ufcstats.com/fighter-details/e1248941344b3288"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/0ea435ddf02deb60",
+    "fetchedAt": "2026-05-19T13:36:07.593Z"
+  }
+}

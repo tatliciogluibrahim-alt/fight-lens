@@ -1,0 +1,764 @@
+{
+  "id": "9c8d5dbd8905a715",
+  "url": "http://www.ufcstats.com/fight-details/9c8d5dbd8905a715",
+  "event": {
+    "id": "15ec018d144710db",
+    "name": "UFC 326: Holloway vs. Oliveira 2",
+    "url": "http://www.ufcstats.com/event-details/15ec018d144710db"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "ad5cb64af10fc946",
+      "name": "Donte Johnson",
+      "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946",
+      "nickname": "Lock Jaw",
+      "result": "W"
+    },
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "ad5cb64af10fc946",
+        "name": "Donte Johnson",
+        "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 106,
+          "raw": "45 of 106"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 84,
+          "attempted": 146,
+          "raw": "84 of 146"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:32",
+        "controlSeconds": 212
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 83,
+          "raw": "31 of 83"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 88,
+          "raw": "34 of 88"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "takedownPercent": 28,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:22",
+        "controlSeconds": 262
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 44,
+            "raw": "29 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:21",
+          "controlSeconds": 201
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 46,
+            "raw": "28 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "3:01",
+          "controlSeconds": 181
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 51,
+            "raw": "22 of 51"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 56,
+            "raw": "27 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:31",
+          "controlSeconds": 31
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "ad5cb64af10fc946",
+        "name": "Donte Johnson",
+        "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 106,
+          "raw": "45 of 106"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 35,
+          "attempted": 92,
+          "raw": "35 of 92"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 35,
+          "attempted": 92,
+          "raw": "35 of 92"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 83,
+          "raw": "31 of 83"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 19,
+          "attempted": 70,
+          "raw": "19 of 70"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 82,
+          "raw": "31 of 82"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 12,
+            "attempted": 28,
+            "raw": "12 of 28"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ad5cb64af10fc946",
+          "name": "Donte Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ad5cb64af10fc946",
+            "name": "Donte Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/ad5cb64af10fc946"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 51,
+            "raw": "22 of 51"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 15,
+            "attempted": 41,
+            "raw": "15 of 41"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 51,
+            "raw": "22 of 51"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 14,
+            "attempted": 43,
+            "raw": "14 of 43"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/9c8d5dbd8905a715",
+    "fetchedAt": "2026-05-19T13:30:42.831Z"
+  }
+}

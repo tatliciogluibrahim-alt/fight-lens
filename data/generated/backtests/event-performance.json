@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-05-19T14:03:34.936Z",
+  "modelVersion": "outcome-v0.2",
+  "eventCount": 6,
+  "events": [
+    {
+      "event": "UFC 322: Della Maddalena vs. Makhachev",
+      "asOfDate": "2025-11-15",
+      "totalFights": 14,
+      "scoredFights": 14,
+      "winnerAccuracy": 57,
+      "methodAccuracy": 57,
+      "brierScore": 0.289,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 14
+      }
+    },
+    {
+      "event": "UFC 326: Holloway vs. Oliveira 2",
+      "asOfDate": "2026-03-07",
+      "totalFights": 12,
+      "scoredFights": 12,
+      "winnerAccuracy": 67,
+      "methodAccuracy": 58,
+      "brierScore": 0.228,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 12
+      }
+    },
+    {
+      "event": "UFC 327: Prochazka vs. Ulberg",
+      "asOfDate": "2026-04-11",
+      "totalFights": 11,
+      "scoredFights": 11,
+      "winnerAccuracy": 55,
+      "methodAccuracy": 36,
+      "brierScore": 0.229,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 11
+      }
+    },
+    {
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 38,
+      "brierScore": 0.224,
+      "outcomeSourceMix": {
+        "predictionFile": 13,
+        "fightDetail": 0
+      }
+    },
+    {
+      "event": "UFC Fight Night: Allen vs. Costa",
+      "asOfDate": "2026-05-16",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 38,
+      "methodAccuracy": 46,
+      "brierScore": 0.288,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Della Maddalena vs. Prates",
+      "asOfDate": "2026-05-02",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 69,
+      "brierScore": 0.242,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    }
+  ]
+}

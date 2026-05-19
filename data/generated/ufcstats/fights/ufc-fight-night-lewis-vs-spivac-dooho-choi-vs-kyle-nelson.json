@@ -1,0 +1,764 @@
+{
+  "id": "01e8868086004dd8",
+  "url": "http://www.ufcstats.com/fight-details/01e8868086004dd8",
+  "event": {
+    "id": "d26394fc0e8e880a",
+    "name": "UFC Fight Night: Lewis vs. Spivac",
+    "url": "http://www.ufcstats.com/event-details/d26394fc0e8e880a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e93b04e308913c2e",
+      "name": "Dooho Choi",
+      "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e",
+      "nickname": "The Korean Superboy",
+      "result": "D"
+    },
+    {
+      "id": "31f8081c7600da93",
+      "name": "Kyle Nelson",
+      "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93",
+      "nickname": "The Monster",
+      "result": "D"
+    }
+  ],
+  "result": {
+    "method": "Decision - Majority",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e93b04e308913c2e",
+        "name": "Dooho Choi",
+        "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+      },
+      {
+        "id": "31f8081c7600da93",
+        "name": "Kyle Nelson",
+        "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 78,
+          "raw": "50 of 78"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 79,
+          "attempted": 114,
+          "raw": "79 of 114"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:58",
+        "controlSeconds": 238
+      },
+      {
+        "fighter": {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 58,
+          "raw": "20 of 58"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 80,
+          "raw": "39 of 80"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:34",
+        "controlSeconds": 334
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "2:24",
+          "controlSeconds": 144
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:56",
+          "controlSeconds": 116
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 46,
+            "raw": "24 of 46"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 54,
+            "raw": "30 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 49,
+            "raw": "16 of 49"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 49,
+            "raw": "16 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 25,
+            "raw": "23 of 25"
+          },
+          "significantStrikePercent": 92,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 41,
+            "raw": "34 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:59",
+          "controlSeconds": 59
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:35",
+          "controlSeconds": 215
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e93b04e308913c2e",
+        "name": "Dooho Choi",
+        "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+      },
+      {
+        "id": "31f8081c7600da93",
+        "name": "Kyle Nelson",
+        "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 78,
+          "raw": "50 of 78"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 11,
+          "attempted": 37,
+          "raw": "11 of 37"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 24,
+          "raw": "23 of 24"
+        },
+        "leg": {
+          "landed": 16,
+          "attempted": 17,
+          "raw": "16 of 17"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 54,
+          "raw": "27 of 54"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 21,
+          "attempted": 22,
+          "raw": "21 of 22"
+        }
+      },
+      {
+        "fighter": {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 58,
+          "raw": "20 of 58"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 10,
+          "attempted": 41,
+          "raw": "10 of 41"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 54,
+          "raw": "17 of 54"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 46,
+            "raw": "24 of 46"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 49,
+            "raw": "16 of 49"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 8,
+            "attempted": 35,
+            "raw": "8 of 35"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 25,
+            "raw": "23 of 25"
+          },
+          "significantStrikePercent": 92,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 21,
+            "attempted": 21,
+            "raw": "21 of 21"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 21,
+            "attempted": 21,
+            "raw": "21 of 21"
+          }
+        },
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/01e8868086004dd8",
+    "fetchedAt": "2026-05-19T13:30:26.096Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "9feb9500b0fedfcd",
+  "url": "http://www.ufcstats.com/fight-details/9feb9500b0fedfcd",
+  "event": {
+    "id": "53e4e21f4c688801",
+    "name": "UFC Fight Night: Dariush vs. Tsarukyan",
+    "url": "http://www.ufcstats.com/event-details/53e4e21f4c688801"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "08af939f41b5a57b",
+      "name": "Beneil Dariush",
+      "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "eae48ff31db420c2",
+      "name": "Arman Tsarukyan",
+      "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2",
+      "nickname": "Ahalkalakets",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:04",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "eae48ff31db420c2",
+        "name": "Arman Tsarukyan",
+        "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "eae48ff31db420c2",
+            "name": "Arman Tsarukyan",
+            "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "eae48ff31db420c2",
+        "name": "Arman Tsarukyan",
+        "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eae48ff31db420c2",
+            "name": "Arman Tsarukyan",
+            "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/9feb9500b0fedfcd",
+    "fetchedAt": "2026-05-19T13:29:26.766Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "5b880d10b0ed7acc",
+  "url": "http://www.ufcstats.com/fight-details/5b880d10b0ed7acc",
+  "event": {
+    "id": "421ccfc6ddb17958",
+    "name": "UFC 319: Du Plessis vs. Chimaev",
+    "url": "http://www.ufcstats.com/event-details/421ccfc6ddb17958"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6ac9bc2953c47345",
+      "name": "Gerald Meerschaert",
+      "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345",
+      "nickname": "GM3",
+      "result": "L"
+    },
+    {
+      "id": "0d65c432720accb9",
+      "name": "Michal Oleksiejczuk",
+      "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9",
+      "nickname": "Hussar",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:03",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 16,
+          "raw": "3 of 16"
+        },
+        "significantStrikePercent": 18,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 16,
+          "raw": "3 of 16"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 51,
+          "raw": "23 of 51"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 51,
+          "raw": "23 of 51"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:22",
+        "controlSeconds": 22
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "significantStrikePercent": 18,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 51,
+            "raw": "23 of 51"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 51,
+            "raw": "23 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:22",
+          "controlSeconds": 22
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 16,
+          "raw": "3 of 16"
+        },
+        "significantStrikePercent": 18,
+        "head": {
+          "landed": 2,
+          "attempted": 14,
+          "raw": "2 of 14"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 16,
+          "raw": "3 of 16"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 51,
+          "raw": "23 of 51"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 18,
+          "attempted": 46,
+          "raw": "18 of 46"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 31,
+          "raw": "11 of 31"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 12,
+          "attempted": 20,
+          "raw": "12 of 20"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "significantStrikePercent": 18,
+          "head": {
+            "landed": 2,
+            "attempted": 14,
+            "raw": "2 of 14"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 51,
+            "raw": "23 of 51"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5b880d10b0ed7acc",
+    "fetchedAt": "2026-05-19T13:29:41.565Z"
+  }
+}

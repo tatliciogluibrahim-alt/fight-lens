@@ -1,0 +1,584 @@
+{
+  "id": "fbf83609dc96f32e",
+  "url": "http://www.ufcstats.com/fight-details/fbf83609dc96f32e",
+  "event": {
+    "id": "b2e3aca4cd363477",
+    "name": "UFC Fight Night: Machado Garry vs. Prates",
+    "url": "http://www.ufcstats.com/event-details/b2e3aca4cd363477"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c6aee362c7a7d482",
+      "name": "Randy Brown",
+      "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482",
+      "nickname": "Rudeboy",
+      "result": "W"
+    },
+    {
+      "id": "9d19d9e4aa2662e8",
+      "name": "Nicolas Dalby",
+      "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8",
+      "nickname": "Lokomotivo",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:39",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "9d19d9e4aa2662e8",
+        "name": "Nicolas Dalby",
+        "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 58,
+          "attempted": 118,
+          "raw": "58 of 118"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 74,
+          "raw": "26 of 74"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 90,
+          "raw": "40 of 90"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:22",
+        "controlSeconds": 82
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 52,
+            "raw": "22 of 52"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 56,
+            "raw": "26 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "9d19d9e4aa2662e8",
+            "name": "Nicolas Dalby",
+            "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 39,
+            "raw": "15 of 39"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 62,
+            "raw": "32 of 62"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 62,
+            "raw": "32 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "9d19d9e4aa2662e8",
+            "name": "Nicolas Dalby",
+            "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "9d19d9e4aa2662e8",
+        "name": "Nicolas Dalby",
+        "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 45,
+          "attempted": 103,
+          "raw": "45 of 103"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 74,
+          "raw": "26 of 74"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 12,
+          "attempted": 52,
+          "raw": "12 of 52"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 72,
+          "raw": "25 of 72"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 52,
+            "raw": "22 of 52"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 19,
+            "attempted": 48,
+            "raw": "19 of 48"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 52,
+            "raw": "22 of 52"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9d19d9e4aa2662e8",
+            "name": "Nicolas Dalby",
+            "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 39,
+            "raw": "15 of 39"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "9d19d9e4aa2662e8",
+          "name": "Nicolas Dalby",
+          "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 62,
+            "raw": "32 of 62"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 62,
+            "raw": "32 of 62"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9d19d9e4aa2662e8",
+            "name": "Nicolas Dalby",
+            "url": "http://www.ufcstats.com/fighter-details/9d19d9e4aa2662e8"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/fbf83609dc96f32e",
+    "fetchedAt": "2026-05-19T13:31:35.624Z"
+  }
+}

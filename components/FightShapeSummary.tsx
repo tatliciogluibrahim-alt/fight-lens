@@ -6,6 +6,12 @@ import { ModuleEmptyState } from "./ModuleEmptyState";
 interface FightShapeSummaryProps {
   fight: SourcedFight;
   modelOutput: FightShapeModelOutput;
+  /**
+   * Canonical predicted-winner fighter id from the model call. Drives which
+   * pressure row gets the accent so the shape section never disagrees with
+   * the model call. When null (no call available), neither row is accented.
+   */
+  predictedWinnerId?: string | null;
 }
 
 function PressureRow({ metric, accent = false }: { metric: FighterMetricScore; accent?: boolean }) {
@@ -32,11 +38,17 @@ function PressureRow({ metric, accent = false }: { metric: FighterMetricScore; a
   );
 }
 
-export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps) {
+export function FightShapeSummary({ fight, modelOutput, predictedWinnerId = null }: FightShapeSummaryProps) {
   const pressureA = modelOutput.metrics.stylePressureIndex.fighterA;
   const pressureB = modelOutput.metrics.stylePressureIndex.fighterB;
   const hasPressurePoint = pressureA.status !== "insufficient" || pressureB.status !== "insufficient";
   const showDebug = process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && modelOutput.debug;
+
+  // Accent the predicted winner from the model call — NOT whichever fighter
+  // has the higher style pressure. Falling back to higher pressure here is what
+  // produced the QA-observed contradiction.
+  const accentA = predictedWinnerId === fight.fighters.fighterA.id;
+  const accentB = predictedWinnerId === fight.fighters.fighterB.id;
 
   return (
     <section id="fight-shape" className="module-card scroll-mt-28">
@@ -89,10 +101,13 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
                 <ConfidenceBadge label={pressureA.confidence === "Insufficient" ? pressureB.confidence : pressureA.confidence} />
               </div>
               <div className="mt-5 space-y-5">
-                <PressureRow metric={pressureA} accent />
-                <PressureRow metric={pressureB} />
+                <PressureRow metric={pressureA} accent={accentA} />
+                <PressureRow metric={pressureB} accent={accentB} />
               </div>
-              <p className="mt-5 text-sm leading-6 text-muted">
+              <p className="mt-3 text-[11px] uppercase tracking-[0.12em] text-subtle">
+                Style-pressure read — separate from the model&apos;s winner call.
+              </p>
+              <p className="mt-3 text-sm leading-6 text-muted">
                 {pressureA.score != null && (pressureA.score ?? 0) >= (pressureB.score ?? 0)
                   ? pressureA.explanation
                   : pressureB.explanation}

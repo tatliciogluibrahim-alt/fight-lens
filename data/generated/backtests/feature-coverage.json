@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-05-19T14:03:34.935Z",
+  "totalFighterRows": 152,
+  "aggregateStats": {
+    "slpm": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    },
+    "strikingAccuracy": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    },
+    "sapm": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    },
+    "strikingDefense": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    },
+    "takedownAverage": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    },
+    "takedownAccuracy": {
+      "real": 99,
+      "missing": 53,
+      "coverageRate": 65
+    },
+    "takedownDefense": {
+      "real": 106,
+      "missing": 46,
+      "coverageRate": 70
+    },
+    "submissionAverage": {
+      "real": 119,
+      "missing": 33,
+      "coverageRate": 78
+    }
+  },
+  "physicals": {
+    "reach": {
+      "real": 152,
+      "missing": 0,
+      "coverageRate": 100
+    },
+    "stance": {
+      "real": 152,
+      "missing": 0,
+      "coverageRate": 100
+    },
+    "dob": {
+      "real": 152,
+      "missing": 0,
+      "coverageRate": 100
+    },
+    "daysSinceLastFight": {
+      "real": 152,
+      "missing": 0,
+      "coverageRate": 100
+    }
+  },
+  "notes": {
+    "missing": "Model falls back to UFC-average defaults when a stat is missing",
+    "opponentQuality": "opponentQuality is a manual override (when present) or model-defaulted; not part of the leakage-safe as-of computation in this pipeline"
+  }
+}

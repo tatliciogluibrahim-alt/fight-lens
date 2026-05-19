@@ -14,7 +14,8 @@
     "model:report": "node scripts/ingest/report-fight-shape-model.mjs",
     "backtest:islam-jdm": "node scripts/ingest/build-islam-jdm-backtest.mjs",
     "backtest": "npx tsx scripts/backtest/run.ts",
-    "backtest:summary": "npx tsx scripts/backtest/summary.ts"
+    "backtest:summary": "npx tsx scripts/backtest/summary.ts",
+    "audit:predictions": "npx tsx scripts/audit/predictions.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

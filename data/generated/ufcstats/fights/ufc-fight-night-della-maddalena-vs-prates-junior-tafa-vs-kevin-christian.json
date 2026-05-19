@@ -1,0 +1,404 @@
+{
+  "id": "1cb0711cd49dd95e",
+  "url": "http://www.ufcstats.com/fight-details/1cb0711cd49dd95e",
+  "event": {
+    "id": "872b018076f831b0",
+    "name": "UFC Fight Night: Della Maddalena vs. Prates",
+    "url": "http://www.ufcstats.com/event-details/872b018076f831b0"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c15fa95b9a12fde4",
+      "name": "Junior Tafa",
+      "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4",
+      "nickname": "The Juggernaut",
+      "result": "W"
+    },
+    {
+      "id": "7e9b36a9847db116",
+      "name": "Kevin Christian",
+      "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:42",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Matt Wynne",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c15fa95b9a12fde4",
+        "name": "Junior Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+      },
+      {
+        "id": "7e9b36a9847db116",
+        "name": "Kevin Christian",
+        "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 32,
+          "raw": "22 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      },
+      {
+        "fighter": {
+          "id": "7e9b36a9847db116",
+          "name": "Kevin Christian",
+          "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        {
+          "id": "7e9b36a9847db116",
+          "name": "Kevin Christian",
+          "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c15fa95b9a12fde4",
+            "name": "Junior Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 32,
+            "raw": "22 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        },
+        {
+          "fighter": {
+            "id": "7e9b36a9847db116",
+            "name": "Kevin Christian",
+            "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c15fa95b9a12fde4",
+        "name": "Junior Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+      },
+      {
+        "id": "7e9b36a9847db116",
+        "name": "Kevin Christian",
+        "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 20,
+          "attempted": 30,
+          "raw": "20 of 30"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 19,
+          "raw": "10 of 19"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7e9b36a9847db116",
+          "name": "Kevin Christian",
+          "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 11,
+          "raw": "9 of 11"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        {
+          "id": "7e9b36a9847db116",
+          "name": "Kevin Christian",
+          "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c15fa95b9a12fde4",
+            "name": "Junior Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7e9b36a9847db116",
+            "name": "Kevin Christian",
+            "url": "http://www.ufcstats.com/fighter-details/7e9b36a9847db116"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/1cb0711cd49dd95e",
+    "fetchedAt": "2026-05-19T13:29:06.124Z"
+  }
+}

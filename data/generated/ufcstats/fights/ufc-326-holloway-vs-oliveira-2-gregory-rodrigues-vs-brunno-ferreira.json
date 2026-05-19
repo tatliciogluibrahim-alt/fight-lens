@@ -1,0 +1,404 @@
+{
+  "id": "6a4738656c493ee9",
+  "url": "http://www.ufcstats.com/fight-details/6a4738656c493ee9",
+  "event": {
+    "id": "15ec018d144710db",
+    "name": "UFC 326: Holloway vs. Oliveira 2",
+    "url": "http://www.ufcstats.com/event-details/15ec018d144710db"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": "Robocop",
+      "result": "W"
+    },
+    {
+      "id": "1e719d4b676dc19a",
+      "name": "Brunno Ferreira",
+      "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a",
+      "nickname": "The Hulk",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:47",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      },
+      {
+        "id": "1e719d4b676dc19a",
+        "name": "Brunno Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "1e719d4b676dc19a",
+            "name": "Brunno Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      },
+      {
+        "id": "1e719d4b676dc19a",
+        "name": "Brunno Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1e719d4b676dc19a",
+            "name": "Brunno Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/6a4738656c493ee9",
+    "fetchedAt": "2026-05-19T13:31:55.899Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "58f6248da3cdf3ce",
+  "url": "http://www.ufcstats.com/fight-details/58f6248da3cdf3ce",
+  "event": {
+    "id": "0e2c2daf11b5d8f2",
+    "name": "UFC Fight Night: Garcia vs. Onama",
+    "url": "http://www.ufcstats.com/event-details/0e2c2daf11b5d8f2"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0e46690e55a8df75",
+      "name": "Timmy Cuamba",
+      "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75",
+      "nickname": "Twilight",
+      "result": "W"
+    },
+    {
+      "id": "117a06469813e4ef",
+      "name": "ChangHo Lee",
+      "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Eric McMahon",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0e46690e55a8df75",
+        "name": "Timmy Cuamba",
+        "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+      },
+      {
+        "id": "117a06469813e4ef",
+        "name": "ChangHo Lee",
+        "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 32,
+          "raw": "23 of 32"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 48,
+          "raw": "39 of 48"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "5:55",
+        "controlSeconds": 355
+      },
+      {
+        "fighter": {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 26,
+          "raw": "15 of 26"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 88,
+          "attempted": 141,
+          "raw": "88 of 141"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "takedownPercent": 37,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:25",
+        "controlSeconds": 385
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 49,
+            "attempted": 90,
+            "raw": "49 of 90"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:52",
+          "controlSeconds": 292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 28,
+            "raw": "21 of 28"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 30,
+            "raw": "23 of 30"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:35",
+          "controlSeconds": 95
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 25,
+            "raw": "13 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:18",
+          "controlSeconds": 78
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "4:20",
+          "controlSeconds": 260
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 26,
+            "raw": "26 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0e46690e55a8df75",
+        "name": "Timmy Cuamba",
+        "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+      },
+      {
+        "id": "117a06469813e4ef",
+        "name": "ChangHo Lee",
+        "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 32,
+          "raw": "23 of 32"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 17,
+          "attempted": 26,
+          "raw": "17 of 26"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 22,
+          "raw": "15 of 22"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 26,
+          "raw": "15 of 26"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 10,
+          "attempted": 18,
+          "raw": "10 of 18"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 24,
+          "raw": "13 of 24"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 28,
+            "raw": "21 of 28"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 16,
+            "attempted": 23,
+            "raw": "16 of 23"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "117a06469813e4ef",
+          "name": "ChangHo Lee",
+          "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "117a06469813e4ef",
+            "name": "ChangHo Lee",
+            "url": "http://www.ufcstats.com/fighter-details/117a06469813e4ef"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/58f6248da3cdf3ce",
+    "fetchedAt": "2026-05-19T13:30:32.184Z"
+  }
+}

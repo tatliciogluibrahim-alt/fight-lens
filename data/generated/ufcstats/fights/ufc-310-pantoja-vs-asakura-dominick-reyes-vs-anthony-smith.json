@@ -1,0 +1,584 @@
+{
+  "id": "97caf8fca9d9603b",
+  "url": "http://www.ufcstats.com/fight-details/97caf8fca9d9603b",
+  "event": {
+    "id": "ad23903ef3af7406",
+    "name": "UFC 310: Pantoja vs. Asakura",
+    "url": "http://www.ufcstats.com/event-details/ad23903ef3af7406"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2e19380f34871c6a",
+      "name": "Dominick Reyes",
+      "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a",
+      "nickname": "The Devastator",
+      "result": "W"
+    },
+    {
+      "id": "d4c9dcd330403612",
+      "name": "Anthony Smith",
+      "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612",
+      "nickname": "Lionheart",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:46",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2e19380f34871c6a",
+        "name": "Dominick Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+      },
+      {
+        "id": "d4c9dcd330403612",
+        "name": "Anthony Smith",
+        "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 121,
+          "attempted": 162,
+          "raw": "121 of 162"
+        },
+        "significantStrikePercent": 74,
+        "totalStrikes": {
+          "landed": 172,
+          "attempted": 232,
+          "raw": "172 of 232"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:51",
+        "controlSeconds": 231
+      },
+      {
+        "fighter": {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 46,
+          "raw": "21 of 46"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 49,
+          "raw": "24 of 49"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 76,
+            "raw": "48 of 76"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 53,
+            "attempted": 82,
+            "raw": "53 of 82"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 49,
+            "raw": "24 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 73,
+            "attempted": 86,
+            "raw": "73 of 86"
+          },
+          "significantStrikePercent": 84,
+          "totalStrikes": {
+            "landed": 119,
+            "attempted": 150,
+            "raw": "119 of 150"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:51",
+          "controlSeconds": 231
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2e19380f34871c6a",
+        "name": "Dominick Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+      },
+      {
+        "id": "d4c9dcd330403612",
+        "name": "Anthony Smith",
+        "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        "significantStrikes": {
+          "landed": 121,
+          "attempted": 162,
+          "raw": "121 of 162"
+        },
+        "significantStrikePercent": 74,
+        "head": {
+          "landed": 110,
+          "attempted": 149,
+          "raw": "110 of 149"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 48,
+          "attempted": 75,
+          "raw": "48 of 75"
+        },
+        "clinch": {
+          "landed": 17,
+          "attempted": 22,
+          "raw": "17 of 22"
+        },
+        "ground": {
+          "landed": 56,
+          "attempted": 65,
+          "raw": "56 of 65"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 46,
+          "raw": "21 of 46"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 14,
+          "attempted": 36,
+          "raw": "14 of 36"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 43,
+          "raw": "19 of 43"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 76,
+            "raw": "48 of 76"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 38,
+            "attempted": 64,
+            "raw": "38 of 64"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 47,
+            "attempted": 73,
+            "raw": "47 of 73"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 14,
+            "attempted": 36,
+            "raw": "14 of 36"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 43,
+            "raw": "19 of 43"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "significantStrikes": {
+            "landed": 73,
+            "attempted": 86,
+            "raw": "73 of 86"
+          },
+          "significantStrikePercent": 84,
+          "head": {
+            "landed": 72,
+            "attempted": 85,
+            "raw": "72 of 85"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "ground": {
+            "landed": 56,
+            "attempted": 65,
+            "raw": "56 of 65"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/97caf8fca9d9603b",
+    "fetchedAt": "2026-05-19T13:31:26.830Z"
+  }
+}

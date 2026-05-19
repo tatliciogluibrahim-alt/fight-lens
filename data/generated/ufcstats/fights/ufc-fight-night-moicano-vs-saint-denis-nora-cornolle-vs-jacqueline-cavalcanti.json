@@ -1,0 +1,764 @@
+{
+  "id": "a187670c5ee1ec5f",
+  "url": "http://www.ufcstats.com/fight-details/a187670c5ee1ec5f",
+  "event": {
+    "id": "079488710f012779",
+    "name": "UFC Fight Night: Moicano vs. Saint Denis",
+    "url": "http://www.ufcstats.com/event-details/079488710f012779"
+  },
+  "title": "Women's Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f2b3f4ef3f780168",
+      "name": "Nora Cornolle",
+      "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "e3964ece586e0635",
+      "name": "Jacqueline Cavalcanti",
+      "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Christophe Chapuis",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f2b3f4ef3f780168",
+        "name": "Nora Cornolle",
+        "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+      },
+      {
+        "id": "e3964ece586e0635",
+        "name": "Jacqueline Cavalcanti",
+        "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 80,
+          "attempted": 156,
+          "raw": "80 of 156"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 9,
+          "raw": "1 of 9"
+        },
+        "takedownPercent": 11,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:56",
+        "controlSeconds": 236
+      },
+      {
+        "fighter": {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 154,
+          "raw": "54 of 154"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 87,
+          "attempted": 194,
+          "raw": "87 of 194"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "1:09",
+        "controlSeconds": 69
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 48,
+            "raw": "29 of 48"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:41",
+          "controlSeconds": 101
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 43,
+            "raw": "11 of 43"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 60,
+            "raw": "25 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:34",
+          "controlSeconds": 34
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 32,
+            "raw": "17 of 32"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 50,
+            "raw": "29 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:51",
+          "controlSeconds": 111
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 41,
+            "raw": "13 of 41"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 54,
+            "raw": "24 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 55,
+            "raw": "21 of 55"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:24",
+          "controlSeconds": 24
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 70,
+            "raw": "30 of 70"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 80,
+            "raw": "38 of 80"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f2b3f4ef3f780168",
+        "name": "Nora Cornolle",
+        "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+      },
+      {
+        "id": "e3964ece586e0635",
+        "name": "Jacqueline Cavalcanti",
+        "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 15,
+          "attempted": 65,
+          "raw": "15 of 65"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 23,
+          "raw": "17 of 23"
+        },
+        "leg": {
+          "landed": 22,
+          "attempted": 26,
+          "raw": "22 of 26"
+        },
+        "distance": {
+          "landed": 41,
+          "attempted": 95,
+          "raw": "41 of 95"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        },
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 154,
+          "raw": "54 of 154"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 28,
+          "attempted": 117,
+          "raw": "28 of 117"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 15,
+          "raw": "12 of 15"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        },
+        "distance": {
+          "landed": 48,
+          "attempted": 146,
+          "raw": "48 of 146"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 43,
+            "raw": "11 of 43"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 1,
+            "attempted": 28,
+            "raw": "1 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 42,
+            "raw": "11 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 32,
+            "raw": "17 of 32"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 2,
+            "attempted": 14,
+            "raw": "2 of 14"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 41,
+            "raw": "13 of 41"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 8,
+            "attempted": 34,
+            "raw": "8 of 34"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 37,
+            "raw": "10 of 37"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        {
+          "id": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 55,
+            "raw": "21 of 55"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 6,
+            "attempted": 34,
+            "raw": "6 of 34"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 49,
+            "raw": "18 of 49"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e3964ece586e0635",
+            "name": "Jacqueline Cavalcanti",
+            "url": "http://www.ufcstats.com/fighter-details/e3964ece586e0635"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 70,
+            "raw": "30 of 70"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 19,
+            "attempted": 55,
+            "raw": "19 of 55"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 67,
+            "raw": "27 of 67"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/a187670c5ee1ec5f",
+    "fetchedAt": "2026-05-19T13:30:42.267Z"
+  }
+}

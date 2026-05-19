@@ -1,0 +1,404 @@
+{
+  "id": "1496969c1497dc85",
+  "url": "http://www.ufcstats.com/fight-details/1496969c1497dc85",
+  "event": {
+    "id": "c945adc22c2bfe8f",
+    "name": "UFC Fight Night: Fiziev vs. Gamrot",
+    "url": "http://www.ufcstats.com/event-details/c945adc22c2bfe8f"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d4270315cbcf2569",
+      "name": "Jacob Malkoun",
+      "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569",
+      "nickname": "Mamba",
+      "result": "L"
+    },
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "DQ",
+    "round": 1,
+    "time": "4:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d4270315cbcf2569",
+        "name": "Jacob Malkoun",
+        "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d4270315cbcf2569",
+          "name": "Jacob Malkoun",
+          "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 39,
+          "raw": "28 of 39"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 44,
+          "attempted": 60,
+          "raw": "44 of 60"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:39",
+        "controlSeconds": 219
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:26",
+        "controlSeconds": 26
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d4270315cbcf2569",
+          "name": "Jacob Malkoun",
+          "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d4270315cbcf2569",
+            "name": "Jacob Malkoun",
+            "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 60,
+            "raw": "44 of 60"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:39",
+          "controlSeconds": 219
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:26",
+          "controlSeconds": 26
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d4270315cbcf2569",
+        "name": "Jacob Malkoun",
+        "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d4270315cbcf2569",
+          "name": "Jacob Malkoun",
+          "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 39,
+          "raw": "28 of 39"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 28,
+          "attempted": 39,
+          "raw": "28 of 39"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 28,
+          "attempted": 39,
+          "raw": "28 of 39"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d4270315cbcf2569",
+          "name": "Jacob Malkoun",
+          "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d4270315cbcf2569",
+            "name": "Jacob Malkoun",
+            "url": "http://www.ufcstats.com/fighter-details/d4270315cbcf2569"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/1496969c1497dc85",
+    "fetchedAt": "2026-05-19T13:29:40.631Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "85ddb65429a9d517",
+  "url": "http://www.ufcstats.com/fight-details/85ddb65429a9d517",
+  "event": {
+    "id": "46baf0f57edfa4df",
+    "name": "UFC Fight Night: Barboza vs. Murphy",
+    "url": "http://www.ufcstats.com/event-details/46baf0f57edfa4df"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2558ae2e5671e318",
+      "name": "Khaos Williams",
+      "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318",
+      "nickname": "The OxFighter",
+      "result": "W"
+    },
+    {
+      "id": "a53d30163304aa6e",
+      "name": "Carlston Harris",
+      "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e",
+      "nickname": "Mocambique",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:30",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      },
+      {
+        "id": "a53d30163304aa6e",
+        "name": "Carlston Harris",
+        "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 20,
+          "raw": "12 of 20"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 20,
+          "raw": "12 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      },
+      {
+        "fighter": {
+          "id": "a53d30163304aa6e",
+          "name": "Carlston Harris",
+          "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 30,
+          "raw": "14 of 30"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 30,
+          "raw": "14 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "a53d30163304aa6e",
+          "name": "Carlston Harris",
+          "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "a53d30163304aa6e",
+            "name": "Carlston Harris",
+            "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      },
+      {
+        "id": "a53d30163304aa6e",
+        "name": "Carlston Harris",
+        "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 20,
+          "raw": "12 of 20"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a53d30163304aa6e",
+          "name": "Carlston Harris",
+          "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 30,
+          "raw": "14 of 30"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 30,
+          "raw": "14 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "a53d30163304aa6e",
+          "name": "Carlston Harris",
+          "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a53d30163304aa6e",
+            "name": "Carlston Harris",
+            "url": "http://www.ufcstats.com/fighter-details/a53d30163304aa6e"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/85ddb65429a9d517",
+    "fetchedAt": "2026-05-19T13:30:34.799Z"
+  }
+}

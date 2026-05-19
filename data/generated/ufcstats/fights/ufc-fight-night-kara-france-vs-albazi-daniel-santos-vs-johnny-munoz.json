@@ -1,0 +1,764 @@
+{
+  "id": "84f60cb00b8d4187",
+  "url": "http://www.ufcstats.com/fight-details/84f60cb00b8d4187",
+  "event": {
+    "id": "7abe471b61725980",
+    "name": "UFC Fight Night: Kara-France vs. Albazi",
+    "url": "http://www.ufcstats.com/event-details/7abe471b61725980"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b67d6bacc68d4c92",
+      "name": "Daniel Santos",
+      "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92",
+      "nickname": "Willycat",
+      "result": "W"
+    },
+    {
+      "id": "f6bcbd91b114ff58",
+      "name": "Johnny Munoz",
+      "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58",
+      "nickname": "Kid Kvenbo",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b67d6bacc68d4c92",
+        "name": "Daniel Santos",
+        "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+      },
+      {
+        "id": "f6bcbd91b114ff58",
+        "name": "Johnny Munoz",
+        "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 91,
+          "raw": "50 of 91"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 134,
+          "attempted": 198,
+          "raw": "134 of 198"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "takedownPercent": 75,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "10:47",
+        "controlSeconds": 647
+      },
+      {
+        "fighter": {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 39,
+          "raw": "18 of 39"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 64,
+          "attempted": 101,
+          "raw": "64 of 101"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "takedownPercent": 12,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:19",
+        "controlSeconds": 79
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 28,
+            "raw": "7 of 28"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:54",
+          "controlSeconds": 174
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 38,
+            "raw": "25 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 41,
+            "raw": "29 of 41"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 65,
+            "attempted": 92,
+            "raw": "65 of 92"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:01",
+          "controlSeconds": 241
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 29,
+            "raw": "19 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 48,
+            "attempted": 60,
+            "raw": "48 of 60"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "3:52",
+          "controlSeconds": 232
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:33",
+          "controlSeconds": 33
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b67d6bacc68d4c92",
+        "name": "Daniel Santos",
+        "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+      },
+      {
+        "id": "f6bcbd91b114ff58",
+        "name": "Johnny Munoz",
+        "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 91,
+          "raw": "50 of 91"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 30,
+          "attempted": 62,
+          "raw": "30 of 62"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 19,
+          "raw": "15 of 19"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 38,
+          "raw": "10 of 38"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 34,
+          "attempted": 46,
+          "raw": "34 of 46"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 39,
+          "raw": "18 of 39"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 8,
+          "attempted": 26,
+          "raw": "8 of 26"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 28,
+            "raw": "7 of 28"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 3,
+            "attempted": 18,
+            "raw": "3 of 18"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 25,
+            "raw": "5 of 25"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 41,
+            "raw": "29 of 41"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 25,
+            "attempted": 33,
+            "raw": "25 of 33"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b67d6bacc68d4c92",
+          "name": "Daniel Santos",
+          "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+        },
+        {
+          "id": "f6bcbd91b114ff58",
+          "name": "Johnny Munoz",
+          "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b67d6bacc68d4c92",
+            "name": "Daniel Santos",
+            "url": "http://www.ufcstats.com/fighter-details/b67d6bacc68d4c92"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f6bcbd91b114ff58",
+            "name": "Johnny Munoz",
+            "url": "http://www.ufcstats.com/fighter-details/f6bcbd91b114ff58"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/84f60cb00b8d4187",
+    "fetchedAt": "2026-05-19T13:30:27.633Z"
+  }
+}

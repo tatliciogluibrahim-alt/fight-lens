@@ -1,0 +1,404 @@
+{
+  "id": "9d5f562e0572058c",
+  "url": "http://www.ufcstats.com/fight-details/9d5f562e0572058c",
+  "event": {
+    "id": "b12a1d19ee383b7c",
+    "name": "UFC Fight Night: Whittaker vs. Aliskerov",
+    "url": "http://www.ufcstats.com/event-details/b12a1d19ee383b7c"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c21f26bbde777573",
+      "name": "Johnny Walker",
+      "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "0845c81e37d3bcb3",
+      "name": "Volkan Oezdemir",
+      "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3",
+      "nickname": "No Time",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:28",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c21f26bbde777573",
+        "name": "Johnny Walker",
+        "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+      },
+      {
+        "id": "0845c81e37d3bcb3",
+        "name": "Volkan Oezdemir",
+        "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 67,
+          "raw": "37 of 67"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 37,
+          "attempted": 67,
+          "raw": "37 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c21f26bbde777573",
+            "name": "Johnny Walker",
+            "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "0845c81e37d3bcb3",
+            "name": "Volkan Oezdemir",
+            "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 67,
+            "raw": "37 of 67"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 67,
+            "raw": "37 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c21f26bbde777573",
+        "name": "Johnny Walker",
+        "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+      },
+      {
+        "id": "0845c81e37d3bcb3",
+        "name": "Volkan Oezdemir",
+        "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 6,
+          "attempted": 20,
+          "raw": "6 of 20"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 67,
+          "raw": "37 of 67"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 22,
+          "attempted": 49,
+          "raw": "22 of 49"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 59,
+          "raw": "33 of 59"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c21f26bbde777573",
+            "name": "Johnny Walker",
+            "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0845c81e37d3bcb3",
+            "name": "Volkan Oezdemir",
+            "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 67,
+            "raw": "37 of 67"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 22,
+            "attempted": 49,
+            "raw": "22 of 49"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 59,
+            "raw": "33 of 59"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/9d5f562e0572058c",
+    "fetchedAt": "2026-05-19T13:31:27.881Z"
+  }
+}

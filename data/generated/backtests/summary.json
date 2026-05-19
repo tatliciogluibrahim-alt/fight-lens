@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-05-19T11:42:31.066Z",
+  "generatedAt": "2026-05-19T14:03:34.934Z",
   "modelVersion": "outcome-v0.2",
   "summary": {
-    "totalFights": 13,
-    "scoredFights": 13,
-    "winnerAccuracy": 69,
-    "methodAccuracy": 38,
-    "brierScore": 0.224,
+    "totalFights": 76,
+    "scoredFights": 76,
+    "winnerAccuracy": 59,
+    "methodAccuracy": 51,
+    "brierScore": 0.251,
     "calibrationBuckets": [
       {
         "rangeLabel": "50–60%",
         "predictedMidpoint": 0.55,
-        "actualWinRate": 0.7142857142857143,
-        "count": 7
+        "actualWinRate": 0.6341463414634146,
+        "count": 41
       },
       {
         "rangeLabel": "60–70%",
         "predictedMidpoint": 0.65,
-        "actualWinRate": 0.6,
-        "count": 5
+        "actualWinRate": 0.45454545454545453,
+        "count": 22
       },
       {
         "rangeLabel": "70–80%",
         "predictedMidpoint": 0.75,
-        "actualWinRate": 0,
-        "count": 0
+        "actualWinRate": 0.5,
+        "count": 6
       },
       {
         "rangeLabel": "80%+",
         "predictedMidpoint": 0.9,
-        "actualWinRate": 1,
-        "count": 1
+        "actualWinRate": 0.8571428571428571,
+        "count": 7
       }
     ],
-    "generatedAt": "2026-05-19T11:42:31.065Z",
+    "generatedAt": "2026-05-19T14:03:34.933Z",
     "modelVersion": "outcome-v0.2",
     "caveats": [
       "Backtest calibration may differ from live model record due to data vintage.",
@@ -46,44 +46,44 @@
         "brierScore": 0.25
       },
       "betterRecord": {
-        "accuracy": 46,
-        "scoredFights": 13,
-        "correct": 6
+        "accuracy": 66,
+        "scoredFights": 76,
+        "correct": 50
       },
       "moreExperience": {
-        "accuracy": 54,
-        "scoredFights": 13,
-        "correct": 7
+        "accuracy": 43,
+        "scoredFights": 76,
+        "correct": 33
       },
       "ufcFavouriteWinRate": 0.67
     },
-    "brierAssessment": "Sample too small (n=13). Need 30+ fights for reliable calibration.",
-    "missingDataRate": 38
+    "brierAssessment": "Below baseline — model is overclaiming confidence on wrong picks.",
+    "missingDataRate": 57
   },
   "accuracyByConfidenceBucket": [
     {
       "label": "50-60%",
-      "count": 7,
-      "correct": 5,
-      "accuracy": 71
+      "count": 41,
+      "correct": 26,
+      "accuracy": 63
     },
     {
       "label": "60-70%",
-      "count": 5,
-      "correct": 3,
-      "accuracy": 60
+      "count": 22,
+      "correct": 10,
+      "accuracy": 45
     },
     {
       "label": "70-80%",
-      "count": 0,
-      "correct": 0,
-      "accuracy": null
+      "count": 6,
+      "correct": 3,
+      "accuracy": 50
     },
     {
       "label": "80%+",
-      "count": 1,
-      "correct": 1,
-      "accuracy": 100
+      "count": 7,
+      "correct": 6,
+      "accuracy": 86
     }
   ]
 }

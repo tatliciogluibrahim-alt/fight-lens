@@ -1,0 +1,944 @@
+{
+  "id": "365e2d891b98b86d",
+  "url": "http://www.ufcstats.com/fight-details/365e2d891b98b86d",
+  "event": {
+    "id": "ce7871949b0ed2bf",
+    "name": "UFC Fight Night: Cannonier vs. Rodrigues",
+    "url": "http://www.ufcstats.com/event-details/ce7871949b0ed2bf"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "13a0275fa13c4d26",
+      "name": "Jared Cannonier",
+      "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26",
+      "nickname": "The Killa Gorilla",
+      "result": "W"
+    },
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": "Robocop",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 4,
+    "time": "0:21",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "13a0275fa13c4d26",
+        "name": "Jared Cannonier",
+        "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 98,
+          "attempted": 201,
+          "raw": "98 of 201"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 109,
+          "attempted": 215,
+          "raw": "109 of 215"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:09",
+        "controlSeconds": 129
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 93,
+          "attempted": 221,
+          "raw": "93 of 221"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 95,
+          "attempted": 225,
+          "raw": "95 of 225"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:17",
+        "controlSeconds": 17
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 38,
+            "raw": "22 of 38"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 49,
+            "raw": "31 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:34",
+          "controlSeconds": 94
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 66,
+            "raw": "25 of 66"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 68,
+            "raw": "26 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 72,
+            "raw": "33 of 72"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 74,
+            "raw": "35 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 68,
+            "raw": "25 of 68"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 70,
+            "raw": "26 of 70"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 78,
+            "raw": "34 of 78"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 79,
+            "raw": "34 of 79"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 87,
+            "raw": "43 of 87"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 87,
+            "raw": "43 of 87"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "13a0275fa13c4d26",
+        "name": "Jared Cannonier",
+        "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        "significantStrikes": {
+          "landed": 98,
+          "attempted": 201,
+          "raw": "98 of 201"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 59,
+          "attempted": 157,
+          "raw": "59 of 157"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 23,
+          "raw": "20 of 23"
+        },
+        "leg": {
+          "landed": 19,
+          "attempted": 21,
+          "raw": "19 of 21"
+        },
+        "distance": {
+          "landed": 69,
+          "attempted": 161,
+          "raw": "69 of 161"
+        },
+        "clinch": {
+          "landed": 20,
+          "attempted": 25,
+          "raw": "20 of 25"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 93,
+          "attempted": 221,
+          "raw": "93 of 221"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 65,
+          "attempted": 188,
+          "raw": "65 of 188"
+        },
+        "body": {
+          "landed": 21,
+          "attempted": 25,
+          "raw": "21 of 25"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "distance": {
+          "landed": 85,
+          "attempted": 208,
+          "raw": "85 of 208"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 38,
+            "raw": "22 of 38"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 66,
+            "raw": "25 of 66"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 16,
+            "attempted": 53,
+            "raw": "16 of 53"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 72,
+            "raw": "33 of 72"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 15,
+            "attempted": 50,
+            "raw": "15 of 50"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 65,
+            "raw": "28 of 65"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 68,
+            "raw": "25 of 68"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 16,
+            "attempted": 59,
+            "raw": "16 of 59"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 67,
+            "raw": "25 of 67"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 78,
+            "raw": "34 of 78"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 27,
+            "attempted": 71,
+            "raw": "27 of 71"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 59,
+            "raw": "22 of 59"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 87,
+            "raw": "43 of 87"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 33,
+            "attempted": 76,
+            "raw": "33 of 76"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 41,
+            "attempted": 85,
+            "raw": "41 of 85"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/365e2d891b98b86d",
+    "fetchedAt": "2026-05-19T13:32:20.147Z"
+  }
+}

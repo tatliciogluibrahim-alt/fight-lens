@@ -1,0 +1,404 @@
+{
+  "id": "60949f33201415ca",
+  "url": "http://www.ufcstats.com/fight-details/60949f33201415ca",
+  "event": {
+    "id": "f3eb664db7fb1df3",
+    "name": "UFC 327: Prochazka vs. Ulberg",
+    "url": "http://www.ufcstats.com/event-details/f3eb664db7fb1df3"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d247691a6c0e9034",
+      "name": "Cub Swanson",
+      "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "583ee11abddfc581",
+      "name": "Nate Landwehr",
+      "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581",
+      "nickname": "The Train",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:06",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "583ee11abddfc581",
+        "name": "Nate Landwehr",
+        "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 49,
+          "raw": "37 of 49"
+        },
+        "significantStrikePercent": 75,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 52,
+          "raw": "40 of 52"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "583ee11abddfc581",
+          "name": "Nate Landwehr",
+          "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "583ee11abddfc581",
+          "name": "Nate Landwehr",
+          "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 49,
+            "raw": "37 of 49"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 52,
+            "raw": "40 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "583ee11abddfc581",
+            "name": "Nate Landwehr",
+            "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "583ee11abddfc581",
+        "name": "Nate Landwehr",
+        "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 49,
+          "raw": "37 of 49"
+        },
+        "significantStrikePercent": 75,
+        "head": {
+          "landed": 23,
+          "attempted": 33,
+          "raw": "23 of 33"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "distance": {
+          "landed": 35,
+          "attempted": 46,
+          "raw": "35 of 46"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "583ee11abddfc581",
+          "name": "Nate Landwehr",
+          "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 9,
+          "attempted": 22,
+          "raw": "9 of 22"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "583ee11abddfc581",
+          "name": "Nate Landwehr",
+          "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 49,
+            "raw": "37 of 49"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "distance": {
+            "landed": 35,
+            "attempted": 46,
+            "raw": "35 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "583ee11abddfc581",
+            "name": "Nate Landwehr",
+            "url": "http://www.ufcstats.com/fighter-details/583ee11abddfc581"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 9,
+            "attempted": 22,
+            "raw": "9 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/60949f33201415ca",
+    "fetchedAt": "2026-05-19T13:30:58.036Z"
+  }
+}

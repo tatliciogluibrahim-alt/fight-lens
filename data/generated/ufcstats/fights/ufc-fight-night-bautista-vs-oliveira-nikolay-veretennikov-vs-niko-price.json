@@ -1,0 +1,404 @@
+{
+  "id": "abefaf1807941ee4",
+  "url": "http://www.ufcstats.com/fight-details/abefaf1807941ee4",
+  "event": {
+    "id": "c337c3c85b1871e0",
+    "name": "UFC Fight Night: Bautista vs. Oliveira",
+    "url": "http://www.ufcstats.com/event-details/c337c3c85b1871e0"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0f1efce7d2571d10",
+      "name": "Nikolay Veretennikov",
+      "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10",
+      "nickname": "Gladiator",
+      "result": "W"
+    },
+    {
+      "id": "d8da10db80131bec",
+      "name": "Niko Price",
+      "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec",
+      "nickname": "The Hybrid",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:42",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0f1efce7d2571d10",
+        "name": "Nikolay Veretennikov",
+        "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+      },
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0f1efce7d2571d10",
+          "name": "Nikolay Veretennikov",
+          "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 30,
+          "raw": "19 of 30"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 31,
+          "raw": "20 of 31"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:17",
+        "controlSeconds": 17
+      },
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 23,
+          "raw": "9 of 23"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 27,
+          "raw": "12 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0f1efce7d2571d10",
+          "name": "Nikolay Veretennikov",
+          "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+        },
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0f1efce7d2571d10",
+            "name": "Nikolay Veretennikov",
+            "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 30,
+            "raw": "19 of 30"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 31,
+            "raw": "20 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        },
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 27,
+            "raw": "12 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0f1efce7d2571d10",
+        "name": "Nikolay Veretennikov",
+        "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+      },
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0f1efce7d2571d10",
+          "name": "Nikolay Veretennikov",
+          "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 30,
+          "raw": "19 of 30"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 21,
+          "raw": "10 of 21"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 23,
+          "raw": "9 of 23"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 7,
+          "attempted": 19,
+          "raw": "7 of 19"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 22,
+          "raw": "9 of 22"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0f1efce7d2571d10",
+          "name": "Nikolay Veretennikov",
+          "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+        },
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0f1efce7d2571d10",
+            "name": "Nikolay Veretennikov",
+            "url": "http://www.ufcstats.com/fighter-details/0f1efce7d2571d10"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 30,
+            "raw": "19 of 30"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 22,
+            "raw": "9 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/abefaf1807941ee4",
+    "fetchedAt": "2026-05-19T13:30:35.209Z"
+  }
+}

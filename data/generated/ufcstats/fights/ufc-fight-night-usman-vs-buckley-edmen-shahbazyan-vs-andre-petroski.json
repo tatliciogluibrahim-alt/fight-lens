@@ -1,0 +1,764 @@
+{
+  "id": "e5bd7e6e2a50a843",
+  "url": "http://www.ufcstats.com/fight-details/e5bd7e6e2a50a843",
+  "event": {
+    "id": "de277a4abcfeea46",
+    "name": "UFC Fight Night: Usman vs. Buckley",
+    "url": "http://www.ufcstats.com/event-details/de277a4abcfeea46"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4144798612ef96e5",
+      "name": "Edmen Shahbazyan",
+      "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5",
+      "nickname": "The Golden Boy",
+      "result": "W"
+    },
+    {
+      "id": "5f61780fe5e9b6d0",
+      "name": "Andre Petroski",
+      "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin MacDonald",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4144798612ef96e5",
+        "name": "Edmen Shahbazyan",
+        "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+      },
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 136,
+          "raw": "53 of 136"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 58,
+          "attempted": 142,
+          "raw": "58 of 142"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 84,
+          "raw": "34 of 84"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 84,
+          "raw": "34 of 84"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:23",
+        "controlSeconds": 23
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 41,
+            "raw": "15 of 41"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 41,
+            "raw": "15 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 45,
+            "raw": "20 of 45"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 51,
+            "raw": "25 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4144798612ef96e5",
+        "name": "Edmen Shahbazyan",
+        "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+      },
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 136,
+          "raw": "53 of 136"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 37,
+          "attempted": 103,
+          "raw": "37 of 103"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 23,
+          "raw": "11 of 23"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 129,
+          "raw": "50 of 129"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 84,
+          "raw": "34 of 84"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 15,
+          "attempted": 52,
+          "raw": "15 of 52"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 82,
+          "raw": "33 of 82"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 41,
+            "raw": "15 of 41"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 12,
+            "attempted": 30,
+            "raw": "12 of 30"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 41,
+            "raw": "15 of 41"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 10,
+            "attempted": 37,
+            "raw": "10 of 37"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 45,
+            "raw": "20 of 45"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 22,
+            "raw": "9 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e5bd7e6e2a50a843",
+    "fetchedAt": "2026-05-19T13:30:43.840Z"
+  }
+}

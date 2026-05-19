@@ -1,0 +1,584 @@
+{
+  "id": "23201d09a78d446d",
+  "url": "http://www.ufcstats.com/fight-details/23201d09a78d446d",
+  "event": {
+    "id": "b2e3aca4cd363477",
+    "name": "UFC Fight Night: Machado Garry vs. Prates",
+    "url": "http://www.ufcstats.com/event-details/b2e3aca4cd363477"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0e46690e55a8df75",
+      "name": "Timmy Cuamba",
+      "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75",
+      "nickname": "Twilight",
+      "result": "W"
+    },
+    {
+      "id": "15ea371202eb25e1",
+      "name": "Roberto Romero",
+      "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1",
+      "nickname": "El Charro Negro",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Nick Berens",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0e46690e55a8df75",
+        "name": "Timmy Cuamba",
+        "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+      },
+      {
+        "id": "15ea371202eb25e1",
+        "name": "Roberto Romero",
+        "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 64,
+          "raw": "33 of 64"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 66,
+          "raw": "35 of 66"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:12",
+        "controlSeconds": 12
+      },
+      {
+        "fighter": {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 79,
+          "raw": "45 of 79"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:19",
+        "controlSeconds": 139
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "15ea371202eb25e1",
+            "name": "Roberto Romero",
+            "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 40,
+            "raw": "27 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:28",
+          "controlSeconds": 88
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 37,
+            "raw": "24 of 37"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "15ea371202eb25e1",
+            "name": "Roberto Romero",
+            "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:51",
+          "controlSeconds": 51
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0e46690e55a8df75",
+        "name": "Timmy Cuamba",
+        "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+      },
+      {
+        "id": "15ea371202eb25e1",
+        "name": "Roberto Romero",
+        "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 64,
+          "raw": "33 of 64"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 25,
+          "attempted": 53,
+          "raw": "25 of 53"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 29,
+          "attempted": 59,
+          "raw": "29 of 59"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 5,
+          "attempted": 32,
+          "raw": "5 of 32"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 22,
+          "raw": "19 of 22"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 13,
+          "raw": "11 of 13"
+        },
+        "distance": {
+          "landed": 29,
+          "attempted": 60,
+          "raw": "29 of 60"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "15ea371202eb25e1",
+            "name": "Roberto Romero",
+            "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 2,
+            "attempted": 13,
+            "raw": "2 of 13"
+          },
+          "body": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0e46690e55a8df75",
+          "name": "Timmy Cuamba",
+          "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+        },
+        {
+          "id": "15ea371202eb25e1",
+          "name": "Roberto Romero",
+          "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0e46690e55a8df75",
+            "name": "Timmy Cuamba",
+            "url": "http://www.ufcstats.com/fighter-details/0e46690e55a8df75"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 37,
+            "raw": "24 of 37"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 35,
+            "raw": "22 of 35"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "15ea371202eb25e1",
+            "name": "Roberto Romero",
+            "url": "http://www.ufcstats.com/fighter-details/15ea371202eb25e1"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/23201d09a78d446d",
+    "fetchedAt": "2026-05-19T13:30:32.677Z"
+  }
+}

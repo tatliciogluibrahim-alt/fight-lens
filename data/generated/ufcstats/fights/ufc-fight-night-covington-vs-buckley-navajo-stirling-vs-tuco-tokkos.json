@@ -1,0 +1,764 @@
+{
+  "id": "2b6a75175bbca4e9",
+  "url": "http://www.ufcstats.com/fight-details/2b6a75175bbca4e9",
+  "event": {
+    "id": "72c9c2eadfc3277e",
+    "name": "UFC Fight Night: Covington vs. Buckley",
+    "url": "http://www.ufcstats.com/event-details/72c9c2eadfc3277e"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b4b496ec2197ee3e",
+      "name": "Navajo Stirling",
+      "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "3e8118c1ab52f211",
+      "name": "Tuco Tokkos",
+      "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b4b496ec2197ee3e",
+        "name": "Navajo Stirling",
+        "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+      },
+      {
+        "id": "3e8118c1ab52f211",
+        "name": "Tuco Tokkos",
+        "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 78,
+          "attempted": 155,
+          "raw": "78 of 155"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 99,
+          "attempted": 181,
+          "raw": "99 of 181"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:54",
+        "controlSeconds": 54
+      },
+      {
+        "fighter": {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 90,
+          "raw": "32 of 90"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 93,
+          "raw": "34 of 93"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:36",
+        "controlSeconds": 216
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 57,
+            "raw": "21 of 57"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 62,
+            "raw": "24 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 35,
+            "raw": "22 of 35"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 39,
+            "raw": "25 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 35,
+            "raw": "10 of 35"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 37,
+            "raw": "12 of 37"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedownPercent": 60,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:29",
+          "controlSeconds": 149
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 63,
+            "raw": "35 of 63"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 50,
+            "attempted": 80,
+            "raw": "50 of 80"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:31",
+          "controlSeconds": 31
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:07",
+          "controlSeconds": 67
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b4b496ec2197ee3e",
+        "name": "Navajo Stirling",
+        "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+      },
+      {
+        "id": "3e8118c1ab52f211",
+        "name": "Tuco Tokkos",
+        "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        "significantStrikes": {
+          "landed": 78,
+          "attempted": 155,
+          "raw": "78 of 155"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 33,
+          "attempted": 94,
+          "raw": "33 of 94"
+        },
+        "body": {
+          "landed": 37,
+          "attempted": 50,
+          "raw": "37 of 50"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "distance": {
+          "landed": 70,
+          "attempted": 142,
+          "raw": "70 of 142"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 90,
+          "raw": "32 of 90"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 18,
+          "attempted": 70,
+          "raw": "18 of 70"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 80,
+          "raw": "28 of 80"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 57,
+            "raw": "21 of 57"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 8,
+            "attempted": 35,
+            "raw": "8 of 35"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 54,
+            "raw": "20 of 54"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 22,
+            "raw": "9 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 35,
+            "raw": "22 of 35"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 35,
+            "raw": "10 of 35"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 8,
+            "attempted": 31,
+            "raw": "8 of 31"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 30,
+            "raw": "8 of 30"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "3e8118c1ab52f211",
+          "name": "Tuco Tokkos",
+          "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 63,
+            "raw": "35 of 63"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 17,
+            "attempted": 40,
+            "raw": "17 of 40"
+          },
+          "body": {
+            "landed": 16,
+            "attempted": 21,
+            "raw": "16 of 21"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 60,
+            "raw": "33 of 60"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3e8118c1ab52f211",
+            "name": "Tuco Tokkos",
+            "url": "http://www.ufcstats.com/fighter-details/3e8118c1ab52f211"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2b6a75175bbca4e9",
+    "fetchedAt": "2026-05-19T13:30:38.235Z"
+  }
+}

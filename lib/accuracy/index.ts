@@ -65,12 +65,50 @@ const allRecords: PredictionRecord[] = [
   osbourneDurden as PredictionRecord,
 ];
 
+/**
+ * IMPORTANT: distinguishing locked calls from historical backtest reconstructions.
+ *
+ * - A "locked call" is a real pre-fight prediction that was committed before
+ *   the fight happened. predictionMadeAt is a real ISO timestamp and
+ *   isBacktestReconstruction is missing/false.
+ * - A "historical backtest" reconstruction is a retroactive model run on a
+ *   completed fight using as-of data. isBacktestReconstruction is true.
+ *
+ * Model Record (public) should ONLY surface locked calls. Backtest rows are
+ * shown separately, clearly labeled as historical backtest, so the product
+ * never claims it called a fight it didn't actually call before the bell.
+ */
+
+function isLockedCall(record: PredictionRecord): boolean {
+  return !record.isBacktestReconstruction;
+}
+
+function isHistoricalBacktest(record: PredictionRecord): boolean {
+  return Boolean(record.isBacktestReconstruction);
+}
+
+/** All records (locked + historical backtest). Avoid using for public metrics. */
 export function getAllPredictions(): PredictionRecord[] {
   return allRecords;
 }
 
+/** Locked pre-fight calls only — the public Model Record. */
+export function getLockedPredictions(): PredictionRecord[] {
+  return allRecords.filter(isLockedCall);
+}
+
+/** Historical backtest reconstructions — show separately, labeled clearly. */
+export function getHistoricalBacktestReconstructions(): PredictionRecord[] {
+  return allRecords.filter(isHistoricalBacktest);
+}
+
+/**
+ * Public accuracy metrics. Computed from LOCKED calls only — never mixes
+ * in historical backtest reconstructions, since those were never publicly
+ * logged before the fights happened.
+ */
 export function getAccuracyMetrics(): AccuracyMetrics {
-  return computeAccuracyMetrics(allRecords);
+  return computeAccuracyMetrics(getLockedPredictions());
 }
 
 export function getPredictionByFightId(fightId: string): PredictionRecord | null {

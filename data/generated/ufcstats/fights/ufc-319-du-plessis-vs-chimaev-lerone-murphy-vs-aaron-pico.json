@@ -1,0 +1,404 @@
+{
+  "id": "9fa6a029f7f8241c",
+  "url": "http://www.ufcstats.com/fight-details/9fa6a029f7f8241c",
+  "event": {
+    "id": "421ccfc6ddb17958",
+    "name": "UFC 319: Du Plessis vs. Chimaev",
+    "url": "http://www.ufcstats.com/event-details/421ccfc6ddb17958"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "396fe87b84ac2e1c",
+      "name": "Lerone Murphy",
+      "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c",
+      "nickname": "The Miracle",
+      "result": "W"
+    },
+    {
+      "id": "5537efc6e496dd84",
+      "name": "Aaron Pico",
+      "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:21",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "396fe87b84ac2e1c",
+        "name": "Lerone Murphy",
+        "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+      },
+      {
+        "id": "5537efc6e496dd84",
+        "name": "Aaron Pico",
+        "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "5537efc6e496dd84",
+          "name": "Aaron Pico",
+          "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 30,
+          "raw": "13 of 30"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:01",
+        "controlSeconds": 121
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        {
+          "id": "5537efc6e496dd84",
+          "name": "Aaron Pico",
+          "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "396fe87b84ac2e1c",
+            "name": "Lerone Murphy",
+            "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5537efc6e496dd84",
+            "name": "Aaron Pico",
+            "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:01",
+          "controlSeconds": 121
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "396fe87b84ac2e1c",
+        "name": "Lerone Murphy",
+        "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+      },
+      {
+        "id": "5537efc6e496dd84",
+        "name": "Aaron Pico",
+        "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5537efc6e496dd84",
+          "name": "Aaron Pico",
+          "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 7,
+          "attempted": 23,
+          "raw": "7 of 23"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 21,
+          "raw": "7 of 21"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        {
+          "id": "5537efc6e496dd84",
+          "name": "Aaron Pico",
+          "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "396fe87b84ac2e1c",
+            "name": "Lerone Murphy",
+            "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5537efc6e496dd84",
+            "name": "Aaron Pico",
+            "url": "http://www.ufcstats.com/fighter-details/5537efc6e496dd84"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/9fa6a029f7f8241c",
+    "fetchedAt": "2026-05-19T13:31:31.956Z"
+  }
+}

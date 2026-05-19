@@ -14,6 +14,7 @@ import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import { pinToLockedPrediction } from "@/lib/fight-outcome-model/pin-to-locked";
 import { getPredictionByFightId } from "@/lib/accuracy";
+import { buildPredictionViewModel } from "@/lib/predictionViewModel";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -95,6 +96,14 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
       ? pinToLockedPrediction(liveOutcomeModel, prediction)
       : liveOutcomeModel;
 
+  // Canonical view model — single source of truth for predictedWinner, etc.
+  const vm = buildPredictionViewModel({
+    eventId: "ufc-328",
+    fight,
+    outcomeModel,
+    lockedPrediction: prediction,
+  });
+
   return (
     <>
       <AppHeader />
@@ -143,7 +152,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               call: (
                 <>
                   <TheCall outcomeModel={outcomeModel} />
-                  <FightShapeSummary fight={fight} modelOutput={fightShapeModel} />
+                  <FightShapeSummary
+                    fight={fight}
+                    modelOutput={fightShapeModel}
+                    predictedWinnerId={vm.predictedWinner?.id ?? null}
+                  />
                 </>
               ),
               shape: (
@@ -160,7 +173,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                     fighterB={fighterB}
                     modelOutput={fightShapeModel}
                   />
-                  <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+                  <PathsToVictory
+                    fight={fight}
+                    modelOutput={fightShapeModel}
+                    predictedWinnerId={vm.predictedWinner?.id ?? null}
+                  />
                 </>
               ),
             }}

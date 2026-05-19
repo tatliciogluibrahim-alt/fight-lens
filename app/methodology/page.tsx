@@ -202,6 +202,19 @@ export default function MethodologyPage() {
                 Coverage is partial today — it improves as more events get ingested.
               </p>
             </div>
+
+            <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
+              <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=76)</p>
+              <p className="mt-1 text-sm leading-6 text-muted">
+                The historical backtest was expanded from 13 fights to 76 fights across 6 completed
+                events. The current model is directionally useful but not proven. It trails the
+                better-record baseline (59% vs 66%) on this sample and shows overconfidence in the
+                60–80% buckets. More data coverage and a larger sample are needed before any model
+                grade unlocks. These backtests are <span className="text-foreground">retroactive validation runs</span> —
+                they are not the same as logged pre-fight calls, and are listed separately on the
+                Model Record page.
+              </p>
+            </div>
           </div>
         </section>
 

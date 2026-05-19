@@ -10,10 +10,13 @@
  * and leanLabel in the live model output with the values from the locked
  * prediction file, so The Call section matches the actual pre-fight call.
  *
- * The narrative (scenarios, swing factor descriptions) comes from the live
- * model run — these are still analytically useful in hindsight.
+ * It also re-aligns the `scenarios` array so the "the call" card names the
+ * locked favorite, not the live-re-run favorite. Without this, a fight where
+ * the locked call leans one way but the post-event re-run leans the other
+ * shows a giant probability on Strickland and a "the call → Chimaev" card
+ * (the QA-observed contradiction).
  */
-import type { FightOutcomeModelOutput } from "./types";
+import type { FightOutcomeModelOutput, OutcomeScenario } from "./types";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 function leanLabel(prob: number): "strong lean" | "lean" | "slight lean" | "no lean" {
@@ -21,6 +24,36 @@ function leanLabel(prob: number): "strong lean" | "lean" | "slight lean" | "no l
   if (prob >= 60) return "lean";
   if (prob >= 53) return "slight lean";
   return "no lean";
+}
+
+/**
+ * If the live scenarios point at the live favorite but the locked call points
+ * at the other fighter, swap the lean+upset content (titles stay where they
+ * are, so "the call" remains the lean card and "live path" remains the upset
+ * card — only the fighter labels and descriptions move).
+ */
+function reconcileScenarios(
+  scenarios: FightOutcomeModelOutput["scenarios"],
+  lockedFavoriteName: string,
+): FightOutcomeModelOutput["scenarios"] {
+  const lean = scenarios.find((s): s is OutcomeScenario => s.id === "lean");
+  const upset = scenarios.find((s): s is OutcomeScenario => s.id === "upset");
+  const swing = scenarios.find((s): s is OutcomeScenario => s.id === "swing");
+  if (!lean || !upset || !swing) return scenarios;
+
+  if (lean.fighterLabel === lockedFavoriteName) return scenarios;
+
+  const fixedLean: OutcomeScenario = {
+    ...lean,
+    fighterLabel: upset.fighterLabel,
+    description: upset.description,
+  };
+  const fixedUpset: OutcomeScenario = {
+    ...upset,
+    fighterLabel: lean.fighterLabel,
+    description: lean.description,
+  };
+  return [fixedLean, fixedUpset, swing] as FightOutcomeModelOutput["scenarios"];
 }
 
 export function pinToLockedPrediction(
@@ -31,6 +64,10 @@ export function pinToLockedPrediction(
   const pB = prediction.prediction.fighterBWinProbability;
   const { decision, koTko, submission } = prediction.prediction.methodBreakdown;
   const tooClose = Math.abs(pA - pB) < 5;
+
+  const lockedFavoriteName = pA >= pB
+    ? liveModel.fighterA.fighterName
+    : liveModel.fighterB.fighterName;
 
   return {
     ...liveModel,
@@ -46,5 +83,6 @@ export function pinToLockedPrediction(
       winProbability: pB,
       leanLabel: leanLabel(pB),
     },
+    scenarios: reconcileScenarios(liveModel.scenarios, lockedFavoriteName),
   };
 }
