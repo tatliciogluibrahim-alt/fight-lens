@@ -1,0 +1,878 @@
+{
+  "generatedAt": "2026-05-19T23:11:09.523Z",
+  "scope": "Backend-only baseline validation and experiment harness. No production prediction changes.",
+  "filesInspected": [
+    "AGENTS.md",
+    "docs/CHANGELOG.md",
+    "docs/MODEL_STATUS.md",
+    "docs/NEXT_STEPS.md",
+    "docs/BACKTESTING.md",
+    "docs/MODEL_REVIEW.md",
+    "scripts/backtest/run.ts",
+    "lib/backtest/buildAsOfFeatures.ts",
+    "lib/backtest/runBacktest.ts",
+    "lib/backtest/scorePredictions.ts",
+    "scripts/ingest/ufcstats.mjs",
+    "scripts/ingest/build-normalized-event.mjs",
+    "data/generated/backtests/predictions.json",
+    "data/generated/backtests/summary.json"
+  ],
+  "baselineAudit": {
+    "currentBetterRecordBaseline": {
+      "implementation": "scripts/backtest/run.ts parses fight.fighters.fighterA.record and fighterB.record, compares W-L win percentage, and counts coin-flips as misses in the aggregate denominator.",
+      "sourceFields": [
+        "scripts/ingest/ufcstats.mjs scrapes fighter profile record text",
+        "scripts/ingest/build-normalized-event.mjs copies profile.record or event-preview Wins/Losses/Draws into SourcedFighter.record",
+        "scripts/backtest/run.ts reads SourcedFighter.record directly"
+      ],
+      "leakageSafe": false,
+      "finding": "The normalized record strings are scrape/profile snapshots, not records recomputed from each target fight's filtered pre-fight history. They can include target or later results for historical events, so the prior 71% baseline should not be treated as validated."
+    },
+    "validatedPrimaryAsOfBaselineId": "asof-ufc-win-pct-any-history",
+    "fixedProbabilityForBaselineBrier": "Baseline Brier uses 60/40 on picked fights and 50/50 on no-picks. Accuracy-on-picked excludes no-picks; all-fight accuracy counts no-picks as misses for direct coverage comparison.",
+    "variants": [
+      {
+        "id": "legacy-normalized-win-pct",
+        "label": "Legacy normalized record-string baseline",
+        "leakageSafe": false,
+        "rule": "Compare SourcedFighter.record W-L win percentage from normalized fighter profiles.",
+        "nTotal": 253,
+        "nPicked": 247,
+        "nNoPick": 6,
+        "coverage": 98,
+        "accuracyOnPicked": 72,
+        "accuracyAllNoPicksAsMisses": 71,
+        "brierAll": 0.216,
+        "brierPicked": 0.215,
+        "agreementWithV02": 69,
+        "disagreementN": 76,
+        "baselineAccuracyWhenDisagreeingWithV02": 59,
+        "v02AccuracyWhenDisagreeingWithBaseline": 41,
+        "v02AccuracyOnPickedSubset": 67,
+        "modelVsBaselineDeltaOnPickedSubset": -5
+      },
+      {
+        "id": "asof-absolute-wl",
+        "label": "As-of absolute W-L record",
+        "leakageSafe": true,
+        "rule": "Use filtered pre-fight history; pick higher wins-minus-losses; no-pick on equal net W-L.",
+        "nTotal": 253,
+        "nPicked": 206,
+        "nNoPick": 47,
+        "coverage": 81,
+        "accuracyOnPicked": 59,
+        "accuracyAllNoPicksAsMisses": 48,
+        "brierAll": 0.243,
+        "brierPicked": 0.242,
+        "agreementWithV02": 62,
+        "disagreementN": 78,
+        "baselineAccuracyWhenDisagreeingWithV02": 44,
+        "v02AccuracyWhenDisagreeingWithBaseline": 56,
+        "v02AccuracyOnPickedSubset": 64,
+        "modelVsBaselineDeltaOnPickedSubset": 5
+      },
+      {
+        "id": "asof-win-pct-min3",
+        "label": "As-of win percentage, min 3 fights each",
+        "leakageSafe": true,
+        "rule": "Use filtered pre-fight history; require at least 3 directional fights for each fighter.",
+        "nTotal": 253,
+        "nPicked": 146,
+        "nNoPick": 107,
+        "coverage": 58,
+        "accuracyOnPicked": 60,
+        "accuracyAllNoPicksAsMisses": 34,
+        "brierAll": 0.245,
+        "brierPicked": 0.241,
+        "agreementWithV02": 71,
+        "disagreementN": 43,
+        "baselineAccuracyWhenDisagreeingWithV02": 47,
+        "v02AccuracyWhenDisagreeingWithBaseline": 53,
+        "v02AccuracyOnPickedSubset": 62,
+        "modelVsBaselineDeltaOnPickedSubset": 2
+      },
+      {
+        "id": "asof-ufc-win-pct-any-history",
+        "label": "As-of UFC win percentage, any history",
+        "leakageSafe": true,
+        "rule": "Use filtered UFCStats history; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback.",
+        "nTotal": 253,
+        "nPicked": 233,
+        "nNoPick": 20,
+        "coverage": 92,
+        "accuracyOnPicked": 63,
+        "accuracyAllNoPicksAsMisses": 58,
+        "brierAll": 0.235,
+        "brierPicked": 0.234,
+        "agreementWithV02": 73,
+        "disagreementN": 64,
+        "baselineAccuracyWhenDisagreeingWithV02": 45,
+        "v02AccuracyWhenDisagreeingWithBaseline": 55,
+        "v02AccuracyOnPickedSubset": 66,
+        "modelVsBaselineDeltaOnPickedSubset": 3
+      },
+      {
+        "id": "asof-win-pct-no-small-edge",
+        "label": "As-of win percentage, no small edge",
+        "leakageSafe": true,
+        "rule": "Use filtered pre-fight history; require at least 1 directional fight each and a win-rate gap above 5 points.",
+        "nTotal": 253,
+        "nPicked": 188,
+        "nNoPick": 65,
+        "coverage": 74,
+        "accuracyOnPicked": 64,
+        "accuracyAllNoPicksAsMisses": 47,
+        "brierAll": 0.237,
+        "brierPicked": 0.232,
+        "agreementWithV02": 74,
+        "disagreementN": 49,
+        "baselineAccuracyWhenDisagreeingWithV02": 49,
+        "v02AccuracyWhenDisagreeingWithBaseline": 51,
+        "v02AccuracyOnPickedSubset": 64,
+        "modelVsBaselineDeltaOnPickedSubset": 0
+      }
+    ]
+  },
+  "corpus": {
+    "scoredFights": 253,
+    "v02WinnerAccuracy": 66,
+    "v02MethodAccuracy": 58,
+    "v02Brier": 0.219,
+    "legacyBetterRecordAccuracy": 71
+  },
+  "experiments": [
+    {
+      "id": "v02-current",
+      "label": "Current v0.2",
+      "description": "Production outcome-v0.2 probabilities from the existing backtest output.",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 64,
+      "brierScore": 0.219,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 8
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 135,
+          "averagePredictedProbability": 54.4,
+          "actualWinRate": 61,
+          "brier": 0.248
+        },
+        {
+          "bucket": "60-70%",
+          "n": 57,
+          "averagePredictedProbability": 64,
+          "actualWinRate": 61,
+          "brier": 0.233
+        },
+        {
+          "bucket": "70-80%",
+          "n": 28,
+          "averagePredictedProbability": 72.8,
+          "actualWinRate": 64,
+          "brier": 0.236
+        },
+        {
+          "bucket": "80%+",
+          "n": 33,
+          "averagePredictedProbability": 85,
+          "actualWinRate": 94,
+          "brier": 0.062
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 169,
+          "accuracy": 70,
+          "brier": 0.209
+        },
+        "disagree": {
+          "n": 64,
+          "accuracy": 55,
+          "brier": 0.248
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.213
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.208
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.25
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.216
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 67,
+          "brier": 0.216
+        }
+      },
+      "noLeanCount": 31,
+      "noLeanRate": 12,
+      "callsChangedVsV02": 0,
+      "callsChangedRate": 0,
+      "winnerSideChangedVsV02": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-a-record-ratio-feature",
+      "label": "Experiment A - record-ratio feature",
+      "description": "Experiment-only shift toward the as-of record prior.",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.217,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 6
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 119,
+          "averagePredictedProbability": 54.8,
+          "actualWinRate": 58,
+          "brier": 0.243
+        },
+        {
+          "bucket": "60-70%",
+          "n": 65,
+          "averagePredictedProbability": 64.4,
+          "actualWinRate": 63,
+          "brier": 0.23
+        },
+        {
+          "bucket": "70-80%",
+          "n": 34,
+          "averagePredictedProbability": 74.3,
+          "actualWinRate": 59,
+          "brier": 0.265
+        },
+        {
+          "bucket": "80%+",
+          "n": 35,
+          "averagePredictedProbability": 88.4,
+          "actualWinRate": 94,
+          "brier": 0.056
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 187,
+          "accuracy": 67,
+          "brier": 0.211
+        },
+        "disagree": {
+          "n": 46,
+          "accuracy": 52,
+          "brier": 0.241
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.213
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.209
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.246
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.215
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 64,
+          "brier": 0.214
+        }
+      },
+      "noLeanCount": 21,
+      "noLeanRate": 8,
+      "callsChangedVsV02": 42,
+      "callsChangedRate": 17,
+      "winnerSideChangedVsV02": 18,
+      "overfittingFlags": [
+        "May be copying better-record too much by suppressing disagreement cases."
+      ]
+    },
+    {
+      "id": "exp-b-disagreement-penalty",
+      "label": "Experiment B - better-record disagreement penalty",
+      "description": "If v0.2 disagrees with as-of better-record below 70% support, shrink toward 50.",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.218,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 8
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 148,
+          "averagePredictedProbability": 54.1,
+          "actualWinRate": 59,
+          "brier": 0.249
+        },
+        {
+          "bucket": "60-70%",
+          "n": 44,
+          "averagePredictedProbability": 64.3,
+          "actualWinRate": 68,
+          "brier": 0.219
+        },
+        {
+          "bucket": "70-80%",
+          "n": 28,
+          "averagePredictedProbability": 72.8,
+          "actualWinRate": 64,
+          "brier": 0.236
+        },
+        {
+          "bucket": "80%+",
+          "n": 33,
+          "averagePredictedProbability": 85,
+          "actualWinRate": 94,
+          "brier": 0.062
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 169,
+          "accuracy": 70,
+          "brier": 0.209
+        },
+        "disagree": {
+          "n": 64,
+          "accuracy": 55,
+          "brier": 0.245
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.213
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.209
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.244
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.218
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 67,
+          "brier": 0.216
+        }
+      },
+      "noLeanCount": 43,
+      "noLeanRate": 17,
+      "callsChangedVsV02": 12,
+      "callsChangedRate": 5,
+      "winnerSideChangedVsV02": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-c-mid-confidence-shrinkage",
+      "label": "Experiment C - mid-confidence shrinkage",
+      "description": "Shrink 60-80% outputs toward 50 while leaving 80%+ untouched.",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 64,
+      "brierScore": 0.218,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 8
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 161,
+          "averagePredictedProbability": 55.1,
+          "actualWinRate": 61,
+          "brier": 0.246
+        },
+        {
+          "bucket": "60-70%",
+          "n": 53,
+          "averagePredictedProbability": 63.7,
+          "actualWinRate": 62,
+          "brier": 0.233
+        },
+        {
+          "bucket": "70-80%",
+          "n": 6,
+          "averagePredictedProbability": 70.4,
+          "actualWinRate": 67,
+          "brier": 0.223
+        },
+        {
+          "bucket": "80%+",
+          "n": 33,
+          "averagePredictedProbability": 85,
+          "actualWinRate": 94,
+          "brier": 0.062
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 169,
+          "accuracy": 70,
+          "brier": 0.208
+        },
+        "disagree": {
+          "n": 64,
+          "accuracy": 55,
+          "brier": 0.248
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.21
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.21
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.248
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.219
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 67,
+          "brier": 0.215
+        }
+      },
+      "noLeanCount": 31,
+      "noLeanRate": 12,
+      "callsChangedVsV02": 0,
+      "callsChangedRate": 0,
+      "winnerSideChangedVsV02": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-d-thin-support-contrarian-guardrail",
+      "label": "Experiment D - thin-support contrarian guardrail",
+      "description": "If v0.2 disagrees with as-of better-record and support is thin/missing, shrink toward 50.",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.219,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 8
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 143,
+          "averagePredictedProbability": 54.2,
+          "actualWinRate": 60,
+          "brier": 0.249
+        },
+        {
+          "bucket": "60-70%",
+          "n": 52,
+          "averagePredictedProbability": 64.3,
+          "actualWinRate": 67,
+          "brier": 0.22
+        },
+        {
+          "bucket": "70-80%",
+          "n": 27,
+          "averagePredictedProbability": 72.9,
+          "actualWinRate": 63,
+          "brier": 0.242
+        },
+        {
+          "bucket": "80%+",
+          "n": 31,
+          "averagePredictedProbability": 85,
+          "actualWinRate": 94,
+          "brier": 0.064
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 169,
+          "accuracy": 70,
+          "brier": 0.209
+        },
+        "disagree": {
+          "n": 64,
+          "accuracy": 55,
+          "brier": 0.25
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.213
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.211
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.247
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.216
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 67,
+          "brier": 0.217
+        }
+      },
+      "noLeanCount": 40,
+      "noLeanRate": 16,
+      "callsChangedVsV02": 9,
+      "callsChangedRate": 4,
+      "winnerSideChangedVsV02": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-10",
+      "label": "Experiment E - 10% record-prior blend",
+      "description": "Blend v0.2 probability with the as-of record prior at 10%.",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.218,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 6
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 144,
+          "averagePredictedProbability": 54.6,
+          "actualWinRate": 57,
+          "brier": 0.249
+        },
+        {
+          "bucket": "60-70%",
+          "n": 58,
+          "averagePredictedProbability": 64.6,
+          "actualWinRate": 67,
+          "brier": 0.221
+        },
+        {
+          "bucket": "70-80%",
+          "n": 31,
+          "averagePredictedProbability": 75.4,
+          "actualWinRate": 71,
+          "brier": 0.199
+        },
+        {
+          "bucket": "80%+",
+          "n": 20,
+          "averagePredictedProbability": 85.1,
+          "actualWinRate": 100,
+          "brier": 0.023
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 173,
+          "accuracy": 68,
+          "brier": 0.209
+        },
+        "disagree": {
+          "n": 60,
+          "accuracy": 52,
+          "brier": 0.246
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.214
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.21
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 50,
+          "brier": 0.247
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.217
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 65,
+          "brier": 0.215
+        }
+      },
+      "noLeanCount": 41,
+      "noLeanRate": 16,
+      "callsChangedVsV02": 12,
+      "callsChangedRate": 5,
+      "winnerSideChangedVsV02": 4,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-20",
+      "label": "Experiment E - 20% record-prior blend",
+      "description": "Blend v0.2 probability with the as-of record prior at 20%.",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.218,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 6
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 149,
+          "averagePredictedProbability": 54.6,
+          "actualWinRate": 57,
+          "brier": 0.245
+        },
+        {
+          "bucket": "60-70%",
+          "n": 57,
+          "averagePredictedProbability": 64.5,
+          "actualWinRate": 65,
+          "brier": 0.228
+        },
+        {
+          "bucket": "70-80%",
+          "n": 29,
+          "averagePredictedProbability": 74.6,
+          "actualWinRate": 76,
+          "brier": 0.177
+        },
+        {
+          "bucket": "80%+",
+          "n": 18,
+          "averagePredictedProbability": 83.3,
+          "actualWinRate": 100,
+          "brier": 0.029
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 180,
+          "accuracy": 67,
+          "brier": 0.211
+        },
+        "disagree": {
+          "n": 53,
+          "accuracy": 51,
+          "brier": 0.243
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.215
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.213
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 50,
+          "brier": 0.245
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.219
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 64,
+          "brier": 0.215
+        }
+      },
+      "noLeanCount": 29,
+      "noLeanRate": 11,
+      "callsChangedVsV02": 37,
+      "callsChangedRate": 15,
+      "winnerSideChangedVsV02": 11,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-30",
+      "label": "Experiment E - 30% record-prior blend",
+      "description": "Blend v0.2 probability with the as-of record prior at 30%.",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.219,
+      "methodAccuracy": 58,
+      "betterRecordComparison": {
+        "baselineId": "asof-ufc-win-pct-any-history",
+        "baselineAccuracyAllNoPicksAsMisses": 58,
+        "deltaVsBaseline": 6
+      },
+      "calibrationBuckets": [
+        {
+          "bucket": "50-60%",
+          "n": 152,
+          "averagePredictedProbability": 54.6,
+          "actualWinRate": 59,
+          "brier": 0.241
+        },
+        {
+          "bucket": "60-70%",
+          "n": 59,
+          "averagePredictedProbability": 64.4,
+          "actualWinRate": 59,
+          "brier": 0.245
+        },
+        {
+          "bucket": "70-80%",
+          "n": 31,
+          "averagePredictedProbability": 74.6,
+          "actualWinRate": 87,
+          "brier": 0.126
+        },
+        {
+          "bucket": "80%+",
+          "n": 11,
+          "averagePredictedProbability": 82.6,
+          "actualWinRate": 100,
+          "brier": 0.031
+        }
+      ],
+      "agreementVsBetterRecord": {
+        "agree": {
+          "n": 187,
+          "accuracy": 67,
+          "brier": 0.213
+        },
+        "disagree": {
+          "n": 46,
+          "accuracy": 52,
+          "brier": 0.241
+        },
+        "noPickBaseline": {
+          "n": 20,
+          "accuracy": 70,
+          "brier": 0.217
+        }
+      },
+      "recordBuckets": {
+        "same/similar record": {
+          "n": 34,
+          "accuracy": 71,
+          "brier": 0.216
+        },
+        "small record advantage": {
+          "n": 28,
+          "accuracy": 54,
+          "brier": 0.243
+        },
+        "medium record advantage": {
+          "n": 31,
+          "accuracy": 68,
+          "brier": 0.22
+        },
+        "large record advantage": {
+          "n": 160,
+          "accuracy": 64,
+          "brier": 0.215
+        }
+      },
+      "noLeanCount": 28,
+      "noLeanRate": 11,
+      "callsChangedVsV02": 47,
+      "callsChangedRate": 19,
+      "winnerSideChangedVsV02": 18,
+      "overfittingFlags": [
+        "May be copying better-record too much by suppressing disagreement cases."
+      ]
+    }
+  ],
+  "recommendation": {
+    "choice": "E",
+    "label": "fix baseline/data issue first",
+    "rationale": [
+      "The legacy 71% better-record baseline is not leakage-safe because it uses normalized profile record strings rather than recomputed pre-fight history.",
+      "The primary as-of baseline produced 58% all-fight accuracy with 92% coverage, so it remains a useful comparator after leakage-safe recomputation.",
+      "Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it should be validated out of sample before promotion.",
+      "Update the official backtest baseline reporting to use an as-of record implementation before treating any v0.3 candidate as a promotion candidate."
+    ]
+  },
+  "guardrails": [
+    "Do not promote a model from this single run.",
+    "Do not change production outcome-v0.2 outputs yet.",
+    "Do not change predictionViewModel or public noLean threshold.",
+    "Keep public Model Record separate from historical backtests.",
+    "Do not tune method model until winner probability calibration stabilizes."
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "generatedAt": "2026-05-19T23:11:09.523Z",
+  "corpus": {
+    "scoredFights": 253,
+    "v02WinnerAccuracy": 66,
+    "v02MethodAccuracy": 58,
+    "v02Brier": 0.219,
+    "legacyBetterRecordAccuracy": 71
+  },
+  "baselineVariants": [
+    {
+      "id": "legacy-normalized-win-pct",
+      "label": "Legacy normalized record-string baseline",
+      "leakageSafe": false,
+      "rule": "Compare SourcedFighter.record W-L win percentage from normalized fighter profiles.",
+      "nTotal": 253,
+      "nPicked": 247,
+      "nNoPick": 6,
+      "coverage": 98,
+      "accuracyOnPicked": 72,
+      "accuracyAllNoPicksAsMisses": 71,
+      "brierAll": 0.216,
+      "brierPicked": 0.215,
+      "agreementWithV02": 69,
+      "disagreementN": 76,
+      "baselineAccuracyWhenDisagreeingWithV02": 59,
+      "v02AccuracyWhenDisagreeingWithBaseline": 41,
+      "v02AccuracyOnPickedSubset": 67,
+      "modelVsBaselineDeltaOnPickedSubset": -5
+    },
+    {
+      "id": "asof-absolute-wl",
+      "label": "As-of absolute W-L record",
+      "leakageSafe": true,
+      "rule": "Use filtered pre-fight history; pick higher wins-minus-losses; no-pick on equal net W-L.",
+      "nTotal": 253,
+      "nPicked": 206,
+      "nNoPick": 47,
+      "coverage": 81,
+      "accuracyOnPicked": 59,
+      "accuracyAllNoPicksAsMisses": 48,
+      "brierAll": 0.243,
+      "brierPicked": 0.242,
+      "agreementWithV02": 62,
+      "disagreementN": 78,
+      "baselineAccuracyWhenDisagreeingWithV02": 44,
+      "v02AccuracyWhenDisagreeingWithBaseline": 56,
+      "v02AccuracyOnPickedSubset": 64,
+      "modelVsBaselineDeltaOnPickedSubset": 5
+    },
+    {
+      "id": "asof-win-pct-min3",
+      "label": "As-of win percentage, min 3 fights each",
+      "leakageSafe": true,
+      "rule": "Use filtered pre-fight history; require at least 3 directional fights for each fighter.",
+      "nTotal": 253,
+      "nPicked": 146,
+      "nNoPick": 107,
+      "coverage": 58,
+      "accuracyOnPicked": 60,
+      "accuracyAllNoPicksAsMisses": 34,
+      "brierAll": 0.245,
+      "brierPicked": 0.241,
+      "agreementWithV02": 71,
+      "disagreementN": 43,
+      "baselineAccuracyWhenDisagreeingWithV02": 47,
+      "v02AccuracyWhenDisagreeingWithBaseline": 53,
+      "v02AccuracyOnPickedSubset": 62,
+      "modelVsBaselineDeltaOnPickedSubset": 2
+    },
+    {
+      "id": "asof-ufc-win-pct-any-history",
+      "label": "As-of UFC win percentage, any history",
+      "leakageSafe": true,
+      "rule": "Use filtered UFCStats history; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback.",
+      "nTotal": 253,
+      "nPicked": 233,
+      "nNoPick": 20,
+      "coverage": 92,
+      "accuracyOnPicked": 63,
+      "accuracyAllNoPicksAsMisses": 58,
+      "brierAll": 0.235,
+      "brierPicked": 0.234,
+      "agreementWithV02": 73,
+      "disagreementN": 64,
+      "baselineAccuracyWhenDisagreeingWithV02": 45,
+      "v02AccuracyWhenDisagreeingWithBaseline": 55,
+      "v02AccuracyOnPickedSubset": 66,
+      "modelVsBaselineDeltaOnPickedSubset": 3
+    },
+    {
+      "id": "asof-win-pct-no-small-edge",
+      "label": "As-of win percentage, no small edge",
+      "leakageSafe": true,
+      "rule": "Use filtered pre-fight history; require at least 1 directional fight each and a win-rate gap above 5 points.",
+      "nTotal": 253,
+      "nPicked": 188,
+      "nNoPick": 65,
+      "coverage": 74,
+      "accuracyOnPicked": 64,
+      "accuracyAllNoPicksAsMisses": 47,
+      "brierAll": 0.237,
+      "brierPicked": 0.232,
+      "agreementWithV02": 74,
+      "disagreementN": 49,
+      "baselineAccuracyWhenDisagreeingWithV02": 49,
+      "v02AccuracyWhenDisagreeingWithBaseline": 51,
+      "v02AccuracyOnPickedSubset": 64,
+      "modelVsBaselineDeltaOnPickedSubset": 0
+    }
+  ],
+  "experiments": [
+    {
+      "id": "v02-current",
+      "label": "Current v0.2",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 64,
+      "brierScore": 0.219,
+      "noLeanCount": 31,
+      "callsChangedRate": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-a-record-ratio-feature",
+      "label": "Experiment A - record-ratio feature",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.217,
+      "noLeanCount": 21,
+      "callsChangedRate": 17,
+      "overfittingFlags": [
+        "May be copying better-record too much by suppressing disagreement cases."
+      ]
+    },
+    {
+      "id": "exp-b-disagreement-penalty",
+      "label": "Experiment B - better-record disagreement penalty",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.218,
+      "noLeanCount": 43,
+      "callsChangedRate": 5,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-c-mid-confidence-shrinkage",
+      "label": "Experiment C - mid-confidence shrinkage",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 64,
+      "brierScore": 0.218,
+      "noLeanCount": 31,
+      "callsChangedRate": 0,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-d-thin-support-contrarian-guardrail",
+      "label": "Experiment D - thin-support contrarian guardrail",
+      "winnerAccuracy": 66,
+      "namedCallAccuracy": 65,
+      "brierScore": 0.219,
+      "noLeanCount": 40,
+      "callsChangedRate": 4,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-10",
+      "label": "Experiment E - 10% record-prior blend",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.218,
+      "noLeanCount": 41,
+      "callsChangedRate": 5,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-20",
+      "label": "Experiment E - 20% record-prior blend",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.218,
+      "noLeanCount": 29,
+      "callsChangedRate": 15,
+      "overfittingFlags": []
+    },
+    {
+      "id": "exp-e-record-blend-30",
+      "label": "Experiment E - 30% record-prior blend",
+      "winnerAccuracy": 64,
+      "namedCallAccuracy": 66,
+      "brierScore": 0.219,
+      "noLeanCount": 28,
+      "callsChangedRate": 19,
+      "overfittingFlags": [
+        "May be copying better-record too much by suppressing disagreement cases."
+      ]
+    }
+  ],
+  "recommendation": {
+    "choice": "E",
+    "label": "fix baseline/data issue first",
+    "rationale": [
+      "The legacy 71% better-record baseline is not leakage-safe because it uses normalized profile record strings rather than recomputed pre-fight history.",
+      "The primary as-of baseline produced 58% all-fight accuracy with 92% coverage, so it remains a useful comparator after leakage-safe recomputation.",
+      "Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it should be validated out of sample before promotion.",
+      "Update the official backtest baseline reporting to use an as-of record implementation before treating any v0.3 candidate as a promotion candidate."
+    ]
+  }
+}
