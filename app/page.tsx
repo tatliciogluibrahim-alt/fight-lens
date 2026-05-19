@@ -20,54 +20,48 @@ function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) 
     p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability
       ? p.fighters.fighterA
       : p.fighters.fighterB;
+  const modelProb = Math.max(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability);
 
   const outcome = p.outcome;
-  const actualWinner = outcome
-    ? outcome.winner === "fighterA" ? p.fighters.fighterA
-      : outcome.winner === "fighterB" ? p.fighters.fighterB
-      : outcome.winner
-    : null;
-
   const winnerCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc"
     ? (outcome.winner === "fighterA" && p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability) ||
       (outcome.winner === "fighterB" && p.prediction.fighterBWinProbability > p.prediction.fighterAWinProbability)
     : null;
-
-  // Build a single verdict string: "✓ Strickland · DEC" or "✗ picked Chimaev · Strickland won · DEC"
-  let verdictText: string | null = null;
-  if (outcome && actualWinner) {
-    const method = methodLabel(outcome.method);
-    if (winnerCorrect === true) {
-      verdictText = `${actualWinner} · ${method}`;
-    } else if (winnerCorrect === false) {
-      verdictText = `picked ${modelPick} · ${actualWinner} won · ${method}`;
-    }
-  }
+  const actualWinner = outcome
+    ? outcome.winner === "fighterA" ? p.fighters.fighterA
+      : outcome.winner === "fighterB" ? p.fighters.fighterB
+      : null
+    : null;
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-b border-line px-5 py-3 last:border-b-0">
-      {/* Fight name + verdict inline */}
-      <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-3 gap-y-0.5">
-        <p className="shrink-0 text-sm font-medium">
+    <Link
+      href={fightHref}
+      className="group flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-b border-line px-5 py-3 transition hover:bg-surface-2/30 last:border-b-0"
+    >
+      <div className="flex min-w-0 flex-1 flex-col gap-0.5">
+        <p className="shrink-0 text-sm font-medium text-foreground">
           {p.fighters.fighterA} <span className="font-normal text-subtle">vs</span> {p.fighters.fighterB}
         </p>
-        {verdictText ? (
-          <p className={`font-mono text-[11px] ${winnerCorrect ? "text-success" : "text-wrong"}`}>
-            {winnerCorrect ? "✓" : "✗"} {verdictText}
-          </p>
-        ) : (
-          <p className="font-mono text-[10px] text-subtle/60">pick: {modelPick}</p>
-        )}
+        <p className="text-xs text-muted">
+          <span className="text-subtle">Call:</span>{" "}
+          <span className="text-foreground">{modelPick}</span>{" "}
+          <span className="data-text text-foreground">{modelProb}%</span>
+          {outcome && winnerCorrect !== null && actualWinner && (
+            <>
+              <span className="text-subtle"> · </span>
+              <span className={winnerCorrect ? "text-success" : "text-wrong"}>
+                {winnerCorrect ? "Model correct" : "Model incorrect"}
+                <span className="text-subtle"> · {actualWinner} · {methodLabel(outcome.method)}</span>
+              </span>
+            </>
+          )}
+        </p>
       </div>
 
-      {/* Lens link */}
-      <Link
-        href={fightHref}
-        className="shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
-      >
-        lens →
-      </Link>
-    </div>
+      <span className="shrink-0 text-xs uppercase tracking-[0.12em] text-subtle transition group-hover:text-accent">
+        View Read →
+      </span>
+    </Link>
   );
 }
 
@@ -93,24 +87,25 @@ export default function Home() {
         {/* Hero */}
         <section className="section-shell py-12 md:py-20">
           <div className="max-w-4xl">
-            <p className="mono-label">fight lens · predictive analysis</p>
+            <p className="mono-label">fight lens · forecast · tracked</p>
             <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
               predictive analysis.
-              <span className="block text-accent">every outcome tracked.</span>
+              <span className="block text-accent">every call tracked.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Fight Lens models UFC matchups before each card. Win probabilities, method breakdowns, and scenario paths — built from style shape, form, and stat differentials. Every call logged. Every outcome checked.
+              Fight Lens models UFC matchups before each card, shows the win lean, and tracks every
+              result after the fight. Signal-based — not a guarantee.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href={`/events/${latestEvent.event.id}`}
-                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-white transition hover:brightness-110"
+                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
               >
-                {latestEvent.event.name.split(":")[0]} Matchups
+                {latestEvent.event.name.split(":")[0]} Matchups →
               </Link>
               <Link
                 href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40 hover:bg-surface-2"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
               >
                 Model Record
               </Link>
@@ -127,14 +122,14 @@ export default function Home() {
         <section className="section-shell py-10 md:py-16">
           <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="mono-label">events analyzed</p>
+              <p className="mono-label">events modeled</p>
               <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
                 {Object.keys(eventGroups).length} event{Object.keys(eventGroups).length !== 1 ? "s" : ""} in the model.
               </h2>
             </div>
             <Link
               href="/record"
-              className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
+              className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
             >
               full record →
             </Link>
@@ -151,20 +146,19 @@ export default function Home() {
                 );
               });
 
-              // Derive event slug from name ("UFC 328: ..." → "ufc-328")
               const ufcMatch = eventName.match(/UFC\s+(\d+)/i);
               const eventSlug = ufcMatch ? `ufc-${ufcMatch[1]}` : null;
 
               return (
                 <div
                   key={eventName}
-                  className="overflow-hidden border border-line bg-surface/70"
+                  className="overflow-hidden rounded-2xl border border-line bg-surface/70"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line p-5">
                     <div>
                       <h3 className="font-semibold tracking-tight">{eventName}</h3>
-                      <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-                        {eventPredictions.length} fight{eventPredictions.length !== 1 ? "s" : ""} modeled
+                      <p className="mt-1 text-xs text-muted">
+                        {eventPredictions.length} call{eventPredictions.length !== 1 ? "s" : ""} logged
                         {resolved.length > 0
                           ? ` · ${correct.length}/${resolved.length} correct`
                           : " · outcomes pending"}
@@ -174,7 +168,7 @@ export default function Home() {
                       {eventSlug && (
                         <Link
                           href={`/events/${eventSlug}`}
-                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:text-foreground"
+                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
                         >
                           view matchups
                         </Link>
@@ -182,7 +176,7 @@ export default function Home() {
                       {resolved.length > 0 && (
                         <Link
                           href="/record"
-                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:text-foreground"
+                          className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-4 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
                         >
                           see record
                         </Link>
@@ -199,8 +193,8 @@ export default function Home() {
                     })}
                     {eventPredictions.length > 5 && (
                       <div className="px-5 py-3">
-                        <p className="font-mono text-[10px] text-subtle/60">
-                          + {eventPredictions.length - 5} more fights
+                        <p className="text-xs text-subtle">
+                          + {eventPredictions.length - 5} more {eventPredictions.length - 5 === 1 ? "fight" : "fights"}
                         </p>
                       </div>
                     )}

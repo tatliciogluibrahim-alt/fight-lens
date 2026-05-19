@@ -41,13 +41,13 @@ html {
 
 body {
   min-height: 100vh;
+  /* Quieter ground tone — subtle grid, single accent wash, less stacked SaaS noise */
   background:
-    linear-gradient(rgba(30, 45, 64, 0.18) 1px, transparent 1px) 0 0 / 88px 88px,
-    linear-gradient(90deg, rgba(30, 45, 64, 0.14) 1px, transparent 1px) 0 0 / 88px 88px,
-    radial-gradient(circle at 8% 0%, rgba(245, 158, 11, 0.06), transparent 28rem),
-    radial-gradient(circle at 88% 0%, rgba(16, 185, 129, 0.04), transparent 24rem),
-    radial-gradient(circle at 50% 80%, rgba(13, 17, 23, 0.8), transparent 40rem),
-    linear-gradient(180deg, rgba(26, 35, 50, 0.4), transparent 20rem),
+    linear-gradient(rgba(30, 45, 64, 0.10) 1px, transparent 1px) 0 0 / 96px 96px,
+    linear-gradient(90deg, rgba(30, 45, 64, 0.08) 1px, transparent 1px) 0 0 / 96px 96px,
+    radial-gradient(circle at 12% -10%, rgba(245, 158, 11, 0.04), transparent 32rem),
+    radial-gradient(circle at 50% 80%, rgba(13, 17, 23, 0.85), transparent 40rem),
+    linear-gradient(180deg, rgba(26, 35, 50, 0.3), transparent 22rem),
     var(--background);
   color: var(--foreground);
   font-size: 15px;
@@ -125,9 +125,9 @@ summary::-webkit-details-marker {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  /* Quieter card top-edge sheen, no per-card amber glow */
   background:
-    linear-gradient(90deg, transparent, rgba(226, 232, 240, 0.025), transparent) 0 0 / 100% 1px no-repeat,
-    radial-gradient(circle at 0% 0%, rgba(245, 158, 11, 0.06), transparent 20rem);
+    linear-gradient(90deg, transparent, rgba(226, 232, 240, 0.02), transparent) 0 0 / 100% 1px no-repeat;
 }
 
 .module-card > *,
@@ -184,10 +184,11 @@ summary::-webkit-details-marker {
   border: 2px solid var(--accent);
   border-radius: 0.25rem;
   transform: rotate(45deg);
+  /* Reduced glow so the gold sits as accent, not signage */
   box-shadow:
     inset 0 0 0 3px var(--surface-2),
     inset 0 0 0 6px var(--accent),
-    0 0 24px rgba(245, 158, 11, 0.3);
+    0 0 12px rgba(245, 158, 11, 0.18);
 }
 
 /* ─── Radar card ──────────────────────────────────────────────────────────── */
@@ -212,8 +213,8 @@ summary::-webkit-details-marker {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(135deg, rgba(226, 232, 240, 0.04), transparent 32%),
-    radial-gradient(circle at 50% 42%, rgba(245, 158, 11, 0.06), transparent 17rem);
+    linear-gradient(135deg, rgba(226, 232, 240, 0.035), transparent 32%),
+    radial-gradient(circle at 50% 42%, rgba(245, 158, 11, 0.035), transparent 18rem);
 }
 
 .radar-card > * {

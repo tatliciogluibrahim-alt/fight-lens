@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: MatchupPageProps): Promise<Me
     description: `${wc} matchup analysis. Win probabilities, method breakdown, and scenario paths for ${nameA} vs. ${nameB} at ${event.event.name}.`,
     openGraph: {
       title: `${nameA} vs. ${nameB} — Fight Lens`,
-      description: `${wc} · ${event.event.name}. Signal-based outcome model with win probabilities and scenario paths.`,
+      description: `${wc} · ${event.event.name}. Signal-based model call with win probability, method lean, and live path.`,
       type: "article",
     },
   };
@@ -168,10 +168,9 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         <div className="mt-6 md:mt-8">
           <FightPageTabs
             tabs={[
-              { id: "call", label: "the call" },
+              { id: "call", label: "call" },
               { id: "shape", label: "shape" },
-              { id: "form", label: "form" },
-              { id: "paths", label: "paths" },
+              { id: "details", label: "details" },
             ]}
             panels={{
               call: (
@@ -187,15 +186,15 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   modelOutput={fightShapeModel}
                 />
               ),
-              form: (
-                <FormResumeModule
-                  fighterA={fighterA}
-                  fighterB={fighterB}
-                  modelOutput={fightShapeModel}
-                />
-              ),
-              paths: (
-                <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+              details: (
+                <>
+                  <FormResumeModule
+                    fighterA={fighterA}
+                    fighterB={fighterB}
+                    modelOutput={fightShapeModel}
+                  />
+                  <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+                </>
               ),
             }}
           />

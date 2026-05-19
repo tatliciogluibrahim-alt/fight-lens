@@ -203,9 +203,9 @@ function buildScenarios(
   const swingDesc = swingDescription;
 
   return [
-    { id: "lean", title: "the lean", fighterLabel: favorite.name, description: leanDesc },
-    { id: "upset", title: "upset path", fighterLabel: underdog.name, description: upsetDesc },
-    { id: "swing", title: "swing factor", fighterLabel: swingLabel, description: swingDesc },
+    { id: "lean", title: "the call", fighterLabel: favorite.name, description: leanDesc },
+    { id: "upset", title: "live path", fighterLabel: underdog.name, description: upsetDesc },
+    { id: "swing", title: "what breaks the call", fighterLabel: swingLabel, description: swingDesc },
   ];
 }
 

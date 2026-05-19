@@ -10,7 +10,7 @@ const LATEST_EVENT_ID = "ufc-329";
 const links = [
   { href: "/", label: "home" },
   { href: `/events/${LATEST_EVENT_ID}`, label: "matchups" },
-  { href: "/record", label: "record" },
+  { href: "/record", label: "model record" },
   { href: "/methodology", label: "methodology" },
 ];
 
@@ -25,7 +25,7 @@ export function AppHeader() {
           <span className="leading-none">
             <span className="block text-base font-semibold tracking-[-0.03em]">fight lens</span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-subtle">
-              see the shape
+              forecast · tracked
             </span>
           </span>
         </Link>
@@ -34,7 +34,7 @@ export function AppHeader() {
           {links.map((link) => {
             const isActive =
               pathname === link.href ||
-              (link.href === "/events/ufc-328" && pathname.startsWith("/events/")) ||
+              (link.href.startsWith("/events/") && pathname.startsWith("/events/")) ||
               (link.href === "/record" && (pathname.startsWith("/record") || pathname.startsWith("/backtests")));
 
             return (

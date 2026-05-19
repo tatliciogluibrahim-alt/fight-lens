@@ -8,7 +8,7 @@ import type { PredictionRecord } from "@/lib/accuracy/types";
 
 export const metadata: Metadata = {
   title: "Model Record | Fight Lens",
-  description: "Every Fight Lens prediction tracked against real outcomes. Full transparency."
+  description: "Every Fight Lens call logged before the fight and scored after the official result."
 };
 
 function eventSlug(eventName: string): string | null {
@@ -25,6 +25,48 @@ function methodLabel(method: string): string {
   }
 }
 
+// ─── Result state chip ────────────────────────────────────────────────────────
+
+function ResultStateChip({
+  state,
+}: {
+  state: "correct" | "incorrect" | "pending" | "noresult";
+}) {
+  const config = {
+    correct: {
+      label: "Model correct",
+      className: "border-success/30 bg-success-soft text-success",
+      dot: "bg-success",
+    },
+    incorrect: {
+      label: "Model incorrect",
+      className: "border-wrong/30 bg-wrong-soft text-wrong",
+      dot: "bg-wrong",
+    },
+    pending: {
+      label: "Pending",
+      className: "border-line bg-surface-2/70 text-subtle",
+      dot: "bg-subtle/60",
+    },
+    noresult: {
+      label: "No result",
+      className: "border-line bg-surface-2/70 text-muted",
+      dot: "bg-muted/50",
+    },
+  }[state];
+
+  return (
+    <span
+      className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.1em] ${config.className}`}
+    >
+      <span className={`size-1.5 rounded-full ${config.dot}`} />
+      {config.label}
+    </span>
+  );
+}
+
+// ─── Prediction row ───────────────────────────────────────────────────────────
+
 function PredictionRow({ record }: { record: PredictionRecord }) {
   const { outcome, prediction, fighters } = record;
 
@@ -34,16 +76,24 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
       : fighters.fighterB;
   const modelProb = Math.max(prediction.fighterAWinProbability, prediction.fighterBWinProbability);
 
-  const wasCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc"
-    ? (outcome.winner === "fighterA" && prediction.fighterAWinProbability >= prediction.fighterBWinProbability) ||
-      (outcome.winner === "fighterB" && prediction.fighterBWinProbability > prediction.fighterAWinProbability)
-    : null;
+  let state: "correct" | "incorrect" | "pending" | "noresult" = "pending";
+  let resultLine: string | null = null;
 
-  const actualWinner = outcome
-    ? outcome.winner === "fighterA" ? fighters.fighterA
-      : outcome.winner === "fighterB" ? fighters.fighterB
-      : outcome.winner === "draw" ? "Draw" : "NC"
-    : null;
+  if (outcome) {
+    if (outcome.winner === "draw" || outcome.winner === "nc") {
+      state = "noresult";
+      resultLine = `${outcome.winner === "draw" ? "Draw" : "No Contest"} · ${methodLabel(outcome.method)} · R${outcome.round}`;
+    } else {
+      const correct =
+        (outcome.winner === "fighterA" && prediction.fighterAWinProbability >= prediction.fighterBWinProbability) ||
+        (outcome.winner === "fighterB" && prediction.fighterBWinProbability > prediction.fighterAWinProbability);
+      state = correct ? "correct" : "incorrect";
+      const actualWinner = outcome.winner === "fighterA" ? fighters.fighterA : fighters.fighterB;
+      resultLine = correct
+        ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round}`
+        : `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — called ${modelPick}`;
+    }
+  }
 
   const slug = eventSlug(record.event);
   const href = slug
@@ -52,45 +102,38 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
       ? `/backtests/${record.fightId}`
       : null;
 
-  // Inline verdict string
-  let verdictText: string | null = null;
-  if (outcome && actualWinner) {
-    const method = methodLabel(outcome.method);
-    if (wasCorrect === true) {
-      verdictText = `✓  ${actualWinner} · ${method} · R${outcome.round}`;
-    } else if (wasCorrect === false) {
-      verdictText = `✗  picked ${modelPick} · ${actualWinner} won · ${method}`;
-    }
-  }
-
   return (
-    <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-b border-line px-5 py-3 last:border-b-0">
-      {/* Fight name + inline verdict */}
-      <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-3 gap-y-0.5">
-        <p className="shrink-0 text-sm font-semibold">
+    <div className="group grid gap-2 border-b border-line px-5 py-4 transition hover:bg-surface-2/30 last:border-b-0 md:grid-cols-[1.6fr_2fr_auto] md:items-center md:gap-4">
+      {/* Names + call */}
+      <div className="min-w-0">
+        <p className="truncate text-sm font-semibold">
           {fighters.fighterA} <span className="font-normal text-subtle">vs</span> {fighters.fighterB}
         </p>
-        {verdictText ? (
-          <p className={`font-mono text-[11px] ${wasCorrect ? "text-success" : "text-wrong"}`}>
-            {verdictText}
-          </p>
-        ) : outcome ? (
-          <p className="font-mono text-[10px] text-subtle">n/a</p>
-        ) : (
-          <p className="font-mono text-[10px] text-subtle/60">
-            call: {modelPick} · {modelProb}%
-          </p>
+        <p className="mt-1 text-xs text-muted">
+          <span className="text-subtle">Call:</span>{" "}
+          <span className="text-foreground">{modelPick}</span>{" "}
+          <span className="data-text text-foreground">{modelProb}%</span>
+        </p>
+      </div>
+
+      {/* Verdict */}
+      <div className="flex flex-wrap items-center gap-3">
+        <ResultStateChip state={state} />
+        {resultLine && (
+          <p className="text-xs text-muted">{resultLine}</p>
         )}
       </div>
 
-      {/* Link */}
-      {href && (
+      {/* CTA */}
+      {href ? (
         <Link
           href={href}
-          className="shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+          className="tap-target inline-flex items-center justify-center self-start rounded-full border border-line bg-surface-2/70 px-4 text-xs font-medium text-muted transition hover:border-accent/40 hover:text-foreground md:self-auto"
         >
-          lens →
+          View Read →
         </Link>
+      ) : (
+        <span className="text-xs text-subtle">—</span>
       )}
     </div>
   );
@@ -121,7 +164,7 @@ export default function RecordPage() {
         <section className="section-shell py-10 md:py-16">
           <Link
             href="/"
-            className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
+            className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
           >
             ← back
           </Link>
@@ -129,25 +172,31 @@ export default function RecordPage() {
           <div className="mt-8">
             <p className="mono-label">model record</p>
             <h1 className="mt-5 text-5xl font-semibold leading-none tracking-[-0.05em] md:text-7xl">
-              every call. tracked.
+              every call. <span className="text-accent">tracked.</span>
             </h1>
-            <p className="mt-4 text-sm text-muted">
-              What the model called before each fight — locked in before the first bell. No edits.
+            <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+              Model calls are intended to be logged before each fight and scored after the official
+              result. No edits to the call once a fight is on the clock.
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-3">
-              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
-                {predictions.length} predictions
+            <div className="mt-6 flex flex-wrap gap-3">
+              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 text-xs font-medium text-muted">
+                {predictions.length} calls
               </span>
-              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-accent">
+              <span className="rounded-full border border-accent/30 bg-accent/[0.08] px-4 py-2 text-xs font-medium text-accent">
                 {resolvedCount} scored
               </span>
               {pendingCount > 0 && (
-                <span className="rounded-full border border-line bg-surface/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
+                <span className="rounded-full border border-line bg-surface/70 px-4 py-2 text-xs font-medium text-subtle">
                   {pendingCount} pending
                 </span>
               )}
             </div>
+
+            <p className="mt-5 max-w-2xl text-xs leading-6 text-subtle">
+              Early sample. The model improved after defensive opponent totals were added to the
+              data pipeline, but the record needs more scored fights before any grade unlocks.
+            </p>
           </div>
         </section>
 
@@ -161,9 +210,9 @@ export default function RecordPage() {
           <p className="mono-label mb-6">prediction log</p>
           <div className="space-y-6">
             {Array.from(byEvent.entries()).map(([eventName, records]) => (
-              <div key={eventName} className="overflow-hidden border border-line bg-surface/70">
+              <div key={eventName} className="overflow-hidden rounded-2xl border border-line bg-surface/70">
                 <div className="border-b border-line bg-surface-2/40 px-5 py-3">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">
                     {eventName}
                   </p>
                 </div>
@@ -174,8 +223,8 @@ export default function RecordPage() {
             ))}
           </div>
 
-          <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
-            outcome-v0.1 · signal-based · not a guarantee · backtest reconstructions labeled
+          <p className="mt-6 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
+            signal-based forecast · not a guarantee · outcome-v0.2
           </p>
         </section>
       </main>

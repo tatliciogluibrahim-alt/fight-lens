@@ -75,12 +75,12 @@ export function PathsToVictory({ fight, modelOutput }: PathsToVictoryProps) {
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header">
-        <p className="mono-label">cleaner path</p>
+        <p className="mono-label">live path</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
           most repeatable path.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          The clearest visible route to a finish or decision, based on sourced style signals.
+          How each fighter can still win this. Based on sourced style signals — not a finishing prediction.
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">

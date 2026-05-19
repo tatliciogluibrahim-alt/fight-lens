@@ -135,10 +135,9 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         <div className="mt-6 md:mt-8">
           <FightPageTabs
             tabs={[
-              { id: "call", label: "the call" },
+              { id: "call", label: "call" },
               { id: "shape", label: "shape" },
-              { id: "form", label: "form" },
-              { id: "paths", label: "paths" },
+              { id: "details", label: "details" },
             ]}
             panels={{
               call: (
@@ -154,15 +153,15 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   modelOutput={fightShapeModel}
                 />
               ),
-              form: (
-                <FormResumeModule
-                  fighterA={fighterA}
-                  fighterB={fighterB}
-                  modelOutput={fightShapeModel}
-                />
-              ),
-              paths: (
-                <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+              details: (
+                <>
+                  <FormResumeModule
+                    fighterA={fighterA}
+                    fighterB={fighterB}
+                    modelOutput={fightShapeModel}
+                  />
+                  <PathsToVictory fight={fight} modelOutput={fightShapeModel} />
+                </>
               ),
             }}
           />

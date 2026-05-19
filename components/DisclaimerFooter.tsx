@@ -7,13 +7,16 @@ export function DisclaimerFooter() {
         <div>
           <p className="font-semibold tracking-[-0.02em] text-foreground">fight lens</p>
           <p className="font-mono text-xs uppercase tracking-[0.14em] text-subtle">
-            see the shape of the fight
+            signal-based forecast · not a guarantee
           </p>
         </div>
-        <div className="max-w-xl font-mono text-xs leading-6 text-subtle md:text-right">
-          <p>independent matchup intelligence. not affiliated with ufc. built for shape, pressure, and context.</p>
-          <Link href="/methodology" className="text-subtle underline decoration-line underline-offset-4 hover:text-foreground">
-            methodology
+        <div className="max-w-xl text-xs leading-6 text-subtle md:text-right">
+          <p>
+            Independent matchup intelligence. Not affiliated with the UFC. Calls are logged before
+            each fight and scored after the official result.
+          </p>
+          <Link href="/methodology" className="mt-1 inline-block text-subtle underline decoration-line underline-offset-4 hover:text-foreground">
+            how the model works →
           </Link>
         </div>
       </div>

@@ -5,9 +5,55 @@ interface TheCallProps {
   outcomeModel: FightOutcomeModelOutput;
 }
 
-// ─── Method breakdown ─────────────────────────────────────────────────────────
+// ─── Read strength chip ───────────────────────────────────────────────────────
+//
+// Sits directly under the win probability so the user sees how strong the read
+// is without hunting for a separate badge.
 
-function MethodBreakdown({
+const READ_STRENGTH_COPY: Record<string, { label: string; tone: string; helper: string }> = {
+  high: {
+    label: "Strong read",
+    tone: "border-success/40 text-success bg-success-soft",
+    helper: "Signals align across shape, form, and stats.",
+  },
+  medium: {
+    label: "Usable read",
+    tone: "border-accent/40 text-accent bg-accent/[0.08]",
+    helper: "Clear lean, but not every signal points the same direction.",
+  },
+  low: {
+    label: "Thin read",
+    tone: "border-line-strong text-muted bg-surface-2",
+    helper: "Limited data — treat the call as directional only.",
+  },
+  insufficient: {
+    label: "Data pending",
+    tone: "border-line text-subtle bg-surface-2",
+    helper: "Not enough sourced history to call this one yet.",
+  },
+};
+
+function ReadStrengthChip({ confidence }: { confidence: string }) {
+  const copy = READ_STRENGTH_COPY[confidence] ?? READ_STRENGTH_COPY.insufficient;
+  return (
+    <div className="flex flex-col items-center gap-2 text-center">
+      <span
+        className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] ${copy.tone}`}
+      >
+        Read strength · {copy.label}
+      </span>
+      <p className="max-w-md text-xs leading-5 text-subtle">{copy.helper}</p>
+    </div>
+  );
+}
+
+// ─── Method lean (secondary, not peer to winner forecast) ─────────────────────
+//
+// The product spec is explicit: "Method probabilities should not feel as
+// authoritative as the winner forecast." We collapse to a single highlighted
+// lean + slim bars; hide methods below 8% behind "thin".
+
+function MethodLean({
   decision,
   koTko,
   submission,
@@ -17,22 +63,49 @@ function MethodBreakdown({
   submission: number;
 }) {
   const methods = [
-    { label: "Decision", value: decision },
-    { label: "KO / TKO", value: koTko },
-    { label: "Submission", value: submission },
-  ];
+    { id: "decision", label: "Decision", value: decision },
+    { id: "ko", label: "KO / TKO", value: koTko },
+    { id: "sub", label: "Submission", value: submission },
+  ].sort((a, b) => b.value - a.value);
+
+  const top = methods[0];
 
   return (
-    <div className="grid grid-cols-3 gap-3">
-      {methods.map(({ label, value }) => (
-        <div
-          key={label}
-          className="rounded-xl border border-line bg-background/40 px-4 py-4 text-center"
-        >
-          <p className="data-text text-3xl font-light text-foreground">{value}%</p>
-          <p className="mt-1.5 mono-label">{label}</p>
-        </div>
-      ))}
+    <div className="rounded-2xl border border-line bg-background/40 p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <p className="mono-label">method lean</p>
+        <p className="text-xs text-subtle">
+          Directional · winner calls are tracked separately
+        </p>
+      </div>
+      <div className="mt-3 flex flex-wrap items-baseline gap-2">
+        <span className="text-2xl font-semibold tracking-[-0.03em] text-foreground md:text-3xl">
+          {top.label}
+        </span>
+        <span className="data-text text-sm text-muted">·  {top.value}% lean</span>
+      </div>
+
+      <div className="mt-5 space-y-2.5">
+        {methods.map((m) => {
+          const thin = m.value < 8;
+          return (
+            <div key={m.id} className="flex items-center gap-3">
+              <span className="w-24 shrink-0 text-xs text-muted">{m.label}</span>
+              <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
+                <div
+                  className={`absolute left-0 h-full rounded-full ${m.id === top.id ? "bg-accent" : "bg-muted/50"}`}
+                  style={{ width: `${Math.max(m.value, 2)}%` }}
+                />
+              </div>
+              <span
+                className={`data-text w-16 text-right text-xs ${thin ? "text-subtle" : "text-muted"}`}
+              >
+                {thin ? "thin" : `${m.value}%`}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -47,16 +120,19 @@ function ScenarioCard({
   suppressFighterLabel?: boolean;
 }) {
   const isLean = scenario.id === "lean";
+  const isSwing = scenario.id === "swing";
 
   return (
     <div
-      className={`flex flex-col gap-3 rounded-2xl border p-5 ${
+      className={`flex flex-col gap-3 rounded-2xl border p-5 transition ${
         isLean
-          ? "border-accent/25 bg-accent/[0.06]"
-          : "border-line bg-background/35"
+          ? "border-accent/30 bg-accent/[0.06]"
+          : isSwing
+            ? "border-line-strong bg-surface/60"
+            : "border-line bg-background/35"
       }`}
     >
-      <p className={`mono-label ${isLean ? "text-accent" : ""}`}>
+      <p className={`mono-label ${isLean ? "text-accent" : isSwing ? "text-foreground" : ""}`}>
         {scenario.title}
       </p>
       {!suppressFighterLabel && scenario.fighterLabel ? (
@@ -65,24 +141,6 @@ function ScenarioCard({
         </p>
       ) : null}
       <p className="text-sm leading-6 text-muted">{scenario.description}</p>
-    </div>
-  );
-}
-
-// ─── Confidence badge ─────────────────────────────────────────────────────────
-
-function ConfidenceBadge({ confidence }: { confidence: string }) {
-  const dot =
-    confidence === "high"
-      ? "bg-success"
-      : confidence === "medium"
-        ? "bg-accent"
-        : "bg-subtle";
-
-  return (
-    <div className="flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-2">
-      <span className={`size-2 rounded-full ${dot}`} />
-      <span className="mono-label">{confidence} confidence</span>
     </div>
   );
 }
@@ -96,14 +154,14 @@ export function TheCall({ outcomeModel }: TheCallProps) {
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            fight outcome model.
+            model call.
           </h2>
         </div>
         <div className="module-body">
           <div className="rounded-2xl border border-line bg-background/35 p-8 text-center">
             <p className="mono-label">data pending</p>
             <p className="mt-3 text-sm text-muted">
-              Probabilities load once fighter stats are sourced.
+              Win probability loads once fighter stats are sourced.
             </p>
           </div>
         </div>
@@ -116,21 +174,18 @@ export function TheCall({ outcomeModel }: TheCallProps) {
 
   return (
     <section id="the-call" className="module-card scroll-mt-28">
-      <div className="module-header flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="mono-label">the call</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            fight outcome model.
-          </h2>
-          <p className="mt-3 text-sm text-muted">
-            Style shape · form · stat differentials. Signal-based, not a guarantee.
-          </p>
-        </div>
-        <ConfidenceBadge confidence={confidence} />
+      <div className="module-header">
+        <p className="mono-label">the call</p>
+        <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+          model call.
+        </h2>
+        <p className="mt-3 text-sm text-muted">
+          Style shape · form · stat differentials. Signal-based, not a guarantee.
+        </p>
       </div>
 
       <div className="module-body space-y-6">
-        {/* Giant animated probability bar */}
+        {/* Win probability — primary surface */}
         <div className="rounded-2xl border border-line bg-background/40 p-6 md:p-8">
           <ProbabilityBar
             probA={fighterA.winProbability}
@@ -139,28 +194,24 @@ export function TheCall({ outcomeModel }: TheCallProps) {
             nameB={fighterB.fighterName}
             tooClose={tooClose}
           />
+          <div className="mt-5">
+            <ReadStrengthChip confidence={confidence} />
+          </div>
         </div>
 
-        {/* Method breakdown */}
-        <MethodBreakdown
+        {/* Method lean — secondary */}
+        <MethodLean
           decision={methodBreakdown.decision}
           koTko={methodBreakdown.koTko}
           submission={methodBreakdown.submission}
         />
-        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70 -mt-4">
-          directional only · finish vs. decision lean · method model not independently validated
-        </p>
 
-        {/* 3 scenario cards — "swing" id gets renamed in display only */}
+        {/* The Call / Live Path / What Breaks the Call — required modules */}
         <div className="grid gap-4 md:grid-cols-3">
           {scenarios.map((scenario) => (
             <ScenarioCard
               key={scenario.id}
-              scenario={
-                scenario.id === "swing"
-                  ? { ...scenario, title: "what breaks the call" }
-                  : scenario
-              }
+              scenario={scenario}
               suppressFighterLabel={
                 tooClose && (scenario.id === "lean" || scenario.id === "upset")
               }
@@ -170,7 +221,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
 
         {/* Footer */}
         <p className="mono-label">
-          signal-based · not a guarantee
+          signal-based · not a guarantee · outcome-v0.2
         </p>
       </div>
     </section>

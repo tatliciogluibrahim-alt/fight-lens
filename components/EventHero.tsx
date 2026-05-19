@@ -23,7 +23,7 @@ export function EventHero({ event }: EventHeroProps) {
             {event.event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Every fight on the card. Open a matchup, see the shape.
+            Every fight on the card — modeled before the first bell, scored after.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[
@@ -55,9 +55,9 @@ export function EventHero({ event }: EventHeroProps) {
             </div>
             <Link
               href={`/events/${event.event.id}/${mainFight.id}`}
-              className="tap-target mt-8 inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-white transition hover:brightness-110"
+              className="tap-target mt-8 inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
             >
-              open main lens
+              View Main Event Read →
             </Link>
           </div>
         )}

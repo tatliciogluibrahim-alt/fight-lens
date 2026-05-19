@@ -5,14 +5,15 @@
  * or at least be consistent with the labels defined here.
  *
  * APPROVED vocabulary:
- *   model call, model lean, forecast, win probability, method lean,
- *   swing factor, upset path, confidence, model record, not a guarantee,
- *   signal-based, locked before the fight, call accuracy, finish vs. decision read
+ *   model call, model lean, forecast, win probability, win lean,
+ *   method lean, swing factor, live path, confidence, read strength,
+ *   model record, not a guarantee, signal-based, locked before the fight,
+ *   call accuracy, finish vs. decision read, view read
  *
  * BANNED vocabulary (never use in public-facing UI):
- *   lock, best bet, unit, parlay, wager, guaranteed, free money, profit,
- *   financial advice, smash spot, automatic play, pick (prefer "call"),
- *   edge (prefer "lean" or "advantage"), lock it in
+ *   bet, best bet, lock, odds, parlay, unit, wager, guaranteed,
+ *   free money, profit, financial advice, smash spot, automatic play,
+ *   pick (prefer "call" unless clearly referring to a logged historical call)
  *
  * Why this matters:
  *   Fight Lens is not a betting product. Language that sounds like betting
@@ -35,8 +36,14 @@ export const TERMS = {
   /** The model's method prediction (finish/decision direction) */
   METHOD_LEAN: "finish vs. decision lean",
 
-  /** Scenario where a different fighter wins */
-  UPSET_PATH: "upset path",
+  /** Scenario where the other fighter still wins — kept "live" so it stays grounded */
+  LIVE_PATH: "live path",
+
+  /** Plain-English read of how strong the model's signal is */
+  READ_STRENGTH: "read strength",
+
+  /** Primary CTA into a fight's full read */
+  VIEW_READ: "View Read",
 
   /** Scenario that would change the model's call */
   SWING_FACTOR: "swing factor",
