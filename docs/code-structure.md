@@ -177,13 +177,44 @@ save buttons, creator studio). The product is now strictly predictive — no exp
 
 ---
 
-## TODOs before backtesting
+## Backtesting system (live as of May 2026)
 
-- [ ] Implement `lib/backtest/buildAsOfFeatures.ts` — needs fight-by-fight date filtering
-- [ ] Wire `lib/backtest/runBacktest.ts` to `buildFightOutcomeModel`
-- [ ] Auto-load `data/predictions/` from directory instead of 25 manual imports
-- [ ] Auto-load `lib/events/registry.ts` from directory instead of manual imports
-- [ ] Add `data/backtests/` output folder for generated backtest summaries
+Run: `npm run backtest`
+Output: `data/generated/backtests/`
+
+### How it works
+1. Loads all normalized event JSONs from `data/normalized/events/`
+2. For each fight with a recorded outcome in `data/predictions/`:
+   - Determines the event date as the as-of cutoff
+   - Filters each fighter's `fightHistory` to fights strictly before that date
+   - Recomputes aggregate stats from the filtered history only (leakage firewall)
+   - Passes filtered history as `lastFive` and `fightHistory` for form scoring
+   - Runs `buildFightShapeModel` + `buildFightOutcomeModel` on the as-of features
+   - Scores against the actual outcome
+3. Writes 5 output files to `data/generated/backtests/`
+
+### Leakage prevention
+- History is filtered with strict `<` comparison: `parsedDate < asOfDate`
+- Fights with unparseable dates are excluded (conservative)
+- Aggregate stats are recomputed from filtered history, never read from the normalized JSON directly
+- A leakage check report is written for every fight
+
+### Known limitations (as of May 2026)
+- **Opponent stats missing:** `sapm`, `strikingDefense`, `takedownDefense` cannot be computed from `fightHistory` because opponent totals are not stored per fight — the model uses its built-in UFC-average defaults for these
+- **n=13 scored fights:** UFC 329 outcomes not yet recorded — calibration numbers are not meaningful below n=30
+- **`susurkaev-santos` accuracy issue:** Model predicted Santos 80%, Susurkaev won — suggests the model is sensitive to sparse data on less-known fighters
+
+### Output files
+- `predictions.json` — per-fight predictions, outcomes, scores, and missing data flags
+- `summary.json` — aggregate metrics, baselines, calibration buckets
+- `calibration.json` — confidence bucket breakdown
+- `missing-data-report.json` — which stats were unavailable per fight
+- `leakage-reports.json` — leakage verification for every fight
+
+### Remaining TODOs
+- [ ] Store opponent totals in `fightHistory` items so `sapm`/`strikingDefense`/`takedownDefense` can be computed as-of
+- [ ] Record UFC 329 outcomes to expand corpus to n=24+
+- [ ] Auto-load `data/predictions/` from directory (currently 25 manual imports in `lib/accuracy/index.ts`)
 - [ ] Consider splitting `lib/fight-shape-model/model.ts` (554 lines) into:
   - `formScoring.ts` — form/momentum calculations
   - `stylePressure.ts` — SPI calculation

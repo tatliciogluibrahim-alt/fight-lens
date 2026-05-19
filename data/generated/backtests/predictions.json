@@ -1,0 +1,527 @@
+{
+  "generatedAt": "2026-05-19T01:37:52.536Z",
+  "modelVersion": "outcome-v0.2",
+  "totalFights": 13,
+  "predictions": [
+    {
+      "fightId": "chimaev-strickland",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Khamzat Chimaev",
+        "fighterB": "Sean Strickland"
+      },
+      "prediction": {
+        "fighterAWinProbability": 39,
+        "fighterBWinProbability": 61,
+        "methodBreakdown": {
+          "decision": 64,
+          "koTko": 20,
+          "submission": 16
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterB",
+        "method": "decision",
+        "round": 5,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.1521,
+        "methodCorrect": true
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "van-taira",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Joshua Van",
+        "fighterB": "Tatsuro Taira"
+      },
+      "prediction": {
+        "fighterAWinProbability": 78,
+        "fighterBWinProbability": 22,
+        "methodBreakdown": {
+          "decision": 47,
+          "koTko": 48,
+          "submission": 5
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "ko_tko",
+        "round": 5,
+        "time": "1:32",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.04839999999999999,
+        "methodCorrect": true
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "volkov-cortes",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Alexander Volkov",
+        "fighterB": "Waldo Cortes Acosta"
+      },
+      "prediction": {
+        "fighterAWinProbability": 46,
+        "fighterBWinProbability": 54,
+        "methodBreakdown": {
+          "decision": 36,
+          "koTko": 52,
+          "submission": 12
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "decision",
+        "round": 3,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.2916,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "brady-buckley",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Sean Brady",
+        "fighterB": "Joaquin Buckley"
+      },
+      "prediction": {
+        "fighterAWinProbability": 54,
+        "fighterBWinProbability": 46,
+        "methodBreakdown": {
+          "decision": 29,
+          "koTko": 35,
+          "submission": 36
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "decision",
+        "round": 3,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.21159999999999995,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "green-stephens",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "King Green",
+        "fighterB": "Jeremy Stephens"
+      },
+      "prediction": {
+        "fighterAWinProbability": 77,
+        "fighterBWinProbability": 23,
+        "methodBreakdown": {
+          "decision": 66,
+          "koTko": 30,
+          "submission": 4
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "submission",
+        "round": 1,
+        "time": "4:20",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.05289999999999999,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "gautier-diaz",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Ateba Gautier",
+        "fighterB": "Ozzy Diaz"
+      },
+      "prediction": {
+        "fighterAWinProbability": 39,
+        "fighterBWinProbability": 61,
+        "methodBreakdown": {
+          "decision": 69,
+          "koTko": 31,
+          "submission": 0
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "ko_tko",
+        "round": 2,
+        "time": "1:10",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.3721,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "alvarez-amosov",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Joel Alvarez",
+        "fighterB": "Yaroslav Amosov"
+      },
+      "prediction": {
+        "fighterAWinProbability": 58,
+        "fighterBWinProbability": 42,
+        "methodBreakdown": {
+          "decision": 14,
+          "koTko": 29,
+          "submission": 57
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterB",
+        "method": "submission",
+        "round": 2,
+        "time": "1:13",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.3364,
+        "methodCorrect": true
+      },
+      "leakagePassed": false,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "dawson-rebecki",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Grant Dawson",
+        "fighterB": "Mateusz Rebecki"
+      },
+      "prediction": {
+        "fighterAWinProbability": 45,
+        "fighterBWinProbability": 55,
+        "methodBreakdown": {
+          "decision": 58,
+          "koTko": 15,
+          "submission": 27
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "submission",
+        "round": 3,
+        "time": "4:42",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.30250000000000005,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "miller-gordon",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Jim Miller",
+        "fighterB": "Jared Gordon"
+      },
+      "prediction": {
+        "fighterAWinProbability": 44,
+        "fighterBWinProbability": 56,
+        "methodBreakdown": {
+          "decision": 0,
+          "koTko": 71,
+          "submission": 29
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "submission",
+        "round": 1,
+        "time": "3:29",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.31360000000000005,
+        "methodCorrect": true
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "kopylov-tulio",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Roman Kopylov",
+        "fighterB": "Marco Tulio"
+      },
+      "prediction": {
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
+        "methodBreakdown": {
+          "decision": 37,
+          "koTko": 63,
+          "submission": 0
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "decision",
+        "round": 3,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.25,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "sabatini-gomis",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Pat Sabatini",
+        "fighterB": "William Gomis"
+      },
+      "prediction": {
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
+        "methodBreakdown": {
+          "decision": 62,
+          "koTko": 13,
+          "submission": 25
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "decision",
+        "round": 3,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.25,
+        "methodCorrect": true
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "susurkaev-santos",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Baisangur Susurkaev",
+        "fighterB": "Djorden Santos"
+      },
+      "prediction": {
+        "fighterAWinProbability": 20,
+        "fighterBWinProbability": 80,
+        "methodBreakdown": {
+          "decision": 80,
+          "koTko": 13,
+          "submission": 7
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "submission",
+        "round": 3,
+        "time": "4:12",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.6400000000000001,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    },
+    {
+      "fightId": "carpenter-ochoa",
+      "event": "UFC 328: Chimaev vs. Strickland",
+      "asOfDate": "2026-05-09",
+      "fighters": {
+        "fighterA": "Clayton Carpenter",
+        "fighterB": "Jose Ochoa"
+      },
+      "prediction": {
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
+        "methodBreakdown": {
+          "decision": 17,
+          "koTko": 50,
+          "submission": 33
+        },
+        "confidence": "insufficient"
+      },
+      "outcome": {
+        "winner": "fighterB",
+        "method": "decision",
+        "round": 3,
+        "time": "5:00",
+        "recordedAt": "2026-05-09T23:00:00.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.25,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [
+        "fighterA.sapm missing",
+        "fighterA.strikingDefense missing",
+        "fighterA.takedownDefense missing",
+        "fighterB.sapm missing",
+        "fighterB.strikingDefense missing",
+        "fighterB.takedownDefense missing"
+      ]
+    }
+  ]
+}

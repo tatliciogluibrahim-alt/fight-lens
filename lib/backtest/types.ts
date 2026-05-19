@@ -9,6 +9,7 @@
  *   UFCStats snapshot → as-of feature extraction → model run → score → calibration
  */
 
+import type { SourcedFightHistoryItem } from "@/lib/sourced-event";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 /** Source data cut at a specific date — no future data allowed */
@@ -21,6 +22,12 @@ export interface AsOfFighterFeatures {
   fightHistoryCount: number;
   /** Derived signals available at that date */
   aggregateStats: Record<string, number | null>;
+  /**
+   * Filtered fight history — only fights before asOfDate.
+   * Passed to the model as lastFive / fightHistory so form scoring
+   * and finish profiling work correctly in backtests.
+   */
+  filteredHistory: SourcedFightHistoryItem[];
   /** Whether we have enough history for a confident prediction */
   hasEnoughData: boolean;
   /** Any known data quality issues at that date */

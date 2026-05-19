@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-05-19T01:37:52.536Z",
+  "modelVersion": "outcome-v0.2",
+  "summary": {
+    "totalFights": 13,
+    "scoredFights": 13,
+    "winnerAccuracy": 46,
+    "methodAccuracy": 38,
+    "brierScore": 0.267,
+    "calibrationBuckets": [
+      {
+        "rangeLabel": "50–60%",
+        "predictedMidpoint": 0.55,
+        "actualWinRate": 0.375,
+        "count": 8
+      },
+      {
+        "rangeLabel": "60–70%",
+        "predictedMidpoint": 0.65,
+        "actualWinRate": 0.5,
+        "count": 2
+      },
+      {
+        "rangeLabel": "70–80%",
+        "predictedMidpoint": 0.75,
+        "actualWinRate": 1,
+        "count": 2
+      },
+      {
+        "rangeLabel": "80%+",
+        "predictedMidpoint": 0.9,
+        "actualWinRate": 0,
+        "count": 1
+      }
+    ],
+    "generatedAt": "2026-05-19T01:37:52.536Z",
+    "modelVersion": "outcome-v0.2",
+    "caveats": [
+      "Backtest calibration may differ from live model record due to data vintage.",
+      "As-of features reflect UFCStats data available before each fight date.",
+      "Small sample sizes make calibration buckets unreliable."
+    ],
+    "baselines": {
+      "random": {
+        "accuracy": 50,
+        "brierScore": 0.25
+      },
+      "betterRecord": {
+        "accuracy": 62,
+        "scoredFights": 13,
+        "correct": 8
+      },
+      "moreExperience": {
+        "accuracy": 54,
+        "scoredFights": 13,
+        "correct": 7
+      },
+      "ufcFavouriteWinRate": 0.67
+    },
+    "brierAssessment": "Sample too small (n=13). Need 30+ fights for reliable calibration.",
+    "missingDataRate": 100
+  },
+  "accuracyByConfidenceBucket": [
+    {
+      "label": "50-60%",
+      "count": 8,
+      "correct": 3,
+      "accuracy": 38
+    },
+    {
+      "label": "60-70%",
+      "count": 2,
+      "correct": 1,
+      "accuracy": 50
+    },
+    {
+      "label": "70-80%",
+      "count": 2,
+      "correct": 2,
+      "accuracy": 100
+    },
+    {
+      "label": "80%+",
+      "count": 1,
+      "correct": 0,
+      "accuracy": 0
+    }
+  ]
+}
