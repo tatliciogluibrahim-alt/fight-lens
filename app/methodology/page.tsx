@@ -232,7 +232,7 @@ export default function MethodologyPage() {
             </div>
             <div className="p-5 space-y-4 text-sm leading-6 text-muted">
               <p>
-                The Brier score measures the mean squared error of the model's win
+                The Brier score measures the mean squared error of the model&apos;s win
                 probabilities against actual outcomes. A score of <span className="data-text text-foreground">0.00</span> is
                 perfect — every probability matched the result exactly.
                 A score of <span className="data-text text-foreground">0.25</span> is random — equivalent to always calling 50/50.
