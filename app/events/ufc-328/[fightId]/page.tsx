@@ -152,7 +152,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   fighterA={fighterA}
                   fighterB={fighterB}
                   modelOutput={fightShapeModel}
-                  styleClashLabel={fight.styleClashLabel ?? undefined}
                 />
               ),
               form: (

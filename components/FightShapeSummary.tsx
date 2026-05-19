@@ -2,7 +2,6 @@ import type { SourcedFight } from "@/lib/sourced-event";
 import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
-import { StyleClashLabel } from "./StyleClashLabel";
 
 interface FightShapeSummaryProps {
   fight: SourcedFight;
@@ -70,7 +69,6 @@ export function FightShapeSummary({ fight, modelOutput }: FightShapeSummaryProps
             />
           )}
           <div className="mt-6 flex flex-wrap gap-2">
-            {fight.styleClashLabel ? <StyleClashLabel label={fight.styleClashLabel} /> : null}
             {[`${fight.rounds} rounds`, fight.weightClass].flatMap((label) => label ? [label] : []).map((label) => (
               <span
                 key={label}
