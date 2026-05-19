@@ -170,12 +170,12 @@ function loadPredictions(): Map<string, PredictionFile> {
 interface FightDetailFile {
   id: string;
   result: { method: string; round: number | null; time: string | null } | null;
-  fighters: Array<{ id: string; name: string; result: "W" | "L" | "D" | null }>;
+  fighters: Array<{ id: string; name: string; result: "W" | "L" | "D" | "NC" | null }>;
 }
 
 // Mirrors lib/accuracy/types FightOutcome — used to build an outcome from
-// UFCStats fight-detail JSONs. Draws/NCs are intentionally never returned
-// from outcomeFromDetail (caller skips them), so method narrows to MethodType.
+// UFCStats fight-detail JSONs. Draws/NCs are returned as non-directional
+// outcomes so the caller can skip and report them consistently.
 interface DetailOutcome {
   winner: "fighterA" | "fighterB" | "draw" | "nc";
   method: MethodType;
@@ -235,6 +235,7 @@ function outcomeFromDetail(
   if (fa.result === "W" && fb.result === "L") winner = "fighterA";
   else if (fb.result === "W" && fa.result === "L") winner = "fighterB";
   else if (fa.result === "D" || fb.result === "D") winner = "draw";
+  else if (fa.result === "NC" || fb.result === "NC") winner = "nc";
   else return null; // Inconclusive — skip rather than guess
 
   const method = normalizeMethod(detail.result.method);

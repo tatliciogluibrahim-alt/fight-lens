@@ -1,0 +1,764 @@
+{
+  "id": "dbcc5b5d568efa8b",
+  "url": "http://www.ufcstats.com/fight-details/dbcc5b5d568efa8b",
+  "event": {
+    "id": "8a0be41c0380188d",
+    "name": "UFC 264: Poirier vs. McGregor 3",
+    "url": "http://www.ufcstats.com/event-details/8a0be41c0380188d"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b50a426a33da0012",
+      "name": "Sean O'Malley",
+      "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012",
+      "nickname": "Suga",
+      "result": "W"
+    },
+    {
+      "id": "9c27f3217891f3f0",
+      "name": "Kris Moutinho",
+      "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:33",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b50a426a33da0012",
+        "name": "Sean O'Malley",
+        "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+      },
+      {
+        "id": "9c27f3217891f3f0",
+        "name": "Kris Moutinho",
+        "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 230,
+          "attempted": 318,
+          "raw": "230 of 318"
+        },
+        "significantStrikePercent": 72,
+        "totalStrikes": {
+          "landed": 230,
+          "attempted": 318,
+          "raw": "230 of 318"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 70,
+          "attempted": 218,
+          "raw": "70 of 218"
+        },
+        "significantStrikePercent": 32,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 218,
+          "raw": "70 of 218"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 77,
+            "attempted": 106,
+            "raw": "77 of 106"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 77,
+            "attempted": 106,
+            "raw": "77 of 106"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 72,
+            "raw": "24 of 72"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 72,
+            "raw": "24 of 72"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 98,
+            "raw": "70 of 98"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 70,
+            "attempted": 98,
+            "raw": "70 of 98"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 68,
+            "raw": "19 of 68"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 68,
+            "raw": "19 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 83,
+            "attempted": 114,
+            "raw": "83 of 114"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 83,
+            "attempted": 114,
+            "raw": "83 of 114"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 78,
+            "raw": "27 of 78"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 78,
+            "raw": "27 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b50a426a33da0012",
+        "name": "Sean O'Malley",
+        "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+      },
+      {
+        "id": "9c27f3217891f3f0",
+        "name": "Kris Moutinho",
+        "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        "significantStrikes": {
+          "landed": 230,
+          "attempted": 318,
+          "raw": "230 of 318"
+        },
+        "significantStrikePercent": 72,
+        "head": {
+          "landed": 177,
+          "attempted": 255,
+          "raw": "177 of 255"
+        },
+        "body": {
+          "landed": 45,
+          "attempted": 55,
+          "raw": "45 of 55"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 228,
+          "attempted": 314,
+          "raw": "228 of 314"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        },
+        "significantStrikes": {
+          "landed": 70,
+          "attempted": 218,
+          "raw": "70 of 218"
+        },
+        "significantStrikePercent": 32,
+        "head": {
+          "landed": 39,
+          "attempted": 168,
+          "raw": "39 of 168"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 22,
+          "raw": "7 of 22"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 28,
+          "raw": "24 of 28"
+        },
+        "distance": {
+          "landed": 69,
+          "attempted": 217,
+          "raw": "69 of 217"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "significantStrikes": {
+            "landed": 77,
+            "attempted": 106,
+            "raw": "77 of 106"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 59,
+            "attempted": 88,
+            "raw": "59 of 88"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 15,
+            "raw": "15 of 15"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 77,
+            "attempted": 105,
+            "raw": "77 of 105"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 72,
+            "raw": "24 of 72"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 11,
+            "attempted": 55,
+            "raw": "11 of 55"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 12,
+            "raw": "11 of 12"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 72,
+            "raw": "24 of 72"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 98,
+            "raw": "70 of 98"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 53,
+            "attempted": 75,
+            "raw": "53 of 75"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 21,
+            "raw": "15 of 21"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 68,
+            "attempted": 95,
+            "raw": "68 of 95"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 68,
+            "raw": "19 of 68"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 12,
+            "attempted": 54,
+            "raw": "12 of 54"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 67,
+            "raw": "18 of 67"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+        },
+        {
+          "id": "9c27f3217891f3f0",
+          "name": "Kris Moutinho",
+          "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b50a426a33da0012",
+            "name": "Sean O'Malley",
+            "url": "http://www.ufcstats.com/fighter-details/b50a426a33da0012"
+          },
+          "significantStrikes": {
+            "landed": 83,
+            "attempted": 114,
+            "raw": "83 of 114"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 65,
+            "attempted": 92,
+            "raw": "65 of 92"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 83,
+            "attempted": 114,
+            "raw": "83 of 114"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9c27f3217891f3f0",
+            "name": "Kris Moutinho",
+            "url": "http://www.ufcstats.com/fighter-details/9c27f3217891f3f0"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 78,
+            "raw": "27 of 78"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 16,
+            "attempted": 59,
+            "raw": "16 of 59"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 78,
+            "raw": "27 of 78"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/dbcc5b5d568efa8b",
+    "fetchedAt": "2026-05-19T17:00:13.752Z"
+  }
+}

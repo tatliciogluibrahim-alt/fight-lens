@@ -1,0 +1,404 @@
+{
+  "id": "7ba54a10f28c9496",
+  "url": "http://www.ufcstats.com/fight-details/7ba54a10f28c9496",
+  "event": {
+    "id": "b9415726dc3ec526",
+    "name": "UFC Fight Night: Vettori vs. Cannonier",
+    "url": "http://www.ufcstats.com/event-details/b9415726dc3ec526"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a7897d200692ab64",
+      "name": "Kyung Ho Kang",
+      "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64",
+      "nickname": "Mr. Perfect",
+      "result": "W"
+    },
+    {
+      "id": "7debc13b36343605",
+      "name": "Cristian Quinonez",
+      "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605",
+      "nickname": "Problema",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:25",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a7897d200692ab64",
+        "name": "Kyung Ho Kang",
+        "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+      },
+      {
+        "id": "7debc13b36343605",
+        "name": "Cristian Quinonez",
+        "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a7897d200692ab64",
+          "name": "Kyung Ho Kang",
+          "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 46,
+          "raw": "31 of 46"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:40",
+        "controlSeconds": 40
+      },
+      {
+        "fighter": {
+          "id": "7debc13b36343605",
+          "name": "Cristian Quinonez",
+          "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a7897d200692ab64",
+          "name": "Kyung Ho Kang",
+          "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+        },
+        {
+          "id": "7debc13b36343605",
+          "name": "Cristian Quinonez",
+          "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a7897d200692ab64",
+            "name": "Kyung Ho Kang",
+            "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 46,
+            "raw": "31 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        },
+        {
+          "fighter": {
+            "id": "7debc13b36343605",
+            "name": "Cristian Quinonez",
+            "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a7897d200692ab64",
+        "name": "Kyung Ho Kang",
+        "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+      },
+      {
+        "id": "7debc13b36343605",
+        "name": "Cristian Quinonez",
+        "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a7897d200692ab64",
+          "name": "Kyung Ho Kang",
+          "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 14,
+          "attempted": 28,
+          "raw": "14 of 28"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7debc13b36343605",
+          "name": "Cristian Quinonez",
+          "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 11,
+          "attempted": 27,
+          "raw": "11 of 27"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 29,
+          "raw": "13 of 29"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a7897d200692ab64",
+          "name": "Kyung Ho Kang",
+          "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+        },
+        {
+          "id": "7debc13b36343605",
+          "name": "Cristian Quinonez",
+          "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a7897d200692ab64",
+            "name": "Kyung Ho Kang",
+            "url": "http://www.ufcstats.com/fighter-details/a7897d200692ab64"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 31,
+            "raw": "17 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7debc13b36343605",
+            "name": "Cristian Quinonez",
+            "url": "http://www.ufcstats.com/fighter-details/7debc13b36343605"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/7ba54a10f28c9496",
+    "fetchedAt": "2026-05-19T17:00:12.033Z"
+  }
+}

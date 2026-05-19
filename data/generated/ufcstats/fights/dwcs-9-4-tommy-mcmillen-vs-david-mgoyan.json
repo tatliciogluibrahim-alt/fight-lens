@@ -1,0 +1,764 @@
+{
+  "id": "b7c5c923d227a40e",
+  "url": "http://www.ufcstats.com/fight-details/b7c5c923d227a40e",
+  "event": {
+    "id": "0b534765dca35e71",
+    "name": "DWCS 9.4",
+    "url": "http://www.ufcstats.com/event-details/0b534765dca35e71"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6b0a6def604de298",
+      "name": "Tommy McMillen",
+      "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298",
+      "nickname": "Gun",
+      "result": "W"
+    },
+    {
+      "id": "8f003ef7e0d9a139",
+      "name": "David Mgoyan",
+      "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Majority",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6b0a6def604de298",
+        "name": "Tommy McMillen",
+        "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+      },
+      {
+        "id": "8f003ef7e0d9a139",
+        "name": "David Mgoyan",
+        "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 113,
+          "attempted": 218,
+          "raw": "113 of 218"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 119,
+          "attempted": 227,
+          "raw": "119 of 227"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:38",
+        "controlSeconds": 158
+      },
+      {
+        "fighter": {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 85,
+          "attempted": 190,
+          "raw": "85 of 190"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 97,
+          "attempted": 209,
+          "raw": "97 of 209"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 12,
+          "raw": "2 of 12"
+        },
+        "takedownPercent": 16,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "1:45",
+        "controlSeconds": 105
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 27,
+            "raw": "10 of 27"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 28,
+            "raw": "10 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:13",
+          "controlSeconds": 73
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 42,
+            "raw": "22 of 42"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 60,
+            "raw": "34 of 60"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "takedownPercent": 40,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "1:45",
+          "controlSeconds": 105
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 60,
+            "raw": "26 of 60"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 61,
+            "raw": "27 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:06",
+          "controlSeconds": 66
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 77,
+            "attempted": 131,
+            "raw": "77 of 131"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 82,
+            "attempted": 138,
+            "raw": "82 of 138"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 100,
+            "raw": "42 of 100"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 101,
+            "raw": "42 of 101"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6b0a6def604de298",
+        "name": "Tommy McMillen",
+        "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+      },
+      {
+        "id": "8f003ef7e0d9a139",
+        "name": "David Mgoyan",
+        "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        "significantStrikes": {
+          "landed": 113,
+          "attempted": 218,
+          "raw": "113 of 218"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 88,
+          "attempted": 182,
+          "raw": "88 of 182"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 29,
+          "raw": "18 of 29"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 97,
+          "attempted": 196,
+          "raw": "97 of 196"
+        },
+        "clinch": {
+          "landed": 16,
+          "attempted": 22,
+          "raw": "16 of 22"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        },
+        "significantStrikes": {
+          "landed": 85,
+          "attempted": 190,
+          "raw": "85 of 190"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 63,
+          "attempted": 159,
+          "raw": "63 of 159"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 20,
+          "raw": "16 of 20"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "distance": {
+          "landed": 70,
+          "attempted": 165,
+          "raw": "70 of 165"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 23,
+          "raw": "13 of 23"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 27,
+            "raw": "10 of 27"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 22,
+            "raw": "9 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 42,
+            "raw": "22 of 42"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 60,
+            "raw": "26 of 60"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 19,
+            "attempted": 49,
+            "raw": "19 of 49"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 54,
+            "raw": "21 of 54"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 12,
+            "attempted": 36,
+            "raw": "12 of 36"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 46,
+            "raw": "19 of 46"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "8f003ef7e0d9a139",
+          "name": "David Mgoyan",
+          "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "significantStrikes": {
+            "landed": 77,
+            "attempted": 131,
+            "raw": "77 of 131"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 61,
+            "attempted": 112,
+            "raw": "61 of 112"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 67,
+            "attempted": 120,
+            "raw": "67 of 120"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f003ef7e0d9a139",
+            "name": "David Mgoyan",
+            "url": "http://www.ufcstats.com/fighter-details/8f003ef7e0d9a139"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 100,
+            "raw": "42 of 100"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 33,
+            "attempted": 89,
+            "raw": "33 of 89"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 39,
+            "attempted": 95,
+            "raw": "39 of 95"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b7c5c923d227a40e",
+    "fetchedAt": "2026-05-19T16:55:30.310Z"
+  }
+}

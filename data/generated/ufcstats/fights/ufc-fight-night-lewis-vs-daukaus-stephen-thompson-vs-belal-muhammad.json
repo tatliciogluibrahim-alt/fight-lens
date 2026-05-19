@@ -1,0 +1,764 @@
+{
+  "id": "8b3b38167060b1d7",
+  "url": "http://www.ufcstats.com/fight-details/8b3b38167060b1d7",
+  "event": {
+    "id": "2a470ad41c22c25a",
+    "name": "UFC Fight Night: Lewis vs. Daukaus",
+    "url": "http://www.ufcstats.com/event-details/2a470ad41c22c25a"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4a28cb716c19157a",
+      "name": "Stephen Thompson",
+      "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a",
+      "nickname": "Wonderboy",
+      "result": "L"
+    },
+    {
+      "id": "b1b0729d27936f2f",
+      "name": "Belal Muhammad",
+      "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f",
+      "nickname": "Remember the Name",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4a28cb716c19157a",
+        "name": "Stephen Thompson",
+        "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+      },
+      {
+        "id": "b1b0729d27936f2f",
+        "name": "Belal Muhammad",
+        "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 67,
+          "raw": "51 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:52",
+        "controlSeconds": 52
+      },
+      {
+        "fighter": {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 58,
+          "attempted": 95,
+          "raw": "58 of 95"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 171,
+          "attempted": 271,
+          "raw": "171 of 271"
+        },
+        "takedowns": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "takedownPercent": 77,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "11:57",
+        "controlSeconds": 717
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 36,
+            "raw": "28 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 72,
+            "raw": "44 of 72"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 64,
+            "attempted": 111,
+            "raw": "64 of 111"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedownPercent": 75,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:07",
+          "controlSeconds": 187
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 16,
+            "raw": "12 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 64,
+            "raw": "42 of 64"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:11",
+          "controlSeconds": 251
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 65,
+            "attempted": 96,
+            "raw": "65 of 96"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:39",
+          "controlSeconds": 279
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4a28cb716c19157a",
+        "name": "Stephen Thompson",
+        "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+      },
+      {
+        "id": "b1b0729d27936f2f",
+        "name": "Belal Muhammad",
+        "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 29,
+          "raw": "17 of 29"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        },
+        "significantStrikes": {
+          "landed": 58,
+          "attempted": 95,
+          "raw": "58 of 95"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 56,
+          "attempted": 92,
+          "raw": "56 of 92"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 10,
+          "raw": "2 of 10"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 55,
+          "attempted": 84,
+          "raw": "55 of 84"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 72,
+            "raw": "44 of 72"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 42,
+            "attempted": 69,
+            "raw": "42 of 69"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 41,
+            "attempted": 64,
+            "raw": "41 of 64"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        {
+          "id": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1b0729d27936f2f",
+            "name": "Belal Muhammad",
+            "url": "http://www.ufcstats.com/fighter-details/b1b0729d27936f2f"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8b3b38167060b1d7",
+    "fetchedAt": "2026-05-19T17:04:51.205Z"
+  }
+}

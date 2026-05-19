@@ -1,0 +1,764 @@
+{
+  "id": "8817bd21b6d0a989",
+  "url": "http://www.ufcstats.com/fight-details/8817bd21b6d0a989",
+  "event": {
+    "id": "69108cb8b32efe04",
+    "name": "UFC Fight Night: Evloev vs. Murphy",
+    "url": "http://www.ufcstats.com/event-details/69108cb8b32efe04"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3cc506f115cbb9d5",
+      "name": "Mantas Kondratavicius",
+      "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "6d48a2df51749d91",
+      "name": "Antonio Trocoli",
+      "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91",
+      "nickname": "Malvado",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rich Mitchell",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3cc506f115cbb9d5",
+        "name": "Mantas Kondratavicius",
+        "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+      },
+      {
+        "id": "6d48a2df51749d91",
+        "name": "Antonio Trocoli",
+        "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 107,
+          "raw": "75 of 107"
+        },
+        "significantStrikePercent": 70,
+        "totalStrikes": {
+          "landed": 135,
+          "attempted": 177,
+          "raw": "135 of 177"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "6:06",
+        "controlSeconds": 366
+      },
+      {
+        "fighter": {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 39,
+          "raw": "17 of 39"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 54,
+          "raw": "29 of 54"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 12,
+          "raw": "1 of 12"
+        },
+        "takedownPercent": 8,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:03",
+        "controlSeconds": 303
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 42,
+            "raw": "28 of 42"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 56,
+            "raw": "41 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:52",
+          "controlSeconds": 112
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:33",
+          "controlSeconds": 93
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 47,
+            "raw": "39 of 47"
+          },
+          "significantStrikePercent": 82,
+          "totalStrikes": {
+            "landed": 73,
+            "attempted": 88,
+            "raw": "73 of 88"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:37",
+          "controlSeconds": 217
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "takedownPercent": 14,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:22",
+          "controlSeconds": 202
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3cc506f115cbb9d5",
+        "name": "Mantas Kondratavicius",
+        "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+      },
+      {
+        "id": "6d48a2df51749d91",
+        "name": "Antonio Trocoli",
+        "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 107,
+          "raw": "75 of 107"
+        },
+        "significantStrikePercent": 70,
+        "head": {
+          "landed": 61,
+          "attempted": 93,
+          "raw": "61 of 93"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 14,
+          "raw": "14 of 14"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 42,
+          "attempted": 68,
+          "raw": "42 of 68"
+        },
+        "clinch": {
+          "landed": 17,
+          "attempted": 19,
+          "raw": "17 of 19"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 20,
+          "raw": "16 of 20"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 39,
+          "raw": "17 of 39"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 10,
+          "attempted": 28,
+          "raw": "10 of 28"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 35,
+          "raw": "15 of 35"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 42,
+            "raw": "28 of 42"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 19,
+            "attempted": 33,
+            "raw": "19 of 33"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 32,
+            "raw": "19 of 32"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 47,
+            "raw": "39 of 47"
+          },
+          "significantStrikePercent": 82,
+          "head": {
+            "landed": 35,
+            "attempted": 43,
+            "raw": "35 of 43"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 18,
+            "raw": "16 of 18"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3cc506f115cbb9d5",
+          "name": "Mantas Kondratavicius",
+          "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+        },
+        {
+          "id": "6d48a2df51749d91",
+          "name": "Antonio Trocoli",
+          "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3cc506f115cbb9d5",
+            "name": "Mantas Kondratavicius",
+            "url": "http://www.ufcstats.com/fighter-details/3cc506f115cbb9d5"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d48a2df51749d91",
+            "name": "Antonio Trocoli",
+            "url": "http://www.ufcstats.com/fighter-details/6d48a2df51749d91"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8817bd21b6d0a989",
+    "fetchedAt": "2026-05-19T16:57:25.037Z"
+  }
+}

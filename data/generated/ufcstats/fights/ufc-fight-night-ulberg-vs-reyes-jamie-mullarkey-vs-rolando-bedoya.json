@@ -1,0 +1,764 @@
+{
+  "id": "e2dc4fb7b5c0ce76",
+  "url": "http://www.ufcstats.com/fight-details/e2dc4fb7b5c0ce76",
+  "event": {
+    "id": "ed220e87bef0cc64",
+    "name": "UFC Fight Night: Ulberg vs. Reyes",
+    "url": "http://www.ufcstats.com/event-details/ed220e87bef0cc64"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "af9f42e6894047fc",
+      "name": "Jamie Mullarkey",
+      "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "40a456a25d52ee65",
+      "name": "Rolando Bedoya",
+      "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65",
+      "nickname": "The Machine",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Matt Wynne",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "af9f42e6894047fc",
+        "name": "Jamie Mullarkey",
+        "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+      },
+      {
+        "id": "40a456a25d52ee65",
+        "name": "Rolando Bedoya",
+        "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 47,
+          "attempted": 94,
+          "raw": "47 of 94"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 17,
+          "raw": "3 of 17"
+        },
+        "takedownPercent": 17,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:41",
+        "controlSeconds": 341
+      },
+      {
+        "fighter": {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 116,
+          "raw": "46 of 116"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 129,
+          "raw": "55 of 129"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:49",
+          "controlSeconds": 229
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 54,
+            "raw": "25 of 54"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "takedownPercent": 14,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 73,
+            "raw": "31 of 73"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 75,
+            "raw": "32 of 75"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "af9f42e6894047fc",
+        "name": "Jamie Mullarkey",
+        "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+      },
+      {
+        "id": "40a456a25d52ee65",
+        "name": "Rolando Bedoya",
+        "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 32,
+          "attempted": 74,
+          "raw": "32 of 74"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 82,
+          "raw": "40 of 82"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 116,
+          "raw": "46 of 116"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 32,
+          "attempted": 93,
+          "raw": "32 of 93"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "distance": {
+          "landed": 37,
+          "attempted": 99,
+          "raw": "37 of 99"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 16,
+          "raw": "9 of 16"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 6,
+            "attempted": 25,
+            "raw": "6 of 25"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 28,
+            "raw": "8 of 28"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 54,
+            "raw": "25 of 54"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 73,
+            "raw": "31 of 73"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 24,
+            "attempted": 63,
+            "raw": "24 of 63"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 62,
+            "raw": "24 of 62"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e2dc4fb7b5c0ce76",
+    "fetchedAt": "2026-05-19T17:02:41.451Z"
+  }
+}

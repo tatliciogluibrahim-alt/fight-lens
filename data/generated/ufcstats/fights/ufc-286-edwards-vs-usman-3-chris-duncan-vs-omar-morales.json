@@ -1,0 +1,764 @@
+{
+  "id": "cdaf65287d9a0ecb",
+  "url": "http://www.ufcstats.com/fight-details/cdaf65287d9a0ecb",
+  "event": {
+    "id": "e4bb7e483c4ad318",
+    "name": "UFC 286: Edwards vs. Usman 3",
+    "url": "http://www.ufcstats.com/event-details/e4bb7e483c4ad318"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fd406a32a6fb3a29",
+      "name": "Chris Duncan",
+      "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29",
+      "nickname": "The Problem",
+      "result": "W"
+    },
+    {
+      "id": "a0e6753c42698f13",
+      "name": "Omar Morales",
+      "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13",
+      "nickname": "Venezuelan Fighter",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Lukasz Bosacki",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fd406a32a6fb3a29",
+        "name": "Chris Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+      },
+      {
+        "id": "a0e6753c42698f13",
+        "name": "Omar Morales",
+        "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 83,
+          "raw": "53 of 83"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 92,
+          "raw": "62 of 92"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "takedownPercent": 35,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:31",
+        "controlSeconds": 391
+      },
+      {
+        "fighter": {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 80,
+          "raw": "47 of 80"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 53,
+          "attempted": 86,
+          "raw": "53 of 86"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 42,
+            "raw": "26 of 42"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 43,
+            "raw": "27 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 24,
+            "raw": "14 of 24"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:42",
+          "controlSeconds": 162
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "significantStrikePercent": 78,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 22,
+            "raw": "18 of 22"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "takedownPercent": 57,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:37",
+          "controlSeconds": 217
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 23,
+            "raw": "16 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fd406a32a6fb3a29",
+        "name": "Chris Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+      },
+      {
+        "id": "a0e6753c42698f13",
+        "name": "Omar Morales",
+        "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 83,
+          "raw": "53 of 83"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 12,
+          "attempted": 25,
+          "raw": "12 of 25"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 21,
+          "raw": "17 of 21"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 37,
+          "raw": "24 of 37"
+        },
+        "distance": {
+          "landed": 43,
+          "attempted": 73,
+          "raw": "43 of 73"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 80,
+          "raw": "47 of 80"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 32,
+          "attempted": 64,
+          "raw": "32 of 64"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 41,
+          "attempted": 73,
+          "raw": "41 of 73"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 37,
+            "raw": "21 of 37"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 42,
+            "raw": "26 of 42"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 24,
+            "raw": "14 of 24"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        {
+          "id": "a0e6753c42698f13",
+          "name": "Omar Morales",
+          "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "significantStrikePercent": 78,
+          "head": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a0e6753c42698f13",
+            "name": "Omar Morales",
+            "url": "http://www.ufcstats.com/fighter-details/a0e6753c42698f13"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 20,
+            "raw": "13 of 20"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/cdaf65287d9a0ecb",
+    "fetchedAt": "2026-05-19T16:55:17.649Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "4072abf0b0c179f2",
+  "url": "http://www.ufcstats.com/fight-details/4072abf0b0c179f2",
+  "event": {
+    "id": "b2e3aca4cd363477",
+    "name": "UFC Fight Night: Machado Garry vs. Prates",
+    "url": "http://www.ufcstats.com/event-details/b2e3aca4cd363477"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "9560ff14eb3129f7",
+      "name": "Giga Chikadze",
+      "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7",
+      "nickname": "Ninja",
+      "result": "L"
+    },
+    {
+      "id": "ffe9703408fb5964",
+      "name": "David Onama",
+      "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "9560ff14eb3129f7",
+        "name": "Giga Chikadze",
+        "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+      },
+      {
+        "id": "ffe9703408fb5964",
+        "name": "David Onama",
+        "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 91,
+          "raw": "43 of 91"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 71,
+          "attempted": 127,
+          "raw": "71 of 127"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 87,
+          "raw": "49 of 87"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 72,
+          "attempted": 127,
+          "raw": "72 of 127"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:15",
+        "controlSeconds": 375
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 43,
+            "raw": "21 of 43"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 48,
+            "raw": "26 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 29,
+            "raw": "19 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 43,
+            "raw": "28 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:07",
+          "controlSeconds": 187
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 50,
+            "raw": "26 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 54,
+            "raw": "31 of 54"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:24",
+          "controlSeconds": 144
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "9560ff14eb3129f7",
+        "name": "Giga Chikadze",
+        "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+      },
+      {
+        "id": "ffe9703408fb5964",
+        "name": "David Onama",
+        "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 91,
+          "raw": "43 of 91"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 23,
+          "attempted": 66,
+          "raw": "23 of 66"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 14,
+          "raw": "12 of 14"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 88,
+          "raw": "40 of 88"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        },
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 87,
+          "raw": "49 of 87"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 29,
+          "attempted": 55,
+          "raw": "29 of 55"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "leg": {
+          "landed": 19,
+          "attempted": 26,
+          "raw": "19 of 26"
+        },
+        "distance": {
+          "landed": 38,
+          "attempted": 75,
+          "raw": "38 of 75"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 43,
+            "raw": "21 of 43"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 43,
+            "raw": "21 of 43"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9560ff14eb3129f7",
+          "name": "Giga Chikadze",
+          "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+        },
+        {
+          "id": "ffe9703408fb5964",
+          "name": "David Onama",
+          "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9560ff14eb3129f7",
+            "name": "Giga Chikadze",
+            "url": "http://www.ufcstats.com/fighter-details/9560ff14eb3129f7"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ffe9703408fb5964",
+            "name": "David Onama",
+            "url": "http://www.ufcstats.com/fighter-details/ffe9703408fb5964"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 25,
+            "raw": "14 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4072abf0b0c179f2",
+    "fetchedAt": "2026-05-19T17:03:45.771Z"
+  }
+}

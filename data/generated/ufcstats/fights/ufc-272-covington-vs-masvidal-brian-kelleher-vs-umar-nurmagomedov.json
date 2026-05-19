@@ -1,0 +1,404 @@
+{
+  "id": "59d44b6888885500",
+  "url": "http://www.ufcstats.com/fight-details/59d44b6888885500",
+  "event": {
+    "id": "75e0d3cc2262b732",
+    "name": "UFC 272: Covington vs. Masvidal",
+    "url": "http://www.ufcstats.com/event-details/75e0d3cc2262b732"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7be14eaed4c74856",
+      "name": "Brian Kelleher",
+      "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856",
+      "nickname": "Boom",
+      "result": "L"
+    },
+    {
+      "id": "2b6fc1c02736833d",
+      "name": "Umar Nurmagomedov",
+      "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7be14eaed4c74856",
+        "name": "Brian Kelleher",
+        "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+      },
+      {
+        "id": "2b6fc1c02736833d",
+        "name": "Umar Nurmagomedov",
+        "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7be14eaed4c74856",
+          "name": "Brian Kelleher",
+          "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 19,
+          "raw": "1 of 19"
+        },
+        "significantStrikePercent": 5,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 19,
+          "raw": "1 of 19"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "2b6fc1c02736833d",
+          "name": "Umar Nurmagomedov",
+          "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 26,
+          "raw": "18 of 26"
+        },
+        "significantStrikePercent": 69,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 29,
+          "raw": "21 of 29"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:27",
+        "controlSeconds": 87
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7be14eaed4c74856",
+          "name": "Brian Kelleher",
+          "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+        },
+        {
+          "id": "2b6fc1c02736833d",
+          "name": "Umar Nurmagomedov",
+          "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7be14eaed4c74856",
+            "name": "Brian Kelleher",
+            "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 19,
+            "raw": "1 of 19"
+          },
+          "significantStrikePercent": 5,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 19,
+            "raw": "1 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "2b6fc1c02736833d",
+            "name": "Umar Nurmagomedov",
+            "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 29,
+            "raw": "21 of 29"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:27",
+          "controlSeconds": 87
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7be14eaed4c74856",
+        "name": "Brian Kelleher",
+        "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+      },
+      {
+        "id": "2b6fc1c02736833d",
+        "name": "Umar Nurmagomedov",
+        "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7be14eaed4c74856",
+          "name": "Brian Kelleher",
+          "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 19,
+          "raw": "1 of 19"
+        },
+        "significantStrikePercent": 5,
+        "head": {
+          "landed": 0,
+          "attempted": 13,
+          "raw": "0 of 13"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 18,
+          "raw": "1 of 18"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2b6fc1c02736833d",
+          "name": "Umar Nurmagomedov",
+          "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 26,
+          "raw": "18 of 26"
+        },
+        "significantStrikePercent": 69,
+        "head": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7be14eaed4c74856",
+          "name": "Brian Kelleher",
+          "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+        },
+        {
+          "id": "2b6fc1c02736833d",
+          "name": "Umar Nurmagomedov",
+          "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7be14eaed4c74856",
+            "name": "Brian Kelleher",
+            "url": "http://www.ufcstats.com/fighter-details/7be14eaed4c74856"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 19,
+            "raw": "1 of 19"
+          },
+          "significantStrikePercent": 5,
+          "head": {
+            "landed": 0,
+            "attempted": 13,
+            "raw": "0 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 18,
+            "raw": "1 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2b6fc1c02736833d",
+            "name": "Umar Nurmagomedov",
+            "url": "http://www.ufcstats.com/fighter-details/2b6fc1c02736833d"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/59d44b6888885500",
+    "fetchedAt": "2026-05-19T17:03:26.412Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "03377f7bf8a2d5ff",
+  "url": "http://www.ufcstats.com/fight-details/03377f7bf8a2d5ff",
+  "event": {
+    "id": "9336e86cfd4ceaa1",
+    "name": "UFC Fight Night: Oliveira vs. Gamrot",
+    "url": "http://www.ufcstats.com/event-details/9336e86cfd4ceaa1"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "25f9a5f3e8a52618",
+      "name": "Jhonata Diniz",
+      "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "39d309957c5c210d",
+      "name": "Mario Pinto",
+      "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:10",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Joao Claudio Soares",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "25f9a5f3e8a52618",
+        "name": "Jhonata Diniz",
+        "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+      },
+      {
+        "id": "39d309957c5c210d",
+        "name": "Mario Pinto",
+        "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "significantStrikePercent": 20,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:09",
+        "controlSeconds": 9
+      },
+      {
+        "fighter": {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 33,
+          "raw": "29 of 33"
+        },
+        "significantStrikePercent": 87,
+        "totalStrikes": {
+          "landed": 87,
+          "attempted": 102,
+          "raw": "87 of 102"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "takedownPercent": 75,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "7:28",
+        "controlSeconds": 448
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "25f9a5f3e8a52618",
+            "name": "Jhonata Diniz",
+            "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:09",
+          "controlSeconds": 9
+        },
+        {
+          "fighter": {
+            "id": "39d309957c5c210d",
+            "name": "Mario Pinto",
+            "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "significantStrikePercent": 85,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 44,
+            "raw": "37 of 44"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "3:55",
+          "controlSeconds": 235
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "25f9a5f3e8a52618",
+            "name": "Jhonata Diniz",
+            "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "39d309957c5c210d",
+            "name": "Mario Pinto",
+            "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          },
+          "significantStrikePercent": 89,
+          "totalStrikes": {
+            "landed": 50,
+            "attempted": 58,
+            "raw": "50 of 58"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:33",
+          "controlSeconds": 213
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "25f9a5f3e8a52618",
+        "name": "Jhonata Diniz",
+        "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+      },
+      {
+        "id": "39d309957c5c210d",
+        "name": "Mario Pinto",
+        "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "significantStrikePercent": 20,
+        "head": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 33,
+          "raw": "29 of 33"
+        },
+        "significantStrikePercent": 87,
+        "head": {
+          "landed": 28,
+          "attempted": 31,
+          "raw": "28 of 31"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 27,
+          "attempted": 30,
+          "raw": "27 of 30"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "25f9a5f3e8a52618",
+            "name": "Jhonata Diniz",
+            "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "39d309957c5c210d",
+            "name": "Mario Pinto",
+            "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "significantStrikePercent": 85,
+          "head": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "25f9a5f3e8a52618",
+          "name": "Jhonata Diniz",
+          "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+        },
+        {
+          "id": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "25f9a5f3e8a52618",
+            "name": "Jhonata Diniz",
+            "url": "http://www.ufcstats.com/fighter-details/25f9a5f3e8a52618"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "39d309957c5c210d",
+            "name": "Mario Pinto",
+            "url": "http://www.ufcstats.com/fighter-details/39d309957c5c210d"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          },
+          "significantStrikePercent": 89,
+          "head": {
+            "landed": 17,
+            "attempted": 18,
+            "raw": "17 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 18,
+            "raw": "17 of 18"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/03377f7bf8a2d5ff",
+    "fetchedAt": "2026-05-19T16:58:11.537Z"
+  }
+}

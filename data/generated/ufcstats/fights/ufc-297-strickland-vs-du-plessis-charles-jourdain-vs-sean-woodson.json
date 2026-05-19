@@ -1,0 +1,764 @@
+{
+  "id": "331ddc1141e934d1",
+  "url": "http://www.ufcstats.com/fight-details/331ddc1141e934d1",
+  "event": {
+    "id": "bd85ca0bb4f26cfc",
+    "name": "UFC 297: Strickland vs. Du Plessis",
+    "url": "http://www.ufcstats.com/event-details/bd85ca0bb4f26cfc"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f1d64ae34e088832",
+      "name": "Charles Jourdain",
+      "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832",
+      "nickname": "Air",
+      "result": "L"
+    },
+    {
+      "id": "4682bc59d5f55145",
+      "name": "Sean Woodson",
+      "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145",
+      "nickname": "The Sniper",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jerin Valel",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f1d64ae34e088832",
+        "name": "Charles Jourdain",
+        "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+      },
+      {
+        "id": "4682bc59d5f55145",
+        "name": "Sean Woodson",
+        "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 156,
+          "raw": "60 of 156"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 78,
+          "attempted": 175,
+          "raw": "78 of 175"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:58",
+        "controlSeconds": 118
+      },
+      {
+        "fighter": {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 80,
+          "attempted": 168,
+          "raw": "80 of 168"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 102,
+          "attempted": 193,
+          "raw": "102 of 193"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:39",
+        "controlSeconds": 39
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 51,
+            "raw": "18 of 51"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 53,
+            "raw": "20 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 72,
+            "raw": "31 of 72"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 80,
+            "raw": "39 of 80"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 46,
+            "raw": "22 of 46"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 51,
+            "raw": "27 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:08",
+          "controlSeconds": 68
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 51,
+            "raw": "28 of 51"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 67,
+            "raw": "41 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 59,
+            "raw": "20 of 59"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 71,
+            "raw": "31 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 45,
+            "raw": "21 of 45"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 46,
+            "raw": "22 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:39",
+          "controlSeconds": 39
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f1d64ae34e088832",
+        "name": "Charles Jourdain",
+        "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+      },
+      {
+        "id": "4682bc59d5f55145",
+        "name": "Sean Woodson",
+        "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 156,
+          "raw": "60 of 156"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 19,
+          "attempted": 98,
+          "raw": "19 of 98"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 32,
+          "raw": "20 of 32"
+        },
+        "leg": {
+          "landed": 21,
+          "attempted": 26,
+          "raw": "21 of 26"
+        },
+        "distance": {
+          "landed": 52,
+          "attempted": 147,
+          "raw": "52 of 147"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        },
+        "significantStrikes": {
+          "landed": 80,
+          "attempted": 168,
+          "raw": "80 of 168"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 59,
+          "attempted": 143,
+          "raw": "59 of 143"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 12,
+          "raw": "11 of 12"
+        },
+        "distance": {
+          "landed": 70,
+          "attempted": 156,
+          "raw": "70 of 156"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 51,
+            "raw": "18 of 51"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 5,
+            "attempted": 35,
+            "raw": "5 of 35"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 51,
+            "raw": "18 of 51"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 72,
+            "raw": "31 of 72"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 19,
+            "attempted": 60,
+            "raw": "19 of 60"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 68,
+            "raw": "28 of 68"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 46,
+            "raw": "22 of 46"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 42,
+            "raw": "18 of 42"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 51,
+            "raw": "28 of 51"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 23,
+            "attempted": 44,
+            "raw": "23 of 44"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "4682bc59d5f55145",
+          "name": "Sean Woodson",
+          "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 59,
+            "raw": "20 of 59"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 6,
+            "attempted": 34,
+            "raw": "6 of 34"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 54,
+            "raw": "16 of 54"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4682bc59d5f55145",
+            "name": "Sean Woodson",
+            "url": "http://www.ufcstats.com/fighter-details/4682bc59d5f55145"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 45,
+            "raw": "21 of 45"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 17,
+            "attempted": 39,
+            "raw": "17 of 39"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 42,
+            "raw": "19 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/331ddc1141e934d1",
+    "fetchedAt": "2026-05-19T16:54:10.780Z"
+  }
+}

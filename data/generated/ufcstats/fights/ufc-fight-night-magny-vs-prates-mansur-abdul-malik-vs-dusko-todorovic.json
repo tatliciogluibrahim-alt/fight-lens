@@ -1,0 +1,404 @@
+{
+  "id": "ea6427379a83bd01",
+  "url": "http://www.ufcstats.com/fight-details/ea6427379a83bd01",
+  "event": {
+    "id": "585f9ffdb0cd0466",
+    "name": "UFC Fight Night: Magny vs. Prates",
+    "url": "http://www.ufcstats.com/event-details/585f9ffdb0cd0466"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "841695e02c99a521",
+      "name": "Mansur Abdul-Malik",
+      "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "866fd7b1a6c90e7f",
+      "name": "Dusko Todorovic",
+      "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f",
+      "nickname": "Thunder",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:44",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "841695e02c99a521",
+        "name": "Mansur Abdul-Malik",
+        "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+      },
+      {
+        "id": "866fd7b1a6c90e7f",
+        "name": "Dusko Todorovic",
+        "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "841695e02c99a521",
+          "name": "Mansur Abdul-Malik",
+          "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 51,
+          "raw": "29 of 51"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 54,
+          "raw": "31 of 54"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:27",
+        "controlSeconds": 87
+      },
+      {
+        "fighter": {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "841695e02c99a521",
+          "name": "Mansur Abdul-Malik",
+          "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+        },
+        {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "841695e02c99a521",
+            "name": "Mansur Abdul-Malik",
+            "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 51,
+            "raw": "29 of 51"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 54,
+            "raw": "31 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:27",
+          "controlSeconds": 87
+        },
+        {
+          "fighter": {
+            "id": "866fd7b1a6c90e7f",
+            "name": "Dusko Todorovic",
+            "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "841695e02c99a521",
+        "name": "Mansur Abdul-Malik",
+        "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+      },
+      {
+        "id": "866fd7b1a6c90e7f",
+        "name": "Dusko Todorovic",
+        "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "841695e02c99a521",
+          "name": "Mansur Abdul-Malik",
+          "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 51,
+          "raw": "29 of 51"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 27,
+          "attempted": 49,
+          "raw": "27 of 49"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 12,
+          "raw": "5 of 12"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        }
+      },
+      {
+        "fighter": {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "841695e02c99a521",
+          "name": "Mansur Abdul-Malik",
+          "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+        },
+        {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "841695e02c99a521",
+            "name": "Mansur Abdul-Malik",
+            "url": "http://www.ufcstats.com/fighter-details/841695e02c99a521"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 51,
+            "raw": "29 of 51"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 27,
+            "attempted": 49,
+            "raw": "27 of 49"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 12,
+            "raw": "5 of 12"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          }
+        },
+        {
+          "fighter": {
+            "id": "866fd7b1a6c90e7f",
+            "name": "Dusko Todorovic",
+            "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ea6427379a83bd01",
+    "fetchedAt": "2026-05-19T16:56:51.995Z"
+  }
+}

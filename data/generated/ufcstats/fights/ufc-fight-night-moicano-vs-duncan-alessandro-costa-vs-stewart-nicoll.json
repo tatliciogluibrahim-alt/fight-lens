@@ -1,0 +1,584 @@
+{
+  "id": "af2a9d47ca8115e4",
+  "url": "http://www.ufcstats.com/fight-details/af2a9d47ca8115e4",
+  "event": {
+    "id": "9a70f67ad2187fa3",
+    "name": "UFC Fight Night: Moicano vs. Duncan",
+    "url": "http://www.ufcstats.com/event-details/9a70f67ad2187fa3"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3fa97913cfd205d3",
+      "name": "Alessandro Costa",
+      "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3",
+      "nickname": "Nono",
+      "result": "W"
+    },
+    {
+      "id": "2bd98ab77a8daa75",
+      "name": "Stewart Nicoll",
+      "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75",
+      "nickname": "Kakamora",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:56",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3fa97913cfd205d3",
+        "name": "Alessandro Costa",
+        "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+      },
+      {
+        "id": "2bd98ab77a8daa75",
+        "name": "Stewart Nicoll",
+        "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 47,
+          "attempted": 97,
+          "raw": "47 of 97"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:18",
+        "controlSeconds": 78
+      },
+      {
+        "fighter": {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 99,
+          "raw": "47 of 99"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 47,
+          "attempted": 99,
+          "raw": "47 of 99"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3fa97913cfd205d3",
+            "name": "Alessandro Costa",
+            "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "2bd98ab77a8daa75",
+            "name": "Stewart Nicoll",
+            "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3fa97913cfd205d3",
+            "name": "Alessandro Costa",
+            "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 43,
+            "raw": "23 of 43"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 51,
+            "raw": "27 of 51"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:18",
+          "controlSeconds": 78
+        },
+        {
+          "fighter": {
+            "id": "2bd98ab77a8daa75",
+            "name": "Stewart Nicoll",
+            "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3fa97913cfd205d3",
+        "name": "Alessandro Costa",
+        "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+      },
+      {
+        "id": "2bd98ab77a8daa75",
+        "name": "Stewart Nicoll",
+        "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 26,
+          "attempted": 67,
+          "raw": "26 of 67"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 13,
+          "raw": "11 of 13"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "distance": {
+          "landed": 41,
+          "attempted": 85,
+          "raw": "41 of 85"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 99,
+          "raw": "47 of 99"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 26,
+          "attempted": 73,
+          "raw": "26 of 73"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 99,
+          "raw": "47 of 99"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3fa97913cfd205d3",
+            "name": "Alessandro Costa",
+            "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2bd98ab77a8daa75",
+            "name": "Stewart Nicoll",
+            "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3fa97913cfd205d3",
+          "name": "Alessandro Costa",
+          "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+        },
+        {
+          "id": "2bd98ab77a8daa75",
+          "name": "Stewart Nicoll",
+          "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3fa97913cfd205d3",
+            "name": "Alessandro Costa",
+            "url": "http://www.ufcstats.com/fighter-details/3fa97913cfd205d3"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 43,
+            "raw": "23 of 43"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2bd98ab77a8daa75",
+            "name": "Stewart Nicoll",
+            "url": "http://www.ufcstats.com/fighter-details/2bd98ab77a8daa75"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 13,
+            "attempted": 31,
+            "raw": "13 of 31"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/af2a9d47ca8115e4",
+    "fetchedAt": "2026-05-19T16:54:56.862Z"
+  }
+}

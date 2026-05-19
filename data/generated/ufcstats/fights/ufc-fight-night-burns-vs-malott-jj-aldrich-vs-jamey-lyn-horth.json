@@ -1,0 +1,764 @@
+{
+  "id": "0b6c13ab8ad7f82b",
+  "url": "http://www.ufcstats.com/fight-details/0b6c13ab8ad7f82b",
+  "event": {
+    "id": "c3ac8d0da7b05772",
+    "name": "UFC Fight Night: Burns vs. Malott",
+    "url": "http://www.ufcstats.com/event-details/c3ac8d0da7b05772"
+  },
+  "title": "Women's Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6fd953151d981979",
+      "name": "JJ Aldrich",
+      "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "5c637af9472ae7cc",
+      "name": "Jamey-Lyn Horth",
+      "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6fd953151d981979",
+        "name": "JJ Aldrich",
+        "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+      },
+      {
+        "id": "5c637af9472ae7cc",
+        "name": "Jamey-Lyn Horth",
+        "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 149,
+          "raw": "50 of 149"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 154,
+          "raw": "52 of 154"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:44",
+        "controlSeconds": 44
+      },
+      {
+        "fighter": {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 70,
+          "attempted": 230,
+          "raw": "70 of 230"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 73,
+          "attempted": 233,
+          "raw": "73 of 233"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 43,
+            "raw": "7 of 43"
+          },
+          "significantStrikePercent": 16,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 48,
+            "raw": "9 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 54,
+            "raw": "21 of 54"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 56,
+            "raw": "23 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 88,
+            "raw": "21 of 88"
+          },
+          "significantStrikePercent": 23,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 89,
+            "raw": "22 of 89"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 88,
+            "raw": "28 of 88"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 88,
+            "raw": "28 of 88"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6fd953151d981979",
+        "name": "JJ Aldrich",
+        "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+      },
+      {
+        "id": "5c637af9472ae7cc",
+        "name": "Jamey-Lyn Horth",
+        "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 149,
+          "raw": "50 of 149"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 35,
+          "attempted": 127,
+          "raw": "35 of 127"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 149,
+          "raw": "50 of 149"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        },
+        "significantStrikes": {
+          "landed": 70,
+          "attempted": 230,
+          "raw": "70 of 230"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 28,
+          "attempted": 158,
+          "raw": "28 of 158"
+        },
+        "body": {
+          "landed": 25,
+          "attempted": 48,
+          "raw": "25 of 48"
+        },
+        "leg": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "distance": {
+          "landed": 70,
+          "attempted": 230,
+          "raw": "70 of 230"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 43,
+            "raw": "7 of 43"
+          },
+          "significantStrikePercent": 16,
+          "head": {
+            "landed": 5,
+            "attempted": 38,
+            "raw": "5 of 38"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 43,
+            "raw": "7 of 43"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 54,
+            "raw": "21 of 54"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 11,
+            "attempted": 33,
+            "raw": "11 of 33"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 54,
+            "raw": "21 of 54"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 11,
+            "attempted": 39,
+            "raw": "11 of 39"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 88,
+            "raw": "21 of 88"
+          },
+          "significantStrikePercent": 23,
+          "head": {
+            "landed": 7,
+            "attempted": 67,
+            "raw": "7 of 67"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 88,
+            "raw": "21 of 88"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6fd953151d981979",
+          "name": "JJ Aldrich",
+          "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+        },
+        {
+          "id": "5c637af9472ae7cc",
+          "name": "Jamey-Lyn Horth",
+          "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6fd953151d981979",
+            "name": "JJ Aldrich",
+            "url": "http://www.ufcstats.com/fighter-details/6fd953151d981979"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5c637af9472ae7cc",
+            "name": "Jamey-Lyn Horth",
+            "url": "http://www.ufcstats.com/fighter-details/5c637af9472ae7cc"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 88,
+            "raw": "28 of 88"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 10,
+            "attempted": 58,
+            "raw": "10 of 58"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 88,
+            "raw": "28 of 88"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/0b6c13ab8ad7f82b",
+    "fetchedAt": "2026-05-19T16:53:47.078Z"
+  }
+}

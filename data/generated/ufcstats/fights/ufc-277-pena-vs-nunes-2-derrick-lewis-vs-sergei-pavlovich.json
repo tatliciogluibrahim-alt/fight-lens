@@ -1,0 +1,404 @@
+{
+  "id": "52f87252af59e23b",
+  "url": "http://www.ufcstats.com/fight-details/52f87252af59e23b",
+  "event": {
+    "id": "b0a6124751a56bc4",
+    "name": "UFC 277: Pena vs. Nunes 2",
+    "url": "http://www.ufcstats.com/event-details/b0a6124751a56bc4"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": "The Black Beast",
+      "result": "L"
+    },
+    {
+      "id": "f14cf73e51b29254",
+      "name": "Sergei Pavlovich",
+      "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "f14cf73e51b29254",
+        "name": "Sergei Pavlovich",
+        "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "significantStrikePercent": 62,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "f14cf73e51b29254",
+        "name": "Sergei Pavlovich",
+        "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "significantStrikePercent": 62,
+        "head": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14cf73e51b29254",
+            "name": "Sergei Pavlovich",
+            "url": "http://www.ufcstats.com/fighter-details/f14cf73e51b29254"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/52f87252af59e23b",
+    "fetchedAt": "2026-05-19T17:03:17.719Z"
+  }
+}

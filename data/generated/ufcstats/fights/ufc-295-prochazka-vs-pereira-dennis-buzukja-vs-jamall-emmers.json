@@ -1,0 +1,404 @@
+{
+  "id": "1cf69de0eea46877",
+  "url": "http://www.ufcstats.com/fight-details/1cf69de0eea46877",
+  "event": {
+    "id": "5a558ba1ff5e9121",
+    "name": "UFC 295: Prochazka vs. Pereira",
+    "url": "http://www.ufcstats.com/event-details/5a558ba1ff5e9121"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c4d039123e62f6a9",
+      "name": "Dennis Buzukja",
+      "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9",
+      "nickname": "The Great",
+      "result": "L"
+    },
+    {
+      "id": "e00a3dee329a51f7",
+      "name": "Jamall Emmers",
+      "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7",
+      "nickname": "Pretty Boy",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:49",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c4d039123e62f6a9",
+        "name": "Dennis Buzukja",
+        "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+      },
+      {
+        "id": "e00a3dee329a51f7",
+        "name": "Jamall Emmers",
+        "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "e00a3dee329a51f7",
+          "name": "Jamall Emmers",
+          "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "significantStrikePercent": 70,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "e00a3dee329a51f7",
+          "name": "Jamall Emmers",
+          "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "e00a3dee329a51f7",
+            "name": "Jamall Emmers",
+            "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c4d039123e62f6a9",
+        "name": "Dennis Buzukja",
+        "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+      },
+      {
+        "id": "e00a3dee329a51f7",
+        "name": "Jamall Emmers",
+        "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e00a3dee329a51f7",
+          "name": "Jamall Emmers",
+          "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "significantStrikePercent": 70,
+        "head": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "e00a3dee329a51f7",
+          "name": "Jamall Emmers",
+          "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e00a3dee329a51f7",
+            "name": "Jamall Emmers",
+            "url": "http://www.ufcstats.com/fighter-details/e00a3dee329a51f7"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/1cf69de0eea46877",
+    "fetchedAt": "2026-05-19T16:54:32.076Z"
+  }
+}

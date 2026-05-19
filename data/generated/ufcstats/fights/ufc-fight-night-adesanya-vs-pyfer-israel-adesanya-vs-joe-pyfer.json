@@ -1,0 +1,584 @@
+{
+  "id": "85e94a6c071fd9fa",
+  "url": "http://www.ufcstats.com/fight-details/85e94a6c071fd9fa",
+  "event": {
+    "id": "5c38639f860a5542",
+    "name": "UFC Fight Night: Adesanya vs. Pyfer",
+    "url": "http://www.ufcstats.com/event-details/5c38639f860a5542"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1338e2c7480bdf9e",
+      "name": "Israel Adesanya",
+      "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e",
+      "nickname": "The Last Stylebender",
+      "result": "L"
+    },
+    {
+      "id": "c1085e1701b13eca",
+      "name": "Joe Pyfer",
+      "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca",
+      "nickname": "Bodybagz",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:18",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "c1085e1701b13eca",
+        "name": "Joe Pyfer",
+        "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 75,
+          "raw": "42 of 75"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 58,
+          "attempted": 92,
+          "raw": "58 of 92"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 70,
+          "raw": "36 of 70"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 90,
+          "raw": "52 of 90"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:44",
+        "controlSeconds": 164
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 42,
+            "raw": "24 of 42"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 56,
+            "raw": "37 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:01",
+          "controlSeconds": 61
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 36,
+            "raw": "21 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 47,
+            "raw": "27 of 47"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 67,
+            "raw": "43 of 67"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "c1085e1701b13eca",
+        "name": "Joe Pyfer",
+        "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 75,
+          "raw": "42 of 75"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 22,
+          "attempted": 54,
+          "raw": "22 of 54"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        },
+        "distance": {
+          "landed": 42,
+          "attempted": 74,
+          "raw": "42 of 74"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 70,
+          "raw": "36 of 70"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 33,
+          "attempted": 64,
+          "raw": "33 of 64"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 42,
+          "raw": "18 of 42"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 21,
+          "raw": "16 of 21"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 42,
+            "raw": "24 of 42"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 42,
+            "raw": "24 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 9,
+            "attempted": 24,
+            "raw": "9 of 24"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 47,
+            "raw": "27 of 47"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 26,
+            "attempted": 45,
+            "raw": "26 of 45"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/85e94a6c071fd9fa",
+    "fetchedAt": "2026-05-19T16:55:55.904Z"
+  }
+}

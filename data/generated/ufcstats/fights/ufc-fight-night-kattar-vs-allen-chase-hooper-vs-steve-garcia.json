@@ -1,0 +1,404 @@
+{
+  "id": "86dff1593d8b9a1f",
+  "url": "http://www.ufcstats.com/fight-details/86dff1593d8b9a1f",
+  "event": {
+    "id": "be5aab761c40ef35",
+    "name": "UFC Fight Night: Kattar vs. Allen",
+    "url": "http://www.ufcstats.com/event-details/be5aab761c40ef35"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "971246648e162f0d",
+      "name": "Chase Hooper",
+      "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d",
+      "nickname": "The Dream",
+      "result": "L"
+    },
+    {
+      "id": "97cf1a2c7c5e7889",
+      "name": "Steve Garcia",
+      "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889",
+      "nickname": "Mean Machine",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:32",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "971246648e162f0d",
+        "name": "Chase Hooper",
+        "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+      },
+      {
+        "id": "97cf1a2c7c5e7889",
+        "name": "Steve Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "971246648e162f0d",
+          "name": "Chase Hooper",
+          "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 32,
+          "raw": "10 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        "kd": 3,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 44,
+          "raw": "29 of 44"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 46,
+          "raw": "31 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:17",
+        "controlSeconds": 17
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "971246648e162f0d",
+          "name": "Chase Hooper",
+          "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+        },
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "971246648e162f0d",
+            "name": "Chase Hooper",
+            "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "kd": 3,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 44,
+            "raw": "29 of 44"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 46,
+            "raw": "31 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "971246648e162f0d",
+        "name": "Chase Hooper",
+        "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+      },
+      {
+        "id": "97cf1a2c7c5e7889",
+        "name": "Steve Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "971246648e162f0d",
+          "name": "Chase Hooper",
+          "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 44,
+          "raw": "29 of 44"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 19,
+          "attempted": 33,
+          "raw": "19 of 33"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 26,
+          "attempted": 40,
+          "raw": "26 of 40"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "971246648e162f0d",
+          "name": "Chase Hooper",
+          "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+        },
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "971246648e162f0d",
+            "name": "Chase Hooper",
+            "url": "http://www.ufcstats.com/fighter-details/971246648e162f0d"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 44,
+            "raw": "29 of 44"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 19,
+            "attempted": 33,
+            "raw": "19 of 33"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 40,
+            "raw": "26 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/86dff1593d8b9a1f",
+    "fetchedAt": "2026-05-19T16:57:07.979Z"
+  }
+}

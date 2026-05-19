@@ -1,0 +1,764 @@
+{
+  "id": "e5cb9dfc1189d77d",
+  "url": "http://www.ufcstats.com/fight-details/e5cb9dfc1189d77d",
+  "event": {
+    "id": "6f81b6de2557739a",
+    "name": "UFC Fight Night: Sandhagen vs. Font",
+    "url": "http://www.ufcstats.com/event-details/6f81b6de2557739a"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "60425d07ef4b91a7",
+      "name": "Kyler Phillips",
+      "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7",
+      "nickname": "The Matrix",
+      "result": "W"
+    },
+    {
+      "id": "b9f28e7045fdfce7",
+      "name": "Raoni Barcelos",
+      "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin MacDonald",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "60425d07ef4b91a7",
+        "name": "Kyler Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+      },
+      {
+        "id": "b9f28e7045fdfce7",
+        "name": "Raoni Barcelos",
+        "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 72,
+          "attempted": 187,
+          "raw": "72 of 187"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 80,
+          "attempted": 196,
+          "raw": "80 of 196"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:47",
+        "controlSeconds": 47
+      },
+      {
+        "fighter": {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 116,
+          "raw": "46 of 116"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 124,
+          "raw": "52 of 124"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "takedownPercent": 27,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:42",
+        "controlSeconds": 102
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 68,
+            "raw": "30 of 68"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 69,
+            "raw": "31 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 45,
+            "raw": "18 of 45"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 48,
+            "raw": "20 of 48"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 66,
+            "raw": "29 of 66"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:54",
+          "controlSeconds": 54
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 61,
+            "raw": "20 of 61"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 61,
+            "raw": "20 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 44,
+            "raw": "19 of 44"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "60425d07ef4b91a7",
+        "name": "Kyler Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+      },
+      {
+        "id": "b9f28e7045fdfce7",
+        "name": "Raoni Barcelos",
+        "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        "significantStrikes": {
+          "landed": 72,
+          "attempted": 187,
+          "raw": "72 of 187"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 40,
+          "attempted": 146,
+          "raw": "40 of 146"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 26,
+          "raw": "18 of 26"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 15,
+          "raw": "14 of 15"
+        },
+        "distance": {
+          "landed": 62,
+          "attempted": 174,
+          "raw": "62 of 174"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 116,
+          "raw": "46 of 116"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 20,
+          "attempted": 87,
+          "raw": "20 of 87"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 17,
+          "raw": "15 of 17"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 12,
+          "raw": "11 of 12"
+        },
+        "distance": {
+          "landed": 39,
+          "attempted": 105,
+          "raw": "39 of 105"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 68,
+            "raw": "30 of 68"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 14,
+            "attempted": 48,
+            "raw": "14 of 48"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 63,
+            "raw": "26 of 63"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 45,
+            "raw": "18 of 45"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 12,
+            "attempted": 38,
+            "raw": "12 of 38"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 37,
+            "raw": "13 of 37"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 16,
+            "attempted": 51,
+            "raw": "16 of 51"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 51,
+            "raw": "17 of 51"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 2,
+            "attempted": 20,
+            "raw": "2 of 20"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 61,
+            "raw": "20 of 61"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 10,
+            "attempted": 47,
+            "raw": "10 of 47"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 60,
+            "raw": "19 of 60"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9f28e7045fdfce7",
+            "name": "Raoni Barcelos",
+            "url": "http://www.ufcstats.com/fighter-details/b9f28e7045fdfce7"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 44,
+            "raw": "19 of 44"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 42,
+            "raw": "18 of 42"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e5cb9dfc1189d77d",
+    "fetchedAt": "2026-05-19T16:53:22.796Z"
+  }
+}

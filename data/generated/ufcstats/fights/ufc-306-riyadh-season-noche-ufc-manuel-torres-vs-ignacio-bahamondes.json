@@ -1,0 +1,404 @@
+{
+  "id": "3733d100f7bd5590",
+  "url": "http://www.ufcstats.com/fight-details/3733d100f7bd5590",
+  "event": {
+    "id": "0c01568b1ac77bff",
+    "name": "UFC 306: Riyadh Season Noche UFC",
+    "url": "http://www.ufcstats.com/event-details/0c01568b1ac77bff"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2e7878927067fdca",
+      "name": "Manuel Torres",
+      "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca",
+      "nickname": "El Loco",
+      "result": "L"
+    },
+    {
+      "id": "e4a47b07044ddd72",
+      "name": "Ignacio Bahamondes",
+      "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72",
+      "nickname": "La Jaula",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:02",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2e7878927067fdca",
+        "name": "Manuel Torres",
+        "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+      },
+      {
+        "id": "e4a47b07044ddd72",
+        "name": "Ignacio Bahamondes",
+        "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 43,
+          "raw": "20 of 43"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 43,
+          "raw": "20 of 43"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:20",
+        "controlSeconds": 20
+      },
+      {
+        "fighter": {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 63,
+          "raw": "36 of 63"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:38",
+        "controlSeconds": 38
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e7878927067fdca",
+            "name": "Manuel Torres",
+            "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 43,
+            "raw": "20 of 43"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 43,
+            "raw": "20 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        },
+        {
+          "fighter": {
+            "id": "e4a47b07044ddd72",
+            "name": "Ignacio Bahamondes",
+            "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 63,
+            "raw": "36 of 63"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2e7878927067fdca",
+        "name": "Manuel Torres",
+        "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+      },
+      {
+        "id": "e4a47b07044ddd72",
+        "name": "Ignacio Bahamondes",
+        "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 43,
+          "raw": "20 of 43"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 9,
+          "attempted": 30,
+          "raw": "9 of 30"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 35,
+          "raw": "12 of 35"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 25,
+          "attempted": 46,
+          "raw": "25 of 46"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 25,
+          "raw": "11 of 25"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 29,
+          "raw": "16 of 29"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e7878927067fdca",
+            "name": "Manuel Torres",
+            "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 43,
+            "raw": "20 of 43"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 9,
+            "attempted": 30,
+            "raw": "9 of 30"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 35,
+            "raw": "12 of 35"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e4a47b07044ddd72",
+            "name": "Ignacio Bahamondes",
+            "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 25,
+            "attempted": 46,
+            "raw": "25 of 46"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/3733d100f7bd5590",
+    "fetchedAt": "2026-05-19T16:57:00.068Z"
+  }
+}

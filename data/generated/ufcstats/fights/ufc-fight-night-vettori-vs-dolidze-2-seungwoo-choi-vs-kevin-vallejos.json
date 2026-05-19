@@ -1,0 +1,404 @@
+{
+  "id": "36db86c39ed09997",
+  "url": "http://www.ufcstats.com/fight-details/36db86c39ed09997",
+  "event": {
+    "id": "39f62b833e4cf126",
+    "name": "UFC Fight Night: Vettori vs. Dolidze 2",
+    "url": "http://www.ufcstats.com/event-details/39f62b833e4cf126"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a68575214ecad140",
+      "name": "SeungWoo Choi",
+      "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140",
+      "nickname": "Sting",
+      "result": "L"
+    },
+    {
+      "id": "239d8e5359022f3b",
+      "name": "Kevin Vallejos",
+      "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b",
+      "nickname": "El Chino",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a68575214ecad140",
+        "name": "SeungWoo Choi",
+        "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+      },
+      {
+        "id": "239d8e5359022f3b",
+        "name": "Kevin Vallejos",
+        "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a68575214ecad140",
+          "name": "SeungWoo Choi",
+          "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 44,
+          "raw": "16 of 44"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 44,
+          "raw": "16 of 44"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 39,
+          "raw": "26 of 39"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:05",
+        "controlSeconds": 5
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a68575214ecad140",
+          "name": "SeungWoo Choi",
+          "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+        },
+        {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a68575214ecad140",
+            "name": "SeungWoo Choi",
+            "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "239d8e5359022f3b",
+            "name": "Kevin Vallejos",
+            "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a68575214ecad140",
+        "name": "SeungWoo Choi",
+        "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+      },
+      {
+        "id": "239d8e5359022f3b",
+        "name": "Kevin Vallejos",
+        "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a68575214ecad140",
+          "name": "SeungWoo Choi",
+          "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 44,
+          "raw": "16 of 44"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 4,
+          "attempted": 20,
+          "raw": "4 of 20"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 44,
+          "raw": "16 of 44"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 4,
+          "attempted": 12,
+          "raw": "4 of 12"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 26,
+          "raw": "13 of 26"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a68575214ecad140",
+          "name": "SeungWoo Choi",
+          "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+        },
+        {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a68575214ecad140",
+            "name": "SeungWoo Choi",
+            "url": "http://www.ufcstats.com/fighter-details/a68575214ecad140"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 4,
+            "attempted": 20,
+            "raw": "4 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "239d8e5359022f3b",
+            "name": "Kevin Vallejos",
+            "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/36db86c39ed09997",
+    "fetchedAt": "2026-05-19T16:58:43.062Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "02713b2d25f74d43",
+  "url": "http://www.ufcstats.com/fight-details/02713b2d25f74d43",
+  "event": {
+    "id": "53e4e21f4c688801",
+    "name": "UFC Fight Night: Dariush vs. Tsarukyan",
+    "url": "http://www.ufcstats.com/event-details/53e4e21f4c688801"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64facb6cc564262d",
+      "name": "Punahele Soriano",
+      "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d",
+      "nickname": "Puna",
+      "result": "L"
+    },
+    {
+      "id": "71505842fb6455c3",
+      "name": "Dustin Stoltzfus",
+      "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:10",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "71505842fb6455c3",
+        "name": "Dustin Stoltzfus",
+        "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 73,
+          "raw": "31 of 73"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 76,
+          "raw": "33 of 76"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 123,
+          "raw": "64 of 123"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 78,
+          "attempted": 140,
+          "raw": "78 of 140"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "takedownPercent": 57,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:12",
+        "controlSeconds": 132
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 47,
+            "raw": "22 of 47"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 47,
+            "raw": "22 of 47"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "71505842fb6455c3",
+            "name": "Dustin Stoltzfus",
+            "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 79,
+            "raw": "41 of 79"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 82,
+            "raw": "43 of 82"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "71505842fb6455c3",
+            "name": "Dustin Stoltzfus",
+            "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 44,
+            "raw": "23 of 44"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 58,
+            "raw": "35 of 58"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "71505842fb6455c3",
+        "name": "Dustin Stoltzfus",
+        "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 73,
+          "raw": "31 of 73"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 18,
+          "attempted": 56,
+          "raw": "18 of 56"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 11,
+          "raw": "9 of 11"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 72,
+          "raw": "30 of 72"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        },
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 123,
+          "raw": "64 of 123"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 24,
+          "attempted": 79,
+          "raw": "24 of 79"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 27,
+          "raw": "23 of 27"
+        },
+        "leg": {
+          "landed": 17,
+          "attempted": 17,
+          "raw": "17 of 17"
+        },
+        "distance": {
+          "landed": 60,
+          "attempted": 116,
+          "raw": "60 of 116"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 47,
+            "raw": "22 of 47"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 13,
+            "attempted": 35,
+            "raw": "13 of 35"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "71505842fb6455c3",
+            "name": "Dustin Stoltzfus",
+            "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+          },
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 79,
+            "raw": "41 of 79"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 15,
+            "attempted": 51,
+            "raw": "15 of 51"
+          },
+          "body": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 72,
+            "raw": "37 of 72"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "71505842fb6455c3",
+          "name": "Dustin Stoltzfus",
+          "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "71505842fb6455c3",
+            "name": "Dustin Stoltzfus",
+            "url": "http://www.ufcstats.com/fighter-details/71505842fb6455c3"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 44,
+            "raw": "23 of 44"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 44,
+            "raw": "23 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/02713b2d25f74d43",
+    "fetchedAt": "2026-05-19T17:01:17.105Z"
+  }
+}

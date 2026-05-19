@@ -1,0 +1,404 @@
+{
+  "id": "2b5f895d21a66ee3",
+  "url": "http://www.ufcstats.com/fight-details/2b5f895d21a66ee3",
+  "event": {
+    "id": "99c80d2bd5dbe5a9",
+    "name": "DWCS 9.6",
+    "url": "http://www.ufcstats.com/event-details/99c80d2bd5dbe5a9"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "86c1441676af2c73",
+      "name": "Mahamed Aly",
+      "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "1c23ec2f1b71be40",
+      "name": "Iwo Baraniewski",
+      "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40",
+      "nickname": "Rudy",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "86c1441676af2c73",
+        "name": "Mahamed Aly",
+        "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+      },
+      {
+        "id": "1c23ec2f1b71be40",
+        "name": "Iwo Baraniewski",
+        "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "86c1441676af2c73",
+          "name": "Mahamed Aly",
+          "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "1c23ec2f1b71be40",
+          "name": "Iwo Baraniewski",
+          "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86c1441676af2c73",
+          "name": "Mahamed Aly",
+          "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+        },
+        {
+          "id": "1c23ec2f1b71be40",
+          "name": "Iwo Baraniewski",
+          "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86c1441676af2c73",
+            "name": "Mahamed Aly",
+            "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "1c23ec2f1b71be40",
+            "name": "Iwo Baraniewski",
+            "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "86c1441676af2c73",
+        "name": "Mahamed Aly",
+        "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+      },
+      {
+        "id": "1c23ec2f1b71be40",
+        "name": "Iwo Baraniewski",
+        "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "86c1441676af2c73",
+          "name": "Mahamed Aly",
+          "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1c23ec2f1b71be40",
+          "name": "Iwo Baraniewski",
+          "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86c1441676af2c73",
+          "name": "Mahamed Aly",
+          "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+        },
+        {
+          "id": "1c23ec2f1b71be40",
+          "name": "Iwo Baraniewski",
+          "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86c1441676af2c73",
+            "name": "Mahamed Aly",
+            "url": "http://www.ufcstats.com/fighter-details/86c1441676af2c73"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1c23ec2f1b71be40",
+            "name": "Iwo Baraniewski",
+            "url": "http://www.ufcstats.com/fighter-details/1c23ec2f1b71be40"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2b5f895d21a66ee3",
+    "fetchedAt": "2026-05-19T16:57:50.725Z"
+  }
+}

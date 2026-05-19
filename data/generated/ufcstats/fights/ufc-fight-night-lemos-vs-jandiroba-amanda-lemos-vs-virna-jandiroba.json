@@ -1,0 +1,584 @@
+{
+  "id": "4a00db8aeff200a2",
+  "url": "http://www.ufcstats.com/fight-details/4a00db8aeff200a2",
+  "event": {
+    "id": "c11036da9162cb5f",
+    "name": "UFC Fight Night: Lemos vs. Jandiroba",
+    "url": "http://www.ufcstats.com/event-details/c11036da9162cb5f"
+  },
+  "title": "Women's Strawweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3df5493bb279226f",
+      "name": "Amanda Lemos",
+      "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "7dda2cf308f24a02",
+      "name": "Virna Jandiroba",
+      "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02",
+      "nickname": "Carcara",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:48",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3df5493bb279226f",
+        "name": "Amanda Lemos",
+        "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+      },
+      {
+        "id": "7dda2cf308f24a02",
+        "name": "Virna Jandiroba",
+        "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 12,
+          "raw": "5 of 12"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "0:51",
+        "controlSeconds": 51
+      },
+      {
+        "fighter": {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 27,
+          "raw": "20 of 27"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 4,
+        "reversals": 1,
+        "control": "6:27",
+        "controlSeconds": 387
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3df5493bb279226f",
+            "name": "Amanda Lemos",
+            "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "0:26",
+          "controlSeconds": 26
+        },
+        {
+          "fighter": {
+            "id": "7dda2cf308f24a02",
+            "name": "Virna Jandiroba",
+            "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "3:42",
+          "controlSeconds": 222
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3df5493bb279226f",
+            "name": "Amanda Lemos",
+            "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 12,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        },
+        {
+          "fighter": {
+            "id": "7dda2cf308f24a02",
+            "name": "Virna Jandiroba",
+            "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "2:45",
+          "controlSeconds": 165
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3df5493bb279226f",
+        "name": "Amanda Lemos",
+        "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+      },
+      {
+        "id": "7dda2cf308f24a02",
+        "name": "Virna Jandiroba",
+        "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "head": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3df5493bb279226f",
+            "name": "Amanda Lemos",
+            "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7dda2cf308f24a02",
+            "name": "Virna Jandiroba",
+            "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+        },
+        {
+          "id": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3df5493bb279226f",
+            "name": "Amanda Lemos",
+            "url": "http://www.ufcstats.com/fighter-details/3df5493bb279226f"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 12,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7dda2cf308f24a02",
+            "name": "Virna Jandiroba",
+            "url": "http://www.ufcstats.com/fighter-details/7dda2cf308f24a02"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4a00db8aeff200a2",
+    "fetchedAt": "2026-05-19T16:55:19.288Z"
+  }
+}

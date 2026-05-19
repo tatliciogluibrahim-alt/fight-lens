@@ -1,0 +1,764 @@
+{
+  "id": "245a3d53baa5e268",
+  "url": "http://www.ufcstats.com/fight-details/245a3d53baa5e268",
+  "event": {
+    "id": "e78f601035d677f2",
+    "name": "DWCS 7.3",
+    "url": "http://www.ufcstats.com/event-details/e78f601035d677f2"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b07f14fc0e53f8bd",
+      "name": "Kaik Brito",
+      "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "6b56e94a59b7b134",
+      "name": "Oban Elliott",
+      "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134",
+      "nickname": "The Welsh Gangster",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Majority",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jacob Montalvo",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b07f14fc0e53f8bd",
+        "name": "Kaik Brito",
+        "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+      },
+      {
+        "id": "6b56e94a59b7b134",
+        "name": "Oban Elliott",
+        "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 110,
+          "raw": "42 of 110"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 54,
+          "attempted": 122,
+          "raw": "54 of 122"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:01",
+        "controlSeconds": 61
+      },
+      {
+        "fighter": {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 58,
+          "attempted": 129,
+          "raw": "58 of 129"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 71,
+          "attempted": 145,
+          "raw": "71 of 145"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedownPercent": 44,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:25",
+        "controlSeconds": 265
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 41,
+            "raw": "14 of 41"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 43,
+            "raw": "16 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 43,
+            "raw": "18 of 43"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedownPercent": 75,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:48",
+          "controlSeconds": 48
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 48,
+            "raw": "23 of 48"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 57,
+            "raw": "32 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:52",
+          "controlSeconds": 52
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:04",
+          "controlSeconds": 64
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "significantStrikePercent": 23,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 22,
+            "raw": "6 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 61,
+            "raw": "31 of 61"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 70,
+            "raw": "39 of 70"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:33",
+          "controlSeconds": 153
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b07f14fc0e53f8bd",
+        "name": "Kaik Brito",
+        "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+      },
+      {
+        "id": "6b56e94a59b7b134",
+        "name": "Oban Elliott",
+        "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 110,
+          "raw": "42 of 110"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 29,
+          "attempted": 94,
+          "raw": "29 of 94"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 94,
+          "raw": "31 of 94"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        },
+        "significantStrikes": {
+          "landed": 58,
+          "attempted": 129,
+          "raw": "58 of 129"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 44,
+          "attempted": 111,
+          "raw": "44 of 111"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 36,
+          "attempted": 84,
+          "raw": "36 of 84"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 20,
+          "attempted": 42,
+          "raw": "20 of 42"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 41,
+            "raw": "14 of 41"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 4,
+            "attempted": 29,
+            "raw": "4 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 38,
+            "raw": "12 of 38"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 43,
+            "raw": "18 of 43"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 10,
+            "attempted": 34,
+            "raw": "10 of 34"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 37,
+            "raw": "15 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 48,
+            "raw": "23 of 48"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 22,
+            "attempted": 46,
+            "raw": "22 of 46"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 35,
+            "raw": "14 of 35"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b07f14fc0e53f8bd",
+          "name": "Kaik Brito",
+          "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+        },
+        {
+          "id": "6b56e94a59b7b134",
+          "name": "Oban Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b07f14fc0e53f8bd",
+            "name": "Kaik Brito",
+            "url": "http://www.ufcstats.com/fighter-details/b07f14fc0e53f8bd"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "significantStrikePercent": 23,
+          "head": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6b56e94a59b7b134",
+            "name": "Oban Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/6b56e94a59b7b134"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 61,
+            "raw": "31 of 61"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 27,
+            "attempted": 55,
+            "raw": "27 of 55"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 25,
+            "raw": "13 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/245a3d53baa5e268",
+    "fetchedAt": "2026-05-19T17:02:48.610Z"
+  }
+}

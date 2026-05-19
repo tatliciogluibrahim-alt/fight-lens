@@ -1,0 +1,404 @@
+{
+  "id": "bc6d70ab959dce70",
+  "url": "http://www.ufcstats.com/fight-details/bc6d70ab959dce70",
+  "event": {
+    "id": "c50ea21fe9ef478d",
+    "name": "UFC Fight Night: Cejudo vs. Song",
+    "url": "http://www.ufcstats.com/event-details/c50ea21fe9ef478d"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5987b2458f4b5290",
+      "name": "Ricky Simon",
+      "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "bbab3baf66128ae2",
+      "name": "Javid Basharat",
+      "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2",
+      "nickname": "The Snow Leopard",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5987b2458f4b5290",
+        "name": "Ricky Simon",
+        "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+      },
+      {
+        "id": "bbab3baf66128ae2",
+        "name": "Javid Basharat",
+        "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 21,
+          "raw": "11 of 21"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 29,
+          "raw": "18 of 29"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:16",
+        "controlSeconds": 76
+      },
+      {
+        "fighter": {
+          "id": "bbab3baf66128ae2",
+          "name": "Javid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 36,
+          "raw": "20 of 36"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 38,
+          "raw": "21 of 38"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "bbab3baf66128ae2",
+          "name": "Javid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:16",
+          "controlSeconds": 76
+        },
+        {
+          "fighter": {
+            "id": "bbab3baf66128ae2",
+            "name": "Javid Basharat",
+            "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 38,
+            "raw": "21 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5987b2458f4b5290",
+        "name": "Ricky Simon",
+        "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+      },
+      {
+        "id": "bbab3baf66128ae2",
+        "name": "Javid Basharat",
+        "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 21,
+          "raw": "11 of 21"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 18,
+          "raw": "9 of 18"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "bbab3baf66128ae2",
+          "name": "Javid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 36,
+          "raw": "20 of 36"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 12,
+          "attempted": 27,
+          "raw": "12 of 27"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 36,
+          "raw": "20 of 36"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "bbab3baf66128ae2",
+          "name": "Javid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bbab3baf66128ae2",
+            "name": "Javid Basharat",
+            "url": "http://www.ufcstats.com/fighter-details/bbab3baf66128ae2"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 12,
+            "attempted": 27,
+            "raw": "12 of 27"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/bc6d70ab959dce70",
+    "fetchedAt": "2026-05-19T17:02:11.865Z"
+  }
+}

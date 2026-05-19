@@ -1,0 +1,404 @@
+{
+  "id": "7f7d2abc21f171ca",
+  "url": "http://www.ufcstats.com/fight-details/7f7d2abc21f171ca",
+  "event": {
+    "id": "f3a078277b3b8ff4",
+    "name": "UFC Fight Night: Yusuff vs. Barboza",
+    "url": "http://www.ufcstats.com/event-details/f3a078277b3b8ff4"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "809bd1a871491508",
+      "name": "Terrance McKinney",
+      "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508",
+      "nickname": "T. Wrecks",
+      "result": "W"
+    },
+    {
+      "id": "d7fe8c6b7d2872e5",
+      "name": "Brendon Marotte",
+      "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5",
+      "nickname": "The Kid",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "809bd1a871491508",
+        "name": "Terrance McKinney",
+        "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+      },
+      {
+        "id": "d7fe8c6b7d2872e5",
+        "name": "Brendon Marotte",
+        "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "d7fe8c6b7d2872e5",
+          "name": "Brendon Marotte",
+          "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        {
+          "id": "d7fe8c6b7d2872e5",
+          "name": "Brendon Marotte",
+          "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "809bd1a871491508",
+            "name": "Terrance McKinney",
+            "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "d7fe8c6b7d2872e5",
+            "name": "Brendon Marotte",
+            "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "809bd1a871491508",
+        "name": "Terrance McKinney",
+        "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+      },
+      {
+        "id": "d7fe8c6b7d2872e5",
+        "name": "Brendon Marotte",
+        "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d7fe8c6b7d2872e5",
+          "name": "Brendon Marotte",
+          "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        {
+          "id": "d7fe8c6b7d2872e5",
+          "name": "Brendon Marotte",
+          "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "809bd1a871491508",
+            "name": "Terrance McKinney",
+            "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d7fe8c6b7d2872e5",
+            "name": "Brendon Marotte",
+            "url": "http://www.ufcstats.com/fighter-details/d7fe8c6b7d2872e5"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/7f7d2abc21f171ca",
+    "fetchedAt": "2026-05-19T16:56:53.708Z"
+  }
+}

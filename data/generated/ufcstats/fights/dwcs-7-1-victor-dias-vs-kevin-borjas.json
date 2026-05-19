@@ -1,0 +1,764 @@
+{
+  "id": "5468d39fa5d07bea",
+  "url": "http://www.ufcstats.com/fight-details/5468d39fa5d07bea",
+  "event": {
+    "id": "cac08b8685387ca5",
+    "name": "DWCS 7.1",
+    "url": "http://www.ufcstats.com/event-details/cac08b8685387ca5"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f7202b3130421d27",
+      "name": "Victor Dias",
+      "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27",
+      "nickname": "Crazy Horse",
+      "result": "L"
+    },
+    {
+      "id": "34b96d52db1d26e6",
+      "name": "Kevin Borjas",
+      "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6",
+      "nickname": "El Gallo Negro",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f7202b3130421d27",
+        "name": "Victor Dias",
+        "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+      },
+      {
+        "id": "34b96d52db1d26e6",
+        "name": "Kevin Borjas",
+        "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 96,
+          "raw": "43 of 96"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 122,
+          "attempted": 190,
+          "raw": "122 of 190"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 12,
+          "raw": "5 of 12"
+        },
+        "takedownPercent": 41,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "7:57",
+        "controlSeconds": 477
+      },
+      {
+        "fighter": {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 87,
+          "attempted": 194,
+          "raw": "87 of 194"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 99,
+          "attempted": 206,
+          "raw": "99 of 206"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 2,
+        "control": "1:07",
+        "controlSeconds": 67
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 57,
+            "attempted": 74,
+            "raw": "57 of 74"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:39",
+          "controlSeconds": 219
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 52,
+            "raw": "27 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 89,
+            "raw": "42 of 89"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:00",
+          "controlSeconds": 60
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 64,
+            "raw": "38 of 64"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedownPercent": 42,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:40",
+          "controlSeconds": 160
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 90,
+            "raw": "42 of 90"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 90,
+            "raw": "42 of 90"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f7202b3130421d27",
+        "name": "Victor Dias",
+        "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+      },
+      {
+        "id": "34b96d52db1d26e6",
+        "name": "Kevin Borjas",
+        "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 96,
+          "raw": "43 of 96"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 22,
+          "attempted": 66,
+          "raw": "22 of 66"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 18,
+          "raw": "12 of 18"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 82,
+          "raw": "33 of 82"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        }
+      },
+      {
+        "fighter": {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        },
+        "significantStrikes": {
+          "landed": 87,
+          "attempted": 194,
+          "raw": "87 of 194"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 76,
+          "attempted": 180,
+          "raw": "76 of 180"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 84,
+          "attempted": 190,
+          "raw": "84 of 190"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 4,
+            "attempted": 22,
+            "raw": "4 of 22"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 35,
+            "attempted": 81,
+            "raw": "35 of 81"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 34,
+            "attempted": 81,
+            "raw": "34 of 81"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f7202b3130421d27",
+          "name": "Victor Dias",
+          "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f7202b3130421d27",
+            "name": "Victor Dias",
+            "url": "http://www.ufcstats.com/fighter-details/f7202b3130421d27"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 90,
+            "raw": "42 of 90"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 35,
+            "attempted": 81,
+            "raw": "35 of 81"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 42,
+            "attempted": 89,
+            "raw": "42 of 89"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5468d39fa5d07bea",
+    "fetchedAt": "2026-05-19T17:00:02.674Z"
+  }
+}

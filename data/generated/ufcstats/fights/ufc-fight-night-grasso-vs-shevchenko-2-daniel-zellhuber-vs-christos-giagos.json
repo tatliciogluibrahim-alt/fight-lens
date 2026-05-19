@@ -1,0 +1,584 @@
+{
+  "id": "2e1435c160bfe8b2",
+  "url": "http://www.ufcstats.com/fight-details/2e1435c160bfe8b2",
+  "event": {
+    "id": "8fa2b06572365321",
+    "name": "UFC Fight Night: Grasso vs. Shevchenko 2",
+    "url": "http://www.ufcstats.com/event-details/8fa2b06572365321"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4148802ae4a50768",
+      "name": "Daniel Zellhuber",
+      "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768",
+      "nickname": "Golden Boy",
+      "result": "W"
+    },
+    {
+      "id": "de45aaae23dfa392",
+      "name": "Christos Giagos",
+      "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392",
+      "nickname": "The Spartan",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "3:26",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4148802ae4a50768",
+        "name": "Daniel Zellhuber",
+        "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 101,
+          "raw": "36 of 101"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 101,
+          "raw": "36 of 101"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:17",
+        "controlSeconds": 17
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 82,
+          "raw": "38 of 82"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 82,
+          "raw": "38 of 82"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "significantStrikePercent": 24,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 52,
+            "raw": "26 of 52"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 52,
+            "raw": "26 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 30,
+            "raw": "12 of 30"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 30,
+            "raw": "12 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4148802ae4a50768",
+        "name": "Daniel Zellhuber",
+        "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 101,
+          "raw": "36 of 101"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 18,
+          "attempted": 75,
+          "raw": "18 of 75"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 35,
+          "attempted": 100,
+          "raw": "35 of 100"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 82,
+          "raw": "38 of 82"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 25,
+          "attempted": 63,
+          "raw": "25 of 63"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "distance": {
+          "landed": 36,
+          "attempted": 79,
+          "raw": "36 of 79"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "significantStrikePercent": 24,
+          "head": {
+            "landed": 7,
+            "attempted": 40,
+            "raw": "7 of 40"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 52,
+            "raw": "26 of 52"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 16,
+            "attempted": 37,
+            "raw": "16 of 37"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 51,
+            "raw": "26 of 51"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 50,
+            "raw": "23 of 50"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 30,
+            "raw": "12 of 30"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 28,
+            "raw": "10 of 28"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2e1435c160bfe8b2",
+    "fetchedAt": "2026-05-19T16:59:56.550Z"
+  }
+}

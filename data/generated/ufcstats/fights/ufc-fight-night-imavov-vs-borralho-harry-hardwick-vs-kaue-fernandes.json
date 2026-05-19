@@ -1,0 +1,404 @@
+{
+  "id": "5cd2dd6075fadcce",
+  "url": "http://www.ufcstats.com/fight-details/5cd2dd6075fadcce",
+  "event": {
+    "id": "6e380a4d73ab4f0e",
+    "name": "UFC Fight Night: Imavov vs. Borralho",
+    "url": "http://www.ufcstats.com/event-details/6e380a4d73ab4f0e"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2dbc60c52de126d8",
+      "name": "Harry Hardwick",
+      "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8",
+      "nickname": "Houdini",
+      "result": "L"
+    },
+    {
+      "id": "ec13c393d029297d",
+      "name": "Kaue Fernandes",
+      "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:21",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2dbc60c52de126d8",
+        "name": "Harry Hardwick",
+        "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+      },
+      {
+        "id": "ec13c393d029297d",
+        "name": "Kaue Fernandes",
+        "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2dbc60c52de126d8",
+          "name": "Harry Hardwick",
+          "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "ec13c393d029297d",
+          "name": "Kaue Fernandes",
+          "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 40,
+          "raw": "24 of 40"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 40,
+          "raw": "24 of 40"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2dbc60c52de126d8",
+          "name": "Harry Hardwick",
+          "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+        },
+        {
+          "id": "ec13c393d029297d",
+          "name": "Kaue Fernandes",
+          "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2dbc60c52de126d8",
+            "name": "Harry Hardwick",
+            "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "ec13c393d029297d",
+            "name": "Kaue Fernandes",
+            "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2dbc60c52de126d8",
+        "name": "Harry Hardwick",
+        "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+      },
+      {
+        "id": "ec13c393d029297d",
+        "name": "Kaue Fernandes",
+        "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2dbc60c52de126d8",
+          "name": "Harry Hardwick",
+          "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 6,
+          "attempted": 18,
+          "raw": "6 of 18"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ec13c393d029297d",
+          "name": "Kaue Fernandes",
+          "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 40,
+          "raw": "24 of 40"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 11,
+          "attempted": 24,
+          "raw": "11 of 24"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 39,
+          "raw": "24 of 39"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2dbc60c52de126d8",
+          "name": "Harry Hardwick",
+          "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+        },
+        {
+          "id": "ec13c393d029297d",
+          "name": "Kaue Fernandes",
+          "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2dbc60c52de126d8",
+            "name": "Harry Hardwick",
+            "url": "http://www.ufcstats.com/fighter-details/2dbc60c52de126d8"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ec13c393d029297d",
+            "name": "Kaue Fernandes",
+            "url": "http://www.ufcstats.com/fighter-details/ec13c393d029297d"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 39,
+            "raw": "24 of 39"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5cd2dd6075fadcce",
+    "fetchedAt": "2026-05-19T16:59:00.650Z"
+  }
+}

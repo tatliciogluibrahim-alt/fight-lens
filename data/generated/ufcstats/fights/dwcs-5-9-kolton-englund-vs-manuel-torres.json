@@ -1,0 +1,404 @@
+{
+  "id": "da70e4dd9950090b",
+  "url": "http://www.ufcstats.com/fight-details/da70e4dd9950090b",
+  "event": {
+    "id": "d1e7fc58d4225cdf",
+    "name": "DWCS 5.9",
+    "url": "http://www.ufcstats.com/event-details/d1e7fc58d4225cdf"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4122da4f791b2f4f",
+      "name": "Kolton Englund",
+      "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f",
+      "nickname": "White Assassin",
+      "result": "L"
+    },
+    {
+      "id": "2e7878927067fdca",
+      "name": "Manuel Torres",
+      "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca",
+      "nickname": "El Loco",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:10",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4122da4f791b2f4f",
+        "name": "Kolton Englund",
+        "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+      },
+      {
+        "id": "2e7878927067fdca",
+        "name": "Manuel Torres",
+        "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4122da4f791b2f4f",
+          "name": "Kolton Englund",
+          "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 20,
+          "raw": "5 of 20"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 20,
+          "raw": "5 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:16",
+        "controlSeconds": 16
+      },
+      {
+        "fighter": {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 42,
+          "raw": "25 of 42"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 27,
+          "attempted": 44,
+          "raw": "27 of 44"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:12",
+        "controlSeconds": 12
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4122da4f791b2f4f",
+          "name": "Kolton Englund",
+          "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+        },
+        {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4122da4f791b2f4f",
+            "name": "Kolton Englund",
+            "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "2e7878927067fdca",
+            "name": "Manuel Torres",
+            "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 44,
+            "raw": "27 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4122da4f791b2f4f",
+        "name": "Kolton Englund",
+        "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+      },
+      {
+        "id": "2e7878927067fdca",
+        "name": "Manuel Torres",
+        "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4122da4f791b2f4f",
+          "name": "Kolton Englund",
+          "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 20,
+          "raw": "5 of 20"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 3,
+          "attempted": 18,
+          "raw": "3 of 18"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 20,
+          "raw": "5 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 42,
+          "raw": "25 of 42"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 17,
+          "attempted": 32,
+          "raw": "17 of 32"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 33,
+          "raw": "18 of 33"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4122da4f791b2f4f",
+          "name": "Kolton Englund",
+          "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+        },
+        {
+          "id": "2e7878927067fdca",
+          "name": "Manuel Torres",
+          "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4122da4f791b2f4f",
+            "name": "Kolton Englund",
+            "url": "http://www.ufcstats.com/fighter-details/4122da4f791b2f4f"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 3,
+            "attempted": 18,
+            "raw": "3 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2e7878927067fdca",
+            "name": "Manuel Torres",
+            "url": "http://www.ufcstats.com/fighter-details/2e7878927067fdca"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 17,
+            "attempted": 32,
+            "raw": "17 of 32"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/da70e4dd9950090b",
+    "fetchedAt": "2026-05-19T17:04:29.585Z"
+  }
+}

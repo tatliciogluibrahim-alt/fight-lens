@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-05-19T14:50:59.768Z",
+  "generatedAt": "2026-05-19T17:23:04.007Z",
   "modelVersion": "outcome-v0.2",
   "summary": {
-    "totalFights": 76,
-    "scoredFights": 76,
+    "totalFights": 253,
+    "scoredFights": 253,
     "winnerAccuracy": 66,
-    "methodAccuracy": 51,
-    "brierScore": 0.236,
+    "methodAccuracy": 58,
+    "brierScore": 0.219,
     "calibrationBuckets": [
       {
         "rangeLabel": "50–60%",
         "predictedMidpoint": 0.55,
-        "actualWinRate": 0.6666666666666666,
-        "count": 51
+        "actualWinRate": 0.6148148148148148,
+        "count": 135
       },
       {
         "rangeLabel": "60–70%",
         "predictedMidpoint": 0.65,
-        "actualWinRate": 0.5384615384615384,
-        "count": 13
+        "actualWinRate": 0.6140350877192983,
+        "count": 57
       },
       {
         "rangeLabel": "70–80%",
         "predictedMidpoint": 0.75,
-        "actualWinRate": 0.5,
-        "count": 6
+        "actualWinRate": 0.6428571428571429,
+        "count": 28
       },
       {
         "rangeLabel": "80%+",
         "predictedMidpoint": 0.9,
-        "actualWinRate": 1,
-        "count": 6
+        "actualWinRate": 0.9393939393939394,
+        "count": 33
       }
     ],
-    "generatedAt": "2026-05-19T14:50:59.767Z",
+    "generatedAt": "2026-05-19T17:23:03.988Z",
     "modelVersion": "outcome-v0.2",
     "caveats": [
       "Backtest calibration may differ from live model record due to data vintage.",
@@ -46,44 +46,44 @@
         "brierScore": 0.25
       },
       "betterRecord": {
-        "accuracy": 66,
-        "scoredFights": 76,
-        "correct": 50
+        "accuracy": 71,
+        "scoredFights": 253,
+        "correct": 179
       },
       "moreExperience": {
-        "accuracy": 43,
-        "scoredFights": 76,
-        "correct": 33
+        "accuracy": 40,
+        "scoredFights": 253,
+        "correct": 100
       },
       "ufcFavouriteWinRate": 0.67
     },
     "brierAssessment": "Below baseline — model is overclaiming confidence on wrong picks.",
-    "missingDataRate": 36
+    "missingDataRate": 40
   },
   "accuracyByConfidenceBucket": [
     {
       "label": "50-60%",
-      "count": 51,
-      "correct": 34,
-      "accuracy": 67
+      "count": 135,
+      "correct": 83,
+      "accuracy": 61
     },
     {
       "label": "60-70%",
-      "count": 13,
-      "correct": 7,
-      "accuracy": 54
+      "count": 57,
+      "correct": 35,
+      "accuracy": 61
     },
     {
       "label": "70-80%",
-      "count": 6,
-      "correct": 3,
-      "accuracy": 50
+      "count": 28,
+      "correct": 18,
+      "accuracy": 64
     },
     {
       "label": "80%+",
-      "count": 6,
-      "correct": 6,
-      "accuracy": 100
+      "count": 33,
+      "correct": 31,
+      "accuracy": 94
     }
   ]
 }

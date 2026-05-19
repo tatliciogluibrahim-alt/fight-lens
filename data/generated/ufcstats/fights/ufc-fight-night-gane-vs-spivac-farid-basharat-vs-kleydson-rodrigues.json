@@ -1,0 +1,404 @@
+{
+  "id": "ac73c6888ee9322c",
+  "url": "http://www.ufcstats.com/fight-details/ac73c6888ee9322c",
+  "event": {
+    "id": "ef61d9f5176b3200",
+    "name": "UFC Fight Night: Gane vs. Spivac",
+    "url": "http://www.ufcstats.com/event-details/ef61d9f5176b3200"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a09ed60aa67a3f67",
+      "name": "Farid Basharat",
+      "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67",
+      "nickname": "Ferocious",
+      "result": "W"
+    },
+    {
+      "id": "102a8fdf8cbf7467",
+      "name": "Kleydson Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467",
+      "nickname": "KR",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "4:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Loic Pora",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a09ed60aa67a3f67",
+        "name": "Farid Basharat",
+        "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+      },
+      {
+        "id": "102a8fdf8cbf7467",
+        "name": "Kleydson Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a09ed60aa67a3f67",
+          "name": "Farid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 25,
+          "attempted": 36,
+          "raw": "25 of 36"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:15",
+        "controlSeconds": 195
+      },
+      {
+        "fighter": {
+          "id": "102a8fdf8cbf7467",
+          "name": "Kleydson Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "significantStrikePercent": 87,
+        "totalStrikes": {
+          "landed": 25,
+          "attempted": 26,
+          "raw": "25 of 26"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:30",
+        "controlSeconds": 30
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a09ed60aa67a3f67",
+          "name": "Farid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+        },
+        {
+          "id": "102a8fdf8cbf7467",
+          "name": "Kleydson Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a09ed60aa67a3f67",
+            "name": "Farid Basharat",
+            "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "takedownPercent": 40,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:15",
+          "controlSeconds": 195
+        },
+        {
+          "fighter": {
+            "id": "102a8fdf8cbf7467",
+            "name": "Kleydson Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "significantStrikePercent": 87,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 26,
+            "raw": "25 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a09ed60aa67a3f67",
+        "name": "Farid Basharat",
+        "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+      },
+      {
+        "id": "102a8fdf8cbf7467",
+        "name": "Kleydson Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a09ed60aa67a3f67",
+          "name": "Farid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "102a8fdf8cbf7467",
+          "name": "Kleydson Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "significantStrikePercent": 87,
+        "head": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a09ed60aa67a3f67",
+          "name": "Farid Basharat",
+          "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+        },
+        {
+          "id": "102a8fdf8cbf7467",
+          "name": "Kleydson Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a09ed60aa67a3f67",
+            "name": "Farid Basharat",
+            "url": "http://www.ufcstats.com/fighter-details/a09ed60aa67a3f67"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "102a8fdf8cbf7467",
+            "name": "Kleydson Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "significantStrikePercent": 87,
+          "head": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ac73c6888ee9322c",
+    "fetchedAt": "2026-05-19T17:01:57.720Z"
+  }
+}

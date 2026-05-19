@@ -1,0 +1,404 @@
+{
+  "id": "c27bec45d5a29a2c",
+  "url": "http://www.ufcstats.com/fight-details/c27bec45d5a29a2c",
+  "event": {
+    "id": "9a70f67ad2187fa3",
+    "name": "UFC Fight Night: Moicano vs. Duncan",
+    "url": "http://www.ufcstats.com/event-details/9a70f67ad2187fa3"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6b0a6def604de298",
+      "name": "Tommy McMillen",
+      "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298",
+      "nickname": "Gun",
+      "result": "W"
+    },
+    {
+      "id": "fd7ab338e4953644",
+      "name": "Manolo Zecchini",
+      "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644",
+      "nickname": "Angelo Veneziano",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:57",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6b0a6def604de298",
+        "name": "Tommy McMillen",
+        "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+      },
+      {
+        "id": "fd7ab338e4953644",
+        "name": "Manolo Zecchini",
+        "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 74,
+          "attempted": 134,
+          "raw": "74 of 134"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 76,
+          "attempted": 138,
+          "raw": "76 of 138"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "fd7ab338e4953644",
+          "name": "Manolo Zecchini",
+          "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 61,
+          "raw": "20 of 61"
+        },
+        "significantStrikePercent": 32,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 64,
+          "raw": "21 of 64"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "fd7ab338e4953644",
+          "name": "Manolo Zecchini",
+          "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 74,
+            "attempted": 134,
+            "raw": "74 of 134"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 76,
+            "attempted": 138,
+            "raw": "76 of 138"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "fd7ab338e4953644",
+            "name": "Manolo Zecchini",
+            "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 61,
+            "raw": "20 of 61"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 64,
+            "raw": "21 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6b0a6def604de298",
+        "name": "Tommy McMillen",
+        "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+      },
+      {
+        "id": "fd7ab338e4953644",
+        "name": "Manolo Zecchini",
+        "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        "significantStrikes": {
+          "landed": 74,
+          "attempted": 134,
+          "raw": "74 of 134"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 51,
+          "attempted": 98,
+          "raw": "51 of 98"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 36,
+          "raw": "23 of 36"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 62,
+          "attempted": 113,
+          "raw": "62 of 113"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 16,
+          "raw": "9 of 16"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "fd7ab338e4953644",
+          "name": "Manolo Zecchini",
+          "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 61,
+          "raw": "20 of 61"
+        },
+        "significantStrikePercent": 32,
+        "head": {
+          "landed": 14,
+          "attempted": 48,
+          "raw": "14 of 48"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 12,
+          "raw": "6 of 12"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 56,
+          "raw": "19 of 56"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b0a6def604de298",
+          "name": "Tommy McMillen",
+          "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+        },
+        {
+          "id": "fd7ab338e4953644",
+          "name": "Manolo Zecchini",
+          "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b0a6def604de298",
+            "name": "Tommy McMillen",
+            "url": "http://www.ufcstats.com/fighter-details/6b0a6def604de298"
+          },
+          "significantStrikes": {
+            "landed": 74,
+            "attempted": 134,
+            "raw": "74 of 134"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 51,
+            "attempted": 98,
+            "raw": "51 of 98"
+          },
+          "body": {
+            "landed": 23,
+            "attempted": 36,
+            "raw": "23 of 36"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 62,
+            "attempted": 113,
+            "raw": "62 of 113"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 16,
+            "raw": "9 of 16"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fd7ab338e4953644",
+            "name": "Manolo Zecchini",
+            "url": "http://www.ufcstats.com/fighter-details/fd7ab338e4953644"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 61,
+            "raw": "20 of 61"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 14,
+            "attempted": 48,
+            "raw": "14 of 48"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/c27bec45d5a29a2c",
+    "fetchedAt": "2026-05-19T16:54:55.238Z"
+  }
+}

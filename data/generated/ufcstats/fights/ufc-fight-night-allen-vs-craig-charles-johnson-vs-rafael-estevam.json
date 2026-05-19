@@ -1,0 +1,764 @@
+{
+  "id": "9abf0b60a44a82d1",
+  "url": "http://www.ufcstats.com/fight-details/9abf0b60a44a82d1",
+  "event": {
+    "id": "3feed7d02711d8b7",
+    "name": "UFC Fight Night: Allen vs. Craig",
+    "url": "http://www.ufcstats.com/event-details/3feed7d02711d8b7"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "814e5233e2acf2ee",
+      "name": "Charles Johnson",
+      "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee",
+      "nickname": "InnerG",
+      "result": "L"
+    },
+    {
+      "id": "83455a9d17f57dae",
+      "name": "Rafael Estevam",
+      "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae",
+      "nickname": "Macapa",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "814e5233e2acf2ee",
+        "name": "Charles Johnson",
+        "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+      },
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 72,
+          "attempted": 109,
+          "raw": "72 of 109"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 116,
+          "attempted": 161,
+          "raw": "116 of 161"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:43",
+        "controlSeconds": 43
+      },
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 77,
+          "raw": "35 of 77"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 22,
+          "raw": "3 of 22"
+        },
+        "takedownPercent": 13,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "9:23",
+        "controlSeconds": 563
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "significantStrikePercent": 77,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 41,
+            "raw": "34 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 37,
+            "raw": "17 of 37"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:49",
+          "controlSeconds": 229
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 32,
+            "raw": "20 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "takedownPercent": 14,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:55",
+          "controlSeconds": 235
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 54,
+            "attempted": 80,
+            "raw": "54 of 80"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 62,
+            "attempted": 88,
+            "raw": "62 of 88"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 11,
+            "raw": "0 of 11"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:39",
+          "controlSeconds": 99
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "814e5233e2acf2ee",
+        "name": "Charles Johnson",
+        "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+      },
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        "significantStrikes": {
+          "landed": 72,
+          "attempted": 109,
+          "raw": "72 of 109"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 38,
+          "attempted": 69,
+          "raw": "38 of 69"
+        },
+        "body": {
+          "landed": 27,
+          "attempted": 33,
+          "raw": "27 of 33"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 53,
+          "attempted": 80,
+          "raw": "53 of 80"
+        },
+        "clinch": {
+          "landed": 18,
+          "attempted": 26,
+          "raw": "18 of 26"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 10,
+          "attempted": 28,
+          "raw": "10 of 28"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 12,
+          "raw": "6 of 12"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 31,
+          "raw": "11 of 31"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "significantStrikePercent": 77,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "814e5233e2acf2ee",
+          "name": "Charles Johnson",
+          "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+        },
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "814e5233e2acf2ee",
+            "name": "Charles Johnson",
+            "url": "http://www.ufcstats.com/fighter-details/814e5233e2acf2ee"
+          },
+          "significantStrikes": {
+            "landed": 54,
+            "attempted": 80,
+            "raw": "54 of 80"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 30,
+            "attempted": 52,
+            "raw": "30 of 52"
+          },
+          "body": {
+            "landed": 23,
+            "attempted": 27,
+            "raw": "23 of 27"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 44,
+            "attempted": 65,
+            "raw": "44 of 65"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/9abf0b60a44a82d1",
+    "fetchedAt": "2026-05-19T16:55:29.219Z"
+  }
+}

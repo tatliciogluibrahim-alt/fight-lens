@@ -2,6 +2,45 @@
 
 ## May 2026
 
+### P0 prediction consistency pass
+
+Goal: fix visible prediction contradictions before expanding the corpus to 20-30 events.
+
+Completed:
+- `lib/predictionViewModel.ts` is now the canonical public prediction state for fight pages, matchup rows, record rows, result banners, The Call, Live Path, and Method Lean.
+- Added a 52% named-call threshold. Anything below 52% now resolves to `noLean` / "Too close to call" instead of defaulting to Fighter A or array order.
+- Locked calls now pin the public fight-page state consistently across the fight page, matchup row, record row, result banner, The Call, Live Path, and Method Lean.
+- Chimaev/Strickland consistently shows the locked public call: Khamzat Chimaev 63%.
+- Van/Taira consistently shows the locked public call: Tatsuro Taira 58%.
+- Steveson/Ellison shows "Too close to call" everywhere, not "Call: Gable Steveson 50%".
+- Route audit checked 24 routeable fight pages: 24 passed, 0 failed.
+
+Guardrails reinforced:
+- Public Model Record must stay separate from historical backtest rows.
+- `opponentTotals` must not regress.
+- Public prediction surfaces must not bypass `predictionViewModel`.
+- Do not show a public model grade until there are enough logged public calls.
+- Keep public language signal-based and avoid overclaiming.
+
+Next step:
+- Backend-only expansion to 20-30 completed UFC events, targeting n >= 200 scored fights.
+- No model tuning, UI changes, or public claims expansion during that step.
+
+### 20-event backtest expansion QA checkpoint
+
+- Backtest corpus now covers 20 completed UFC events and 253 scored fights.
+- Headline metrics: 66% winner accuracy, 58% method accuracy, 0.219 Brier score, 71% better-record baseline, 40% more-experience baseline, 40% missing-data rate.
+- Model remains directionally useful but not proven; it trails the better-record baseline by 5 points.
+- Calibration concern remains in the 60-80% confidence buckets.
+- `opponentTotals` remained intact at 2,940 of 4,917 selected-corpus history items, roughly 60% item-level coverage.
+- Public Model Record/backtest separation re-checked: public logged calls remain separate from historical reconstruction rows.
+- UFC 329 future rows remain unscored in the backtest.
+- `ode-osbourne-alibi-idiris` source data resolves as `Overturned` / `NC`; it stays skipped as a non-directional outcome.
+- Checks passed: `npm run audit:predictions`, `npm run backtest`, `npm run lint`, `npm run build`.
+
+Recommended next step:
+- Controlled backend model review/calibration, not UI polish and not public claim expansion.
+
 ### Data coverage repair pass
 
 - Re-ingested all 6 backtest corpus events with `--max-history-fight-details 120` (was 60) and `--max-history-fights-per-fighter 8` (was 4)

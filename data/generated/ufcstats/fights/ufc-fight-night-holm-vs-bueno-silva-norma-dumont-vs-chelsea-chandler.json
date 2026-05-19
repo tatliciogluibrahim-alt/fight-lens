@@ -1,0 +1,764 @@
+{
+  "id": "81b7a6aa147bd912",
+  "url": "http://www.ufcstats.com/fight-details/81b7a6aa147bd912",
+  "event": {
+    "id": "c9885b1b7c7055a0",
+    "name": "UFC Fight Night: Holm vs. Bueno Silva",
+    "url": "http://www.ufcstats.com/event-details/c9885b1b7c7055a0"
+  },
+  "title": "Women's Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3f5d33d61cd00c9",
+      "name": "Norma Dumont",
+      "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9",
+      "nickname": "The Immortal",
+      "result": "W"
+    },
+    {
+      "id": "af9efbfd63d39734",
+      "name": "Chelsea Chandler",
+      "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jacob Montalvo",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3f5d33d61cd00c9",
+        "name": "Norma Dumont",
+        "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+      },
+      {
+        "id": "af9efbfd63d39734",
+        "name": "Chelsea Chandler",
+        "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 76,
+          "raw": "47 of 76"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 98,
+          "attempted": 141,
+          "raw": "98 of 141"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "8:58",
+        "controlSeconds": 538
+      },
+      {
+        "fighter": {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 61,
+          "raw": "22 of 61"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 72,
+          "attempted": 124,
+          "raw": "72 of 124"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:30",
+        "controlSeconds": 150
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 24,
+            "raw": "18 of 24"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 52,
+            "raw": "44 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:24",
+          "controlSeconds": 144
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 51,
+            "raw": "31 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:20",
+          "controlSeconds": 80
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 38,
+            "raw": "22 of 38"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 51,
+            "raw": "31 of 51"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:47",
+          "controlSeconds": 167
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 42,
+            "raw": "23 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 38,
+            "raw": "23 of 38"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:47",
+          "controlSeconds": 227
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 31,
+            "raw": "18 of 31"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3f5d33d61cd00c9",
+        "name": "Norma Dumont",
+        "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+      },
+      {
+        "id": "af9efbfd63d39734",
+        "name": "Chelsea Chandler",
+        "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 76,
+          "raw": "47 of 76"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 30,
+          "attempted": 59,
+          "raw": "30 of 59"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 12,
+          "raw": "12 of 12"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 49,
+          "raw": "28 of 49"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 61,
+          "raw": "22 of 61"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 14,
+          "attempted": 51,
+          "raw": "14 of 51"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 17,
+          "raw": "9 of 17"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 24,
+            "raw": "18 of 24"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 38,
+            "raw": "22 of 38"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 8,
+            "attempted": 24,
+            "raw": "8 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+        },
+        {
+          "id": "af9efbfd63d39734",
+          "name": "Chelsea Chandler",
+          "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3f5d33d61cd00c9",
+            "name": "Norma Dumont",
+            "url": "http://www.ufcstats.com/fighter-details/d3f5d33d61cd00c9"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "af9efbfd63d39734",
+            "name": "Chelsea Chandler",
+            "url": "http://www.ufcstats.com/fighter-details/af9efbfd63d39734"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 3,
+            "attempted": 13,
+            "raw": "3 of 13"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/81b7a6aa147bd912",
+    "fetchedAt": "2026-05-19T16:53:05.499Z"
+  }
+}

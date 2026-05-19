@@ -1,0 +1,404 @@
+{
+  "id": "32087c183dffcae0",
+  "url": "http://www.ufcstats.com/fight-details/32087c183dffcae0",
+  "event": {
+    "id": "c3ac8d0da7b05772",
+    "name": "UFC Fight Night: Burns vs. Malott",
+    "url": "http://www.ufcstats.com/event-details/c3ac8d0da7b05772"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e6679e38e7fab7a8",
+      "name": "Jamie Siraj",
+      "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8",
+      "nickname": "The Gremlin",
+      "result": "L"
+    },
+    {
+      "id": "450bcab0968562c4",
+      "name": "John Yannis",
+      "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:43",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Desautels",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e6679e38e7fab7a8",
+        "name": "Jamie Siraj",
+        "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+      },
+      {
+        "id": "450bcab0968562c4",
+        "name": "John Yannis",
+        "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e6679e38e7fab7a8",
+          "name": "Jamie Siraj",
+          "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "450bcab0968562c4",
+          "name": "John Yannis",
+          "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 34,
+          "raw": "21 of 34"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 34,
+          "raw": "21 of 34"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e6679e38e7fab7a8",
+          "name": "Jamie Siraj",
+          "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+        },
+        {
+          "id": "450bcab0968562c4",
+          "name": "John Yannis",
+          "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e6679e38e7fab7a8",
+            "name": "Jamie Siraj",
+            "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "450bcab0968562c4",
+            "name": "John Yannis",
+            "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e6679e38e7fab7a8",
+        "name": "Jamie Siraj",
+        "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+      },
+      {
+        "id": "450bcab0968562c4",
+        "name": "John Yannis",
+        "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e6679e38e7fab7a8",
+          "name": "Jamie Siraj",
+          "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 4,
+          "attempted": 17,
+          "raw": "4 of 17"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "450bcab0968562c4",
+          "name": "John Yannis",
+          "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 34,
+          "raw": "21 of 34"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 12,
+          "attempted": 24,
+          "raw": "12 of 24"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 27,
+          "raw": "16 of 27"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e6679e38e7fab7a8",
+          "name": "Jamie Siraj",
+          "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+        },
+        {
+          "id": "450bcab0968562c4",
+          "name": "John Yannis",
+          "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e6679e38e7fab7a8",
+            "name": "Jamie Siraj",
+            "url": "http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 4,
+            "attempted": 17,
+            "raw": "4 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "450bcab0968562c4",
+            "name": "John Yannis",
+            "url": "http://www.ufcstats.com/fighter-details/450bcab0968562c4"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/32087c183dffcae0",
+    "fetchedAt": "2026-05-19T16:53:48.078Z"
+  }
+}

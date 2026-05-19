@@ -1,0 +1,764 @@
+{
+  "id": "5e9c027fb24efc2b",
+  "url": "http://www.ufcstats.com/fight-details/5e9c027fb24efc2b",
+  "event": {
+    "id": "e4bb7e483c4ad318",
+    "name": "UFC 286: Edwards vs. Usman 3",
+    "url": "http://www.ufcstats.com/event-details/e4bb7e483c4ad318"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7acbb0972e75281a",
+      "name": "Marvin Vettori",
+      "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a",
+      "nickname": "The Italian Dream",
+      "result": "W"
+    },
+    {
+      "id": "327d5f279895110d",
+      "name": "Roman Dolidze",
+      "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7acbb0972e75281a",
+        "name": "Marvin Vettori",
+        "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+      },
+      {
+        "id": "327d5f279895110d",
+        "name": "Roman Dolidze",
+        "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 106,
+          "attempted": 218,
+          "raw": "106 of 218"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 106,
+          "attempted": 218,
+          "raw": "106 of 218"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 192,
+          "raw": "71 of 192"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 71,
+          "attempted": 192,
+          "raw": "71 of 192"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:14",
+        "controlSeconds": 14
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 75,
+            "raw": "38 of 75"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 75,
+            "raw": "38 of 75"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 71,
+            "raw": "29 of 71"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 71,
+            "raw": "29 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 69,
+            "raw": "28 of 69"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 69,
+            "raw": "28 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 74,
+            "raw": "40 of 74"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 74,
+            "raw": "40 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7acbb0972e75281a",
+        "name": "Marvin Vettori",
+        "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+      },
+      {
+        "id": "327d5f279895110d",
+        "name": "Roman Dolidze",
+        "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        "significantStrikes": {
+          "landed": 106,
+          "attempted": 218,
+          "raw": "106 of 218"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 60,
+          "attempted": 165,
+          "raw": "60 of 165"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "leg": {
+          "landed": 38,
+          "attempted": 40,
+          "raw": "38 of 40"
+        },
+        "distance": {
+          "landed": 100,
+          "attempted": 212,
+          "raw": "100 of 212"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 192,
+          "raw": "71 of 192"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 52,
+          "attempted": 169,
+          "raw": "52 of 169"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 67,
+          "attempted": 180,
+          "raw": "67 of 180"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 12,
+          "raw": "4 of 12"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 75,
+            "raw": "38 of 75"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 24,
+            "attempted": 60,
+            "raw": "24 of 60"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 12,
+            "raw": "12 of 12"
+          },
+          "distance": {
+            "landed": 35,
+            "attempted": 72,
+            "raw": "35 of 72"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 71,
+            "raw": "29 of 71"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 20,
+            "attempted": 62,
+            "raw": "20 of 62"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 69,
+            "raw": "29 of 69"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 69,
+            "raw": "28 of 69"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 11,
+            "attempted": 48,
+            "raw": "11 of 48"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 69,
+            "raw": "28 of 69"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 12,
+            "attempted": 44,
+            "raw": "12 of 44"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 74,
+            "raw": "40 of 74"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 25,
+            "attempted": 57,
+            "raw": "25 of 57"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 71,
+            "raw": "37 of 71"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 20,
+            "attempted": 63,
+            "raw": "20 of 63"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 61,
+            "raw": "22 of 61"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5e9c027fb24efc2b",
+    "fetchedAt": "2026-05-19T16:57:59.861Z"
+  }
+}

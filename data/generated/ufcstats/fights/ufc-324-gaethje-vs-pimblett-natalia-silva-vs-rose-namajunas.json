@@ -1,0 +1,764 @@
+{
+  "id": "d63c9aa4f4873001",
+  "url": "http://www.ufcstats.com/fight-details/d63c9aa4f4873001",
+  "event": {
+    "id": "00e11b5c8b7bfeeb",
+    "name": "UFC 324: Gaethje vs. Pimblett",
+    "url": "http://www.ufcstats.com/event-details/00e11b5c8b7bfeeb"
+  },
+  "title": "Women's Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "262d32ebda89efc4",
+      "name": "Natalia Silva",
+      "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "47b63240018d5d86",
+      "name": "Rose Namajunas",
+      "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86",
+      "nickname": "Thug",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "262d32ebda89efc4",
+        "name": "Natalia Silva",
+        "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+      },
+      {
+        "id": "47b63240018d5d86",
+        "name": "Rose Namajunas",
+        "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 133,
+          "raw": "51 of 133"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 63,
+          "attempted": 147,
+          "raw": "63 of 147"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:24",
+        "controlSeconds": 84
+      },
+      {
+        "fighter": {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 94,
+          "raw": "26 of 94"
+        },
+        "significantStrikePercent": 27,
+        "totalStrikes": {
+          "landed": 46,
+          "attempted": 119,
+          "raw": "46 of 119"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:09",
+        "controlSeconds": 129
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 43,
+            "raw": "25 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:09",
+          "controlSeconds": 129
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 62,
+            "raw": "28 of 62"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 69,
+            "raw": "33 of 69"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 37,
+            "raw": "8 of 37"
+          },
+          "significantStrikePercent": 21,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 37,
+            "raw": "8 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "262d32ebda89efc4",
+        "name": "Natalia Silva",
+        "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+      },
+      {
+        "id": "47b63240018d5d86",
+        "name": "Rose Namajunas",
+        "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 133,
+          "raw": "51 of 133"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 25,
+          "attempted": 95,
+          "raw": "25 of 95"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 14,
+          "raw": "8 of 14"
+        },
+        "leg": {
+          "landed": 18,
+          "attempted": 24,
+          "raw": "18 of 24"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 132,
+          "raw": "50 of 132"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 94,
+          "raw": "26 of 94"
+        },
+        "significantStrikePercent": 27,
+        "head": {
+          "landed": 11,
+          "attempted": 64,
+          "raw": "11 of 64"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 17,
+          "raw": "12 of 17"
+        },
+        "distance": {
+          "landed": 26,
+          "attempted": 92,
+          "raw": "26 of 92"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 4,
+            "attempted": 22,
+            "raw": "4 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 4,
+            "attempted": 22,
+            "raw": "4 of 22"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+        },
+        {
+          "id": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "262d32ebda89efc4",
+            "name": "Natalia Silva",
+            "url": "http://www.ufcstats.com/fighter-details/262d32ebda89efc4"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 62,
+            "raw": "28 of 62"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 11,
+            "attempted": 41,
+            "raw": "11 of 41"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 61,
+            "raw": "27 of 61"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "47b63240018d5d86",
+            "name": "Rose Namajunas",
+            "url": "http://www.ufcstats.com/fighter-details/47b63240018d5d86"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 37,
+            "raw": "8 of 37"
+          },
+          "significantStrikePercent": 21,
+          "head": {
+            "landed": 4,
+            "attempted": 26,
+            "raw": "4 of 26"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 36,
+            "raw": "8 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d63c9aa4f4873001",
+    "fetchedAt": "2026-05-19T17:02:55.533Z"
+  }
+}

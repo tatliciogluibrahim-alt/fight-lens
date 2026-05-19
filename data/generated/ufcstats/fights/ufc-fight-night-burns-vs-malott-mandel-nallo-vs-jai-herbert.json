@@ -1,0 +1,404 @@
+{
+  "id": "e644218737c1a778",
+  "url": "http://www.ufcstats.com/fight-details/e644218737c1a778",
+  "event": {
+    "id": "c3ac8d0da7b05772",
+    "name": "UFC Fight Night: Burns vs. Malott",
+    "url": "http://www.ufcstats.com/event-details/c3ac8d0da7b05772"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8f4528c10bd34fab",
+      "name": "Mandel Nallo",
+      "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab",
+      "nickname": "Mango",
+      "result": "L"
+    },
+    {
+      "id": "4c88a1db5a46c6a4",
+      "name": "Jai Herbert",
+      "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4",
+      "nickname": "Black Country Banger",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:05",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8f4528c10bd34fab",
+        "name": "Mandel Nallo",
+        "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+      },
+      {
+        "id": "4c88a1db5a46c6a4",
+        "name": "Jai Herbert",
+        "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8f4528c10bd34fab",
+          "name": "Mandel Nallo",
+          "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 31,
+          "raw": "16 of 31"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 31,
+          "raw": "16 of 31"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "4c88a1db5a46c6a4",
+          "name": "Jai Herbert",
+          "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 28,
+          "raw": "19 of 28"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 43,
+          "raw": "30 of 43"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:27",
+        "controlSeconds": 27
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8f4528c10bd34fab",
+          "name": "Mandel Nallo",
+          "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+        },
+        {
+          "id": "4c88a1db5a46c6a4",
+          "name": "Jai Herbert",
+          "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8f4528c10bd34fab",
+            "name": "Mandel Nallo",
+            "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 31,
+            "raw": "16 of 31"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 31,
+            "raw": "16 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "4c88a1db5a46c6a4",
+            "name": "Jai Herbert",
+            "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 43,
+            "raw": "30 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8f4528c10bd34fab",
+        "name": "Mandel Nallo",
+        "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+      },
+      {
+        "id": "4c88a1db5a46c6a4",
+        "name": "Jai Herbert",
+        "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8f4528c10bd34fab",
+          "name": "Mandel Nallo",
+          "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 31,
+          "raw": "16 of 31"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 13,
+          "attempted": 28,
+          "raw": "13 of 28"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4c88a1db5a46c6a4",
+          "name": "Jai Herbert",
+          "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 28,
+          "raw": "19 of 28"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 18,
+          "attempted": 27,
+          "raw": "18 of 27"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 14,
+          "raw": "7 of 14"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8f4528c10bd34fab",
+          "name": "Mandel Nallo",
+          "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+        },
+        {
+          "id": "4c88a1db5a46c6a4",
+          "name": "Jai Herbert",
+          "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8f4528c10bd34fab",
+            "name": "Mandel Nallo",
+            "url": "http://www.ufcstats.com/fighter-details/8f4528c10bd34fab"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 31,
+            "raw": "16 of 31"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4c88a1db5a46c6a4",
+            "name": "Jai Herbert",
+            "url": "http://www.ufcstats.com/fighter-details/4c88a1db5a46c6a4"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e644218737c1a778",
+    "fetchedAt": "2026-05-19T16:53:43.097Z"
+  }
+}

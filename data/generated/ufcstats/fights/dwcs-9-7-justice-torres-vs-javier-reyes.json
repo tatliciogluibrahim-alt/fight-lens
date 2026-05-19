@@ -1,0 +1,404 @@
+{
+  "id": "b489d59041f8fe1d",
+  "url": "http://www.ufcstats.com/fight-details/b489d59041f8fe1d",
+  "event": {
+    "id": "160b931119c1bf91",
+    "name": "DWCS 9.7",
+    "url": "http://www.ufcstats.com/event-details/160b931119c1bf91"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "01762e1d4ff4dc51",
+      "name": "Justice Torres",
+      "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "4a574b8512fc1b30",
+      "name": "Javier Reyes",
+      "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30",
+      "nickname": "Blair",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:32",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Frank Trigg",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "01762e1d4ff4dc51",
+        "name": "Justice Torres",
+        "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+      },
+      {
+        "id": "4a574b8512fc1b30",
+        "name": "Javier Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "01762e1d4ff4dc51",
+          "name": "Justice Torres",
+          "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:30",
+        "controlSeconds": 30
+      },
+      {
+        "fighter": {
+          "id": "4a574b8512fc1b30",
+          "name": "Javier Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 45,
+          "raw": "21 of 45"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 50,
+          "raw": "26 of 50"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "01762e1d4ff4dc51",
+          "name": "Justice Torres",
+          "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+        },
+        {
+          "id": "4a574b8512fc1b30",
+          "name": "Javier Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "01762e1d4ff4dc51",
+            "name": "Justice Torres",
+            "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        },
+        {
+          "fighter": {
+            "id": "4a574b8512fc1b30",
+            "name": "Javier Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 45,
+            "raw": "21 of 45"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 50,
+            "raw": "26 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "01762e1d4ff4dc51",
+        "name": "Justice Torres",
+        "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+      },
+      {
+        "id": "4a574b8512fc1b30",
+        "name": "Javier Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "01762e1d4ff4dc51",
+          "name": "Justice Torres",
+          "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4a574b8512fc1b30",
+          "name": "Javier Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 45,
+          "raw": "21 of 45"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 16,
+          "attempted": 36,
+          "raw": "16 of 36"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 35,
+          "raw": "15 of 35"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "01762e1d4ff4dc51",
+          "name": "Justice Torres",
+          "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+        },
+        {
+          "id": "4a574b8512fc1b30",
+          "name": "Javier Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "01762e1d4ff4dc51",
+            "name": "Justice Torres",
+            "url": "http://www.ufcstats.com/fighter-details/01762e1d4ff4dc51"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a574b8512fc1b30",
+            "name": "Javier Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/4a574b8512fc1b30"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 45,
+            "raw": "21 of 45"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 35,
+            "raw": "15 of 35"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b489d59041f8fe1d",
+    "fetchedAt": "2026-05-19T17:00:14.275Z"
+  }
+}

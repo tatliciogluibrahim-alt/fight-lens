@@ -1,0 +1,764 @@
+{
+  "id": "3af1bdc5a510bba9",
+  "url": "http://www.ufcstats.com/fight-details/3af1bdc5a510bba9",
+  "event": {
+    "id": "38e5d9dcb0fddc42",
+    "name": "UFC Fight Night: De Ridder vs. Allen",
+    "url": "http://www.ufcstats.com/event-details/38e5d9dcb0fddc42"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "31f8081c7600da93",
+      "name": "Kyle Nelson",
+      "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93",
+      "nickname": "The Monster",
+      "result": "W"
+    },
+    {
+      "id": "dccb63727f2f5f74",
+      "name": "Matt Frevola",
+      "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74",
+      "nickname": "The SteamRolla",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "31f8081c7600da93",
+        "name": "Kyle Nelson",
+        "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+      },
+      {
+        "id": "dccb63727f2f5f74",
+        "name": "Matt Frevola",
+        "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 63,
+          "attempted": 135,
+          "raw": "63 of 135"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 92,
+          "attempted": 170,
+          "raw": "92 of 170"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:11",
+        "controlSeconds": 191
+      },
+      {
+        "fighter": {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 136,
+          "raw": "43 of 136"
+        },
+        "significantStrikePercent": 31,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 155,
+          "raw": "60 of 155"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "1:58",
+        "controlSeconds": 118
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 55,
+            "raw": "23 of 55"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 64,
+            "raw": "30 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 54,
+            "raw": "15 of 54"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 60,
+            "raw": "19 of 60"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:01",
+          "controlSeconds": 61
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 60,
+            "raw": "32 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 69,
+            "raw": "21 of 69"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 70,
+            "raw": "22 of 70"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 46,
+            "raw": "30 of 46"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:43",
+          "controlSeconds": 163
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 25,
+            "raw": "19 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:37",
+          "controlSeconds": 37
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "31f8081c7600da93",
+        "name": "Kyle Nelson",
+        "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+      },
+      {
+        "id": "dccb63727f2f5f74",
+        "name": "Matt Frevola",
+        "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        "significantStrikes": {
+          "landed": 63,
+          "attempted": 135,
+          "raw": "63 of 135"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 41,
+          "attempted": 103,
+          "raw": "41 of 103"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 23,
+          "raw": "14 of 23"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 46,
+          "attempted": 106,
+          "raw": "46 of 106"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 14,
+          "raw": "7 of 14"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 136,
+          "raw": "43 of 136"
+        },
+        "significantStrikePercent": 31,
+        "head": {
+          "landed": 23,
+          "attempted": 103,
+          "raw": "23 of 103"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "distance": {
+          "landed": 39,
+          "attempted": 129,
+          "raw": "39 of 129"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 55,
+            "raw": "23 of 55"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 17,
+            "attempted": 47,
+            "raw": "17 of 47"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 37,
+            "raw": "12 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 54,
+            "raw": "15 of 54"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 7,
+            "attempted": 37,
+            "raw": "7 of 37"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 51,
+            "raw": "13 of 51"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 51,
+            "raw": "27 of 51"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 69,
+            "raw": "21 of 69"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 13,
+            "attempted": 58,
+            "raw": "13 of 58"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 66,
+            "raw": "20 of 66"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "31f8081c7600da93",
+          "name": "Kyle Nelson",
+          "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+        },
+        {
+          "id": "dccb63727f2f5f74",
+          "name": "Matt Frevola",
+          "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "31f8081c7600da93",
+            "name": "Kyle Nelson",
+            "url": "http://www.ufcstats.com/fighter-details/31f8081c7600da93"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dccb63727f2f5f74",
+            "name": "Matt Frevola",
+            "url": "http://www.ufcstats.com/fighter-details/dccb63727f2f5f74"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/3af1bdc5a510bba9",
+    "fetchedAt": "2026-05-19T16:56:55.316Z"
+  }
+}

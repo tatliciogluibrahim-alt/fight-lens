@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-19T14:13:38.219Z",
+  "generatedAt": "2026-05-19T17:07:21.618Z",
   "event": {
     "id": "ufc-fight-night-della-maddalena-vs-prates",
     "ufcstatsId": "872b018076f831b0",
@@ -53975,9 +53975,201 @@
               "round": 1,
               "time": "3:15",
               "fightUrl": "http://www.ufcstats.com/fight-details/28e3d939eb043664",
-              "totals": null,
-              "opponentTotals": null,
-              "roundStats": [],
+              "totals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 10,
+                    "attempted": 21,
+                    "raw": "10 of 21"
+                  },
+                  "significantStrikePercent": 47,
+                  "totalStrikes": {
+                    "landed": 10,
+                    "attempted": 21,
+                    "raw": "10 of 21"
+                  },
+                  "takedowns": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  },
+                  "takedownPercent": null,
+                  "submissionAttempts": 0,
+                  "reversals": 0,
+                  "control": "0:00",
+                  "controlSeconds": 0
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 10,
+                    "attempted": 21,
+                    "raw": "10 of 21"
+                  },
+                  "significantStrikePercent": 47,
+                  "head": {
+                    "landed": 1,
+                    "attempted": 12,
+                    "raw": "1 of 12"
+                  },
+                  "body": {
+                    "landed": 2,
+                    "attempted": 2,
+                    "raw": "2 of 2"
+                  },
+                  "leg": {
+                    "landed": 7,
+                    "attempted": 7,
+                    "raw": "7 of 7"
+                  },
+                  "distance": {
+                    "landed": 10,
+                    "attempted": 21,
+                    "raw": "10 of 21"
+                  },
+                  "clinch": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  },
+                  "ground": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  }
+                }
+              },
+              "opponentTotals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 14,
+                    "attempted": 24,
+                    "raw": "14 of 24"
+                  },
+                  "significantStrikePercent": 58,
+                  "totalStrikes": {
+                    "landed": 14,
+                    "attempted": 24,
+                    "raw": "14 of 24"
+                  },
+                  "takedowns": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  },
+                  "takedownPercent": null,
+                  "submissionAttempts": 0,
+                  "reversals": 0,
+                  "control": "0:16",
+                  "controlSeconds": 16
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 14,
+                    "attempted": 24,
+                    "raw": "14 of 24"
+                  },
+                  "significantStrikePercent": 58,
+                  "head": {
+                    "landed": 6,
+                    "attempted": 16,
+                    "raw": "6 of 16"
+                  },
+                  "body": {
+                    "landed": 8,
+                    "attempted": 8,
+                    "raw": "8 of 8"
+                  },
+                  "leg": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  },
+                  "distance": {
+                    "landed": 6,
+                    "attempted": 11,
+                    "raw": "6 of 11"
+                  },
+                  "clinch": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  },
+                  "ground": {
+                    "landed": 8,
+                    "attempted": 13,
+                    "raw": "8 of 13"
+                  }
+                }
+              },
+              "roundStats": [
+                {
+                  "round": 1,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 10,
+                      "attempted": 21,
+                      "raw": "10 of 21"
+                    },
+                    "significantStrikePercent": 47,
+                    "totalStrikes": {
+                      "landed": 10,
+                      "attempted": 21,
+                      "raw": "10 of 21"
+                    },
+                    "takedowns": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "takedownPercent": null,
+                    "submissionAttempts": 0,
+                    "reversals": 0,
+                    "control": "0:00",
+                    "controlSeconds": 0
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 10,
+                      "attempted": 21,
+                      "raw": "10 of 21"
+                    },
+                    "significantStrikePercent": 47,
+                    "head": {
+                      "landed": 1,
+                      "attempted": 12,
+                      "raw": "1 of 12"
+                    },
+                    "body": {
+                      "landed": 2,
+                      "attempted": 2,
+                      "raw": "2 of 2"
+                    },
+                    "leg": {
+                      "landed": 7,
+                      "attempted": 7,
+                      "raw": "7 of 7"
+                    },
+                    "distance": {
+                      "landed": 10,
+                      "attempted": 21,
+                      "raw": "10 of 21"
+                    },
+                    "clinch": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "ground": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    }
+                  }
+                }
+              ],
               "source": "ufcstats",
               "sourceUrl": "http://www.ufcstats.com/fight-details/28e3d939eb043664"
             },
@@ -72792,9 +72984,331 @@
               "round": 3,
               "time": "5:00",
               "fightUrl": "http://www.ufcstats.com/fight-details/ad14c502c9c5a7e9",
-              "totals": null,
-              "opponentTotals": null,
-              "roundStats": [],
+              "totals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 99,
+                    "attempted": 173,
+                    "raw": "99 of 173"
+                  },
+                  "significantStrikePercent": 57,
+                  "totalStrikes": {
+                    "landed": 135,
+                    "attempted": 211,
+                    "raw": "135 of 211"
+                  },
+                  "takedowns": {
+                    "landed": 1,
+                    "attempted": 4,
+                    "raw": "1 of 4"
+                  },
+                  "takedownPercent": 25,
+                  "submissionAttempts": 0,
+                  "reversals": 1,
+                  "control": "3:07",
+                  "controlSeconds": 187
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 99,
+                    "attempted": 173,
+                    "raw": "99 of 173"
+                  },
+                  "significantStrikePercent": 57,
+                  "head": {
+                    "landed": 79,
+                    "attempted": 142,
+                    "raw": "79 of 142"
+                  },
+                  "body": {
+                    "landed": 18,
+                    "attempted": 29,
+                    "raw": "18 of 29"
+                  },
+                  "leg": {
+                    "landed": 2,
+                    "attempted": 2,
+                    "raw": "2 of 2"
+                  },
+                  "distance": {
+                    "landed": 63,
+                    "attempted": 129,
+                    "raw": "63 of 129"
+                  },
+                  "clinch": {
+                    "landed": 29,
+                    "attempted": 36,
+                    "raw": "29 of 36"
+                  },
+                  "ground": {
+                    "landed": 7,
+                    "attempted": 8,
+                    "raw": "7 of 8"
+                  }
+                }
+              },
+              "opponentTotals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 68,
+                    "attempted": 134,
+                    "raw": "68 of 134"
+                  },
+                  "significantStrikePercent": 50,
+                  "totalStrikes": {
+                    "landed": 92,
+                    "attempted": 160,
+                    "raw": "92 of 160"
+                  },
+                  "takedowns": {
+                    "landed": 1,
+                    "attempted": 10,
+                    "raw": "1 of 10"
+                  },
+                  "takedownPercent": 10,
+                  "submissionAttempts": 0,
+                  "reversals": 0,
+                  "control": "5:30",
+                  "controlSeconds": 330
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 68,
+                    "attempted": 134,
+                    "raw": "68 of 134"
+                  },
+                  "significantStrikePercent": 50,
+                  "head": {
+                    "landed": 37,
+                    "attempted": 94,
+                    "raw": "37 of 94"
+                  },
+                  "body": {
+                    "landed": 29,
+                    "attempted": 38,
+                    "raw": "29 of 38"
+                  },
+                  "leg": {
+                    "landed": 2,
+                    "attempted": 2,
+                    "raw": "2 of 2"
+                  },
+                  "distance": {
+                    "landed": 50,
+                    "attempted": 108,
+                    "raw": "50 of 108"
+                  },
+                  "clinch": {
+                    "landed": 18,
+                    "attempted": 26,
+                    "raw": "18 of 26"
+                  },
+                  "ground": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  }
+                }
+              },
+              "roundStats": [
+                {
+                  "round": 1,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 16,
+                      "attempted": 19,
+                      "raw": "16 of 19"
+                    },
+                    "significantStrikePercent": 84,
+                    "totalStrikes": {
+                      "landed": 31,
+                      "attempted": 35,
+                      "raw": "31 of 35"
+                    },
+                    "takedowns": {
+                      "landed": 0,
+                      "attempted": 1,
+                      "raw": "0 of 1"
+                    },
+                    "takedownPercent": 0,
+                    "submissionAttempts": 0,
+                    "reversals": 1,
+                    "control": "1:25",
+                    "controlSeconds": 85
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 16,
+                      "attempted": 19,
+                      "raw": "16 of 19"
+                    },
+                    "significantStrikePercent": 84,
+                    "head": {
+                      "landed": 10,
+                      "attempted": 11,
+                      "raw": "10 of 11"
+                    },
+                    "body": {
+                      "landed": 5,
+                      "attempted": 7,
+                      "raw": "5 of 7"
+                    },
+                    "leg": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "distance": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "clinch": {
+                      "landed": 15,
+                      "attempted": 18,
+                      "raw": "15 of 18"
+                    },
+                    "ground": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    }
+                  }
+                },
+                {
+                  "round": 2,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 44,
+                      "attempted": 68,
+                      "raw": "44 of 68"
+                    },
+                    "significantStrikePercent": 64,
+                    "totalStrikes": {
+                      "landed": 53,
+                      "attempted": 78,
+                      "raw": "53 of 78"
+                    },
+                    "takedowns": {
+                      "landed": 1,
+                      "attempted": 3,
+                      "raw": "1 of 3"
+                    },
+                    "takedownPercent": 33,
+                    "submissionAttempts": 0,
+                    "reversals": 0,
+                    "control": "1:42",
+                    "controlSeconds": 102
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 44,
+                      "attempted": 68,
+                      "raw": "44 of 68"
+                    },
+                    "significantStrikePercent": 64,
+                    "head": {
+                      "landed": 39,
+                      "attempted": 59,
+                      "raw": "39 of 59"
+                    },
+                    "body": {
+                      "landed": 4,
+                      "attempted": 8,
+                      "raw": "4 of 8"
+                    },
+                    "leg": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "distance": {
+                      "landed": 30,
+                      "attempted": 50,
+                      "raw": "30 of 50"
+                    },
+                    "clinch": {
+                      "landed": 7,
+                      "attempted": 10,
+                      "raw": "7 of 10"
+                    },
+                    "ground": {
+                      "landed": 7,
+                      "attempted": 8,
+                      "raw": "7 of 8"
+                    }
+                  }
+                },
+                {
+                  "round": 3,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 39,
+                      "attempted": 86,
+                      "raw": "39 of 86"
+                    },
+                    "significantStrikePercent": 45,
+                    "totalStrikes": {
+                      "landed": 51,
+                      "attempted": 98,
+                      "raw": "51 of 98"
+                    },
+                    "takedowns": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "takedownPercent": null,
+                    "submissionAttempts": 0,
+                    "reversals": 0,
+                    "control": "0:00",
+                    "controlSeconds": 0
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 39,
+                      "attempted": 86,
+                      "raw": "39 of 86"
+                    },
+                    "significantStrikePercent": 45,
+                    "head": {
+                      "landed": 30,
+                      "attempted": 72,
+                      "raw": "30 of 72"
+                    },
+                    "body": {
+                      "landed": 9,
+                      "attempted": 14,
+                      "raw": "9 of 14"
+                    },
+                    "leg": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "distance": {
+                      "landed": 32,
+                      "attempted": 78,
+                      "raw": "32 of 78"
+                    },
+                    "clinch": {
+                      "landed": 7,
+                      "attempted": 8,
+                      "raw": "7 of 8"
+                    },
+                    "ground": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    }
+                  }
+                }
+              ],
               "source": "ufcstats",
               "sourceUrl": "http://www.ufcstats.com/fight-details/ad14c502c9c5a7e9"
             },
@@ -73054,9 +73568,331 @@
               "round": 3,
               "time": "5:00",
               "fightUrl": "http://www.ufcstats.com/fight-details/ad14c502c9c5a7e9",
-              "totals": null,
-              "opponentTotals": null,
-              "roundStats": [],
+              "totals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 99,
+                    "attempted": 173,
+                    "raw": "99 of 173"
+                  },
+                  "significantStrikePercent": 57,
+                  "totalStrikes": {
+                    "landed": 135,
+                    "attempted": 211,
+                    "raw": "135 of 211"
+                  },
+                  "takedowns": {
+                    "landed": 1,
+                    "attempted": 4,
+                    "raw": "1 of 4"
+                  },
+                  "takedownPercent": 25,
+                  "submissionAttempts": 0,
+                  "reversals": 1,
+                  "control": "3:07",
+                  "controlSeconds": 187
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 99,
+                    "attempted": 173,
+                    "raw": "99 of 173"
+                  },
+                  "significantStrikePercent": 57,
+                  "head": {
+                    "landed": 79,
+                    "attempted": 142,
+                    "raw": "79 of 142"
+                  },
+                  "body": {
+                    "landed": 18,
+                    "attempted": 29,
+                    "raw": "18 of 29"
+                  },
+                  "leg": {
+                    "landed": 2,
+                    "attempted": 2,
+                    "raw": "2 of 2"
+                  },
+                  "distance": {
+                    "landed": 63,
+                    "attempted": 129,
+                    "raw": "63 of 129"
+                  },
+                  "clinch": {
+                    "landed": 29,
+                    "attempted": 36,
+                    "raw": "29 of 36"
+                  },
+                  "ground": {
+                    "landed": 7,
+                    "attempted": 8,
+                    "raw": "7 of 8"
+                  }
+                }
+              },
+              "opponentTotals": {
+                "totals": {
+                  "kd": 0,
+                  "significantStrikes": {
+                    "landed": 68,
+                    "attempted": 134,
+                    "raw": "68 of 134"
+                  },
+                  "significantStrikePercent": 50,
+                  "totalStrikes": {
+                    "landed": 92,
+                    "attempted": 160,
+                    "raw": "92 of 160"
+                  },
+                  "takedowns": {
+                    "landed": 1,
+                    "attempted": 10,
+                    "raw": "1 of 10"
+                  },
+                  "takedownPercent": 10,
+                  "submissionAttempts": 0,
+                  "reversals": 0,
+                  "control": "5:30",
+                  "controlSeconds": 330
+                },
+                "significant": {
+                  "significantStrikes": {
+                    "landed": 68,
+                    "attempted": 134,
+                    "raw": "68 of 134"
+                  },
+                  "significantStrikePercent": 50,
+                  "head": {
+                    "landed": 37,
+                    "attempted": 94,
+                    "raw": "37 of 94"
+                  },
+                  "body": {
+                    "landed": 29,
+                    "attempted": 38,
+                    "raw": "29 of 38"
+                  },
+                  "leg": {
+                    "landed": 2,
+                    "attempted": 2,
+                    "raw": "2 of 2"
+                  },
+                  "distance": {
+                    "landed": 50,
+                    "attempted": 108,
+                    "raw": "50 of 108"
+                  },
+                  "clinch": {
+                    "landed": 18,
+                    "attempted": 26,
+                    "raw": "18 of 26"
+                  },
+                  "ground": {
+                    "landed": 0,
+                    "attempted": 0,
+                    "raw": "0 of 0"
+                  }
+                }
+              },
+              "roundStats": [
+                {
+                  "round": 1,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 16,
+                      "attempted": 19,
+                      "raw": "16 of 19"
+                    },
+                    "significantStrikePercent": 84,
+                    "totalStrikes": {
+                      "landed": 31,
+                      "attempted": 35,
+                      "raw": "31 of 35"
+                    },
+                    "takedowns": {
+                      "landed": 0,
+                      "attempted": 1,
+                      "raw": "0 of 1"
+                    },
+                    "takedownPercent": 0,
+                    "submissionAttempts": 0,
+                    "reversals": 1,
+                    "control": "1:25",
+                    "controlSeconds": 85
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 16,
+                      "attempted": 19,
+                      "raw": "16 of 19"
+                    },
+                    "significantStrikePercent": 84,
+                    "head": {
+                      "landed": 10,
+                      "attempted": 11,
+                      "raw": "10 of 11"
+                    },
+                    "body": {
+                      "landed": 5,
+                      "attempted": 7,
+                      "raw": "5 of 7"
+                    },
+                    "leg": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "distance": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "clinch": {
+                      "landed": 15,
+                      "attempted": 18,
+                      "raw": "15 of 18"
+                    },
+                    "ground": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    }
+                  }
+                },
+                {
+                  "round": 2,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 44,
+                      "attempted": 68,
+                      "raw": "44 of 68"
+                    },
+                    "significantStrikePercent": 64,
+                    "totalStrikes": {
+                      "landed": 53,
+                      "attempted": 78,
+                      "raw": "53 of 78"
+                    },
+                    "takedowns": {
+                      "landed": 1,
+                      "attempted": 3,
+                      "raw": "1 of 3"
+                    },
+                    "takedownPercent": 33,
+                    "submissionAttempts": 0,
+                    "reversals": 0,
+                    "control": "1:42",
+                    "controlSeconds": 102
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 44,
+                      "attempted": 68,
+                      "raw": "44 of 68"
+                    },
+                    "significantStrikePercent": 64,
+                    "head": {
+                      "landed": 39,
+                      "attempted": 59,
+                      "raw": "39 of 59"
+                    },
+                    "body": {
+                      "landed": 4,
+                      "attempted": 8,
+                      "raw": "4 of 8"
+                    },
+                    "leg": {
+                      "landed": 1,
+                      "attempted": 1,
+                      "raw": "1 of 1"
+                    },
+                    "distance": {
+                      "landed": 30,
+                      "attempted": 50,
+                      "raw": "30 of 50"
+                    },
+                    "clinch": {
+                      "landed": 7,
+                      "attempted": 10,
+                      "raw": "7 of 10"
+                    },
+                    "ground": {
+                      "landed": 7,
+                      "attempted": 8,
+                      "raw": "7 of 8"
+                    }
+                  }
+                },
+                {
+                  "round": 3,
+                  "totals": {
+                    "kd": 0,
+                    "significantStrikes": {
+                      "landed": 39,
+                      "attempted": 86,
+                      "raw": "39 of 86"
+                    },
+                    "significantStrikePercent": 45,
+                    "totalStrikes": {
+                      "landed": 51,
+                      "attempted": 98,
+                      "raw": "51 of 98"
+                    },
+                    "takedowns": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "takedownPercent": null,
+                    "submissionAttempts": 0,
+                    "reversals": 0,
+                    "control": "0:00",
+                    "controlSeconds": 0
+                  },
+                  "significant": {
+                    "significantStrikes": {
+                      "landed": 39,
+                      "attempted": 86,
+                      "raw": "39 of 86"
+                    },
+                    "significantStrikePercent": 45,
+                    "head": {
+                      "landed": 30,
+                      "attempted": 72,
+                      "raw": "30 of 72"
+                    },
+                    "body": {
+                      "landed": 9,
+                      "attempted": 14,
+                      "raw": "9 of 14"
+                    },
+                    "leg": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    },
+                    "distance": {
+                      "landed": 32,
+                      "attempted": 78,
+                      "raw": "32 of 78"
+                    },
+                    "clinch": {
+                      "landed": 7,
+                      "attempted": 8,
+                      "raw": "7 of 8"
+                    },
+                    "ground": {
+                      "landed": 0,
+                      "attempted": 0,
+                      "raw": "0 of 0"
+                    }
+                  }
+                }
+              ],
               "source": "ufcstats",
               "sourceUrl": "http://www.ufcstats.com/fight-details/ad14c502c9c5a7e9"
             },
@@ -73097,25 +73933,25 @@
           ],
           "resumeHeat": null,
           "roundModel": {
-            "roundSampleCount": 1,
-            "lateRoundSampleCount": 0,
-            "earlyThreat": 24,
-            "lateEvidence": null,
+            "roundSampleCount": 4,
+            "lateRoundSampleCount": 1,
+            "earlyThreat": 50,
+            "lateEvidence": 91,
             "roundScores": [
               {
                 "round": 1,
-                "sampleCount": 1,
-                "score": 24
+                "sampleCount": 2,
+                "score": 50
               },
               {
                 "round": 2,
-                "sampleCount": 0,
-                "score": null
+                "sampleCount": 1,
+                "score": 100
               },
               {
                 "round": 3,
-                "sampleCount": 0,
-                "score": null
+                "sampleCount": 1,
+                "score": 100
               }
             ],
             "hasEnoughForTrend": false,
@@ -73128,8 +73964,8 @@
             "hasFightTotals": true,
             "hasRoundStats": true,
             "lastFiveCount": 4,
-            "roundSampleCount": 1,
-            "lateRoundSampleCount": 0
+            "roundSampleCount": 4,
+            "lateRoundSampleCount": 1
           },
           "sourceCoverage": "ufcstats-profile-and-event"
         }

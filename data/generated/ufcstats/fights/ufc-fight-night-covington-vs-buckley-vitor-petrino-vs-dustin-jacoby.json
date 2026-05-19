@@ -1,0 +1,764 @@
+{
+  "id": "7b1bc4ff776f12c1",
+  "url": "http://www.ufcstats.com/fight-details/7b1bc4ff776f12c1",
+  "event": {
+    "id": "72c9c2eadfc3277e",
+    "name": "UFC Fight Night: Covington vs. Buckley",
+    "url": "http://www.ufcstats.com/event-details/72c9c2eadfc3277e"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "71171fc96445bf65",
+      "name": "Vitor Petrino",
+      "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "e4277e87a789d687",
+      "name": "Dustin Jacoby",
+      "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687",
+      "nickname": "The Hanyak",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "3:44",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Andrew Glenn",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "71171fc96445bf65",
+        "name": "Vitor Petrino",
+        "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+      },
+      {
+        "id": "e4277e87a789d687",
+        "name": "Dustin Jacoby",
+        "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 96,
+          "raw": "40 of 96"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 96,
+          "raw": "40 of 96"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:40",
+        "controlSeconds": 40
+      },
+      {
+        "fighter": {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 96,
+          "raw": "45 of 96"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 47,
+          "attempted": 100,
+          "raw": "47 of 100"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:20",
+        "controlSeconds": 20
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 32,
+            "raw": "17 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "71171fc96445bf65",
+        "name": "Vitor Petrino",
+        "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+      },
+      {
+        "id": "e4277e87a789d687",
+        "name": "Dustin Jacoby",
+        "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 96,
+          "raw": "40 of 96"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 27,
+          "attempted": 79,
+          "raw": "27 of 79"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 96,
+          "raw": "40 of 96"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 96,
+          "raw": "45 of 96"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 23,
+          "attempted": 69,
+          "raw": "23 of 69"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 15,
+          "attempted": 18,
+          "raw": "15 of 18"
+        },
+        "distance": {
+          "landed": 39,
+          "attempted": 87,
+          "raw": "39 of 87"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 5,
+            "attempted": 22,
+            "raw": "5 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 25,
+            "raw": "8 of 25"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 16,
+            "attempted": 42,
+            "raw": "16 of 42"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 24,
+            "raw": "8 of 24"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+        },
+        {
+          "id": "e4277e87a789d687",
+          "name": "Dustin Jacoby",
+          "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "71171fc96445bf65",
+            "name": "Vitor Petrino",
+            "url": "http://www.ufcstats.com/fighter-details/71171fc96445bf65"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e4277e87a789d687",
+            "name": "Dustin Jacoby",
+            "url": "http://www.ufcstats.com/fighter-details/e4277e87a789d687"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/7b1bc4ff776f12c1",
+    "fetchedAt": "2026-05-19T16:59:19.403Z"
+  }
+}

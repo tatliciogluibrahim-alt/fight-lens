@@ -1,0 +1,404 @@
+{
+  "id": "160c17b8fcb0e2a1",
+  "url": "http://www.ufcstats.com/fight-details/160c17b8fcb0e2a1",
+  "event": {
+    "id": "8d477c3fbe001f9d",
+    "name": "UFC Fight Night: Sandhagen vs. Song",
+    "url": "http://www.ufcstats.com/event-details/8d477c3fbe001f9d"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c1085e1701b13eca",
+      "name": "Joe Pyfer",
+      "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca",
+      "nickname": "Bodybagz",
+      "result": "W"
+    },
+    {
+      "id": "70fa1c64a2c439ef",
+      "name": "Alen Amedovski",
+      "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c1085e1701b13eca",
+        "name": "Joe Pyfer",
+        "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+      },
+      {
+        "id": "70fa1c64a2c439ef",
+        "name": "Alen Amedovski",
+        "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 45,
+          "raw": "14 of 45"
+        },
+        "significantStrikePercent": 31,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 45,
+          "raw": "14 of 45"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "70fa1c64a2c439ef",
+          "name": "Alen Amedovski",
+          "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        {
+          "id": "70fa1c64a2c439ef",
+          "name": "Alen Amedovski",
+          "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 45,
+            "raw": "14 of 45"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 45,
+            "raw": "14 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "70fa1c64a2c439ef",
+            "name": "Alen Amedovski",
+            "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c1085e1701b13eca",
+        "name": "Joe Pyfer",
+        "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+      },
+      {
+        "id": "70fa1c64a2c439ef",
+        "name": "Alen Amedovski",
+        "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 45,
+          "raw": "14 of 45"
+        },
+        "significantStrikePercent": 31,
+        "head": {
+          "landed": 12,
+          "attempted": 42,
+          "raw": "12 of 42"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "70fa1c64a2c439ef",
+          "name": "Alen Amedovski",
+          "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 4,
+          "attempted": 19,
+          "raw": "4 of 19"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+        },
+        {
+          "id": "70fa1c64a2c439ef",
+          "name": "Alen Amedovski",
+          "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c1085e1701b13eca",
+            "name": "Joe Pyfer",
+            "url": "http://www.ufcstats.com/fighter-details/c1085e1701b13eca"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 45,
+            "raw": "14 of 45"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 12,
+            "attempted": 42,
+            "raw": "12 of 42"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 44,
+            "raw": "13 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70fa1c64a2c439ef",
+            "name": "Alen Amedovski",
+            "url": "http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/160c17b8fcb0e2a1",
+    "fetchedAt": "2026-05-19T16:56:31.405Z"
+  }
+}

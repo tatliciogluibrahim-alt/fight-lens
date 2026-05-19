@@ -1,19 +1,58 @@
 {
-  "generatedAt": "2026-05-19T14:50:59.769Z",
+  "generatedAt": "2026-05-19T17:23:04.039Z",
   "modelVersion": "outcome-v0.2",
-  "eventCount": 6,
+  "eventCount": 20,
   "events": [
     {
       "event": "UFC 322: Della Maddalena vs. Makhachev",
       "asOfDate": "2025-11-15",
       "totalFights": 14,
       "scoredFights": 14,
-      "winnerAccuracy": 64,
+      "winnerAccuracy": 50,
       "methodAccuracy": 64,
-      "brierScore": 0.258,
+      "brierScore": 0.25,
       "outcomeSourceMix": {
         "predictionFile": 0,
         "fightDetail": 14
+      }
+    },
+    {
+      "event": "UFC 323: Dvalishvili vs. Yan 2",
+      "asOfDate": "2025-12-06",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 77,
+      "brierScore": 0.204,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC 324: Gaethje vs. Pimblett",
+      "asOfDate": "2026-01-24",
+      "totalFights": 11,
+      "scoredFights": 11,
+      "winnerAccuracy": 82,
+      "methodAccuracy": 73,
+      "brierScore": 0.158,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 11
+      }
+    },
+    {
+      "event": "UFC 325: Volkanovski vs. Lopes 2",
+      "asOfDate": "2026-01-31",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 62,
+      "brierScore": 0.239,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
       }
     },
     {
@@ -21,9 +60,9 @@
       "asOfDate": "2026-03-07",
       "totalFights": 12,
       "scoredFights": 12,
-      "winnerAccuracy": 75,
+      "winnerAccuracy": 67,
       "methodAccuracy": 58,
-      "brierScore": 0.256,
+      "brierScore": 0.261,
       "outcomeSourceMix": {
         "predictionFile": 0,
         "fightDetail": 12
@@ -34,9 +73,9 @@
       "asOfDate": "2026-04-11",
       "totalFights": 11,
       "scoredFights": 11,
-      "winnerAccuracy": 55,
+      "winnerAccuracy": 45,
       "methodAccuracy": 36,
-      "brierScore": 0.233,
+      "brierScore": 0.245,
       "outcomeSourceMix": {
         "predictionFile": 0,
         "fightDetail": 11
@@ -47,12 +86,25 @@
       "asOfDate": "2026-05-09",
       "totalFights": 13,
       "scoredFights": 13,
-      "winnerAccuracy": 69,
+      "winnerAccuracy": 54,
       "methodAccuracy": 38,
-      "brierScore": 0.21,
+      "brierScore": 0.241,
       "outcomeSourceMix": {
         "predictionFile": 13,
         "fightDetail": 0
+      }
+    },
+    {
+      "event": "UFC Fight Night: Adesanya vs. Pyfer",
+      "asOfDate": "2026-03-28",
+      "totalFights": 12,
+      "scoredFights": 12,
+      "winnerAccuracy": 75,
+      "methodAccuracy": 50,
+      "brierScore": 0.2,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 12
       }
     },
     {
@@ -62,10 +114,36 @@
       "scoredFights": 13,
       "winnerAccuracy": 54,
       "methodAccuracy": 46,
-      "brierScore": 0.239,
+      "brierScore": 0.234,
       "outcomeSourceMix": {
         "predictionFile": 0,
         "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Bautista vs. Oliveira",
+      "asOfDate": "2026-02-07",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 77,
+      "methodAccuracy": 54,
+      "brierScore": 0.167,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Burns vs. Malott",
+      "asOfDate": "2026-04-18",
+      "totalFights": 11,
+      "scoredFights": 11,
+      "winnerAccuracy": 36,
+      "methodAccuracy": 55,
+      "brierScore": 0.308,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 11
       }
     },
     {
@@ -73,12 +151,116 @@
       "asOfDate": "2026-05-02",
       "totalFights": 13,
       "scoredFights": 13,
-      "winnerAccuracy": 77,
+      "winnerAccuracy": 69,
       "methodAccuracy": 62,
-      "brierScore": 0.221,
+      "brierScore": 0.234,
       "outcomeSourceMix": {
         "predictionFile": 0,
         "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Emmett vs. Vallejos",
+      "asOfDate": "2026-03-14",
+      "totalFights": 14,
+      "scoredFights": 14,
+      "winnerAccuracy": 64,
+      "methodAccuracy": 64,
+      "brierScore": 0.225,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 14
+      }
+    },
+    {
+      "event": "UFC Fight Night: Evloev vs. Murphy",
+      "asOfDate": "2026-03-21",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 46,
+      "brierScore": 0.198,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Moicano vs. Duncan",
+      "asOfDate": "2026-04-04",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 69,
+      "methodAccuracy": 62,
+      "brierScore": 0.198,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Moreno vs. Kavanagh",
+      "asOfDate": "2026-02-28",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 77,
+      "methodAccuracy": 69,
+      "brierScore": 0.154,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Royval vs. Kape",
+      "asOfDate": "2025-12-13",
+      "totalFights": 11,
+      "scoredFights": 11,
+      "winnerAccuracy": 82,
+      "methodAccuracy": 55,
+      "brierScore": 0.18,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 11
+      }
+    },
+    {
+      "event": "UFC Fight Night: Sterling vs. Zalal",
+      "asOfDate": "2026-04-25",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 46,
+      "methodAccuracy": 85,
+      "brierScore": 0.281,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Strickland vs. Hernandez",
+      "asOfDate": "2026-02-21",
+      "totalFights": 13,
+      "scoredFights": 13,
+      "winnerAccuracy": 77,
+      "methodAccuracy": 38,
+      "brierScore": 0.202,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 13
+      }
+    },
+    {
+      "event": "UFC Fight Night: Tsarukyan vs. Hooker",
+      "asOfDate": "2025-11-22",
+      "totalFights": 14,
+      "scoredFights": 14,
+      "winnerAccuracy": 86,
+      "methodAccuracy": 57,
+      "brierScore": 0.204,
+      "outcomeSourceMix": {
+        "predictionFile": 0,
+        "fightDetail": 14
       }
     }
   ]

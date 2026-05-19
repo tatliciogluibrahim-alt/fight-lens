@@ -1,0 +1,584 @@
+{
+  "id": "5c5523a6bf83e44f",
+  "url": "http://www.ufcstats.com/fight-details/5c5523a6bf83e44f",
+  "event": {
+    "id": "be8ad887e4d674b0",
+    "name": "UFC Fight Night: Cannonier vs. Borralho",
+    "url": "http://www.ufcstats.com/event-details/be8ad887e4d674b0"
+  },
+  "title": "Ultimate Fighter 32 Middleweight Tournament Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0cd0456d6029cec2",
+      "name": "Robert Valentin",
+      "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2",
+      "nickname": "Robzilla",
+      "result": "L"
+    },
+    {
+      "id": "d5bab53a1a603aac",
+      "name": "Ryan Loder",
+      "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac",
+      "nickname": "Man of Steel",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:49",
+    "timeFormat": "3 Rnd + OT (5-5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0cd0456d6029cec2",
+        "name": "Robert Valentin",
+        "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+      },
+      {
+        "id": "d5bab53a1a603aac",
+        "name": "Ryan Loder",
+        "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "1:38",
+        "controlSeconds": 98
+      },
+      {
+        "fighter": {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 52,
+          "raw": "42 of 52"
+        },
+        "significantStrikePercent": 80,
+        "totalStrikes": {
+          "landed": 63,
+          "attempted": 73,
+          "raw": "63 of 73"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "4:45",
+        "controlSeconds": 285
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0cd0456d6029cec2",
+            "name": "Robert Valentin",
+            "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "d5bab53a1a603aac",
+            "name": "Ryan Loder",
+            "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 21,
+            "raw": "20 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "3:08",
+          "controlSeconds": 188
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0cd0456d6029cec2",
+            "name": "Robert Valentin",
+            "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d5bab53a1a603aac",
+            "name": "Ryan Loder",
+            "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 47,
+            "raw": "38 of 47"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 52,
+            "raw": "43 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:37",
+          "controlSeconds": 97
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0cd0456d6029cec2",
+        "name": "Robert Valentin",
+        "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+      },
+      {
+        "id": "d5bab53a1a603aac",
+        "name": "Ryan Loder",
+        "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 52,
+          "raw": "42 of 52"
+        },
+        "significantStrikePercent": 80,
+        "head": {
+          "landed": 41,
+          "attempted": 51,
+          "raw": "41 of 51"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 41,
+          "attempted": 50,
+          "raw": "41 of 50"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0cd0456d6029cec2",
+            "name": "Robert Valentin",
+            "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d5bab53a1a603aac",
+            "name": "Ryan Loder",
+            "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0cd0456d6029cec2",
+          "name": "Robert Valentin",
+          "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+        },
+        {
+          "id": "d5bab53a1a603aac",
+          "name": "Ryan Loder",
+          "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0cd0456d6029cec2",
+            "name": "Robert Valentin",
+            "url": "http://www.ufcstats.com/fighter-details/0cd0456d6029cec2"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d5bab53a1a603aac",
+            "name": "Ryan Loder",
+            "url": "http://www.ufcstats.com/fighter-details/d5bab53a1a603aac"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 47,
+            "raw": "38 of 47"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 38,
+            "attempted": 47,
+            "raw": "38 of 47"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 38,
+            "attempted": 46,
+            "raw": "38 of 46"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5c5523a6bf83e44f",
+    "fetchedAt": "2026-05-19T16:54:34.641Z"
+  }
+}

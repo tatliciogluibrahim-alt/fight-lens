@@ -1,0 +1,404 @@
+{
+  "id": "990c2378caec68d4",
+  "url": "http://www.ufcstats.com/fight-details/990c2378caec68d4",
+  "event": {
+    "id": "bfe95ec546692b13",
+    "name": "UFC Fight Night: Blaydes vs. Lewis",
+    "url": "http://www.ufcstats.com/event-details/bfe95ec546692b13"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fc9a9559a05f2704",
+      "name": "Eddie Wineland",
+      "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "5fa2974cbd18e05c",
+      "name": "John Castaneda",
+      "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c",
+      "nickname": "Sexi Mexi",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:44",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fc9a9559a05f2704",
+        "name": "Eddie Wineland",
+        "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+      },
+      {
+        "id": "5fa2974cbd18e05c",
+        "name": "John Castaneda",
+        "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fc9a9559a05f2704",
+          "name": "Eddie Wineland",
+          "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 66,
+          "raw": "17 of 66"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 66,
+          "raw": "17 of 66"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:12",
+        "controlSeconds": 12
+      },
+      {
+        "fighter": {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 57,
+          "raw": "42 of 57"
+        },
+        "significantStrikePercent": 73,
+        "totalStrikes": {
+          "landed": 44,
+          "attempted": 59,
+          "raw": "44 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fc9a9559a05f2704",
+          "name": "Eddie Wineland",
+          "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+        },
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fc9a9559a05f2704",
+            "name": "Eddie Wineland",
+            "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 66,
+            "raw": "17 of 66"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 66,
+            "raw": "17 of 66"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        },
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 57,
+            "raw": "42 of 57"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 59,
+            "raw": "44 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fc9a9559a05f2704",
+        "name": "Eddie Wineland",
+        "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+      },
+      {
+        "id": "5fa2974cbd18e05c",
+        "name": "John Castaneda",
+        "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fc9a9559a05f2704",
+          "name": "Eddie Wineland",
+          "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 66,
+          "raw": "17 of 66"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 10,
+          "attempted": 50,
+          "raw": "10 of 50"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 63,
+          "raw": "16 of 63"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 57,
+          "raw": "42 of 57"
+        },
+        "significantStrikePercent": 73,
+        "head": {
+          "landed": 23,
+          "attempted": 34,
+          "raw": "23 of 34"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 15,
+          "attempted": 16,
+          "raw": "15 of 16"
+        },
+        "distance": {
+          "landed": 34,
+          "attempted": 49,
+          "raw": "34 of 49"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fc9a9559a05f2704",
+          "name": "Eddie Wineland",
+          "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+        },
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fc9a9559a05f2704",
+            "name": "Eddie Wineland",
+            "url": "http://www.ufcstats.com/fighter-details/fc9a9559a05f2704"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 66,
+            "raw": "17 of 66"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 10,
+            "attempted": 50,
+            "raw": "10 of 50"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 63,
+            "raw": "16 of 63"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 57,
+            "raw": "42 of 57"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 23,
+            "attempted": 34,
+            "raw": "23 of 34"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 15,
+            "attempted": 16,
+            "raw": "15 of 16"
+          },
+          "distance": {
+            "landed": 34,
+            "attempted": 49,
+            "raw": "34 of 49"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/990c2378caec68d4",
+    "fetchedAt": "2026-05-19T16:54:51.024Z"
+  }
+}

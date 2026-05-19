@@ -1,0 +1,404 @@
+{
+  "id": "8435f90fbd50c7a5",
+  "url": "http://www.ufcstats.com/fight-details/8435f90fbd50c7a5",
+  "event": {
+    "id": "e6015889f50075d2",
+    "name": "UFC 312: Du Plessis vs. Strickland 2",
+    "url": "http://www.ufcstats.com/event-details/e6015889f50075d2"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e13abac8089a801a",
+      "name": "Justin Tafa",
+      "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a",
+      "nickname": "Bad Man",
+      "result": "L"
+    },
+    {
+      "id": "17923f676f100e16",
+      "name": "Tallison Teixeira",
+      "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16",
+      "nickname": "Xicao",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:35",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rich Mitchell",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e13abac8089a801a",
+        "name": "Justin Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+      },
+      {
+        "id": "17923f676f100e16",
+        "name": "Tallison Teixeira",
+        "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e13abac8089a801a",
+          "name": "Justin Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "significantStrikePercent": 0,
+        "totalStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "17923f676f100e16",
+          "name": "Tallison Teixeira",
+          "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "significantStrikePercent": 88,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e13abac8089a801a",
+          "name": "Justin Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+        },
+        {
+          "id": "17923f676f100e16",
+          "name": "Tallison Teixeira",
+          "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e13abac8089a801a",
+            "name": "Justin Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "17923f676f100e16",
+            "name": "Tallison Teixeira",
+            "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "significantStrikePercent": 88,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e13abac8089a801a",
+        "name": "Justin Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+      },
+      {
+        "id": "17923f676f100e16",
+        "name": "Tallison Teixeira",
+        "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e13abac8089a801a",
+          "name": "Justin Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+        },
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "significantStrikePercent": 0,
+        "head": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "17923f676f100e16",
+          "name": "Tallison Teixeira",
+          "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "significantStrikePercent": 88,
+        "head": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e13abac8089a801a",
+          "name": "Justin Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+        },
+        {
+          "id": "17923f676f100e16",
+          "name": "Tallison Teixeira",
+          "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e13abac8089a801a",
+            "name": "Justin Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/e13abac8089a801a"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "17923f676f100e16",
+            "name": "Tallison Teixeira",
+            "url": "http://www.ufcstats.com/fighter-details/17923f676f100e16"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "significantStrikePercent": 88,
+          "head": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8435f90fbd50c7a5",
+    "fetchedAt": "2026-05-19T17:02:40.441Z"
+  }
+}

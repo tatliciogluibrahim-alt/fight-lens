@@ -1,0 +1,584 @@
+{
+  "id": "d40eae4425092219",
+  "url": "http://www.ufcstats.com/fight-details/d40eae4425092219",
+  "event": {
+    "id": "a1d6b308781aa2f5",
+    "name": "UFC Fight Night: Gane vs. Volkov",
+    "url": "http://www.ufcstats.com/event-details/a1d6b308781aa2f5"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "04c8b08b16a5b99e",
+      "name": "Tanner Boser",
+      "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e",
+      "nickname": "The Bulldozer",
+      "result": "W"
+    },
+    {
+      "id": "50db8711c70196cd",
+      "name": "Ovince Saint Preux",
+      "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:31",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "04c8b08b16a5b99e",
+        "name": "Tanner Boser",
+        "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 72,
+          "raw": "33 of 72"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 72,
+          "raw": "33 of 72"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:16",
+        "controlSeconds": 16
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 26,
+          "raw": "12 of 26"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:12",
+        "controlSeconds": 72
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "04c8b08b16a5b99e",
+            "name": "Tanner Boser",
+            "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 53,
+            "raw": "25 of 53"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 53,
+            "raw": "25 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "04c8b08b16a5b99e",
+            "name": "Tanner Boser",
+            "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:12",
+          "controlSeconds": 72
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "04c8b08b16a5b99e",
+        "name": "Tanner Boser",
+        "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 72,
+          "raw": "33 of 72"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 10,
+          "attempted": 44,
+          "raw": "10 of 44"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 13,
+          "raw": "13 of 13"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 69,
+          "raw": "31 of 69"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 2,
+          "attempted": 13,
+          "raw": "2 of 13"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "04c8b08b16a5b99e",
+            "name": "Tanner Boser",
+            "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 53,
+            "raw": "25 of 53"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 4,
+            "attempted": 29,
+            "raw": "4 of 29"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 12,
+            "raw": "12 of 12"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 53,
+            "raw": "25 of 53"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "04c8b08b16a5b99e",
+          "name": "Tanner Boser",
+          "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "04c8b08b16a5b99e",
+            "name": "Tanner Boser",
+            "url": "http://www.ufcstats.com/fighter-details/04c8b08b16a5b99e"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d40eae4425092219",
+    "fetchedAt": "2026-05-19T16:54:36.743Z"
+  }
+}

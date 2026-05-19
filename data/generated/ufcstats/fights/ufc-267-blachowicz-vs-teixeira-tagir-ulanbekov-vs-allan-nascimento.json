@@ -1,0 +1,764 @@
+{
+  "id": "6163c18411aca830",
+  "url": "http://www.ufcstats.com/fight-details/6163c18411aca830",
+  "event": {
+    "id": "3974fa35c917af1d",
+    "name": "UFC 267: Blachowicz vs. Teixeira",
+    "url": "http://www.ufcstats.com/event-details/3974fa35c917af1d"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f00ac08ab056af5d",
+      "name": "Tagir Ulanbekov",
+      "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "253076a23d03dcd0",
+      "name": "Allan Nascimento",
+      "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0",
+      "nickname": "Puro Osso",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f00ac08ab056af5d",
+        "name": "Tagir Ulanbekov",
+        "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+      },
+      {
+        "id": "253076a23d03dcd0",
+        "name": "Allan Nascimento",
+        "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 40,
+          "raw": "18 of 40"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 87,
+          "raw": "62 of 87"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "takedownPercent": 80,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "12:04",
+        "controlSeconds": 724
+      },
+      {
+        "fighter": {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 37,
+          "raw": "25 of 37"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 74,
+          "attempted": 86,
+          "raw": "74 of 86"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:16",
+        "controlSeconds": 16
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "3:09",
+          "controlSeconds": 189
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 33,
+            "raw": "26 of 33"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:07",
+          "controlSeconds": 247
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 35,
+            "raw": "32 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 35,
+            "raw": "31 of 35"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:48",
+          "controlSeconds": 288
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 33,
+            "raw": "31 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f00ac08ab056af5d",
+        "name": "Tagir Ulanbekov",
+        "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+      },
+      {
+        "id": "253076a23d03dcd0",
+        "name": "Allan Nascimento",
+        "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 40,
+          "raw": "18 of 40"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 16,
+          "attempted": 37,
+          "raw": "16 of 37"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 26,
+          "raw": "8 of 26"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        }
+      },
+      {
+        "fighter": {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 37,
+          "raw": "25 of 37"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 13,
+          "attempted": 24,
+          "raw": "13 of 24"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 16,
+            "raw": "4 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "253076a23d03dcd0",
+          "name": "Allan Nascimento",
+          "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          }
+        },
+        {
+          "fighter": {
+            "id": "253076a23d03dcd0",
+            "name": "Allan Nascimento",
+            "url": "http://www.ufcstats.com/fighter-details/253076a23d03dcd0"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/6163c18411aca830",
+    "fetchedAt": "2026-05-19T17:04:58.636Z"
+  }
+}

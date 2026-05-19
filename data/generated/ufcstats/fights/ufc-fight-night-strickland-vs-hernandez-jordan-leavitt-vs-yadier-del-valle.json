@@ -1,0 +1,764 @@
+{
+  "id": "5b97f47cdd355cbe",
+  "url": "http://www.ufcstats.com/fight-details/5b97f47cdd355cbe",
+  "event": {
+    "id": "79ab17db3b40831a",
+    "name": "UFC Fight Night: Strickland vs. Hernandez",
+    "url": "http://www.ufcstats.com/event-details/79ab17db3b40831a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "ac026518a9b4dc0f",
+      "name": "Jordan Leavitt",
+      "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f",
+      "nickname": "The Monkey King",
+      "result": "W"
+    },
+    {
+      "id": "70380ccdc81915b8",
+      "name": "Yadier del Valle",
+      "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8",
+      "nickname": "The Cuban Problem",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "ac026518a9b4dc0f",
+        "name": "Jordan Leavitt",
+        "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+      },
+      {
+        "id": "70380ccdc81915b8",
+        "name": "Yadier del Valle",
+        "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 45,
+          "raw": "17 of 45"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 86,
+          "raw": "45 of 86"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "7:57",
+        "controlSeconds": 477
+      },
+      {
+        "fighter": {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 42,
+          "raw": "13 of 42"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 76,
+          "attempted": 112,
+          "raw": "76 of 112"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:17",
+        "controlSeconds": 137
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 33,
+            "raw": "20 of 33"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedownPercent": 75,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:04",
+          "controlSeconds": 244
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 38,
+            "raw": "32 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:02",
+          "controlSeconds": 182
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:51",
+          "controlSeconds": 51
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 51,
+            "raw": "34 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:12",
+          "controlSeconds": 132
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "ac026518a9b4dc0f",
+        "name": "Jordan Leavitt",
+        "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+      },
+      {
+        "id": "70380ccdc81915b8",
+        "name": "Yadier del Valle",
+        "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 45,
+          "raw": "17 of 45"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 7,
+          "attempted": 18,
+          "raw": "7 of 18"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 19,
+          "raw": "3 of 19"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 36,
+          "raw": "12 of 36"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        }
+      },
+      {
+        "fighter": {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 42,
+          "raw": "13 of 42"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 4,
+          "attempted": 26,
+          "raw": "4 of 26"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 36,
+          "raw": "7 of 36"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 16,
+            "raw": "4 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ac026518a9b4dc0f",
+          "name": "Jordan Leavitt",
+          "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+        },
+        {
+          "id": "70380ccdc81915b8",
+          "name": "Yadier del Valle",
+          "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ac026518a9b4dc0f",
+            "name": "Jordan Leavitt",
+            "url": "http://www.ufcstats.com/fighter-details/ac026518a9b4dc0f"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70380ccdc81915b8",
+            "name": "Yadier del Valle",
+            "url": "http://www.ufcstats.com/fighter-details/70380ccdc81915b8"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 0,
+            "attempted": 10,
+            "raw": "0 of 10"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 14,
+            "raw": "1 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5b97f47cdd355cbe",
+    "fetchedAt": "2026-05-19T17:00:33.563Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "a38648a1c190f9be",
+  "url": "http://www.ufcstats.com/fight-details/a38648a1c190f9be",
+  "event": {
+    "id": "509697e08673d2e5",
+    "name": "UFC Fight Night: Font vs. Aldo",
+    "url": "http://www.ufcstats.com/event-details/509697e08673d2e5"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "37ed1ab2f8b819f4",
+      "name": "Brad Riddell",
+      "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4",
+      "nickname": "Quake",
+      "result": "L"
+    },
+    {
+      "id": "c814b4c899793af6",
+      "name": "Rafael Fiziev",
+      "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6",
+      "nickname": "Ataman",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "2:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "37ed1ab2f8b819f4",
+        "name": "Brad Riddell",
+        "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+      },
+      {
+        "id": "c814b4c899793af6",
+        "name": "Rafael Fiziev",
+        "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 115,
+          "raw": "59 of 115"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 118,
+          "raw": "62 of 118"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:14",
+        "controlSeconds": 14
+      },
+      {
+        "fighter": {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 66,
+          "attempted": 123,
+          "raw": "66 of 123"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 66,
+          "attempted": 123,
+          "raw": "66 of 123"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 41,
+            "raw": "21 of 41"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 41,
+            "raw": "21 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 50,
+            "raw": "22 of 50"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 51,
+            "raw": "23 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 59,
+            "raw": "30 of 59"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 59,
+            "raw": "30 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 24,
+            "raw": "16 of 24"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 29,
+            "raw": "17 of 29"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 29,
+            "raw": "17 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "37ed1ab2f8b819f4",
+        "name": "Brad Riddell",
+        "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+      },
+      {
+        "id": "c814b4c899793af6",
+        "name": "Rafael Fiziev",
+        "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 115,
+          "raw": "59 of 115"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 23,
+          "attempted": 72,
+          "raw": "23 of 72"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 26,
+          "raw": "20 of 26"
+        },
+        "leg": {
+          "landed": 16,
+          "attempted": 17,
+          "raw": "16 of 17"
+        },
+        "distance": {
+          "landed": 59,
+          "attempted": 114,
+          "raw": "59 of 114"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        },
+        "significantStrikes": {
+          "landed": 66,
+          "attempted": 123,
+          "raw": "66 of 123"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 36,
+          "attempted": 78,
+          "raw": "36 of 78"
+        },
+        "body": {
+          "landed": 22,
+          "attempted": 30,
+          "raw": "22 of 30"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "distance": {
+          "landed": 64,
+          "attempted": 121,
+          "raw": "64 of 121"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 41,
+            "raw": "21 of 41"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 41,
+            "raw": "21 of 41"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 50,
+            "raw": "22 of 50"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 8,
+            "attempted": 30,
+            "raw": "8 of 30"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 49,
+            "raw": "22 of 49"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 59,
+            "raw": "30 of 59"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 57,
+            "raw": "28 of 57"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "37ed1ab2f8b819f4",
+          "name": "Brad Riddell",
+          "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+        },
+        {
+          "id": "c814b4c899793af6",
+          "name": "Rafael Fiziev",
+          "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "37ed1ab2f8b819f4",
+            "name": "Brad Riddell",
+            "url": "http://www.ufcstats.com/fighter-details/37ed1ab2f8b819f4"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 24,
+            "raw": "16 of 24"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 24,
+            "raw": "16 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c814b4c899793af6",
+            "name": "Rafael Fiziev",
+            "url": "http://www.ufcstats.com/fighter-details/c814b4c899793af6"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 29,
+            "raw": "17 of 29"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 29,
+            "raw": "17 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/a38648a1c190f9be",
+    "fetchedAt": "2026-05-19T17:02:38.772Z"
+  }
+}

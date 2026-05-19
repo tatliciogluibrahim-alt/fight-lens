@@ -1,0 +1,764 @@
+{
+  "id": "32b0e450b11b32fe",
+  "url": "http://www.ufcstats.com/fight-details/32b0e450b11b32fe",
+  "event": {
+    "id": "dde70a112e053a6c",
+    "name": "UFC Fight Night: Whittaker vs. Till",
+    "url": "http://www.ufcstats.com/event-details/dde70a112e053a6c"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "76e2870ffafbe38f",
+      "name": "Movsar Evloev",
+      "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "56fcb2c4d99f9d1b",
+      "name": "Mike Grundy",
+      "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "76e2870ffafbe38f",
+        "name": "Movsar Evloev",
+        "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+      },
+      {
+        "id": "56fcb2c4d99f9d1b",
+        "name": "Mike Grundy",
+        "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 79,
+          "attempted": 150,
+          "raw": "79 of 150"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 96,
+          "attempted": 173,
+          "raw": "96 of 173"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:48",
+        "controlSeconds": 48
+      },
+      {
+        "fighter": {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 66,
+          "raw": "20 of 66"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 25,
+          "attempted": 80,
+          "raw": "25 of 80"
+        },
+        "takedowns": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:35",
+        "controlSeconds": 155
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 44,
+            "raw": "25 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "significantStrikePercent": 18,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 20,
+            "raw": "3 of 20"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedownPercent": 60,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:40",
+          "controlSeconds": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 55,
+            "raw": "31 of 55"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 59,
+            "raw": "35 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 16,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 61,
+            "raw": "29 of 61"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 70,
+            "raw": "36 of 70"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "76e2870ffafbe38f",
+        "name": "Movsar Evloev",
+        "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+      },
+      {
+        "id": "56fcb2c4d99f9d1b",
+        "name": "Mike Grundy",
+        "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        "significantStrikes": {
+          "landed": 79,
+          "attempted": 150,
+          "raw": "79 of 150"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 53,
+          "attempted": 120,
+          "raw": "53 of 120"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 14,
+          "raw": "13 of 14"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "distance": {
+          "landed": 72,
+          "attempted": 142,
+          "raw": "72 of 142"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 66,
+          "raw": "20 of 66"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 11,
+          "attempted": 53,
+          "raw": "11 of 53"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 64,
+          "raw": "18 of 64"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 16,
+            "raw": "3 of 16"
+          },
+          "significantStrikePercent": 18,
+          "head": {
+            "landed": 0,
+            "attempted": 13,
+            "raw": "0 of 13"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 15,
+            "raw": "2 of 15"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 55,
+            "raw": "31 of 55"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 20,
+            "attempted": 44,
+            "raw": "20 of 44"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 49,
+            "raw": "26 of 49"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 4,
+            "attempted": 13,
+            "raw": "4 of 13"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "76e2870ffafbe38f",
+          "name": "Movsar Evloev",
+          "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+        },
+        {
+          "id": "56fcb2c4d99f9d1b",
+          "name": "Mike Grundy",
+          "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "76e2870ffafbe38f",
+            "name": "Movsar Evloev",
+            "url": "http://www.ufcstats.com/fighter-details/76e2870ffafbe38f"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 61,
+            "raw": "29 of 61"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 21,
+            "attempted": 52,
+            "raw": "21 of 52"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 60,
+            "raw": "28 of 60"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "56fcb2c4d99f9d1b",
+            "name": "Mike Grundy",
+            "url": "http://www.ufcstats.com/fighter-details/56fcb2c4d99f9d1b"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 34,
+            "raw": "11 of 34"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 7,
+            "attempted": 27,
+            "raw": "7 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/32b0e450b11b32fe",
+    "fetchedAt": "2026-05-19T16:57:40.109Z"
+  }
+}

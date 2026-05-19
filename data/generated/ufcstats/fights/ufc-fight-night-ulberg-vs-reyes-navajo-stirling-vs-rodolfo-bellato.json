@@ -1,0 +1,764 @@
+{
+  "id": "dc31d3260dea7dcf",
+  "url": "http://www.ufcstats.com/fight-details/dc31d3260dea7dcf",
+  "event": {
+    "id": "ed220e87bef0cc64",
+    "name": "UFC Fight Night: Ulberg vs. Reyes",
+    "url": "http://www.ufcstats.com/event-details/ed220e87bef0cc64"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b4b496ec2197ee3e",
+      "name": "Navajo Stirling",
+      "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "69898645d600abdb",
+      "name": "Rodolfo Bellato",
+      "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb",
+      "nickname": "Trator",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b4b496ec2197ee3e",
+        "name": "Navajo Stirling",
+        "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+      },
+      {
+        "id": "69898645d600abdb",
+        "name": "Rodolfo Bellato",
+        "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 81,
+          "attempted": 158,
+          "raw": "81 of 158"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 101,
+          "attempted": 193,
+          "raw": "101 of 193"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:53",
+        "controlSeconds": 233
+      },
+      {
+        "fighter": {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 111,
+          "raw": "62 of 111"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:23",
+        "controlSeconds": 143
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 62,
+            "raw": "37 of 62"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 67,
+            "raw": "41 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:58",
+          "controlSeconds": 58
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 68,
+            "raw": "31 of 68"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:52",
+          "controlSeconds": 172
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 57,
+            "raw": "28 of 57"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 58,
+            "raw": "29 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 39,
+            "raw": "23 of 39"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:24",
+          "controlSeconds": 84
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b4b496ec2197ee3e",
+        "name": "Navajo Stirling",
+        "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+      },
+      {
+        "id": "69898645d600abdb",
+        "name": "Rodolfo Bellato",
+        "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        "significantStrikes": {
+          "landed": 81,
+          "attempted": 158,
+          "raw": "81 of 158"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 44,
+          "attempted": 102,
+          "raw": "44 of 102"
+        },
+        "body": {
+          "landed": 35,
+          "attempted": 53,
+          "raw": "35 of 53"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 70,
+          "attempted": 145,
+          "raw": "70 of 145"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 89,
+          "raw": "43 of 89"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 21,
+          "attempted": 60,
+          "raw": "21 of 60"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 19,
+          "raw": "12 of 19"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 39,
+          "attempted": 81,
+          "raw": "39 of 81"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 62,
+            "raw": "37 of 62"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 21,
+            "attempted": 37,
+            "raw": "21 of 37"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 56,
+            "raw": "32 of 56"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 4,
+            "attempted": 17,
+            "raw": "4 of 17"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+        },
+        {
+          "id": "69898645d600abdb",
+          "name": "Rodolfo Bellato",
+          "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b4b496ec2197ee3e",
+            "name": "Navajo Stirling",
+            "url": "http://www.ufcstats.com/fighter-details/b4b496ec2197ee3e"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 57,
+            "raw": "28 of 57"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 12,
+            "attempted": 36,
+            "raw": "12 of 36"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 55,
+            "raw": "26 of 55"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "69898645d600abdb",
+            "name": "Rodolfo Bellato",
+            "url": "http://www.ufcstats.com/fighter-details/69898645d600abdb"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/dc31d3260dea7dcf",
+    "fetchedAt": "2026-05-19T16:57:19.137Z"
+  }
+}

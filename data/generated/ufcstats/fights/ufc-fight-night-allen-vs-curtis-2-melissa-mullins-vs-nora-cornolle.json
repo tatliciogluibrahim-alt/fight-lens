@@ -1,0 +1,584 @@
+{
+  "id": "1685eecc7ef37fb5",
+  "url": "http://www.ufcstats.com/fight-details/1685eecc7ef37fb5",
+  "event": {
+    "id": "899eaba48fa864a6",
+    "name": "UFC Fight Night: Allen vs. Curtis 2",
+    "url": "http://www.ufcstats.com/event-details/899eaba48fa864a6"
+  },
+  "title": "Women's Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "bd532e9a2b93870c",
+      "name": "Melissa Mullins",
+      "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c",
+      "nickname": "No Mess",
+      "result": "L"
+    },
+    {
+      "id": "f2b3f4ef3f780168",
+      "name": "Nora Cornolle",
+      "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:06",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "bd532e9a2b93870c",
+        "name": "Melissa Mullins",
+        "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+      },
+      {
+        "id": "f2b3f4ef3f780168",
+        "name": "Nora Cornolle",
+        "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 24,
+          "raw": "11 of 24"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 28,
+          "raw": "13 of 28"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:20",
+        "controlSeconds": 320
+      },
+      {
+        "fighter": {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 51,
+          "raw": "36 of 51"
+        },
+        "significantStrikePercent": 70,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 83,
+          "raw": "60 of 83"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:30",
+        "controlSeconds": 30
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bd532e9a2b93870c",
+            "name": "Melissa Mullins",
+            "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:22",
+          "controlSeconds": 202
+        },
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 45,
+            "raw": "30 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bd532e9a2b93870c",
+            "name": "Melissa Mullins",
+            "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:58",
+          "controlSeconds": 118
+        },
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 23,
+            "raw": "17 of 23"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 38,
+            "raw": "30 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "bd532e9a2b93870c",
+        "name": "Melissa Mullins",
+        "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+      },
+      {
+        "id": "f2b3f4ef3f780168",
+        "name": "Nora Cornolle",
+        "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 24,
+          "raw": "11 of 24"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 51,
+          "raw": "36 of 51"
+        },
+        "significantStrikePercent": 70,
+        "head": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 29,
+          "raw": "19 of 29"
+        },
+        "clinch": {
+          "landed": 15,
+          "attempted": 20,
+          "raw": "15 of 20"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bd532e9a2b93870c",
+            "name": "Melissa Mullins",
+            "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bd532e9a2b93870c",
+          "name": "Melissa Mullins",
+          "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+        },
+        {
+          "id": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bd532e9a2b93870c",
+            "name": "Melissa Mullins",
+            "url": "http://www.ufcstats.com/fighter-details/bd532e9a2b93870c"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f2b3f4ef3f780168",
+            "name": "Nora Cornolle",
+            "url": "http://www.ufcstats.com/fighter-details/f2b3f4ef3f780168"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 23,
+            "raw": "17 of 23"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/1685eecc7ef37fb5",
+    "fetchedAt": "2026-05-19T17:01:15.401Z"
+  }
+}

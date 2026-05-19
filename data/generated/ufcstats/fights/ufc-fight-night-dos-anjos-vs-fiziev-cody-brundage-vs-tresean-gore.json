@@ -1,0 +1,404 @@
+{
+  "id": "04e1ff7aeda2a018",
+  "url": "http://www.ufcstats.com/fight-details/04e1ff7aeda2a018",
+  "event": {
+    "id": "31da66df48c0c1a0",
+    "name": "UFC Fight Night: Dos Anjos vs. Fiziev",
+    "url": "http://www.ufcstats.com/event-details/31da66df48c0c1a0"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "147e70aa6cc48cfc",
+      "name": "Tresean Gore",
+      "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc",
+      "nickname": "Mr. Vicious",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:50",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      },
+      {
+        "id": "147e70aa6cc48cfc",
+        "name": "Tresean Gore",
+        "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 39,
+          "raw": "15 of 39"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 49,
+          "raw": "23 of 49"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:18",
+        "controlSeconds": 78
+      },
+      {
+        "fighter": {
+          "id": "147e70aa6cc48cfc",
+          "name": "Tresean Gore",
+          "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 25,
+          "raw": "8 of 25"
+        },
+        "significantStrikePercent": 32,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 27,
+          "raw": "8 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        {
+          "id": "147e70aa6cc48cfc",
+          "name": "Tresean Gore",
+          "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 39,
+            "raw": "15 of 39"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 49,
+            "raw": "23 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:18",
+          "controlSeconds": 78
+        },
+        {
+          "fighter": {
+            "id": "147e70aa6cc48cfc",
+            "name": "Tresean Gore",
+            "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 25,
+            "raw": "8 of 25"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      },
+      {
+        "id": "147e70aa6cc48cfc",
+        "name": "Tresean Gore",
+        "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 39,
+          "raw": "15 of 39"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 10,
+          "attempted": 33,
+          "raw": "10 of 33"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 33,
+          "raw": "12 of 33"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "147e70aa6cc48cfc",
+          "name": "Tresean Gore",
+          "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 25,
+          "raw": "8 of 25"
+        },
+        "significantStrikePercent": 32,
+        "head": {
+          "landed": 2,
+          "attempted": 15,
+          "raw": "2 of 15"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 25,
+          "raw": "8 of 25"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        {
+          "id": "147e70aa6cc48cfc",
+          "name": "Tresean Gore",
+          "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 39,
+            "raw": "15 of 39"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 33,
+            "raw": "12 of 33"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "147e70aa6cc48cfc",
+            "name": "Tresean Gore",
+            "url": "http://www.ufcstats.com/fighter-details/147e70aa6cc48cfc"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 25,
+            "raw": "8 of 25"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 2,
+            "attempted": 15,
+            "raw": "2 of 15"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 25,
+            "raw": "8 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/04e1ff7aeda2a018",
+    "fetchedAt": "2026-05-19T16:55:47.244Z"
+  }
+}

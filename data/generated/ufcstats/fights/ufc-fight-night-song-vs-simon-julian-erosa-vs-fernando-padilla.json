@@ -1,0 +1,404 @@
+{
+  "id": "e0e2c1fc1a178d89",
+  "url": "http://www.ufcstats.com/fight-details/e0e2c1fc1a178d89",
+  "event": {
+    "id": "51b1e2fd9872005b",
+    "name": "UFC Fight Night: Song vs. Simon",
+    "url": "http://www.ufcstats.com/event-details/51b1e2fd9872005b"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "902ec2cc48c8ae8a",
+      "name": "Julian Erosa",
+      "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a",
+      "nickname": "Juicy J",
+      "result": "L"
+    },
+    {
+      "id": "d2f43cfaf8ca3560",
+      "name": "Fernando Padilla",
+      "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560",
+      "nickname": "El Valiente",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:41",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "902ec2cc48c8ae8a",
+        "name": "Julian Erosa",
+        "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+      },
+      {
+        "id": "d2f43cfaf8ca3560",
+        "name": "Fernando Padilla",
+        "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "902ec2cc48c8ae8a",
+          "name": "Julian Erosa",
+          "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "significantStrikePercent": 62,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "d2f43cfaf8ca3560",
+          "name": "Fernando Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "significantStrikePercent": 68,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "902ec2cc48c8ae8a",
+          "name": "Julian Erosa",
+          "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+        },
+        {
+          "id": "d2f43cfaf8ca3560",
+          "name": "Fernando Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "902ec2cc48c8ae8a",
+            "name": "Julian Erosa",
+            "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d2f43cfaf8ca3560",
+            "name": "Fernando Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 29,
+            "raw": "20 of 29"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 29,
+            "raw": "20 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "902ec2cc48c8ae8a",
+        "name": "Julian Erosa",
+        "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+      },
+      {
+        "id": "d2f43cfaf8ca3560",
+        "name": "Fernando Padilla",
+        "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "902ec2cc48c8ae8a",
+          "name": "Julian Erosa",
+          "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "significantStrikePercent": 62,
+        "head": {
+          "landed": 9,
+          "attempted": 18,
+          "raw": "9 of 18"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d2f43cfaf8ca3560",
+          "name": "Fernando Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "significantStrikePercent": 68,
+        "head": {
+          "landed": 17,
+          "attempted": 25,
+          "raw": "17 of 25"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 28,
+          "raw": "19 of 28"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "902ec2cc48c8ae8a",
+          "name": "Julian Erosa",
+          "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+        },
+        {
+          "id": "d2f43cfaf8ca3560",
+          "name": "Fernando Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "902ec2cc48c8ae8a",
+            "name": "Julian Erosa",
+            "url": "http://www.ufcstats.com/fighter-details/902ec2cc48c8ae8a"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d2f43cfaf8ca3560",
+            "name": "Fernando Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/d2f43cfaf8ca3560"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 29,
+            "raw": "20 of 29"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 17,
+            "attempted": 25,
+            "raw": "17 of 25"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e0e2c1fc1a178d89",
+    "fetchedAt": "2026-05-19T16:56:48.049Z"
+  }
+}

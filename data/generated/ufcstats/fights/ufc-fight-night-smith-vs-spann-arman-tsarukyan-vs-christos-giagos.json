@@ -1,0 +1,404 @@
+{
+  "id": "13a8ddb1c3f55ed4",
+  "url": "http://www.ufcstats.com/fight-details/13a8ddb1c3f55ed4",
+  "event": {
+    "id": "4c27ca8c8481f79a",
+    "name": "UFC Fight Night: Smith vs. Spann",
+    "url": "http://www.ufcstats.com/event-details/4c27ca8c8481f79a"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "eae48ff31db420c2",
+      "name": "Arman Tsarukyan",
+      "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2",
+      "nickname": "Ahalkalakets",
+      "result": "W"
+    },
+    {
+      "id": "de45aaae23dfa392",
+      "name": "Christos Giagos",
+      "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392",
+      "nickname": "The Spartan",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "eae48ff31db420c2",
+        "name": "Arman Tsarukyan",
+        "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        },
+        "significantStrikePercent": 70,
+        "totalStrikes": {
+          "landed": 27,
+          "attempted": 37,
+          "raw": "27 of 37"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "significantStrikePercent": 16,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:49",
+        "controlSeconds": 49
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "eae48ff31db420c2",
+            "name": "Arman Tsarukyan",
+            "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 37,
+            "raw": "27 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "significantStrikePercent": 16,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:49",
+          "controlSeconds": 49
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "eae48ff31db420c2",
+        "name": "Arman Tsarukyan",
+        "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        },
+        "significantStrikePercent": 70,
+        "head": {
+          "landed": 21,
+          "attempted": 29,
+          "raw": "21 of 29"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 18,
+          "attempted": 21,
+          "raw": "18 of 21"
+        }
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "significantStrikePercent": 16,
+        "head": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "eae48ff31db420c2",
+          "name": "Arman Tsarukyan",
+          "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "eae48ff31db420c2",
+            "name": "Arman Tsarukyan",
+            "url": "http://www.ufcstats.com/fighter-details/eae48ff31db420c2"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 21,
+            "attempted": 29,
+            "raw": "21 of 29"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 21,
+            "raw": "18 of 21"
+          }
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "significantStrikePercent": 16,
+          "head": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/13a8ddb1c3f55ed4",
+    "fetchedAt": "2026-05-19T17:04:48.585Z"
+  }
+}

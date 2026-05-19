@@ -1,0 +1,584 @@
+{
+  "id": "5256ba94641a4284",
+  "url": "http://www.ufcstats.com/fight-details/5256ba94641a4284",
+  "event": {
+    "id": "3ab0df1ddd5f1dc2",
+    "name": "UFC Fight Night: Moreno vs. Albazi",
+    "url": "http://www.ufcstats.com/event-details/3ab0df1ddd5f1dc2"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b8a85389d115e35a",
+      "name": "Jack Shore",
+      "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a",
+      "nickname": "Tank",
+      "result": "L"
+    },
+    {
+      "id": "52c2ae6d2f2d2613",
+      "name": "Youssef Zalal",
+      "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613",
+      "nickname": "The Moroccan Devil",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "0:59",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Luke Boutin",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b8a85389d115e35a",
+        "name": "Jack Shore",
+        "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+      },
+      {
+        "id": "52c2ae6d2f2d2613",
+        "name": "Youssef Zalal",
+        "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 18,
+          "raw": "8 of 18"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 21,
+          "raw": "10 of 21"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:49",
+        "controlSeconds": 109
+      },
+      {
+        "fighter": {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 37,
+          "raw": "21 of 37"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:07",
+        "controlSeconds": 127
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8a85389d115e35a",
+            "name": "Jack Shore",
+            "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:49",
+          "controlSeconds": 109
+        },
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:39",
+          "controlSeconds": 99
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8a85389d115e35a",
+            "name": "Jack Shore",
+            "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b8a85389d115e35a",
+        "name": "Jack Shore",
+        "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+      },
+      {
+        "id": "52c2ae6d2f2d2613",
+        "name": "Youssef Zalal",
+        "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 18,
+          "raw": "8 of 18"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 9,
+          "attempted": 22,
+          "raw": "9 of 22"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 23,
+          "raw": "11 of 23"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8a85389d115e35a",
+            "name": "Jack Shore",
+            "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8a85389d115e35a",
+          "name": "Jack Shore",
+          "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+        },
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8a85389d115e35a",
+            "name": "Jack Shore",
+            "url": "http://www.ufcstats.com/fighter-details/b8a85389d115e35a"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5256ba94641a4284",
+    "fetchedAt": "2026-05-19T16:52:55.370Z"
+  }
+}

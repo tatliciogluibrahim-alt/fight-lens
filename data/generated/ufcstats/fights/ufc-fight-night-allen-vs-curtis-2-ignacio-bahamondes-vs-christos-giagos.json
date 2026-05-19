@@ -1,0 +1,404 @@
+{
+  "id": "6ff21ea2c75c48ed",
+  "url": "http://www.ufcstats.com/fight-details/6ff21ea2c75c48ed",
+  "event": {
+    "id": "899eaba48fa864a6",
+    "name": "UFC Fight Night: Allen vs. Curtis 2",
+    "url": "http://www.ufcstats.com/event-details/899eaba48fa864a6"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e4a47b07044ddd72",
+      "name": "Ignacio Bahamondes",
+      "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72",
+      "nickname": "La Jaula",
+      "result": "W"
+    },
+    {
+      "id": "de45aaae23dfa392",
+      "name": "Christos Giagos",
+      "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392",
+      "nickname": "The Spartan",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:34",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e4a47b07044ddd72",
+        "name": "Ignacio Bahamondes",
+        "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 68,
+          "raw": "40 of 68"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 69,
+          "raw": "40 of 69"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 45,
+          "raw": "17 of 45"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 46,
+          "raw": "18 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e4a47b07044ddd72",
+            "name": "Ignacio Bahamondes",
+            "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 68,
+            "raw": "40 of 68"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 69,
+            "raw": "40 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e4a47b07044ddd72",
+        "name": "Ignacio Bahamondes",
+        "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+      },
+      {
+        "id": "de45aaae23dfa392",
+        "name": "Christos Giagos",
+        "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 68,
+          "raw": "40 of 68"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 26,
+          "attempted": 53,
+          "raw": "26 of 53"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 56,
+          "raw": "33 of 56"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 45,
+          "raw": "17 of 45"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 7,
+          "attempted": 31,
+          "raw": "7 of 31"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 44,
+          "raw": "16 of 44"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e4a47b07044ddd72",
+          "name": "Ignacio Bahamondes",
+          "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+        },
+        {
+          "id": "de45aaae23dfa392",
+          "name": "Christos Giagos",
+          "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e4a47b07044ddd72",
+            "name": "Ignacio Bahamondes",
+            "url": "http://www.ufcstats.com/fighter-details/e4a47b07044ddd72"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 68,
+            "raw": "40 of 68"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 26,
+            "attempted": 53,
+            "raw": "26 of 53"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 56,
+            "raw": "33 of 56"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "de45aaae23dfa392",
+            "name": "Christos Giagos",
+            "url": "http://www.ufcstats.com/fighter-details/de45aaae23dfa392"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 7,
+            "attempted": 31,
+            "raw": "7 of 31"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/6ff21ea2c75c48ed",
+    "fetchedAt": "2026-05-19T16:57:00.386Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "f6a3c78f15ff26c7",
+  "url": "http://www.ufcstats.com/fight-details/f6a3c78f15ff26c7",
+  "event": {
+    "id": "66766984842c13dc",
+    "name": "UFC 317: Topuria vs. Oliveira",
+    "url": "http://www.ufcstats.com/event-details/66766984842c13dc"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6e743a33d56bdaa4",
+      "name": "Payton Talbott",
+      "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "9256f591b30c073e",
+      "name": "Felipe Lima",
+      "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e",
+      "nickname": "Jungle Boy",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6e743a33d56bdaa4",
+        "name": "Payton Talbott",
+        "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+      },
+      {
+        "id": "9256f591b30c073e",
+        "name": "Felipe Lima",
+        "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 118,
+          "raw": "59 of 118"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 97,
+          "attempted": 165,
+          "raw": "97 of 165"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "4:49",
+        "controlSeconds": 289
+      },
+      {
+        "fighter": {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 58,
+          "raw": "26 of 58"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 37,
+          "attempted": 70,
+          "raw": "37 of 70"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 15,
+          "raw": "3 of 15"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:23",
+        "controlSeconds": 203
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 36,
+            "raw": "22 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 27,
+            "raw": "17 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:45",
+          "controlSeconds": 105
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 62,
+            "raw": "35 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:52",
+          "controlSeconds": 112
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 46,
+            "raw": "24 of 46"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 67,
+            "raw": "40 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:14",
+          "controlSeconds": 74
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:08",
+          "controlSeconds": 68
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6e743a33d56bdaa4",
+        "name": "Payton Talbott",
+        "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+      },
+      {
+        "id": "9256f591b30c073e",
+        "name": "Felipe Lima",
+        "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 118,
+          "raw": "59 of 118"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 48,
+          "attempted": 103,
+          "raw": "48 of 103"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "distance": {
+          "landed": 37,
+          "attempted": 93,
+          "raw": "37 of 93"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 20,
+          "attempted": 23,
+          "raw": "20 of 23"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 58,
+          "raw": "26 of 58"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 17,
+          "attempted": 48,
+          "raw": "17 of 48"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 52,
+          "raw": "21 of 52"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 19,
+            "attempted": 42,
+            "raw": "19 of 42"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 34,
+            "raw": "10 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 12,
+            "raw": "11 of 12"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+        },
+        {
+          "id": "9256f591b30c073e",
+          "name": "Felipe Lima",
+          "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6e743a33d56bdaa4",
+            "name": "Payton Talbott",
+            "url": "http://www.ufcstats.com/fighter-details/6e743a33d56bdaa4"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 46,
+            "raw": "24 of 46"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 40,
+            "raw": "18 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9256f591b30c073e",
+            "name": "Felipe Lima",
+            "url": "http://www.ufcstats.com/fighter-details/9256f591b30c073e"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f6a3c78f15ff26c7",
+    "fetchedAt": "2026-05-19T17:04:19.989Z"
+  }
+}

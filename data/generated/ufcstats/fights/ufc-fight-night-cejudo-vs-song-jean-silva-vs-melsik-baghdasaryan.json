@@ -1,0 +1,404 @@
+{
+  "id": "8ef7723b6a8b45e1",
+  "url": "http://www.ufcstats.com/fight-details/8ef7723b6a8b45e1",
+  "event": {
+    "id": "c50ea21fe9ef478d",
+    "name": "UFC Fight Night: Cejudo vs. Song",
+    "url": "http://www.ufcstats.com/event-details/c50ea21fe9ef478d"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "52ef95b5860fb28c",
+      "name": "Jean Silva",
+      "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c",
+      "nickname": "Lord",
+      "result": "W"
+    },
+    {
+      "id": "a52bc1e62cf0b7c6",
+      "name": "Melsik Baghdasaryan",
+      "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6",
+      "nickname": "The Gun",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin MacDonald",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "52ef95b5860fb28c",
+        "name": "Jean Silva",
+        "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+      },
+      {
+        "id": "a52bc1e62cf0b7c6",
+        "name": "Melsik Baghdasaryan",
+        "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "52ef95b5860fb28c",
+          "name": "Jean Silva",
+          "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 27,
+          "raw": "18 of 27"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 27,
+          "raw": "18 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "a52bc1e62cf0b7c6",
+          "name": "Melsik Baghdasaryan",
+          "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "52ef95b5860fb28c",
+          "name": "Jean Silva",
+          "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+        },
+        {
+          "id": "a52bc1e62cf0b7c6",
+          "name": "Melsik Baghdasaryan",
+          "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52ef95b5860fb28c",
+            "name": "Jean Silva",
+            "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "a52bc1e62cf0b7c6",
+            "name": "Melsik Baghdasaryan",
+            "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "52ef95b5860fb28c",
+        "name": "Jean Silva",
+        "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+      },
+      {
+        "id": "a52bc1e62cf0b7c6",
+        "name": "Melsik Baghdasaryan",
+        "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "52ef95b5860fb28c",
+          "name": "Jean Silva",
+          "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 27,
+          "raw": "18 of 27"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a52bc1e62cf0b7c6",
+          "name": "Melsik Baghdasaryan",
+          "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "head": {
+          "landed": 5,
+          "attempted": 20,
+          "raw": "5 of 20"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "52ef95b5860fb28c",
+          "name": "Jean Silva",
+          "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+        },
+        {
+          "id": "a52bc1e62cf0b7c6",
+          "name": "Melsik Baghdasaryan",
+          "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52ef95b5860fb28c",
+            "name": "Jean Silva",
+            "url": "http://www.ufcstats.com/fighter-details/52ef95b5860fb28c"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a52bc1e62cf0b7c6",
+            "name": "Melsik Baghdasaryan",
+            "url": "http://www.ufcstats.com/fighter-details/a52bc1e62cf0b7c6"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8ef7723b6a8b45e1",
+    "fetchedAt": "2026-05-19T17:03:23.722Z"
+  }
+}

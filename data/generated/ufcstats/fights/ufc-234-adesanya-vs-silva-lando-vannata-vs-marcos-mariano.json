@@ -1,0 +1,404 @@
+{
+  "id": "aa71cf96ba4e5a36",
+  "url": "http://www.ufcstats.com/fight-details/aa71cf96ba4e5a36",
+  "event": {
+    "id": "b5882371e2a3900d",
+    "name": "UFC 234: Adesanya vs. Silva",
+    "url": "http://www.ufcstats.com/event-details/b5882371e2a3900d"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f9b200db02b488d9",
+      "name": "Lando Vannata",
+      "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9",
+      "nickname": "Groovy",
+      "result": "W"
+    },
+    {
+      "id": "72e5e5a6edfa8223",
+      "name": "Marcos Mariano",
+      "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223",
+      "nickname": "Dhalsim",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "4:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Steve Perceval",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f9b200db02b488d9",
+        "name": "Lando Vannata",
+        "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+      },
+      {
+        "id": "72e5e5a6edfa8223",
+        "name": "Marcos Mariano",
+        "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f9b200db02b488d9",
+          "name": "Lando Vannata",
+          "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 40,
+          "raw": "20 of 40"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 64,
+          "raw": "39 of 64"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:35",
+        "controlSeconds": 215
+      },
+      {
+        "fighter": {
+          "id": "72e5e5a6edfa8223",
+          "name": "Marcos Mariano",
+          "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f9b200db02b488d9",
+          "name": "Lando Vannata",
+          "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+        },
+        {
+          "id": "72e5e5a6edfa8223",
+          "name": "Marcos Mariano",
+          "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f9b200db02b488d9",
+            "name": "Lando Vannata",
+            "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 64,
+            "raw": "39 of 64"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:35",
+          "controlSeconds": 215
+        },
+        {
+          "fighter": {
+            "id": "72e5e5a6edfa8223",
+            "name": "Marcos Mariano",
+            "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f9b200db02b488d9",
+        "name": "Lando Vannata",
+        "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+      },
+      {
+        "id": "72e5e5a6edfa8223",
+        "name": "Marcos Mariano",
+        "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f9b200db02b488d9",
+          "name": "Lando Vannata",
+          "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 40,
+          "raw": "20 of 40"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 18,
+          "attempted": 37,
+          "raw": "18 of 37"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 18,
+          "attempted": 36,
+          "raw": "18 of 36"
+        }
+      },
+      {
+        "fighter": {
+          "id": "72e5e5a6edfa8223",
+          "name": "Marcos Mariano",
+          "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f9b200db02b488d9",
+          "name": "Lando Vannata",
+          "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+        },
+        {
+          "id": "72e5e5a6edfa8223",
+          "name": "Marcos Mariano",
+          "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f9b200db02b488d9",
+            "name": "Lando Vannata",
+            "url": "http://www.ufcstats.com/fighter-details/f9b200db02b488d9"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 18,
+            "attempted": 37,
+            "raw": "18 of 37"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          }
+        },
+        {
+          "fighter": {
+            "id": "72e5e5a6edfa8223",
+            "name": "Marcos Mariano",
+            "url": "http://www.ufcstats.com/fighter-details/72e5e5a6edfa8223"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/aa71cf96ba4e5a36",
+    "fetchedAt": "2026-05-19T16:55:43.837Z"
+  }
+}

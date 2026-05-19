@@ -1,0 +1,764 @@
+{
+  "id": "017a825c7820d12e",
+  "url": "http://www.ufcstats.com/fight-details/017a825c7820d12e",
+  "event": {
+    "id": "28d8638ea0a71908",
+    "name": "UFC Fight Night: Whittaker vs. De Ridder",
+    "url": "http://www.ufcstats.com/event-details/28d8638ea0a71908"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "113df4fde64735c6",
+      "name": "Davey Grant",
+      "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6",
+      "nickname": "Dangerous",
+      "result": "W"
+    },
+    {
+      "id": "da22387a0407a2dc",
+      "name": "Da'Mon Blackshear",
+      "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc",
+      "nickname": "The Monster",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "113df4fde64735c6",
+        "name": "Davey Grant",
+        "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+      },
+      {
+        "id": "da22387a0407a2dc",
+        "name": "Da'Mon Blackshear",
+        "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 66,
+          "attempted": 130,
+          "raw": "66 of 130"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 66,
+          "attempted": 133,
+          "raw": "66 of 133"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:19",
+        "controlSeconds": 19
+      },
+      {
+        "fighter": {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 74,
+          "raw": "33 of 74"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 78,
+          "raw": "36 of 78"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:52",
+        "controlSeconds": 232
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:52",
+          "controlSeconds": 232
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 68,
+            "raw": "34 of 68"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 68,
+            "raw": "34 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "113df4fde64735c6",
+        "name": "Davey Grant",
+        "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+      },
+      {
+        "id": "da22387a0407a2dc",
+        "name": "Da'Mon Blackshear",
+        "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        "significantStrikes": {
+          "landed": 66,
+          "attempted": 130,
+          "raw": "66 of 130"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 17,
+          "attempted": 67,
+          "raw": "17 of 67"
+        },
+        "body": {
+          "landed": 27,
+          "attempted": 39,
+          "raw": "27 of 39"
+        },
+        "leg": {
+          "landed": 22,
+          "attempted": 24,
+          "raw": "22 of 24"
+        },
+        "distance": {
+          "landed": 65,
+          "attempted": 128,
+          "raw": "65 of 128"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 74,
+          "raw": "33 of 74"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 12,
+          "attempted": 45,
+          "raw": "12 of 45"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 16,
+          "raw": "14 of 16"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 72,
+          "raw": "31 of 72"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 9,
+            "attempted": 31,
+            "raw": "9 of 31"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "113df4fde64735c6",
+          "name": "Davey Grant",
+          "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+        },
+        {
+          "id": "da22387a0407a2dc",
+          "name": "Da'Mon Blackshear",
+          "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "113df4fde64735c6",
+            "name": "Davey Grant",
+            "url": "http://www.ufcstats.com/fighter-details/113df4fde64735c6"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 68,
+            "raw": "34 of 68"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 35,
+            "raw": "8 of 35"
+          },
+          "body": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 67,
+            "raw": "33 of 67"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "da22387a0407a2dc",
+            "name": "Da'Mon Blackshear",
+            "url": "http://www.ufcstats.com/fighter-details/da22387a0407a2dc"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 4,
+            "attempted": 24,
+            "raw": "4 of 24"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 36,
+            "raw": "13 of 36"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/017a825c7820d12e",
+    "fetchedAt": "2026-05-19T16:53:17.034Z"
+  }
+}

@@ -64,81 +64,161 @@ Written to `data/generated/backtests/` after each run:
 | **Better-record baseline** | Accuracy of always picking the fighter with the better W-L ratio |
 | **More-experience baseline** | Accuracy of always picking the fighter with more total fights |
 
-## Current corpus (May 2026 expansion — n=76)
+## Current corpus (May 2026 expansion - n=253)
 
-The corpus was expanded from n=13 (UFC 328 only) to n=76 across **6 completed events**:
+The corpus now covers **20 completed UFC events** selected by recency and UFCStats availability. No future events, Road to UFC, or DWCS events were selected as target events. Draws/NCs are skipped unless the scorer explicitly supports them.
 
-| Event | Date | Fights | Outcome source |
-|---|---|---|---|
-| UFC 322: Della Maddalena vs. Makhachev | 2025-11-15 | 14 | UFCStats fight detail |
-| UFC 326: Holloway vs. Oliveira 2 | 2026-03-07 | 12 | UFCStats fight detail |
-| UFC 327: Prochazka vs. Ulberg | 2026-04-11 | 11 (1 draw skipped) | UFCStats fight detail |
-| UFC Fight Night: Della Maddalena vs. Prates | 2026-05-02 | 13 | UFCStats fight detail |
-| UFC 328: Chimaev vs. Strickland | 2026-05-09 | 13 | Locked prediction files |
-| UFC Fight Night: Allen vs. Costa | 2026-05-16 | 13 | UFCStats fight detail |
+| Event | Date | Scored | Skipped | Outcome source |
+|---|---:|---:|---:|---|
+| UFC Fight Night: Allen vs. Costa | 2026-05-16 | 13 | 0 | UFCStats fight detail |
+| UFC 328: Chimaev vs. Strickland | 2026-05-09 | 13 | 0 | Locked prediction files |
+| UFC Fight Night: Della Maddalena vs. Prates | 2026-05-02 | 13 | 0 | UFCStats fight detail |
+| UFC Fight Night: Sterling vs. Zalal | 2026-04-25 | 13 | 0 | UFCStats fight detail |
+| UFC Fight Night: Burns vs. Malott | 2026-04-18 | 11 | 1 draw skipped | UFCStats fight detail |
+| UFC 327: Prochazka vs. Ulberg | 2026-04-11 | 11 | 1 draw skipped | UFCStats fight detail |
+| UFC Fight Night: Moicano vs. Duncan | 2026-04-04 | 13 | 0 | UFCStats fight detail |
+| UFC Fight Night: Adesanya vs. Pyfer | 2026-03-28 | 12 | 1 draw skipped | UFCStats fight detail |
+| UFC Fight Night: Evloev vs. Murphy | 2026-03-21 | 13 | 0 | UFCStats fight detail |
+| UFC Fight Night: Emmett vs. Vallejos | 2026-03-14 | 14 | 0 | UFCStats fight detail |
+| UFC 326: Holloway vs. Oliveira 2 | 2026-03-07 | 12 | 0 | UFCStats fight detail |
+| UFC Fight Night: Moreno vs. Kavanagh | 2026-02-28 | 13 | 0 | UFCStats fight detail |
+| UFC Fight Night: Strickland vs. Hernandez | 2026-02-21 | 13 | 1 NC/overturned skipped | UFCStats fight detail |
+| UFC Fight Night: Bautista vs. Oliveira | 2026-02-07 | 13 | 0 | UFCStats fight detail |
+| UFC 325: Volkanovski vs. Lopes 2 | 2026-01-31 | 13 | 0 | UFCStats fight detail |
+| UFC 324: Gaethje vs. Pimblett | 2026-01-24 | 11 | 0 | UFCStats fight detail |
+| UFC Fight Night: Royval vs. Kape | 2025-12-13 | 11 | 1 draw skipped | UFCStats fight detail |
+| UFC 323: Dvalishvili vs. Yan 2 | 2025-12-06 | 13 | 1 draw skipped | UFCStats fight detail |
+| UFC Fight Night: Tsarukyan vs. Hooker | 2025-11-22 | 14 | 0 | UFCStats fight detail |
+| UFC 322: Della Maddalena vs. Makhachev | 2025-11-15 | 14 | 0 | UFCStats fight detail |
 
-Selection rule: most recent completed UFC events with UFCStats data (no cherry-picking by storyline or favorability).
+The run also skipped 11 UFC 329 fights already present in normalized data because that event is future/upcoming and has no outcomes. Those rows are not part of the completed-event corpus.
 
-## Expanded backtest result (n=76) — three checkpoints
+## Current checkpoint after P0 prediction consistency pass
 
-| | n=13 (UFC 328 only) | n=76 initial coverage | **n=76 deeper coverage** |
-|---|---|---|---|
-| Winner accuracy | 69% | 59% | **66%** |
-| Brier score | 0.224 | 0.251 | **0.236** |
-| Better-record baseline | 46% | 66% | 66% |
-| More-experience baseline | 54% | 43% | 43% |
-| Missing-data rate (per-fight flag) | 38% | 57% | **36%** |
-| Striking / submission per-feature coverage | n/a | 78% | **85%** |
-| Takedown-accuracy coverage | n/a | 65% | **80%** |
-| Takedown-defense coverage | n/a | 70% | **79%** |
-| `opponentTotals` history-item coverage | ~26% | ~28% | **51%** |
+The prediction consistency pass is complete. `predictionViewModel` is the canonical public prediction state and must not be bypassed by fight-page components, matchup rows, record rows, result banners, The Call, Live Path, Method Lean, or future public prediction surfaces.
 
-### Deeper-coverage pass (May 2026)
+Public call behavior:
+- Named fighter calls require at least 52% win probability.
+- Below 52%, including exact 50/50, the public state is `noLean` / "Too close to call".
+- Locked calls pin the public fight page, matchup row, record row, result banner, The Call, Live Path, and Method Lean.
+- Chimaev/Strickland consistently shows Khamzat Chimaev 63%.
+- Van/Taira consistently shows Tatsuro Taira 58%.
+- Steveson/Ellison consistently shows "Too close to call", not "Call: Gable Steveson 50%".
+- Route audit checked 24 routeable fight pages: 24 passed, 0 failed.
 
-The middle column was the first n=76 run with `--max-history-fight-details 60` per event ingestion. The right column was after re-running each ingestion with `--max-history-fight-details 120` and `--max-history-fights-per-fighter 8`. Fight-detail file count grew 439 → 737 (+298). Cache absorbed most repeats.
+Guardrails:
+- Public Model Record must stay separate from historical backtest rows.
+- `opponentTotals` must not regress.
+- Public prediction UI must use `predictionViewModel` as source of truth.
+- Do not show a public model grade until there are enough logged public calls.
+- Do not publicly overclaim accuracy, calibration, or predictive strength.
 
-### Honest read
+## Post-expansion QA checkpoint
 
-Deeper data coverage **closed about half the gap** to the better-record baseline:
-- Winner accuracy moved 59% → 66%, drawing level with the baseline (66%)
-- Brier moved 0.251 → 0.236 — meaningfully below the 0.25 random threshold
-- Missing-data flags fell from 57% → 36% of fights
-- Per-feature coverage moved from 78% → 85% on most stats; takedown stats jumped 65→80% and 70→79%
+Completed on May 19, 2026:
 
-What it did **not** prove:
-- The model still does not *beat* the better-record baseline — it matches it
-- 60–70% and 70–80% buckets still show overconfidence (predicted 65% / actual 54%; predicted 75% / actual 50%). The high-confidence (80%+) bucket flipped to 100% (6/6) but n is tiny
-- n=76 is still small. Calibration buckets at n=6, 13 do not stabilize
+| Check | Result |
+|---|---|
+| `npm run audit:predictions` | Passed: 24 routeable fight pages checked, 24 passed, 0 failed |
+| `npm run backtest` | Passed: 253 scored fights, 17 skipped fights |
+| `npm run lint` | Passed |
+| `npm run build` | Passed |
 
-This is consistent with the hypothesis that the previous regression (59% on the initial pass) was partly a data-coverage artifact, not a model design failure. But more data alone hasn't shown the model to be better than always picking the higher-W/L fighter.
+QA notes:
+- Public Model Record and historical backtest remain separated.
+- Expanded backtest rows do not appear as logged public calls.
+- UFC 329 future rows remain unscored; no future/upcoming outcomes are included.
+- Leakage checks show 72 thin-history warnings and 0 future-date leakage findings.
+- `opponentTotals` remains present in the selected corpus: 2,940 of 4,917 history items, roughly 60% item-level coverage.
+- `ode-osbourne-alibi-idiris` source data resolves as `Overturned` / `NC`, so it remains skipped as a non-directional outcome.
 
-### Event-by-event (deeper-coverage run)
+## Expanded backtest result
 
-| Event | Winner acc | Brier | Method acc | Δ vs prior |
-|---|---|---|---|---|
-| UFC 322 | 64% (9/14) | 0.258 | 64% | +7 pts |
-| UFC 326 | 75% (9/12) | 0.256 | 58% | +8 pts |
-| UFC 327 | 55% (6/11) | 0.233 | 36% | unchanged |
-| UFC 328 | 69% (9/13) | 0.210 | 38% | unchanged (locked) |
-| UFC FN DDM-Prates | 77% (10/13) | 0.221 | 62% | +8 pts |
-| UFC FN Allen-Costa | 54% (7/13) | 0.239 | 46% | +16 pts |
+| Metric | n=76 deeper history | n=253 expanded corpus |
+|---|---:|---:|
+| Events | 6 | 20 |
+| Scored fights | 76 | 253 |
+| Winner accuracy | 66% | 66% |
+| Method accuracy | 51% | 58% |
+| Brier score | 0.236 | 0.219 |
+| Better-record baseline | 66% | 71% |
+| More-experience baseline | 43% | 40% |
+| Model vs better-record | 0 pts | -5 pts |
+| Missing-data rate | 36% | 40% |
+| `opponentTotals` history-item coverage | ~51% | ~60% |
 
-UFC FN Allen-Costa, which had pulled the previous average down (38% → 54%), is now the noisiest event in the sample but no longer a clear outlier.
+### Feature coverage
+
+| Feature | Coverage |
+|---|---:|
+| SLpM | 90% |
+| Striking accuracy | 90% |
+| SApM | 90% |
+| Striking defense | 90% |
+| Takedown average | 90% |
+| Takedown accuracy | 82% |
+| Takedown defense | 83% |
+| Submission average | 90% |
+| Reach | 100% |
+| Stance | 99% |
+| DOB | 100% |
+| Days since last fight | 100% |
+
+`opponentTotals` remains present in `fightHistory`: 2,940 of 4,917 history items have opponent totals, roughly 60% item-level coverage.
+
+### Calibration
+
+| Bucket | n | Accuracy | Predicted midpoint | Actual win rate |
+|---|---:|---:|---:|---:|
+| 50-60% | 135 | 61% | 55% | 61% |
+| 60-70% | 57 | 61% | 65% | 61% |
+| 70-80% | 28 | 64% | 75% | 64% |
+| 80%+ | 33 | 94% | 90% | 94% |
+
+The 50-60 and 80%+ buckets are directionally reasonable in this run. The 60-80 range still looks overconfident. Treat this as a calibration review input, not a reason to tune weights immediately.
+
+### Event-by-event
+
+| Event | Winner acc | Brier | Method acc |
+|---|---:|---:|---:|
+| UFC 322 | 50% | 0.250 | 64% |
+| UFC 323 | 69% | 0.204 | 77% |
+| UFC 324 | 82% | 0.158 | 73% |
+| UFC 325 | 69% | 0.239 | 62% |
+| UFC 326 | 67% | 0.261 | 58% |
+| UFC 327 | 45% | 0.245 | 36% |
+| UFC 328 | 54% | 0.241 | 38% |
+| UFC FN Adesanya-Pyfer | 75% | 0.200 | 50% |
+| UFC FN Allen-Costa | 54% | 0.234 | 46% |
+| UFC FN Bautista-Oliveira | 77% | 0.167 | 54% |
+| UFC FN Burns-Malott | 36% | 0.308 | 55% |
+| UFC FN Della Maddalena-Prates | 69% | 0.234 | 62% |
+| UFC FN Emmett-Vallejos | 64% | 0.225 | 64% |
+| UFC FN Evloev-Murphy | 69% | 0.198 | 46% |
+| UFC FN Moicano-Duncan | 69% | 0.198 | 62% |
+| UFC FN Moreno-Kavanagh | 77% | 0.154 | 69% |
+| UFC FN Royval-Kape | 82% | 0.180 | 55% |
+| UFC FN Sterling-Zalal | 46% | 0.281 | 85% |
+| UFC FN Strickland-Hernandez | 77% | 0.202 | 38% |
+| UFC FN Tsarukyan-Hooker | 86% | 0.204 | 57% |
 
 ## Known limitations
 
-### 1. Partial opponent-stats coverage
-`sapm`, `strikingDefense`, and `takedownDefense` are computed from `opponentTotals` in `fightHistory`, but those are only stored for fights where the normalizer has scraped fight-detail data. Career history items without scraped details fall back to UFC averages.
+### 1. Better-record baseline leads
 
-**Coverage today (n=76 corpus, post-deeper-pass):** 85% on most aggregate stats; takedown accuracy 80%; takedown defense 79%.
+The model held 66% winner accuracy as the corpus grew, but the better-record baseline rose to 71%. That means the current formulas are directionally useful but not proven superior to a simple W-L ratio baseline.
 
-**How to improve further:** push `--max-history-fight-details` higher than 120, or run a dedicated fighter-history backfill pass that walks each fighter's career and ingests every detail page.
+### 2. Thin-history warnings are common
 
-### 2. Calibration is off
-The model is overclaiming confidence in the 60–80% bucket on this corpus. **Do not adjust weights to chase this number** — that would overfit the sample. Re-examine after the corpus reaches n≥200 (15–20 events).
+The leakage report shows 72 warning rows. These are thin/no prior history warnings, not future-date leakage. The backtest still filters `fightHistory` strictly before each fight date.
 
-### 3. Sample size still early
-n=76 is large enough to falsify the n=13 result but too small to publish stable accuracy numbers. Calibration buckets need n≥30 each to be meaningful; today the 70-80% bucket has only n=6, 80%+ has only n=7.
+### 3. Partial opponent-stats coverage remains
+
+`sapm`, `strikingDefense`, and `takedownDefense` depend on `opponentTotals` in `fightHistory`. Coverage improved from roughly 51% to 60%, but about 40% of history items still lack opponent totals.
+
+### 4. One selected fight is non-directional
+
+`ode-osbourne-alibi-idiris` in UFC Fight Night: Strickland vs. Hernandez has source data marked `Overturned` with both fighters recorded as `NC`. It should remain skipped unless source data changes to a scoreable directional outcome.
 
 ## Adding more historical data
 
@@ -147,22 +227,17 @@ npm run ingest:ufcstats -- \
   --event-url <ufcstats event URL> \
   --include-fights --include-fighters --include-history-fights \
   --max-fights 14 --max-fighters 28 \
-  --max-history-fights-per-fighter 4 --max-history-fight-details 60 \
-  --max-requests 150 --delay-ms 500
+  --max-history-fights-per-fighter 8 --max-history-fight-details 120 \
+  --max-requests 220 --delay-ms 500
 
 npm run normalize:data -- --event <slug>
 npm run backtest
 ```
 
-No code changes needed — the runner auto-loads every JSON in `data/normalized/events/` and pulls outcomes from prediction files or UFCStats fight detail, in that order.
+No code changes needed. The runner auto-loads every JSON in `data/normalized/events/` and pulls outcomes from prediction files or UFCStats fight detail, in that order.
 
 ## Recommendation for next step
 
-The deeper-coverage pass (May 2026) is done. The recommendation now sequences:
+The 20-event backend expansion is complete and the target n >= 200 is met. Do not tune weights yet.
 
-1. **Expand the corpus to 20–30 completed events** with the same selection rule (most recent completed cards). Reach n≥200 fights so the calibration buckets actually stabilize. At today's per-bucket counts (n=6, 13) we cannot tell whether the 60–80% overconfidence is signal or noise.
-2. **Hold off on weight tuning** until step 1 lands. Tuning on n=76 with coverage gaps still around 15–20% on the takedown stats would overfit to this specific sample.
-3. **Consider a second deeper-coverage pass** only if per-feature coverage stops improving naturally as the corpus grows. Each new event automatically backfills history pages for the fighters who appear on it.
-4. **A model review** belongs after step 1 — at that point we will know whether the model is structurally below the better-record baseline (formula/feature problem) or whether the calibration buckets stabilize at honest numbers as n grows.
-
-The opponentTotals fix and the source-of-truth view model from the previous passes are preserved and working. This pass closed the data-coverage gap and moved the model from 7 points below the better-record baseline to level with it — useful, but still not proof.
+Recommended next step: a backend-only model review and controlled calibration analysis. Focus on why the better-record baseline is ahead, why the 60-80% buckets are overconfident, and whether thin-history fights should be segmented before any formula changes. Keep UI unchanged, public Model Record separate from historical backtests, and `predictionViewModel` as the public source of truth.

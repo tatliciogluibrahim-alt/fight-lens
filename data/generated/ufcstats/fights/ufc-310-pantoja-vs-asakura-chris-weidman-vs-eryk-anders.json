@@ -1,0 +1,584 @@
+{
+  "id": "0f16d83859d608c7",
+  "url": "http://www.ufcstats.com/fight-details/0f16d83859d608c7",
+  "event": {
+    "id": "ad23903ef3af7406",
+    "name": "UFC 310: Pantoja vs. Asakura",
+    "url": "http://www.ufcstats.com/event-details/ad23903ef3af7406"
+  },
+  "title": "Catch Weight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3a8176e15b9887c1",
+      "name": "Chris Weidman",
+      "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1",
+      "nickname": "The All-American",
+      "result": "L"
+    },
+    {
+      "id": "cad24459b28592ca",
+      "name": "Eryk Anders",
+      "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca",
+      "nickname": "Ya Boi",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:51",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3a8176e15b9887c1",
+        "name": "Chris Weidman",
+        "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+      },
+      {
+        "id": "cad24459b28592ca",
+        "name": "Eryk Anders",
+        "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 36,
+          "raw": "16 of 36"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 27,
+          "attempted": 50,
+          "raw": "27 of 50"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:15",
+        "controlSeconds": 135
+      },
+      {
+        "fighter": {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 102,
+          "raw": "62 of 102"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 121,
+          "attempted": 193,
+          "raw": "121 of 193"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:24",
+        "controlSeconds": 264
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a8176e15b9887c1",
+            "name": "Chris Weidman",
+            "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:10",
+          "controlSeconds": 130
+        },
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 29,
+            "raw": "12 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:41",
+          "controlSeconds": 41
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a8176e15b9887c1",
+            "name": "Chris Weidman",
+            "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 79,
+            "raw": "51 of 79"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 109,
+            "attempted": 164,
+            "raw": "109 of 164"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:43",
+          "controlSeconds": 223
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3a8176e15b9887c1",
+        "name": "Chris Weidman",
+        "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+      },
+      {
+        "id": "cad24459b28592ca",
+        "name": "Eryk Anders",
+        "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 36,
+          "raw": "16 of 36"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 23,
+          "raw": "12 of 23"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        }
+      },
+      {
+        "fighter": {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 102,
+          "raw": "62 of 102"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 56,
+          "attempted": 96,
+          "raw": "56 of 96"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "ground": {
+          "landed": 48,
+          "attempted": 65,
+          "raw": "48 of 65"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a8176e15b9887c1",
+            "name": "Chris Weidman",
+            "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a8176e15b9887c1",
+          "name": "Chris Weidman",
+          "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+        },
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a8176e15b9887c1",
+            "name": "Chris Weidman",
+            "url": "http://www.ufcstats.com/fighter-details/3a8176e15b9887c1"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 79,
+            "raw": "51 of 79"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 48,
+            "attempted": 76,
+            "raw": "48 of 76"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 47,
+            "attempted": 64,
+            "raw": "47 of 64"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/0f16d83859d608c7",
+    "fetchedAt": "2026-05-19T16:59:28.341Z"
+  }
+}

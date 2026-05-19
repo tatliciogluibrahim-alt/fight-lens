@@ -1,0 +1,404 @@
+{
+  "id": "0320a6a967069571",
+  "url": "http://www.ufcstats.com/fight-details/0320a6a967069571",
+  "event": {
+    "id": "53e4e21f4c688801",
+    "name": "UFC Fight Night: Dariush vs. Tsarukyan",
+    "url": "http://www.ufcstats.com/event-details/53e4e21f4c688801"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "23dec7c47cb418f8",
+      "name": "Zach Reese",
+      "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8",
+      "nickname": "Savage",
+      "result": "L"
+    },
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:49",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jeff Rexroad",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "significantStrikePercent": 80,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "significantStrikePercent": 75,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:25",
+        "controlSeconds": 85
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 16,
+            "raw": "12 of 16"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:25",
+          "controlSeconds": 85
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "significantStrikePercent": 80,
+        "head": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "significantStrikePercent": 75,
+        "head": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/0320a6a967069571",
+    "fetchedAt": "2026-05-19T17:01:05.601Z"
+  }
+}

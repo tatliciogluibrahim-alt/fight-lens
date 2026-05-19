@@ -1,0 +1,404 @@
+{
+  "id": "3b12094dd48c2dc5",
+  "url": "http://www.ufcstats.com/fight-details/3b12094dd48c2dc5",
+  "event": {
+    "id": "cba3a2dfbc06ce79",
+    "name": "UFC Fight Night: Cannonier vs. Imavov",
+    "url": "http://www.ufcstats.com/event-details/cba3a2dfbc06ce79"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d0e1b42d41dab603",
+      "name": "Julian Marquez",
+      "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603",
+      "nickname": "The Cuban Missile Crisis",
+      "result": "L"
+    },
+    {
+      "id": "23dec7c47cb418f8",
+      "name": "Zach Reese",
+      "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8",
+      "nickname": "Savage",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d0e1b42d41dab603",
+        "name": "Julian Marquez",
+        "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+      },
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d0e1b42d41dab603",
+            "name": "Julian Marquez",
+            "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d0e1b42d41dab603",
+        "name": "Julian Marquez",
+        "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+      },
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d0e1b42d41dab603",
+            "name": "Julian Marquez",
+            "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/3b12094dd48c2dc5",
+    "fetchedAt": "2026-05-19T17:01:05.387Z"
+  }
+}

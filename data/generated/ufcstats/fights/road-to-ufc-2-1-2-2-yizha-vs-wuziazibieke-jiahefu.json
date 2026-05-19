@@ -1,0 +1,404 @@
+{
+  "id": "d9678b13d95fed79",
+  "url": "http://www.ufcstats.com/fight-details/d9678b13d95fed79",
+  "event": {
+    "id": "23459ee7e373b98f",
+    "name": "Road to UFC 2.1 + 2.2",
+    "url": "http://www.ufcstats.com/event-details/23459ee7e373b98f"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3f11fd1751fa83b1",
+      "name": "Yizha",
+      "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2d077e22886298be",
+      "name": "Wuziazibieke Jiahefu",
+      "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be",
+      "nickname": "Prairie Kitty",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:28",
+    "timeFormat": "3 Rnd + OT (5-5-5-5)",
+    "referee": "Thomas Fan",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3f11fd1751fa83b1",
+        "name": "Yizha",
+        "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+      },
+      {
+        "id": "2d077e22886298be",
+        "name": "Wuziazibieke Jiahefu",
+        "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3f11fd1751fa83b1",
+          "name": "Yizha",
+          "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 23,
+          "raw": "16 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:42",
+        "controlSeconds": 42
+      },
+      {
+        "fighter": {
+          "id": "2d077e22886298be",
+          "name": "Wuziazibieke Jiahefu",
+          "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:03",
+        "controlSeconds": 63
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3f11fd1751fa83b1",
+          "name": "Yizha",
+          "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+        },
+        {
+          "id": "2d077e22886298be",
+          "name": "Wuziazibieke Jiahefu",
+          "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3f11fd1751fa83b1",
+            "name": "Yizha",
+            "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 23,
+            "raw": "16 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:42",
+          "controlSeconds": 42
+        },
+        {
+          "fighter": {
+            "id": "2d077e22886298be",
+            "name": "Wuziazibieke Jiahefu",
+            "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:03",
+          "controlSeconds": 63
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3f11fd1751fa83b1",
+        "name": "Yizha",
+        "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+      },
+      {
+        "id": "2d077e22886298be",
+        "name": "Wuziazibieke Jiahefu",
+        "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3f11fd1751fa83b1",
+          "name": "Yizha",
+          "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2d077e22886298be",
+          "name": "Wuziazibieke Jiahefu",
+          "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3f11fd1751fa83b1",
+          "name": "Yizha",
+          "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+        },
+        {
+          "id": "2d077e22886298be",
+          "name": "Wuziazibieke Jiahefu",
+          "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3f11fd1751fa83b1",
+            "name": "Yizha",
+            "url": "http://www.ufcstats.com/fighter-details/3f11fd1751fa83b1"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2d077e22886298be",
+            "name": "Wuziazibieke Jiahefu",
+            "url": "http://www.ufcstats.com/fighter-details/2d077e22886298be"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d9678b13d95fed79",
+    "fetchedAt": "2026-05-19T17:02:52.591Z"
+  }
+}

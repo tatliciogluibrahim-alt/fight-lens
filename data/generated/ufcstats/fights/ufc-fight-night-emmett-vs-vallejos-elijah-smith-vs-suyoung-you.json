@@ -1,0 +1,584 @@
+{
+  "id": "f44b4e998b6829f6",
+  "url": "http://www.ufcstats.com/fight-details/f44b4e998b6829f6",
+  "event": {
+    "id": "babc6b5745335f18",
+    "name": "UFC Fight Night: Emmett vs. Vallejos",
+    "url": "http://www.ufcstats.com/event-details/babc6b5745335f18"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7478b7f959ba61f5",
+      "name": "Elijah Smith",
+      "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5",
+      "nickname": "Swift",
+      "result": "W"
+    },
+    {
+      "id": "a474aade8eb3a8f0",
+      "name": "SuYoung You",
+      "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0",
+      "nickname": "Yoo-Jitsu",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:04",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7478b7f959ba61f5",
+        "name": "Elijah Smith",
+        "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+      },
+      {
+        "id": "a474aade8eb3a8f0",
+        "name": "SuYoung You",
+        "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 27,
+          "raw": "16 of 27"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 29,
+          "raw": "18 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "1:35",
+        "controlSeconds": 95
+      },
+      {
+        "fighter": {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 27,
+          "raw": "21 of 27"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:42",
+        "controlSeconds": 162
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7478b7f959ba61f5",
+            "name": "Elijah Smith",
+            "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:19",
+          "controlSeconds": 79
+        },
+        {
+          "fighter": {
+            "id": "a474aade8eb3a8f0",
+            "name": "SuYoung You",
+            "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 24,
+            "raw": "18 of 24"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "takedownPercent": 57,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:42",
+          "controlSeconds": 162
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7478b7f959ba61f5",
+            "name": "Elijah Smith",
+            "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "a474aade8eb3a8f0",
+            "name": "SuYoung You",
+            "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7478b7f959ba61f5",
+        "name": "Elijah Smith",
+        "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+      },
+      {
+        "id": "a474aade8eb3a8f0",
+        "name": "SuYoung You",
+        "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 27,
+          "raw": "16 of 27"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 13,
+          "raw": "5 of 13"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7478b7f959ba61f5",
+            "name": "Elijah Smith",
+            "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a474aade8eb3a8f0",
+            "name": "SuYoung You",
+            "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7478b7f959ba61f5",
+          "name": "Elijah Smith",
+          "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+        },
+        {
+          "id": "a474aade8eb3a8f0",
+          "name": "SuYoung You",
+          "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7478b7f959ba61f5",
+            "name": "Elijah Smith",
+            "url": "http://www.ufcstats.com/fighter-details/7478b7f959ba61f5"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a474aade8eb3a8f0",
+            "name": "SuYoung You",
+            "url": "http://www.ufcstats.com/fighter-details/a474aade8eb3a8f0"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f44b4e998b6829f6",
+    "fetchedAt": "2026-05-19T16:58:24.290Z"
+  }
+}

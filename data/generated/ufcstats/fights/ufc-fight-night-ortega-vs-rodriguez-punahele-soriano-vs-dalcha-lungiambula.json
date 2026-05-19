@@ -1,0 +1,584 @@
+{
+  "id": "ebefe958473b3843",
+  "url": "http://www.ufcstats.com/fight-details/ebefe958473b3843",
+  "event": {
+    "id": "8fd76e1b49c00ae2",
+    "name": "UFC Fight Night: Ortega vs. Rodriguez",
+    "url": "http://www.ufcstats.com/event-details/8fd76e1b49c00ae2"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64facb6cc564262d",
+      "name": "Punahele Soriano",
+      "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d",
+      "nickname": "Puna",
+      "result": "W"
+    },
+    {
+      "id": "ce632027bf2a871b",
+      "name": "Dalcha Lungiambula",
+      "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b",
+      "nickname": "Champion",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:28",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "ce632027bf2a871b",
+        "name": "Dalcha Lungiambula",
+        "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 35,
+          "raw": "17 of 35"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 37,
+          "raw": "19 of 37"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 22,
+          "raw": "11 of 22"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:39",
+        "controlSeconds": 99
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "ce632027bf2a871b",
+            "name": "Dalcha Lungiambula",
+            "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:39",
+          "controlSeconds": 99
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "ce632027bf2a871b",
+            "name": "Dalcha Lungiambula",
+            "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "ce632027bf2a871b",
+        "name": "Dalcha Lungiambula",
+        "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 35,
+          "raw": "17 of 35"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 8,
+          "attempted": 25,
+          "raw": "8 of 25"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 26,
+          "raw": "9 of 26"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 22,
+          "raw": "11 of 22"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 6,
+          "attempted": 16,
+          "raw": "6 of 16"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 18,
+          "raw": "9 of 18"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ce632027bf2a871b",
+            "name": "Dalcha Lungiambula",
+            "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "ce632027bf2a871b",
+          "name": "Dalcha Lungiambula",
+          "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "head": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ce632027bf2a871b",
+            "name": "Dalcha Lungiambula",
+            "url": "http://www.ufcstats.com/fighter-details/ce632027bf2a871b"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ebefe958473b3843",
+    "fetchedAt": "2026-05-19T17:01:17.817Z"
+  }
+}

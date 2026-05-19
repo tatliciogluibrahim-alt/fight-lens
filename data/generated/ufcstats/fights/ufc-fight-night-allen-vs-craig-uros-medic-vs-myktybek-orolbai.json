@@ -1,0 +1,584 @@
+{
+  "id": "b210b99d9c1c9196",
+  "url": "http://www.ufcstats.com/fight-details/b210b99d9c1c9196",
+  "event": {
+    "id": "3feed7d02711d8b7",
+    "name": "UFC Fight Night: Allen vs. Craig",
+    "url": "http://www.ufcstats.com/event-details/3feed7d02711d8b7"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "681399317dbf4701",
+      "name": "Uros Medic",
+      "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701",
+      "nickname": "The Doctor",
+      "result": "L"
+    },
+    {
+      "id": "bf2c8e01b07d3eb1",
+      "name": "Myktybek Orolbai",
+      "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:12",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "681399317dbf4701",
+        "name": "Uros Medic",
+        "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+      },
+      {
+        "id": "bf2c8e01b07d3eb1",
+        "name": "Myktybek Orolbai",
+        "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 32,
+          "raw": "17 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 31,
+          "raw": "16 of 31"
+        },
+        "takedowns": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "takedownPercent": 70,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "7:26",
+        "controlSeconds": 446
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "681399317dbf4701",
+            "name": "Uros Medic",
+            "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 25,
+            "raw": "14 of 25"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "bf2c8e01b07d3eb1",
+            "name": "Myktybek Orolbai",
+            "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "takedowns": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "takedownPercent": 62,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:49",
+          "controlSeconds": 229
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "681399317dbf4701",
+            "name": "Uros Medic",
+            "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "bf2c8e01b07d3eb1",
+            "name": "Myktybek Orolbai",
+            "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:37",
+          "controlSeconds": 217
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "681399317dbf4701",
+        "name": "Uros Medic",
+        "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+      },
+      {
+        "id": "bf2c8e01b07d3eb1",
+        "name": "Myktybek Orolbai",
+        "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 6,
+          "attempted": 16,
+          "raw": "6 of 16"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "681399317dbf4701",
+            "name": "Uros Medic",
+            "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 25,
+            "raw": "14 of 25"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 12,
+            "raw": "5 of 12"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bf2c8e01b07d3eb1",
+            "name": "Myktybek Orolbai",
+            "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "681399317dbf4701",
+          "name": "Uros Medic",
+          "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+        },
+        {
+          "id": "bf2c8e01b07d3eb1",
+          "name": "Myktybek Orolbai",
+          "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "681399317dbf4701",
+            "name": "Uros Medic",
+            "url": "http://www.ufcstats.com/fighter-details/681399317dbf4701"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bf2c8e01b07d3eb1",
+            "name": "Myktybek Orolbai",
+            "url": "http://www.ufcstats.com/fighter-details/bf2c8e01b07d3eb1"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b210b99d9c1c9196",
+    "fetchedAt": "2026-05-19T16:59:14.332Z"
+  }
+}

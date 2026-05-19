@@ -1,0 +1,404 @@
+{
+  "id": "75a84211f50c53f5",
+  "url": "http://www.ufcstats.com/fight-details/75a84211f50c53f5",
+  "event": {
+    "id": "6cd3dfc54f01287f",
+    "name": "UFC Fight Night: Dolidze vs. Hernandez",
+    "url": "http://www.ufcstats.com/event-details/6cd3dfc54f01287f"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "cad24459b28592ca",
+      "name": "Eryk Anders",
+      "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca",
+      "nickname": "Ya Boi",
+      "result": "L"
+    },
+    {
+      "id": "a93f94c923c3a9cb",
+      "name": "Christian Leroy Duncan",
+      "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb",
+      "nickname": "CLD",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:53",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "cad24459b28592ca",
+        "name": "Eryk Anders",
+        "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+      },
+      {
+        "id": "a93f94c923c3a9cb",
+        "name": "Christian Leroy Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 24,
+          "raw": "18 of 24"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:18",
+        "controlSeconds": 78
+      },
+      {
+        "fighter": {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 43,
+          "raw": "24 of 43"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 27,
+          "attempted": 46,
+          "raw": "27 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:39",
+        "controlSeconds": 39
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 24,
+            "raw": "18 of 24"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:18",
+          "controlSeconds": 78
+        },
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 43,
+            "raw": "24 of 43"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 46,
+            "raw": "27 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:39",
+          "controlSeconds": 39
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "cad24459b28592ca",
+        "name": "Eryk Anders",
+        "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+      },
+      {
+        "id": "a93f94c923c3a9cb",
+        "name": "Christian Leroy Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 43,
+          "raw": "24 of 43"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 9,
+          "attempted": 26,
+          "raw": "9 of 26"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 37,
+          "raw": "20 of 37"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "cad24459b28592ca",
+          "name": "Eryk Anders",
+          "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+        },
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "cad24459b28592ca",
+            "name": "Eryk Anders",
+            "url": "http://www.ufcstats.com/fighter-details/cad24459b28592ca"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 43,
+            "raw": "24 of 43"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/75a84211f50c53f5",
+    "fetchedAt": "2026-05-19T16:57:55.344Z"
+  }
+}

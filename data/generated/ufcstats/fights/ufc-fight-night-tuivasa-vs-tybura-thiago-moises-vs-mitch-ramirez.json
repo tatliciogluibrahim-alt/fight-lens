@@ -1,0 +1,764 @@
+{
+  "id": "537b3cef39d2d573",
+  "url": "http://www.ufcstats.com/fight-details/537b3cef39d2d573",
+  "event": {
+    "id": "c398235fcaf8d71d",
+    "name": "UFC Fight Night: Tuivasa vs. Tybura",
+    "url": "http://www.ufcstats.com/event-details/c398235fcaf8d71d"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d945aae53e3e54e6",
+      "name": "Thiago Moises",
+      "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e99eb0ef25885de5",
+      "name": "Mitch Ramirez",
+      "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d945aae53e3e54e6",
+        "name": "Thiago Moises",
+        "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+      },
+      {
+        "id": "e99eb0ef25885de5",
+        "name": "Mitch Ramirez",
+        "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 39,
+          "raw": "25 of 39"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 53,
+          "attempted": 72,
+          "raw": "53 of 72"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "6:36",
+        "controlSeconds": 396
+      },
+      {
+        "fighter": {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 48,
+          "raw": "16 of 48"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 28,
+          "attempted": 65,
+          "raw": "28 of 65"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:21",
+        "controlSeconds": 21
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 31,
+            "raw": "25 of 31"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:18",
+          "controlSeconds": 258
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 23,
+            "raw": "17 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:14",
+          "controlSeconds": 134
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 39,
+            "raw": "10 of 39"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 41,
+            "raw": "11 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d945aae53e3e54e6",
+        "name": "Thiago Moises",
+        "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+      },
+      {
+        "id": "e99eb0ef25885de5",
+        "name": "Mitch Ramirez",
+        "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 39,
+          "raw": "25 of 39"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 10,
+          "attempted": 23,
+          "raw": "10 of 23"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 12,
+          "raw": "12 of 12"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 30,
+          "raw": "17 of 30"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 48,
+          "raw": "16 of 48"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 4,
+          "attempted": 32,
+          "raw": "4 of 32"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 45,
+          "raw": "13 of 45"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 39,
+            "raw": "10 of 39"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 4,
+            "attempted": 30,
+            "raw": "4 of 30"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 36,
+            "raw": "7 of 36"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d945aae53e3e54e6",
+          "name": "Thiago Moises",
+          "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+        },
+        {
+          "id": "e99eb0ef25885de5",
+          "name": "Mitch Ramirez",
+          "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d945aae53e3e54e6",
+            "name": "Thiago Moises",
+            "url": "http://www.ufcstats.com/fighter-details/d945aae53e3e54e6"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e99eb0ef25885de5",
+            "name": "Mitch Ramirez",
+            "url": "http://www.ufcstats.com/fighter-details/e99eb0ef25885de5"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/537b3cef39d2d573",
+    "fetchedAt": "2026-05-19T16:54:28.585Z"
+  }
+}

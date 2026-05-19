@@ -1,0 +1,764 @@
+{
+  "id": "2ae33fce63a75df9",
+  "url": "http://www.ufcstats.com/fight-details/2ae33fce63a75df9",
+  "event": {
+    "id": "ce7871949b0ed2bf",
+    "name": "UFC Fight Night: Cannonier vs. Rodrigues",
+    "url": "http://www.ufcstats.com/event-details/ce7871949b0ed2bf"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "83455a9d17f57dae",
+      "name": "Rafael Estevam",
+      "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae",
+      "nickname": "Macapa",
+      "result": "W"
+    },
+    {
+      "id": "c051c2e12d692b8a",
+      "name": "Jesus Aguilar",
+      "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      },
+      {
+        "id": "c051c2e12d692b8a",
+        "name": "Jesus Aguilar",
+        "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 96,
+          "raw": "60 of 96"
+        },
+        "takedowns": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "takedownPercent": 57,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "9:22",
+        "controlSeconds": 562
+      },
+      {
+        "fighter": {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 87,
+          "raw": "35 of 87"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 95,
+          "raw": "41 of 95"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:14",
+        "controlSeconds": 74
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 28,
+            "raw": "23 of 28"
+          },
+          "takedowns": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "takedownPercent": 83,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:54",
+          "controlSeconds": 234
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 42,
+            "raw": "29 of 42"
+          },
+          "takedowns": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "takedownPercent": 71,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:30",
+          "controlSeconds": 270
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 16,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:58",
+          "controlSeconds": 58
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 75,
+            "raw": "28 of 75"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 81,
+            "raw": "33 of 81"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      },
+      {
+        "id": "c051c2e12d692b8a",
+        "name": "Jesus Aguilar",
+        "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 6,
+          "attempted": 20,
+          "raw": "6 of 20"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 28,
+          "raw": "9 of 28"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 87,
+          "raw": "35 of 87"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 26,
+          "attempted": 75,
+          "raw": "26 of 75"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 76,
+          "raw": "31 of 76"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "c051c2e12d692b8a",
+          "name": "Jesus Aguilar",
+          "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 4,
+            "attempted": 17,
+            "raw": "4 of 17"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c051c2e12d692b8a",
+            "name": "Jesus Aguilar",
+            "url": "http://www.ufcstats.com/fighter-details/c051c2e12d692b8a"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 75,
+            "raw": "28 of 75"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 21,
+            "attempted": 65,
+            "raw": "21 of 65"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 67,
+            "raw": "27 of 67"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2ae33fce63a75df9",
+    "fetchedAt": "2026-05-19T16:55:28.821Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "d69bd8e53ec858dc",
+  "url": "http://www.ufcstats.com/fight-details/d69bd8e53ec858dc",
+  "event": {
+    "id": "9a70f67ad2187fa3",
+    "name": "UFC Fight Night: Moicano vs. Duncan",
+    "url": "http://www.ufcstats.com/event-details/9a70f67ad2187fa3"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b6452706b373eea1",
+      "name": "Renato Moicano",
+      "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "fd406a32a6fb3a29",
+      "name": "Chris Duncan",
+      "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29",
+      "nickname": "The Problem",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "3:14",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b6452706b373eea1",
+        "name": "Renato Moicano",
+        "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+      },
+      {
+        "id": "fd406a32a6fb3a29",
+        "name": "Chris Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 36,
+          "raw": "21 of 36"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 84,
+          "raw": "62 of 84"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:16",
+        "controlSeconds": 196
+      },
+      {
+        "fighter": {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 62,
+          "raw": "27 of 62"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 66,
+          "raw": "30 of 66"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:13",
+          "controlSeconds": 73
+        },
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 41,
+            "raw": "19 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 62,
+            "raw": "46 of 62"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:03",
+          "controlSeconds": 123
+        },
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b6452706b373eea1",
+        "name": "Renato Moicano",
+        "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+      },
+      {
+        "id": "fd406a32a6fb3a29",
+        "name": "Chris Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 36,
+          "raw": "21 of 36"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 16,
+          "attempted": 31,
+          "raw": "16 of 31"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 34,
+          "raw": "20 of 34"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        },
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 62,
+          "raw": "27 of 62"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 8,
+          "attempted": 39,
+          "raw": "8 of 39"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 16,
+          "raw": "14 of 16"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 60,
+          "raw": "25 of 60"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 3,
+            "attempted": 22,
+            "raw": "3 of 22"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        {
+          "id": "fd406a32a6fb3a29",
+          "name": "Chris Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fd406a32a6fb3a29",
+            "name": "Chris Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/fd406a32a6fb3a29"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d69bd8e53ec858dc",
+    "fetchedAt": "2026-05-19T16:54:53.587Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "32b8c6c4b735d712",
+  "url": "http://www.ufcstats.com/fight-details/32b8c6c4b735d712",
+  "event": {
+    "id": "6a0047ac8c99fece",
+    "name": "UFC Fight Night: Hernandez vs. Pereira",
+    "url": "http://www.ufcstats.com/event-details/6a0047ac8c99fece"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "be9bdec19b7e9ffe",
+      "name": "Austen Lane",
+      "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "140567899d98978a",
+      "name": "Robelis Despaigne",
+      "url": "http://www.ufcstats.com/fighter-details/140567899d98978a",
+      "nickname": "The Big Boy",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "be9bdec19b7e9ffe",
+        "name": "Austen Lane",
+        "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+      },
+      {
+        "id": "140567899d98978a",
+        "name": "Robelis Despaigne",
+        "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 38,
+          "raw": "23 of 38"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 78,
+          "attempted": 110,
+          "raw": "78 of 110"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "takedownPercent": 37,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "8:58",
+        "controlSeconds": 538
+      },
+      {
+        "fighter": {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 46,
+          "raw": "31 of 46"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 68,
+          "raw": "48 of 68"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:19",
+          "controlSeconds": 259
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 60,
+            "raw": "46 of 60"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:46",
+          "controlSeconds": 226
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "significantStrikePercent": 84,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 23,
+            "raw": "19 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "be9bdec19b7e9ffe",
+        "name": "Austen Lane",
+        "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+      },
+      {
+        "id": "140567899d98978a",
+        "name": "Robelis Despaigne",
+        "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 38,
+          "raw": "23 of 38"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 7,
+          "attempted": 20,
+          "raw": "7 of 20"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 46,
+          "raw": "31 of 46"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 23,
+          "attempted": 38,
+          "raw": "23 of 38"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 36,
+          "raw": "21 of 36"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "be9bdec19b7e9ffe",
+          "name": "Austen Lane",
+          "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+        },
+        {
+          "id": "140567899d98978a",
+          "name": "Robelis Despaigne",
+          "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "be9bdec19b7e9ffe",
+            "name": "Austen Lane",
+            "url": "http://www.ufcstats.com/fighter-details/be9bdec19b7e9ffe"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "140567899d98978a",
+            "name": "Robelis Despaigne",
+            "url": "http://www.ufcstats.com/fighter-details/140567899d98978a"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "significantStrikePercent": 84,
+          "head": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/32b8c6c4b735d712",
+    "fetchedAt": "2026-05-19T16:57:52.294Z"
+  }
+}

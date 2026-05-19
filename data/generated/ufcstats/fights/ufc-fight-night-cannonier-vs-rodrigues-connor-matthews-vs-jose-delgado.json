@@ -1,0 +1,404 @@
+{
+  "id": "2a493f15e079a7ff",
+  "url": "http://www.ufcstats.com/fight-details/2a493f15e079a7ff",
+  "event": {
+    "id": "ce7871949b0ed2bf",
+    "name": "UFC Fight Night: Cannonier vs. Rodrigues",
+    "url": "http://www.ufcstats.com/event-details/ce7871949b0ed2bf"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "36e78278a77006d4",
+      "name": "Connor Matthews",
+      "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4",
+      "nickname": "The Controller",
+      "result": "L"
+    },
+    {
+      "id": "7d6ceff6747f2de2",
+      "name": "Jose Delgado",
+      "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "36e78278a77006d4",
+        "name": "Connor Matthews",
+        "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+      },
+      {
+        "id": "7d6ceff6747f2de2",
+        "name": "Jose Delgado",
+        "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 23,
+          "raw": "6 of 23"
+        },
+        "significantStrikePercent": 26,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 31,
+          "raw": "9 of 31"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:47",
+        "controlSeconds": 47
+      },
+      {
+        "fighter": {
+          "id": "7d6ceff6747f2de2",
+          "name": "Jose Delgado",
+          "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 40,
+          "raw": "21 of 40"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 42,
+          "raw": "22 of 42"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        {
+          "id": "7d6ceff6747f2de2",
+          "name": "Jose Delgado",
+          "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 31,
+            "raw": "9 of 31"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        },
+        {
+          "fighter": {
+            "id": "7d6ceff6747f2de2",
+            "name": "Jose Delgado",
+            "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 40,
+            "raw": "21 of 40"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 42,
+            "raw": "22 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "36e78278a77006d4",
+        "name": "Connor Matthews",
+        "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+      },
+      {
+        "id": "7d6ceff6747f2de2",
+        "name": "Jose Delgado",
+        "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 23,
+          "raw": "6 of 23"
+        },
+        "significantStrikePercent": 26,
+        "head": {
+          "landed": 6,
+          "attempted": 20,
+          "raw": "6 of 20"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 23,
+          "raw": "6 of 23"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7d6ceff6747f2de2",
+          "name": "Jose Delgado",
+          "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 40,
+          "raw": "21 of 40"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 14,
+          "attempted": 29,
+          "raw": "14 of 29"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 30,
+          "raw": "14 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        {
+          "id": "7d6ceff6747f2de2",
+          "name": "Jose Delgado",
+          "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7d6ceff6747f2de2",
+            "name": "Jose Delgado",
+            "url": "http://www.ufcstats.com/fighter-details/7d6ceff6747f2de2"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 40,
+            "raw": "21 of 40"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 14,
+            "attempted": 29,
+            "raw": "14 of 29"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2a493f15e079a7ff",
+    "fetchedAt": "2026-05-19T16:58:56.782Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "f59cefe16905d62c",
+  "url": "http://www.ufcstats.com/fight-details/f59cefe16905d62c",
+  "event": {
+    "id": "dba230fe33011201",
+    "name": "UFC Fight Night: Blanchfield vs. Fiorot",
+    "url": "http://www.ufcstats.com/event-details/dba230fe33011201"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c4d039123e62f6a9",
+      "name": "Dennis Buzukja",
+      "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9",
+      "nickname": "The Great",
+      "result": "W"
+    },
+    {
+      "id": "36e78278a77006d4",
+      "name": "Connor Matthews",
+      "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4",
+      "nickname": "The Controller",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:22",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c4d039123e62f6a9",
+        "name": "Dennis Buzukja",
+        "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+      },
+      {
+        "id": "36e78278a77006d4",
+        "name": "Connor Matthews",
+        "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 201,
+          "raw": "83 of 201"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 84,
+          "attempted": 202,
+          "raw": "84 of 202"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 138,
+          "raw": "60 of 138"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 140,
+          "raw": "62 of 140"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:40",
+        "controlSeconds": 40
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 85,
+            "raw": "38 of 85"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 85,
+            "raw": "38 of 85"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 98,
+            "raw": "37 of 98"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 99,
+            "raw": "38 of 99"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 76,
+            "raw": "36 of 76"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 78,
+            "raw": "38 of 78"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c4d039123e62f6a9",
+        "name": "Dennis Buzukja",
+        "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+      },
+      {
+        "id": "36e78278a77006d4",
+        "name": "Connor Matthews",
+        "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 201,
+          "raw": "83 of 201"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 44,
+          "attempted": 145,
+          "raw": "44 of 145"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 34,
+          "raw": "18 of 34"
+        },
+        "leg": {
+          "landed": 21,
+          "attempted": 22,
+          "raw": "21 of 22"
+        },
+        "distance": {
+          "landed": 77,
+          "attempted": 186,
+          "raw": "77 of 186"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 12,
+          "raw": "4 of 12"
+        }
+      },
+      {
+        "fighter": {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        },
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 138,
+          "raw": "60 of 138"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 37,
+          "attempted": 101,
+          "raw": "37 of 101"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "distance": {
+          "landed": 57,
+          "attempted": 134,
+          "raw": "57 of 134"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 85,
+            "raw": "38 of 85"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 17,
+            "attempted": 56,
+            "raw": "17 of 56"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 12,
+            "raw": "11 of 12"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 13,
+            "attempted": 38,
+            "raw": "13 of 38"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 98,
+            "raw": "37 of 98"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 21,
+            "attempted": 73,
+            "raw": "21 of 73"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 96,
+            "raw": "36 of 96"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 76,
+            "raw": "36 of 76"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 24,
+            "attempted": 59,
+            "raw": "24 of 59"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 72,
+            "raw": "33 of 72"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c4d039123e62f6a9",
+          "name": "Dennis Buzukja",
+          "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+        },
+        {
+          "id": "36e78278a77006d4",
+          "name": "Connor Matthews",
+          "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c4d039123e62f6a9",
+            "name": "Dennis Buzukja",
+            "url": "http://www.ufcstats.com/fighter-details/c4d039123e62f6a9"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          }
+        },
+        {
+          "fighter": {
+            "id": "36e78278a77006d4",
+            "name": "Connor Matthews",
+            "url": "http://www.ufcstats.com/fighter-details/36e78278a77006d4"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f59cefe16905d62c",
+    "fetchedAt": "2026-05-19T16:54:31.569Z"
+  }
+}

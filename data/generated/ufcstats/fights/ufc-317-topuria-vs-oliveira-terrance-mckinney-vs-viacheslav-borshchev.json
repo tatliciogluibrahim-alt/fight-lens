@@ -1,0 +1,404 @@
+{
+  "id": "d7be78c400e7e0f9",
+  "url": "http://www.ufcstats.com/fight-details/d7be78c400e7e0f9",
+  "event": {
+    "id": "66766984842c13dc",
+    "name": "UFC 317: Topuria vs. Oliveira",
+    "url": "http://www.ufcstats.com/event-details/66766984842c13dc"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "809bd1a871491508",
+      "name": "Terrance McKinney",
+      "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508",
+      "nickname": "T. Wrecks",
+      "result": "W"
+    },
+    {
+      "id": "19c591115a58982c",
+      "name": "Viacheslav Borshchev",
+      "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c",
+      "nickname": "Slava Claus",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "0:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "809bd1a871491508",
+        "name": "Terrance McKinney",
+        "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+      },
+      {
+        "id": "19c591115a58982c",
+        "name": "Viacheslav Borshchev",
+        "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:47",
+        "controlSeconds": 47
+      },
+      {
+        "fighter": {
+          "id": "19c591115a58982c",
+          "name": "Viacheslav Borshchev",
+          "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        {
+          "id": "19c591115a58982c",
+          "name": "Viacheslav Borshchev",
+          "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "809bd1a871491508",
+            "name": "Terrance McKinney",
+            "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        },
+        {
+          "fighter": {
+            "id": "19c591115a58982c",
+            "name": "Viacheslav Borshchev",
+            "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "809bd1a871491508",
+        "name": "Terrance McKinney",
+        "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+      },
+      {
+        "id": "19c591115a58982c",
+        "name": "Viacheslav Borshchev",
+        "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "19c591115a58982c",
+          "name": "Viacheslav Borshchev",
+          "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "809bd1a871491508",
+          "name": "Terrance McKinney",
+          "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+        },
+        {
+          "id": "19c591115a58982c",
+          "name": "Viacheslav Borshchev",
+          "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "809bd1a871491508",
+            "name": "Terrance McKinney",
+            "url": "http://www.ufcstats.com/fighter-details/809bd1a871491508"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "19c591115a58982c",
+            "name": "Viacheslav Borshchev",
+            "url": "http://www.ufcstats.com/fighter-details/19c591115a58982c"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d7be78c400e7e0f9",
+    "fetchedAt": "2026-05-19T16:56:52.538Z"
+  }
+}

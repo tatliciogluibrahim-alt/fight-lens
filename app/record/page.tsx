@@ -256,7 +256,7 @@ export default function RecordPage() {
               </div>
 
               <p className="mt-4 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-                For the full historical backtest (n=76 across 6 events), see the methodology page.
+                For the full historical backtest (n=253 across 20 completed events), see the methodology page.
               </p>
             </div>
           </section>

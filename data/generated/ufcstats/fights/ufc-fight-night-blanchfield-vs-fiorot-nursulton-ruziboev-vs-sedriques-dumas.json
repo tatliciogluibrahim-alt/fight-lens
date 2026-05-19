@@ -1,0 +1,404 @@
+{
+  "id": "e30250daa73005a8",
+  "url": "http://www.ufcstats.com/fight-details/e30250daa73005a8",
+  "event": {
+    "id": "dba230fe33011201",
+    "name": "UFC Fight Night: Blanchfield vs. Fiorot",
+    "url": "http://www.ufcstats.com/event-details/dba230fe33011201"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "49d2a08964c5eb11",
+      "name": "Nursulton Ruziboev",
+      "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11",
+      "nickname": "Black",
+      "result": "W"
+    },
+    {
+      "id": "4e6738062d469256",
+      "name": "Sedriques Dumas",
+      "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256",
+      "nickname": "The Reaper",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Vitor Ribeiro",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "49d2a08964c5eb11",
+        "name": "Nursulton Ruziboev",
+        "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+      },
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "49d2a08964c5eb11",
+          "name": "Nursulton Ruziboev",
+          "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 32,
+          "raw": "12 of 32"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 32,
+          "raw": "12 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 16,
+          "raw": "1 of 16"
+        },
+        "significantStrikePercent": 6,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 16,
+          "raw": "1 of 16"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "49d2a08964c5eb11",
+          "name": "Nursulton Ruziboev",
+          "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+        },
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "49d2a08964c5eb11",
+            "name": "Nursulton Ruziboev",
+            "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 16,
+            "raw": "1 of 16"
+          },
+          "significantStrikePercent": 6,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 16,
+            "raw": "1 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "49d2a08964c5eb11",
+        "name": "Nursulton Ruziboev",
+        "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+      },
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "49d2a08964c5eb11",
+          "name": "Nursulton Ruziboev",
+          "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 32,
+          "raw": "12 of 32"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 25,
+          "raw": "11 of 25"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 16,
+          "raw": "1 of 16"
+        },
+        "significantStrikePercent": 6,
+        "head": {
+          "landed": 1,
+          "attempted": 13,
+          "raw": "1 of 13"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 16,
+          "raw": "1 of 16"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "49d2a08964c5eb11",
+          "name": "Nursulton Ruziboev",
+          "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+        },
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "49d2a08964c5eb11",
+            "name": "Nursulton Ruziboev",
+            "url": "http://www.ufcstats.com/fighter-details/49d2a08964c5eb11"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 16,
+            "raw": "1 of 16"
+          },
+          "significantStrikePercent": 6,
+          "head": {
+            "landed": 1,
+            "attempted": 13,
+            "raw": "1 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 16,
+            "raw": "1 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e30250daa73005a8",
+    "fetchedAt": "2026-05-19T16:53:34.217Z"
+  }
+}

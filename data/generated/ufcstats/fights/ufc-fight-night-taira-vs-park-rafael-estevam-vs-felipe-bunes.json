@@ -1,0 +1,764 @@
+{
+  "id": "b47db03affb279c3",
+  "url": "http://www.ufcstats.com/fight-details/b47db03affb279c3",
+  "event": {
+    "id": "f2c934689243fe4e",
+    "name": "UFC Fight Night: Taira vs. Park",
+    "url": "http://www.ufcstats.com/event-details/f2c934689243fe4e"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "83455a9d17f57dae",
+      "name": "Rafael Estevam",
+      "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae",
+      "nickname": "Macapa",
+      "result": "W"
+    },
+    {
+      "id": "53c10176e3bc7416",
+      "name": "Felipe Bunes",
+      "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416",
+      "nickname": "Felipinho",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      },
+      {
+        "id": "53c10176e3bc7416",
+        "name": "Felipe Bunes",
+        "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 70,
+          "raw": "33 of 70"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 128,
+          "attempted": 204,
+          "raw": "128 of 204"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "takedownPercent": 55,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "10:42",
+        "controlSeconds": 642
+      },
+      {
+        "fighter": {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 56,
+          "raw": "26 of 56"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 75,
+          "raw": "38 of 75"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:48",
+          "controlSeconds": 168
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 35,
+            "raw": "17 of 35"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 83,
+            "raw": "47 of 83"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:01",
+          "controlSeconds": 241
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 69,
+            "attempted": 95,
+            "raw": "69 of 95"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:53",
+          "controlSeconds": 233
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "83455a9d17f57dae",
+        "name": "Rafael Estevam",
+        "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+      },
+      {
+        "id": "53c10176e3bc7416",
+        "name": "Felipe Bunes",
+        "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 70,
+          "raw": "33 of 70"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 22,
+          "attempted": 50,
+          "raw": "22 of 50"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 57,
+          "raw": "25 of 57"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        }
+      },
+      {
+        "fighter": {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 56,
+          "raw": "26 of 56"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 15,
+          "attempted": 39,
+          "raw": "15 of 39"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 11,
+          "raw": "5 of 11"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 54,
+          "raw": "25 of 54"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 35,
+            "raw": "17 of 35"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 13,
+            "attempted": 25,
+            "raw": "13 of 25"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "83455a9d17f57dae",
+          "name": "Rafael Estevam",
+          "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+        },
+        {
+          "id": "53c10176e3bc7416",
+          "name": "Felipe Bunes",
+          "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "83455a9d17f57dae",
+            "name": "Rafael Estevam",
+            "url": "http://www.ufcstats.com/fighter-details/83455a9d17f57dae"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "53c10176e3bc7416",
+            "name": "Felipe Bunes",
+            "url": "http://www.ufcstats.com/fighter-details/53c10176e3bc7416"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b47db03affb279c3",
+    "fetchedAt": "2026-05-19T16:55:28.416Z"
+  }
+}

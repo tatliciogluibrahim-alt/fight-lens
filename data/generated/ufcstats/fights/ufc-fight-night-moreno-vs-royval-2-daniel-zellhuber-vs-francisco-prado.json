@@ -1,0 +1,764 @@
+{
+  "id": "ecbece0cbd60029e",
+  "url": "http://www.ufcstats.com/fight-details/ecbece0cbd60029e",
+  "event": {
+    "id": "902ab9197b83d0db",
+    "name": "UFC Fight Night: Moreno vs. Royval 2",
+    "url": "http://www.ufcstats.com/event-details/902ab9197b83d0db"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4148802ae4a50768",
+      "name": "Daniel Zellhuber",
+      "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768",
+      "nickname": "Golden Boy",
+      "result": "W"
+    },
+    {
+      "id": "3920d0cc288f9b0d",
+      "name": "Francisco Prado",
+      "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4148802ae4a50768",
+        "name": "Daniel Zellhuber",
+        "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+      },
+      {
+        "id": "3920d0cc288f9b0d",
+        "name": "Francisco Prado",
+        "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 120,
+          "attempted": 272,
+          "raw": "120 of 272"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 120,
+          "attempted": 272,
+          "raw": "120 of 272"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:05",
+        "controlSeconds": 5
+      },
+      {
+        "fighter": {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 90,
+          "attempted": 246,
+          "raw": "90 of 246"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 91,
+          "attempted": 249,
+          "raw": "91 of 249"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:25",
+        "controlSeconds": 25
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 73,
+            "raw": "29 of 73"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 75,
+            "raw": "29 of 75"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 50,
+            "attempted": 110,
+            "raw": "50 of 110"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 50,
+            "attempted": 110,
+            "raw": "50 of 110"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 88,
+            "raw": "32 of 88"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 89,
+            "raw": "33 of 89"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 102,
+            "raw": "43 of 102"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 102,
+            "raw": "43 of 102"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 85,
+            "raw": "29 of 85"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 85,
+            "raw": "29 of 85"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4148802ae4a50768",
+        "name": "Daniel Zellhuber",
+        "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+      },
+      {
+        "id": "3920d0cc288f9b0d",
+        "name": "Francisco Prado",
+        "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        "significantStrikes": {
+          "landed": 120,
+          "attempted": 272,
+          "raw": "120 of 272"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 87,
+          "attempted": 228,
+          "raw": "87 of 228"
+        },
+        "body": {
+          "landed": 25,
+          "attempted": 36,
+          "raw": "25 of 36"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 117,
+          "attempted": 268,
+          "raw": "117 of 268"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        },
+        "significantStrikes": {
+          "landed": 90,
+          "attempted": 246,
+          "raw": "90 of 246"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 30,
+          "attempted": 155,
+          "raw": "30 of 155"
+        },
+        "body": {
+          "landed": 26,
+          "attempted": 47,
+          "raw": "26 of 47"
+        },
+        "leg": {
+          "landed": 34,
+          "attempted": 44,
+          "raw": "34 of 44"
+        },
+        "distance": {
+          "landed": 88,
+          "attempted": 244,
+          "raw": "88 of 244"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 60,
+            "raw": "27 of 60"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 14,
+            "attempted": 41,
+            "raw": "14 of 41"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 73,
+            "raw": "29 of 73"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 16,
+            "raw": "12 of 16"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 71,
+            "raw": "27 of 71"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "significantStrikes": {
+            "landed": 50,
+            "attempted": 110,
+            "raw": "50 of 110"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 42,
+            "attempted": 100,
+            "raw": "42 of 100"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 48,
+            "attempted": 108,
+            "raw": "48 of 108"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 88,
+            "raw": "32 of 88"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 8,
+            "attempted": 54,
+            "raw": "8 of 54"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "leg": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 88,
+            "raw": "32 of 88"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4148802ae4a50768",
+          "name": "Daniel Zellhuber",
+          "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+        },
+        {
+          "id": "3920d0cc288f9b0d",
+          "name": "Francisco Prado",
+          "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4148802ae4a50768",
+            "name": "Daniel Zellhuber",
+            "url": "http://www.ufcstats.com/fighter-details/4148802ae4a50768"
+          },
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 102,
+            "raw": "43 of 102"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 31,
+            "attempted": 87,
+            "raw": "31 of 87"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 42,
+            "attempted": 101,
+            "raw": "42 of 101"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3920d0cc288f9b0d",
+            "name": "Francisco Prado",
+            "url": "http://www.ufcstats.com/fighter-details/3920d0cc288f9b0d"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 85,
+            "raw": "29 of 85"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 85,
+            "raw": "29 of 85"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ecbece0cbd60029e",
+    "fetchedAt": "2026-05-19T16:59:56.106Z"
+  }
+}

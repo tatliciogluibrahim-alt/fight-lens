@@ -1,0 +1,404 @@
+{
+  "id": "4472ab71027260a5",
+  "url": "http://www.ufcstats.com/fight-details/4472ab71027260a5",
+  "event": {
+    "id": "9141bb39310773c7",
+    "name": "DWCS 7.5",
+    "url": "http://www.ufcstats.com/event-details/9141bb39310773c7"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0abcf6bc47191219",
+      "name": "Bruno Lopes",
+      "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219",
+      "nickname": "The Brazilian Cowboy",
+      "result": "L"
+    },
+    {
+      "id": "49edd0d90f60fb7d",
+      "name": "Brendson Ribeiro",
+      "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d",
+      "nickname": "The Gorilla",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:47",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0abcf6bc47191219",
+        "name": "Bruno Lopes",
+        "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+      },
+      {
+        "id": "49edd0d90f60fb7d",
+        "name": "Brendson Ribeiro",
+        "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0abcf6bc47191219",
+          "name": "Bruno Lopes",
+          "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 57,
+          "raw": "20 of 57"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 57,
+          "raw": "20 of 57"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "49edd0d90f60fb7d",
+          "name": "Brendson Ribeiro",
+          "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 69,
+          "raw": "32 of 69"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 32,
+          "attempted": 69,
+          "raw": "32 of 69"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0abcf6bc47191219",
+          "name": "Bruno Lopes",
+          "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+        },
+        {
+          "id": "49edd0d90f60fb7d",
+          "name": "Brendson Ribeiro",
+          "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0abcf6bc47191219",
+            "name": "Bruno Lopes",
+            "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 57,
+            "raw": "20 of 57"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 57,
+            "raw": "20 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "49edd0d90f60fb7d",
+            "name": "Brendson Ribeiro",
+            "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 69,
+            "raw": "32 of 69"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 69,
+            "raw": "32 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0abcf6bc47191219",
+        "name": "Bruno Lopes",
+        "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+      },
+      {
+        "id": "49edd0d90f60fb7d",
+        "name": "Brendson Ribeiro",
+        "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0abcf6bc47191219",
+          "name": "Bruno Lopes",
+          "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 57,
+          "raw": "20 of 57"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 13,
+          "attempted": 48,
+          "raw": "13 of 48"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 57,
+          "raw": "20 of 57"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "49edd0d90f60fb7d",
+          "name": "Brendson Ribeiro",
+          "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 69,
+          "raw": "32 of 69"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 28,
+          "attempted": 61,
+          "raw": "28 of 61"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 64,
+          "raw": "28 of 64"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0abcf6bc47191219",
+          "name": "Bruno Lopes",
+          "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+        },
+        {
+          "id": "49edd0d90f60fb7d",
+          "name": "Brendson Ribeiro",
+          "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0abcf6bc47191219",
+            "name": "Bruno Lopes",
+            "url": "http://www.ufcstats.com/fighter-details/0abcf6bc47191219"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 57,
+            "raw": "20 of 57"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 13,
+            "attempted": 48,
+            "raw": "13 of 48"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 57,
+            "raw": "20 of 57"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "49edd0d90f60fb7d",
+            "name": "Brendson Ribeiro",
+            "url": "http://www.ufcstats.com/fighter-details/49edd0d90f60fb7d"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 69,
+            "raw": "32 of 69"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 28,
+            "attempted": 61,
+            "raw": "28 of 61"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 64,
+            "raw": "28 of 64"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4472ab71027260a5",
+    "fetchedAt": "2026-05-19T16:55:27.782Z"
+  }
+}

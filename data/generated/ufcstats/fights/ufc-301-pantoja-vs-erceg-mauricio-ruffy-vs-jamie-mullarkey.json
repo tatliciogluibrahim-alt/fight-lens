@@ -1,0 +1,404 @@
+{
+  "id": "b9de363e6b406853",
+  "url": "http://www.ufcstats.com/fight-details/b9de363e6b406853",
+  "event": {
+    "id": "981ab7a0576f76a0",
+    "name": "UFC 301: Pantoja vs. Erceg",
+    "url": "http://www.ufcstats.com/event-details/981ab7a0576f76a0"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "9c393e836a852f30",
+      "name": "Mauricio Ruffy",
+      "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "af9f42e6894047fc",
+      "name": "Jamie Mullarkey",
+      "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:42",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Osiris Maia",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "9c393e836a852f30",
+        "name": "Mauricio Ruffy",
+        "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+      },
+      {
+        "id": "af9f42e6894047fc",
+        "name": "Jamie Mullarkey",
+        "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9c393e836a852f30",
+          "name": "Mauricio Ruffy",
+          "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 40,
+          "raw": "25 of 40"
+        },
+        "significantStrikePercent": 62,
+        "totalStrikes": {
+          "landed": 25,
+          "attempted": 40,
+          "raw": "25 of 40"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 38,
+          "raw": "14 of 38"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 38,
+          "raw": "14 of 38"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9c393e836a852f30",
+          "name": "Mauricio Ruffy",
+          "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+        },
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9c393e836a852f30",
+            "name": "Mauricio Ruffy",
+            "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 40,
+            "raw": "25 of 40"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 40,
+            "raw": "25 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "9c393e836a852f30",
+        "name": "Mauricio Ruffy",
+        "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+      },
+      {
+        "id": "af9f42e6894047fc",
+        "name": "Jamie Mullarkey",
+        "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9c393e836a852f30",
+          "name": "Mauricio Ruffy",
+          "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 40,
+          "raw": "25 of 40"
+        },
+        "significantStrikePercent": 62,
+        "head": {
+          "landed": 21,
+          "attempted": 35,
+          "raw": "21 of 35"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 38,
+          "raw": "14 of 38"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 7,
+          "attempted": 28,
+          "raw": "7 of 28"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 38,
+          "raw": "14 of 38"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9c393e836a852f30",
+          "name": "Mauricio Ruffy",
+          "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+        },
+        {
+          "id": "af9f42e6894047fc",
+          "name": "Jamie Mullarkey",
+          "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9c393e836a852f30",
+            "name": "Mauricio Ruffy",
+            "url": "http://www.ufcstats.com/fighter-details/9c393e836a852f30"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 40,
+            "raw": "25 of 40"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "af9f42e6894047fc",
+            "name": "Jamie Mullarkey",
+            "url": "http://www.ufcstats.com/fighter-details/af9f42e6894047fc"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 7,
+            "attempted": 28,
+            "raw": "7 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b9de363e6b406853",
+    "fetchedAt": "2026-05-19T17:02:35.982Z"
+  }
+}

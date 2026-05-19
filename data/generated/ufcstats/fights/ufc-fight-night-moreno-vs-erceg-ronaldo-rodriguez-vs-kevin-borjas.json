@@ -1,0 +1,764 @@
+{
+  "id": "5ba7dd466e30169f",
+  "url": "http://www.ufcstats.com/fight-details/5ba7dd466e30169f",
+  "event": {
+    "id": "0f7210aa8d61af8d",
+    "name": "UFC Fight Night: Moreno vs. Erceg",
+    "url": "http://www.ufcstats.com/event-details/0f7210aa8d61af8d"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f2900678e98f6d6a",
+      "name": "Ronaldo Rodriguez",
+      "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a",
+      "nickname": "Lazy Boy",
+      "result": "L"
+    },
+    {
+      "id": "34b96d52db1d26e6",
+      "name": "Kevin Borjas",
+      "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6",
+      "nickname": "El Gallo Negro",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f2900678e98f6d6a",
+        "name": "Ronaldo Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+      },
+      {
+        "id": "34b96d52db1d26e6",
+        "name": "Kevin Borjas",
+        "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 151,
+          "raw": "64 of 151"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 64,
+          "attempted": 151,
+          "raw": "64 of 151"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      },
+      {
+        "fighter": {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 141,
+          "raw": "83 of 141"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 84,
+          "attempted": 142,
+          "raw": "84 of 142"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:43",
+          "controlSeconds": 43
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 31,
+            "raw": "17 of 31"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 42,
+            "raw": "17 of 42"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 42,
+            "raw": "17 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 77,
+            "raw": "43 of 77"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 77,
+            "raw": "43 of 77"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f2900678e98f6d6a",
+        "name": "Ronaldo Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+      },
+      {
+        "id": "34b96d52db1d26e6",
+        "name": "Kevin Borjas",
+        "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 151,
+          "raw": "64 of 151"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 31,
+          "attempted": 110,
+          "raw": "31 of 110"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "leg": {
+          "landed": 22,
+          "attempted": 25,
+          "raw": "22 of 25"
+        },
+        "distance": {
+          "landed": 63,
+          "attempted": 149,
+          "raw": "63 of 149"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        },
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 141,
+          "raw": "83 of 141"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 72,
+          "attempted": 129,
+          "raw": "72 of 129"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 78,
+          "attempted": 135,
+          "raw": "78 of 135"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 4,
+            "attempted": 16,
+            "raw": "4 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 31,
+            "raw": "17 of 31"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 42,
+            "raw": "17 of 42"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 7,
+            "attempted": 30,
+            "raw": "7 of 30"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 41,
+            "raw": "16 of 41"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f2900678e98f6d6a",
+          "name": "Ronaldo Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+        },
+        {
+          "id": "34b96d52db1d26e6",
+          "name": "Kevin Borjas",
+          "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f2900678e98f6d6a",
+            "name": "Ronaldo Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/f2900678e98f6d6a"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 84,
+            "raw": "37 of 84"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 20,
+            "attempted": 64,
+            "raw": "20 of 64"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 83,
+            "raw": "37 of 83"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "34b96d52db1d26e6",
+            "name": "Kevin Borjas",
+            "url": "http://www.ufcstats.com/fighter-details/34b96d52db1d26e6"
+          },
+          "significantStrikes": {
+            "landed": 43,
+            "attempted": 77,
+            "raw": "43 of 77"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 39,
+            "attempted": 72,
+            "raw": "39 of 72"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 42,
+            "attempted": 76,
+            "raw": "42 of 76"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5ba7dd466e30169f",
+    "fetchedAt": "2026-05-19T17:00:01.691Z"
+  }
+}

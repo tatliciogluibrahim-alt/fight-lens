@@ -1,0 +1,404 @@
+{
+  "id": "938081fae11dcbbf",
+  "url": "http://www.ufcstats.com/fight-details/938081fae11dcbbf",
+  "event": {
+    "id": "39f68882def7a507",
+    "name": "UFC 311: Makhachev vs. Moicano",
+    "url": "http://www.ufcstats.com/event-details/39f68882def7a507"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "23dec7c47cb418f8",
+      "name": "Zach Reese",
+      "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8",
+      "nickname": "Savage",
+      "result": "L"
+    },
+    {
+      "id": "3bc3f60b21cddc6a",
+      "name": "Azamat Bekoev",
+      "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a",
+      "nickname": "Iron",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:04",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Blake Grice",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      },
+      {
+        "id": "3bc3f60b21cddc6a",
+        "name": "Azamat Bekoev",
+        "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 24,
+          "raw": "13 of 24"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 35,
+          "raw": "22 of 35"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "3bc3f60b21cddc6a",
+          "name": "Azamat Bekoev",
+          "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 26,
+          "raw": "21 of 26"
+        },
+        "significantStrikePercent": 80,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 59,
+          "raw": "52 of 59"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:14",
+        "controlSeconds": 134
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        {
+          "id": "3bc3f60b21cddc6a",
+          "name": "Azamat Bekoev",
+          "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 35,
+            "raw": "22 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "3bc3f60b21cddc6a",
+            "name": "Azamat Bekoev",
+            "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 26,
+            "raw": "21 of 26"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 52,
+            "attempted": 59,
+            "raw": "52 of 59"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:14",
+          "controlSeconds": 134
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "23dec7c47cb418f8",
+        "name": "Zach Reese",
+        "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+      },
+      {
+        "id": "3bc3f60b21cddc6a",
+        "name": "Azamat Bekoev",
+        "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 24,
+          "raw": "13 of 24"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 13,
+          "attempted": 22,
+          "raw": "13 of 22"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        }
+      },
+      {
+        "fighter": {
+          "id": "3bc3f60b21cddc6a",
+          "name": "Azamat Bekoev",
+          "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 26,
+          "raw": "21 of 26"
+        },
+        "significantStrikePercent": 80,
+        "head": {
+          "landed": 16,
+          "attempted": 19,
+          "raw": "16 of 19"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 18,
+          "attempted": 20,
+          "raw": "18 of 20"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23dec7c47cb418f8",
+          "name": "Zach Reese",
+          "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+        },
+        {
+          "id": "3bc3f60b21cddc6a",
+          "name": "Azamat Bekoev",
+          "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23dec7c47cb418f8",
+            "name": "Zach Reese",
+            "url": "http://www.ufcstats.com/fighter-details/23dec7c47cb418f8"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3bc3f60b21cddc6a",
+            "name": "Azamat Bekoev",
+            "url": "http://www.ufcstats.com/fighter-details/3bc3f60b21cddc6a"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 26,
+            "raw": "21 of 26"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 20,
+            "raw": "18 of 20"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/938081fae11dcbbf",
+    "fetchedAt": "2026-05-19T16:55:49.689Z"
+  }
+}

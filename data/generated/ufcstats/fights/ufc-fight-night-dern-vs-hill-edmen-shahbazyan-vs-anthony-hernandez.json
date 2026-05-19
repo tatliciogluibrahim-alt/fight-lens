@@ -1,0 +1,764 @@
+{
+  "id": "3638ee66c7d34fe0",
+  "url": "http://www.ufcstats.com/fight-details/3638ee66c7d34fe0",
+  "event": {
+    "id": "6f812143641ceff8",
+    "name": "UFC Fight Night: Dern vs. Hill",
+    "url": "http://www.ufcstats.com/event-details/6f812143641ceff8"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4144798612ef96e5",
+      "name": "Edmen Shahbazyan",
+      "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5",
+      "nickname": "The Golden Boy",
+      "result": "L"
+    },
+    {
+      "id": "093e1f5bb73850be",
+      "name": "Anthony Hernandez",
+      "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be",
+      "nickname": "Fluffy",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "1:01",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4144798612ef96e5",
+        "name": "Edmen Shahbazyan",
+        "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+      },
+      {
+        "id": "093e1f5bb73850be",
+        "name": "Anthony Hernandez",
+        "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 51,
+          "raw": "30 of 51"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 55,
+          "raw": "33 of 55"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:41",
+        "controlSeconds": 41
+      },
+      {
+        "fighter": {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 63,
+          "attempted": 88,
+          "raw": "63 of 88"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 77,
+          "attempted": 105,
+          "raw": "77 of 105"
+        },
+        "takedowns": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 4,
+        "reversals": 0,
+        "control": "7:11",
+        "controlSeconds": 431
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 45,
+            "raw": "27 of 45"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "2:29",
+          "controlSeconds": 149
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 50,
+            "raw": "39 of 50"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "3:54",
+          "controlSeconds": 234
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 22,
+            "raw": "20 of 22"
+          },
+          "significantStrikePercent": 90,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 25,
+            "raw": "21 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:48",
+          "controlSeconds": 48
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4144798612ef96e5",
+        "name": "Edmen Shahbazyan",
+        "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+      },
+      {
+        "id": "093e1f5bb73850be",
+        "name": "Anthony Hernandez",
+        "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 51,
+          "raw": "30 of 51"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 21,
+          "attempted": 42,
+          "raw": "21 of 42"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 35,
+          "raw": "17 of 35"
+        },
+        "clinch": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        },
+        "significantStrikes": {
+          "landed": 63,
+          "attempted": 88,
+          "raw": "63 of 88"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 55,
+          "attempted": 79,
+          "raw": "55 of 79"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "ground": {
+          "landed": 40,
+          "attempted": 47,
+          "raw": "40 of 47"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 39,
+            "raw": "28 of 39"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 22,
+            "attempted": 33,
+            "raw": "22 of 33"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 19,
+            "attempted": 24,
+            "raw": "19 of 24"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4144798612ef96e5",
+          "name": "Edmen Shahbazyan",
+          "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+        },
+        {
+          "id": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4144798612ef96e5",
+            "name": "Edmen Shahbazyan",
+            "url": "http://www.ufcstats.com/fighter-details/4144798612ef96e5"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "093e1f5bb73850be",
+            "name": "Anthony Hernandez",
+            "url": "http://www.ufcstats.com/fighter-details/093e1f5bb73850be"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 22,
+            "raw": "20 of 22"
+          },
+          "significantStrikePercent": 90,
+          "head": {
+            "landed": 20,
+            "attempted": 22,
+            "raw": "20 of 22"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 19,
+            "attempted": 21,
+            "raw": "19 of 21"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/3638ee66c7d34fe0",
+    "fetchedAt": "2026-05-19T17:00:47.674Z"
+  }
+}

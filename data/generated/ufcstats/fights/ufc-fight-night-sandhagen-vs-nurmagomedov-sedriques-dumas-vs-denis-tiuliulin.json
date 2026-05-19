@@ -1,0 +1,764 @@
+{
+  "id": "e6851877e33d343f",
+  "url": "http://www.ufcstats.com/fight-details/e6851877e33d343f",
+  "event": {
+    "id": "fe435e440b5de0ff",
+    "name": "UFC Fight Night: Sandhagen vs. Nurmagomedov",
+    "url": "http://www.ufcstats.com/event-details/fe435e440b5de0ff"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4e6738062d469256",
+      "name": "Sedriques Dumas",
+      "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256",
+      "nickname": "The Reaper",
+      "result": "W"
+    },
+    {
+      "id": "0112352cb32f5026",
+      "name": "Denis Tiuliulin",
+      "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "0112352cb32f5026",
+        "name": "Denis Tiuliulin",
+        "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 88,
+          "raw": "49 of 88"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 95,
+          "attempted": 140,
+          "raw": "95 of 140"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedownPercent": 30,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:00",
+        "controlSeconds": 360
+      },
+      {
+        "fighter": {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 70,
+          "raw": "26 of 70"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 183,
+          "attempted": 246,
+          "raw": "183 of 246"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "takedownPercent": 60,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:27",
+        "controlSeconds": 147
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 41,
+            "raw": "35 of 41"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:22",
+          "controlSeconds": 202
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 53,
+            "raw": "44 of 53"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 40,
+            "raw": "26 of 40"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 57,
+            "raw": "39 of 57"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:38",
+          "controlSeconds": 158
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 116,
+            "attempted": 136,
+            "raw": "116 of 136"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 42,
+            "raw": "21 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 57,
+            "raw": "23 of 57"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:59",
+          "controlSeconds": 119
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "0112352cb32f5026",
+        "name": "Denis Tiuliulin",
+        "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 88,
+          "raw": "49 of 88"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 28,
+          "attempted": 66,
+          "raw": "28 of 66"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 12,
+          "raw": "12 of 12"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 79,
+          "raw": "40 of 79"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 70,
+          "raw": "26 of 70"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 10,
+          "attempted": 49,
+          "raw": "10 of 49"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 67,
+          "raw": "24 of 67"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 40,
+            "raw": "26 of 40"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 3,
+            "attempted": 13,
+            "raw": "3 of 13"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0112352cb32f5026",
+          "name": "Denis Tiuliulin",
+          "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0112352cb32f5026",
+            "name": "Denis Tiuliulin",
+            "url": "http://www.ufcstats.com/fighter-details/0112352cb32f5026"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 6,
+            "attempted": 31,
+            "raw": "6 of 31"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 38,
+            "raw": "13 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e6851877e33d343f",
+    "fetchedAt": "2026-05-19T16:53:33.854Z"
+  }
+}

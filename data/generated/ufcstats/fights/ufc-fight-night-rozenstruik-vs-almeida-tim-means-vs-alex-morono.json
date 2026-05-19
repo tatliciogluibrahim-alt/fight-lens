@@ -1,0 +1,584 @@
+{
+  "id": "838a022ca5d99cc1",
+  "url": "http://www.ufcstats.com/fight-details/838a022ca5d99cc1",
+  "event": {
+    "id": "901cddcbfa079097",
+    "name": "UFC Fight Night: Rozenstruik vs. Almeida",
+    "url": "http://www.ufcstats.com/event-details/901cddcbfa079097"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4b47e71384a9522f",
+      "name": "Tim Means",
+      "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f",
+      "nickname": "The Dirty Bird",
+      "result": "L"
+    },
+    {
+      "id": "cdb96af67d096b1e",
+      "name": "Alex Morono",
+      "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e",
+      "nickname": "The Great White",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "2:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Wayne Spinola",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4b47e71384a9522f",
+        "name": "Tim Means",
+        "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+      },
+      {
+        "id": "cdb96af67d096b1e",
+        "name": "Alex Morono",
+        "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 87,
+          "raw": "40 of 87"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 92,
+          "raw": "45 of 92"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:46",
+        "controlSeconds": 46
+      },
+      {
+        "fighter": {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 92,
+          "raw": "33 of 92"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 42,
+          "attempted": 102,
+          "raw": "42 of 102"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 64,
+            "raw": "32 of 64"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 66,
+            "raw": "34 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        },
+        {
+          "fighter": {
+            "id": "cdb96af67d096b1e",
+            "name": "Alex Morono",
+            "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 58,
+            "raw": "18 of 58"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 68,
+            "raw": "27 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 26,
+            "raw": "11 of 26"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "cdb96af67d096b1e",
+            "name": "Alex Morono",
+            "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4b47e71384a9522f",
+        "name": "Tim Means",
+        "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+      },
+      {
+        "id": "cdb96af67d096b1e",
+        "name": "Alex Morono",
+        "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 87,
+          "raw": "40 of 87"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 16,
+          "attempted": 52,
+          "raw": "16 of 52"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 29,
+          "raw": "18 of 29"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 74,
+          "raw": "30 of 74"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 92,
+          "raw": "33 of 92"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 29,
+          "attempted": 86,
+          "raw": "29 of 86"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 86,
+          "raw": "31 of 86"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 64,
+            "raw": "32 of 64"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "body": {
+            "landed": 16,
+            "attempted": 26,
+            "raw": "16 of 26"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 52,
+            "raw": "23 of 52"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cdb96af67d096b1e",
+            "name": "Alex Morono",
+            "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 58,
+            "raw": "18 of 58"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 16,
+            "attempted": 55,
+            "raw": "16 of 55"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 52,
+            "raw": "16 of 52"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        {
+          "id": "cdb96af67d096b1e",
+          "name": "Alex Morono",
+          "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cdb96af67d096b1e",
+            "name": "Alex Morono",
+            "url": "http://www.ufcstats.com/fighter-details/cdb96af67d096b1e"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 13,
+            "attempted": 31,
+            "raw": "13 of 31"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/838a022ca5d99cc1",
+    "fetchedAt": "2026-05-19T17:02:06.075Z"
+  }
+}

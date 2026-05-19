@@ -1,0 +1,764 @@
+{
+  "id": "c98f62eb74e69bcb",
+  "url": "http://www.ufcstats.com/fight-details/c98f62eb74e69bcb",
+  "event": {
+    "id": "7abe471b61725980",
+    "name": "UFC Fight Night: Kara-France vs. Albazi",
+    "url": "http://www.ufcstats.com/event-details/7abe471b61725980"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5fa2974cbd18e05c",
+      "name": "John Castaneda",
+      "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c",
+      "nickname": "Sexi Mexi",
+      "result": "W"
+    },
+    {
+      "id": "a54660deb6a8489c",
+      "name": "Muin Gafurov",
+      "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c",
+      "nickname": "Tajik",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5fa2974cbd18e05c",
+        "name": "John Castaneda",
+        "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+      },
+      {
+        "id": "a54660deb6a8489c",
+        "name": "Muin Gafurov",
+        "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 88,
+          "raw": "40 of 88"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 121,
+          "raw": "70 of 121"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:16",
+        "controlSeconds": 256
+      },
+      {
+        "fighter": {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 157,
+          "raw": "61 of 157"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 93,
+          "attempted": 204,
+          "raw": "93 of 204"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:55",
+        "controlSeconds": 115
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 40,
+            "raw": "25 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:51",
+          "controlSeconds": 51
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 51,
+            "raw": "25 of 51"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 86,
+            "raw": "29 of 86"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 103,
+            "raw": "44 of 103"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:14",
+          "controlSeconds": 74
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:45",
+          "controlSeconds": 165
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 57,
+            "raw": "28 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5fa2974cbd18e05c",
+        "name": "John Castaneda",
+        "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+      },
+      {
+        "id": "a54660deb6a8489c",
+        "name": "Muin Gafurov",
+        "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 88,
+          "raw": "40 of 88"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 30,
+          "attempted": 73,
+          "raw": "30 of 73"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 37,
+          "attempted": 83,
+          "raw": "37 of 83"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 157,
+          "raw": "61 of 157"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 45,
+          "attempted": 135,
+          "raw": "45 of 135"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 132,
+          "raw": "47 of 132"
+        },
+        "clinch": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 37,
+            "raw": "17 of 37"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 86,
+            "raw": "29 of 86"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 23,
+            "attempted": 78,
+            "raw": "23 of 78"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 71,
+            "raw": "20 of 71"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5fa2974cbd18e05c",
+          "name": "John Castaneda",
+          "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+        },
+        {
+          "id": "a54660deb6a8489c",
+          "name": "Muin Gafurov",
+          "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5fa2974cbd18e05c",
+            "name": "John Castaneda",
+            "url": "http://www.ufcstats.com/fighter-details/5fa2974cbd18e05c"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a54660deb6a8489c",
+            "name": "Muin Gafurov",
+            "url": "http://www.ufcstats.com/fighter-details/a54660deb6a8489c"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 8,
+            "attempted": 24,
+            "raw": "8 of 24"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/c98f62eb74e69bcb",
+    "fetchedAt": "2026-05-19T16:54:49.898Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "ed9f8f702585ed44",
+  "url": "http://www.ufcstats.com/fight-details/ed9f8f702585ed44",
+  "event": {
+    "id": "1ccff7f0cfdf85eb",
+    "name": "UFC 285: Jones vs. Gane",
+    "url": "http://www.ufcstats.com/event-details/1ccff7f0cfdf85eb"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "442c9011034ae1fd",
+      "name": "Ian Machado Garry",
+      "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd",
+      "nickname": "The Future",
+      "result": "W"
+    },
+    {
+      "id": "32490e80ddab1e5a",
+      "name": "Song Kenan",
+      "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a",
+      "nickname": "The Assassin",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:22",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "442c9011034ae1fd",
+        "name": "Ian Machado Garry",
+        "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+      },
+      {
+        "id": "32490e80ddab1e5a",
+        "name": "Song Kenan",
+        "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 127,
+          "attempted": 231,
+          "raw": "127 of 231"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 127,
+          "attempted": 231,
+          "raw": "127 of 231"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:05",
+        "controlSeconds": 5
+      },
+      {
+        "fighter": {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 110,
+          "raw": "55 of 110"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 61,
+          "attempted": 120,
+          "raw": "61 of 120"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 66,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:44",
+        "controlSeconds": 44
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 41,
+            "raw": "22 of 41"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 51,
+            "raw": "28 of 51"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 66,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 79,
+            "raw": "42 of 79"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 79,
+            "raw": "42 of 79"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 35,
+            "raw": "17 of 35"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 35,
+            "raw": "17 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 108,
+            "raw": "70 of 108"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 70,
+            "attempted": 108,
+            "raw": "70 of 108"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "442c9011034ae1fd",
+        "name": "Ian Machado Garry",
+        "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+      },
+      {
+        "id": "32490e80ddab1e5a",
+        "name": "Song Kenan",
+        "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        "significantStrikes": {
+          "landed": 127,
+          "attempted": 231,
+          "raw": "127 of 231"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 58,
+          "attempted": 149,
+          "raw": "58 of 149"
+        },
+        "body": {
+          "landed": 36,
+          "attempted": 46,
+          "raw": "36 of 46"
+        },
+        "leg": {
+          "landed": 33,
+          "attempted": 36,
+          "raw": "33 of 36"
+        },
+        "distance": {
+          "landed": 119,
+          "attempted": 220,
+          "raw": "119 of 220"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 110,
+          "raw": "55 of 110"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 18,
+          "attempted": 69,
+          "raw": "18 of 69"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "leg": {
+          "landed": 29,
+          "attempted": 32,
+          "raw": "29 of 32"
+        },
+        "distance": {
+          "landed": 45,
+          "attempted": 94,
+          "raw": "45 of 94"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 3,
+            "attempted": 27,
+            "raw": "3 of 27"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 41,
+            "raw": "22 of 41"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 79,
+            "raw": "42 of 79"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 41,
+            "attempted": 78,
+            "raw": "41 of 78"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 35,
+            "raw": "17 of 35"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        {
+          "id": "32490e80ddab1e5a",
+          "name": "Song Kenan",
+          "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "significantStrikes": {
+            "landed": 70,
+            "attempted": 108,
+            "raw": "70 of 108"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 36,
+            "attempted": 72,
+            "raw": "36 of 72"
+          },
+          "body": {
+            "landed": 22,
+            "attempted": 23,
+            "raw": "22 of 23"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "distance": {
+            "landed": 63,
+            "attempted": 98,
+            "raw": "63 of 98"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "32490e80ddab1e5a",
+            "name": "Song Kenan",
+            "url": "http://www.ufcstats.com/fighter-details/32490e80ddab1e5a"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/ed9f8f702585ed44",
+    "fetchedAt": "2026-05-19T17:04:50.003Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "cff0abc02974fb4a",
+  "url": "http://www.ufcstats.com/fight-details/cff0abc02974fb4a",
+  "event": {
+    "id": "9336e86cfd4ceaa1",
+    "name": "UFC Fight Night: Oliveira vs. Gamrot",
+    "url": "http://www.ufcstats.com/event-details/9336e86cfd4ceaa1"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "710f0f8c5d5c9d41",
+      "name": "Lucas Almeida",
+      "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "01c9e4013afce141",
+      "name": "Michael Aswell Jr.",
+      "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141",
+      "nickname": "The Texas Kid",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:42",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "710f0f8c5d5c9d41",
+        "name": "Lucas Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+      },
+      {
+        "id": "01c9e4013afce141",
+        "name": "Michael Aswell Jr.",
+        "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "710f0f8c5d5c9d41",
+          "name": "Lucas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "01c9e4013afce141",
+          "name": "Michael Aswell Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 54,
+          "raw": "30 of 54"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 59,
+          "raw": "34 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "710f0f8c5d5c9d41",
+          "name": "Lucas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+        },
+        {
+          "id": "01c9e4013afce141",
+          "name": "Michael Aswell Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "710f0f8c5d5c9d41",
+            "name": "Lucas Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "01c9e4013afce141",
+            "name": "Michael Aswell Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 54,
+            "raw": "30 of 54"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 59,
+            "raw": "34 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "710f0f8c5d5c9d41",
+        "name": "Lucas Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+      },
+      {
+        "id": "01c9e4013afce141",
+        "name": "Michael Aswell Jr.",
+        "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "710f0f8c5d5c9d41",
+          "name": "Lucas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 3,
+          "attempted": 14,
+          "raw": "3 of 14"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "01c9e4013afce141",
+          "name": "Michael Aswell Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 54,
+          "raw": "30 of 54"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 30,
+          "attempted": 53,
+          "raw": "30 of 53"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 37,
+          "raw": "19 of 37"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 16,
+          "raw": "10 of 16"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "710f0f8c5d5c9d41",
+          "name": "Lucas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+        },
+        {
+          "id": "01c9e4013afce141",
+          "name": "Michael Aswell Jr.",
+          "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "710f0f8c5d5c9d41",
+            "name": "Lucas Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/710f0f8c5d5c9d41"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "01c9e4013afce141",
+            "name": "Michael Aswell Jr.",
+            "url": "http://www.ufcstats.com/fighter-details/01c9e4013afce141"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 54,
+            "raw": "30 of 54"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 30,
+            "attempted": 53,
+            "raw": "30 of 53"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 37,
+            "raw": "19 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/cff0abc02974fb4a",
+    "fetchedAt": "2026-05-19T16:57:43.753Z"
+  }
+}

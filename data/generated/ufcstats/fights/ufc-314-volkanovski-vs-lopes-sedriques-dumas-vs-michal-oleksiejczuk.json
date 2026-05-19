@@ -1,0 +1,404 @@
+{
+  "id": "4bbda6c1f6cf9d4e",
+  "url": "http://www.ufcstats.com/fight-details/4bbda6c1f6cf9d4e",
+  "event": {
+    "id": "22f4b6cb6b1bd7fd",
+    "name": "UFC 314: Volkanovski vs. Lopes",
+    "url": "http://www.ufcstats.com/event-details/22f4b6cb6b1bd7fd"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4e6738062d469256",
+      "name": "Sedriques Dumas",
+      "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256",
+      "nickname": "The Reaper",
+      "result": "L"
+    },
+    {
+      "id": "0d65c432720accb9",
+      "name": "Michal Oleksiejczuk",
+      "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9",
+      "nickname": "Hussar",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:49",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 26,
+          "raw": "3 of 26"
+        },
+        "significantStrikePercent": 11,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 26,
+          "raw": "3 of 26"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 57,
+          "raw": "34 of 57"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 59,
+          "raw": "34 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 26,
+            "raw": "3 of 26"
+          },
+          "significantStrikePercent": 11,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 26,
+            "raw": "3 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 57,
+            "raw": "34 of 57"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 59,
+            "raw": "34 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 26,
+          "raw": "3 of 26"
+        },
+        "significantStrikePercent": 11,
+        "head": {
+          "landed": 0,
+          "attempted": 18,
+          "raw": "0 of 18"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 26,
+          "raw": "3 of 26"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 57,
+          "raw": "34 of 57"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 27,
+          "attempted": 49,
+          "raw": "27 of 49"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 21,
+          "attempted": 30,
+          "raw": "21 of 30"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 26,
+            "raw": "3 of 26"
+          },
+          "significantStrikePercent": 11,
+          "head": {
+            "landed": 0,
+            "attempted": 18,
+            "raw": "0 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 26,
+            "raw": "3 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 57,
+            "raw": "34 of 57"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 27,
+            "attempted": 49,
+            "raw": "27 of 49"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 21,
+            "attempted": 30,
+            "raw": "21 of 30"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4bbda6c1f6cf9d4e",
+    "fetchedAt": "2026-05-19T16:53:33.390Z"
+  }
+}

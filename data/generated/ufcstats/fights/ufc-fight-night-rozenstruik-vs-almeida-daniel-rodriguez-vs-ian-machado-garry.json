@@ -1,0 +1,404 @@
+{
+  "id": "b0f4c7788782e26e",
+  "url": "http://www.ufcstats.com/fight-details/b0f4c7788782e26e",
+  "event": {
+    "id": "901cddcbfa079097",
+    "name": "UFC Fight Night: Rozenstruik vs. Almeida",
+    "url": "http://www.ufcstats.com/event-details/901cddcbfa079097"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8a1f3b5c526cd6e6",
+      "name": "Daniel Rodriguez",
+      "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6",
+      "nickname": "D-Rod",
+      "result": "L"
+    },
+    {
+      "id": "442c9011034ae1fd",
+      "name": "Ian Machado Garry",
+      "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd",
+      "nickname": "The Future",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:57",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8a1f3b5c526cd6e6",
+        "name": "Daniel Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+      },
+      {
+        "id": "442c9011034ae1fd",
+        "name": "Ian Machado Garry",
+        "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8a1f3b5c526cd6e6",
+          "name": "Daniel Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8a1f3b5c526cd6e6",
+          "name": "Daniel Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+        },
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8a1f3b5c526cd6e6",
+            "name": "Daniel Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8a1f3b5c526cd6e6",
+        "name": "Daniel Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+      },
+      {
+        "id": "442c9011034ae1fd",
+        "name": "Ian Machado Garry",
+        "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8a1f3b5c526cd6e6",
+          "name": "Daniel Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "significantStrikePercent": 28,
+        "head": {
+          "landed": 2,
+          "attempted": 17,
+          "raw": "2 of 17"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 19,
+          "attempted": 42,
+          "raw": "19 of 42"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 28,
+          "raw": "12 of 28"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 18,
+          "raw": "11 of 18"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8a1f3b5c526cd6e6",
+          "name": "Daniel Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+        },
+        {
+          "id": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8a1f3b5c526cd6e6",
+            "name": "Daniel Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/8a1f3b5c526cd6e6"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 2,
+            "attempted": 17,
+            "raw": "2 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "442c9011034ae1fd",
+            "name": "Ian Machado Garry",
+            "url": "http://www.ufcstats.com/fighter-details/442c9011034ae1fd"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 19,
+            "attempted": 42,
+            "raw": "19 of 42"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 28,
+            "raw": "12 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/b0f4c7788782e26e",
+    "fetchedAt": "2026-05-19T17:04:49.493Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "034cbbec91f67852",
+  "url": "http://www.ufcstats.com/fight-details/034cbbec91f67852",
+  "event": {
+    "id": "6fb1ba67bef41b37",
+    "name": "UFC Fight Night: Pavlovich vs. Blaydes",
+    "url": "http://www.ufcstats.com/event-details/6fb1ba67bef41b37"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "94527830000ab715",
+      "name": "Rani Yahya",
+      "url": "http://www.ufcstats.com/fighter-details/94527830000ab715",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "cc1a8b4b38b92c6d",
+      "name": "Montel Jackson",
+      "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d",
+      "nickname": "Quik",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:42",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "94527830000ab715",
+        "name": "Rani Yahya",
+        "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+      },
+      {
+        "id": "cc1a8b4b38b92c6d",
+        "name": "Montel Jackson",
+        "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 21,
+          "raw": "7 of 21"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 22,
+          "raw": "7 of 22"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      },
+      {
+        "fighter": {
+          "id": "cc1a8b4b38b92c6d",
+          "name": "Montel Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 23,
+          "raw": "10 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:17",
+        "controlSeconds": 77
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        {
+          "id": "cc1a8b4b38b92c6d",
+          "name": "Montel Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "cc1a8b4b38b92c6d",
+            "name": "Montel Jackson",
+            "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:17",
+          "controlSeconds": 77
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "94527830000ab715",
+        "name": "Rani Yahya",
+        "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+      },
+      {
+        "id": "cc1a8b4b38b92c6d",
+        "name": "Montel Jackson",
+        "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 21,
+          "raw": "7 of 21"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 10,
+          "raw": "1 of 10"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 21,
+          "raw": "7 of 21"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "cc1a8b4b38b92c6d",
+          "name": "Montel Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 21,
+          "raw": "9 of 21"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 7,
+          "attempted": 18,
+          "raw": "7 of 18"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        {
+          "id": "cc1a8b4b38b92c6d",
+          "name": "Montel Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cc1a8b4b38b92c6d",
+            "name": "Montel Jackson",
+            "url": "http://www.ufcstats.com/fighter-details/cc1a8b4b38b92c6d"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/034cbbec91f67852",
+    "fetchedAt": "2026-05-19T16:53:25.836Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "f594fc5c2bc6237e",
+  "url": "http://www.ufcstats.com/fight-details/f594fc5c2bc6237e",
+  "event": {
+    "id": "babc6b5745335f18",
+    "name": "UFC Fight Night: Emmett vs. Vallejos",
+    "url": "http://www.ufcstats.com/event-details/babc6b5745335f18"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fba03cd6cc28dc41",
+      "name": "Josh Emmett",
+      "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "239d8e5359022f3b",
+      "name": "Kevin Vallejos",
+      "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b",
+      "nickname": "El Chino",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:33",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fba03cd6cc28dc41",
+        "name": "Josh Emmett",
+        "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+      },
+      {
+        "id": "239d8e5359022f3b",
+        "name": "Kevin Vallejos",
+        "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fba03cd6cc28dc41",
+          "name": "Josh Emmett",
+          "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 55,
+          "raw": "36 of 55"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 43,
+          "attempted": 68,
+          "raw": "43 of 68"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:38",
+        "controlSeconds": 38
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fba03cd6cc28dc41",
+          "name": "Josh Emmett",
+          "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+        },
+        {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fba03cd6cc28dc41",
+            "name": "Josh Emmett",
+            "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "239d8e5359022f3b",
+            "name": "Kevin Vallejos",
+            "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 55,
+            "raw": "36 of 55"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 68,
+            "raw": "43 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fba03cd6cc28dc41",
+        "name": "Josh Emmett",
+        "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+      },
+      {
+        "id": "239d8e5359022f3b",
+        "name": "Kevin Vallejos",
+        "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fba03cd6cc28dc41",
+          "name": "Josh Emmett",
+          "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 2,
+          "attempted": 11,
+          "raw": "2 of 11"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 55,
+          "raw": "36 of 55"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 30,
+          "attempted": 49,
+          "raw": "30 of 49"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 21,
+          "raw": "12 of 21"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fba03cd6cc28dc41",
+          "name": "Josh Emmett",
+          "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+        },
+        {
+          "id": "239d8e5359022f3b",
+          "name": "Kevin Vallejos",
+          "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fba03cd6cc28dc41",
+            "name": "Josh Emmett",
+            "url": "http://www.ufcstats.com/fighter-details/fba03cd6cc28dc41"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "239d8e5359022f3b",
+            "name": "Kevin Vallejos",
+            "url": "http://www.ufcstats.com/fighter-details/239d8e5359022f3b"
+          },
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 55,
+            "raw": "36 of 55"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 30,
+            "attempted": 49,
+            "raw": "30 of 49"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f594fc5c2bc6237e",
+    "fetchedAt": "2026-05-19T16:58:19.570Z"
+  }
+}
