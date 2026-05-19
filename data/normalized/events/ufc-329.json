@@ -36,9 +36,9 @@
       "rounds": 5,
       "weightClass": "Welterweight",
       "status": "scheduled",
-      "matchupQuestion": null,
-      "fightShapeSummary": null,
-      "manualRead": null,
+      "matchupQuestion": "Can McGregor's power and early timing survive Holloway's relentless volume across five rounds at a new weight class?",
+      "fightShapeSummary": "McGregor enters with a five-year layoff \u2014 his career stats are a snapshot of 2016\u20132021 Featherweight/Lightweight McGregor. Holloway's volume is the most tested FW striking engine in UFC history, now moving to Welterweight for the first time. The model treats round-one pace as McGregor's highest-value window and treats round-four volume as Holloway's highest-value window.",
+      "manualRead": "LAYOFF ALERT: McGregor last competed July 10, 2021 \u2014 nearly five years of inactivity. Career rate stats (SLpM, StrDef, TDAcc) reflect prime McGregor but carry no information about current conditioning, reflexes, or chin durability post-leg injury. Model confidence should be treated as LOW regardless of computed probabilities. Holloway's UFC 326 loss to Oliveira shows he is still fighting elite competition at volume \u2014 his form is recent and verified. This is a structural model limitation: stale inputs produce stale outputs.",
       "fighters": {
         "fighterA": {
           "id": "conor-mcgregor",
@@ -6484,44 +6484,78 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 50,
+          "fighterB": 48,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 54,
-          "fighterB": 58,
+          "fighterB": 59,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 4.66,
+          "fighterB": 4.61,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0.67,
           "fighterB": 0.23,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
-          "fighterA": 55,
+          "label": "takedown accuracy %",
+          "fighterA": 56,
           "fighterB": 53,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
-          "fighterA": 66,
+          "label": "takedown defense %",
+          "fighterA": 67,
           "fighterB": 81,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
-          "fighterA": 0.1,
-          "fighterB": 0.3,
+          "label": "sub attempts/15 min",
+          "fighterA": 0.13,
+          "fighterB": 0.28,
           "provenance": "sourced"
         }
       ],
       "paths": {
-        "fighterA": [],
-        "fighterB": []
+        "fighterA": [
+          {
+            "label": "first-90-sec KO"
+          },
+          {
+            "label": "left hand counter"
+          },
+          {
+            "label": "clinch trip + ground-and-pound"
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "volume accumulation R3-R5"
+          },
+          {
+            "label": "body-head combinations"
+          },
+          {
+            "label": "pressure into the fence"
+          }
+        ]
       },
       "sourceMix": {
         "eventStructure": "sourced",
@@ -6541,9 +6575,9 @@
       "rounds": 3,
       "weightClass": "Lightweight",
       "status": "scheduled",
-      "matchupQuestion": null,
-      "fightShapeSummary": null,
-      "manualRead": null,
+      "matchupQuestion": "Does Saint Denis's wrestling + sub-rate offset Pimblett's chin durability and guard submission threat?",
+      "fightShapeSummary": "Saint Denis is a finisher \u2014 1.75 sub attempts/15 min, 59% striking accuracy \u2014 who sets up submissions behind forward pressure. Pimblett is durable (43% StrDef, but absorbs clean) and dangerous off his back. The question is whether BSD can hold position long enough for sub attempts or whether Pimblett survives the grappling and finds his submission window.",
+      "manualRead": "Saint Denis beat Hooker at UFC 325 (Jan 2026) \u2014 his form is trending. Pimblett lost to Gaethje at UFC 324 (Jan 2026) via TKO \u2014 first knockout loss in UFC. Pimblett's chin under heavy shots is now a documented vulnerability. BSD's grappling edge is real; his SPI is high. The model correctly weights BSD here.",
       "fighters": {
         "fighterA": {
           "id": "benoit-saint-denis",
@@ -11643,44 +11677,78 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 59,
+          "fighterB": 53,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 42,
-          "fighterB": 42,
+          "fighterB": 43,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 4.09,
+          "fighterB": 3.89,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 4.19,
           "fighterB": 0.69,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
-          "fighterA": 35,
+          "label": "takedown accuracy %",
+          "fighterA": 36,
           "fighterB": 21,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 72,
           "fighterB": 44,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
-          "fighterA": 1.8,
+          "label": "sub attempts/15 min",
+          "fighterA": 1.75,
           "fighterB": 1.2,
           "provenance": "sourced"
         }
       ],
       "paths": {
-        "fighterA": [],
-        "fighterB": []
+        "fighterA": [
+          {
+            "label": "takedown into submission"
+          },
+          {
+            "label": "clinch pressure + trips"
+          },
+          {
+            "label": "ground-and-pound finish"
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "guillotine off the shot"
+          },
+          {
+            "label": "volume boxing from the outside"
+          },
+          {
+            "label": "triangle or armbar from guard"
+          }
+        ]
       },
       "sourceMix": {
         "eventStructure": "sourced",
@@ -11700,9 +11768,9 @@
       "rounds": 3,
       "weightClass": "Bantamweight",
       "status": "scheduled",
-      "matchupQuestion": null,
-      "fightShapeSummary": null,
-      "manualRead": null,
+      "matchupQuestion": "Can Bautista's grappling disrupt Sandhagen's timing and force him off his preferred distance?",
+      "fightShapeSummary": "Sandhagen is a long-range specialist \u2014 karate footwork, precise counters, and enough submission defense to avoid being held. Bautista is a well-rounded wrestler who builds on takedowns with sub attempts (0.85/15 min). The fight hinges on whether Bautista can compress the cage and land takedowns against Sandhagen's lateral movement.",
+      "manualRead": "Sandhagen lost his title shot at UFC 320 (Oct 2025) \u2014 coming off his second title fight loss. He remains elite in the division but has a proven ceiling against top-tier wrestlers. Bautista's 56% TDDef reads as a liability if Sandhagen can sprawl consistently.",
       "fighters": {
         "fighterA": {
           "id": "cory-sandhagen",
@@ -18522,44 +18590,78 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
-          "fighterA": 56,
-          "fighterB": 54,
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 45,
+          "fighterB": 49,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
+          "fighterA": 57,
+          "fighterB": 55,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.47,
+          "fighterB": 3.98,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 1.15,
           "fighterB": 1.91,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
-          "fighterA": 34,
+          "label": "takedown accuracy %",
+          "fighterA": 35,
           "fighterB": 38,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 56,
-          "fighterB": 55,
+          "fighterB": 56,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
-          "fighterA": 0.2,
-          "fighterB": 0.8,
+          "label": "sub attempts/15 min",
+          "fighterA": 0.25,
+          "fighterB": 0.85,
           "provenance": "sourced"
         }
       ],
       "paths": {
-        "fighterA": [],
-        "fighterB": []
+        "fighterA": [
+          {
+            "label": "knee in transition"
+          },
+          {
+            "label": "spinning attack window"
+          },
+          {
+            "label": "decision pace control"
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "takedown accumulation"
+          },
+          {
+            "label": "sub attempt off cage work"
+          },
+          {
+            "label": "body-first volume"
+          }
+        ]
       },
       "sourceMix": {
         "eventStructure": "sourced",
@@ -18579,9 +18681,9 @@
       "rounds": 3,
       "weightClass": "Flyweight",
       "status": "scheduled",
-      "matchupQuestion": null,
-      "fightShapeSummary": null,
-      "manualRead": null,
+      "matchupQuestion": "Does Kavanagh's improved form and TD defense hold up against Royval's all-action scramble offense?",
+      "fightShapeSummary": "Royval averages 1.08 sub attempts/15 min with 75% TD accuracy \u2014 he is a dangerous scrambler who finishes or finds submissions off chaos. Kavanagh beat Brandon Moreno (Feb 28, 2026) by 5-round decision, demonstrating improved consistency and a 94% TD defense that neutralizes most grapplers. The model sees this as a live fight where Kavanagh's form edge matters.",
+      "manualRead": "FORM UPDATE: Kavanagh beat former champion Brandon Moreno by unanimous decision on Feb 28, 2026. This is a significant form signal \u2014 defeating a former champion in 5 rounds is quality win evidence. Record corrected to 11-1-0. His TD defense (94%) is elite and will limit Royval's most dangerous paths.",
       "fighters": {
         "fighterA": {
           "id": "brandon-royval",
@@ -24803,44 +24905,78 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 42,
+          "fighterB": 49,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 43,
-          "fighterB": 56,
+          "fighterB": 57,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 4.25,
+          "fighterB": 3.49,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0.65,
           "fighterB": 1.12,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 75,
           "fighterB": 45,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 45,
           "fighterB": 94,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
-          "fighterA": 1.1,
-          "fighterB": 0.2,
+          "label": "sub attempts/15 min",
+          "fighterA": 1.08,
+          "fighterB": 0.22,
           "provenance": "sourced"
         }
       ],
       "paths": {
-        "fighterA": [],
-        "fighterB": []
+        "fighterA": [
+          {
+            "label": "submission off scramble"
+          },
+          {
+            "label": "high-pace brawl"
+          },
+          {
+            "label": "flying knee / spinning attack"
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "5-round decision pace"
+          },
+          {
+            "label": "TD defense + counter boxing"
+          },
+          {
+            "label": "third-round finish if royval fades"
+          }
+        ]
       },
       "sourceMix": {
         "eventStructure": "sourced",
@@ -25370,36 +25506,50 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 0,
+          "fighterB": 33,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 0,
           "fighterB": 40,
           "provenance": "sourced"
         },
         {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 0,
+          "fighterB": 15.13,
+          "provenance": "sourced"
+        },
+        {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
@@ -25427,9 +25577,9 @@
       "rounds": 3,
       "weightClass": "Light Heavyweight",
       "status": "scheduled",
-      "matchupQuestion": null,
-      "fightShapeSummary": null,
-      "manualRead": null,
+      "matchupQuestion": "Does Krylov's recent KO momentum carry into a fight against Whittaker's volume and takedown threat?",
+      "fightShapeSummary": "Whittaker is elite at Middleweight \u2014 elite striking volume (4.39 SLpM), excellent footwork, and a legitimate wrestling threat (0.73 TD avg, 82% TDDef). Krylov at Light Heavyweight is a KO threat, but he's moving down or Whittaker is moving up (fight at MW). Krylov's chin has been tested.",
+      "manualRead": "Krylov KO'd Bukauskas at UFC 324 (Jan 2026) \u2014 momentum fight. However, Krylov has been KO'd multiple times in his career and his striking defense (48%) is a real liability against Whittaker's volume. Whittaker's form is consistent across a high-quality schedule. Model favors Whittaker's volume and fight IQ.",
       "fighters": {
         "fighterA": {
           "id": "robert-whittaker",
@@ -30539,44 +30689,78 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
-          "fighterA": 59,
-          "fighterB": 47,
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 43,
+          "fighterB": 54,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
+          "fighterA": 60,
+          "fighterB": 48,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.36,
+          "fighterB": 2.59,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0.73,
           "fighterB": 2.05,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 38,
           "fighterB": 37,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 82,
           "fighterB": 53,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0,
-          "fighterB": 1.2,
+          "fighterB": 1.23,
           "provenance": "sourced"
         }
       ],
       "paths": {
-        "fighterA": [],
-        "fighterB": []
+        "fighterA": [
+          {
+            "label": "volume decision"
+          },
+          {
+            "label": "takedown control mid-rounds"
+          },
+          {
+            "label": "walk-down KO if krylov opens up"
+          }
+        ],
+        "fighterB": [
+          {
+            "label": "early overhand finish"
+          },
+          {
+            "label": "counter KO off whittaker mistake"
+          },
+          {
+            "label": "submission in scramble"
+          }
+        ]
       },
       "sourceMix": {
         "eventStructure": "sourced",
@@ -34408,36 +34592,50 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 57,
+          "fighterB": 59,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 64,
           "fighterB": 56,
           "provenance": "sourced"
         },
         {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.32,
+          "fighterB": 5.67,
+          "provenance": "sourced"
+        },
+        {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0,
           "fighterB": 1.51,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 0,
-          "fighterB": 53,
+          "fighterB": 54,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 37,
           "fighterB": 55,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0,
           "fighterB": 0.2,
           "provenance": "sourced"
@@ -37643,36 +37841,50 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 56,
+          "fighterB": 59,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 56,
           "fighterB": 46,
           "provenance": "sourced"
         },
         {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.75,
+          "fighterB": 2.03,
+          "provenance": "sourced"
+        },
+        {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 100,
           "fighterB": 52,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0,
           "fighterB": 0.2,
           "provenance": "sourced"
@@ -42670,36 +42882,50 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
-          "fighterA": 58,
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 40,
+          "fighterB": 42,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
+          "fighterA": 59,
           "fighterB": 56,
           "provenance": "sourced"
         },
         {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.66,
+          "fighterB": 5.24,
+          "provenance": "sourced"
+        },
+        {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0.85,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
-          "fighterA": 22,
+          "label": "takedown accuracy %",
+          "fighterA": 23,
           "fighterB": 0,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
-          "fighterA": 81,
+          "label": "takedown defense %",
+          "fighterA": 82,
           "fighterB": 75,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0,
           "fighterB": 0,
           "provenance": "sourced"
@@ -48269,38 +48495,52 @@
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 49,
+          "fighterB": 57,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 57,
           "fighterB": 63,
           "provenance": "sourced"
         },
         {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.01,
+          "fighterB": 2.19,
+          "provenance": "sourced"
+        },
+        {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 2.15,
           "fighterB": 0.78,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
-          "fighterA": 46,
+          "label": "takedown accuracy %",
+          "fighterA": 47,
           "fighterB": 75,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
+          "label": "takedown defense %",
           "fighterA": 59,
           "fighterB": 84,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
-          "fighterA": 0.3,
-          "fighterB": 0.8,
+          "label": "sub attempts/15 min",
+          "fighterA": 0.32,
+          "fighterB": 0.78,
           "provenance": "sourced"
         }
       ],
@@ -53713,43 +53953,57 @@
         {
           "shortLabel": "SLpM",
           "label": "strikes landed/min",
-          "fighterA": 2.94,
+          "fighterA": 3.24,
           "fighterB": 3.24,
           "provenance": "sourced"
         },
         {
-          "shortLabel": "Str. Def",
-          "label": "striking defense",
+          "shortLabel": "Str Acc",
+          "label": "striking accuracy %",
+          "fighterA": 41,
+          "fighterB": 45,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "Str Def",
+          "label": "striking defense %",
           "fighterA": 49,
-          "fighterB": 50,
+          "fighterB": 51,
+          "provenance": "sourced"
+        },
+        {
+          "shortLabel": "SApM",
+          "label": "strikes absorbed/min",
+          "fighterA": 3.24,
+          "fighterB": 3.94,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Avg",
-          "label": "takedowns/15",
+          "label": "takedowns/15 min",
           "fighterA": 0.94,
           "fighterB": 3.99,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Acc",
-          "label": "takedown accuracy",
+          "label": "takedown accuracy %",
           "fighterA": 29,
           "fighterB": 49,
           "provenance": "sourced"
         },
         {
           "shortLabel": "TD Def",
-          "label": "takedown defense",
-          "fighterA": 66,
-          "fighterB": 56,
+          "label": "takedown defense %",
+          "fighterA": 67,
+          "fighterB": 57,
           "provenance": "sourced"
         },
         {
           "shortLabel": "Sub Avg",
-          "label": "sub attempts/15",
+          "label": "sub attempts/15 min",
           "fighterA": 0.4,
-          "fighterB": 0.7,
+          "fighterB": 0.65,
           "provenance": "sourced"
         }
       ],
