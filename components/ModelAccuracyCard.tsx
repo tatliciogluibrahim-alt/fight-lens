@@ -7,12 +7,15 @@ interface ModelAccuracyCardProps {
 
 // ─── Grade display ────────────────────────────────────────────────────────────
 
+// Grade is only shown once sample size is meaningful (≥30 fights scored)
+const GRADE_MIN_SAMPLE = 30;
+
 const gradeConfig: Record<ModelGrade, { color: string; label: string }> = {
-  A: { color: "text-accent", label: "Excellent calibration" },
-  B: { color: "text-foreground", label: "Good calibration" },
-  C: { color: "text-muted", label: "Acceptable calibration" },
-  D: { color: "text-subtle", label: "Near-random — more data needed" },
-  F: { color: "text-subtle", label: "Overconfident wrong picks" },
+  A: { color: "text-accent", label: "Strong read accuracy" },
+  B: { color: "text-foreground", label: "Solid read accuracy" },
+  C: { color: "text-muted", label: "Developing read accuracy" },
+  D: { color: "text-subtle", label: "Near-random — more fights needed" },
+  F: { color: "text-subtle", label: "Overclaiming — needs recalibration" },
 };
 
 // ─── Compact badge (for homepage) ────────────────────────────────────────────
@@ -22,21 +25,26 @@ export function ModelAccuracyBadge({ metrics }: { metrics: AccuracyMetrics }) {
     return (
       <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
         <span className="size-1.5 rounded-full bg-subtle" />
-        model: calibrating
+        model: tracking
       </span>
     );
   }
 
+  const correctCount =
+    metrics.winnerAccuracy != null
+      ? Math.round((metrics.winnerAccuracy / 100) * metrics.resolvedCount)
+      : null;
+
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
       <span className="size-1.5 rounded-full bg-accent" />
-      model: {metrics.resolvedCount}/{metrics.resolvedCount} winners
-      {metrics.grade ? ` · grade ${metrics.grade}` : ""}
+      model: {correctCount != null ? `${correctCount}/${metrics.resolvedCount} calls` : `${metrics.resolvedCount} scored`}
+      {metrics.grade && metrics.resolvedCount >= GRADE_MIN_SAMPLE ? ` · grade ${metrics.grade}` : ""}
     </span>
   );
 }
 
-// ─── Calibration table ────────────────────────────────────────────────────────
+// ─── Confidence breakdown table ───────────────────────────────────────────────
 
 function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
   const populated = metrics.calibrationBuckets.filter((b) => b.count > 0);
@@ -44,7 +52,7 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
 
   return (
     <div>
-      <p className="mono-label mb-3">calibration</p>
+      <p className="mono-label mb-3">how often the model is right at each confidence level</p>
       <div className="divide-y divide-line rounded-xl border border-line overflow-hidden">
         <div className="grid grid-cols-[1fr_auto_auto_auto] gap-4 bg-surface-2/50 px-4 py-2">
           <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">confidence range</span>
@@ -73,7 +81,7 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
         })}
       </div>
       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">
-        predicted vs. actual win rate per confidence bucket
+        predicted vs. actual win rate per confidence range
       </p>
     </div>
   );
@@ -83,19 +91,20 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
 
 export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCardProps) {
   const hasData = metrics.resolvedCount > 0;
-  const grade = metrics.grade;
+  const showGrade = metrics.resolvedCount >= GRADE_MIN_SAMPLE && metrics.grade != null;
+  const grade = showGrade ? metrics.grade : null;
   const gradeDisplay = grade ? gradeConfig[grade] : null;
 
   if (!hasData) {
     return (
       <div className={compact ? "" : "module-card"}>
         <div className={compact ? "" : "module-header"}>
-          <p className="mono-label">model accuracy</p>
+          <p className="mono-label">model record</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            calibrating.
+            tracking.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Accuracy scoring begins once fights resolve. {metrics.totalPredictions} prediction{metrics.totalPredictions !== 1 ? "s" : ""} locked — outcomes pending.
+            Accuracy numbers build as fights resolve. {metrics.totalPredictions} call{metrics.totalPredictions !== 1 ? "s" : ""} locked — outcomes pending.
           </p>
         </div>
       </div>
@@ -107,16 +116,20 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
       <div className={compact ? "" : "module-header"}>
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <p className="mono-label">model accuracy</p>
+            <p className="mono-label">model record</p>
             <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
               {grade ? (
                 <span className={gradeDisplay?.color}>grade {grade}.</span>
               ) : (
-                "scoring."
+                "building."
               )}
             </h2>
-            {gradeDisplay && (
+            {gradeDisplay ? (
               <p className="mt-2 text-sm text-muted">{gradeDisplay.label}</p>
+            ) : (
+              <p className="mt-2 text-sm text-muted">
+                Grade unlocks at 30 scored fights — accuracy numbers grow with each card.
+              </p>
             )}
           </div>
           <div className="grid gap-2 text-right">
@@ -133,37 +146,37 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
       </div>
 
       <div className={compact ? "mt-4 space-y-4" : "module-body space-y-6"}>
-        {/* Core metrics */}
-        <div className="grid gap-3 sm:grid-cols-3">
+        {/* Core metrics — 2-stat layout */}
+        <div className="grid gap-3 sm:grid-cols-2">
           <div className="rounded-xl border border-line bg-background/45 p-4">
             <p className="data-text text-3xl text-accent">
               {metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}
             </p>
-            <p className="mono-label mt-2">winner accuracy</p>
-            <p className="mt-1 text-xs text-subtle">top pick correct</p>
+            <p className="mono-label mt-2">call accuracy</p>
+            <p className="mt-1 text-xs text-subtle">model's top pick was correct</p>
           </div>
           <div className="rounded-xl border border-line bg-background/45 p-4">
             <p className="data-text text-3xl text-foreground">
               {metrics.methodAccuracy != null ? `${metrics.methodAccuracy}%` : "—"}
             </p>
-            <p className="mono-label mt-2">method accuracy</p>
-            <p className="mt-1 text-xs text-subtle">decision vs. finish correct</p>
-          </div>
-          <div className="rounded-xl border border-line bg-background/45 p-4">
-            <p className="data-text text-3xl text-foreground">
-              {metrics.brierScore != null ? metrics.brierScore.toFixed(3) : "—"}
-            </p>
-            <p className="mono-label mt-2">brier score</p>
-            <p className="mt-1 text-xs text-subtle">0 = perfect · 0.25 = random</p>
+            <p className="mono-label mt-2">finish vs. decision read</p>
+            <p className="mt-1 text-xs text-subtle">method type directionally correct</p>
           </div>
         </div>
+
+        {/* Sample size note */}
+        <p className="font-mono text-[11px] text-muted -mt-2">
+          {metrics.resolvedCount} fight{metrics.resolvedCount !== 1 ? "s" : ""} scored — accuracy numbers grow with each card.
+        </p>
 
         {!compact && <CalibrationTable metrics={metrics} />}
 
         {/* Data note */}
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-          {metrics.resolvedCount} fight{metrics.resolvedCount !== 1 ? "s" : ""} scored · outcome-v0.1 · {metrics.lastUpdated ? new Date(metrics.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" }) : "—"}
-          {metrics.resolvedCount < 10 ? " · early calibration — sample too small for strong conclusions" : ""}
+          signal-based · not a guarantee · outcome-v0.1
+          {metrics.lastUpdated
+            ? ` · updated ${new Date(metrics.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" })}`
+            : ""}
         </p>
       </div>
     </div>

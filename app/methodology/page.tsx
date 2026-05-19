@@ -101,10 +101,10 @@ export default function MethodologyPage() {
       <main>
         <section className="section-shell py-10 md:py-16">
           <Link
-            href="/events/ufc-328"
+            href="/"
             className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
           >
-            ← back to matchups
+            ← back
           </Link>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-end">
@@ -217,6 +217,48 @@ export default function MethodologyPage() {
                   <p className="text-sm leading-6 text-muted">{row.body}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Brier score explanation */}
+        <section className="section-shell py-8 md:py-12">
+          <div className="border border-line bg-surface/70">
+            <div className="border-b border-line p-5">
+              <p className="mono-label">internal scoring metric</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-normal">
+                brier score.
+              </h2>
+            </div>
+            <div className="p-5 space-y-4 text-sm leading-6 text-muted">
+              <p>
+                The Brier score measures the mean squared error of the model's win
+                probabilities against actual outcomes. A score of <span className="data-text text-foreground">0.00</span> is
+                perfect — every probability matched the result exactly.
+                A score of <span className="data-text text-foreground">0.25</span> is random — equivalent to always calling 50/50.
+              </p>
+              <p>
+                It penalises overconfidence more than a simple win/loss record does.
+                Saying 90% on a fight you lose is a bigger error than saying 55%.
+                This keeps the model honest about confidence, not just directionality.
+              </p>
+              <p>
+                Brier score is tracked internally. It is not surfaced in the main record view
+                because it requires context to read — a number like 0.18 means little without
+                the baseline.
+              </p>
+              <div className="mt-2 grid grid-cols-3 gap-3">
+                {[
+                  { range: "0.00 – 0.12", label: "Well-calibrated" },
+                  { range: "0.12 – 0.20", label: "Acceptable" },
+                  { range: "0.20 – 0.25", label: "Near-random" },
+                ].map(({ range, label }) => (
+                  <div key={range} className="rounded-xl border border-line bg-background/40 px-4 py-4 text-center">
+                    <p className="data-text text-sm text-foreground">{range}</p>
+                    <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">{label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

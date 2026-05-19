@@ -78,7 +78,7 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
           <p className="font-mono text-[10px] text-subtle">n/a</p>
         ) : (
           <p className="font-mono text-[10px] text-subtle/60">
-            pick: {modelPick} · {modelProb}%
+            call: {modelPick} · {modelProb}%
           </p>
         )}
       </div>
@@ -129,7 +129,7 @@ export default function RecordPage() {
           <div className="mt-8">
             <p className="mono-label">model record</p>
             <h1 className="mt-5 text-5xl font-semibold leading-none tracking-[-0.05em] md:text-7xl">
-              every pick. tracked.
+              every call. tracked.
             </h1>
             <p className="mt-4 text-sm text-muted">
               What the model called before each fight — locked in before the first bell. No edits.

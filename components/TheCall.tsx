@@ -111,7 +111,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
     );
   }
 
-  const { fighterA, fighterB, methodBreakdown, scenarios, confidence, modelVersion, tooClose } =
+  const { fighterA, fighterB, methodBreakdown, scenarios, confidence, tooClose } =
     outcomeModel;
 
   return (
@@ -147,13 +147,20 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           koTko={methodBreakdown.koTko}
           submission={methodBreakdown.submission}
         />
+        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70 -mt-4">
+          directional only · finish vs. decision lean · method model not independently validated
+        </p>
 
-        {/* 3 scenario cards */}
+        {/* 3 scenario cards — "swing" id gets renamed in display only */}
         <div className="grid gap-4 md:grid-cols-3">
           {scenarios.map((scenario) => (
             <ScenarioCard
               key={scenario.id}
-              scenario={scenario}
+              scenario={
+                scenario.id === "swing"
+                  ? { ...scenario, title: "what breaks the call" }
+                  : scenario
+              }
               suppressFighterLabel={
                 tooClose && (scenario.id === "lean" || scenario.id === "upset")
               }
@@ -163,7 +170,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
 
         {/* Footer */}
         <p className="mono-label">
-          {modelVersion} · signal-based · not a guarantee
+          signal-based · not a guarantee
         </p>
       </div>
     </section>

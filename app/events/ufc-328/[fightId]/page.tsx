@@ -12,6 +12,7 @@ import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
+import { pinToLockedPrediction } from "@/lib/fight-outcome-model/pin-to-locked";
 import { getPredictionByFightId } from "@/lib/accuracy";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
@@ -87,8 +88,12 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const fightShapeModel = buildFightShapeModel(fight);
-  const outcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
+  const liveOutcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
   const prediction = getPredictionByFightId(fightId);
+  const outcomeModel =
+    prediction && fight.status === "completed"
+      ? pinToLockedPrediction(liveOutcomeModel, prediction)
+      : liveOutcomeModel;
 
   return (
     <>
