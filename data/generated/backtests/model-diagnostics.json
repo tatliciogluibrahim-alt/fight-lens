@@ -1,0 +1,2320 @@
+{
+  "generatedAt": "2026-05-19T17:50:40.154Z",
+  "modelVersion": "outcome-v0.2",
+  "filesInspected": [
+    "AGENTS.md",
+    "docs/CHANGELOG.md",
+    "docs/MODEL_STATUS.md",
+    "docs/NEXT_STEPS.md",
+    "docs/BACKTESTING.md",
+    "lib/fight-outcome-model/model.ts",
+    "lib/fight-outcome-model/types.ts",
+    "lib/fight-shape-model/model.ts",
+    "lib/fight-shape-model/confidence.ts",
+    "lib/fight-shape-model/normalization.ts",
+    "lib/backtest/run.ts",
+    "lib/backtest/runBacktest.ts",
+    "lib/backtest/buildAsOfFeatures.ts",
+    "lib/backtest/scorePredictions.ts",
+    "lib/backtest/baselines.ts",
+    "lib/backtest/calibration.ts",
+    "lib/backtest/leakageChecks.ts",
+    "lib/predictionThresholds.ts",
+    "data/generated/backtests/predictions.json",
+    "data/generated/backtests/summary.json",
+    "data/generated/backtests/leakage-reports.json",
+    "data/generated/backtests/missing-data-report.json",
+    "data/generated/backtests/event-performance.json"
+  ],
+  "corpus": {
+    "events": 20,
+    "scoredFights": 253,
+    "skippedFights": 17,
+    "winnerAccuracy": 66,
+    "methodAccuracy": 58,
+    "brierScore": 0.219,
+    "betterRecordAccuracy": 71,
+    "moreExperienceAccuracy": 40,
+    "missingDataRate": 40
+  },
+  "keyFindings": {
+    "isModelLosingMainlyAgainstBetterRecord": true,
+    "modelAccuracyWhenDisagreeingWithBetterRecord": 40,
+    "betterRecordAccuracyWhenDisagreeingWithModel": 55,
+    "disagreementCount": 82,
+    "disagreementShare": 32
+  },
+  "agreementVsBetterRecord": {
+    "model and better-record agree": {
+      "n": 171,
+      "modelAccuracy": 78,
+      "betterRecordAccuracy": 78,
+      "averageModelConfidence": 64.2,
+      "brierScore": 0.192,
+      "missingDataRate": 34,
+      "thinHistoryRate": 29,
+      "betterRecordDisagreementRate": 0,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 97,
+          "absorption": 54,
+          "grappling": 12,
+          "stylePressure": 8
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 48,
+          "same/similar record": 17,
+          "large record advantage": 72,
+          "small record advantage": 34
+        },
+        "missingCategories": {
+          "defensive stats": 47,
+          "takedown stats": 58,
+          "striking stats": 25,
+          "no prior history": 11
+        }
+      }
+    },
+    "model disagrees with better-record": {
+      "n": 82,
+      "modelAccuracy": 40,
+      "betterRecordAccuracy": 55,
+      "averageModelConfidence": 59.2,
+      "brierScore": 0.274,
+      "missingDataRate": 38,
+      "thinHistoryRate": 28,
+      "betterRecordDisagreementRate": 100,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 54,
+          "grappling": 5,
+          "absorption": 20,
+          "stylePressure": 3
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 18,
+          "same/similar record": 25,
+          "small record advantage": 22,
+          "large record advantage": 17
+        },
+        "missingCategories": {
+          "defensive stats": 24,
+          "takedown stats": 31,
+          "striking stats": 19,
+          "no prior history": 12
+        }
+      }
+    },
+    "model correct / better-record wrong": {
+      "n": 33,
+      "modelAccuracy": 100,
+      "betterRecordAccuracy": 0,
+      "averageModelConfidence": 60.2,
+      "brierScore": 0.166,
+      "missingDataRate": 42,
+      "thinHistoryRate": 33,
+      "betterRecordDisagreementRate": 100,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 22,
+          "absorption": 5,
+          "stylePressure": 3,
+          "grappling": 3
+        },
+        "recordAdvantageBuckets": {
+          "small record advantage": 9,
+          "same/similar record": 16,
+          "medium record advantage": 7,
+          "large record advantage": 1
+        },
+        "missingCategories": {
+          "takedown stats": 14,
+          "defensive stats": 11,
+          "striking stats": 10,
+          "no prior history": 7
+        }
+      }
+    },
+    "better-record correct / model wrong": {
+      "n": 45,
+      "modelAccuracy": 0,
+      "betterRecordAccuracy": 100,
+      "averageModelConfidence": 58.6,
+      "brierScore": 0.348,
+      "missingDataRate": 33,
+      "thinHistoryRate": 24,
+      "betterRecordDisagreementRate": 100,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 30,
+          "absorption": 14,
+          "grappling": 1
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 11,
+          "small record advantage": 13,
+          "large record advantage": 16,
+          "same/similar record": 5
+        },
+        "missingCategories": {
+          "defensive stats": 11,
+          "takedown stats": 15,
+          "striking stats": 8,
+          "no prior history": 4
+        }
+      }
+    },
+    "both correct": {
+      "n": 134,
+      "modelAccuracy": 100,
+      "betterRecordAccuracy": 100,
+      "averageModelConfidence": 65,
+      "brierScore": 0.139,
+      "missingDataRate": 37,
+      "thinHistoryRate": 31,
+      "betterRecordDisagreementRate": 0,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 81,
+          "absorption": 37,
+          "grappling": 9,
+          "stylePressure": 7
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 39,
+          "large record advantage": 68,
+          "same/similar record": 7,
+          "small record advantage": 20
+        },
+        "missingCategories": {
+          "defensive stats": 39,
+          "takedown stats": 49,
+          "striking stats": 22,
+          "no prior history": 9
+        }
+      }
+    },
+    "both wrong": {
+      "n": 41,
+      "modelAccuracy": 0,
+      "betterRecordAccuracy": 0,
+      "averageModelConfidence": 61.2,
+      "brierScore": 0.381,
+      "missingDataRate": 27,
+      "thinHistoryRate": 22,
+      "betterRecordDisagreementRate": 10,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "grappling": 4,
+          "absorption": 18,
+          "striking": 18,
+          "stylePressure": 1
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 14,
+          "medium record advantage": 9,
+          "small record advantage": 14,
+          "large record advantage": 4
+        },
+        "missingCategories": {
+          "defensive stats": 10,
+          "takedown stats": 11,
+          "striking stats": 4,
+          "no prior history": 3
+        }
+      }
+    }
+  },
+  "recordDeltaAnalysis": {
+    "same/similar record": {
+      "n": 42,
+      "modelAccuracy": 55,
+      "betterRecordAccuracy": 29,
+      "averageModelConfidence": 59.3,
+      "brierScore": 0.254,
+      "missingDataRate": 29,
+      "thinHistoryRate": 19,
+      "betterRecordDisagreementRate": 60,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "grappling": 4,
+          "absorption": 19,
+          "striking": 16,
+          "stylePressure": 3
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 42
+        },
+        "missingCategories": {
+          "defensive stats": 9,
+          "takedown stats": 12,
+          "striking stats": 5,
+          "no prior history": 3
+        }
+      },
+      "modelVsBaselineDelta": 26
+    },
+    "small record advantage": {
+      "n": 56,
+      "modelAccuracy": 52,
+      "betterRecordAccuracy": 59,
+      "averageModelConfidence": 62.6,
+      "brierScore": 0.253,
+      "missingDataRate": 30,
+      "thinHistoryRate": 25,
+      "betterRecordDisagreementRate": 39,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "absorption": 12,
+          "striking": 37,
+          "grappling": 4,
+          "stylePressure": 3
+        },
+        "recordAdvantageBuckets": {
+          "small record advantage": 56
+        },
+        "missingCategories": {
+          "defensive stats": 12,
+          "takedown stats": 17,
+          "striking stats": 9,
+          "no prior history": 5
+        }
+      },
+      "modelVsBaselineDelta": -7
+    },
+    "medium record advantage": {
+      "n": 66,
+      "modelAccuracy": 70,
+      "betterRecordAccuracy": 76,
+      "averageModelConfidence": 61.6,
+      "brierScore": 0.228,
+      "missingDataRate": 29,
+      "thinHistoryRate": 23,
+      "betterRecordDisagreementRate": 27,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 40,
+          "absorption": 22,
+          "grappling": 3,
+          "stylePressure": 1
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 66
+        },
+        "missingCategories": {
+          "defensive stats": 15,
+          "takedown stats": 19,
+          "striking stats": 10,
+          "no prior history": 7
+        }
+      },
+      "modelVsBaselineDelta": -6
+    },
+    "large record advantage": {
+      "n": 89,
+      "modelAccuracy": 78,
+      "betterRecordAccuracy": 94,
+      "averageModelConfidence": 64.9,
+      "brierScore": 0.175,
+      "missingDataRate": 46,
+      "thinHistoryRate": 39,
+      "betterRecordDisagreementRate": 19,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "absorption": 21,
+          "striking": 58,
+          "grappling": 6,
+          "stylePressure": 4
+        },
+        "recordAdvantageBuckets": {
+          "large record advantage": 89
+        },
+        "missingCategories": {
+          "defensive stats": 35,
+          "takedown stats": 41,
+          "striking stats": 20,
+          "no prior history": 8
+        }
+      },
+      "modelVsBaselineDelta": -16
+    }
+  },
+  "calibrationDiagnosis": [
+    {
+      "bucket": "50-60%",
+      "n": 135,
+      "averagePredictedProbability": 54.4,
+      "actualWinRate": 61,
+      "calibrationGap": 6.6,
+      "brierScore": 0.248,
+      "missingDataRate": 27,
+      "thinHistoryRate": 22,
+      "betterRecordDisagreementRate": 38,
+      "topComponents": {
+        "striking": 68,
+        "grappling": 10,
+        "absorption": 46,
+        "stylePressure": 11
+      }
+    },
+    {
+      "bucket": "60-70%",
+      "n": 57,
+      "averagePredictedProbability": 64,
+      "actualWinRate": 61,
+      "calibrationGap": -3,
+      "brierScore": 0.233,
+      "missingDataRate": 33,
+      "thinHistoryRate": 23,
+      "betterRecordDisagreementRate": 37,
+      "topComponents": {
+        "striking": 39,
+        "absorption": 17,
+        "grappling": 1
+      }
+    },
+    {
+      "bucket": "70-80%",
+      "n": 28,
+      "averagePredictedProbability": 72.8,
+      "actualWinRate": 64,
+      "calibrationGap": -8.8,
+      "brierScore": 0.236,
+      "missingDataRate": 32,
+      "thinHistoryRate": 32,
+      "betterRecordDisagreementRate": 25,
+      "topComponents": {
+        "striking": 19,
+        "absorption": 8,
+        "grappling": 1
+      }
+    },
+    {
+      "bucket": "80%+",
+      "n": 33,
+      "averagePredictedProbability": 85,
+      "actualWinRate": 94,
+      "calibrationGap": 9,
+      "brierScore": 0.062,
+      "missingDataRate": 73,
+      "thinHistoryRate": 61,
+      "betterRecordDisagreementRate": 9,
+      "topComponents": {
+        "striking": 25,
+        "grappling": 5,
+        "absorption": 3
+      }
+    }
+  ],
+  "thinHistoryImpact": {
+    "thin-history warning": {
+      "n": 72,
+      "modelAccuracy": 72,
+      "betterRecordAccuracy": 72,
+      "averageModelConfidence": 66.7,
+      "brierScore": 0.195,
+      "missingDataRate": 82,
+      "thinHistoryRate": 100,
+      "betterRecordDisagreementRate": 32,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 47,
+          "grappling": 7,
+          "absorption": 14,
+          "stylePressure": 4
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 8,
+          "large record advantage": 35,
+          "small record advantage": 14,
+          "medium record advantage": 15
+        },
+        "missingCategories": {
+          "defensive stats": 48,
+          "takedown stats": 59,
+          "striking stats": 32,
+          "no prior history": 23
+        }
+      }
+    },
+    "no thin-history warning": {
+      "n": 181,
+      "modelAccuracy": 64,
+      "betterRecordAccuracy": 70,
+      "averageModelConfidence": 61,
+      "brierScore": 0.229,
+      "missingDataRate": 17,
+      "thinHistoryRate": 0,
+      "betterRecordDisagreementRate": 33,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 104,
+          "grappling": 10,
+          "absorption": 60,
+          "stylePressure": 7
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 51,
+          "same/similar record": 34,
+          "large record advantage": 54,
+          "small record advantage": 42
+        },
+        "missingCategories": {
+          "defensive stats": 23,
+          "takedown stats": 30,
+          "striking stats": 12
+        }
+      }
+    }
+  },
+  "missingDataImpact": {
+    "no missing flags": {
+      "n": 164,
+      "modelAccuracy": 63,
+      "betterRecordAccuracy": 70,
+      "averageModelConfidence": 60.9,
+      "brierScore": 0.231,
+      "missingDataRate": 0,
+      "thinHistoryRate": 8,
+      "betterRecordDisagreementRate": 31,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 98,
+          "grappling": 8,
+          "absorption": 54,
+          "stylePressure": 4
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 47,
+          "same/similar record": 30,
+          "large record advantage": 48,
+          "small record advantage": 39
+        },
+        "missingCategories": {}
+      }
+    },
+    "one missing flag": {
+      "n": 28,
+      "modelAccuracy": 64,
+      "betterRecordAccuracy": 68,
+      "averageModelConfidence": 69,
+      "brierScore": 0.192,
+      "missingDataRate": 100,
+      "thinHistoryRate": 54,
+      "betterRecordDisagreementRate": 29,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 17,
+          "absorption": 8,
+          "grappling": 3
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 7,
+          "medium record advantage": 6,
+          "large record advantage": 8,
+          "small record advantage": 7
+        },
+        "missingCategories": {
+          "takedown stats": 28,
+          "defensive stats": 14
+        }
+      }
+    },
+    "multiple missing flags": {
+      "n": 61,
+      "modelAccuracy": 74,
+      "betterRecordAccuracy": 74,
+      "averageModelConfidence": 64.2,
+      "brierScore": 0.199,
+      "missingDataRate": 100,
+      "thinHistoryRate": 72,
+      "betterRecordDisagreementRate": 38,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 36,
+          "grappling": 6,
+          "absorption": 12,
+          "stylePressure": 7
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 5,
+          "large record advantage": 33,
+          "small record advantage": 10,
+          "medium record advantage": 13
+        },
+        "missingCategories": {
+          "defensive stats": 57,
+          "takedown stats": 61,
+          "striking stats": 44,
+          "no prior history": 23
+        }
+      }
+    },
+    "missing defensive stats": {
+      "n": 71,
+      "modelAccuracy": 70,
+      "betterRecordAccuracy": 70,
+      "averageModelConfidence": 64.4,
+      "brierScore": 0.201,
+      "missingDataRate": 100,
+      "thinHistoryRate": 68,
+      "betterRecordDisagreementRate": 34,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 38,
+          "grappling": 9,
+          "absorption": 17,
+          "stylePressure": 7
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 9,
+          "large record advantage": 35,
+          "medium record advantage": 15,
+          "small record advantage": 12
+        },
+        "missingCategories": {
+          "defensive stats": 71,
+          "takedown stats": 71,
+          "striking stats": 44,
+          "no prior history": 23
+        }
+      }
+    },
+    "missing takedown stats": {
+      "n": 89,
+      "modelAccuracy": 71,
+      "betterRecordAccuracy": 72,
+      "averageModelConfidence": 65.7,
+      "brierScore": 0.197,
+      "missingDataRate": 100,
+      "thinHistoryRate": 66,
+      "betterRecordDisagreementRate": 35,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 53,
+          "absorption": 20,
+          "grappling": 9,
+          "stylePressure": 7
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 12,
+          "large record advantage": 41,
+          "medium record advantage": 19,
+          "small record advantage": 17
+        },
+        "missingCategories": {
+          "defensive stats": 71,
+          "takedown stats": 89,
+          "striking stats": 44,
+          "no prior history": 23
+        }
+      }
+    },
+    "missing striking stats": {
+      "n": 44,
+      "modelAccuracy": 73,
+      "betterRecordAccuracy": 68,
+      "averageModelConfidence": 60.3,
+      "brierScore": 0.23,
+      "missingDataRate": 100,
+      "thinHistoryRate": 73,
+      "betterRecordDisagreementRate": 43,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 21,
+          "absorption": 11,
+          "stylePressure": 7,
+          "grappling": 5
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 5,
+          "large record advantage": 20,
+          "small record advantage": 9,
+          "medium record advantage": 10
+        },
+        "missingCategories": {
+          "defensive stats": 44,
+          "takedown stats": 44,
+          "striking stats": 44,
+          "no prior history": 23
+        }
+      }
+    }
+  },
+  "eventLevelDiagnosis": {
+    "events": [
+      {
+        "event": "UFC 322: Della Maddalena vs. Makhachev",
+        "n": 14,
+        "modelAccuracy": 50,
+        "betterRecordAccuracy": 79,
+        "averageModelConfidence": 57.6,
+        "brierScore": 0.25,
+        "missingDataRate": 21,
+        "thinHistoryRate": 14,
+        "betterRecordDisagreementRate": 43,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 8,
+            "grappling": 1,
+            "absorption": 5
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 4,
+            "same/similar record": 4,
+            "large record advantage": 5,
+            "small record advantage": 1
+          },
+          "missingCategories": {
+            "defensive stats": 3,
+            "takedown stats": 3,
+            "striking stats": 3,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 64,
+        "modelVsBaselineDelta": -29
+      },
+      {
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "n": 13,
+        "modelAccuracy": 69,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 65.7,
+        "brierScore": 0.204,
+        "missingDataRate": 23,
+        "thinHistoryRate": 8,
+        "betterRecordDisagreementRate": 46,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 2,
+            "striking": 11
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 3,
+            "small record advantage": 2,
+            "large record advantage": 6,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "takedown stats": 3,
+            "defensive stats": 1
+          }
+        },
+        "methodAccuracy": 77,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC 324: Gaethje vs. Pimblett",
+        "n": 11,
+        "modelAccuracy": 82,
+        "betterRecordAccuracy": 82,
+        "averageModelConfidence": 64.9,
+        "brierScore": 0.158,
+        "missingDataRate": 18,
+        "thinHistoryRate": 18,
+        "betterRecordDisagreementRate": 18,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "striking": 7,
+            "grappling": 1
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 4,
+            "large record advantage": 5,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2,
+            "striking stats": 1
+          }
+        },
+        "methodAccuracy": 73,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC 325: Volkanovski vs. Lopes 2",
+        "n": 13,
+        "modelAccuracy": 69,
+        "betterRecordAccuracy": 77,
+        "averageModelConfidence": 57.9,
+        "brierScore": 0.239,
+        "missingDataRate": 46,
+        "thinHistoryRate": 0,
+        "betterRecordDisagreementRate": 23,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 5,
+            "absorption": 3,
+            "grappling": 2,
+            "stylePressure": 3
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 3,
+            "large record advantage": 7,
+            "small record advantage": 2,
+            "same/similar record": 1
+          },
+          "missingCategories": {
+            "defensive stats": 6,
+            "takedown stats": 6,
+            "striking stats": 3
+          }
+        },
+        "methodAccuracy": 62,
+        "modelVsBaselineDelta": -8
+      },
+      {
+        "event": "UFC 326: Holloway vs. Oliveira 2",
+        "n": 12,
+        "modelAccuracy": 67,
+        "betterRecordAccuracy": 58,
+        "averageModelConfidence": 60.3,
+        "brierScore": 0.261,
+        "missingDataRate": 25,
+        "thinHistoryRate": 25,
+        "betterRecordDisagreementRate": 42,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 5,
+            "absorption": 5,
+            "grappling": 2
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 4,
+            "small record advantage": 3,
+            "large record advantage": 4,
+            "medium record advantage": 1
+          },
+          "missingCategories": {
+            "takedown stats": 3,
+            "defensive stats": 2,
+            "striking stats": 2
+          }
+        },
+        "methodAccuracy": 58,
+        "modelVsBaselineDelta": 9
+      },
+      {
+        "event": "UFC 327: Prochazka vs. Ulberg",
+        "n": 11,
+        "modelAccuracy": 45,
+        "betterRecordAccuracy": 55,
+        "averageModelConfidence": 63.2,
+        "brierScore": 0.245,
+        "missingDataRate": 18,
+        "thinHistoryRate": 9,
+        "betterRecordDisagreementRate": 55,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "grappling": 2,
+            "striking": 6
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 2,
+            "large record advantage": 2,
+            "small record advantage": 4,
+            "same/similar record": 3
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2
+          }
+        },
+        "methodAccuracy": 36,
+        "modelVsBaselineDelta": -10
+      },
+      {
+        "event": "UFC 328: Chimaev vs. Strickland",
+        "n": 13,
+        "modelAccuracy": 54,
+        "betterRecordAccuracy": 46,
+        "averageModelConfidence": 58.5,
+        "brierScore": 0.241,
+        "missingDataRate": 15,
+        "thinHistoryRate": 8,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 9,
+            "absorption": 4
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 3,
+            "small record advantage": 3,
+            "medium record advantage": 5,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2
+          }
+        },
+        "methodAccuracy": 38,
+        "modelVsBaselineDelta": 8
+      },
+      {
+        "event": "UFC Fight Night: Adesanya vs. Pyfer",
+        "n": 12,
+        "modelAccuracy": 75,
+        "betterRecordAccuracy": 75,
+        "averageModelConfidence": 66.8,
+        "brierScore": 0.2,
+        "missingDataRate": 42,
+        "thinHistoryRate": 33,
+        "betterRecordDisagreementRate": 33,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "striking": 8,
+            "grappling": 1
+          },
+          "recordAdvantageBuckets": {
+            "small record advantage": 4,
+            "medium record advantage": 5,
+            "same/similar record": 1,
+            "large record advantage": 2
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 5,
+            "striking stats": 2,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 50,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC Fight Night: Allen vs. Costa",
+        "n": 13,
+        "modelAccuracy": 54,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 60.6,
+        "brierScore": 0.234,
+        "missingDataRate": 31,
+        "thinHistoryRate": 23,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 6,
+            "striking": 5,
+            "grappling": 1,
+            "stylePressure": 1
+          },
+          "recordAdvantageBuckets": {
+            "small record advantage": 4,
+            "same/similar record": 2,
+            "medium record advantage": 7
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 4,
+            "striking stats": 2,
+            "no prior history": 2
+          }
+        },
+        "methodAccuracy": 46,
+        "modelVsBaselineDelta": -15
+      },
+      {
+        "event": "UFC Fight Night: Bautista vs. Oliveira",
+        "n": 13,
+        "modelAccuracy": 77,
+        "betterRecordAccuracy": 77,
+        "averageModelConfidence": 66.4,
+        "brierScore": 0.167,
+        "missingDataRate": 31,
+        "thinHistoryRate": 23,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 4,
+            "striking": 9
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 3,
+            "medium record advantage": 4,
+            "small record advantage": 3,
+            "large record advantage": 3
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 4,
+            "striking stats": 4,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 54,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC Fight Night: Burns vs. Malott",
+        "n": 11,
+        "modelAccuracy": 36,
+        "betterRecordAccuracy": 45,
+        "averageModelConfidence": 62.1,
+        "brierScore": 0.308,
+        "missingDataRate": 45,
+        "thinHistoryRate": 45,
+        "betterRecordDisagreementRate": 9,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "grappling": 1,
+            "striking": 7
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 3,
+            "same/similar record": 1,
+            "small record advantage": 5,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "takedown stats": 5,
+            "defensive stats": 3,
+            "striking stats": 3,
+            "no prior history": 3
+          }
+        },
+        "methodAccuracy": 55,
+        "modelVsBaselineDelta": -9
+      },
+      {
+        "event": "UFC Fight Night: Della Maddalena vs. Prates",
+        "n": 13,
+        "modelAccuracy": 69,
+        "betterRecordAccuracy": 85,
+        "averageModelConfidence": 61.8,
+        "brierScore": 0.234,
+        "missingDataRate": 46,
+        "thinHistoryRate": 15,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 7,
+            "absorption": 6
+          },
+          "recordAdvantageBuckets": {
+            "small record advantage": 3,
+            "large record advantage": 5,
+            "medium record advantage": 5
+          },
+          "missingCategories": {
+            "defensive stats": 3,
+            "takedown stats": 6,
+            "striking stats": 3,
+            "no prior history": 2
+          }
+        },
+        "methodAccuracy": 62,
+        "modelVsBaselineDelta": -16
+      },
+      {
+        "event": "UFC Fight Night: Emmett vs. Vallejos",
+        "n": 14,
+        "modelAccuracy": 64,
+        "betterRecordAccuracy": 86,
+        "averageModelConfidence": 61.6,
+        "brierScore": 0.225,
+        "missingDataRate": 36,
+        "thinHistoryRate": 29,
+        "betterRecordDisagreementRate": 36,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 10,
+            "absorption": 2,
+            "stylePressure": 1,
+            "grappling": 1
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 9,
+            "small record advantage": 3,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 5,
+            "striking stats": 3
+          }
+        },
+        "methodAccuracy": 64,
+        "modelVsBaselineDelta": -22
+      },
+      {
+        "event": "UFC Fight Night: Evloev vs. Murphy",
+        "n": 13,
+        "modelAccuracy": 69,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 66.4,
+        "brierScore": 0.198,
+        "missingDataRate": 46,
+        "thinHistoryRate": 69,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "grappling": 1,
+            "striking": 8,
+            "absorption": 4
+          },
+          "recordAdvantageBuckets": {
+            "small record advantage": 3,
+            "large record advantage": 6,
+            "medium record advantage": 2,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "takedown stats": 6,
+            "defensive stats": 4,
+            "striking stats": 1,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 46,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC Fight Night: Moicano vs. Duncan",
+        "n": 13,
+        "modelAccuracy": 69,
+        "betterRecordAccuracy": 54,
+        "averageModelConfidence": 65,
+        "brierScore": 0.198,
+        "missingDataRate": 23,
+        "thinHistoryRate": 46,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 12,
+            "absorption": 1
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 5,
+            "large record advantage": 4,
+            "small record advantage": 2,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "defensive stats": 3,
+            "takedown stats": 3,
+            "striking stats": 1,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 62,
+        "modelVsBaselineDelta": 15
+      },
+      {
+        "event": "UFC Fight Night: Moreno vs. Kavanagh",
+        "n": 13,
+        "modelAccuracy": 77,
+        "betterRecordAccuracy": 92,
+        "averageModelConfidence": 67.5,
+        "brierScore": 0.154,
+        "missingDataRate": 46,
+        "thinHistoryRate": 46,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "grappling": 1,
+            "absorption": 4,
+            "striking": 8
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 9,
+            "medium record advantage": 1,
+            "small record advantage": 2,
+            "same/similar record": 1
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 6,
+            "striking stats": 1,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 69,
+        "modelVsBaselineDelta": -15
+      },
+      {
+        "event": "UFC Fight Night: Royval vs. Kape",
+        "n": 11,
+        "modelAccuracy": 82,
+        "betterRecordAccuracy": 73,
+        "averageModelConfidence": 63.5,
+        "brierScore": 0.18,
+        "missingDataRate": 55,
+        "thinHistoryRate": 64,
+        "betterRecordDisagreementRate": 45,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 9,
+            "absorption": 1,
+            "stylePressure": 1
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 4,
+            "large record advantage": 3,
+            "small record advantage": 2,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "takedown stats": 6,
+            "defensive stats": 5,
+            "striking stats": 4,
+            "no prior history": 4
+          }
+        },
+        "methodAccuracy": 55,
+        "modelVsBaselineDelta": 9
+      },
+      {
+        "event": "UFC Fight Night: Sterling vs. Zalal",
+        "n": 13,
+        "modelAccuracy": 46,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 57.5,
+        "brierScore": 0.281,
+        "missingDataRate": 46,
+        "thinHistoryRate": 31,
+        "betterRecordDisagreementRate": 38,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 7,
+            "stylePressure": 1,
+            "absorption": 3,
+            "grappling": 2
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 3,
+            "small record advantage": 3,
+            "large record advantage": 5,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "defensive stats": 5,
+            "takedown stats": 6,
+            "striking stats": 3,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 85,
+        "modelVsBaselineDelta": -23
+      },
+      {
+        "event": "UFC Fight Night: Strickland vs. Hernandez",
+        "n": 13,
+        "modelAccuracy": 77,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 65.2,
+        "brierScore": 0.202,
+        "missingDataRate": 38,
+        "thinHistoryRate": 23,
+        "betterRecordDisagreementRate": 8,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 9,
+            "grappling": 1,
+            "stylePressure": 1,
+            "striking": 2
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 3,
+            "medium record advantage": 6,
+            "small record advantage": 2,
+            "large record advantage": 2
+          },
+          "missingCategories": {
+            "defensive stats": 5,
+            "takedown stats": 5,
+            "striking stats": 3,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 38,
+        "modelVsBaselineDelta": 8
+      },
+      {
+        "event": "UFC Fight Night: Tsarukyan vs. Hooker",
+        "n": 14,
+        "modelAccuracy": 86,
+        "betterRecordAccuracy": 79,
+        "averageModelConfidence": 60.9,
+        "brierScore": 0.204,
+        "missingDataRate": 50,
+        "thinHistoryRate": 43,
+        "betterRecordDisagreementRate": 36,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "striking": 8,
+            "stylePressure": 3
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 6,
+            "medium record advantage": 1,
+            "same/similar record": 2,
+            "small record advantage": 5
+          },
+          "missingCategories": {
+            "defensive stats": 5,
+            "takedown stats": 7,
+            "striking stats": 5,
+            "no prior history": 4
+          }
+        },
+        "methodAccuracy": 57,
+        "modelVsBaselineDelta": 7
+      }
+    ],
+    "bestEvents": [
+      {
+        "event": "UFC Fight Night: Tsarukyan vs. Hooker",
+        "n": 14,
+        "modelAccuracy": 86,
+        "betterRecordAccuracy": 79,
+        "averageModelConfidence": 60.9,
+        "brierScore": 0.204,
+        "missingDataRate": 50,
+        "thinHistoryRate": 43,
+        "betterRecordDisagreementRate": 36,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "striking": 8,
+            "stylePressure": 3
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 6,
+            "medium record advantage": 1,
+            "same/similar record": 2,
+            "small record advantage": 5
+          },
+          "missingCategories": {
+            "defensive stats": 5,
+            "takedown stats": 7,
+            "striking stats": 5,
+            "no prior history": 4
+          }
+        },
+        "methodAccuracy": 57,
+        "modelVsBaselineDelta": 7
+      },
+      {
+        "event": "UFC 324: Gaethje vs. Pimblett",
+        "n": 11,
+        "modelAccuracy": 82,
+        "betterRecordAccuracy": 82,
+        "averageModelConfidence": 64.9,
+        "brierScore": 0.158,
+        "missingDataRate": 18,
+        "thinHistoryRate": 18,
+        "betterRecordDisagreementRate": 18,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "striking": 7,
+            "grappling": 1
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 4,
+            "large record advantage": 5,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2,
+            "striking stats": 1
+          }
+        },
+        "methodAccuracy": 73,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC Fight Night: Royval vs. Kape",
+        "n": 11,
+        "modelAccuracy": 82,
+        "betterRecordAccuracy": 73,
+        "averageModelConfidence": 63.5,
+        "brierScore": 0.18,
+        "missingDataRate": 55,
+        "thinHistoryRate": 64,
+        "betterRecordDisagreementRate": 45,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 9,
+            "absorption": 1,
+            "stylePressure": 1
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 4,
+            "large record advantage": 3,
+            "small record advantage": 2,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "takedown stats": 6,
+            "defensive stats": 5,
+            "striking stats": 4,
+            "no prior history": 4
+          }
+        },
+        "methodAccuracy": 55,
+        "modelVsBaselineDelta": 9
+      },
+      {
+        "event": "UFC Fight Night: Bautista vs. Oliveira",
+        "n": 13,
+        "modelAccuracy": 77,
+        "betterRecordAccuracy": 77,
+        "averageModelConfidence": 66.4,
+        "brierScore": 0.167,
+        "missingDataRate": 31,
+        "thinHistoryRate": 23,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 4,
+            "striking": 9
+          },
+          "recordAdvantageBuckets": {
+            "same/similar record": 3,
+            "medium record advantage": 4,
+            "small record advantage": 3,
+            "large record advantage": 3
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 4,
+            "striking stats": 4,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 54,
+        "modelVsBaselineDelta": 0
+      },
+      {
+        "event": "UFC Fight Night: Moreno vs. Kavanagh",
+        "n": 13,
+        "modelAccuracy": 77,
+        "betterRecordAccuracy": 92,
+        "averageModelConfidence": 67.5,
+        "brierScore": 0.154,
+        "missingDataRate": 46,
+        "thinHistoryRate": 46,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "grappling": 1,
+            "absorption": 4,
+            "striking": 8
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 9,
+            "medium record advantage": 1,
+            "small record advantage": 2,
+            "same/similar record": 1
+          },
+          "missingCategories": {
+            "defensive stats": 4,
+            "takedown stats": 6,
+            "striking stats": 1,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 69,
+        "modelVsBaselineDelta": -15
+      }
+    ],
+    "worstEvents": [
+      {
+        "event": "UFC Fight Night: Burns vs. Malott",
+        "n": 11,
+        "modelAccuracy": 36,
+        "betterRecordAccuracy": 45,
+        "averageModelConfidence": 62.1,
+        "brierScore": 0.308,
+        "missingDataRate": 45,
+        "thinHistoryRate": 45,
+        "betterRecordDisagreementRate": 9,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "grappling": 1,
+            "striking": 7
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 3,
+            "same/similar record": 1,
+            "small record advantage": 5,
+            "medium record advantage": 2
+          },
+          "missingCategories": {
+            "takedown stats": 5,
+            "defensive stats": 3,
+            "striking stats": 3,
+            "no prior history": 3
+          }
+        },
+        "methodAccuracy": 55,
+        "modelVsBaselineDelta": -9
+      },
+      {
+        "event": "UFC 327: Prochazka vs. Ulberg",
+        "n": 11,
+        "modelAccuracy": 45,
+        "betterRecordAccuracy": 55,
+        "averageModelConfidence": 63.2,
+        "brierScore": 0.245,
+        "missingDataRate": 18,
+        "thinHistoryRate": 9,
+        "betterRecordDisagreementRate": 55,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "absorption": 3,
+            "grappling": 2,
+            "striking": 6
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 2,
+            "large record advantage": 2,
+            "small record advantage": 4,
+            "same/similar record": 3
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2
+          }
+        },
+        "methodAccuracy": 36,
+        "modelVsBaselineDelta": -10
+      },
+      {
+        "event": "UFC Fight Night: Sterling vs. Zalal",
+        "n": 13,
+        "modelAccuracy": 46,
+        "betterRecordAccuracy": 69,
+        "averageModelConfidence": 57.5,
+        "brierScore": 0.281,
+        "missingDataRate": 46,
+        "thinHistoryRate": 31,
+        "betterRecordDisagreementRate": 38,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 7,
+            "stylePressure": 1,
+            "absorption": 3,
+            "grappling": 2
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 3,
+            "small record advantage": 3,
+            "large record advantage": 5,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "defensive stats": 5,
+            "takedown stats": 6,
+            "striking stats": 3,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 85,
+        "modelVsBaselineDelta": -23
+      },
+      {
+        "event": "UFC 322: Della Maddalena vs. Makhachev",
+        "n": 14,
+        "modelAccuracy": 50,
+        "betterRecordAccuracy": 79,
+        "averageModelConfidence": 57.6,
+        "brierScore": 0.25,
+        "missingDataRate": 21,
+        "thinHistoryRate": 14,
+        "betterRecordDisagreementRate": 43,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 8,
+            "grappling": 1,
+            "absorption": 5
+          },
+          "recordAdvantageBuckets": {
+            "medium record advantage": 4,
+            "same/similar record": 4,
+            "large record advantage": 5,
+            "small record advantage": 1
+          },
+          "missingCategories": {
+            "defensive stats": 3,
+            "takedown stats": 3,
+            "striking stats": 3,
+            "no prior history": 1
+          }
+        },
+        "methodAccuracy": 64,
+        "modelVsBaselineDelta": -29
+      },
+      {
+        "event": "UFC 328: Chimaev vs. Strickland",
+        "n": 13,
+        "modelAccuracy": 54,
+        "betterRecordAccuracy": 46,
+        "averageModelConfidence": 58.5,
+        "brierScore": 0.241,
+        "missingDataRate": 15,
+        "thinHistoryRate": 8,
+        "betterRecordDisagreementRate": 31,
+        "commonFeaturePatterns": {
+          "topComponents": {
+            "striking": 9,
+            "absorption": 4
+          },
+          "recordAdvantageBuckets": {
+            "large record advantage": 3,
+            "small record advantage": 3,
+            "medium record advantage": 5,
+            "same/similar record": 2
+          },
+          "missingCategories": {
+            "defensive stats": 2,
+            "takedown stats": 2
+          }
+        },
+        "methodAccuracy": 38,
+        "modelVsBaselineDelta": 8
+      }
+    ]
+  },
+  "methodModelDiagnosis": {
+    "overallMethodAccuracy": 58,
+    "byTopMethod": {
+      "Decision": {
+        "n": 137,
+        "methodAccuracy": 56,
+        "winnerAccuracy": 66,
+        "brierScore": 0.223
+      },
+      "KO/TKO": {
+        "n": 96,
+        "methodAccuracy": 59,
+        "winnerAccuracy": 71,
+        "brierScore": 0.2
+      },
+      "Submission": {
+        "n": 20,
+        "methodAccuracy": 60,
+        "winnerAccuracy": 45,
+        "brierScore": 0.284
+      }
+    },
+    "whenWinnerCorrect": {
+      "n": 167,
+      "methodAccuracy": 63
+    },
+    "whenWinnerWrong": {
+      "n": 86,
+      "methodAccuracy": 48
+    }
+  },
+  "componentDiagnostics": {
+    "stylePressure": {
+      "n": 11,
+      "modelAccuracy": 91,
+      "betterRecordAccuracy": 64,
+      "averageModelConfidence": 51.7,
+      "brierScore": 0.241,
+      "missingDataRate": 64,
+      "thinHistoryRate": 36,
+      "betterRecordDisagreementRate": 27,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "stylePressure": 11
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 3,
+          "small record advantage": 3,
+          "large record advantage": 4,
+          "medium record advantage": 1
+        },
+        "missingCategories": {
+          "defensive stats": 7,
+          "takedown stats": 7,
+          "striking stats": 7,
+          "no prior history": 3
+        }
+      },
+      "directionalAccuracy": 62
+    },
+    "recentForm": {
+      "n": 0,
+      "modelAccuracy": null,
+      "betterRecordAccuracy": null,
+      "averageModelConfidence": null,
+      "brierScore": null,
+      "missingDataRate": null,
+      "thinHistoryRate": null,
+      "betterRecordDisagreementRate": null,
+      "commonFeaturePatterns": {
+        "topComponents": {},
+        "recordAdvantageBuckets": {},
+        "missingCategories": {}
+      },
+      "directionalAccuracy": null
+    },
+    "striking": {
+      "n": 151,
+      "modelAccuracy": 68,
+      "betterRecordAccuracy": 74,
+      "averageModelConfidence": 64.6,
+      "brierScore": 0.208,
+      "missingDataRate": 35,
+      "thinHistoryRate": 31,
+      "betterRecordDisagreementRate": 36,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "striking": 151
+        },
+        "recordAdvantageBuckets": {
+          "medium record advantage": 40,
+          "same/similar record": 16,
+          "large record advantage": 58,
+          "small record advantage": 37
+        },
+        "missingCategories": {
+          "defensive stats": 38,
+          "takedown stats": 53,
+          "striking stats": 21,
+          "no prior history": 12
+        }
+      },
+      "directionalAccuracy": 59
+    },
+    "grappling": {
+      "n": 17,
+      "modelAccuracy": 71,
+      "betterRecordAccuracy": 59,
+      "averageModelConfidence": 65.1,
+      "brierScore": 0.182,
+      "missingDataRate": 53,
+      "thinHistoryRate": 41,
+      "betterRecordDisagreementRate": 29,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "grappling": 17
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 4,
+          "large record advantage": 6,
+          "medium record advantage": 3,
+          "small record advantage": 4
+        },
+        "missingCategories": {
+          "defensive stats": 9,
+          "takedown stats": 9,
+          "striking stats": 5,
+          "no prior history": 3
+        }
+      },
+      "directionalAccuracy": 56
+    },
+    "absorption": {
+      "n": 74,
+      "modelAccuracy": 57,
+      "betterRecordAccuracy": 69,
+      "averageModelConfidence": 59.6,
+      "brierScore": 0.247,
+      "missingDataRate": 27,
+      "thinHistoryRate": 19,
+      "betterRecordDisagreementRate": 27,
+      "commonFeaturePatterns": {
+        "topComponents": {
+          "absorption": 74
+        },
+        "recordAdvantageBuckets": {
+          "same/similar record": 19,
+          "large record advantage": 21,
+          "small record advantage": 12,
+          "medium record advantage": 22
+        },
+        "missingCategories": {
+          "takedown stats": 20,
+          "defensive stats": 17,
+          "striking stats": 11,
+          "no prior history": 5
+        }
+      },
+      "directionalAccuracy": 57
+    }
+  },
+  "featureComponentReview": [
+    {
+      "component": "Record/form",
+      "read": "Helpful but incomplete",
+      "evidence": "Better-record wins 55% vs model 40% when they disagree. Current model has recent form, but no explicit W-L ratio feature."
+    },
+    {
+      "component": "Striking offense/defense",
+      "read": "Helpful",
+      "evidence": "When striking is the top weighted component: n=151, model 68%, Brier 0.208."
+    },
+    {
+      "component": "Takedown offense/defense",
+      "read": "Unclear",
+      "evidence": "When grappling is the top weighted component: n=17, model 71%, directional component accuracy 56%."
+    },
+    {
+      "component": "Submission threat",
+      "read": "Unclear",
+      "evidence": "Submission enters style pressure and method tendency, but it is not isolated in the winner model diagnostics yet."
+    },
+    {
+      "component": "Reach/stance/age/activity",
+      "read": "Mostly missing from winner model",
+      "evidence": "Activity affects form through layoff shrinkage; reach, stance, and age are not explicit winner-model features in outcome-v0.2."
+    },
+    {
+      "component": "Experience",
+      "read": "Weak as currently baselined",
+      "evidence": "More-experience baseline is 40%, so raw fight count is not the record signal to chase."
+    },
+    {
+      "component": "Missing-data handling",
+      "read": "Not the aggregate failure mode",
+      "evidence": "No missing flags: 63%, missing flags: 71%. Missing stats currently fall back to UFC-average defaults, but aggregate missing-data rows did not underperform here."
+    },
+    {
+      "component": "Confidence/read strength",
+      "read": "Do not blanket-penalize thin history yet",
+      "evidence": "Thin-history fights: 72%, no thin-history fights: 64%. Mid-confidence calibration is the concern, not thin-history accuracy overall."
+    }
+  ],
+  "recommendations": [
+    {
+      "change": "Validate an as-of better-record baseline before tuning toward it",
+      "why": "The current baseline uses normalized fighter record strings rather than records recomputed from filtered as-of history.",
+      "expectedEffect": "Confirms whether the 71% baseline is a fair target or partly a record-field timing artifact.",
+      "risk": "May delay model changes, but avoids tuning toward a misleading benchmark.",
+      "howToTest": "Derive W-L records from each fighter's filtered pre-fight history and compare baseline accuracy against the current record-string baseline.",
+      "metricToImprove": "Benchmark validity before model accuracy changes."
+    },
+    {
+      "change": "Test explicit record-ratio feature or record-baseline blend",
+      "why": "Better-record is ahead overall and dominates disagreement fights, pending the as-of baseline validation above.",
+      "expectedEffect": "Reduce avoidable misses when the model fades a strong W-L edge without enough stat support.",
+      "risk": "Could overvalue padded records or weak schedules.",
+      "howToTest": "Run an A/B backtest that adds record-ratio delta with small fixed weights, then compare by record bucket and disagreement segment.",
+      "metricToImprove": "Winner accuracy vs better-record, especially model/baseline disagreement accuracy."
+    },
+    {
+      "change": "Test mid-confidence probability shrinkage, especially 60-80%",
+      "why": "The 60-70 and 70-80 buckets are overconfident while the 80%+ bucket is strong.",
+      "expectedEffect": "Improve Brier and calibration without flattening the best high-confidence calls.",
+      "risk": "May make useful 60-70 calls look too timid if applied too broadly.",
+      "howToTest": "Apply a diagnostic-only shrink to 60-80% outputs and compare calibration gap, Brier, and winner accuracy.",
+      "metricToImprove": "Brier score and calibration gap in 60-80% buckets."
+    },
+    {
+      "change": "Require stronger stat evidence before disagreeing with better-record",
+      "why": "The largest baseline gap appears when the model goes against record advantage.",
+      "expectedEffect": "Keeps contrarian calls, but only when component agreement is broad enough.",
+      "risk": "Can turn the model into a record follower if threshold is too blunt.",
+      "howToTest": "Create a diagnostic-only rule: when better-record disagrees, require multiple components to favor the model side; compare misses saved vs wins lost.",
+      "metricToImprove": "Disagreement-segment accuracy and Brier."
+    },
+    {
+      "change": "Hold method-model tuning until winner calibration stabilizes",
+      "why": "Method accuracy improved, but method direction is conditioned on noisy winner probabilities.",
+      "expectedEffect": "Avoids chasing method noise before the main probability layer is trustworthy.",
+      "risk": "Method may remain secondary and underoptimized for another cycle.",
+      "howToTest": "After winner calibration changes, re-run method-by-top-method and winner-correct/wrong splits.",
+      "metricToImprove": "Method accuracy without hurting winner Brier."
+    }
+  ],
+  "doNotChangeYet": [
+    "Do not tune model weights or formulas in this pass.",
+    "Do not change predictionViewModel or public prediction thresholds.",
+    "Do not mix historical backtest rows into public Model Record.",
+    "Do not add public claims or a model grade.",
+    "Do not ingest new events as part of this diagnosis.",
+    "Do not optimize only against the current 253-fight sample."
+  ],
+  "examples": {
+    "baselineBeatsModel": [
+      {
+        "fightId": "chris-duncan-terrance-mckinney",
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "fighterA": "Chris Duncan",
+        "fighterB": "Terrance McKinney",
+        "modelPick": "fighterB",
+        "modelProbability": 81,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.6561000000000001,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "lance-gibson-jr-chase-hooper",
+        "event": "UFC Fight Night: Adesanya vs. Pyfer",
+        "fighterA": "Lance Gibson Jr.",
+        "fighterB": "Chase Hooper",
+        "modelPick": "fighterB",
+        "modelProbability": 77,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5929,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "charles-oliveira-max-holloway",
+        "event": "UFC 326: Holloway vs. Oliveira 2",
+        "fighterA": "Charles Oliveira",
+        "fighterB": "Max Holloway",
+        "modelPick": "fighterB",
+        "modelProbability": 72,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5184,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "ismail-naurdiev-ryan-loder",
+        "event": "UFC Fight Night: Tsarukyan vs. Hooker",
+        "fighterA": "Ismail Naurdiev",
+        "fighterB": "Ryan Loder",
+        "modelPick": "fighterB",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.48999999999999994,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "darrius-flowers-lando-vannata",
+        "event": "UFC Fight Night: Moicano vs. Duncan",
+        "fighterA": "Darrius Flowers",
+        "fighterB": "Lando Vannata",
+        "modelPick": "fighterB",
+        "modelProbability": 67,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.4488999999999999,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "gokhan-saricam-tanner-boser",
+        "event": "UFC Fight Night: Burns vs. Malott",
+        "fighterA": "Gokhan Saricam",
+        "fighterB": "Tanner Boser",
+        "modelPick": "fighterB",
+        "modelProbability": 65,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.42250000000000004,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "kody-steele-dom-mar-fan",
+        "event": "UFC Fight Night: Della Maddalena vs. Prates",
+        "fighterA": "Kody Steele",
+        "fighterB": "Dom Mar Fan",
+        "modelPick": "fighterB",
+        "modelProbability": 65,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.42250000000000004,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "vitor-petrino-steven-asplund",
+        "event": "UFC Fight Night: Emmett vs. Vallejos",
+        "fighterA": "Vitor Petrino",
+        "fighterB": "Steven Asplund",
+        "modelPick": "fighterB",
+        "modelProbability": 65,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.42250000000000004,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "jonathan-micallef-themba-gorimbo",
+        "event": "UFC Fight Night: Della Maddalena vs. Prates",
+        "fighterA": "Jonathan Micallef",
+        "fighterB": "Themba Gorimbo",
+        "modelPick": "fighterB",
+        "modelProbability": 64,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.4096,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "absorption"
+      },
+      {
+        "fightId": "luke-riley-michael-aswell-jr",
+        "event": "UFC Fight Night: Evloev vs. Murphy",
+        "fighterA": "Luke Riley",
+        "fighterB": "Michael Aswell Jr.",
+        "modelPick": "fighterB",
+        "modelProbability": 64,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.4096,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "luana-santos-melissa-croden",
+        "event": "UFC Fight Night: Royval vs. Kape",
+        "fighterA": "Luana Santos",
+        "fighterB": "Melissa Croden",
+        "modelPick": "fighterB",
+        "modelProbability": 62,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.3844,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "regina-tarin-ernesta-kareckaite",
+        "event": "UFC Fight Night: Moreno vs. Kavanagh",
+        "fighterA": "Regina Tarin",
+        "fighterB": "Ernesta Kareckaite",
+        "modelPick": "fighterB",
+        "modelProbability": 61,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.3721,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "striking"
+      }
+    ],
+    "modelBeatsBaseline": [
+      {
+        "fightId": "aaron-pico-patricio-pitbull",
+        "event": "UFC 327: Prochazka vs. Ulberg",
+        "fighterA": "Aaron Pico",
+        "fighterB": "Patricio Pitbull",
+        "modelPick": "fighterA",
+        "modelProbability": 85,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.022500000000000006,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "grappling"
+      },
+      {
+        "fightId": "king-green-lance-gibson-jr",
+        "event": "UFC Fight Night: Royval vs. Kape",
+        "fighterA": "King Green",
+        "fighterB": "Lance Gibson Jr.",
+        "modelPick": "fighterA",
+        "modelProbability": 80,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.03999999999999998,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "jalin-turner-edson-barboza",
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "fighterA": "Jalin Turner",
+        "fighterB": "Edson Barboza",
+        "modelPick": "fighterA",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.09000000000000002,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "absorption"
+      },
+      {
+        "fightId": "terrance-mckinney-kyle-nelson",
+        "event": "UFC Fight Night: Adesanya vs. Pyfer",
+        "fighterA": "Terrance McKinney",
+        "fighterB": "Kyle Nelson",
+        "modelPick": "fighterA",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.09000000000000002,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "king-green-daniel-zellhuber",
+        "event": "UFC Fight Night: Moreno vs. Kavanagh",
+        "fighterA": "King Green",
+        "fighterB": "Daniel Zellhuber",
+        "modelPick": "fighterA",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.09000000000000002,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "manuel-torres-grant-dawson",
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "fighterA": "Manuel Torres",
+        "fighterB": "Grant Dawson",
+        "modelPick": "fighterA",
+        "modelProbability": 69,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.09610000000000003,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "van-taira",
+        "event": "UFC 328: Chimaev vs. Strickland",
+        "fighterA": "Joshua Van",
+        "fighterB": "Tatsuro Taira",
+        "modelPick": "fighterA",
+        "modelProbability": 67,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.10889999999999997,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "yousri-belgaroui-mansur-abdul-malik",
+        "event": "UFC Fight Night: Adesanya vs. Pyfer",
+        "fighterA": "Yousri Belgaroui",
+        "fighterB": "Mansur Abdul-Malik",
+        "modelPick": "fighterA",
+        "modelProbability": 67,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.10889999999999997,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "gillian-robertson-amanda-lemos",
+        "event": "UFC Fight Night: Emmett vs. Vallejos",
+        "fighterA": "Gillian Robertson",
+        "fighterB": "Amanda Lemos",
+        "modelPick": "fighterA",
+        "modelProbability": 66,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.11559999999999998,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "junior-tafa-kevin-christian",
+        "event": "UFC Fight Night: Della Maddalena vs. Prates",
+        "fighterA": "Junior Tafa",
+        "fighterB": "Kevin Christian",
+        "modelPick": "fighterA",
+        "modelProbability": 63,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.1369,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "fares-ziam-nazim-sadykhov",
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "fighterA": "Fares Ziam",
+        "fighterB": "Nazim Sadykhov",
+        "modelPick": "fighterA",
+        "modelProbability": 62,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.1444,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "nathaniel-wood-losene-keita",
+        "event": "UFC Fight Night: Evloev vs. Murphy",
+        "fighterA": "Nathaniel Wood",
+        "fighterB": "Losene Keita",
+        "modelPick": "fighterA",
+        "modelProbability": 62,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.1444,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      }
+    ],
+    "highestBrierMisses": [
+      {
+        "fightId": "chris-duncan-terrance-mckinney",
+        "event": "UFC 323: Dvalishvili vs. Yan 2",
+        "fighterA": "Chris Duncan",
+        "fighterB": "Terrance McKinney",
+        "modelPick": "fighterB",
+        "modelProbability": 81,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.6561000000000001,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "jai-herbert-mandel-nallo",
+        "event": "UFC Fight Night: Burns vs. Malott",
+        "fighterA": "Jai Herbert",
+        "fighterB": "Mandel Nallo",
+        "modelPick": "fighterB",
+        "modelProbability": 81,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.6561000000000001,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "lance-gibson-jr-chase-hooper",
+        "event": "UFC Fight Night: Adesanya vs. Pyfer",
+        "fighterA": "Lance Gibson Jr.",
+        "fighterB": "Chase Hooper",
+        "modelPick": "fighterB",
+        "modelProbability": 77,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5929,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "cody-durden-jafel-filho",
+        "event": "UFC Fight Night: Sterling vs. Zalal",
+        "fighterA": "Cody Durden",
+        "fighterB": "Jafel Filho",
+        "modelPick": "fighterB",
+        "modelProbability": 77,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5929,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "absorption"
+      },
+      {
+        "fightId": "ketlen-vieira-jacqueline-cavalcanti",
+        "event": "UFC Fight Night: Allen vs. Costa",
+        "fighterA": "Ketlen Vieira",
+        "fighterB": "Jacqueline Cavalcanti",
+        "modelPick": "fighterB",
+        "modelProbability": 73,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5328999999999999,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "danny-silva-kurtis-campbell",
+        "event": "UFC Fight Night: Evloev vs. Murphy",
+        "fighterA": "Danny Silva",
+        "fighterB": "Kurtis Campbell",
+        "modelPick": "fighterB",
+        "modelProbability": 73,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5328999999999999,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "absorption"
+      },
+      {
+        "fightId": "charles-oliveira-max-holloway",
+        "event": "UFC 326: Holloway vs. Oliveira 2",
+        "fighterA": "Charles Oliveira",
+        "fighterB": "Max Holloway",
+        "modelPick": "fighterB",
+        "modelProbability": 72,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5184,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "kopylov-tulio",
+        "event": "UFC 328: Chimaev vs. Strickland",
+        "fighterA": "Roman Kopylov",
+        "fighterB": "Marco Tulio",
+        "modelPick": "fighterB",
+        "modelProbability": 72,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5184,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "absorption"
+      },
+      {
+        "fightId": "ethyn-ewing-malcolm-wellmaker",
+        "event": "UFC 322: Della Maddalena vs. Makhachev",
+        "fighterA": "Ethyn Ewing",
+        "fighterB": "Malcolm Wellmaker",
+        "modelPick": "fighterB",
+        "modelProbability": 71,
+        "betterRecordPick": "coin-flip",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5041,
+        "recordAdvantageBucket": "same/similar record",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "ion-cutelaba-oumar-sy",
+        "event": "UFC Fight Night: Emmett vs. Vallejos",
+        "fighterA": "Ion Cutelaba",
+        "fighterB": "Oumar Sy",
+        "modelPick": "fighterB",
+        "modelProbability": 71,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.5041,
+        "recordAdvantageBucket": "large record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "robert-valentin-julien-leblanc",
+        "event": "UFC Fight Night: Burns vs. Malott",
+        "fighterA": "Robert Valentin",
+        "fighterB": "Julien Leblanc",
+        "modelPick": "fighterB",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterB",
+        "outcomeWinner": "fighterA",
+        "brier": 0.48999999999999994,
+        "recordAdvantageBucket": "medium record advantage",
+        "topComponent": "striking"
+      },
+      {
+        "fightId": "ismail-naurdiev-ryan-loder",
+        "event": "UFC Fight Night: Tsarukyan vs. Hooker",
+        "fighterA": "Ismail Naurdiev",
+        "fighterB": "Ryan Loder",
+        "modelPick": "fighterB",
+        "modelProbability": 70,
+        "betterRecordPick": "fighterA",
+        "outcomeWinner": "fighterA",
+        "brier": 0.48999999999999994,
+        "recordAdvantageBucket": "small record advantage",
+        "topComponent": "striking"
+      }
+    ]
+  }
+}
