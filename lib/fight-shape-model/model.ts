@@ -27,7 +27,40 @@ import type {
   RoundSustainabilityScore
 } from "./types";
 
-const MODEL_VERSION = "fight-shape-v0.1";
+const MODEL_VERSION = "fight-shape-v0.2";
+
+/**
+ * Returns months elapsed since the fighter's most recent recorded fight.
+ * Parses the UFCStats date format: "Jul. 10, 2021" or "Mar. 07, 2026".
+ * Returns null if the date cannot be parsed.
+ */
+function monthsSinceLastFight(fighter: SourcedFighter): number | null {
+  const last = fighter.lastFive?.[0];
+  if (!last?.date) return null;
+  // Normalize "Jul. 10, 2021" → "Jul 10 2021"
+  const normalized = String(last.date).replace(/\./g, "").replace(/\s+/g, " ").trim();
+  const parsed = new Date(normalized);
+  if (isNaN(parsed.getTime())) return null;
+  const diffMs = Date.now() - parsed.getTime();
+  return diffMs / (1000 * 60 * 60 * 24 * 30.4375);
+}
+
+/**
+ * Layoff shrinkage factor: pulls form score toward 50 for fighters
+ * inactive more than 6 months. Based on Bayesian intuition — stale
+ * evidence should regress toward the prior (league average = 50).
+ *
+ * Factor schedule:
+ *   ≤ 6 months:  1.00  (no adjustment)
+ *   12 months:   0.85
+ *   24 months:   0.63
+ *   60 months:   0.50  (floor — evidence is not zero, just very weak)
+ */
+function layoffShrinkFactor(months: number | null): number {
+  if (months == null || months <= 6) return 1.0;
+  // Exponential decay: factor = exp(-0.008 × (months - 6)), floored at 0.50
+  return Math.max(0.50, Math.exp(-0.008 * (months - 6)));
+}
 
 function stat(fighter: SourcedFighter, key: string) {
   const value = fighter.aggregateStats?.[key];
@@ -203,7 +236,29 @@ function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricS
     value: resultScore(fight),
     weight: weights[index] ?? 0.5
   })));
-  const clamped = clampScore(score);
+  const raw = clampScore(score);
+
+  // ── Layoff staleness shrinkage ──────────────────────────────────────────
+  // Pull form score toward 50 (league prior) for fighters with long inactivity.
+  // Rationale: stale evidence should regress toward the mean. A fighter who
+  // last fought 5 years ago has an uncertain current form — their historical
+  // result shape is real but its predictive weight is diminished.
+  const layoffMonths = monthsSinceLastFight(fighter);
+  const shrink = layoffShrinkFactor(layoffMonths);
+  const clamped = raw != null ? clampScore(50 + (raw - 50) * shrink) : null;
+  const hasLongLayoff = layoffMonths != null && layoffMonths > 12;
+  const layoffLabel = hasLongLayoff
+    ? `${Math.round(layoffMonths)}mo layoff — form shrunk toward prior`
+    : null;
+
+  const formFactors = [
+    factor("recent result shape", `${fighter.dataCompleteness?.lastFiveCount ?? 0} fights`, "positive", "sourced"),
+    factor("method context", "finish/decision only", "neutral", "sourced"),
+    factor("opponent tier context", "not modeled", "negative", "missing"),
+  ];
+  if (layoffLabel) {
+    formFactors.push(factor("inactivity penalty", layoffLabel, "negative", "derived"));
+  }
 
   return {
     key: "opponentQualityAdjustedForm",
@@ -214,11 +269,7 @@ function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricS
     confidence,
     status: metricStatus(clamped, confidence),
     explanation: explainForm(fighter.name, confidence),
-    factors: [
-      factor("recent result shape", `${fighter.dataCompleteness?.lastFiveCount ?? 0} fights`, "positive", "sourced"),
-      factor("method context", "finish/decision only", "neutral", "sourced"),
-      factor("opponent tier context", "not modeled", "negative", "missing")
-    ],
+    factors: formFactors,
     provenance: ["sourced", "derived", "missing"]
   };
 }

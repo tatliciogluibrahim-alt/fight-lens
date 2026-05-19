@@ -144,10 +144,15 @@ export interface SourcedFight {
   rounds: 3 | 5;
   weightClass: string | null;
   status: "scheduled" | "completed" | "mixed";
-  styleClashLabel: string | null;
+  styleClashLabel?: string | null;
   matchupQuestion: string | null;
   fightShapeSummary: string | null;
   manualRead: string | null;
+  result?: {
+    winner: string;
+    method: string;
+    round: number | null;
+  } | null;
   fighters: {
     fighterA: SourcedFighter;
     fighterB: SourcedFighter;
