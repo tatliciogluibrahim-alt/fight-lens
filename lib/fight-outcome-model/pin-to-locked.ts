@@ -18,11 +18,12 @@
  */
 import type { FightOutcomeModelOutput, OutcomeScenario } from "./types";
 import type { PredictionRecord } from "@/lib/accuracy/types";
+import { getNamedCallSide, isTooCloseToCall } from "@/lib/predictionThresholds";
 
 function leanLabel(prob: number): "strong lean" | "lean" | "slight lean" | "no lean" {
   if (prob >= 70) return "strong lean";
   if (prob >= 60) return "lean";
-  if (prob >= 53) return "slight lean";
+  if (prob >= 52) return "slight lean";
   return "no lean";
 }
 
@@ -63,11 +64,15 @@ export function pinToLockedPrediction(
   const pA = prediction.prediction.fighterAWinProbability;
   const pB = prediction.prediction.fighterBWinProbability;
   const { decision, koTko, submission } = prediction.prediction.methodBreakdown;
-  const tooClose = Math.abs(pA - pB) < 5;
+  const tooClose = isTooCloseToCall(pA, pB);
+  const namedSide = getNamedCallSide(pA, pB);
 
-  const lockedFavoriteName = pA >= pB
-    ? liveModel.fighterA.fighterName
-    : liveModel.fighterB.fighterName;
+  const lockedFavoriteName =
+    namedSide === "fighterA"
+      ? liveModel.fighterA.fighterName
+      : namedSide === "fighterB"
+        ? liveModel.fighterB.fighterName
+        : null;
 
   return {
     ...liveModel,
@@ -83,6 +88,8 @@ export function pinToLockedPrediction(
       winProbability: pB,
       leanLabel: leanLabel(pB),
     },
-    scenarios: reconcileScenarios(liveModel.scenarios, lockedFavoriteName),
+    scenarios: lockedFavoriteName
+      ? reconcileScenarios(liveModel.scenarios, lockedFavoriteName)
+      : liveModel.scenarios,
   };
 }

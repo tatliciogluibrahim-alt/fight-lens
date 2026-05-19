@@ -21,11 +21,11 @@
 import type {
   AccuracyMetrics,
   CalibrationBucket,
-  FighterSide,
   MethodType,
   ModelGrade,
   PredictionRecord,
 } from "./types";
+import { getNamedCallSide } from "@/lib/predictionThresholds";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -46,7 +46,11 @@ function resolvedRecords(records: PredictionRecord[]) {
   return records.filter(
     (r): r is PredictionRecord & { outcome: NonNullable<PredictionRecord["outcome"]> } =>
       r.outcome !== null &&
-      (r.outcome.winner === "fighterA" || r.outcome.winner === "fighterB"),
+      (r.outcome.winner === "fighterA" || r.outcome.winner === "fighterB") &&
+      getNamedCallSide(
+        r.prediction.fighterAWinProbability,
+        r.prediction.fighterBWinProbability,
+      ) !== null,
   );
 }
 
@@ -90,10 +94,13 @@ function computeCalibration(records: ReturnType<typeof resolvedRecords>): Calibr
     });
 
     const correct = inBucket.filter((r) => {
-      const aIsFav = r.prediction.fighterAWinProbability >= r.prediction.fighterBWinProbability;
+      const namedSide = getNamedCallSide(
+        r.prediction.fighterAWinProbability,
+        r.prediction.fighterBWinProbability,
+      );
       const winnerMatchesFav =
-        (aIsFav && r.outcome.winner === "fighterA") ||
-        (!aIsFav && r.outcome.winner === "fighterB");
+        (namedSide === "fighterA" && r.outcome.winner === "fighterA") ||
+        (namedSide === "fighterB" && r.outcome.winner === "fighterB");
       return winnerMatchesFav;
     });
 
@@ -138,10 +145,13 @@ export function computeAccuracyMetrics(records: PredictionRecord[]): AccuracyMet
 
   // Winner accuracy
   const correctWinners = resolved.filter((r) => {
-    const aIsFav = r.prediction.fighterAWinProbability >= r.prediction.fighterBWinProbability;
+    const namedSide = getNamedCallSide(
+      r.prediction.fighterAWinProbability,
+      r.prediction.fighterBWinProbability,
+    );
     const favWon =
-      (aIsFav && r.outcome.winner === "fighterA") ||
-      (!aIsFav && r.outcome.winner === "fighterB");
+      (namedSide === "fighterA" && r.outcome.winner === "fighterA") ||
+      (namedSide === "fighterB" && r.outcome.winner === "fighterB");
     return favWon;
   });
   const winnerAccuracy = Math.round((correctWinners.length / resolved.length) * 100);

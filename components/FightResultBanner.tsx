@@ -1,7 +1,7 @@
-import type { PredictionRecord } from "@/lib/accuracy/types";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 interface FightResultBannerProps {
-  prediction: PredictionRecord;
+  viewModel: PredictionViewModel;
 }
 
 function methodLabel(method: string): string {
@@ -13,39 +13,18 @@ function methodLabel(method: string): string {
   }
 }
 
-export function FightResultBanner({ prediction }: FightResultBannerProps) {
-  const { outcome, prediction: pred, fighters } = prediction;
-  if (!outcome) return null;
+export function FightResultBanner({ viewModel }: FightResultBannerProps) {
+  if (!viewModel.isScored || !viewModel.actualMethod) return null;
 
-  const winnerName =
-    outcome.winner === "fighterA"
-      ? fighters.fighterA
-      : outcome.winner === "fighterB"
-        ? fighters.fighterB
-        : null;
-
+  const winnerName = viewModel.actualWinner?.name ?? null;
   const loserName =
-    outcome.winner === "fighterA"
-      ? fighters.fighterB
-      : outcome.winner === "fighterB"
-        ? fighters.fighterA
+    viewModel.actualWinner?.id === viewModel.fighterA.id
+      ? viewModel.fighterB.name
+      : viewModel.actualWinner?.id === viewModel.fighterB.id
+        ? viewModel.fighterA.name
         : null;
-
-  const modelPick =
-    pred.fighterAWinProbability > pred.fighterBWinProbability
-      ? "fighterA"
-      : "fighterB";
-
-  const wasCorrect =
-    outcome.winner === "draw" || outcome.winner === "nc"
-      ? null
-      : outcome.winner === modelPick;
-
-  const modelPickedFinish =
-    pred.methodBreakdown.decision < 50;
-  const actualFinish =
-    outcome.method === "ko_tko" || outcome.method === "submission";
-  const methodCorrect = modelPickedFinish === actualFinish;
+  const wasCorrect = viewModel.modelCorrect;
+  const methodCorrect = viewModel.methodCorrect;
 
   return (
     <div
@@ -68,12 +47,15 @@ export function FightResultBanner({ prediction }: FightResultBannerProps) {
               <span className="font-normal text-muted">def.</span>{" "}
               {loserName}
               <span className="ml-2 font-mono text-xs font-normal text-muted">
-                · {methodLabel(outcome.method)} · R{outcome.round} {outcome.time}
+                · {methodLabel(viewModel.actualMethod)}
+                {viewModel.actualRound ? ` · R${viewModel.actualRound}` : ""}
+                {viewModel.actualTime ? ` ${viewModel.actualTime}` : ""}
               </span>
             </p>
           ) : (
             <p className="text-sm text-muted">
-              {outcome.winner === "draw" ? "Draw" : "No Contest"} · {methodLabel(outcome.method)} · R{outcome.round}
+              No result · {methodLabel(viewModel.actualMethod)}
+              {viewModel.actualRound ? ` · R${viewModel.actualRound}` : ""}
             </p>
           )}
         </div>

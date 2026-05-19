@@ -6,11 +6,13 @@ import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { CountryFlag } from "./CountryFlag";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import type { PredictionRecord } from "@/lib/accuracy/types";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 interface FightCardProps {
   fight: SourcedFight;
   eventId: string;
   prediction?: PredictionRecord | null;
+  predictionViewModel?: PredictionViewModel | null;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -24,23 +26,13 @@ function methodLabel(method: string): string {
   }
 }
 
-// Read strength — single source of truth for the public-facing label
-function readStrengthFromProb(probA: number, probB: number): string {
-  const top = Math.max(probA, probB);
-  if (top >= 70) return "strong";
-  if (top >= 60) return "usable";
-  if (top >= 55) return "thin";
-  return "coin flip";
-}
-
-function topMethod(breakdown: { decision: number; koTko: number; submission: number }): string {
-  const entries: Array<[string, number]> = [
-    ["Decision", breakdown.decision],
-    ["KO/TKO", breakdown.koTko],
-    ["Submission", breakdown.submission],
-  ];
-  entries.sort((a, b) => b[1] - a[1]);
-  return entries[0][0];
+function readStrengthLabel(readStrength: PredictionViewModel["readStrength"]): string {
+  switch (readStrength) {
+    case "strong": return "Strong";
+    case "usable": return "Usable";
+    case "thin": return "Thin";
+    case "data-pending": return "Data pending";
+  }
 }
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -66,13 +58,11 @@ function RecordLine({ fighter }: { fighter: SourcedFighter }) {
 }
 
 function ResultChip({
-  outcome,
-  modelPick,
+  viewModel,
 }: {
-  outcome: PredictionRecord["outcome"];
-  modelPick: "fighterA" | "fighterB";
+  viewModel: PredictionViewModel;
 }) {
-  if (!outcome) {
+  if (viewModel.resultState === "pending") {
     return (
       <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/70 px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-subtle">
         <span className="size-1.5 rounded-full bg-subtle/60" />
@@ -81,7 +71,7 @@ function ResultChip({
     );
   }
 
-  if (outcome.winner === "draw" || outcome.winner === "nc") {
+  if (viewModel.resultState === "noResult" || viewModel.modelCorrect === null) {
     return (
       <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/70 px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-muted">
         No result
@@ -89,7 +79,7 @@ function ResultChip({
     );
   }
 
-  const correct = outcome.winner === modelPick;
+  const correct = viewModel.modelCorrect;
   return (
     <span
       className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.1em] ${
@@ -123,23 +113,19 @@ function MethodBar({ label, value, accent }: { label: string; value: number; acc
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
-export function FightCard({ fight, eventId, prediction }: FightCardProps) {
+export function FightCard({ fight, eventId, predictionViewModel }: FightCardProps) {
   const [expanded, setExpanded] = useState(false);
 
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
 
-  const pred = prediction?.prediction;
-  const outcome = prediction?.outcome ?? null;
-  const hasPred = !!pred;
-  const favA = hasPred && pred.fighterAWinProbability >= pred.fighterBWinProbability;
-  const modelPick: "fighterA" | "fighterB" = favA ? "fighterA" : "fighterB";
-  const modelPickName = favA ? fighterA.name : fighterB.name;
-  const probA = pred?.fighterAWinProbability ?? null;
-  const probB = pred?.fighterBWinProbability ?? null;
-  const topProb = pred ? Math.max(pred.fighterAWinProbability, pred.fighterBWinProbability) : null;
-  const readStrength = pred ? readStrengthFromProb(pred.fighterAWinProbability, pred.fighterBWinProbability) : null;
-  const methodTop = pred ? topMethod(pred.methodBreakdown) : null;
+  const vm = predictionViewModel ?? null;
+  const hasPred = !!vm && vm.callState !== "insufficientData" && vm.callState !== "pending";
+  const favA = vm?.predictedWinner?.id === fighterA.id;
+  const favB = vm?.predictedWinner?.id === fighterB.id;
+  const probA = vm?.fighterA.winProbability ?? null;
+  const probB = vm?.fighterB.winProbability ?? null;
+  const methodTop = vm?.methodLean ?? null;
 
   return (
     <div className="group border-b border-line transition hover:bg-surface-2/30 last:border-b-0">
@@ -175,7 +161,7 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
                 {probA}
               </span>
               <span className="text-[9px] text-subtle">·</span>
-              <span className={`data-text text-[11px] font-medium ${!favA ? "text-accent" : "text-muted"}`}>
+              <span className={`data-text text-[11px] font-medium ${favB ? "text-accent" : "text-muted"}`}>
                 {probB}
               </span>
             </div>
@@ -189,7 +175,7 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
               <FighterCountry fighter={fighterB} />
               <p
                 className={`truncate text-base font-semibold tracking-tight ${
-                  hasPred && !favA ? "text-accent" : "text-foreground"
+                  hasPred && favB ? "text-accent" : "text-foreground"
                 }`}
               >
                 {fighterB.name}
@@ -201,7 +187,7 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
 
         {/* Actions */}
         <div className="flex items-center gap-2">
-          {hasPred && (
+          {vm && (
             <button
               type="button"
               onClick={() => setExpanded((v) => !v)}
@@ -222,17 +208,21 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
       </div>
 
       {/* Sub-row: call summary line — scannable, low monospace */}
-      {hasPred && (
+      {vm && (
         <div className="flex flex-wrap items-center gap-3 px-5 pb-4 text-xs text-muted md:gap-5">
-          <span>
-            <span className="text-subtle">Call:</span>{" "}
-            <span className="font-medium text-foreground">{modelPickName}</span>{" "}
-            <span className="data-text text-foreground">{topProb}%</span>
-          </span>
+          {vm.isNamedCall && vm.predictedWinner ? (
+            <span>
+              <span className="text-subtle">Call:</span>{" "}
+              <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>{" "}
+              <span className="data-text text-foreground">{vm.winnerProbability}%</span>
+            </span>
+          ) : (
+            <span className="font-medium text-foreground">{vm.displayedCallLabel}</span>
+          )}
           <span className="text-subtle">·</span>
           <span>
             <span className="text-subtle">Read:</span>{" "}
-            <span className="text-foreground">{readStrength}</span>
+            <span className="text-foreground">{readStrengthLabel(vm.readStrength)}</span>
           </span>
           {methodTop && (
             <>
@@ -244,13 +234,13 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
             </>
           )}
           <span className="ml-auto">
-            <ResultChip outcome={outcome} modelPick={modelPick} />
+            <ResultChip viewModel={vm} />
           </span>
         </div>
       )}
 
       {/* Expandable method breakdown */}
-      {expanded && pred && (
+      {expanded && vm && (
         <div className="border-t border-line bg-background/30 px-5 py-4">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-3">
@@ -262,10 +252,10 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
                 <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
                   <div
                     className="absolute left-0 h-full rounded-full bg-accent"
-                    style={{ width: `${probA}%` }}
+                    style={{ width: `${probA ?? 0}%` }}
                   />
                 </div>
-                <p className={`data-text w-10 text-sm ${!favA ? "text-accent" : "text-muted"}`}>
+                <p className={`data-text w-10 text-sm ${favB ? "text-accent" : "text-muted"}`}>
                   {probB}%
                 </p>
               </div>
@@ -277,11 +267,11 @@ export function FightCard({ fight, eventId, prediction }: FightCardProps) {
 
             <div className="space-y-2.5">
               <p className="mono-label">method lean</p>
-              <MethodBar label="Decision" value={pred.methodBreakdown.decision} accent={methodTop === "Decision"} />
-              <MethodBar label="KO / TKO" value={pred.methodBreakdown.koTko} accent={methodTop === "KO/TKO"} />
-              <MethodBar label="Submission" value={pred.methodBreakdown.submission} accent={methodTop === "Submission"} />
+              <MethodBar label="Decision" value={vm.methodDistribution.decision} accent={methodTop === "Decision"} />
+              <MethodBar label="KO / TKO" value={vm.methodDistribution.koTko} accent={methodTop === "KO/TKO"} />
+              <MethodBar label="Submission" value={vm.methodDistribution.submission} accent={methodTop === "Submission"} />
               <p className="pt-1 text-[11px] text-subtle">
-                Method lean is directional. Winner calls are tracked separately.
+                {vm.methodLeanNote}
               </p>
             </div>
           </div>

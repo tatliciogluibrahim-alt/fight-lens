@@ -2,8 +2,9 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
-import { getAccuracyMetrics, getAllPredictions } from "@/lib/accuracy";
+import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
 import { getLatestEvent } from "@/lib/events/registry";
+import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 function methodLabel(method: string): string {
@@ -16,16 +17,11 @@ function methodLabel(method: string): string {
 }
 
 function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) {
-  const modelPick =
-    p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability
-      ? p.fighters.fighterA
-      : p.fighters.fighterB;
-  const modelProb = Math.max(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability);
+  const call = getPredictionRecordCall(p);
 
   const outcome = p.outcome;
-  const winnerCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc"
-    ? (outcome.winner === "fighterA" && p.prediction.fighterAWinProbability >= p.prediction.fighterBWinProbability) ||
-      (outcome.winner === "fighterB" && p.prediction.fighterBWinProbability > p.prediction.fighterAWinProbability)
+  const winnerCorrect = outcome && outcome.winner !== "draw" && outcome.winner !== "nc" && call.predictedSide
+    ? outcome.winner === call.predictedSide
     : null;
   const actualWinner = outcome
     ? outcome.winner === "fighterA" ? p.fighters.fighterA
@@ -43,9 +39,15 @@ function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) 
           {p.fighters.fighterA} <span className="font-normal text-subtle">vs</span> {p.fighters.fighterB}
         </p>
         <p className="text-xs text-muted">
-          <span className="text-subtle">Call:</span>{" "}
-          <span className="text-foreground">{modelPick}</span>{" "}
-          <span className="data-text text-foreground">{modelProb}%</span>
+          {call.hasNamedCall ? (
+            <>
+              <span className="text-subtle">Call:</span>{" "}
+              <span className="text-foreground">{call.predictedWinnerName}</span>{" "}
+              <span className="data-text text-foreground">{call.winnerProbability}%</span>
+            </>
+          ) : (
+            <span className="text-foreground">{call.displayedCallLabel}</span>
+          )}
           {outcome && winnerCorrect !== null && actualWinner && (
             <>
               <span className="text-subtle"> · </span>
@@ -67,7 +69,7 @@ function FightRow({ p, fightHref }: { p: PredictionRecord; fightHref: string }) 
 
 export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
-  const predictions = getAllPredictions();
+  const predictions = getLockedPredictions();
   const latestEvent = getLatestEvent();
 
   // Group predictions by event
@@ -141,8 +143,7 @@ export default function Home() {
               const correct = resolved.filter((p) => {
                 if (!p.outcome || p.outcome.winner === "draw" || p.outcome.winner === "nc") return false;
                 return (
-                  (p.outcome.winner === "fighterA" && p.prediction.fighterAWinProbability > p.prediction.fighterBWinProbability) ||
-                  (p.outcome.winner === "fighterB" && p.prediction.fighterBWinProbability > p.prediction.fighterAWinProbability)
+                  getPredictionRecordCall(p).predictedSide === p.outcome.winner
                 );
               });
 

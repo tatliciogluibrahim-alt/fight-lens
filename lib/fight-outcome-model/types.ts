@@ -42,7 +42,7 @@ export interface FightOutcomeModelOutput {
   matchupId: string;
   fighterA: FighterOutcomeProbability;
   fighterB: FighterOutcomeProbability;
-  /** True when both fighters are within 5% of 50/50 */
+  /** True when no named public call should be made */
   tooClose: boolean;
   methodBreakdown: MatchupMethodBreakdown;
   scenarios: [OutcomeScenario, OutcomeScenario, OutcomeScenario];

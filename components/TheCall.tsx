@@ -1,8 +1,9 @@
 import { ProbabilityBar } from "@/components/ProbabilityBar";
-import type { FightOutcomeModelOutput, OutcomeScenario } from "@/lib/fight-outcome-model/types";
+import type { OutcomeScenario } from "@/lib/fight-outcome-model/types";
+import type { PredictionViewModel, ReadStrength } from "@/lib/predictionViewModel";
 
 interface TheCallProps {
-  outcomeModel: FightOutcomeModelOutput;
+  viewModel: PredictionViewModel;
 }
 
 // ─── Read strength chip ───────────────────────────────────────────────────────
@@ -10,31 +11,31 @@ interface TheCallProps {
 // Sits directly under the win probability so the user sees how strong the read
 // is without hunting for a separate badge.
 
-const READ_STRENGTH_COPY: Record<string, { label: string; tone: string; helper: string }> = {
-  high: {
+const READ_STRENGTH_COPY: Record<ReadStrength, { label: string; tone: string; helper: string }> = {
+  strong: {
     label: "Strong read",
     tone: "border-success/40 text-success bg-success-soft",
     helper: "Signals align across shape, form, and stats.",
   },
-  medium: {
+  usable: {
     label: "Usable read",
     tone: "border-accent/40 text-accent bg-accent/[0.08]",
     helper: "Clear lean, but not every signal points the same direction.",
   },
-  low: {
+  thin: {
     label: "Thin read",
     tone: "border-line-strong text-muted bg-surface-2",
-    helper: "Limited data — treat the call as directional only.",
+    helper: "Limited separation — treat the read as directional only.",
   },
-  insufficient: {
+  "data-pending": {
     label: "Data pending",
     tone: "border-line text-subtle bg-surface-2",
     helper: "Not enough sourced history to call this one yet.",
   },
 };
 
-function ReadStrengthChip({ confidence }: { confidence: string }) {
-  const copy = READ_STRENGTH_COPY[confidence] ?? READ_STRENGTH_COPY.insufficient;
+function ReadStrengthChip({ readStrength }: { readStrength: ReadStrength }) {
+  const copy = READ_STRENGTH_COPY[readStrength] ?? READ_STRENGTH_COPY["data-pending"];
   return (
     <div className="flex flex-col items-center gap-2 text-center">
       <span
@@ -54,18 +55,17 @@ function ReadStrengthChip({ confidence }: { confidence: string }) {
 // lean + slim bars; hide methods below 8% behind "thin".
 
 function MethodLean({
-  decision,
-  koTko,
-  submission,
+  viewModel,
 }: {
-  decision: number;
-  koTko: number;
-  submission: number;
+  viewModel: PredictionViewModel;
 }) {
+  const { methodDistribution, methodLean, methodLeanNote } = viewModel;
+  if (!methodLean) return null;
+
   const methods = [
-    { id: "decision", label: "Decision", value: decision },
-    { id: "ko", label: "KO / TKO", value: koTko },
-    { id: "sub", label: "Submission", value: submission },
+    { id: "decision", label: "Decision", value: methodDistribution.decision },
+    { id: "ko", label: "KO / TKO", value: methodDistribution.koTko },
+    { id: "sub", label: "Submission", value: methodDistribution.submission },
   ].sort((a, b) => b.value - a.value);
 
   const top = methods[0];
@@ -75,7 +75,7 @@ function MethodLean({
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <p className="mono-label">method lean</p>
         <p className="text-xs text-subtle">
-          Directional · winner calls are tracked separately
+          {methodLeanNote}
         </p>
       </div>
       <div className="mt-3 flex flex-wrap items-baseline gap-2">
@@ -114,10 +114,8 @@ function MethodLean({
 
 function ScenarioCard({
   scenario,
-  suppressFighterLabel = false,
 }: {
   scenario: OutcomeScenario;
-  suppressFighterLabel?: boolean;
 }) {
   const isLean = scenario.id === "lean";
   const isSwing = scenario.id === "swing";
@@ -135,7 +133,7 @@ function ScenarioCard({
       <p className={`mono-label ${isLean ? "text-accent" : isSwing ? "text-foreground" : ""}`}>
         {scenario.title}
       </p>
-      {!suppressFighterLabel && scenario.fighterLabel ? (
+      {scenario.fighterLabel ? (
         <p className="text-base font-semibold leading-tight tracking-[-0.02em]">
           {scenario.fighterLabel}
         </p>
@@ -147,8 +145,8 @@ function ScenarioCard({
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
-export function TheCall({ outcomeModel }: TheCallProps) {
-  if (outcomeModel.confidence === "insufficient") {
+export function TheCall({ viewModel: vm }: TheCallProps) {
+  if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
       <section id="the-call" className="module-card scroll-mt-28">
         <div className="module-header">
@@ -161,7 +159,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           <div className="rounded-2xl border border-line bg-background/35 p-8 text-center">
             <p className="mono-label">data pending</p>
             <p className="mt-3 text-sm text-muted">
-              Win probability loads once fighter stats are sourced.
+              Insufficient data for a public call. Win probability loads once fighter stats are sourced.
             </p>
           </div>
         </div>
@@ -169,8 +167,7 @@ export function TheCall({ outcomeModel }: TheCallProps) {
     );
   }
 
-  const { fighterA, fighterB, methodBreakdown, scenarios, confidence, tooClose } =
-    outcomeModel;
+  const { fighterA, fighterB, scenarios, tooClose } = vm;
 
   return (
     <section id="the-call" className="module-card scroll-mt-28">
@@ -190,21 +187,17 @@ export function TheCall({ outcomeModel }: TheCallProps) {
           <ProbabilityBar
             probA={fighterA.winProbability}
             probB={fighterB.winProbability}
-            nameA={fighterA.fighterName}
-            nameB={fighterB.fighterName}
+            nameA={fighterA.name}
+            nameB={fighterB.name}
             tooClose={tooClose}
           />
           <div className="mt-5">
-            <ReadStrengthChip confidence={confidence} />
+            <ReadStrengthChip readStrength={vm.readStrength} />
           </div>
         </div>
 
         {/* Method lean — secondary */}
-        <MethodLean
-          decision={methodBreakdown.decision}
-          koTko={methodBreakdown.koTko}
-          submission={methodBreakdown.submission}
-        />
+        <MethodLean viewModel={vm} />
 
         {/* The Call / Live Path / What Breaks the Call — required modules */}
         <div className="grid gap-4 md:grid-cols-3">
@@ -212,9 +205,6 @@ export function TheCall({ outcomeModel }: TheCallProps) {
             <ScenarioCard
               key={scenario.id}
               scenario={scenario}
-              suppressFighterLabel={
-                tooClose && (scenario.id === "lean" || scenario.id === "upset")
-              }
             />
           ))}
         </div>

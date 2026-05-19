@@ -4,6 +4,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracyMetrics } from "@/lib/accuracy";
+import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 export const metadata: Metadata = {
@@ -68,13 +69,8 @@ function ResultStateChip({
 // ─── Prediction row ───────────────────────────────────────────────────────────
 
 function PredictionRow({ record }: { record: PredictionRecord }) {
-  const { outcome, prediction, fighters } = record;
-
-  const modelPick =
-    prediction.fighterAWinProbability >= prediction.fighterBWinProbability
-      ? fighters.fighterA
-      : fighters.fighterB;
-  const modelProb = Math.max(prediction.fighterAWinProbability, prediction.fighterBWinProbability);
+  const { outcome, fighters } = record;
+  const call = getPredictionRecordCall(record);
 
   let state: "correct" | "incorrect" | "pending" | "noresult" = "pending";
   let resultLine: string | null = null;
@@ -84,14 +80,14 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
       state = "noresult";
       resultLine = `${outcome.winner === "draw" ? "Draw" : "No Contest"} · ${methodLabel(outcome.method)} · R${outcome.round}`;
     } else {
-      const correct =
-        (outcome.winner === "fighterA" && prediction.fighterAWinProbability >= prediction.fighterBWinProbability) ||
-        (outcome.winner === "fighterB" && prediction.fighterBWinProbability > prediction.fighterAWinProbability);
-      state = correct ? "correct" : "incorrect";
+      const correct = call.predictedSide ? outcome.winner === call.predictedSide : null;
+      state = correct === null ? "noresult" : correct ? "correct" : "incorrect";
       const actualWinner = outcome.winner === "fighterA" ? fighters.fighterA : fighters.fighterB;
-      resultLine = correct
+      resultLine = correct === null
+        ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — no named call`
+        : correct
         ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round}`
-        : `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — called ${modelPick}`;
+        : `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — called ${call.predictedWinnerName}`;
     }
   }
 
@@ -110,9 +106,15 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
           {fighters.fighterA} <span className="font-normal text-subtle">vs</span> {fighters.fighterB}
         </p>
         <p className="mt-1 text-xs text-muted">
-          <span className="text-subtle">Call:</span>{" "}
-          <span className="text-foreground">{modelPick}</span>{" "}
-          <span className="data-text text-foreground">{modelProb}%</span>
+          {call.hasNamedCall ? (
+            <>
+              <span className="text-subtle">Call:</span>{" "}
+              <span className="text-foreground">{call.predictedWinnerName}</span>{" "}
+              <span className="data-text text-foreground">{call.winnerProbability}%</span>
+            </>
+          ) : (
+            <span className="text-foreground">{call.displayedCallLabel}</span>
+          )}
         </p>
       </div>
 

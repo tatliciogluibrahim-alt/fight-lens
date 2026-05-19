@@ -21,6 +21,7 @@ import type {
   OutcomeModelConfidence,
   OutcomeScenario,
 } from "./types";
+import { isTooCloseToCall } from "@/lib/predictionThresholds";
 
 const MODEL_VERSION = "outcome-v0.2";
 
@@ -100,7 +101,7 @@ function finishProfile(fighter: SourcedFighter): FinishProfile {
 function leanLabel(prob: number): FighterOutcomeProbability["leanLabel"] {
   if (prob >= 0.70) return "strong lean";
   if (prob >= 0.60) return "lean";
-  if (prob >= 0.53) return "slight lean";
+  if (prob >= 0.52) return "slight lean";
   return "no lean";
 }
 
@@ -163,7 +164,7 @@ function buildScenarios(
   swingLabel: string,
   swingDescription: string,
 ): [OutcomeScenario, OutcomeScenario, OutcomeScenario] {
-  const aIsFavorite = winProbA >= 0.50;
+  const aIsFavorite = winProbA > 0.50;
   const favorite = aIsFavorite ? fighterA : fighterB;
   const underdog = aIsFavorite ? fighterB : fighterA;
   const favProb = Math.max(winProbA, 1 - winProbA);
@@ -330,7 +331,10 @@ export function buildFightOutcomeModel(
     swing.description,
   );
 
-  const tooClose = Math.abs(winProbA - 0.5) < 0.05;
+  const tooClose = isTooCloseToCall(
+    outcomeA.winProbability,
+    outcomeB.winProbability,
+  );
 
   // ── Confidence ────────────────────────────────────────────────────────────
   let confidence: OutcomeModelConfidence;

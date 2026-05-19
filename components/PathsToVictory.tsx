@@ -1,28 +1,26 @@
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { FightPath } from "@/lib/types";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 interface PathsToVictoryProps {
   fight: SourcedFight;
   modelOutput: FightShapeModelOutput;
-  /**
-   * Canonical predicted-winner fighter id. Used to ensure the layout reads
-   * left-to-right as "model call" → "live path" without contradicting the
-   * winner forecast.
-   */
-  predictedWinnerId?: string | null;
+  viewModel: PredictionViewModel;
 }
 
 function PathList({
   fighter,
   metric,
   paths,
-  accent = false
+  accent = false,
+  roleLabel,
 }: {
   fighter: SourcedFighter;
   metric: FighterMetricScore;
   paths: FightPath[];
   accent?: boolean;
+  roleLabel?: string | null;
 }) {
   const hasCuratedPaths = paths.length > 0;
   const hasModelSignal = metric.status !== "insufficient" && metric.score != null;
@@ -41,9 +39,10 @@ function PathList({
   }
 
   return (
-    <div className="rounded-2xl border border-line bg-background/45 p-5">
+    <div className={`rounded-2xl border bg-background/45 p-5 ${accent ? "border-accent/35" : "border-line"}`}>
       <div>
         <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
+        {roleLabel ? <p className="mono-label mt-2 text-accent">{roleLabel}</p> : null}
         {hasModelSignal && <p className="mono-label mt-2">{metric.label}</p>}
       </div>
       {hasModelSignal && (
@@ -65,7 +64,7 @@ function PathList({
   );
 }
 
-export function PathsToVictory({ fight, modelOutput, predictedWinnerId = null }: PathsToVictoryProps) {
+export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictoryProps) {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const pathsA = fight.paths?.fighterA ?? [];
@@ -73,25 +72,42 @@ export function PathsToVictory({ fight, modelOutput, predictedWinnerId = null }:
   const pathA = modelOutput.metrics.pathReliability.fighterA;
   const pathB = modelOutput.metrics.pathReliability.fighterB;
 
-  // Accent the model-call winner — keeps the page internally consistent. When
-  // no winner exists (pending/data-light), no row gets accented.
-  const accentA = predictedWinnerId === fighterA.id;
-  const accentB = predictedWinnerId === fighterB.id;
+  const isNoLean = viewModel.callState === "noLean";
+  const isDataPending = viewModel.callState === "insufficientData" || viewModel.callState === "pending";
+  const livePathId = viewModel.livePathFighter?.id ?? null;
+  const accentA = !isNoLean && livePathId === fighterA.id;
+  const accentB = !isNoLean && livePathId === fighterB.id;
 
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
       <div className="module-header">
-        <p className="mono-label">live path</p>
+        <p className="mono-label">{isNoLean ? "paths to watch" : "live path"}</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          most repeatable path.
+          {isNoLean ? "both routes stay live." : "non-lean route."}
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          How each fighter can still win this. Based on sourced style signals — not a finishing prediction.
+          {isDataPending
+            ? "Path analysis stays pending until there is enough sourced data for a public call."
+            : isNoLean
+              ? "No fighter is assigned the live-path role because the winner call is too close."
+              : `How ${viewModel.livePathFighter?.name ?? "the non-lean fighter"} can still win this without contradicting the model call.`}
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
-        <PathList fighter={fighterA} metric={pathA} paths={pathsA} accent={accentA} />
-        <PathList fighter={fighterB} metric={pathB} paths={pathsB} accent={accentB} />
+        <PathList
+          fighter={fighterA}
+          metric={pathA}
+          paths={pathsA}
+          accent={accentA}
+          roleLabel={accentA ? "live path" : null}
+        />
+        <PathList
+          fighter={fighterB}
+          metric={pathB}
+          paths={pathsB}
+          accent={accentB}
+          roleLabel={accentB ? "live path" : null}
+        />
       </div>
     </section>
   );

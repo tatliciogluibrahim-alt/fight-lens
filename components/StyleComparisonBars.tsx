@@ -49,7 +49,7 @@ export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsP
           style breakdown.
         </h2>
         <p className="mt-3 text-sm text-muted">
-          Recent sourced signals — not a full-career scouting grade. Opponent quality manually weighted.
+          Style-only comparison. It does not override the model call. Opponent quality manually weighted.
         </p>
       </div>
 

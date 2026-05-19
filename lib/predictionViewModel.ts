@@ -16,9 +16,14 @@
  * It also does not change opponentTotals or as-of backtest logic.
  */
 
+import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
+import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
+import { pinToLockedPrediction } from "@/lib/fight-outcome-model/pin-to-locked";
+import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { FightOutcomeModelOutput, OutcomeScenario } from "@/lib/fight-outcome-model/types";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
+import { getNamedCallSide, isTooCloseToCall, type PredictionSide } from "@/lib/predictionThresholds";
 
 // ─── Public types ─────────────────────────────────────────────────────────────
 
@@ -34,6 +39,15 @@ export type PredictionSourceType =
   | "currentModel"
   | "historicalBacktest"
   | "pending";
+
+export type PublicCallState =
+  | "lockedCall"
+  | "currentCall"
+  | "noLean"
+  | "insufficientData"
+  | "pending";
+
+export type ResultState = "pending" | "scored" | "noResult";
 
 export type ReadStrength = "strong" | "usable" | "thin" | "data-pending";
 
@@ -53,7 +67,10 @@ export interface PredictionViewModel {
   fighterA: FighterRef;
   fighterB: FighterRef;
 
-  /** The fighter the model leans toward. Null only if the model produced no call. */
+  /** Explicit public state. If this is noLean/insufficientData, no fighter is the call. */
+  callState: PublicCallState;
+
+  /** The fighter the model leans toward. Null for noLean/insufficientData/pending. */
   predictedWinner: FighterRef | null;
   predictedLoser: FighterRef | null;
 
@@ -61,8 +78,18 @@ export interface PredictionViewModel {
   winnerProbability: number | null;
   loserProbability: number | null;
 
-  /** True when both fighters are within ~5% of 50/50 */
+  /** Public call label used by list rows, record rows, and fight pages. */
+  displayedCallLabel: string;
+
+  /** True when the page should say "Too close to call" instead of naming a fighter. */
+  isTooCloseToCall: boolean;
+
+  /** Backwards-compatible alias for components that still use the old name. */
   tooClose: boolean;
+
+  isLockedHistoricalCall: boolean;
+  isNamedCall: boolean;
+  publicPredictionSource: string;
 
   readStrength: ReadStrength;
 
@@ -70,6 +97,8 @@ export interface PredictionViewModel {
   methodLean: "Decision" | "KO/TKO" | "Submission" | null;
   /** Full method distribution for context */
   methodDistribution: { decision: number; koTko: number; submission: number };
+  /** Public copy that keeps method direction secondary to the winner call. */
+  methodLeanNote: string;
 
   /**
    * The fighter whose route lives in "Live Path" — by convention, the lower-
@@ -86,9 +115,12 @@ export interface PredictionViewModel {
   scenarios: readonly OutcomeScenario[];
 
   /** Scoring state — populated only when an actual outcome is on file */
+  resultState: ResultState;
   isScored: boolean;
   actualWinner: FighterRef | null;
   actualMethod: "decision" | "ko_tko" | "submission" | "other" | "draw" | "nc" | null;
+  actualRound: number | null;
+  actualTime: string | null;
   /** True if predictedWinner matched actualWinner. Null when not scored or draw/NC. */
   modelCorrect: boolean | null;
   /** True if the public methodLean direction matched (finish vs decision). */
@@ -99,6 +131,18 @@ export interface PredictionViewModel {
 
   /** Plain-English data warnings carried through from the model */
   dataWarnings: string[];
+}
+
+export interface PredictionRecordCallView {
+  hasNamedCall: boolean;
+  callState: "lockedCall" | "noLean";
+  predictedSide: PredictionSide | null;
+  predictedWinnerName: string | null;
+  predictedLoserName: string | null;
+  winnerProbability: number | null;
+  loserProbability: number | null;
+  displayedCallLabel: string;
+  isTooCloseToCall: boolean;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -137,30 +181,173 @@ function asFighterRef(
   };
 }
 
-/**
- * Reconcile the outcome model's scenarios to the locked direction.
- *
- * Reason: buildScenarios uses live probabilities. When the locked prediction
- * disagrees with the live re-run (which it routinely does for past fights),
- * the "the call" card can name the live favorite while the giant probability
- * shows the locked favorite. This swap keeps them in sync.
- */
-function reconcileScenariosToWinner(
-  scenarios: FightOutcomeModelOutput["scenarios"],
-  predictedWinnerName: string,
-): FightOutcomeModelOutput["scenarios"] {
-  // The "lean" scenario should name the predictedWinner; "upset" should name the loser.
-  // If they're flipped, swap their fighterLabel + description (titles stay where they are).
-  const lean = scenarios.find((s) => s.id === "lean");
-  const upset = scenarios.find((s) => s.id === "upset");
-  const swing = scenarios.find((s) => s.id === "swing");
-  if (!lean || !upset || !swing) return scenarios;
+function sideForFighter(fight: SourcedFight, fighterId: string): PredictionSide {
+  return fight.fighters.fighterA.id === fighterId ? "fighterA" : "fighterB";
+}
 
-  if (lean.fighterLabel === predictedWinnerName) return scenarios; // already aligned
+function topPathLabel(fight: SourcedFight, fighter: FighterRef | null): string | null {
+  if (!fighter) return null;
+  const side = sideForFighter(fight, fighter.id);
+  const paths = side === "fighterA" ? fight.paths?.fighterA : fight.paths?.fighterB;
+  return paths?.[0]?.label?.toLowerCase() ?? null;
+}
 
-  const fixedLean = { ...lean, fighterLabel: upset.fighterLabel, description: upset.description };
-  const fixedUpset = { ...upset, fighterLabel: lean.fighterLabel, description: lean.description };
-  return [fixedLean, fixedUpset, swing] as FightOutcomeModelOutput["scenarios"];
+function readStrengthLabel(readStrength: ReadStrength): string {
+  switch (readStrength) {
+    case "strong": return "strong";
+    case "usable": return "usable";
+    case "thin": return "thin";
+    case "data-pending": return "data pending";
+  }
+}
+
+function buildMethodLeanNote(callState: PublicCallState): string {
+  if (callState === "noLean") {
+    return "Method lean is directional. Winner call is too close.";
+  }
+  if (callState === "insufficientData" || callState === "pending") {
+    return "Method lean stays hidden until enough sourced data is available.";
+  }
+  return "Method lean is directional. Winner calls are tracked separately.";
+}
+
+function buildDisplayedCallLabel(
+  callState: PublicCallState,
+  predictedWinner: FighterRef | null,
+): string {
+  if (callState === "noLean") return "Too close to call";
+  if (callState === "insufficientData") return "Insufficient data for a public call";
+  if (callState === "pending") return "Pending";
+  if (!predictedWinner) return "Pending";
+  return `${predictedWinner.name} ${predictedWinner.winProbability}%`;
+}
+
+function buildPublicPredictionSource(
+  sourceType: PredictionSourceType,
+  callState: PublicCallState,
+): string {
+  if (callState === "noLean") {
+    return sourceType === "lockedCall" ? "Logged no-call" : "Current no-call";
+  }
+  if (callState === "insufficientData" || callState === "pending") return "Data pending";
+  if (sourceType === "lockedCall") return "Logged call";
+  if (sourceType === "historicalBacktest") return "Historical backtest";
+  return "Current model read";
+}
+
+function buildPublicScenarios({
+  fight,
+  callState,
+  predictedWinner,
+  predictedLoser,
+  winnerProbability,
+  loserProbability,
+  readStrength,
+  swingFactorLabel,
+  swingFactorDescription,
+}: {
+  fight: SourcedFight;
+  callState: PublicCallState;
+  predictedWinner: FighterRef | null;
+  predictedLoser: FighterRef | null;
+  winnerProbability: number | null;
+  loserProbability: number | null;
+  readStrength: ReadStrength;
+  swingFactorLabel: string;
+  swingFactorDescription: string;
+}): [OutcomeScenario, OutcomeScenario, OutcomeScenario] {
+  if (!predictedWinner || !predictedLoser || callState === "noLean") {
+    const pathA = topPathLabel(fight, asFighterRef(fight.fighters.fighterA, 50));
+    const pathB = topPathLabel(fight, asFighterRef(fight.fighters.fighterB, 50));
+    const pathCopy =
+      pathA || pathB
+        ? `No single live path is assigned because the winner call is too close. Watch ${fight.fighters.fighterA.name}${pathA ? ` through ${pathA}` : ""} and ${fight.fighters.fighterB.name}${pathB ? ` through ${pathB}` : ""}.`
+        : "No single live path is assigned because the winner call is too close. Both fighters' routes stay live until one clear edge separates the read.";
+
+    return [
+      {
+        id: "lean",
+        title: "the call",
+        fighterLabel: null,
+        description: "Too close to call. The model does not separate these two enough to make a clear public call.",
+      },
+      {
+        id: "upset",
+        title: "paths to watch",
+        fighterLabel: null,
+        description: pathCopy,
+      },
+      {
+        id: "swing",
+        title: "what would separate this fight",
+        fighterLabel: swingFactorLabel,
+        description: `A clear call needs one repeatable edge to show up. ${swingFactorDescription}`,
+      },
+    ];
+  }
+
+  const loserPath = topPathLabel(fight, predictedLoser);
+  const livePathDescription = loserPath
+    ? `${predictedLoser.name}'s live path is ${loserPath}. The public call still leans ${predictedWinner.name}, but ${predictedLoser.name} has ${loserProbability}% in the model.`
+    : `${predictedLoser.name} is the non-lean side, not a throwaway outcome. The public call leans ${predictedWinner.name}, but ${predictedLoser.name} still has ${loserProbability}% in the model.`;
+
+  return [
+    {
+      id: "lean",
+      title: "the call",
+      fighterLabel: predictedWinner.name,
+      description: `${predictedWinner.name} is the model call at ${winnerProbability}%. This is a ${readStrengthLabel(readStrength)} signal-based forecast, not a guarantee.`,
+    },
+    {
+      id: "upset",
+      title: "live path",
+      fighterLabel: predictedLoser.name,
+      description: livePathDescription,
+    },
+    {
+      id: "swing",
+      title: "what breaks the call",
+      fighterLabel: swingFactorLabel,
+      description: `What would make ${predictedWinner.name}'s edge shrink: ${swingFactorDescription}`,
+    },
+  ];
+}
+
+export function getPredictionRecordCall(record: PredictionRecord): PredictionRecordCallView {
+  const pA = record.prediction.fighterAWinProbability;
+  const pB = record.prediction.fighterBWinProbability;
+  const predictedSide = getNamedCallSide(pA, pB);
+  const hasNamedCall = predictedSide !== null;
+  const predictedWinnerName =
+    predictedSide === "fighterA"
+      ? record.fighters.fighterA
+      : predictedSide === "fighterB"
+        ? record.fighters.fighterB
+        : null;
+  const predictedLoserName =
+    predictedSide === "fighterA"
+      ? record.fighters.fighterB
+      : predictedSide === "fighterB"
+        ? record.fighters.fighterA
+        : null;
+  const winnerProbability =
+    predictedSide === "fighterA" ? pA : predictedSide === "fighterB" ? pB : null;
+  const loserProbability =
+    predictedSide === "fighterA" ? pB : predictedSide === "fighterB" ? pA : null;
+
+  return {
+    hasNamedCall,
+    callState: hasNamedCall ? "lockedCall" : "noLean",
+    predictedSide,
+    predictedWinnerName,
+    predictedLoserName,
+    winnerProbability,
+    loserProbability,
+    displayedCallLabel: hasNamedCall && predictedWinnerName && winnerProbability != null
+      ? `${predictedWinnerName} ${winnerProbability}%`
+      : "Too close to call",
+    isTooCloseToCall: !hasNamedCall,
+  };
 }
 
 // ─── Builder ──────────────────────────────────────────────────────────────────
@@ -170,6 +357,12 @@ interface BuildArgs {
   fight: SourcedFight;
   outcomeModel: FightOutcomeModelOutput;
   lockedPrediction: PredictionRecord | null;
+}
+
+export interface PredictionViewModelBundle {
+  fightShapeModel: FightShapeModelOutput;
+  outcomeModel: FightOutcomeModelOutput;
+  viewModel: PredictionViewModel;
 }
 
 /**
@@ -200,33 +393,48 @@ export function buildPredictionViewModel({
 
   // ── Source type ────────────────────────────────────────────────────────────
   let sourceType: PredictionSourceType;
-  if (outcomeModel.confidence === "insufficient") {
-    sourceType = "pending";
-  } else if (lockedPrediction) {
+  if (lockedPrediction) {
     sourceType = lockedPrediction.isBacktestReconstruction
       ? "historicalBacktest"
       : "lockedCall";
+  } else if (outcomeModel.confidence === "insufficient") {
+    sourceType = "pending";
   } else {
     sourceType = "currentModel";
   }
 
-  // ── Predicted winner / loser ──────────────────────────────────────────────
-  // tooClose is a separate property — the predictedWinner is still defined
-  // (it's whichever side carries the higher probability), but the UI can
-  // present it differently when tooClose is true.
-  const aIsWinner = probA >= probB;
-  const predictedWinner = sourceType === "pending"
-    ? null
-    : aIsWinner ? fighterARef : fighterBRef;
-  const predictedLoser = sourceType === "pending"
-    ? null
-    : aIsWinner ? fighterBRef : fighterARef;
+  // ── Public call state / predicted winner ──────────────────────────────────
+  const namedSide =
+    sourceType === "pending" ? null : getNamedCallSide(probA, probB);
+  const callState: PublicCallState =
+    sourceType === "pending"
+      ? "insufficientData"
+      : namedSide === null
+        ? "noLean"
+        : sourceType === "currentModel"
+          ? "currentCall"
+          : "lockedCall";
+
+  const predictedWinner =
+    namedSide === "fighterA" ? fighterARef :
+    namedSide === "fighterB" ? fighterBRef :
+    null;
+  const predictedLoser =
+    namedSide === "fighterA" ? fighterBRef :
+    namedSide === "fighterB" ? fighterARef :
+    null;
 
   const winnerProbability = predictedWinner?.winProbability ?? null;
   const loserProbability = predictedLoser?.winProbability ?? null;
+  const tooClose = callState === "noLean";
+  const displayedCallLabel = buildDisplayedCallLabel(callState, predictedWinner);
+  const publicPredictionSource = buildPublicPredictionSource(sourceType, callState);
 
   // ── Read strength ──────────────────────────────────────────────────────────
-  const readStrength = readStrengthFrom(winnerProbability, outcomeModel.confidence);
+  const readStrength = readStrengthFrom(
+    callState === "noLean" ? Math.max(probA, probB) : winnerProbability,
+    outcomeModel.confidence,
+  );
 
   // ── Method ────────────────────────────────────────────────────────────────
   const methodDistribution = {
@@ -235,31 +443,47 @@ export function buildPredictionViewModel({
     submission: outcomeModel.methodBreakdown.submission,
   };
   const methodLean = sourceType === "pending" ? null : topMethod(methodDistribution);
+  const methodLeanNote = buildMethodLeanNote(callState);
 
-  // ── Scenarios: reconcile to predictedWinner ───────────────────────────────
-  const scenarios = predictedWinner
-    ? reconcileScenariosToWinner(outcomeModel.scenarios, predictedWinner.name)
-    : outcomeModel.scenarios;
+  // ── Scenarios: generated from the canonical call state ────────────────────
+  const scenarios = buildPublicScenarios({
+    fight,
+    callState,
+    predictedWinner,
+    predictedLoser,
+    winnerProbability,
+    loserProbability,
+    readStrength,
+    swingFactorLabel: outcomeModel.swingFactorLabel,
+    swingFactorDescription: outcomeModel.swingFactorDescription,
+  });
 
   // ── Scoring state ─────────────────────────────────────────────────────────
   let isScored = false;
+  let resultState: ResultState = "pending";
   let actualWinnerRef: FighterRef | null = null;
   let actualMethod: PredictionViewModel["actualMethod"] = null;
+  let actualRound: number | null = null;
+  let actualTime: string | null = null;
   let modelCorrect: boolean | null = null;
   let methodCorrect: boolean | null = null;
 
   if (lockedPrediction?.outcome) {
     isScored = true;
+    resultState = "scored";
     const w = lockedPrediction.outcome.winner;
     if (w === "fighterA") actualWinnerRef = fighterARef;
     else if (w === "fighterB") actualWinnerRef = fighterBRef;
     // draw / nc → leave null but isScored stays true
 
     actualMethod = lockedPrediction.outcome.method;
+    actualRound = lockedPrediction.outcome.round;
+    actualTime = lockedPrediction.outcome.time;
 
     if (predictedWinner && actualWinnerRef) {
       modelCorrect = predictedWinner.id === actualWinnerRef.id;
     } else if (w === "draw" || w === "nc") {
+      resultState = "noResult";
       modelCorrect = null;
     }
 
@@ -277,21 +501,31 @@ export function buildPredictionViewModel({
     modelVersion: outcomeModel.modelVersion,
     fighterA: fighterARef,
     fighterB: fighterBRef,
+    callState,
     predictedWinner,
     predictedLoser,
     winnerProbability,
     loserProbability,
-    tooClose: outcomeModel.tooClose,
+    displayedCallLabel,
+    isTooCloseToCall: tooClose,
+    tooClose,
+    isLockedHistoricalCall: sourceType === "lockedCall" && Boolean(lockedPrediction?.outcome),
+    isNamedCall: predictedWinner !== null,
+    publicPredictionSource,
     readStrength,
     methodLean,
     methodDistribution,
+    methodLeanNote,
     livePathFighter: predictedLoser, // convention: lower-prob side
     swingFactorLabel: outcomeModel.swingFactorLabel,
     whatBreaksTheCall: outcomeModel.swingFactorDescription,
     scenarios,
+    resultState,
     isScored,
     actualWinner: actualWinnerRef,
     actualMethod,
+    actualRound,
+    actualTime,
     modelCorrect,
     methodCorrect,
     sourceType,
@@ -308,4 +542,28 @@ export function sourceLabel(s: PredictionSourceType): string {
     case "historicalBacktest": return "Historical backtest";
     case "pending": return "Data pending";
   }
+}
+
+export function buildPredictionViewModelBundle({
+  eventId,
+  fight,
+  lockedPrediction,
+}: {
+  eventId: string | null;
+  fight: SourcedFight;
+  lockedPrediction: PredictionRecord | null;
+}): PredictionViewModelBundle {
+  const fightShapeModel = buildFightShapeModel(fight);
+  const liveOutcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
+  const outcomeModel = lockedPrediction
+    ? pinToLockedPrediction(liveOutcomeModel, lockedPrediction)
+    : liveOutcomeModel;
+  const viewModel = buildPredictionViewModel({
+    eventId,
+    fight,
+    outcomeModel,
+    lockedPrediction,
+  });
+
+  return { fightShapeModel, outcomeModel, viewModel };
 }

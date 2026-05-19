@@ -5,6 +5,7 @@ import { FightCard } from "./FightCard";
 import type { CardPlacement } from "@/lib/types";
 import type { SourcedFight } from "@/lib/sourced-event";
 import type { PredictionRecord } from "@/lib/accuracy/types";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 const tabs: Array<CardPlacement | "All"> = ["All", "Main Card", "Prelims", "Early Prelims"];
 
@@ -12,9 +13,10 @@ interface CardFilterTabsProps {
   fights: SourcedFight[];
   eventId: string;
   predictions?: PredictionRecord[];
+  predictionViewModels?: PredictionViewModel[];
 }
 
-export function CardFilterTabs({ fights, eventId, predictions = [] }: CardFilterTabsProps) {
+export function CardFilterTabs({ fights, eventId, predictions = [], predictionViewModels = [] }: CardFilterTabsProps) {
   const [activeTab, setActiveTab] = useState<CardPlacement | "All">("All");
 
   const predByFightId = useMemo(() => {
@@ -22,6 +24,12 @@ export function CardFilterTabs({ fights, eventId, predictions = [] }: CardFilter
     for (const p of predictions) map.set(p.fightId, p);
     return map;
   }, [predictions]);
+
+  const vmByFightId = useMemo(() => {
+    const map = new Map<string, PredictionViewModel>();
+    for (const vm of predictionViewModels) map.set(vm.fightId, vm);
+    return map;
+  }, [predictionViewModels]);
 
   const visibleFights = useMemo(() => {
     if (activeTab === "All") return fights;
@@ -62,6 +70,7 @@ export function CardFilterTabs({ fights, eventId, predictions = [] }: CardFilter
             eventId={eventId}
             fight={fight}
             prediction={predByFightId.get(fight.id)}
+            predictionViewModel={vmByFightId.get(fight.id)}
           />
         ))}
       </div>

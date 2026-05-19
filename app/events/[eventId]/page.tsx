@@ -6,6 +6,7 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
 import { getAllEventIds, getEvent } from "@/lib/events/registry";
 import { getAllPredictions } from "@/lib/accuracy";
+import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 
 interface EventPageProps {
   params: Promise<{ eventId: string }>;
@@ -32,13 +33,26 @@ export default async function EventPage({ params }: EventPageProps) {
   if (!event) notFound();
 
   const predictions = getAllPredictions();
+  const predictionByFightId = new Map(predictions.map((p) => [p.fightId, p]));
+  const predictionViewModels = event.fights.map((fight) =>
+    buildPredictionViewModelBundle({
+      eventId: event.event.id,
+      fight,
+      lockedPrediction: predictionByFightId.get(fight.id) ?? null,
+    }).viewModel,
+  );
 
   return (
     <>
       <AppHeader />
       <main>
         <EventHero event={event} />
-        <CardFilterTabs eventId={event.event.id} fights={event.fights} predictions={predictions} />
+        <CardFilterTabs
+          eventId={event.event.id}
+          fights={event.fights}
+          predictions={predictions}
+          predictionViewModels={predictionViewModels}
+        />
       </main>
       <DisclaimerFooter />
     </>

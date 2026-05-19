@@ -10,11 +10,8 @@ import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
-import { buildFightShapeModel } from "@/lib/fight-shape-model/model";
-import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
-import { pinToLockedPrediction } from "@/lib/fight-outcome-model/pin-to-locked";
 import { getPredictionByFightId } from "@/lib/accuracy";
-import { buildPredictionViewModel } from "@/lib/predictionViewModel";
+import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import { getSourcedFight, sourcedEvent, sourcedFights } from "@/lib/sourced-event";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -88,19 +85,13 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
 
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
-  const fightShapeModel = buildFightShapeModel(fight);
-  const liveOutcomeModel = buildFightOutcomeModel(fight, fightShapeModel);
   const prediction = getPredictionByFightId(fightId);
-  const outcomeModel =
-    prediction && fight.status === "completed"
-      ? pinToLockedPrediction(liveOutcomeModel, prediction)
-      : liveOutcomeModel;
-
-  // Canonical view model — single source of truth for predictedWinner, etc.
-  const vm = buildPredictionViewModel({
+  const {
+    fightShapeModel,
+    viewModel: vm,
+  } = buildPredictionViewModelBundle({
     eventId: "ufc-328",
     fight,
-    outcomeModel,
     lockedPrediction: prediction,
   });
 
@@ -125,7 +116,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               </p>
             </div>
           </div>
-          {prediction && <FightResultBanner prediction={prediction} />}
+          {vm.isScored && <FightResultBanner viewModel={vm} />}
 
           <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
@@ -151,7 +142,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             panels={{
               call: (
                 <>
-                  <TheCall outcomeModel={outcomeModel} />
+                  <TheCall viewModel={vm} />
                   <FightShapeSummary
                     fight={fight}
                     modelOutput={fightShapeModel}
@@ -176,7 +167,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   <PathsToVictory
                     fight={fight}
                     modelOutput={fightShapeModel}
-                    predictedWinnerId={vm.predictedWinner?.id ?? null}
+                    viewModel={vm}
                   />
                 </>
               ),
