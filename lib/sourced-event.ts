@@ -55,6 +55,15 @@ export interface SourcedFightHistoryItem {
     totals: SourcedTotals | null;
     significant?: SourcedSignificantTotals | null;
   } | null;
+  /**
+   * Opponent's totals for this fight — stored so backtests can compute
+   * sapm, strikingDefense, and takedownDefense as-of without leakage.
+   * Null when the fight detail was unavailable at normalization time.
+   */
+  opponentTotals: {
+    totals: SourcedTotals | null;
+    significant?: SourcedSignificantTotals | null;
+  } | null;
   roundStats: SourcedRoundStat[];
   source: "ufcstats";
   sourceUrl: string;

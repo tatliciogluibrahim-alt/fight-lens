@@ -212,8 +212,20 @@ function roundStatsForFighter(detail, fighterId) {
     .filter(Boolean);
 }
 
+/**
+ * Find the opponent's fighter ID from a fight detail object.
+ * The detail has stats for both fighters; we return the one that is NOT fighterId.
+ */
+function opponentIdFromDetail(detail, fighterId) {
+  const stat = detail?.totals?.stats?.find(
+    (s) => s?.fighter?.id && s.fighter.id !== fighterId
+  );
+  return stat?.fighter?.id ?? null;
+}
+
 function buildHistoryItem(fight, detail, fighterId) {
   const roundStats = roundStatsForFighter(detail, fighterId);
+  const opponentId = opponentIdFromDetail(detail, fighterId);
 
   return {
     opponentName: fight.opponent?.name ?? null,
@@ -227,6 +239,9 @@ function buildHistoryItem(fight, detail, fighterId) {
     time: fight.time ?? null,
     fightUrl: fight.fightUrl,
     totals: totalsForFighter(detail, fighterId),
+    // Opponent totals — stored for as-of backtest computation of sapm, strikingDefense, takedownDefense.
+    // Null when fight detail is unavailable or opponent ID cannot be identified.
+    opponentTotals: opponentId ? totalsForFighter(detail, opponentId) : null,
     roundStats,
     source: "ufcstats",
     sourceUrl: fight.fightUrl

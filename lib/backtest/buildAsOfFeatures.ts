@@ -146,12 +146,28 @@ function accumulateFight(acc: RawStatAccumulator, item: SourcedFightHistoryItem)
     acc.subAttempts += totals.submissionAttempts;
   }
 
-  // Opponent sig strikes — infer from roundStats where available
-  // We look for per-round opponent data in the round stats array.
-  // Unfortunately the normalized fightHistory only stores the fighter's own
-  // round stats, not the opponent's. So we cannot compute sapm/strikingDefense
-  // purely from fightHistory. We mark them null and the model uses its defaults.
-  // (This matches the existing model behavior: it falls back to UFC averages.)
+  // Opponent totals — now stored in fightHistory as opponentTotals (added May 2026).
+  // Use them to accumulate sapm / strikingDefense / takedownDefense data.
+  const oppTotals = item.opponentTotals?.totals;
+  if (oppTotals) {
+    const oppSigL = oppTotals.significantStrikes?.landed;
+    const oppSigA = oppTotals.significantStrikes?.attempted;
+    const oppTdL = oppTotals.takedowns?.landed;
+    const oppTdA = oppTotals.takedowns?.attempted;
+
+    if (typeof oppSigL === "number") {
+      acc.oppSigLanded = (acc.oppSigLanded ?? 0) + oppSigL;
+    }
+    if (typeof oppSigA === "number") {
+      acc.oppSigAttempted = (acc.oppSigAttempted ?? 0) + oppSigA;
+    }
+    if (typeof oppTdL === "number") {
+      acc.oppTdLanded = (acc.oppTdLanded ?? 0) + oppTdL;
+    }
+    if (typeof oppTdA === "number") {
+      acc.oppTdAttempted = (acc.oppTdAttempted ?? 0) + oppTdA;
+    }
+  }
 }
 
 /**

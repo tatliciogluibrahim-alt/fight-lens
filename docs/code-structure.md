@@ -200,7 +200,7 @@ Output: `data/generated/backtests/`
 - A leakage check report is written for every fight
 
 ### Known limitations (as of May 2026)
-- **Opponent stats missing:** `sapm`, `strikingDefense`, `takedownDefense` cannot be computed from `fightHistory` because opponent totals are not stored per fight — the model uses its built-in UFC-average defaults for these
+- **Opponent stats partially available:** `sapm`, `strikingDefense`, `takedownDefense` are now computed as-of from `opponentTotals` stored in each `fightHistory` item (added May 2026). Coverage is ~26% of history items — fights without scraped detail pages still fall back to UFC-average defaults
 - **n=13 scored fights:** UFC 329 outcomes not yet recorded — calibration numbers are not meaningful below n=30
 - **`susurkaev-santos` accuracy issue:** Model predicted Santos 80%, Susurkaev won — suggests the model is sensitive to sparse data on less-known fighters
 
@@ -212,7 +212,7 @@ Output: `data/generated/backtests/`
 - `leakage-reports.json` — leakage verification for every fight
 
 ### Remaining TODOs
-- [ ] Store opponent totals in `fightHistory` items so `sapm`/`strikingDefense`/`takedownDefense` can be computed as-of
+- [x] Store opponent totals in `fightHistory` items so `sapm`/`strikingDefense`/`takedownDefense` can be computed as-of (done May 2026 — coverage 26% of history items, 69% winner accuracy)
 - [ ] Record UFC 329 outcomes to expand corpus to n=24+
 - [ ] Auto-load `data/predictions/` from directory (currently 25 manual imports in `lib/accuracy/index.ts`)
 - [ ] Consider splitting `lib/fight-shape-model/model.ts` (554 lines) into:

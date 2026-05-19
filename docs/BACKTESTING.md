@@ -54,12 +54,12 @@ Written to `data/generated/backtests/` after each run:
 
 ## Current limitations
 
-### 1. Missing opponent stats
-`sapm` (strikes absorbed per minute), `strikingDefense`, and `takedownDefense` cannot be computed as-of because the `fightHistory` only stores the fighter's own stats — not the opponent's.
+### 1. Partial opponent stats coverage
+`sapm`, `strikingDefense`, and `takedownDefense` are now computed as-of for fights where the normalizer has scraped fight detail files. As of May 2026, this covers ~26% of career history items (fights from ingested events only). For fights without detail files, the model still falls back to UFC-average defaults.
 
-The model handles this gracefully by using UFC-average defaults, but it reduces differentiation between fighters. This is the single biggest accuracy lever.
+**Coverage:** 5/13 UFC 328 fights still have partial missing-stat flags (down from 13/13 before May 2026). The remaining gaps are sparse-history fighters whose career bouts were not individually scraped.
 
-**Fix:** Update the normalizer to store opponent totals alongside fighter totals in each `fightHistory` item.
+**How to improve:** Ingest older UFC events to build a deeper fight detail library. Each ingested event adds opponent totals for all fighters who competed in that event.
 
 ### 2. Small sample (n=13)
 Only UFC 328 outcomes are recorded as of May 2026. UFC 329 fought July 11, 2026 — once outcomes are added, the corpus grows to n=24. Calibration is not statistically meaningful below n=30.

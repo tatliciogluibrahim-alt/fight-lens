@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19T01:37:52.536Z",
+  "generatedAt": "2026-05-19T01:47:38.814Z",
   "modelVersion": "outcome-v0.2",
   "totalFights": 13,
   "predictions": [
@@ -12,14 +12,14 @@
         "fighterB": "Sean Strickland"
       },
       "prediction": {
-        "fighterAWinProbability": 39,
-        "fighterBWinProbability": 61,
+        "fighterAWinProbability": 52,
+        "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 64,
-          "koTko": 20,
-          "submission": 16
+          "decision": 63,
+          "koTko": 16,
+          "submission": 21
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterB",
@@ -29,19 +29,12 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": true,
-        "brierContribution": 0.1521,
+        "correct": false,
+        "brierContribution": 0.27040000000000003,
         "methodCorrect": true
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "van-taira",
@@ -52,14 +45,14 @@
         "fighterB": "Tatsuro Taira"
       },
       "prediction": {
-        "fighterAWinProbability": 78,
-        "fighterBWinProbability": 22,
+        "fighterAWinProbability": 64,
+        "fighterBWinProbability": 36,
         "methodBreakdown": {
-          "decision": 47,
-          "koTko": 48,
-          "submission": 5
+          "decision": 39,
+          "koTko": 52,
+          "submission": 9
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -70,18 +63,11 @@
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.04839999999999999,
+        "brierContribution": 0.1296,
         "methodCorrect": true
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "volkov-cortes",
@@ -92,14 +78,14 @@
         "fighterB": "Waldo Cortes Acosta"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 48,
+        "fighterBWinProbability": 52,
         "methodBreakdown": {
-          "decision": 36,
-          "koTko": 52,
+          "decision": 37,
+          "koTko": 51,
           "submission": 12
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -110,18 +96,11 @@
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.2916,
+        "brierContribution": 0.27040000000000003,
         "methodCorrect": false
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "brady-buckley",
@@ -132,14 +111,14 @@
         "fighterB": "Joaquin Buckley"
       },
       "prediction": {
-        "fighterAWinProbability": 54,
-        "fighterBWinProbability": 46,
+        "fighterAWinProbability": 51,
+        "fighterBWinProbability": 49,
         "methodBreakdown": {
           "decision": 29,
-          "koTko": 35,
-          "submission": 36
+          "koTko": 37,
+          "submission": 34
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -150,18 +129,11 @@
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.21159999999999995,
+        "brierContribution": 0.24009999999999998,
         "methodCorrect": false
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "green-stephens",
@@ -172,14 +144,14 @@
         "fighterB": "Jeremy Stephens"
       },
       "prediction": {
-        "fighterAWinProbability": 77,
-        "fighterBWinProbability": 23,
+        "fighterAWinProbability": 85,
+        "fighterBWinProbability": 15,
         "methodBreakdown": {
           "decision": 66,
-          "koTko": 30,
-          "submission": 4
+          "koTko": 31,
+          "submission": 3
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -190,18 +162,11 @@
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.05289999999999999,
+        "brierContribution": 0.022500000000000006,
         "methodCorrect": false
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "gautier-diaz",
@@ -212,14 +177,14 @@
         "fighterB": "Ozzy Diaz"
       },
       "prediction": {
-        "fighterAWinProbability": 39,
-        "fighterBWinProbability": 61,
+        "fighterAWinProbability": 56,
+        "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 69,
-          "koTko": 31,
+          "decision": 55,
+          "koTko": 45,
           "submission": 0
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -229,19 +194,12 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.3721,
+        "correct": true,
+        "brierContribution": 0.19359999999999997,
         "methodCorrect": false
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "alvarez-amosov",
@@ -252,12 +210,12 @@
         "fighterB": "Yaroslav Amosov"
       },
       "prediction": {
-        "fighterAWinProbability": 58,
-        "fighterBWinProbability": 42,
+        "fighterAWinProbability": 49,
+        "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 14,
-          "koTko": 29,
-          "submission": 57
+          "decision": 13,
+          "koTko": 24,
+          "submission": 63
         },
         "confidence": "insufficient"
       },
@@ -269,17 +227,12 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.3364,
+        "correct": true,
+        "brierContribution": 0.24009999999999998,
         "methodCorrect": true
       },
       "leakagePassed": false,
       "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
         "fighterB.takedownDefense missing"
       ]
     },
@@ -292,14 +245,14 @@
         "fighterB": "Mateusz Rebecki"
       },
       "prediction": {
-        "fighterAWinProbability": 45,
-        "fighterBWinProbability": 55,
+        "fighterAWinProbability": 65,
+        "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 58,
-          "koTko": 15,
-          "submission": 27
+          "decision": 60,
+          "koTko": 22,
+          "submission": 18
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -309,19 +262,12 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.30250000000000005,
+        "correct": true,
+        "brierContribution": 0.12249999999999998,
         "methodCorrect": false
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "miller-gordon",
@@ -332,14 +278,14 @@
         "fighterB": "Jared Gordon"
       },
       "prediction": {
-        "fighterAWinProbability": 44,
-        "fighterBWinProbability": 56,
+        "fighterAWinProbability": 37,
+        "fighterBWinProbability": 63,
         "methodBreakdown": {
           "decision": 0,
-          "koTko": 71,
-          "submission": 29
+          "koTko": 76,
+          "submission": 24
         },
-        "confidence": "insufficient"
+        "confidence": "low"
       },
       "outcome": {
         "winner": "fighterA",
@@ -350,18 +296,11 @@
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.31360000000000005,
+        "brierContribution": 0.39690000000000003,
         "methodCorrect": true
       },
       "leakagePassed": true,
-      "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ]
+      "missingDataFlags": []
     },
     {
       "fightId": "kopylov-tulio",
@@ -375,8 +314,8 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 37,
-          "koTko": 63,
+          "decision": 38,
+          "koTko": 62,
           "submission": 0
         },
         "confidence": "insufficient"
@@ -395,8 +334,6 @@
       },
       "leakagePassed": true,
       "missingDataFlags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
         "fighterA.takedownDefense missing",
         "fighterB.sapm missing",
         "fighterB.strikingDefense missing",
@@ -452,12 +389,12 @@
         "fighterB": "Djorden Santos"
       },
       "prediction": {
-        "fighterAWinProbability": 20,
-        "fighterBWinProbability": 80,
+        "fighterAWinProbability": 39,
+        "fighterBWinProbability": 61,
         "methodBreakdown": {
-          "decision": 80,
-          "koTko": 13,
-          "submission": 7
+          "decision": 61,
+          "koTko": 26,
+          "submission": 13
         },
         "confidence": "insufficient"
       },
@@ -470,7 +407,7 @@
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.6400000000000001,
+        "brierContribution": 0.3721,
         "methodCorrect": false
       },
       "leakagePassed": true,
@@ -478,8 +415,6 @@
         "fighterA.sapm missing",
         "fighterA.strikingDefense missing",
         "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
         "fighterB.takedownDefense missing"
       ]
     },
@@ -492,12 +427,12 @@
         "fighterB": "Jose Ochoa"
       },
       "prediction": {
-        "fighterAWinProbability": 50,
-        "fighterBWinProbability": 50,
+        "fighterAWinProbability": 39,
+        "fighterBWinProbability": 61,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 50,
-          "submission": 33
+          "decision": 13,
+          "koTko": 61,
+          "submission": 26
         },
         "confidence": "insufficient"
       },
@@ -509,18 +444,15 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.25,
+        "correct": true,
+        "brierContribution": 0.1521,
         "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [
         "fighterA.sapm missing",
         "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
+        "fighterA.takedownDefense missing"
       ]
     }
   ]

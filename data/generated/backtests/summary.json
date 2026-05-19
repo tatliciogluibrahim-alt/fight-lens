@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-05-19T01:37:52.536Z",
+  "generatedAt": "2026-05-19T01:47:38.814Z",
   "modelVersion": "outcome-v0.2",
   "summary": {
     "totalFights": 13,
     "scoredFights": 13,
-    "winnerAccuracy": 46,
+    "winnerAccuracy": 69,
     "methodAccuracy": 38,
-    "brierScore": 0.267,
+    "brierScore": 0.224,
     "calibrationBuckets": [
       {
         "rangeLabel": "50–60%",
         "predictedMidpoint": 0.55,
-        "actualWinRate": 0.375,
-        "count": 8
+        "actualWinRate": 0.7142857142857143,
+        "count": 7
       },
       {
         "rangeLabel": "60–70%",
         "predictedMidpoint": 0.65,
-        "actualWinRate": 0.5,
-        "count": 2
+        "actualWinRate": 0.6,
+        "count": 5
       },
       {
         "rangeLabel": "70–80%",
         "predictedMidpoint": 0.75,
-        "actualWinRate": 1,
-        "count": 2
+        "actualWinRate": 0,
+        "count": 0
       },
       {
         "rangeLabel": "80%+",
         "predictedMidpoint": 0.9,
-        "actualWinRate": 0,
+        "actualWinRate": 1,
         "count": 1
       }
     ],
-    "generatedAt": "2026-05-19T01:37:52.536Z",
+    "generatedAt": "2026-05-19T01:47:38.814Z",
     "modelVersion": "outcome-v0.2",
     "caveats": [
       "Backtest calibration may differ from live model record due to data vintage.",
@@ -46,9 +46,9 @@
         "brierScore": 0.25
       },
       "betterRecord": {
-        "accuracy": 62,
+        "accuracy": 46,
         "scoredFights": 13,
-        "correct": 8
+        "correct": 6
       },
       "moreExperience": {
         "accuracy": 54,
@@ -58,32 +58,32 @@
       "ufcFavouriteWinRate": 0.67
     },
     "brierAssessment": "Sample too small (n=13). Need 30+ fights for reliable calibration.",
-    "missingDataRate": 100
+    "missingDataRate": 38
   },
   "accuracyByConfidenceBucket": [
     {
       "label": "50-60%",
-      "count": 8,
-      "correct": 3,
-      "accuracy": 38
+      "count": 7,
+      "correct": 5,
+      "accuracy": 71
     },
     {
       "label": "60-70%",
-      "count": 2,
-      "correct": 1,
-      "accuracy": 50
+      "count": 5,
+      "correct": 3,
+      "accuracy": 60
     },
     {
       "label": "70-80%",
-      "count": 2,
-      "correct": 2,
-      "accuracy": 100
+      "count": 0,
+      "correct": 0,
+      "accuracy": null
     },
     {
       "label": "80%+",
       "count": 1,
-      "correct": 0,
-      "accuracy": 0
+      "correct": 1,
+      "accuracy": 100
     }
   ]
 }

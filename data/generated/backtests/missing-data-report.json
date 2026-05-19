@@ -1,214 +1,31 @@
 {
-  "generatedAt": "2026-05-19T01:37:52.537Z",
+  "generatedAt": "2026-05-19T01:47:38.815Z",
   "totalFights": 13,
-  "fightsWithMissingData": 13,
-  "missingDataRate": 100,
+  "fightsWithMissingData": 5,
+  "missingDataRate": 38,
   "fights": [
-    {
-      "fightId": "chimaev-strickland",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "van-taira",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "volkov-cortes",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "brady-buckley",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "green-stephens",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "gautier-diaz",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
     {
       "fightId": "alvarez-amosov",
       "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
         "fighterB.takedownDefense missing"
       ],
       "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
+        "fighterA": [],
         "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default.",
           "Only 1 fight(s) before 2026-05-09 — predictions will be unreliable."
-        ]
-      }
-    },
-    {
-      "fightId": "dawson-rebecki",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
-      }
-    },
-    {
-      "fightId": "miller-gordon",
-      "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
         ]
       }
     },
     {
       "fightId": "kopylov-tulio",
       "flags": [
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
         "fighterA.takedownDefense missing",
         "fighterB.sapm missing",
         "fighterB.strikingDefense missing",
         "fighterB.takedownDefense missing"
       ],
       "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 11 fight(s) before 2026-05-09 — predictions will be unreliable."
-        ],
+        "fighterA": [],
         "fighterB": [
           "No fight totals available — all aggregate stats are null.",
           "Only 5 fight(s) before 2026-05-09 — predictions will be unreliable."
@@ -242,8 +59,6 @@
         "fighterA.sapm missing",
         "fighterA.strikingDefense missing",
         "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
         "fighterB.takedownDefense missing"
       ],
       "dataWarnings": {
@@ -251,10 +66,7 @@
           "No fight totals available — all aggregate stats are null.",
           "Only 3 fight(s) before 2026-05-09 — predictions will be unreliable."
         ],
-        "fighterB": [
-          "Opponent striking data not in history — sapm and strikingDefense use model defaults.",
-          "Opponent takedown data not in history — takedownDefense uses model default."
-        ]
+        "fighterB": []
       }
     },
     {
@@ -262,20 +74,14 @@
       "flags": [
         "fighterA.sapm missing",
         "fighterA.strikingDefense missing",
-        "fighterA.takedownDefense missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownDefense missing"
+        "fighterA.takedownDefense missing"
       ],
       "dataWarnings": {
         "fighterA": [
           "No fight totals available — all aggregate stats are null.",
           "Only 5 fight(s) before 2026-05-09 — predictions will be unreliable."
         ],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 3 fight(s) before 2026-05-09 — predictions will be unreliable."
-        ]
+        "fighterB": []
       }
     }
   ]
