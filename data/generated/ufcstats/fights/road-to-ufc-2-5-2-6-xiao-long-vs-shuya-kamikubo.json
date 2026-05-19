@@ -1,0 +1,764 @@
+{
+  "id": "f4e6acbf40d29aa7",
+  "url": "http://www.ufcstats.com/fight-details/f4e6acbf40d29aa7",
+  "event": {
+    "id": "ba280572acfba13f",
+    "name": "Road to UFC 2.5 + 2.6",
+    "url": "http://www.ufcstats.com/event-details/ba280572acfba13f"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "86bace9e4ad85542",
+      "name": "Xiao Long",
+      "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a46fa1c7972548d0",
+      "name": "Shuya Kamikubo",
+      "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0",
+      "nickname": "Stealth",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Majority",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd + OT (5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "86bace9e4ad85542",
+        "name": "Xiao Long",
+        "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+      },
+      {
+        "id": "a46fa1c7972548d0",
+        "name": "Shuya Kamikubo",
+        "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 109,
+          "attempted": 181,
+          "raw": "109 of 181"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 144,
+          "attempted": 221,
+          "raw": "144 of 221"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:00",
+        "controlSeconds": 180
+      },
+      {
+        "fighter": {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 57,
+          "attempted": 103,
+          "raw": "57 of 103"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 87,
+          "attempted": 147,
+          "raw": "87 of 147"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 19,
+          "raw": "3 of 19"
+        },
+        "takedownPercent": 15,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "4:38",
+        "controlSeconds": 278
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:41",
+          "controlSeconds": 41
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 41,
+            "raw": "28 of 41"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:54",
+          "controlSeconds": 174
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 45,
+            "raw": "22 of 45"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 56,
+            "raw": "32 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:26",
+          "controlSeconds": 86
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 36,
+            "raw": "26 of 36"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 48,
+            "raw": "34 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:19",
+          "controlSeconds": 79
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 75,
+            "attempted": 121,
+            "raw": "75 of 121"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 98,
+            "attempted": 148,
+            "raw": "98 of 148"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 48,
+            "raw": "20 of 48"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 58,
+            "raw": "25 of 58"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "takedownPercent": 10,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "86bace9e4ad85542",
+        "name": "Xiao Long",
+        "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+      },
+      {
+        "id": "a46fa1c7972548d0",
+        "name": "Shuya Kamikubo",
+        "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        "significantStrikes": {
+          "landed": 109,
+          "attempted": 181,
+          "raw": "109 of 181"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 86,
+          "attempted": 151,
+          "raw": "86 of 151"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 67,
+          "attempted": 118,
+          "raw": "67 of 118"
+        },
+        "clinch": {
+          "landed": 37,
+          "attempted": 58,
+          "raw": "37 of 58"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        },
+        "significantStrikes": {
+          "landed": 57,
+          "attempted": 103,
+          "raw": "57 of 103"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 27,
+          "attempted": 66,
+          "raw": "27 of 66"
+        },
+        "body": {
+          "landed": 29,
+          "attempted": 33,
+          "raw": "29 of 33"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 68,
+          "raw": "28 of 68"
+        },
+        "clinch": {
+          "landed": 29,
+          "attempted": 35,
+          "raw": "29 of 35"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 45,
+            "raw": "22 of 45"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 17,
+            "attempted": 37,
+            "raw": "17 of 37"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "clinch": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 36,
+            "raw": "26 of 36"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 13,
+            "attempted": 21,
+            "raw": "13 of 21"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "clinch": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "86bace9e4ad85542",
+          "name": "Xiao Long",
+          "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+        },
+        {
+          "id": "a46fa1c7972548d0",
+          "name": "Shuya Kamikubo",
+          "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "86bace9e4ad85542",
+            "name": "Xiao Long",
+            "url": "http://www.ufcstats.com/fighter-details/86bace9e4ad85542"
+          },
+          "significantStrikes": {
+            "landed": 75,
+            "attempted": 121,
+            "raw": "75 of 121"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 62,
+            "attempted": 106,
+            "raw": "62 of 106"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 50,
+            "attempted": 83,
+            "raw": "50 of 83"
+          },
+          "clinch": {
+            "landed": 20,
+            "attempted": 33,
+            "raw": "20 of 33"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a46fa1c7972548d0",
+            "name": "Shuya Kamikubo",
+            "url": "http://www.ufcstats.com/fighter-details/a46fa1c7972548d0"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 48,
+            "raw": "20 of 48"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 9,
+            "attempted": 35,
+            "raw": "9 of 35"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 38,
+            "raw": "13 of 38"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f4e6acbf40d29aa7",
+    "fetchedAt": "2026-05-19T14:10:35.118Z"
+  }
+}

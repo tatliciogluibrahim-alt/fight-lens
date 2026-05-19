@@ -1,0 +1,764 @@
+{
+  "id": "f02fed4e98048471",
+  "url": "http://www.ufcstats.com/fight-details/f02fed4e98048471",
+  "event": {
+    "id": "026b4f7049085842",
+    "name": "UFC 304: Edwards vs. Muhammad 2",
+    "url": "http://www.ufcstats.com/event-details/026b4f7049085842"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a93f94c923c3a9cb",
+      "name": "Christian Leroy Duncan",
+      "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb",
+      "nickname": "CLD",
+      "result": "L"
+    },
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": "Robocop",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a93f94c923c3a9cb",
+        "name": "Christian Leroy Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 48,
+          "raw": "29 of 48"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 53,
+          "attempted": 77,
+          "raw": "53 of 77"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:45",
+        "controlSeconds": 105
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 79,
+          "raw": "45 of 79"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 78,
+          "attempted": 120,
+          "raw": "78 of 120"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 12,
+          "raw": "4 of 12"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "8:20",
+        "controlSeconds": 500
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:01",
+          "controlSeconds": 181
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 29,
+            "raw": "24 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:25",
+          "controlSeconds": 85
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 43,
+            "raw": "26 of 43"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 58,
+            "raw": "40 of 58"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "takedownPercent": 14,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:39",
+          "controlSeconds": 99
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 28,
+            "raw": "20 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:40",
+          "controlSeconds": 220
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a93f94c923c3a9cb",
+        "name": "Christian Leroy Duncan",
+        "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 48,
+          "raw": "29 of 48"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 13,
+          "attempted": 28,
+          "raw": "13 of 28"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "distance": {
+          "landed": 23,
+          "attempted": 40,
+          "raw": "23 of 40"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 79,
+          "raw": "45 of 79"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 37,
+          "attempted": 69,
+          "raw": "37 of 69"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 55,
+          "raw": "28 of 55"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 18,
+          "raw": "12 of 18"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 9,
+            "attempted": 16,
+            "raw": "9 of 16"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 43,
+            "raw": "26 of 43"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 21,
+            "attempted": 38,
+            "raw": "21 of 38"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a93f94c923c3a9cb",
+            "name": "Christian Leroy Duncan",
+            "url": "http://www.ufcstats.com/fighter-details/a93f94c923c3a9cb"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f02fed4e98048471",
+    "fetchedAt": "2026-05-19T14:09:51.761Z"
+  }
+}

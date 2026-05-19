@@ -79,48 +79,60 @@ The corpus was expanded from n=13 (UFC 328 only) to n=76 across **6 completed ev
 
 Selection rule: most recent completed UFC events with UFCStats data (no cherry-picking by storyline or favorability).
 
-## Expanded backtest result (n=76) vs prior n=13
+## Expanded backtest result (n=76) — three checkpoints
 
-|  | n=13 (UFC 328 only) | n=76 (expanded) | direction |
+| | n=13 (UFC 328 only) | n=76 initial coverage | **n=76 deeper coverage** |
 |---|---|---|---|
-| Winner accuracy | 69% | **59%** | ⬇ |
-| Brier score | 0.224 | **0.251** | ⬆ (worse) |
-| Better-record baseline | 46% | **66%** | the baseline changed completely |
-| More-experience baseline | 54% | **43%** | the baseline changed completely |
-| Missing-data rate (per-fight flag) | 38% | **57%** | ⬆ (more partial coverage) |
-| Per-feature defensive coverage | ~62% (5/13 missing) | **78%** (33/152 fighter-rows missing) | ⬆ better at the per-row level |
+| Winner accuracy | 69% | 59% | **66%** |
+| Brier score | 0.224 | 0.251 | **0.236** |
+| Better-record baseline | 46% | 66% | 66% |
+| More-experience baseline | 54% | 43% | 43% |
+| Missing-data rate (per-fight flag) | 38% | 57% | **36%** |
+| Striking / submission per-feature coverage | n/a | 78% | **85%** |
+| Takedown-accuracy coverage | n/a | 65% | **80%** |
+| Takedown-defense coverage | n/a | 70% | **79%** |
+| `opponentTotals` history-item coverage | ~26% | ~28% | **51%** |
+
+### Deeper-coverage pass (May 2026)
+
+The middle column was the first n=76 run with `--max-history-fight-details 60` per event ingestion. The right column was after re-running each ingestion with `--max-history-fight-details 120` and `--max-history-fights-per-fighter 8`. Fight-detail file count grew 439 → 737 (+298). Cache absorbed most repeats.
 
 ### Honest read
 
-This is an **early expanded sample**, not proof of model quality.
+Deeper data coverage **closed about half the gap** to the better-record baseline:
+- Winner accuracy moved 59% → 66%, drawing level with the baseline (66%)
+- Brier moved 0.251 → 0.236 — meaningfully below the 0.25 random threshold
+- Missing-data flags fell from 57% → 36% of fights
+- Per-feature coverage moved from 78% → 85% on most stats; takedown stats jumped 65→80% and 70→79%
 
-The n=13 result was almost certainly favorable noise. On the broader sample, the model is roughly at the random Brier threshold (0.251 vs 0.25), and the better-record baseline beats the model by 7 points (66% vs 59%). The baselines themselves swung wildly when the sample changed, which is exactly what tiny samples do.
+What it did **not** prove:
+- The model still does not *beat* the better-record baseline — it matches it
+- 60–70% and 70–80% buckets still show overconfidence (predicted 65% / actual 54%; predicted 75% / actual 50%). The high-confidence (80%+) bucket flipped to 100% (6/6) but n is tiny
+- n=76 is still small. Calibration buckets at n=6, 13 do not stabilize
 
-Two contributors to the regression:
-1. **Calibration gap.** The 60-70% and 70-80% buckets show clear overconfidence (predicted 65% / actual 45%; predicted 75% / actual 50%). When the model gets specific, it's worse than when it sits near 50/50.
-2. **Data coverage gap.** 57% of fights still have at least one missing-stat flag. Per-feature coverage is 78% across the corpus, with `takedownAccuracy` at 65% and `takedownDefense` at 70%. The model uses UFC averages when a stat is missing, which compresses signal.
+This is consistent with the hypothesis that the previous regression (59% on the initial pass) was partly a data-coverage artifact, not a model design failure. But more data alone hasn't shown the model to be better than always picking the higher-W/L fighter.
 
-### Event-by-event
+### Event-by-event (deeper-coverage run)
 
-| Event | Winner acc | Brier | Method acc | Outcomes from |
+| Event | Winner acc | Brier | Method acc | Δ vs prior |
 |---|---|---|---|---|
-| UFC 322 | 57% (8/14) | 0.289 | 57% | detail |
-| UFC 326 | 67% (8/12) | 0.228 | 58% | detail |
-| UFC 327 | 55% (6/11) | 0.229 | 36% | detail |
-| UFC 328 | 69% (9/13) | 0.224 | 38% | predictions |
-| UFC FN DDM-Prates | 69% (9/13) | 0.242 | 69% | detail |
-| UFC FN Allen-Costa | **38%** (5/13) | 0.288 | 46% | detail |
+| UFC 322 | 64% (9/14) | 0.258 | 64% | +7 pts |
+| UFC 326 | 75% (9/12) | 0.256 | 58% | +8 pts |
+| UFC 327 | 55% (6/11) | 0.233 | 36% | unchanged |
+| UFC 328 | 69% (9/13) | 0.210 | 38% | unchanged (locked) |
+| UFC FN DDM-Prates | 77% (10/13) | 0.221 | 62% | +8 pts |
+| UFC FN Allen-Costa | 54% (7/13) | 0.239 | 46% | +16 pts |
 
-The model is unstable across events. UFC FN Allen-Costa (38%) pulled the average down sharply; UFC 326, 328, and UFC FN DDM-Prates clustered at 67-69%. With only 11–14 fights per event, individual-event accuracy carries large variance.
+UFC FN Allen-Costa, which had pulled the previous average down (38% → 54%), is now the noisiest event in the sample but no longer a clear outlier.
 
 ## Known limitations
 
 ### 1. Partial opponent-stats coverage
 `sapm`, `strikingDefense`, and `takedownDefense` are computed from `opponentTotals` in `fightHistory`, but those are only stored for fights where the normalizer has scraped fight-detail data. Career history items without scraped details fall back to UFC averages.
 
-**Coverage today (n=76 corpus):** 78% on most aggregate stats, 65–70% on takedown stats.
+**Coverage today (n=76 corpus, post-deeper-pass):** 85% on most aggregate stats; takedown accuracy 80%; takedown defense 79%.
 
-**How to improve:** Ingest deeper fighter history — `--include-history-fights --max-history-fight-details 80` (or higher) on each event ingestion, or run a separate fighter-history backfill pass.
+**How to improve further:** push `--max-history-fight-details` higher than 120, or run a dedicated fighter-history backfill pass that walks each fighter's career and ingests every detail page.
 
 ### 2. Calibration is off
 The model is overclaiming confidence in the 60–80% bucket on this corpus. **Do not adjust weights to chase this number** — that would overfit the sample. Re-examine after the corpus reaches n≥200 (15–20 events).
@@ -146,10 +158,11 @@ No code changes needed — the runner auto-loads every JSON in `data/normalized/
 
 ## Recommendation for next step
 
-**Data repair first, then a 20–30 event expansion.** Specifically:
+The deeper-coverage pass (May 2026) is done. The recommendation now sequences:
 
-1. **Deeper history backfill** — run `--include-history-fights --max-history-fight-details 120` on every event already in the corpus so per-feature coverage moves from 78% toward 90%+
-2. **Then expand the corpus** to 20–30 events, sequentially, with the same selection rule (most recent completed cards)
-3. **Only after that** consider a model review. Adjusting weights on n=76 would be fitting to noise.
+1. **Expand the corpus to 20–30 completed events** with the same selection rule (most recent completed cards). Reach n≥200 fights so the calibration buckets actually stabilize. At today's per-bucket counts (n=6, 13) we cannot tell whether the 60–80% overconfidence is signal or noise.
+2. **Hold off on weight tuning** until step 1 lands. Tuning on n=76 with coverage gaps still around 15–20% on the takedown stats would overfit to this specific sample.
+3. **Consider a second deeper-coverage pass** only if per-feature coverage stops improving naturally as the corpus grows. Each new event automatically backfills history pages for the fighters who appear on it.
+4. **A model review** belongs after step 1 — at that point we will know whether the model is structurally below the better-record baseline (formula/feature problem) or whether the calibration buckets stabilize at honest numbers as n grows.
 
-The opponentTotals fix from the previous pass is preserved and working — the data pipeline regression isn't in the wiring, it's in the depth of fighter history available for each backtested event.
+The opponentTotals fix and the source-of-truth view model from the previous passes are preserved and working. This pass closed the data-coverage gap and moved the model from 7 points below the better-record baseline to level with it — useful, but still not proof.

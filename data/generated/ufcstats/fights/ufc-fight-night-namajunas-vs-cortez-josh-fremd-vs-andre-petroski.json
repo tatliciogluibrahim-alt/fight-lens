@@ -1,0 +1,764 @@
+{
+  "id": "d8e8d41282fc90dc",
+  "url": "http://www.ufcstats.com/fight-details/d8e8d41282fc90dc",
+  "event": {
+    "id": "66e0a70352fef46a",
+    "name": "UFC Fight Night: Namajunas vs. Cortez",
+    "url": "http://www.ufcstats.com/event-details/66e0a70352fef46a"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "ca43de99b07b6b40",
+      "name": "Josh Fremd",
+      "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "5f61780fe5e9b6d0",
+      "name": "Andre Petroski",
+      "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Nick Berens",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "ca43de99b07b6b40",
+        "name": "Josh Fremd",
+        "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+      },
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 24,
+          "raw": "16 of 24"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 74,
+          "raw": "60 of 74"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      },
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 18,
+          "raw": "12 of 18"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 51,
+          "raw": "30 of 51"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "takedownPercent": 75,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "12:50",
+        "controlSeconds": 770
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 23,
+            "raw": "14 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:29",
+          "controlSeconds": 269
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 28,
+            "raw": "26 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:21",
+          "controlSeconds": 261
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 32,
+            "raw": "23 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:00",
+          "controlSeconds": 240
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "ca43de99b07b6b40",
+        "name": "Josh Fremd",
+        "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+      },
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 24,
+          "raw": "16 of 24"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 18,
+          "raw": "12 of 18"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 5,
+          "attempted": 11,
+          "raw": "5 of 11"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "head": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d8e8d41282fc90dc",
+    "fetchedAt": "2026-05-19T14:12:54.324Z"
+  }
+}

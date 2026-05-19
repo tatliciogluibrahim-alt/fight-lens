@@ -1,0 +1,404 @@
+{
+  "id": "6bdf0756fb57aced",
+  "url": "http://www.ufcstats.com/fight-details/6bdf0756fb57aced",
+  "event": {
+    "id": "9766ed20b68c7c33",
+    "name": "UFC Fight Night: Kape vs. Almabayev",
+    "url": "http://www.ufcstats.com/event-details/9766ed20b68c7c33"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d0e1b42d41dab603",
+      "name": "Julian Marquez",
+      "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603",
+      "nickname": "The Cuban Missile Crisis",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:45",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      },
+      {
+        "id": "d0e1b42d41dab603",
+        "name": "Julian Marquez",
+        "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 44,
+          "attempted": 79,
+          "raw": "44 of 79"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 68,
+          "attempted": 106,
+          "raw": "68 of 106"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:48",
+        "controlSeconds": 48
+      },
+      {
+        "fighter": {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 73,
+          "raw": "37 of 73"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 53,
+          "attempted": 96,
+          "raw": "53 of 96"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:30",
+        "controlSeconds": 30
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 79,
+            "raw": "44 of 79"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 68,
+            "attempted": 106,
+            "raw": "68 of 106"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:48",
+          "controlSeconds": 48
+        },
+        {
+          "fighter": {
+            "id": "d0e1b42d41dab603",
+            "name": "Julian Marquez",
+            "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 73,
+            "raw": "37 of 73"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 53,
+            "attempted": 96,
+            "raw": "53 of 96"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      },
+      {
+        "id": "d0e1b42d41dab603",
+        "name": "Julian Marquez",
+        "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 44,
+          "attempted": 79,
+          "raw": "44 of 79"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 39,
+          "attempted": 71,
+          "raw": "39 of 71"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 34,
+          "attempted": 65,
+          "raw": "34 of 65"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 73,
+          "raw": "37 of 73"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 31,
+          "attempted": 64,
+          "raw": "31 of 64"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 51,
+          "raw": "24 of 51"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 22,
+          "raw": "13 of 22"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        {
+          "id": "d0e1b42d41dab603",
+          "name": "Julian Marquez",
+          "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 79,
+            "raw": "44 of 79"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 39,
+            "attempted": 71,
+            "raw": "39 of 71"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 34,
+            "attempted": 65,
+            "raw": "34 of 65"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d0e1b42d41dab603",
+            "name": "Julian Marquez",
+            "url": "http://www.ufcstats.com/fighter-details/d0e1b42d41dab603"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 73,
+            "raw": "37 of 73"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 31,
+            "attempted": 64,
+            "raw": "31 of 64"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "clinch": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/6bdf0756fb57aced",
+    "fetchedAt": "2026-05-19T14:10:37.062Z"
+  }
+}

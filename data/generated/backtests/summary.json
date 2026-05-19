@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-05-19T14:03:34.934Z",
+  "generatedAt": "2026-05-19T14:14:44.922Z",
   "modelVersion": "outcome-v0.2",
   "summary": {
     "totalFights": 76,
     "scoredFights": 76,
-    "winnerAccuracy": 59,
+    "winnerAccuracy": 66,
     "methodAccuracy": 51,
-    "brierScore": 0.251,
+    "brierScore": 0.236,
     "calibrationBuckets": [
       {
         "rangeLabel": "50–60%",
         "predictedMidpoint": 0.55,
-        "actualWinRate": 0.6341463414634146,
-        "count": 41
+        "actualWinRate": 0.6666666666666666,
+        "count": 51
       },
       {
         "rangeLabel": "60–70%",
         "predictedMidpoint": 0.65,
-        "actualWinRate": 0.45454545454545453,
-        "count": 22
+        "actualWinRate": 0.5384615384615384,
+        "count": 13
       },
       {
         "rangeLabel": "70–80%",
@@ -29,11 +29,11 @@
       {
         "rangeLabel": "80%+",
         "predictedMidpoint": 0.9,
-        "actualWinRate": 0.8571428571428571,
-        "count": 7
+        "actualWinRate": 1,
+        "count": 6
       }
     ],
-    "generatedAt": "2026-05-19T14:03:34.933Z",
+    "generatedAt": "2026-05-19T14:14:44.921Z",
     "modelVersion": "outcome-v0.2",
     "caveats": [
       "Backtest calibration may differ from live model record due to data vintage.",
@@ -58,20 +58,20 @@
       "ufcFavouriteWinRate": 0.67
     },
     "brierAssessment": "Below baseline — model is overclaiming confidence on wrong picks.",
-    "missingDataRate": 57
+    "missingDataRate": 36
   },
   "accuracyByConfidenceBucket": [
     {
       "label": "50-60%",
-      "count": 41,
-      "correct": 26,
-      "accuracy": 63
+      "count": 51,
+      "correct": 34,
+      "accuracy": 67
     },
     {
       "label": "60-70%",
-      "count": 22,
-      "correct": 10,
-      "accuracy": 45
+      "count": 13,
+      "correct": 7,
+      "accuracy": 54
     },
     {
       "label": "70-80%",
@@ -81,9 +81,9 @@
     },
     {
       "label": "80%+",
-      "count": 7,
+      "count": 6,
       "correct": 6,
-      "accuracy": 86
+      "accuracy": 100
     }
   ]
 }

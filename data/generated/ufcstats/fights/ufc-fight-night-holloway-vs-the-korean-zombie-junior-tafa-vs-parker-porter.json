@@ -1,0 +1,404 @@
+{
+  "id": "f7bc845ce74f5fe7",
+  "url": "http://www.ufcstats.com/fight-details/f7bc845ce74f5fe7",
+  "event": {
+    "id": "89a407032911e27e",
+    "name": "UFC Fight Night: Holloway vs. The Korean Zombie",
+    "url": "http://www.ufcstats.com/event-details/89a407032911e27e"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c15fa95b9a12fde4",
+      "name": "Junior Tafa",
+      "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4",
+      "nickname": "The Juggernaut",
+      "result": "W"
+    },
+    {
+      "id": "ac40f7e3cbecdda4",
+      "name": "Parker Porter",
+      "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:24",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c15fa95b9a12fde4",
+        "name": "Junior Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+      },
+      {
+        "id": "ac40f7e3cbecdda4",
+        "name": "Parker Porter",
+        "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "ac40f7e3cbecdda4",
+          "name": "Parker Porter",
+          "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:17",
+        "controlSeconds": 17
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        {
+          "id": "ac40f7e3cbecdda4",
+          "name": "Parker Porter",
+          "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c15fa95b9a12fde4",
+            "name": "Junior Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "ac40f7e3cbecdda4",
+            "name": "Parker Porter",
+            "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c15fa95b9a12fde4",
+        "name": "Junior Tafa",
+        "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+      },
+      {
+        "id": "ac40f7e3cbecdda4",
+        "name": "Parker Porter",
+        "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ac40f7e3cbecdda4",
+          "name": "Parker Porter",
+          "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "head": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c15fa95b9a12fde4",
+          "name": "Junior Tafa",
+          "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+        },
+        {
+          "id": "ac40f7e3cbecdda4",
+          "name": "Parker Porter",
+          "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c15fa95b9a12fde4",
+            "name": "Junior Tafa",
+            "url": "http://www.ufcstats.com/fighter-details/c15fa95b9a12fde4"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ac40f7e3cbecdda4",
+            "name": "Parker Porter",
+            "url": "http://www.ufcstats.com/fighter-details/ac40f7e3cbecdda4"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/f7bc845ce74f5fe7",
+    "fetchedAt": "2026-05-19T14:12:15.056Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "453283e947919ff7",
+  "url": "http://www.ufcstats.com/fight-details/453283e947919ff7",
+  "event": {
+    "id": "335ad945324c3a2e",
+    "name": "UFC 270: Ngannou vs. Gane",
+    "url": "http://www.ufcstats.com/event-details/335ad945324c3a2e"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c32aeb1a59e6272d",
+      "name": "Michael Morales",
+      "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b27a1fcb56a3035a",
+      "name": "Trevin Giles",
+      "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:06",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mike Beltran",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c32aeb1a59e6272d",
+        "name": "Michael Morales",
+        "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+      },
+      {
+        "id": "b27a1fcb56a3035a",
+        "name": "Trevin Giles",
+        "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c32aeb1a59e6272d",
+          "name": "Michael Morales",
+          "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 42,
+          "raw": "26 of 42"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 28,
+          "attempted": 44,
+          "raw": "28 of 44"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "1:05",
+        "controlSeconds": 65
+      },
+      {
+        "fighter": {
+          "id": "b27a1fcb56a3035a",
+          "name": "Trevin Giles",
+          "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:12",
+        "controlSeconds": 72
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c32aeb1a59e6272d",
+          "name": "Michael Morales",
+          "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+        },
+        {
+          "id": "b27a1fcb56a3035a",
+          "name": "Trevin Giles",
+          "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c32aeb1a59e6272d",
+            "name": "Michael Morales",
+            "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 42,
+            "raw": "26 of 42"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 44,
+            "raw": "28 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:05",
+          "controlSeconds": 65
+        },
+        {
+          "fighter": {
+            "id": "b27a1fcb56a3035a",
+            "name": "Trevin Giles",
+            "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:12",
+          "controlSeconds": 72
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c32aeb1a59e6272d",
+        "name": "Michael Morales",
+        "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+      },
+      {
+        "id": "b27a1fcb56a3035a",
+        "name": "Trevin Giles",
+        "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c32aeb1a59e6272d",
+          "name": "Michael Morales",
+          "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 42,
+          "raw": "26 of 42"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 23,
+          "attempted": 39,
+          "raw": "23 of 39"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 24,
+          "raw": "12 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 18,
+          "raw": "14 of 18"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b27a1fcb56a3035a",
+          "name": "Trevin Giles",
+          "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c32aeb1a59e6272d",
+          "name": "Michael Morales",
+          "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+        },
+        {
+          "id": "b27a1fcb56a3035a",
+          "name": "Trevin Giles",
+          "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c32aeb1a59e6272d",
+            "name": "Michael Morales",
+            "url": "http://www.ufcstats.com/fighter-details/c32aeb1a59e6272d"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 42,
+            "raw": "26 of 42"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 23,
+            "attempted": 39,
+            "raw": "23 of 39"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 18,
+            "raw": "14 of 18"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b27a1fcb56a3035a",
+            "name": "Trevin Giles",
+            "url": "http://www.ufcstats.com/fighter-details/b27a1fcb56a3035a"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/453283e947919ff7",
+    "fetchedAt": "2026-05-19T14:09:34.960Z"
+  }
+}

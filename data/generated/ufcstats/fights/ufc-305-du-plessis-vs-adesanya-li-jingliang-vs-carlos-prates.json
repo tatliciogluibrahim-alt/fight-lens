@@ -1,0 +1,584 @@
+{
+  "id": "3c319d4659e6c8fd",
+  "url": "http://www.ufcstats.com/fight-details/3c319d4659e6c8fd",
+  "event": {
+    "id": "32ba186f4b0e3267",
+    "name": "UFC 305: Du Plessis vs. Adesanya",
+    "url": "http://www.ufcstats.com/event-details/32ba186f4b0e3267"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e64b96c07d7ce999",
+      "name": "Li Jingliang",
+      "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999",
+      "nickname": "The Leech",
+      "result": "L"
+    },
+    {
+      "id": "7ee0fd831c0fe7c3",
+      "name": "Carlos Prates",
+      "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3",
+      "nickname": "The Nightmare",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:02",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Matt Wynne",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e64b96c07d7ce999",
+        "name": "Li Jingliang",
+        "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+      },
+      {
+        "id": "7ee0fd831c0fe7c3",
+        "name": "Carlos Prates",
+        "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 111,
+          "raw": "41 of 111"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 111,
+          "raw": "41 of 111"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:23",
+        "controlSeconds": 23
+      },
+      {
+        "fighter": {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        },
+        "kd": 3,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 84,
+          "raw": "55 of 84"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 84,
+          "raw": "55 of 84"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e64b96c07d7ce999",
+            "name": "Li Jingliang",
+            "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 66,
+            "raw": "26 of 66"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 66,
+            "raw": "26 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e64b96c07d7ce999",
+            "name": "Li Jingliang",
+            "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 48,
+            "raw": "30 of 48"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 48,
+            "raw": "30 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e64b96c07d7ce999",
+        "name": "Li Jingliang",
+        "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+      },
+      {
+        "id": "7ee0fd831c0fe7c3",
+        "name": "Carlos Prates",
+        "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 111,
+          "raw": "41 of 111"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 12,
+          "attempted": 64,
+          "raw": "12 of 64"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "leg": {
+          "landed": 25,
+          "attempted": 37,
+          "raw": "25 of 37"
+        },
+        "distance": {
+          "landed": 41,
+          "attempted": 111,
+          "raw": "41 of 111"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 84,
+          "raw": "55 of 84"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 44,
+          "attempted": 70,
+          "raw": "44 of 70"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "distance": {
+          "landed": 55,
+          "attempted": 84,
+          "raw": "55 of 84"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e64b96c07d7ce999",
+            "name": "Li Jingliang",
+            "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 66,
+            "raw": "26 of 66"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 7,
+            "attempted": 38,
+            "raw": "7 of 38"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "leg": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 66,
+            "raw": "26 of 66"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e64b96c07d7ce999",
+          "name": "Li Jingliang",
+          "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e64b96c07d7ce999",
+            "name": "Li Jingliang",
+            "url": "http://www.ufcstats.com/fighter-details/e64b96c07d7ce999"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 5,
+            "attempted": 26,
+            "raw": "5 of 26"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 48,
+            "raw": "30 of 48"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 26,
+            "attempted": 43,
+            "raw": "26 of 43"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 48,
+            "raw": "30 of 48"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/3c319d4659e6c8fd",
+    "fetchedAt": "2026-05-19T14:09:38.287Z"
+  }
+}

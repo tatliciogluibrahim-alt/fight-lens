@@ -1,0 +1,764 @@
+{
+  "id": "2d36e2c10ee349fe",
+  "url": "http://www.ufcstats.com/fight-details/2d36e2c10ee349fe",
+  "event": {
+    "id": "885e7f70dcac0007",
+    "name": "UFC 280: Oliveira vs. Makhachev",
+    "url": "http://www.ufcstats.com/event-details/885e7f70dcac0007"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "ea7e5bc78d9de658",
+      "name": "Makhmud Muradov",
+      "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "4126a78111c0855a",
+      "name": "Caio Borralho",
+      "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a",
+      "nickname": "The Natural",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "ea7e5bc78d9de658",
+        "name": "Makhmud Muradov",
+        "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+      },
+      {
+        "id": "4126a78111c0855a",
+        "name": "Caio Borralho",
+        "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 35,
+          "raw": "14 of 35"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 76,
+          "attempted": 103,
+          "raw": "76 of 103"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "4:44",
+        "controlSeconds": 284
+      },
+      {
+        "fighter": {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 57,
+          "attempted": 77,
+          "raw": "57 of 77"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 3,
+        "control": "5:32",
+        "controlSeconds": 332
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 20,
+            "raw": "7 of 20"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:32",
+          "controlSeconds": 92
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 22,
+            "raw": "17 of 22"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:36",
+          "controlSeconds": 96
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 34,
+            "raw": "29 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "2:45",
+          "controlSeconds": 165
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 2,
+          "control": "0:46",
+          "controlSeconds": 46
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 27,
+            "raw": "22 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 41,
+            "raw": "28 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "3:10",
+          "controlSeconds": 190
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "ea7e5bc78d9de658",
+        "name": "Makhmud Muradov",
+        "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+      },
+      {
+        "id": "4126a78111c0855a",
+        "name": "Caio Borralho",
+        "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 35,
+          "raw": "14 of 35"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 10,
+          "attempted": 28,
+          "raw": "10 of 28"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 20,
+          "raw": "7 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 15,
+          "raw": "7 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 13,
+          "attempted": 23,
+          "raw": "13 of 23"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 23,
+          "raw": "10 of 23"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 20,
+            "raw": "7 of 20"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        {
+          "id": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4126a78111c0855a",
+            "name": "Caio Borralho",
+            "url": "http://www.ufcstats.com/fighter-details/4126a78111c0855a"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2d36e2c10ee349fe",
+    "fetchedAt": "2026-05-19T14:10:13.610Z"
+  }
+}

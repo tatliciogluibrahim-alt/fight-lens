@@ -1,0 +1,584 @@
+{
+  "id": "fce6522f42b48f18",
+  "url": "http://www.ufcstats.com/fight-details/fce6522f42b48f18",
+  "event": {
+    "id": "a8e8587a06e73c87",
+    "name": "UFC 296: Edwards vs. Covington",
+    "url": "http://www.ufcstats.com/event-details/a8e8587a06e73c87"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8eb046f83e82bf26",
+      "name": "Martin Buday",
+      "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26",
+      "nickname": "Badys",
+      "result": "L"
+    },
+    {
+      "id": "6747ccd6d1acd266",
+      "name": "Shamil Gaziev",
+      "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:56",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8eb046f83e82bf26",
+        "name": "Martin Buday",
+        "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+      },
+      {
+        "id": "6747ccd6d1acd266",
+        "name": "Shamil Gaziev",
+        "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 26,
+          "raw": "13 of 26"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:20",
+        "controlSeconds": 20
+      },
+      {
+        "fighter": {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 98,
+          "raw": "49 of 98"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 114,
+          "raw": "60 of 114"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:18",
+        "controlSeconds": 138
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8eb046f83e82bf26",
+            "name": "Martin Buday",
+            "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        },
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 73,
+            "raw": "36 of 73"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 45,
+            "attempted": 87,
+            "raw": "45 of 87"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:08",
+          "controlSeconds": 128
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8eb046f83e82bf26",
+            "name": "Martin Buday",
+            "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 25,
+            "raw": "13 of 25"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8eb046f83e82bf26",
+        "name": "Martin Buday",
+        "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+      },
+      {
+        "id": "6747ccd6d1acd266",
+        "name": "Shamil Gaziev",
+        "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 8,
+          "attempted": 19,
+          "raw": "8 of 19"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 17,
+          "raw": "8 of 17"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        },
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 98,
+          "raw": "49 of 98"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 35,
+          "attempted": 79,
+          "raw": "35 of 79"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 19,
+          "raw": "14 of 19"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 35,
+          "attempted": 73,
+          "raw": "35 of 73"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 15,
+          "raw": "9 of 15"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8eb046f83e82bf26",
+            "name": "Martin Buday",
+            "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 73,
+            "raw": "36 of 73"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 27,
+            "attempted": 59,
+            "raw": "27 of 59"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 49,
+            "raw": "23 of 49"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8eb046f83e82bf26",
+          "name": "Martin Buday",
+          "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+        },
+        {
+          "id": "6747ccd6d1acd266",
+          "name": "Shamil Gaziev",
+          "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8eb046f83e82bf26",
+            "name": "Martin Buday",
+            "url": "http://www.ufcstats.com/fighter-details/8eb046f83e82bf26"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6747ccd6d1acd266",
+            "name": "Shamil Gaziev",
+            "url": "http://www.ufcstats.com/fighter-details/6747ccd6d1acd266"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 25,
+            "raw": "13 of 25"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/fce6522f42b48f18",
+    "fetchedAt": "2026-05-19T14:12:10.499Z"
+  }
+}

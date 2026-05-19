@@ -1,0 +1,584 @@
+{
+  "id": "79f03eca3fe5cdb3",
+  "url": "http://www.ufcstats.com/fight-details/79f03eca3fe5cdb3",
+  "event": {
+    "id": "8fa2b06572365321",
+    "name": "UFC Fight Night: Grasso vs. Shevchenko 2",
+    "url": "http://www.ufcstats.com/event-details/8fa2b06572365321"
+  },
+  "title": "Women's Strawweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8e5d953bdb9ae5e7",
+      "name": "Loopy Godinez",
+      "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ac7c765882f2c68c",
+      "name": "Elise Reed",
+      "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "3:38",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8e5d953bdb9ae5e7",
+        "name": "Loopy Godinez",
+        "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+      },
+      {
+        "id": "ac7c765882f2c68c",
+        "name": "Elise Reed",
+        "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 37,
+          "attempted": 51,
+          "raw": "37 of 51"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 6,
+        "reversals": 0,
+        "control": "6:29",
+        "controlSeconds": 389
+      },
+      {
+        "fighter": {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "significantStrikePercent": 23,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 48,
+          "raw": "34 of 48"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:22",
+        "controlSeconds": 22
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e5d953bdb9ae5e7",
+            "name": "Loopy Godinez",
+            "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 5,
+          "reversals": 0,
+          "control": "3:39",
+          "controlSeconds": 219
+        },
+        {
+          "fighter": {
+            "id": "ac7c765882f2c68c",
+            "name": "Elise Reed",
+            "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e5d953bdb9ae5e7",
+            "name": "Loopy Godinez",
+            "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 31,
+            "raw": "23 of 31"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:50",
+          "controlSeconds": 170
+        },
+        {
+          "fighter": {
+            "id": "ac7c765882f2c68c",
+            "name": "Elise Reed",
+            "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 37,
+            "raw": "29 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8e5d953bdb9ae5e7",
+        "name": "Loopy Godinez",
+        "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+      },
+      {
+        "id": "ac7c765882f2c68c",
+        "name": "Elise Reed",
+        "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 15,
+          "attempted": 25,
+          "raw": "15 of 25"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "significantStrikePercent": 23,
+        "head": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e5d953bdb9ae5e7",
+            "name": "Loopy Godinez",
+            "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ac7c765882f2c68c",
+            "name": "Elise Reed",
+            "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+        },
+        {
+          "id": "ac7c765882f2c68c",
+          "name": "Elise Reed",
+          "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e5d953bdb9ae5e7",
+            "name": "Loopy Godinez",
+            "url": "http://www.ufcstats.com/fighter-details/8e5d953bdb9ae5e7"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 12,
+            "attempted": 17,
+            "raw": "12 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ac7c765882f2c68c",
+            "name": "Elise Reed",
+            "url": "http://www.ufcstats.com/fighter-details/ac7c765882f2c68c"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/79f03eca3fe5cdb3",
+    "fetchedAt": "2026-05-19T14:11:22.835Z"
+  }
+}

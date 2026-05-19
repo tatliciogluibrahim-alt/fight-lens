@@ -1,0 +1,764 @@
+{
+  "id": "5b71958ee063a6e8",
+  "url": "http://www.ufcstats.com/fight-details/5b71958ee063a6e8",
+  "event": {
+    "id": "6085ceb59087514b",
+    "name": "UFC 290: Volkanovski vs. Rodriguez",
+    "url": "http://www.ufcstats.com/event-details/6085ceb59087514b"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c7d7fda69ec410d3",
+      "name": "Kamuela Kirk",
+      "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3",
+      "nickname": "The Jawaiian",
+      "result": "L"
+    },
+    {
+      "id": "323d4ca260dfa0ba",
+      "name": "Esteban Ribovics",
+      "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba",
+      "nickname": "El Gringo",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c7d7fda69ec410d3",
+        "name": "Kamuela Kirk",
+        "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+      },
+      {
+        "id": "323d4ca260dfa0ba",
+        "name": "Esteban Ribovics",
+        "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 107,
+          "raw": "56 of 107"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 86,
+          "attempted": 147,
+          "raw": "86 of 147"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 14,
+          "raw": "3 of 14"
+        },
+        "takedownPercent": 21,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "6:20",
+        "controlSeconds": 380
+      },
+      {
+        "fighter": {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 115,
+          "attempted": 202,
+          "raw": "115 of 202"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 135,
+          "attempted": 224,
+          "raw": "135 of 224"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:15",
+        "controlSeconds": 75
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 39,
+            "raw": "29 of 39"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:37",
+          "controlSeconds": 277
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 68,
+            "raw": "36 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 65,
+            "attempted": 118,
+            "raw": "65 of 118"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 71,
+            "attempted": 126,
+            "raw": "71 of 126"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:46",
+          "controlSeconds": 46
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 38,
+            "raw": "19 of 38"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 40,
+            "raw": "21 of 40"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "takedownPercent": 22,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 49,
+            "attempted": 82,
+            "raw": "49 of 82"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 61,
+            "attempted": 94,
+            "raw": "61 of 94"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c7d7fda69ec410d3",
+        "name": "Kamuela Kirk",
+        "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+      },
+      {
+        "id": "323d4ca260dfa0ba",
+        "name": "Esteban Ribovics",
+        "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 107,
+          "raw": "56 of 107"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 36,
+          "attempted": 84,
+          "raw": "36 of 84"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 15,
+          "raw": "12 of 15"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "distance": {
+          "landed": 51,
+          "attempted": 101,
+          "raw": "51 of 101"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        },
+        "significantStrikes": {
+          "landed": 115,
+          "attempted": 202,
+          "raw": "115 of 202"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 94,
+          "attempted": 177,
+          "raw": "94 of 177"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 20,
+          "raw": "17 of 20"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 92,
+          "attempted": 172,
+          "raw": "92 of 172"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "ground": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 20,
+            "attempted": 50,
+            "raw": "20 of 50"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 31,
+            "attempted": 62,
+            "raw": "31 of 62"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "significantStrikes": {
+            "landed": 65,
+            "attempted": 118,
+            "raw": "65 of 118"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 58,
+            "attempted": 109,
+            "raw": "58 of 109"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 55,
+            "attempted": 102,
+            "raw": "55 of 102"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c7d7fda69ec410d3",
+          "name": "Kamuela Kirk",
+          "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+        },
+        {
+          "id": "323d4ca260dfa0ba",
+          "name": "Esteban Ribovics",
+          "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c7d7fda69ec410d3",
+            "name": "Kamuela Kirk",
+            "url": "http://www.ufcstats.com/fighter-details/c7d7fda69ec410d3"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 38,
+            "raw": "19 of 38"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 37,
+            "raw": "18 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "323d4ca260dfa0ba",
+            "name": "Esteban Ribovics",
+            "url": "http://www.ufcstats.com/fighter-details/323d4ca260dfa0ba"
+          },
+          "significantStrikes": {
+            "landed": 49,
+            "attempted": 82,
+            "raw": "49 of 82"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 36,
+            "attempted": 68,
+            "raw": "36 of 68"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 12,
+            "raw": "11 of 12"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 68,
+            "raw": "36 of 68"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5b71958ee063a6e8",
+    "fetchedAt": "2026-05-19T14:11:16.281Z"
+  }
+}

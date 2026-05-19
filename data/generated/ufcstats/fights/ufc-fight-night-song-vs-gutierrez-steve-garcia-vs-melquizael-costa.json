@@ -1,0 +1,584 @@
+{
+  "id": "5ac1725f775c6f00",
+  "url": "http://www.ufcstats.com/fight-details/5ac1725f775c6f00",
+  "event": {
+    "id": "5ef0088c1b19beeb",
+    "name": "UFC Fight Night: Song vs. Gutierrez",
+    "url": "http://www.ufcstats.com/event-details/5ef0088c1b19beeb"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "97cf1a2c7c5e7889",
+      "name": "Steve Garcia",
+      "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889",
+      "nickname": "Mean Machine",
+      "result": "W"
+    },
+    {
+      "id": "20bccc9bb4ceb23e",
+      "name": "Melquizael Costa",
+      "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e",
+      "nickname": "The Dalmatian",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:01",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "97cf1a2c7c5e7889",
+        "name": "Steve Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+      },
+      {
+        "id": "20bccc9bb4ceb23e",
+        "name": "Melquizael Costa",
+        "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 49,
+          "raw": "29 of 49"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 66,
+          "raw": "41 of 66"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:46",
+        "controlSeconds": 46
+      },
+      {
+        "fighter": {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 25,
+          "raw": "20 of 25"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 10,
+          "raw": "2 of 10"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:41",
+        "controlSeconds": 281
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 22,
+            "raw": "19 of 22"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "takedownPercent": 22,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:41",
+          "controlSeconds": 281
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 38,
+            "raw": "25 of 38"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 43,
+            "raw": "29 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:46",
+          "controlSeconds": 46
+        },
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "97cf1a2c7c5e7889",
+        "name": "Steve Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+      },
+      {
+        "id": "20bccc9bb4ceb23e",
+        "name": "Melquizael Costa",
+        "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 49,
+          "raw": "29 of 49"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 26,
+          "attempted": 45,
+          "raw": "26 of 45"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "ground": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        }
+      },
+      {
+        "fighter": {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "97cf1a2c7c5e7889",
+          "name": "Steve Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+        },
+        {
+          "id": "20bccc9bb4ceb23e",
+          "name": "Melquizael Costa",
+          "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "97cf1a2c7c5e7889",
+            "name": "Steve Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/97cf1a2c7c5e7889"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 38,
+            "raw": "25 of 38"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 23,
+            "attempted": 36,
+            "raw": "23 of 36"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          }
+        },
+        {
+          "fighter": {
+            "id": "20bccc9bb4ceb23e",
+            "name": "Melquizael Costa",
+            "url": "http://www.ufcstats.com/fighter-details/20bccc9bb4ceb23e"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/5ac1725f775c6f00",
+    "fetchedAt": "2026-05-19T14:12:39.740Z"
+  }
+}

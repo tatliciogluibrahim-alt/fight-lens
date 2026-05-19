@@ -1,0 +1,764 @@
+{
+  "id": "e7938bac3ec8b442",
+  "url": "http://www.ufcstats.com/fight-details/e7938bac3ec8b442",
+  "event": {
+    "id": "eaea0fc7b76525a8",
+    "name": "UFC Fight Night: Hermansson vs. Pyfer",
+    "url": "http://www.ufcstats.com/event-details/eaea0fc7b76525a8"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0c6d9ea8306c029e",
+      "name": "Brad Tavares",
+      "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": "Robocop",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 84,
+          "raw": "37 of 84"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 42,
+          "attempted": 90,
+          "raw": "42 of 90"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 123,
+          "raw": "71 of 123"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 79,
+          "attempted": 135,
+          "raw": "79 of 135"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:18",
+        "controlSeconds": 198
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 36,
+            "raw": "19 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 49,
+            "raw": "25 of 49"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:56",
+          "controlSeconds": 116
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 46,
+            "raw": "26 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 34,
+            "raw": "24 of 34"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 34,
+            "raw": "24 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 84,
+          "raw": "37 of 84"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 28,
+          "attempted": 70,
+          "raw": "28 of 70"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 36,
+          "attempted": 83,
+          "raw": "36 of 83"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 123,
+          "raw": "71 of 123"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 53,
+          "attempted": 102,
+          "raw": "53 of 102"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "distance": {
+          "landed": 64,
+          "attempted": 114,
+          "raw": "64 of 114"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 49,
+            "raw": "25 of 49"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 19,
+            "attempted": 41,
+            "raw": "19 of 41"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 43,
+            "raw": "20 of 43"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 13,
+            "attempted": 30,
+            "raw": "13 of 30"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 34,
+            "raw": "24 of 34"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 34,
+            "raw": "24 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e7938bac3ec8b442",
+    "fetchedAt": "2026-05-19T14:09:52.173Z"
+  }
+}

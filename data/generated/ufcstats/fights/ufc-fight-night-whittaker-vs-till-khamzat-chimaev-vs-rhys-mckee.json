@@ -1,0 +1,404 @@
+{
+  "id": "573d3a6984cbcd29",
+  "url": "http://www.ufcstats.com/fight-details/573d3a6984cbcd29",
+  "event": {
+    "id": "dde70a112e053a6c",
+    "name": "UFC Fight Night: Whittaker vs. Till",
+    "url": "http://www.ufcstats.com/event-details/dde70a112e053a6c"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "767755fd74662dbf",
+      "name": "Khamzat Chimaev",
+      "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf",
+      "nickname": "Borz",
+      "result": "W"
+    },
+    {
+      "id": "f748267c4ab6c127",
+      "name": "Rhys McKee",
+      "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127",
+      "nickname": "Skeletor",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rich Mitchell",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "767755fd74662dbf",
+        "name": "Khamzat Chimaev",
+        "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+      },
+      {
+        "id": "f748267c4ab6c127",
+        "name": "Rhys McKee",
+        "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 62,
+          "raw": "40 of 62"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 68,
+          "attempted": 98,
+          "raw": "68 of 98"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:59",
+        "controlSeconds": 179
+      },
+      {
+        "fighter": {
+          "id": "f748267c4ab6c127",
+          "name": "Rhys McKee",
+          "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "significantStrikePercent": null,
+        "totalStrikes": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "f748267c4ab6c127",
+          "name": "Rhys McKee",
+          "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 62,
+            "raw": "40 of 62"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 68,
+            "attempted": 98,
+            "raw": "68 of 98"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:59",
+          "controlSeconds": 179
+        },
+        {
+          "fighter": {
+            "id": "f748267c4ab6c127",
+            "name": "Rhys McKee",
+            "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "767755fd74662dbf",
+        "name": "Khamzat Chimaev",
+        "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+      },
+      {
+        "id": "f748267c4ab6c127",
+        "name": "Rhys McKee",
+        "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 62,
+          "raw": "40 of 62"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 40,
+          "attempted": 62,
+          "raw": "40 of 62"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 40,
+          "attempted": 61,
+          "raw": "40 of 61"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f748267c4ab6c127",
+          "name": "Rhys McKee",
+          "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+        },
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "significantStrikePercent": null,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "f748267c4ab6c127",
+          "name": "Rhys McKee",
+          "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 62,
+            "raw": "40 of 62"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 40,
+            "attempted": 62,
+            "raw": "40 of 62"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 40,
+            "attempted": 61,
+            "raw": "40 of 61"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f748267c4ab6c127",
+            "name": "Rhys McKee",
+            "url": "http://www.ufcstats.com/fighter-details/f748267c4ab6c127"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/573d3a6984cbcd29",
+    "fetchedAt": "2026-05-19T14:11:31.900Z"
+  }
+}

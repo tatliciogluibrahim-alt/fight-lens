@@ -1,0 +1,764 @@
+{
+  "id": "8390441d93736719",
+  "url": "http://www.ufcstats.com/fight-details/8390441d93736719",
+  "event": {
+    "id": "253d3f9e97ca149a",
+    "name": "UFC 274: Oliveira vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/253d3f9e97ca149a"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c6aee362c7a7d482",
+      "name": "Randy Brown",
+      "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482",
+      "nickname": "Rudeboy",
+      "result": "W"
+    },
+    {
+      "id": "2558ae2e5671e318",
+      "name": "Khaos Williams",
+      "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318",
+      "nickname": "The OxFighter",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 93,
+          "attempted": 177,
+          "raw": "93 of 177"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 103,
+          "attempted": 188,
+          "raw": "103 of 188"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      },
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 224,
+          "raw": "75 of 224"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 96,
+          "attempted": 246,
+          "raw": "96 of 246"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:09",
+        "controlSeconds": 249
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 37,
+            "raw": "19 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 58,
+            "raw": "21 of 58"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 66,
+            "raw": "28 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 69,
+            "raw": "34 of 69"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 77,
+            "raw": "41 of 77"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 80,
+            "raw": "25 of 80"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 89,
+            "raw": "34 of 89"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:19",
+          "controlSeconds": 79
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 72,
+            "raw": "41 of 72"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 74,
+            "raw": "43 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 86,
+            "raw": "29 of 86"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 91,
+            "raw": "34 of 91"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:07",
+          "controlSeconds": 67
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "significantStrikes": {
+          "landed": 93,
+          "attempted": 177,
+          "raw": "93 of 177"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 68,
+          "attempted": 144,
+          "raw": "68 of 144"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 22,
+          "raw": "15 of 22"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "distance": {
+          "landed": 74,
+          "attempted": 156,
+          "raw": "74 of 156"
+        },
+        "clinch": {
+          "landed": 19,
+          "attempted": 21,
+          "raw": "19 of 21"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "significantStrikes": {
+          "landed": 75,
+          "attempted": 224,
+          "raw": "75 of 224"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 26,
+          "attempted": 159,
+          "raw": "26 of 159"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 21,
+          "raw": "16 of 21"
+        },
+        "leg": {
+          "landed": 33,
+          "attempted": 44,
+          "raw": "33 of 44"
+        },
+        "distance": {
+          "landed": 68,
+          "attempted": 207,
+          "raw": "68 of 207"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 31,
+            "raw": "14 of 31"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 58,
+            "raw": "21 of 58"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 8,
+            "attempted": 39,
+            "raw": "8 of 39"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 69,
+            "raw": "34 of 69"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 26,
+            "attempted": 57,
+            "raw": "26 of 57"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 67,
+            "raw": "32 of 67"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 80,
+            "raw": "25 of 80"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 7,
+            "attempted": 55,
+            "raw": "7 of 55"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 74,
+            "raw": "24 of 74"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 72,
+            "raw": "41 of 72"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 30,
+            "attempted": 61,
+            "raw": "30 of 61"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 58,
+            "raw": "28 of 58"
+          },
+          "clinch": {
+            "landed": 13,
+            "attempted": 14,
+            "raw": "13 of 14"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 86,
+            "raw": "29 of 86"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 11,
+            "attempted": 65,
+            "raw": "11 of 65"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 83,
+            "raw": "28 of 83"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8390441d93736719",
+    "fetchedAt": "2026-05-19T14:12:47.285Z"
+  }
+}

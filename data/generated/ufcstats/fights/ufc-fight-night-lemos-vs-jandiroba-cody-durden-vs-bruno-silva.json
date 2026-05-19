@@ -1,0 +1,584 @@
+{
+  "id": "94541dd979e0b4bd",
+  "url": "http://www.ufcstats.com/fight-details/94541dd979e0b4bd",
+  "event": {
+    "id": "c11036da9162cb5f",
+    "name": "UFC Fight Night: Lemos vs. Jandiroba",
+    "url": "http://www.ufcstats.com/event-details/c11036da9162cb5f"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7f6ed67d3ed3c036",
+      "name": "Cody Durden",
+      "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036",
+      "nickname": "Custom Made",
+      "result": "L"
+    },
+    {
+      "id": "294aa73dbf37d281",
+      "name": "Bruno Silva",
+      "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281",
+      "nickname": "Bulldog",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      },
+      {
+        "id": "294aa73dbf37d281",
+        "name": "Bruno Silva",
+        "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 63,
+          "raw": "28 of 63"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 68,
+          "raw": "31 of 68"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 3,
+        "reversals": 0,
+        "control": "2:35",
+        "controlSeconds": 155
+      },
+      {
+        "fighter": {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 73,
+          "raw": "42 of 73"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 77,
+          "raw": "45 of 77"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:23",
+        "controlSeconds": 23
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 57,
+            "raw": "24 of 57"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 58,
+            "raw": "25 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        },
+        {
+          "fighter": {
+            "id": "294aa73dbf37d281",
+            "name": "Bruno Silva",
+            "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 47,
+            "raw": "22 of 47"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 48,
+            "raw": "23 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 3,
+          "reversals": 0,
+          "control": "2:23",
+          "controlSeconds": 143
+        },
+        {
+          "fighter": {
+            "id": "294aa73dbf37d281",
+            "name": "Bruno Silva",
+            "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 26,
+            "raw": "20 of 26"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 29,
+            "raw": "22 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      },
+      {
+        "id": "294aa73dbf37d281",
+        "name": "Bruno Silva",
+        "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 63,
+          "raw": "28 of 63"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 20,
+          "attempted": 52,
+          "raw": "20 of 52"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 62,
+          "raw": "27 of 62"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 73,
+          "raw": "42 of 73"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 31,
+          "attempted": 57,
+          "raw": "31 of 57"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 51,
+          "raw": "24 of 51"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 21,
+          "raw": "17 of 21"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 57,
+            "raw": "24 of 57"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 57,
+            "raw": "24 of 57"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "294aa73dbf37d281",
+            "name": "Bruno Silva",
+            "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 47,
+            "raw": "22 of 47"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 46,
+            "raw": "21 of 46"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "294aa73dbf37d281",
+          "name": "Bruno Silva",
+          "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "294aa73dbf37d281",
+            "name": "Bruno Silva",
+            "url": "http://www.ufcstats.com/fighter-details/294aa73dbf37d281"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 26,
+            "raw": "20 of 26"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 18,
+            "attempted": 24,
+            "raw": "18 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 21,
+            "raw": "17 of 21"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/94541dd979e0b4bd",
+    "fetchedAt": "2026-05-19T14:10:40.697Z"
+  }
+}

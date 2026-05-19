@@ -1,0 +1,584 @@
+{
+  "id": "4ec249e549309b16",
+  "url": "http://www.ufcstats.com/fight-details/4ec249e549309b16",
+  "event": {
+    "id": "a8e8587a06e73c87",
+    "name": "UFC 296: Edwards vs. Covington",
+    "url": "http://www.ufcstats.com/event-details/a8e8587a06e73c87"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f00ac08ab056af5d",
+      "name": "Tagir Ulanbekov",
+      "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "7f6ed67d3ed3c036",
+      "name": "Cody Durden",
+      "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036",
+      "nickname": "Custom Made",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:25",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f00ac08ab056af5d",
+        "name": "Tagir Ulanbekov",
+        "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+      },
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 41,
+          "raw": "24 of 41"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 63,
+          "raw": "45 of 63"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 5,
+        "reversals": 1,
+        "control": "6:03",
+        "controlSeconds": 363
+      },
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 43,
+          "raw": "32 of 43"
+        },
+        "significantStrikePercent": 74,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 67,
+          "raw": "55 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:36",
+        "controlSeconds": 36
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "2:11",
+          "controlSeconds": 131
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 45,
+            "raw": "35 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 21,
+            "raw": "20 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 3,
+          "reversals": 0,
+          "control": "3:52",
+          "controlSeconds": 232
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "significantStrikePercent": 90,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 22,
+            "raw": "20 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f00ac08ab056af5d",
+        "name": "Tagir Ulanbekov",
+        "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+      },
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 41,
+          "raw": "24 of 41"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 19,
+          "attempted": 35,
+          "raw": "19 of 35"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 32,
+          "raw": "15 of 32"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 43,
+          "raw": "32 of 43"
+        },
+        "significantStrikePercent": 74,
+        "head": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 34,
+          "raw": "24 of 34"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+        },
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f00ac08ab056af5d",
+            "name": "Tagir Ulanbekov",
+            "url": "http://www.ufcstats.com/fighter-details/f00ac08ab056af5d"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "significantStrikePercent": 85,
+          "head": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "significantStrikePercent": 90,
+          "head": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4ec249e549309b16",
+    "fetchedAt": "2026-05-19T14:10:41.203Z"
+  }
+}

@@ -1,29 +1,9 @@
 {
-  "generatedAt": "2026-05-19T14:03:34.935Z",
+  "generatedAt": "2026-05-19T14:14:44.923Z",
   "totalFights": 76,
-  "fightsWithMissingData": 43,
-  "missingDataRate": 57,
+  "fightsWithMissingData": 27,
+  "missingDataRate": 36,
   "fights": [
-    {
-      "fightId": "islam-makhachev-jack-della-maddalena",
-      "flags": [
-        "fighterA.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "carlos-prates-leon-edwards",
-      "flags": [
-        "fighterA.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
     {
       "fightId": "ethyn-ewing-malcolm-wellmaker",
       "flags": [
@@ -35,8 +15,7 @@
         "fighterA.takedownAccuracy missing",
         "fighterA.takedownDefense missing",
         "fighterA.submissionAverage missing",
-        "fighterA has no prior fight history",
-        "fighterB.takedownAccuracy missing"
+        "fighterA has no prior fight history"
       ],
       "dataWarnings": {
         "fighterA": [
@@ -56,8 +35,7 @@
         "fighterA.takedownAverage missing",
         "fighterA.takedownAccuracy missing",
         "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
-        "fighterB.takedownDefense missing"
+        "fighterA.submissionAverage missing"
       ],
       "dataWarnings": {
         "fighterA": [
@@ -182,16 +160,6 @@
       }
     },
     {
-      "fightId": "charles-oliveira-max-holloway",
-      "flags": [
-        "fighterB.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
       "fightId": "alberto-montes-ricky-turcios",
       "flags": [
         "fighterA.takedownAccuracy missing"
@@ -201,27 +169,6 @@
           "Only 1 fight(s) before 2026-03-07 — predictions will be unreliable."
         ],
         "fighterB": []
-      }
-    },
-    {
-      "fightId": "sumudaerji-jesus-aguilar",
-      "flags": [
-        "fighterA.takedownAccuracy missing",
-        "fighterB.slpm missing",
-        "fighterB.strikingAccuracy missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownAverage missing",
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing",
-        "fighterB.submissionAverage missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 7 fight(s) before 2026-03-07 — predictions will be unreliable."
-        ]
       }
     },
     {
@@ -287,38 +234,6 @@
       }
     },
     {
-      "fightId": "carlos-ulberg-jiri-prochazka",
-      "flags": [
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "dominick-reyes-johnny-walker",
-      "flags": [
-        "fighterA.takedownAccuracy missing",
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "cub-swanson-nate-landwehr",
-      "flags": [
-        "fighterB.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
       "fightId": "aaron-pico-patricio-pitbull",
       "flags": [
         "fighterA.takedownDefense missing"
@@ -327,16 +242,6 @@
         "fighterA": [
           "Only 1 fight(s) before 2026-04-11 — predictions will be unreliable."
         ],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "mateusz-gamrot-esteban-ribovics",
-      "flags": [
-        "fighterB.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
         "fighterB": []
       }
     },
@@ -353,37 +258,7 @@
     {
       "fightId": "charles-radtke-francisco-prado",
       "flags": [
-        "fighterA.slpm missing",
-        "fighterA.strikingAccuracy missing",
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownAverage missing",
-        "fighterA.takedownAccuracy missing",
-        "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 6 fight(s) before 2026-04-11 — predictions will be unreliable."
-        ],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "chimaev-strickland",
-      "flags": [
-        "fighterB.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
-      "fightId": "van-taira",
-      "flags": [
-        "fighterA.takedownAccuracy missing"
+        "fighterA.takedownDefense missing"
       ],
       "dataWarnings": {
         "fighterA": [],
@@ -405,7 +280,6 @@
     {
       "fightId": "kopylov-tulio",
       "flags": [
-        "fighterA.takedownDefense missing",
         "fighterB.slpm missing",
         "fighterB.strikingAccuracy missing",
         "fighterB.sapm missing",
@@ -426,14 +300,7 @@
     {
       "fightId": "sabatini-gomis",
       "flags": [
-        "fighterA.slpm missing",
-        "fighterA.strikingAccuracy missing",
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownAverage missing",
-        "fighterA.takedownAccuracy missing",
         "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
         "fighterB.slpm missing",
         "fighterB.strikingAccuracy missing",
         "fighterB.sapm missing",
@@ -444,10 +311,7 @@
         "fighterB.submissionAverage missing"
       ],
       "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 10 fight(s) before 2026-05-09 — predictions will be unreliable."
-        ],
+        "fighterA": [],
         "fighterB": [
           "No fight totals available — all aggregate stats are null.",
           "Only 6 fight(s) before 2026-05-09 — predictions will be unreliable."
@@ -457,21 +321,11 @@
     {
       "fightId": "susurkaev-santos",
       "flags": [
-        "fighterA.slpm missing",
-        "fighterA.strikingAccuracy missing",
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownAverage missing",
-        "fighterA.takedownAccuracy missing",
         "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
         "fighterB.takedownDefense missing"
       ],
       "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 3 fight(s) before 2026-05-09 — predictions will be unreliable."
-        ],
+        "fighterA": [],
         "fighterB": []
       }
     },
@@ -510,7 +364,6 @@
     {
       "fightId": "modestas-bukauskas-christian-edwards",
       "flags": [
-        "fighterA.takedownAccuracy missing",
         "fighterB.slpm missing",
         "fighterB.strikingAccuracy missing",
         "fighterB.sapm missing",
@@ -527,16 +380,6 @@
           "No fight totals available — all aggregate stats are null.",
           "Only 0 fight(s) before 2026-05-16 — predictions will be unreliable."
         ]
-      }
-    },
-    {
-      "fightId": "khaos-williams-nikolay-veretennikov",
-      "flags": [
-        "fighterA.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
       }
     },
     {
@@ -564,58 +407,6 @@
       }
     },
     {
-      "fightId": "alice-ardelean-polyana-viana",
-      "flags": [
-        "fighterA.slpm missing",
-        "fighterA.strikingAccuracy missing",
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownAverage missing",
-        "fighterA.takedownAccuracy missing",
-        "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
-        "fighterB.slpm missing",
-        "fighterB.strikingAccuracy missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownAverage missing",
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing",
-        "fighterB.submissionAverage missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 4 fight(s) before 2026-05-16 — predictions will be unreliable."
-        ],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 11 fight(s) before 2026-05-16 — predictions will be unreliable."
-        ]
-      }
-    },
-    {
-      "fightId": "luis-gurule-daniel-barez",
-      "flags": [
-        "fighterA.takedownDefense missing",
-        "fighterB.slpm missing",
-        "fighterB.strikingAccuracy missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownAverage missing",
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing",
-        "fighterB.submissionAverage missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 4 fight(s) before 2026-05-16 — predictions will be unreliable."
-        ]
-      }
-    },
-    {
       "fightId": "nicolle-caliari-shauna-bannon",
       "flags": [
         "fighterA.slpm missing",
@@ -625,34 +416,13 @@
         "fighterA.takedownAverage missing",
         "fighterA.takedownAccuracy missing",
         "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
-        "fighterB.slpm missing",
-        "fighterB.strikingAccuracy missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownAverage missing",
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing",
-        "fighterB.submissionAverage missing"
+        "fighterA.submissionAverage missing"
       ],
       "dataWarnings": {
         "fighterA": [
           "No fight totals available — all aggregate stats are null.",
           "Only 3 fight(s) before 2026-05-16 — predictions will be unreliable."
         ],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 4 fight(s) before 2026-05-16 — predictions will be unreliable."
-        ]
-      }
-    },
-    {
-      "fightId": "carlos-prates-jack-della-maddalena",
-      "flags": [
-        "fighterA.takedownAccuracy missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
         "fighterB": []
       }
     },
@@ -709,16 +479,6 @@
       }
     },
     {
-      "fightId": "jacob-malkoun-gerald-meerschaert",
-      "flags": [
-        "fighterB.takedownDefense missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [],
-        "fighterB": []
-      }
-    },
-    {
       "fightId": "wes-schultz-ben-johnston",
       "flags": [
         "fighterA.takedownDefense missing",
@@ -737,37 +497,6 @@
         "fighterB": [
           "No fight totals available — all aggregate stats are null.",
           "Only 0 fight(s) before 2026-05-02 — predictions will be unreliable."
-        ]
-      }
-    },
-    {
-      "fightId": "jonathan-micallef-themba-gorimbo",
-      "flags": [
-        "fighterA.slpm missing",
-        "fighterA.strikingAccuracy missing",
-        "fighterA.sapm missing",
-        "fighterA.strikingDefense missing",
-        "fighterA.takedownAverage missing",
-        "fighterA.takedownAccuracy missing",
-        "fighterA.takedownDefense missing",
-        "fighterA.submissionAverage missing",
-        "fighterB.slpm missing",
-        "fighterB.strikingAccuracy missing",
-        "fighterB.sapm missing",
-        "fighterB.strikingDefense missing",
-        "fighterB.takedownAverage missing",
-        "fighterB.takedownAccuracy missing",
-        "fighterB.takedownDefense missing",
-        "fighterB.submissionAverage missing"
-      ],
-      "dataWarnings": {
-        "fighterA": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 3 fight(s) before 2026-05-02 — predictions will be unreliable."
-        ],
-        "fighterB": [
-          "No fight totals available — all aggregate stats are null.",
-          "Only 7 fight(s) before 2026-05-02 — predictions will be unreliable."
         ]
       }
     },

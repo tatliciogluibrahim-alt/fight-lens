@@ -1,0 +1,764 @@
+{
+  "id": "8502f245aabd64ac",
+  "url": "http://www.ufcstats.com/fight-details/8502f245aabd64ac",
+  "event": {
+    "id": "6f812143641ceff8",
+    "name": "UFC Fight Night: Dern vs. Hill",
+    "url": "http://www.ufcstats.com/event-details/6f812143641ceff8"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8abac218746e04ca",
+      "name": "Takashi Sato",
+      "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca",
+      "nickname": "Ten",
+      "result": "L"
+    },
+    {
+      "id": "40f3cb27fc7305a1",
+      "name": "Themba Gorimbo",
+      "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1",
+      "nickname": "Mamba",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8abac218746e04ca",
+        "name": "Takashi Sato",
+        "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+      },
+      {
+        "id": "40f3cb27fc7305a1",
+        "name": "Themba Gorimbo",
+        "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 56,
+          "attempted": 76,
+          "raw": "56 of 76"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "2:21",
+        "controlSeconds": 141
+      },
+      {
+        "fighter": {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 56,
+          "raw": "33 of 56"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 110,
+          "attempted": 158,
+          "raw": "110 of 158"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "takedownPercent": 37,
+        "submissionAttempts": 0,
+        "reversals": 2,
+        "control": "11:15",
+        "controlSeconds": 675
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 21,
+            "raw": "15 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:32",
+          "controlSeconds": 32
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 57,
+            "raw": "39 of 57"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "3:58",
+          "controlSeconds": 238
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "significantStrikePercent": 82,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 25,
+            "raw": "21 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:14",
+          "controlSeconds": 74
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 57,
+            "raw": "40 of 57"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "3:20",
+          "controlSeconds": 200
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 44,
+            "raw": "31 of 44"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:57",
+          "controlSeconds": 237
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8abac218746e04ca",
+        "name": "Takashi Sato",
+        "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+      },
+      {
+        "id": "40f3cb27fc7305a1",
+        "name": "Themba Gorimbo",
+        "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 21,
+          "attempted": 37,
+          "raw": "21 of 37"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 16,
+          "raw": "5 of 16"
+        },
+        "clinch": {
+          "landed": 15,
+          "attempted": 16,
+          "raw": "15 of 16"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 56,
+          "raw": "33 of 56"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 21,
+          "attempted": 41,
+          "raw": "21 of 41"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 15,
+          "raw": "12 of 15"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 25,
+          "raw": "12 of 25"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "ground": {
+          "landed": 12,
+          "attempted": 19,
+          "raw": "12 of 19"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "significantStrikePercent": 82,
+          "head": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 15,
+            "attempted": 25,
+            "raw": "15 of 25"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8abac218746e04ca",
+          "name": "Takashi Sato",
+          "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+        },
+        {
+          "id": "40f3cb27fc7305a1",
+          "name": "Themba Gorimbo",
+          "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8abac218746e04ca",
+            "name": "Takashi Sato",
+            "url": "http://www.ufcstats.com/fighter-details/8abac218746e04ca"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40f3cb27fc7305a1",
+            "name": "Themba Gorimbo",
+            "url": "http://www.ufcstats.com/fighter-details/40f3cb27fc7305a1"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8502f245aabd64ac",
+    "fetchedAt": "2026-05-19T14:12:28.679Z"
+  }
+}

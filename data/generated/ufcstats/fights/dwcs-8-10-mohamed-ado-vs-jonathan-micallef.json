@@ -1,0 +1,404 @@
+{
+  "id": "e39cd3b9d0bf4944",
+  "url": "http://www.ufcstats.com/fight-details/e39cd3b9d0bf4944",
+  "event": {
+    "id": "feeae92f951f49a9",
+    "name": "DWCS 8.10",
+    "url": "http://www.ufcstats.com/event-details/feeae92f951f49a9"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7a846fcbf182a7c8",
+      "name": "Mohamed Ado",
+      "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "f782f953bfe7b5f2",
+      "name": "Jonathan Micallef",
+      "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2",
+      "nickname": "The Captain",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:01",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7a846fcbf182a7c8",
+        "name": "Mohamed Ado",
+        "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+      },
+      {
+        "id": "f782f953bfe7b5f2",
+        "name": "Jonathan Micallef",
+        "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7a846fcbf182a7c8",
+          "name": "Mohamed Ado",
+          "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "significantStrikePercent": 83,
+        "totalStrikes": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:19",
+        "controlSeconds": 79
+      },
+      {
+        "fighter": {
+          "id": "f782f953bfe7b5f2",
+          "name": "Jonathan Micallef",
+          "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "1:14",
+        "controlSeconds": 74
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7a846fcbf182a7c8",
+          "name": "Mohamed Ado",
+          "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+        },
+        {
+          "id": "f782f953bfe7b5f2",
+          "name": "Jonathan Micallef",
+          "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7a846fcbf182a7c8",
+            "name": "Mohamed Ado",
+            "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:19",
+          "controlSeconds": 79
+        },
+        {
+          "fighter": {
+            "id": "f782f953bfe7b5f2",
+            "name": "Jonathan Micallef",
+            "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "1:14",
+          "controlSeconds": 74
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7a846fcbf182a7c8",
+        "name": "Mohamed Ado",
+        "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+      },
+      {
+        "id": "f782f953bfe7b5f2",
+        "name": "Jonathan Micallef",
+        "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7a846fcbf182a7c8",
+          "name": "Mohamed Ado",
+          "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "significantStrikePercent": 83,
+        "head": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f782f953bfe7b5f2",
+          "name": "Jonathan Micallef",
+          "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7a846fcbf182a7c8",
+          "name": "Mohamed Ado",
+          "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+        },
+        {
+          "id": "f782f953bfe7b5f2",
+          "name": "Jonathan Micallef",
+          "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7a846fcbf182a7c8",
+            "name": "Mohamed Ado",
+            "url": "http://www.ufcstats.com/fighter-details/7a846fcbf182a7c8"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f782f953bfe7b5f2",
+            "name": "Jonathan Micallef",
+            "url": "http://www.ufcstats.com/fighter-details/f782f953bfe7b5f2"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e39cd3b9d0bf4944",
+    "fetchedAt": "2026-05-19T14:12:25.490Z"
+  }
+}

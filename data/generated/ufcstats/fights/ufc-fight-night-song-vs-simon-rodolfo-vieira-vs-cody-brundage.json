@@ -1,0 +1,584 @@
+{
+  "id": "37ae5c09d6f03f33",
+  "url": "http://www.ufcstats.com/fight-details/37ae5c09d6f03f33",
+  "event": {
+    "id": "51b1e2fd9872005b",
+    "name": "UFC Fight Night: Song vs. Simon",
+    "url": "http://www.ufcstats.com/event-details/51b1e2fd9872005b"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "260e9e0d4954aea6",
+      "name": "Rodolfo Vieira",
+      "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "f14f644d41ade29f",
+      "name": "Cody Brundage",
+      "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:28",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "260e9e0d4954aea6",
+        "name": "Rodolfo Vieira",
+        "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 37,
+          "raw": "30 of 37"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "takedownPercent": 14,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "4:19",
+        "controlSeconds": 259
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "significantStrikePercent": 68,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 51,
+          "raw": "41 of 51"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:04",
+        "controlSeconds": 64
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "260e9e0d4954aea6",
+            "name": "Rodolfo Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 34,
+            "raw": "28 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 16,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:04",
+          "controlSeconds": 184
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 28,
+            "raw": "20 of 28"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 50,
+            "raw": "41 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:04",
+          "controlSeconds": 64
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "260e9e0d4954aea6",
+            "name": "Rodolfo Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "1:15",
+          "controlSeconds": 75
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "260e9e0d4954aea6",
+        "name": "Rodolfo Vieira",
+        "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+      },
+      {
+        "id": "f14f644d41ade29f",
+        "name": "Cody Brundage",
+        "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "significantStrikePercent": 68,
+        "head": {
+          "landed": 17,
+          "attempted": 26,
+          "raw": "17 of 26"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 18,
+          "raw": "10 of 18"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "260e9e0d4954aea6",
+            "name": "Rodolfo Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 28,
+            "raw": "20 of 28"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 17,
+            "attempted": 25,
+            "raw": "17 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "260e9e0d4954aea6",
+          "name": "Rodolfo Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+        },
+        {
+          "id": "f14f644d41ade29f",
+          "name": "Cody Brundage",
+          "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "260e9e0d4954aea6",
+            "name": "Rodolfo Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/260e9e0d4954aea6"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f14f644d41ade29f",
+            "name": "Cody Brundage",
+            "url": "http://www.ufcstats.com/fighter-details/f14f644d41ade29f"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/37ae5c09d6f03f33",
+    "fetchedAt": "2026-05-19T14:09:47.966Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "8afe89f5c451b372",
+  "url": "http://www.ufcstats.com/fight-details/8afe89f5c451b372",
+  "event": {
+    "id": "cba3a2dfbc06ce79",
+    "name": "UFC Fight Night: Cannonier vs. Imavov",
+    "url": "http://www.ufcstats.com/event-details/cba3a2dfbc06ce79"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "feedf3053472fe56",
+      "name": "Charles Radtke",
+      "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56",
+      "nickname": "Chuck Buffalo",
+      "result": "L"
+    },
+    {
+      "id": "7ee0fd831c0fe7c3",
+      "name": "Carlos Prates",
+      "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3",
+      "nickname": "The Nightmare",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:47",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Blake Grice",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "feedf3053472fe56",
+        "name": "Charles Radtke",
+        "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+      },
+      {
+        "id": "7ee0fd831c0fe7c3",
+        "name": "Carlos Prates",
+        "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "feedf3053472fe56",
+          "name": "Charles Radtke",
+          "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 48,
+          "raw": "33 of 48"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:23",
+        "controlSeconds": 23
+      },
+      {
+        "fighter": {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 36,
+          "raw": "15 of 36"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 36,
+          "raw": "15 of 36"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "feedf3053472fe56",
+          "name": "Charles Radtke",
+          "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "feedf3053472fe56",
+            "name": "Charles Radtke",
+            "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 48,
+            "raw": "33 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "feedf3053472fe56",
+        "name": "Charles Radtke",
+        "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+      },
+      {
+        "id": "7ee0fd831c0fe7c3",
+        "name": "Carlos Prates",
+        "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "feedf3053472fe56",
+          "name": "Charles Radtke",
+          "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 7,
+          "attempted": 19,
+          "raw": "7 of 19"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 26,
+          "raw": "13 of 26"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 36,
+          "raw": "15 of 36"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 5,
+          "attempted": 19,
+          "raw": "5 of 19"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 36,
+          "raw": "15 of 36"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "feedf3053472fe56",
+          "name": "Charles Radtke",
+          "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+        },
+        {
+          "id": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "feedf3053472fe56",
+            "name": "Charles Radtke",
+            "url": "http://www.ufcstats.com/fighter-details/feedf3053472fe56"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7ee0fd831c0fe7c3",
+            "name": "Carlos Prates",
+            "url": "http://www.ufcstats.com/fighter-details/7ee0fd831c0fe7c3"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 36,
+            "raw": "15 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/8afe89f5c451b372",
+    "fetchedAt": "2026-05-19T14:09:38.546Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "2a5484a6d5e7a2da",
+  "url": "http://www.ufcstats.com/fight-details/2a5484a6d5e7a2da",
+  "event": {
+    "id": "2a470ad41c22c25a",
+    "name": "UFC Fight Night: Lewis vs. Daukaus",
+    "url": "http://www.ufcstats.com/event-details/2a470ad41c22c25a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d247691a6c0e9034",
+      "name": "Cub Swanson",
+      "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "92a9aa9c93192871",
+      "name": "Darren Elkins",
+      "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871",
+      "nickname": "The Damage",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:12",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "92a9aa9c93192871",
+        "name": "Darren Elkins",
+        "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 30,
+          "raw": "18 of 30"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 30,
+          "raw": "18 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      },
+      {
+        "fighter": {
+          "id": "92a9aa9c93192871",
+          "name": "Darren Elkins",
+          "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 19,
+          "raw": "2 of 19"
+        },
+        "significantStrikePercent": 10,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 22,
+          "raw": "5 of 22"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "92a9aa9c93192871",
+          "name": "Darren Elkins",
+          "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        },
+        {
+          "fighter": {
+            "id": "92a9aa9c93192871",
+            "name": "Darren Elkins",
+            "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "significantStrikePercent": 10,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 22,
+            "raw": "5 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "92a9aa9c93192871",
+        "name": "Darren Elkins",
+        "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 30,
+          "raw": "18 of 30"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 16,
+          "attempted": 28,
+          "raw": "16 of 28"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 26,
+          "raw": "16 of 26"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "92a9aa9c93192871",
+          "name": "Darren Elkins",
+          "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 19,
+          "raw": "2 of 19"
+        },
+        "significantStrikePercent": 10,
+        "head": {
+          "landed": 2,
+          "attempted": 18,
+          "raw": "2 of 18"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 19,
+          "raw": "2 of 19"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "92a9aa9c93192871",
+          "name": "Darren Elkins",
+          "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 30,
+            "raw": "18 of 30"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 16,
+            "attempted": 28,
+            "raw": "16 of 28"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 26,
+            "raw": "16 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "92a9aa9c93192871",
+            "name": "Darren Elkins",
+            "url": "http://www.ufcstats.com/fighter-details/92a9aa9c93192871"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "significantStrikePercent": 10,
+          "head": {
+            "landed": 2,
+            "attempted": 18,
+            "raw": "2 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/2a5484a6d5e7a2da",
+    "fetchedAt": "2026-05-19T14:11:07.102Z"
+  }
+}

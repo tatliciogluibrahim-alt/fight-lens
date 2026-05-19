@@ -1,0 +1,404 @@
+{
+  "id": "7d4e49d8a6678157",
+  "url": "http://www.ufcstats.com/fight-details/7d4e49d8a6678157",
+  "event": {
+    "id": "253d3f9e97ca149a",
+    "name": "UFC 274: Oliveira vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/253d3f9e97ca149a"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "07225ba28ae309b6",
+      "name": "Charles Oliveira",
+      "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6",
+      "nickname": "Do Bronxs",
+      "result": "W"
+    },
+    {
+      "id": "9e8f6c728eb01124",
+      "name": "Justin Gaethje",
+      "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124",
+      "nickname": "The Highlight",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:22",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "07225ba28ae309b6",
+        "name": "Charles Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+      },
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 52,
+          "raw": "33 of 52"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:39",
+        "controlSeconds": 39
+      },
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 33,
+          "raw": "21 of 33"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 33,
+          "raw": "21 of 33"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 47,
+            "raw": "30 of 47"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 52,
+            "raw": "33 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:39",
+          "controlSeconds": 39
+        },
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "07225ba28ae309b6",
+        "name": "Charles Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+      },
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 47,
+          "raw": "30 of 47"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 18,
+          "attempted": 32,
+          "raw": "18 of 32"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 13,
+          "raw": "11 of 13"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 34,
+          "raw": "20 of 34"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 33,
+          "raw": "21 of 33"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 13,
+          "attempted": 22,
+          "raw": "13 of 22"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 26,
+          "raw": "15 of 26"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 47,
+            "raw": "30 of 47"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 13,
+            "attempted": 22,
+            "raw": "13 of 22"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/7d4e49d8a6678157",
+    "fetchedAt": "2026-05-19T14:10:10.747Z"
+  }
+}

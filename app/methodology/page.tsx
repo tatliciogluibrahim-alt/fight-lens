@@ -204,13 +204,14 @@ export default function MethodologyPage() {
             </div>
 
             <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
-              <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=76)</p>
+              <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=76, deeper coverage)</p>
               <p className="mt-1 text-sm leading-6 text-muted">
-                The historical backtest was expanded from 13 fights to 76 fights across 6 completed
-                events. The current model is directionally useful but not proven. It trails the
-                better-record baseline (59% vs 66%) on this sample and shows overconfidence in the
-                60–80% buckets. More data coverage and a larger sample are needed before any model
-                grade unlocks. These backtests are <span className="text-foreground">retroactive validation runs</span> —
+                The historical backtest covers 76 fights across 6 completed events. After a deeper
+                fighter-history ingestion pass, per-feature coverage moved from ~78% to ~85%, and
+                winner accuracy moved from 59% to 66% — level with the better-record baseline.
+                Brier moved from 0.251 to 0.236. The 60–80% confidence buckets still show some
+                overconfidence at small n. More events are needed before any model grade unlocks.
+                These backtests are <span className="text-foreground">retroactive validation runs</span> —
                 they are not the same as logged pre-fight calls, and are listed separately on the
                 Model Record page.
               </p>

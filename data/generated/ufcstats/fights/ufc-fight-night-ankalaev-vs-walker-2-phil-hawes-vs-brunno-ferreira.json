@@ -1,0 +1,404 @@
+{
+  "id": "d0d99889c6abd8e1",
+  "url": "http://www.ufcstats.com/fight-details/d0d99889c6abd8e1",
+  "event": {
+    "id": "010986ee359fb863",
+    "name": "UFC Fight Night: Ankalaev vs. Walker 2",
+    "url": "http://www.ufcstats.com/event-details/010986ee359fb863"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "547afe1017e72dbe",
+      "name": "Phil Hawes",
+      "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe",
+      "nickname": "No Hype",
+      "result": "L"
+    },
+    {
+      "id": "1e719d4b676dc19a",
+      "name": "Brunno Ferreira",
+      "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a",
+      "nickname": "The Hulk",
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:55",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "547afe1017e72dbe",
+        "name": "Phil Hawes",
+        "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+      },
+      {
+        "id": "1e719d4b676dc19a",
+        "name": "Brunno Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 28,
+          "raw": "13 of 28"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      },
+      {
+        "fighter": {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 43,
+          "raw": "19 of 43"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 49,
+          "raw": "24 of 49"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:37",
+        "controlSeconds": 97
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "547afe1017e72dbe",
+            "name": "Phil Hawes",
+            "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        },
+        {
+          "fighter": {
+            "id": "1e719d4b676dc19a",
+            "name": "Brunno Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 43,
+            "raw": "19 of 43"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 49,
+            "raw": "24 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:37",
+          "controlSeconds": 97
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "547afe1017e72dbe",
+        "name": "Phil Hawes",
+        "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+      },
+      {
+        "id": "1e719d4b676dc19a",
+        "name": "Brunno Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 8,
+          "attempted": 18,
+          "raw": "8 of 18"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 24,
+          "raw": "12 of 24"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 43,
+          "raw": "19 of 43"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 18,
+          "attempted": 38,
+          "raw": "18 of 38"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 33,
+          "raw": "15 of 33"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        {
+          "id": "1e719d4b676dc19a",
+          "name": "Brunno Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "547afe1017e72dbe",
+            "name": "Phil Hawes",
+            "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1e719d4b676dc19a",
+            "name": "Brunno Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/1e719d4b676dc19a"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 43,
+            "raw": "19 of 43"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 18,
+            "attempted": 38,
+            "raw": "18 of 38"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/d0d99889c6abd8e1",
+    "fetchedAt": "2026-05-19T14:10:32.518Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "4c9bbd9758be1168",
+  "url": "http://www.ufcstats.com/fight-details/4c9bbd9758be1168",
+  "event": {
+    "id": "3c6976f8182d9527",
+    "name": "UFC 288: Sterling vs. Cejudo",
+    "url": "http://www.ufcstats.com/event-details/3c6976f8182d9527"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2558ae2e5671e318",
+      "name": "Khaos Williams",
+      "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318",
+      "nickname": "The OxFighter",
+      "result": "W"
+    },
+    {
+      "id": "40a456a25d52ee65",
+      "name": "Rolando Bedoya",
+      "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65",
+      "nickname": "The Machine",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      },
+      {
+        "id": "40a456a25d52ee65",
+        "name": "Rolando Bedoya",
+        "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 130,
+          "attempted": 283,
+          "raw": "130 of 283"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 131,
+          "attempted": 284,
+          "raw": "131 of 284"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:13",
+        "controlSeconds": 73
+      },
+      {
+        "fighter": {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 149,
+          "attempted": 209,
+          "raw": "149 of 209"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 150,
+          "attempted": 210,
+          "raw": "150 of 210"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 88,
+            "raw": "44 of 88"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 45,
+            "attempted": 89,
+            "raw": "45 of 89"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:48",
+          "controlSeconds": 48
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 56,
+            "raw": "44 of 56"
+          },
+          "significantStrikePercent": 78,
+          "totalStrikes": {
+            "landed": 45,
+            "attempted": 57,
+            "raw": "45 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 90,
+            "raw": "39 of 90"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 90,
+            "raw": "39 of 90"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 60,
+            "raw": "40 of 60"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 60,
+            "raw": "40 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 105,
+            "raw": "47 of 105"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 105,
+            "raw": "47 of 105"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 65,
+            "attempted": 93,
+            "raw": "65 of 93"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 65,
+            "attempted": 93,
+            "raw": "65 of 93"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2558ae2e5671e318",
+        "name": "Khaos Williams",
+        "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+      },
+      {
+        "id": "40a456a25d52ee65",
+        "name": "Rolando Bedoya",
+        "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        "significantStrikes": {
+          "landed": 130,
+          "attempted": 283,
+          "raw": "130 of 283"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 68,
+          "attempted": 205,
+          "raw": "68 of 205"
+        },
+        "body": {
+          "landed": 29,
+          "attempted": 38,
+          "raw": "29 of 38"
+        },
+        "leg": {
+          "landed": 33,
+          "attempted": 40,
+          "raw": "33 of 40"
+        },
+        "distance": {
+          "landed": 126,
+          "attempted": 276,
+          "raw": "126 of 276"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        },
+        "significantStrikes": {
+          "landed": 149,
+          "attempted": 209,
+          "raw": "149 of 209"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 103,
+          "attempted": 150,
+          "raw": "103 of 150"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 17,
+          "raw": "15 of 17"
+        },
+        "leg": {
+          "landed": 31,
+          "attempted": 42,
+          "raw": "31 of 42"
+        },
+        "distance": {
+          "landed": 136,
+          "attempted": 196,
+          "raw": "136 of 196"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 13,
+          "raw": "13 of 13"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 88,
+            "raw": "44 of 88"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 21,
+            "attempted": 59,
+            "raw": "21 of 59"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 42,
+            "attempted": 84,
+            "raw": "42 of 84"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 44,
+            "attempted": 56,
+            "raw": "44 of 56"
+          },
+          "significantStrikePercent": 78,
+          "head": {
+            "landed": 26,
+            "attempted": 34,
+            "raw": "26 of 34"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 49,
+            "raw": "37 of 49"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 90,
+            "raw": "39 of 90"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 17,
+            "attempted": 60,
+            "raw": "17 of 60"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 87,
+            "raw": "37 of 87"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 60,
+            "raw": "40 of 60"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 25,
+            "attempted": 38,
+            "raw": "25 of 38"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 57,
+            "raw": "37 of 57"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2558ae2e5671e318",
+          "name": "Khaos Williams",
+          "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+        },
+        {
+          "id": "40a456a25d52ee65",
+          "name": "Rolando Bedoya",
+          "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2558ae2e5671e318",
+            "name": "Khaos Williams",
+            "url": "http://www.ufcstats.com/fighter-details/2558ae2e5671e318"
+          },
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 105,
+            "raw": "47 of 105"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 30,
+            "attempted": 86,
+            "raw": "30 of 86"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "distance": {
+            "landed": 47,
+            "attempted": 105,
+            "raw": "47 of 105"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "40a456a25d52ee65",
+            "name": "Rolando Bedoya",
+            "url": "http://www.ufcstats.com/fighter-details/40a456a25d52ee65"
+          },
+          "significantStrikes": {
+            "landed": 65,
+            "attempted": 93,
+            "raw": "65 of 93"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 52,
+            "attempted": 78,
+            "raw": "52 of 78"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 62,
+            "attempted": 90,
+            "raw": "62 of 90"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/4c9bbd9758be1168",
+    "fetchedAt": "2026-05-19T14:12:46.822Z"
+  }
+}
