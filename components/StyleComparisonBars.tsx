@@ -188,37 +188,48 @@ export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsP
   return (
     <section id="section-shape" className="module-card scroll-mt-32">
       <div className="module-header">
-        <p className="mono-label">shape</p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          style breakdown.
+        <p className="mono-label accent-rail">fight shape</p>
+        <h2 className="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+          shape fingerprint.
         </h2>
-        <p className="mt-3 text-sm text-muted">
-          Style-only comparison — shows how the matchup tilts, not who the model picks.
+        <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
+          Where each fighter pressures the matchup. Style-only — does not determine the
+          model call. Watch the overlap and divergence, not the absolute scores.
         </p>
       </div>
 
       <div className="module-body space-y-8">
         {/*
-          ── Overlay comparison radar ─────────────────────────────────────────
-          This is the signature asset: both fighter shapes on one canvas so
-          the overlap and divergence read instantly. The individual radars
-          below give per-fighter detail.
+          ── Hero overlay radar ────────────────────────────────────────────────
+          Promoted to the signature feature surface. Broadcast-style fighter
+          chips, larger canvas, and an explicit data legend so the radar
+          stops looking like a chart-library default and starts feeling like
+          a scouting-room read.
         */}
-        <div className="rounded-2xl border border-accent/15 bg-background/60 p-5 md:p-6">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div className="relative overflow-hidden rounded-3xl border border-accent/15 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
+          {/* Corner registration marks — broadcast HUD detail */}
+          <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-accent/30" />
+          <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-accent/30" />
+          <span className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b border-l border-accent/30" />
+          <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-accent/30" />
+
+          {/* Header: label + fighter chips */}
+          <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="mono-label">shape comparison</p>
-            <div className="flex items-center gap-4 text-xs text-subtle">
-              <span className="flex items-center gap-1.5">
-                <span className="inline-block h-px w-6 bg-accent" />
-                {fighterA.name.split(" ").pop()}
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/[0.08] px-3 py-1 text-[11px] font-medium tracking-tight text-accent">
+                <span className="size-2 rounded-full bg-accent" />
+                {fighterA.name}
               </span>
-              <span className="flex items-center gap-1.5">
-                <span className="inline-block h-px w-5 border-t border-dashed border-muted" />
-                {fighterB.name.split(" ").pop()}
+              <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-muted">
+                <span className="size-2 rounded-full bg-muted" />
+                {fighterB.name}
               </span>
             </div>
           </div>
-          <div className="mx-auto max-w-[340px] md:max-w-[380px]">
+
+          {/* The radar itself — larger on desktop, fluid on mobile */}
+          <div className="mx-auto w-full max-w-[460px] md:max-w-[520px]">
             <OverlayRadar
               profileA={fighterA.styleProfile}
               profileB={fighterB.styleProfile}
@@ -226,8 +237,9 @@ export function StyleComparisonBars({ fighterA, fighterB }: StyleComparisonBarsP
               nameB={fighterB.name}
             />
           </div>
-          <p className="mt-2 text-center text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-            Shape fingerprint · directional only · not a winner call
+
+          <p className="mt-4 text-center text-[11px] uppercase tracking-[0.1em] text-subtle/80">
+            shape fingerprint · directional only · not a winner forecast
           </p>
         </div>
 

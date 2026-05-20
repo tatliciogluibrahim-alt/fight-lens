@@ -4,7 +4,7 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
 import { getLatestEvent } from "@/lib/events/registry";
-import { getPredictionRecordCall } from "@/lib/predictionViewModel";
+import { buildPredictionViewModelBundle, getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 function methodLabel(method: string): string {
@@ -96,6 +96,17 @@ export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
   const predictions = getLockedPredictions();
   const latestEvent = getLatestEvent();
+  const mainFight = latestEvent.fights[0];
+
+  // Build the live preview for the main event of the next card. Pulls the
+  // canonical view model so the homepage hero never shows different numbers
+  // than the fight page would.
+  const mainFightPrediction = predictions.find((p) => p.fightId === mainFight.id) ?? null;
+  const { viewModel: mainVM } = buildPredictionViewModelBundle({
+    eventId: latestEvent.event.id,
+    fight: mainFight,
+    lockedPrediction: mainFightPrediction,
+  });
 
   // Group predictions by event, most recent first
   const eventGroups = predictions.reduce<Record<string, typeof predictions>>(
@@ -112,32 +123,103 @@ export default function Home() {
     <>
       <AppHeader />
       <main>
-        {/* Hero */}
-        <section className="section-shell py-12 md:py-20">
-          <div className="max-w-4xl">
-            <p className="mono-label">fight lens · forecast · tracked</p>
-            <h1 className="mt-6 text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-8xl">
-              predictive analysis.
-              <span className="block text-accent">every call tracked.</span>
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Fight Lens models UFC matchups before each card, logs every public call, and scores
-              every result. Signal-based — not a guarantee.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href={`/events/${latestEvent.event.id}`}
-                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
-              >
-                {latestEvent.event.name.split(":")[0]} Matchups →
-              </Link>
-              <Link
-                href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
-              >
-                Model Record
-              </Link>
+        {/* Hero: 2-column on desktop — manifesto + live next-card preview */}
+        <section className="section-shell pt-10 pb-8 md:pt-16 md:pb-12">
+          <div className="grid gap-10 lg:grid-cols-[1.25fr_0.95fr] lg:items-end">
+            {/* Left: manifesto */}
+            <div>
+              <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
+              <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.5rem]">
+                predictive analysis.
+                <span className="block text-accent">every call tracked.</span>
+              </h1>
+              <p className="mt-5 max-w-xl text-base leading-7 text-muted md:text-lg md:leading-8">
+                Fight Lens models UFC matchups before each card, logs every public call,
+                and scores every result. Signal-based — not a guarantee.
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href={`/events/${latestEvent.event.id}`}
+                  className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
+                >
+                  Open {latestEvent.event.name.split(":")[0]} →
+                </Link>
+                <Link
+                  href="/record"
+                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
+                >
+                  Model Record
+                </Link>
+              </div>
             </div>
+
+            {/* Right: next card preview — broadcast-style scouting card */}
+            <Link
+              href={`/events/${latestEvent.event.id}/${mainFight.id}`}
+              className="group relative block overflow-hidden rounded-3xl border border-accent/15 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5 transition hover:border-accent/35 md:p-7"
+            >
+              {/* HUD corner marks */}
+              <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-accent/40" />
+              <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-accent/40" />
+              <span className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b border-l border-accent/40" />
+              <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-accent/40" />
+
+              {/* Top: status + label */}
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="mono-label">next card · main event</p>
+                <span className="status-pill is-live">
+                  <span className="dot" />
+                  forecast live
+                </span>
+              </div>
+
+              {/* Event title */}
+              <p className="data-text mt-5 text-[11px] uppercase tracking-[0.18em] text-subtle">
+                {latestEvent.event.name}
+              </p>
+
+              {/* Matchup */}
+              <h2 className="mt-2 text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-4xl">
+                {mainFight.fighters.fighterA.name.split(" ").pop()}
+                <span className="px-2 text-subtle">vs.</span>
+                {mainFight.fighters.fighterB.name.split(" ").pop()}
+              </h2>
+
+              {/* Call line */}
+              {mainVM.callState === "lockedCall" || mainVM.callState === "currentCall" ? (
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p className="mono-label">model call</p>
+                    <p className="mt-2 flex items-baseline gap-2">
+                      <span className="text-xl font-semibold tracking-tight text-accent md:text-2xl">
+                        {mainVM.predictedWinner?.name}
+                      </span>
+                    </p>
+                    <p className="data-text mt-1 text-3xl font-light leading-none text-foreground md:text-4xl">
+                      {mainVM.winnerProbability}%
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mono-label">most likely finish</p>
+                    <p className="mt-2 text-lg font-medium text-foreground">
+                      {mainVM.methodLean ?? "—"}
+                    </p>
+                    <p className="data-text mt-1 text-[11px] uppercase tracking-[0.12em] text-subtle">
+                      directional only
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <p className="mt-5 text-sm leading-6 text-muted">
+                  {mainVM.displayedCallLabel}
+                </p>
+              )}
+
+              <div className="mt-6 flex items-center justify-between gap-3 border-t border-line/60 pt-4 text-[11px] uppercase tracking-[0.14em]">
+                <span className="text-subtle">{latestEvent.event.date ?? "date pending"}</span>
+                <span className="text-subtle transition group-hover:text-accent">open read →</span>
+              </div>
+            </Link>
           </div>
         </section>
 
@@ -160,8 +242,8 @@ export default function Home() {
           <section className="section-shell py-6 md:py-10">
             <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
               <div>
-                <p className="mono-label">prediction log</p>
-                <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
+                <p className="mono-label accent-rail">prediction log</p>
+                <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
                   logged calls.
                 </h2>
               </div>

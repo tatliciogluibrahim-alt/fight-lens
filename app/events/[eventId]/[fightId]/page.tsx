@@ -6,6 +6,7 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { FightReadSnapshot } from "@/components/FightReadSnapshot";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
@@ -165,6 +166,13 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             <FighterHeroPanel fighter={fighterB} align="right" />
           </div>
         </section>
+
+        {/* At-a-glance snapshot — sits above the tabs so the full read is
+            readable without clicking anywhere. Keeps the page from feeling
+            like "find your answer in one of the tabs." */}
+        <div className="mt-6 md:mt-8">
+          <FightReadSnapshot viewModel={vm} />
+        </div>
 
         {/* Analysis tabs */}
         <div className="mt-6 md:mt-8">

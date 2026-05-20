@@ -176,8 +176,8 @@ export default function RecordPage() {
           </Link>
 
           <div className="mt-8">
-            <p className="mono-label">model record</p>
-            <h1 className="mt-5 text-5xl font-semibold leading-none tracking-[-0.05em] md:text-7xl">
+            <p className="mono-label accent-rail">model record</p>
+            <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.05em] md:text-7xl">
               every call. <span className="text-accent">tracked.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">

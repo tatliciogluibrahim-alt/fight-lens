@@ -107,29 +107,58 @@ export default function MethodologyPage() {
             ← back
           </Link>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-end">
-            <div>
-              <p className="mono-label">methodology</p>
-              <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-none tracking-normal md:text-7xl">
-                how the model reads a matchup.
-              </h1>
-              <p className="mt-6 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens turns public stats, reviewed context, and computed signals into a
-                model call. The goal is not certainty — it is to show the shape of the matchup
-                clearly enough that a creator, analyst, or serious fan can explain what matters.
+          <div className="mt-8">
+            <p className="mono-label accent-rail">how it works</p>
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.04em] md:text-7xl">
+              how the model reads a matchup.
+            </h1>
+            <p className="mt-6 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
+              Fight Lens turns public stats, reviewed context, and computed signals into a
+              model call. The goal is not certainty — it is to show the shape of the matchup
+              clearly enough that a creator, analyst, or serious fan can explain what matters.
+            </p>
+          </div>
+
+          {/* Scan-card grid: 30-second mental model for first-time visitors */}
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            <div className="relative overflow-hidden rounded-2xl border border-line bg-surface/70 p-5 md:p-6">
+              <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-accent" />
+              <p className="mono-label">what it uses</p>
+              <p className="mt-3 text-sm leading-6 text-muted">
+                Public stat history, recent form, style signals, and stat differentials between
+                the two fighters. Defensive stats are sourced from prior bouts where the detail
+                data is available.
               </p>
             </div>
+            <div className="relative overflow-hidden rounded-2xl border border-line bg-surface/70 p-5 md:p-6">
+              <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-wrong/70" />
+              <p className="mono-label">what it does not know</p>
+              <p className="mt-3 text-sm leading-6 text-muted">
+                Camp news, injuries, weight cuts, mid-fight adjustments, or judging quirks —
+                anything outside public stat records. Signal-based, not omniscient.
+              </p>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl border border-line bg-surface/70 p-5 md:p-6">
+              <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-success/70" />
+              <p className="mono-label">how to read it</p>
+              <p className="mt-3 text-sm leading-6 text-muted">
+                Read the model call first, then read strength. Method lean is directional — it
+                is not a second winner forecast. Style edge shows how the shape tilts, separate
+                from the call.
+              </p>
+            </div>
+          </div>
 
-            <div className="rounded-2xl border border-line bg-surface/70 p-5">
-              <p className="mono-label">data stance</p>
-              <div className="mt-5 divide-y divide-line">
-                {provenanceRows.map((row) => (
-                  <div key={row.label} className="grid gap-3 py-4 first:pt-0 last:pb-0 sm:grid-cols-[110px_1fr]">
-                    <p className="text-sm font-medium text-accent">{row.label}</p>
-                    <p className="text-sm leading-6 text-muted">{row.body}</p>
-                  </div>
-                ))}
-              </div>
+          {/* Data stance — kept, but de-emphasized into a quieter strip */}
+          <div className="mt-8 rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
+            <p className="mono-label">data stance</p>
+            <div className="mt-4 grid gap-x-6 gap-y-3 sm:grid-cols-3">
+              {provenanceRows.map((row) => (
+                <div key={row.label}>
+                  <p className="text-sm font-medium text-accent">{row.label}</p>
+                  <p className="mt-1 text-sm leading-6 text-muted">{row.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
