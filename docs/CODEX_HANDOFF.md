@@ -159,6 +159,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 10. **Non-sticky section navigation hotfix** — `FightPageTabs` now renders Call, Shape, and Details as real anchored sections with simple in-page anchor links. The tab row is normal document flow, has no sticky/fixed positioning, no scrollspy, and no manual `scrollIntoView` behavior.
 11. **Model-call display semantics** — `ProbabilityBar` now uses a call-first layout with the non-called side labeled `Live path`. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
 12. **Fight-read final QA** — source/static route checks verified home, events, fight pages, record, and methodology. Event-row expanded details were neutralized so amber is not used as a generic chart/comparison color.
+13. **Non-sticky tab verification** — proof grep and static route checks confirmed `FightPageTabs` has no sticky/fixed/blur/scrollIntoView behavior and still renders stable Call, Shape, and Details anchors.
 
 ---
 
@@ -169,7 +170,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 | Radar axis labels may clip at 375 px viewport (iPhone SE) | `components/StyleRadar.tsx` — `LABEL_RADIUS=148`, `SIZE=360` | P0 — verify on device |
 | SVG `<title>` tooltips don't fire on touch | `StyleRadar.tsx` data dot `<title>` elements | P1 — replace with pointer-event tooltip |
 | No automated test for `prefers-reduced-motion` behavior | `app/globals.css` reduced-motion block | P0 — manual device QA only |
-| Browser-level hash landing should be re-checked locally after the non-sticky tab hotfix | `#section-call`, `#section-shape`, `#section-details` — tab row is no longer sticky/fixed; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
+| Browser-level hash landing should be re-checked locally after the non-sticky tab hotfix | `#section-call`, `#section-shape`, `#section-details` — source/static checks pass and tab row is no longer sticky/fixed; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
 | 60–80% calibration buckets are overconfident | `lib/backtest/calibration.ts` | P2 — diagnostics only, no math changes yet |
 | Elo baseline has 76% no-picks due to cold start | `scripts/backtest/elo-baseline.ts` | P3 — experiment with warm seeding |
 

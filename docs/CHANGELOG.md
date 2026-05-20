@@ -2,6 +2,13 @@
 
 ## May 2026
 
+### Non-sticky fight tabs stabilization verification
+
+- Re-verified the fight-page tab row is normal in-page content after the hotfix: no sticky/fixed/blur/scrollIntoView behavior remains in the fight tab/page files.
+- Static route checks confirmed home, events, UFC 329, UFC 329 main event anchors, UFC 328 Chimaev/Strickland anchors, record, and methodology still render expected navigation and section headings.
+- Confirmed built fight-page HTML includes `section-call`, `section-shape`, and `section-details` plus simple tab anchor hrefs for Call, Shape, and Details.
+- No model math, prediction values, fight data, locked calls, ingestion, backtest logic, generated artifacts, or public scoring changed.
+
 ### P0 non-sticky fight tabs hotfix
 
 - Removed the remaining fight-page tab overlay behavior entirely: `FightPageTabs` is now plain in-page content, not sticky or fixed.
