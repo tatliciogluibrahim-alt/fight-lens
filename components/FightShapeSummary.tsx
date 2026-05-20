@@ -25,13 +25,13 @@ function StyleEdgeRow({ metric, accent = false }: { metric: FighterMetricScore; 
           <p className="text-sm font-semibold tracking-tight">{metric.fighterName}</p>
           <p className="data-text mt-1 text-xs text-subtle">{metric.label}</p>
         </div>
-        <p className={`data-text text-2xl ${accent ? "text-accent" : "text-foreground"}`}>
+        <p className={`data-text text-2xl ${accent ? "text-foreground" : "text-muted"}`}>
           {metric.score ?? "n/a"}
         </p>
       </div>
       <div className="h-2.5 rounded-full bg-surface-2">
         <div
-          className={`h-2.5 rounded-full ${accent ? "bg-accent" : "bg-muted"}`}
+          className={`h-2.5 rounded-full ${accent ? "bg-foreground/80" : "bg-muted"}`}
           style={{ width: `${score}%` }}
         />
       </div>

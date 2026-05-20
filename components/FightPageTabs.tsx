@@ -12,7 +12,7 @@ interface FightPageTabsProps {
   panels: Record<string, ReactNode>;
 }
 
-const STICKY_SCROLL_OFFSET = 144;
+const STICKY_SCROLL_OFFSET = 176;
 
 function hashToTabId(hash: string) {
   const clean = hash.replace(/^#/, "");
@@ -62,9 +62,9 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
       {/*
         Tab bar — sticky just below the main AppHeader (h-16 = 64px, so top-16).
         z-20 keeps it below the header's z-30 but above page content.
-        bg-background/95 + backdrop-blur gives a clean separation from content below.
+        solid background keeps the sticky row from visually covering section titles.
       */}
-      <div className="sticky top-16 z-20 bg-background/95 py-2 backdrop-blur-sm">
+      <div className="sticky top-16 z-20 bg-background py-2">
         <div className="flex gap-1.5 overflow-x-auto rounded-full border border-line bg-surface/95 p-1 shadow-sm">
           {tabs.map((tab) => {
             const isActive = active === tab.id;
@@ -88,14 +88,14 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
 
       {/*
         Active panel. ref is used by handleTabChange to find the correct scroll
-        target. scroll-mt-36 (144px) covers the stacked sticky header + tab bar
+        target. scroll-mt-44 (176px) covers the stacked sticky header + tab bar
         if the panel is itself the target of a hash-navigation link.
 
         key={active} forces a remount when the active tab changes, which
         re-triggers the fl-tab-panel entrance animation defined in globals.css.
         Reduced-motion users get an instant cut via the global override.
       */}
-      <div ref={panelRef} id={`section-${active}`} className="scroll-mt-36 space-y-5">
+      <div ref={panelRef} id={`section-${active}`} className="scroll-mt-44 space-y-5">
         <div key={active} className="fl-tab-panel space-y-5">
           {panels[active]}
         </div>

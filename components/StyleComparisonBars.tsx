@@ -67,7 +67,7 @@ function ShapeCard({ card }: { card: NarrativeAxisCard }) {
       <p className="mt-2 text-sm leading-6 text-muted">{card.body}</p>
       {card.scoreA != null && card.scoreB != null ? (
         <p className="data-text mt-3 text-[10px] uppercase tracking-[0.12em] text-subtle">
-          <span className="text-sky-300">{card.scoreA}</span>
+          <span className="text-foreground">{card.scoreA}</span>
           <span className="text-subtle/60"> / </span>
           <span>{card.scoreB}</span>
         </p>
@@ -79,7 +79,7 @@ function ShapeCard({ card }: { card: NarrativeAxisCard }) {
 // ─── Overlay radar — both fighters on one chart ───────────────────────────────
 //
 // Renders two polygons on the same axes so the shapes can be compared directly.
-// Sky = Fighter A, muted = Fighter B. Neither color is a winner forecast.
+// Off-white = Fighter A, muted slate = Fighter B. Neither color is a winner forecast.
 
 function OverlayRadar({
   profileA,
@@ -126,7 +126,7 @@ function OverlayRadar({
       aria-label={`${nameA} vs ${nameB} style comparison radar`}
     >
       {/* Background halo */}
-      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(56,189,248,0.018)" />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(226,232,240,0.018)" />
       <circle
         cx={CENTER} cy={CENTER} r={RADIUS + 30}
         fill="none" stroke="var(--line)" strokeOpacity={0.4} strokeDasharray="2 8"
@@ -184,8 +184,8 @@ function OverlayRadar({
       {canFillA && (
         <polygon
           points={toStr(pts(dimsA))}
-          fill="rgba(56,189,248,0.11)"
-          stroke="#38bdf8"
+          fill="rgba(226,232,240,0.08)"
+          stroke="var(--foreground)"
           strokeWidth={2.4}
           strokeLinejoin="round"
           className="fl-radar-bloom fl-radar-bloom-delay"
@@ -199,7 +199,7 @@ function OverlayRadar({
         return (
           <g key={`a-${d.key}`} className="fl-radar-bloom fl-radar-bloom-delay">
             <circle cx={p.x} cy={p.y} r={4}
-              fill="var(--background)" stroke="#38bdf8" strokeWidth={2}
+              fill="var(--background)" stroke="var(--foreground)" strokeWidth={2}
               className="fl-radar-dot"
             >
               <title>{`${nameA} · ${d.label}: ${d.value}`}</title>
@@ -321,8 +321,8 @@ export function StyleComparisonBars({
           <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="mono-label">shape comparison</p>
             <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-sky-300/30 bg-sky-300/[0.08] px-3 py-1 text-[11px] font-medium tracking-tight text-sky-300">
-                <span className="size-2 rounded-full bg-sky-300" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-foreground">
+                <span className="size-2 rounded-full bg-foreground/80" />
                 {fighterA.name}
               </span>
               <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-muted">
@@ -388,13 +388,13 @@ export function StyleComparisonBars({
           <div className="mb-3 flex items-baseline justify-between gap-3">
             <p className="mono-label">axis breakdown</p>
             <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-              where the style tilts
+              Larger number = stronger style signal
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-line bg-background/30">
             {/* Column headers */}
             <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-line px-5 py-3">
-              <p className="truncate text-sm font-semibold text-sky-300">{fighterA.name}</p>
+              <p className="truncate text-sm font-semibold text-foreground">{fighterA.name}</p>
               <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
                 axis · Δ
               </p>
@@ -405,7 +405,6 @@ export function StyleComparisonBars({
               const aValue = a.hasData ? (a.value ?? null) : null;
               const bValue = b?.hasData ? (b.value ?? null) : null;
               const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
-              const aLeads = (aValue ?? 0) >= (bValue ?? 0);
               const bothPresent = aValue != null && bValue != null;
               const delta = bothPresent ? Math.abs(aValue - bValue) : null;
 
@@ -413,7 +412,7 @@ export function StyleComparisonBars({
                 <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
                   {/* Label + scores + Δ */}
                   <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-                    <span className={`data-text text-sm tabular-nums ${aLeads ? "text-sky-300" : "text-muted"}`}>
+                    <span className="data-text text-sm tabular-nums text-foreground">
                       {aValue != null ? aValue : "—"}
                     </span>
                     <div className="flex w-20 flex-col items-center gap-0.5">
@@ -426,7 +425,7 @@ export function StyleComparisonBars({
                         </span>
                       ) : null}
                     </div>
-                    <span className={`data-text text-right text-sm tabular-nums ${!aLeads ? "text-foreground" : "text-muted"}`}>
+                    <span className="data-text text-right text-sm tabular-nums text-muted">
                       {bValue != null ? bValue : "—"}
                     </span>
                   </div>
@@ -436,7 +435,7 @@ export function StyleComparisonBars({
                     <div className="flex justify-end rounded-l-full bg-surface-2">
                       {aValue != null ? (
                         <div
-                          className="h-2 rounded-l-full bg-sky-300"
+                          className="h-2 rounded-l-full bg-foreground/80"
                           style={{ width: `${(aValue / max) * 100}%` }}
                         />
                       ) : null}

@@ -99,6 +99,14 @@ function EventCard({
             >
               Open card
             </Link>
+            {stats.resolved.length > 0 && (
+              <Link
+                href="/record"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
+              >
+                See record
+              </Link>
+            )}
           </div>
         </div>
 
@@ -152,7 +160,7 @@ export default function EventsIndexPage() {
         <section className="section-shell py-10 md:py-16">
           <p className="mono-label accent-rail">events</p>
           <h1 className="mt-1 text-5xl font-semibold leading-[0.94] tracking-[-0.05em] md:text-7xl">
-            open a card. <span className="text-accent">read the fights.</span>
+            open a card. <span className="text-accent">read the calls.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
             Start with the current forecast, then browse scored cards and jump into any fight read.
@@ -171,7 +179,7 @@ export default function EventsIndexPage() {
             <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
               <div>
                 <p className="mono-label accent-rail">past cards</p>
-                <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">scored and browseable.</h2>
+                <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">past cards, scored.</h2>
               </div>
               <Link href="/record" className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground">
                 model record →

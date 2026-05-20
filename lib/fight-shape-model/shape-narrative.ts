@@ -197,7 +197,7 @@ function buildHeadline(
 
   if (biggest.absDelta >= 15) {
     if (supporting.length >= 1) {
-      return `${lead} holds the clearer edge on ${axis}, with the next-clearest signal pointing the same way. Shape only — not a winner forecast.`;
+      return `${lead}'s clearest style edge is ${axis}. The radar is useful context, but the model call still lives above.`;
     }
     return `${lead} holds the clearer edge on ${axis}. Other axes read tighter, so the shape doesn't separate cleanly.`;
   }

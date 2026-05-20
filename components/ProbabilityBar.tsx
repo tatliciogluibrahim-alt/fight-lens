@@ -7,68 +7,85 @@ interface ProbabilityBarProps {
 }
 
 export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: ProbabilityBarProps) {
-  const callSide = tooClose ? "neutral" : probA > probB ? "left" : "right";
-  const aIsCall = callSide === "left";
-  const bIsCall = callSide === "right";
-  const favName = aIsCall ? nameA : nameB;
-  const favProb = Math.max(probA, probB);
+  const aIsCall = !tooClose && probA > probB;
+  const bIsCall = !tooClose && probB > probA;
+  const calledName = aIsCall ? nameA : bIsCall ? nameB : null;
+  const calledProb = aIsCall ? probA : bIsCall ? probB : null;
+  const otherName = aIsCall ? nameB : bIsCall ? nameA : null;
+  const otherProb = aIsCall ? probB : bIsCall ? probA : null;
 
-  const colorA = tooClose ? "text-muted" : aIsCall ? "text-accent" : "text-subtle";
-  const colorB = tooClose ? "text-muted" : bIsCall ? "text-accent" : "text-subtle";
+  if (tooClose || !calledName || calledProb == null || !otherName || otherProb == null) {
+    return (
+      <div className="space-y-5" data-call-state="no-call" data-accent-side="neutral">
+        <div className="flex items-center justify-between gap-4">
+          <p className="mono-label max-w-[42%] truncate text-left">{nameA}</p>
+          <p className="mono-label shrink-0">vs</p>
+          <p className="mono-label max-w-[42%] truncate text-right">{nameB}</p>
+        </div>
 
-  const leftWidth = tooClose ? "50%" : `${probA}%`;
-  const rightWidth = tooClose ? "50%" : `${probB}%`;
-  const callLabel = tooClose ? "Too close to call" : `Model call: ${favName} · ${favProb}% win probability`;
+        <div className="rounded-2xl border border-line bg-surface/60 p-6 text-center md:p-8">
+          <p className="mono-label">model call</p>
+          <p className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-foreground md:text-6xl">
+            Too close to call
+          </p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-xl border border-line bg-background/40 p-4">
+              <p className="truncate text-sm font-medium text-foreground">{nameA}</p>
+              <p className="data-text mt-1 text-2xl text-muted">{probA}%</p>
+            </div>
+            <div className="rounded-xl border border-line bg-background/40 p-4">
+              <p className="truncate text-sm font-medium text-foreground">{nameB}</p>
+              <p className="data-text mt-1 text-2xl text-muted">{probB}%</p>
+            </div>
+          </div>
+          <p className="mt-4 text-xs leading-5 text-subtle">
+            No named model call. The probabilities do not separate enough.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
       className="space-y-5"
-      data-call-state={tooClose ? "no-call" : "named-call"}
-      data-accent-side={callSide}
+      data-call-state="named-call"
+      data-accent-side={aIsCall ? "left" : "right"}
     >
-      {/* Fighter name labels */}
       <div className="flex items-center justify-between gap-4">
         <p className="mono-label max-w-[42%] truncate text-left">{nameA}</p>
         <p className="mono-label shrink-0">vs</p>
         <p className="mono-label max-w-[42%] truncate text-right">{nameB}</p>
       </div>
 
-      {/* Giant probability numbers */}
-      <div className="flex items-baseline justify-between gap-4">
-        <span
-          className={`data-text text-[5.5rem] font-light leading-none tracking-normal md:text-[8rem] lg:text-[10rem] ${colorA}`}
-        >
-          {probA}%
-        </span>
-        <span
-          className={`data-text text-[5.5rem] font-light leading-none tracking-normal md:text-[8rem] lg:text-[10rem] ${colorB}`}
-        >
-          {probB}%
-        </span>
+      <div className="grid gap-4 md:grid-cols-[1.35fr_0.65fr] md:items-stretch">
+        <div className="rounded-2xl border border-accent/30 bg-accent/[0.06] p-6 md:p-8">
+          <p className="mono-label text-accent">model call</p>
+          <p className="mt-3 text-4xl font-semibold leading-none tracking-[-0.055em] text-accent md:text-6xl">
+            {calledName}
+          </p>
+          <p className="data-text mt-4 text-5xl font-light leading-none text-foreground md:text-7xl">
+            {calledProb}%
+          </p>
+          <p className="mt-2 text-sm text-muted">win probability</p>
+        </div>
+
+        <div className="rounded-2xl border border-line bg-surface/60 p-6 md:p-7">
+          <p className="mono-label">other side</p>
+          <p className="mt-3 text-xl font-semibold leading-tight tracking-[-0.03em] text-foreground">
+            {otherName}
+          </p>
+          <p className="data-text mt-3 text-3xl text-muted md:text-4xl">
+            {otherProb}%
+          </p>
+          <p className="mt-2 text-xs text-subtle">still live, not the model call</p>
+        </div>
       </div>
 
-      {/* One shared rail split by fighter probability. */}
-      <div
-        className="relative h-3 overflow-hidden rounded-full bg-surface-2/80"
-        aria-label={`Probability split: ${nameA} ${probA}%, ${nameB} ${probB}%`}
-      >
-        <div
-          className={`absolute left-0 top-0 h-full rounded-l-full ${
-            aIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
-          }`}
-          style={{ width: leftWidth }}
-        />
-        <div
-          className={`absolute right-0 top-0 h-full rounded-r-full ${
-            bIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
-          }`}
-          style={{ width: rightWidth }}
-        />
-        <div className="absolute left-1/2 top-1/2 z-10 h-5 w-px -translate-x-1/2 -translate-y-1/2 bg-line" />
-      </div>
-
-      <p className={`text-center font-mono text-[11px] uppercase tracking-[0.12em] ${tooClose ? "text-muted" : "text-subtle"}`}>
-        {tooClose ? callLabel : <><span className="text-muted">Model call: </span><span className="text-accent">{favName}</span><span className="text-subtle"> · {favProb}% win probability</span></>}
+      <p className="text-center font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
+        <span className="text-muted">Model call: </span>
+        <span className="text-accent">{calledName}</span>
+        <span> · {calledProb}% win probability</span>
       </p>
     </div>
   );

@@ -14,12 +14,12 @@ interface TheCallProps {
 const READ_STRENGTH_COPY: Record<ReadStrength, { label: string; tone: string; helper: string }> = {
   strong: {
     label: "Strong read",
-    tone: "border-success/40 text-success bg-success-soft",
+    tone: "border-line-strong text-foreground bg-surface-2",
     helper: "Signals align across shape, form, and stats.",
   },
   usable: {
     label: "Usable read",
-    tone: "border-accent/40 text-accent bg-accent/[0.08]",
+    tone: "border-line-strong text-foreground bg-surface-2",
     helper: "Clear lean, but not every signal points the same direction.",
   },
   thin: {
@@ -98,7 +98,7 @@ function MethodLean({
               <span className="w-24 shrink-0 text-xs text-muted">{m.label}</span>
               <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
                 <div
-                  className={`absolute left-0 h-full rounded-full ${m.id === top.id ? "bg-accent" : "bg-muted/50"}`}
+                  className={`absolute left-0 h-full rounded-full ${m.id === top.id ? "bg-foreground/80" : "bg-muted/50"}`}
                   style={{ width: `${Math.max(m.value, 2)}%` }}
                 />
               </div>
@@ -193,7 +193,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
 
       <div className="module-body space-y-6">
         {/* Win probability — primary surface */}
-        <div className="rounded-2xl border border-line bg-background/40 p-6 md:p-8">
+        <div className="rounded-2xl border border-line bg-background/40 p-4 md:p-6">
           <ProbabilityBar
             probA={fighterA.winProbability}
             probB={fighterB.winProbability}

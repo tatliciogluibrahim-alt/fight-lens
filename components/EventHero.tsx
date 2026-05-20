@@ -89,7 +89,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
                 {mainFightLabel}
               </h2>
               {mainFightClash && (
-                <p className="mono-label mt-3 text-accent">{mainFightClash}</p>
+                <p className="mono-label mt-3 text-muted">{mainFightClash}</p>
               )}
               <p className="mt-4 text-sm leading-6 text-muted">
                 {mainFight.matchupQuestion ??

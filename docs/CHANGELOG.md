@@ -2,6 +2,15 @@
 
 ## May 2026
 
+### P0 visual-system cleanup
+
+- Replaced the fight-page model-call probability rail with a clearer call-first layout: called fighter, win probability, other side, read strength, and secondary method lean.
+- Removed bright cyan/blue from radar and axis comparison visuals; shape now uses neutral off-white vs muted slate styling so it does not read like a winner forecast.
+- Neutralized method/read-strength bar coloring so amber stays reserved for primary actions, selected UI, and the canonical model call.
+- Tightened event discovery copy and restored past-card record links while keeping cards directory-like.
+- Increased fight-page hash scroll offset and removed sticky tab blur so section titles remain visible on anchor navigation.
+- No model math, prediction values, locked calls, ingestion, backtest logic, generated backtest data, or public Model Record scoring changed.
+
 ### P0 product UX consolidation
 
 - Simplified the homepage hierarchy around one primary action: open UFC 329, with Model Record as the secondary path.

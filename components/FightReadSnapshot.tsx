@@ -17,8 +17,8 @@ interface FightReadSnapshotProps {
 }
 
 const READ_TONE: Record<ReadStrength, { dot: string; label: string }> = {
-  strong: { dot: "bg-success", label: "text-success" },
-  usable: { dot: "bg-accent", label: "text-accent" },
+  strong: { dot: "bg-foreground", label: "text-foreground" },
+  usable: { dot: "bg-muted", label: "text-muted" },
   thin: { dot: "bg-muted", label: "text-muted" },
   "data-pending": { dot: "bg-subtle/60", label: "text-subtle" },
 };
