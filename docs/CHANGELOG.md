@@ -2,11 +2,19 @@
 
 ## May 2026
 
+### P0 non-sticky fight tabs hotfix
+
+- Removed the remaining fight-page tab overlay behavior entirely: `FightPageTabs` is now plain in-page content, not sticky or fixed.
+- Removed tab scrollspy, hash listeners, manual `scrollIntoView`, and sticky-aware offset logic from fight section navigation.
+- Kept simple anchor links only: Call → `#section-call`, Shape → `#section-shape`, Details → `#section-details`.
+- Section anchors remain on wrappers above the full section content with conservative scroll margin for the global site header only.
+- Confirmed proof grep returns no sticky/fixed/backdrop-blur/IntersectionObserver/scrollIntoView behavior in fight tab/page files.
+- No model math, prediction values, fight data, locked calls, ingestion, backtest logic, generated artifacts, or public scoring changed.
+
 ### P0 section navigation hotfix
 
-- Reworked `FightPageTabs` from a panel swapper into sticky section navigation so `section-call`, `section-shape`, and `section-details` all exist as stable anchors in the rendered page.
-- Moved section ids to wrappers above the visible content and switched landing behavior to CSS `scroll-margin` plus native `scrollIntoView`, avoiding fragile manual pixel scroll math.
-- Active tab state now follows the section in view and keeps existing section hashes aligned as the user scrolls.
+- Reworked `FightPageTabs` from a panel swapper into in-page section navigation so `section-call`, `section-shape`, and `section-details` all exist as stable anchors in the rendered page.
+- Moved section ids to wrappers above the visible content and switched landing behavior to CSS `scroll-margin`, avoiding fragile manual pixel scroll math.
 - Cleaned the model-call Live Path helper copy to "Still live if the fight shifts."
 - Updated the record accuracy headline from "building." to "record in progress." while keeping the 30-scored-fight grade unlock copy.
 - No model math, prediction values, fight data, locked calls, ingestion, backtest logic, generated artifacts, or public scoring changed.

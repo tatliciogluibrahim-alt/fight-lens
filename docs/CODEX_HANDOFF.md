@@ -79,7 +79,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `components/ProbabilityBar.tsx` | Call-first model-call display — called fighter, win probability, and Live Path side; no horizontal winner rail. |
 | `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
 | `components/StyleComparisonBars.tsx` | Shape tab — neutral radar, plain-English takeaway, shape insight cards, and collapsed axis breakdown. |
-| `components/FightPageTabs.tsx` | Sticky section navigation — renders stable `section-call`, `section-shape`, and `section-details` anchors with CSS scroll-margin. |
+| `components/FightPageTabs.tsx` | Plain in-page fight section links — renders stable `section-call`, `section-shape`, and `section-details` anchors with no sticky/fixed behavior. |
 | `components/FightCard.tsx` | Event page matchup row — shows call, read strength, method lean, result chip; expanded details use neutral comparison bars. |
 
 ### Data
@@ -156,7 +156,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 7. **"What the shape says" cards** — `StyleComparisonBars` now renders `biggest-edge`, `closest`, and `swing`/`watching` cards above the axis bars.
 8. **Language cleanup** — all "matchup stress", "pressure point", "style-pressure read", and "Limited pressure signal" occurrences removed from UI.
 9. **Fighter hero stabilization** — `FighterNamePlate` gives fight pages a consistent two-line name plate.
-10. **Section navigation hotfix** — `FightPageTabs` now renders Call, Shape, and Details as real anchored sections instead of swapping a single panel. Direct loads to `#section-call`, `#section-shape`, and `#section-details` use CSS scroll-margin, and active tab state follows the section in view.
+10. **Non-sticky section navigation hotfix** — `FightPageTabs` now renders Call, Shape, and Details as real anchored sections with simple in-page anchor links. The tab row is normal document flow, has no sticky/fixed positioning, no scrollspy, and no manual `scrollIntoView` behavior.
 11. **Model-call display semantics** — `ProbabilityBar` now uses a call-first layout with the non-called side labeled `Live path`. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
 12. **Fight-read final QA** — source/static route checks verified home, events, fight pages, record, and methodology. Event-row expanded details were neutralized so amber is not used as a generic chart/comparison color.
 
@@ -169,7 +169,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 | Radar axis labels may clip at 375 px viewport (iPhone SE) | `components/StyleRadar.tsx` — `LABEL_RADIUS=148`, `SIZE=360` | P0 — verify on device |
 | SVG `<title>` tooltips don't fire on touch | `StyleRadar.tsx` data dot `<title>` elements | P1 — replace with pointer-event tooltip |
 | No automated test for `prefers-reduced-motion` behavior | `app/globals.css` reduced-motion block | P0 — manual device QA only |
-| Browser-level hash landing should be re-checked locally after the section-navigation hotfix | `#section-call`, `#section-shape`, `#section-details` — stable anchors now exist in static output; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
+| Browser-level hash landing should be re-checked locally after the non-sticky tab hotfix | `#section-call`, `#section-shape`, `#section-details` — tab row is no longer sticky/fixed; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
 | 60–80% calibration buckets are overconfident | `lib/backtest/calibration.ts` | P2 — diagnostics only, no math changes yet |
 | Elo baseline has 76% no-picks due to cold start | `scripts/backtest/elo-baseline.ts` | P3 — experiment with warm seeding |
 
