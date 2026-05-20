@@ -127,7 +127,7 @@ export default function Home() {
         <section className="section-shell pt-10 pb-8 md:pt-16 md:pb-12">
           <div className="grid gap-10 lg:grid-cols-[1.25fr_0.95fr] lg:items-end">
             {/* Left: manifesto */}
-            <div>
+            <div className="fl-animate-fade-up">
               <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
               <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.5rem]">
                 predictive analysis.
@@ -156,7 +156,7 @@ export default function Home() {
             {/* Right: next card preview — broadcast-style scouting card */}
             <Link
               href={`/events/${latestEvent.event.id}/${mainFight.id}`}
-              className="group relative block overflow-hidden rounded-3xl border border-accent/15 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5 transition hover:border-accent/35 md:p-7"
+              className="fl-animate-fade-up fl-delay-200 group relative block overflow-hidden rounded-3xl border border-accent/15 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5 transition hover:-translate-y-0.5 hover:border-accent/35 md:p-7"
             >
               {/* HUD corner marks */}
               <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-accent/40" />

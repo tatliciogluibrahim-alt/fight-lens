@@ -40,10 +40,12 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
         : {
             ...point(index, dimension.value, count),
             label: dimension.shortLabel,
-            value: dimension.value
+            longLabel: dimension.label,
+            value: dimension.value,
+            key: dimension.key
           }
     ))
-    .filter(Boolean) as Array<{ x: number; y: number; label: string; value: number }>;
+    .filter(Boolean) as Array<{ x: number; y: number; label: string; longLabel: string; value: number; key: string }>;
 
   const polygonPoints = dimensions.map((dimension, index) => point(index, dimension.hasData ? dimension.value ?? 0 : 0, count));
 
@@ -54,9 +56,11 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       role="img"
       aria-label={`${title} style radar`}
     >
+      {/* Background halo + outer guide dash */}
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill={tone === "accent" ? "rgba(245,158,11,0.04)" : "rgba(139,154,180,0.04)"} />
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 28} fill="none" stroke="var(--line)" strokeOpacity={0.52} strokeDasharray="2 7" />
 
+      {/* Concentric guides */}
       {RINGS.map((ring) => (
         <polygon
           key={ring}
@@ -68,6 +72,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
         />
       ))}
 
+      {/* Axes + outer labels */}
       {dimensions.map((dimension, index) => {
         const end = point(index, 100, count);
         const labelPoint = point(index, 100, count, LABEL_RADIUS);
@@ -105,6 +110,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
         );
       })}
 
+      {/* Filled shape — animated bloom on mount via CSS keyframe */}
       {canFill ? (
         <polygon
           points={pointsToString(polygonPoints)}
@@ -112,22 +118,29 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
           stroke={stroke}
           strokeWidth={2.4}
           strokeLinejoin="round"
+          className="fl-radar-bloom"
         />
       ) : null}
 
+      {/* Data dots: native SVG <title> gives a tooltip on hover, zero JS */}
       {availablePoints.map((item) => (
-        <circle
-          key={`${item.label}-${item.value}`}
-          cx={item.x}
-          cy={item.y}
-          r={3.8}
-          fill="var(--background)"
-          stroke={stroke}
-          strokeWidth={2}
-        />
+        <g key={`${item.label}-${item.value}`} className="fl-radar-bloom fl-radar-bloom-delay">
+          <circle
+            cx={item.x}
+            cy={item.y}
+            r={3.8}
+            fill="var(--background)"
+            stroke={stroke}
+            strokeWidth={2}
+            className="fl-radar-dot"
+          >
+            <title>{`${item.longLabel}: ${item.value}`}</title>
+          </circle>
+        </g>
       ))}
 
-      <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" opacity={0.78} />
+      {/* Centroid mark — soft pulse hints at a "live" read */}
+      <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" className="fl-radar-centroid" />
     </svg>
   );
 }

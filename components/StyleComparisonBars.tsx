@@ -104,7 +104,7 @@ function OverlayRadar({
         );
       })}
 
-      {/* Fighter B shape (drawn first, under A) */}
+      {/* Fighter B shape drawn first (under) — staggered bloom for sequencing */}
       {canFillB && (
         <polygon
           points={toStr(pts(dimsB))}
@@ -113,10 +113,11 @@ function OverlayRadar({
           strokeWidth={2}
           strokeLinejoin="round"
           strokeDasharray="5 3"
+          className="fl-radar-bloom"
         />
       )}
 
-      {/* Fighter A shape */}
+      {/* Fighter A shape — primary accent, drawn last so the gold lands on top */}
       {canFillA && (
         <polygon
           points={toStr(pts(dimsA))}
@@ -124,32 +125,43 @@ function OverlayRadar({
           stroke="var(--accent)"
           strokeWidth={2.4}
           strokeLinejoin="round"
+          className="fl-radar-bloom fl-radar-bloom-delay"
         />
       )}
 
-      {/* Data dots A */}
+      {/* Data dots — native SVG <title> elements give per-axis tooltips on hover */}
       {dimsA.map((d, i) => {
         if (!d.hasData || d.value == null) return null;
         const p = point(i, d.value);
         return (
-          <circle key={d.key} cx={p.x} cy={p.y} r={4}
-            fill="var(--background)" stroke="var(--accent)" strokeWidth={2}
-          />
+          <g key={`a-${d.key}`} className="fl-radar-bloom fl-radar-bloom-delay">
+            <circle cx={p.x} cy={p.y} r={4}
+              fill="var(--background)" stroke="var(--accent)" strokeWidth={2}
+              className="fl-radar-dot"
+            >
+              <title>{`${nameA} · ${d.label}: ${d.value}`}</title>
+            </circle>
+          </g>
         );
       })}
 
-      {/* Data dots B */}
       {dimsB.map((d, i) => {
         if (!d.hasData || d.value == null) return null;
         const p = point(i, d.value);
         return (
-          <circle key={d.key} cx={p.x} cy={p.y} r={3.2}
-            fill="var(--background)" stroke="var(--muted)" strokeWidth={1.8}
-          />
+          <g key={`b-${d.key}`} className="fl-radar-bloom">
+            <circle cx={p.x} cy={p.y} r={3.2}
+              fill="var(--background)" stroke="var(--muted)" strokeWidth={1.8}
+              className="fl-radar-dot"
+            >
+              <title>{`${nameB} · ${d.label}: ${d.value}`}</title>
+            </circle>
+          </g>
         );
       })}
 
-      <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" opacity={0.7} />
+      {/* Centroid mark — soft pulse for "live read" feel */}
+      <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" className="fl-radar-centroid" />
     </svg>
   );
 }

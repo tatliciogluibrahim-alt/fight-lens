@@ -79,7 +79,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
       <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
 
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <p className="mono-label accent-rail !mb-0 !before:mb-3">fight read snapshot</p>
+        <p className="mono-label">fight read snapshot</p>
         <span className={`inline-flex items-center gap-2 rounded-full border border-line bg-background/45 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.14em] ${tone.label}`}>
           <span className={`size-1.5 rounded-full ${tone.dot}`} />
           {READ_LABEL[vm.readStrength]} read

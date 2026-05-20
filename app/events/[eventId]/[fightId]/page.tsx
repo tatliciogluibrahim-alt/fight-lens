@@ -60,46 +60,94 @@ function flagEmoji(code: string | undefined): string | null {
 function FighterHeroPanel({
   fighter,
   align = "left",
+  cornerLabel,
+  isCall,
+  animationDelay,
 }: {
   fighter: SourcedFighter;
   align?: "left" | "right";
+  /** Mono "side" marker, e.g. "A" or "B" — broadcast scouting feel */
+  cornerLabel?: string;
+  /** True if this fighter is the model call. Adds a quiet accent rail above the name. */
+  isCall?: boolean;
+  /** Stagger class (e.g. "fl-delay-100") */
+  animationDelay?: string;
 }) {
   const isRight = align === "right";
   const country = getCountryDisplay(fighter);
   const ranking = formatRanking(fighter.ranking);
 
-  const meta = [
+  const chips = [
     ranking !== "UNRANKED" ? ranking : null,
     fighter.stance ?? null,
-    country?.label ?? null,
-  ].filter(Boolean).join(" · ");
+    fighter.record ?? null,
+  ].filter(Boolean) as string[];
 
-  const physicals = [
-    fighter.record,
+  const physicalChips = [
     fighter.height,
     fighter.reach ? `${fighter.reach} reach` : null,
-  ].filter(Boolean).join(" · ");
+  ].filter(Boolean) as string[];
 
   return (
-    <div className={`flex flex-col justify-center gap-3 p-5 py-7 md:p-8 md:py-9 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
-      {/* Flag + meta */}
+    <div
+      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex flex-col justify-center gap-3 p-5 py-7 md:p-8 md:py-9 ${
+        isRight ? "lg:items-end lg:text-right" : ""
+      }`}
+    >
+      {/* Corner side marker */}
+      {cornerLabel && (
+        <span
+          aria-hidden="true"
+          className={`pointer-events-none absolute top-4 font-mono text-[10px] uppercase tracking-[0.18em] text-subtle/60 ${
+            isRight ? "right-5" : "left-5"
+          }`}
+        >
+          side · {cornerLabel}
+        </span>
+      )}
+
+      {/* Flag + country label */}
       <div className={`flex items-center gap-2 ${isRight ? "lg:flex-row-reverse" : ""}`}>
         {country?.code && (
           <span className="text-base leading-none" aria-hidden="true">
             {flagEmoji(country.code)}
           </span>
         )}
-        <p className="mono-label">{meta}</p>
+        <p className="mono-label">{country?.label ?? "country pending"}</p>
       </div>
 
-      {/* Name */}
+      {/* Quiet accent rail when this fighter is the model call */}
+      {isCall && (
+        <span
+          aria-hidden="true"
+          className={`block h-px w-12 bg-accent ${isRight ? "lg:ml-auto" : ""}`}
+        />
+      )}
+
+      {/* Name — the cinematic moment */}
       <h2 className="text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
         {fighter.name}
       </h2>
 
-      {/* Physicals */}
-      {physicals && (
-        <p className="data-text text-xs text-subtle">{physicals}</p>
+      {/* Chip row — record / stance / ranking */}
+      {chips.length > 0 && (
+        <div className={`flex flex-wrap gap-1.5 ${isRight ? "lg:justify-end" : ""}`}>
+          {chips.map((chip) => (
+            <span
+              key={chip}
+              className="rounded-full border border-line bg-surface-2/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.1em] text-muted"
+            >
+              {chip.toLowerCase()}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Physicals — secondary line */}
+      {physicalChips.length > 0 && (
+        <p className="data-text text-[11px] uppercase tracking-[0.12em] text-subtle">
+          {physicalChips.join(" · ")}
+        </p>
       )}
     </div>
   );
@@ -150,27 +198,51 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
           {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-          <div className="grid gap-0 lg:grid-cols-[1fr_160px_1fr] lg:items-stretch">
-            <FighterHeroPanel fighter={fighterA} />
+          <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
+            <FighterHeroPanel
+              fighter={fighterA}
+              cornerLabel="A"
+              isCall={vm.predictedWinner?.id === fighterA.id}
+              animationDelay="fl-delay-100"
+            />
 
-            <div className="flex flex-col items-center justify-center gap-3 border-y border-line bg-background/30 px-4 py-6 text-center lg:border-x lg:border-y-0">
-              <p className="text-[2.5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[3.5rem]">
-                vs
+            {/* VS centre — cinematic broadcast plate with vertical accent rails */}
+            <div
+              className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0"
+            >
+              {/* Vertical accent rails flanking VS — subtle scouting-room cue */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-3 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
+              />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute bottom-3 left-1/2 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
+              />
+
+              <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[3rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[4rem]">
+                VS
               </p>
               <p className="mono-label text-[10px]">
                 {(fight.weightClass ?? "").toLowerCase() || "weight class"}
               </p>
-              <p className="mono-label text-[10px] text-subtle/60">{fight.rounds}R</p>
+              <p className="mono-label text-[10px] text-subtle/60">{fight.rounds} rounds</p>
             </div>
 
-            <FighterHeroPanel fighter={fighterB} align="right" />
+            <FighterHeroPanel
+              fighter={fighterB}
+              align="right"
+              cornerLabel="B"
+              isCall={vm.predictedWinner?.id === fighterB.id}
+              animationDelay="fl-delay-300"
+            />
           </div>
         </section>
 
         {/* At-a-glance snapshot — sits above the tabs so the full read is
             readable without clicking anywhere. Keeps the page from feeling
             like "find your answer in one of the tabs." */}
-        <div className="mt-6 md:mt-8">
+        <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
           <FightReadSnapshot viewModel={vm} />
         </div>
 

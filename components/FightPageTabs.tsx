@@ -61,9 +61,15 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
         Active panel. ref is used by handleTabChange to find the correct scroll
         target. scroll-mt-32 (128px) covers the stacked sticky header + tab bar
         if the panel is itself the target of a hash-navigation link.
+
+        key={active} forces a remount when the active tab changes, which
+        re-triggers the fl-tab-panel entrance animation defined in globals.css.
+        Reduced-motion users get an instant cut via the global override.
       */}
       <div ref={panelRef} className="scroll-mt-32 space-y-5">
-        {panels[active]}
+        <div key={active} className="fl-tab-panel space-y-5">
+          {panels[active]}
+        </div>
       </div>
     </div>
   );

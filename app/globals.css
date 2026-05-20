@@ -235,6 +235,103 @@ summary::-webkit-details-marker {
   animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* ─── Motion system ──────────────────────────────────────────────────────────
+ *
+ * Tasteful entry motion for page modules. Sharp, fast, premium — never floaty.
+ * Every animation respects prefers-reduced-motion via the override block below.
+ * Use sparingly: hero, snapshot, radar, key stat modules.
+ */
+
+@keyframes fl-fade-up {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.fl-animate-fade-up {
+  animation: fl-fade-up 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.fl-delay-100 { animation-delay: 100ms; }
+.fl-delay-200 { animation-delay: 200ms; }
+.fl-delay-300 { animation-delay: 300ms; }
+.fl-delay-400 { animation-delay: 400ms; }
+
+/* Radar polygon bloom — the signature draw-in moment on the shape tab.
+ * Scales from the centroid out, with a slight overshoot so it lands with
+ * presence rather than fading flatly into place. */
+@keyframes fl-radar-bloom {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  60% { opacity: 1; }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fl-radar-bloom {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fl-radar-bloom 980ms cubic-bezier(0.34, 1.20, 0.64, 1) both;
+}
+.fl-radar-bloom-delay {
+  animation-delay: 220ms;
+}
+
+/* Soft pulse for the centroid mark — adds a "live" feel to the radar without
+ * being noisy. Slower than the pending-state pulse-dot. */
+@keyframes fl-radar-centroid {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 0.85; }
+}
+.fl-radar-centroid {
+  animation: fl-radar-centroid 3.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Subtle hover lift for radar data dots. SVG circle r isn't transitionable
+ * in CSS, so we use stroke-width as the visual cue. */
+.fl-radar-dot {
+  cursor: help;
+  transition: stroke-width 180ms ease-out;
+}
+.fl-radar-dot:hover {
+  stroke-width: 3.2;
+}
+
+/* Tab panel transition: when the active tab changes, the panel wrapper gets
+ * a key prop, React remounts it, and this animation runs. */
+.fl-tab-panel {
+  animation: fl-fade-up 380ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* HUD corner mark — used on broadcast-style feature surfaces. The colour and
+ * scale on the surface itself; we just define position + tint here so the
+ * surface can stay clean. */
+.fl-hud-mark {
+  pointer-events: none;
+  position: absolute;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fl-animate-fade-up,
+  .fl-radar-bloom,
+  .fl-tab-panel {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .fl-radar-centroid,
+  .animate-pulse,
+  .status-pill.is-live .dot {
+    animation: none !important;
+  }
+  .fl-radar-dot {
+    transition: none !important;
+  }
+}
+
 /* ─── Lens logo mark ──────────────────────────────────────────────────────── */
 
 .lens-mark {
