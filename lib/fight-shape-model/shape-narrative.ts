@@ -65,6 +65,35 @@ interface AxisRow {
 
 const TOTAL_AXES = 8; // fightShapeMetricDefinitions length
 
+// ── Display guardrails ────────────────────────────────────────────────────────
+//
+// These thresholds control whether an axis is surfaced as a meaningful
+// narrative claim — they are PURELY presentational and do not touch
+// model math, prediction values, or backtest results.
+//
+// Logic: an axis is only "meaningful enough to name a path or swing" when:
+//   - The leader's absolute score clears DISPLAY_LEADER_FLOOR (≥ 45)
+//   - The gap (delta) clears DISPLAY_DELTA_FLOOR (≥ 6)
+//   - Both fighters are not both below DISPLAY_BOTH_FLOOR (< 40)
+//
+// The biggest-edge card is always shown — it's always the largest relative
+// separator — but its body copy is softened when absolute signal is low.
+// Swing and watching cards are suppressed when scores are too weak.
+
+const DISPLAY_LEADER_FLOOR = 45; // leader's absolute score must reach this
+const DISPLAY_DELTA_FLOOR = 6;   // delta must reach this (also guards swing)
+const DISPLAY_BOTH_FLOOR = 40;   // if both fighters below this → suppress
+
+/** True when the axis clears the minimum thresholds for a meaningful narrative claim. */
+function passesDisplayThreshold(row: AxisRow): boolean {
+  const leaderScore = Math.max(row.scoreA, row.scoreB);
+  const trailerScore = Math.min(row.scoreA, row.scoreB);
+  if (row.absDelta < DISPLAY_DELTA_FLOOR) return false;
+  if (leaderScore < DISPLAY_BOTH_FLOOR && trailerScore < DISPLAY_BOTH_FLOOR) return false;
+  if (leaderScore < DISPLAY_LEADER_FLOOR) return false;
+  return true;
+}
+
 function lastName(name: string): string {
   return name.split(" ").pop() ?? name;
 }
@@ -173,16 +202,29 @@ function watchingBody(row: AxisRow, leader: string): string {
   return `${lead} carries the ${row.shortLabel.toLowerCase()} edge here — the next clearest separator after the biggest.`;
 }
 
+// Used when the biggest-edge leader score is below the display floor —
+// acknowledges the relative gap without implying a strong tactical signal.
+function biggestEdgeBodyWeak(row: AxisRow, leader: string): string {
+  const lead = lastName(leader);
+  return `${lead} shows the relative ${row.shortLabel.toLowerCase()} edge here, though both fighters have limited absolute signal in this area — treat as soft context.`;
+}
+
 // ── Headline composer ────────────────────────────────────────────────────────
 
 function buildHeadline(
   rows: AxisRow[],
   biggest: AxisRow,
   biggestLeader: string,
+  overallWeak: boolean,
 ): string {
   const tightAll = rows.every((r) => r.absDelta < 8);
   if (tightAll) {
     return "On shape, this matchup reads close — small edges across the board, no axis pulling decisively. Style-only read.";
+  }
+
+  // When absolute signal across the board is thin, say so explicitly
+  if (overallWeak) {
+    return "The relative style gap exists, but absolute signal on both sides is limited. No reliable swing path surfaced from the shape map — treat as soft context only.";
   }
 
   const lead = lastName(biggestLeader);
@@ -261,7 +303,14 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
     const underdogEdges = byAbsDeltaDesc
       .filter((r) => r.key !== biggest.key)
       .filter((r) => (underdogIsA ? r.delta > 0 : r.delta < 0))
-      .filter((r) => r.absDelta >= 6);
+      // Guardrail: delta must reach the display floor
+      .filter((r) => r.absDelta >= DISPLAY_DELTA_FLOOR)
+      // Guardrail: the underdog's absolute score on this axis must clear the floor.
+      // If the score is 27 vs 21, do not call it a swing path — the signal is too weak.
+      .filter((r) => {
+        const underdogScore = underdogIsA ? r.scoreA : r.scoreB;
+        return underdogScore >= DISPLAY_LEADER_FLOOR;
+      });
     if (underdogEdges.length > 0) {
       swing = underdogEdges[0];
       swingKind = "swing";
@@ -269,10 +318,19 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
   }
 
   if (!swing) {
-    // No counter-path edge — fall back to the second-biggest separator
-    swing = byAbsDeltaDesc.find((r) => r.key !== biggest.key && r.absDelta >= 6) ?? null;
+    // No counter-path edge — fall back to the second-biggest separator,
+    // but only if it passes the display threshold (absolute score + delta).
+    swing = byAbsDeltaDesc.find(
+      (r) => r.key !== biggest.key && passesDisplayThreshold(r),
+    ) ?? null;
     swingKind = "watching";
   }
+
+  // ── Overall signal strength check ─────────────────────────────────────────
+  // When even the biggest edge has weak absolute signal, the headline should
+  // say so and the biggest-edge card body should use softer language.
+  const biggestLeaderScore = Math.max(biggest.scoreA, biggest.scoreB);
+  const overallWeak = biggestLeaderScore < DISPLAY_LEADER_FLOOR;
 
   // ── Cards ──────────────────────────────────────────────────────────────────
   const cards: NarrativeAxisCard[] = [];
@@ -281,7 +339,10 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
     kind: "biggest-edge",
     title: "Biggest edge",
     axisLabel: biggest.label,
-    body: biggestEdgeBody(biggest, biggestLeader),
+    // Use softened body copy when the leader's absolute score is below the floor
+    body: overallWeak
+      ? biggestEdgeBodyWeak(biggest, biggestLeader)
+      : biggestEdgeBody(biggest, biggestLeader),
     leaderName: biggestLeader,
     delta: Math.round(biggest.absDelta),
     scoreA: biggest.scoreA,
@@ -329,7 +390,7 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
   }
 
   // ── Headline + caveat ──────────────────────────────────────────────────────
-  const headline = buildHeadline(rows, biggest, biggestLeader);
+  const headline = buildHeadline(rows, biggest, biggestLeader, overallWeak);
 
   const caveat =
     rows.length < 4

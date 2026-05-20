@@ -11,6 +11,10 @@ interface TheCallProps {
 // so the three method rows read clearly without faint bar lines.
 // No amber — this is not a winner signal.
 
+// Threshold below which a method is considered "thin" signal — shown as a
+// minimal dot marker rather than a filled bar so the visual hierarchy is clear.
+const METHOD_THIN_THRESHOLD = 8;
+
 function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
   const { methodDistribution, methodLean } = viewModel;
   if (!methodLean) return null;
@@ -37,23 +41,49 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
         {top.label}
       </p>
 
-      {/* Compact breakdown — plain rows, no bars */}
-      <div className="mt-4 divide-y divide-line/40">
+      {/*
+        Proportional bar rows.
+        - Top method: accent-tinted fill at the actual percentage width.
+        - Secondary methods: muted fill at the actual percentage width.
+        - Thin methods (<8%): dot marker only — no fill bar so it never
+          looks equal to an 80% KO/TKO bar.
+      */}
+      <div className="mt-4 space-y-3">
         {methods.map((m) => {
-          const thin = m.value < 8;
+          const thin = m.value < METHOD_THIN_THRESHOLD;
           const isTop = m.id === top.id;
           return (
-            <div key={m.id} className="flex items-center justify-between py-2.5">
-              <span className={`text-sm ${isTop ? "font-medium text-foreground" : "text-muted"}`}>
-                {m.label}
-              </span>
-              <span
-                className={`data-text text-sm tabular-nums ${
-                  thin ? "text-subtle" : isTop ? "text-foreground" : "text-muted"
-                }`}
-              >
-                {thin ? "thin" : `${m.value}%`}
-              </span>
+            <div key={m.id} className="space-y-1.5">
+              {/* Label + value */}
+              <div className="flex items-center justify-between gap-3">
+                <span className={`text-sm ${isTop ? "font-medium text-foreground" : "text-muted"}`}>
+                  {m.label}
+                </span>
+                <span
+                  className={`data-text text-sm tabular-nums ${
+                    thin ? "text-subtle/70" : isTop ? "text-foreground" : "text-muted"
+                  }`}
+                >
+                  {thin ? "thin" : `${m.value}%`}
+                </span>
+              </div>
+
+              {/* Proportional bar track */}
+              {thin ? (
+                /* Thin: tiny dot marker — no bar, prevents visual equality with strong methods */
+                <div className="flex h-1.5 items-center">
+                  <div className="h-1.5 w-1.5 rounded-full bg-subtle/30" />
+                </div>
+              ) : (
+                <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
+                  <div
+                    className={`h-full rounded-full transition-all ${
+                      isTop ? "bg-accent/65" : "bg-muted/35"
+                    }`}
+                    style={{ width: `${m.value}%` }}
+                  />
+                </div>
+              )}
             </div>
           );
         })}

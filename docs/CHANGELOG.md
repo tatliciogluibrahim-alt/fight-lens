@@ -2,6 +2,43 @@
 
 ## May 2026
 
+### Analysis hygiene pass
+
+Content logic, hierarchy, and visualization cleanup. No model math, prediction values, fight data, backtest logic, locked predictions, ingestion, or audit scripts changed.
+
+**Narrative guardrails — `lib/fight-shape-model/shape-narrative.ts`:**
+- Added `DISPLAY_LEADER_FLOOR = 45`, `DISPLAY_DELTA_FLOOR = 6`, `DISPLAY_BOTH_FLOOR = 40` constants. These are purely presentational thresholds — they control what is surfaced as a meaningful narrative claim, not model output.
+- Added `passesDisplayThreshold(row)` — returns false when: delta < 6, OR both fighters score < 40, OR leader's absolute score < 45.
+- Swing card guardrail: underdog edge candidates now require the underdog's absolute score on that axis ≥ 45. Previously a wrestling score of 27 vs 21 (delta 6) would surface "X's wrestling could reshape the matchup" — now suppressed.
+- Watching card guardrail: fallback "worth watching" card now requires `passesDisplayThreshold()` — suppressed if the axis score is too weak.
+- Added `biggestEdgeBodyWeak()` — used when the biggest edge leader score < 45. Acknowledges the relative gap without implying a strong tactical signal.
+- Added `overallWeak` flag — when the biggest edge itself has weak absolute signal, the headline now says "No reliable swing path surfaced from the shape map — treat as soft context only." instead of implying a real advantage.
+- Updated `buildHeadline()` signature to accept `overallWeak`.
+
+**Method lean visualization — `components/TheCall.tsx`:**
+- Added `METHOD_THIN_THRESHOLD = 8` constant.
+- Replaced plain text-row list with proportional bar tracks: each method row now has a `h-1.5` track with a fill whose width equals the percentage. KO/TKO at 80% fills 80% of the bar; Decision at 20% fills 20%.
+- Top method bar: `bg-accent/65` (icy blue tint). Secondary bars: `bg-muted/35`.
+- Thin methods (< 8%): replaced with a tiny dot marker (`h-1.5 w-1.5 rounded-full bg-subtle/30`) — never shows as a full-width bar, making the visual hierarchy immediately legible.
+- Removed the `divide-y divide-line/40` row separator — replaced with `space-y-3` with a gap per row.
+
+**Duplicate pending suppression — `components/PathsToVictory.tsx`:**
+- Added `aNoPaths` / `bNoPaths` / `bothPending` detection.
+- When both fighters have no curated paths AND no model signal: suppresses both large "path analysis pending" cards and replaces them with a single quiet line: "Path analysis unlocks when enough recent round-trend data is sourced."
+- When one side has data: still renders both `PathList` cards (pending card for the no-data side stays, but now uses compact `text-subtle` styling instead of large "Check back closer to the event" copy).
+- Renamed section heading: "how the other side can win." → "non-call route." (when a named call exists). The "other side can win" phrasing implied the non-call route is a near-certainty; "non-call route." is more honest about what it is.
+- Role label changed from "live path" to "live route" to match the less-certain language in the spec.
+- Section description updated: "What has to change for X to flip the read — this is not the model call." — explicitly reminds the reader this is not a second call.
+- Module heading suppressed (`h2` hidden) when `bothPending`, so the section doesn't have a large header above a one-liner note.
+
+**Files changed:** `lib/fight-shape-model/shape-narrative.ts`, `components/TheCall.tsx`, `components/PathsToVictory.tsx`.
+
+**Not changed:** model math, prediction values, locked predictions, fight data, backtest logic, generated artifacts, public Model Record scoring, ingestion scripts, `lib/predictionViewModel.ts`, `lib/predictionThresholds.ts`, `lib/accuracy/`, all `data/` files.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
+---
+
 ### Event discovery and mobile readability pass
 
 Focused product pass across homepage, /events, event detail, and fight read pages. Zero model math, prediction values, fight data, backtest logic, locked predictions, or ingestion changes.
