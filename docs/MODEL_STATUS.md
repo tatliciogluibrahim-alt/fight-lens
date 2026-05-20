@@ -51,7 +51,16 @@ Calibration is mixed:
 
 The 60-80% buckets remain the main calibration concern. The simple Elo baseline is useful as a leakage-safe report, but it is cold-start limited on this 20-event window and should not become a model feature without a larger chronological sample or a validated seeding plan.
 
-## Post-expansion QA checkpoint
+## Post-frontend-polish QA checkpoint
+
+Completed on May 20, 2026:
+- `npm run audit:predictions` passed: 24 routeable fight pages checked, 24 passed, 0 failed.
+- `npm run backtest` passed: 253 scored fights, 17 skipped.
+- `npm run lint` passed (0 warnings).
+- `npm run build` passed: 35 static pages generated.
+- No model math, locked predictions, backtest scripts, or `opponentTotals` were changed during the frontend polish passes. All prediction surfaces still route through `buildPredictionViewModelBundle`.
+
+## Previous QA checkpoint
 
 Completed on May 19, 2026:
 - `npm run audit:predictions` passed: 24 routeable fight pages checked, 24 passed, 0 failed.

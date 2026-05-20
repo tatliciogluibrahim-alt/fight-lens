@@ -2,6 +2,58 @@
 
 ## May 2026
 
+### Frontend visual + copy polish (multi-pass)
+
+Six successive UI/UX passes with zero model-math changes. All passes ran on top of the v0.2 prediction pipeline. QA commands (`audit:predictions`, `backtest`, `lint`, `build`) remained green throughout.
+
+#### Visual/UX correction pass
+- Sticky tab bar fixed at `top-16 z-20` — no longer scrolls away on mobile.
+- Nav labels: "matchups" → "events", "model record" → "record", "methodology" → "how it works".
+- Events link now routes to `/events` index (was hardcoded to `/events/ufc-329`).
+- Event status chip added to EventHero (forecast live / result pending / scored).
+- Style edge terminology: all "matchup stress", "pressure point", "style-pressure read", and "Limited pressure signal" variants removed from the UI. Replacement: "style edge".
+- Method lean copy: label changed to "most likely finish type", added "directional only" badge.
+- Fight-shape copy improvements: `publicSummary()` in model.ts now detects shared dominant-factor ties and differentiates by score gap; never names a winner.
+
+#### QA pass
+- Browser-verified 10 routes; found and fixed three remaining forbidden-language occurrences:
+  - "creates matchup stress" in methodology `modelRows`.
+  - `pressureLabel()` returning "Limited pressure signal" (renamed to "Limited style edge" across all four confidence levels).
+  - "pressure points" in fight-shape output row on methodology page.
+
+#### Visual level-up
+- Created `app/events/page.tsx` — events index with featured current card and past cards list.
+- Created `components/FightReadSnapshot.tsx` — at-a-glance strip between fighter hero and tabs showing model call, win %, read strength, method lean, live path, and what-breaks-the-call. Reads from canonical `viewModel` only.
+- Homepage rebuilt as 2-column layout: manifesto left, live next-card preview panel right. Preview pulls the canonical `buildPredictionViewModelBundle` — no separate data compute.
+- Shape tab radar given hero treatment with HUD corner marks.
+- Methodology page rebuilt with 3-card scan grid (what it uses / what it doesn't know / how to read it).
+
+#### Motion / cinematic pass
+- Added CSS motion system to `app/globals.css`: `fl-animate-fade-up`, `fl-radar-bloom`, `fl-radar-centroid`, `fl-radar-dot`, `fl-tab-panel`, `fl-delay-{100-400}`.
+- Global `@media (prefers-reduced-motion: reduce)` override disables all animations.
+- Fighter hero panel: `cornerLabel` ("side · A"/"side · B"), accent rail above predicted winner's name, staggered entrance delays.
+- VS centre uses gradient text, vertical accent rails flanking the panel.
+- Radar polygon gets `fl-radar-bloom` animated draw-in on load.
+- Tab panel uses `fl-tab-panel` slide-in on tab change via `key={active}` reset.
+- Native SVG `<title>` on radar data dots for accessibility.
+
+#### Shape copy / narrative pass
+- Created `lib/fight-shape-model/shape-narrative.ts` — analyst-style shape copy generator.
+  - Compares fighters across all 8 radar axes using per-axis delta.
+  - Returns `{ headline, cards, caveat }` — never names a winner.
+  - Three card types: `biggest-edge`, `closest`, `swing`/`watching`.
+  - Swing card biases toward predicted loser's best axis for counter-path framing.
+  - Thin-sample caveat surfaces automatically when fewer than 4 axes have data on both sides.
+- `FightShapeSummary` now uses `narrative.headline` instead of `modelOutput.publicSummary`.
+- `StyleComparisonBars` restructured:
+  - "What the shape says" card grid added above axis bars.
+  - Axis breakdown sorted by absolute delta descending.
+  - Δ delta column added to bars.
+  - `predictedWinnerId` prop plumbed through for swing card direction.
+- `styleAndCallDisagree` detection added to `FightShapeSummary`: explicit note shown when style edge leader and predicted winner differ.
+
+No model math, locked predictions, prediction thresholds, backtest scripts, `opponentTotals`, or public Model Record logic was changed in any of the above passes.
+
 ### Chronological Elo baseline pass
 
 - Added backend-only leakage-safe chronological Elo baseline generation.
