@@ -80,7 +80,7 @@ function FighterHeroPanel({
   ].filter(Boolean).join(" · ");
 
   return (
-    <div className={`flex flex-col justify-center gap-3 p-5 py-8 md:p-8 md:py-10 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
+    <div className={`flex flex-col justify-center gap-3 p-5 py-7 md:p-8 md:py-9 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
       {/* Flag + meta */}
       <div className={`flex items-center gap-2 ${isRight ? "lg:flex-row-reverse" : ""}`}>
         {country?.code && (
@@ -149,13 +149,17 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
           {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-          <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
+          <div className="grid gap-0 lg:grid-cols-[1fr_160px_1fr] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
-            <div className="flex items-center justify-center border-y border-line bg-background/30 px-5 py-8 text-center lg:border-x lg:border-y-0">
-              <p className="text-[3.5rem] font-light leading-none tracking-[-0.08em] text-subtle/20 md:text-[5rem]">
+            <div className="flex flex-col items-center justify-center gap-3 border-y border-line bg-background/30 px-4 py-6 text-center lg:border-x lg:border-y-0">
+              <p className="text-[2.5rem] font-light leading-none tracking-[-0.08em] text-subtle/25 md:text-[3.5rem]">
                 vs
               </p>
+              <p className="mono-label text-[10px]">
+                {(fight.weightClass ?? "").toLowerCase() || "weight class"}
+              </p>
+              <p className="mono-label text-[10px] text-subtle/60">{fight.rounds}R</p>
             </div>
 
             <FighterHeroPanel fighter={fighterB} align="right" />

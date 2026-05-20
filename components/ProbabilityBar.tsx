@@ -64,11 +64,14 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
       </div>
 
       {/* Lean label */}
-      <p className="text-center mono-label">
-        {tooClose
-          ? "too close to call — either side viable"
-          : `model leans ${favName} · ${favProb}% win probability`}
-      </p>
+      {tooClose ? (
+        <p className="text-center mono-label">too close to call — no named lean</p>
+      ) : (
+        <p className="text-center font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
+          <span className="text-accent">{favName}</span>
+          <span className="text-subtle"> · {favProb}% win probability</span>
+        </p>
+      )}
     </div>
   );
 }

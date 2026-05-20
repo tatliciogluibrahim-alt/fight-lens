@@ -157,9 +157,13 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
         </div>
         <div className="module-body">
           <div className="rounded-2xl border border-line bg-background/35 p-8 text-center">
-            <p className="mono-label">data pending</p>
-            <p className="mt-3 text-sm text-muted">
-              Insufficient data for a public call. Win probability loads once fighter stats are sourced.
+            <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">
+              <span className="size-1.5 animate-pulse rounded-full bg-subtle/60" />
+              data pending
+            </span>
+            <p className="mt-4 text-sm leading-6 text-muted">
+              Win probability and model call load once fighter stats are sourced.
+              Check back closer to the event.
             </p>
           </div>
         </div>
@@ -177,7 +181,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
           model call.
         </h2>
         <p className="mt-3 text-sm text-muted">
-          Style shape · form · stat differentials. Signal-based, not a guarantee.
+          Win probability from shape, form, and stat differentials. Signal-based — not a guarantee.
         </p>
       </div>
 
@@ -200,7 +204,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
         <MethodLean viewModel={vm} />
 
         {/* The Call / Live Path / What Breaks the Call — required modules */}
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {scenarios.map((scenario) => (
             <ScenarioCard
               key={scenario.id}

@@ -165,6 +165,48 @@ interface ExperimentResult {
   overfittingFlags: string[];
 }
 
+interface EloSummaryFile {
+  ledger: {
+    totalScoredFights: number;
+    sortOrder: string[];
+    limitation: string;
+  };
+  comparison: {
+    modelV02: { accuracy: number | null; brierScore: number | null; scoredFights: number };
+    officialAsOfRecord: { pickAccuracy: number | null; allFightAccuracy: number | null; coverage: number | null; brierScore: number | null };
+    eloK32: { pickAccuracy: number | null; allFightAccuracy: number | null; coverage: number | null; brierScore: number | null };
+  };
+  kSensitivity: Array<{
+    kFactor: number;
+    totalFights: number;
+    picked: number;
+    noPick: number;
+    coverage: number | null;
+    pickAccuracy: number | null;
+    allFightAccuracy: number | null;
+    brierScore: number | null;
+    agreement: {
+      modelAndEloAgree: number;
+      modelAndEloDisagree: number;
+      eloCorrectModelWrong: number;
+      modelCorrectEloWrong: number;
+      bothCorrect: number;
+      bothWrong: number;
+      eloNoPick: number;
+    };
+  }>;
+  agreementDisagreement: {
+    modelAndEloAgree: number;
+    modelAndEloDisagree: number;
+    eloCorrectModelWrong: number;
+    modelCorrectEloWrong: number;
+    bothCorrect: number;
+    bothWrong: number;
+    eloNoPick: number;
+  };
+  recommendation: { choice: string; label: string; rationale: string[] };
+}
+
 interface ExperimentReport {
   generatedAt: string;
   scope: string;
@@ -193,6 +235,7 @@ interface ExperimentReport {
     };
     legacyProfileRecordAccuracy: number | null;
   };
+  eloBaseline?: EloSummaryFile | null;
   experiments: ExperimentResult[];
   recommendation: {
     choice: "A" | "B" | "C" | "D" | "E";
@@ -208,6 +251,11 @@ function repoPath(...segments: string[]): string {
 
 function readJson<T>(filePath: string): T {
   return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;
+}
+
+function readOptionalJson<T>(filePath: string): T | null {
+  if (!fs.existsSync(filePath)) return null;
+  return readJson<T>(filePath);
 }
 
 function writeJsonAtomic(filePath: string, data: unknown): void {
@@ -703,6 +751,7 @@ function renderMarkdown(report: ExperimentReport): string {
     brierText(variant.brierAll),
     pctText(variant.modelVsBaselineDeltaOnPickedSubset),
   ]);
+  const eloSection = report.eloBaseline ? renderEloSection(report.eloBaseline) : "";
   const experimentRows = report.experiments.map((experiment) => [
     experiment.label,
     pctText(experiment.winnerAccuracy),
@@ -743,7 +792,7 @@ Baseline Brier convention: ${report.baselineAudit.fixedProbabilityForBaselineBri
 
 ${table(["Baseline", "Leakage-safe", "Picked", "No-pick", "Coverage", "Pick acc", "All-fight acc", "Brier", "v0.2 delta on picked"], baselineRows)}
 
-## Experiment results
+${eloSection}## Experiment results
 
 All experiments use the same ${report.corpus.scoredFights}-fight corpus and leave method predictions unchanged.
 
@@ -771,6 +820,35 @@ ${report.guardrails.map((item) => `- ${item}`).join("\n")}
 `;
 }
 
+function renderEloSection(elo: EloSummaryFile): string {
+  const kRows = elo.kSensitivity.map((variant) => [
+    variant.kFactor,
+    variant.picked,
+    variant.noPick,
+    pctText(variant.coverage),
+    pctText(variant.pickAccuracy),
+    pctText(variant.allFightAccuracy),
+    brierText(variant.brierScore),
+  ]);
+  const a = elo.agreementDisagreement;
+
+  return `## Chronological Elo Baseline
+
+Simple global Elo is leakage-safe here: every fighter starts at 1500, ratings are read before each fight, then updated only after the result.
+
+Ledger: ${elo.ledger.totalScoredFights} scored fights sorted by ${elo.ledger.sortOrder.join(" -> ")}. Limitation: ${elo.ledger.limitation}
+
+${table(["K", "Picked", "No-pick", "Coverage", "Pick acc", "All-fight acc", "Brier"], kRows)}
+
+Default K=32 comparison: v0.2 ${pctText(elo.comparison.modelV02.accuracy)} accuracy / Brier ${brierText(elo.comparison.modelV02.brierScore)}; official as-of record ${pctText(elo.comparison.officialAsOfRecord.pickAccuracy)} picked / ${pctText(elo.comparison.officialAsOfRecord.allFightAccuracy)} all-fight / Brier ${brierText(elo.comparison.officialAsOfRecord.brierScore)}; Elo ${pctText(elo.comparison.eloK32.pickAccuracy)} picked / ${pctText(elo.comparison.eloK32.allFightAccuracy)} all-fight / Brier ${brierText(elo.comparison.eloK32.brierScore)}.
+
+Agreement at K=32: model and Elo agree on ${a.modelAndEloAgree} picked fights, disagree on ${a.modelAndEloDisagree}; Elo correct/model wrong ${a.eloCorrectModelWrong}; model correct/Elo wrong ${a.modelCorrectEloWrong}; both correct ${a.bothCorrect}; both wrong ${a.bothWrong}; Elo no-pick ${a.eloNoPick}.
+
+Recommendation: ${elo.recommendation.choice}. ${elo.recommendation.label}. ${elo.recommendation.rationale.join(" ")}
+
+`;
+}
+
 async function main() {
   const { rows, summary } = buildRows();
   const baselineResults = BASELINE_VARIANTS.map((variant) => evaluateBaseline(rows, variant.id));
@@ -790,6 +868,8 @@ async function main() {
     return best;
   }, null as ExperimentResult | null);
 
+  const eloBaseline = readOptionalJson<EloSummaryFile>(repoPath("data/generated/backtests/elo-summary.json"));
+
   const report: ExperimentReport = {
     generatedAt: new Date().toISOString(),
     scope: "Backend-only baseline validation and experiment harness. No production prediction changes.",
@@ -801,6 +881,7 @@ async function main() {
       "docs/BACKTESTING.md",
       "docs/MODEL_REVIEW.md",
       "scripts/backtest/run.ts",
+      "scripts/backtest/elo-baseline.ts",
       "lib/backtest/buildAsOfFeatures.ts",
       "lib/backtest/runBacktest.ts",
       "lib/backtest/scorePredictions.ts",
@@ -808,6 +889,7 @@ async function main() {
       "scripts/ingest/build-normalized-event.mjs",
       "data/generated/backtests/predictions.json",
       "data/generated/backtests/summary.json",
+      "data/generated/backtests/elo-summary.json",
     ],
     baselineAudit: {
       legacyProfileRecordBaseline: {
@@ -837,6 +919,7 @@ async function main() {
       },
       legacyProfileRecordAccuracy: summary.summary.baselines.legacyProfileRecord?.accuracy ?? null,
     },
+    eloBaseline,
     experiments: experimentResults,
     recommendation: {
       choice: "A",
@@ -867,6 +950,7 @@ async function main() {
     generatedAt: report.generatedAt,
     corpus: report.corpus,
     baselineVariants: baselineResults,
+    eloBaseline,
     experiments: experimentResults.map((experiment) => ({
       id: experiment.id,
       label: experiment.label,

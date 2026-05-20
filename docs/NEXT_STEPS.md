@@ -24,6 +24,7 @@ Scope:
 - Keep the deprecated 71% profile-record baseline labeled as reference only.
 - Review why the 60-80% confidence buckets are overconfident.
 - Validate any record-prior or shrinkage experiment out of sample before promotion.
+- Keep chronological Elo as a backend baseline only until a larger sample or validated seeding plan reduces cold-start no-picks.
 - Keep `ode-osbourne-alibi-idiris` skipped unless source data changes to a scoreable directional outcome.
 
 ## Recommendation

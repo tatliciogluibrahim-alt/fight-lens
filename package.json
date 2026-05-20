@@ -15,7 +15,8 @@
     "backtest:islam-jdm": "node scripts/ingest/build-islam-jdm-backtest.mjs",
     "backtest": "npm_config_cache=.npm-cache npx tsx scripts/backtest/run.ts",
     "backtest:summary": "npm_config_cache=.npm-cache npx tsx scripts/backtest/summary.ts",
-    "audit:predictions": "npm_config_cache=.npm-cache npx tsx scripts/audit/predictions.ts"
+    "audit:predictions": "npm_config_cache=.npm-cache npx tsx scripts/audit/predictions.ts",
+    "backtest:elo": "npm_config_cache=.npm-cache npx tsx scripts/backtest/elo-baseline.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

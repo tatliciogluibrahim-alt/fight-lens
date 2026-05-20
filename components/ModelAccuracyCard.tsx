@@ -52,7 +52,7 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
 
   return (
     <div>
-      <p className="mono-label mb-3">how often the model is right at each confidence level</p>
+      <p className="mono-label mb-3">predicted vs. actual win rate by confidence</p>
       <div className="divide-y divide-line rounded-xl border border-line overflow-hidden">
         <div className="grid grid-cols-[1fr_auto_auto_auto] gap-4 bg-surface-2/50 px-4 py-2">
           <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">confidence range</span>
@@ -80,8 +80,8 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
           );
         })}
       </div>
-      <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">
-        predicted vs. actual win rate per confidence range
+      <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
+        directional only at small n — calibration stabilises after 30+ fights per bucket
       </p>
     </div>
   );
@@ -128,7 +128,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
               <p className="mt-2 text-sm text-muted">{gradeDisplay.label}</p>
             ) : (
               <p className="mt-2 text-sm text-muted">
-                Grade unlocks at 30 scored fights — accuracy numbers grow with each card.
+                {metrics.resolvedCount} fight{metrics.resolvedCount !== 1 ? "s" : ""} scored — grade unlocks at 30.
               </p>
             )}
           </div>
@@ -166,14 +166,14 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
 
         {/* Sample size note */}
         <p className="font-mono text-[11px] text-muted -mt-2">
-          {metrics.resolvedCount} fight{metrics.resolvedCount !== 1 ? "s" : ""} scored — accuracy numbers grow with each card.
+          Logged public calls only — historical backtest runs are tracked separately.
         </p>
 
         {!compact && <CalibrationTable metrics={metrics} />}
 
         {/* Data note */}
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-          signal-based · not a guarantee · outcome-v0.1
+          signal-based · not a guarantee · outcome-v0.2
           {metrics.lastUpdated
             ? ` · updated ${new Date(metrics.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" })}`
             : ""}

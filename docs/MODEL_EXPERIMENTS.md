@@ -1,6 +1,6 @@
 # Fight Lens - Baseline Validation and Model Experiments
 
-Generated: 2026-05-19T23:56:40.882Z
+Generated: 2026-05-20T00:10:01.495Z
 
 ## Scope
 
@@ -24,6 +24,24 @@ Baseline Brier convention: Baseline Brier uses 60/40 on picked fights and 50/50 
 | As-of win percentage, min 3 fights each | yes | 146 | 107 | 58% | 60% | 34% | 0.245 | 2% |
 | As-of UFC win percentage, any history | yes | 233 | 20 | 92% | 63% | 58% | 0.235 | 3% |
 | As-of win percentage, no small edge | yes | 188 | 65 | 74% | 64% | 47% | 0.237 | 0% |
+
+## Chronological Elo Baseline
+
+Simple global Elo is leakage-safe here: every fighter starts at 1500, ratings are read before each fight, then updated only after the result.
+
+Ledger: 253 scored fights sorted by fightDate ascending -> eventName -> normalized event fights array order -> fightId. Limitation: Exact intra-event bout chronology is not separately available; fight order uses the normalized event fights array. Fighters appear once per event in this corpus, so same-day ordering does not affect future-event ratings.
+
+| K | Picked | No-pick | Coverage | Pick acc | All-fight acc | Brier |
+| --- | --- | --- | --- | --- | --- | --- |
+| 24 | 60 | 193 | 24% | 58% | 14% | 0.249 |
+| 32 | 60 | 193 | 24% | 58% | 14% | 0.249 |
+| 40 | 60 | 193 | 24% | 58% | 14% | 0.249 |
+
+Default K=32 comparison: v0.2 66% accuracy / Brier 0.219; official as-of record 63% picked / 58% all-fight / Brier 0.235; Elo 58% picked / 14% all-fight / Brier 0.249.
+
+Agreement at K=32: model and Elo agree on 44 picked fights, disagree on 16; Elo correct/model wrong 6; model correct/Elo wrong 10; both correct 29; both wrong 15; Elo no-pick 193.
+
+Recommendation: D. needs larger sample. The simple Elo baseline has too many cold-start/no-pick fights on this corpus to treat as stable. Keep it as a tracked baseline and revisit after more chronological history is available.
 
 ## Experiment results
 

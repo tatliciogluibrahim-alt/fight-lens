@@ -2,6 +2,16 @@
 
 ## May 2026
 
+### Chronological Elo baseline pass
+
+- Added backend-only leakage-safe chronological Elo baseline generation.
+- New command: `npm run backtest:elo`.
+- New outputs: `data/generated/backtests/elo-baseline.json` and `data/generated/backtests/elo-summary.json`.
+- Elo reads pre-fight ratings before each fight, then updates ratings only after the result. Every fighter starts at 1500.
+- K sensitivity tested at 24, 32, and 40. All produced 60 picked fights, 193 no-picks, 24% coverage, 58% pick accuracy, 14% all-fight accuracy, and 0.249 Brier.
+- Recommendation: Elo is not ready as a model feature on this corpus; keep it as a tracked baseline and revisit with a larger chronological sample or validated seeding plan.
+- No production model outputs, locked predictions, public UI, ingestion, or public Model Record behavior changed.
+
 ### Baseline correction pass
 
 - Replaced the official backtest baseline reporting with leakage-safe as-of record baselines computed from pre-fight history only.

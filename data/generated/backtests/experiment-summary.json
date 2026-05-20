@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19T23:56:40.882Z",
+  "generatedAt": "2026-05-20T00:10:01.495Z",
   "corpus": {
     "scoredFights": 253,
     "v02WinnerAccuracy": 66,
@@ -115,6 +115,144 @@
       "modelVsBaselineDeltaOnPickedSubset": 0
     }
   ],
+  "eloBaseline": {
+    "generatedAt": "2026-05-20T00:09:08.960Z",
+    "modelVersion": "outcome-v0.2",
+    "settings": {
+      "initialElo": 1500,
+      "defaultKFactor": 32,
+      "testedKFactors": [
+        24,
+        32,
+        40
+      ],
+      "expectedProbabilityFormula": "1 / (1 + 10 ^ ((EloB - EloA) / 400))",
+      "updateFormula": "newRating = oldRating + K * (actual - expected)"
+    },
+    "ledger": {
+      "totalScoredFights": 253,
+      "sortOrder": [
+        "fightDate ascending",
+        "eventName",
+        "normalized event fights array order",
+        "fightId"
+      ],
+      "limitation": "Exact intra-event bout chronology is not separately available; fight order uses the normalized event fights array. Fighters appear once per event in this corpus, so same-day ordering does not affect future-event ratings."
+    },
+    "comparison": {
+      "modelV02": {
+        "accuracy": 66,
+        "brierScore": 0.219,
+        "scoredFights": 253
+      },
+      "officialAsOfRecord": {
+        "label": "As-of UFC win percentage, any history",
+        "pickAccuracy": 63,
+        "allFightAccuracy": 58,
+        "coverage": 92,
+        "brierScore": 0.235
+      },
+      "eloK32": {
+        "pickAccuracy": 58,
+        "allFightAccuracy": 14,
+        "coverage": 24,
+        "brierScore": 0.249
+      }
+    },
+    "kSensitivity": [
+      {
+        "kFactor": 24,
+        "initialElo": 1500,
+        "totalFights": 253,
+        "picked": 60,
+        "noPick": 193,
+        "coverage": 24,
+        "correctPicked": 35,
+        "pickAccuracy": 58,
+        "allFightAccuracy": 14,
+        "brierScore": 0.249,
+        "averageAbsoluteEloDiff": 3.3,
+        "agreement": {
+          "modelAndEloAgree": 44,
+          "modelAndEloDisagree": 16,
+          "eloCorrectModelWrong": 6,
+          "modelCorrectEloWrong": 10,
+          "bothCorrect": 29,
+          "bothWrong": 15,
+          "eloNoPick": 193,
+          "eloNoPickModelCorrect": 128,
+          "eloNoPickModelWrong": 65
+        }
+      },
+      {
+        "kFactor": 32,
+        "initialElo": 1500,
+        "totalFights": 253,
+        "picked": 60,
+        "noPick": 193,
+        "coverage": 24,
+        "correctPicked": 35,
+        "pickAccuracy": 58,
+        "allFightAccuracy": 14,
+        "brierScore": 0.249,
+        "averageAbsoluteEloDiff": 4.4,
+        "agreement": {
+          "modelAndEloAgree": 44,
+          "modelAndEloDisagree": 16,
+          "eloCorrectModelWrong": 6,
+          "modelCorrectEloWrong": 10,
+          "bothCorrect": 29,
+          "bothWrong": 15,
+          "eloNoPick": 193,
+          "eloNoPickModelCorrect": 128,
+          "eloNoPickModelWrong": 65
+        }
+      },
+      {
+        "kFactor": 40,
+        "initialElo": 1500,
+        "totalFights": 253,
+        "picked": 60,
+        "noPick": 193,
+        "coverage": 24,
+        "correctPicked": 35,
+        "pickAccuracy": 58,
+        "allFightAccuracy": 14,
+        "brierScore": 0.249,
+        "averageAbsoluteEloDiff": 5.5,
+        "agreement": {
+          "modelAndEloAgree": 44,
+          "modelAndEloDisagree": 16,
+          "eloCorrectModelWrong": 6,
+          "modelCorrectEloWrong": 10,
+          "bothCorrect": 29,
+          "bothWrong": 15,
+          "eloNoPick": 193,
+          "eloNoPickModelCorrect": 128,
+          "eloNoPickModelWrong": 65
+        }
+      }
+    ],
+    "agreementDisagreement": {
+      "modelAndEloAgree": 44,
+      "modelAndEloDisagree": 16,
+      "eloCorrectModelWrong": 6,
+      "modelCorrectEloWrong": 10,
+      "bothCorrect": 29,
+      "bothWrong": 15,
+      "eloNoPick": 193,
+      "eloNoPickModelCorrect": 128,
+      "eloNoPickModelWrong": 65
+    },
+    "recommendation": {
+      "choice": "D",
+      "label": "needs larger sample",
+      "rationale": [
+        "The simple Elo baseline has too many cold-start/no-pick fights on this corpus to treat as stable.",
+        "Keep it as a tracked baseline and revisit after more chronological history is available."
+      ]
+    }
+  },
   "experiments": [
     {
       "id": "v02-current",

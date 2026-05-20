@@ -256,7 +256,8 @@ export default function RecordPage() {
               </div>
 
               <p className="mt-4 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-                For the full historical backtest (n=253 across 20 completed events), see the methodology page.
+                Full historical backtest: n=253, 20 completed events, 66% winner accuracy, Brier 0.219 — see{" "}
+                <a href="/methodology" className="underline decoration-line underline-offset-2 hover:text-subtle">methodology</a>.
               </p>
             </div>
           </section>

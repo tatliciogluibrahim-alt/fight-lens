@@ -8,6 +8,7 @@ The backtest pipeline runs the Fight Lens prediction model on every historical f
 
 ```bash
 npm run backtest          # run pipeline, write output files
+npm run backtest:elo      # run leakage-safe chronological Elo baseline
 npm run backtest:summary  # print a human-readable summary
 ```
 
@@ -52,6 +53,8 @@ Written to `data/generated/backtests/` after each run:
 | `feature-coverage.json` | Per-feature real / missing counts across all fighter-rows |
 | `event-performance.json` | Per-event winner accuracy, method accuracy, brier, outcome source mix |
 | `skip-report.json` | Fights skipped and why (no outcome, draw, NC, etc.) |
+| `elo-baseline.json` | Per-fight chronological Elo baseline with pre-fight ratings and picks |
+| `elo-summary.json` | Elo K sensitivity, model comparison, and agreement/disagreement summary |
 
 ## Metrics explained
 
@@ -62,6 +65,7 @@ Written to `data/generated/backtests/` after each run:
 | **Brier score** | Mean squared error of win probabilities. Lower is better. 0.25 = random. |
 | **Calibration** | When the model says 70%, do 70% of those actually win? |
 | **Official as-of record baseline** | Leakage-safe baseline recomputed only from each fighter's pre-fight history |
+| **Chronological Elo baseline** | Leakage-safe baseline that reads fighter Elo before each fight, then updates after the result |
 | **Legacy profile-record baseline** | Deprecated reference that reads profile snapshot records; not an official comparison |
 | **More-experience baseline** | Accuracy of always picking the fighter with more total fights |
 
@@ -144,6 +148,7 @@ QA notes:
 | Brier score | 0.236 | 0.219 |
 | Official as-of record baseline | not recomputed in old summary | 63% picked / 58% all fights |
 | Official as-of record Brier | not recomputed in old summary | 0.235 |
+| Chronological Elo baseline (K=32) | not run | 58% picked / 14% all fights; Brier 0.249; 24% coverage |
 | Legacy profile-record baseline | 66% | 71% (deprecated; not leakage-safe) |
 | More-experience baseline | 43% | 40% |
 | Model vs official as-of record | n/a | +3 pts on picked subset / +8 pts all fights; Brier 0.016 lower |
@@ -223,6 +228,10 @@ The leakage report shows 72 warning rows. These are thin/no prior history warnin
 
 `ode-osbourne-alibi-idiris` in UFC Fight Night: Strickland vs. Hernandez has source data marked `Overturned` with both fighters recorded as `NC`. It should remain skipped unless source data changes to a scoreable directional outcome.
 
+### 5. Simple Elo is cold-start limited
+
+A leakage-safe chronological Elo baseline now runs with every fighter starting at 1500 and ratings read before each fight. On the current 253-fight corpus, K=24/32/40 all produce 60 picked fights, 193 no-picks, 24% coverage, 58% pick accuracy, 14% all-fight accuracy, and 0.249 Brier. This is too cold-start heavy to use as a model feature yet. Keep it as a backend baseline and revisit after a larger chronological corpus or a separately validated pre-corpus seeding approach.
+
 ## Adding more historical data
 
 ```bash
@@ -243,4 +252,4 @@ No code changes needed. The runner auto-loads every JSON in `data/normalized/eve
 
 The 20-event backend expansion is complete and the target n >= 200 is met. Do not tune weights yet.
 
-Recommended next step: keep v0.2 current and continue backend-only validation/calibration work. Focus on the 60-80% buckets, record-prior experiments, and out-of-sample confirmation before any model promotion. Keep UI unchanged, public Model Record separate from historical backtests, and `predictionViewModel` as the public source of truth.
+Recommended next step: keep v0.2 current and continue backend-only validation/calibration work. Focus on the 60-80% buckets, record-prior experiments, out-of-sample confirmation, and a larger chronological sample for Elo before any model promotion. Keep UI unchanged, public Model Record separate from historical backtests, and `predictionViewModel` as the public source of truth.

@@ -24,6 +24,7 @@ Expanded historical corpus:
 - Brier score: 0.219
 - Official as-of UFC win percentage baseline: 63% pick accuracy / 58% all-fight accuracy
 - Official as-of baseline Brier: 0.235
+- Chronological Elo baseline (K=32): 58% pick accuracy / 14% all-fight accuracy, 24% coverage, Brier 0.249
 - Legacy profile-record baseline: 71% all-fight accuracy, deprecated and not leakage-safe
 - More-experience baseline: 40%
 - Model vs official as-of baseline: +3 points on picked subset / +8 points all fights; Brier 0.016 lower
@@ -40,7 +41,7 @@ Comparison to the previous n=76 deeper-history run:
 
 ## Interpretation
 
-The model is directionally promising but not proven. It now beats the leakage-safe as-of record baselines on headline winner accuracy and Brier, but the corpus is still early and no v0.3 experiment has clearly improved both metrics. Keep v0.2 current, do not tune weights yet, and do not publish a model grade.
+The model is directionally promising but not proven. It now beats the leakage-safe as-of record baselines and the cold-start chronological Elo baseline on headline winner accuracy and Brier, but the corpus is still early and no v0.3 experiment has clearly improved both metrics. Keep v0.2 current, do not tune weights yet, and do not publish a model grade.
 
 Calibration is mixed:
 - 50-60%: 61% actual on n=135
@@ -48,7 +49,7 @@ Calibration is mixed:
 - 70-80%: 64% actual on n=28
 - 80%+: 94% actual on n=33
 
-The 60-80% buckets remain the main calibration concern.
+The 60-80% buckets remain the main calibration concern. The simple Elo baseline is useful as a leakage-safe report, but it is cold-start limited on this 20-event window and should not become a model feature without a larger chronological sample or a validated seeding plan.
 
 ## Post-expansion QA checkpoint
 

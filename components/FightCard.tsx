@@ -158,11 +158,11 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           {hasPred && (
             <div className="mt-2.5 flex items-center justify-center gap-1.5 text-center">
               <span className={`data-text text-[11px] font-medium ${favA ? "text-accent" : "text-muted"}`}>
-                {probA}
+                {probA}%
               </span>
-              <span className="text-[9px] text-subtle">·</span>
+              <span className="text-[9px] text-subtle">–</span>
               <span className={`data-text text-[11px] font-medium ${favB ? "text-accent" : "text-muted"}`}>
-                {probB}
+                {probB}%
               </span>
             </div>
           )}
@@ -207,32 +207,35 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
         </div>
       </div>
 
-      {/* Sub-row: call summary line — scannable, low monospace */}
+      {/* Sub-row: call summary — scannable */}
       {vm && (
-        <div className="flex flex-wrap items-center gap-3 px-5 pb-4 text-xs text-muted md:gap-5">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-5 pb-4 text-xs">
+          {/* Call */}
           {vm.isNamedCall && vm.predictedWinner ? (
-            <span>
+            <span className="text-muted">
               <span className="text-subtle">Call:</span>{" "}
               <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>{" "}
               <span className="data-text text-foreground">{vm.winnerProbability}%</span>
             </span>
           ) : (
-            <span className="font-medium text-foreground">{vm.displayedCallLabel}</span>
+            <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
           )}
-          <span className="text-subtle">·</span>
-          <span>
-            <span className="text-subtle">Read:</span>{" "}
-            <span className="text-foreground">{readStrengthLabel(vm.readStrength)}</span>
+
+          {/* Read strength */}
+          <span className="text-subtle">
+            {readStrengthLabel(vm.readStrength)}{" "}
+            <span className="text-subtle/60">read</span>
           </span>
+
+          {/* Method lean — secondary */}
           {methodTop && (
-            <>
-              <span className="text-subtle">·</span>
-              <span>
-                <span className="text-subtle">Method lean:</span>{" "}
-                <span className="text-foreground">{methodTop}</span>
-              </span>
-            </>
+            <span className="text-subtle">
+              {methodTop}{" "}
+              <span className="text-subtle/60">lean</span>
+            </span>
           )}
+
+          {/* Result chip — pushed right */}
           <span className="ml-auto">
             <ResultChip viewModel={vm} />
           </span>

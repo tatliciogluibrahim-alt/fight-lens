@@ -165,6 +165,15 @@ summary::-webkit-details-marker {
   min-height: 44px;
 }
 
+/* Pulsing dot for pending states */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-pulse {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 /* ─── Lens logo mark ──────────────────────────────────────────────────────── */
 
 .lens-mark {

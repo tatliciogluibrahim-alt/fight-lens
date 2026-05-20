@@ -190,6 +190,14 @@ export default function MethodologyPage() {
                   read accuracy honestly.
                 </p>
               </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">What &quot;too close to call&quot; means</p>
+                <p className="mt-1 text-sm leading-6 text-muted">
+                  When the model&apos;s win probability for each fighter is below 52%, no named call
+                  is shown. Both paths stay live. This is not a broken state — it is the model
+                  being honest about low separation rather than forcing a pick.
+                </p>
+              </div>
             </div>
 
             <div className="mt-6 rounded-xl border border-line bg-background/40 p-4">
@@ -207,10 +215,11 @@ export default function MethodologyPage() {
               <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=253, 20-event corpus)</p>
               <p className="mt-1 text-sm leading-6 text-muted">
                 The historical backtest covers 253 fights across 20 completed events. Winner
-                accuracy held at 66%, method accuracy moved to 58%, and Brier improved to 0.219.
-                The model now trails the better-record baseline by 5 points, so it is directionally
-                useful but not proven. The 60–80% confidence buckets still show overconfidence.
-                More logged public calls are needed before any model grade unlocks.
+                accuracy is 66%, method accuracy 58%, and Brier 0.219. Against the official
+                leakage-safe as-of record baseline (63% picked / 58% all-fight, Brier 0.235),
+                v0.2 is directionally ahead — but the corpus is still early and no model grade
+                is published yet. The 60–80% confidence buckets show some overconfidence. More
+                logged public calls are needed before any grade unlocks.
                 These backtests are <span className="text-foreground">retroactive validation runs</span> —
                 they are not the same as logged pre-fight calls, and are listed separately on the
                 Model Record page.
