@@ -105,7 +105,7 @@ function biggestEdgeBody(row: AxisRow, leader: string): string {
     case "strike defense":
       return `${lead}'s defensive shell reads more reliable in standing exchanges.`;
     case "wrestling":
-      return `${lead} can force more grappling sequences than the other side has answered for.`;
+      return `${lead} can force more grappling sequences than the opponent has answered for.`;
     case "td defense":
       return `${lead} has the stronger record of denying entries and resetting upright.`;
     case "control":
@@ -192,17 +192,17 @@ function buildHeadline(
     .filter((r) => Math.sign(r.delta) === Math.sign(biggest.delta) && r.absDelta >= 10);
 
   if (biggest.absDelta >= 25) {
-    return `${lead}'s ${axis} is the cleanest signal on the board. The supporting axes read tighter — this is a style map, not the model call.`;
+    return `${lead}'s ${axis} is the cleanest style signal. Use it after the call to understand where the matchup tilts.`;
   }
 
   if (biggest.absDelta >= 15) {
     if (supporting.length >= 1) {
-      return `${lead}'s clearest style edge is ${axis}. The radar is useful context, but the model call still lives above.`;
+      return `${lead}'s clearest style edge is ${axis}. Shape explains where the matchup tilts after you read the call.`;
     }
-    return `${lead} holds the clearer edge on ${axis}. Other axes read tighter, so the shape doesn't separate cleanly.`;
+    return `${lead} shows the cleaner ${axis} shape. Other axes stay tighter, so treat it as context.`;
   }
 
-  return `${lead} carries a modest ${axis} edge, but the shape doesn't separate cleanly. Read it as a style map, not a call.`;
+  return `${lead} carries a modest ${axis} edge. The rest of the map stays tight. Read it as style context, not a call.`;
 }
 
 // ── Main entry point ─────────────────────────────────────────────────────────

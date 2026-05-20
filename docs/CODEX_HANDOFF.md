@@ -76,11 +76,11 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `components/FightReadSnapshot.tsx` | At-a-glance strip — reads only from `viewModel`. |
 | `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable full-word hero typography without touching prediction data. Never allow character-level breaks. |
 | `components/TheCall.tsx` | Main call card — winner + probability bar + method lean. |
-| `components/ProbabilityBar.tsx` | Two-sided fight-page probability rail — amber only marks the canonical model-called side; no-call states stay neutral. |
+| `components/ProbabilityBar.tsx` | Call-first model-call display — called fighter, win probability, and Live Path side; no horizontal winner rail. |
 | `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
-| `components/StyleComparisonBars.tsx` | Shape tab — "What the shape says" cards + axis breakdown bars. |
+| `components/StyleComparisonBars.tsx` | Shape tab — neutral radar, plain-English takeaway, shape insight cards, and collapsed axis breakdown. |
 | `components/FightPageTabs.tsx` | Sticky tab bar — call / shape / details tabs. |
-| `components/FightCard.tsx` | Event page matchup row — shows call, read strength, method lean, result chip. |
+| `components/FightCard.tsx` | Event page matchup row — shows call, read strength, method lean, result chip; expanded details use neutral comparison bars. |
 
 ### Data
 
@@ -145,7 +145,7 @@ The `/record` page renders two visually distinct sections labeled "Public Model 
 
 ## Recent Visual / Copy Changes
 
-The six passes below changed **zero** model math, locked predictions, backtest logic, or public record behavior.
+The recent passes below changed **zero** model math, locked predictions, backtest logic, or public record behavior.
 
 1. **Sticky tab bar** — fixed at `top-16 z-20`; `scroll-mt-32` on all anchored sections.
 2. **Events index** — new `app/events/page.tsx` with current card feature treatment.
@@ -155,8 +155,9 @@ The six passes below changed **zero** model math, locked predictions, backtest l
 6. **Shape narrative** — `lib/fight-shape-model/shape-narrative.ts`; analyst-style copy replacing robotic `publicSummary` in `FightShapeSummary`. Never names a winner.
 7. **"What the shape says" cards** — `StyleComparisonBars` now renders `biggest-edge`, `closest`, and `swing`/`watching` cards above the axis bars.
 8. **Language cleanup** — all "matchup stress", "pressure point", "style-pressure read", and "Limited pressure signal" occurrences removed from UI.
-9. **Fighter hero stabilization** — `FighterNamePlate` gives fight pages a consistent two-line name plate; `FightPageTabs` now respects section hashes without sticky-tab overlap.
-10. **Probability rail semantics** — `ProbabilityBar` now uses a two-sided rail with a center 50/50 axis. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
+9. **Fighter hero stabilization** — `FighterNamePlate` gives fight pages a consistent two-line name plate; `FightPageTabs` owns `#section-call`, `#section-shape`, and `#section-details` and scrolls after panel mount so sticky tabs do not hide headings.
+10. **Model-call display semantics** — `ProbabilityBar` now uses a call-first layout with the non-called side labeled `Live path`. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
+11. **Fight-read final QA** — source/static route checks verified home, events, fight pages, record, and methodology. Event-row expanded details were neutralized so amber is not used as a generic chart/comparison color. Browser/device hash landing still needs a local manual spot-check outside the Codex sandbox.
 
 ---
 
@@ -167,6 +168,7 @@ The six passes below changed **zero** model math, locked predictions, backtest l
 | Radar axis labels may clip at 375 px viewport (iPhone SE) | `components/StyleRadar.tsx` — `LABEL_RADIUS=148`, `SIZE=360` | P0 — verify on device |
 | SVG `<title>` tooltips don't fire on touch | `StyleRadar.tsx` data dot `<title>` elements | P1 — replace with pointer-event tooltip |
 | No automated test for `prefers-reduced-motion` behavior | `app/globals.css` reduced-motion block | P0 — manual device QA only |
+| Browser-level hash landing still needs device confirmation | `#section-call`, `#section-shape`, `#section-details` — source/static checks pass; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
 | 60–80% calibration buckets are overconfident | `lib/backtest/calibration.ts` | P2 — diagnostics only, no math changes yet |
 | Elo baseline has 76% no-picks due to cold start | `scripts/backtest/elo-baseline.ts` | P3 — experiment with warm seeding |
 

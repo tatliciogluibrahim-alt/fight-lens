@@ -29,11 +29,17 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
     return tabs.some((tab) => tab.id === id);
   }
 
-  function scrollToPanel() {
+  function scrollToPanel(id: string, behavior: ScrollBehavior = "smooth") {
     requestAnimationFrame(() => {
-      if (!panelRef.current) return;
-      const top = panelRef.current.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: top - STICKY_SCROLL_OFFSET, behavior: "smooth" });
+      requestAnimationFrame(() => {
+        const target = document.getElementById(`section-${id}`) ?? panelRef.current;
+        if (!target) return;
+        const top = target.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: Math.max(top - STICKY_SCROLL_OFFSET, 0),
+          behavior,
+        });
+      });
     });
   }
 
@@ -41,7 +47,7 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
     if (!isKnownTab(id)) return;
     setActive(id);
     if (updateHash) window.history.replaceState(null, "", `#section-${id}`);
-    scrollToPanel();
+    scrollToPanel(id);
   }
 
   useEffect(() => {
@@ -49,7 +55,7 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
       const id = hashToTabId(window.location.hash);
       if (!tabs.some((tab) => tab.id === id)) return;
       setActive(id);
-      scrollToPanel();
+      scrollToPanel(id, "auto");
     }
 
     syncFromHash();
@@ -87,13 +93,10 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
       </div>
 
       {/*
-        Active panel. ref is used by handleTabChange to find the correct scroll
-        target. scroll-mt-44 (176px) covers the stacked sticky header + tab bar
-        if the panel is itself the target of a hash-navigation link.
-
-        key={active} forces a remount when the active tab changes, which
-        re-triggers the fl-tab-panel entrance animation defined in globals.css.
-        Reduced-motion users get an instant cut via the global override.
+        Active panel. This wrapper is the single canonical hash target for
+        #section-call, #section-shape, and #section-details. The scroll helper
+        waits for the new panel to mount before applying the sticky-header
+        offset, so hash jumps land with the section heading visible.
       */}
       <div ref={panelRef} id={`section-${active}`} className="scroll-mt-44 space-y-5">
         <div key={active} className="fl-tab-panel space-y-5">

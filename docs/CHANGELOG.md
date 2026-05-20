@@ -2,9 +2,25 @@
 
 ## May 2026
 
+### Final P0 fight-read clarity QA
+
+- Verified the fight-read flow across home, events, event detail, fight pages, record, and methodology through source and static build output.
+- Confirmed `#section-call`, `#section-shape`, and `#section-details` use the shared `FightPageTabs` anchor-offset pattern.
+- Neutralized the expandable event-row win probability and method bars so amber is not used as a generic chart/comparison color.
+- Reconfirmed model-call hierarchy, Live Path labeling, neutral shape/radar treatment, collapsed axis breakdown, and public record/backtest separation labels.
+- Remaining manual QA: browser/device hash landing and reduced-motion behavior should be spot-checked outside the Codex sandbox, where the local dev server can bind normally.
+
+### P0 fight-read navigation clarity
+
+- Made fight-page hash navigation use a single tab-owned anchor target for `#section-call`, `#section-shape`, and `#section-details`, with scroll offset applied after the active panel mounts.
+- Simplified the model-call card by removing the duplicate footer call line and renaming the non-called side to "Live path".
+- Reordered the shape tab so the heading, intro, neutral radar, plain-English takeaway, and three insight cards lead before the detailed axis breakdown.
+- Collapsed the full axis breakdown behind a quiet details control so the radar no longer dominates the first shape view.
+- Updated shape copy to avoid robotic "model call still lives above" phrasing. No model math, prediction values, locked calls, ingestion, backtest logic, generated data, or public Model Record scoring changed.
+
 ### P0 visual-system cleanup
 
-- Replaced the fight-page model-call probability rail with a clearer call-first layout: called fighter, win probability, other side, read strength, and secondary method lean.
+- Replaced the fight-page model-call probability rail with a clearer call-first layout: called fighter, win probability, live path, read strength, and secondary method lean.
 - Removed bright cyan/blue from radar and axis comparison visuals; shape now uses neutral off-white vs muted slate styling so it does not read like a winner forecast.
 - Neutralized method/read-strength bar coloring so amber stays reserved for primary actions, selected UI, and the canonical model call.
 - Tightened event discovery copy and restored past-card record links while keeping cards directory-like.

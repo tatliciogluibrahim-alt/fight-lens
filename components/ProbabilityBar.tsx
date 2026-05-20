@@ -71,22 +71,16 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
         </div>
 
         <div className="rounded-2xl border border-line bg-surface/60 p-6 md:p-7">
-          <p className="mono-label">other side</p>
+          <p className="mono-label">live path</p>
           <p className="mt-3 text-xl font-semibold leading-tight tracking-[-0.03em] text-foreground">
             {otherName}
           </p>
           <p className="data-text mt-3 text-3xl text-muted md:text-4xl">
             {otherProb}%
           </p>
-          <p className="mt-2 text-xs text-subtle">still live, not the model call</p>
+          <p className="mt-2 text-xs text-subtle">non-call route, not a second call</p>
         </div>
       </div>
-
-      <p className="text-center font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
-        <span className="text-muted">Model call: </span>
-        <span className="text-accent">{calledName}</span>
-        <span> · {calledProb}% win probability</span>
-      </p>
     </div>
   );
 }

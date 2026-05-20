@@ -154,7 +154,7 @@ function ScenarioCard({
 export function TheCall({ viewModel: vm }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
-      <section id="the-call" className="module-card scroll-mt-32">
+      <section className="module-card">
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
@@ -180,7 +180,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
   const { fighterA, fighterB, scenarios, tooClose } = vm;
 
   return (
-    <section id="the-call" className="module-card scroll-mt-32">
+    <section className="module-card">
       <div className="module-header">
         <p className="mono-label">the call</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">

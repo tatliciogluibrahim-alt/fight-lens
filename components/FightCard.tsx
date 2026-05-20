@@ -100,7 +100,7 @@ function MethodBar({ label, value, accent }: { label: string; value: number; acc
       <p className="w-24 mono-label shrink-0">{label}</p>
       <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
         <div
-          className={`absolute left-0 h-full rounded-full ${accent ? "bg-accent" : "bg-muted/50"}`}
+          className={`absolute left-0 h-full rounded-full ${accent ? "bg-foreground/80" : "bg-muted/50"}`}
           style={{ width: `${Math.max(value, 2)}%` }}
         />
       </div>
@@ -248,23 +248,19 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-3">
               <p className="mono-label">win probability</p>
-              <div className="flex items-center gap-3">
-                <p className={`data-text w-10 text-right text-sm ${favA ? "text-accent" : "text-muted"}`}>
-                  {probA}%
-                </p>
-                <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
-                  <div
-                    className="absolute left-0 h-full rounded-full bg-accent"
-                    style={{ width: `${probA ?? 0}%` }}
-                  />
+              <div className="grid gap-2 sm:grid-cols-2">
+                <div className={`rounded-xl border p-3 ${favA ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
+                  <p className="truncate text-xs text-subtle">{fighterA.name.split(" ").pop()}</p>
+                  <p className={`data-text mt-1 text-lg ${favA ? "text-foreground" : "text-muted"}`}>
+                    {probA}%
+                  </p>
                 </div>
-                <p className={`data-text w-10 text-sm ${favB ? "text-accent" : "text-muted"}`}>
-                  {probB}%
-                </p>
-              </div>
-              <div className="flex justify-between text-xs text-subtle">
-                <span>{fighterA.name.split(" ").pop()}</span>
-                <span>{fighterB.name.split(" ").pop()}</span>
+                <div className={`rounded-xl border p-3 ${favB ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
+                  <p className="truncate text-xs text-subtle">{fighterB.name.split(" ").pop()}</p>
+                  <p className={`data-text mt-1 text-lg ${favB ? "text-foreground" : "text-muted"}`}>
+                    {probB}%
+                  </p>
+                </div>
               </div>
             </div>
 

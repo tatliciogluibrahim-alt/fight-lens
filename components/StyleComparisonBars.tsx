@@ -1,7 +1,7 @@
 import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions, hasEnoughStyleRadarData } from "@/lib/style-radar";
-import { buildShapeNarrative, type NarrativeAxisCard } from "@/lib/fight-shape-model/shape-narrative";
+import { buildShapeNarrative, type NarrativeAxisCard, type ShapeNarrative } from "@/lib/fight-shape-model/shape-narrative";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import type { NullableStyleProfile } from "@/lib/fight-shape";
 
@@ -47,6 +47,36 @@ function shapeCardTone(kind: NarrativeAxisCard["kind"]) {
         labelTone: "text-muted",
       };
   }
+}
+
+
+function lastName(name?: string | null) {
+  const parts = (name ?? "").trim().split(/\s+/).filter(Boolean);
+  return parts.at(-1) ?? "Fighter";
+}
+
+function possessiveName(name?: string | null) {
+  const base = lastName(name);
+  return base.endsWith("s") ? base + "'" : base + "'s";
+}
+
+function axisPhrase(label?: string | null) {
+  return (label ?? "style").trim().replace(/\.$/, "").toLowerCase();
+}
+
+function buildShapeTakeaway(narrative: ShapeNarrative) {
+  const biggest = narrative.cards.find((card) => card.kind === "biggest-edge");
+  const swing = narrative.cards.find((card) => card.kind === "swing");
+
+  if (biggest?.leaderName) {
+    const first = possessiveName(biggest.leaderName) + " clearest style edge is " + axisPhrase(biggest.axisLabel) + ".";
+    if (swing?.leaderName) {
+      return first + " " + possessiveName(swing.leaderName) + " best swing path is " + axisPhrase(swing.axisLabel) + ".";
+    }
+    return first + " Use this after the call to understand where the matchup tilts.";
+  }
+
+  return narrative.headline || "Use this after the call to understand where the matchup tilts.";
 }
 
 function ShapeCard({ card }: { card: NarrativeAxisCard }) {
@@ -260,7 +290,7 @@ export function StyleComparisonBars({
 
   if (!comparableRows.length) {
     return (
-      <section id="section-shape" className="module-card scroll-mt-32">
+      <section className="module-card">
         <div className="module-header">
           <p className="mono-label">shape</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
@@ -290,16 +320,17 @@ export function StyleComparisonBars({
     return b - a;
   });
 
+  const shapeTakeaway = buildShapeTakeaway(narrative);
+
   return (
-    <section id="section-shape" className="module-card scroll-mt-32">
+    <section className="module-card">
       <div className="module-header">
-        <p className="mono-label accent-rail">fight shape</p>
+        <p className="mono-label">fight shape</p>
         <h2 className="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
           shape fingerprint.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          See the shape of the fight. The radar shows where each fighter creates pressure.
-          It does not replace the model call.
+          Shape explains where the matchup tilts. It does not replace the model call.
         </p>
       </div>
 
@@ -317,16 +348,21 @@ export function StyleComparisonBars({
           <span className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b border-l border-line-strong" />
           <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-line-strong" />
 
-          {/* Header: label + fighter chips */}
+          {/* Header: label + neutral fighter legend */}
           <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="mono-label">shape comparison</p>
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-foreground">
-                <span className="size-2 rounded-full bg-foreground/80" />
+            <div>
+              <p className="mono-label">shape comparison</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-subtle/75">
+                style map only
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-4 text-[11px] font-medium tracking-tight">
+              <span className="inline-flex items-center gap-2 text-foreground">
+                <span className="h-px w-7 bg-foreground/80" />
                 {fighterA.name}
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-muted">
-                <span className="size-2 rounded-full bg-muted" />
+              <span className="inline-flex items-center gap-2 text-muted">
+                <span className="h-px w-7 border-t border-dashed border-muted" />
                 {fighterB.name}
               </span>
             </div>
@@ -343,126 +379,137 @@ export function StyleComparisonBars({
           </div>
 
           <p className="mt-4 text-center text-[11px] uppercase tracking-[0.1em] text-subtle/80">
-            shape fingerprint · not a winner forecast
+            style map only · not a winner forecast
           </p>
         </div>
 
         {/*
-          ── What the shape says ───────────────────────────────────────────────
-          Analyst-style cards. The biggest separator, the closest category, and
-          a swing/counter-path. Never names a winner — describes style in fight
-          language. Pulled from the same narrative helper as the call-tab
-          headline, so the two views stay consistent.
+          ── Shape takeaway + insight cards ────────────────────────────────────
+          Keep the first shape read human and compact. Cards stay style-only and
+          never identify a winner forecast.
         */}
-        {narrative.headline ? (
+        {shapeTakeaway ? (
+          <div className="rounded-2xl border border-line bg-background/35 p-5">
+            <p className="mono-label">what to notice</p>
+            <p className="mt-3 text-base leading-7 text-foreground md:text-lg md:leading-8">
+              {shapeTakeaway}
+            </p>
+          </div>
+        ) : null}
+
+        {narrative.cards.length > 0 ? (
           <div>
             <div className="mb-3 flex items-baseline justify-between gap-3">
-              <p className="mono-label">what the shape says</p>
+              <p className="mono-label">shape insights</p>
               <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-                style map
+                style map only
               </p>
             </div>
-            <p className="text-base leading-7 text-foreground md:text-lg md:leading-8">
-              {narrative.headline}
-            </p>
-            {narrative.cards.length > 0 ? (
-              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {narrative.cards.map((card) => (
-                  <ShapeCard key={`${card.kind}-${card.axisLabel}`} card={card} />
-                ))}
-              </div>
-            ) : null}
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {narrative.cards.map((card) => (
+                <ShapeCard key={`${card.kind}-${card.axisLabel}`} card={card} />
+              ))}
+            </div>
             {narrative.caveat ? (
               <p className="mt-4 text-xs leading-5 text-subtle">{narrative.caveat}</p>
             ) : null}
           </div>
         ) : null}
-
         {/*
           ── Axis breakdown ────────────────────────────────────────────────────
           Sorted by absolute delta so the most-separating axes read first.
-          Delta label makes it explicit that the bar shows shape signal, not
-          a guaranteed advantage. Manually-weighted axes are flagged.
+          Collapsed by default so the radar and three insight cards lead the
+          section; this is detail, not a second winner forecast.
         */}
-        <div>
-          <div className="mb-3 flex items-baseline justify-between gap-3">
-            <p className="mono-label">axis breakdown</p>
-            <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-              Larger number = stronger style signal
+        <details className="group overflow-hidden rounded-2xl border border-line bg-background/25">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4">
+            <div>
+              <p className="mono-label">full axis breakdown</p>
+              <p className="mt-1 text-xs text-subtle">
+                Larger number = stronger style signal.
+              </p>
+            </div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:hidden">
+              show
+            </span>
+            <span className="hidden font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:inline">
+              hide
+            </span>
+          </summary>
+          <div className="border-t border-line p-4 md:p-5">
+            <div className="overflow-hidden rounded-2xl border border-line bg-background/30">
+              {/* Column headers */}
+              <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-line px-5 py-3">
+                <p className="truncate text-sm font-semibold text-foreground">{fighterA.name}</p>
+                <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
+                  axis · Δ
+                </p>
+                <p className="truncate text-right text-sm font-semibold text-foreground">{fighterB.name}</p>
+              </div>
+
+              {sortedRows.map(({ a, b }) => {
+                const aValue = a.hasData ? (a.value ?? null) : null;
+                const bValue = b?.hasData ? (b.value ?? null) : null;
+                const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
+                const bothPresent = aValue != null && bValue != null;
+                const delta = bothPresent ? Math.abs(aValue - bValue) : null;
+
+                return (
+                  <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
+                    {/* Label + scores + Δ */}
+                    <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+                      <span className="data-text text-sm tabular-nums text-foreground">
+                        {aValue != null ? aValue : "—"}
+                      </span>
+                      <div className="flex w-20 flex-col items-center gap-0.5">
+                        <span className="text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
+                          {a.shortLabel}
+                        </span>
+                        {delta != null && delta > 0 ? (
+                          <span className="data-text text-[9px] uppercase tracking-[0.1em] text-subtle/70">
+                            Δ {delta}
+                          </span>
+                        ) : null}
+                      </div>
+                      <span className="data-text text-right text-sm tabular-nums text-muted">
+                        {bValue != null ? bValue : "—"}
+                      </span>
+                    </div>
+
+                    {/* Bar */}
+                    <div className="grid grid-cols-2 gap-1">
+                      <div className="flex justify-end rounded-l-full bg-surface-2">
+                        {aValue != null ? (
+                          <div
+                            className="h-2 rounded-l-full bg-foreground/80"
+                            style={{ width: `${(aValue / max) * 100}%` }}
+                          />
+                        ) : null}
+                      </div>
+                      <div className="rounded-r-full bg-surface-2">
+                        {bValue != null ? (
+                          <div
+                            className="h-2 rounded-r-full bg-muted"
+                            style={{ width: `${(bValue / max) * 100}%` }}
+                          />
+                        ) : null}
+                      </div>
+                    </div>
+
+                    {(a.provenance === "manual" || b?.provenance === "manual") ? (
+                      <p className="data-text mt-1.5 text-[9px] uppercase tracking-[0.08em] text-subtle/60">
+                        manually weighted
+                      </p>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </div>
+            <p className="mt-3 text-[11px] leading-5 text-subtle/80">
+              These rows compare style signals only. They do not decide the fight.
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl border border-line bg-background/30">
-            {/* Column headers */}
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-line px-5 py-3">
-              <p className="truncate text-sm font-semibold text-foreground">{fighterA.name}</p>
-              <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
-                axis · Δ
-              </p>
-              <p className="truncate text-right text-sm font-semibold text-foreground">{fighterB.name}</p>
-            </div>
-
-            {sortedRows.map(({ a, b }) => {
-              const aValue = a.hasData ? (a.value ?? null) : null;
-              const bValue = b?.hasData ? (b.value ?? null) : null;
-              const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
-              const bothPresent = aValue != null && bValue != null;
-              const delta = bothPresent ? Math.abs(aValue - bValue) : null;
-
-              return (
-                <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
-                  {/* Label + scores + Δ */}
-                  <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-                    <span className="data-text text-sm tabular-nums text-foreground">
-                      {aValue != null ? aValue : "—"}
-                    </span>
-                    <div className="flex w-20 flex-col items-center gap-0.5">
-                      <span className="text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
-                        {a.shortLabel}
-                      </span>
-                      {delta != null && delta > 0 ? (
-                        <span className="data-text text-[9px] uppercase tracking-[0.1em] text-subtle/70">
-                          Δ {delta}
-                        </span>
-                      ) : null}
-                    </div>
-                    <span className="data-text text-right text-sm tabular-nums text-muted">
-                      {bValue != null ? bValue : "—"}
-                    </span>
-                  </div>
-
-                  {/* Bar */}
-                  <div className="grid grid-cols-2 gap-1">
-                    <div className="flex justify-end rounded-l-full bg-surface-2">
-                      {aValue != null ? (
-                        <div
-                          className="h-2 rounded-l-full bg-foreground/80"
-                          style={{ width: `${(aValue / max) * 100}%` }}
-                        />
-                      ) : null}
-                    </div>
-                    <div className="rounded-r-full bg-surface-2">
-                      {bValue != null ? (
-                        <div
-                          className="h-2 rounded-r-full bg-muted"
-                          style={{ width: `${(bValue / max) * 100}%` }}
-                        />
-                      ) : null}
-                    </div>
-                  </div>
-
-                  {(a.provenance === "manual" || b?.provenance === "manual") ? (
-                    <p className="data-text mt-1.5 text-[9px] uppercase tracking-[0.08em] text-subtle/60">
-                      manually weighted
-                    </p>
-                  ) : null}
-                </div>
-              );
-            })}
-          </div>
-          <p className="mt-3 text-[11px] leading-5 text-subtle/80">
-            A larger number means a stronger style signal — it does not decide the fight.
-          </p>
-        </div>
+        </details>
 
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
           signal-based · not a winner call · fight-shape-v0.2
