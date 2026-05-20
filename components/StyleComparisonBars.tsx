@@ -24,9 +24,9 @@ function shapeCardTone(kind: NarrativeAxisCard["kind"]) {
   switch (kind) {
     case "biggest-edge":
       return {
-        border: "border-accent/25",
-        bg: "bg-accent/[0.06]",
-        labelTone: "text-accent",
+        border: "border-line-strong",
+        bg: "bg-surface-2/60",
+        labelTone: "text-foreground",
       };
     case "swing":
       return {
@@ -67,7 +67,7 @@ function ShapeCard({ card }: { card: NarrativeAxisCard }) {
       <p className="mt-2 text-sm leading-6 text-muted">{card.body}</p>
       {card.scoreA != null && card.scoreB != null ? (
         <p className="data-text mt-3 text-[10px] uppercase tracking-[0.12em] text-subtle">
-          <span className="text-accent">{card.scoreA}</span>
+          <span className="text-sky-300">{card.scoreA}</span>
           <span className="text-subtle/60"> / </span>
           <span>{card.scoreB}</span>
         </p>
@@ -79,7 +79,7 @@ function ShapeCard({ card }: { card: NarrativeAxisCard }) {
 // ─── Overlay radar — both fighters on one chart ───────────────────────────────
 //
 // Renders two polygons on the same axes so the shapes can be compared directly.
-// Accent = Fighter A, Muted = Fighter B. This is the shape tab's visual signature.
+// Sky = Fighter A, muted = Fighter B. Neither color is a winner forecast.
 
 function OverlayRadar({
   profileA,
@@ -126,7 +126,7 @@ function OverlayRadar({
       aria-label={`${nameA} vs ${nameB} style comparison radar`}
     >
       {/* Background halo */}
-      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(245,158,11,0.025)" />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(56,189,248,0.018)" />
       <circle
         cx={CENTER} cy={CENTER} r={RADIUS + 30}
         fill="none" stroke="var(--line)" strokeOpacity={0.4} strokeDasharray="2 8"
@@ -180,12 +180,12 @@ function OverlayRadar({
         />
       )}
 
-      {/* Fighter A shape — primary accent, drawn last so the gold lands on top */}
+      {/* Fighter A shape — drawn last for comparison, but not styled as a winner call */}
       {canFillA && (
         <polygon
           points={toStr(pts(dimsA))}
-          fill="rgba(245,158,11,0.12)"
-          stroke="var(--accent)"
+          fill="rgba(56,189,248,0.11)"
+          stroke="#38bdf8"
           strokeWidth={2.4}
           strokeLinejoin="round"
           className="fl-radar-bloom fl-radar-bloom-delay"
@@ -199,7 +199,7 @@ function OverlayRadar({
         return (
           <g key={`a-${d.key}`} className="fl-radar-bloom fl-radar-bloom-delay">
             <circle cx={p.x} cy={p.y} r={4}
-              fill="var(--background)" stroke="var(--accent)" strokeWidth={2}
+              fill="var(--background)" stroke="#38bdf8" strokeWidth={2}
               className="fl-radar-dot"
             >
               <title>{`${nameA} · ${d.label}: ${d.value}`}</title>
@@ -298,8 +298,8 @@ export function StyleComparisonBars({
           shape fingerprint.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          The style map. Watch where the shapes diverge — not the absolute scores.
-          This is not the winner forecast.
+          See the shape of the fight. The radar shows where each fighter creates pressure.
+          It does not replace the model call.
         </p>
       </div>
 
@@ -310,19 +310,19 @@ export function StyleComparisonBars({
           scouting-room read, not a chart-library default. The individual
           side-by-side radars were removed in favour of this being the focus.
         */}
-        <div className="relative overflow-hidden rounded-3xl border border-accent/15 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
+        <div className="relative overflow-hidden rounded-3xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
           {/* Corner registration marks */}
-          <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-accent/30" />
-          <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-accent/30" />
-          <span className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b border-l border-accent/30" />
-          <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-accent/30" />
+          <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-line-strong" />
+          <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-line-strong" />
+          <span className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b border-l border-line-strong" />
+          <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-line-strong" />
 
           {/* Header: label + fighter chips */}
           <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="mono-label">shape comparison</p>
             <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/[0.08] px-3 py-1 text-[11px] font-medium tracking-tight text-accent">
-                <span className="size-2 rounded-full bg-accent" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-sky-300/30 bg-sky-300/[0.08] px-3 py-1 text-[11px] font-medium tracking-tight text-sky-300">
+                <span className="size-2 rounded-full bg-sky-300" />
                 {fighterA.name}
               </span>
               <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/80 px-3 py-1 text-[11px] font-medium tracking-tight text-muted">
@@ -359,7 +359,7 @@ export function StyleComparisonBars({
             <div className="mb-3 flex items-baseline justify-between gap-3">
               <p className="mono-label">what the shape says</p>
               <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-                style-only
+                style map
               </p>
             </div>
             <p className="text-base leading-7 text-foreground md:text-lg md:leading-8">
@@ -388,13 +388,13 @@ export function StyleComparisonBars({
           <div className="mb-3 flex items-baseline justify-between gap-3">
             <p className="mono-label">axis breakdown</p>
             <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-              larger = stronger style signal
+              where the style tilts
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-line bg-background/30">
             {/* Column headers */}
             <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-line px-5 py-3">
-              <p className="truncate text-sm font-semibold text-accent">{fighterA.name}</p>
+              <p className="truncate text-sm font-semibold text-sky-300">{fighterA.name}</p>
               <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
                 axis · Δ
               </p>
@@ -413,7 +413,7 @@ export function StyleComparisonBars({
                 <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
                   {/* Label + scores + Δ */}
                   <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-                    <span className={`data-text text-sm tabular-nums ${aLeads ? "text-accent" : "text-muted"}`}>
+                    <span className={`data-text text-sm tabular-nums ${aLeads ? "text-sky-300" : "text-muted"}`}>
                       {aValue != null ? aValue : "—"}
                     </span>
                     <div className="flex w-20 flex-col items-center gap-0.5">
@@ -436,7 +436,7 @@ export function StyleComparisonBars({
                     <div className="flex justify-end rounded-l-full bg-surface-2">
                       {aValue != null ? (
                         <div
-                          className="h-2 rounded-l-full bg-accent"
+                          className="h-2 rounded-l-full bg-sky-300"
                           style={{ width: `${(aValue / max) * 100}%` }}
                         />
                       ) : null}

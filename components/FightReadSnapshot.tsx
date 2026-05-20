@@ -34,15 +34,19 @@ function Cell({
   label,
   children,
   span = "col-span-1",
+  prominent = false,
 }: {
   label: string;
   children: React.ReactNode;
   span?: string;
+  prominent?: boolean;
 }) {
   return (
     <div className={`flex flex-col gap-1.5 ${span}`}>
       <p className="mono-label">{label}</p>
-      <div className="text-sm leading-snug text-foreground">{children}</div>
+      <div className={prominent ? "leading-tight text-foreground" : "text-sm leading-snug text-foreground"}>
+        {children}
+      </div>
     </div>
   );
 }
@@ -86,20 +90,20 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
         </span>
       </div>
 
-      <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-5">
         {/* Model call */}
-        <Cell label="model call" span="lg:col-span-1">
+        <Cell label="model call" span="sm:col-span-2 lg:col-span-2" prominent>
           {isNoLean ? (
-            <p className="text-base font-semibold tracking-tight text-foreground">
+            <p className="text-2xl font-semibold tracking-[-0.035em] text-foreground md:text-3xl">
               Too close to call
             </p>
           ) : (
-            <p className="flex items-baseline gap-2 text-base font-semibold tracking-tight text-foreground">
+            <p className="text-2xl font-semibold tracking-[-0.035em] text-foreground md:text-3xl">
               <span className="text-accent">{winnerName}</span>
-              <span className="data-text text-sm font-normal text-muted">{winnerProb}%</span>
+              <span className="data-text ml-2 text-xl font-normal text-foreground md:text-2xl">{winnerProb}%</span>
             </p>
           )}
-          <p className="data-text mt-0.5 text-[11px] uppercase tracking-[0.12em] text-subtle">
+          <p className="data-text mt-1 text-[11px] uppercase tracking-[0.12em] text-subtle">
             {isNoLean ? "No named win lean" : <>Win probability · {vm.publicPredictionSource}</>}
           </p>
         </Cell>
@@ -133,21 +137,9 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
         </Cell>
       </div>
 
-      {/* Cross-link to shape — visual bridge between call and radar */}
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line/60 pt-4">
-        <p className="text-xs leading-5 text-subtle">
-          Winner forecast and fight shape are separate reads. Snapshot stays consistent across both.
-        </p>
-        <div className="flex gap-2 text-[11px] uppercase tracking-[0.12em]">
-          <a href="#section-call" className="text-subtle transition hover:text-foreground">
-            full call ↓
-          </a>
-          <span className="text-line-strong">·</span>
-          <a href="#section-shape" className="text-subtle transition hover:text-foreground">
-            fight shape ↓
-          </a>
-        </div>
-      </div>
+      <p className="mt-5 border-t border-line/60 pt-4 text-xs leading-5 text-subtle">
+        Model call first. Fight shape is optional context and does not replace the winner forecast.
+      </p>
     </section>
   );
 }

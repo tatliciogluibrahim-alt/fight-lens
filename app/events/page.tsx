@@ -86,8 +86,10 @@ function EventCard({
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
             <span><span className="text-subtle">date · </span>{event.event.date ?? "pending"}</span>
             <span><span className="text-subtle">location · </span>{event.event.location ?? "pending"}</span>
-            <span><span className="text-subtle">bouts · </span>{event.fights.length}</span>
-            <span><span className="text-subtle">calls logged · </span>{stats.eventPredictions.length}</span>
+            <span>
+              <span className="text-subtle">{stats.status === "completed" ? "scored · " : "calls logged · "}</span>
+              {stats.status === "completed" ? stats.resolved.length : stats.eventPredictions.length}
+            </span>
           </div>
 
           <div className="mt-5 flex flex-wrap gap-3">
@@ -97,14 +99,6 @@ function EventCard({
             >
               Open card
             </Link>
-            {stats.resolved.length > 0 && (
-              <Link
-                href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-              >
-                See record
-              </Link>
-            )}
           </div>
         </div>
 
@@ -135,7 +129,7 @@ function EventCard({
           )}
 
           {stats.resolved.length > 0 && (
-            <div className="mt-5 rounded-xl border border-line bg-surface/60 p-3 text-xs text-muted">
+            <div className="mt-5 border-t border-line/60 pt-4 text-xs text-muted">
               {stats.resolved.length} scored · {stats.correct.length}/{stats.resolved.length} model calls correct
             </div>
           )}

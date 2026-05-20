@@ -2,6 +2,15 @@
 
 ## May 2026
 
+### P0 product UX consolidation
+
+- Simplified the homepage hierarchy around one primary action: open UFC 329, with Model Record as the secondary path.
+- Trimmed the next-card preview to the main event and model call; removed extra method/shape CTAs from the hero preview.
+- Calmed event discovery cards by reducing metadata rows and keeping per-card CTAs focused on opening the card.
+- Made the fight read snapshot put the model call first visually, with method, live path, and break condition as secondary details.
+- Reframed the shape/radar section as an optional style map and moved generic fighter-A radar coloring away from amber so orange stays reserved for model call, primary action, and selected UI.
+- No model math, prediction values, locked calls, ingestion, backtest logic, Elo, opponentTotals, or public Model Record scoring changed.
+
 ### P0 visual semantics QA
 
 - Replaced the fight-page probability rail with a two-sided semantic rail: each fighter owns their side of the 50/50 axis, amber only highlights the named model call, and no-call states remain neutral.

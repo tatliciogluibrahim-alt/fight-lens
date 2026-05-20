@@ -10,7 +10,7 @@ import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 const startSteps = [
   {
     title: "Start with the card",
-    body: "Open the next event and scan the fight list.",
+    body: "Open the upcoming event and scan the fight list.",
   },
   {
     title: "Read the call",
@@ -18,7 +18,7 @@ const startSteps = [
   },
   {
     title: "Explore the shape",
-    body: "The radar is optional deeper context. It shows how the fight style tilts, not who the model picks.",
+    body: "Optional deeper context. The radar shows how the fight style tilts, not who the model picks.",
   },
   {
     title: "Check the record",
@@ -123,8 +123,7 @@ function EventDiscoveryCard({
         <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
           <span>{event.event.date ?? "date pending"}</span>
           <span>{event.event.location ?? "location pending"}</span>
-          <span>{event.fights.length} bouts</span>
-          <span>{stats.predictions.length} calls logged</span>
+          <span>{stats.status === "completed" ? `${stats.resolved.length} scored` : `${stats.predictions.length} calls logged`}</span>
         </div>
 
         <div className="mt-5 border-t border-line/60 pt-4">
@@ -139,14 +138,6 @@ function EventDiscoveryCard({
           >
             Open card
           </Link>
-          {stats.resolved.length > 0 && (
-            <Link
-              href="/record"
-              className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-            >
-              See record
-            </Link>
-          )}
         </div>
       </div>
 
@@ -227,21 +218,14 @@ export default function Home() {
               <div className="mt-6 border-t border-line/60 pt-5">
                 <p className="mono-label">main event</p>
                 <MainEventLine fight={mainFight} />
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div>
-                    <p className="mono-label">model call</p>
-                    <p className="mt-1 text-base font-semibold text-accent">
-                      {mainVM.isNamedCall ? mainVM.predictedWinner?.name : mainVM.displayedCallLabel}
-                    </p>
+                <div className="mt-4 border-l border-accent/40 pl-4">
+                  <p className="mono-label">model call</p>
+                  <p className="mt-1 text-xl font-semibold tracking-tight text-accent md:text-2xl">
+                    {mainVM.isNamedCall ? mainVM.predictedWinner?.name : mainVM.displayedCallLabel}
                     {mainVM.winnerProbability != null && (
-                      <p className="data-text mt-1 text-2xl text-foreground">{mainVM.winnerProbability}%</p>
+                      <span className="data-text ml-2 text-foreground">{mainVM.winnerProbability}%</span>
                     )}
-                  </div>
-                  <div>
-                    <p className="mono-label">most likely finish type</p>
-                    <p className="mt-1 text-base font-medium text-foreground">{mainVM.methodLean ?? "—"}</p>
-                    <p className="mt-1 text-[11px] text-subtle">Secondary to winner call</p>
-                  </div>
+                  </p>
                 </div>
               </div>
 
@@ -256,13 +240,7 @@ export default function Home() {
                   href={`/events/${latestEvent.event.id}/${mainFight.id}`}
                   className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
                 >
-                  View read
-                </Link>
-                <Link
-                  href={`/events/${latestEvent.event.id}/${mainFight.id}#section-shape`}
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-                >
-                  Fight shape
+                  View main event read
                 </Link>
               </div>
             </div>
