@@ -101,8 +101,13 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
       ? "No fighter is assigned the live-path role because the winner call is too close."
       : `What has to change for ${viewModel.livePathFighter?.name ?? "the other fighter"} to flip the read — this is not the model call.`;
 
+  // When both sides have no path data, hide the entire module on mobile —
+  // FightReadSnapshot already covers the essentials; a full "pending" module
+  // makes the product look unfinished on small screens.
+  const sectionMobileClass = bothPending ? "hidden sm:block" : "";
+
   return (
-    <section id="section-paths" className="module-card scroll-mt-28">
+    <section id="section-paths" className={`module-card scroll-mt-28 ${sectionMobileClass}`}>
       <div className="module-header">
         <p className="mono-label">{sectionLabel}</p>
         {!bothPending && (
@@ -130,20 +135,28 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
           </p>
         ) : (
           <div className="grid gap-4 lg:grid-cols-2">
-            <PathList
-              fighter={fighterA}
-              metric={pathA}
-              paths={pathsA}
-              accent={accentA}
-              roleLabel={accentA ? "live route" : null}
-            />
-            <PathList
-              fighter={fighterB}
-              metric={pathB}
-              paths={pathsB}
-              accent={accentB}
-              roleLabel={accentB ? "live route" : null}
-            />
+            {/*
+              When one side has no authored path data, hide that pending card
+              on mobile only. Desktop keeps both columns visible for symmetry.
+            */}
+            <div className={aNoPaths ? "hidden sm:block" : undefined}>
+              <PathList
+                fighter={fighterA}
+                metric={pathA}
+                paths={pathsA}
+                accent={accentA}
+                roleLabel={accentA ? "live route" : null}
+              />
+            </div>
+            <div className={bNoPaths ? "hidden sm:block" : undefined}>
+              <PathList
+                fighter={fighterB}
+                metric={pathB}
+                paths={pathsB}
+                accent={accentB}
+                roleLabel={accentB ? "live route" : null}
+              />
+            </div>
           </div>
         )}
       </div>

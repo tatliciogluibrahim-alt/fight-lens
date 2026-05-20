@@ -15,7 +15,7 @@ interface FightCardProps {
   predictionViewModel?: PredictionViewModel | null;
 }
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
+// ─── Shared helpers ───────────────────────────────────────────────────────────
 
 function RecordLine({ fighter }: { fighter: SourcedFighter }) {
   const ranking = formatRanking(fighter.ranking);
@@ -103,153 +103,210 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
   const probB = vm?.fighterB.winProbability ?? null;
   const methodTop = vm?.methodLean ?? null;
 
+  // On mobile, only show the ResultChip when the fight has a scored outcome —
+  // "Pending" is implied by context so we suppress it to reduce clutter.
+  const showMobileResultChip = vm && vm.resultState === "scored";
+
   return (
     <div className="border-b border-line last:border-b-0">
-      <div className="p-4 md:p-5">
 
-        {/* ── Fighters — always side-by-side at any width ── */}
-        <div className="flex items-start gap-3">
-          {/* Fighter A */}
-          <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2">
-              <FighterCountry fighter={fighterA} />
-              <p
-                className={`min-w-0 truncate text-sm font-semibold leading-snug tracking-tight sm:text-base ${
-                  hasPred && favA ? "text-accent" : "text-foreground"
-                }`}
-              >
-                {fighterA.name}
+      {/* ════════════════════════════════════════════════════════════════════
+          MOBILE card layout — visible only below sm (640 px)
+          Stacked fighter names (full text, wrapping), compact prediction row,
+          full-width "View read" CTA. No flags, no records, no expand button.
+          ════════════════════════════════════════════════════════════════════ */}
+      <div className="sm:hidden p-4">
+
+        {/* Fighter matchup — stacked, full names, wrapping text */}
+        <div>
+          <p className={`text-base font-semibold leading-snug tracking-tight ${favA ? "text-accent" : "text-foreground"}`}>
+            {fighterA.name}
+          </p>
+          <p className="my-1 font-mono text-[9px] uppercase tracking-[0.1em] text-subtle/70">vs</p>
+          <p className={`text-base font-semibold leading-snug tracking-tight ${favB ? "text-accent" : "text-foreground"}`}>
+            {fighterB.name}
+          </p>
+        </div>
+
+        {/* Metadata — weight class · rounds · card placement */}
+        <p className="mt-2 data-text text-xs text-subtle">
+          {(fight.weightClass ?? "weight pending").toLowerCase()}
+          {" · "}{fight.rounds}R
+          {" · "}{fight.cardPlacement.toLowerCase()}
+        </p>
+
+        {/* Prediction — only when a call is available */}
+        {hasPred && (
+          <div className="mt-3 space-y-1">
+            {vm.isNamedCall && vm.predictedWinner ? (
+              <p className="text-sm text-muted">
+                <span className="text-subtle">call · </span>
+                <span className="font-semibold text-foreground">{vm.predictedWinner.name}</span>
+                <span className="data-text ml-1.5 tabular-nums text-foreground">
+                  {vm.winnerProbability}%
+                </span>
               </p>
-            </div>
-            <RecordLine fighter={fighterA} />
-          </div>
-
-          {/* VS centre — compact, with probability numbers */}
-          <div className="flex shrink-0 flex-col items-center gap-0.5 pt-px">
-            <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-subtle">vs</p>
-            {hasPred && (
-              <p className="data-text mt-0.5 text-[11px] tabular-nums">
-                <span className={favA ? "font-semibold text-foreground" : "text-muted"}>{probA}%</span>
-                <span className="mx-0.5 text-subtle/50">–</span>
-                <span className={favB ? "font-semibold text-foreground" : "text-muted"}>{probB}%</span>
+            ) : (
+              <p className="text-sm font-medium text-muted">{vm.displayedCallLabel}</p>
+            )}
+            {methodTop && (
+              <p className="text-xs text-subtle">
+                {methodTop}
+                <span className="opacity-60"> lean</span>
               </p>
             )}
           </div>
+        )}
 
-          {/* Fighter B */}
-          <div className="min-w-0 flex-1 text-right">
-            <div className="flex items-center justify-end gap-2">
-              <p
-                className={`min-w-0 truncate text-sm font-semibold leading-snug tracking-tight sm:text-base ${
-                  hasPred && favB ? "text-accent" : "text-foreground"
-                }`}
+        {/* Result chip — only when scored, not for pending */}
+        {showMobileResultChip && (
+          <div className="mt-2">
+            <ResultChip viewModel={vm} />
+          </div>
+        )}
+
+        {/* CTA — full width, easy tap target */}
+        <Link
+          href={`/events/${eventId}/${fight.id}`}
+          className="tap-target mt-3 flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 text-sm font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10"
+        >
+          View read
+        </Link>
+      </div>
+
+      {/* ════════════════════════════════════════════════════════════════════
+          DESKTOP row layout — visible only at sm+ (640 px and up)
+          Side-by-side fighters with VS/probability in center, call meta row,
+          expand button + View read CTA.
+          ════════════════════════════════════════════════════════════════════ */}
+      <div className="hidden sm:block">
+        <div className="p-5">
+
+          {/* Fighters — always side-by-side at desktop */}
+          <div className="flex items-start gap-3">
+            {/* Fighter A */}
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <FighterCountry fighter={fighterA} />
+                <p className={`min-w-0 truncate text-base font-semibold leading-snug tracking-tight ${favA ? "text-accent" : "text-foreground"}`}>
+                  {fighterA.name}
+                </p>
+              </div>
+              <RecordLine fighter={fighterA} />
+            </div>
+
+            {/* VS centre with probability */}
+            <div className="flex shrink-0 flex-col items-center gap-0.5 pt-px">
+              <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-subtle">vs</p>
+              {hasPred && (
+                <p className="data-text mt-0.5 text-[11px] tabular-nums">
+                  <span className={favA ? "font-semibold text-foreground" : "text-muted"}>{probA}%</span>
+                  <span className="mx-0.5 text-subtle/50">–</span>
+                  <span className={favB ? "font-semibold text-foreground" : "text-muted"}>{probB}%</span>
+                </p>
+              )}
+            </div>
+
+            {/* Fighter B */}
+            <div className="min-w-0 flex-1 text-right">
+              <div className="flex items-center justify-end gap-2">
+                <p className={`min-w-0 truncate text-base font-semibold leading-snug tracking-tight ${favB ? "text-accent" : "text-foreground"}`}>
+                  {fighterB.name}
+                </p>
+                <FighterCountry fighter={fighterB} />
+              </div>
+              <div className="flex justify-end">
+                <RecordLine fighter={fighterB} />
+              </div>
+            </div>
+          </div>
+
+          {/* Call meta row */}
+          <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs">
+            <span className="data-text text-subtle">
+              {(fight.weightClass ?? "weight pending").toLowerCase()} · {fight.rounds}R
+            </span>
+
+            {hasPred && vm.isNamedCall && vm.predictedWinner ? (
+              <span className="text-muted">
+                <span className="text-subtle">call · </span>
+                <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>
+              </span>
+            ) : hasPred && !vm.isNamedCall ? (
+              <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
+            ) : null}
+
+            {methodTop && (
+              <span className="text-subtle">
+                {methodTop}<span className="opacity-60"> lean</span>
+              </span>
+            )}
+
+            {vm && (
+              <span className="ml-auto">
+                <ResultChip viewModel={vm} />
+              </span>
+            )}
+          </div>
+
+          {/* Action row */}
+          <div className="mt-3 flex items-center gap-2">
+            {vm && (
+              <button
+                type="button"
+                onClick={() => setExpanded((v) => !v)}
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2/70 px-3 text-xs text-subtle transition hover:border-accent/30 hover:text-accent"
+                aria-expanded={expanded}
+                aria-label={expanded ? "collapse details" : "expand details"}
               >
-                {fighterB.name}
-              </p>
-              <FighterCountry fighter={fighterB} />
-            </div>
-            <div className="flex justify-end">
-              <RecordLine fighter={fighterB} />
-            </div>
+                {expanded ? "−" : "+"}
+              </button>
+            )}
+            <Link
+              href={`/events/${eventId}/${fight.id}`}
+              className="tap-target inline-flex flex-1 items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-xs font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10 sm:flex-none"
+            >
+              View read
+            </Link>
           </div>
         </div>
 
-        {/* ── Call meta row ── */}
-        <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs">
-          {/* Weight class · rounds */}
-          <span className="data-text text-subtle">
-            {(fight.weightClass ?? "weight pending").toLowerCase()} · {fight.rounds}R
-          </span>
-
-          {/* Model call */}
-          {hasPred && vm.isNamedCall && vm.predictedWinner ? (
-            <span className="text-muted">
-              <span className="text-subtle">call · </span>
-              <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>
-            </span>
-          ) : hasPred && !vm.isNamedCall ? (
-            <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
-          ) : null}
-
-          {/* Method lean */}
-          {methodTop && (
-            <span className="text-subtle">
-              {methodTop}
-              <span className="opacity-60"> lean</span>
-            </span>
-          )}
-
-          {/* Result chip — pushed to right */}
-          {vm && (
-            <span className="ml-auto">
-              <ResultChip viewModel={vm} />
-            </span>
-          )}
-        </div>
-
-        {/* ── Action row ── */}
-        <div className="mt-3 flex items-center gap-2">
-          {vm && (
-            <button
-              type="button"
-              onClick={() => setExpanded((v) => !v)}
-              className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2/70 px-3 text-xs text-subtle transition hover:border-accent/30 hover:text-accent"
-              aria-expanded={expanded}
-              aria-label={expanded ? "collapse details" : "expand details"}
-            >
-              {expanded ? "−" : "+"}
-            </button>
-          )}
-          {/* View read — flex-1 on mobile so it fills remaining width, natural on sm+ */}
-          <Link
-            href={`/events/${eventId}/${fight.id}`}
-            className="tap-target inline-flex flex-1 items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10 sm:flex-none sm:text-xs"
-          >
-            View read
-          </Link>
-        </div>
-      </div>
-
-      {/* ── Expandable breakdown ── */}
-      {expanded && vm && (
-        <div className="border-t border-line bg-background/30 px-4 py-4 md:px-5">
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="space-y-3">
-              <p className="mono-label">win probability</p>
-              <div className="grid gap-2 sm:grid-cols-2">
-                <div className={`rounded-xl border p-3 ${favA ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
-                  <p className="truncate text-xs text-subtle">{fighterA.name.split(" ").pop()}</p>
-                  <p className={`data-text mt-1 text-lg ${favA ? "text-foreground" : "text-muted"}`}>
-                    {probA}%
-                  </p>
+        {/* Expandable breakdown — desktop only */}
+        {expanded && vm && (
+          <div className="border-t border-line bg-background/30 px-5 py-4">
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="space-y-3">
+                <p className="mono-label">win probability</p>
+                <div className="grid gap-2 sm:grid-cols-2">
+                  <div className={`rounded-xl border p-3 ${favA ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
+                    <p className="truncate text-xs text-subtle">{fighterA.name.split(" ").pop()}</p>
+                    <p className={`data-text mt-1 text-lg ${favA ? "text-foreground" : "text-muted"}`}>{probA}%</p>
+                  </div>
+                  <div className={`rounded-xl border p-3 ${favB ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
+                    <p className="truncate text-xs text-subtle">{fighterB.name.split(" ").pop()}</p>
+                    <p className={`data-text mt-1 text-lg ${favB ? "text-foreground" : "text-muted"}`}>{probB}%</p>
+                  </div>
                 </div>
-                <div className={`rounded-xl border p-3 ${favB ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
-                  <p className="truncate text-xs text-subtle">{fighterB.name.split(" ").pop()}</p>
-                  <p className={`data-text mt-1 text-lg ${favB ? "text-foreground" : "text-muted"}`}>
-                    {probB}%
-                  </p>
-                </div>
+              </div>
+
+              <div className="space-y-2.5">
+                <p className="mono-label">method lean</p>
+                <MethodBar label="Decision" value={vm.methodDistribution.decision} accent={methodTop === "Decision"} />
+                <MethodBar label="KO / TKO" value={vm.methodDistribution.koTko} accent={methodTop === "KO/TKO"} />
+                <MethodBar label="Submission" value={vm.methodDistribution.submission} accent={methodTop === "Submission"} />
+                <p className="pt-1 text-[11px] text-subtle">{vm.methodLeanNote}</p>
               </div>
             </div>
 
-            <div className="space-y-2.5">
-              <p className="mono-label">method lean</p>
-              <MethodBar label="Decision" value={vm.methodDistribution.decision} accent={methodTop === "Decision"} />
-              <MethodBar label="KO / TKO" value={vm.methodDistribution.koTko} accent={methodTop === "KO/TKO"} />
-              <MethodBar label="Submission" value={vm.methodDistribution.submission} accent={methodTop === "Submission"} />
-              <p className="pt-1 text-[11px] text-subtle">
-                {vm.methodLeanNote}
+            {fight.matchupQuestion && (
+              <p className="mt-4 border-t border-line pt-4 text-sm leading-6 text-muted">
+                {fight.matchupQuestion}
               </p>
-            </div>
+            )}
           </div>
+        )}
+      </div>
 
-          {fight.matchupQuestion && (
-            <p className="mt-4 border-t border-line pt-4 text-sm leading-6 text-muted">
-              {fight.matchupQuestion}
-            </p>
-          )}
-        </div>
-      )}
     </div>
   );
 }

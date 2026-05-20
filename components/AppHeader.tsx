@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation";
 import { PrototypeBadge } from "./PrototypeBadge";
 
 const links = [
-  { href: "/", label: "home" },
-  { href: "/events", label: "events" },
-  { href: "/record", label: "record" },
-  { href: "/methodology", label: "how it works" },
+  { href: "/", label: "home", mobileVisible: true },
+  { href: "/events", label: "events", mobileVisible: true },
+  { href: "/record", label: "record", mobileVisible: true },
+  // "how it works" is hidden from the mobile nav to prevent label clipping.
+  // It remains available via the footer link on all screen sizes.
+  { href: "/methodology", label: "how it works", mobileVisible: false },
 ];
 
 export function AppHeader() {
@@ -53,7 +55,7 @@ export function AppHeader() {
                     isActive
                       ? "bg-surface-2 text-foreground"
                       : "text-muted hover:bg-surface-2/80 hover:text-foreground"
-                  }`}
+                  } ${!link.mobileVisible ? "hidden sm:flex" : ""}`}
                 >
                   {link.label}
                 </Link>

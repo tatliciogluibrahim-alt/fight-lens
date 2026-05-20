@@ -2,6 +2,39 @@
 
 ## May 2026
 
+### Mobile UX pass — quick wins
+
+Three targeted mobile improvements. Zero model math, prediction values, fight data, backtest logic, locked predictions, or ingestion changes.
+
+**QW1 — Simplified mobile header (`components/AppHeader.tsx`):**
+- Added `mobileVisible` property to each nav link entry.
+- "how it works" set to `mobileVisible: false` — hidden on mobile via `hidden sm:flex`.
+- Mobile nav now shows three pills only: Home · Events · Record. No label clipping on narrow screens.
+- Methodology remains reachable via the footer link on all screen sizes (no change to `DisclaimerFooter.tsx`).
+
+**QW2 — Mobile-first fight card (`components/FightCard.tsx`):**
+- Full dual-layout rewrite: `sm:hidden` mobile block and `hidden sm:block` desktop block.
+- Mobile layout: stacked fighter names with full text wrapping, no flags, no records/rankings. "vs" text is a micro label between names. Compact weight class · rounds · card placement metadata line.
+- Prediction row (mobile): shows "call · Name Prob%" when a named call exists; shows `displayedCallLabel` when not.
+- Method lean (mobile): one-line "KO / TKO lean" text, no bars (bars retained in desktop expand panel).
+- Result chip (mobile): suppressed when `resultState === "pending"` — implied by context. Only appears when scored.
+- CTA (mobile): full-width "View read" button (`w-full`), easy tap target.
+- Desktop layout: previous side-by-side fighters with flags, records, VS + probability, expand (+) button, expandable breakdown panel — all preserved unchanged.
+
+**QW3 — Suppress pending placeholder sections on mobile:**
+- `components/PathsToVictory.tsx`: when `bothPending`, the entire `<section>` gets `hidden sm:block` — invisible on mobile. FightReadSnapshot already covers the pending state above the fold. When one side has no data, that individual `PathList` card gets `hidden sm:block` wrapper — desktop keeps both columns.
+- `components/TheCall.tsx`: the "data pending" placeholder section gets `hidden sm:block` — on mobile it contributes nothing since FightReadSnapshot already shows the pending model call state.
+
+**Files changed:** `components/AppHeader.tsx`, `components/FightCard.tsx`, `components/PathsToVictory.tsx`, `components/TheCall.tsx`.
+
+**Docs updated:** `docs/CODEX_HANDOFF.md` — added two long-term P3 tickets: "True mobile fight-read mode" (compact accordion-based fight intelligence card) and "Event discovery system" (Events page as primary mobile entry point with grouped fights and simple filters).
+
+**Not changed:** model math, prediction values, locked predictions, fight data, backtest logic, generated artifacts, public Model Record scoring, ingestion scripts, `lib/predictionViewModel.ts`, `lib/predictionThresholds.ts`, `lib/accuracy/`, all `data/` files.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
+---
+
 ### Analysis hygiene pass
 
 Content logic, hierarchy, and visualization cleanup. No model math, prediction values, fight data, backtest logic, locked predictions, ingestion, or audit scripts changed.

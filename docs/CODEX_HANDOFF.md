@@ -199,6 +199,12 @@ Ingest additional completed UFC events. Backend-only. Do not change model math. 
 **P2 — Calibration diagnostics**
 Sub-bucket the 60–80% confidence range and identify which fight type / weight class drives overconfidence. Diagnosis only — no model weight changes. Document findings in `docs/MODEL_EXPERIMENTS.md`.
 
+**P3 — True mobile fight-read mode**
+Build a compact mobile fight intelligence card that replaces the current long-scroll desktop read on small screens. Each layer (Call → Why → Method → Flip path → Shape → Form) is an expandable accordion section with a single-line summary and a tap-to-expand detail block. This avoids dumping five full desktop modules into a single scroll and makes the read feel native on mobile. No model math changes, no new prediction compute — all content comes from the existing `PredictionViewModel` and fight shape data.
+
+**P3 — Event discovery system**
+Make `/events` the primary mobile entry point. The page should feature the current card prominently (name, date, fight count, status chip), list fights in a grouped format (main event first, prelims collapsed by default), and include simple filters (weight class, card placement). Past events should be secondary — collapsed by default or paginated. This removes the need for users to navigate home → events → event detail to find a fight. No new data sources required — all data comes from the existing event registry.
+
 ---
 
 ## QA Commands

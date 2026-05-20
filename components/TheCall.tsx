@@ -130,8 +130,11 @@ function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
 
 export function TheCall({ viewModel: vm }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
+    // Hide the "data pending" placeholder on mobile — FightReadSnapshot already
+    // surfaces the pending state above the fold. Showing a large empty card
+    // makes the product look unfinished on small screens.
     return (
-      <section className="module-card">
+      <section className="module-card hidden sm:block">
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
