@@ -2,6 +2,12 @@
 
 ## May 2026
 
+### P0 visual semantics QA
+
+- Replaced the fight-page probability rail with a two-sided semantic rail: each fighter owns their side of the 50/50 axis, amber only highlights the named model call, and no-call states remain neutral.
+- Corrected Lone'er Kavanagh's UFC 329 country marker from the stale Denmark override to England/UK in the manual override source and normalized event metadata used by the app.
+- Re-verified hero name plates keep full-word line breaks only; no model math, prediction percentages, locked calls, backtest logic, ingestion, Elo, or public Model Record scoring changed.
+
 ### Frontend visual + copy polish (multi-pass)
 
 Six successive UI/UX passes with zero model-math changes. All passes ran on top of the v0.2 prediction pipeline. QA commands (`audit:predictions`, `backtest`, `lint`, `build`) remained green throughout.

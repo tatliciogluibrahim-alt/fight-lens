@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 interface ProbabilityBarProps {
   probA: number;
   probB: number;
@@ -11,61 +7,71 @@ interface ProbabilityBarProps {
 }
 
 export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: ProbabilityBarProps) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    // Tiny delay so the animation is perceptible from the starting state
-    const id = setTimeout(() => setMounted(true), 80);
-    return () => clearTimeout(id);
-  }, []);
-
-  const aIsFav = probA >= probB;
-  const favName = aIsFav ? nameA : nameB;
+  const callSide = tooClose ? "neutral" : probA > probB ? "left" : "right";
+  const aIsCall = callSide === "left";
+  const bIsCall = callSide === "right";
+  const favName = aIsCall ? nameA : nameB;
   const favProb = Math.max(probA, probB);
 
-  // Color: gold for favorite, subtle for underdog; muted if tooClose
-  const colorA = tooClose ? "text-muted" : aIsFav ? "text-accent" : "text-subtle";
-  const colorB = tooClose ? "text-muted" : !aIsFav ? "text-accent" : "text-subtle";
+  const colorA = tooClose ? "text-muted" : aIsCall ? "text-accent" : "text-subtle";
+  const colorB = tooClose ? "text-muted" : bIsCall ? "text-accent" : "text-subtle";
 
-  const barWidth = mounted ? `${probA}%` : "50%";
+  const leftWidth = tooClose ? "50%" : `${probA}%`;
+  const rightWidth = tooClose ? "50%" : `${probB}%`;
 
   return (
-    <div className="space-y-5">
+    <div
+      className="space-y-5"
+      data-call-state={tooClose ? "no-call" : "named-call"}
+      data-accent-side={callSide}
+    >
       {/* Fighter name labels */}
-      <div className="flex items-center justify-between">
-        <p className="mono-label">{nameA}</p>
-        <p className="mono-label">vs</p>
-        <p className="mono-label">{nameB}</p>
+      <div className="flex items-center justify-between gap-4">
+        <p className="mono-label max-w-[42%] truncate text-left">{nameA}</p>
+        <p className="mono-label shrink-0">vs</p>
+        <p className="mono-label max-w-[42%] truncate text-right">{nameB}</p>
       </div>
 
       {/* Giant probability numbers */}
       <div className="flex items-baseline justify-between gap-4">
         <span
-          className={`data-text text-[5.5rem] font-light leading-none tracking-[-0.05em] transition-colors duration-700 md:text-[8rem] lg:text-[10rem] ${colorA}`}
+          className={`data-text text-[5.5rem] font-light leading-none tracking-normal md:text-[8rem] lg:text-[10rem] ${colorA}`}
         >
           {probA}%
         </span>
         <span
-          className={`data-text text-[5.5rem] font-light leading-none tracking-[-0.05em] transition-colors duration-700 md:text-[8rem] lg:text-[10rem] ${colorB}`}
+          className={`data-text text-[5.5rem] font-light leading-none tracking-normal md:text-[8rem] lg:text-[10rem] ${colorB}`}
         >
           {probB}%
         </span>
       </div>
 
-      {/* Animated bar */}
-      <div className="relative h-[3px] overflow-hidden rounded-full bg-surface-2">
-        <div
-          className={`absolute left-0 top-0 h-full rounded-full ${tooClose ? "bg-subtle/40" : "bg-accent"}`}
-          style={{
-            width: barWidth,
-            transition: mounted ? "width 1.4s cubic-bezier(0.23, 1, 0.32, 1)" : "none",
-          }}
-        />
+      {/* Two-sided rail: each fighter owns a side of the 50/50 axis. */}
+      <div className="relative h-3 overflow-visible rounded-full bg-surface-2/80">
+        <div className="absolute left-1/2 top-1/2 z-10 h-5 w-px -translate-x-1/2 -translate-y-1/2 bg-line" />
+        <div className="grid h-full grid-cols-2 gap-px overflow-hidden rounded-full">
+          <div className="flex h-full justify-end bg-surface-2/60">
+            <div
+              className={`h-full rounded-l-full ${
+                aIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
+              }`}
+              style={{ width: leftWidth }}
+            />
+          </div>
+          <div className="flex h-full justify-start bg-surface-2/60">
+            <div
+              className={`h-full rounded-r-full ${
+                bIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
+              }`}
+              style={{ width: rightWidth }}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Lean label */}
       {tooClose ? (
-        <p className="text-center mono-label">too close to call — no named lean</p>
+        <p className="text-center mono-label">too close to call - no named lean</p>
       ) : (
         <p className="text-center font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
           <span className="text-accent">{favName}</span>

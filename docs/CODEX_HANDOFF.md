@@ -76,6 +76,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `components/FightReadSnapshot.tsx` | At-a-glance strip — reads only from `viewModel`. |
 | `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable full-word hero typography without touching prediction data. Never allow character-level breaks. |
 | `components/TheCall.tsx` | Main call card — winner + probability bar + method lean. |
+| `components/ProbabilityBar.tsx` | Two-sided fight-page probability rail — amber only marks the canonical model-called side; no-call states stay neutral. |
 | `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
 | `components/StyleComparisonBars.tsx` | Shape tab — "What the shape says" cards + axis breakdown bars. |
 | `components/FightPageTabs.tsx` | Sticky tab bar — call / shape / details tabs. |
@@ -155,6 +156,7 @@ The six passes below changed **zero** model math, locked predictions, backtest l
 7. **"What the shape says" cards** — `StyleComparisonBars` now renders `biggest-edge`, `closest`, and `swing`/`watching` cards above the axis bars.
 8. **Language cleanup** — all "matchup stress", "pressure point", "style-pressure read", and "Limited pressure signal" occurrences removed from UI.
 9. **Fighter hero stabilization** — `FighterNamePlate` gives fight pages a consistent two-line name plate; `FightPageTabs` now respects section hashes without sticky-tab overlap.
+10. **Probability rail semantics** — `ProbabilityBar` now uses a two-sided rail with a center 50/50 axis. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
 
 ---
 
