@@ -2,6 +2,15 @@
 
 ## May 2026
 
+### P0 section navigation hotfix
+
+- Reworked `FightPageTabs` from a panel swapper into sticky section navigation so `section-call`, `section-shape`, and `section-details` all exist as stable anchors in the rendered page.
+- Moved section ids to wrappers above the visible content and switched landing behavior to CSS `scroll-margin` plus native `scrollIntoView`, avoiding fragile manual pixel scroll math.
+- Active tab state now follows the section in view and keeps existing section hashes aligned as the user scrolls.
+- Cleaned the model-call Live Path helper copy to "Still live if the fight shifts."
+- Updated the record accuracy headline from "building." to "record in progress." while keeping the 30-scored-fight grade unlock copy.
+- No model math, prediction values, fight data, locked calls, ingestion, backtest logic, generated artifacts, or public scoring changed.
+
 ### Final P0 fight-read clarity QA
 
 - Verified the fight-read flow across home, events, event detail, fight pages, record, and methodology through source and static build output.

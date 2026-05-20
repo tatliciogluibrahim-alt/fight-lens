@@ -78,7 +78,7 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
           <p className="data-text mt-3 text-3xl text-muted md:text-4xl">
             {otherProb}%
           </p>
-          <p className="mt-2 text-xs text-subtle">non-call route, not a second call</p>
+          <p className="mt-2 text-xs text-subtle">Still live if the fight shifts.</p>
         </div>
       </div>
     </div>

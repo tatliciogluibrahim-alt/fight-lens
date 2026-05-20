@@ -121,7 +121,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
               {grade ? (
                 <span className={gradeDisplay?.color}>grade {grade}.</span>
               ) : (
-                "building."
+                "record in progress."
               )}
             </h2>
             {gradeDisplay ? (
