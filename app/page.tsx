@@ -229,18 +229,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="mt-5">
                 <Link
                   href={`/events/${latestEvent.event.id}`}
                   className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
                 >
                   Open card
-                </Link>
-                <Link
-                  href={`/events/${latestEvent.event.id}/${mainFight.id}`}
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-                >
-                  View main event read
                 </Link>
               </div>
             </div>

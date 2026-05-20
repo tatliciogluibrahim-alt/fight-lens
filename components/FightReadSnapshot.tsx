@@ -67,9 +67,15 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
 
       <p className="mono-label mb-4">fight read snapshot</p>
 
-      <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-5">
-        {/* Model call */}
-        <Cell label="model call" span="sm:col-span-2 lg:col-span-2" prominent>
+      {/*
+       * Grid: 2-col from 390 px up, 5-col at lg.
+       * Model call spans full width (col-span-2 / lg:col-span-2).
+       * Method lean + live path share one row on mobile.
+       * "What breaks the call" spans full width on mobile to avoid text clipping.
+       */}
+      <div className="grid grid-cols-2 gap-x-5 gap-y-5 lg:grid-cols-5">
+        {/* Model call — full width, prominent */}
+        <Cell label="model call" span="col-span-2 lg:col-span-2" prominent>
           {isNoLean ? (
             <p className="text-2xl font-semibold tracking-[-0.035em] text-foreground md:text-3xl">
               Too close to call
@@ -85,18 +91,18 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           </p>
         </Cell>
 
-        {/* Method lean */}
-        <Cell label="most likely finish type" span="lg:col-span-1">
-          <p className="text-base font-medium tracking-tight text-foreground">
+        {/* Method lean — half-width on mobile, 1/5 on desktop */}
+        <Cell label="most likely finish type" span="col-span-1 lg:col-span-1">
+          <p className="text-sm font-medium tracking-tight text-foreground sm:text-base">
             {vm.methodLean ?? "—"}
           </p>
           <p className="text-[11px] text-subtle">Directional only</p>
         </Cell>
 
-        {/* Live path */}
-        <Cell label="live path" span="lg:col-span-1">
+        {/* Live path — half-width on mobile, 1/5 on desktop */}
+        <Cell label="live path" span="col-span-1 lg:col-span-1">
           {isNoLean ? (
-            <p className="text-sm text-muted">Both paths live until one edge separates.</p>
+            <p className="text-xs leading-snug text-muted sm:text-sm">Both paths live.</p>
           ) : (
             <p className="text-sm leading-snug text-foreground">
               <span className="font-medium">{loserName}</span>
@@ -106,8 +112,8 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           )}
         </Cell>
 
-        {/* What breaks the call */}
-        <Cell label="what breaks the call" span="lg:col-span-1">
+        {/* What breaks the call — full width on mobile to avoid truncation */}
+        <Cell label="what breaks the call" span="col-span-2 lg:col-span-1">
           <p className="line-clamp-3 text-sm leading-snug text-muted">
             {vm.whatBreaksTheCall}
           </p>

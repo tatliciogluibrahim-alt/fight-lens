@@ -163,6 +163,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 14. **Homepage/event discovery clarity** — homepage keeps one primary current-card action, `/events` labels the active card as forecast live, and `EventHero` now uses a single main-event read CTA so users move from card to fight read without early shape/call CTA clutter. Static build-output checks verified home, events, UFC 329, UFC 329 main-event fight read, UFC 328 Chimaev/Strickland, record, and methodology content.
 15. **Final pre-commit fight-page polish** — replaced internal live-path phrasing, simplified the shape tab into style edge → neutral fingerprint radar → three insight cards → collapsed axis breakdown, and tightened details copy to `recent form` without touching model/data/backtest files.
 16. **Color system — Midnight Signal palette** — replaced amber/gold accent (`#f59e0b`) with icy blue (`#8FD7F7`). All color changes are token-only in `app/globals.css`. All Tailwind utilities (`text-accent`, `bg-accent`, etc.) propagate automatically. No amber remains anywhere in the codebase.
+17. **Event discovery and mobile readability pass** — homepage hero has one dominant CTA only ("Open card", no "View main event read" competing); events page `EventCard` is a single-column card (no two-panel grid, no "View read →" inside card); `EventHero` is a single card (no two-column lg layout); `FightCard` mobile-first with fighters always side-by-side and "View read" button full-width on mobile; `FightReadSnapshot` fixed to `grid-cols-2` from all widths (not just sm+).
 
 ---
 
@@ -171,6 +172,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 | Issue | Location | Severity |
 |---|---|---|
 | Radar axis labels may clip at 375 px viewport (iPhone SE) | `components/StyleRadar.tsx` — `LABEL_RADIUS=148`, `SIZE=360` | P0 — verify on device |
+| `FightCard` expand (+) panel: method bar height `h-[3px]` is very thin on high-DPI screens | `components/FightCard.tsx` `MethodBar` | P2 — cosmetic only |
 | SVG `<title>` tooltips don't fire on touch | `StyleRadar.tsx` data dot `<title>` elements | P1 — replace with pointer-event tooltip |
 | No automated test for `prefers-reduced-motion` behavior | `app/globals.css` reduced-motion block | P0 — manual device QA only |
 | Hash anchor landings (`#section-call`, `#section-shape`, `#section-details`) should be verified in a real browser after the scroll-page restructure | Both fight page routes | P1 — manual QA only |

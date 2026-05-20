@@ -2,6 +2,50 @@
 
 ## May 2026
 
+### Event discovery and mobile readability pass
+
+Focused product pass across homepage, /events, event detail, and fight read pages. Zero model math, prediction values, fight data, backtest logic, locked predictions, or ingestion changes.
+
+**Homepage (`app/page.tsx`):**
+- Removed competing "View main event read" button from the hero featured event card. Now one dominant "Open card" CTA only. The hero card shows event name, status, date/location, main event matchup, and model call — no secondary fight-level links competing.
+
+**Events page (`app/events/page.tsx`):**
+- Rebuilt `EventCard` component: removed two-column `lg:grid-cols-[1.25fr_0.75fr]` layout that caused a cramped right-panel on mid-sizes.
+- Removed "View read →" link from inside the main event panel — it was competing with "Open card".
+- New design: single-column card with clean hierarchy: label + status → event name → date/location/count → main event matchup → one "Open card" CTA → quiet "See record" for past cards only.
+- Past events now clearly use `text-2xl md:text-3xl` vs. current card `text-3xl md:text-4xl` for visual hierarchy.
+
+**Event hero (`components/EventHero.tsx`):**
+- Removed the two-column `lg:grid-cols-[1.45fr_0.75fr]` hero layout. Now a single card with all event info inline.
+- Replaced three separate stat boxes (date, location, bouts) with a compact inline metadata line — less vertical bulk.
+- Main event now shows inline within the same card with a horizontal separator, with the "View main event read" CTA aligned to the end on `sm+` and stacked below on mobile.
+- Added a clear instruction line: "Choose a fight below — each read starts with the model call."
+
+**Fight card (`components/FightCard.tsx`):**
+- Replaced `md:grid-cols-[1fr_180px_1fr_auto]` collapsing grid with a mobile-first flex layout.
+- Fighters are always side-by-side at every viewport width (no more 4-cell stack on mobile).
+- VS centre is now a compact inline element with probability numbers below it — no full-width bordered box.
+- "View read" button is `flex-1` on mobile (full-width tap target) and `flex-none` on sm+.
+- Model call, method lean, and result chip remain in a compact meta row below the fighters.
+- Removed `readStrengthLabel` helper and its display — sub-label helper copy removed per design rules.
+- Expand (+) detail panel kept for method breakdown; still shows win probability cards and method lean bars.
+- Result chip text simplified: "Model correct"/"Model incorrect" → "Correct"/"Incorrect" (saves horizontal space).
+
+**Fight read snapshot (`components/FightReadSnapshot.tsx`):**
+- Fixed mobile grid: was `sm:grid-cols-2` (2-col only at 640px+, 1-col single-stack on all narrower phones). Now `grid-cols-2` from all sizes.
+- Model call: `col-span-2` (full width) at all sizes, `lg:col-span-2` at desktop.
+- Method lean + live path: each `col-span-1` — side by side on mobile rather than stacked.
+- "What breaks the call": `col-span-2` (full width) on mobile to prevent text clipping, `lg:col-span-1` on desktop.
+- Result: 3 visual rows on mobile instead of 4 stacked cells.
+
+**Files changed:** `app/page.tsx`, `app/events/page.tsx`, `components/EventHero.tsx`, `components/FightCard.tsx`, `components/FightReadSnapshot.tsx`.
+
+**Not changed:** model math, prediction values, locked predictions, fight data, backtest logic, generated artifacts, public Model Record scoring, ingestion, audit scripts.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
+---
+
 ### Color system pass — Midnight Signal palette
 
 Replaced the amber/gold accent system with an icy-blue palette throughout. Zero model math, layout, or copy changes.

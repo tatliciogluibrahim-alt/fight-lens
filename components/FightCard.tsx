@@ -17,25 +17,15 @@ interface FightCardProps {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function methodLabel(method: string): string {
-  switch (method) {
-    case "ko_tko": return "KO/TKO";
-    case "submission": return "SUB";
-    case "decision": return "DEC";
-    default: return method.toUpperCase();
-  }
+function RecordLine({ fighter }: { fighter: SourcedFighter }) {
+  const ranking = formatRanking(fighter.ranking);
+  const parts = [
+    fighter.record ?? null,
+    ranking !== "UNRANKED" ? ranking : null,
+  ].filter(Boolean);
+  if (!parts.length) return null;
+  return <p className="data-text text-xs text-subtle">{parts.join(" · ")}</p>;
 }
-
-function readStrengthLabel(readStrength: PredictionViewModel["readStrength"]): string {
-  switch (readStrength) {
-    case "strong": return "Strong";
-    case "usable": return "Usable";
-    case "thin": return "Thin";
-    case "data-pending": return "Data pending";
-  }
-}
-
-// ─── Sub-components ───────────────────────────────────────────────────────────
 
 function FighterCountry({ fighter }: { fighter: SourcedFighter }) {
   const country = getCountryDisplay(fighter);
@@ -47,24 +37,10 @@ function FighterCountry({ fighter }: { fighter: SourcedFighter }) {
   );
 }
 
-function RecordLine({ fighter }: { fighter: SourcedFighter }) {
-  const ranking = formatRanking(fighter.ranking);
-  const parts = [
-    fighter.record ?? null,
-    ranking !== "UNRANKED" ? ranking : null,
-  ].filter(Boolean);
-  if (!parts.length) return null;
-  return <p className="data-text text-xs text-subtle">{parts.join(" · ")}</p>;
-}
-
-function ResultChip({
-  viewModel,
-}: {
-  viewModel: PredictionViewModel;
-}) {
+function ResultChip({ viewModel }: { viewModel: PredictionViewModel }) {
   if (viewModel.resultState === "pending") {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/70 px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-subtle">
+      <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-2/70 px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-subtle">
         <span className="size-1.5 rounded-full bg-subtle/60" />
         Pending
       </span>
@@ -73,7 +49,7 @@ function ResultChip({
 
   if (viewModel.resultState === "noResult" || viewModel.modelCorrect === null) {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2/70 px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-muted">
+      <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-2/70 px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-muted">
         No result
       </span>
     );
@@ -82,14 +58,14 @@ function ResultChip({
   const correct = viewModel.modelCorrect;
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.1em] ${
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.1em] ${
         correct
           ? "border border-success/30 bg-success-soft text-success"
           : "border border-wrong/30 bg-wrong-soft text-wrong"
       }`}
     >
       <span className={`size-1.5 rounded-full ${correct ? "bg-success" : "bg-wrong"}`} />
-      Model {correct ? "correct" : "incorrect"}
+      {correct ? "Correct" : "Incorrect"}
     </span>
   );
 }
@@ -128,16 +104,17 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
   const methodTop = vm?.methodLean ?? null;
 
   return (
-    <div className="group border-b border-line transition hover:bg-surface-2/30 last:border-b-0">
-      {/* Main row */}
-      <div className="grid gap-4 p-4 md:grid-cols-[1fr_180px_1fr_auto] md:items-center md:p-5">
-        {/* Fighter A */}
-        <div className="flex min-w-0 items-center gap-3 md:justify-end md:text-right">
-          <div className="min-w-0">
-            <div className="flex items-center gap-2 md:justify-end">
+    <div className="border-b border-line last:border-b-0">
+      <div className="p-4 md:p-5">
+
+        {/* ── Fighters — always side-by-side at any width ── */}
+        <div className="flex items-start gap-3">
+          {/* Fighter A */}
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2">
               <FighterCountry fighter={fighterA} />
               <p
-                className={`truncate text-base font-semibold tracking-tight ${
+                className={`min-w-0 truncate text-sm font-semibold leading-snug tracking-tight sm:text-base ${
                   hasPred && favA ? "text-accent" : "text-foreground"
                 }`}
               >
@@ -146,105 +123,96 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
             </div>
             <RecordLine fighter={fighterA} />
           </div>
-        </div>
 
-        {/* VS center */}
-        <div className="rounded-2xl border border-line bg-background/50 px-4 py-3 text-center">
-          <p className="mono-label">vs</p>
-          <p className="mt-1 text-sm font-medium text-foreground">
-            {fight.weightClass ?? "weight pending"}
-          </p>
-          <p className="data-text mt-1 text-xs text-muted">{fight.rounds}R</p>
-          {hasPred && (
-            <div className="mt-2.5 flex items-center justify-center gap-1.5 text-center">
-              <span className={`data-text text-[11px] font-medium ${favA ? "text-accent" : "text-muted"}`}>
-                {probA}%
-              </span>
-              <span className="text-[9px] text-subtle">–</span>
-              <span className={`data-text text-[11px] font-medium ${favB ? "text-accent" : "text-muted"}`}>
-                {probB}%
-              </span>
-            </div>
-          )}
-        </div>
+          {/* VS centre — compact, with probability numbers */}
+          <div className="flex shrink-0 flex-col items-center gap-0.5 pt-px">
+            <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-subtle">vs</p>
+            {hasPred && (
+              <p className="data-text mt-0.5 text-[11px] tabular-nums">
+                <span className={favA ? "font-semibold text-foreground" : "text-muted"}>{probA}%</span>
+                <span className="mx-0.5 text-subtle/50">–</span>
+                <span className={favB ? "font-semibold text-foreground" : "text-muted"}>{probB}%</span>
+              </p>
+            )}
+          </div>
 
-        {/* Fighter B */}
-        <div className="flex min-w-0 items-center gap-3 md:justify-start">
-          <div className="min-w-0">
-            <div className="flex items-center gap-2">
-              <FighterCountry fighter={fighterB} />
+          {/* Fighter B */}
+          <div className="min-w-0 flex-1 text-right">
+            <div className="flex items-center justify-end gap-2">
               <p
-                className={`truncate text-base font-semibold tracking-tight ${
+                className={`min-w-0 truncate text-sm font-semibold leading-snug tracking-tight sm:text-base ${
                   hasPred && favB ? "text-accent" : "text-foreground"
                 }`}
               >
                 {fighterB.name}
               </p>
+              <FighterCountry fighter={fighterB} />
             </div>
-            <RecordLine fighter={fighterB} />
+            <div className="flex justify-end">
+              <RecordLine fighter={fighterB} />
+            </div>
           </div>
         </div>
 
-        {/* Actions */}
-        <div className="flex items-center gap-2">
+        {/* ── Call meta row ── */}
+        <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs">
+          {/* Weight class · rounds */}
+          <span className="data-text text-subtle">
+            {(fight.weightClass ?? "weight pending").toLowerCase()} · {fight.rounds}R
+          </span>
+
+          {/* Model call */}
+          {hasPred && vm.isNamedCall && vm.predictedWinner ? (
+            <span className="text-muted">
+              <span className="text-subtle">call · </span>
+              <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>
+            </span>
+          ) : hasPred && !vm.isNamedCall ? (
+            <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
+          ) : null}
+
+          {/* Method lean */}
+          {methodTop && (
+            <span className="text-subtle">
+              {methodTop}
+              <span className="opacity-60"> lean</span>
+            </span>
+          )}
+
+          {/* Result chip — pushed to right */}
+          {vm && (
+            <span className="ml-auto">
+              <ResultChip viewModel={vm} />
+            </span>
+          )}
+        </div>
+
+        {/* ── Action row ── */}
+        <div className="mt-3 flex items-center gap-2">
           {vm && (
             <button
               type="button"
               onClick={() => setExpanded((v) => !v)}
               className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2/70 px-3 text-xs text-subtle transition hover:border-accent/30 hover:text-accent"
               aria-expanded={expanded}
-              aria-label={expanded ? "collapse" : "expand details"}
+              aria-label={expanded ? "collapse details" : "expand details"}
             >
               {expanded ? "−" : "+"}
             </button>
           )}
+          {/* View read — flex-1 on mobile so it fills remaining width, natural on sm+ */}
           <Link
             href={`/events/${eventId}/${fight.id}`}
-            className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-xs font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10"
+            className="tap-target inline-flex flex-1 items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10 sm:flex-none sm:text-xs"
           >
             View read
           </Link>
         </div>
       </div>
 
-      {/* Sub-row: call summary — scannable */}
-      {vm && (
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-5 pb-4 text-xs">
-          {/* Call */}
-          {vm.isNamedCall && vm.predictedWinner ? (
-            <span className="text-muted">
-              <span className="text-subtle">Call:</span>{" "}
-              <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>{" "}
-              <span className="data-text text-foreground">{vm.winnerProbability}%</span>
-            </span>
-          ) : (
-            <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
-          )}
-
-          {/* Read strength */}
-          <span className="text-subtle">
-            {readStrengthLabel(vm.readStrength)}{" "}
-            <span className="text-subtle/60">read</span>
-          </span>
-
-          {/* Method lean — secondary */}
-          {methodTop && (
-            <span className="text-subtle">
-              {methodTop}{" "}
-              <span className="text-subtle/60">lean</span>
-            </span>
-          )}
-
-          {/* Result chip — pushed right */}
-          <span className="ml-auto">
-            <ResultChip viewModel={vm} />
-          </span>
-        </div>
-      )}
-
-      {/* Expandable method breakdown */}
+      {/* ── Expandable breakdown ── */}
       {expanded && vm && (
-        <div className="border-t border-line bg-background/30 px-5 py-4">
+        <div className="border-t border-line bg-background/30 px-4 py-4 md:px-5">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-3">
               <p className="mono-label">win probability</p>

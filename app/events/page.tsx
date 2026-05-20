@@ -70,79 +70,73 @@ function EventCard({
 
   return (
     <article className={`overflow-hidden rounded-2xl border ${priority ? "border-accent/30 bg-surface" : "border-line bg-surface/70"}`}>
-      <div className="grid gap-0 lg:grid-cols-[1.25fr_0.75fr]">
-        <div className="p-5 md:p-7">
-          <div className="flex flex-wrap items-center gap-3">
-            <p className={`mono-label ${priority ? "text-accent" : ""}`}>
-              {priority ? "current / upcoming card" : "past card"}
-            </p>
-            <StatusPill status={stats.status} callsLogged={stats.eventPredictions.length} />
-          </div>
-
-          <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-4xl">
-            {event.event.name}
-          </h2>
-
-          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
-            <span><span className="text-subtle">date · </span>{event.event.date ?? "pending"}</span>
-            <span><span className="text-subtle">location · </span>{event.event.location ?? "pending"}</span>
-            <span>
-              <span className="text-subtle">{stats.status === "completed" ? "scored · " : "calls logged · "}</span>
-              {stats.status === "completed" ? stats.resolved.length : stats.eventPredictions.length}
-            </span>
-          </div>
-
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href={`/events/${event.event.id}`}
-              className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
-            >
-              Open card
-            </Link>
-            {stats.resolved.length > 0 && (
-              <Link
-                href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-              >
-                See record
-              </Link>
-            )}
-          </div>
+      <div className="p-5 md:p-7">
+        {/* Header: label + status */}
+        <div className="flex flex-wrap items-center gap-3">
+          <p className={`mono-label ${priority ? "text-accent" : ""}`}>
+            {priority ? "current / upcoming card" : "past card"}
+          </p>
+          <StatusPill status={stats.status} callsLogged={stats.eventPredictions.length} />
         </div>
 
-        <div className="border-t border-line bg-background/35 p-5 md:p-7 lg:border-l lg:border-t-0">
-          <p className="mono-label">main event</p>
-          {mainFight ? (
-            <>
-              <p className="mt-3 text-lg font-semibold leading-tight tracking-tight text-foreground">
-                {mainFight.fighters.fighterA.name}
-                <span className="font-normal text-subtle"> vs </span>
-                {mainFight.fighters.fighterB.name}
-              </p>
-              <p className="data-text mt-2 text-xs uppercase tracking-[0.12em] text-subtle">
-                {(mainFight.weightClass ?? "weight pending").toLowerCase()} · {mainFight.rounds} rounds
-              </p>
-              {mainFight.matchupQuestion && (
-                <p className="mt-4 text-sm leading-6 text-muted">{mainFight.matchupQuestion}</p>
-              )}
-              <Link
-                href={`/events/${event.event.id}/${mainFight.id}`}
-                className="mt-5 inline-flex text-xs uppercase tracking-[0.14em] text-subtle transition hover:text-accent"
-              >
-                View read →
-              </Link>
-            </>
-          ) : (
-            <p className="mt-3 text-sm text-muted">Main event pending.</p>
-          )}
+        {/* Event name */}
+        <h2 className={`mt-4 font-semibold leading-tight tracking-[-0.04em] ${priority ? "text-3xl md:text-4xl" : "text-2xl md:text-3xl"}`}>
+          {event.event.name}
+        </h2>
 
+        {/* Date · location · count */}
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
+          <span>{event.event.date ?? "date pending"}</span>
+          <span>{event.event.location ?? "location pending"}</span>
+          <span>
+            {stats.status === "completed"
+              ? `${stats.resolved.length} fights scored`
+              : `${stats.eventPredictions.length} calls logged`}
+          </span>
+        </div>
+
+        {/* Main event — compact one-liner */}
+        {mainFight && (
+          <div className="mt-5 border-t border-line/60 pt-4">
+            <p className="mono-label">main event</p>
+            <p className="mt-2 text-base font-semibold leading-tight tracking-tight text-foreground">
+              {mainFight.fighters.fighterA.name}
+              <span className="font-normal text-subtle"> vs </span>
+              {mainFight.fighters.fighterB.name}
+            </p>
+            {mainFight.weightClass && (
+              <p className="data-text mt-1 text-xs uppercase tracking-[0.12em] text-subtle">
+                {mainFight.weightClass.toLowerCase()} · {mainFight.rounds}R
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Actions — one primary, one quiet secondary for past cards */}
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <Link
+            href={`/events/${event.event.id}`}
+            className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+          >
+            Open card
+          </Link>
           {stats.resolved.length > 0 && (
-            <div className="mt-5 border-t border-line/60 pt-4 text-xs text-muted">
-              {stats.resolved.length} scored · {stats.correct.length}/{stats.resolved.length} model calls correct
-            </div>
+            <Link
+              href="/record"
+              className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
+            >
+              See record
+            </Link>
           )}
         </div>
       </div>
+
+      {/* Scored result footer */}
+      {stats.resolved.length > 0 && (
+        <div className="border-t border-line bg-background/35 px-5 py-3 text-xs text-muted md:px-7">
+          {stats.resolved.length} scored · {stats.correct.length}/{stats.resolved.length} model calls correct
+        </div>
+      )}
     </article>
   );
 }
