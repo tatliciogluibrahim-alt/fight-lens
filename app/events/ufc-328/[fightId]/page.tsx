@@ -154,7 +154,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 <StyleComparisonBars
                   fighterA={fighterA}
                   fighterB={fighterB}
-                  modelOutput={fightShapeModel}
                   predictedWinnerId={vm.predictedWinner?.id ?? null}
                 />
               ),

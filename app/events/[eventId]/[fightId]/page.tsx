@@ -77,18 +77,15 @@ function FighterHeroPanel({
   const country = getCountryDisplay(fighter);
   const ranking = formatRanking(fighter.ranking);
 
-  // Record / stance / ranking chips — always in their own row, never inside the name
-  const chips = [
+  // All metadata in a single compact line below the name —
+  // prevents multi-row crowding and keeps the name visually isolated.
+  const metadata = [
     ranking !== "UNRANKED" ? ranking : null,
     fighter.stance ?? null,
     fighter.record ?? null,
-  ].filter(Boolean) as string[];
-
-  // Height / reach — secondary physical line
-  const physicalChips = [
-    fighter.height,
+    fighter.height ?? null,
     fighter.reach ? `${fighter.reach} reach` : null,
-  ].filter(Boolean) as string[];
+  ].filter(Boolean).join(" · ");
 
   return (
     <div
@@ -129,24 +126,10 @@ function FighterHeroPanel({
       {/* Name — word-boundary-only line breaks via FighterNamePlate */}
       <FighterNamePlate name={fighter.name} align={align} />
 
-      {/* Chip row — record / stance / ranking */}
-      {chips.length > 0 && (
-        <div className={`flex flex-wrap gap-1.5 ${isRight ? "lg:justify-end" : ""}`}>
-          {chips.map((chip) => (
-            <span
-              key={chip}
-              className="rounded-full border border-line bg-surface-2/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.1em] text-muted"
-            >
-              {chip.toLowerCase()}
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* Physicals — secondary line */}
-      {physicalChips.length > 0 && (
-        <p className="data-text text-[11px] uppercase tracking-[0.12em] text-subtle">
-          {physicalChips.join(" · ")}
+      {/* Single compact metadata line — keeps name visually isolated */}
+      {metadata && (
+        <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle ${isRight ? "lg:text-right" : ""}`}>
+          {metadata}
         </p>
       )}
     </div>
@@ -256,7 +239,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 <StyleComparisonBars
                   fighterA={fighterA}
                   fighterB={fighterB}
-                  modelOutput={fightShapeModel}
                   predictedWinnerId={vm.predictedWinner?.id ?? null}
                 />
               ),

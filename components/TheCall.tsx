@@ -1,4 +1,3 @@
-import { ProbabilityBar } from "@/components/ProbabilityBar";
 import type { OutcomeScenario } from "@/lib/fight-outcome-model/types";
 import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
@@ -8,22 +7,18 @@ interface TheCallProps {
 
 // ─── Method lean ──────────────────────────────────────────────────────────────
 //
-// Secondary to the winner forecast. Shows the most likely finish type and a
-// compact neutral breakdown. Bars are 8 px tall for readability; no amber so
-// they don't read as a second winner signal.
+// Secondary to the winner forecast. Rendered as a compact text-row breakdown
+// so the three method rows read clearly without faint bar lines.
+// No amber — this is not a winner signal.
 
-function MethodLean({
-  viewModel,
-}: {
-  viewModel: PredictionViewModel;
-}) {
-  const { methodDistribution, methodLean, methodLeanNote } = viewModel;
+function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
+  const { methodDistribution, methodLean } = viewModel;
   if (!methodLean) return null;
 
   const methods = [
-    { id: "decision", label: "Decision", value: methodDistribution.decision },
-    { id: "ko", label: "KO / TKO", value: methodDistribution.koTko },
-    { id: "sub", label: "Submission", value: methodDistribution.submission },
+    { id: "decision", label: "Decision",   value: methodDistribution.decision },
+    { id: "ko",       label: "KO / TKO",   value: methodDistribution.koTko },
+    { id: "sub",      label: "Submission", value: methodDistribution.submission },
   ].sort((a, b) => b.value - a.value);
 
   const top = methods[0];
@@ -31,38 +26,31 @@ function MethodLean({
   return (
     <div className="rounded-2xl border border-line bg-background/40 p-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <p className="mono-label">most likely finish type</p>
-          <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
-            secondary read
-          </span>
-        </div>
-        {methodLeanNote && (
-          <p className="text-xs text-subtle">{methodLeanNote}</p>
-        )}
-      </div>
-      <div className="mt-3 flex flex-wrap items-baseline gap-2">
-        <span className="text-2xl font-semibold tracking-[-0.03em] text-foreground md:text-3xl">
-          {top.label}
+        <p className="mono-label">most likely finish type</p>
+        <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
+          directional only
         </span>
-        <span className="data-text text-sm text-muted">· {top.value}% lean</span>
       </div>
 
-      <div className="mt-5 space-y-3">
+      {/* Top method — primary read */}
+      <p className="mt-3 text-xl font-semibold tracking-tight text-foreground">
+        {top.label}
+      </p>
+
+      {/* Compact breakdown — plain rows, no bars */}
+      <div className="mt-4 divide-y divide-line/40">
         {methods.map((m) => {
           const thin = m.value < 8;
           const isTop = m.id === top.id;
           return (
-            <div key={m.id} className="flex items-center gap-3">
-              <span className="w-24 shrink-0 text-xs text-muted">{m.label}</span>
-              <div className="relative h-2 flex-1 overflow-hidden rounded-full bg-surface-2">
-                <div
-                  className={`absolute left-0 h-full rounded-full ${isTop ? "bg-foreground/85" : "bg-muted/60"}`}
-                  style={{ width: `${Math.max(m.value, 2)}%` }}
-                />
-              </div>
+            <div key={m.id} className="flex items-center justify-between py-2.5">
+              <span className={`text-sm ${isTop ? "font-medium text-foreground" : "text-muted"}`}>
+                {m.label}
+              </span>
               <span
-                className={`data-text w-16 text-right text-xs ${thin ? "text-subtle" : "text-muted"}`}
+                className={`data-text text-sm tabular-nums ${
+                  thin ? "text-subtle" : isTop ? "text-foreground" : "text-muted"
+                }`}
               >
                 {thin ? "thin" : `${m.value}%`}
               </span>
@@ -76,11 +64,7 @@ function MethodLean({
 
 // ─── Scenario card ────────────────────────────────────────────────────────────
 
-function ScenarioCard({
-  scenario,
-}: {
-  scenario: OutcomeScenario;
-}) {
+function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
   const isLean = scenario.id === "lean";
   const isSwing = scenario.id === "swing";
 
@@ -108,6 +92,11 @@ function ScenarioCard({
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
+//
+// "call detail." is the SUPPORTING section. The FightReadSnapshot above the
+// fold is the primary call display. This section explains why the model leans
+// the way it does and what could flip it — it does not repeat the big
+// winner/probability card.
 
 export function TheCall({ viewModel: vm }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
@@ -116,7 +105,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            model call.
+            call detail.
           </h2>
         </div>
         <div className="module-body">
@@ -142,35 +131,34 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
       <div className="module-header">
         <p className="mono-label">the call</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          model call.
+          call detail.
         </h2>
         <p className="mt-3 text-sm text-muted">
-          Win probability from shape, form, and stat differentials. Signal-based — not a guarantee.
+          Why the model leans this way, and what could flip it.
         </p>
       </div>
 
       <div className="module-body space-y-6">
-        {/* Win probability — primary surface */}
-        <div className="rounded-2xl border border-line bg-background/40 p-4 md:p-6">
-          <ProbabilityBar
-            probA={fighterA.winProbability}
-            probB={fighterB.winProbability}
-            nameA={fighterA.name}
-            nameB={fighterB.name}
-            tooClose={tooClose}
-          />
-        </div>
+        {/* No-lean note — only shown when probabilities don't separate */}
+        {tooClose && (
+          <div className="rounded-xl border border-line bg-surface/50 p-4">
+            <p className="text-sm leading-6 text-muted">
+              Probabilities too close to name a call —{" "}
+              <span className="text-foreground">{fighterA.name} {fighterA.winProbability}%</span>
+              {" · "}
+              <span className="text-foreground">{fighterB.name} {fighterB.winProbability}%</span>.
+              No named model call.
+            </p>
+          </div>
+        )}
 
-        {/* Method lean — secondary */}
+        {/* Method lean */}
         <MethodLean viewModel={vm} />
 
-        {/* The Call / Live Path / What Breaks the Call */}
+        {/* The call / Live path / What breaks the call */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {scenarios.map((scenario) => (
-            <ScenarioCard
-              key={scenario.id}
-              scenario={scenario}
-            />
+            <ScenarioCard key={scenario.id} scenario={scenario} />
           ))}
         </div>
 

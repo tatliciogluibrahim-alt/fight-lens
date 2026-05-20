@@ -2,6 +2,44 @@
 
 ## May 2026
 
+### Fight page consolidation pass
+
+Six targeted fixes to eliminate repeated call content, dead helpers, and hero crowding. Zero model math or data changes.
+
+**Fix 1+2+3 — FightReadSnapshot is the primary call display; TheCall is now "call detail."**
+- Removed `ProbabilityBar` component from `TheCall` entirely. The large amber winner/probability card was a duplicate of what `FightReadSnapshot` already shows above the fold.
+- Removed `ProbabilityBar` import from `TheCall.tsx`.
+- Heading changed: "model call." → "call detail."
+- Subcopy changed: "Win probability from shape, form, and stat differentials." → "Why the model leans this way, and what could flip it."
+- For the "too close to call" state, a small neutral inline note shows both fighter probabilities instead of the full ProbabilityBar card.
+
+**Fix 4 — Method lean: text-row list replaces faint bars**
+- Replaced the `h-2` horizontal bar visualization with a clean divide-y text-row list.
+- Each method gets one row: label (left) + percentage or "thin" (right).
+- Top method row uses `font-medium text-foreground`; secondary rows use `text-muted`. No bars, no faint lines.
+- No amber — method lean is never a winner signal.
+
+**Fix 5 — Single fight shape section, no redundant style-edge box**
+- Removed the standalone `styleEdgeText` box from `StyleComparisonBars` (was a one-liner repeating the biggest-edge insight card's same information).
+- Removed all dead helper functions used only to build that box: `lastName`, `possessiveName`, `axisPhrase`, `buildShapeTakeaway`.
+- Removed `shapeTakeaway`, `biggestEdge`, `styleEdgeText` variables.
+- Removed `ShapeNarrative` type import (no longer needed after removing `buildShapeTakeaway`).
+- Removed `modelOutput` and `styleClashLabel` from `StyleComparisonBarsProps` — both were in the interface but never used in the component body. Removed corresponding `FightShapeModelOutput` import.
+- Updated both fight page call sites to no longer pass `modelOutput` to `StyleComparisonBars`.
+- The section now reads: radar → insight cards (each adds distinct info) → collapsed axis breakdown.
+
+**Fix 6 — Hero matchup card containment**
+- Replaced the two-row metadata display (pill chips for rank/stance/record + separate physicals text for height/reach) with a single compact mono text line: `#3 · southpaw · 72-8-0 · 5'9" · 69" reach`.
+- This gives the name a clearly isolated visual zone — one row below the name for ALL metadata, not two.
+- No mid-word breaks (FighterNamePlate guarantees word-boundary-only splits).
+- UFC-328 hero already used a similar single-line approach; both routes are now consistent.
+
+**Files changed:** `components/TheCall.tsx`, `components/StyleComparisonBars.tsx`, `app/events/[eventId]/[fightId]/page.tsx`, `app/events/ufc-328/[fightId]/page.tsx`.
+
+**Not changed:** model math, prediction values, locked predictions, fight data, ingestion, backtest logic, generated artifacts, public Model Record scoring. `ProbabilityBar.tsx` component file still exists and is not deleted.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
 ### Fight page cleanup pass (delete-first)
 
 Removed UI clutter, consolidated duplicate sections, fixed fighter hero name rendering. Zero model math or data changes.

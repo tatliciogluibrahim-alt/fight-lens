@@ -75,10 +75,10 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 |---|---|
 | `components/FightReadSnapshot.tsx` | At-a-glance strip between hero and analysis sections. Reads only from `viewModel`. No read-strength pill. |
 | `components/FighterNamePlate.tsx` | Fighter hero name — word-boundary-only line breaks (`whitespace-nowrap` per word). Both fight page routes use this. |
-| `components/TheCall.tsx` | Model call card — `ProbabilityBar` + method lean bars + scenario cards. No read-strength chip. |
-| `components/ProbabilityBar.tsx` | Win probability display — called fighter (amber) + live path side. No horizontal rail. |
+| `components/TheCall.tsx` | "call detail." section — method lean (text-row list) + scenario cards. **No ProbabilityBar** — snapshot handles the primary call display. |
+| `components/ProbabilityBar.tsx` | File exists but is **not rendered on fight pages**. Do not re-add to TheCall — would create a second winner/probability display. |
 | `components/FightShapeSummary.tsx` | **Not currently rendered.** File exists but is not used in any fight page. Do not re-add without removing `StyleComparisonBars` — they would duplicate the "fight shape." title. |
-| `components/StyleComparisonBars.tsx` | **The single fight shape section.** Overlay radar, style edge summary, insight cards, collapsed axis breakdown. |
+| `components/StyleComparisonBars.tsx` | **The single fight shape section.** Overlay radar → insight cards → collapsed axis breakdown. Does not accept `modelOutput` or `styleClashLabel` props. |
 | `components/FightPageTabs.tsx` | Section anchor wrapper only — no visible nav row. Assigns `id="section-{id}"` and `scroll-mt-24` to each section. |
 | `components/FightCard.tsx` | Event page matchup row — call, method lean, result chip. |
 

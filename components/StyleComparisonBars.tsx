@@ -1,15 +1,12 @@
-import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions, hasEnoughStyleRadarData } from "@/lib/style-radar";
-import { buildShapeNarrative, type NarrativeAxisCard, type ShapeNarrative } from "@/lib/fight-shape-model/shape-narrative";
+import { buildShapeNarrative, type NarrativeAxisCard } from "@/lib/fight-shape-model/shape-narrative";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 import type { NullableStyleProfile } from "@/lib/fight-shape";
 
 interface StyleComparisonBarsProps {
   fighterA: SourcedFighter;
   fighterB: SourcedFighter;
-  modelOutput: FightShapeModelOutput;
-  styleClashLabel?: string;
   /**
    * Canonical predicted-winner fighter id from the model call. Used by the
    * narrative helper to direct the "swing category" toward the underdog so
@@ -23,60 +20,12 @@ interface StyleComparisonBarsProps {
 function shapeCardTone(kind: NarrativeAxisCard["kind"]) {
   switch (kind) {
     case "biggest-edge":
-      return {
-        border: "border-line-strong",
-        bg: "bg-surface-2/60",
-        labelTone: "text-foreground",
-      };
     case "swing":
-      return {
-        border: "border-line-strong",
-        bg: "bg-surface-2/60",
-        labelTone: "text-foreground",
-      };
+      return { border: "border-line-strong", bg: "bg-surface-2/60", labelTone: "text-foreground" };
     case "closest":
-      return {
-        border: "border-line",
-        bg: "bg-background/40",
-        labelTone: "text-muted",
-      };
     case "watching":
-      return {
-        border: "border-line",
-        bg: "bg-background/40",
-        labelTone: "text-muted",
-      };
+      return { border: "border-line", bg: "bg-background/40", labelTone: "text-muted" };
   }
-}
-
-
-function lastName(name?: string | null) {
-  const parts = (name ?? "").trim().split(/\s+/).filter(Boolean);
-  return parts.at(-1) ?? "Fighter";
-}
-
-function possessiveName(name?: string | null) {
-  const base = lastName(name);
-  return base.endsWith("s") ? base + "'" : base + "'s";
-}
-
-function axisPhrase(label?: string | null) {
-  return (label ?? "style").trim().replace(/\.$/, "").toLowerCase();
-}
-
-function buildShapeTakeaway(narrative: ShapeNarrative) {
-  const biggest = narrative.cards.find((card) => card.kind === "biggest-edge");
-  const swing = narrative.cards.find((card) => card.kind === "swing");
-
-  if (biggest?.leaderName) {
-    const first = possessiveName(biggest.leaderName) + " clearest style edge is " + axisPhrase(biggest.axisLabel) + ".";
-    if (swing?.leaderName) {
-      return first + " " + possessiveName(swing.leaderName) + " best swing path is " + axisPhrase(swing.axisLabel) + ".";
-    }
-    return first + " Use this after the call to understand where the matchup tilts.";
-  }
-
-  return narrative.headline || "Use this after the call to understand where the matchup tilts.";
 }
 
 function ShapeCard({ card }: { card: NarrativeAxisCard }) {
@@ -197,7 +146,7 @@ function OverlayRadar({
         );
       })}
 
-      {/* Fighter B shape drawn first (under) — staggered bloom for sequencing */}
+      {/* Fighter B shape drawn first (under) */}
       {canFillB && (
         <polygon
           points={toStr(pts(dimsB))}
@@ -210,7 +159,7 @@ function OverlayRadar({
         />
       )}
 
-      {/* Fighter A shape — drawn last for comparison, but not styled as a winner call */}
+      {/* Fighter A shape — drawn last; not styled as a winner call */}
       {canFillA && (
         <polygon
           points={toStr(pts(dimsA))}
@@ -222,7 +171,7 @@ function OverlayRadar({
         />
       )}
 
-      {/* Data dots — native SVG <title> elements give per-axis tooltips on hover */}
+      {/* Data dots with per-axis tooltips */}
       {dimsA.map((d, i) => {
         if (!d.hasData || d.value == null) return null;
         const p = point(i, d.value);
@@ -253,7 +202,7 @@ function OverlayRadar({
         );
       })}
 
-      {/* Centroid mark — soft pulse for "live read" feel */}
+      {/* Centroid mark */}
       <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" className="fl-radar-centroid" />
     </svg>
   );
@@ -274,10 +223,6 @@ export function StyleComparisonBars({
     return row.hasData || b?.hasData ? [{ a: row, b }] : [];
   });
 
-  // ── Narrative ───────────────────────────────────────────────────────────────
-  // Single source of analyst-style copy: picks biggest/closest/swing axes and
-  // writes plain-language sentences. Never names a winner. Honest about
-  // thin samples.
   const narrative = buildShapeNarrative({
     fighterAName: fighterA.name,
     fighterAId: fighterA.id,
@@ -292,9 +237,9 @@ export function StyleComparisonBars({
     return (
       <section className="module-card">
         <div className="module-header">
-          <p className="mono-label">shape</p>
+          <p className="mono-label">fight shape</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            shape fingerprint.
+            fight shape.
           </h2>
         </div>
         <div className="module-body">
@@ -308,23 +253,14 @@ export function StyleComparisonBars({
     );
   }
 
-  // Sort axis breakdown rows by absolute delta — most-separating axes first
-  // so the eye reads the strongest signals at the top.
+  // Sort by absolute delta — most-separating axes first
   const sortedRows = [...comparableRows].sort((rowL, rowR) => {
     const a = rowL.a.hasData && rowL.b?.hasData
-      ? Math.abs((rowL.a.value ?? 0) - (rowL.b.value ?? 0))
-      : -1;
+      ? Math.abs((rowL.a.value ?? 0) - (rowL.b.value ?? 0)) : -1;
     const b = rowR.a.hasData && rowR.b?.hasData
-      ? Math.abs((rowR.a.value ?? 0) - (rowR.b.value ?? 0))
-      : -1;
+      ? Math.abs((rowR.a.value ?? 0) - (rowR.b.value ?? 0)) : -1;
     return b - a;
   });
-
-  const shapeTakeaway = buildShapeTakeaway(narrative);
-  const biggestEdge = narrative.cards.find((card) => card.kind === "biggest-edge");
-  const styleEdgeText = biggestEdge?.leaderName
-    ? `${possessiveName(biggestEdge.leaderName)} clearest style edge is ${axisPhrase(biggestEdge.axisLabel)}.`
-    : shapeTakeaway;
 
   return (
     <section className="module-card">
@@ -339,20 +275,10 @@ export function StyleComparisonBars({
       </div>
 
       <div className="module-body space-y-7">
-        {styleEdgeText ? (
-          <div className="rounded-2xl border border-line bg-background/35 p-5">
-            <p className="mono-label">style edge</p>
-            <p className="mt-3 text-base leading-7 text-foreground md:text-lg md:leading-8">
-              {styleEdgeText}
-            </p>
-          </div>
-        ) : null}
-
         {/*
           ── Signature overlay radar ───────────────────────────────────────────
-          The single, central visual. Broadcast HUD treatment frames it as a
-          scouting-room read, not a chart-library default. The individual
-          side-by-side radars were removed in favour of this being the focus.
+          Single central visual. Both fighters overlaid on one chart so shapes
+          can be compared directly. Neither polygon color implies a winner.
         */}
         <div className="relative overflow-hidden rounded-3xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
           {/* Corner registration marks */}
@@ -366,7 +292,7 @@ export function StyleComparisonBars({
             <div>
               <p className="mono-label">shape fingerprint</p>
               <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-subtle/75">
-                style map only, not a winner forecast
+                style map only · not a winner forecast
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-[11px] font-medium tracking-tight">
@@ -381,7 +307,6 @@ export function StyleComparisonBars({
             </div>
           </div>
 
-          {/* The radar — larger canvas on desktop, fluid on mobile */}
           <div className="mx-auto w-full max-w-[460px] md:max-w-[520px]">
             <OverlayRadar
               profileA={fighterA.styleProfile}
@@ -391,12 +316,12 @@ export function StyleComparisonBars({
             />
           </div>
         </div>
+
         {/*
           ── Shape insight cards ───────────────────────────────────────────────
-          Keep the first shape read human and compact. Cards stay style-only and
-          never identify a winner forecast.
+          Biggest-edge, closest, and swing cards each add distinct information.
+          Never identifies a winner forecast.
         */}
-
         {narrative.cards.length > 0 ? (
           <div>
             <p className="mb-3 mono-label">shape insights</p>
@@ -410,35 +335,26 @@ export function StyleComparisonBars({
             ) : null}
           </div>
         ) : null}
+
         {/*
           ── Axis breakdown ────────────────────────────────────────────────────
-          Sorted by absolute delta so the most-separating axes read first.
-          Collapsed by default so the radar and three insight cards lead the
-          section; this is detail, not a second winner forecast.
+          Collapsed by default. Sorted by absolute delta — strongest signals first.
         */}
         <details className="group overflow-hidden rounded-2xl border border-line bg-background/25">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4">
             <div>
               <p className="mono-label">full axis breakdown</p>
-              <p className="mt-1 text-xs text-subtle">
-                Larger number = stronger style signal.
-              </p>
+              <p className="mt-1 text-xs text-subtle">Larger number = stronger style signal.</p>
             </div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:hidden">
-              show
-            </span>
-            <span className="hidden font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:inline">
-              hide
-            </span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:hidden">show</span>
+            <span className="hidden font-mono text-[10px] uppercase tracking-[0.12em] text-muted group-open:inline">hide</span>
           </summary>
+
           <div className="border-t border-line p-4 md:p-5">
             <div className="overflow-hidden rounded-2xl border border-line bg-background/30">
-              {/* Column headers */}
               <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-line px-5 py-3">
                 <p className="truncate text-sm font-semibold text-foreground">{fighterA.name}</p>
-                <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
-                  axis · Δ
-                </p>
+                <p className="w-20 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">axis · Δ</p>
                 <p className="truncate text-right text-sm font-semibold text-foreground">{fighterB.name}</p>
               </div>
 
@@ -451,7 +367,6 @@ export function StyleComparisonBars({
 
                 return (
                   <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
-                    {/* Label + scores + Δ */}
                     <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
                       <span className="data-text text-sm tabular-nums text-foreground">
                         {aValue != null ? aValue : "—"}
@@ -471,7 +386,6 @@ export function StyleComparisonBars({
                       </span>
                     </div>
 
-                    {/* Bar */}
                     <div className="grid grid-cols-2 gap-1">
                       <div className="flex justify-end rounded-l-full bg-surface-2">
                         {aValue != null ? (
