@@ -1,16 +1,51 @@
 import Link from "next/link";
 import type { SourcedEvent } from "@/lib/sourced-event";
+import type { PredictionRecord } from "@/lib/accuracy/types";
+import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 
 interface EventHeroProps {
   event: SourcedEvent;
+  lockedPredictions?: PredictionRecord[];
 }
 
-export function EventHero({ event }: EventHeroProps) {
+function eventStatusChip(lockedPredictions: PredictionRecord[]) {
+  if (lockedPredictions.length === 0) return null;
+
+  const resolved = lockedPredictions.filter((p) => p.outcome !== null);
+
+  if (resolved.length === 0) {
+    // All pending — upcoming event
+    return (
+      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
+        <span className="size-1.5 animate-pulse rounded-full bg-accent/70" />
+        upcoming · {lockedPredictions.length} calls logged · outcomes pending
+      </span>
+    );
+  }
+
+  // Some or all resolved — completed
+  const correct = resolved.filter((p) => {
+    if (!p.outcome || p.outcome.winner === "draw" || p.outcome.winner === "nc") return false;
+    return getPredictionRecordCall(p).predictedSide === p.outcome.winner;
+  });
+
+  const allResolved = resolved.length === lockedPredictions.length;
+  return (
+    <span className="inline-flex items-center gap-2 rounded-full border border-success/25 bg-success/[0.07] px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-success">
+      <span className="size-1.5 rounded-full bg-success" />
+      {allResolved ? "completed" : "partial results"} · {correct.length}/{resolved.length} correct
+    </span>
+  );
+}
+
+export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
   const mainFight = event.fights[0];
   const mainFightLabel = mainFight
     ? `${mainFight.fighters.fighterA.name.split(" ").pop()?.toLowerCase()} vs. ${mainFight.fighters.fighterB.name.split(" ").pop()?.toLowerCase()}`
     : null;
   const mainFightClash = mainFight?.styleClashLabel ?? null;
+
+  const statusChip = eventStatusChip(lockedPredictions);
 
   return (
     <section className="section-shell py-8 md:py-12">
@@ -18,6 +53,7 @@ export function EventHero({ event }: EventHeroProps) {
         <div className="lens-card p-5 md:p-8">
           <div className="flex flex-wrap items-center gap-3">
             <p className="mono-label">{event.event.promotion.toLowerCase()} / fight lens</p>
+            {statusChip}
           </div>
           <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-6xl">
             {event.event.name.toLowerCase()}
@@ -29,7 +65,7 @@ export function EventHero({ event }: EventHeroProps) {
             {[
               ["date", event.event.date ?? "date pending"],
               ["location", event.event.location ?? "location pending"],
-              ["bouts", `${event.fights.length}`]
+              ["bouts", `${event.fights.length}`],
             ].map(([label, value]) => (
               <div key={label} className="rounded-2xl border border-line bg-background/45 p-4">
                 <p className="mono-label">{label}</p>
@@ -50,7 +86,8 @@ export function EventHero({ event }: EventHeroProps) {
                 <p className="mono-label mt-3 text-accent">{mainFightClash}</p>
               )}
               <p className="mt-4 text-sm leading-6 text-muted">
-                {mainFight.matchupQuestion ?? "Fighter stats pending — analysis loads closer to the event."}
+                {mainFight.matchupQuestion ??
+                  "Fighter stats pending — analysis loads closer to the event."}
               </p>
             </div>
             <Link

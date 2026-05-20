@@ -234,34 +234,60 @@ export default function RecordPage() {
           </p>
         </section>
 
-        {/* Historical backtest — clearly separated from the public Model Record */}
-        {backtestReconstructions.length > 0 && (
-          <section className="section-shell py-8 md:py-12">
-            <div className="rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
-              <p className="mono-label">historical backtest</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
-                separate validation runs.
-              </h2>
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-                These are retroactive model runs on completed fights using only data that
-                was available before each fight. They are <span className="text-foreground">not</span> the
-                same as logged calls — they were never publicly published before the bell, so they
-                do not count toward the public Model Record above.
-              </p>
+        {/* Historical validation — clearly separated from the public Model Record */}
+        <section className="section-shell py-8 md:py-12">
+          <div className="rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
+            <p className="mono-label">historical validation</p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
+              not the public record.
+            </h2>
 
+            {/* Key separation callout */}
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-xl border border-line bg-background/40 p-4">
+                <p className="text-xs font-semibold text-foreground">Public Record (above)</p>
+                <p className="mt-1 text-xs leading-5 text-muted">
+                  Calls logged before each fight. Scored after the official result.
+                  Grade unlocks at 30 scored fights.
+                </p>
+              </div>
+              <div className="rounded-xl border border-line bg-background/40 p-4">
+                <p className="text-xs font-semibold text-foreground">Historical Validation (this section)</p>
+                <p className="mt-1 text-xs leading-5 text-muted">
+                  Retroactive model runs on 253 fights across 20 completed events.
+                  Never publicly logged — used to test the model, not to claim calls.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-4 max-w-2xl text-sm leading-6 text-muted">
+              These retroactive runs use only data that was available before each fight.
+              They are <span className="text-foreground font-medium">not</span> the same
+              as logged calls — they were never published before the bell, so they do not
+              count toward the public Model Record above.
+            </p>
+
+            {backtestReconstructions.length > 0 && (
               <div className="mt-5 overflow-hidden rounded-xl border border-line bg-background/30">
                 {backtestReconstructions.map((record) => (
                   <PredictionRow key={record.fightId} record={record} />
                 ))}
               </div>
+            )}
 
-              <p className="mt-4 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-                Full historical backtest: n=253, 20 completed events, 66% winner accuracy, Brier 0.219 — see{" "}
-                <a href="/methodology" className="underline decoration-line underline-offset-2 hover:text-subtle">methodology</a>.
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-[11px] uppercase tracking-[0.1em] text-subtle/70">
+                full validation corpus: n=253 · 20 events · 66% winner accuracy
               </p>
+              <a
+                href="/methodology"
+                className="text-[11px] uppercase tracking-[0.1em] text-subtle/70 underline decoration-line underline-offset-2 hover:text-subtle"
+              >
+                methodology →
+              </a>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
       </main>
       <DisclaimerFooter />
     </>

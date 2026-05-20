@@ -479,17 +479,18 @@ function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, press
   const factorA = topFactor(pressureA.factors)?.label.toLowerCase() ?? null;
   const factorB = topFactor(pressureB.factors)?.label.toLowerCase() ?? null;
 
-  // Both sides described neutrally. No "leader" framing.
+  // Both sides described neutrally. No "leader" framing. No forbidden language.
+  // The component handles the "separate from winner forecast" disclaimer itself.
   if (factorA && factorB) {
-    return `${fighterA.name} brings ${factorA}; ${fighterB.name} brings ${factorB}. This is a style-pressure read — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+    return `${fighterA.name} brings ${factorA}; ${fighterB.name} brings ${factorB}.`;
   }
   if (factorA) {
-    return `${fighterA.name} brings ${factorA}. Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+    return `${fighterA.name} brings ${factorA}.`;
   }
   if (factorB) {
-    return `${fighterB.name} brings ${factorB}. Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+    return `${fighterB.name} brings ${factorB}.`;
   }
-  return `Style-pressure read only — see the model call for the winner forecast. Overall data confidence is ${dataConfidence.toLowerCase()}.`;
+  return null;
 }
 
 function warningsFor(fight: SourcedFight, roundA: RoundSustainabilityScore, roundB: RoundSustainabilityScore) {

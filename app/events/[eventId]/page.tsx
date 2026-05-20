@@ -5,7 +5,7 @@ import { CardFilterTabs } from "@/components/CardFilterTabs";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
 import { getAllEventIds, getEvent } from "@/lib/events/registry";
-import { getAllPredictions } from "@/lib/accuracy";
+import { getAllPredictions, getLockedPredictions } from "@/lib/accuracy";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 
 interface EventPageProps {
@@ -33,6 +33,7 @@ export default async function EventPage({ params }: EventPageProps) {
   if (!event) notFound();
 
   const predictions = getAllPredictions();
+  const lockedPredictions = getLockedPredictions();
   const predictionByFightId = new Map(predictions.map((p) => [p.fightId, p]));
   const predictionViewModels = event.fights.map((fight) =>
     buildPredictionViewModelBundle({
@@ -42,11 +43,17 @@ export default async function EventPage({ params }: EventPageProps) {
     }).viewModel,
   );
 
+  // Locked predictions for this event only — used to show status chip
+  const eventFightIds = new Set(event.fights.map((f) => f.id));
+  const eventLockedPredictions = lockedPredictions.filter((p) =>
+    eventFightIds.has(p.fightId),
+  );
+
   return (
     <>
       <AppHeader />
       <main>
-        <EventHero event={event} />
+        <EventHero event={event} lockedPredictions={eventLockedPredictions} />
         <CardFilterTabs
           eventId={event.event.id}
           fights={event.fights}

@@ -159,6 +159,15 @@ summary::-webkit-details-marker {
   font-variant-numeric: tabular-nums;
 }
 
+/* ─── Nav scrollbar hiding ───────────────────────────────────────────────── */
+
+.nav-pill-scroll {
+  scrollbar-width: none; /* Firefox */
+}
+.nav-pill-scroll::-webkit-scrollbar {
+  display: none; /* Safari / Chrome */
+}
+
 /* ─── Interaction primitives ─────────────────────────────────────────────── */
 
 .tap-target {
