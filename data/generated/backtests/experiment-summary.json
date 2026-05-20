@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-05-19T23:11:09.523Z",
+  "generatedAt": "2026-05-19T23:56:40.882Z",
   "corpus": {
     "scoredFights": 253,
     "v02WinnerAccuracy": 66,
     "v02MethodAccuracy": 58,
     "v02Brier": 0.219,
-    "legacyBetterRecordAccuracy": 71
+    "officialRecordBaseline": {
+      "allFightAccuracy": 58,
+      "pickAccuracy": 63,
+      "coverage": 92,
+      "brierScore": 0.235
+    },
+    "legacyProfileRecordAccuracy": 71
   },
   "baselineVariants": [
     {
@@ -129,7 +135,7 @@
       "noLeanCount": 21,
       "callsChangedRate": 17,
       "overfittingFlags": [
-        "May be copying better-record too much by suppressing disagreement cases."
+        "May be copying the as-of record baseline too much by suppressing disagreement cases."
       ]
     },
     {
@@ -191,18 +197,18 @@
       "noLeanCount": 28,
       "callsChangedRate": 19,
       "overfittingFlags": [
-        "May be copying better-record too much by suppressing disagreement cases."
+        "May be copying the as-of record baseline too much by suppressing disagreement cases."
       ]
     }
   ],
   "recommendation": {
-    "choice": "E",
-    "label": "fix baseline/data issue first",
+    "choice": "A",
+    "label": "keep v0.2 unchanged",
     "rationale": [
-      "The legacy 71% better-record baseline is not leakage-safe because it uses normalized profile record strings rather than recomputed pre-fight history.",
-      "The primary as-of baseline produced 58% all-fight accuracy with 92% coverage, so it remains a useful comparator after leakage-safe recomputation.",
-      "Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it should be validated out of sample before promotion.",
-      "Update the official backtest baseline reporting to use an as-of record implementation before treating any v0.3 candidate as a promotion candidate."
+      "The legacy 71% better-record baseline is not leakage-safe and is retained only as a deprecated profile-record reference.",
+      "The official as-of record baseline produced 63% pick accuracy / 58% all-fight accuracy with 92% coverage and Brier 0.235.",
+      "Current v0.2 remains stronger on the headline run: 66% winner accuracy and Brier 0.219.",
+      "Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it did not clearly improve both accuracy and Brier enough for promotion."
     ]
   }
 }

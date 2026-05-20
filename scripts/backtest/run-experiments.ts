@@ -52,7 +52,15 @@ interface SummaryFile {
     methodAccuracy: number | null;
     brierScore: number | null;
     baselines: {
-      betterRecord: { accuracy: number | null; scoredFights: number; correct: number };
+      betterRecord: {
+        accuracy: number | null;
+        pickAccuracy?: number | null;
+        coverage?: number | null;
+        brierScore?: number | null;
+        scoredFights: number;
+        correct: number;
+      };
+      legacyProfileRecord?: { accuracy: number | null; scoredFights: number; correct: number };
       moreExperience: { accuracy: number | null; scoredFights: number; correct: number };
     };
   };
@@ -162,7 +170,7 @@ interface ExperimentReport {
   scope: string;
   filesInspected: string[];
   baselineAudit: {
-    currentBetterRecordBaseline: {
+    legacyProfileRecordBaseline: {
       implementation: string;
       sourceFields: string[];
       leakageSafe: false;
@@ -177,7 +185,13 @@ interface ExperimentReport {
     v02WinnerAccuracy: number | null;
     v02MethodAccuracy: number | null;
     v02Brier: number | null;
-    legacyBetterRecordAccuracy: number | null;
+    officialRecordBaseline: {
+      allFightAccuracy: number | null;
+      pickAccuracy: number | null;
+      coverage: number | null;
+      brierScore: number | null;
+    };
+    legacyProfileRecordAccuracy: number | null;
   };
   experiments: ExperimentResult[];
   recommendation: {
@@ -606,7 +620,7 @@ function overfittingFlags(result: Omit<ExperimentResult, "overfittingFlags">, v0
   }
   if (result.noLeanCount > v02.noLeanCount + 20) flags.push("Increases noLean count aggressively.");
   if (result.callsChangedRate != null && result.callsChangedRate >= 25) flags.push("Changes at least a quarter of public-call states.");
-  if (result.agreementVsBetterRecord.disagree.n < v02.agreementVsBetterRecord.disagree.n * 0.75) flags.push("May be copying better-record too much by suppressing disagreement cases.");
+  if (result.agreementVsBetterRecord.disagree.n < v02.agreementVsBetterRecord.disagree.n * 0.75) flags.push("May be copying the as-of record baseline too much by suppressing disagreement cases.");
   return flags;
 }
 
@@ -716,12 +730,12 @@ Generated: ${report.generatedAt}
 
 Backend/model-validation only. This pass did not change public UI, production model outputs, locked predictions, ingestion, public copy, or public Model Record behavior.
 
-## Better-record baseline audit
+## Record baseline audit
 
-- Current implementation: ${report.baselineAudit.currentBetterRecordBaseline.implementation}
-- Source fields: ${report.baselineAudit.currentBetterRecordBaseline.sourceFields.join("; ")}
-- Leakage-safe: no
-- Finding: ${report.baselineAudit.currentBetterRecordBaseline.finding}
+- Legacy implementation: ${report.baselineAudit.legacyProfileRecordBaseline.implementation}
+- Source fields: ${report.baselineAudit.legacyProfileRecordBaseline.sourceFields.join("; ")}
+- Legacy profile-record leakage-safe: no
+- Finding: ${report.baselineAudit.legacyProfileRecordBaseline.finding}
 
 Primary leakage-safe comparator for experiments: \`${report.baselineAudit.validatedPrimaryAsOfBaselineId}\`.
 
@@ -796,7 +810,7 @@ async function main() {
       "data/generated/backtests/summary.json",
     ],
     baselineAudit: {
-      currentBetterRecordBaseline: {
+      legacyProfileRecordBaseline: {
         implementation: "scripts/backtest/run.ts parses fight.fighters.fighterA.record and fighterB.record, compares W-L win percentage, and counts coin-flips as misses in the aggregate denominator.",
         sourceFields: [
           "scripts/ingest/ufcstats.mjs scrapes fighter profile record text",
@@ -815,19 +829,27 @@ async function main() {
       v02WinnerAccuracy: summary.summary.winnerAccuracy,
       v02MethodAccuracy: summary.summary.methodAccuracy,
       v02Brier: summary.summary.brierScore,
-      legacyBetterRecordAccuracy: summary.summary.baselines.betterRecord.accuracy,
+      officialRecordBaseline: {
+        allFightAccuracy: summary.summary.baselines.betterRecord.accuracy,
+        pickAccuracy: summary.summary.baselines.betterRecord.pickAccuracy ?? null,
+        coverage: summary.summary.baselines.betterRecord.coverage ?? null,
+        brierScore: summary.summary.baselines.betterRecord.brierScore ?? null,
+      },
+      legacyProfileRecordAccuracy: summary.summary.baselines.legacyProfileRecord?.accuracy ?? null,
     },
     experiments: experimentResults,
     recommendation: {
-      choice: "E",
-      label: "fix baseline/data issue first",
+      choice: "A",
+      label: "keep v0.2 unchanged",
       rationale: [
-        "The legacy 71% better-record baseline is not leakage-safe because it uses normalized profile record strings rather than recomputed pre-fight history.",
-        `The primary as-of baseline produced ${pctText(primaryBaseline.accuracyAllNoPicksAsMisses)} all-fight accuracy with ${pctText(primaryBaseline.coverage)} coverage, so it remains a useful comparator after leakage-safe recomputation.`,
+        "The legacy 71% better-record baseline is not leakage-safe and is retained only as a deprecated profile-record reference.",
+        `The official as-of record baseline produced ${pctText(primaryBaseline.accuracyOnPicked)} pick accuracy / ${pctText(primaryBaseline.accuracyAllNoPicksAsMisses)} all-fight accuracy with ${pctText(primaryBaseline.coverage)} coverage and Brier ${brierText(primaryBaseline.brierAll)}.`,
+        v02
+          ? `Current v0.2 remains stronger on the headline run: ${pctText(v02.winnerAccuracy)} winner accuracy and Brier ${brierText(v02.brierScore)}.`
+          : "Current v0.2 remains the production comparison point.",
         bestBrier && v02
-          ? `Best experiment by Brier was ${bestBrier.label} at ${brierText(bestBrier.brierScore)} vs v0.2 at ${brierText(v02.brierScore)}, but it should be validated out of sample before promotion.`
+          ? `Best experiment by Brier was ${bestBrier.label} at ${brierText(bestBrier.brierScore)} vs v0.2 at ${brierText(v02.brierScore)}, but it did not clearly improve both accuracy and Brier enough for promotion.`
           : "No experiment has enough evidence for automatic promotion.",
-        "Update the official backtest baseline reporting to use an as-of record implementation before treating any v0.3 candidate as a promotion candidate.",
       ],
     },
     guardrails: [

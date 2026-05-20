@@ -61,7 +61,8 @@ Written to `data/generated/backtests/` after each run:
 | **Method accuracy** | % of fights where finish vs. decision was directionally right |
 | **Brier score** | Mean squared error of win probabilities. Lower is better. 0.25 = random. |
 | **Calibration** | When the model says 70%, do 70% of those actually win? |
-| **Better-record baseline** | Accuracy of always picking the fighter with the better W-L ratio |
+| **Official as-of record baseline** | Leakage-safe baseline recomputed only from each fighter's pre-fight history |
+| **Legacy profile-record baseline** | Deprecated reference that reads profile snapshot records; not an official comparison |
 | **More-experience baseline** | Accuracy of always picking the fighter with more total fights |
 
 ## Current corpus (May 2026 expansion - n=253)
@@ -141,9 +142,11 @@ QA notes:
 | Winner accuracy | 66% | 66% |
 | Method accuracy | 51% | 58% |
 | Brier score | 0.236 | 0.219 |
-| Better-record baseline | 66% | 71% |
+| Official as-of record baseline | not recomputed in old summary | 63% picked / 58% all fights |
+| Official as-of record Brier | not recomputed in old summary | 0.235 |
+| Legacy profile-record baseline | 66% | 71% (deprecated; not leakage-safe) |
 | More-experience baseline | 43% | 40% |
-| Model vs better-record | 0 pts | -5 pts |
+| Model vs official as-of record | n/a | +3 pts on picked subset / +8 pts all fights; Brier 0.016 lower |
 | Missing-data rate | 36% | 40% |
 | `opponentTotals` history-item coverage | ~51% | ~60% |
 
@@ -204,9 +207,9 @@ The 50-60 and 80%+ buckets are directionally reasonable in this run. The 60-80 r
 
 ## Known limitations
 
-### 1. Better-record baseline leads
+### 1. Legacy profile-record baseline is deprecated
 
-The model held 66% winner accuracy as the corpus grew, but the better-record baseline rose to 71%. That means the current formulas are directionally useful but not proven superior to a simple W-L ratio baseline.
+The previous 71% profile-record baseline is not leakage-safe because it reads normalized fighter profile record strings instead of recomputing records from pre-fight history. It remains in reports only as a deprecated reference. The official as-of UFC win percentage baseline is 63% on picked fights, 58% across all fights, with Brier 0.235. Current v0.2 is 66% winner accuracy with Brier 0.219, so it no longer trails the leakage-safe record baselines. This is promising but still early, not public proof.
 
 ### 2. Thin-history warnings are common
 
@@ -240,4 +243,4 @@ No code changes needed. The runner auto-loads every JSON in `data/normalized/eve
 
 The 20-event backend expansion is complete and the target n >= 200 is met. Do not tune weights yet.
 
-Recommended next step: a backend-only model review and controlled calibration analysis. Focus on why the better-record baseline is ahead, why the 60-80% buckets are overconfident, and whether thin-history fights should be segmented before any formula changes. Keep UI unchanged, public Model Record separate from historical backtests, and `predictionViewModel` as the public source of truth.
+Recommended next step: keep v0.2 current and continue backend-only validation/calibration work. Focus on the 60-80% buckets, record-prior experiments, and out-of-sample confirmation before any model promotion. Keep UI unchanged, public Model Record separate from historical backtests, and `predictionViewModel` as the public source of truth.

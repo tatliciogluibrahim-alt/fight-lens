@@ -50,7 +50,36 @@ async function main() {
       }>;
       baselines: {
         random: { accuracy: number; brierScore: number };
-        betterRecord: { accuracy: number | null; scoredFights: number; correct: number };
+        officialRecord?: {
+          id: string;
+          label: string;
+          pickAccuracy: number | null;
+          allFightAccuracy: number | null;
+          brierScore: number | null;
+          picked: number;
+          noPick: number;
+          coverage: number | null;
+        };
+        betterRecord: {
+          accuracy: number | null;
+          pickAccuracy?: number | null;
+          coverage?: number | null;
+          brierScore?: number | null;
+          scoredFights: number;
+          correct: number;
+          picked?: number;
+          leakageSafe?: boolean;
+          label?: string;
+        };
+        legacyProfileRecord?: {
+          accuracy: number | null;
+          scoredFights: number;
+          correct: number;
+          leakageSafe: false;
+          deprecated: true;
+          label: string;
+          note: string;
+        };
         moreExperience: { accuracy: number | null; scoredFights: number; correct: number };
         ufcFavouriteWinRate: number;
       };
@@ -96,7 +125,22 @@ async function main() {
 
   console.log("\n── Baselines ─────────────────────────────────────────────────\n");
   console.log(`  Random guess:         50% accuracy, Brier = ${summary.baselines.random.brierScore}`);
-  console.log(`  Better record:        ${summary.baselines.betterRecord.accuracy ?? "n/a"}% (${summary.baselines.betterRecord.correct}/${summary.baselines.betterRecord.scoredFights})`);
+  const officialRecord = summary.baselines.officialRecord ?? summary.baselines.betterRecord;
+  const officialAllFightAccuracy = "allFightAccuracy" in officialRecord
+    ? officialRecord.allFightAccuracy
+    : officialRecord.accuracy;
+  console.log(
+    `  Official as-of record: ${officialRecord.pickAccuracy ?? "n/a"}% picked` +
+    ` / ${officialAllFightAccuracy ?? "n/a"}% all fights` +
+    ` · coverage ${officialRecord.coverage ?? "n/a"}%` +
+    ` · Brier ${officialRecord.brierScore ?? "n/a"}`,
+  );
+  if (summary.baselines.legacyProfileRecord) {
+    console.log(
+      `  Legacy profile record: ${summary.baselines.legacyProfileRecord.accuracy ?? "n/a"}% ` +
+      `(not leakage-safe; reference only)`,
+    );
+  }
   console.log(`  More experience:      ${summary.baselines.moreExperience.accuracy ?? "n/a"}% (${summary.baselines.moreExperience.correct}/${summary.baselines.moreExperience.scoredFights})`);
   console.log(`  UFC fav win rate:     ${Math.round(summary.baselines.ufcFavouriteWinRate * 100)}% (historical avg)`);
 

@@ -2,6 +2,15 @@
 
 ## May 2026
 
+### Baseline correction pass
+
+- Replaced the official backtest baseline reporting with leakage-safe as-of record baselines computed from pre-fight history only.
+- Deprecated the old 71% profile-record baseline because it reads normalized fighter profile snapshots and is not leakage-safe. It remains available only as reference.
+- Official headline baseline is now `asof-ufc-win-pct-any-history`: 92% coverage, 63% pick accuracy, 58% all-fight accuracy, Brier 0.235.
+- Current v0.2 remains the production model: 66% winner accuracy, 58% method accuracy, Brier 0.219 on 253 scored fights.
+- No v0.3 experiment was promoted; no model weights, formulas, UI, locked predictions, ingestion, or public Model Record behavior changed.
+- Regenerated backtest summary, model diagnostics, and experiment reports to use the corrected official baseline.
+
 ### P0 prediction consistency pass
 
 Goal: fix visible prediction contradictions before expanding the corpus to 20-30 events.
@@ -29,8 +38,9 @@ Next step:
 ### 20-event backtest expansion QA checkpoint
 
 - Backtest corpus now covers 20 completed UFC events and 253 scored fights.
-- Headline metrics: 66% winner accuracy, 58% method accuracy, 0.219 Brier score, 71% better-record baseline, 40% more-experience baseline, 40% missing-data rate.
-- Model remains directionally useful but not proven; it trails the better-record baseline by 5 points.
+- Headline metrics: 66% winner accuracy, 58% method accuracy, 0.219 Brier score, 40% more-experience baseline, 40% missing-data rate.
+- Follow-up baseline correction found the previous 71% profile-record baseline was not leakage-safe; official as-of record baseline is 63% picked / 58% all fights with Brier 0.235.
+- Model remains directionally promising but not proven; v0.2 now beats the leakage-safe record baselines but should not be publicly graded yet.
 - Calibration concern remains in the 60-80% confidence buckets.
 - `opponentTotals` remained intact at 2,940 of 4,917 selected-corpus history items, roughly 60% item-level coverage.
 - Public Model Record/backtest separation re-checked: public logged calls remain separate from historical reconstruction rows.
@@ -76,7 +86,7 @@ Fixes applied:
 - Extended `scripts/backtest/run.ts`: fight-detail outcome derivation from UFCStats JSON (no prediction files needed for historical events)
 - Added new output files: `feature-coverage.json`, `event-performance.json`, `skip-report.json`
 - Backtest now writes 8 output files per run
-- Initial n=76 result: 59% winner accuracy, Brier 0.251, trailing better-record baseline (66%) — confirmed n=13 was favorable noise
+- Initial n=76 result: 59% winner accuracy, Brier 0.251, trailing the then-reported profile-record baseline (66%) — confirmed n=13 was favorable noise; that profile-record comparison is now treated as legacy reference only
 - Documented in `docs/BACKTESTING.md` with three-checkpoint comparison table
 
 ### UI and language pass

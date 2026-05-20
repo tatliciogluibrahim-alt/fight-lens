@@ -1,16 +1,16 @@
 # Fight Lens - Baseline Validation and Model Experiments
 
-Generated: 2026-05-19T23:11:09.523Z
+Generated: 2026-05-19T23:56:40.882Z
 
 ## Scope
 
 Backend/model-validation only. This pass did not change public UI, production model outputs, locked predictions, ingestion, public copy, or public Model Record behavior.
 
-## Better-record baseline audit
+## Record baseline audit
 
-- Current implementation: scripts/backtest/run.ts parses fight.fighters.fighterA.record and fighterB.record, compares W-L win percentage, and counts coin-flips as misses in the aggregate denominator.
+- Legacy implementation: scripts/backtest/run.ts parses fight.fighters.fighterA.record and fighterB.record, compares W-L win percentage, and counts coin-flips as misses in the aggregate denominator.
 - Source fields: scripts/ingest/ufcstats.mjs scrapes fighter profile record text; scripts/ingest/build-normalized-event.mjs copies profile.record or event-preview Wins/Losses/Draws into SourcedFighter.record; scripts/backtest/run.ts reads SourcedFighter.record directly
-- Leakage-safe: no
+- Legacy profile-record leakage-safe: no
 - Finding: The normalized record strings are scrape/profile snapshots, not records recomputed from each target fight's filtered pre-fight history. They can include target or later results for historical events, so the prior 71% baseline should not be treated as validated.
 
 Primary leakage-safe comparator for experiments: `asof-ufc-win-pct-any-history`.
@@ -57,17 +57,17 @@ Cells are `n / actual win rate / Brier`.
 
 ## Risks and overfitting flags
 
-- Experiment A - record-ratio feature: May be copying better-record too much by suppressing disagreement cases.
-- Experiment E - 30% record-prior blend: May be copying better-record too much by suppressing disagreement cases.
+- Experiment A - record-ratio feature: May be copying the as-of record baseline too much by suppressing disagreement cases.
+- Experiment E - 30% record-prior blend: May be copying the as-of record baseline too much by suppressing disagreement cases.
 
 ## Recommendation
 
-E. fix baseline/data issue first
+A. keep v0.2 unchanged
 
-- The legacy 71% better-record baseline is not leakage-safe because it uses normalized profile record strings rather than recomputed pre-fight history.
-- The primary as-of baseline produced 58% all-fight accuracy with 92% coverage, so it remains a useful comparator after leakage-safe recomputation.
-- Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it should be validated out of sample before promotion.
-- Update the official backtest baseline reporting to use an as-of record implementation before treating any v0.3 candidate as a promotion candidate.
+- The legacy 71% better-record baseline is not leakage-safe and is retained only as a deprecated profile-record reference.
+- The official as-of record baseline produced 63% pick accuracy / 58% all-fight accuracy with 92% coverage and Brier 0.235.
+- Current v0.2 remains stronger on the headline run: 66% winner accuracy and Brier 0.219.
+- Best experiment by Brier was Experiment A - record-ratio feature at 0.217 vs v0.2 at 0.219, but it did not clearly improve both accuracy and Brier enough for promotion.
 
 ## Guardrails
 

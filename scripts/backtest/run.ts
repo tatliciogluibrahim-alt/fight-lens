@@ -50,6 +50,13 @@ import { scorePrediction } from "@/lib/backtest/scorePredictions";
 import { computeBacktestCalibration } from "@/lib/backtest/calibration";
 import { checkForLeakage } from "@/lib/backtest/leakageChecks";
 import { BASELINES, assessBrierScore } from "@/lib/backtest/baselines";
+import {
+  OFFICIAL_RECORD_BASELINE_ID,
+  RECORD_BASELINE_VARIANTS,
+  recordBaselinePredictions,
+  scoreRecordBaseline,
+  type RecordBaselinePrediction,
+} from "@/lib/backtest/recordBaselines";
 import type {
   AsOfFightFeatures,
   BacktestPrediction,
@@ -76,6 +83,7 @@ interface BacktestRow {
   leakageReport: LeakageCheckReport;
   dataWarnings: { fighterA: string[]; fighterB: string[] };
   missingDataFlags: string[];
+  recordBaselines: Record<string, RecordBaselinePrediction>;
 }
 
 interface BaselineResult {
@@ -252,7 +260,9 @@ function outcomeFromDetail(
   };
 }
 
-// ─── Baseline: better-record picker ──────────────────────────────────────────
+// ─── Deprecated profile-record baselines ─────────────────────────────────────
+// These read normalized fighter profile strings. They are retained only as a
+// reference because those profile snapshots are not guaranteed to be as-of safe.
 
 function parseRecord(record: string | null | undefined): { wins: number; losses: number } {
   if (!record) return { wins: 0, losses: 0 };
@@ -260,7 +270,7 @@ function parseRecord(record: string | null | undefined): { wins: number; losses:
   return match ? { wins: Number(match[1]), losses: Number(match[2]) } : { wins: 0, losses: 0 };
 }
 
-function betterRecordPick(fight: SourcedFight): "fighterA" | "fighterB" | "coin-flip" {
+function legacyProfileRecordPick(fight: SourcedFight): "fighterA" | "fighterB" | "coin-flip" {
   const ra = parseRecord(fight.fighters.fighterA.record);
   const rb = parseRecord(fight.fighters.fighterB.record);
   const ratioA = ra.wins / Math.max(1, ra.wins + ra.losses);
@@ -402,6 +412,7 @@ async function main() {
 
       // Step 7: Extract missing data flags
       const missingFlags = extractMissingFlags(features);
+      const recordBaselines = recordBaselinePredictions(features);
 
       const row: BacktestRow = {
         fightId: fight.id,
@@ -420,6 +431,7 @@ async function main() {
           fighterB: features.fighterB.dataWarnings,
         },
         missingDataFlags: missingFlags,
+        recordBaselines,
       };
 
       rows.push(row);
@@ -461,9 +473,9 @@ async function main() {
 
   const scoredRows = rows.filter((r) => r.score.correct !== null && r.outcome && r.outcome.winner !== "draw" && r.outcome.winner !== "nc");
 
-  const baselines: BaselineResult[] = [
+  const legacyBaselines: BaselineResult[] = [
     {
-      name: "better-record",
+      name: "legacy-profile-record",
       correctCount: 0,
       totalScored: scoredRows.length,
       accuracy: null,
@@ -489,25 +501,77 @@ async function main() {
     if (!fight || !row.outcome) continue;
     const winner = row.outcome.winner as "fighterA" | "fighterB";
 
-    const recordPick = betterRecordPick(fight);
-    if (recordPick === winner) baselines[0].correctCount++;
+    const recordPick = legacyProfileRecordPick(fight);
+    if (recordPick === winner) legacyBaselines[0].correctCount++;
 
     const expPick = moreExperiencePick(fight);
-    if (expPick === winner) baselines[1].correctCount++;
+    if (expPick === winner) legacyBaselines[1].correctCount++;
   }
 
-  for (const b of baselines) {
+  for (const b of legacyBaselines) {
     b.accuracy = b.totalScored > 0 ? Math.round((b.correctCount / b.totalScored) * 100) : null;
   }
 
-  const brierAssessment = summary.brierScore != null ? assessBrierScore(summary.brierScore, summary.scoredFights) : null;
+  const recordBaselineRowsById = Object.fromEntries(
+    RECORD_BASELINE_VARIANTS.map((variant) => [
+      variant.id,
+      scoredRows.flatMap((row) => {
+        if (!row.outcome || row.outcome.winner === "draw" || row.outcome.winner === "nc") return [];
+        const baseline = row.recordBaselines[variant.id];
+        if (!baseline) return [];
+        return [{
+          outcomeWinner: row.outcome.winner,
+          modelCorrect: row.score.correct === true,
+          baseline,
+        }];
+      }),
+    ]),
+  );
+  const recordBaselines = Object.fromEntries(
+    RECORD_BASELINE_VARIANTS.map((variant) => [
+      variant.id,
+      scoreRecordBaseline(variant.id, recordBaselineRowsById[variant.id] ?? []),
+    ]),
+  );
+  const officialRecordBaseline = recordBaselines[OFFICIAL_RECORD_BASELINE_ID];
+
+  const brierAssessment = summary.brierScore != null && officialRecordBaseline.brierScore != null
+    ? summary.brierScore < officialRecordBaseline.brierScore
+      ? "Beats the official leakage-safe as-of record baseline on Brier; still early and needs more validation."
+      : "Does not beat the official leakage-safe as-of record baseline on Brier."
+    : summary.brierScore != null
+      ? assessBrierScore(summary.brierScore, summary.scoredFights)
+      : null;
 
   const fullSummary = {
     ...summary,
     baselines: {
       random: { accuracy: 50, brierScore: BASELINES.ALWAYS_FIFTY_FIFTY_BRIER },
-      betterRecord: { accuracy: baselines[0].accuracy, scoredFights: baselines[0].totalScored, correct: baselines[0].correctCount },
-      moreExperience: { accuracy: baselines[1].accuracy, scoredFights: baselines[1].totalScored, correct: baselines[1].correctCount },
+      officialRecord: officialRecordBaseline,
+      recordBaselines,
+      legacyProfileRecord: {
+        accuracy: legacyBaselines[0].accuracy,
+        scoredFights: legacyBaselines[0].totalScored,
+        correct: legacyBaselines[0].correctCount,
+        leakageSafe: false,
+        deprecated: true,
+        label: "Legacy profile-record baseline",
+        note: "Uses normalized fighter profile record strings. Retained for reference only; not the official comparison.",
+      },
+      betterRecord: {
+        accuracy: officialRecordBaseline.allFightAccuracy,
+        pickAccuracy: officialRecordBaseline.pickAccuracy,
+        coverage: officialRecordBaseline.coverage,
+        brierScore: officialRecordBaseline.brierScore,
+        scoredFights: scoredRows.length,
+        picked: officialRecordBaseline.picked,
+        correct: officialRecordBaseline.correctPicked,
+        leakageSafe: true,
+        baselineId: OFFICIAL_RECORD_BASELINE_ID,
+        label: officialRecordBaseline.label,
+        note: "Deprecated field name retained for compatibility; this now points to the official leakage-safe as-of record baseline.",
+      },
+      moreExperience: { accuracy: legacyBaselines[1].accuracy, scoredFights: legacyBaselines[1].totalScored, correct: legacyBaselines[1].correctCount },
       ufcFavouriteWinRate: BASELINES.UFC_FAVOURITE_WIN_RATE,
     },
     brierAssessment,
@@ -556,6 +620,7 @@ async function main() {
     },
     leakagePassed: r.leakageReport.passed,
     missingDataFlags: r.missingDataFlags,
+    recordBaselines: r.recordBaselines,
   }));
 
   // ─── Write outputs ────────────────────────────────────────────────────────
@@ -725,8 +790,13 @@ async function main() {
   console.log(`  Winner accuracy:      ${summary.winnerAccuracy ?? "n/a"}%`);
   console.log(`  Method accuracy:      ${summary.methodAccuracy ?? "n/a"}%`);
   console.log(`  Brier score:          ${summary.brierScore ?? "n/a"} (lower is better; random=0.25)`);
-  console.log(`  Better-record base:   ${baselines[0].accuracy ?? "n/a"}%`);
-  console.log(`  More-experience base: ${baselines[1].accuracy ?? "n/a"}%`);
+  console.log(
+    `  Official as-of record: ${officialRecordBaseline.pickAccuracy ?? "n/a"}% picked` +
+    ` / ${officialRecordBaseline.allFightAccuracy ?? "n/a"}% all fights` +
+    ` · brier ${officialRecordBaseline.brierScore ?? "n/a"}`,
+  );
+  console.log(`  Legacy profile record: ${legacyBaselines[0].accuracy ?? "n/a"}% (not leakage-safe; reference only)`);
+  console.log(`  More-experience base: ${legacyBaselines[1].accuracy ?? "n/a"}%`);
   console.log(`  Missing data rate:    ${fullSummary.missingDataRate ?? "n/a"}%`);
   if (brierAssessment) console.log(`\n  Assessment: ${brierAssessment}`);
 

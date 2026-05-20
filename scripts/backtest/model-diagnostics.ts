@@ -15,6 +15,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildAsOfFeaturesFromSourcedFight } from "@/lib/backtest/buildAsOfFeatures";
+import {
+  OFFICIAL_RECORD_BASELINE_ID,
+  recordBaselinePrediction,
+  type PreFightRecord,
+} from "@/lib/backtest/recordBaselines";
 import type { AsOfFightFeatures, AsOfFighterFeatures } from "@/lib/backtest/types";
 import type {
   SourcedEvent,
@@ -28,7 +33,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
 
 type Side = "fighterA" | "fighterB";
-type BaselinePick = Side | "coin-flip";
+type BaselinePick = Side | "no-pick";
 type ComponentName =
   | "stylePressure"
   | "recentForm"
@@ -77,7 +82,29 @@ interface SummaryFile {
     brierScore: number | null;
     missingDataRate: number | null;
     baselines: {
-      betterRecord: { accuracy: number | null; correct: number; scoredFights: number };
+      officialRecord?: {
+        id: string;
+        label: string;
+        pickAccuracy: number | null;
+        allFightAccuracy: number | null;
+        brierScore: number | null;
+        picked: number;
+        noPick: number;
+        coverage: number | null;
+      };
+      betterRecord: {
+        accuracy: number | null;
+        pickAccuracy?: number | null;
+        coverage?: number | null;
+        brierScore?: number | null;
+        correct: number;
+        scoredFights: number;
+        picked?: number;
+        leakageSafe?: boolean;
+        baselineId?: string;
+        label?: string;
+      };
+      legacyProfileRecord?: { accuracy: number | null; correct: number; scoredFights: number };
       moreExperience: { accuracy: number | null; correct: number; scoredFights: number };
     };
   };
@@ -183,6 +210,10 @@ interface ModelDiagnosticsReport {
     methodAccuracy: number | null;
     brierScore: number | null;
     betterRecordAccuracy: number | null;
+    betterRecordPickAccuracy: number | null;
+    betterRecordCoverage: number | null;
+    betterRecordBrierScore: number | null;
+    legacyProfileRecordAccuracy: number | null;
     moreExperienceAccuracy: number | null;
     missingDataRate: number | null;
   };
@@ -326,12 +357,14 @@ function parseRecord(record: string | null | undefined): RecordStats {
   };
 }
 
-function betterRecordPick(fight: SourcedFight): BaselinePick {
-  const ra = parseRecord(fight.fighters.fighterA.record);
-  const rb = parseRecord(fight.fighters.fighterB.record);
-  if (ra.winRate > rb.winRate) return "fighterA";
-  if (rb.winRate > ra.winRate) return "fighterB";
-  return "coin-flip";
+function recordStatsFromPreFight(record: PreFightRecord): RecordStats {
+  return {
+    wins: record.wins,
+    losses: record.losses,
+    draws: record.draws,
+    total: record.totalDirectional,
+    winRate: record.winPct ?? 0,
+  };
 }
 
 function moreExperiencePick(fight: SourcedFight): BaselinePick {
@@ -339,7 +372,7 @@ function moreExperiencePick(fight: SourcedFight): BaselinePick {
   const rb = parseRecord(fight.fighters.fighterB.record);
   if (ra.total > rb.total) return "fighterA";
   if (rb.total > ra.total) return "fighterB";
-  return "coin-flip";
+  return "no-pick";
 }
 
 function modelPick(row: BacktestPredictionRow): Side {
@@ -546,7 +579,7 @@ function summarize(rows: EnrichedRow[]): SegmentSummary {
     brierScore: avgRounded(rows.map((row) => row.brier), 3),
     missingDataRate: percent(rows.filter((row) => row.hasMissingData).length, n),
     thinHistoryRate: percent(rows.filter((row) => row.thinHistory).length, n),
-    betterRecordDisagreementRate: percent(rows.filter((row) => !row.modelBetterRecordAgree).length, n),
+    betterRecordDisagreementRate: percent(rows.filter((row) => row.betterRecordPick !== "no-pick" && !row.modelBetterRecordAgree).length, n),
     commonFeaturePatterns: {
       topComponents: countBy(rows.map((row) => row.topComponent)),
       recordAdvantageBuckets: countBy(rows.map((row) => row.recordAdvantageBucket)),
@@ -602,7 +635,7 @@ function featureReview(
   rows: EnrichedRow[],
   componentMetrics: Record<ComponentName, SegmentSummary & { directionalAccuracy: number | null }>,
 ): Array<{ component: string; read: string; evidence: string }> {
-  const disagreement = rows.filter((row) => !row.modelBetterRecordAgree);
+  const disagreement = rows.filter((row) => row.betterRecordPick !== "no-pick" && !row.modelBetterRecordAgree);
   const modelDisagreeAcc = percent(disagreement.filter((row) => row.modelCorrect).length, disagreement.length);
   const baselineDisagreeAcc = percent(disagreement.filter((row) => row.betterRecordCorrect).length, disagreement.length);
   const thin = rows.filter((row) => row.thinHistory);
@@ -613,8 +646,8 @@ function featureReview(
   return [
     {
       component: "Record/form",
-      read: "Helpful but incomplete",
-      evidence: `Better-record wins ${pctText(baselineDisagreeAcc)} vs model ${pctText(modelDisagreeAcc)} when they disagree. Current model has recent form, but no explicit W-L ratio feature.`,
+      read: "Useful but no longer the headline gap",
+      evidence: `The official as-of record baseline is ${pctText(baselineDisagreeAcc)} vs model ${pctText(modelDisagreeAcc)} when they disagree. Current model has recent form, but no explicit W-L ratio feature.`,
     },
     {
       component: "Striking offense/defense",
@@ -749,38 +782,39 @@ ${report.filesInspected.map((file) => `- \`${file}\``).join("\n")}
 - Missing stats fall back to UFC-average-like defaults inside the outcome model.
 - No explicit W-L record, age, reach, stance, or raw experience feature is used in the winner model.
 - Method model blends each fighter's recent finish profile with win probability; no method formula changes were made.
-- Better-record baseline picks the fighter with the higher W-L win ratio from normalized fighter records; it is not currently recomputed from filtered as-of history.
+- Official record baseline uses leakage-safe as-of UFC win percentage from filtered pre-fight history only.
+- Legacy profile-record baseline uses normalized fighter profile record strings; it is deprecated and retained only for reference.
 - Thin-history warnings are diagnostic only; those fights still run through the model.
 
 ## Headline
 
-The model is not losing everywhere. It is losing mainly when it goes against better-record: in disagreement fights, the model is ${pctText(report.keyFindings.modelAccuracyWhenDisagreeingWithBetterRecord)} and better-record is ${pctText(report.keyFindings.betterRecordAccuracyWhenDisagreeingWithModel)}. That explains most of the 5-point baseline gap.
+The previous 71% profile-record baseline was leakage-prone and is no longer the official comparison. Against the official as-of record baseline, v0.2 is directionally ahead: model ${pctText(report.corpus.winnerAccuracy)} winner accuracy and Brier ${brierText(report.corpus.brierScore)} vs official as-of record ${pctText(report.corpus.betterRecordPickAccuracy)} picked / ${pctText(report.corpus.betterRecordAccuracy)} all fights and Brier ${brierText(report.corpus.betterRecordBrierScore)}. This is promising, not public proof.
 
-## Model vs better-record agreement
+## Model vs official as-of record agreement
 
-${table(["Segment", "n", "Model acc", "Better-record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], agreementRows)}
+${table(["Segment", "n", "Model acc", "As-of record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], agreementRows)}
 
 ## Record-delta analysis
 
-${table(["Record bucket", "n", "Model acc", "Better-record acc", "Delta", "Brier"], recordRows)}
+${table(["Record bucket", "n", "Model acc", "As-of record acc", "Delta", "Brier"], recordRows)}
 
 ## Calibration diagnosis
 
-${table(["Bucket", "n", "Avg predicted", "Actual win rate", "Gap", "Brier", "Missing data", "Thin history", "BR disagreement"], calibrationRows)}
+${table(["Bucket", "n", "Avg predicted", "Actual win rate", "Gap", "Brier", "Missing data", "Thin history", "Record disagreement"], calibrationRows)}
 
-Read: the 60-80% overconfidence does not look primarily caused by missing data or thin history in aggregate. It is more consistent with mid-confidence formula calibration and the model's weaker record-baseline disagreement behavior.
+Read: the 60-80% overconfidence does not look primarily caused by missing data or thin history in aggregate. It is more consistent with mid-confidence formula calibration and selected contrarian record-baseline behavior.
 
 ## Thin-history impact
 
-${table(["Segment", "n", "Model acc", "Better-record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], thinRows)}
+${table(["Segment", "n", "Model acc", "As-of record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], thinRows)}
 
 ## Missing-data impact
 
-${table(["Segment", "n", "Model acc", "Better-record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], missingRows)}
+${table(["Segment", "n", "Model acc", "As-of record acc", "Avg model conf", "Brier", "Missing data", "Thin history"], missingRows)}
 
 ## Event-level diagnosis
 
-${table(["Event", "n", "Model acc", "Better-record acc", "Brier", "Missing data", "Method acc", "BR disagreement"], eventRows)}
+${table(["Event", "n", "Model acc", "As-of record acc", "Brier", "Missing data", "Method acc", "Record disagreement"], eventRows)}
 
 Best events by model accuracy:
 ${report.eventLevelDiagnosis.bestEvents.map((event) => `- ${event.event}: ${pctText(event.modelAccuracy)} on n=${event.n}, Brier ${brierText(event.brierScore)}`).join("\n")}
@@ -845,10 +879,11 @@ function main(): void {
     const reconstructed = reconstructFight(features);
     const shape = buildFightShapeModel(reconstructed);
     const components = outcomeComponents(reconstructed, shape);
-    const recordA = parseRecord(fight.fighters.fighterA.record);
-    const recordB = parseRecord(fight.fighters.fighterB.record);
+    const officialRecordBaseline = recordBaselinePrediction(features, OFFICIAL_RECORD_BASELINE_ID);
+    const recordA = recordStatsFromPreFight(officialRecordBaseline.recordA);
+    const recordB = recordStatsFromPreFight(officialRecordBaseline.recordB);
     const recordDeltaPct = Math.abs(recordA.winRate - recordB.winRate) * 100;
-    const recordSide = betterRecordPick(fight);
+    const recordSide = officialRecordBaseline.pick;
     const model = modelPick(row);
     const moreExperience = moreExperiencePick(fight);
     const leakage = leakageByFightId.get(row.fightId);
@@ -870,7 +905,7 @@ function main(): void {
       betterRecordCorrect: recordSide === row.outcome.winner,
       moreExperiencePick: moreExperience,
       moreExperienceCorrect: moreExperience === row.outcome.winner,
-      modelBetterRecordAgree: model === recordSide,
+      modelBetterRecordAgree: recordSide !== "no-pick" && model === recordSide,
       missingDataFlags: row.missingDataFlags,
       missingFlagCount: row.missingDataFlags.length,
       missingCategories: categories,
@@ -892,13 +927,15 @@ function main(): void {
     }];
   });
 
+  const hasRecordPick = (row: EnrichedRow) => row.betterRecordPick !== "no-pick";
   const agreementSegments = {
-    "model and better-record agree": rows.filter((row) => row.modelBetterRecordAgree),
-    "model disagrees with better-record": rows.filter((row) => !row.modelBetterRecordAgree),
-    "model correct / better-record wrong": rows.filter((row) => row.modelCorrect && !row.betterRecordCorrect),
-    "better-record correct / model wrong": rows.filter((row) => !row.modelCorrect && row.betterRecordCorrect),
+    "model and as-of record agree": rows.filter((row) => hasRecordPick(row) && row.modelBetterRecordAgree),
+    "model disagrees with as-of record": rows.filter((row) => hasRecordPick(row) && !row.modelBetterRecordAgree),
+    "as-of record no-pick": rows.filter((row) => !hasRecordPick(row)),
+    "model correct / as-of record wrong": rows.filter((row) => row.modelCorrect && !row.betterRecordCorrect),
+    "as-of record correct / model wrong": rows.filter((row) => !row.modelCorrect && row.betterRecordCorrect),
     "both correct": rows.filter((row) => row.modelCorrect && row.betterRecordCorrect),
-    "both wrong": rows.filter((row) => !row.modelCorrect && !row.betterRecordCorrect),
+    "both wrong/no-pick": rows.filter((row) => !row.modelCorrect && !row.betterRecordCorrect),
   };
 
   const recordBucketNames = [
@@ -997,7 +1034,7 @@ function main(): void {
     ];
   })) as Record<ComponentName, SegmentSummary & { directionalAccuracy: number | null }>;
 
-  const disagreement = agreementSegments["model disagrees with better-record"];
+  const disagreement = agreementSegments["model disagrees with as-of record"];
   const modelDisagreeAcc = percent(disagreement.filter((row) => row.modelCorrect).length, disagreement.length);
   const baselineDisagreeAcc = percent(disagreement.filter((row) => row.betterRecordCorrect).length, disagreement.length);
 
@@ -1020,6 +1057,7 @@ function main(): void {
       "lib/backtest/buildAsOfFeatures.ts",
       "lib/backtest/scorePredictions.ts",
       "lib/backtest/baselines.ts",
+      "lib/backtest/recordBaselines.ts",
       "lib/backtest/calibration.ts",
       "lib/backtest/leakageChecks.ts",
       "lib/predictionThresholds.ts",
@@ -1037,6 +1075,10 @@ function main(): void {
       methodAccuracy: summaryFile.summary.methodAccuracy,
       brierScore: summaryFile.summary.brierScore,
       betterRecordAccuracy: summaryFile.summary.baselines.betterRecord.accuracy,
+      betterRecordPickAccuracy: summaryFile.summary.baselines.betterRecord.pickAccuracy ?? null,
+      betterRecordCoverage: summaryFile.summary.baselines.betterRecord.coverage ?? null,
+      betterRecordBrierScore: summaryFile.summary.baselines.betterRecord.brierScore ?? null,
+      legacyProfileRecordAccuracy: summaryFile.summary.baselines.legacyProfileRecord?.accuracy ?? null,
       moreExperienceAccuracy: summaryFile.summary.baselines.moreExperience.accuracy,
       missingDataRate: summaryFile.summary.missingDataRate,
     },
@@ -1073,20 +1115,20 @@ function main(): void {
     featureComponentReview: featureReview(rows, componentDiagnostics),
     recommendations: [
       {
-        change: "Validate an as-of better-record baseline before tuning toward it",
-        why: "The current baseline uses normalized fighter record strings rather than records recomputed from filtered as-of history.",
-        expectedEffect: "Confirms whether the 71% baseline is a fair target or partly a record-field timing artifact.",
-        risk: "May delay model changes, but avoids tuning toward a misleading benchmark.",
-        howToTest: "Derive W-L records from each fighter's filtered pre-fight history and compare baseline accuracy against the current record-string baseline.",
-        metricToImprove: "Benchmark validity before model accuracy changes.",
+        change: "Keep v0.2 current while validating more data",
+        why: "The corrected official as-of baseline is weaker than v0.2 on all-fight accuracy and Brier, and no v0.3 experiment has clearly improved both metrics.",
+        expectedEffect: "Avoids promoting a noisy variant from one historical sample while preserving the current public model behavior.",
+        risk: "Model improvement slows down until the next controlled validation pass.",
+        howToTest: "Re-run this same report after additional completed-event validation or an out-of-sample holdout.",
+        metricToImprove: "Winner accuracy and Brier against leakage-safe baselines.",
       },
       {
-        change: "Test explicit record-ratio feature or record-baseline blend",
-        why: "Better-record is ahead overall and dominates disagreement fights, pending the as-of baseline validation above.",
-        expectedEffect: "Reduce avoidable misses when the model fades a strong W-L edge without enough stat support.",
+        change: "Continue controlled record-prior experiments",
+        why: "As-of record still carries useful signal in some buckets, but the legacy 71% profile-record baseline is deprecated and should not be optimized against.",
+        expectedEffect: "Find a conservative way to use record signal without turning the model into a simple record picker.",
         risk: "Could overvalue padded records or weak schedules.",
-        howToTest: "Run an A/B backtest that adds record-ratio delta with small fixed weights, then compare by record bucket and disagreement segment.",
-        metricToImprove: "Winner accuracy vs better-record, especially model/baseline disagreement accuracy.",
+        howToTest: "Run diagnostic-only record-ratio and blend variants against the same corpus plus a holdout before promotion.",
+        metricToImprove: "Brier, winner accuracy, and same/similar-record bucket performance.",
       },
       {
         change: "Test mid-confidence probability shrinkage, especially 60-80%",
@@ -1097,11 +1139,11 @@ function main(): void {
         metricToImprove: "Brier score and calibration gap in 60-80% buckets.",
       },
       {
-        change: "Require stronger stat evidence before disagreeing with better-record",
-        why: "The largest baseline gap appears when the model goes against record advantage.",
+        change: "Require stronger stat evidence for record-contrarian calls",
+        why: "Some contrarian calls remain weak even after replacing the legacy baseline with the official as-of baseline.",
         expectedEffect: "Keeps contrarian calls, but only when component agreement is broad enough.",
         risk: "Can turn the model into a record follower if threshold is too blunt.",
-        howToTest: "Create a diagnostic-only rule: when better-record disagrees, require multiple components to favor the model side; compare misses saved vs wins lost.",
+        howToTest: "Create a diagnostic-only rule: when the official as-of record baseline disagrees, require multiple components to favor the model side; compare misses saved vs wins lost.",
         metricToImprove: "Disagreement-segment accuracy and Brier.",
       },
       {
@@ -1146,7 +1188,7 @@ function main(): void {
   console.log("Wrote data/generated/backtests/model-diagnostics.json");
   console.log("Wrote docs/MODEL_REVIEW.md");
   console.log(`Disagreement fights: ${report.keyFindings.disagreementCount} (${pctText(report.keyFindings.disagreementShare)})`);
-  console.log(`Model in disagreements: ${pctText(modelDisagreeAcc)}; better-record: ${pctText(baselineDisagreeAcc)}`);
+  console.log(`Model in disagreements: ${pctText(modelDisagreeAcc)}; official as-of record: ${pctText(baselineDisagreeAcc)}`);
 }
 
 main();

@@ -22,9 +22,11 @@ Expanded historical corpus:
 - Winner accuracy: 66%
 - Method accuracy: 58%
 - Brier score: 0.219
-- Better-record baseline: 71%
+- Official as-of UFC win percentage baseline: 63% pick accuracy / 58% all-fight accuracy
+- Official as-of baseline Brier: 0.235
+- Legacy profile-record baseline: 71% all-fight accuracy, deprecated and not leakage-safe
 - More-experience baseline: 40%
-- Model vs better-record baseline: -5 points
+- Model vs official as-of baseline: +3 points on picked subset / +8 points all fights; Brier 0.016 lower
 - Missing data rate: 40%
 - `opponentTotals` item-level coverage: roughly 60%
 
@@ -32,13 +34,13 @@ Comparison to the previous n=76 deeper-history run:
 - Winner accuracy held at 66%.
 - Method accuracy improved from 51% to 58%.
 - Brier improved from 0.236 to 0.219.
-- Better-record baseline moved from 66% to 71%, so the model no longer matches the baseline on the expanded corpus.
+- The previous 71% better-record figure was reclassified as a deprecated profile-record baseline because it used profile snapshot records. It is not the official comparison.
 - Missing data moved from 36% to 40%, mostly due added thin-history fighters.
 - `opponentTotals` coverage improved from roughly 51% to roughly 60%.
 
 ## Interpretation
 
-The model is directionally useful but not proven. It does not currently beat the better-record baseline on the expanded corpus. Do not tune weights yet and do not publish a model grade.
+The model is directionally promising but not proven. It now beats the leakage-safe as-of record baselines on headline winner accuracy and Brier, but the corpus is still early and no v0.3 experiment has clearly improved both metrics. Keep v0.2 current, do not tune weights yet, and do not publish a model grade.
 
 Calibration is mixed:
 - 50-60%: 61% actual on n=135
