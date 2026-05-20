@@ -3,12 +3,13 @@ interface FighterNamePlateProps {
   align?: "left" | "right";
 }
 
-function splitFighterName(name: string): [string, string] {
-  const parts = name.trim().replace(/s+/g, " ").split(" ").filter(Boolean);
+function normalizeName(name: string) {
+  return name.trim().replace(/\s+/g, " ");
+}
 
-  if (parts.length <= 1) return [parts[0] ?? name, ""];
-  if (parts.length === 2) return [parts[0], parts[1]];
-  if (parts.length === 3) return [parts[0], parts.slice(1).join(" ")];
+function splitBalanced(parts: string[]): [string[], string[]] {
+  if (parts.length <= 1) return [parts, []];
+  if (parts.length === 2) return [[parts[0]], [parts[1]]];
 
   let bestIndex = 1;
   let bestDelta = Number.POSITIVE_INFINITY;
@@ -24,28 +25,41 @@ function splitFighterName(name: string): [string, string] {
     }
   }
 
-  return [parts.slice(0, bestIndex).join(" "), parts.slice(bestIndex).join(" ")];
+  return [parts.slice(0, bestIndex), parts.slice(bestIndex)];
+}
+
+function splitFighterName(name: string) {
+  const parts = normalizeName(name).split(" ").filter(Boolean);
+  const [firstLine, secondLine] = splitBalanced(parts);
+
+  return {
+    mobileLines: parts.length > 0 ? parts : [name],
+    desktopLines: [firstLine.join(" "), secondLine.join(" ")].filter(Boolean),
+  };
 }
 
 export function FighterNamePlate({ name, align = "left" }: FighterNamePlateProps) {
-  const [lineOne, lineTwo] = splitFighterName(name);
-  const hasSecondLine = lineTwo.length > 0;
+  const { mobileLines, desktopLines } = splitFighterName(name);
+  const textAlign = align === "right" ? "lg:items-end lg:text-right" : "items-start text-left";
 
   return (
     <h2
       aria-label={name}
-      className={`min-h-[5rem] text-[clamp(2.45rem,10vw,4.15rem)] font-semibold leading-[0.92] tracking-normal text-balance md:min-h-[7.5rem] md:text-[clamp(3.75rem,7vw,5rem)] lg:min-h-[8.75rem] ${
-        align === "right" ? "lg:text-right" : "text-left"
-      }`}
+      className={`flex min-h-[7.5rem] flex-col justify-center overflow-visible text-[2.65rem] font-semibold leading-[0.9] tracking-normal sm:text-[3.1rem] md:min-h-[8rem] md:text-[4.1rem] lg:min-h-[8.75rem] lg:text-[4.55rem] xl:text-[5rem] ${textAlign}`}
     >
-      <span aria-hidden="true" className="block break-words">
-        {lineOne}
+      <span aria-hidden="true" className="flex flex-col md:hidden">
+        {mobileLines.map((line, index) => (
+          <span key={`mobile-${line}-${index}`} className="block whitespace-nowrap">
+            {line}
+          </span>
+        ))}
       </span>
-      <span
-        aria-hidden="true"
-        className={`block break-words ${hasSecondLine ? "" : "select-none opacity-0"}`}
-      >
-        {hasSecondLine ? lineTwo : lineOne}
+      <span aria-hidden="true" className="hidden flex-col md:flex">
+        {desktopLines.map((line, index) => (
+          <span key={`desktop-${line}-${index}`} className="block whitespace-nowrap">
+            {line}
+          </span>
+        ))}
       </span>
     </h2>
   );

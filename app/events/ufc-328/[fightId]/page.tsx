@@ -58,7 +58,7 @@ function FighterHeroPanel({
   ].filter(Boolean).join(" · ");
 
   return (
-    <div className={`flex flex-col justify-center gap-3 p-5 py-7 md:p-8 md:py-9 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
+    <div className={`flex min-w-0 flex-col justify-center gap-3 overflow-visible p-5 py-7 md:p-8 md:py-9 ${isRight ? "lg:items-end lg:text-right" : ""}`}>
       <div className={`flex items-center gap-2 ${isRight ? "lg:flex-row-reverse" : ""}`}>
         {country?.code && (
           <span className="text-base leading-none" aria-hidden="true">
@@ -118,7 +118,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
           {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-          <div className="grid gap-0 lg:grid-cols-[1fr_160px_1fr] lg:items-stretch">
+          <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_128px_minmax(0,1fr)] lg:items-stretch">
             <FighterHeroPanel fighter={fighterA} />
 
             <div className="flex flex-col items-center justify-center gap-3 border-y border-line bg-background/30 px-4 py-6 text-center lg:border-x lg:border-y-0">

@@ -7,6 +7,7 @@
 Six successive UI/UX passes with zero model-math changes. All passes ran on top of the v0.2 prediction pipeline. QA commands (`audit:predictions`, `backtest`, `lint`, `build`) remained green throughout.
 
 #### Fighter hero stabilization
+- Repaired `FighterNamePlate` after live QA found names splitting inside words. Name normalization now preserves full words, each rendered line is `nowrap`, and the hero grid gives fighter columns more room with a narrower fixed VS column.
 - Added `FighterNamePlate` for fight-page hero names. Hero names now reserve a consistent two-line plate and split names predictably, so short and long fighter names align without changing model data.
 - Tightened fight-page tab hash behavior: `#section-call`, `#section-shape`, and `#section-details` activate the correct tab and scroll below the sticky header/tab stack.
 - Reduced adjacent repetition in the fight snapshot and call tab by keeping method lean secondary while removing duplicate helper/disclaimer lines.

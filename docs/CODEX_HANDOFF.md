@@ -74,7 +74,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | File | Purpose |
 |---|---|
 | `components/FightReadSnapshot.tsx` | At-a-glance strip — reads only from `viewModel`. |
-| `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable two-line hero typography without touching prediction data. |
+| `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable full-word hero typography without touching prediction data. Never allow character-level breaks. |
 | `components/TheCall.tsx` | Main call card — winner + probability bar + method lean. |
 | `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
 | `components/StyleComparisonBars.tsx` | Shape tab — "What the shape says" cards + axis breakdown bars. |

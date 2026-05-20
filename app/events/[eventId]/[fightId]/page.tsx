@@ -91,7 +91,7 @@ function FighterHeroPanel({
 
   return (
     <div
-      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex flex-col justify-center gap-3 p-5 py-7 md:p-8 md:py-9 ${
+      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex min-w-0 flex-col justify-center gap-3 overflow-visible p-5 py-7 md:p-8 md:py-9 ${
         isRight ? "lg:items-end lg:text-right" : ""
       }`}
     >
@@ -197,7 +197,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
           {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-          <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
+          <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_128px_minmax(0,1fr)] lg:items-stretch">
             <FighterHeroPanel
               fighter={fighterA}
               cornerLabel="A"
