@@ -202,7 +202,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
             href={`/events/${eventId}/${fight.id}`}
             className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-xs font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10"
           >
-            View Read →
+            View read
           </Link>
         </div>
       </div>

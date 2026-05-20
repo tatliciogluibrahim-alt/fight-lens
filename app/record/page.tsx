@@ -132,7 +132,7 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
           href={href}
           className="tap-target inline-flex items-center justify-center self-start rounded-full border border-line bg-surface-2/70 px-4 text-xs font-medium text-muted transition hover:border-accent/40 hover:text-foreground md:self-auto"
         >
-          View Read →
+          View read
         </Link>
       ) : (
         <span className="text-xs text-subtle">—</span>
@@ -283,7 +283,7 @@ export default function RecordPage() {
                 href="/methodology"
                 className="text-[11px] uppercase tracking-[0.1em] text-subtle/70 underline decoration-line underline-offset-2 hover:text-subtle"
               >
-                methodology →
+                how it works →
               </a>
             </div>
           </div>

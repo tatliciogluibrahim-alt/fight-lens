@@ -98,12 +98,26 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
                     : "Analysis loads closer to the event.")}
               </p>
             </div>
-            <Link
-              href={`/events/${event.event.id}/${mainFight.id}`}
-              className="tap-target mt-8 inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
-            >
-              View Main Event Read →
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href={`/events/${event.event.id}/${mainFight.id}`}
+                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+              >
+                View read
+              </Link>
+              <Link
+                href={`/events/${event.event.id}/${mainFight.id}#section-call`}
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
+              >
+                Full call
+              </Link>
+              <Link
+                href={`/events/${event.event.id}/${mainFight.id}#section-shape`}
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
+              >
+                Fight shape
+              </Link>
+            </div>
           </div>
         )}
       </div>
