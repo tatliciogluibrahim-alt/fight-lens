@@ -36,7 +36,7 @@ function buildTrendFights(fighter: SourcedFighter): TrendFight[] {
   }));
 }
 
-function FormMetricCard({ fighter, metric, accent = false }: { fighter: SourcedFighter; metric: FighterMetricScore; accent?: boolean }) {
+function FormMetricCard({ fighter, metric }: { fighter: SourcedFighter; metric: FighterMetricScore }) {
   const wins = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "W").length;
   const losses = fighter.fightHistory.filter((fight) => resultLabel(fight.result) === "L").length;
 
@@ -58,7 +58,7 @@ function FormMetricCard({ fighter, metric, accent = false }: { fighter: SourcedF
           <p className="mt-2 text-sm text-muted">{metric.label}</p>
         </div>
         <div className="text-right">
-          <p className={`data-text text-3xl ${accent ? "text-accent" : "text-foreground"}`}>
+          <p className="data-text text-3xl text-foreground">
             {metric.score}
           </p>
           <div className="mt-2">
@@ -81,7 +81,7 @@ function FormMetricCard({ fighter, metric, accent = false }: { fighter: SourcedF
   );
 }
 
-function FighterFormCard({ fighter, metric, accent = false }: { fighter: SourcedFighter; metric: FighterMetricScore; accent?: boolean }) {
+function FighterFormCard({ fighter, metric }: { fighter: SourcedFighter; metric: FighterMetricScore }) {
   const rows = buildTrendFights(fighter);
   const hasSourced = rows.length > 0;
 
@@ -94,7 +94,7 @@ function FighterFormCard({ fighter, metric, accent = false }: { fighter: Sourced
             {fighter.record ?? "record pending"}
           </p>
         </div>
-        <span className={`rounded-full border border-line px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] ${accent ? "text-accent" : "text-muted"}`}>
+        <span className="rounded-full border border-line px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
           last five + resume
         </span>
       </div>
@@ -108,7 +108,7 @@ function FighterFormCard({ fighter, metric, accent = false }: { fighter: Sourced
             >
               <span
                 className={`grid size-8 place-items-center rounded-full text-xs font-bold ${
-                  fight.result === "W" ? (accent ? "bg-accent text-white" : "bg-muted text-background") : "border border-line text-muted"
+                  fight.result === "W" ? "bg-muted text-background" : "border border-line text-muted"
                 }`}
               >
                 {fight.result}
@@ -131,7 +131,7 @@ function FighterFormCard({ fighter, metric, accent = false }: { fighter: Sourced
 
       <div className="mt-4">
         {fighter.fightHistory.length ? (
-          <FormMetricCard fighter={fighter} metric={metric} accent={accent} />
+          <FormMetricCard fighter={fighter} metric={metric} />
         ) : (
           <ModuleEmptyState
             label="resume heat"
@@ -153,15 +153,14 @@ export function FormResumeModule({ fighterA, fighterB, modelOutput }: FormResume
       <div className="module-header">
         <p className="mono-label">form check</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          recent form, weighted by who it came against.
+          recent form.
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-          Last-five rows keep the opponent first. Resume strength adds opponent-quality context
-          without turning the module into a stat wall.
+          Last-five results, with opponent quality kept in context.
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">
-        <FighterFormCard fighter={fighterA} metric={formA} accent />
+        <FighterFormCard fighter={fighterA} metric={formA} />
         <FighterFormCard fighter={fighterB} metric={formB} />
       </div>
     </section>

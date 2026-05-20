@@ -147,7 +147,7 @@ The `/record` page renders two visually distinct sections labeled "Public Model 
 
 The recent passes below changed **zero** model math, locked predictions, backtest logic, or public record behavior.
 
-1. **Sticky tab bar** — fixed at `top-16 z-20`; `scroll-mt-32` on all anchored sections.
+1. **Early sticky tab experiment (superseded)** — fight-page tabs are no longer sticky/fixed; `FightPageTabs` is plain in-page anchor navigation.
 2. **Events index** — new `app/events/page.tsx` with current card feature treatment.
 3. **FightReadSnapshot** — new component above tabs; reads only from `viewModel`.
 4. **Homepage rebuild** — 2-column hero; live next-card preview from canonical viewModel.
@@ -161,6 +161,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 12. **Fight-read final QA** — source/static route checks verified home, events, fight pages, record, and methodology. Event-row expanded details were neutralized so amber is not used as a generic chart/comparison color.
 13. **Non-sticky tab verification** — proof grep and static route checks confirmed `FightPageTabs` has no sticky/fixed/blur/scrollIntoView behavior and still renders stable Call, Shape, and Details anchors.
 14. **Homepage/event discovery clarity** — homepage keeps one primary current-card action, `/events` labels the active card as forecast live, and `EventHero` now uses a single main-event read CTA so users move from card to fight read without early shape/call CTA clutter. Static build-output checks verified home, events, UFC 329, UFC 329 main-event fight read, UFC 328 Chimaev/Strickland, record, and methodology content.
+15. **Final pre-commit fight-page polish** — replaced internal live-path phrasing, simplified the shape tab into style edge → neutral fingerprint radar → three insight cards → collapsed axis breakdown, and tightened details copy to `recent form` without touching model/data/backtest files.
 
 ---
 
@@ -185,8 +186,8 @@ Check that animations disable under Reduce Motion on iOS Safari. Check that rada
 **P1 — Radar touch tooltips**
 Native SVG `<title>` doesn't fire on tap. Add a pointer-event handler on the data dot `<circle>` and render a small React tooltip. File: `components/StyleRadar.tsx`. Do not change axis keys, scores, or `getStyleRadarDimensions()`.
 
-**P1 — FightReadSnapshot sticky scroll**
-Pin the snapshot strip above the tab bar once the fighter hero scrolls out of view. File: `components/FightReadSnapshot.tsx`, `app/events/[eventId]/[fightId]/page.tsx`. Must not add independent prediction compute.
+**P1 — FightReadSnapshot mobile QA**
+Keep the snapshot and fight tabs in normal document flow. Check mobile spacing, tap targets, and section anchor landings after any future fight-page copy/layout edits. Files: `components/FightReadSnapshot.tsx`, `components/FightPageTabs.tsx`, `app/events/[eventId]/[fightId]/page.tsx`. Must not add independent prediction compute.
 
 **P2 — Data coverage expansion**
 Ingest additional completed UFC events. Backend-only. Do not change model math. Re-run `npm run backtest` after each event and verify missing-data rate trends down and `opponentTotals` coverage holds.

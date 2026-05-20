@@ -321,13 +321,17 @@ export function StyleComparisonBars({
   });
 
   const shapeTakeaway = buildShapeTakeaway(narrative);
+  const biggestEdge = narrative.cards.find((card) => card.kind === "biggest-edge");
+  const styleEdgeText = biggestEdge?.leaderName
+    ? `${possessiveName(biggestEdge.leaderName)} clearest style edge is ${axisPhrase(biggestEdge.axisLabel)}.`
+    : shapeTakeaway;
 
   return (
     <section className="module-card">
       <div className="module-header">
         <p className="mono-label">fight shape</p>
         <h2 className="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          shape fingerprint.
+          fight shape.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
           Shape explains where the matchup tilts. It does not replace the model call.
@@ -335,6 +339,15 @@ export function StyleComparisonBars({
       </div>
 
       <div className="module-body space-y-7">
+        {styleEdgeText ? (
+          <div className="rounded-2xl border border-line bg-background/35 p-5">
+            <p className="mono-label">style edge</p>
+            <p className="mt-3 text-base leading-7 text-foreground md:text-lg md:leading-8">
+              {styleEdgeText}
+            </p>
+          </div>
+        ) : null}
+
         {/*
           ── Signature overlay radar ───────────────────────────────────────────
           The single, central visual. Broadcast HUD treatment frames it as a
@@ -351,9 +364,9 @@ export function StyleComparisonBars({
           {/* Header: label + neutral fighter legend */}
           <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="mono-label">shape comparison</p>
+              <p className="mono-label">shape fingerprint</p>
               <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-subtle/75">
-                style map only
+                style map only, not a winner forecast
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-[11px] font-medium tracking-tight">
@@ -377,36 +390,18 @@ export function StyleComparisonBars({
               nameB={fighterB.name}
             />
           </div>
-
-          <p className="mt-4 text-center text-[11px] uppercase tracking-[0.1em] text-subtle/80">
-            style map only · not a winner forecast
-          </p>
         </div>
-
         {/*
-          ── Shape takeaway + insight cards ────────────────────────────────────
+          ── Shape insight cards ───────────────────────────────────────────────
           Keep the first shape read human and compact. Cards stay style-only and
           never identify a winner forecast.
         */}
-        {shapeTakeaway ? (
-          <div className="rounded-2xl border border-line bg-background/35 p-5">
-            <p className="mono-label">what to notice</p>
-            <p className="mt-3 text-base leading-7 text-foreground md:text-lg md:leading-8">
-              {shapeTakeaway}
-            </p>
-          </div>
-        ) : null}
 
         {narrative.cards.length > 0 ? (
           <div>
-            <div className="mb-3 flex items-baseline justify-between gap-3">
-              <p className="mono-label">shape insights</p>
-              <p className="text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-                style map only
-              </p>
-            </div>
+            <p className="mb-3 mono-label">shape insights</p>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {narrative.cards.map((card) => (
+              {narrative.cards.slice(0, 3).map((card) => (
                 <ShapeCard key={`${card.kind}-${card.axisLabel}`} card={card} />
               ))}
             </div>
@@ -512,7 +507,7 @@ export function StyleComparisonBars({
         </details>
 
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
-          signal-based · not a winner call · fight-shape-v0.2
+          fight-shape-v0.2
         </p>
       </div>
     </section>

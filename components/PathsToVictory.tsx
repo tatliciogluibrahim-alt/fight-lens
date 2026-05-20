@@ -39,10 +39,10 @@ function PathList({
   }
 
   return (
-    <div className={`rounded-2xl border bg-background/45 p-5 ${accent ? "border-accent/35" : "border-line"}`}>
+    <div className={`rounded-2xl border bg-background/45 p-5 ${accent ? "border-line-strong" : "border-line"}`}>
       <div>
         <h3 className="font-semibold tracking-tight">{fighter.name}</h3>
-        {roleLabel ? <p className="mono-label mt-2 text-accent">{roleLabel}</p> : null}
+        {roleLabel ? <p className="mono-label mt-2 text-foreground">{roleLabel}</p> : null}
         {hasModelSignal && <p className="mono-label mt-2">{metric.label}</p>}
       </div>
       {hasModelSignal && (
@@ -83,14 +83,14 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
       <div className="module-header">
         <p className="mono-label">{isNoLean ? "paths to watch" : "live path"}</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          {isNoLean ? "both routes stay live." : "non-lean route."}
+          {isNoLean ? "both routes stay live." : "how the other side can win."}
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
           {isDataPending
             ? "Path analysis stays pending until there is enough sourced data for a public call."
             : isNoLean
               ? "No fighter is assigned the live-path role because the winner call is too close."
-              : `How ${viewModel.livePathFighter?.name ?? "the non-lean fighter"} can still win this without contradicting the model call.`}
+              : `What has to change for ${viewModel.livePathFighter?.name ?? "the other fighter"} to flip the read.`}
         </p>
       </div>
       <div className="module-body grid gap-4 lg:grid-cols-2">

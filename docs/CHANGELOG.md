@@ -2,6 +2,14 @@
 
 ## May 2026
 
+### Final pre-commit fight-page polish
+
+- Reconfirmed fight-page tabs remain plain in-page anchor navigation with no sticky/fixed/blur/scrollspy behavior.
+- Cleaned internal live-path language so visible fight-page text now uses reader-facing alternate-path copy.
+- Simplified the shape tab hierarchy: fight shape intro, compact style edge card, neutral shape fingerprint radar, three insight cards, and collapsed full axis breakdown.
+- Tightened details copy to "recent form" with opponent-quality context and kept details styling neutral.
+- No model math, prediction values, fight data, ingestion, backtest logic, generated artifacts, or public scoring changed.
+
 ### Homepage and event discovery clarity pass
 
 - Tightened the homepage start path around the current card: one primary Open UFC 329 action, Model Record as the secondary trust check, and lighter how-to steps.

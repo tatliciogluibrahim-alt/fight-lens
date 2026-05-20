@@ -334,7 +334,7 @@ function buildPublicScenarios({
   const loserPath = topPathLabel(fight, predictedLoser);
   const livePathDescription = loserPath
     ? `${predictedLoser.name}'s live path is ${loserPath}. The public call still leans ${predictedWinner.name}, but ${predictedLoser.name} has ${loserProbability}% in the model.`
-    : `${predictedLoser.name} is the non-lean side, not a throwaway outcome. The public call leans ${predictedWinner.name}, but ${predictedLoser.name} still has ${loserProbability}% in the model.`;
+    : `${predictedLoser.name} still has ${loserProbability}% in the model. That path matters if the fight shifts, even with the public call leaning ${predictedWinner.name}.`;
 
   return [
     {
