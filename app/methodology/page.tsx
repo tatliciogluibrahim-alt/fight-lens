@@ -29,7 +29,7 @@ const provenanceRows = [
 const outputRows = [
   {
     label: "fight-shape",
-    body: "The short tactical read: pressure points, fight pace, and the cleanest matchup question."
+    body: "The short tactical read: style edge, fight pace, and the cleanest matchup question."
   },
   {
     label: "style-clash",
@@ -57,7 +57,7 @@ const modelRows = [
   {
     label: "Style Pressure Index",
     status: "real",
-    body: "Uses profile rates and recent control evidence to show which style creates matchup stress. It is not an outcome score."
+    body: "Uses profile rates and recent control evidence to show which style creates a matchup edge. It is not an outcome score."
   },
   {
     label: "Opponent Quality Adjusted Form",

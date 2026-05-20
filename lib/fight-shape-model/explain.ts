@@ -7,10 +7,10 @@ export function metricStatus(score: number | null, confidence: FightShapeConfide
 
 export function pressureLabel(score: number | null) {
   if (score == null) return "Insufficient";
-  if (score >= 78) return "High pressure signal";
-  if (score >= 62) return "Medium pressure signal";
-  if (score >= 45) return "Limited pressure signal";
-  return "Thin pressure signal";
+  if (score >= 78) return "High style edge";
+  if (score >= 62) return "Medium style edge";
+  if (score >= 45) return "Limited style edge";
+  return "Thin style edge";
 }
 
 export function formLabel(score: number | null) {
@@ -44,7 +44,7 @@ export function topFactor(factors: FightShapeFactor[]) {
 export function explainPressure(fighterName: string, factors: FightShapeFactor[], confidence: FightShapeConfidenceLabel) {
   const top = topFactor(factors);
   if (!top || confidence === "Insufficient") {
-    return "The current sourced sample is not enough to identify a reliable pressure point.";
+    return "The current sourced sample is not enough to produce a reliable style edge read.";
   }
 
   return `${fighterName}'s clearest style edge comes through ${top.label.toLowerCase()}. Confidence is ${confidence.toLowerCase()} because the read depends on profile rates and recent sourced samples.`;
