@@ -1,58 +1,16 @@
 import { ProbabilityBar } from "@/components/ProbabilityBar";
 import type { OutcomeScenario } from "@/lib/fight-outcome-model/types";
-import type { PredictionViewModel, ReadStrength } from "@/lib/predictionViewModel";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 interface TheCallProps {
   viewModel: PredictionViewModel;
 }
 
-// ─── Read strength chip ───────────────────────────────────────────────────────
+// ─── Method lean ──────────────────────────────────────────────────────────────
 //
-// Sits directly under the win probability so the user sees how strong the read
-// is without hunting for a separate badge.
-
-const READ_STRENGTH_COPY: Record<ReadStrength, { label: string; tone: string; helper: string }> = {
-  strong: {
-    label: "Strong read",
-    tone: "border-line-strong text-foreground bg-surface-2",
-    helper: "Signals align across shape, form, and stats.",
-  },
-  usable: {
-    label: "Usable read",
-    tone: "border-line-strong text-foreground bg-surface-2",
-    helper: "Clear lean, but not every signal points the same direction.",
-  },
-  thin: {
-    label: "Thin read",
-    tone: "border-line-strong text-muted bg-surface-2",
-    helper: "Limited separation — treat the read as directional only.",
-  },
-  "data-pending": {
-    label: "Data pending",
-    tone: "border-line text-subtle bg-surface-2",
-    helper: "Not enough sourced history to call this one yet.",
-  },
-};
-
-function ReadStrengthChip({ readStrength }: { readStrength: ReadStrength }) {
-  const copy = READ_STRENGTH_COPY[readStrength] ?? READ_STRENGTH_COPY["data-pending"];
-  return (
-    <div className="flex flex-col items-center gap-2 text-center">
-      <span
-        className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] ${copy.tone}`}
-      >
-        Read strength · {copy.label}
-      </span>
-      <p className="max-w-md text-xs leading-5 text-subtle">{copy.helper}</p>
-    </div>
-  );
-}
-
-// ─── Method lean (secondary, not peer to winner forecast) ─────────────────────
-//
-// The product spec is explicit: "Method probabilities should not feel as
-// authoritative as the winner forecast." We collapse to a single highlighted
-// lean + slim bars; hide methods below 8% behind "thin".
+// Secondary to the winner forecast. Shows the most likely finish type and a
+// compact neutral breakdown. Bars are 8 px tall for readability; no amber so
+// they don't read as a second winner signal.
 
 function MethodLean({
   viewModel,
@@ -79,26 +37,27 @@ function MethodLean({
             secondary read
           </span>
         </div>
-        <p className="text-xs text-subtle">
-          {methodLeanNote}
-        </p>
+        {methodLeanNote && (
+          <p className="text-xs text-subtle">{methodLeanNote}</p>
+        )}
       </div>
       <div className="mt-3 flex flex-wrap items-baseline gap-2">
         <span className="text-2xl font-semibold tracking-[-0.03em] text-foreground md:text-3xl">
           {top.label}
         </span>
-        <span className="data-text text-sm text-muted">·  {top.value}% lean</span>
+        <span className="data-text text-sm text-muted">· {top.value}% lean</span>
       </div>
 
-      <div className="mt-5 space-y-2.5">
+      <div className="mt-5 space-y-3">
         {methods.map((m) => {
           const thin = m.value < 8;
+          const isTop = m.id === top.id;
           return (
             <div key={m.id} className="flex items-center gap-3">
               <span className="w-24 shrink-0 text-xs text-muted">{m.label}</span>
-              <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
+              <div className="relative h-2 flex-1 overflow-hidden rounded-full bg-surface-2">
                 <div
-                  className={`absolute left-0 h-full rounded-full ${m.id === top.id ? "bg-foreground/80" : "bg-muted/50"}`}
+                  className={`absolute left-0 h-full rounded-full ${isTop ? "bg-foreground/85" : "bg-muted/60"}`}
                   style={{ width: `${Math.max(m.value, 2)}%` }}
                 />
               </div>
@@ -111,7 +70,6 @@ function MethodLean({
           );
         })}
       </div>
-
     </div>
   );
 }
@@ -201,15 +159,12 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
             nameB={fighterB.name}
             tooClose={tooClose}
           />
-          <div className="mt-5">
-            <ReadStrengthChip readStrength={vm.readStrength} />
-          </div>
         </div>
 
         {/* Method lean — secondary */}
         <MethodLean viewModel={vm} />
 
-        {/* The Call / Live Path / What Breaks the Call — required modules */}
+        {/* The Call / Live Path / What Breaks the Call */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {scenarios.map((scenario) => (
             <ScenarioCard

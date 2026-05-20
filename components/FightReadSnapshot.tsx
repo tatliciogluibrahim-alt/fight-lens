@@ -1,34 +1,18 @@
-import type { PredictionViewModel, ReadStrength } from "@/lib/predictionViewModel";
+import type { PredictionViewModel } from "@/lib/predictionViewModel";
 
 /*
- * FightReadSnapshot — a compact strip that surfaces the full read at a glance.
+ * FightReadSnapshot — compact at-a-glance strip.
  *
- * Sits between the fighter hero and the tab navigation on every fight page.
- * The intent is that a user lands on the page, reads this strip, and already
- * knows the model call, the read strength, the method lean, the live path,
- * and what breaks the call — without clicking a single tab.
+ * Sits between the fighter hero and the analysis sections.
+ * Shows model call, method lean, live path, and what breaks the call.
  *
- * Strictly presentation. Reads everything from the canonical viewModel; no
- * model math, no probability adjustments.
+ * Strictly presentation. Reads everything from the canonical viewModel.
+ * No read-strength pill — that signal is internal only.
  */
 
 interface FightReadSnapshotProps {
   viewModel: PredictionViewModel;
 }
-
-const READ_TONE: Record<ReadStrength, { dot: string; label: string }> = {
-  strong: { dot: "bg-foreground", label: "text-foreground" },
-  usable: { dot: "bg-muted", label: "text-muted" },
-  thin: { dot: "bg-muted", label: "text-muted" },
-  "data-pending": { dot: "bg-subtle/60", label: "text-subtle" },
-};
-
-const READ_LABEL: Record<ReadStrength, string> = {
-  strong: "Strong",
-  usable: "Usable",
-  thin: "Thin",
-  "data-pending": "Data pending",
-};
 
 function Cell({
   label,
@@ -72,23 +56,16 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
   const winnerName = vm.predictedWinner?.name;
   const winnerProb = vm.winnerProbability;
   const loserName = vm.livePathFighter?.name;
-  const tone = READ_TONE[vm.readStrength];
 
   return (
     <section
       aria-label="Fight read snapshot"
       className="relative overflow-hidden rounded-2xl border border-line bg-gradient-to-br from-surface/95 via-surface to-surface/90 px-5 py-5 md:px-7 md:py-6"
     >
-      {/* Top edge accent — broadcast feel, not a card chrome */}
+      {/* Top edge accent — broadcast feel */}
       <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
 
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <p className="mono-label">fight read snapshot</p>
-        <span className={`inline-flex items-center gap-2 rounded-full border border-line bg-background/45 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.14em] ${tone.label}`}>
-          <span className={`size-1.5 rounded-full ${tone.dot}`} />
-          {READ_LABEL[vm.readStrength]} read
-        </span>
-      </div>
+      <p className="mono-label mb-4">fight read snapshot</p>
 
       <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-5">
         {/* Model call */}
@@ -113,13 +90,13 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           <p className="text-base font-medium tracking-tight text-foreground">
             {vm.methodLean ?? "—"}
           </p>
-          <p className="text-[11px] text-subtle">Secondary to winner call</p>
+          <p className="text-[11px] text-subtle">Directional only</p>
         </Cell>
 
         {/* Live path */}
         <Cell label="live path" span="lg:col-span-1">
           {isNoLean ? (
-            <p className="text-sm text-muted">Both paths stay live until one edge separates.</p>
+            <p className="text-sm text-muted">Both paths live until one edge separates.</p>
           ) : (
             <p className="text-sm leading-snug text-foreground">
               <span className="font-medium">{loserName}</span>
@@ -136,10 +113,6 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           </p>
         </Cell>
       </div>
-
-      <p className="mt-5 border-t border-line/60 pt-4 text-xs leading-5 text-subtle">
-        Model call first. Fight shape is optional context and does not replace the winner forecast.
-      </p>
     </section>
   );
 }

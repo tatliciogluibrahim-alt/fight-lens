@@ -7,7 +7,6 @@ import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FightReadSnapshot } from "@/components/FightReadSnapshot";
-import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
@@ -149,14 +148,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             ]}
             panels={{
               call: (
-                <>
-                  <TheCall viewModel={vm} />
-                  <FightShapeSummary
-                    fight={fight}
-                    modelOutput={fightShapeModel}
-                    predictedWinnerId={vm.predictedWinner?.id ?? null}
-                  />
-                </>
+                <TheCall viewModel={vm} />
               ),
               shape: (
                 <StyleComparisonBars

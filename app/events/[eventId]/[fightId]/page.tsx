@@ -6,9 +6,8 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FightReadSnapshot } from "@/components/FightReadSnapshot";
-import { FightShapeSummary } from "@/components/FightShapeSummary";
+import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
@@ -78,12 +77,14 @@ function FighterHeroPanel({
   const country = getCountryDisplay(fighter);
   const ranking = formatRanking(fighter.ranking);
 
+  // Record / stance / ranking chips — always in their own row, never inside the name
   const chips = [
     ranking !== "UNRANKED" ? ranking : null,
     fighter.stance ?? null,
     fighter.record ?? null,
   ].filter(Boolean) as string[];
 
+  // Height / reach — secondary physical line
   const physicalChips = [
     fighter.height,
     fighter.reach ? `${fighter.reach} reach` : null,
@@ -125,7 +126,7 @@ function FighterHeroPanel({
         />
       )}
 
-      {/* Name — balanced into a stable two-line plate for hero symmetry */}
+      {/* Name — word-boundary-only line breaks via FighterNamePlate */}
       <FighterNamePlate name={fighter.name} align={align} />
 
       {/* Chip row — record / stance / ranking */}
@@ -184,7 +185,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           ← back to {event.event.name.toLowerCase()}
         </Link>
 
-        {/* Hero panel */}
+        {/* Fighter hero */}
         <section className="mt-6 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
             <div>
@@ -197,7 +198,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
           {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-          <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_128px_minmax(0,1fr)] lg:items-stretch">
+          <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
             <FighterHeroPanel
               fighter={fighterA}
               cornerLabel="A"
@@ -205,11 +206,8 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               animationDelay="fl-delay-100"
             />
 
-            {/* VS centre — cinematic broadcast plate with vertical accent rails */}
-            <div
-              className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0"
-            >
-              {/* Vertical accent rails flanking VS — subtle scouting-room cue */}
+            {/* VS centre */}
+            <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0">
               <span
                 aria-hidden="true"
                 className="pointer-events-none absolute left-1/2 top-3 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
@@ -218,7 +216,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 aria-hidden="true"
                 className="pointer-events-none absolute bottom-3 left-1/2 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
               />
-
               <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[3rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[4rem]">
                 VS
               </p>
@@ -238,14 +235,12 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
         </section>
 
-        {/* At-a-glance snapshot — sits above the tabs so the full read is
-            readable without clicking anywhere. Keeps the page from feeling
-            like "find your answer in one of the tabs." */}
+        {/* Fight read snapshot */}
         <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
           <FightReadSnapshot viewModel={vm} />
         </div>
 
-        {/* Analysis tabs */}
+        {/* Analysis sections — one scroll page, hash anchors preserved */}
         <div className="mt-6 md:mt-8">
           <FightPageTabs
             tabs={[
@@ -255,14 +250,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             ]}
             panels={{
               call: (
-                <>
-                  <TheCall viewModel={vm} />
-                  <FightShapeSummary
-                    fight={fight}
-                    modelOutput={fightShapeModel}
-                    predictedWinnerId={vm.predictedWinner?.id ?? null}
-                  />
-                </>
+                <TheCall viewModel={vm} />
               ),
               shape: (
                 <StyleComparisonBars

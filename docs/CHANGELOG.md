@@ -2,6 +2,30 @@
 
 ## May 2026
 
+### Fight page cleanup pass (delete-first)
+
+Removed UI clutter, consolidated duplicate sections, fixed fighter hero name rendering. Zero model math or data changes.
+
+**Removed:**
+- Visible "call / shape / details" tab nav row — `FightPageTabs` now renders all sections stacked on one scroll page. Hash anchors (`#section-call`, `#section-shape`, `#section-details`) preserved for deep links.
+- `ReadStrengthChip` component and "Read strength · Usable read / Thin read" helper copy from `TheCall`.
+- Read strength badge pill from `FightReadSnapshot` header.
+- Footer disclaimer line from `FightReadSnapshot` (one disclaimer remains inside the shape section).
+- `FightShapeSummary` from both fight page call panels — was a redundant second "fight shape." section. `StyleComparisonBars` is the single fight shape section.
+
+**Fixed:**
+- Fighter hero name on generic `[eventId]/[fightId]` route now uses `FighterNamePlate` (word-boundary-only line breaks). Was a raw `<h2>` with unconstrained flow. UFC-328 already used `FighterNamePlate`; both routes are now consistent.
+- Method lean bars: `h-[3px]` → `h-2` (8 px). Non-top bar fill: `bg-muted/50` → `bg-muted/60`. Bars are now readable without using amber.
+
+**Consolidated:**
+- Fight page is now one scroll page: fighter hero → snapshot → model call → method lean + scenarios → fight shape → details. No tab switching required.
+
+**Files changed:** `components/FightPageTabs.tsx`, `components/FightReadSnapshot.tsx`, `components/TheCall.tsx`, `app/events/[eventId]/[fightId]/page.tsx`, `app/events/ufc-328/[fightId]/page.tsx`.
+
+**Not changed:** Model math, prediction values, locked predictions, fight data, ingestion, backtest logic, generated artifacts, public Model Record scoring. `FightShapeSummary.tsx` file still exists; it is simply no longer rendered.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
 ### Final pre-commit fight-page polish
 
 - Reconfirmed fight-page tabs remain plain in-page anchor navigation with no sticky/fixed/blur/scrollspy behavior.

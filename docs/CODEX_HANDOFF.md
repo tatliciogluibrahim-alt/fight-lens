@@ -41,7 +41,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `/` | Homepage — 2-column hero. Pulls `buildPredictionViewModelBundle` for live next-card preview. |
 | `/events` | Events index — current card featured, past cards listed. |
 | `/events/[eventId]` | Event page — choose-a-fight flow via `EventHero` + `FightCard`. |
-| `/events/[eventId]/[fightId]` | Fight page — fighter hero, `FightReadSnapshot`, tabs (call / shape / details). |
+| `/events/[eventId]/[fightId]` | Fight page — one scroll page: fighter hero → snapshot → model call → fight shape → details. Hash anchors `#section-call`, `#section-shape`, `#section-details` work for deep links. No tab switching required. |
 | `/record` | Model Record — two clearly labeled sections: public logged calls vs. historical backtest. |
 | `/methodology` | How it works — 3-card scan grid, model row descriptions. |
 | `/backtests/islam-jdm` | One-off backtest reconstruction, not a public logged call. |
@@ -73,14 +73,14 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 | File | Purpose |
 |---|---|
-| `components/FightReadSnapshot.tsx` | At-a-glance strip — reads only from `viewModel`. |
-| `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable full-word hero typography without touching prediction data. Never allow character-level breaks. |
-| `components/TheCall.tsx` | Main call card — winner + probability bar + method lean. |
-| `components/ProbabilityBar.tsx` | Call-first model-call display — called fighter, win probability, and Live Path side; no horizontal winner rail. |
-| `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
-| `components/StyleComparisonBars.tsx` | Shape tab — neutral radar, plain-English takeaway, shape insight cards, and collapsed axis breakdown. |
-| `components/FightPageTabs.tsx` | Plain in-page fight section links — renders stable `section-call`, `section-shape`, and `section-details` anchors with no sticky/fixed behavior. |
-| `components/FightCard.tsx` | Event page matchup row — shows call, read strength, method lean, result chip; expanded details use neutral comparison bars. |
+| `components/FightReadSnapshot.tsx` | At-a-glance strip between hero and analysis sections. Reads only from `viewModel`. No read-strength pill. |
+| `components/FighterNamePlate.tsx` | Fighter hero name — word-boundary-only line breaks (`whitespace-nowrap` per word). Both fight page routes use this. |
+| `components/TheCall.tsx` | Model call card — `ProbabilityBar` + method lean bars + scenario cards. No read-strength chip. |
+| `components/ProbabilityBar.tsx` | Win probability display — called fighter (amber) + live path side. No horizontal rail. |
+| `components/FightShapeSummary.tsx` | **Not currently rendered.** File exists but is not used in any fight page. Do not re-add without removing `StyleComparisonBars` — they would duplicate the "fight shape." title. |
+| `components/StyleComparisonBars.tsx` | **The single fight shape section.** Overlay radar, style edge summary, insight cards, collapsed axis breakdown. |
+| `components/FightPageTabs.tsx` | Section anchor wrapper only — no visible nav row. Assigns `id="section-{id}"` and `scroll-mt-24` to each section. |
+| `components/FightCard.tsx` | Event page matchup row — call, method lean, result chip. |
 
 ### Data
 
@@ -172,7 +172,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 | Radar axis labels may clip at 375 px viewport (iPhone SE) | `components/StyleRadar.tsx` — `LABEL_RADIUS=148`, `SIZE=360` | P0 — verify on device |
 | SVG `<title>` tooltips don't fire on touch | `StyleRadar.tsx` data dot `<title>` elements | P1 — replace with pointer-event tooltip |
 | No automated test for `prefers-reduced-motion` behavior | `app/globals.css` reduced-motion block | P0 — manual device QA only |
-| Browser-level hash landing should be re-checked locally after the non-sticky tab hotfix | `#section-call`, `#section-shape`, `#section-details` — source/static checks pass and tab row is no longer sticky/fixed; Codex sandbox cannot bind local dev server (`listen EPERM`) | P1 — manual local browser QA |
+| Hash anchor landings (`#section-call`, `#section-shape`, `#section-details`) should be verified in a real browser after the scroll-page restructure | Both fight page routes | P1 — manual QA only |
 | 60–80% calibration buckets are overconfident | `lib/backtest/calibration.ts` | P2 — diagnostics only, no math changes yet |
 | Elo baseline has 76% no-picks due to cold start | `scripts/backtest/elo-baseline.ts` | P3 — experiment with warm seeding |
 
