@@ -162,6 +162,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 13. **Non-sticky tab verification** — proof grep and static route checks confirmed `FightPageTabs` has no sticky/fixed/blur/scrollIntoView behavior and still renders stable Call, Shape, and Details anchors.
 14. **Homepage/event discovery clarity** — homepage keeps one primary current-card action, `/events` labels the active card as forecast live, and `EventHero` now uses a single main-event read CTA so users move from card to fight read without early shape/call CTA clutter. Static build-output checks verified home, events, UFC 329, UFC 329 main-event fight read, UFC 328 Chimaev/Strickland, record, and methodology content.
 15. **Final pre-commit fight-page polish** — replaced internal live-path phrasing, simplified the shape tab into style edge → neutral fingerprint radar → three insight cards → collapsed axis breakdown, and tightened details copy to `recent form` without touching model/data/backtest files.
+16. **Color system — Midnight Signal palette** — replaced amber/gold accent (`#f59e0b`) with icy blue (`#8FD7F7`). All color changes are token-only in `app/globals.css`. All Tailwind utilities (`text-accent`, `bg-accent`, etc.) propagate automatically. No amber remains anywhere in the codebase.
 
 ---
 

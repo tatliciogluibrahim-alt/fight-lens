@@ -2,6 +2,44 @@
 
 ## May 2026
 
+### Color system pass — Midnight Signal palette
+
+Replaced the amber/gold accent system with an icy-blue palette throughout. Zero model math, layout, or copy changes.
+
+**Token changes (`app/globals.css` `:root`):**
+- `--background`: `#0d1117` → `#070B12`
+- `--surface`: `#141c27` → `#101925`
+- `--surface-2`: `#1a2332` → `#172435`
+- `--line`: `#1e2d40` → `#1D2B3D`
+- `--line-strong`: `#2a3f59` → `#3A4D63`
+- `--foreground`: `#e2e8f0` → `#EAF2FB`
+- `--muted`: `#8b9ab4` → `#A8B7C8`
+- `--subtle`: `#4e6180` → `#6F8197`
+- `--accent`: `#f59e0b` → `#8FD7F7` (amber → ice blue)
+- `--accent-soft`: amber 0.14 → icy 0.12
+- `--success`: `#10b981` → `#34D399`
+- `--success-soft`: updated rgba
+- `--wrong`: `#ef4444` → `#F87171`
+- `--wrong-soft`: updated rgba
+
+**Hardcoded rgba amber values replaced (`app/globals.css`):**
+- Body background radial gradient: amber 0.04 → icy 0.04
+- `.status-pill.is-live` border-color: amber 0.35 → icy 0.35
+- `.status-pill` background: old surface-2 rgba → new surface-2 rgba
+- `.fl-hud-mark` border-color: amber 0.35 → icy 0.25
+- `.lens-mark::before` box-shadow glow: amber 0.18 → icy 0.15
+- `.radar-card::after` radial gradient: amber 0.035 → icy 0.025
+
+**Propagation:** All Tailwind utilities (`text-accent`, `bg-accent`, `border-accent`, `text-success`, `text-wrong`, etc.) automatically inherit new values via CSS custom properties — no component changes required.
+
+**Files changed:** `app/globals.css` only.
+
+**Not changed:** model math, prediction values, locked predictions, fight data, backtest, component files, layout, copy.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
+---
+
 ### Fight page consolidation pass
 
 Six targeted fixes to eliminate repeated call content, dead helpers, and hero crowding. Zero model math or data changes.
