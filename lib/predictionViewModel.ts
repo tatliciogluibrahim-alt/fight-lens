@@ -235,6 +235,53 @@ function buildPublicPredictionSource(
   return "Current model read";
 }
 
+function buildBreakInsight({
+  callState,
+  predictedLoser,
+  swingFactorLabel,
+}: {
+  callState: PublicCallState;
+  predictedLoser: FighterRef | null;
+  swingFactorLabel: string;
+}): string {
+  const challenger = callState === "noLean" ? null : predictedLoser?.name;
+  const label = swingFactorLabel.toLowerCase();
+
+  if (label === "grappling control") {
+    return challenger
+      ? `${challenger} can flip this by turning open exchanges into long control sequences.`
+      : "This separates if one fighter turns open exchanges into long control sequences.";
+  }
+
+  if (label === "striking volume") {
+    return challenger
+      ? `${challenger} can flip this if they close the volume gap early and keep exchanges active.`
+      : "This separates if one fighter closes the volume gap and keeps exchanges active.";
+  }
+
+  if (label === "style pressure") {
+    return challenger
+      ? `${challenger} can flip this if they force reactions first and own the tempo for long stretches.`
+      : "This separates if one fighter forces reactions first and owns the tempo.";
+  }
+
+  if (label === "recent form") {
+    return challenger
+      ? `${challenger} can flip this if their sharper recent form shows up in the opening minutes.`
+      : "This separates if one fighter's recent form carries into cleaner early minutes.";
+  }
+
+  if (label === "absorption resistance") {
+    return challenger
+      ? `${challenger} can flip this if they handle the early damage risk and land cleaner late.`
+      : "This separates if one fighter handles the early damage risk and lands cleaner late.";
+  }
+
+  return challenger
+    ? `${challenger} can flip this if the main swing factor shows up early.`
+    : "This separates if one repeatable edge shows up early.";
+}
+
 function buildPublicScenarios({
   fight,
   callState,
@@ -243,8 +290,7 @@ function buildPublicScenarios({
   winnerProbability,
   loserProbability,
   readStrength,
-  swingFactorLabel,
-  swingFactorDescription,
+  breakInsight,
 }: {
   fight: SourcedFight;
   callState: PublicCallState;
@@ -253,8 +299,7 @@ function buildPublicScenarios({
   winnerProbability: number | null;
   loserProbability: number | null;
   readStrength: ReadStrength;
-  swingFactorLabel: string;
-  swingFactorDescription: string;
+  breakInsight: string;
 }): [OutcomeScenario, OutcomeScenario, OutcomeScenario] {
   if (!predictedWinner || !predictedLoser || callState === "noLean") {
     const pathA = topPathLabel(fight, asFighterRef(fight.fighters.fighterA, 50));
@@ -280,8 +325,8 @@ function buildPublicScenarios({
       {
         id: "swing",
         title: "what would separate this fight",
-        fighterLabel: swingFactorLabel,
-        description: `A clear call needs one repeatable edge to show up. ${swingFactorDescription}`,
+        fighterLabel: null,
+        description: breakInsight,
       },
     ];
   }
@@ -307,8 +352,8 @@ function buildPublicScenarios({
     {
       id: "swing",
       title: "what breaks the call",
-      fighterLabel: swingFactorLabel,
-      description: `What would make ${predictedWinner.name}'s edge shrink: ${swingFactorDescription}`,
+      fighterLabel: null,
+      description: breakInsight,
     },
   ];
 }
@@ -446,6 +491,12 @@ export function buildPredictionViewModel({
   const methodLeanNote = buildMethodLeanNote(callState);
 
   // ── Scenarios: generated from the canonical call state ────────────────────
+  const whatBreaksTheCall = buildBreakInsight({
+    callState,
+    predictedLoser,
+    swingFactorLabel: outcomeModel.swingFactorLabel,
+  });
+
   const scenarios = buildPublicScenarios({
     fight,
     callState,
@@ -454,8 +505,7 @@ export function buildPredictionViewModel({
     winnerProbability,
     loserProbability,
     readStrength,
-    swingFactorLabel: outcomeModel.swingFactorLabel,
-    swingFactorDescription: outcomeModel.swingFactorDescription,
+    breakInsight: whatBreaksTheCall,
   });
 
   // ── Scoring state ─────────────────────────────────────────────────────────
@@ -518,7 +568,7 @@ export function buildPredictionViewModel({
     methodLeanNote,
     livePathFighter: predictedLoser, // convention: lower-prob side
     swingFactorLabel: outcomeModel.swingFactorLabel,
-    whatBreaksTheCall: outcomeModel.swingFactorDescription,
+    whatBreaksTheCall,
     scenarios,
     resultState,
     isScored,

@@ -18,6 +18,7 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
 
   const leftWidth = tooClose ? "50%" : `${probA}%`;
   const rightWidth = tooClose ? "50%" : `${probB}%`;
+  const callLabel = tooClose ? "Too close to call" : `Model call: ${favName} · ${favProb}% win probability`;
 
   return (
     <div
@@ -46,38 +47,29 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
         </span>
       </div>
 
-      {/* Two-sided rail: each fighter owns a side of the 50/50 axis. */}
-      <div className="relative h-3 overflow-visible rounded-full bg-surface-2/80">
+      {/* One shared rail split by fighter probability. */}
+      <div
+        className="relative h-3 overflow-hidden rounded-full bg-surface-2/80"
+        aria-label={`Probability split: ${nameA} ${probA}%, ${nameB} ${probB}%`}
+      >
+        <div
+          className={`absolute left-0 top-0 h-full rounded-l-full ${
+            aIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
+          }`}
+          style={{ width: leftWidth }}
+        />
+        <div
+          className={`absolute right-0 top-0 h-full rounded-r-full ${
+            bIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
+          }`}
+          style={{ width: rightWidth }}
+        />
         <div className="absolute left-1/2 top-1/2 z-10 h-5 w-px -translate-x-1/2 -translate-y-1/2 bg-line" />
-        <div className="grid h-full grid-cols-2 gap-px overflow-hidden rounded-full">
-          <div className="flex h-full justify-end bg-surface-2/60">
-            <div
-              className={`h-full rounded-l-full ${
-                aIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
-              }`}
-              style={{ width: leftWidth }}
-            />
-          </div>
-          <div className="flex h-full justify-start bg-surface-2/60">
-            <div
-              className={`h-full rounded-r-full ${
-                bIsCall ? "bg-accent" : tooClose ? "bg-subtle/35" : "bg-subtle/45"
-              }`}
-              style={{ width: rightWidth }}
-            />
-          </div>
-        </div>
       </div>
 
-      {/* Lean label */}
-      {tooClose ? (
-        <p className="text-center mono-label">too close to call - no named lean</p>
-      ) : (
-        <p className="text-center font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
-          <span className="text-accent">{favName}</span>
-          <span className="text-subtle"> · {favProb}% win probability</span>
-        </p>
-      )}
+      <p className={`text-center font-mono text-[11px] uppercase tracking-[0.12em] ${tooClose ? "text-muted" : "text-subtle"}`}>
+        {tooClose ? callLabel : <><span className="text-muted">Model call: </span><span className="text-accent">{favName}</span><span className="text-subtle"> · {favProb}% win probability</span></>}
+      </p>
     </div>
   );
 }

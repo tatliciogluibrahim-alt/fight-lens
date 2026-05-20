@@ -100,7 +100,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
             </p>
           )}
           <p className="data-text mt-0.5 text-[11px] uppercase tracking-[0.12em] text-subtle">
-            {vm.publicPredictionSource}
+            {isNoLean ? "No named win lean" : <>Win probability · {vm.publicPredictionSource}</>}
           </p>
         </Cell>
 
@@ -128,9 +128,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
         {/* What breaks the call */}
         <Cell label="what breaks the call" span="lg:col-span-1">
           <p className="line-clamp-3 text-sm leading-snug text-muted">
-            {isNoLean
-              ? `One repeatable edge would separate the read — ${vm.swingFactorLabel.toLowerCase()}.`
-              : `${vm.swingFactorLabel}.`}
+            {vm.whatBreaksTheCall}
           </p>
         </Cell>
       </div>
