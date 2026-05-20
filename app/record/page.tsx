@@ -212,9 +212,9 @@ export default function RecordPage() {
         </section>
 
         {/* Predictions by event */}
-        <section className="section-shell py-8 md:py-12">
-          <p className="mono-label mb-6">prediction log</p>
-          <div className="space-y-6">
+        <section className="section-shell py-6 md:py-10">
+          <p className="mono-label mb-5">prediction log</p>
+          <div className="space-y-4">
             {Array.from(byEvent.entries()).map(([eventName, records]) => (
               <div key={eventName} className="overflow-hidden rounded-2xl border border-line bg-surface/70">
                 <div className="border-b border-line bg-surface-2/40 px-5 py-3">
@@ -235,7 +235,7 @@ export default function RecordPage() {
         </section>
 
         {/* Historical validation — clearly separated from the public Model Record */}
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
             <p className="mono-label">historical validation</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">

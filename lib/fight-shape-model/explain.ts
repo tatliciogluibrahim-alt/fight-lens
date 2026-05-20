@@ -47,7 +47,7 @@ export function explainPressure(fighterName: string, factors: FightShapeFactor[]
     return "The current sourced sample is not enough to identify a reliable pressure point.";
   }
 
-  return `${fighterName}'s clearest matchup stress comes through ${top.label.toLowerCase()}. Confidence is ${confidence.toLowerCase()} because the read depends on profile rates and recent sourced samples.`;
+  return `${fighterName}'s clearest style edge comes through ${top.label.toLowerCase()}. Confidence is ${confidence.toLowerCase()} because the read depends on profile rates and recent sourced samples.`;
 }
 
 export function explainForm(fighterName: string, confidence: FightShapeConfidenceLabel) {

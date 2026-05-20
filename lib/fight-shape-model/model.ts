@@ -462,13 +462,12 @@ function contextSignalScore(): ContextSignalScore {
   };
 }
 
-function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, pressureB: FighterMetricScore, dataConfidence: string) {
-  // IMPORTANT: this summary describes style pressure only — never the model's
+function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, pressureB: FighterMetricScore, _dataConfidence: string) {
+  // IMPORTANT: this summary describes style shape only — never the model's
   // winner call. The fight-shape model is a separate read from the outcome
   // model; if we let it name a "leader" by style pressure, that can disagree
-  // with the model call on the same page (e.g. higher-pressure fighter is not
-  // the win-probability favorite). The QA-observed Chimaev/Strickland
-  // contradiction came from that. Phrase this as a style note, not a verdict.
+  // with the model call on the same page. Phrase this as a style note,
+  // never a verdict.
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
 
@@ -479,9 +478,23 @@ function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, press
   const factorA = topFactor(pressureA.factors)?.label.toLowerCase() ?? null;
   const factorB = topFactor(pressureB.factors)?.label.toLowerCase() ?? null;
 
-  // Both sides described neutrally. No "leader" framing. No forbidden language.
-  // The component handles the "separate from winner forecast" disclaimer itself.
+  // Both sides described neutrally. No "leader" framing.
+  // The component handles the "separate from winner forecast" disclaimer.
   if (factorA && factorB) {
+    if (factorA === factorB) {
+      // Both fighters share the same dominant style axis — acknowledge the
+      // overlap and differentiate by score gap rather than repeating the label.
+      const scoreA = pressureA.score ?? 0;
+      const scoreB = pressureB.score ?? 0;
+      const diff = Math.abs(scoreA - scoreB);
+      const nameHigh = scoreA >= scoreB ? fighterA.name : fighterB.name;
+      const nameLow = scoreA >= scoreB ? fighterB.name : fighterA.name;
+
+      if (diff < 8) {
+        return `Both fighters work through ${factorA} — the style edge between them is narrow on this axis.`;
+      }
+      return `Both fighters rely on ${factorA}, but ${nameHigh} carries a measurable edge over ${nameLow} on this axis.`;
+    }
     return `${fighterA.name} brings ${factorA}; ${fighterB.name} brings ${factorB}.`;
   }
   if (factorA) {

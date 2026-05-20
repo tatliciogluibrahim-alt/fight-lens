@@ -135,7 +135,7 @@ export default function MethodologyPage() {
         </section>
 
         {/* Plain English section */}
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="rounded-2xl border border-line bg-surface/70 p-6 md:p-8">
             <p className="mono-label">plain english</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] md:text-4xl">
@@ -228,7 +228,7 @@ export default function MethodologyPage() {
           </div>
         </section>
 
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
               <p className="mono-label">fight shape model</p>
@@ -253,7 +253,7 @@ export default function MethodologyPage() {
           </div>
         </section>
 
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="mono-label">fight shape metrics</p>
@@ -295,7 +295,7 @@ export default function MethodologyPage() {
           </div>
         </section>
 
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="border border-line bg-surface/70">
             <div className="border-b border-line p-5">
               <p className="mono-label">model output contract</p>
@@ -315,7 +315,7 @@ export default function MethodologyPage() {
         </section>
 
         {/* Technical details */}
-        <section className="section-shell py-8 md:py-12">
+        <section className="section-shell py-6 md:py-10">
           <div className="rounded-2xl border border-line bg-surface/70">
             <div className="border-b border-line p-5">
               <p className="mono-label">technical details</p>

@@ -7,10 +7,10 @@ interface StyleRadarProps {
   title: string;
 }
 
-const SIZE = 340;
+const SIZE = 360;
 const CENTER = SIZE / 2;
-const RADIUS = 104;
-const LABEL_RADIUS = 136;
+const RADIUS = 110;
+const LABEL_RADIUS = 148;
 const RINGS = [25, 50, 75, 100];
 
 function point(index: number, value: number, count: number, radius = RADIUS) {
@@ -30,7 +30,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
   const dimensions = getStyleRadarDimensions(profile);
   const canFill = hasEnoughStyleRadarData(profile) && dimensions.every((dimension) => dimension.hasData);
   const stroke = tone === "accent" ? "var(--accent)" : "var(--muted)";
-  const fill = tone === "accent" ? "rgba(200,91,63,0.18)" : "rgba(170,161,150,0.12)";
+  const fill = tone === "accent" ? "rgba(245,158,11,0.14)" : "rgba(139,154,180,0.14)";
   const count = dimensions.length;
 
   const availablePoints = dimensions
@@ -54,7 +54,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       role="img"
       aria-label={`${title} style radar`}
     >
-      <circle cx={CENTER} cy={CENTER} r={RADIUS + 18} fill={tone === "accent" ? "rgba(200,91,63,0.05)" : "rgba(245,239,230,0.045)"} />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill={tone === "accent" ? "rgba(245,158,11,0.04)" : "rgba(139,154,180,0.04)"} />
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 28} fill="none" stroke="var(--line)" strokeOpacity={0.52} strokeDasharray="2 7" />
 
       {RINGS.map((ring) => (
@@ -89,8 +89,8 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
               y={labelPoint.y}
               textAnchor="middle"
               dominantBaseline="middle"
-              className="fill-subtle font-mono text-[9px] uppercase tracking-[0.16em]"
-              opacity={hasValue ? 1 : 0.45}
+              className="fill-subtle font-mono text-[10px] uppercase tracking-[0.12em]"
+              opacity={hasValue ? 1 : 0.5}
             >
               {dimension.shortLabel}
             </text>

@@ -72,8 +72,13 @@ function MethodLean({
 
   return (
     <div className="rounded-2xl border border-line bg-background/40 p-5">
-      <div className="flex flex-wrap items-baseline justify-between gap-3">
-        <p className="mono-label">method lean</p>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <p className="mono-label">most likely finish type</p>
+          <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
+            directional only
+          </span>
+        </div>
         <p className="text-xs text-subtle">
           {methodLeanNote}
         </p>
@@ -106,6 +111,10 @@ function MethodLean({
           );
         })}
       </div>
+
+      <p className="mt-3 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
+        Separate from the winner forecast · lower confidence than win probability
+      </p>
     </div>
   );
 }
@@ -148,7 +157,7 @@ function ScenarioCard({
 export function TheCall({ viewModel: vm }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
-      <section id="the-call" className="module-card scroll-mt-28">
+      <section id="the-call" className="module-card scroll-mt-32">
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
@@ -174,7 +183,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
   const { fighterA, fighterB, scenarios, tooClose } = vm;
 
   return (
-    <section id="the-call" className="module-card scroll-mt-28">
+    <section id="the-call" className="module-card scroll-mt-32">
       <div className="module-header">
         <p className="mono-label">the call</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">

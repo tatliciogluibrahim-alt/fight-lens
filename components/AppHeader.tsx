@@ -11,7 +11,7 @@ const links = [
   { href: "/", label: "home" },
   { href: `/events/${LATEST_EVENT_ID}`, label: "events" },
   { href: "/record", label: "record" },
-  { href: "/methodology", label: "method" },
+  { href: "/methodology", label: "how it works" },
 ];
 
 export function AppHeader() {

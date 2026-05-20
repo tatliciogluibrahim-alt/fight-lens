@@ -74,7 +74,7 @@ export function FightShapeSummary({ fight, modelOutput, predictedWinnerId = null
     styleLeaderId !== predictedWinnerId;
 
   return (
-    <section id="fight-shape" className="module-card scroll-mt-20">
+    <section id="fight-shape" className="module-card scroll-mt-32">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="mono-label">fight shape</p>

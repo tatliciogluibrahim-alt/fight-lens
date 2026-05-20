@@ -45,6 +45,12 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
     : null;
   const mainFightClash = mainFight?.styleClashLabel ?? null;
 
+  // Check if main fight has a live locked prediction — avoids showing
+  // "stats pending" when a model call already exists.
+  const mainFightHasCall =
+    mainFight != null &&
+    lockedPredictions.some((p) => p.fightId === mainFight.id);
+
   const statusChip = eventStatusChip(lockedPredictions);
 
   return (
@@ -87,7 +93,9 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
               )}
               <p className="mt-4 text-sm leading-6 text-muted">
                 {mainFight.matchupQuestion ??
-                  "Fighter stats pending — analysis loads closer to the event."}
+                  (mainFightHasCall
+                    ? "Forecast is live. Result will be scored after the fight."
+                    : "Analysis loads closer to the event.")}
               </p>
             </div>
             <Link
