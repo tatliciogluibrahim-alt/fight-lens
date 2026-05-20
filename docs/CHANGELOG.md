@@ -2,6 +2,14 @@
 
 ## May 2026
 
+### Homepage and event discovery clarity pass
+
+- Tightened the homepage start path around the current card: one primary Open UFC 329 action, Model Record as the secondary trust check, and lighter how-to steps.
+- Updated the events directory current-card status to "forecast live" so the browser flow matches the homepage language.
+- Simplified the event detail hero into a choose-a-fight entry point by keeping one main-event read CTA and removing early Full Call / Fight Shape CTA clutter.
+- Kept fight-page tabs non-sticky and made no changes to model math, prediction values, fight data, ingestion, backtest logic, generated artifacts, or public scoring.
+- Static build-output inspection verified the homepage, events directory, UFC 329 event page, UFC 329 main-event fight page, UFC 328 Chimaev/Strickland, record, and methodology route content.
+
 ### Non-sticky fight tabs stabilization verification
 
 - Re-verified the fight-page tab row is normal in-page content after the hotfix: no sticky/fixed/blur/scrollIntoView behavior remains in the fight tab/page files.

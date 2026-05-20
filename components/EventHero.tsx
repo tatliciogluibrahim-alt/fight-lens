@@ -18,7 +18,7 @@ function eventStatusChip(lockedPredictions: PredictionRecord[]) {
     return (
       <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
         <span className="size-1.5 animate-pulse rounded-full bg-accent/70" />
-        upcoming · {lockedPredictions.length} calls logged · outcomes pending
+        forecast live · {lockedPredictions.length} calls logged · outcomes pending
       </span>
     );
   }
@@ -43,8 +43,6 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
   const mainFightLabel = mainFight
     ? `${mainFight.fighters.fighterA.name.split(" ").pop()?.toLowerCase()} vs. ${mainFight.fighters.fighterB.name.split(" ").pop()?.toLowerCase()}`
     : null;
-  const mainFightClash = mainFight?.styleClashLabel ?? null;
-
   // Check if main fight has a live locked prediction — avoids showing
   // "stats pending" when a model call already exists.
   const mainFightHasCall =
@@ -65,7 +63,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
             {event.event.name.toLowerCase()}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Every fight on the card — modeled before the first bell, scored after.
+            Choose a fight below. Each read starts with the model call, then optional shape context.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-3">
             {[
@@ -88,9 +86,6 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
               <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.04em]">
                 {mainFightLabel}
               </h2>
-              {mainFightClash && (
-                <p className="mono-label mt-3 text-muted">{mainFightClash}</p>
-              )}
               <p className="mt-4 text-sm leading-6 text-muted">
                 {mainFight.matchupQuestion ??
                   (mainFightHasCall
@@ -103,19 +98,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
                 href={`/events/${event.event.id}/${mainFight.id}`}
                 className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
               >
-                View read
-              </Link>
-              <Link
-                href={`/events/${event.event.id}/${mainFight.id}#section-call`}
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-              >
-                Full call
-              </Link>
-              <Link
-                href={`/events/${event.event.id}/${mainFight.id}#section-shape`}
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
-              >
-                Fight shape
+                View main event read
               </Link>
             </div>
           </div>

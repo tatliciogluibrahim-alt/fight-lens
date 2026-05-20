@@ -40,7 +40,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 |---|---|
 | `/` | Homepage — 2-column hero. Pulls `buildPredictionViewModelBundle` for live next-card preview. |
 | `/events` | Events index — current card featured, past cards listed. |
-| `/events/[eventId]` | Event page — fight card grid via `EventHero` + `FightCard`. |
+| `/events/[eventId]` | Event page — choose-a-fight flow via `EventHero` + `FightCard`. |
 | `/events/[eventId]/[fightId]` | Fight page — fighter hero, `FightReadSnapshot`, tabs (call / shape / details). |
 | `/record` | Model Record — two clearly labeled sections: public logged calls vs. historical backtest. |
 | `/methodology` | How it works — 3-card scan grid, model row descriptions. |
@@ -160,6 +160,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 11. **Model-call display semantics** — `ProbabilityBar` now uses a call-first layout with the non-called side labeled `Live path`. Amber belongs only to the canonical model-called side; no-call fights remain neutral.
 12. **Fight-read final QA** — source/static route checks verified home, events, fight pages, record, and methodology. Event-row expanded details were neutralized so amber is not used as a generic chart/comparison color.
 13. **Non-sticky tab verification** — proof grep and static route checks confirmed `FightPageTabs` has no sticky/fixed/blur/scrollIntoView behavior and still renders stable Call, Shape, and Details anchors.
+14. **Homepage/event discovery clarity** — homepage keeps one primary current-card action, `/events` labels the active card as forecast live, and `EventHero` now uses a single main-event read CTA so users move from card to fight read without early shape/call CTA clutter. Static build-output checks verified home, events, UFC 329, UFC 329 main-event fight read, UFC 328 Chimaev/Strickland, record, and methodology content.
 
 ---
 

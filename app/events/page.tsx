@@ -43,7 +43,7 @@ function StatusPill({ status, callsLogged }: { status: EventStatus; callsLogged:
     return (
       <span className="status-pill is-live">
         <span className="dot" />
-        upcoming · {callsLogged} calls logged
+        forecast live · {callsLogged} calls logged
       </span>
     );
   }

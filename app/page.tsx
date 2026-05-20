@@ -10,7 +10,7 @@ import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 const startSteps = [
   {
     title: "Start with the card",
-    body: "Open the upcoming event and scan the fight list.",
+    body: "Open the current event and scan the fights.",
   },
   {
     title: "Read the call",
@@ -18,7 +18,7 @@ const startSteps = [
   },
   {
     title: "Explore the shape",
-    body: "Optional deeper context. The radar shows how the fight style tilts, not who the model picks.",
+    body: "Optional deeper context. The radar shows how the fight style tilts, not the winner forecast.",
   },
   {
     title: "Check the record",
@@ -260,7 +260,7 @@ export default function Home() {
           <div className="grid gap-3 md:grid-cols-4">
             {startSteps.map((step, index) => (
               <div key={step.title} className="rounded-2xl border border-line bg-surface/70 p-5">
-                <p className="data-text text-xl text-accent">0{index + 1}</p>
+                <p className="data-text text-sm text-subtle">0{index + 1}</p>
                 <h3 className="mt-3 text-base font-semibold tracking-tight text-foreground">{step.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">{step.body}</p>
               </div>
