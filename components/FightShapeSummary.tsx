@@ -1,5 +1,6 @@
 import type { SourcedFight } from "@/lib/sourced-event";
 import type { FighterMetricScore, FightShapeModelOutput } from "@/lib/fight-shape-model/types";
+import { buildShapeNarrative } from "@/lib/fight-shape-model/shape-narrative";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { ModuleEmptyState } from "./ModuleEmptyState";
 
@@ -73,6 +74,20 @@ export function FightShapeSummary({ fight, modelOutput, predictedWinnerId = null
     styleLeaderId !== null &&
     styleLeaderId !== predictedWinnerId;
 
+  // Narrative replaces the older robotic publicSummary. Compares per-axis,
+  // names the biggest separator in plain fight-language, and never names a
+  // winner. The shape tab renders the full "what the shape says" cards;
+  // here on the call tab we only show the headline + the optional caveat.
+  const narrative = buildShapeNarrative({
+    fighterAName: fighterA.name,
+    fighterAId: fighterA.id,
+    fighterBName: fighterB.name,
+    fighterBId: fighterB.id,
+    profileA: fighterA.styleProfile,
+    profileB: fighterB.styleProfile,
+    predictedWinnerId,
+  });
+
   return (
     <section id="fight-shape" className="module-card scroll-mt-32">
       <div className="module-header flex flex-wrap items-start justify-between gap-4">
@@ -85,19 +100,21 @@ export function FightShapeSummary({ fight, modelOutput, predictedWinnerId = null
       <div className="module-body grid gap-5 lg:grid-cols-[1.35fr_0.85fr]">
         {/* Left: shape summary */}
         <div>
-          {modelOutput.publicSummary ? (
+          {narrative.headline ? (
             <div>
               <div className="mb-4 flex flex-wrap items-center gap-2">
                 <ConfidenceBadge label={modelOutput.dataConfidence.label} />
               </div>
               <p className="text-xl leading-8 text-foreground md:text-2xl md:leading-9">
-                {modelOutput.publicSummary}
+                {narrative.headline}
               </p>
-              {/* Context note — not a winner prediction */}
+              {/* Context note — never a winner prediction */}
               <p className="mt-3 text-xs leading-5 text-subtle">
-                This describes the shape of the fight — not the winner forecast.
-                See the model call above for win probability.
+                This is the style map, not the model call. See the snapshot above for win probability.
               </p>
+              {narrative.caveat ? (
+                <p className="mt-3 text-xs leading-5 text-subtle">{narrative.caveat}</p>
+              ) : null}
               {fight.fightShapeSummary ? (
                 <p className="mt-5 max-w-3xl text-sm leading-6 text-muted">{fight.fightShapeSummary}</p>
               ) : null}
@@ -129,7 +146,7 @@ export function FightShapeSummary({ fight, modelOutput, predictedWinnerId = null
             <>
               <p className="mono-label">style edge</p>
               <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
-                <h3 className="text-2xl font-semibold tracking-[-0.03em]">where it tilts.</h3>
+                <h3 className="text-2xl font-semibold tracking-[-0.03em]">stronger style signal.</h3>
                 <ConfidenceBadge
                   label={
                     pressureA.confidence === "Insufficient"

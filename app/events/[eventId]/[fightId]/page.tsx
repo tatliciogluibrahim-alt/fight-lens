@@ -270,6 +270,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   fighterA={fighterA}
                   fighterB={fighterB}
                   modelOutput={fightShapeModel}
+                  predictedWinnerId={vm.predictedWinner?.id ?? null}
                 />
               ),
               details: (
