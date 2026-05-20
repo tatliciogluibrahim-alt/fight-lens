@@ -6,6 +6,7 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FightReadSnapshot } from "@/components/FightReadSnapshot";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
@@ -124,10 +125,8 @@ function FighterHeroPanel({
         />
       )}
 
-      {/* Name — the cinematic moment */}
-      <h2 className="text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
-        {fighter.name}
-      </h2>
+      {/* Name — balanced into a stable two-line plate for hero symmetry */}
+      <FighterNamePlate name={fighter.name} align={align} />
 
       {/* Chip row — record / stance / ranking */}
       {chips.length > 0 && (

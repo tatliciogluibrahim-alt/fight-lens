@@ -76,7 +76,7 @@ function MethodLean({
         <div className="flex items-center gap-3">
           <p className="mono-label">most likely finish type</p>
           <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
-            directional only
+            secondary read
           </span>
         </div>
         <p className="text-xs text-subtle">
@@ -112,9 +112,6 @@ function MethodLean({
         })}
       </div>
 
-      <p className="mt-3 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-        Separate from the winner forecast · lower confidence than win probability
-      </p>
     </div>
   );
 }
@@ -222,10 +219,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
           ))}
         </div>
 
-        {/* Footer */}
-        <p className="mono-label">
-          signal-based · not a guarantee · outcome-v0.2
-        </p>
+        <p className="mono-label">outcome-v0.2</p>
       </div>
     </section>
   );

@@ -6,6 +6,13 @@
 
 Six successive UI/UX passes with zero model-math changes. All passes ran on top of the v0.2 prediction pipeline. QA commands (`audit:predictions`, `backtest`, `lint`, `build`) remained green throughout.
 
+#### Fighter hero stabilization
+- Added `FighterNamePlate` for fight-page hero names. Hero names now reserve a consistent two-line plate and split names predictably, so short and long fighter names align without changing model data.
+- Tightened fight-page tab hash behavior: `#section-call`, `#section-shape`, and `#section-details` activate the correct tab and scroll below the sticky header/tab stack.
+- Reduced adjacent repetition in the fight snapshot and call tab by keeping method lean secondary while removing duplicate helper/disclaimer lines.
+- Removed remaining public `pick/picked` wording from the Model Record accuracy card and methodology baseline note.
+- No model math, prediction values, locked predictions, ingestion, backtest outputs, `opponentTotals`, or public Model Record behavior changed.
+
 #### Visual/UX correction pass
 - Sticky tab bar fixed at `top-16 z-20` — no longer scrolls away on mobile.
 - Nav labels: "matchups" → "events", "model record" → "record", "methodology" → "how it works".

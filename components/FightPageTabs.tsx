@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 interface Tab {
   id: string;
@@ -12,21 +12,50 @@ interface FightPageTabsProps {
   panels: Record<string, ReactNode>;
 }
 
+const STICKY_SCROLL_OFFSET = 144;
+
+function hashToTabId(hash: string) {
+  const clean = hash.replace(/^#/, "");
+  if (clean === "the-call") return "call";
+  if (clean.startsWith("section-")) return clean.replace("section-", "");
+  return clean;
+}
+
 export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
   const [active, setActive] = useState(tabs[0]?.id ?? "");
   const panelRef = useRef<HTMLDivElement>(null);
 
-  function handleTabChange(id: string) {
-    setActive(id);
-    // After React renders the new panel, scroll the panel top into view so
-    // users land at the start of the content rather than mid-page.
+  function isKnownTab(id: string) {
+    return tabs.some((tab) => tab.id === id);
+  }
+
+  function scrollToPanel() {
     requestAnimationFrame(() => {
       if (!panelRef.current) return;
       const top = panelRef.current.getBoundingClientRect().top + window.scrollY;
-      // 64px sticky main header + 56px sticky tab bar + 8px gap
-      window.scrollTo({ top: top - 128, behavior: "smooth" });
+      window.scrollTo({ top: top - STICKY_SCROLL_OFFSET, behavior: "smooth" });
     });
   }
+
+  function handleTabChange(id: string, updateHash = true) {
+    if (!isKnownTab(id)) return;
+    setActive(id);
+    if (updateHash) window.history.replaceState(null, "", `#section-${id}`);
+    scrollToPanel();
+  }
+
+  useEffect(() => {
+    function syncFromHash() {
+      const id = hashToTabId(window.location.hash);
+      if (!tabs.some((tab) => tab.id === id)) return;
+      setActive(id);
+      scrollToPanel();
+    }
+
+    syncFromHash();
+    window.addEventListener("hashchange", syncFromHash);
+    return () => window.removeEventListener("hashchange", syncFromHash);
+  }, [tabs]);
 
   return (
     <div className="space-y-4">
@@ -59,14 +88,14 @@ export function FightPageTabs({ tabs, panels }: FightPageTabsProps) {
 
       {/*
         Active panel. ref is used by handleTabChange to find the correct scroll
-        target. scroll-mt-32 (128px) covers the stacked sticky header + tab bar
+        target. scroll-mt-36 (144px) covers the stacked sticky header + tab bar
         if the panel is itself the target of a hash-navigation link.
 
         key={active} forces a remount when the active tab changes, which
         re-triggers the fl-tab-panel entrance animation defined in globals.css.
         Reduced-motion users get an instant cut via the global override.
       */}
-      <div ref={panelRef} className="scroll-mt-32 space-y-5">
+      <div ref={panelRef} id={`section-${active}`} className="scroll-mt-36 space-y-5">
         <div key={active} className="fl-tab-panel space-y-5">
           {panels[active]}
         </div>

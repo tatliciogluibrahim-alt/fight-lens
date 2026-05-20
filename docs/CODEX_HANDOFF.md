@@ -74,6 +74,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | File | Purpose |
 |---|---|
 | `components/FightReadSnapshot.tsx` | At-a-glance strip — reads only from `viewModel`. |
+| `components/FighterNamePlate.tsx` | Fight-page hero name plate — splits names into stable two-line hero typography without touching prediction data. |
 | `components/TheCall.tsx` | Main call card — winner + probability bar + method lean. |
 | `components/FightShapeSummary.tsx` | Shape section on call tab — uses `buildShapeNarrative()`. |
 | `components/StyleComparisonBars.tsx` | Shape tab — "What the shape says" cards + axis breakdown bars. |
@@ -153,6 +154,7 @@ The six passes below changed **zero** model math, locked predictions, backtest l
 6. **Shape narrative** — `lib/fight-shape-model/shape-narrative.ts`; analyst-style copy replacing robotic `publicSummary` in `FightShapeSummary`. Never names a winner.
 7. **"What the shape says" cards** — `StyleComparisonBars` now renders `biggest-edge`, `closest`, and `swing`/`watching` cards above the axis bars.
 8. **Language cleanup** — all "matchup stress", "pressure point", "style-pressure read", and "Limited pressure signal" occurrences removed from UI.
+9. **Fighter hero stabilization** — `FighterNamePlate` gives fight pages a consistent two-line name plate; `FightPageTabs` now respects section hashes without sticky-tab overlap.
 
 ---
 

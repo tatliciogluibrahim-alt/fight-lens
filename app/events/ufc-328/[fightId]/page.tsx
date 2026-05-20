@@ -5,6 +5,8 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { FighterNamePlate } from "@/components/FighterNamePlate";
+import { FightReadSnapshot } from "@/components/FightReadSnapshot";
 import { FightShapeSummary } from "@/components/FightShapeSummary";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
@@ -65,9 +67,7 @@ function FighterHeroPanel({
         )}
         <p className="mono-label">{meta}</p>
       </div>
-      <h2 className="text-4xl font-semibold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
-        {fighter.name}
-      </h2>
+      <FighterNamePlate name={fighter.name} align={align} />
       {physicals && (
         <p className="data-text text-xs text-subtle">{physicals}</p>
       )}
@@ -103,7 +103,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           href="/events/ufc-328"
           className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
         >
-          ← back to matchups
+          ← back to {sourcedEvent.event.name.toLowerCase()}
         </Link>
 
         {/* Hero panel */}
@@ -135,6 +135,10 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           </div>
         </section>
 
+        <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
+          <FightReadSnapshot viewModel={vm} />
+        </div>
+
         {/* Analysis tabs */}
         <div className="mt-6 md:mt-8">
           <FightPageTabs
@@ -159,6 +163,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                   fighterA={fighterA}
                   fighterB={fighterB}
                   modelOutput={fightShapeModel}
+                  predictedWinnerId={vm.predictedWinner?.id ?? null}
                 />
               ),
               details: (

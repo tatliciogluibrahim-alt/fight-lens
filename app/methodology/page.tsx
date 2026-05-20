@@ -224,7 +224,7 @@ export default function MethodologyPage() {
                 <p className="mt-1 text-sm leading-6 text-muted">
                   When the model&apos;s win probability for each fighter is below 52%, no named call
                   is shown. Both paths stay live. This is not a broken state — it is the model
-                  being honest about low separation rather than forcing a pick.
+                  being honest about low separation rather than forcing a named call.
                 </p>
               </div>
             </div>
@@ -245,7 +245,7 @@ export default function MethodologyPage() {
               <p className="mt-1 text-sm leading-6 text-muted">
                 The historical backtest covers 253 fights across 20 completed events. Winner
                 accuracy is 66%, method accuracy 58%, and Brier 0.219. Against the official
-                leakage-safe as-of record baseline (63% picked / 58% all-fight, Brier 0.235),
+                leakage-safe as-of record baseline (63% directional-call / 58% all-fight, Brier 0.235),
                 v0.2 is directionally ahead — but the corpus is still early and no model grade
                 is published yet. The 60–80% confidence buckets show some overconfidence. More
                 logged public calls are needed before any grade unlocks.

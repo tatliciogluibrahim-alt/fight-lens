@@ -153,7 +153,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
               {metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}
             </p>
             <p className="mono-label mt-2">call accuracy</p>
-            <p className="mt-1 text-xs text-subtle">model&apos;s top pick was correct</p>
+            <p className="mt-1 text-xs text-subtle">model call was correct</p>
           </div>
           <div className="rounded-xl border border-line bg-background/45 p-4">
             <p className="data-text text-3xl text-foreground">

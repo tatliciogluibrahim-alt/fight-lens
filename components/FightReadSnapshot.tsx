@@ -109,7 +109,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           <p className="text-base font-medium tracking-tight text-foreground">
             {vm.methodLean ?? "—"}
           </p>
-          <p className="text-[11px] text-subtle">Directional only · separate from winner</p>
+          <p className="text-[11px] text-subtle">Secondary to winner call</p>
         </Cell>
 
         {/* Live path */}
@@ -141,7 +141,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           Winner forecast and fight shape are separate reads. Snapshot stays consistent across both.
         </p>
         <div className="flex gap-2 text-[11px] uppercase tracking-[0.12em]">
-          <a href="#the-call" className="text-subtle transition hover:text-foreground">
+          <a href="#section-call" className="text-subtle transition hover:text-foreground">
             full call ↓
           </a>
           <span className="text-line-strong">·</span>
