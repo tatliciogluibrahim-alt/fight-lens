@@ -330,6 +330,10 @@ summary::-webkit-details-marker {
   .fl-radar-dot {
     transition: none !important;
   }
+  .fl-bar-fill {
+    animation: none !important;
+    transform: none !important;
+  }
 }
 
 /* ─── Lens logo mark ──────────────────────────────────────────────────────── */
@@ -393,6 +397,10 @@ summary::-webkit-details-marker {
 @keyframes prob-bar-grow {
   from { transform: scaleX(0); }
   to   { transform: scaleX(1); }
+}
+.fl-bar-fill {
+  transform-origin: left center;
+  animation: prob-bar-grow 280ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* ─── Responsive adjustments ─────────────────────────────────────────────── */

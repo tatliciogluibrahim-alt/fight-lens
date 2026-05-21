@@ -9,12 +9,14 @@
  *   4. Create prediction files in data/predictions/ and add to lib/accuracy/index.ts
  */
 
+import ufcFreedom250Json from "@/data/normalized/events/ufc-freedom-250.json";
 import ufc329Json from "@/data/normalized/events/ufc-329.json";
 import ufc328Json from "@/data/normalized/events/ufc-328.json";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 
 // Newest event first — the first entry is the "current" event
 const orderedEvents: SourcedEvent[] = [
+  ufcFreedom250Json as unknown as SourcedEvent,
   ufc329Json as unknown as SourcedEvent,
   ufc328Json as unknown as SourcedEvent,
 ];

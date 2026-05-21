@@ -14,8 +14,8 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 - **Backtest corpus:** 20 completed UFC events, 253 scored fights
 - **Winner accuracy:** 66% | **Method accuracy:** 58% | **Brier:** 0.219
 - **Public logged calls:** separate from backtest — only `getLockedPredictions()` counts
-- **Static pages:** 35 (verified via `npm run build`)
-- **Prediction audit:** 24/24 routes pass (verified via `npm run audit:predictions`)
+- **Static pages:** 36 (verified via `npm run build`)
+- **Prediction audit:** 24/24 routes pass (verified via the audit script; local `tsx` CLI can hit named-pipe EPERM in this sandbox)
 - **Lint:** 0 warnings
 - **`opponentTotals` pipeline:** active; ~60% item-level coverage
 
@@ -38,9 +38,9 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 | Route | Notes |
 |---|---|
-| `/` | Homepage — 2-column hero. Pulls `buildPredictionViewModelBundle` for live next-card preview. |
-| `/events` | Events index — current card featured, past cards listed. |
-| `/events/[eventId]` | Event page — choose-a-fight flow via `EventHero` + `FightCard`. |
+| `/` | Homepage — compact next-card hero, event chooser, and Public Model Record proof strip. Pulls `buildPredictionViewModelBundle` only when the next card has fight data. |
+| `/events` | Events index — Next Card, Upcoming forecast cards, and Past Scored cards. Shell events render pending states without fake calls. |
+| `/events/[eventId]` | Event page — choose-a-fight flow via `EventHero` + `FightCard`; empty event shells show a pending card instead of filters. |
 | `/events/[eventId]/[fightId]` | Fight page — one scroll page: fighter hero → snapshot → model call → fight shape → details. Hash anchors `#section-call`, `#section-shape`, `#section-details` work for deep links. No tab switching required. |
 | `/record` | Model Record — two clearly labeled sections: public logged calls vs. historical backtest. |
 | `/methodology` | How it works — 3-card scan grid, model row descriptions. |
@@ -89,6 +89,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `data/events/` | Source event JSON files (one per UFC event). |
 | `data/predictions/` | Locked public prediction JSON files (read-only post-call). |
 | `data/generated/` | Generated normalized events and backtest outputs. |
+| `data/normalized/events/ufc-freedom-250.json` | Manual upcoming event shell only — no fights, predictions, or public calls yet. |
 
 ### Scripts
 
@@ -165,6 +166,7 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 16. **Color system — Midnight Signal palette** — replaced amber/gold accent (`#f59e0b`) with icy blue (`#8FD7F7`). All color changes are token-only in `app/globals.css`. All Tailwind utilities (`text-accent`, `bg-accent`, etc.) propagate automatically. No amber remains anywhere in the codebase.
 18. **Analysis hygiene pass** — narrative guardrails added to `lib/fight-shape-model/shape-narrative.ts`: swing/watching cards suppressed when leading absolute score < 45 or delta < 6; biggest-edge body copy softened when overall signal is weak; no model math changed. Method lean in `TheCall.tsx` now shows proportional fill bars (top method = accent, secondary = muted, thin = dot only). `PathsToVictory.tsx` suppresses duplicate "path analysis pending" cards when both fighters have no path data — replaced with one quiet line. Heading changed from "how the other side can win." to "non-call route." for named-call fights.
 17. **Event discovery and mobile readability pass** — homepage hero has one dominant CTA only ("Open card", no "View main event read" competing); events page `EventCard` is a single-column card (no two-panel grid, no "View read →" inside card); `EventHero` is a single card (no two-column lg layout); `FightCard` mobile-first with fighters always side-by-side and "View read" button full-width on mobile; `FightReadSnapshot` fixed to `grid-cols-2` from all widths (not just sm+).
+19. **Homepage/event discovery + record compaction** — homepage Public Model Record is now a compact proof strip with 24/13/10/77% stats and a subtle accuracy bar; `/record` leads with 77% call accuracy and 10/13 scored calls while method read stays secondary; `/events` groups Next Card, Upcoming, and Past Scored; UFC Freedom 250 exists as an event shell before UFC 329 with pending copy only and no fake predictions.
 
 ---
 
@@ -202,8 +204,8 @@ Sub-bucket the 60–80% confidence range and identify which fight type / weight 
 **P3 — True mobile fight-read mode**
 Build a compact mobile fight intelligence card that replaces the current long-scroll desktop read on small screens. Each layer (Call → Why → Method → Flip path → Shape → Form) is an expandable accordion section with a single-line summary and a tap-to-expand detail block. This avoids dumping five full desktop modules into a single scroll and makes the read feel native on mobile. No model math changes, no new prediction compute — all content comes from the existing `PredictionViewModel` and fight shape data.
 
-**P3 — Event discovery system**
-Make `/events` the primary mobile entry point. The page should feature the current card prominently (name, date, fight count, status chip), list fights in a grouped format (main event first, prelims collapsed by default), and include simple filters (weight class, card placement). Past events should be secondary — collapsed by default or paginated. This removes the need for users to navigate home → events → event detail to find a fight. No new data sources required — all data comes from the existing event registry.
+**P3 — Event page grouping/filter polish**
+The top-level `/events` discovery flow is now grouped. A future small pass could make individual event pages clearer once cards become larger: main event first, prelim groups collapsed by default, and lightweight filters by weight class/card placement. No new data sources required — all data comes from the existing event registry.
 
 ---
 
@@ -213,7 +215,7 @@ Make `/events` the primary mobile entry point. The page should feature the curre
 npm run audit:predictions   # Must pass 24/24. Run after any prediction-display change.
 npm run backtest            # Must complete on 253 fights. Run after any model or ingestion change.
 npm run lint                # Must pass with 0 warnings.
-npm run build               # Must produce 35 static pages.
+npm run build               # Must produce 36 static pages.
 ```
 
 ---

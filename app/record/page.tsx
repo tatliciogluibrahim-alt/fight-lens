@@ -167,7 +167,7 @@ export default function RecordPage() {
     <>
       <AppHeader />
       <main>
-        <section className="section-shell py-10 md:py-16">
+        <section className="section-shell py-8 md:py-12">
           <Link
             href="/"
             className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
@@ -175,34 +175,50 @@ export default function RecordPage() {
             ← back
           </Link>
 
-          <div className="mt-8">
-            <p className="mono-label accent-rail">model record</p>
-            <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.05em] md:text-7xl">
-              every call. <span className="text-accent">tracked.</span>
-            </h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Model calls are intended to be logged before each fight and scored after the official
-              result. No edits to the call once a fight is on the clock.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <span className="rounded-full border border-line bg-surface/70 px-4 py-2 text-xs font-medium text-muted">
-                {lockedCalls.length} calls
-              </span>
-              <span className="rounded-full border border-accent/30 bg-accent/[0.08] px-4 py-2 text-xs font-medium text-accent">
-                {resolvedCount} scored
-              </span>
-              {pendingCount > 0 && (
-                <span className="rounded-full border border-line bg-surface/70 px-4 py-2 text-xs font-medium text-subtle">
-                  {pendingCount} pending
-                </span>
-              )}
+          <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_360px] lg:items-end">
+            <div>
+              <p className="mono-label accent-rail">model record</p>
+              <h1 className="text-4xl font-semibold leading-[0.96] tracking-[-0.05em] md:text-6xl">
+                record in progress.
+              </h1>
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-muted md:text-base md:leading-7">
+                Public Model Record is logged before the fight and scored after the official result.
+                Historical validation stays separate.
+              </p>
             </div>
 
-            <p className="mt-5 max-w-2xl text-xs leading-6 text-subtle">
-              Model Record tracks calls logged before fights. Historical backtests are separate
-              validation runs using only pre-fight data — they appear in a dedicated section below.
-            </p>
+            <div className="rounded-2xl border border-line bg-surface/70 p-4">
+              <p className="mono-label">public calls only</p>
+              <div className="mt-3 flex items-end justify-between gap-4">
+                <div>
+                  <p className="data-text text-4xl leading-none text-accent md:text-5xl">
+                    {metrics.winnerAccuracy != null ? metrics.winnerAccuracy + "%" : "—"}
+                  </p>
+                  <p className="mt-2 text-sm text-muted">
+                    {metrics.winnerAccuracy != null
+                      ? Math.round((metrics.winnerAccuracy / 100) * resolvedCount) + " correct of " + resolvedCount + " scored fights."
+                      : "Scored calls pending."}
+                  </p>
+                </div>
+                <span className="rounded-full border border-line bg-background/35 px-3 py-1.5 text-xs text-subtle">
+                  grade at 30
+                </span>
+              </div>
+              <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+                <div className="rounded-lg border border-line bg-background/35 py-2">
+                  <p className="data-text text-lg text-foreground">{lockedCalls.length}</p>
+                  <p className="mono-label mt-0.5">calls</p>
+                </div>
+                <div className="rounded-lg border border-line bg-background/35 py-2">
+                  <p className="data-text text-lg text-foreground">{resolvedCount}</p>
+                  <p className="mono-label mt-0.5">scored</p>
+                </div>
+                <div className="rounded-lg border border-line bg-background/35 py-2">
+                  <p className="data-text text-lg text-foreground">{pendingCount}</p>
+                  <p className="mono-label mt-0.5">pending</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

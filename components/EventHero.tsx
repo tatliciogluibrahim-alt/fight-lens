@@ -9,7 +9,14 @@ interface EventHeroProps {
 }
 
 function eventStatusChip(lockedPredictions: PredictionRecord[]) {
-  if (lockedPredictions.length === 0) return null;
+  if (lockedPredictions.length === 0) {
+    return (
+      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
+        <span className="size-1.5 rounded-full bg-subtle/60" />
+        forecast pending · fight card pending
+      </span>
+    );
+  }
 
   const resolved = lockedPredictions.filter((p) => p.outcome !== null);
 
@@ -139,7 +146,9 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
 
           {/* Instruction line */}
           <p className="mt-5 text-sm text-subtle">
-            Choose a fight below — each read starts with the model call.
+            {event.fights.length > 0
+              ? "Choose a fight below — each read starts with the model call."
+              : "Fight rows and model calls will appear here once the card is available."}
           </p>
         </div>
       </div>

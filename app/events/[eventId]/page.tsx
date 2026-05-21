@@ -22,7 +22,9 @@ export async function generateMetadata({ params }: EventPageProps): Promise<Meta
   if (!event) return {};
   return {
     title: `${event.event.name} | Fight Lens`,
-    description: `${event.fights.length} fights modeled. Win probabilities, method breakdowns, and scenario paths for every bout on the card.`,
+    description: event.fights.length > 0
+      ? `${event.fights.length} fights modeled. Win probabilities, method breakdowns, and scenario paths for every bout on the card.`
+      : "Event shell. Fight card and model calls pending.",
   };
 }
 

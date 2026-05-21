@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-20T00:00:00.000Z",
+  "event": {
+    "id": "ufc-freedom-250",
+    "ufcstatsId": "pending",
+    "name": "UFC Freedom 250",
+    "date": null,
+    "location": null,
+    "promotion": "UFC",
+    "source": {
+      "provenance": "manual",
+      "sourceName": "event-shell",
+      "sourceUrl": null,
+      "fetchedAt": null
+    }
+  },
+  "modeling": {
+    "principle": "Event shell only. Model calls unlock once fight data and locked predictions are available.",
+    "formulas": {}
+  },
+  "fights": []
+}

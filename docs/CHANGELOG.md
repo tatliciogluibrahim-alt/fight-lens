@@ -2,6 +2,21 @@
 
 ## May 2026
 
+### Homepage, record, and event discovery stabilization
+
+Focused mobile-first product cleanup. No model math, prediction values, fight data, ingestion, backtest logic, generated backtest artifacts, or public record scoring changed.
+
+- Condensed the homepage Public Model Record module into a compact proof strip: 24 calls, 13 scored, 10 correct, 77% accuracy, plus a subtle accuracy bar.
+- Cleaned the /record hero so 77% call accuracy and 10/13 scored calls lead the page, with 31% method read treated as secondary.
+- Reworked homepage event discovery into a compact chooser: Next Card, Upcoming Card, Past Scored Card, and All Events.
+- Updated /events to separate Next Card, Upcoming forecast cards, and Past Scored cards, including clean pending states.
+- Added UFC Freedom 250 as an upcoming event shell (`ufc-freedom-250`) before UFC 329. It has no fake fights, predictions, percentages, or public calls.
+- Added reusable subtle progress bars (`fl-bar-fill`) for public record accuracy and calibration, disabled under `prefers-reduced-motion`.
+
+**QA:** lint passed · build passed with 36 static pages · prediction audit passed 24/24 via the local loader workaround after the normal `tsx` command hit the known named-pipe permission issue.
+
+---
+
 ### Mobile-first redesign
 
 True mobile-first experience across homepage, event list, and fight read. Desktop layout is completely preserved — no changes to any desktop rendering path, model math, prediction values, routes, or public record logic. All mobile layouts use `sm:hidden` / `hidden sm:block` dual-block pattern.

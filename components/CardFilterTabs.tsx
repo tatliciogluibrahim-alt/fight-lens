@@ -36,6 +36,22 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
     return fights.filter((fight) => fight.cardPlacement === activeTab);
   }, [activeTab, fights]);
 
+  if (fights.length === 0) {
+    return (
+      <section className="section-shell pb-10 md:pb-14">
+        <div className="rounded-2xl border border-line bg-surface/70 p-5 md:p-6">
+          <p className="mono-label">fight card pending</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
+            model calls unlock once fight data is available.
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
+            This event shell is live for navigation only. No fights, predictions, or public calls have been added yet.
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="section-shell pb-10 md:pb-14">
       <div className="mb-5 flex gap-2 overflow-x-auto rounded-full border border-line bg-surface/60 p-1">
