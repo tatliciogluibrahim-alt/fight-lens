@@ -48,19 +48,34 @@ function MobileMatchupHeader({
 }) {
   const calledA = vm.predictedWinner?.id === fighterA.id;
   const calledB = vm.predictedWinner?.id === fighterB.id;
+  // Neither fighter is highlighted — probabilities too close to name a winner.
+  const noLean = !calledA && !calledB;
 
   return (
     <div className="rounded-2xl border border-line bg-surface/70 p-5">
-      <p className={`text-xl font-semibold leading-tight tracking-tight ${calledA ? "text-accent" : "text-foreground"}`}>
+      <p
+        className={`text-xl font-semibold leading-tight tracking-tight ${
+          calledA ? "text-accent" : noLean ? "text-muted" : "text-foreground"
+        }`}
+      >
         {fighterA.name}
       </p>
       <p className="my-2.5 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/60">
         vs
       </p>
-      <p className={`text-xl font-semibold leading-tight tracking-tight ${calledB ? "text-accent" : "text-foreground"}`}>
+      <p
+        className={`text-xl font-semibold leading-tight tracking-tight ${
+          calledB ? "text-accent" : noLean ? "text-muted" : "text-foreground"
+        }`}
+      >
         {fighterB.name}
       </p>
-      <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle">
+      {noLean && (
+        <p className="mt-2 font-mono text-[9px] uppercase tracking-widest text-subtle/70">
+          too close to call
+        </p>
+      )}
+      <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle ${noLean ? "mt-1" : "mt-3"}`}>
         {(fight.weightClass ?? "weight pending").toLowerCase()}
         {" · "}{fight.rounds}R
         {" · "}{fight.cardPlacement.toLowerCase()}
@@ -75,7 +90,7 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
   // Pending state — no call data yet
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
-      <div className="rounded-2xl border border-line bg-surface/70 p-5">
+      <div id="section-call" className="scroll-mt-16 rounded-2xl border border-line bg-surface/70 p-5">
         <p className="mono-label">model call</p>
         <p className="mt-3 text-sm leading-6 text-muted">
           Model calls unlock once fighter data is available.
@@ -89,7 +104,7 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
   const livePathProbability = vm.loserProbability;
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
+    <div id="section-call" className="scroll-mt-16 overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
       {/* Top edge accent rail — broadcast feel */}
       <span
         aria-hidden="true"
@@ -116,10 +131,10 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
 
         {!isNoLean && livePathName && livePathProbability != null ? (
           <div className="mt-5 rounded-xl border border-line bg-background/35 p-3">
-            <p className="mono-label">live path</p>
+            <p className="mono-label">counter path</p>
             <p className="mt-1 text-sm leading-snug text-muted">
               <span className="font-medium text-foreground">{livePathName}</span>
-              <span className="text-subtle"> still live if the fight shifts · </span>
+              <span className="text-subtle"> · what changes if the call flips · </span>
               <span className="data-text text-foreground">{livePathProbability}%</span>
             </p>
           </div>
@@ -249,7 +264,7 @@ function MobileShapeAccordion({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-line bg-surface/70">
+    <div id="section-shape" className="scroll-mt-16 overflow-hidden rounded-2xl border border-line bg-surface/70">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
