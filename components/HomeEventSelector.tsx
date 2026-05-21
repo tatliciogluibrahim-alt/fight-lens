@@ -27,25 +27,32 @@ export function HomeEventSelector({ events }: { events: HomeEventOption[] }) {
 
   return (
     <div className="rounded-2xl border border-line bg-surface/70 p-4 md:p-5">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3">
         <div>
           <p className="mono-label">event discovery</p>
           <h2 className="mt-2 text-2xl font-semibold tracking-[-0.035em] md:text-3xl">choose a card.</h2>
         </div>
-        <label className="block sm:w-[280px]">
-          <span className="mono-label mb-2 block">selected event</span>
-          <select
-            value={selected.id}
-            onChange={(event) => setSelectedId(event.target.value)}
-            className="tap-target w-full rounded-full border border-line bg-background/55 px-4 text-sm text-foreground outline-none transition focus:border-accent"
-          >
-            {events.map((event) => (
-              <option key={event.id} value={event.id} className="bg-background text-foreground">
+
+        {/* Pill toggle — scrollable on mobile, no wrapping */}
+        <div className="flex gap-1 overflow-x-auto rounded-full border border-line bg-surface/60 p-1">
+          {events.map((event) => {
+            const isActive = event.id === selected.id;
+            return (
+              <button
+                key={event.id}
+                type="button"
+                onClick={() => setSelectedId(event.id)}
+                className={`tap-target shrink-0 rounded-full px-4 text-sm transition ${
+                  isActive
+                    ? "bg-surface-2 text-foreground"
+                    : "text-muted hover:bg-surface-2/80 hover:text-foreground"
+                }`}
+              >
                 {event.optionLabel}
-              </option>
-            ))}
-          </select>
-        </label>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="mt-4 grid gap-4 rounded-2xl border border-line bg-background/35 p-4 md:grid-cols-[1fr_auto] md:items-end md:p-5">
