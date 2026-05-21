@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { SourcedEvent } from "@/lib/sourced-event";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
+import { findMainEventFight } from "@/lib/events/registry";
 
 interface EventHeroProps {
   event: SourcedEvent;
@@ -62,7 +63,7 @@ function eventStatusChip(event: SourcedEvent, lockedPredictions: PredictionRecor
 }
 
 export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
-  const mainFight = event.fights[0];
+  const mainFight = findMainEventFight(event);
   const mainFightLabel = eventMainEvent(event);
   const mainFightHasCall =
     mainFight != null &&

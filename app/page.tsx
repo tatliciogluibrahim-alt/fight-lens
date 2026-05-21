@@ -3,7 +3,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { HomeEventSelector, type HomeEventOption } from "@/components/HomeEventSelector";
 import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
-import { getAllEvents, getLatestEvent } from "@/lib/events/registry";
+import { getAllEvents, getLatestEvent, findMainEventFight } from "@/lib/events/registry";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
@@ -284,7 +284,7 @@ function CurrentCardModule({
 
 function selectorOption(event: SourcedEvent, predictions: PredictionRecord[], label: string, ctaLabel: string): HomeEventOption {
   const stats = eventStats(event, predictions);
-  const mainFight = event.fights[0];
+  const mainFight = findMainEventFight(event);
   return {
     id: event.event.id,
     optionLabel: eventShortName(event),
@@ -308,7 +308,7 @@ export default function Home() {
   const events = getAllEvents();
   const latestEvent = getLatestEvent();
   const latestStats = eventStats(latestEvent, predictions);
-  const mainFight = latestEvent.fights[0];
+  const mainFight = findMainEventFight(latestEvent);
   const mainFightPrediction = mainFight
     ? predictions.find((prediction) => prediction.fightId === mainFight.id) ?? null
     : null;

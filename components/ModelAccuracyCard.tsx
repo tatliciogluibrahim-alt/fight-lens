@@ -158,7 +158,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
             <p className="data-text text-5xl leading-none text-accent md:text-6xl">
               {metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}
             </p>
-            <p className="mono-label mt-2">call accuracy</p>
+            <p className="mono-label mt-2">named-call accuracy</p>
             <p className="mt-1 text-sm text-muted">
               {correctCount != null ? `${correctCount} correct of ${metrics.resolvedCount} scored fights.` : "Scored calls pending."}
             </p>

@@ -52,3 +52,34 @@ export function getAllFightParams(): { eventId: string; fightId: string }[] {
 export function getLatestEvent(): SourcedEvent {
   return orderedEvents[0];
 }
+
+// ─── Main event resolution ────────────────────────────────────────────────────
+
+function lastName(name: string): string {
+  return (name.split(" ").at(-1) ?? name).toLowerCase();
+}
+
+/**
+ * Resolves the actual main event fight from an event's fights array.
+ *
+ * Uses last-name matching against event.event.mainEvent when available.
+ * Falls back to fights[0] when mainEvent metadata is missing.
+ *
+ * Prevents the silent bug where fights[0] ≠ the labeled main event —
+ * e.g. when fights are sorted by card position rather than prominence.
+ */
+export function findMainEventFight(event: SourcedEvent): SourcedFight | undefined {
+  const { mainEvent } = event.event;
+  if (!mainEvent) return event.fights[0];
+
+  const targetA = lastName(mainEvent.fighterA);
+  const targetB = lastName(mainEvent.fighterB);
+
+  const match = event.fights.find((fight) => {
+    const fA = lastName(fight.fighters.fighterA.name);
+    const fB = lastName(fight.fighters.fighterB.name);
+    return (fA === targetA && fB === targetB) || (fA === targetB && fB === targetA);
+  });
+
+  return match ?? event.fights[0];
+}

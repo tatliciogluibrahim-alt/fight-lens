@@ -4,6 +4,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracyMetrics } from "@/lib/accuracy";
+import { computeAccuracyMetrics } from "@/lib/accuracy/calculator";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
@@ -158,6 +159,7 @@ export default function RecordPage() {
   // below in a separate, clearly labeled section.
   const lockedCalls = getLockedPredictions();
   const backtestReconstructions = getHistoricalBacktestReconstructions();
+  const backtestMetrics = computeAccuracyMetrics(backtestReconstructions);
   const byEvent = groupByEvent(lockedCalls);
 
   const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
@@ -293,7 +295,10 @@ export default function RecordPage() {
 
             <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
               <p className="text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-                full validation corpus: n=253 · 20 events · 66% winner accuracy
+                historical backtest corpus · n={backtestReconstructions.length} fights
+                {backtestMetrics.winnerAccuracy != null
+                  ? ` · ${backtestMetrics.winnerAccuracy}% named-call accuracy`
+                  : " · accuracy pending outcomes"}
               </p>
               <a
                 href="/methodology"
