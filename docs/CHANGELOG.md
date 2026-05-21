@@ -2,6 +2,72 @@
 
 ## May 2026
 
+### Design implementation — confidence band, round momentum, tale of the tape
+
+Three new visual components implemented from a Claude Design mockup. No model math, prediction values, locked predictions, backtest logic, or public record behavior changed. All data flows from existing `viewModel`, `fighter.roundModel`, and `fight.keyEdges`.
+
+**New components:**
+
+- `components/CallConfidenceBand.tsx` — Visual probability track replacing the plain text pick display in both mobile and desktop call cards. Shows predicted winner name + probability, a horizontal 0–100% track with gradient fill between model range bounds (derived from `readStrength`: strong ±5%, usable ±9%, thin ±13%), and a glowing vertical pin at the exact call. `noLean` state shows both fighters' probabilities side-by-side. Counter path card below the band.
+
+- `components/RoundMomentumFlow.tsx` — SVG round-by-round momentum chart. Uses `fighter.roundModel.roundScores` (per-round historical performance scores, 0–100) to project how probability shifts across rounds if the fight plays out as the model expects. Algorithm: `rawA = baseA × sigA, rawB = baseB × sigB`, normalize. Smooth bezier curves, area fills, per-checkpoint dots, end-value labels, and a round key grid below. Shows pending state when both fighters lack `hasEnoughForTrend`. Labeled "Projected from historical round data — not per-round predictions."
+
+- `components/TaleOfTape.tsx` — Center-meeting dual-bar metrics comparison. Three-column layout: A value + bar grows left from center, center metric label, bar grows right + B value. Winning side on each metric gets accent bar + full foreground weight. Values ≥ 2 formatted as %, values < 2 as decimal. Only renders rows from `fight.keyEdges` where both fighters have sourced data.
+
+**Integration:**
+- `TheCall.tsx`: `CallConfidenceBand` added as first element of `module-body`, wrapped in accent-bordered gradient card with top edge rail
+- `MobileFightRead.tsx`: `MobileCallCard` now uses `CallConfidenceBand`; `RoundMomentumFlow` added after scenarios; `TaleOfTape` added before shape accordion
+- `app/events/[eventId]/[fightId]/page.tsx`: desktop call tab wraps `TheCall` + `RoundMomentumFlow`; shape tab wraps `TaleOfTape` + `StyleComparisonBars`
+
+**QA:** lint 0 warnings · build 36/36 pages · audit 24/24 ✓
+
+---
+
+### Accuracy trust fixes + main event link reliability
+
+No model math, prediction values, or backtest logic changed.
+
+**findMainEventFight — silent link bug fix:**
+- Added `findMainEventFight(event)` to `lib/events/registry.ts` with `lastName()` helper. Uses case-insensitive last-name matching against `event.event.mainEvent` (handles reversed fighter order). Falls back to `fights[0]` only when metadata is missing.
+- Applied in: `EventHero.tsx` (CTA href), `app/page.tsx` `selectorOption()` and `Home()`. Fixes the case where "View main event read" linked to `fights[0]` when the labeled main event was a different fight.
+
+**named-call accuracy label:**
+- `components/ModelAccuracyCard.tsx`: hero stat label changed from `"call accuracy"` → `"named-call accuracy"`. Clarifies that "Too close to call" fights are excluded from the denominator. Labeling fix only.
+
+**Computed backtest accuracy footer:**
+- `app/record/page.tsx`: historical validation footer replaced hardcoded `"66% winner accuracy"` with value computed from `computeAccuracyMetrics(backtestReconstructions)`. Label changed from "full validation corpus" → "historical backtest corpus". Falls back to "accuracy pending outcomes" when no outcomes are resolved. Prevents the false visual confirmation created by the hardcoded number coincidentally matching the public record accuracy.
+- Added `import { computeAccuracyMetrics } from "@/lib/accuracy/calculator"` to `record/page.tsx`.
+
+**QA:** lint 0 warnings · build 36/36 pages · audit 24/24 ✓
+
+---
+
+### Mobile-first redesign + red team fixes
+
+No model math, prediction values, locked predictions, backtest logic, or public record behavior changed.
+
+**MobileFightRead — new mobile fight page:**
+- New `components/MobileFightRead.tsx` renders the complete fight read on mobile (`sm:hidden`). Flow: matchup header → result banner (if scored) → model call → method lean → why/flip scenarios → contextual notes → shape accordion (collapsed by default) → model record proof.
+- Large touch targets, no dense grids, no desktop sections squeezed into mobile.
+- Hash anchors: `id="section-call"` and `id="section-shape"` with `scroll-mt-16` for deep links.
+- Desktop layout completely unchanged — dual layout via `sm:hidden` / `hidden sm:block`.
+
+**HomeEventSelector — pill toggle (replaces native select):**
+- `components/HomeEventSelector.tsx`: removed `<label>` and `<select>`. Replaced with scrollable pill group (`overflow-x-auto`) matching the AppHeader nav pill aesthetic. Active pill uses `bg-surface-2`. Layout changed from two-column row to single-column (heading above, pills below).
+
+**ContextualNotes — neutral color system:**
+- Removed `toneFor()` function that returned success/wrong/neutral palette per `impactDirection`.
+- All chips use uniform neutral styling (`CHIP` constant). Chip order swapped: confidence first (more meaningful), direction second (qualifier). Success/wrong palette reserved exclusively for scored outcomes.
+
+**MobileCallCard visual fixes:**
+- noLean state: both fighter names → `text-muted`, "too close to call" micro-label inserted, metadata `mt` reduced.
+- Live path label: "counter path" (was "live path"). Copy: "what changes if the call flips" (was "if the fight shifts").
+- Pending state suppressed on mobile — `MobileCallCard` pending → `id="section-call"` on a neutral border card (not accent).
+
+**QA:** lint 0 warnings · build 36/36 pages · audit 24/24 ✓
+
+---
+
 ### Product-level front-end sequencing overhaul
 
 Focused UX implementation pass inspired by premium data-storytelling patterns. No model math, prediction values, locked predictions, fight data, scoring logic, backtest logic, ingestion, or generated backtest artifacts changed.
