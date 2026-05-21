@@ -31,7 +31,7 @@ function eventStatusChip(event: SourcedEvent, lockedPredictions: PredictionRecor
     return (
       <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
         <span className="size-1.5 rounded-full bg-subtle/60" />
-        card building · event details live
+        forecast pending
       </span>
     );
   }
@@ -91,7 +91,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
           </div>
           <div className="border-t border-line/60 bg-background/25 px-4 py-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-              {event.fights.length > 0 ? "main event · tap a fight below to read the model call" : "forecast opens when fight data is ready"}
+              {event.fights.length > 0 ? "main event · tap a fight below to read the model call" : "model calls unlock once fight data is available"}
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
           <p className="mt-5 text-sm text-subtle">
             {event.fights.length > 0
               ? "Choose a fight below — each read starts with the model call."
-              : "Fight rows and model calls will appear once the card is available."}
+              : "Fight card pending. Model calls unlock once fight data is available."}
           </p>
         </div>
       </div>

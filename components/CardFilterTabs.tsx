@@ -40,12 +40,12 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
     return (
       <section className="section-shell pb-10 md:pb-14">
         <div className="rounded-2xl border border-line bg-surface/70 p-5 md:p-6">
-          <p className="mono-label">card building</p>
+          <p className="mono-label">fight card pending</p>
           <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
-            forecast opens when fight data is ready.
+            fight card pending.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Event details are live. Fight rows and model calls will appear once the card is available.
+            Model calls unlock once fight data is available.
           </p>
         </div>
       </section>

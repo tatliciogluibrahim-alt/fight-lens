@@ -123,7 +123,7 @@ function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
 
 // ─── Main component ───────────────────────────────────────────────────────────
 //
-// "call detail." is the SUPPORTING section. The FightReadSnapshot above the
+// "why the model leans this way." is the SUPPORTING section. The FightReadSnapshot above the
 // fold is the primary call display. This section explains why the model leans
 // the way it does and what could flip it — it does not repeat the big
 // winner/probability card.
@@ -138,7 +138,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
         <div className="module-header">
           <p className="mono-label">the call</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-            call detail.
+            why the model leans this way.
           </h2>
         </div>
         <div className="module-body">
@@ -164,10 +164,10 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
       <div className="module-header">
         <p className="mono-label">the call</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-          call detail.
+          why the model leans this way.
         </h2>
         <p className="mt-3 text-sm text-muted">
-          Why the model leans this way, and what could flip it.
+          Method, live path, and what could flip the read.
         </p>
       </div>
 

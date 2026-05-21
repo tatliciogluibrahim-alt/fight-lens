@@ -193,17 +193,17 @@ function swingBody(row: AxisRow, underdog: string): string {
     case "strike defense":
       return `${lead}'s defensive read could neutralize the call if exchanges stay clean.`;
     case "wrestling":
-      return `${lead}'s ability to force grappling could reshape the matchup.`;
+      return `${lead}'s grappling could become a possible swing area if it actually shows up.`;
     case "td defense":
       return `${lead}'s denial work could keep the fight where they want it.`;
     case "control":
-      return `${lead}'s grappling pressure could turn the read if exchanges drift to the mat.`;
+      return `${lead}'s control game is a possible swing area if exchanges drift to the mat.`;
     case "submission":
-      return `${lead}'s finishing danger could break the call if a grappling sequence opens.`;
+      return `${lead}'s finishing danger is a small stylistic opening if a grappling sequence opens.`;
     case "cardio":
       return `${lead}'s late-round shape could decide it if the fight goes long.`;
     case "opposition":
-      return `${lead}'s tested resume reads as the harder one. Worth weighing into the call.`;
+      return `${lead}'s tested resume reads as the harder one. Keep it in context after the call.`;
     default:
       return `${lead} carries the ${row.shortLabel.toLowerCase()} edge — worth watching.`;
   }
@@ -211,7 +211,7 @@ function swingBody(row: AxisRow, underdog: string): string {
 
 function watchingBody(row: AxisRow, leader: string): string {
   const lead = lastName(leader);
-  return `${lead} carries the ${row.shortLabel.toLowerCase()} edge here — the next clearest separator after the biggest.`;
+  return `${lead} shows the relative ${row.shortLabel.toLowerCase()} edge here — useful context, not a strong weapon by itself.`;
 }
 
 // Used when the biggest-edge leader score is below the display floor —

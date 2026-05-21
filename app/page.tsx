@@ -104,7 +104,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
         ? `${eventPredictions.length} calls logged`
         : event.fights.length > 0
           ? `${event.fights.length} bouts · model calls not published yet`
-          : "event details live";
+          : "fight card pending";
 
   return {
     predictions: eventPredictions,
@@ -120,7 +120,7 @@ function StatusPill({ stats }: { stats: EventStats }) {
     return (
       <span className="status-pill">
         <span className="dot" />
-        card building
+        forecast pending
       </span>
     );
   }
@@ -145,7 +145,7 @@ function StatusPill({ stats }: { stats: EventStats }) {
 function MainEventLine({ event, fight }: { event: SourcedEvent; fight?: SourcedFight }) {
   const mainEvent = eventMainEvent(event, fight);
   if (!mainEvent) {
-    return <p className="mt-3 text-sm leading-6 text-muted">Forecast opens when fight data is ready.</p>;
+    return <p className="mt-3 text-sm leading-6 text-muted">Model calls unlock once fight data is available.</p>;
   }
 
   return (
@@ -167,12 +167,118 @@ function AccuracyBar({ value }: { value: number | null }) {
   );
 }
 
-function ProofStat({ value, label }: { value: string | number; label: string }) {
+function RecordProofStrip({
+  totalCalls,
+  resolvedCount,
+  correctCount,
+  winnerAccuracy,
+}: {
+  totalCalls: number;
+  resolvedCount: number;
+  correctCount: number | null;
+  winnerAccuracy: number | null;
+}) {
   return (
-    <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
-      <p className="data-text text-xl leading-none text-foreground md:text-2xl">{value}</p>
-      <p className="mono-label mt-1">{label}</p>
-    </div>
+    <section className="section-shell py-4 md:py-6">
+      <div className="rounded-2xl border border-line bg-surface/70 p-3 md:p-4">
+        <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:grid-cols-[auto_auto_auto_1fr_auto] sm:gap-4">
+          <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
+            <p className="data-text text-2xl leading-none text-accent">{winnerAccuracy != null ? String(winnerAccuracy) + "%" : "—"}</p>
+            <p className="mono-label mt-1">accuracy</p>
+          </div>
+          <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
+            <p className="data-text text-2xl leading-none text-foreground">{resolvedCount}</p>
+            <p className="mono-label mt-1">scored</p>
+          </div>
+          <div className="hidden rounded-xl border border-line bg-background/35 px-3 py-2 sm:block">
+            <p className="data-text text-2xl leading-none text-foreground">{correctCount ?? "—"}</p>
+            <p className="mono-label mt-1">correct</p>
+          </div>
+          <div className="hidden min-w-0 sm:block">
+            <p className="mono-label">public model record</p>
+            <p className="mt-1 text-xs leading-5 text-muted">{totalCalls} logged calls. Historical validation stays separate.</p>
+            <div className="mt-2">
+              <AccuracyBar value={winnerAccuracy} />
+            </div>
+          </div>
+          <Link
+            href="/record"
+            className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm text-foreground transition hover:border-accent/40"
+          >
+            Record
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CurrentCardModule({
+  event,
+  stats,
+  mainFight,
+  viewModel,
+}: {
+  event: SourcedEvent;
+  stats: EventStats;
+  mainFight?: SourcedFight;
+  viewModel: ReturnType<typeof buildPredictionViewModelBundle>["viewModel"] | null;
+}) {
+  return (
+    <section className="section-shell py-4 md:py-8">
+      <div className="relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5 md:p-7">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="mono-label accent-rail">current card</p>
+          <StatusPill stats={stats} />
+        </div>
+
+        <div className="mt-5 grid gap-5 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div>
+            <h2 className="text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-5xl">
+              {event.event.name}
+            </h2>
+            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
+              <span>{event.event.date ?? "date TBA"}</span>
+              <span>{eventLocation(event)}</span>
+              {eventBroadcastLine(event) ? <span>{eventBroadcastLine(event)}</span> : null}
+            </div>
+            {eventVenue(event) ? <p className="mt-2 text-sm text-subtle">{eventVenue(event)}</p> : null}
+          </div>
+          <Link
+            href={"/events/" + event.event.id}
+            className="tap-target inline-flex w-full items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110 sm:w-auto"
+          >
+            Open card
+          </Link>
+        </div>
+
+        <div className="mt-5 grid gap-4 border-t border-line/60 pt-5 md:grid-cols-[1fr_auto]">
+          <div>
+            <p className="mono-label">main event</p>
+            <MainEventLine event={event} fight={mainFight} />
+            {featuredBout(event) ? (
+              <p className="mt-2 text-sm text-muted"><span className="text-subtle">also listed · </span>{featuredBout(event)}</p>
+            ) : null}
+          </div>
+          {viewModel?.isNamedCall ? (
+            <div className="rounded-2xl border border-line bg-background/35 p-4 md:min-w-[240px]">
+              <p className="mono-label">model call</p>
+              <p className="mt-2 text-xl font-semibold tracking-tight text-accent">
+                {viewModel.predictedWinner?.name}
+              </p>
+              {viewModel.winnerProbability != null ? (
+                <p className="data-text mt-1 text-2xl text-foreground">{viewModel.winnerProbability}%</p>
+              ) : null}
+            </div>
+          ) : (
+            <div className="rounded-2xl border border-line bg-background/35 p-4 md:min-w-[240px]">
+              <p className="mono-label">model status</p>
+              <p className="mt-2 text-sm leading-6 text-muted">Model calls unlock once fight data is available.</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -183,7 +289,7 @@ function selectorOption(event: SourcedEvent, predictions: PredictionRecord[], la
     id: event.event.id,
     optionLabel: eventShortName(event),
     title: event.event.name,
-    statusLabel: stats.status === "cardBuilding" ? "Card building" : stats.status === "forecastLive" ? "Forecast live" : stats.status === "pendingOutcomes" ? "Pending outcomes" : "Completed",
+    statusLabel: stats.status === "cardBuilding" ? "Forecast pending" : stats.status === "forecastLive" ? "Forecast live" : stats.status === "pendingOutcomes" ? "Pending outcomes" : "Completed",
     statusDetail: label === "Past scored" ? stats.countLabel : stats.countLabel,
     date: event.event.date ?? "date TBA",
     location: eventLocation(event),
@@ -256,84 +362,51 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="hidden sm:block section-shell pt-10 pb-8 md:pt-16 md:pb-12">
-          <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
-            <div className="fl-animate-fade-up">
-              <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
-              <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.4rem]">
-                predictive analysis.
-                <span className="block text-accent">every call tracked.</span>
-              </h1>
-              <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-                Fight Lens models UFC matchups before each card, logs every public call,
-                and scores every result after the fight.
-              </p>
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href={`/events/${latestEvent.event.id}`}
-                  className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
-                >
-                  Open {eventShortName(latestEvent)}
-                </Link>
-                <Link
-                  href="/record"
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
-                >
-                  View Model Record
-                </Link>
-              </div>
-            </div>
-
-            <div className="fl-animate-fade-up fl-delay-200 relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5 md:p-7">
-              <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-accent/40" />
-              <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-accent/40" />
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <p className="mono-label">next card</p>
-                <StatusPill stats={latestStats} />
-              </div>
-
-              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-4xl">
-                {latestEvent.event.name}
-              </h2>
-              <p className="data-text mt-2 text-xs uppercase tracking-[0.16em] text-subtle">
-                {latestEvent.event.date ?? "date TBA"} · {eventLocation(latestEvent)}
-              </p>
-              {eventVenue(latestEvent) ? <p className="mt-2 text-sm text-subtle">{eventVenue(latestEvent)}</p> : null}
-              {eventBroadcastLine(latestEvent) ? <p className="mt-1 text-xs text-subtle">{eventBroadcastLine(latestEvent)}</p> : null}
-
-              <div className="mt-6 border-t border-line/60 pt-5">
-                <p className="mono-label">main event</p>
-                <MainEventLine event={latestEvent} fight={mainFight} />
-                {featuredBout(latestEvent) ? (
-                  <p className="mt-2 text-sm text-muted"><span className="text-subtle">also listed · </span>{featuredBout(latestEvent)}</p>
-                ) : null}
-                {mainVM?.isNamedCall ? (
-                  <div className="mt-4 border-l border-accent/40 pl-4">
-                    <p className="mono-label">model call</p>
-                    <p className="mt-1 text-xl font-semibold tracking-tight text-accent md:text-2xl">
-                      {mainVM.predictedWinner?.name}
-                      {mainVM.winnerProbability != null && (
-                        <span className="data-text ml-2 text-foreground">{mainVM.winnerProbability}%</span>
-                      )}
-                    </p>
-                  </div>
-                ) : (
-                  <p className="mt-4 text-sm leading-6 text-muted">
-                    Forecast opens when fight data is ready.
-                  </p>
-                )}
-              </div>
-
-              <div className="mt-5">
-                <Link
-                  href={`/events/${latestEvent.event.id}`}
-                  className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
-                >
-                  Open card
-                </Link>
-              </div>
+        <section className="hidden sm:block section-shell pt-10 pb-6 md:pt-16 md:pb-8">
+          <div className="fl-animate-fade-up max-w-4xl">
+            <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
+            <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.4rem]">
+              predictive analysis.
+              <span className="block text-accent">every call tracked.</span>
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+              Fight Lens models UFC matchups before each card, logs every public call,
+              and scores every result after the fight.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href={"/events/" + latestEvent.event.id}
+                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
+              >
+                Open {eventShortName(latestEvent)}
+              </Link>
+              <Link
+                href="/record"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
+              >
+                View Model Record
+              </Link>
             </div>
           </div>
+        </section>
+
+
+        <CurrentCardModule
+          event={latestEvent}
+          stats={latestStats}
+          mainFight={mainFight}
+          viewModel={mainVM}
+        />
+
+        <RecordProofStrip
+          totalCalls={predictions.length}
+          resolvedCount={accuracyMetrics.resolvedCount}
+          correctCount={correctCount}
+          winnerAccuracy={accuracyMetrics.winnerAccuracy}
+        />
+
+        <section className="section-shell py-6 md:py-10">
+          <HomeEventSelector events={discoveryOptions} />
         </section>
 
         <section className="hidden sm:block section-shell pb-8 md:pb-12">
@@ -354,55 +427,6 @@ export default function Home() {
                 <p className="mt-2 text-sm leading-6 text-muted">{step.body}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        <section className="section-shell py-6 md:py-10">
-          <HomeEventSelector events={discoveryOptions} />
-        </section>
-
-        <section className="section-shell py-6 md:py-8">
-          <div className="rounded-2xl border border-line bg-surface/70 p-4 md:p-5">
-            <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-center">
-              <div>
-                <p className="mono-label">public model record</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-[-0.035em] md:text-3xl">logged calls only.</h2>
-                <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">
-                  The public record is pre-fight calls only. Historical validation and backtests stay separate.
-                </p>
-              </div>
-              <div className="hidden grid-cols-2 gap-2 sm:grid sm:grid-cols-4 lg:w-[520px]">
-                <ProofStat value={predictions.length} label="Calls" />
-                <ProofStat value={accuracyMetrics.resolvedCount} label="Scored" />
-                <ProofStat value={correctCount ?? "—"} label="Correct" />
-                <ProofStat value={accuracyMetrics.winnerAccuracy != null ? `${accuracyMetrics.winnerAccuracy}%` : "—"} label="Accuracy" />
-              </div>
-              <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:hidden">
-                <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
-                  <p className="data-text text-2xl leading-none text-foreground">{accuracyMetrics.winnerAccuracy}%</p>
-                  <p className="mono-label mt-1">accuracy</p>
-                </div>
-                <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
-                  <p className="data-text text-2xl leading-none text-foreground">{accuracyMetrics.resolvedCount}</p>
-                  <p className="mono-label mt-1">scored</p>
-                </div>
-                <Link
-                  href="/record"
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm text-foreground transition hover:border-accent/40"
-                >
-                  Record
-                </Link>
-              </div>
-            </div>
-            <div className="mt-4 hidden gap-3 sm:grid sm:grid-cols-[1fr_auto] sm:items-center">
-              <AccuracyBar value={accuracyMetrics.winnerAccuracy} />
-              <Link
-                href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-5 text-sm text-foreground transition hover:border-accent/40"
-              >
-                View Model Record
-              </Link>
-            </div>
           </div>
         </section>
       </main>

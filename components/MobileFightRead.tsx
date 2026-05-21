@@ -71,32 +71,22 @@ function MobileMatchupHeader({
 
 // ─── 2. Model call card ───────────────────────────────────────────────────────
 
-function MobileCallCard({
-  vm,
-  fighterA,
-  fighterB,
-}: {
-  vm: PredictionViewModel;
-  fighterA: SourcedFighter;
-  fighterB: SourcedFighter;
-}) {
+function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
   // Pending state — no call data yet
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
       <div className="rounded-2xl border border-line bg-surface/70 p-5">
         <p className="mono-label">model call</p>
         <p className="mt-3 text-sm leading-6 text-muted">
-          Forecast loads once fighter stats are sourced.
+          Model calls unlock once fighter data is available.
         </p>
       </div>
     );
   }
 
   const isNoLean = vm.callState === "noLean";
-  const probA = vm.fighterA.winProbability ?? 0;
-  const probB = vm.fighterB.winProbability ?? 0;
-  const calledA = vm.predictedWinner?.id === fighterA.id;
-  const calledB = vm.predictedWinner?.id === fighterB.id;
+  const livePathName = vm.livePathFighter?.name;
+  const livePathProbability = vm.loserProbability;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
@@ -124,37 +114,21 @@ function MobileCallCard({
           </p>
         )}
 
-        {/* Probability split bar — only when a named call exists */}
-        {!isNoLean && (
-          <div className="mt-5 space-y-2">
-            {/* Last-name labels above bar */}
-            <div className="flex items-center justify-between text-[11px]">
-              <span className={calledA ? "font-semibold text-foreground" : "text-muted"}>
-                {fighterA.name.split(" ").pop()}
-              </span>
-              <span className={calledB ? "font-semibold text-foreground" : "text-muted"}>
-                {fighterB.name.split(" ").pop()}
-              </span>
-            </div>
-            {/* Bar track */}
-            <div className="relative h-1.5 overflow-hidden rounded-full bg-surface-2">
-              <div
-                className="absolute left-0 h-full rounded-full bg-accent/65 transition-all"
-                style={{ width: `${probA}%` }}
-              />
-            </div>
-            {/* Probability numbers below bar */}
-            <div className="flex items-center justify-between">
-              <span className={`data-text text-[11px] tabular-nums ${calledA ? "text-foreground" : "text-muted"}`}>
-                {probA}%
-              </span>
-              <span className={`data-text text-[11px] tabular-nums ${calledB ? "text-foreground" : "text-muted"}`}>
-                {probB}%
-              </span>
-            </div>
+        {!isNoLean && livePathName && livePathProbability != null ? (
+          <div className="mt-5 rounded-xl border border-line bg-background/35 p-3">
+            <p className="mono-label">live path</p>
+            <p className="mt-1 text-sm leading-snug text-muted">
+              <span className="font-medium text-foreground">{livePathName}</span>
+              <span className="text-subtle"> still live if the fight shifts · </span>
+              <span className="data-text text-foreground">{livePathProbability}%</span>
+            </p>
           </div>
-        )}
-
+        ) : isNoLean ? (
+          <div className="mt-5 rounded-xl border border-line bg-background/35 p-3">
+            <p className="mono-label">call state</p>
+            <p className="mt-1 text-sm leading-snug text-muted">No fighter is highlighted. Both routes stay live.</p>
+          </div>
+        ) : null}
         <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/70">
           {vm.publicPredictionSource}
         </p>
@@ -376,7 +350,7 @@ export function MobileFightRead({
       )}
 
       {/* 2 · Model call */}
-      <MobileCallCard vm={vm} fighterA={fighterA} fighterB={fighterB} />
+      <MobileCallCard vm={vm} />
 
       {/* 3 · Method lean */}
       {hasPred && <MobileMethodLean vm={vm} />}

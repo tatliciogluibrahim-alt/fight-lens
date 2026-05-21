@@ -81,7 +81,7 @@ function FormMetricCard({ fighter, metric }: { fighter: SourcedFighter; metric: 
   );
 }
 
-function FighterFormCard({ fighter, metric }: { fighter: SourcedFighter; metric: FighterMetricScore }) {
+function FighterFormCard({ fighter, metric, showMetric = true }: { fighter: SourcedFighter; metric: FighterMetricScore; showMetric?: boolean }) {
   const rows = buildTrendFights(fighter);
   const hasSourced = rows.length > 0;
 
@@ -129,17 +129,19 @@ function FighterFormCard({ fighter, metric }: { fighter: SourcedFighter; metric:
         </p>
       )}
 
-      <div className="mt-4">
-        {fighter.fightHistory.length ? (
-          <FormMetricCard fighter={fighter} metric={metric} />
-        ) : (
-          <ModuleEmptyState
-            label="resume heat"
-            title="Resume context pending."
-            body="Opponent-tier context is not modeled yet, so Fight Lens is holding this score back."
-          />
-        )}
-      </div>
+      {showMetric ? (
+        <div className="mt-4">
+          {fighter.fightHistory.length ? (
+            <FormMetricCard fighter={fighter} metric={metric} />
+          ) : (
+            <ModuleEmptyState
+              label="resume heat"
+              title="Resume context pending."
+              body="Opponent-tier context is not modeled yet, so Fight Lens is holding this score back."
+            />
+          )}
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -147,6 +149,9 @@ function FighterFormCard({ fighter, metric }: { fighter: SourcedFighter; metric:
 export function FormResumeModule({ fighterA, fighterB, modelOutput }: FormResumeModuleProps) {
   const formA = modelOutput.metrics.opponentQualityAdjustedForm.fighterA;
   const formB = modelOutput.metrics.opponentQualityAdjustedForm.fighterB;
+  const bothAdjustedFormPending =
+    (formA.status === "insufficient" || formA.score == null) &&
+    (formB.status === "insufficient" || formB.score == null);
 
   return (
     <section id="section-form-resume" className="module-card scroll-mt-28">
@@ -159,9 +164,19 @@ export function FormResumeModule({ fighterA, fighterB, modelOutput }: FormResume
           Last-five results, with opponent quality kept in context.
         </p>
       </div>
-      <div className="module-body grid gap-4 lg:grid-cols-2">
-        <FighterFormCard fighter={fighterA} metric={formA} />
-        <FighterFormCard fighter={fighterB} metric={formB} />
+      <div className="module-body space-y-4">
+        {bothAdjustedFormPending ? (
+          <div className="rounded-2xl border border-line bg-background/35 p-4">
+            <p className="mono-label">adjusted form</p>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              Adjusted form unlocks once enough recent sourced fights are available.
+            </p>
+          </div>
+        ) : null}
+        <div className="grid gap-4 lg:grid-cols-2">
+          <FighterFormCard fighter={fighterA} metric={formA} showMetric={!bothAdjustedFormPending} />
+          <FighterFormCard fighter={fighterB} metric={formB} showMetric={!bothAdjustedFormPending} />
+        </div>
       </div>
     </section>
   );

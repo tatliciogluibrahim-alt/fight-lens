@@ -51,7 +51,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
         ? `${eventPredictions.length} calls logged`
         : event.fights.length > 0
           ? `${event.fights.length} bouts · model calls not published yet`
-          : "event details live";
+          : "fight card pending";
 
   return { eventPredictions, resolved, correct, status, countLabel };
 }
@@ -61,7 +61,7 @@ function StatusPill({ stats }: { stats: EventStats }) {
     return (
       <span className="status-pill">
         <span className="dot" />
-        card building
+        forecast pending
       </span>
     );
   }
@@ -125,7 +125,38 @@ function EventCard({
         priority ? "border-accent/30 bg-surface" : "border-line bg-surface/70"
       }`}
     >
-      <div className="p-5 md:p-6">
+      <div className="sm:hidden p-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <p className={`mono-label ${priority ? "text-accent" : ""}`}>{label}</p>
+          <StatusPill stats={stats} />
+        </div>
+
+        <h2 className="mt-3 text-xl font-semibold leading-tight tracking-[-0.035em] text-foreground">
+          {event.event.name}
+        </h2>
+
+        <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted">
+          <span>{event.event.date ?? "date TBA"}</span>
+          <span>{eventLocation(event)}</span>
+        </div>
+
+        <div className="mt-4 border-t border-line/60 pt-3">
+          <p className="mono-label">main event</p>
+          <p className="mt-1.5 text-sm font-semibold leading-tight tracking-tight text-foreground">
+            {mainEvent ?? "Model calls unlock once fight data is available."}
+          </p>
+          <p className="mt-1.5 text-xs text-subtle">{stats.countLabel}</p>
+        </div>
+
+        <Link
+          href={"/events/" + event.event.id}
+          className="tap-target mt-4 inline-flex w-full items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+        >
+          Open card
+        </Link>
+      </div>
+
+      <div className="hidden sm:block p-5 md:p-6">
         <div className="flex flex-wrap items-center gap-3">
           <p className={`mono-label ${priority ? "text-accent" : ""}`}>{label}</p>
           <StatusPill stats={stats} />
@@ -161,7 +192,7 @@ function EventCard({
             </>
           ) : (
             <p className="mt-2 text-sm leading-6 text-muted">
-              Forecast opens when fight data is ready.
+              Model calls unlock once fight data is available.
             </p>
           )}
         </div>
@@ -185,7 +216,7 @@ function EventCard({
       </div>
 
       {stats.resolved.length > 0 && (
-        <div className="border-t border-line bg-background/35 px-5 py-3 text-xs text-muted md:px-6">
+        <div className="hidden border-t border-line bg-background/35 px-5 py-3 text-xs text-muted sm:block md:px-6">
           {stats.resolved.length} scored · {stats.correct.length}/{stats.resolved.length} model calls correct
         </div>
       )}

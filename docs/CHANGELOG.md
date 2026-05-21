@@ -2,6 +2,23 @@
 
 ## May 2026
 
+### Product-level front-end sequencing overhaul
+
+Focused UX implementation pass inspired by premium data-storytelling patterns. No model math, prediction values, locked predictions, fight data, scoring logic, backtest logic, ingestion, or generated backtest artifacts changed.
+
+- Re-sequenced the homepage into a guided path: product hero, current-card module, compact public-record strip, compact event selector, then the secondary how-to guide.
+- Tightened homepage event discovery so one selected event preview appears at a time. The selector remains the browse shortcut; `/events` remains the full event browser.
+- Added compact mobile event-card rendering on `/events`: event name, date/status, main event, model status, and one Open card CTA without desktop-style crowding.
+- Removed the remaining mobile left-origin probability rail from the fight call card. Mobile now leads with the model call and shows the live path as secondary context.
+- Renamed the supporting call section to "why the model leans this way" and kept method bars proportional with thin dot states.
+- Made the shape module feel more intentional by surfacing the plain-English shape takeaway below the radar and keeping the full axis breakdown collapsed.
+- Reduced double-pending form clutter: if both adjusted-form scores are unavailable, details now show one compact note instead of two large pending boxes.
+- Softened swing/shape copy so weak relative gaps read as possible swing areas or context, not strong weapons or confident flip paths.
+- UFC Freedom 250 remains an upcoming shell before UFC 329 with event-level details only; no fake fights, predictions, percentages, or public calls were added.
+
+**QA:** lint passed · build passed with 36 static pages · normal prediction audit hit the known local `tsx` named-pipe EPERM issue; the established loader workaround passed 24/24 with 0 failures. Static route output checked home, events, Freedom 250, UFC 329, two fight pages, and record.
+
+---
 ### Event discovery, Freedom 250, and context-note guardrails
 
 Focused mobile/product cleanup. No model math, prediction values, locked predictions, fight data stats, ingestion, backtest logic, generated backtest artifacts, or public record scoring changed.

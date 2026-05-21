@@ -280,7 +280,7 @@ export function StyleComparisonBars({
           Single central visual. Both fighters overlaid on one chart so shapes
           can be compared directly. Neither polygon color implies a winner.
         */}
-        <div className="relative overflow-hidden rounded-3xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
+        <div className="relative overflow-visible rounded-3xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
           {/* Corner registration marks */}
           <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-line-strong" />
           <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-line-strong" />
@@ -307,7 +307,7 @@ export function StyleComparisonBars({
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-[460px] md:max-w-[520px]">
+          <div className="mx-auto w-full max-w-[340px] sm:max-w-[460px] md:max-w-[520px]">
             <OverlayRadar
               profileA={fighterA.styleProfile}
               profileB={fighterB.styleProfile}
@@ -322,6 +322,13 @@ export function StyleComparisonBars({
           Biggest-edge, closest, and swing cards each add distinct information.
           Never identifies a winner forecast.
         */}
+        {narrative.headline ? (
+          <div className="rounded-2xl border border-line bg-background/35 p-4">
+            <p className="mono-label">what the shape says</p>
+            <p className="mt-2 text-sm leading-6 text-muted">{narrative.headline}</p>
+          </div>
+        ) : null}
+
         {narrative.cards.length > 0 ? (
           <div>
             <p className="mb-3 mono-label">shape insights</p>
