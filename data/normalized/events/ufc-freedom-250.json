@@ -4,10 +4,24 @@
   "event": {
     "id": "ufc-freedom-250",
     "ufcstatsId": "pending",
-    "name": "UFC Freedom 250",
-    "date": null,
-    "location": null,
+    "shortName": "UFC Freedom 250",
+    "name": "UFC Freedom 250: Topuria vs. Gaethje",
+    "date": "June 14, 2026",
+    "location": "Washington, DC",
+    "venue": "South Lawn of the White House",
+    "broadcast": "Paramount+",
+    "mainCardTime": "8:00 PM ET",
     "promotion": "UFC",
+    "mainEvent": {
+      "fighterA": "Ilia Topuria",
+      "fighterB": "Justin Gaethje"
+    },
+    "featuredBouts": [
+      {
+        "fighterA": "Alex Pereira",
+        "fighterB": "Ciryl Gane"
+      }
+    ],
     "source": {
       "provenance": "manual",
       "sourceName": "event-shell",
@@ -16,7 +30,7 @@
     }
   },
   "modeling": {
-    "principle": "Event shell only. Model calls unlock once fight data and locked predictions are available.",
+    "principle": "Event details live. Forecast opens when fight data and model inputs are available.",
     "formulas": {}
   },
   "fights": []

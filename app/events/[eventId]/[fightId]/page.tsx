@@ -16,6 +16,7 @@ import { getAccuracyMetrics, getPredictionByFightId } from "@/lib/accuracy";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registry";
 import { MobileFightRead } from "@/components/MobileFightRead";
+import { ContextualNotes } from "@/components/ContextualNotes";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
 interface MatchupPageProps {
@@ -272,6 +273,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                       fighterB={fighterB}
                       modelOutput={fightShapeModel}
                     />
+                    <ContextualNotes notes={fight.contextNotes} />
                     <PathsToVictory
                       fight={fight}
                       modelOutput={fightShapeModel}

@@ -71,22 +71,28 @@ function ResultChip({ viewModel }: { viewModel: PredictionViewModel }) {
 }
 
 function MethodBar({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
+  const thin = value < 8;
   return (
     <div className="flex items-center gap-3">
       <p className="w-24 mono-label shrink-0">{label}</p>
-      <div className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-surface-2">
-        <div
-          className={`absolute left-0 h-full rounded-full ${accent ? "bg-foreground/80" : "bg-muted/50"}`}
-          style={{ width: `${Math.max(value, 2)}%` }}
-        />
-      </div>
-      <p className="data-text w-10 text-right text-xs text-muted">
-        {value < 8 ? "thin" : `${value}%`}
+      {thin ? (
+        <div className="flex h-1.5 flex-1 items-center">
+          <span className="h-1.5 w-1.5 rounded-full bg-subtle/35" />
+        </div>
+      ) : (
+        <div className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2">
+          <div
+            className={`fl-bar-fill absolute left-0 h-full rounded-full ${accent ? "bg-accent/65" : "bg-muted/35"}`}
+            style={{ width: `${value}%` }}
+          />
+        </div>
+      )}
+      <p className={`data-text w-10 text-right text-xs ${accent ? "text-foreground" : "text-muted"}`}>
+        {thin ? "thin" : `${value}%`}
       </p>
     </div>
   );
 }
-
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 export function FightCard({ fight, eventId, predictionViewModel }: FightCardProps) {

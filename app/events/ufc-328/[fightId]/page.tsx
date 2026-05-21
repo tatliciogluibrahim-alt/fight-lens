@@ -10,6 +10,7 @@ import { FightReadSnapshot } from "@/components/FightReadSnapshot";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
+import { ContextualNotes } from "@/components/ContextualNotes";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { getPredictionByFightId } from "@/lib/accuracy";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
@@ -164,6 +165,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                     fighterB={fighterB}
                     modelOutput={fightShapeModel}
                   />
+                  <ContextualNotes notes={fight.contextNotes} />
                   <PathsToVictory
                     fight={fight}
                     modelOutput={fightShapeModel}

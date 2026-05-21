@@ -94,6 +94,18 @@ function passesDisplayThreshold(row: AxisRow): boolean {
   return true;
 }
 
+type AxisSignalTier = "clear" | "relative" | "thin" | "too-close";
+
+function classifyAxisSignal(row: AxisRow): AxisSignalTier {
+  const leaderScore = Math.max(row.scoreA, row.scoreB);
+  const trailerScore = Math.min(row.scoreA, row.scoreB);
+  if (row.absDelta < DISPLAY_DELTA_FLOOR) return "too-close";
+  if (leaderScore < DISPLAY_BOTH_FLOOR && trailerScore < DISPLAY_BOTH_FLOOR) return "thin";
+  if (leaderScore >= 62 && row.absDelta >= 15) return "clear";
+  if (leaderScore >= DISPLAY_LEADER_FLOOR && row.absDelta >= DISPLAY_DELTA_FLOOR) return "relative";
+  return "thin";
+}
+
 function lastName(name: string): string {
   return name.split(" ").pop() ?? name;
 }
@@ -206,7 +218,12 @@ function watchingBody(row: AxisRow, leader: string): string {
 // acknowledges the relative gap without implying a strong tactical signal.
 function biggestEdgeBodyWeak(row: AxisRow, leader: string): string {
   const lead = lastName(leader);
-  return `${lead} shows the relative ${row.shortLabel.toLowerCase()} edge here, though both fighters have limited absolute signal in this area — treat as soft context.`;
+  return `${lead} has the thin ${row.shortLabel.toLowerCase()} path here. The relative gap exists, but both profiles are limited there.`;
+}
+
+function biggestEdgeBodyRelative(row: AxisRow, leader: string): string {
+  const lead = lastName(leader);
+  return `${lead} has the relative ${row.shortLabel.toLowerCase()} edge, but it is context after the call, not a standalone forecast.`;
 }
 
 // ── Headline composer ────────────────────────────────────────────────────────
@@ -222,9 +239,11 @@ function buildHeadline(
     return "On shape, this matchup reads close — small edges across the board, no axis pulling decisively. Style-only read.";
   }
 
-  // When absolute signal across the board is thin, say so explicitly
-  if (overallWeak) {
-    return "The relative style gap exists, but absolute signal on both sides is limited. No reliable swing path surfaced from the shape map — treat as soft context only.";
+  const tier = classifyAxisSignal(biggest);
+
+  // When absolute signal across the board is thin, say so explicitly.
+  if (overallWeak || tier === "thin") {
+    return "The relative style gap exists, but absolute signal on both sides is limited. Treat this as a thin style path, not a second call.";
   }
 
   const lead = lastName(biggestLeader);
@@ -233,18 +252,18 @@ function buildHeadline(
     .filter((r) => r.key !== biggest.key)
     .filter((r) => Math.sign(r.delta) === Math.sign(biggest.delta) && r.absDelta >= 10);
 
-  if (biggest.absDelta >= 25) {
-    return `${lead}'s ${axis} is the cleanest style signal. Use it after the call to understand where the matchup tilts.`;
+  if (tier === "clear") {
+    return `${lead}'s ${axis} is the clearest style signal. Use it after the call to understand where the matchup tilts.`;
   }
 
-  if (biggest.absDelta >= 15) {
+  if (tier === "relative") {
     if (supporting.length >= 1) {
       return `${lead}'s clearest style edge is ${axis}. Shape explains where the matchup tilts after you read the call.`;
     }
-    return `${lead} shows the cleaner ${axis} shape. Other axes stay tighter, so treat it as context.`;
+    return `${lead} shows the relative ${axis} edge. Other axes stay tighter, so treat it as context.`;
   }
 
-  return `${lead} carries a modest ${axis} edge. The rest of the map stays tight. Read it as style context, not a call.`;
+  return `${lead} carries a thin ${axis} path. The rest of the map stays tight. Read it as style context, not a call.`;
 }
 
 // ── Main entry point ─────────────────────────────────────────────────────────
@@ -277,6 +296,7 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
   const closest = byAbsDeltaAsc[0];
 
   const biggestLeader = biggest.delta > 0 ? fighterAName : fighterBName;
+  const biggestTier = classifyAxisSignal(biggest);
 
   // Swing: the axis where the model-call underdog has their biggest edge.
   // Falls back to "worth watching" when:
@@ -340,9 +360,11 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
     title: "Biggest edge",
     axisLabel: biggest.label,
     // Use softened body copy when the leader's absolute score is below the floor
-    body: overallWeak
+    body: overallWeak || biggestTier === "thin" || biggestTier === "too-close"
       ? biggestEdgeBodyWeak(biggest, biggestLeader)
-      : biggestEdgeBody(biggest, biggestLeader),
+      : biggestTier === "relative"
+        ? biggestEdgeBodyRelative(biggest, biggestLeader)
+        : biggestEdgeBody(biggest, biggestLeader),
     leaderName: biggestLeader,
     delta: Math.round(biggest.absDelta),
     scoreA: biggest.scoreA,

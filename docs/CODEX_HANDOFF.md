@@ -38,7 +38,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 | Route | Notes |
 |---|---|
-| `/` | Homepage — compact next-card hero, event chooser, and Public Model Record proof strip. Pulls `buildPredictionViewModelBundle` only when the next card has fight data. |
+| `/` | Homepage — mobile product hero, compact selected-event chooser, and Public Model Record proof strip. Pulls `buildPredictionViewModelBundle` only when the selected/current card has fight data. |
 | `/events` | Events index — Next Card, Upcoming forecast cards, and Past Scored cards. Shell events render pending states without fake calls. |
 | `/events/[eventId]` | Event page — choose-a-fight flow via `EventHero` + `FightCard`; empty event shells show a pending card instead of filters. |
 | `/events/[eventId]/[fightId]` | Fight page — one scroll page: fighter hero → snapshot → model call → fight shape → details. Hash anchors `#section-call`, `#section-shape`, `#section-details` work for deep links. No tab switching required. |
@@ -80,7 +80,9 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `components/FightShapeSummary.tsx` | **Not currently rendered.** File exists but is not used in any fight page. Do not re-add without removing `StyleComparisonBars` — they would duplicate the "fight shape." title. |
 | `components/StyleComparisonBars.tsx` | **The single fight shape section.** Overlay radar → insight cards → collapsed axis breakdown. Does not accept `modelOutput` or `styleClashLabel` props. |
 | `components/FightPageTabs.tsx` | Section anchor wrapper only — no visible nav row. Assigns `id="section-{id}"` and `scroll-mt-24` to each section. |
-| `components/FightCard.tsx` | Event page matchup row — call, method lean, result chip. |
+| `components/FightCard.tsx` | Event page matchup row — call, proportional method lean bars, result chip. |
+| `components/ContextualNotes.tsx` | Optional manual context-note renderer. Renders only when `fight.contextNotes` exists; notes do not affect prediction math. |
+| `components/HomeEventSelector.tsx` | Homepage selected-event chooser. Shows one event preview at a time and links to `/events` for full browsing. |
 
 ### Data
 
@@ -89,7 +91,7 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | `data/events/` | Source event JSON files (one per UFC event). |
 | `data/predictions/` | Locked public prediction JSON files (read-only post-call). |
 | `data/generated/` | Generated normalized events and backtest outputs. |
-| `data/normalized/events/ufc-freedom-250.json` | Manual upcoming event shell only — no fights, predictions, or public calls yet. |
+| `data/normalized/events/ufc-freedom-250.json` | Manual upcoming event shell with event-level details for UFC Freedom 250: Topuria vs. Gaethje. No fights, fighter stats, predictions, or public calls yet. |
 
 ### Scripts
 
@@ -146,7 +148,7 @@ The `/record` page renders two visually distinct sections labeled "Public Model 
 
 ## Recent Visual / Copy Changes
 
-The recent passes below changed **zero** model math, locked predictions, backtest logic, or public record behavior.
+The recent passes below changed **zero** model math, prediction values, locked predictions, backtest logic, or public record behavior.
 
 1. **Early sticky tab experiment (superseded)** — fight-page tabs are no longer sticky/fixed; `FightPageTabs` is plain in-page anchor navigation.
 2. **Events index** — new `app/events/page.tsx` with current card feature treatment.
@@ -164,9 +166,10 @@ The recent passes below changed **zero** model math, locked predictions, backtes
 14. **Homepage/event discovery clarity** — homepage keeps one primary current-card action, `/events` labels the active card as forecast live, and `EventHero` now uses a single main-event read CTA so users move from card to fight read without early shape/call CTA clutter. Static build-output checks verified home, events, UFC 329, UFC 329 main-event fight read, UFC 328 Chimaev/Strickland, record, and methodology content.
 15. **Final pre-commit fight-page polish** — replaced internal live-path phrasing, simplified the shape tab into style edge → neutral fingerprint radar → three insight cards → collapsed axis breakdown, and tightened details copy to `recent form` without touching model/data/backtest files.
 16. **Color system — Midnight Signal palette** — replaced amber/gold accent (`#f59e0b`) with icy blue (`#8FD7F7`). All color changes are token-only in `app/globals.css`. All Tailwind utilities (`text-accent`, `bg-accent`, etc.) propagate automatically. No amber remains anywhere in the codebase.
-18. **Analysis hygiene pass** — narrative guardrails added to `lib/fight-shape-model/shape-narrative.ts`: swing/watching cards suppressed when leading absolute score < 45 or delta < 6; biggest-edge body copy softened when overall signal is weak; no model math changed. Method lean in `TheCall.tsx` now shows proportional fill bars (top method = accent, secondary = muted, thin = dot only). `PathsToVictory.tsx` suppresses duplicate "path analysis pending" cards when both fighters have no path data — replaced with one quiet line. Heading changed from "how the other side can win." to "non-call route." for named-call fights.
+18. **Analysis hygiene pass** — narrative guardrails added to `lib/fight-shape-model/shape-narrative.ts`: swing/watching cards suppressed when leading absolute score < 45 or delta < 6; biggest-edge body copy softened when overall signal is weak; no model math changed. Method lean in `TheCall.tsx` now shows proportional fill bars (top method = accent, secondary = muted, thin = dot only). `PathsToVictory.tsx` suppresses duplicate empty path cards when both fighters have no path data — empty path modules are omitted completely. Heading now uses "alternate path." for named-call fights.
 17. **Event discovery and mobile readability pass** — homepage hero has one dominant CTA only ("Open card", no "View main event read" competing); events page `EventCard` is a single-column card (no two-panel grid, no "View read →" inside card); `EventHero` is a single card (no two-column lg layout); `FightCard` mobile-first with fighters always side-by-side and "View read" button full-width on mobile; `FightReadSnapshot` fixed to `grid-cols-2` from all widths (not just sm+).
 19. **Homepage/event discovery + record compaction** — homepage Public Model Record is now a compact proof strip with 24/13/10/77% stats and a subtle accuracy bar; `/record` leads with 77% call accuracy and 10/13 scored calls while method read stays secondary; `/events` groups Next Card, Upcoming, and Past Scored; UFC Freedom 250 exists as an event shell before UFC 329 with pending copy only and no fake predictions.
+20. **Event discovery + Freedom 250 details + context notes** — homepage event discovery now uses `HomeEventSelector` so only one selected event preview renders at a time; mobile hero no longer repeats the same event card. UFC Freedom 250 now has real event-level metadata (Topuria/Gaethje, South Lawn of the White House, Washington, DC, Paramount+, 8:00 PM ET, Pereira/Gane listed) but still has no fights, stats, calls, or percentages. `ContextualNotes` and `contextNotes` types exist as manual explanatory notes only; they are not model inputs. `PathsToVictory` returns null for empty path data, method bars are proportional, and weak shape edges are softened as thin/relative context.
 
 ---
 

@@ -2,6 +2,21 @@
 
 ## May 2026
 
+### Event discovery, Freedom 250, and context-note guardrails
+
+Focused mobile/product cleanup. No model math, prediction values, locked predictions, fight data stats, ingestion, backtest logic, generated backtest artifacts, or public record scoring changed.
+
+- Replaced the homepage stacked event discovery with a compact selected-event chooser. The default selected event is UFC Freedom 250, with UFC 329 and UFC 328 available from the dropdown.
+- Simplified the mobile homepage hero so it explains Fight Lens and sends users to the current card/record without repeating the selected-event preview.
+- Populated UFC Freedom 250 with sourced event-level details: Topuria vs. Gaethje, June 14, 2026, South Lawn of the White House, Washington, DC, Paramount+, 8:00 PM ET, plus Pereira vs. Gane as a listed bout. No fake fights, calls, percentages, or fighter stats were added.
+- Updated homepage and /events card copy to use "card building", "event details live", and "forecast opens when fight data is ready" instead of pending date/location/card language.
+- Added a note-only contextual fight layer (`contextNotes`) with confidence, impact direction, and explicit "not included in model" / "manual context only" guardrails. It renders only when notes are present and does not affect predictions.
+- Suppressed empty live-path/path-analysis cards when neither side has useful path data. Method lean bars in event rows now use proportional fills and thin dot states.
+- Strengthened fight-shape narrative guardrails so weak relative edges are described as thin paths instead of strong advantages.
+
+**QA:** lint passed · build passed with 36 static pages · normal prediction audit hit the known local `tsx` named-pipe EPERM issue; the established loader workaround passed 24/24 with 0 failures.
+
+---
 ### Homepage, record, and event discovery stabilization
 
 Focused mobile-first product cleanup. No model math, prediction values, fight data, ingestion, backtest logic, generated backtest artifacts, or public record scoring changed.
@@ -112,9 +127,9 @@ Content logic, hierarchy, and visualization cleanup. No model math, prediction v
 
 **Duplicate pending suppression — `components/PathsToVictory.tsx`:**
 - Added `aNoPaths` / `bNoPaths` / `bothPending` detection.
-- When both fighters have no curated paths AND no model signal: suppresses both large "path analysis pending" cards and replaces them with a single quiet line: "Path analysis unlocks when enough recent round-trend data is sourced."
+- When both fighters have no curated paths AND no model signal: suppresses the empty path module rather than rendering large pending cards.
 - When one side has data: still renders both `PathList` cards (pending card for the no-data side stays, but now uses compact `text-subtle` styling instead of large "Check back closer to the event" copy).
-- Renamed section heading: "how the other side can win." → "non-call route." (when a named call exists). The "other side can win" phrasing implied the non-call route is a near-certainty; "non-call route." is more honest about what it is.
+- Renamed the secondary path section to "alternate path." for named-call fights so it reads as context, not a second call.
 - Role label changed from "live path" to "live route" to match the less-certain language in the spec.
 - Section description updated: "What has to change for X to flip the read — this is not the model call." — explicitly reminds the reader this is not a second call.
 - Module heading suppressed (`h2` hidden) when `bothPending`, so the section doesn't have a large header above a one-liner note.

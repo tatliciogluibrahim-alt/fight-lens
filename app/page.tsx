@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
+import { HomeEventSelector, type HomeEventOption } from "@/components/HomeEventSelector";
 import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
 import { getAllEvents, getLatestEvent } from "@/lib/events/registry";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
@@ -14,11 +15,11 @@ const startSteps = [
   },
   {
     title: "Read the call",
-    body: "Each fight starts with the model call, read strength, likely finish type, and what could break the call.",
+    body: "Each fight starts with the model call, likely finish type, and what could break the call.",
   },
   {
     title: "Explore the shape",
-    body: "Optional deeper context. The radar shows how the fight style tilts, not the winner forecast.",
+    body: "Optional context. The radar shows how the fight style tilts, not the winner forecast.",
   },
   {
     title: "Check the record",
@@ -26,7 +27,7 @@ const startSteps = [
   },
 ];
 
-type EventStatus = "forecastPending" | "forecastLive" | "pendingOutcomes" | "completed";
+type EventStatus = "cardBuilding" | "forecastLive" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   predictions: PredictionRecord[];
@@ -36,8 +37,36 @@ type EventStats = {
   countLabel: string;
 };
 
-function eventShortName(eventName: string) {
-  return eventName.split(":")[0] ?? eventName;
+function eventShortName(event: SourcedEvent) {
+  return event.event.shortName ?? event.event.name.split(":")[0] ?? event.event.name;
+}
+
+function eventLocation(event: SourcedEvent) {
+  return event.event.location ?? "location TBA";
+}
+
+function eventVenue(event: SourcedEvent) {
+  return event.event.venue ?? null;
+}
+
+function eventBroadcastLine(event: SourcedEvent) {
+  if (event.event.broadcast && event.event.mainCardTime) return `${event.event.broadcast} · ${event.event.mainCardTime}`;
+  return event.event.broadcast ?? event.event.mainCardTime ?? null;
+}
+
+function eventMainEvent(event: SourcedEvent, fight?: SourcedFight) {
+  if (event.event.mainEvent) {
+    return `${event.event.mainEvent.fighterA} vs ${event.event.mainEvent.fighterB}`;
+  }
+  if (fight) {
+    return `${fight.fighters.fighterA.name} vs ${fight.fighters.fighterB.name}`;
+  }
+  return null;
+}
+
+function featuredBout(event: SourcedEvent) {
+  const bout = event.event.featuredBouts?.[0];
+  return bout ? `${bout.fighterA} vs ${bout.fighterB}` : null;
 }
 
 function predictionsForEvent(event: SourcedEvent, predictions: PredictionRecord[]) {
@@ -61,7 +90,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
 
   const status: EventStatus =
     eventPredictions.length === 0
-      ? "forecastPending"
+      ? "cardBuilding"
       : resolved.length === 0
         ? "forecastLive"
         : resolved.length < eventPredictions.length
@@ -74,8 +103,8 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
       : status === "forecastLive"
         ? `${eventPredictions.length} calls logged`
         : event.fights.length > 0
-          ? `${event.fights.length} bouts · calls pending`
-          : "fight card pending";
+          ? `${event.fights.length} bouts · model calls not published yet`
+          : "event details live";
 
   return {
     predictions: eventPredictions,
@@ -87,11 +116,11 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
 }
 
 function StatusPill({ stats }: { stats: EventStats }) {
-  if (stats.status === "forecastPending") {
+  if (stats.status === "cardBuilding") {
     return (
       <span className="status-pill">
         <span className="dot" />
-        forecast pending
+        card building
       </span>
     );
   }
@@ -113,16 +142,15 @@ function StatusPill({ stats }: { stats: EventStats }) {
   );
 }
 
-function MainEventLine({ fight }: { fight: SourcedFight | undefined }) {
-  if (!fight) {
-    return <p className="mt-3 text-sm leading-6 text-muted">Fight card pending.</p>;
+function MainEventLine({ event, fight }: { event: SourcedEvent; fight?: SourcedFight }) {
+  const mainEvent = eventMainEvent(event, fight);
+  if (!mainEvent) {
+    return <p className="mt-3 text-sm leading-6 text-muted">Forecast opens when fight data is ready.</p>;
   }
 
   return (
     <p className="mt-3 text-lg font-semibold leading-tight tracking-tight text-foreground">
-      {fight.fighters.fighterA.name}
-      <span className="font-normal text-subtle"> vs </span>
-      {fight.fighters.fighterB.name}
+      {mainEvent}
     </p>
   );
 }
@@ -139,70 +167,6 @@ function AccuracyBar({ value }: { value: number | null }) {
   );
 }
 
-function EventDiscoveryRow({
-  event,
-  predictions,
-  label,
-  ctaLabel = "Open card",
-  priority = false,
-}: {
-  event: SourcedEvent;
-  predictions: PredictionRecord[];
-  label: string;
-  ctaLabel?: string;
-  priority?: boolean;
-}) {
-  const stats = eventStats(event, predictions);
-  const mainFight = event.fights[0];
-
-  return (
-    <article
-      className={`group rounded-2xl border p-4 transition hover:border-accent/35 hover:bg-surface-2/35 ${
-        priority ? "border-accent/30 bg-surface" : "border-line bg-surface/65"
-      }`}
-    >
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <p className={`mono-label ${priority ? "text-accent" : ""}`}>{label}</p>
-            <StatusPill stats={stats} />
-          </div>
-          <h3 className="mt-2 text-xl font-semibold leading-tight tracking-[-0.03em] text-foreground md:text-2xl">
-            {event.event.name}
-          </h3>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
-            <span>{event.event.date ?? "date pending"}</span>
-            <span>{event.event.location ?? "location pending"}</span>
-            <span>{stats.countLabel}</span>
-          </div>
-          {mainFight ? (
-            <p className="mt-3 text-sm leading-6 text-muted">
-              <span className="text-subtle">main event · </span>
-              <span className="font-medium text-foreground">{mainFight.fighters.fighterA.name}</span>
-              <span className="text-subtle"> vs </span>
-              <span className="font-medium text-foreground">{mainFight.fighters.fighterB.name}</span>
-            </p>
-          ) : (
-            <p className="mt-3 text-sm leading-6 text-muted">
-              Model calls unlock once fight data is available.
-            </p>
-          )}
-        </div>
-        <Link
-          href={`/events/${event.event.id}`}
-          className={`tap-target inline-flex shrink-0 items-center justify-center rounded-full px-5 text-sm font-semibold transition ${
-            priority
-              ? "bg-accent text-background hover:brightness-110"
-              : "border border-line-strong bg-surface-2 text-foreground hover:border-accent/40"
-          }`}
-        >
-          {ctaLabel}
-        </Link>
-      </div>
-    </article>
-  );
-}
-
 function ProofStat({ value, label }: { value: string | number; label: string }) {
   return (
     <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
@@ -210,6 +174,26 @@ function ProofStat({ value, label }: { value: string | number; label: string }) 
       <p className="mono-label mt-1">{label}</p>
     </div>
   );
+}
+
+function selectorOption(event: SourcedEvent, predictions: PredictionRecord[], label: string, ctaLabel: string): HomeEventOption {
+  const stats = eventStats(event, predictions);
+  const mainFight = event.fights[0];
+  return {
+    id: event.event.id,
+    optionLabel: eventShortName(event),
+    title: event.event.name,
+    statusLabel: stats.status === "cardBuilding" ? "Card building" : stats.status === "forecastLive" ? "Forecast live" : stats.status === "pendingOutcomes" ? "Pending outcomes" : "Completed",
+    statusDetail: label === "Past scored" ? stats.countLabel : stats.countLabel,
+    date: event.event.date ?? "date TBA",
+    location: eventLocation(event),
+    venue: eventVenue(event),
+    broadcastLine: eventBroadcastLine(event),
+    mainEvent: eventMainEvent(event, mainFight),
+    featuredBout: featuredBout(event),
+    href: `/events/${event.event.id}`,
+    ctaLabel,
+  };
 }
 
 export default function Home() {
@@ -234,86 +218,42 @@ export default function Home() {
     : null;
   const upcomingEvent = events.slice(1).find((event) => eventStats(event, predictions).status !== "completed") ?? null;
   const pastScoredEvent = events.find((event) => eventStats(event, predictions).status === "completed") ?? null;
-  const discoveryItems = [
-    { event: latestEvent, label: "Next card", ctaLabel: "View card", priority: true },
-    upcomingEvent ? { event: upcomingEvent, label: "Upcoming card", ctaLabel: "Open card", priority: false } : null,
-    pastScoredEvent ? { event: pastScoredEvent, label: "Past scored", ctaLabel: "View scored card", priority: false } : null,
-  ].filter((item): item is { event: SourcedEvent; label: string; ctaLabel: string; priority: boolean } => Boolean(item));
+  const discoveryOptions = [
+    selectorOption(latestEvent, predictions, "Next card", "Open card"),
+    upcomingEvent ? selectorOption(upcomingEvent, predictions, "Upcoming card", "Open card") : null,
+    pastScoredEvent ? selectorOption(pastScoredEvent, predictions, "Past scored", "View scored card") : null,
+  ].filter((item): item is HomeEventOption => Boolean(item));
 
   return (
     <>
       <AppHeader />
       <main>
-        <section className="sm:hidden section-shell pt-5 pb-6">
-          <div className="overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
-            <span
-              aria-hidden="true"
-              className="block h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"
-            />
-            <div className="p-5">
-              <div className="flex flex-wrap items-center gap-2">
-                <p className="mono-label text-accent">next card</p>
-                <StatusPill stats={latestStats} />
-              </div>
-              <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-[-0.04em] text-foreground">
-                {latestEvent.event.name}
-              </h1>
-              <p className="mt-1.5 text-sm text-muted">
-                {latestEvent.event.date ?? "date pending"}
-                {latestEvent.event.location ? ` · ${latestEvent.event.location}` : ""}
-              </p>
-
-              <div className="mt-5 border-t border-line/60 pt-4">
-                <p className="mono-label">main event</p>
-                <MainEventLine fight={mainFight} />
-                {mainVM?.isNamedCall ? (
-                  <div className="mt-3 border-l-2 border-accent/50 pl-3">
-                    <p className="mono-label">model call</p>
-                    <p className="mt-1 text-lg font-semibold tracking-tight text-accent">
-                      {mainVM.predictedWinner?.name}
-                      {mainVM.winnerProbability != null && (
-                        <span className="data-text ml-2 text-base font-normal text-foreground">
-                          {mainVM.winnerProbability}%
-                        </span>
-                      )}
-                    </p>
-                  </div>
-                ) : (
-                  <p className="mt-3 text-sm leading-6 text-muted">
-                    Model calls unlock once fight data is available.
-                  </p>
-                )}
-              </div>
-
+        <section className="sm:hidden section-shell pt-6 pb-5">
+          <div className="rounded-2xl border border-line bg-surface/70 p-5">
+            <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
+            <h1 className="mt-3 text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-foreground">
+              predictive analysis.
+              <span className="block text-accent">every call tracked.</span>
+            </h1>
+            <p className="mt-4 text-sm leading-6 text-muted">
+              Fight Lens models UFC matchups before each card, logs every public call,
+              and scores every result after the fight.
+            </p>
+            <div className="mt-5 grid gap-3">
               <Link
                 href={`/events/${latestEvent.event.id}`}
-                className="tap-target mt-5 flex w-full items-center justify-center rounded-full bg-accent font-semibold text-background transition hover:brightness-110"
+                className="tap-target flex w-full items-center justify-center rounded-full bg-accent font-semibold text-background transition hover:brightness-110"
               >
-                Open card
+                Open {eventShortName(latestEvent)}
+              </Link>
+              <Link
+                href="/record"
+                className="tap-target flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 text-foreground transition hover:border-accent/40"
+              >
+                View Model Record
               </Link>
             </div>
           </div>
-
-          {accuracyMetrics.resolvedCount > 0 && (
-            <div className="mt-3 rounded-2xl border border-line bg-surface/70 p-4">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="data-text text-xl text-foreground">{accuracyMetrics.winnerAccuracy}%</p>
-                  <p className="mono-label mt-0.5">call accuracy</p>
-                </div>
-                <Link
-                  href="/record"
-                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm text-foreground transition hover:border-accent/40"
-                >
-                  Record →
-                </Link>
-              </div>
-              <div className="mt-3">
-                <AccuracyBar value={accuracyMetrics.winnerAccuracy} />
-                <p className="mt-2 text-xs text-subtle">{correctCount}/{accuracyMetrics.resolvedCount} correct public calls.</p>
-              </div>
-            </div>
-          )}
         </section>
 
         <section className="hidden sm:block section-shell pt-10 pb-8 md:pt-16 md:pb-12">
@@ -333,7 +273,7 @@ export default function Home() {
                   href={`/events/${latestEvent.event.id}`}
                   className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
                 >
-                  Open {eventShortName(latestEvent.event.name)}
+                  Open {eventShortName(latestEvent)}
                 </Link>
                 <Link
                   href="/record"
@@ -356,12 +296,17 @@ export default function Home() {
                 {latestEvent.event.name}
               </h2>
               <p className="data-text mt-2 text-xs uppercase tracking-[0.16em] text-subtle">
-                {latestEvent.event.date ?? "date pending"}{latestEvent.event.location ? ` · ${latestEvent.event.location}` : ""}
+                {latestEvent.event.date ?? "date TBA"} · {eventLocation(latestEvent)}
               </p>
+              {eventVenue(latestEvent) ? <p className="mt-2 text-sm text-subtle">{eventVenue(latestEvent)}</p> : null}
+              {eventBroadcastLine(latestEvent) ? <p className="mt-1 text-xs text-subtle">{eventBroadcastLine(latestEvent)}</p> : null}
 
               <div className="mt-6 border-t border-line/60 pt-5">
                 <p className="mono-label">main event</p>
-                <MainEventLine fight={mainFight} />
+                <MainEventLine event={latestEvent} fight={mainFight} />
+                {featuredBout(latestEvent) ? (
+                  <p className="mt-2 text-sm text-muted"><span className="text-subtle">also listed · </span>{featuredBout(latestEvent)}</p>
+                ) : null}
                 {mainVM?.isNamedCall ? (
                   <div className="mt-4 border-l border-accent/40 pl-4">
                     <p className="mono-label">model call</p>
@@ -374,7 +319,7 @@ export default function Home() {
                   </div>
                 ) : (
                   <p className="mt-4 text-sm leading-6 text-muted">
-                    Fight card pending. Model calls unlock once fight data is available.
+                    Forecast opens when fight data is ready.
                   </p>
                 )}
               </div>
@@ -413,30 +358,7 @@ export default function Home() {
         </section>
 
         <section className="section-shell py-6 md:py-10">
-          <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <p className="mono-label accent-rail">event discovery</p>
-              <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">choose a card.</h2>
-              <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-                Start with the next forecast, or browse scored cards.
-              </p>
-            </div>
-            <Link href="/events" className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground">
-              all events →
-            </Link>
-          </div>
-          <div className="grid gap-3 lg:grid-cols-3">
-            {discoveryItems.map((item) => (
-              <EventDiscoveryRow
-                key={`${item.label}-${item.event.event.id}`}
-                event={item.event}
-                predictions={predictions}
-                label={item.label}
-                ctaLabel={item.ctaLabel}
-                priority={item.priority}
-              />
-            ))}
-          </div>
+          <HomeEventSelector events={discoveryOptions} />
         </section>
 
         <section className="section-shell py-6 md:py-8">
@@ -449,14 +371,30 @@ export default function Home() {
                   The public record is pre-fight calls only. Historical validation and backtests stay separate.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:w-[520px]">
+              <div className="hidden grid-cols-2 gap-2 sm:grid sm:grid-cols-4 lg:w-[520px]">
                 <ProofStat value={predictions.length} label="Calls" />
                 <ProofStat value={accuracyMetrics.resolvedCount} label="Scored" />
                 <ProofStat value={correctCount ?? "—"} label="Correct" />
                 <ProofStat value={accuracyMetrics.winnerAccuracy != null ? `${accuracyMetrics.winnerAccuracy}%` : "—"} label="Accuracy" />
               </div>
+              <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:hidden">
+                <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
+                  <p className="data-text text-2xl leading-none text-foreground">{accuracyMetrics.winnerAccuracy}%</p>
+                  <p className="mono-label mt-1">accuracy</p>
+                </div>
+                <div className="rounded-xl border border-line bg-background/35 px-3 py-2.5">
+                  <p className="data-text text-2xl leading-none text-foreground">{accuracyMetrics.resolvedCount}</p>
+                  <p className="mono-label mt-1">scored</p>
+                </div>
+                <Link
+                  href="/record"
+                  className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm text-foreground transition hover:border-accent/40"
+                >
+                  Record
+                </Link>
+              </div>
             </div>
-            <div className="mt-4 grid gap-3 sm:grid-cols-[1fr_auto] sm:items-center">
+            <div className="mt-4 hidden gap-3 sm:grid sm:grid-cols-[1fr_auto] sm:items-center">
               <AccuracyBar value={accuracyMetrics.winnerAccuracy} />
               <Link
                 href="/record"

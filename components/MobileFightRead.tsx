@@ -18,6 +18,7 @@ import type { PredictionViewModel } from "@/lib/predictionViewModel";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import { StyleComparisonBars } from "./StyleComparisonBars";
 import { FightResultBanner } from "./FightResultBanner";
+import { ContextualNotes } from "./ContextualNotes";
 
 interface MobileFightReadProps {
   fight: SourcedFight;
@@ -382,6 +383,8 @@ export function MobileFightRead({
 
       {/* 4 · Why it leans · what flips it */}
       {hasPred && vm.scenarios.length > 0 && <MobileScenarios vm={vm} />}
+
+      <ContextualNotes notes={fight.contextNotes} />
 
       {/* 5 · Fight shape — collapsed accordion */}
       <MobileShapeAccordion

@@ -3,6 +3,30 @@ import type { CardPlacement, DataProvenance, FightPath, StyleProfile } from "./t
 
 export type CompletenessState = "sourced" | "partial" | "missing" | "manual" | "derived" | "manual-required";
 export type StyleMetricProvenance = DataProvenance | "missing";
+export type ContextualNoteType =
+  | "weight-class-up"
+  | "weight-class-down"
+  | "major-weight-cut"
+  | "short-notice"
+  | "long-layoff"
+  | "age-mileage"
+  | "durability"
+  | "power-carry"
+  | "speed-cardio-risk"
+  | "late-replacement"
+  | "debut-or-promotion-jump"
+  | "recent-ko-loss"
+  | "injury-return";
+
+export interface ContextualFightNote {
+  type: ContextualNoteType;
+  fighter: string;
+  title: string;
+  explanation: string;
+  confidence: "low" | "medium" | "high";
+  impactDirection: "helps" | "hurts" | "unclear";
+  modelImpact: "not included in model" | "manual context only";
+}
 
 export interface SourcedLandedAttempted {
   landed: number | null;
@@ -157,6 +181,7 @@ export interface SourcedFight {
   matchupQuestion: string | null;
   fightShapeSummary: string | null;
   manualRead: string | null;
+  contextNotes?: ContextualFightNote[] | null;
   result?: {
     winner: string;
     method: string;
@@ -181,8 +206,14 @@ export interface SourcedEvent {
     id: string;
     ufcstatsId: string;
     name: string;
+    shortName?: string;
     date: string | null;
     location: string | null;
+    venue?: string | null;
+    broadcast?: string | null;
+    mainCardTime?: string | null;
+    mainEvent?: { fighterA: string; fighterB: string } | null;
+    featuredBouts?: Array<{ fighterA: string; fighterB: string }>;
     promotion: string;
   };
   modeling: {

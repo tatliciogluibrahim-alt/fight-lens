@@ -6,7 +6,7 @@ import { getAllEvents } from "@/lib/events/registry";
 import { getLockedPredictions } from "@/lib/accuracy";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
-import type { SourcedEvent } from "@/lib/sourced-event";
+import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 
 export const metadata: Metadata = {
   title: "Events | Fight Lens",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Browse every UFC card Fight Lens has modeled, from the current forecast to scored past cards.",
 };
 
-type EventStatus = "forecastPending" | "forecastLive" | "pendingOutcomes" | "completed";
+type EventStatus = "cardBuilding" | "forecastLive" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   eventPredictions: PredictionRecord[];
@@ -38,7 +38,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
   });
   const status: EventStatus =
     eventPredictions.length === 0
-      ? "forecastPending"
+      ? "cardBuilding"
       : resolved.length === 0
         ? "forecastLive"
         : resolved.length < eventPredictions.length
@@ -50,18 +50,18 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
       : status === "forecastLive"
         ? `${eventPredictions.length} calls logged`
         : event.fights.length > 0
-          ? `${event.fights.length} bouts · calls pending`
-          : "fight card pending";
+          ? `${event.fights.length} bouts · model calls not published yet`
+          : "event details live";
 
   return { eventPredictions, resolved, correct, status, countLabel };
 }
 
 function StatusPill({ stats }: { stats: EventStats }) {
-  if (stats.status === "forecastPending") {
+  if (stats.status === "cardBuilding") {
     return (
       <span className="status-pill">
         <span className="dot" />
-        forecast pending
+        card building
       </span>
     );
   }
@@ -83,6 +83,26 @@ function StatusPill({ stats }: { stats: EventStats }) {
   );
 }
 
+function eventMainEvent(event: SourcedEvent, fight?: SourcedFight) {
+  if (event.event.mainEvent) return `${event.event.mainEvent.fighterA} vs ${event.event.mainEvent.fighterB}`;
+  if (fight) return `${fight.fighters.fighterA.name} vs ${fight.fighters.fighterB.name}`;
+  return null;
+}
+
+function eventLocation(event: SourcedEvent) {
+  return event.event.location ?? "location TBA";
+}
+
+function eventBroadcastLine(event: SourcedEvent) {
+  if (event.event.broadcast && event.event.mainCardTime) return `${event.event.broadcast} · ${event.event.mainCardTime}`;
+  return event.event.broadcast ?? event.event.mainCardTime ?? null;
+}
+
+function featuredBout(event: SourcedEvent) {
+  const bout = event.event.featuredBouts?.[0];
+  return bout ? `${bout.fighterA} vs ${bout.fighterB}` : null;
+}
+
 function EventCard({
   event,
   predictions,
@@ -96,6 +116,8 @@ function EventCard({
 }) {
   const stats = eventStats(event, predictions);
   const mainFight = event.fights[0];
+  const mainEvent = eventMainEvent(event, mainFight);
+  const broadcastLine = eventBroadcastLine(event);
 
   return (
     <article
@@ -114,44 +136,47 @@ function EventCard({
         </h2>
 
         <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
-          <span>{event.event.date ?? "date pending"}</span>
-          <span>{event.event.location ?? "location pending"}</span>
+          <span>{event.event.date ?? "date TBA"}</span>
+          <span>{eventLocation(event)}</span>
           <span>{stats.countLabel}</span>
         </div>
+        {event.event.venue ? <p className="mt-2 text-sm text-subtle">{event.event.venue}</p> : null}
+        {broadcastLine ? <p className="mt-1 text-xs text-subtle">{broadcastLine}</p> : null}
 
         <div className="mt-5 border-t border-line/60 pt-4">
           <p className="mono-label">main event</p>
-          {mainFight ? (
+          {mainEvent ? (
             <>
               <p className="mt-2 text-base font-semibold leading-tight tracking-tight text-foreground">
-                {mainFight.fighters.fighterA.name}
-                <span className="font-normal text-subtle"> vs </span>
-                {mainFight.fighters.fighterB.name}
+                {mainEvent}
               </p>
-              {mainFight.weightClass && (
+              {mainFight?.weightClass ? (
                 <p className="data-text mt-1 text-xs uppercase tracking-[0.12em] text-subtle">
                   {mainFight.weightClass.toLowerCase()} · {mainFight.rounds}R
                 </p>
-              )}
+              ) : null}
+              {featuredBout(event) ? (
+                <p className="mt-2 text-sm text-muted"><span className="text-subtle">also listed · </span>{featuredBout(event)}</p>
+              ) : null}
             </>
           ) : (
             <p className="mt-2 text-sm leading-6 text-muted">
-              Fight card pending. Model calls unlock once fight data is available.
+              Forecast opens when fight data is ready.
             </p>
           )}
         </div>
 
-        <div className="mt-5 flex flex-wrap items-center gap-3">
+        <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
           <Link
             href={`/events/${event.event.id}`}
-            className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+            className="tap-target inline-flex w-full items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110 sm:w-auto"
           >
             Open card
           </Link>
           {stats.resolved.length > 0 && (
             <Link
               href="/record"
-              className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground"
+              className="tap-target inline-flex w-full items-center justify-center rounded-full border border-line bg-surface-2 px-5 text-sm text-muted transition hover:border-accent/30 hover:text-foreground sm:w-auto"
             >
               See record
             </Link>
@@ -185,7 +210,7 @@ export default function EventsIndexPage() {
             open a card. <span className="text-accent">read the calls.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Start with the next forecast, then browse scored cards and jump into any fight read.
+            Start with the next card, then browse live forecasts and scored cards.
             Public record stays separate from historical validation.
           </p>
         </section>
