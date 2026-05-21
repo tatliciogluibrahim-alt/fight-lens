@@ -1,15 +1,15 @@
 import type { ContextualFightNote } from "@/lib/sourced-event";
 
-function toneFor(direction: ContextualFightNote["impactDirection"]) {
-  switch (direction) {
-    case "helps":
-      return "border-success/25 bg-success-soft text-success";
-    case "hurts":
-      return "border-wrong/25 bg-wrong-soft text-wrong";
-    case "unclear":
-      return "border-line bg-surface-2 text-subtle";
-  }
-}
+/*
+ * No color-coded direction chips here. The success/wrong palette belongs to
+ * scored outcomes only. Context notes explicitly do not change the model call,
+ * so treating "hurts" as red and "helps" as green creates a false parallel
+ * signal. All chips use the same neutral treatment — copy carries the meaning.
+ *
+ * Chip order: confidence first (more meaningful), direction second (qualifier).
+ */
+
+const CHIP = "rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.12em]";
 
 export function ContextualNotes({ notes }: { notes?: ContextualFightNote[] | null }) {
   if (!notes?.length) return null;
@@ -30,11 +30,13 @@ export function ContextualNotes({ notes }: { notes?: ContextualFightNote[] | nul
           <article key={`${note.fighter}-${note.type}-${note.title}`} className="rounded-2xl border border-line bg-background/35 p-4">
             <div className="flex flex-wrap items-center gap-2">
               <span className="mono-label text-foreground">{note.fighter}</span>
-              <span className={`rounded-full border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.12em] ${toneFor(note.impactDirection)}`}>
-                {note.impactDirection}
-              </span>
-              <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle">
+              {/* Confidence leads — it tells you how much weight to put on the note */}
+              <span className={`${CHIP} text-muted`}>
                 {note.confidence}
+              </span>
+              {/* Direction is a qualifier, not a verdict — same neutral styling */}
+              <span className={`${CHIP} text-subtle`}>
+                {note.impactDirection}
               </span>
             </div>
             <h3 className="mt-3 text-base font-semibold tracking-tight text-foreground">{note.title}</h3>
