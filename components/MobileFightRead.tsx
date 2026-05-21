@@ -19,6 +19,9 @@ import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import { StyleComparisonBars } from "./StyleComparisonBars";
 import { FightResultBanner } from "./FightResultBanner";
 import { ContextualNotes } from "./ContextualNotes";
+import { CallConfidenceBand } from "./CallConfidenceBand";
+import { RoundMomentumFlow } from "./RoundMomentumFlow";
+import { TaleOfTape } from "./TaleOfTape";
 
 interface MobileFightReadProps {
   fight: SourcedFight;
@@ -112,38 +115,19 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
       />
 
       <div className="p-5">
-        <p className="mono-label">model call</p>
-
-        {isNoLean ? (
-          <p className="mt-3 text-2xl font-semibold tracking-tight text-foreground">
-            Too close to call
-          </p>
-        ) : (
-          <p className="mt-3 text-2xl font-semibold leading-tight tracking-tight">
-            <span className="text-accent">{vm.predictedWinner?.name}</span>
-            {vm.winnerProbability != null && (
-              <span className="data-text ml-2 text-xl font-normal text-foreground">
-                {vm.winnerProbability}%
-              </span>
-            )}
-          </p>
-        )}
-
-        {!isNoLean && livePathName && livePathProbability != null ? (
-          <div className="mt-5 rounded-xl border border-line bg-background/35 p-3">
-            <p className="mono-label">counter path</p>
-            <p className="mt-1 text-sm leading-snug text-muted">
-              <span className="font-medium text-foreground">{livePathName}</span>
-              <span className="text-subtle"> · what changes if the call flips · </span>
-              <span className="data-text text-foreground">{livePathProbability}%</span>
-            </p>
-          </div>
-        ) : isNoLean ? (
-          <div className="mt-5 rounded-xl border border-line bg-background/35 p-3">
-            <p className="mono-label">call state</p>
-            <p className="mt-1 text-sm leading-snug text-muted">No fighter is highlighted. Both routes stay live.</p>
-          </div>
-        ) : null}
+        <p className="mono-label mb-4">model call</p>
+        <CallConfidenceBand
+          winnerName={vm.predictedWinner?.name ?? null}
+          winnerProbability={vm.winnerProbability}
+          loserName={vm.livePathFighter?.name ?? null}
+          loserProbability={vm.loserProbability}
+          readStrength={vm.readStrength}
+          isTooCloseToCall={isNoLean}
+          fighterAName={vm.fighterA.name}
+          fighterAProb={vm.fighterA.winProbability}
+          fighterBName={vm.fighterB.name}
+          fighterBProb={vm.fighterB.winProbability}
+        />
         <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/70">
           {vm.publicPredictionSource}
         </p>
@@ -373,7 +357,28 @@ export function MobileFightRead({
       {/* 4 · Why it leans · what flips it */}
       {hasPred && vm.scenarios.length > 0 && <MobileScenarios vm={vm} />}
 
+      {/* 4b · Round momentum flow */}
+      {hasPred && (
+        <RoundMomentumFlow
+          fighterA={fighterA}
+          fighterB={fighterB}
+          rounds={fight.rounds}
+          fighterAWinProbability={vm.fighterA.winProbability}
+          fighterBWinProbability={vm.fighterB.winProbability}
+          predictedWinnerId={vm.predictedWinner?.id ?? null}
+        />
+      )}
+
       <ContextualNotes notes={fight.contextNotes} />
+
+      {/* 4c · Tale of the tape */}
+      {fight.keyEdges.length > 0 && (
+        <TaleOfTape
+          keyEdges={fight.keyEdges}
+          fighterAName={fighterA.name}
+          fighterBName={fighterB.name}
+        />
+      )}
 
       {/* 5 · Fight shape — collapsed accordion */}
       <MobileShapeAccordion

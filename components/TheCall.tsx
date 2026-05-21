@@ -1,5 +1,6 @@
 import type { OutcomeScenario } from "@/lib/fight-outcome-model/types";
 import type { PredictionViewModel } from "@/lib/predictionViewModel";
+import { CallConfidenceBand } from "./CallConfidenceBand";
 
 interface TheCallProps {
   viewModel: PredictionViewModel;
@@ -172,18 +173,29 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
       </div>
 
       <div className="module-body space-y-6">
-        {/* No-lean note — only shown when probabilities don't separate */}
-        {tooClose && (
-          <div className="rounded-xl border border-line bg-surface/50 p-4">
-            <p className="text-sm leading-6 text-muted">
-              Probabilities too close to name a call —{" "}
-              <span className="text-foreground">{fighterA.name} {fighterA.winProbability}%</span>
-              {" · "}
-              <span className="text-foreground">{fighterB.name} {fighterB.winProbability}%</span>.
-              No named model call.
-            </p>
-          </div>
-        )}
+        {/* ── Confidence band pick visualization ────────────────────────────
+            Shows the model pick + probability as the visual anchor, with a
+            horizontal track illustrating the model's confidence range.
+            Replaces the plain text no-lean note with a proper visual treatment.
+        */}
+        <div className="rounded-2xl border border-accent/20 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80 p-5">
+          <span
+            aria-hidden="true"
+            className="block h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent -mx-5 -mt-5 mb-5"
+          />
+          <CallConfidenceBand
+            winnerName={vm.predictedWinner?.name ?? null}
+            winnerProbability={vm.winnerProbability}
+            loserName={vm.livePathFighter?.name ?? null}
+            loserProbability={vm.loserProbability}
+            readStrength={vm.readStrength}
+            isTooCloseToCall={tooClose}
+            fighterAName={vm.fighterA.name}
+            fighterAProb={vm.fighterA.winProbability}
+            fighterBName={vm.fighterB.name}
+            fighterBProb={vm.fighterB.winProbability}
+          />
+        </div>
 
         {/* Method lean */}
         <MethodLean viewModel={vm} />
