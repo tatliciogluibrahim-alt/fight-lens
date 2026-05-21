@@ -52,60 +52,96 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
   const statusChip = eventStatusChip(lockedPredictions);
 
   return (
-    <section className="section-shell py-6 md:py-10">
-      <div className="lens-card p-5 md:p-8">
-        {/* Header: promotion label + status */}
-        <div className="flex flex-wrap items-center gap-3">
-          <p className="mono-label">{event.event.promotion.toLowerCase()} / fight lens</p>
-          {statusChip}
-        </div>
-
-        {/* Event name */}
-        <h1 className="mt-4 text-3xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-5xl">
-          {event.event.name.toLowerCase()}
-        </h1>
-
-        {/* Date · location · bouts — compact inline strip */}
-        <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
-          <span>{event.event.date ?? "date pending"}</span>
-          <span>{event.event.location ?? "location pending"}</span>
-          <span>{event.fights.length} bouts</span>
-        </div>
-
-        {/* Main event highlight — only when there's a main fight */}
-        {mainFight && (
-          <div className="mt-6 flex flex-col gap-4 border-t border-line/60 pt-5 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="mono-label">main event</p>
-              <h2 className="mt-2 text-xl font-semibold leading-tight tracking-[-0.03em] md:text-2xl">
-                {mainFightLabel}
-              </h2>
-              {mainFight.matchupQuestion && (
-                <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-                  {mainFight.matchupQuestion}
-                </p>
-              )}
-              {!mainFight.matchupQuestion && (
-                <p className="mt-2 text-sm text-muted">
-                  {mainFightHasCall
-                    ? "Forecast is live."
-                    : "Analysis loads closer to the event."}
-                </p>
-              )}
+    <section className="section-shell py-5 md:py-10">
+      {/* ════════════════════════════════════════════════════════════════════
+          MOBILE header — visible only below sm (640 px)
+          Compact: event name, status, date/location. No matchup question.
+          The fight list below is the primary content.
+          ════════════════════════════════════════════════════════════════════ */}
+      <div className="sm:hidden">
+        <div className="overflow-hidden rounded-2xl border border-line bg-surface/80">
+          <div className="p-4">
+            <div className="flex flex-wrap items-center gap-2">
+              {statusChip}
             </div>
-            <Link
-              href={`/events/${event.event.id}/${mainFight.id}`}
-              className="tap-target inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
-            >
-              View main event read
-            </Link>
+            <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-[-0.04em] text-foreground">
+              {event.event.name}
+            </h1>
+            <p className="mt-2 text-sm text-muted">
+              {event.event.date ?? "date pending"}
+              {event.event.location ? ` · ${event.event.location}` : ""}
+            </p>
           </div>
-        )}
+          {mainFight && (
+            <div className="border-t border-line/60 bg-background/25 px-4 py-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+                main event · tap a fight below to read the model call
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
 
-        {/* Instruction line */}
-        <p className="mt-5 text-sm text-subtle">
-          Choose a fight below — each read starts with the model call.
-        </p>
+      {/* ════════════════════════════════════════════════════════════════════
+          DESKTOP hero — visible only at sm+ (640 px and up)
+          Full panel: promotion label, event name, date/location/bouts,
+          main event highlight, instruction line.
+          ════════════════════════════════════════════════════════════════════ */}
+      <div className="hidden sm:block">
+        <div className="lens-card p-5 md:p-8">
+          {/* Header: promotion label + status */}
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="mono-label">{event.event.promotion.toLowerCase()} / fight lens</p>
+            {statusChip}
+          </div>
+
+          {/* Event name */}
+          <h1 className="mt-4 text-3xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-5xl">
+            {event.event.name.toLowerCase()}
+          </h1>
+
+          {/* Date · location · bouts — compact inline strip */}
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
+            <span>{event.event.date ?? "date pending"}</span>
+            <span>{event.event.location ?? "location pending"}</span>
+            <span>{event.fights.length} bouts</span>
+          </div>
+
+          {/* Main event highlight — only when there's a main fight */}
+          {mainFight && (
+            <div className="mt-6 flex flex-col gap-4 border-t border-line/60 pt-5 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="mono-label">main event</p>
+                <h2 className="mt-2 text-xl font-semibold leading-tight tracking-[-0.03em] md:text-2xl">
+                  {mainFightLabel}
+                </h2>
+                {mainFight.matchupQuestion && (
+                  <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
+                    {mainFight.matchupQuestion}
+                  </p>
+                )}
+                {!mainFight.matchupQuestion && (
+                  <p className="mt-2 text-sm text-muted">
+                    {mainFightHasCall
+                      ? "Forecast is live."
+                      : "Analysis loads closer to the event."}
+                  </p>
+                )}
+              </div>
+              <Link
+                href={`/events/${event.event.id}/${mainFight.id}`}
+                className="tap-target inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+              >
+                View main event read
+              </Link>
+            </div>
+          )}
+
+          {/* Instruction line */}
+          <p className="mt-5 text-sm text-subtle">
+            Choose a fight below — each read starts with the model call.
+          </p>
+        </div>
       </div>
     </section>
   );

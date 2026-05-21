@@ -12,9 +12,10 @@ import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
-import { getPredictionByFightId } from "@/lib/accuracy";
+import { getAccuracyMetrics, getPredictionByFightId } from "@/lib/accuracy";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registry";
+import { MobileFightRead } from "@/components/MobileFightRead";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
 interface MatchupPageProps {
@@ -156,6 +157,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
     fight,
     lockedPrediction: prediction,
   });
+  const accuracyMetrics = getAccuracyMetrics();
 
   return (
     <>
@@ -168,96 +170,118 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           ← back to {event.event.name.toLowerCase()}
         </Link>
 
-        {/* Fighter hero */}
-        <section className="mt-6 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
-            <div>
-              <p className="mono-label">{event.event.name.toLowerCase()}</p>
-              <p className="mt-2 text-sm text-muted">
-                {(fight.weightClass ?? "weight class pending").toLowerCase()} ·{" "}
-                {fight.rounds} rounds · {fight.cardPlacement.toLowerCase()}
-              </p>
-            </div>
-          </div>
-          {vm.isScored && <FightResultBanner viewModel={vm} />}
-
-          <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
-            <FighterHeroPanel
-              fighter={fighterA}
-              cornerLabel="A"
-              isCall={vm.predictedWinner?.id === fighterA.id}
-              animationDelay="fl-delay-100"
-            />
-
-            {/* VS centre */}
-            <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0">
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute left-1/2 top-3 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
-              />
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute bottom-3 left-1/2 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
-              />
-              <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[3rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[4rem]">
-                VS
-              </p>
-              <p className="mono-label text-[10px]">
-                {(fight.weightClass ?? "").toLowerCase() || "weight class"}
-              </p>
-              <p className="mono-label text-[10px] text-subtle/60">{fight.rounds} rounds</p>
-            </div>
-
-            <FighterHeroPanel
-              fighter={fighterB}
-              align="right"
-              cornerLabel="B"
-              isCall={vm.predictedWinner?.id === fighterB.id}
-              animationDelay="fl-delay-300"
-            />
-          </div>
-        </section>
-
-        {/* Fight read snapshot */}
-        <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
-          <FightReadSnapshot viewModel={vm} />
+        {/* ════════════════════════════════════════════════════════════════════
+            MOBILE read — visible only below sm (640 px)
+            Flow: matchup header → call → method lean → scenarios →
+                  shape accordion → record proof.
+            ════════════════════════════════════════════════════════════════════ */}
+        <div className="sm:hidden mt-5">
+          <MobileFightRead
+            fight={fight}
+            fighterA={fighterA}
+            fighterB={fighterB}
+            viewModel={vm}
+            winnerAccuracy={accuracyMetrics.winnerAccuracy}
+            resolvedCount={accuracyMetrics.resolvedCount}
+          />
         </div>
 
-        {/* Analysis sections — one scroll page, hash anchors preserved */}
-        <div className="mt-6 md:mt-8">
-          <FightPageTabs
-            tabs={[
-              { id: "call", label: "call" },
-              { id: "shape", label: "shape" },
-              { id: "details", label: "details" },
-            ]}
-            panels={{
-              call: (
-                <TheCall viewModel={vm} />
-              ),
-              shape: (
-                <StyleComparisonBars
-                  fighterA={fighterA}
-                  fighterB={fighterB}
-                  predictedWinnerId={vm.predictedWinner?.id ?? null}
+        {/* ════════════════════════════════════════════════════════════════════
+            DESKTOP read — visible only at sm+ (640 px and up)
+            Fighter hero → snapshot → call/shape/details sections.
+            ════════════════════════════════════════════════════════════════════ */}
+        <div className="hidden sm:block">
+          {/* Fighter hero */}
+          <section className="mt-6 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
+              <div>
+                <p className="mono-label">{event.event.name.toLowerCase()}</p>
+                <p className="mt-2 text-sm text-muted">
+                  {(fight.weightClass ?? "weight class pending").toLowerCase()} ·{" "}
+                  {fight.rounds} rounds · {fight.cardPlacement.toLowerCase()}
+                </p>
+              </div>
+            </div>
+            {vm.isScored && <FightResultBanner viewModel={vm} />}
+
+            <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
+              <FighterHeroPanel
+                fighter={fighterA}
+                cornerLabel="A"
+                isCall={vm.predictedWinner?.id === fighterA.id}
+                animationDelay="fl-delay-100"
+              />
+
+              {/* VS centre */}
+              <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0">
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-1/2 top-3 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
                 />
-              ),
-              details: (
-                <>
-                  <FormResumeModule
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute bottom-3 left-1/2 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
+                />
+                <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[3rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[4rem]">
+                  VS
+                </p>
+                <p className="mono-label text-[10px]">
+                  {(fight.weightClass ?? "").toLowerCase() || "weight class"}
+                </p>
+                <p className="mono-label text-[10px] text-subtle/60">{fight.rounds} rounds</p>
+              </div>
+
+              <FighterHeroPanel
+                fighter={fighterB}
+                align="right"
+                cornerLabel="B"
+                isCall={vm.predictedWinner?.id === fighterB.id}
+                animationDelay="fl-delay-300"
+              />
+            </div>
+          </section>
+
+          {/* Fight read snapshot */}
+          <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
+            <FightReadSnapshot viewModel={vm} />
+          </div>
+
+          {/* Analysis sections — one scroll page, hash anchors preserved */}
+          <div className="mt-6 md:mt-8">
+            <FightPageTabs
+              tabs={[
+                { id: "call", label: "call" },
+                { id: "shape", label: "shape" },
+                { id: "details", label: "details" },
+              ]}
+              panels={{
+                call: (
+                  <TheCall viewModel={vm} />
+                ),
+                shape: (
+                  <StyleComparisonBars
                     fighterA={fighterA}
                     fighterB={fighterB}
-                    modelOutput={fightShapeModel}
+                    predictedWinnerId={vm.predictedWinner?.id ?? null}
                   />
-                  <PathsToVictory
-                    fight={fight}
-                    modelOutput={fightShapeModel}
-                    viewModel={vm}
-                  />
-                </>
-              ),
-            }}
-          />
+                ),
+                details: (
+                  <>
+                    <FormResumeModule
+                      fighterA={fighterA}
+                      fighterB={fighterB}
+                      modelOutput={fightShapeModel}
+                    />
+                    <PathsToVictory
+                      fight={fight}
+                      modelOutput={fightShapeModel}
+                      viewModel={vm}
+                    />
+                  </>
+                ),
+              }}
+            />
+          </div>
         </div>
       </main>
       <DisclaimerFooter />

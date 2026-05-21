@@ -2,6 +2,46 @@
 
 ## May 2026
 
+### Mobile-first redesign
+
+True mobile-first experience across homepage, event list, and fight read. Desktop layout is completely preserved — no changes to any desktop rendering path, model math, prediction values, routes, or public record logic. All mobile layouts use `sm:hidden` / `hidden sm:block` dual-block pattern.
+
+**New component — `components/MobileFightRead.tsx`:**
+- Client component encapsulating the complete mobile fight intelligence experience.
+- Six ordered sections, each a self-contained card in a `space-y-3.5` stack:
+  1. **Matchup header** — Fighter A vs Fighter B, names in `text-accent` if called winner, weight class · rounds · card placement metadata.
+  2. **Result banner** (when scored) — `FightResultBanner` wrapped in `rounded-2xl border border-line overflow-hidden`. Hidden when fight is not yet scored.
+  3. **Model call card** — Gradient border card with top accent rail. Shows winner name + probability in large text (accent-colored). Probability split bar: last names above bar, `probA%` fill left-to-right, both probability numbers below. Pending state shows a quiet one-line note — no large placeholder.
+  4. **Method lean** — "most likely finish" label, top method name in `text-xl`, proportional bar tracks for all three methods (same `METHOD_THIN = 8` logic as desktop). "directional only" note.
+  5. **Scenarios (why/flip)** — Stacked scenario cards from `vm.scenarios`. `lean` card uses `border-accent/30 bg-accent/[0.06]`. `swing` uses `border-line-strong`. Other cards neutral. No section heading — labelled "why it leans · what flips it".
+  6. **Shape accordion** — "fight shape" tap-to-expand. Collapsed by default with "Tap to expand — style edges" hint text. Expands inline to full `StyleComparisonBars` output. `+` / `−` toggle button.
+  7. **Record proof** — Winner accuracy % and resolved call count in large `data-text`. "View full record →" link. Hidden if `resolvedCount === 0`.
+- All prediction data reads from `PredictionViewModel` only — no independent computation.
+
+**Fight page — `app/events/[eventId]/[fightId]/page.tsx`:**
+- Added `getAccuracyMetrics` import from `@/lib/accuracy`.
+- Added `MobileFightRead` import.
+- Mobile block (`sm:hidden mt-5`): renders `MobileFightRead` with fight, fighters, viewModel, winnerAccuracy, resolvedCount.
+- Desktop block (`hidden sm:block`): contains the existing fighter hero panel, `FightReadSnapshot`, and `FightPageTabs` — zero changes to desktop rendering.
+
+**Event list — `components/EventHero.tsx`:**
+- Mobile block (`sm:hidden`): compact `rounded-2xl border` card. Status chip, event name (`text-2xl`), date/location. Footer strip: "main event · tap a fight below to read the model call". No matchup question, no instruction paragraph, no "View main event read" CTA.
+- Desktop block (`hidden sm:block`): existing full panel (promotion label, `text-5xl` name, date/location/bouts, main event highlight with matchup question, CTA, instruction line) — zero changes.
+- Outer padding tightened on mobile: `py-5` instead of `py-6 md:py-10` (desktop breakpoint prefix preserved).
+
+**Homepage — `app/page.tsx`:**
+- Mobile hero (`sm:hidden`): single current-card block with gradient border, status chip, event name, date, main event matchup, model call (if named), full-width "Open card" CTA. Accuracy strip below: winner accuracy % + resolved count + "Record →" link.
+- Desktop hero (`hidden sm:block`): existing two-column `lg:grid-cols-[1.08fr_0.92fr]` layout — zero changes.
+- "How to use" 4-column grid: wrapped in `hidden sm:block` — hidden on mobile. The information is in the footer and `/methodology`.
+
+**Files changed:** `components/MobileFightRead.tsx` (new), `app/events/[eventId]/[fightId]/page.tsx`, `components/EventHero.tsx`, `app/page.tsx`.
+
+**Not changed:** model math, prediction values, locked predictions, fight data, backtest logic, generated artifacts, public Model Record scoring, ingestion scripts, desktop layouts, `lib/predictionViewModel.ts`, `lib/predictionThresholds.ts`, `lib/accuracy/`, all `data/` files.
+
+**QA:** lint 0 warnings · build 35 static pages · audit:predictions 24/24.
+
+---
+
 ### Mobile UX pass — quick wins
 
 Three targeted mobile improvements. Zero model math, prediction values, fight data, backtest logic, locked predictions, or ingestion changes.

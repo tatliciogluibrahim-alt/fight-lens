@@ -172,7 +172,90 @@ export default function Home() {
     <>
       <AppHeader />
       <main>
-        <section className="section-shell pt-10 pb-8 md:pt-16 md:pb-12">
+        {/* ════════════════════════════════════════════════════════════════════
+            MOBILE hero — visible only below sm (640 px)
+            One dominant current-card block: event name, status, main event
+            matchup, model call, and one "Open card" CTA.
+            Accuracy strip below for record proof.
+            ════════════════════════════════════════════════════════════════════ */}
+        <section className="sm:hidden section-shell pt-5 pb-6">
+          {/* Current card */}
+          <div className="overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
+            <span
+              aria-hidden="true"
+              className="block h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"
+            />
+            <div className="p-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="mono-label text-accent">current card</p>
+                <StatusPill status={latestStats.status} callsLogged={latestStats.predictions.length} />
+              </div>
+              <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-[-0.04em] text-foreground">
+                {latestEvent.event.name}
+              </h1>
+              <p className="mt-1.5 text-sm text-muted">
+                {latestEvent.event.date ?? "date pending"}
+              </p>
+
+              {mainFight && (
+                <div className="mt-5 border-t border-line/60 pt-4">
+                  <p className="mono-label">main event</p>
+                  <MainEventLine fight={mainFight} />
+                  {mainVM.isNamedCall && (
+                    <div className="mt-3 border-l-2 border-accent/50 pl-3">
+                      <p className="mono-label">model call</p>
+                      <p className="mt-1 text-lg font-semibold tracking-tight text-accent">
+                        {mainVM.predictedWinner?.name}
+                        {mainVM.winnerProbability != null && (
+                          <span className="data-text ml-2 text-base font-normal text-foreground">
+                            {mainVM.winnerProbability}%
+                          </span>
+                        )}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <Link
+                href={`/events/${latestEvent.event.id}`}
+                className="tap-target mt-5 flex w-full items-center justify-center rounded-full bg-accent font-semibold text-background transition hover:brightness-110"
+              >
+                Open card
+              </Link>
+            </div>
+          </div>
+
+          {/* Accuracy strip */}
+          {accuracyMetrics.resolvedCount > 0 && (
+            <div className="mt-3 flex items-center justify-between rounded-2xl border border-line bg-surface/70 px-5 py-4">
+              <div className="flex items-center gap-6">
+                {accuracyMetrics.winnerAccuracy != null && (
+                  <div>
+                    <p className="data-text text-xl text-foreground">{accuracyMetrics.winnerAccuracy}%</p>
+                    <p className="mono-label mt-0.5">accuracy</p>
+                  </div>
+                )}
+                <div>
+                  <p className="data-text text-xl text-foreground">{accuracyMetrics.resolvedCount}</p>
+                  <p className="mono-label mt-0.5">scored</p>
+                </div>
+              </div>
+              <Link
+                href="/record"
+                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-sm text-foreground transition hover:border-accent/40"
+              >
+                Record →
+              </Link>
+            </div>
+          )}
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════════
+            DESKTOP hero — visible only at sm+ (640 px and up)
+            Two-column layout: tagline + CTAs | current event card.
+            ════════════════════════════════════════════════════════════════════ */}
+        <section className="hidden sm:block section-shell pt-10 pb-8 md:pt-16 md:pb-12">
           <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
             <div className="fl-animate-fade-up">
               <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
@@ -241,7 +324,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-shell pb-8 md:pb-12">
+        {/* "How to use" — desktop only (4-column grid adds no value on mobile) */}
+        <section className="hidden sm:block section-shell pb-8 md:pb-12">
           <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
             <div>
               <p className="mono-label accent-rail">start here</p>
