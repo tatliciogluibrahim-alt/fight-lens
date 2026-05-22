@@ -2,6 +2,22 @@
 
 ## May 2026
 
+### UFC Freedom 250 official card data + pending-state QA
+
+Data and QA pass only. No model math, prediction thresholds, locked prediction values, public record scoring, backtest artifacts, or `opponentTotals` logic changed.
+
+- Verified the current official UFC listing for UFC Freedom 250 and updated `data/normalized/events/ufc-freedom-250.json` with the official event metadata: June 14, 2026, South Lawn of the White House, Washington, DC, United States, Paramount+, 8:00 PM EDT.
+- Added seven official fights as routeable pending matchups: Topuria vs. Gaethje, Pereira vs. Gane, O'Malley vs. Zahabi, Hokit vs. Lewis, Ruffy vs. Chandler, Nickal vs. Daukaus, and Lopes vs. Garcia.
+- Kept all Freedom 250 model-input data intentionally pending: `aggregateStats: null`, `styleProfile: null`, empty `fightHistory`/`lastFive`, empty `keyEdges`, `paths: null`, empty `contextNotes`, and `roundModel.hasEnoughForTrend: false`.
+- Added known UFCStats fighter IDs where they already existed in repo-normalized or generated UFCStats data, but did not copy old model inputs into the new event or create public calls.
+- Created no Freedom 250 prediction files. Public Model Record remains locked public calls only; historical backtests remain separate.
+- Adjusted `scripts/audit/predictions.ts` so the threshold guard allows deliberate `insufficientData`/pending route states while still failing named calls below the public threshold.
+- Full sweep confirmed UFC 326 and UFC 327 still have zero public prediction files, UFC 328/329 prediction coverage is unchanged, and every existing swept `fightHistory` row still includes the `opponentTotals` property.
+
+**QA:** lint passed · build passed with 43 static pages · package `audit:predictions` still hits local `tsx` named-pipe EPERM in this sandbox; the local no-IPC loader path passed 31/31 with 0 failures.
+
+---
+
 ### Design implementation — confidence band, round momentum, tale of the tape
 
 Three new visual components implemented from a Claude Design mockup. No model math, prediction values, locked predictions, backtest logic, or public record behavior changed. All data flows from existing `viewModel`, `fighter.roundModel`, and `fight.keyEdges`.

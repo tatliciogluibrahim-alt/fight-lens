@@ -13,16 +13,17 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 - **Model version:** outcome-v0.2
 - **Backtest corpus:** 20 completed UFC events, 253 scored fights
 - **Winner accuracy:** 66% | **Method accuracy:** 58% | **Brier:** 0.219
-- **Public logged calls:** 25 (`isBacktestReconstruction: false`) — UFC 328 (13) + UFC 329 (11) + UFC 328 islam-jdm backtest (1 — marked backtest)
-- **Static pages:** 36 (verified: `npm run build` → 36/36)
-- **Prediction audit:** 24/24 routes pass (`npm run audit:predictions`)
+- **Public logged calls:** 24 (`isBacktestReconstruction: false`) — UFC 328 (13) + UFC 329 (11)
+- **Historical backtest records:** 1 (`isBacktestReconstruction: true`) — `islam-jdm`
+- **Static pages:** 43 (verified: `npm run build` → 43/43)
+- **Prediction audit:** 31/31 routes pass via the local no-IPC loader path; the package script can hit the known local `tsx` named-pipe EPERM in this sandbox.
 - **Lint:** 0 warnings
 - **`opponentTotals` pipeline:** active; ~60% item-level coverage
 
 ### Events in registry (newest first)
 | Event | Fights | Predictions | Status |
 |---|---|---|---|
-| UFC Freedom 250: Topuria vs. Gaethje | **0** | 0 | **Empty shell — needs full data ingestion** |
+| UFC Freedom 250: Topuria vs. Gaethje | 7 | 0 | Official card live; model inputs and forecast pending |
 | UFC 329: McGregor vs. Holloway 2 | 11 | 11 | Forecast live, outcomes pending |
 | UFC 328 | 13 | 13 (+1 backtest) | Forecast live, outcomes pending |
 
@@ -30,111 +31,36 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 ## Immediate Codex Tasks
 
-### Task 1 — UFC Freedom 250 full data implementation
+### Task 1 — UFC Freedom 250 model-data ingestion when available
 
-The event shell exists at `data/normalized/events/ufc-freedom-250.json` but has 0 fights. The full card needs to be ingested, normalized, and published.
+`data/normalized/events/ufc-freedom-250.json` now contains the official UFC-listed card, but every fight is intentionally in a clean pending state. Do not create Freedom 250 prediction files until the normal production process has complete model inputs and produces real pre-fight calls.
 
-**Step 1: Find the event on UFCStats**
-Search `http://www.ufcstats.com/statistics/events/completed` (or upcoming events) for "UFC Freedom 250". The event ID will be in the URL like `/event-details/[hex-id]`. The confirmed event metadata:
+Confirmed official metadata currently in the event file:
 - Date: June 14, 2026
-- Venue: South Lawn of the White House, Washington, DC
-- Broadcast: Paramount+ · 8:00 PM ET
-- Main event: Ilia Topuria vs. Justin Gaethje (Lightweight)
-- Featured: Alex Pereira vs. Ciryl Gane (Light Heavyweight)
+- Venue: South Lawn of the White House, Washington, DC, United States
+- Broadcast: Paramount+ · 8:00 PM EDT
+- Main event: Ilia Topuria vs. Justin Gaethje, Lightweight Title Bout, 5 rounds
+- Featured: Alex Pereira vs. Ciryl Gane, Heavyweight Interim Title Bout, 5 rounds
+- Additional listed bouts: O'Malley/Zahabi, Hokit/Lewis, Ruffy/Chandler, Nickal/Daukaus, Lopes/Garcia
 
-**Step 2: Ingest**
+When UFCStats exposes an event page or the normal ingestion pipeline can source complete fighter inputs:
+
 ```bash
 npm run ingest:ufcstats -- --event-url http://www.ufcstats.com/event-details/[ID] --include-fights --include-fighters
-```
-This writes raw source JSON to `data/events/`. Check `scripts/ingest/README.md` for any flags.
-
-**Step 3: Normalize**
-```bash
 npm run normalize:data -- --event-id ufc-freedom-250
 ```
-This updates `data/normalized/events/ufc-freedom-250.json` with all fights and fighter stats.
 
-**Step 4: Verify data completeness**
-After normalization, check every fight for:
-- `fighters.fighterA.styleProfile` — all 8 axes populated (null axes degrade the radar)
-- `fighters.fighterA.roundModel.hasEnoughForTrend` — determines if RoundMomentumFlow renders a chart vs. pending state
-- `keyEdges` — must have both `fighterA` and `fighterB` non-null for each row (6 rows expected)
-- `fighters.fighterA.fightHistory.length` — minimum 3 fights needed for meaningful style scores
-- `fighters.fighterA.lastFive` — populated by normalization from fightHistory
+After normalization, verify:
+- `styleProfile` contains only sourced/derived values or explicit nulls.
+- `roundModel.hasEnoughForTrend` is false unless each fighter has enough real round samples.
+- `keyEdges` only contains rows where both sides have sourced values.
+- Every reused `fightHistory` item preserves its `opponentTotals` property.
+- No Freedom 250 fight appears on `/record` until a real non-backtest prediction file is produced by the normal process.
 
-Run this check:
-```bash
-node -e "
-const d = require('./data/normalized/events/ufc-freedom-250.json');
-d.fights.forEach(f => {
-  const fa = f.fighters.fighterA, fb = f.fighters.fighterB;
-  console.log(f.id);
-  console.log('  A:', fa.name, '| history:', fa.fightHistory.length, '| trend:', fa.roundModel.hasEnoughForTrend);
-  console.log('  B:', fb.name, '| history:', fb.fightHistory.length, '| trend:', fb.roundModel.hasEnoughForTrend);
-  const edges = f.keyEdges.filter(e => e.fighterA != null && e.fighterB != null).length;
-  console.log('  keyEdges sourced:', edges + '/' + f.keyEdges.length);
-});
-"
-```
-
-**Step 5: Create prediction files**
-For each fight, create `data/predictions/[fighter-a-lastname]-[fighter-b-lastname].json`.
-
-The `fightId` must exactly match the fight's `id` in the normalized event JSON (e.g. `topuria-gaethje`).
-
-Prediction file schema (copy and fill in with model outputs):
-```json
-{
-  "fightId": "topuria-gaethje",
-  "event": "UFC Freedom 250: Topuria vs. Gaethje",
-  "fighters": {
-    "fighterA": "Ilia Topuria",
-    "fighterB": "Justin Gaethje"
-  },
-  "generatedAt": "2026-06-13T20:00:00.000Z",
-  "modelVersion": "outcome-v0.2",
-  "isBacktestReconstruction": false,
-  "prediction": {
-    "fighterAWinProbability": 60,
-    "fighterBWinProbability": 40,
-    "methodBreakdown": {
-      "decision": 20,
-      "koTko": 70,
-      "submission": 10
-    }
-  },
-  "outcome": null
-}
-```
-
-Rules for prediction values:
-- `fighterAWinProbability + fighterBWinProbability = 100` (always)
-- `decision + koTko + submission = 100` (always)
-- Below 52% on both → "Too close to call" (the model handles this — just enter the raw probabilities)
-- `isBacktestReconstruction: false` for real pre-fight calls
-- `outcome: null` until the fight is scored (never fill this before the event)
-
-**Step 6: Register predictions in `lib/accuracy/index.ts`**
-Import each new prediction file and add to `allRecords`:
-```typescript
-import topuriaGaethje from "@/data/predictions/topuria-gaethje.json";
-// ... other new predictions
-
-const allRecords: PredictionRecord[] = [
-  // ... existing records
-  topuriaGaethje as PredictionRecord,
-  // ... other new ones
-];
-```
-
-**Step 7: Run full QA**
-```bash
-npm run lint          # 0 warnings
-npm run build         # page count must increase by (fights × 1) + 0 (event page already exists)
-npm run audit:predictions   # must pass all fight routes
-```
-
-After adding, say, 10 fights from Freedom 250, the build should show 46 static pages and audit should pass 34/34.
+Only after real pre-fight calls exist:
+- Add prediction JSON files with `outcome: null` and `isBacktestReconstruction: false`.
+- Register them in `lib/accuracy/index.ts`.
+- Never manually invent probabilities, method distributions, locked fields, or outcomes.
 
 ---
 
@@ -211,7 +137,13 @@ Run all of these before shipping any change:
 npm run lint              # 0 warnings required
 npm run build             # 36+ pages, must not decrease
 npm run audit:predictions # all fight routes must pass
-npm run backtest          # 253 fights, backtest accuracy must not regress
+npm run backtest          # run when model/backtest workflow requires it
+```
+
+If `npm run audit:predictions` hits the local `tsx` named-pipe EPERM issue in the Codex sandbox, run the same audit through the cached no-IPC loader:
+
+```bash
+NODE_OPTIONS="--import ./.npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/loader.mjs" node scripts/audit/predictions.ts
 ```
 
 Manual visual QA checklist (spot-check 2–3 fights after any data change):

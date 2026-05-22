@@ -88,7 +88,8 @@ function auditRoute(event: SourcedEvent, fight: SourcedFight, record: Prediction
     fail(route, event.event.name, fight.id, "probabilities-sum", `${vm.fighterA.winProbability}% + ${vm.fighterB.winProbability}% = ${sum}`);
   }
 
-  if (Math.max(vm.fighterA.winProbability, vm.fighterB.winProbability) < NAMED_CALL_MIN_PROBABILITY) {
+  const isDataPending = vm.callState === "insufficientData" || vm.callState === "pending";
+  if (!isDataPending && Math.max(vm.fighterA.winProbability, vm.fighterB.winProbability) < NAMED_CALL_MIN_PROBABILITY) {
     if (vm.predictedWinner || vm.callState !== "noLean" || vm.displayedCallLabel !== "Too close to call") {
       fail(route, event.event.name, fight.id, "no-lean-threshold", `top probability below ${NAMED_CALL_MIN_PROBABILITY}% produced callState=${vm.callState}, winner=${vm.predictedWinner?.name ?? "none"}, label="${vm.displayedCallLabel}"`);
     }
