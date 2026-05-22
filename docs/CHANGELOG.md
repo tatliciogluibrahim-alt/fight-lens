@@ -2,6 +2,25 @@
 
 ## May 2026
 
+### Claude Design UI translation pass
+
+UI implementation pass translating the provided Claude Design direction into the real Next.js app. No model math, prediction values, locked prediction files, generated prediction artifacts, public record scoring, backtest logic, ingestion, or normalized event data changed.
+
+- Added a mobile bottom navigation shell with existing routes only: home (`/`), cards (`/events`), and record (`/record`). Desktop top navigation remains intact.
+- Tightened the global visual system toward the reference: deeper app background, softer icy-blue accent treatment, and safe mobile bottom spacing so fixed nav does not trap content.
+- Reworked the homepage hero into a stronger mobile-first product opener using “forecast the card / track the result” language, with no betting or unsupported live wording.
+- Rebuilt homepage card discovery as compact selectable event cards with a clear active state and one primary card action, while keeping `/events` as the full browse route.
+- Replaced visible “forecast live” language with “calls logged,” “forecast pending,” or “outcomes pending” depending on the real event state.
+- Made mobile event fight lists feel more tappable by rendering separate mobile fight cards and adding clear forecast-pending labels when calls are unavailable.
+- Updated fight-read copy from “live path” to “counter path” / “alternate path,” including no-lean copy that now says both paths remain viable.
+- Made the mobile fight header more app-like with a compact versus layout while preserving all real fighter and prediction data.
+- Made fight shape more compact and interactive: the existing real style-profile radar now supports fighter/both focus and tap-to-compare axis details. Shape copy still states it is not the winner forecast.
+- Simplified `/record` so public named-call accuracy appears in one primary module, with historical validation separated as a smaller computed section.
+
+**QA:** `npm run lint` passed · `npm run build` passed with 43/43 static pages · `npm run audit:predictions` hit the documented local `tsx` named-pipe EPERM issue · documented no-IPC loader audit passed 31/31 with 0 failures.
+
+---
+
 ### UFC Freedom 250 sourced data + public prediction lock
 
 Data, prediction, and QA pass. No model math, prediction thresholds, existing locked prediction values, public record scoring, backtest artifacts, `lib/predictionThresholds.ts`, or `opponentTotals` logic changed.

@@ -79,7 +79,20 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
         })}
       </div>
 
-      <div className="overflow-hidden rounded-[1.35rem] border border-line bg-surface/80">
+      <div className="grid gap-3 sm:hidden">
+        {visibleFights.map((fight) => (
+          <div key={fight.id} className="overflow-hidden rounded-2xl border border-line bg-surface/75">
+            <FightCard
+              eventId={eventId}
+              fight={fight}
+              prediction={predByFightId.get(fight.id)}
+              predictionViewModel={vmByFightId.get(fight.id)}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className="hidden overflow-hidden rounded-[1.35rem] border border-line bg-surface/80 sm:block">
         {visibleFights.map((fight) => (
           <FightCard
             key={fight.id}

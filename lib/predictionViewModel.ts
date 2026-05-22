@@ -9,7 +9,7 @@
  *
  * For a locked fight, those could disagree — exactly the Chimaev/Strickland
  * contradiction observed in QA. This module collapses every public-facing
- * winner / lean / live-path reference into one shape that every component
+ * winner / lean / counter-path reference into one shape that every component
  * reads from.
  *
  * IMPORTANT: This module is presentation-only. It does NOT change model math.
@@ -306,8 +306,8 @@ function buildPublicScenarios({
     const pathB = topPathLabel(fight, asFighterRef(fight.fighters.fighterB, 50));
     const pathCopy =
       pathA || pathB
-        ? `No single live path is assigned because the winner call is too close. Watch ${fight.fighters.fighterA.name}${pathA ? ` through ${pathA}` : ""} and ${fight.fighters.fighterB.name}${pathB ? ` through ${pathB}` : ""}.`
-        : "No single live path is assigned because the winner call is too close. Both fighters' routes stay live until one clear edge separates the read.";
+        ? `No single counter path is assigned because the winner call is too close. Watch ${fight.fighters.fighterA.name}${pathA ? ` through ${pathA}` : ""} and ${fight.fighters.fighterB.name}${pathB ? ` through ${pathB}` : ""}.`
+        : "No single counter path is assigned because the winner call is too close. Both fighters' routes remain viable until one clear edge separates the read.";
 
     return [
       {
@@ -332,9 +332,9 @@ function buildPublicScenarios({
   }
 
   const loserPath = topPathLabel(fight, predictedLoser);
-  const livePathDescription = loserPath
-    ? `${predictedLoser.name}'s live path is ${loserPath}. The public call still leans ${predictedWinner.name}, but ${predictedLoser.name} has ${loserProbability}% in the model.`
-    : `${predictedLoser.name} still has ${loserProbability}% in the model. That path matters if the fight shifts, even with the public call leaning ${predictedWinner.name}.`;
+  const counterPathDescription = loserPath
+    ? `${predictedLoser.name}'s counter path is ${loserPath}. The public call still leans ${predictedWinner.name}, but ${predictedLoser.name} has ${loserProbability}% in the model.`
+    : `${predictedLoser.name} still has ${loserProbability}% in the model. That path matters if the matchup plays differently than the model expects, even with the public call leaning ${predictedWinner.name}.`;
 
   return [
     {
@@ -345,9 +345,9 @@ function buildPublicScenarios({
     },
     {
       id: "upset",
-      title: "live path",
+      title: "counter path",
       fighterLabel: predictedLoser.name,
-      description: livePathDescription,
+      description: counterPathDescription,
     },
     {
       id: "swing",

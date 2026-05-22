@@ -71,14 +71,14 @@ export function ProbabilityBar({ probA, probB, nameA, nameB, tooClose }: Probabi
         </div>
 
         <div className="rounded-2xl border border-line bg-surface/60 p-6 md:p-7">
-          <p className="mono-label">live path</p>
+          <p className="mono-label">counter path</p>
           <p className="mt-3 text-xl font-semibold leading-tight tracking-[-0.03em] text-foreground">
             {otherName}
           </p>
           <p className="data-text mt-3 text-3xl text-muted md:text-4xl">
             {otherProb}%
           </p>
-          <p className="mt-2 text-xs text-subtle">Still live if the fight shifts.</p>
+          <p className="mt-2 text-xs text-subtle">Alternate path if the matchup plays differently than the model expects.</p>
         </div>
       </div>
     </div>

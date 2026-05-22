@@ -23,9 +23,18 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 ### Events in registry (newest first)
 | Event | Fights | Predictions | Status |
 |---|---|---|---|
-| UFC Freedom 250: Topuria vs. Gaethje | 7 | 7 | Sourced fighter data live; public forecasts locked, outcomes pending |
-| UFC 329: McGregor vs. Holloway 2 | 11 | 11 | Forecast live, outcomes pending |
-| UFC 328 | 13 | 13 (+1 backtest) | Forecast live, outcomes pending |
+| UFC Freedom 250: Topuria vs. Gaethje | 7 | 7 | Sourced fighter data available; public forecasts logged, outcomes pending |
+| UFC 329: McGregor vs. Holloway 2 | 11 | 11 | Forecast calls logged, outcomes pending |
+| UFC 328 | 13 | 13 (+1 backtest) | Forecast calls logged, outcomes pending |
+
+### Latest UI pass — Claude Design translation
+
+- Mobile shell now includes a fixed bottom nav with existing routes only: `/`, `/events`, and `/record`. Desktop top nav remains the primary desktop navigation.
+- Homepage hero uses concise forecast/tracking language and the card discovery module now presents compact selectable event cards with one expanded active card.
+- Event and fight-card copy avoids unsupported "live" wording; event states use "forecast pending," "calls logged," and "outcomes pending" based on real data.
+- Fight reads use "counter path" / "alternate path" language. Existing `viewModel.livePathFighter` naming remains internal for compatibility, but public UI copy should not say "live path."
+- `StyleComparisonBars` is now interactive on the client: fighter/both focus toggle plus tap-to-compare radar axes. It still reads only existing style profiles and `buildShapeNarrative()` output.
+- `/record` has one primary public named-call accuracy module; historical validation remains computed from backtest reconstruction data and is visually separated.
 
 ---
 
@@ -175,7 +184,7 @@ Manual visual QA checklist (spot-check 2–3 fights after any data change):
 | Route | Notes |
 |---|---|
 | `/` | Homepage — hero → current-card module → compact record strip → event selector → guide. |
-| `/events` | Events index — Next Card, Upcoming, Past Scored groups. |
+| `/events` | Events index — Next Card, Upcoming, Past Scored groups; mobile fight cards render as separate tappable cards. |
 | `/events/[eventId]` | Event page — fight list via `EventHero` + `FightCard`. |
 | `/events/[eventId]/[fightId]` | Fight page — dual layout: `sm:hidden` mobile + `hidden sm:block` desktop. |
 | `/record` | Public logged calls (top) + historical backtest (bottom). Two clearly labeled sections. |
@@ -215,9 +224,11 @@ Manual visual QA checklist (spot-check 2–3 fights after any data change):
 | `components/RoundMomentumFlow.tsx` | **NEW.** SVG round-by-round momentum chart from `fighter.roundModel.roundScores`. Shows pending if `!hasEnoughForTrend`. Desktop: call tab. Mobile: after scenarios. |
 | `components/TaleOfTape.tsx` | Dual-bar center-meeting metrics comparison. Kept in the repo but no longer rendered on fight pages. |
 | `components/MobileFightRead.tsx` | Mobile-only fight read. Flow: matchup → call (CallConfidenceBand) → method lean → scenarios → RoundMomentumFlow → ContextualNotes → shape accordion → record. |
-| `components/StyleComparisonBars.tsx` | Desktop fight shape section: radar + insight cards + collapsed axis breakdown. |
+| `components/StyleComparisonBars.tsx` | Fight shape section: compact interactive radar + insight cards + collapsed axis breakdown. Client-side focus/axis UI only; no style math changes. |
 | `components/FightPageTabs.tsx` | Desktop section anchor wrapper. Assigns `id="section-{id}"`. |
 | `components/FightCard.tsx` | Event page matchup row. |
+| `components/AppHeader.tsx` | Desktop top nav plus mobile bottom nav. Mobile labels are home/cards/record and route to existing pages. |
+| `components/HomeEventSelector.tsx` | Homepage compact card discovery. Shows real event states only; no prototype data. |
 | `components/ContextualNotes.tsx` | Manual context notes renderer. Does not affect prediction math. |
 | `components/HomeEventSelector.tsx` | Homepage event picker — pill toggle, replaces native `<select>`. |
 | `components/EventHero.tsx` | Event page hero. Uses `findMainEventFight()` for the "View main event read" CTA (not `fights[0]`). |

@@ -6,7 +6,7 @@
  *
  * APPROVED vocabulary:
  *   model call, model lean, forecast, win probability, win lean,
- *   method lean, swing factor, live path, confidence, read strength,
+ *   method lean, swing factor, counter path, confidence, read strength,
  *   model record, not a guarantee, signal-based, locked before the fight,
  *   call accuracy, finish vs. decision read, view read
  *
@@ -36,8 +36,8 @@ export const TERMS = {
   /** The model's method prediction (finish/decision direction) */
   METHOD_LEAN: "finish vs. decision lean",
 
-  /** Scenario where the other fighter still wins — kept "live" so it stays grounded */
-  LIVE_PATH: "live path",
+  /** Scenario where the other fighter can still win if the matchup plays differently */
+  LIVE_PATH: "counter path",
 
   /** Plain-English read of how strong the model's signal is */
   READ_STRENGTH: "read strength",

@@ -26,87 +26,90 @@ export function HomeEventSelector({ events }: { events: HomeEventOption[] }) {
   if (!selected) return null;
 
   return (
-    <div className="rounded-2xl border border-line bg-surface/70 p-4 md:p-5">
-      <div className="flex flex-col gap-3">
+    <div>
+      <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <p className="mono-label">event discovery</p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-[-0.035em] md:text-3xl">choose a card.</h2>
+          <p className="mono-label accent-rail">card discovery</p>
+          <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">choose a card.</h2>
         </div>
-
-        {/* Pill toggle — scrollable on mobile, no wrapping */}
-        <div className="flex gap-1 overflow-x-auto rounded-full border border-line bg-surface/60 p-1">
-          {events.map((event) => {
-            const isActive = event.id === selected.id;
-            return (
-              <button
-                key={event.id}
-                type="button"
-                onClick={() => setSelectedId(event.id)}
-                className={`tap-target shrink-0 rounded-full px-4 text-sm transition ${
-                  isActive
-                    ? "bg-surface-2 text-foreground"
-                    : "text-muted hover:bg-surface-2/80 hover:text-foreground"
-                }`}
-              >
-                {event.optionLabel}
-              </button>
-            );
-          })}
-        </div>
+        <Link href="/events" className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-accent">
+          all events →
+        </Link>
       </div>
 
-      <div className="mt-4 grid gap-4 rounded-2xl border border-line bg-background/35 p-4 md:grid-cols-[1fr_auto] md:items-end md:p-5">
-        <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="status-pill">
-              <span className="dot" />
-              {selected.statusLabel}
-            </span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-              {selected.statusDetail}
-            </span>
-          </div>
+      <div className="grid gap-3 lg:grid-cols-3">
+        {events.map((event) => {
+          const isActive = event.id === selected.id;
 
-          <h3 className="mt-3 text-xl font-semibold leading-tight tracking-[-0.035em] md:text-3xl">
-            {selected.title}
-          </h3>
+          return (
+            <article
+              key={event.id}
+              className={`overflow-hidden rounded-2xl border transition ${
+                isActive
+                  ? "border-accent/35 bg-surface"
+                  : "border-line bg-surface/60 hover:border-line-strong hover:bg-surface/80"
+              }`}
+            >
+              <button
+                type="button"
+                onClick={() => setSelectedId(event.id)}
+                className="w-full p-4 text-left"
+                aria-pressed={isActive}
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <p className={`mono-label ${isActive ? "text-accent" : ""}`}>{event.optionLabel}</p>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+                    {event.statusLabel}
+                  </span>
+                </div>
 
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
-            <span>{selected.date}</span>
-            <span>{selected.location}</span>
-            {selected.broadcastLine ? <span>{selected.broadcastLine}</span> : null}
-          </div>
-          {selected.venue ? (
-            <p className="mt-1 text-xs text-subtle md:text-sm">{selected.venue}</p>
-          ) : null}
+                <h3 className="mt-3 text-lg font-semibold leading-tight tracking-[-0.03em] text-foreground">
+                  {event.title}
+                </h3>
 
-          <div className="mt-4 border-t border-line/60 pt-3">
-            <p className="mono-label">main event</p>
-            <p className="mt-1.5 text-sm font-semibold leading-tight tracking-tight text-foreground md:text-base">
-              {selected.mainEvent ?? "Model calls unlock once fight data is available."}
-            </p>
-            {selected.featuredBout ? (
-              <p className="mt-1.5 text-xs text-muted md:text-sm">
-                <span className="text-subtle">also listed · </span>{selected.featuredBout}
-              </p>
-            ) : null}
-          </div>
-        </div>
+                <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted">
+                  <span>{event.date}</span>
+                  <span>{event.location}</span>
+                </div>
+              </button>
 
-        <div className="flex flex-col gap-2 sm:flex-row md:flex-col">
-          <Link
-            href={selected.href}
-            className="tap-target inline-flex w-full items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110 md:w-auto"
-          >
-            {selected.ctaLabel}
-          </Link>
-          <Link
-            href="/events"
-            className="tap-target inline-flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 px-5 text-sm text-foreground transition hover:border-accent/40 md:w-auto"
-          >
-            All events
-          </Link>
-        </div>
+              {isActive ? (
+                <div className="border-t border-line/60 px-4 pb-4 pt-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="status-pill is-active">
+                      <span className="dot" />
+                      {event.statusDetail}
+                    </span>
+                    {event.broadcastLine ? (
+                      <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+                        {event.broadcastLine}
+                      </span>
+                    ) : null}
+                  </div>
+
+                  <div className="mt-3">
+                    <p className="mono-label">main event</p>
+                    <p className="mt-1.5 text-sm font-semibold leading-tight tracking-tight text-foreground">
+                      {event.mainEvent ?? "Model calls unlock once fight data is available."}
+                    </p>
+                    {event.featuredBout ? (
+                      <p className="mt-1.5 text-xs text-muted">
+                        <span className="text-subtle">also listed · </span>{event.featuredBout}
+                      </p>
+                    ) : null}
+                  </div>
+
+                  <Link
+                    href={event.href}
+                    className="tap-target mt-4 inline-flex w-full items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+                  >
+                    {event.ctaLabel}
+                  </Link>
+                </div>
+              ) : null}
+            </article>
+          );
+        })}
       </div>
     </div>
   );

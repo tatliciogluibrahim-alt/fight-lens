@@ -74,7 +74,7 @@ export function CallConfidenceBand({
             </span>
           </div>
           <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
-            no named model call · both paths live
+            no named model call · both paths remain viable
           </p>
         </div>
       ) : (
@@ -152,7 +152,7 @@ export function CallConfidenceBand({
           <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">counter path</p>
           <p className="mt-1 text-sm leading-snug text-muted">
             <span className="font-medium text-foreground">{loserName}</span>
-            <span className="text-subtle"> · what changes if the call flips · </span>
+            <span className="text-subtle"> · alternate path if the matchup plays differently than the model expects · </span>
             <span className="font-mono tabular-nums text-foreground">{loserProbability}%</span>
           </p>
         </div>

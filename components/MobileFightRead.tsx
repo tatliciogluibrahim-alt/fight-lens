@@ -55,33 +55,37 @@ function MobileMatchupHeader({
 
   return (
     <div className="rounded-2xl border border-line bg-surface/70 p-5">
-      <p
-        className={`text-xl font-semibold leading-tight tracking-tight ${
-          calledA ? "text-accent" : noLean ? "text-muted" : "text-foreground"
-        }`}
-      >
-        {fighterA.name}
+      <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+        {(fight.weightClass ?? "weight pending").toLowerCase()}
+        {" · "}{fight.rounds}R
+        {" · "}{fight.cardPlacement.toLowerCase()}
       </p>
-      <p className="my-2.5 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/60">
-        vs
-      </p>
-      <p
-        className={`text-xl font-semibold leading-tight tracking-tight ${
-          calledB ? "text-accent" : noLean ? "text-muted" : "text-foreground"
-        }`}
-      >
-        {fighterB.name}
-      </p>
+
+      <div className="mt-4 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+        <p
+          className={`min-w-0 break-words text-2xl font-semibold leading-[1.02] ${
+            calledA ? "text-accent" : noLean ? "text-muted" : "text-foreground"
+          }`}
+        >
+          {fighterA.name}
+        </p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-subtle/60">
+          vs
+        </p>
+        <p
+          className={`min-w-0 break-words text-right text-2xl font-semibold leading-[1.02] ${
+            calledB ? "text-accent" : noLean ? "text-muted" : "text-foreground"
+          }`}
+        >
+          {fighterB.name}
+        </p>
+      </div>
+
       {noLean && (
         <p className="mt-2 font-mono text-[9px] uppercase tracking-widest text-subtle/70">
           too close to call
         </p>
       )}
-      <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle ${noLean ? "mt-1" : "mt-3"}`}>
-        {(fight.weightClass ?? "weight pending").toLowerCase()}
-        {" · "}{fight.rounds}R
-        {" · "}{fight.cardPlacement.toLowerCase()}
-      </p>
     </div>
   );
 }
@@ -102,8 +106,6 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
   }
 
   const isNoLean = vm.callState === "noLean";
-  const livePathName = vm.livePathFighter?.name;
-  const livePathProbability = vm.loserProbability;
 
   return (
     <div id="section-call" className="scroll-mt-16 overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
@@ -299,7 +301,7 @@ function MobileRecordProof({
         {winnerAccuracy != null && (
           <div>
             <p className="data-text text-3xl text-foreground">{winnerAccuracy}%</p>
-            <p className="mono-label mt-1">winner accuracy</p>
+            <p className="mono-label mt-1">named-call</p>
           </div>
         )}
         <div>

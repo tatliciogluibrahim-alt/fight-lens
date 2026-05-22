@@ -41,9 +41,9 @@ function eventStatusChip(event: SourcedEvent, lockedPredictions: PredictionRecor
 
   if (resolved.length === 0) {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
+      <span className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/[0.05] px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
         <span className="size-1.5 animate-pulse rounded-full bg-accent/70" />
-        forecast live · {lockedPredictions.length} calls logged · outcomes pending
+        calls logged · {lockedPredictions.length} · outcomes pending
       </span>
     );
   }
@@ -132,13 +132,13 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
                   <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
                     {mainFight.matchupQuestion}
                   </p>
-                ) : (
-                  <p className="mt-2 text-sm text-muted">
-                    {mainFightHasCall
-                      ? "Forecast is live."
-                      : "Forecast opens when fight data is ready."}
-                  </p>
-                )}
+            ) : (
+              <p className="mt-2 text-sm text-muted">
+                {mainFightHasCall
+                  ? "Forecast calls are logged."
+                  : "Forecast opens when fight data is ready."}
+              </p>
+            )}
               </div>
               {mainFight ? (
                 <Link

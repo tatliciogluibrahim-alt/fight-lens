@@ -168,7 +168,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
           why the model leans this way.
         </h2>
         <p className="mt-3 text-sm text-muted">
-          Method, live path, and what could flip the read.
+          Method, counter path, and what could flip the read.
         </p>
       </div>
 
@@ -200,7 +200,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
         {/* Method lean */}
         <MethodLean viewModel={vm} />
 
-        {/* The call / Live path / What breaks the call */}
+        {/* The call / Counter path / What breaks the call */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {scenarios.map((scenario) => (
             <ScenarioCard key={scenario.id} scenario={scenario} />

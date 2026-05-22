@@ -184,7 +184,7 @@ function ActualRoundChart() {
     <div className="module-card">
       <div className="module-header">
         <p className="mono-label">actual fight / round dominance</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">control stayed live.</h2>
+        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">control kept the path open.</h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
           Dominance score per round = sig strikes landed + control seconds / 30 + takedowns * 5.
           Islam won every round by the model because control time kept scoring pressure active.

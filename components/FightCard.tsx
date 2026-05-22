@@ -163,6 +163,12 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
             )}
           </div>
         )}
+        {!hasPred && (
+          <p className="mt-3 text-sm text-muted">
+            <span className="text-subtle">model status · </span>
+            forecast pending
+          </p>
+        )}
 
         {/* Result chip — only when scored, not for pending */}
         {showMobileResultChip && (
@@ -240,7 +246,12 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
               </span>
             ) : hasPred && !vm.isNamedCall ? (
               <span className="font-medium text-muted">{vm.displayedCallLabel}</span>
-            ) : null}
+            ) : (
+              <span className="text-muted">
+                <span className="text-subtle">model status · </span>
+                forecast pending
+              </span>
+            )}
 
             {methodTop && (
               <span className="text-subtle">

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { SourcedFighter } from "@/lib/sourced-event";
 import { getStyleRadarDimensions, hasEnoughStyleRadarData } from "@/lib/style-radar";
 import { buildShapeNarrative, type NarrativeAxisCard } from "@/lib/fight-shape-model/shape-narrative";
@@ -31,7 +34,7 @@ function shapeCardTone(kind: NarrativeAxisCard["kind"]) {
 function ShapeCard({ card }: { card: NarrativeAxisCard }) {
   const tone = shapeCardTone(card.kind);
   return (
-    <div className={`rounded-2xl border ${tone.border} ${tone.bg} p-5`}>
+    <div className={`rounded-2xl border ${tone.border} ${tone.bg} p-4`}>
       <div className="flex items-baseline justify-between gap-3">
         <p className={`mono-label ${tone.labelTone}`}>{card.title}</p>
         {card.delta != null ? (
@@ -65,11 +68,17 @@ function OverlayRadar({
   profileB,
   nameA,
   nameB,
+  focus,
+  activeAxis,
+  onAxisSelect,
 }: {
   profileA: NullableStyleProfile | null | undefined;
   profileB: NullableStyleProfile | null | undefined;
   nameA: string;
   nameB: string;
+  focus: "a" | "b" | "both";
+  activeAxis: string | null;
+  onAxisSelect: (axis: string | null) => void;
 }) {
   const SIZE = 360;
   const CENTER = SIZE / 2;
@@ -98,12 +107,13 @@ function OverlayRadar({
   }
 
   return (
-    <svg
-      viewBox={`0 0 ${SIZE} ${SIZE}`}
-      className="h-full w-full overflow-visible"
-      role="img"
-      aria-label={`${nameA} vs ${nameB} style comparison radar`}
-    >
+    <div>
+      <svg
+        viewBox={`0 0 ${SIZE} ${SIZE}`}
+        className="h-full w-full overflow-visible"
+        role="img"
+        aria-label={`${nameA} vs ${nameB} style comparison radar`}
+      >
       {/* Background halo */}
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(226,232,240,0.018)" />
       <circle
@@ -127,21 +137,35 @@ function OverlayRadar({
       {dimsA.map((dim, i) => {
         const end = point(i, 100);
         const lp = point(i, 100, LABEL_RADIUS);
+        const active = activeAxis === dim.key;
         return (
-          <g key={dim.key}>
+          <g
+            key={dim.key}
+            role="button"
+            tabIndex={0}
+            className="cursor-pointer"
+            onClick={() => onAxisSelect(active ? null : dim.key)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                onAxisSelect(active ? null : dim.key);
+              }
+            }}
+          >
             <line
               x1={CENTER} y1={CENTER} x2={end.x} y2={end.y}
-              stroke="var(--line-strong)" strokeOpacity={0.45} strokeWidth={0.8}
+              stroke="var(--line-strong)" strokeOpacity={active ? 0.9 : 0.45} strokeWidth={active ? 1.2 : 0.8}
             />
+            <circle cx={lp.x} cy={lp.y} r={22} fill="transparent" />
             <text
               x={lp.x} y={lp.y}
               textAnchor="middle" dominantBaseline="middle"
-              className="fill-subtle font-mono text-[10px] uppercase tracking-[0.12em]"
-              opacity={0.9}
+              className={active ? "fill-foreground font-mono text-[10px] uppercase tracking-[0.12em]" : "fill-subtle font-mono text-[10px] uppercase tracking-[0.12em]"}
+              opacity={active ? 1 : 0.9}
             >
               {dim.shortLabel}
             </text>
-            <circle cx={end.x} cy={end.y} r={2} fill="var(--line-strong)" opacity={0.5} />
+            <circle cx={end.x} cy={end.y} r={active ? 2.8 : 2} fill={active ? "var(--accent)" : "var(--line-strong)"} opacity={active ? 0.85 : 0.5} />
           </g>
         );
       })}
@@ -152,7 +176,8 @@ function OverlayRadar({
           points={toStr(pts(dimsB))}
           fill="rgba(139,154,180,0.12)"
           stroke="var(--muted)"
-          strokeWidth={2}
+          strokeWidth={focus === "a" ? 1.2 : 2}
+          opacity={focus === "a" ? 0.32 : 1}
           strokeLinejoin="round"
           strokeDasharray="5 3"
           className="fl-radar-bloom"
@@ -165,7 +190,8 @@ function OverlayRadar({
           points={toStr(pts(dimsA))}
           fill="rgba(226,232,240,0.08)"
           stroke="var(--foreground)"
-          strokeWidth={2.4}
+          strokeWidth={focus === "b" ? 1.2 : 2.4}
+          opacity={focus === "b" ? 0.32 : 1}
           strokeLinejoin="round"
           className="fl-radar-bloom fl-radar-bloom-delay"
         />
@@ -179,6 +205,7 @@ function OverlayRadar({
           <g key={`a-${d.key}`} className="fl-radar-bloom fl-radar-bloom-delay">
             <circle cx={p.x} cy={p.y} r={4}
               fill="var(--background)" stroke="var(--foreground)" strokeWidth={2}
+              opacity={focus === "b" ? 0.32 : 1}
               className="fl-radar-dot"
             >
               <title>{`${nameA} · ${d.label}: ${d.value}`}</title>
@@ -194,6 +221,7 @@ function OverlayRadar({
           <g key={`b-${d.key}`} className="fl-radar-bloom">
             <circle cx={p.x} cy={p.y} r={3.2}
               fill="var(--background)" stroke="var(--muted)" strokeWidth={1.8}
+              opacity={focus === "a" ? 0.32 : 1}
               className="fl-radar-dot"
             >
               <title>{`${nameB} · ${d.label}: ${d.value}`}</title>
@@ -204,7 +232,45 @@ function OverlayRadar({
 
       {/* Centroid mark */}
       <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" className="fl-radar-centroid" />
-    </svg>
+      </svg>
+
+      {activeAxis ? (() => {
+        const a = dimsA.find((dim) => dim.key === activeAxis);
+        const b = dimsB.find((dim) => dim.key === activeAxis);
+        const aValue = a?.hasData ? a.value : null;
+        const bValue = b?.hasData ? b.value : null;
+
+        return (
+          <div className="mt-3 rounded-xl border border-line bg-accent/[0.04] p-3">
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <p className="mono-label text-foreground">{a?.shortLabel ?? "axis"}</p>
+              <button
+                type="button"
+                onClick={() => onAxisSelect(null)}
+                className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle hover:text-foreground"
+              >
+                clear
+              </button>
+            </div>
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 text-center">
+              <div>
+                <p className="truncate text-xs text-muted">{nameA}</p>
+                <p className="data-text mt-1 text-2xl text-foreground">{aValue ?? "—"}</p>
+              </div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-subtle">vs</p>
+              <div>
+                <p className="truncate text-xs text-muted">{nameB}</p>
+                <p className="data-text mt-1 text-2xl text-muted">{bValue ?? "—"}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })() : (
+        <p className="mt-3 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/60">
+          tap any axis to compare
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -215,6 +281,8 @@ export function StyleComparisonBars({
   fighterB,
   predictedWinnerId = null,
 }: StyleComparisonBarsProps) {
+  const [focus, setFocus] = useState<"a" | "b" | "both">("both");
+  const [activeAxis, setActiveAxis] = useState<string | null>(null);
   const fighterADimensions = getStyleRadarDimensions(fighterA.styleProfile);
   const fighterBDimensions = getStyleRadarDimensions(fighterB.styleProfile);
 
@@ -238,7 +306,7 @@ export function StyleComparisonBars({
       <section className="module-card">
         <div className="module-header">
           <p className="mono-label">fight shape</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
             fight shape.
           </h2>
         </div>
@@ -266,7 +334,7 @@ export function StyleComparisonBars({
     <section className="module-card">
       <div className="module-header">
         <p className="mono-label">fight shape</p>
-        <h2 className="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+        <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           fight shape.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
@@ -280,7 +348,7 @@ export function StyleComparisonBars({
           Single central visual. Both fighters overlaid on one chart so shapes
           can be compared directly. Neither polygon color implies a winner.
         */}
-        <div className="relative overflow-visible rounded-3xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-5 md:p-7">
+        <div className="relative overflow-visible rounded-2xl border border-line-strong/60 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-4 md:p-5">
           {/* Corner registration marks */}
           <span className="pointer-events-none absolute left-3 top-3 h-3 w-3 border-l border-t border-line-strong" />
           <span className="pointer-events-none absolute right-3 top-3 h-3 w-3 border-r border-t border-line-strong" />
@@ -288,31 +356,42 @@ export function StyleComparisonBars({
           <span className="pointer-events-none absolute bottom-3 right-3 h-3 w-3 border-b border-r border-line-strong" />
 
           {/* Header: label + neutral fighter legend */}
-          <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="mono-label">shape fingerprint</p>
               <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-subtle/75">
                 style map only · not a winner forecast
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-4 text-[11px] font-medium tracking-tight">
-              <span className="inline-flex items-center gap-2 text-foreground">
-                <span className="h-px w-7 bg-foreground/80" />
-                {fighterA.name}
-              </span>
-              <span className="inline-flex items-center gap-2 text-muted">
-                <span className="h-px w-7 border-t border-dashed border-muted" />
-                {fighterB.name}
-              </span>
+            <div className="flex w-fit rounded-full border border-line bg-background/35 p-1">
+              {[
+                { id: "a", label: fighterA.name.split(" ").at(-1) ?? fighterA.name },
+                { id: "both", label: "both" },
+                { id: "b", label: fighterB.name.split(" ").at(-1) ?? fighterB.name },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => setFocus(item.id as "a" | "b" | "both")}
+                  className={`rounded-full px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition ${
+                    focus === item.id ? "bg-surface-2 text-foreground" : "text-subtle hover:text-foreground"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-[340px] sm:max-w-[460px] md:max-w-[520px]">
+          <div className="mx-auto w-full max-w-[300px] sm:max-w-[380px] md:max-w-[420px]">
             <OverlayRadar
               profileA={fighterA.styleProfile}
               profileB={fighterB.styleProfile}
               nameA={fighterA.name}
               nameB={fighterB.name}
+              focus={focus}
+              activeAxis={activeAxis}
+              onAxisSelect={setActiveAxis}
             />
           </div>
         </div>

@@ -27,7 +27,7 @@ const startSteps = [
   },
 ];
 
-type EventStatus = "cardBuilding" | "forecastLive" | "pendingOutcomes" | "completed";
+type EventStatus = "cardBuilding" | "callsLogged" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   predictions: PredictionRecord[];
@@ -92,7 +92,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
     eventPredictions.length === 0
       ? "cardBuilding"
       : resolved.length === 0
-        ? "forecastLive"
+        ? "callsLogged"
         : resolved.length < eventPredictions.length
           ? "pendingOutcomes"
           : "completed";
@@ -100,8 +100,8 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
   const countLabel =
     status === "completed"
       ? `${resolved.length} scored · ${correct.length}/${resolved.length} correct`
-      : status === "forecastLive"
-        ? `${eventPredictions.length} calls logged`
+      : status === "callsLogged"
+        ? `${eventPredictions.length} calls logged · outcomes pending`
         : event.fights.length > 0
           ? `${event.fights.length} bouts · model calls not published yet`
           : "fight card pending";
@@ -125,11 +125,11 @@ function StatusPill({ stats }: { stats: EventStats }) {
     );
   }
 
-  if (stats.status === "forecastLive") {
+  if (stats.status === "callsLogged") {
     return (
-      <span className="status-pill is-live">
+      <span className="status-pill is-active">
         <span className="dot" />
-        forecast live · {stats.predictions.length} calls logged
+        calls logged · {stats.predictions.length}
       </span>
     );
   }
@@ -184,7 +184,7 @@ function RecordProofStrip({
         <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:grid-cols-[auto_auto_auto_1fr_auto] sm:gap-4">
           <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
             <p className="data-text text-2xl leading-none text-accent">{winnerAccuracy != null ? String(winnerAccuracy) + "%" : "—"}</p>
-            <p className="mono-label mt-1">accuracy</p>
+            <p className="mono-label mt-1">named-call</p>
           </div>
           <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
             <p className="data-text text-2xl leading-none text-foreground">{resolvedCount}</p>
@@ -196,7 +196,7 @@ function RecordProofStrip({
           </div>
           <div className="hidden min-w-0 sm:block">
             <p className="mono-label">public model record</p>
-            <p className="mt-1 text-xs leading-5 text-muted">{totalCalls} logged calls. Historical validation stays separate.</p>
+            <p className="mt-1 text-xs leading-5 text-muted">{totalCalls} public logged calls. Historical validation stays separate.</p>
             <div className="mt-2">
               <AccuracyBar value={winnerAccuracy} />
             </div>
@@ -289,7 +289,7 @@ function selectorOption(event: SourcedEvent, predictions: PredictionRecord[], la
     id: event.event.id,
     optionLabel: eventShortName(event),
     title: event.event.name,
-    statusLabel: stats.status === "cardBuilding" ? "Forecast pending" : stats.status === "forecastLive" ? "Forecast live" : stats.status === "pendingOutcomes" ? "Pending outcomes" : "Completed",
+    statusLabel: stats.status === "cardBuilding" ? "Forecast pending" : stats.status === "callsLogged" ? "Calls logged" : stats.status === "pendingOutcomes" ? "Pending outcomes" : "Completed",
     statusDetail: label === "Past scored" ? stats.countLabel : stats.countLabel,
     date: event.event.date ?? "date TBA",
     location: eventLocation(event),
@@ -334,16 +334,15 @@ export default function Home() {
     <>
       <AppHeader />
       <main>
-        <section className="sm:hidden section-shell pt-6 pb-5">
-          <div className="rounded-2xl border border-line bg-surface/70 p-5">
+        <section className="sm:hidden section-shell pt-7 pb-5">
+          <div className="fl-animate-fade-up">
             <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
             <h1 className="mt-3 text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-foreground">
-              predictive analysis.
-              <span className="block text-accent">every call tracked.</span>
+              forecast the card.
+              <span className="block text-accent">track the result.</span>
             </h1>
             <p className="mt-4 text-sm leading-6 text-muted">
-              Fight Lens models UFC matchups before each card, logs every public call,
-              and scores every result after the fight.
+              Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.
             </p>
             <div className="mt-5 grid gap-3">
               <Link
@@ -366,12 +365,11 @@ export default function Home() {
           <div className="fl-animate-fade-up max-w-4xl">
             <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
             <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.4rem]">
-              predictive analysis.
-              <span className="block text-accent">every call tracked.</span>
+              forecast the card.
+              <span className="block text-accent">track the result.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Fight Lens models UFC matchups before each card, logs every public call,
-              and scores every result after the fight.
+              Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link

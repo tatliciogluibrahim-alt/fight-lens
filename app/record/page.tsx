@@ -177,48 +177,28 @@ export default function RecordPage() {
             ← back
           </Link>
 
-          <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_360px] lg:items-end">
-            <div>
-              <p className="mono-label accent-rail">model record</p>
-              <h1 className="text-4xl font-semibold leading-[0.96] tracking-[-0.05em] md:text-6xl">
-                record in progress.
-              </h1>
-              <p className="mt-4 max-w-2xl text-sm leading-6 text-muted md:text-base md:leading-7">
-                Public Model Record is logged before the fight and scored after the official result.
-                Historical validation stays separate.
-              </p>
-            </div>
+          <div className="mt-6 max-w-4xl">
+            <p className="mono-label accent-rail">model record</p>
+            <h1 className="text-4xl font-semibold leading-[0.96] tracking-[-0.05em] md:text-6xl">
+              public calls, scored cleanly.
+            </h1>
+            <p className="mt-4 max-w-2xl text-sm leading-6 text-muted md:text-base md:leading-7">
+              Public Model Record is logged before the fight and scored after the official result.
+              Named-call accuracy excludes too-close-to-call fights. Historical validation stays separate.
+            </p>
 
-            <div className="rounded-2xl border border-line bg-surface/70 p-4">
-              <p className="mono-label">public calls only</p>
-              <div className="mt-3 flex items-end justify-between gap-4">
-                <div>
-                  <p className="data-text text-4xl leading-none text-accent md:text-5xl">
-                    {metrics.winnerAccuracy != null ? metrics.winnerAccuracy + "%" : "—"}
-                  </p>
-                  <p className="mt-2 text-sm text-muted">
-                    {metrics.winnerAccuracy != null
-                      ? Math.round((metrics.winnerAccuracy / 100) * resolvedCount) + " correct of " + resolvedCount + " scored fights."
-                      : "Scored calls pending."}
-                  </p>
-                </div>
-                <span className="rounded-full border border-line bg-background/35 px-3 py-1.5 text-xs text-subtle">
-                  grade at 30
-                </span>
+            <div className="mt-6 grid max-w-xl grid-cols-3 gap-2 text-center">
+              <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
+                <p className="data-text text-2xl text-foreground">{lockedCalls.length}</p>
+                <p className="mono-label mt-1">calls</p>
               </div>
-              <div className="mt-4 grid grid-cols-3 gap-2 text-center">
-                <div className="rounded-lg border border-line bg-background/35 py-2">
-                  <p className="data-text text-lg text-foreground">{lockedCalls.length}</p>
-                  <p className="mono-label mt-0.5">calls</p>
-                </div>
-                <div className="rounded-lg border border-line bg-background/35 py-2">
-                  <p className="data-text text-lg text-foreground">{resolvedCount}</p>
-                  <p className="mono-label mt-0.5">scored</p>
-                </div>
-                <div className="rounded-lg border border-line bg-background/35 py-2">
-                  <p className="data-text text-lg text-foreground">{pendingCount}</p>
-                  <p className="mono-label mt-0.5">pending</p>
-                </div>
+              <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
+                <p className="data-text text-2xl text-foreground">{resolvedCount}</p>
+                <p className="mono-label mt-1">scored</p>
+              </div>
+              <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
+                <p className="data-text text-2xl text-foreground">{pendingCount}</p>
+                <p className="mono-label mt-1">pending</p>
               </div>
             </div>
           </div>
@@ -260,6 +240,24 @@ export default function RecordPage() {
               not the public record.
             </h2>
 
+            <div className="mt-4 grid gap-3 sm:grid-cols-[220px_1fr] sm:items-stretch">
+              <div className="rounded-xl border border-line bg-background/40 p-4">
+                <p className="data-text text-3xl text-muted">
+                  {backtestMetrics.winnerAccuracy != null ? `${backtestMetrics.winnerAccuracy}%` : "—"}
+                </p>
+                <p className="mono-label mt-2">historical named-call</p>
+                <p className="mt-1 text-xs leading-5 text-subtle">
+                  Computed from {backtestReconstructions.length} retroactive reconstruction{backtestReconstructions.length === 1 ? "" : "s"}.
+                </p>
+              </div>
+              <div className="rounded-xl border border-line bg-background/25 p-4">
+                <p className="text-xs font-semibold text-foreground">Separate dataset</p>
+                <p className="mt-1 text-xs leading-5 text-muted">
+                  These rows test whether the model behaves sensibly on past fights. They were not public calls and never count toward the public record above.
+                </p>
+              </div>
+            </div>
+
             {/* Key separation callout */}
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
               <div className="rounded-xl border border-line bg-background/40 p-4">
@@ -272,7 +270,7 @@ export default function RecordPage() {
               <div className="rounded-xl border border-line bg-background/40 p-4">
                 <p className="text-xs font-semibold text-foreground">Historical Validation (this section)</p>
                 <p className="mt-1 text-xs leading-5 text-muted">
-                  Retroactive model runs on 253 fights across 20 completed events.
+                  Retroactive model checks shown as labeled reconstruction rows.
                   Never publicly logged — used to test the model, not to claim calls.
                 </p>
               </div>

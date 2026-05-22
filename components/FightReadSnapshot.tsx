@@ -4,7 +4,7 @@ import type { PredictionViewModel } from "@/lib/predictionViewModel";
  * FightReadSnapshot — compact at-a-glance strip.
  *
  * Sits between the fighter hero and the analysis sections.
- * Shows model call, method lean, live path, and what breaks the call.
+ * Shows model call, method lean, counter path, and what breaks the call.
  *
  * Strictly presentation. Reads everything from the canonical viewModel.
  * No read-strength pill — that signal is internal only.
@@ -70,7 +70,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
       {/*
        * Grid: 2-col from 390 px up, 5-col at lg.
        * Model call spans full width (col-span-2 / lg:col-span-2).
-       * Method lean + live path share one row on mobile.
+       * Method lean + counter path share one row on mobile.
        * "What breaks the call" spans full width on mobile to avoid text clipping.
        */}
       <div className="grid grid-cols-2 gap-x-5 gap-y-5 lg:grid-cols-5">
@@ -99,10 +99,10 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
           <p className="text-[11px] text-subtle">Directional only</p>
         </Cell>
 
-        {/* Live path — half-width on mobile, 1/5 on desktop */}
-        <Cell label="live path" span="col-span-1 lg:col-span-1">
+        {/* Counter path — half-width on mobile, 1/5 on desktop */}
+        <Cell label="counter path" span="col-span-1 lg:col-span-1">
           {isNoLean ? (
-            <p className="text-xs leading-snug text-muted sm:text-sm">Both paths live.</p>
+            <p className="text-xs leading-snug text-muted sm:text-sm">Both paths remain viable.</p>
           ) : (
             <p className="text-sm leading-snug text-foreground">
               <span className="font-medium">{loserName}</span>

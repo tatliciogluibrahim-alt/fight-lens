@@ -223,7 +223,7 @@ export default function MethodologyPage() {
                 <p className="text-sm font-semibold text-foreground">What &quot;too close to call&quot; means</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
                   When the model&apos;s win probability for each fighter is below 52%, no named call
-                  is shown. Both paths stay live. This is not a broken state — it is the model
+                  is shown. Both paths remain viable. This is not a broken state — it is the model
                   being honest about low separation rather than forcing a named call.
                 </p>
               </div>

@@ -13,6 +13,46 @@ const links = [
   { href: "/methodology", label: "how it works", mobileVisible: false },
 ];
 
+const mobileLinks = [
+  {
+    href: "/",
+    label: "home",
+    icon: (
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M2.5 7.1 8 2.7l5.5 4.4V13a.5.5 0 0 1-.5.5h-3.1V9.4H6.1v4.1H3a.5.5 0 0 1-.5-.5V7.1Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/events",
+    label: "cards",
+    icon: (
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <rect x="2.4" y="3.6" width="11.2" height="8.8" rx="1.6" stroke="currentColor" strokeWidth="1.3" />
+        <path d="M2.8 6.5h10.4" stroke="currentColor" strokeWidth="1.3" />
+      </svg>
+    ),
+  },
+  {
+    href: "/record",
+    label: "record",
+    icon: (
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3.5 12.8V9.4M8 12.8V4.2M12.5 12.8V7.1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+];
+
+function isActivePath(pathname: string, href: string) {
+  return (
+    pathname === href ||
+    (href === "/events" && pathname.startsWith("/events")) ||
+    (href === "/record" && (pathname.startsWith("/record") || pathname.startsWith("/backtests"))) ||
+    (href === "/methodology" && pathname.startsWith("/methodology"))
+  );
+}
+
 export function AppHeader() {
   const pathname = usePathname();
 
@@ -37,15 +77,10 @@ export function AppHeader() {
         </Link>
 
         {/* Nav pills — right-aligned, scrollable on narrow screens */}
-        <div className="flex min-w-0 shrink items-center justify-end gap-2">
+        <div className="hidden min-w-0 shrink items-center justify-end gap-2 sm:flex">
           <div className="nav-pill-scroll flex items-center gap-1 overflow-x-auto rounded-full border border-line bg-surface/80 p-1">
             {links.map((link) => {
-              const isActive =
-                pathname === link.href ||
-                (link.href === "/events" && pathname.startsWith("/events")) ||
-                (link.href === "/record" &&
-                  (pathname.startsWith("/record") || pathname.startsWith("/backtests"))) ||
-                (link.href === "/methodology" && pathname.startsWith("/methodology"));
+              const isActive = isActivePath(pathname, link.href);
 
               return (
                 <Link
@@ -64,6 +99,27 @@ export function AppHeader() {
           </div>
 
           {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" && <PrototypeBadge />}
+        </div>
+      </nav>
+
+      <nav className="mobile-tabbar sm:hidden" aria-label="Primary">
+        <div className="mobile-tabbar-inner">
+          {mobileLinks.map((link) => {
+            const isActive = isActivePath(pathname, link.href);
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="mobile-tabbar-link"
+                data-active={isActive ? "true" : "false"}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.icon}
+                <span>{link.label}</span>
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </header>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Browse every UFC card Fight Lens has modeled, from the current forecast to scored past cards.",
 };
 
-type EventStatus = "cardBuilding" | "forecastLive" | "pendingOutcomes" | "completed";
+type EventStatus = "cardBuilding" | "callsLogged" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   eventPredictions: PredictionRecord[];
@@ -40,15 +40,15 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
     eventPredictions.length === 0
       ? "cardBuilding"
       : resolved.length === 0
-        ? "forecastLive"
+        ? "callsLogged"
         : resolved.length < eventPredictions.length
           ? "pendingOutcomes"
           : "completed";
   const countLabel =
     status === "completed"
       ? `${resolved.length} scored · ${correct.length}/${resolved.length} correct`
-      : status === "forecastLive"
-        ? `${eventPredictions.length} calls logged`
+      : status === "callsLogged"
+        ? `${eventPredictions.length} calls logged · outcomes pending`
         : event.fights.length > 0
           ? `${event.fights.length} bouts · model calls not published yet`
           : "fight card pending";
@@ -66,11 +66,11 @@ function StatusPill({ stats }: { stats: EventStats }) {
     );
   }
 
-  if (stats.status === "forecastLive") {
+  if (stats.status === "callsLogged") {
     return (
-      <span className="status-pill is-live">
+      <span className="status-pill is-active">
         <span className="dot" />
-        forecast live · {stats.eventPredictions.length} calls logged
+        calls logged · {stats.eventPredictions.length}
       </span>
     );
   }
@@ -241,7 +241,7 @@ export default function EventsIndexPage() {
             open a card. <span className="text-accent">read the calls.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-            Start with the next card, then browse live forecasts and scored cards.
+            Start with the next card, then browse logged forecasts and scored cards.
             Public record stays separate from historical validation.
           </p>
         </section>

@@ -139,7 +139,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
         </g>
       ))}
 
-      {/* Centroid mark — soft pulse hints at a "live" read */}
+      {/* Centroid mark — soft pulse hints at an active read */}
       <circle cx={CENTER} cy={CENTER} r={3.5} fill="var(--subtle)" className="fl-radar-centroid" />
     </svg>
   );

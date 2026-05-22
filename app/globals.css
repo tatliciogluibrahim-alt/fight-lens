@@ -7,20 +7,20 @@
   --font-geist-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
 
   /* Base palette — midnight signal */
-  --background: #070B12;
-  --surface: #101925;
-  --surface-2: #172435;
-  --line: #1D2B3D;
-  --line-strong: #3A4D63;
+  --background: #06080D;
+  --surface: #0D1018;
+  --surface-2: #111722;
+  --line: rgba(180, 210, 240, 0.09);
+  --line-strong: rgba(180, 210, 240, 0.18);
 
   /* Text */
-  --foreground: #EAF2FB;
-  --muted: #A8B7C8;
-  --subtle: #6F8197;
+  --foreground: #F1F6FB;
+  --muted: #A7B4C4;
+  --subtle: #667286;
 
   /* Accent — ice blue (model lean, active states) */
-  --accent: #8FD7F7;
-  --accent-soft: rgba(143, 215, 247, 0.12);
+  --accent: #9AD9FF;
+  --accent-soft: rgba(154, 217, 255, 0.12);
 
   /* Success — green (correct prediction, confirmed win) */
   --success: #34D399;
@@ -41,13 +41,11 @@ html {
 
 body {
   min-height: 100vh;
-  /* Quieter ground tone — subtle grid, single accent wash, less stacked SaaS noise */
   background:
-    linear-gradient(rgba(30, 45, 64, 0.10) 1px, transparent 1px) 0 0 / 96px 96px,
-    linear-gradient(90deg, rgba(30, 45, 64, 0.08) 1px, transparent 1px) 0 0 / 96px 96px,
-    radial-gradient(circle at 12% -10%, rgba(143, 215, 247, 0.04), transparent 32rem),
-    radial-gradient(circle at 50% 80%, rgba(13, 17, 23, 0.85), transparent 40rem),
-    linear-gradient(180deg, rgba(26, 35, 50, 0.3), transparent 22rem),
+    radial-gradient(ellipse 120% 70% at 50% -14%, rgba(154, 217, 255, 0.055), transparent 58rem),
+    linear-gradient(rgba(180, 210, 240, 0.045) 1px, transparent 1px) 0 0 / 112px 112px,
+    linear-gradient(90deg, rgba(180, 210, 240, 0.035) 1px, transparent 1px) 0 0 / 112px 112px,
+    linear-gradient(180deg, rgba(10, 16, 27, 0.6), transparent 24rem),
     var(--background);
   color: var(--foreground);
   font-size: 15px;
@@ -193,8 +191,8 @@ summary::-webkit-details-marker {
   text-transform: uppercase;
   color: var(--muted);
 }
-.status-pill.is-live {
-  border-color: rgba(143, 215, 247, 0.35);
+.status-pill.is-active {
+  border-color: rgba(154, 217, 255, 0.35);
   color: var(--accent);
 }
 .status-pill.is-scored {
@@ -207,7 +205,7 @@ summary::-webkit-details-marker {
   border-radius: 9999px;
   background: currentColor;
 }
-.status-pill.is-live .dot {
+.status-pill.is-active .dot {
   animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -224,6 +222,60 @@ summary::-webkit-details-marker {
 
 .tap-target {
   min-height: 44px;
+}
+
+/* ─── Mobile bottom navigation ────────────────────────────────────────────── */
+
+.mobile-tabbar {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 50;
+  display: none;
+  padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, transparent, rgba(6, 8, 13, 0.94) 32%);
+}
+
+.mobile-tabbar-inner {
+  margin: 0 auto;
+  display: grid;
+  max-width: 34rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 9999px;
+  background: rgba(13, 16, 24, 0.88);
+  padding: 0.375rem;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+
+.mobile-tabbar-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 9999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.mobile-tabbar-link:active {
+  transform: scale(0.97);
+}
+
+.mobile-tabbar-link[data-active="true"] {
+  background: var(--accent);
+  color: #06121D;
+}
+
+.mobile-tabbar-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
 }
 
 /* Pulsing dot for pending states */
@@ -277,7 +329,7 @@ summary::-webkit-details-marker {
   animation-delay: 220ms;
 }
 
-/* Soft pulse for the centroid mark — adds a "live" feel to the radar without
+/* Soft pulse for the centroid mark — adds a quiet active feel to the radar without
  * being noisy. Slower than the pending-state pulse-dot. */
 @keyframes fl-radar-centroid {
   0%, 100% { opacity: 0.55; }
@@ -324,7 +376,7 @@ summary::-webkit-details-marker {
   }
   .fl-radar-centroid,
   .animate-pulse,
-  .status-pill.is-live .dot {
+  .status-pill.is-active .dot {
     animation: none !important;
   }
   .fl-radar-dot {
@@ -333,6 +385,16 @@ summary::-webkit-details-marker {
   .fl-bar-fill {
     animation: none !important;
     transform: none !important;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .mobile-tabbar {
+    display: block;
   }
 }
 

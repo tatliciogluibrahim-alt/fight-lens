@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: MatchupPageProps): Promise<Me
     description: `${wc} matchup analysis. Win probabilities, method breakdown, and scenario paths for ${nameA} vs. ${nameB} at ${event.event.name}.`,
     openGraph: {
       title: `${nameA} vs. ${nameB} — Fight Lens`,
-      description: `${wc} · ${event.event.name}. Signal-based model call with win probability, method lean, and live path.`,
+      description: `${wc} · ${event.event.name}. Signal-based model call with win probability, method lean, and counter path.`,
       type: "article",
     },
   };

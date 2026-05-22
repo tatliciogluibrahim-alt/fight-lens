@@ -73,13 +73,13 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
 
   if (bothPending) return null;
 
-  const sectionLabel = isNoLean ? "paths to watch" : "live path";
-  const sectionHeading = isNoLean ? "both routes stay live." : "alternate path.";
+  const sectionLabel = isNoLean ? "paths to watch" : "counter path";
+  const sectionHeading = isNoLean ? "both routes stay viable." : "alternate path.";
   const sectionDescription = isDataPending
     ? null
     : isNoLean
-      ? "No fighter is assigned the live-path role because the winner call is too close."
-      : `Still live if the fight shifts for ${viewModel.livePathFighter?.name ?? "the non-called fighter"}.`;
+      ? "No fighter is assigned a counter-path role because the winner call is too close."
+      : `Alternate path for ${viewModel.livePathFighter?.name ?? "the non-called fighter"} if the matchup plays differently than the model expects.`;
 
   return (
     <section id="section-paths" className="module-card scroll-mt-28">
@@ -103,7 +103,7 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
               metric={pathA}
               paths={pathsA}
               accent={accentA}
-              roleLabel={accentA ? "live route" : null}
+              roleLabel={accentA ? "counter route" : null}
             />
           )}
           {!bNoPaths && (
@@ -112,7 +112,7 @@ export function PathsToVictory({ fight, modelOutput, viewModel }: PathsToVictory
               metric={pathB}
               paths={pathsB}
               accent={accentB}
-              roleLabel={accentB ? "live route" : null}
+              roleLabel={accentB ? "counter route" : null}
             />
           )}
         </div>
