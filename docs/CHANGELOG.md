@@ -2,6 +2,23 @@
 
 ## May 2026
 
+### UFC Freedom 250 sourced data + public prediction lock
+
+Data, prediction, and QA pass. No model math, prediction thresholds, existing locked prediction values, public record scoring, backtest artifacts, `lib/predictionThresholds.ts`, or `opponentTotals` logic changed.
+
+- Re-verified the official UFC Freedom 250 listing against `ufc.com/event/ufc-freedom-250` and `ufc.com/freedom250`; the official card still lists seven bouts on June 14, 2026 at the South Lawn of the White House in Washington, DC, streaming on Paramount+ at 8:00 PM EDT.
+- Ingested the UFCStats upcoming event page `48544433372ecfa6`, all seven matchup-preview fight pages, all 14 fighter profiles, and 69 recent completed fight-detail pages for recent-history totals and round samples.
+- Rebuilt `data/normalized/events/ufc-freedom-250.json` from the existing UFCStats normalizer with official UFC metadata overrides. All seven fights now have sourced profile stats, fight histories, last-five rows, round samples, derived style profiles, key edges, and UFCStats fight IDs.
+- Added seven real pre-fight public prediction files from the existing production outcome model: `topuria-gaethje`, `pereira-gane`, `o-malley-zahabi`, `hokit-lewis`, `ruffy-chandler`, `nickal-daukaus`, and `lopes-garcia`. Every new prediction has `outcome: null`, `isBacktestReconstruction: false`, and probability/method totals summing to 100.
+- Registered the Freedom 250 predictions in `lib/accuracy/index.ts`. Public Model Record now has 31 locked calls total: UFC 328 (13), UFC 329 (11), and UFC Freedom 250 (7). Historical backtest records remain separate.
+- Removed Tale of the Tape rendering from desktop and mobile fight pages. The sourced `keyEdges` remain in normalized data for audits and future UI reuse.
+- Extended `scripts/ingest/build-normalized-event.mjs` so event overrides can preserve official UFC metadata and official bout labels while still deriving fighter data from UFCStats.
+- Full sweep confirmed UFC 326 and UFC 327 still have zero public prediction files, `opponentTotals` remains present on populated fight-history rows, and no public/backtest mixing was introduced.
+
+**QA:** baseline lint/build/audit passed before edits · post-change audit passed 31/31 · final lint/build/audit passed · manual route checks passed for home, events, Freedom 250, all seven Freedom 250 fight routes, UFC 329, UFC 328 Chimaev/Strickland, record, and methodology.
+
+---
+
 ### UFC Freedom 250 official card data + pending-state QA
 
 Data and QA pass only. No model math, prediction thresholds, locked prediction values, public record scoring, backtest artifacts, or `opponentTotals` logic changed.

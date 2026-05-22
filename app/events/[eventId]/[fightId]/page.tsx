@@ -18,7 +18,6 @@ import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registr
 import { MobileFightRead } from "@/components/MobileFightRead";
 import { ContextualNotes } from "@/components/ContextualNotes";
 import { RoundMomentumFlow } from "@/components/RoundMomentumFlow";
-import { TaleOfTape } from "@/components/TaleOfTape";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
 interface MatchupPageProps {
@@ -273,13 +272,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 ),
                 shape: (
                   <div className="space-y-6">
-                    {fight.keyEdges.length > 0 && (
-                      <TaleOfTape
-                        keyEdges={fight.keyEdges}
-                        fighterAName={fighterA.name}
-                        fighterBName={fighterB.name}
-                      />
-                    )}
                     <StyleComparisonBars
                       fighterA={fighterA}
                       fighterB={fighterB}

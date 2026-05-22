@@ -8,22 +8,22 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 ---
 
-## Current State (as of 2026-05-21)
+## Current State (as of 2026-05-22)
 
 - **Model version:** outcome-v0.2
 - **Backtest corpus:** 20 completed UFC events, 253 scored fights
-- **Winner accuracy:** 66% | **Method accuracy:** 58% | **Brier:** 0.219
-- **Public logged calls:** 24 (`isBacktestReconstruction: false`) — UFC 328 (13) + UFC 329 (11)
+- **Public record:** 31 locked calls, 13 scored, 77% winner accuracy, 31% method accuracy, Brier 0.220
+- **Public logged calls:** 31 (`isBacktestReconstruction: false`) — UFC 328 (13) + UFC 329 (11) + UFC Freedom 250 (7)
 - **Historical backtest records:** 1 (`isBacktestReconstruction: true`) — `islam-jdm`
 - **Static pages:** 43 (verified: `npm run build` → 43/43)
-- **Prediction audit:** 31/31 routes pass via the local no-IPC loader path; the package script can hit the known local `tsx` named-pipe EPERM in this sandbox.
+- **Prediction audit:** 31/31 routes pass via `npm run audit:predictions`
 - **Lint:** 0 warnings
-- **`opponentTotals` pipeline:** active; ~60% item-level coverage
+- **`opponentTotals` pipeline:** active; current five-event sweep found no missing `opponentTotals` properties on populated history rows
 
 ### Events in registry (newest first)
 | Event | Fights | Predictions | Status |
 |---|---|---|---|
-| UFC Freedom 250: Topuria vs. Gaethje | 7 | 0 | Official card live; model inputs and forecast pending |
+| UFC Freedom 250: Topuria vs. Gaethje | 7 | 7 | Sourced fighter data live; public forecasts locked, outcomes pending |
 | UFC 329: McGregor vs. Holloway 2 | 11 | 11 | Forecast live, outcomes pending |
 | UFC 328 | 13 | 13 (+1 backtest) | Forecast live, outcomes pending |
 
@@ -31,9 +31,9 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 
 ## Immediate Codex Tasks
 
-### Task 1 — UFC Freedom 250 model-data ingestion when available
+### Task 1 — UFC Freedom 250 post-lock maintenance
 
-`data/normalized/events/ufc-freedom-250.json` now contains the official UFC-listed card, but every fight is intentionally in a clean pending state. Do not create Freedom 250 prediction files until the normal production process has complete model inputs and produces real pre-fight calls.
+`data/normalized/events/ufc-freedom-250.json` now contains the official UFC-listed card plus sourced UFCStats fighter profiles, fight histories, recent fight totals, round samples, derived style profiles, and key edges. Seven public prediction files were created from the existing production outcome model; all have `outcome: null` and `isBacktestReconstruction: false`.
 
 Confirmed official metadata currently in the event file:
 - Date: June 14, 2026
@@ -43,24 +43,22 @@ Confirmed official metadata currently in the event file:
 - Featured: Alex Pereira vs. Ciryl Gane, Heavyweight Interim Title Bout, 5 rounds
 - Additional listed bouts: O'Malley/Zahabi, Hokit/Lewis, Ruffy/Chandler, Nickal/Daukaus, Lopes/Garcia
 
-When UFCStats exposes an event page or the normal ingestion pipeline can source complete fighter inputs:
+UFCStats source IDs:
+- Event: `48544433372ecfa6`
+- Fight previews: `7208e40818401e88`, `5727d5be8c373346`, `60de0423ae6ed097`, `30cdb851f6c63444`, `9a9b30b3165b62e4`, `00e8d4b961a65d21`, `127ba4a1ccb3d4a6`
+
+To refresh Freedom 250 if the card changes:
 
 ```bash
-npm run ingest:ufcstats -- --event-url http://www.ufcstats.com/event-details/[ID] --include-fights --include-fighters
-npm run normalize:data -- --event-id ufc-freedom-250
+npm run ingest:ufcstats -- --event-url http://www.ufcstats.com/event-details/48544433372ecfa6 --include-fights --include-fighters --include-history-fights --max-fights 7 --max-fighters 14 --max-history-fights-per-fighter 5 --max-history-fight-details 70 --max-requests 120 --delay-ms 350
+npm run normalize:data -- --event ufc-freedom-250
 ```
 
-After normalization, verify:
-- `styleProfile` contains only sourced/derived values or explicit nulls.
-- `roundModel.hasEnoughForTrend` is false unless each fighter has enough real round samples.
-- `keyEdges` only contains rows where both sides have sourced values.
-- Every reused `fightHistory` item preserves its `opponentTotals` property.
-- No Freedom 250 fight appears on `/record` until a real non-backtest prediction file is produced by the normal process.
-
-Only after real pre-fight calls exist:
-- Add prediction JSON files with `outcome: null` and `isBacktestReconstruction: false`.
-- Register them in `lib/accuracy/index.ts`.
-- Never manually invent probabilities, method distributions, locked fields, or outcomes.
+Guardrails:
+- Do not edit existing Freedom 250 `prediction.*` values after the lock.
+- If the card changes, remove/replace only affected fights and prediction files after re-running the existing production process.
+- When outcomes are official, add only the `outcome` blocks to the seven Freedom 250 prediction files.
+- Do not add manual paths, fight-shape copy, or context notes unless they are explicitly sourced and marked as manual display context only.
 
 ---
 
@@ -149,7 +147,7 @@ NODE_OPTIONS="--import ./.npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/
 Manual visual QA checklist (spot-check 2–3 fights after any data change):
 - [ ] Fight page loads, `FightReadSnapshot` shows pick name + probability correctly
 - [ ] `RoundMomentumFlow` renders chart (not pending state) for fights with `hasEnoughForTrend=true` on at least one fighter
-- [ ] `TaleOfTape` renders for fights with sourced `keyEdges` (all 6 rows populated)
+- [ ] Tale of the Tape does not render on desktop or mobile fight pages; sourced `keyEdges` stay in data only
 - [ ] `CallConfidenceBand` shows the pin at the correct probability on the track
 - [ ] Mobile: all sections visible and scroll correctly
 - [ ] Desktop: "call" tab → confidence band + round flow; "shape" tab → tape + radar
@@ -215,8 +213,8 @@ Manual visual QA checklist (spot-check 2–3 fights after any data change):
 | `components/TheCall.tsx` | "why the model leans this way." — CallConfidenceBand + method lean + scenarios. |
 | `components/CallConfidenceBand.tsx` | **NEW.** Visual probability track with confidence band pin. Used in TheCall (desktop) and MobileCallCard (mobile). All data from `viewModel`. |
 | `components/RoundMomentumFlow.tsx` | **NEW.** SVG round-by-round momentum chart from `fighter.roundModel.roundScores`. Shows pending if `!hasEnoughForTrend`. Desktop: call tab. Mobile: after scenarios. |
-| `components/TaleOfTape.tsx` | **NEW.** Dual-bar center-meeting metrics comparison. Data from `fight.keyEdges`. Desktop: shape tab (before radar). Mobile: before shape accordion. |
-| `components/MobileFightRead.tsx` | Mobile-only fight read. Flow: matchup → call (CallConfidenceBand) → method lean → scenarios → RoundMomentumFlow → ContextualNotes → TaleOfTape → shape accordion → record. |
+| `components/TaleOfTape.tsx` | Dual-bar center-meeting metrics comparison. Kept in the repo but no longer rendered on fight pages. |
+| `components/MobileFightRead.tsx` | Mobile-only fight read. Flow: matchup → call (CallConfidenceBand) → method lean → scenarios → RoundMomentumFlow → ContextualNotes → shape accordion → record. |
 | `components/StyleComparisonBars.tsx` | Desktop fight shape section: radar + insight cards + collapsed axis breakdown. |
 | `components/FightPageTabs.tsx` | Desktop section anchor wrapper. Assigns `id="section-{id}"`. |
 | `components/FightCard.tsx` | Event page matchup row. |
@@ -233,7 +231,7 @@ Manual visual QA checklist (spot-check 2–3 fights after any data change):
 |---|---|
 | `data/events/` | Source event JSON files from UFCStats ingestion. |
 | `data/predictions/` | Locked public prediction JSON files. Read-only post-call. |
-| `data/normalized/events/ufc-freedom-250.json` | Empty shell — 0 fights. Needs full ingestion (see Task 1). |
+| `data/normalized/events/ufc-freedom-250.json` | 7 sourced fights, 7 public prediction files, outcomes pending. |
 | `data/normalized/events/ufc-329.json` | 11 fights, 11 predictions. Outcomes pending. |
 | `data/normalized/events/ufc-328.json` | 13 fights, 13 predictions. Outcomes pending. Some style axis nulls (expected for thin-record fighters). |
 

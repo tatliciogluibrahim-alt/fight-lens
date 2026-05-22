@@ -1,0 +1,21 @@
+{
+  "fightId": "pereira-gane",
+  "event": "UFC Freedom 250: Topuria vs. Gaethje",
+  "fighters": {
+    "fighterA": "Alex Pereira",
+    "fighterB": "Ciryl Gane"
+  },
+  "generatedAt": "2026-05-22T01:52:03.687Z",
+  "modelVersion": "outcome-v0.2",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 40,
+    "fighterBWinProbability": 60,
+    "methodBreakdown": {
+      "decision": 20,
+      "koTko": 80,
+      "submission": 0
+    }
+  },
+  "outcome": null
+}

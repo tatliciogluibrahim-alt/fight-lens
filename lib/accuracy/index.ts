@@ -21,6 +21,14 @@ import kopylovTulio from "@/data/predictions/kopylov-tulio.json";
 import sabatiniGomis from "@/data/predictions/sabatini-gomis.json";
 import susurkaevSantos from "@/data/predictions/susurkaev-santos.json";
 import carpenterOchoa from "@/data/predictions/carpenter-ochoa.json";
+// UFC Freedom 250: Topuria vs. Gaethje
+import topuriaGaethje from "@/data/predictions/topuria-gaethje.json";
+import pereiraGane from "@/data/predictions/pereira-gane.json";
+import oMalleyZahabi from "@/data/predictions/o-malley-zahabi.json";
+import hokitLewis from "@/data/predictions/hokit-lewis.json";
+import ruffyChandler from "@/data/predictions/ruffy-chandler.json";
+import nickalDaukaus from "@/data/predictions/nickal-daukaus.json";
+import lopesGarcia from "@/data/predictions/lopes-garcia.json";
 // UFC 329: McGregor vs. Holloway 2
 import mcgregorHolloway from "@/data/predictions/mcgregor-holloway.json";
 import saintDenisPimblett from "@/data/predictions/saint-denis-pimblett.json";
@@ -51,6 +59,14 @@ const allRecords: PredictionRecord[] = [
   sabatiniGomis as PredictionRecord,
   susurkaevSantos as PredictionRecord,
   carpenterOchoa as PredictionRecord,
+  // UFC Freedom 250
+  topuriaGaethje as PredictionRecord,
+  pereiraGane as PredictionRecord,
+  oMalleyZahabi as PredictionRecord,
+  hokitLewis as PredictionRecord,
+  ruffyChandler as PredictionRecord,
+  nickalDaukaus as PredictionRecord,
+  lopesGarcia as PredictionRecord,
   // UFC 329
   mcgregorHolloway as PredictionRecord,
   saintDenisPimblett as PredictionRecord,

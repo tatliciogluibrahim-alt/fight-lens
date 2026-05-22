@@ -21,7 +21,6 @@ import { FightResultBanner } from "./FightResultBanner";
 import { ContextualNotes } from "./ContextualNotes";
 import { CallConfidenceBand } from "./CallConfidenceBand";
 import { RoundMomentumFlow } from "./RoundMomentumFlow";
-import { TaleOfTape } from "./TaleOfTape";
 
 interface MobileFightReadProps {
   fight: SourcedFight;
@@ -370,15 +369,6 @@ export function MobileFightRead({
       )}
 
       <ContextualNotes notes={fight.contextNotes} />
-
-      {/* 4c · Tale of the tape */}
-      {fight.keyEdges.length > 0 && (
-        <TaleOfTape
-          keyEdges={fight.keyEdges}
-          fighterAName={fighterA.name}
-          fighterBName={fighterB.name}
-        />
-      )}
 
       {/* 5 · Fight shape — collapsed accordion */}
       <MobileShapeAccordion

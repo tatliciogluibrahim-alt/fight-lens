@@ -1,0 +1,21 @@
+{
+  "fightId": "topuria-gaethje",
+  "event": "UFC Freedom 250: Topuria vs. Gaethje",
+  "fighters": {
+    "fighterA": "Ilia Topuria",
+    "fighterB": "Justin Gaethje"
+  },
+  "generatedAt": "2026-05-22T01:52:03.687Z",
+  "modelVersion": "outcome-v0.2",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 65,
+    "fighterBWinProbability": 35,
+    "methodBreakdown": {
+      "decision": 39,
+      "koTko": 48,
+      "submission": 13
+    }
+  },
+  "outcome": null
+}

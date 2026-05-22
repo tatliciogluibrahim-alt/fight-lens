@@ -396,7 +396,7 @@ function buildFight(sourceFight, override, profilesById, detailsById, manualFigh
     ufcstatsFightUrl: sourceFight.url,
     cardPlacement: override?.cardPlacement ?? "Main Card",
     rounds,
-    weightClass: sourceFight.weightClass,
+    weightClass: override?.weightClass ?? sourceFight.weightClass,
     status: sourceFight.status,
     styleClashLabel: override?.styleClashLabel ?? null,
     matchupQuestion: override?.matchupQuestion ?? null,
@@ -451,6 +451,7 @@ async function buildNormalizedEvent(eventId) {
   const sourceEvent = await readJson(path.join(REPO_ROOT, overrides.sourceEventFile));
   const fighterProfiles = await readJsonFiles(path.join(GENERATED_ROOT, "fighters"));
   const fightDetails = await readJsonFiles(path.join(GENERATED_ROOT, "fights"));
+  const eventOverride = overrides.event ?? {};
 
   const profilesById = new Map(fighterProfiles.map((profile) => [profile.id, profile]));
   const detailsById = new Map(fightDetails.map((fight) => [fight.id, fight]));
@@ -461,11 +462,17 @@ async function buildNormalizedEvent(eventId) {
     event: {
       id: eventId,
       ufcstatsId: sourceEvent.id,
-      name: sourceEvent.name,
-      date: sourceEvent.date,
-      location: sourceEvent.location,
+      shortName: eventOverride.shortName,
+      name: eventOverride.name ?? sourceEvent.name,
+      date: eventOverride.date ?? sourceEvent.date,
+      location: eventOverride.location ?? sourceEvent.location,
+      venue: eventOverride.venue,
+      broadcast: eventOverride.broadcast,
+      mainCardTime: eventOverride.mainCardTime,
+      mainEvent: eventOverride.mainEvent,
+      featuredBouts: eventOverride.featuredBouts,
       promotion: "UFC",
-      source: sourceEvent.source
+      source: eventOverride.source ?? sourceEvent.source
     },
     assetPolicy: overrides.assetPolicy,
     modeling: {

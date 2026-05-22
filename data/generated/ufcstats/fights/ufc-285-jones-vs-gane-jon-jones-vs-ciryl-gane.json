@@ -1,0 +1,404 @@
+{
+  "id": "636fd144716a3084",
+  "url": "http://www.ufcstats.com/fight-details/636fd144716a3084",
+  "event": {
+    "id": "1ccff7f0cfdf85eb",
+    "name": "UFC 285: Jones vs. Gane",
+    "url": "http://www.ufcstats.com/event-details/1ccff7f0cfdf85eb"
+  },
+  "title": "UFC Heavyweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "07f72a2a7591b409",
+      "name": "Jon Jones",
+      "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409",
+      "nickname": "Bones",
+      "result": "W"
+    },
+    {
+      "id": "787bb1f087ccff8a",
+      "name": "Ciryl Gane",
+      "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a",
+      "nickname": "Bon Gamin",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:04",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "07f72a2a7591b409",
+        "name": "Jon Jones",
+        "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+      },
+      {
+        "id": "787bb1f087ccff8a",
+        "name": "Ciryl Gane",
+        "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07f72a2a7591b409",
+          "name": "Jon Jones",
+          "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 14,
+          "raw": "8 of 14"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      },
+      {
+        "fighter": {
+          "id": "787bb1f087ccff8a",
+          "name": "Ciryl Gane",
+          "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "significantStrikePercent": 75,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07f72a2a7591b409",
+          "name": "Jon Jones",
+          "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+        },
+        {
+          "id": "787bb1f087ccff8a",
+          "name": "Ciryl Gane",
+          "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07f72a2a7591b409",
+            "name": "Jon Jones",
+            "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:57",
+          "controlSeconds": 57
+        },
+        {
+          "fighter": {
+            "id": "787bb1f087ccff8a",
+            "name": "Ciryl Gane",
+            "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "07f72a2a7591b409",
+        "name": "Jon Jones",
+        "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+      },
+      {
+        "id": "787bb1f087ccff8a",
+        "name": "Ciryl Gane",
+        "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07f72a2a7591b409",
+          "name": "Jon Jones",
+          "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "787bb1f087ccff8a",
+          "name": "Ciryl Gane",
+          "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "significantStrikePercent": 75,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07f72a2a7591b409",
+          "name": "Jon Jones",
+          "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+        },
+        {
+          "id": "787bb1f087ccff8a",
+          "name": "Ciryl Gane",
+          "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07f72a2a7591b409",
+            "name": "Jon Jones",
+            "url": "http://www.ufcstats.com/fighter-details/07f72a2a7591b409"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "787bb1f087ccff8a",
+            "name": "Ciryl Gane",
+            "url": "http://www.ufcstats.com/fighter-details/787bb1f087ccff8a"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/636fd144716a3084",
+    "fetchedAt": "2026-05-22T01:41:27.683Z"
+  }
+}

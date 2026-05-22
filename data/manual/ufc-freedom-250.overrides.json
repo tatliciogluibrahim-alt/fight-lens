@@ -1,0 +1,219 @@
+{
+  "eventId": "ufc-freedom-250",
+  "sourceEventFile": "data/generated/ufcstats/events/ufc-freedom-250.json",
+  "event": {
+    "shortName": "UFC Freedom 250",
+    "name": "UFC Freedom 250: Topuria vs. Gaethje",
+    "date": "June 14, 2026",
+    "location": "Washington, DC, United States",
+    "venue": "South Lawn of the White House",
+    "broadcast": "Paramount+",
+    "mainCardTime": "8:00 PM EDT",
+    "mainEvent": {
+      "fighterA": "Ilia Topuria",
+      "fighterB": "Justin Gaethje"
+    },
+    "featuredBouts": [
+      {
+        "fighterA": "Alex Pereira",
+        "fighterB": "Ciryl Gane"
+      }
+    ],
+    "source": {
+      "provenance": "sourced",
+      "sourceName": "ufc.com event page + ufcstats",
+      "sourceUrl": "https://www.ufc.com/event/ufc-freedom-250",
+      "fetchedAt": "2026-05-22T01:48:03.000Z"
+    }
+  },
+  "assetPolicy": {
+    "fighterImages": "Manual licensed assets only. Do not scrape or copy fighter images into the repo.",
+    "fallback": "Use abstract asset slots with small country markers until licensed images are provided."
+  },
+  "fighters": {
+    "54f64b5e283b0ce7": {
+      "displayName": "Ilia Topuria",
+      "ranking": "C",
+      "country": {
+        "code": "GE",
+        "label": "georgia",
+        "colors": ["#E30A17", "#F5EFE6", "#B50000", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "9e8f6c728eb01124": {
+      "displayName": "Justin Gaethje",
+      "ranking": "IC",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "e5549c82bfb5582d": {
+      "displayName": "Alex Pereira",
+      "ranking": null,
+      "country": {
+        "code": "BR",
+        "label": "brazil",
+        "colors": ["#009C3B", "#FEDF00", "#002776", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "787bb1f087ccff8a": {
+      "displayName": "Ciryl Gane",
+      "ranking": "#1",
+      "country": {
+        "code": "FR",
+        "label": "france",
+        "colors": ["#002395", "#F5EFE6", "#ED2939", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "b50a426a33da0012": {
+      "displayName": "Sean O'Malley",
+      "ranking": "#2",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "24656ef4d605c96f": {
+      "displayName": "Aiemann Zahabi",
+      "ranking": "#6",
+      "country": {
+        "code": "CA",
+        "label": "canada",
+        "colors": ["#D80621", "#F5EFE6", "#D80621", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "955da1675ad58a50": {
+      "displayName": "Josh Hokit",
+      "ranking": "#5",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "d3df1add9d9a7efb": {
+      "displayName": "Derrick Lewis",
+      "ranking": "#9",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "9c393e836a852f30": {
+      "displayName": "Mauricio Ruffy",
+      "ranking": "#9",
+      "country": {
+        "code": "BR",
+        "label": "brazil",
+        "colors": ["#009C3B", "#FEDF00", "#002776", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "4b93a88f3b1de35b": {
+      "displayName": "Michael Chandler",
+      "ranking": "#13",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "35673bf5204524ee": {
+      "displayName": "Bo Nickal",
+      "ranking": null,
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "d6c0cdd7e467c440": {
+      "displayName": "Kyle Daukaus",
+      "ranking": null,
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "f166e93d04a8c274": {
+      "displayName": "Diego Lopes",
+      "ranking": "#2",
+      "country": {
+        "code": "BR",
+        "label": "brazil",
+        "colors": ["#009C3B", "#FEDF00", "#002776", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    },
+    "97cf1a2c7c5e7889": {
+      "displayName": "Steve Garcia",
+      "ranking": "#9",
+      "country": {
+        "code": "US",
+        "label": "united states",
+        "colors": ["#9B1C31", "#F5EFE6", "#243B6B", "#11100E"]
+      },
+      "image": { "url": null, "status": "pending_licensed_asset", "credit": null }
+    }
+  },
+  "fights": {
+    "7208e40818401e88": {
+      "routeId": "topuria-gaethje",
+      "cardPlacement": "Main Card",
+      "rounds": 5,
+      "weightClass": "Lightweight Title Bout"
+    },
+    "5727d5be8c373346": {
+      "routeId": "pereira-gane",
+      "cardPlacement": "Main Card",
+      "rounds": 5,
+      "weightClass": "Heavyweight Interim Title Bout"
+    },
+    "60de0423ae6ed097": {
+      "routeId": "o-malley-zahabi",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Bantamweight Bout"
+    },
+    "30cdb851f6c63444": {
+      "routeId": "hokit-lewis",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Heavyweight Bout"
+    },
+    "9a9b30b3165b62e4": {
+      "routeId": "ruffy-chandler",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Lightweight Bout"
+    },
+    "00e8d4b961a65d21": {
+      "routeId": "nickal-daukaus",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Middleweight Bout"
+    },
+    "127ba4a1ccb3d4a6": {
+      "routeId": "lopes-garcia",
+      "cardPlacement": "Main Card",
+      "rounds": 3,
+      "weightClass": "Featherweight Bout"
+    }
+  }
+}

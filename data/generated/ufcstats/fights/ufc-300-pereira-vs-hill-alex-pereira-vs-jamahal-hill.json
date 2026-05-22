@@ -1,0 +1,404 @@
+{
+  "id": "e4931f3ab3bf4141",
+  "url": "http://www.ufcstats.com/fight-details/e4931f3ab3bf4141",
+  "event": {
+    "id": "6750e338922a099d",
+    "name": "UFC 300: Pereira vs. Hill",
+    "url": "http://www.ufcstats.com/event-details/6750e338922a099d"
+  },
+  "title": "UFC Light Heavyweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e5549c82bfb5582d",
+      "name": "Alex Pereira",
+      "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d",
+      "nickname": "Poatan",
+      "result": "W"
+    },
+    {
+      "id": "5444c5a201d3ee5a",
+      "name": "Jamahal Hill",
+      "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a",
+      "nickname": "Sweet Dreams",
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:14",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Jason Herzog",
+    "details": null
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e5549c82bfb5582d",
+        "name": "Alex Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+      },
+      {
+        "id": "5444c5a201d3ee5a",
+        "name": "Jamahal Hill",
+        "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 30,
+          "raw": "24 of 30"
+        },
+        "significantStrikePercent": 80,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 30,
+          "raw": "24 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "5444c5a201d3ee5a",
+          "name": "Jamahal Hill",
+          "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:00",
+        "controlSeconds": 0
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "5444c5a201d3ee5a",
+          "name": "Jamahal Hill",
+          "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 30,
+            "raw": "24 of 30"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 30,
+            "raw": "24 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "5444c5a201d3ee5a",
+            "name": "Jamahal Hill",
+            "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:00",
+          "controlSeconds": 0
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e5549c82bfb5582d",
+        "name": "Alex Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+      },
+      {
+        "id": "5444c5a201d3ee5a",
+        "name": "Jamahal Hill",
+        "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 30,
+          "raw": "24 of 30"
+        },
+        "significantStrikePercent": 80,
+        "head": {
+          "landed": 12,
+          "attempted": 15,
+          "raw": "12 of 15"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5444c5a201d3ee5a",
+          "name": "Jamahal Hill",
+          "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+        },
+        {
+          "id": "5444c5a201d3ee5a",
+          "name": "Jamahal Hill",
+          "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e5549c82bfb5582d",
+            "name": "Alex Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/e5549c82bfb5582d"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 30,
+            "raw": "24 of 30"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5444c5a201d3ee5a",
+            "name": "Jamahal Hill",
+            "url": "http://www.ufcstats.com/fighter-details/5444c5a201d3ee5a"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "ufcstats",
+    "sourceUrl": "http://www.ufcstats.com/fight-details/e4931f3ab3bf4141",
+    "fetchedAt": "2026-05-22T01:41:26.220Z"
+  }
+}
