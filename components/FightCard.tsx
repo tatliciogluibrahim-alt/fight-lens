@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { CountryFlag } from "./CountryFlag";
@@ -70,34 +67,9 @@ function ResultChip({ viewModel }: { viewModel: PredictionViewModel }) {
   );
 }
 
-function MethodBar({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
-  const thin = value < 8;
-  return (
-    <div className="flex items-center gap-3">
-      <p className="w-24 mono-label shrink-0">{label}</p>
-      {thin ? (
-        <div className="flex h-1.5 flex-1 items-center">
-          <span className="h-1.5 w-1.5 rounded-full bg-subtle/35" />
-        </div>
-      ) : (
-        <div className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2">
-          <div
-            className={`fl-bar-fill absolute left-0 h-full rounded-full ${accent ? "bg-accent/65" : "bg-muted/35"}`}
-            style={{ width: `${value}%` }}
-          />
-        </div>
-      )}
-      <p className={`data-text w-10 text-right text-xs ${accent ? "text-foreground" : "text-muted"}`}>
-        {thin ? "thin" : `${value}%`}
-      </p>
-    </div>
-  );
-}
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 export function FightCard({ fight, eventId, predictionViewModel }: FightCardProps) {
-  const [expanded, setExpanded] = useState(false);
-
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
 
@@ -146,7 +118,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           <div className="mt-3 space-y-1">
             {vm.isNamedCall && vm.predictedWinner ? (
               <p className="text-sm text-muted">
-                <span className="text-subtle">call · </span>
+                <span className="text-subtle">lean · </span>
                 <span className="font-semibold text-foreground">{vm.predictedWinner.name}</span>
                 <span className="data-text ml-1.5 tabular-nums text-foreground">
                   {vm.winnerProbability}%
@@ -241,7 +213,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
 
             {hasPred && vm.isNamedCall && vm.predictedWinner ? (
               <span className="text-muted">
-                <span className="text-subtle">call · </span>
+                <span className="text-subtle">lean · </span>
                 <span className="font-medium text-foreground">{vm.predictedWinner.name}</span>
               </span>
             ) : hasPred && !vm.isNamedCall ? (
@@ -266,62 +238,21 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
             )}
           </div>
 
-          {/* Action row */}
-          <div className="mt-3 flex items-center gap-2">
-            {vm && (
-              <button
-                type="button"
-                onClick={() => setExpanded((v) => !v)}
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line bg-surface-2/70 px-3 text-xs text-subtle transition hover:border-accent/30 hover:text-accent"
-                aria-expanded={expanded}
-                aria-label={expanded ? "collapse details" : "expand details"}
-              >
-                {expanded ? "−" : "+"}
-              </button>
-            )}
+          {/*
+            Action row — single "View read" CTA.
+            Removed the "+" expand-in-place: it duplicated win-probability and
+            method-lean bars that already live in full on the fight detail
+            page. Card list now drives users straight to the read.
+          */}
+          <div className="mt-3">
             <Link
               href={`/events/${eventId}/${fight.id}`}
-              className="tap-target inline-flex flex-1 items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-xs font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10 sm:flex-none"
+              className="tap-target inline-flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 px-4 text-xs font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10 sm:w-auto"
             >
               View read
             </Link>
           </div>
         </div>
-
-        {/* Expandable breakdown — desktop only */}
-        {expanded && vm && (
-          <div className="border-t border-line bg-background/30 px-5 py-4">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-3">
-                <p className="mono-label">win probability</p>
-                <div className="grid gap-2 sm:grid-cols-2">
-                  <div className={`rounded-xl border p-3 ${favA ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
-                    <p className="truncate text-xs text-subtle">{fighterA.name.split(" ").pop()}</p>
-                    <p className={`data-text mt-1 text-lg ${favA ? "text-foreground" : "text-muted"}`}>{probA}%</p>
-                  </div>
-                  <div className={`rounded-xl border p-3 ${favB ? "border-line-strong bg-surface-2/70" : "border-line bg-background/35"}`}>
-                    <p className="truncate text-xs text-subtle">{fighterB.name.split(" ").pop()}</p>
-                    <p className={`data-text mt-1 text-lg ${favB ? "text-foreground" : "text-muted"}`}>{probB}%</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-2.5">
-                <p className="mono-label">method lean</p>
-                <MethodBar label="Decision" value={vm.methodDistribution.decision} accent={methodTop === "Decision"} />
-                <MethodBar label="KO / TKO" value={vm.methodDistribution.koTko} accent={methodTop === "KO/TKO"} />
-                <MethodBar label="Submission" value={vm.methodDistribution.submission} accent={methodTop === "Submission"} />
-                <p className="pt-1 text-[11px] text-subtle">{vm.methodLeanNote}</p>
-              </div>
-            </div>
-
-            {fight.matchupQuestion && (
-              <p className="mt-4 border-t border-line pt-4 text-sm leading-6 text-muted">
-                {fight.matchupQuestion}
-              </p>
-            )}
-          </div>
-        )}
       </div>
 
     </div>

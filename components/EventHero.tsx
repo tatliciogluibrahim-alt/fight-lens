@@ -92,7 +92,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
           </div>
           <div className="border-t border-line/60 bg-background/25 px-4 py-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
-              {event.fights.length > 0 ? "main event · tap a fight below to read the model call" : "model calls unlock once fight data is available"}
+              {event.fights.length > 0 ? "main event · tap a fight below to read the lean" : "model leans unlock once fight data is available"}
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
             <span>{event.event.date ?? "date TBA"}</span>
             <span>{event.event.location ?? "location TBA"}</span>
-            <span>{event.fights.length > 0 ? `${event.fights.length} bouts` : "model calls not published yet"}</span>
+            <span>{event.fights.length > 0 ? `${event.fights.length} bouts` : "model leans not published yet"}</span>
             {broadcastLine ? <span>{broadcastLine}</span> : null}
           </div>
           {event.event.venue ? <p className="mt-2 text-sm text-subtle">{event.event.venue}</p> : null}
@@ -143,9 +143,9 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
               {mainFight ? (
                 <Link
                   href={`/events/${event.event.id}/${mainFight.id}`}
-                  className="tap-target inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-accent px-5 text-sm font-semibold text-background transition hover:brightness-110"
+                  className="self-start font-mono text-xs uppercase tracking-[0.14em] text-subtle underline decoration-line underline-offset-4 hover:text-foreground"
                 >
-                  View main event read
+                  jump to main event read →
                 </Link>
               ) : null}
             </div>
@@ -153,8 +153,8 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
 
           <p className="mt-5 text-sm text-subtle">
             {event.fights.length > 0
-              ? "Choose a fight below — each read starts with the model call."
-              : "Fight card pending. Model calls unlock once fight data is available."}
+              ? "Choose a fight below — each read starts with the model lean."
+              : "Fight card pending. Model leans unlock once fight data is available."}
           </p>
         </div>
       </div>

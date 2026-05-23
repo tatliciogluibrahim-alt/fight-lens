@@ -184,7 +184,14 @@ function RecordProofStrip({
         <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:grid-cols-[auto_auto_auto_1fr_auto] sm:gap-4">
           <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
             <p className="data-text text-2xl leading-none text-accent">{winnerAccuracy != null ? String(winnerAccuracy) + "%" : "—"}</p>
-            <p className="mono-label mt-1">named-call</p>
+            <p className="mono-label mt-1 whitespace-nowrap">named-call</p>
+            {/* Sample caveat right next to the headline % so the early-prototype
+                sample size never reads as a finished benchmark. */}
+            {resolvedCount > 0 && (
+              <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-subtle/60 mt-0.5">
+                from {resolvedCount} scored
+              </p>
+            )}
           </div>
           <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
             <p className="data-text text-2xl leading-none text-foreground">{resolvedCount}</p>
@@ -196,7 +203,9 @@ function RecordProofStrip({
           </div>
           <div className="hidden min-w-0 sm:block">
             <p className="mono-label">public model record</p>
-            <p className="mt-1 text-xs leading-5 text-muted">{totalCalls} public logged calls. Historical validation stays separate.</p>
+            <p className="mt-1 text-xs leading-5 text-muted">
+              {totalCalls} public logged calls · early prototype sample. Historical validation stays separate.
+            </p>
             <div className="mt-2">
               <AccuracyBar value={winnerAccuracy} />
             </div>
@@ -344,20 +353,18 @@ export default function Home() {
             <p className="mt-4 text-sm leading-6 text-muted">
               Transparent UFC fight analysis. Pre-fight calls logged before the bell, scored after the result.
             </p>
-            <div className="mt-5 grid gap-3">
-              <Link
-                href={`/events/${latestEvent.event.id}`}
-                className="tap-target flex w-full items-center justify-center rounded-full bg-accent font-semibold text-background transition hover:brightness-110"
-              >
-                Open {eventShortName(latestEvent)}
-              </Link>
-              <Link
-                href="/record"
-                className="tap-target flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 text-foreground transition hover:border-accent/40"
-              >
-                View Model Record
-              </Link>
-            </div>
+            {/*
+              Hero CTAs were duplicating the Current Card "Open card" button just
+              below in the scroll. Hero now stays thesis-first; the Current Card
+              module owns the primary action. A single secondary link to the
+              Model Record keeps the accountability surface discoverable.
+            */}
+            <Link
+              href="/record"
+              className="mt-5 inline-block font-mono text-xs uppercase tracking-[0.14em] text-subtle underline decoration-line underline-offset-4 hover:text-foreground"
+            >
+              view public model record →
+            </Link>
           </div>
         </section>
 
@@ -371,20 +378,12 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
               Transparent UFC fight analysis. Pre-fight calls logged before the bell, scored after the result.
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href={"/events/" + latestEvent.event.id}
-                className="tap-target inline-flex items-center justify-center rounded-full bg-accent px-6 font-semibold text-background transition hover:brightness-110"
-              >
-                Open {eventShortName(latestEvent)}
-              </Link>
-              <Link
-                href="/record"
-                className="tap-target inline-flex items-center justify-center rounded-full border border-line-strong bg-surface-2 px-6 text-foreground transition hover:border-accent/40"
-              >
-                View Model Record
-              </Link>
-            </div>
+            <Link
+              href="/record"
+              className="mt-6 inline-block font-mono text-xs uppercase tracking-[0.14em] text-subtle underline decoration-line underline-offset-4 hover:text-foreground"
+            >
+              view public model record →
+            </Link>
           </div>
         </section>
 
@@ -403,20 +402,13 @@ export default function Home() {
           winnerAccuracy={accuracyMetrics.winnerAccuracy}
         />
 
-        {/* Portfolio framing — what Fight Lens is */}
-        <section className="section-shell py-4 md:py-6">
-          <div className="rounded-2xl border border-line bg-surface/40 p-5 md:p-6">
-            <p className="mono-label accent-rail">what this is</p>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-              Fight Lens explores the trust problem in predictive sports analysis: how to make pre-fight calls explainable, logged, and accountable. Calls are locked before the bell. Style shape explains the tilt. Manual context flags what the model cannot see. Results are tracked publicly.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5">
-              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">early prototype</span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">not betting advice</span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">model lean · not a guarantee</span>
-            </div>
-          </div>
-        </section>
+        {/*
+          Portfolio framing module removed from home — it repeated the hero
+          subtitle ("Transparent UFC fight analysis…") and lives in full on
+          the dedicated /case-study page. Home stays focused on: hero thesis,
+          Current Card, Record proof, browse/start-here. Footer prototype-note
+          chip preserves the "not betting advice / model lean" disclosure.
+        */}
 
         {/* Mobile: slim "browse more" link — homepage is already hero → card → record on small screens */}
         <section className="sm:hidden section-shell pb-4">

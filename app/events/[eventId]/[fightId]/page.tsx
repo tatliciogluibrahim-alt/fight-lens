@@ -180,7 +180,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           href={`/events/${eventId}`}
           className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
         >
-          ← back to {event.event.name.toLowerCase()}
+          ← back to {(event.event.shortName ?? "card").toLowerCase()}
         </Link>
 
         {/* ════════════════════════════════════════════════════════════════════

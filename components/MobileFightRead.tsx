@@ -203,35 +203,25 @@ function MobileMethodLean({ vm }: { vm: PredictionViewModel }) {
 function MobileScenarios({ vm }: { vm: PredictionViewModel }) {
   if (!vm.scenarios || vm.scenarios.length === 0) return null;
 
+  // Mobile redundancy cut: scenarios[0] "the call" repeats the MobileCallCard
+  // above, and scenarios[1] "counter path" repeats the counter-path block
+  // inside the CallConfidenceBand. Only scenarios[2] "what breaks the call"
+  // is genuinely unique on this scroll. Show only that one on mobile —
+  // saves ~2 stacked cards of vertical space without losing information.
+  const swing = vm.scenarios.find((s) => s.id === "swing");
+  if (!swing) return null;
+
   return (
-    <div className="space-y-3">
-      <p className="mono-label px-0.5">why it leans · what flips it</p>
-      {vm.scenarios.map((scenario) => {
-        const isLean  = scenario.id === "lean";
-        const isSwing = scenario.id === "swing";
-        return (
-          <div
-            key={scenario.id}
-            className={`rounded-2xl border p-5 ${
-              isLean
-                ? "border-accent/30 bg-accent/[0.06]"
-                : isSwing
-                  ? "border-line-strong bg-surface/60"
-                  : "border-line bg-background/35"
-            }`}
-          >
-            <p className={`mono-label ${isLean ? "text-accent" : isSwing ? "text-foreground" : ""}`}>
-              {scenario.title}
-            </p>
-            {scenario.fighterLabel ? (
-              <p className="mt-2 text-base font-semibold leading-tight tracking-tight">
-                {scenario.fighterLabel}
-              </p>
-            ) : null}
-            <p className="mt-3 text-sm leading-6 text-muted">{scenario.description}</p>
-          </div>
-        );
-      })}
+    <div
+      className="rounded-2xl border border-line-strong bg-surface/60 p-5"
+    >
+      <p className="mono-label text-foreground">{swing.title}</p>
+      {swing.fighterLabel ? (
+        <p className="mt-2 text-base font-semibold leading-tight tracking-tight">
+          {swing.fighterLabel}
+        </p>
+      ) : null}
+      <p className="mt-3 text-sm leading-6 text-muted">{swing.description}</p>
     </div>
   );
 }
