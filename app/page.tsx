@@ -338,8 +338,8 @@ export default function Home() {
           <div className="fl-animate-fade-up">
             <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
             <h1 className="mt-3 text-4xl font-semibold leading-[0.96] tracking-[-0.06em] text-foreground">
-              forecast the card.
-              <span className="block text-accent">track the result.</span>
+              pre-fight reads.
+              <span className="block text-accent">post-fight accountability.</span>
             </h1>
             <p className="mt-4 text-sm leading-6 text-muted">
               Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.
@@ -365,8 +365,8 @@ export default function Home() {
           <div className="fl-animate-fade-up max-w-4xl">
             <p className="mono-label accent-rail">fight lens · forecast · tracked</p>
             <h1 className="text-5xl font-semibold leading-[0.94] tracking-[-0.065em] md:text-7xl lg:text-[5.4rem]">
-              forecast the card.
-              <span className="block text-accent">track the result.</span>
+              pre-fight reads.
+              <span className="block text-accent">post-fight accountability.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
               Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.

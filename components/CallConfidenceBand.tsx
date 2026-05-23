@@ -131,29 +131,25 @@ export function CallConfidenceBand({
             </div>
           </div>
 
-          {/* Labels row */}
+          {/* Labels row — tightened: 5 ticks compressed to confidence range only */}
           <div className="flex justify-between font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/55">
-            <span>0%</span>
             <span>{lo}% lo</span>
-            <span className="text-accent/70">· call ·</span>
+            <span className="text-accent/70">confidence range</span>
             <span>{hi}% hi</span>
-            <span>100%</span>
           </div>
-
-          <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-subtle/50">
-            model range · varies by data confidence
-          </p>
         </div>
       )}
 
-      {/* ── Counter path ──────────────────────────────────────────────── */}
+      {/* ── Counter path — tightened ──────────────────────────────────── */}
       {!isTooCloseToCall && loserName != null && loserProbability != null && (
         <div className="rounded-xl border border-line bg-background/35 px-4 py-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">counter path</p>
-          <p className="mt-1 text-sm leading-snug text-muted">
-            <span className="font-medium text-foreground">{loserName}</span>
-            <span className="text-subtle"> · alternate path if the matchup plays differently than the model expects · </span>
-            <span className="font-mono tabular-nums text-foreground">{loserProbability}%</span>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+            <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">counter path</p>
+            <span className="font-mono text-sm tabular-nums text-foreground">{loserProbability}%</span>
+          </div>
+          <p className="mt-1 text-sm leading-snug text-foreground">
+            <span className="font-medium">{loserName}</span>
+            <span className="text-muted"> stays live if the matchup plays differently.</span>
           </p>
         </div>
       )}

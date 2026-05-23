@@ -133,9 +133,10 @@ summary::-webkit-details-marker {
   position: relative;
 }
 
+/* Phase 2: tightened module padding to compress card-heavy fight pages. */
 .module-header {
   border-bottom: 1px solid var(--line);
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
 }
 
 .module-body {
@@ -475,9 +476,12 @@ summary::-webkit-details-marker {
     width: min(1184px, calc(100% - 48px));
   }
 
-  .module-header,
+  .module-header {
+    padding: 1.25rem 1.5rem;
+  }
+
   .module-body {
-    padding: 1.75rem;
+    padding: 1.5rem;
   }
 
   .radar-card {

@@ -6,7 +6,6 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { FightReadSnapshot } from "@/components/FightReadSnapshot";
 import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
@@ -92,7 +91,7 @@ function FighterHeroPanel({
 
   return (
     <div
-      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex min-w-0 flex-col justify-center gap-3 overflow-visible p-5 py-7 md:p-8 md:py-9 ${
+      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex min-w-0 flex-col justify-center gap-2.5 overflow-visible p-5 py-5 md:p-6 md:py-6 ${
         isRight ? "lg:items-end lg:text-right" : ""
       }`}
     >
@@ -194,11 +193,11 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             ════════════════════════════════════════════════════════════════════ */}
         <div className="hidden sm:block">
           {/* Fighter hero */}
-          <section className="mt-6 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 md:p-6">
+          <section className="mt-5 overflow-hidden rounded-xl border border-line bg-surface shadow-glow">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-3 md:px-6 md:py-4">
               <div>
                 <p className="mono-label">{event.event.name.toLowerCase()}</p>
-                <p className="mt-2 text-sm text-muted">
+                <p className="mt-1.5 text-xs text-muted md:text-sm">
                   {(fight.weightClass ?? "weight class pending").toLowerCase()} ·{" "}
                   {fight.rounds} rounds · {fight.cardPlacement.toLowerCase()}
                 </p>
@@ -214,23 +213,19 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 animationDelay="fl-delay-100"
               />
 
-              {/* VS centre */}
-              <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-3 border-y border-line bg-background/40 px-4 py-6 text-center lg:border-x lg:border-y-0">
+              {/* VS centre — compressed: removed duplicate weight/rounds (already in header strip) */}
+              <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-2 border-y border-line bg-background/40 px-4 py-4 text-center lg:border-x lg:border-y-0">
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none absolute left-1/2 top-3 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
+                  className="pointer-events-none absolute left-1/2 top-2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
                 />
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none absolute bottom-3 left-1/2 hidden h-4 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
+                  className="pointer-events-none absolute bottom-2 left-1/2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
                 />
-                <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[3rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[4rem]">
+                <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[2.4rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[3rem]">
                   VS
                 </p>
-                <p className="mono-label text-[10px]">
-                  {(fight.weightClass ?? "").toLowerCase() || "weight class"}
-                </p>
-                <p className="mono-label text-[10px] text-subtle/60">{fight.rounds} rounds</p>
               </div>
 
               <FighterHeroPanel
@@ -243,13 +238,15 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             </div>
           </section>
 
-          {/* Fight read snapshot */}
-          <div className="fl-animate-fade-up fl-delay-400 mt-6 md:mt-8">
-            <FightReadSnapshot viewModel={vm} />
-          </div>
+          {/*
+           * Phase 2: FightReadSnapshot removed on desktop. It duplicated the
+           * model call + method lean + counter path that TheCall renders
+           * immediately below — three call surfaces stacked was too heavy.
+           * TheCall is now the single source of the model lean above the fold.
+           */}
 
           {/* Analysis sections — one scroll page, hash anchors preserved */}
-          <div className="mt-6 md:mt-8">
+          <div className="fl-animate-fade-up fl-delay-400 mt-5 md:mt-6">
             <FightPageTabs
               tabs={[
                 { id: "call", label: "call" },

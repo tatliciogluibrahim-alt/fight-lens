@@ -54,16 +54,16 @@ function MobileMatchupHeader({
   const noLean = !calledA && !calledB;
 
   return (
-    <div className="rounded-2xl border border-line bg-surface/70 p-5">
+    <div className="rounded-2xl border border-line bg-surface/70 px-5 py-4">
       <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
         {(fight.weightClass ?? "weight pending").toLowerCase()}
         {" · "}{fight.rounds}R
         {" · "}{fight.cardPlacement.toLowerCase()}
       </p>
 
-      <div className="mt-4 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+      <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center gap-2.5">
         <p
-          className={`min-w-0 break-words text-2xl font-semibold leading-[1.02] ${
+          className={`min-w-0 break-words text-xl font-semibold leading-[1.05] ${
             calledA ? "text-accent" : noLean ? "text-muted" : "text-foreground"
           }`}
         >
@@ -73,7 +73,7 @@ function MobileMatchupHeader({
           vs
         </p>
         <p
-          className={`min-w-0 break-words text-right text-2xl font-semibold leading-[1.02] ${
+          className={`min-w-0 break-words text-right text-xl font-semibold leading-[1.05] ${
             calledB ? "text-accent" : noLean ? "text-muted" : "text-foreground"
           }`}
         >
@@ -82,7 +82,7 @@ function MobileMatchupHeader({
       </div>
 
       {noLean && (
-        <p className="mt-2 font-mono text-[9px] uppercase tracking-widest text-subtle/70">
+        <p className="mt-1.5 font-mono text-[9px] uppercase tracking-widest text-subtle/70">
           too close to call
         </p>
       )}

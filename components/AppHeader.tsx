@@ -57,23 +57,18 @@ export function AppHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-line bg-background/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-30 border-b border-line/60 bg-background/85 backdrop-blur-xl">
       {/*
         Single-row layout always — no flex-wrap — so the header stays at a
-        fixed height (h-16 = 64px) on all screen sizes. On mobile the nav
-        pill bar scrolls horizontally rather than wrapping to a second row.
-        This prevents page content from hiding under a taller two-row header.
+        fixed height (h-14 = 56px) on all screen sizes. Phase 2: trimmed
+        from h-16 → h-14 to reduce vertical chrome and reclaim above-the-fold
+        space on fight detail pages.
       */}
-      <nav className="section-shell flex h-16 items-center justify-between gap-3">
-        {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-3">
-          <span className="lens-mark size-7" />
-          <span className="leading-none">
-            <span className="block text-base font-semibold tracking-[-0.03em]">fight lens</span>
-            <span className="hidden font-mono text-[10px] uppercase tracking-[0.18em] text-subtle sm:block">
-              forecast · tracked
-            </span>
-          </span>
+      <nav className="section-shell flex h-14 items-center justify-between gap-3">
+        {/* Logo — tighter, single-line wordmark */}
+        <Link href="/" className="flex shrink-0 items-center gap-2.5">
+          <span className="lens-mark size-6" />
+          <span className="text-[15px] font-semibold leading-none tracking-[-0.03em]">fight lens</span>
         </Link>
 
         {/* Nav pills — right-aligned, scrollable on narrow screens */}

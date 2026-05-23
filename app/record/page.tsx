@@ -164,6 +164,11 @@ export default function RecordPage() {
 
   const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
   const pendingCount = lockedCalls.filter((r) => r.outcome === null).length;
+  const correctCount = metrics.winnerAccuracy != null
+    ? Math.round((metrics.winnerAccuracy / 100) * metrics.resolvedCount)
+    : null;
+  const completedCardCount = Array.from(groupByEvent(lockedCalls).values())
+    .filter((records) => records.every((r) => r.outcome !== null)).length;
 
   return (
     <>
@@ -187,20 +192,31 @@ export default function RecordPage() {
               Named-call accuracy excludes too-close-to-call fights. Historical validation stays separate.
             </p>
 
-            <div className="mt-6 grid max-w-xl grid-cols-3 gap-2 text-center">
+            {/* Ledger row — 4 stats, public accountability feel */}
+            <div className="mt-6 grid max-w-2xl grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{lockedCalls.length}</p>
                 <p className="mono-label mt-1">calls logged</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
-                <p className="data-text text-2xl text-foreground">{resolvedCount}</p>
-                <p className="mono-label mt-1">scored</p>
+                <p className="data-text text-2xl text-foreground">{correctCount ?? "—"}</p>
+                <p className="mono-label mt-1">correct</p>
+              </div>
+              <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
+                <p className="data-text text-2xl text-accent">{metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}</p>
+                <p className="mono-label mt-1">accuracy</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{pendingCount}</p>
                 <p className="mono-label mt-1">pending</p>
               </div>
             </div>
+            {completedCardCount > 0 && (
+              <p className="mt-3 text-xs text-subtle">
+                {completedCardCount} completed card{completedCardCount === 1 ? "" : "s"}
+                {pendingCount > 0 ? ` · ${pendingCount} call${pendingCount === 1 ? "" : "s"} awaiting result` : ""}
+              </p>
+            )}
             <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">
               early prototype · grade unlocks at 30 scored fights · baseline comparison planned
             </p>

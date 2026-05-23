@@ -137,8 +137,8 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
     return (
       <section className="module-card hidden sm:block">
         <div className="module-header">
-          <p className="mono-label">the call</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+          <p className="mono-label">pre-fight call</p>
+          <h2 className="mt-2 text-2xl font-semibold tracking-[-0.035em] md:text-3xl">
             why the model leans this way.
           </h2>
         </div>
@@ -163,12 +163,12 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
   return (
     <section className="module-card">
       <div className="module-header">
-        <p className="mono-label">the call</p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+        <p className="mono-label">pre-fight call</p>
+        <h2 className="mt-2 text-2xl font-semibold tracking-[-0.035em] md:text-3xl">
           why the model leans this way.
         </h2>
-        <p className="mt-3 text-sm text-muted">
-          Method, counter path, and what could flip the read.
+        <p className="mt-1.5 text-sm text-muted">
+          Directional model lean. Not a guarantee.
         </p>
       </div>
 
@@ -206,8 +206,6 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
             <ScenarioCard key={scenario.id} scenario={scenario} />
           ))}
         </div>
-
-        <p className="mono-label">outcome-v0.2</p>
       </div>
     </section>
   );
