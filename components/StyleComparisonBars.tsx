@@ -310,7 +310,7 @@ export function StyleComparisonBars({
     return (
       <section className="module-card">
         <div className="module-header">
-          <p className="mono-label">fight shape</p>
+          <p className="mono-label">style fingerprint</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
             fight shape.
           </h2>
@@ -359,7 +359,7 @@ export function StyleComparisonBars({
           ─────────────────────────────────────────────────────────────────────── */}
       <div className="sm:hidden overflow-hidden rounded-2xl border border-line bg-surface/70">
         <div className="p-5">
-          <p className="mono-label">fight shape</p>
+          <p className="mono-label">style fingerprint</p>
           <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/60">
             style map only · not a winner forecast
           </p>
@@ -446,12 +446,12 @@ export function StyleComparisonBars({
       {/* ── Desktop: full section header + radar + insights ─────────────────── */}
       <div className="hidden sm:block">
       <div className="module-header">
-        <p className="mono-label">fight shape</p>
+        <p className="mono-label">style fingerprint</p>
         <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
           fight shape.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          Shape explains where the matchup tilts. It does not replace the model call.
+          Shape explains where the matchup tilts. It does not replace the model lean.
         </p>
       </div>
 
@@ -516,14 +516,14 @@ export function StyleComparisonBars({
         */}
         {narrative.headline ? (
           <div className="rounded-2xl border border-line bg-background/35 p-4">
-            <p className="mono-label">what the shape says</p>
+            <p className="mono-label">fingerprint read</p>
             <p className="mt-2 text-sm leading-6 text-muted">{narrative.headline}</p>
           </div>
         ) : null}
 
         {narrative.cards.length > 0 ? (
           <div>
-            <p className="mb-3 mono-label">shape insights</p>
+            <p className="mb-3 mono-label">style signals</p>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {narrative.cards.slice(0, 3).map((card) => (
                 <ShapeCard key={`${card.kind}-${card.axisLabel}`} card={card} />

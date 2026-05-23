@@ -14,16 +14,16 @@ const startSteps = [
     body: "Open the current event and scan the fights.",
   },
   {
-    title: "Read the call",
-    body: "Each fight starts with the model call, likely finish type, and what could break the call.",
+    title: "Read the model lean",
+    body: "Each fight starts with the model lean, likely finish type, and what could flip the call. It is directional — not a guarantee.",
   },
   {
-    title: "Explore the shape",
+    title: "Explore the style fingerprint",
     body: "Optional context. The radar shows how the fight style tilts, not the winner forecast.",
   },
   {
     title: "Check the record",
-    body: "Every logged call is scored after the official result.",
+    body: "Every pre-fight call is logged before the bell and scored after the official result.",
   },
 ];
 
@@ -262,7 +262,7 @@ function CurrentCardModule({
           </div>
           {viewModel?.isNamedCall ? (
             <div className="rounded-2xl border border-line bg-background/35 p-4 md:min-w-[240px]">
-              <p className="mono-label">model call</p>
+              <p className="mono-label">model lean</p>
               <p className="mt-2 text-xl font-semibold tracking-tight text-accent">
                 {viewModel.predictedWinner?.name}
               </p>
@@ -403,6 +403,21 @@ export default function Home() {
           winnerAccuracy={accuracyMetrics.winnerAccuracy}
         />
 
+        {/* Portfolio framing — what Fight Lens is */}
+        <section className="section-shell py-4 md:py-6">
+          <div className="rounded-2xl border border-line bg-surface/40 p-5 md:p-6">
+            <p className="mono-label accent-rail">what this is</p>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
+              Fight Lens explores the trust problem in predictive sports analysis: how to make pre-fight calls explainable, logged, and accountable. Calls are locked before the bell. Style shape explains the tilt. Manual context flags what the model cannot see. Results are tracked publicly.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5">
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">early prototype</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">not betting advice</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">model lean · not a guarantee</span>
+            </div>
+          </div>
+        </section>
+
         {/* Mobile: slim "browse more" link — homepage is already hero → card → record on small screens */}
         <section className="sm:hidden section-shell pb-4">
           <Link
@@ -422,7 +437,7 @@ export default function Home() {
           <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
             <div>
               <p className="mono-label accent-rail">start here</p>
-              <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">how to use Fight Lens.</h2>
+              <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">how Fight Lens works.</h2>
             </div>
             <Link href="/methodology" className="text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground">
               how it works →

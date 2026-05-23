@@ -190,7 +190,7 @@ export default function RecordPage() {
             <div className="mt-6 grid max-w-xl grid-cols-3 gap-2 text-center">
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{lockedCalls.length}</p>
-                <p className="mono-label mt-1">calls</p>
+                <p className="mono-label mt-1">calls logged</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{resolvedCount}</p>
@@ -201,6 +201,9 @@ export default function RecordPage() {
                 <p className="mono-label mt-1">pending</p>
               </div>
             </div>
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">
+              early prototype · grade unlocks at 30 scored fights · baseline comparison planned
+            </p>
           </div>
         </section>
 

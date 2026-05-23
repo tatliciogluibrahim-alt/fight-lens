@@ -48,8 +48,8 @@ const outputRows = [
     body: "Repeatable routes each fighter can use to create controlled minutes."
   },
   {
-    label: "prediction-brief",
-    body: "Win probability and method breakdown, locked before the first bell and tracked against outcomes."
+    label: "pre-fight call",
+    body: "Model lean and method breakdown, logged as a pre-fight call before the first bell and tracked against outcomes."
   }
 ];
 
@@ -114,9 +114,14 @@ export default function MethodologyPage() {
             </h1>
             <p className="mt-6 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
               Fight Lens turns public stats, reviewed context, and computed signals into a
-              model call. The goal is not certainty — it is to show the shape of the matchup
+              model lean. The goal is not certainty — it is to show the shape of the matchup
               clearly enough that a creator, analyst, or serious fan can explain what matters.
             </p>
+            <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-xl border border-line/60 bg-surface/40 px-4 py-3">
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">early prototype · ongoing development</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">calls logged before the bell · scored after the result</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">not betting advice</span>
+            </div>
           </div>
 
           {/* Scan-card grid: 30-second mental model for first-time visitors */}
@@ -142,9 +147,9 @@ export default function MethodologyPage() {
               <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-success/70" />
               <p className="mono-label">how to read it</p>
               <p className="mt-3 text-sm leading-6 text-muted">
-                Read the model call first, then read strength. Method lean is directional — it
-                is not a second winner forecast. Style edge shows how the shape tilts, separate
-                from the call.
+                Read the model lean first, then read strength. Method lean is directional — not
+                a second winner forecast. Style fingerprint shows how the matchup tilts, separate
+                from the call. This is analysis, not betting advice.
               </p>
             </div>
           </div>
@@ -172,7 +177,7 @@ export default function MethodologyPage() {
             </h2>
             <div className="mt-6 grid gap-5 md:grid-cols-2">
               <div>
-                <p className="text-sm font-semibold text-foreground">What the model uses</p>
+                <p className="text-sm font-semibold text-foreground">What the model lean uses</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
                   Public stat history, recent form, style signals, and stat differentials between
                   the two fighters. Stats that depend on opponent context (defense, absorbed

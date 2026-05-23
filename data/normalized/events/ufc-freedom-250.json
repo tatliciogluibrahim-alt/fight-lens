@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-23T01:10:37.899Z",
+  "generatedAt": "2026-05-23T02:02:15.421Z",
   "event": {
     "id": "ufc-freedom-250",
     "ufcstatsId": "48544433372ecfa6",
@@ -16259,7 +16259,26 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "contextNotes": null,
+      "contextNotes": [
+        {
+          "type": "debut-or-promotion-jump",
+          "fighter": "Aiemann Zahabi",
+          "title": "7-fight streak built largely on decision wins over unranked opposition",
+          "explanation": "Zahabi's recent record is 7-0, but the wins are predominantly decisions against fighters ranked outside the top 10 or unranked. His most notable win (Aldo) was split and contested — 16 of 20 media scorecards went to Aldo. The model weights the streak without adjusting for competition quality.",
+          "confidence": "high",
+          "impactDirection": "unclear",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "recent-ko-loss",
+          "fighter": "Sean O'Malley",
+          "title": "Two losses are both specifically to Merab's grappling — not predictive here",
+          "explanation": "O'Malley's last two losses were submission and decision losses to Merab Dvalishvili, who uses elite wrestling to neutralize strikers. Zahabi is primarily a standup fighter. The model weights those losses equally to any loss — the stylistic context is not captured.",
+          "confidence": "high",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "sean-o-malley",
@@ -44481,7 +44500,17 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "contextNotes": null,
+      "contextNotes": [
+        {
+          "type": "debut-or-promotion-jump",
+          "fighter": "Diego Lopes",
+          "title": "Career stats compressed by two title fights against Volkanovski",
+          "explanation": "Lopes's last two losses are both decisions against Alexander Volkanovski — the dominant featherweight champion for four years. Those fights drag his aggregate striking and absorption stats significantly. The model treats these losses the same as any other, which understates Lopes's actual level relative to Garcia's win streak.",
+          "confidence": "high",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "diego-lopes",
