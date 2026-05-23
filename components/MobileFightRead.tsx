@@ -226,53 +226,13 @@ function MobileScenarios({ vm }: { vm: PredictionViewModel }) {
   );
 }
 
-// ─── 5. Fight shape accordion ─────────────────────────────────────────────────
-
-function MobileShapeAccordion({
-  fighterA,
-  fighterB,
-  predictedWinnerId,
-}: {
-  fighterA: SourcedFighter;
-  fighterB: SourcedFighter;
-  predictedWinnerId: string | null;
-}) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div id="section-shape" className="scroll-mt-16 overflow-hidden rounded-2xl border border-line bg-surface/70">
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center justify-between gap-3 p-5 text-left"
-        aria-expanded={open}
-      >
-        <div>
-          <p className="mono-label">fight shape</p>
-          <p className="mt-1 text-sm text-muted">
-            {open ? "Style edges and radar" : "Tap to expand — style edges"}
-          </p>
-        </div>
-        <span
-          aria-hidden="true"
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line bg-surface-2 text-sm text-subtle"
-        >
-          {open ? "−" : "+"}
-        </span>
-      </button>
-
-      {open && (
-        <div className="border-t border-line px-4 pb-5 pt-4">
-          <StyleComparisonBars
-            fighterA={fighterA}
-            fighterB={fighterB}
-            predictedWinnerId={predictedWinnerId}
-          />
-        </div>
-      )}
-    </div>
-  );
-}
+// ─── 5. Fight shape ──────────────────────────────────────────────────────────
+// Removed MobileShapeAccordion wrapper. StyleComparisonBars already renders a
+// smart compact mobile summary (axis leader + biggest edge + swing path) with
+// its own single "expand shape map" toggle for the full radar + insights. The
+// outer wrapper meant users tapped one accordion just to reveal another one —
+// classic double-accordion. Rendered directly now, with a stable scroll anchor
+// preserved via the id attribute on the inner section header.
 
 // ─── 6. Record proof ──────────────────────────────────────────────────────────
 
@@ -363,12 +323,15 @@ export function MobileFightRead({
 
       <ContextualNotes notes={fight.contextNotes} />
 
-      {/* 5 · Fight shape — collapsed accordion */}
-      <MobileShapeAccordion
-        fighterA={fighterA}
-        fighterB={fighterB}
-        predictedWinnerId={vm.predictedWinner?.id ?? null}
-      />
+      {/* 5 · Fight shape — StyleComparisonBars renders its own mobile compact
+          card with a single expand toggle; scroll anchor preserved via id. */}
+      <div id="section-shape" className="scroll-mt-16">
+        <StyleComparisonBars
+          fighterA={fighterA}
+          fighterB={fighterB}
+          predictedWinnerId={vm.predictedWinner?.id ?? null}
+        />
+      </div>
 
       {/* 6 · Record proof */}
       <MobileRecordProof
