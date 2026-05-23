@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-22T01:48:30.723Z",
+  "generatedAt": "2026-05-23T01:10:37.899Z",
   "event": {
     "id": "ufc-freedom-250",
     "ufcstatsId": "48544433372ecfa6",
@@ -54,6 +54,17 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": [
+        {
+          "type": "age-mileage",
+          "fighter": "Justin Gaethje",
+          "title": "37 years old with title-fight mileage",
+          "explanation": "Gaethje is 37 with two submission losses in championship-level fights (Khabib, Oliveira). His durability and chin carry more question marks than his record alone suggests. The model does not apply an age or accumulated-damage factor.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "ilia-topuria",
@@ -104,7 +115,7 @@
             "controlThreat": 36,
             "submissionThreat": 44,
             "cardioConsistency": 54,
-            "opponentQuality": null,
+            "opponentQuality": 92,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -113,7 +124,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -3673,7 +3684,7 @@
             "controlThreat": 4,
             "submissionThreat": 0,
             "cardioConsistency": 44,
-            "opponentQuality": null,
+            "opponentQuality": 88,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -3682,7 +3693,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -8527,6 +8538,17 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": [
+        {
+          "type": "weight-class-up",
+          "fighter": "Alex Pereira",
+          "title": "First career Heavyweight fight",
+          "explanation": "Pereira has competed exclusively at Light Heavyweight (205 lbs). Moving to Heavyweight (265 lbs) for the first time, he is expected to be 20–25 lbs lighter than Gane on fight night. The model has no size or walk-in weight variable — this structural gap is not captured.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "alex-pereira",
@@ -8577,7 +8599,7 @@
             "controlThreat": 4,
             "submissionThreat": 8,
             "cardioConsistency": 54,
-            "opponentQuality": null,
+            "opponentQuality": 91,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -8586,7 +8608,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -13228,7 +13250,7 @@
             "controlThreat": 15,
             "submissionThreat": 24,
             "cardioConsistency": 61,
-            "opponentQuality": null,
+            "opponentQuality": 87,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -13237,7 +13259,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -16237,6 +16259,7 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": null,
       "fighters": {
         "fighterA": {
           "id": "sean-o-malley",
@@ -16287,7 +16310,7 @@
             "controlThreat": 5,
             "submissionThreat": 8,
             "cardioConsistency": 60,
-            "opponentQuality": null,
+            "opponentQuality": 70,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -16296,7 +16319,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -21451,7 +21474,7 @@
             "controlThreat": 1,
             "submissionThreat": 0,
             "cardioConsistency": 53,
-            "opponentQuality": null,
+            "opponentQuality": 48,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -21460,7 +21483,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -25111,6 +25134,26 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": [
+        {
+          "type": "short-notice",
+          "fighter": "Josh Hokit",
+          "title": "Approximately 8-week turnaround",
+          "explanation": "Hokit accepted this fight on a compressed timeline of approximately 8 weeks. A shortened camp at heavyweight — where conditioning and game-plan depth matter in later rounds — is a factor the model's stat profile does not capture.",
+          "confidence": "medium",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "age-mileage",
+          "fighter": "Derrick Lewis",
+          "title": "High career fight-count and mileage",
+          "explanation": "Lewis carries a 29-13 record with significant UFC mileage at heavyweight. His one-punch KO finishing rate remains elite, but his ability to sustain pace across multiple rounds has been a consistent structural concern in recent fights.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "josh-hokit",
@@ -25161,7 +25204,7 @@
             "controlThreat": 47,
             "submissionThreat": 0,
             "cardioConsistency": 54,
-            "opponentQuality": null,
+            "opponentQuality": 38,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -25170,7 +25213,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -27327,7 +27370,7 @@
             "controlThreat": 7,
             "submissionThreat": 0,
             "cardioConsistency": 44,
-            "opponentQuality": null,
+            "opponentQuality": 68,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -27336,7 +27379,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -31533,6 +31576,17 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": [
+        {
+          "type": "age-mileage",
+          "fighter": "Michael Chandler",
+          "title": "39 years old on a two-fight slide",
+          "explanation": "Chandler is 39 with back-to-back losses. His recent defeats came against elite competition, but his pace and chin in later rounds have been scrutinized. The model does not apply a career-stage decay factor.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ],
       "fighters": {
         "fighterA": {
           "id": "mauricio-ruffy",
@@ -31583,7 +31637,7 @@
             "controlThreat": 0,
             "submissionThreat": 0,
             "cardioConsistency": 49,
-            "opponentQuality": null,
+            "opponentQuality": 42,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -31592,7 +31646,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -34636,7 +34690,7 @@
             "controlThreat": 30,
             "submissionThreat": 24,
             "cardioConsistency": 43,
-            "opponentQuality": null,
+            "opponentQuality": 83,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -34645,7 +34699,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -38347,6 +38401,7 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": null,
       "fighters": {
         "fighterA": {
           "id": "bo-nickal",
@@ -38397,7 +38452,7 @@
             "controlThreat": 65,
             "submissionThreat": 100,
             "cardioConsistency": 54,
-            "opponentQuality": null,
+            "opponentQuality": 35,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -38406,7 +38461,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -41998,7 +42053,7 @@
             "controlThreat": 48,
             "submissionThreat": 84,
             "cardioConsistency": 47,
-            "opponentQuality": null,
+            "opponentQuality": 32,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -42007,7 +42062,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -44426,6 +44481,7 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
+      "contextNotes": null,
       "fighters": {
         "fighterA": {
           "id": "diego-lopes",
@@ -44476,7 +44532,7 @@
             "controlThreat": 26,
             "submissionThreat": 56,
             "cardioConsistency": 42,
-            "opponentQuality": null,
+            "opponentQuality": 73,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -44485,7 +44541,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },
@@ -49343,7 +49399,7 @@
             "controlThreat": 15,
             "submissionThreat": 16,
             "cardioConsistency": 62,
-            "opponentQuality": null,
+            "opponentQuality": 32,
             "provenance": {
               "strikingVolume": "derived",
               "strikingDefense": "derived",
@@ -49352,7 +49408,7 @@
               "controlThreat": "derived",
               "submissionThreat": "derived",
               "cardioConsistency": "derived",
-              "opponentQuality": "missing"
+              "opponentQuality": "manual"
             },
             "note": "Career-rate metrics are derived from UFCStats. Opponent quality remains manual until rankings/opponent tiers are modeled."
           },

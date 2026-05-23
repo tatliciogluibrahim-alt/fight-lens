@@ -148,7 +148,7 @@ function biggestEdgeBody(row: AxisRow, leader: string): string {
     case "wrestling":
       return `${lead} can force more grappling sequences than the opponent has answered for.`;
     case "td defense":
-      return `${lead} has the stronger record of denying entries and resetting upright.`;
+      return `${lead} denies the takedown more cleanly — forces the fight to stay standing where pace and power apply.`;
     case "control":
       return `${lead} turns grips into controlled minutes more often.`;
     case "submission":
@@ -254,6 +254,11 @@ function buildHeadline(
     .filter((r) => Math.sign(r.delta) === Math.sign(biggest.delta) && r.absDelta >= 10);
 
   if (tier === "clear") {
+    // TD defense as the clearest gap often means one fighter keeps the fight
+    // standing — make that explicit rather than just naming the axis.
+    if (axis === "td defense") {
+      return `${lead} has the clearer takedown denial edge — that keeps exchanges standing where the output picture applies.`;
+    }
     return `${lead}'s ${axis} is the clearest style signal. Use it after the call to understand where the matchup tilts.`;
   }
 

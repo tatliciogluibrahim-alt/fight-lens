@@ -402,6 +402,7 @@ function buildFight(sourceFight, override, profilesById, detailsById, manualFigh
     matchupQuestion: override?.matchupQuestion ?? null,
     fightShapeSummary: override?.fightShapeSummary ?? null,
     manualRead: override?.manualRead ?? null,
+    contextNotes: override?.contextNotes ?? null,
     fighters: { fighterA, fighterB },
     keyEdges: keyEdgesFromProfiles(fighterA, fighterB),
     paths: override?.paths ?? null,

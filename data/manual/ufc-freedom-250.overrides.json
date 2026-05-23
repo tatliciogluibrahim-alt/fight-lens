@@ -34,6 +34,7 @@
     "54f64b5e283b0ce7": {
       "displayName": "Ilia Topuria",
       "ranking": "C",
+      "opponentQualityScore": 92,
       "country": {
         "code": "GE",
         "label": "georgia",
@@ -44,6 +45,7 @@
     "9e8f6c728eb01124": {
       "displayName": "Justin Gaethje",
       "ranking": "IC",
+      "opponentQualityScore": 88,
       "country": {
         "code": "US",
         "label": "united states",
@@ -54,6 +56,7 @@
     "e5549c82bfb5582d": {
       "displayName": "Alex Pereira",
       "ranking": null,
+      "opponentQualityScore": 91,
       "country": {
         "code": "BR",
         "label": "brazil",
@@ -64,6 +67,7 @@
     "787bb1f087ccff8a": {
       "displayName": "Ciryl Gane",
       "ranking": "#1",
+      "opponentQualityScore": 87,
       "country": {
         "code": "FR",
         "label": "france",
@@ -74,6 +78,7 @@
     "b50a426a33da0012": {
       "displayName": "Sean O'Malley",
       "ranking": "#2",
+      "opponentQualityScore": 70,
       "country": {
         "code": "US",
         "label": "united states",
@@ -84,6 +89,7 @@
     "24656ef4d605c96f": {
       "displayName": "Aiemann Zahabi",
       "ranking": "#6",
+      "opponentQualityScore": 48,
       "country": {
         "code": "CA",
         "label": "canada",
@@ -94,6 +100,7 @@
     "955da1675ad58a50": {
       "displayName": "Josh Hokit",
       "ranking": "#5",
+      "opponentQualityScore": 38,
       "country": {
         "code": "US",
         "label": "united states",
@@ -104,6 +111,7 @@
     "d3df1add9d9a7efb": {
       "displayName": "Derrick Lewis",
       "ranking": "#9",
+      "opponentQualityScore": 68,
       "country": {
         "code": "US",
         "label": "united states",
@@ -114,6 +122,7 @@
     "9c393e836a852f30": {
       "displayName": "Mauricio Ruffy",
       "ranking": "#9",
+      "opponentQualityScore": 42,
       "country": {
         "code": "BR",
         "label": "brazil",
@@ -124,6 +133,7 @@
     "4b93a88f3b1de35b": {
       "displayName": "Michael Chandler",
       "ranking": "#13",
+      "opponentQualityScore": 83,
       "country": {
         "code": "US",
         "label": "united states",
@@ -134,6 +144,7 @@
     "35673bf5204524ee": {
       "displayName": "Bo Nickal",
       "ranking": null,
+      "opponentQualityScore": 35,
       "country": {
         "code": "US",
         "label": "united states",
@@ -144,6 +155,7 @@
     "d6c0cdd7e467c440": {
       "displayName": "Kyle Daukaus",
       "ranking": null,
+      "opponentQualityScore": 32,
       "country": {
         "code": "US",
         "label": "united states",
@@ -154,6 +166,7 @@
     "f166e93d04a8c274": {
       "displayName": "Diego Lopes",
       "ranking": "#2",
+      "opponentQualityScore": 73,
       "country": {
         "code": "BR",
         "label": "brazil",
@@ -164,6 +177,7 @@
     "97cf1a2c7c5e7889": {
       "displayName": "Steve Garcia",
       "ranking": "#9",
+      "opponentQualityScore": 32,
       "country": {
         "code": "US",
         "label": "united states",
@@ -177,13 +191,35 @@
       "routeId": "topuria-gaethje",
       "cardPlacement": "Main Card",
       "rounds": 5,
-      "weightClass": "Lightweight Title Bout"
+      "weightClass": "Lightweight Title Bout",
+      "contextNotes": [
+        {
+          "type": "age-mileage",
+          "fighter": "Justin Gaethje",
+          "title": "37 years old with title-fight mileage",
+          "explanation": "Gaethje is 37 with two submission losses in championship-level fights (Khabib, Oliveira). His durability and chin carry more question marks than his record alone suggests. The model does not apply an age or accumulated-damage factor.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "5727d5be8c373346": {
       "routeId": "pereira-gane",
       "cardPlacement": "Main Card",
       "rounds": 5,
-      "weightClass": "Heavyweight Interim Title Bout"
+      "weightClass": "Heavyweight Interim Title Bout",
+      "contextNotes": [
+        {
+          "type": "weight-class-up",
+          "fighter": "Alex Pereira",
+          "title": "First career Heavyweight fight",
+          "explanation": "Pereira has competed exclusively at Light Heavyweight (205 lbs). Moving to Heavyweight (265 lbs) for the first time, he is expected to be 20–25 lbs lighter than Gane on fight night. The model has no size or walk-in weight variable — this structural gap is not captured.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "60de0423ae6ed097": {
       "routeId": "o-malley-zahabi",
@@ -195,13 +231,44 @@
       "routeId": "hokit-lewis",
       "cardPlacement": "Main Card",
       "rounds": 3,
-      "weightClass": "Heavyweight Bout"
+      "weightClass": "Heavyweight Bout",
+      "contextNotes": [
+        {
+          "type": "short-notice",
+          "fighter": "Josh Hokit",
+          "title": "Approximately 8-week turnaround",
+          "explanation": "Hokit accepted this fight on a compressed timeline of approximately 8 weeks. A shortened camp at heavyweight — where conditioning and game-plan depth matter in later rounds — is a factor the model's stat profile does not capture.",
+          "confidence": "medium",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "age-mileage",
+          "fighter": "Derrick Lewis",
+          "title": "High career fight-count and mileage",
+          "explanation": "Lewis carries a 29-13 record with significant UFC mileage at heavyweight. His one-punch KO finishing rate remains elite, but his ability to sustain pace across multiple rounds has been a consistent structural concern in recent fights.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "9a9b30b3165b62e4": {
       "routeId": "ruffy-chandler",
       "cardPlacement": "Main Card",
       "rounds": 3,
-      "weightClass": "Lightweight Bout"
+      "weightClass": "Lightweight Bout",
+      "contextNotes": [
+        {
+          "type": "age-mileage",
+          "fighter": "Michael Chandler",
+          "title": "39 years old on a two-fight slide",
+          "explanation": "Chandler is 39 with back-to-back losses. His recent defeats came against elite competition, but his pace and chin in later rounds have been scrutinized. The model does not apply a career-stage decay factor.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "00e8d4b961a65d21": {
       "routeId": "nickal-daukaus",
