@@ -8,8 +8,9 @@ const links = [
   { href: "/", label: "home", mobileVisible: true },
   { href: "/events", label: "events", mobileVisible: true },
   { href: "/record", label: "record", mobileVisible: true },
-  // "how it works" is hidden from the mobile nav to prevent label clipping.
-  // It remains available via the footer link on all screen sizes.
+  // "case study" and "how it works" are hidden from the mobile nav to prevent
+  // label clipping. Both remain available via the footer on all screen sizes.
+  { href: "/case-study", label: "case study", mobileVisible: false },
   { href: "/methodology", label: "how it works", mobileVisible: false },
 ];
 
@@ -49,7 +50,8 @@ function isActivePath(pathname: string, href: string) {
     pathname === href ||
     (href === "/events" && pathname.startsWith("/events")) ||
     (href === "/record" && (pathname.startsWith("/record") || pathname.startsWith("/backtests"))) ||
-    (href === "/methodology" && pathname.startsWith("/methodology"))
+    (href === "/methodology" && pathname.startsWith("/methodology")) ||
+    (href === "/case-study" && pathname.startsWith("/case-study"))
   );
 }
 

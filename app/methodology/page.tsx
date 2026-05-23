@@ -122,6 +122,13 @@ export default function MethodologyPage() {
               <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">calls logged before the bell · scored after the result</span>
               <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">not betting advice</span>
             </div>
+            <p className="mt-3 text-xs leading-5 text-subtle">
+              For the product thinking behind Fight Lens — problem, constraint, and next decisions —
+              see the{" "}
+              <Link href="/case-study" className="text-foreground underline decoration-line underline-offset-4 hover:text-accent">
+                case study
+              </Link>.
+            </p>
           </div>
 
           {/* Scan-card grid: 30-second mental model for first-time visitors */}

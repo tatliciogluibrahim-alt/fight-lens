@@ -247,7 +247,7 @@ export default function RecordPage() {
           </div>
 
           <p className="mt-6 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-            signal-based forecast · not a guarantee · outcome-v0.2
+            directional model lean · not a guarantee · outcome-v0.2
           </p>
         </section>
 

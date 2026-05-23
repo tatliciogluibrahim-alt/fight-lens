@@ -207,7 +207,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
         {!compact && <CalibrationTable metrics={metrics} />}
 
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-          signal-based · not a guarantee · outcome-v0.2
+          directional model lean · not a guarantee · outcome-v0.2
           {metrics.lastUpdated
             ? ` · updated ${new Date(metrics.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" })}`
             : ""}

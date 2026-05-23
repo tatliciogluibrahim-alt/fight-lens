@@ -342,7 +342,7 @@ export default function Home() {
               <span className="block text-accent">post-fight accountability.</span>
             </h1>
             <p className="mt-4 text-sm leading-6 text-muted">
-              Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.
+              Transparent UFC fight analysis. Pre-fight calls logged before the bell, scored after the result.
             </p>
             <div className="mt-5 grid gap-3">
               <Link
@@ -369,7 +369,7 @@ export default function Home() {
               <span className="block text-accent">post-fight accountability.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Predictive analysis for sourced UFC cards. Public calls are logged before the fight and scored after the result.
+              Transparent UFC fight analysis. Pre-fight calls logged before the bell, scored after the result.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link
