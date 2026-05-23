@@ -146,7 +146,9 @@ function OverlayRadar({
             key={dim.key}
             role="button"
             tabIndex={0}
-            className="cursor-pointer"
+            aria-label={`Compare ${dim.label}`}
+            aria-pressed={active}
+            className="cursor-pointer focus:outline-none [&>circle.fl-hit]:hover:fill-[rgba(143,215,247,0.06)]"
             onClick={() => onAxisSelect(active ? null : dim.key)}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
@@ -158,17 +160,34 @@ function OverlayRadar({
             <line
               x1={CENTER} y1={CENTER} x2={end.x} y2={end.y}
               stroke="var(--line-strong)" strokeOpacity={active ? 0.9 : 0.45} strokeWidth={active ? 1.2 : 0.8}
+              pointerEvents="none"
             />
-            <circle cx={lp.x} cy={lp.y} r={22} fill="transparent" />
+            {/*
+              Hit target — generous radius (36) so labels are easy to tap on
+              mobile and click on desktop. Previously r=22 made the labels
+              hard to hit. Visible on hover via a soft accent fill so the
+              interactive affordance is obvious.
+            */}
+            <circle
+              className="fl-hit transition-colors"
+              cx={lp.x} cy={lp.y} r={36}
+              fill={active ? "rgba(143,215,247,0.10)" : "transparent"}
+            />
             <text
               x={lp.x} y={lp.y}
               textAnchor="middle" dominantBaseline="middle"
               className={active ? "fill-foreground font-mono text-[10px] uppercase tracking-[0.12em]" : "fill-subtle font-mono text-[10px] uppercase tracking-[0.12em]"}
               opacity={active ? 1 : 0.9}
+              pointerEvents="none"
             >
               {dim.shortLabel}
             </text>
-            <circle cx={end.x} cy={end.y} r={active ? 2.8 : 2} fill={active ? "var(--accent)" : "var(--line-strong)"} opacity={active ? 0.85 : 0.5} />
+            <circle
+              cx={end.x} cy={end.y} r={active ? 2.8 : 2}
+              fill={active ? "var(--accent)" : "var(--line-strong)"}
+              opacity={active ? 0.85 : 0.5}
+              pointerEvents="none"
+            />
           </g>
         );
       })}
@@ -270,7 +289,7 @@ function OverlayRadar({
         );
       })() : (
         <p className="mt-3 text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/60">
-          tap any axis to compare
+          tap or click any axis label to compare
         </p>
       )}
     </div>

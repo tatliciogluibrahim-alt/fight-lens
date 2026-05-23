@@ -6,7 +6,6 @@ import { FightResultBanner } from "@/components/FightResultBanner";
 import { FightPageTabs } from "@/components/FightPageTabs";
 import { TheCall } from "@/components/TheCall";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
-import { FighterNamePlate } from "@/components/FighterNamePlate";
 import { FormResumeModule } from "@/components/FormResumeModule";
 import { PathsToVictory } from "@/components/PathsToVictory";
 import { StyleComparisonBars } from "@/components/StyleComparisonBars";
@@ -57,96 +56,268 @@ function flagEmoji(code: string | undefined): string | null {
   return Array.from(c).map((ch) => String.fromCodePoint(127397 + ch.charCodeAt(0))).join("");
 }
 
+// ─── Tale-of-the-tape parsers ────────────────────────────────────────────────
+// Small, defensive helpers used by the VS delta strip + head-to-head row.
+// All parsers return null on any input they can't confidently parse, so
+// downstream UI can just skip the row when data is incomplete.
+
+function parseHeightInches(raw: string | null | undefined): number | null {
+  if (!raw) return null;
+  const m = raw.match(/(\d+)\s*'\s*(\d+)/);
+  if (!m) return null;
+  const ft = parseInt(m[1], 10);
+  const inches = parseInt(m[2], 10);
+  if (!Number.isFinite(ft) || !Number.isFinite(inches)) return null;
+  return ft * 12 + inches;
+}
+
+function parseReachInches(raw: string | null | undefined): number | null {
+  if (!raw) return null;
+  const m = raw.match(/(\d+(?:\.\d+)?)/);
+  if (!m) return null;
+  const v = parseFloat(m[1]);
+  return Number.isFinite(v) ? v : null;
+}
+
+function parseAge(dob: string | null | undefined, today = new Date()): number | null {
+  if (!dob) return null;
+  const d = new Date(dob);
+  if (Number.isNaN(d.getTime())) return null;
+  let age = today.getFullYear() - d.getFullYear();
+  const m = today.getMonth() - d.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < d.getDate())) age--;
+  return age >= 0 && age < 120 ? age : null;
+}
+
+function signedLabel(n: number, unit: string): string {
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${n}${unit}`;
+}
+
+// ─── Ranking chip ────────────────────────────────────────────────────────────
+// Above-the-name pill badge. Champion + Interim Champion get accent treatment;
+// numeric ranks get neutral treatment. "UNRANKED" is suppressed entirely.
+
+function RankingChip({ ranking, align = "left" }: { ranking: string | null | undefined; align?: "left" | "right" }) {
+  const formatted = formatRanking(ranking);
+  if (formatted === "UNRANKED") return null;
+  const isTitleHolder = formatted === "CHAMPION" || formatted === "IC";
+  const cls = isTitleHolder
+    ? "border-accent/40 bg-accent/10 text-accent"
+    : "border-line bg-surface-2 text-foreground";
+  const isRight = align === "right";
+  return (
+    <span
+      className={`inline-flex w-fit items-center rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] ${cls} ${isRight ? "lg:self-end" : ""}`}
+    >
+      {formatted}
+    </span>
+  );
+}
+
 // ─── Fighter hero panel ──────────────────────────────────────────────────────
 
 function FighterHeroPanel({
   fighter,
   align = "left",
-  cornerLabel,
   isCall,
   animationDelay,
 }: {
   fighter: SourcedFighter;
   align?: "left" | "right";
-  /** Mono "side" marker, e.g. "A" or "B" — broadcast scouting feel */
-  cornerLabel?: string;
-  /** True if this fighter is the model call. Adds a quiet accent rail above the name. */
+  /** True if this fighter is the model call. Adds an accent rail along the full panel edge. */
   isCall?: boolean;
   /** Stagger class (e.g. "fl-delay-100") */
   animationDelay?: string;
 }) {
   const isRight = align === "right";
   const country = getCountryDisplay(fighter);
-  const ranking = formatRanking(fighter.ranking);
-
-  // Split the metadata into two tiers so the row reads faster:
-  //   primary  → ranking + record  (the two things a reader actually wants)
-  //   secondary → stance · height · reach  (quieter physicals strip)
-  // Previously all five items lived on one mono row separated by bullets —
-  // dense and slow to scan on desktop.
-  const primaryBits = [
-    ranking !== "UNRANKED" ? ranking : null,
-    fighter.record ?? null,
-  ].filter(Boolean).join("  ·  ");
-  const secondaryBits = [
-    fighter.stance ?? null,
-    fighter.height ?? null,
-    fighter.reach ? `${fighter.reach} reach` : null,
-  ].filter(Boolean).join(" · ");
 
   return (
     <div
-      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex min-w-0 flex-col justify-center gap-2.5 overflow-visible p-5 py-5 md:p-6 md:py-6 ${
-        isRight ? "lg:items-end lg:text-right" : ""
+      className={`fl-animate-fade-up ${animationDelay ?? ""} relative flex min-w-0 flex-col justify-center gap-3 overflow-visible p-5 py-6 md:p-7 md:py-7 ${
+        isRight ? "lg:items-end lg:text-right" : "lg:items-start"
       }`}
     >
-      {/* Corner side marker */}
-      {cornerLabel && (
+      {/*
+        Full-height accent rail for the model-call fighter — fills horizontal
+        whitespace on wide desktops with a premium visual treatment instead of
+        the previous tiny 12px rail. (Answer #4: fill width with visual content.)
+      */}
+      {isCall && (
         <span
           aria-hidden="true"
-          className={`pointer-events-none absolute top-4 font-mono text-[10px] uppercase tracking-[0.18em] text-subtle/60 ${
-            isRight ? "right-5" : "left-5"
+          className={`pointer-events-none absolute top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-accent/55 to-transparent ${
+            isRight ? "right-0" : "left-0"
           }`}
-        >
-          side · {cornerLabel}
-        </span>
+        />
       )}
 
-      {/* Flag + country label */}
-      <div className={`flex items-center gap-2 ${isRight ? "lg:flex-row-reverse" : ""}`}>
+      {/* Country: enlarged flag + label, sits in the corner where SIDE A/B used to be */}
+      <div className={`flex items-center gap-2.5 ${isRight ? "lg:flex-row-reverse" : ""}`}>
         {country?.code && (
-          <span className="text-base leading-none" aria-hidden="true">
+          <span className="text-2xl leading-none" aria-hidden="true">
             {flagEmoji(country.code)}
           </span>
         )}
         <p className="mono-label">{country?.label ?? "country pending"}</p>
       </div>
 
-      {/* Quiet accent rail when this fighter is the model call */}
-      {isCall && (
-        <span
-          aria-hidden="true"
-          className={`block h-px w-12 bg-accent ${isRight ? "lg:ml-auto" : ""}`}
-        />
-      )}
+      {/* Ranking chip — above the name, accent-coloured for title-holders */}
+      <RankingChip ranking={fighter.ranking} align={align} />
 
-      {/* Name — word-boundary-only line breaks via FighterNamePlate */}
-      <FighterNamePlate name={fighter.name} align={align} />
+      {/*
+        Name — single line treatment per answer #1. Stays responsive: scales
+        from 3xl on small desktop to 5xl on lg+. break-words is a safety net
+        for unusually long names but never stacks first/last across lines.
+      */}
+      <h2
+        className={`text-3xl font-semibold leading-[1.05] tracking-[-0.045em] text-foreground md:text-4xl lg:text-5xl break-words ${
+          isRight ? "lg:text-right" : ""
+        }`}
+      >
+        {fighter.name}
+      </h2>
 
-      {/* Primary metadata: ranking + record — slightly more present */}
-      {primaryBits && (
-        <p className={`font-mono text-[11px] uppercase tracking-[0.12em] text-muted ${isRight ? "lg:text-right" : ""}`}>
-          {primaryBits}
-        </p>
-      )}
-
-      {/* Secondary metadata: physicals — quieter */}
-      {secondaryBits && (
-        <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70 ${isRight ? "lg:text-right" : ""}`}>
-          {secondaryBits}
+      {/* Record — single quieter line below the name */}
+      {fighter.record && (
+        <p className={`font-mono text-xs uppercase tracking-[0.12em] text-muted ${isRight ? "lg:text-right" : ""}`}>
+          {fighter.record}
         </p>
       )}
     </div>
+  );
+}
+
+// ─── VS centerpiece with delta strip ─────────────────────────────────────────
+// Answer #2: VS column carries a head-to-head delta strip (reach Δ, height Δ,
+// age Δ) when the data is available. Each row stays one line; missing data
+// silently skips. Reads as a compact scouting snapshot between the panels.
+
+function VsCenterpiece({ fighterA, fighterB }: { fighterA: SourcedFighter; fighterB: SourcedFighter }) {
+  const reachA = parseReachInches(fighterA.reach);
+  const reachB = parseReachInches(fighterB.reach);
+  const heightA = parseHeightInches(fighterA.height);
+  const heightB = parseHeightInches(fighterB.height);
+  const ageA = parseAge(fighterA.dob);
+  const ageB = parseAge(fighterB.dob);
+
+  type Row = { label: string; delta: string; leader: string | null };
+  const rows: Row[] = [];
+
+  if (reachA != null && reachB != null && reachA !== reachB) {
+    const d = reachA - reachB;
+    rows.push({
+      label: "reach",
+      delta: signedLabel(d, '"'),
+      leader: d > 0 ? fighterA.name.split(" ").pop() ?? null : fighterB.name.split(" ").pop() ?? null,
+    });
+  }
+  if (heightA != null && heightB != null && heightA !== heightB) {
+    const d = heightA - heightB;
+    rows.push({
+      label: "height",
+      delta: signedLabel(d, '"'),
+      leader: d > 0 ? fighterA.name.split(" ").pop() ?? null : fighterB.name.split(" ").pop() ?? null,
+    });
+  }
+  if (ageA != null && ageB != null && ageA !== ageB) {
+    const d = ageA - ageB;
+    // Age delta is in years — and "younger" is the meaningful direction
+    const youngerName = d > 0 ? fighterB.name.split(" ").pop() : fighterA.name.split(" ").pop();
+    rows.push({
+      label: "age",
+      delta: `${Math.abs(d)} yrs`,
+      leader: `${youngerName} younger`,
+    });
+  }
+
+  return (
+    <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-4 border-y border-line bg-background/40 px-4 py-5 text-center lg:border-x lg:border-y-0">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-2 left-1/2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
+      />
+      <p className="text-[2.6rem] font-light leading-none tracking-[-0.08em] text-foreground/65 md:text-[3.2rem]">
+        VS
+      </p>
+
+      {/* Delta strip — silently hidden when no deltas exist */}
+      {rows.length > 0 && (
+        <div className="mt-1 flex flex-col gap-1.5">
+          {rows.map((row) => (
+            <div key={row.label} className="flex flex-col items-center gap-0.5">
+              <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/70">
+                {row.label} Δ
+              </p>
+              <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/80">
+                {row.delta}
+              </p>
+              {row.leader && (
+                <p className="font-mono text-[8px] uppercase tracking-[0.12em] text-subtle/60">
+                  {row.leader}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Head-to-head physicals row ──────────────────────────────────────────────
+// Answer #3: full side-by-side physicals row below the hero, scouting-feel.
+// Reads as 4 columns: HEIGHT · REACH · STANCE · AGE, each showing
+// fighter A's value next to fighter B's. Silently omits rows where data is
+// missing on either side.
+
+function TaleOfTheTapeRow({ fighterA, fighterB }: { fighterA: SourcedFighter; fighterB: SourcedFighter }) {
+  type Cell = { label: string; valueA: string; valueB: string };
+  const cells: Cell[] = [];
+
+  if (fighterA.height && fighterB.height) {
+    cells.push({ label: "height", valueA: fighterA.height, valueB: fighterB.height });
+  }
+  if (fighterA.reach && fighterB.reach) {
+    cells.push({ label: "reach", valueA: fighterA.reach, valueB: fighterB.reach });
+  }
+  if (fighterA.stance && fighterB.stance) {
+    cells.push({ label: "stance", valueA: fighterA.stance, valueB: fighterB.stance });
+  }
+  const ageA = parseAge(fighterA.dob);
+  const ageB = parseAge(fighterB.dob);
+  if (ageA != null && ageB != null) {
+    cells.push({ label: "age", valueA: `${ageA}`, valueB: `${ageB}` });
+  }
+
+  if (cells.length === 0) return null;
+
+  return (
+    <section
+      aria-label="Tale of the tape"
+      className="fl-animate-fade-up fl-delay-400 mt-4 overflow-hidden rounded-xl border border-line bg-surface/60"
+    >
+      <div className="border-b border-line px-5 py-2.5">
+        <p className="mono-label">tale of the tape</p>
+      </div>
+      <div
+        className="grid divide-y divide-line md:divide-y-0 md:divide-x"
+        style={{ gridTemplateColumns: `repeat(${cells.length}, minmax(0, 1fr))` }}
+      >
+        {cells.map((cell) => (
+          <div key={cell.label} className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-5 py-4">
+            <p className="text-sm font-medium text-foreground text-right tabular-nums">{cell.valueA}</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">{cell.label}</p>
+            <p className="text-sm font-medium text-foreground tabular-nums">{cell.valueB}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -217,38 +388,30 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             </div>
             {vm.isScored && <FightResultBanner viewModel={vm} />}
 
-            <div className="grid gap-0 lg:grid-cols-[1fr_180px_1fr] lg:items-stretch">
+            <div className="grid gap-0 lg:grid-cols-[1fr_220px_1fr] lg:items-stretch">
               <FighterHeroPanel
                 fighter={fighterA}
-                cornerLabel="A"
                 isCall={vm.predictedWinner?.id === fighterA.id}
                 animationDelay="fl-delay-100"
               />
-
-              {/* VS centre — compressed: removed duplicate weight/rounds (already in header strip) */}
-              <div className="fl-animate-fade-up fl-delay-200 relative flex flex-col items-center justify-center gap-2 border-y border-line bg-background/40 px-4 py-4 text-center lg:border-x lg:border-y-0">
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute left-1/2 top-2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-b from-accent/50 to-transparent lg:block"
-                />
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute bottom-2 left-1/2 hidden h-3 w-px -translate-x-1/2 bg-gradient-to-t from-accent/50 to-transparent lg:block"
-                />
-                <p className="bg-gradient-to-b from-foreground/40 to-foreground/10 bg-clip-text text-[2.4rem] font-light leading-none tracking-[-0.08em] text-transparent md:text-[3rem]">
-                  VS
-                </p>
-              </div>
-
+              <VsCenterpiece fighterA={fighterA} fighterB={fighterB} />
               <FighterHeroPanel
                 fighter={fighterB}
                 align="right"
-                cornerLabel="B"
                 isCall={vm.predictedWinner?.id === fighterB.id}
                 animationDelay="fl-delay-300"
               />
             </div>
           </section>
+
+          {/*
+            Tale of the tape — head-to-head physicals row below the hero.
+            Auto-omits rows where data is missing on either side, and the
+            entire module silently disappears when no data is comparable.
+            Single shared component so this implementation applies to every
+            fight on the card.
+          */}
+          <TaleOfTheTapeRow fighterA={fighterA} fighterB={fighterB} />
 
           {/*
            * Phase 2: FightReadSnapshot removed on desktop. It duplicated the
