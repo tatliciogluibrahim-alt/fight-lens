@@ -360,8 +360,8 @@ export function StyleComparisonBars({
       <div className="sm:hidden overflow-hidden rounded-2xl border border-line bg-surface/70">
         <div className="p-5">
           <p className="mono-label">style fingerprint</p>
-          <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/60">
-            style map only · not a winner forecast
+          <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
+            style map · not a winner forecast
           </p>
 
           {/* Compact summary lines */}
@@ -472,8 +472,8 @@ export function StyleComparisonBars({
           <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="mono-label">shape fingerprint</p>
-              <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-subtle/75">
-                style map only · not a winner forecast
+              <p className="mt-1 text-[10px] uppercase tracking-[0.1em] text-subtle/75">
+                style map · not a winner forecast
               </p>
             </div>
             <div className="flex w-fit rounded-full border border-line bg-background/35 p-1">
@@ -560,7 +560,10 @@ export function StyleComparisonBars({
               {sortedRows.map(({ a, b }) => {
                 const aValue = a.hasData ? (a.value ?? null) : null;
                 const bValue = b?.hasData ? (b.value ?? null) : null;
-                const max = Math.max(aValue ?? 0, bValue ?? 0, 1);
+                // Bars are drawn on an absolute 0–100 scale so the bar width
+                // matches the printed score. Previously normalized to the pair
+                // max — a 79 vs 47 split rendered the 79 as a full bar even
+                // though the score is 79/100, which was visually misleading.
                 const bothPresent = aValue != null && bValue != null;
                 const delta = bothPresent ? Math.abs(aValue - bValue) : null;
 
@@ -590,7 +593,7 @@ export function StyleComparisonBars({
                         {aValue != null ? (
                           <div
                             className="h-2 rounded-l-full bg-foreground/80"
-                            style={{ width: `${(aValue / max) * 100}%` }}
+                            style={{ width: `${Math.max(0, Math.min(100, aValue))}%` }}
                           />
                         ) : null}
                       </div>
@@ -598,7 +601,7 @@ export function StyleComparisonBars({
                         {bValue != null ? (
                           <div
                             className="h-2 rounded-r-full bg-muted"
-                            style={{ width: `${(bValue / max) * 100}%` }}
+                            style={{ width: `${Math.max(0, Math.min(100, bValue))}%` }}
                           />
                         ) : null}
                       </div>

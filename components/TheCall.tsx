@@ -32,7 +32,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
     <div className="rounded-2xl border border-line bg-background/40 p-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="mono-label">most likely finish type</p>
-        <span className="rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
+        <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/70">
           directional only
         </span>
       </div>

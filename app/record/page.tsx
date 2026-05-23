@@ -196,7 +196,7 @@ export default function RecordPage() {
             <div className="mt-6 grid max-w-2xl grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{lockedCalls.length}</p>
-                <p className="mono-label mt-1">calls logged</p>
+                <p className="mono-label mt-1 whitespace-nowrap">calls logged</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
                 <p className="data-text text-2xl text-foreground">{correctCount ?? "—"}</p>

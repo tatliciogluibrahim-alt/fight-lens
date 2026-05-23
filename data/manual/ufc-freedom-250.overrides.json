@@ -213,8 +213,8 @@
         {
           "type": "weight-class-up",
           "fighter": "Alex Pereira",
-          "title": "First career Heavyweight fight",
-          "explanation": "Pereira has competed exclusively at Light Heavyweight (205 lbs). Moving to Heavyweight (265 lbs) for the first time, he is expected to be 20–25 lbs lighter than Gane on fight night. The model has no size or walk-in weight variable — this structural gap is not captured.",
+          "title": "First career Heavyweight bout",
+          "explanation": "Pereira's UFC career has been at Middleweight and Light Heavyweight, holding titles in both. Heavyweight is a new division for him, and Gane is a natural heavyweight. The size gap and walk-in weight are not variables the model reads — this is structural context, not a scored input.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -230,9 +230,9 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Aiemann Zahabi",
-          "title": "7-fight streak built largely on decision wins over unranked opposition",
-          "explanation": "Zahabi's recent record is 7-0, but the wins are predominantly decisions against fighters ranked outside the top 10 or unranked. His most notable win (Aldo) was split and contested — 16 of 20 media scorecards went to Aldo. The model weights the streak without adjusting for competition quality.",
-          "confidence": "high",
+          "title": "On a 7-win streak, most recently a decision over Chito Vera",
+          "explanation": "Zahabi enters on a 7-win streak, with his most recent win a decision over Marlon \"Chito\" Vera. The run is decision-heavy and includes a split-decision win over José Aldo that was widely seen as contested by media scorecards. The model weights the streak without adjusting for competition quality or how clearly the decisions were earned.",
+          "confidence": "medium",
           "impactDirection": "unclear",
           "modelImpact": "not included in model"
         },
@@ -256,8 +256,8 @@
         {
           "type": "short-notice",
           "fighter": "Josh Hokit",
-          "title": "Approximately 8-week turnaround",
-          "explanation": "Hokit accepted this fight on a compressed timeline of approximately 8 weeks. A shortened camp at heavyweight — where conditioning and game-plan depth matter in later rounds — is a factor the model's stat profile does not capture.",
+          "title": "Short-notice / compressed camp",
+          "explanation": "Hokit accepted this fight on short notice. A compressed heavyweight camp affects conditioning and game-plan depth in later rounds — context the model's stat profile does not capture.",
           "confidence": "medium",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -265,8 +265,8 @@
         {
           "type": "age-mileage",
           "fighter": "Derrick Lewis",
-          "title": "High career fight-count and mileage",
-          "explanation": "Lewis carries a 29-13 record with significant UFC mileage at heavyweight. His one-punch KO finishing rate remains elite, but his ability to sustain pace across multiple rounds has been a consistent structural concern in recent fights.",
+          "title": "29-13 veteran heavyweight · one-punch power, late-round questions",
+          "explanation": "Lewis is a 29-13 long-tenured UFC heavyweight. His one-punch finishing remains a real threat in any round, while his ability to sustain pace and pressure across a full fight has been a recurring structural question. Round-count varies fight to fight. The model does not apply a career-stage or mileage factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -282,8 +282,8 @@
         {
           "type": "age-mileage",
           "fighter": "Michael Chandler",
-          "title": "39 years old on a two-fight slide",
-          "explanation": "Chandler is 39 with back-to-back losses. His recent defeats came against elite competition, but his pace and chin in later rounds have been scrutinized. The model does not apply a career-stage decay factor.",
+          "title": "40 years old · 1 win in his last 6 lightweight bouts",
+          "explanation": "Chandler turns 40 in 2026 and has lost 5 of his last 6 — to Pimblett, Oliveira (twice), Poirier, and Gaethje. His only win in that stretch was over Tony Ferguson, himself on a long losing streak by then. Late-round pace and durability are recurring questions at this stage of his career. The model does not apply a career-stage or recent-results decay factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -305,9 +305,9 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Diego Lopes",
-          "title": "Career stats compressed by two title fights against Volkanovski",
-          "explanation": "Lopes's last two losses are both decisions against Alexander Volkanovski — the dominant featherweight champion for four years. Those fights drag his aggregate striking and absorption stats significantly. The model treats these losses the same as any other, which understates Lopes's actual level relative to Garcia's win streak.",
-          "confidence": "high",
+          "title": "Stats weighed down by an elite-tier title-fight loss",
+          "explanation": "Lopes's recent loss to Alexander Volkanovski in a featherweight title fight drags his aggregate striking and absorption numbers in a way that does not reflect his level against the broader division. The model treats that loss the same as any other, which under-weights the opponent tier.",
+          "confidence": "medium",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
         }
