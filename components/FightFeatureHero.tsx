@@ -144,11 +144,13 @@ function CountryMarker({ fighter, align }: { fighter: SourcedFighter; align: "le
 
 function RankingChip({ ranking, align }: { ranking: string | null | undefined; align: "left" | "right" }) {
   const formatted = formatRanking(ranking);
-  if (formatted === "UNRANKED") return null;
   const isTitleHolder = formatted === "CHAMPION" || formatted === "IC";
+  const isUnranked = formatted === "UNRANKED";
   const cls = isTitleHolder
     ? "border-accent/40 bg-accent/10 text-accent"
-    : "border-line bg-surface-2 text-foreground";
+    : isUnranked
+      ? "border-line/60 bg-transparent text-subtle"
+      : "border-line bg-surface-2 text-foreground";
   return (
     <span
       className={`inline-flex w-fit items-center rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] ${cls} ${
@@ -274,11 +276,12 @@ export function FightFeatureHero({
         }}
       />
 
-      {/* Corner registration marks — broadcast / scouting feel */}
-      <span className="pointer-events-none absolute left-4 top-4 z-20 h-3 w-3 border-l border-t border-line-strong/60" />
-      <span className="pointer-events-none absolute right-4 top-4 z-20 h-3 w-3 border-r border-t border-line-strong/60" />
-      <span className="pointer-events-none absolute bottom-4 left-4 z-20 h-3 w-3 border-b border-l border-line-strong/60" />
-      <span className="pointer-events-none absolute bottom-4 right-4 z-20 h-3 w-3 border-b border-r border-line-strong/60" />
+      {/*
+        Corner registration marks removed — at narrow widths they overlapped
+        the metadata strip text ("UFC FREEDOM 250: …" / "HEAVYWEIGHT … MAIN
+        CARD"), and the rounded outer border was already framing the hero.
+        Less chrome lets the editorial type carry the moment.
+      */}
 
       {/* Top editorial metadata bar */}
       <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 border-b border-line/60 px-5 py-3 md:px-7">
@@ -308,8 +311,13 @@ export function FightFeatureHero({
           animationDelay="fl-delay-100"
         />
 
-        {/* VS centre + editorial call callout */}
-        <div className="fl-animate-fade-up fl-delay-200 relative z-10 flex flex-col items-center justify-center gap-5 border-y border-line/60 bg-background/35 px-4 py-6 text-center lg:border-x lg:border-y-0 lg:py-12">
+        {/*
+          VS centre + editorial call callout — borders + bg removed so the
+          column reads as an open seam between the two fighters, not a
+          separate boxed compartment. The VS itself stays as the visual
+          fulcrum that the call callout anchors on.
+        */}
+        <div className="fl-animate-fade-up fl-delay-200 relative z-10 flex flex-col items-center justify-center gap-5 px-4 py-6 text-center lg:py-12">
           <p className="text-[2.4rem] font-light leading-none tracking-[-0.08em] text-foreground/65 md:text-[2.8rem] lg:text-[3.2rem]">
             VS
           </p>
