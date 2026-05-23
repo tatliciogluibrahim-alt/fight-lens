@@ -79,12 +79,17 @@ function FighterHeroPanel({
   const country = getCountryDisplay(fighter);
   const ranking = formatRanking(fighter.ranking);
 
-  // All metadata in a single compact line below the name —
-  // prevents multi-row crowding and keeps the name visually isolated.
-  const metadata = [
+  // Split the metadata into two tiers so the row reads faster:
+  //   primary  → ranking + record  (the two things a reader actually wants)
+  //   secondary → stance · height · reach  (quieter physicals strip)
+  // Previously all five items lived on one mono row separated by bullets —
+  // dense and slow to scan on desktop.
+  const primaryBits = [
     ranking !== "UNRANKED" ? ranking : null,
-    fighter.stance ?? null,
     fighter.record ?? null,
+  ].filter(Boolean).join("  ·  ");
+  const secondaryBits = [
+    fighter.stance ?? null,
     fighter.height ?? null,
     fighter.reach ? `${fighter.reach} reach` : null,
   ].filter(Boolean).join(" · ");
@@ -128,10 +133,17 @@ function FighterHeroPanel({
       {/* Name — word-boundary-only line breaks via FighterNamePlate */}
       <FighterNamePlate name={fighter.name} align={align} />
 
-      {/* Single compact metadata line — keeps name visually isolated */}
-      {metadata && (
-        <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle ${isRight ? "lg:text-right" : ""}`}>
-          {metadata}
+      {/* Primary metadata: ranking + record — slightly more present */}
+      {primaryBits && (
+        <p className={`font-mono text-[11px] uppercase tracking-[0.12em] text-muted ${isRight ? "lg:text-right" : ""}`}>
+          {primaryBits}
+        </p>
+      )}
+
+      {/* Secondary metadata: physicals — quieter */}
+      {secondaryBits && (
+        <p className={`font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70 ${isRight ? "lg:text-right" : ""}`}>
+          {secondaryBits}
         </p>
       )}
     </div>
@@ -257,6 +269,15 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                 call: (
                   <div className="space-y-6">
                     <TheCall viewModel={vm} />
+                    {/*
+                      ContextualNotes sits inside the call section on desktop so
+                      manual context (the "not in model" disclosures) reads next
+                      to the lean — matching the mobile flow. Burying it in the
+                      "details" section forced a serious reader to scroll past
+                      shape + form/resume just to see the disclaimer that often
+                      explains why the lean looks the way it does.
+                    */}
+                    <ContextualNotes notes={fight.contextNotes} />
                     <RoundMomentumFlow
                       fighterA={fighterA}
                       fighterB={fighterB}
@@ -283,7 +304,6 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                       fighterB={fighterB}
                       modelOutput={fightShapeModel}
                     />
-                    <ContextualNotes notes={fight.contextNotes} />
                     <PathsToVictory
                       fight={fight}
                       modelOutput={fightShapeModel}
