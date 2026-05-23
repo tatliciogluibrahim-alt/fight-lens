@@ -403,7 +403,18 @@ export default function Home() {
           winnerAccuracy={accuracyMetrics.winnerAccuracy}
         />
 
-        <section className="section-shell py-6 md:py-10">
+        {/* Mobile: slim "browse more" link — homepage is already hero → card → record on small screens */}
+        <section className="sm:hidden section-shell pb-4">
+          <Link
+            href="/events"
+            className="block w-full rounded-2xl border border-line bg-surface/60 px-4 py-4 text-center font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:border-line-strong hover:text-foreground transition"
+          >
+            Browse all cards →
+          </Link>
+        </section>
+
+        {/* Desktop: full event selector with card discovery */}
+        <section className="hidden sm:block section-shell py-6 md:py-10">
           <HomeEventSelector events={discoveryOptions} />
         </section>
 

@@ -216,9 +216,10 @@ function watchingBody(row: AxisRow, leader: string): string {
 
 // Used when the biggest-edge leader score is below the display floor —
 // acknowledges the relative gap without implying a strong tactical signal.
+// Both scores are low, so the copy must not frame this as a meaningful weapon.
 function biggestEdgeBodyWeak(row: AxisRow, leader: string): string {
   const lead = lastName(leader);
-  return `${lead} has the thin ${row.shortLabel.toLowerCase()} path here. The relative gap exists, but both profiles are limited there.`;
+  return `${lead} has the relative ${row.shortLabel.toLowerCase()} edge, but both scores are low. Treat this as a thin style path — not a key weapon on its own.`;
 }
 
 function biggestEdgeBodyRelative(row: AxisRow, leader: string): string {

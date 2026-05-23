@@ -46,7 +46,7 @@ export function HomeEventSelector({ events }: { events: HomeEventOption[] }) {
               key={event.id}
               className={`overflow-hidden rounded-2xl border transition ${
                 isActive
-                  ? "border-accent/35 bg-surface"
+                  ? "border-accent/55 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.04] shadow-[0_0_0_1px_rgba(143,215,247,0.12),0_4px_20px_rgba(143,215,247,0.06)]"
                   : "border-line bg-surface/60 hover:border-line-strong hover:bg-surface/80"
               }`}
             >
@@ -56,6 +56,12 @@ export function HomeEventSelector({ events }: { events: HomeEventOption[] }) {
                 className="w-full p-4 text-left"
                 aria-pressed={isActive}
               >
+                {isActive && (
+                  <span
+                    aria-hidden="true"
+                    className="mb-3 block h-px bg-gradient-to-r from-transparent via-accent/55 to-transparent -mx-4 -mt-4 mb-4"
+                  />
+                )}
                 <div className="flex items-center justify-between gap-3">
                   <p className={`mono-label ${isActive ? "text-accent" : ""}`}>{event.optionLabel}</p>
                   <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">

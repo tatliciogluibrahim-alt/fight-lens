@@ -88,8 +88,11 @@ function OverlayRadar({
 
   const dimsA = getStyleRadarDimensions(profileA);
   const dimsB = getStyleRadarDimensions(profileB);
-  const canFillA = hasEnoughStyleRadarData(profileA) && dimsA.every((d) => d.hasData);
-  const canFillB = hasEnoughStyleRadarData(profileB) && dimsB.every((d) => d.hasData);
+  // Render the polygon for any fighter with ≥ 3 axes of data.
+  // Missing axes use 0 as a display-safe fallback (pts() already handles this).
+  // Removed .every() — a single missing axis was silently collapsing the whole shape.
+  const canFillA = hasEnoughStyleRadarData(profileA);
+  const canFillB = hasEnoughStyleRadarData(profileB);
   const count = dimsA.length;
 
   function point(index: number, value: number, radius = RADIUS) {
@@ -283,6 +286,8 @@ export function StyleComparisonBars({
 }: StyleComparisonBarsProps) {
   const [focus, setFocus] = useState<"a" | "b" | "both">("both");
   const [activeAxis, setActiveAxis] = useState<string | null>(null);
+  // Mobile expand/collapse — shape is collapsed by default on small screens
+  const [mobileShapeOpen, setMobileShapeOpen] = useState(false);
   const fighterADimensions = getStyleRadarDimensions(fighterA.styleProfile);
   const fighterBDimensions = getStyleRadarDimensions(fighterB.styleProfile);
 
@@ -330,8 +335,116 @@ export function StyleComparisonBars({
     return b - a;
   });
 
+  // ── Mobile compact summary data ──────────────────────────────────────────────
+  // Count how many axes each fighter leads (both must have data to count).
+  const bothRows = comparableRows.filter((r) => r.a.hasData && r.b?.hasData);
+  const aLeadsCount = bothRows.filter((r) => (r.a.value ?? 0) > (r.b?.value ?? 0)).length;
+  const bLeadsCount = bothRows.filter((r) => (r.b?.value ?? 0) > (r.a.value ?? 0)).length;
+  const totalBothRows = bothRows.length;
+  const axisLeaderName = aLeadsCount > bLeadsCount
+    ? fighterA.name.split(" ").pop()
+    : bLeadsCount > aLeadsCount
+      ? fighterB.name.split(" ").pop()
+      : null;
+  const axisLeaderCount = Math.max(aLeadsCount, bLeadsCount);
+
+  const biggestEdgeCard = narrative.cards.find((c) => c.kind === "biggest-edge");
+  const swingCard = narrative.cards.find((c) => c.kind === "swing" || c.kind === "watching");
+
   return (
     <section className="module-card">
+      {/* ── Mobile: compact summary card collapsed by default ──────────────────
+          Shows 2–3 key lines then a toggle to reveal the full radar + insights.
+          Desktop gets the full layout always.
+          ─────────────────────────────────────────────────────────────────────── */}
+      <div className="sm:hidden overflow-hidden rounded-2xl border border-line bg-surface/70">
+        <div className="p-5">
+          <p className="mono-label">fight shape</p>
+          <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/60">
+            style map only · not a winner forecast
+          </p>
+
+          {/* Compact summary lines */}
+          <div className="mt-3 space-y-1.5">
+            {axisLeaderName && totalBothRows > 0 && (
+              <p className="text-sm text-foreground">
+                <span className="text-subtle">axis edge · </span>
+                <span className="font-medium">{axisLeaderName}</span>
+                <span className="text-muted"> leads {axisLeaderCount} of {totalBothRows} axes</span>
+              </p>
+            )}
+            {biggestEdgeCard && (
+              <p className="text-sm text-foreground">
+                <span className="text-subtle">biggest edge · </span>
+                <span className="font-medium">{biggestEdgeCard.axisLabel}</span>
+              </p>
+            )}
+            {swingCard && (
+              <p className="text-sm text-muted">
+                <span className="text-subtle">{swingCard.kind === "swing" ? "swing path" : "worth watching"} · </span>
+                {swingCard.axisLabel}
+              </p>
+            )}
+            {!biggestEdgeCard && narrative.headline && (
+              <p className="text-sm leading-6 text-muted">{narrative.headline}</p>
+            )}
+          </div>
+        </div>
+
+        {/* Expand toggle */}
+        <button
+          type="button"
+          onClick={() => setMobileShapeOpen((v) => !v)}
+          aria-expanded={mobileShapeOpen}
+          className="flex w-full items-center justify-between gap-3 border-t border-line px-5 py-3.5 text-left"
+        >
+          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-subtle">
+            {mobileShapeOpen ? "collapse shape map" : "expand shape map"}
+          </span>
+          <span
+            aria-hidden="true"
+            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line bg-surface-2 text-sm text-subtle"
+          >
+            {mobileShapeOpen ? "−" : "+"}
+          </span>
+        </button>
+
+        {/* Expanded content — full radar + narrative */}
+        {mobileShapeOpen && (
+          <div className="border-t border-line p-4 space-y-5">
+            {/* Overlay radar */}
+            <div className="relative overflow-visible rounded-xl border border-line-strong/50 bg-gradient-to-br from-background/70 via-surface/40 to-background/70 p-3">
+              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/75">shape fingerprint · both fighters</p>
+              <div className="mx-auto w-full max-w-[280px]">
+                <OverlayRadar
+                  profileA={fighterA.styleProfile}
+                  profileB={fighterB.styleProfile}
+                  nameA={fighterA.name}
+                  nameB={fighterB.name}
+                  focus="both"
+                  activeAxis={null}
+                  onAxisSelect={() => {}}
+                />
+              </div>
+            </div>
+
+            {/* Narrative cards */}
+            {narrative.cards.length > 0 && (
+              <div className="space-y-3">
+                {narrative.cards.slice(0, 3).map((card) => (
+                  <ShapeCard key={`${card.kind}-${card.axisLabel}`} card={card} />
+                ))}
+                {narrative.caveat && (
+                  <p className="text-xs leading-5 text-subtle">{narrative.caveat}</p>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* ── Desktop: full section header + radar + insights ─────────────────── */}
+      <div className="hidden sm:block">
       <div className="module-header">
         <p className="mono-label">fight shape</p>
         <h2 className="text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
@@ -510,6 +623,7 @@ export function StyleComparisonBars({
           fight-shape-v0.2
         </p>
       </div>
+      </div>{/* end desktop wrapper */}
     </section>
   );
 }

@@ -28,9 +28,15 @@ function pointsToString(points: Array<{ x: number; y: number }>) {
 
 export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps) {
   const dimensions = getStyleRadarDimensions(profile);
-  const canFill = hasEnoughStyleRadarData(profile) && dimensions.every((dimension) => dimension.hasData);
+  // Render the polygon when ≥ 3 axes have data. Missing axes use 0 as a
+  // display-safe fallback — model math is never touched. The previous
+  // `.every()` check silently dropped the polygon when any single axis
+  // was missing data, reducing to dots-only on many real fighter profiles.
+  const canFill = hasEnoughStyleRadarData(profile);
   const stroke = tone === "accent" ? "var(--accent)" : "var(--muted)";
-  const fill = tone === "accent" ? "rgba(245,158,11,0.14)" : "rgba(139,154,180,0.14)";
+  // Fixed: was rgba(245,158,11,...) — amber/orange, violates design system.
+  // Corrected to icy-blue accent rgba(143,215,247,...).
+  const fill = tone === "accent" ? "rgba(143,215,247,0.12)" : "rgba(139,154,180,0.14)";
   const count = dimensions.length;
 
   const availablePoints = dimensions
@@ -57,7 +63,7 @@ export function StyleRadar({ profile, tone = "accent", title }: StyleRadarProps)
       aria-label={`${title} style radar`}
     >
       {/* Background halo + outer guide dash */}
-      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill={tone === "accent" ? "rgba(245,158,11,0.04)" : "rgba(139,154,180,0.04)"} />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill={tone === "accent" ? "rgba(143,215,247,0.04)" : "rgba(139,154,180,0.04)"} />
       <circle cx={CENTER} cy={CENTER} r={RADIUS + 28} fill="none" stroke="var(--line)" strokeOpacity={0.52} strokeDasharray="2 7" />
 
       {/* Concentric guides */}

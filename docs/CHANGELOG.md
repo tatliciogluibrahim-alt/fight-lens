@@ -2,6 +2,24 @@
 
 ## May 2026
 
+### Mobile UX + visual hierarchy pass
+
+Focused mobile UX pass. No model math, prediction values, locked prediction files, backtest logic, public record calculations, or data files changed.
+
+- **Bottom nav compressed** — reduced padding, inner pill height from 44px → 40px, icon from 0.95rem → 0.875rem, and body bottom padding from 6rem → 5.25rem. Stays above iOS minimum touch target. Nav feels lighter and less dominant.
+- **Homepage hierarchy tightened** — `HomeEventSelector` (card discovery) hidden on mobile; replaced with a slim "Browse all cards →" link. Mobile flow is now: hero → featured card → record proof → browse link. Discovery lives on `/events`. Desktop keeps full selector.
+- **Active card state strengthened** — selected event in `HomeEventSelector` gets `border-accent/55`, a subtle gradient background, an accent glow ring, and a top accent rail. Clearer without being loud.
+- **Fight shape collapsed-first on mobile** — `StyleComparisonBars` now shows a compact summary card on mobile by default: axis edge count (e.g. "Topuria leads 5 of 7 axes"), biggest edge axis, and swing path. A toggle expands the full overlay radar + narrative cards. Desktop always shows full layout.
+- **Radar rendering fixed** — removed `.every((d) => d.hasData)` check from `StyleRadar` and `OverlayRadar`. The polygon now renders for any fighter with ≥ 3 axes of data (gate was already correct via `hasEnoughStyleRadarData()`). Missing axes use 0 as a display-safe fallback; model math is untouched.
+- **Amber color bug fixed** — `StyleRadar` fill and halo were using `rgba(245,158,11,...)` (amber/orange) instead of the design system's icy-blue `rgba(143,215,247,...)`. Corrected.
+- **Shape insight copy improved** — `biggestEdgeBodyWeak` now reads "has the relative X edge, but both scores are low. Treat this as a thin style path." Previous language ("both profiles are limited there") was too model-internal.
+- **Fight list hierarchy added** — mobile event card list now shows visual weight based on placement: first Main Card fight gets accent border + glow, other Main Card fights get a medium border, Prelims/Early Prelims get a compact rounded card. Desktop unchanged.
+- **"live path" → "counter path"** — scenario title and lean description in `lib/fight-outcome-model/model.ts` updated. Comment in `types.ts` updated. All pre-fight scenario language now uses counter path / alternate path consistently.
+
+**QA:** `npm run lint` 0 errors · `npm run build` passed · `npm run audit:predictions` 31/31 routes, 0 violations.
+
+---
+
 ### Claude Design UI translation pass
 
 UI implementation pass translating the provided Claude Design direction into the real Next.js app. No model math, prediction values, locked prediction files, generated prediction artifacts, public record scoring, backtest logic, ingestion, or normalized event data changed.

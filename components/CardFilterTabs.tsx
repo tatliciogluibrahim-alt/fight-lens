@@ -36,6 +36,13 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
     return fights.filter((fight) => fight.cardPlacement === activeTab);
   }, [activeTab, fights]);
 
+  // Pre-compute the "top fight" ID — the first Main Card fight in the visible
+  // list. This fight gets premium visual treatment as the main event.
+  const topFightId = useMemo(
+    () => visibleFights.find((f) => f.cardPlacement === "Main Card")?.id ?? null,
+    [visibleFights],
+  );
+
   if (fights.length === 0) {
     return (
       <section className="section-shell pb-10 md:pb-14">
@@ -79,19 +86,49 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
         })}
       </div>
 
+      {/*
+        Mobile fight list — visual hierarchy by card placement + position.
+        First Main Card fight (main event): premium accent border + glow.
+        Other Main Card fights: medium-strong border.
+        Prelims / Early Prelims: standard compact row.
+      */}
       <div className="grid gap-3 sm:hidden">
-        {visibleFights.map((fight) => (
-          <div key={fight.id} className="overflow-hidden rounded-2xl border border-line bg-surface/75">
-            <FightCard
-              eventId={eventId}
-              fight={fight}
-              prediction={predByFightId.get(fight.id)}
-              predictionViewModel={vmByFightId.get(fight.id)}
-            />
-          </div>
-        ))}
+        {visibleFights.map((fight) => {
+          const isTopFight = fight.id === topFightId;
+          const isMainCard = fight.cardPlacement === "Main Card";
+          const isPrelim = fight.cardPlacement === "Prelims" || fight.cardPlacement === "Early Prelims";
+
+          const wrapperClass = isTopFight
+            ? "overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.03] shadow-[0_0_0_1px_rgba(143,215,247,0.08)]"
+            : isMainCard
+              ? "overflow-hidden rounded-2xl border border-line-strong bg-surface/80"
+              : isPrelim
+                ? "overflow-hidden rounded-xl border border-line bg-surface/60"
+                : "overflow-hidden rounded-2xl border border-line bg-surface/70";
+
+          return (
+            <div key={fight.id} className={wrapperClass}>
+              {isTopFight && (
+                <span
+                  aria-hidden="true"
+                  className="block h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent"
+                />
+              )}
+              <FightCard
+                eventId={eventId}
+                fight={fight}
+                prediction={predByFightId.get(fight.id)}
+                predictionViewModel={vmByFightId.get(fight.id)}
+              />
+            </div>
+          );
+        })}
       </div>
 
+      {/*
+        Desktop fight list — all fights in one card stack.
+        Main Event row gets a subtle top-rail accent via wrapper.
+      */}
       <div className="hidden overflow-hidden rounded-[1.35rem] border border-line bg-surface/80 sm:block">
         {visibleFights.map((fight) => (
           <FightCard

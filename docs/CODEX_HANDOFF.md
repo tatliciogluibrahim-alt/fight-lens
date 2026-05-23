@@ -27,14 +27,38 @@ The stack is Next.js 16 App Router with full static generation. All prediction d
 | UFC 329: McGregor vs. Holloway 2 | 11 | 11 | Forecast calls logged, outcomes pending |
 | UFC 328 | 13 | 13 (+1 backtest) | Forecast calls logged, outcomes pending |
 
-### Latest UI pass — Claude Design translation
+### Latest UI pass — Mobile UX + visual hierarchy (2026-05-22)
 
-- Mobile shell now includes a fixed bottom nav with existing routes only: `/`, `/events`, and `/record`. Desktop top nav remains the primary desktop navigation.
-- Homepage hero uses concise forecast/tracking language and the card discovery module now presents compact selectable event cards with one expanded active card.
-- Event and fight-card copy avoids unsupported "live" wording; event states use "forecast pending," "calls logged," and "outcomes pending" based on real data.
-- Fight reads use "counter path" / "alternate path" language. Existing `viewModel.livePathFighter` naming remains internal for compatibility, but public UI copy should not say "live path."
-- `StyleComparisonBars` is now interactive on the client: fighter/both focus toggle plus tap-to-compare radar axes. It still reads only existing style profiles and `buildShapeNarrative()` output.
-- `/record` has one primary public named-call accuracy module; historical validation remains computed from backtest reconstruction data and is visually separated.
+- **Bottom nav** compressed: pills are ~15% shorter, icon slightly smaller. Body bottom padding reduced from 6rem → 5.25rem. Hits still clear 40px iOS minimum.
+- **Homepage on mobile**: `HomeEventSelector` is hidden; mobile sees hero → featured card → record strip → slim "Browse all cards →" link → footer. Desktop keeps full discovery selector.
+- **Active card state**: `HomeEventSelector` selected card now has `border-accent/55`, gradient bg, glow ring, and top accent rail — clearly active, never loud.
+- **Fight shape on mobile**: `StyleComparisonBars` shows a compact summary by default (axis count, biggest edge, swing path) with a +/− toggle to reveal the full radar + narrative. Desktop always full.
+- **Radar rendering fixed**: removed `.every((d) => d.hasData)` from `StyleRadar` and `OverlayRadar`. Polygon now renders when `hasEnoughStyleRadarData()` is true (≥ 3 axes). Previously, a single missing axis collapsed the entire shape to dots.
+- **Amber color fixed in `StyleRadar`**: fill and halo used `rgba(245,158,11,...)` (orange/amber). Now `rgba(143,215,247,...)` (icy blue). Design system consistency restored.
+- **Shape copy**: `biggestEdgeBodyWeak` now explicitly calls out low absolute scores ("both scores are low, treat this as thin") instead of internal model language.
+- **Fight list hierarchy**: mobile event pages now visually tier fights — first Main Card fight (top fight) gets accent border + glow; other Main Cards get a medium border; Prelims are compact rounded cards.
+- **"live path" retired from public copy**: scenario title `"live path"` → `"counter path"` in `lib/fight-outcome-model/model.ts`. Internal `viewModel.livePathFighter` property name unchanged for compatibility.
+
+#### Components changed in this pass
+| Component | What changed |
+|---|---|
+| `app/globals.css` | Bottom nav dims compressed; body safe-area padding reduced |
+| `app/page.tsx` | HomeEventSelector hidden on mobile; slim browse link added |
+| `components/HomeEventSelector.tsx` | Active card: stronger border, gradient bg, glow ring, top rail |
+| `components/StyleComparisonBars.tsx` | Mobile compact summary + expand toggle; radar canFill fixed |
+| `components/StyleRadar.tsx` | canFill fixed (removed .every); amber fill → icy blue |
+| `components/CardFilterTabs.tsx` | Mobile fight list hierarchy by placement + position |
+| `lib/fight-shape-model/shape-narrative.ts` | biggestEdgeBodyWeak copy improved |
+| `lib/fight-outcome-model/model.ts` | "live path" → "counter path" |
+| `lib/fight-outcome-model/types.ts` | Comment updated |
+
+#### Not touched
+- `lib/predictionThresholds.ts` — 52% gate unchanged
+- All prediction JSON files — no data edits
+- `buildPredictionViewModelBundle()` — no logic changes
+- Public record scoring (`getLockedPredictions`, `computeAccuracyMetrics`) — unchanged
+- Backtest logic — unchanged
+- `opponentTotals` — unchanged
 
 ---
 

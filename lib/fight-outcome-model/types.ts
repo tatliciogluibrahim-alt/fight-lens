@@ -28,7 +28,7 @@ export type ScenarioId = "lean" | "upset" | "swing";
 
 export interface OutcomeScenario {
   id: ScenarioId;
-  /** Short label: "the call" | "live path" | "what breaks the call" */
+  /** Short label: "the call" | "counter path" | "what breaks the call" */
   title: string;
   /** Fighter name this scenario is about, or null for swing */
   fighterLabel: string | null;

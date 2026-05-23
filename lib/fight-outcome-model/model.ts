@@ -182,7 +182,7 @@ function buildScenarios(
   if (favProb >= 0.70) {
     leanDesc = `${favorite.name} is the clear side here. The shape, form, and stat differentials all point the same direction. Most likely route: ${leanMethod}.`;
   } else if (favProb >= 0.60) {
-    leanDesc = `${favorite.name} gets the lean. Shape and form tilt the same way, but the underdog has a live path. Most likely: ${leanMethod}, but this doesn't close early.`;
+    leanDesc = `${favorite.name} gets the lean. Shape and form tilt the same way, but the underdog has a counter path. Most likely: ${leanMethod}, but this doesn't close early.`;
   } else {
     leanDesc = `Slim lean toward ${favorite.name}, but the model barely separates these two. Either side winning is a reasonable outcome. Most likely: ${leanMethod} in a close fight.`;
   }
@@ -205,7 +205,7 @@ function buildScenarios(
 
   return [
     { id: "lean", title: "the call", fighterLabel: favorite.name, description: leanDesc },
-    { id: "upset", title: "live path", fighterLabel: underdog.name, description: upsetDesc },
+    { id: "upset", title: "counter path", fighterLabel: underdog.name, description: upsetDesc },
     { id: "swing", title: "what breaks the call", fighterLabel: swingLabel, description: swingDesc },
   ];
 }
