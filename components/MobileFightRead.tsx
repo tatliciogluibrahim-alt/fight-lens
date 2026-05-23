@@ -128,6 +128,7 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
           fighterAProb={vm.fighterA.winProbability}
           fighterBName={vm.fighterB.name}
           fighterBProb={vm.fighterB.winProbability}
+          rankingMismatch={vm.rankingMismatch}
         />
         <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/70">
           {vm.publicPredictionSource}
@@ -184,7 +185,7 @@ function MobileMethodLean({ vm }: { vm: PredictionViewModel }) {
               ) : (
                 <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
                   <div
-                    className={`h-full rounded-full transition-all ${isTop ? "bg-accent/65" : "bg-muted/35"}`}
+                    className={`h-full rounded-full transition-all ${isTop ? "bg-accent/80" : "bg-muted/55"}`}
                     style={{ width: `${m.value}%` }}
                   />
                 </div>

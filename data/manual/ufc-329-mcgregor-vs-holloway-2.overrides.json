@@ -258,7 +258,18 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "paths": { "fighterA": [], "fighterB": [] }
+      "paths": { "fighterA": [], "fighterB": [] },
+      "contextNotes": [
+        {
+          "type": "long-layoff",
+          "fighter": "Conor McGregor",
+          "title": "Multi-year competitive layoff",
+          "explanation": "McGregor has not competed in a UFC bout in several years — by far the largest single factor in this matchup and one the model cannot read. Layoff effects on timing, durability, and pace are structural context, not a scored input.",
+          "confidence": "high",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "130b325610c54a64": {
       "routeId": "saint-denis-pimblett",
@@ -268,7 +279,18 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "paths": { "fighterA": [], "fighterB": [] }
+      "paths": { "fighterA": [], "fighterB": [] },
+      "contextNotes": [
+        {
+          "type": "durability",
+          "fighter": "Paddy Pimblett",
+          "title": "Style clash heavily favors Saint-Denis's grappling",
+          "explanation": "Saint-Denis is a high-volume grappler with relentless top pressure. Pimblett has shown durability issues in scrambles against ranked opposition. The model reads aggregate rates without capturing this specific style mismatch as a single signal.",
+          "confidence": "medium",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "c572daedf2012a49": {
       "routeId": "sandhagen-bautista",
@@ -278,7 +300,18 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "paths": { "fighterA": [], "fighterB": [] }
+      "paths": { "fighterA": [], "fighterB": [] },
+      "contextNotes": [
+        {
+          "type": "debut-or-promotion-jump",
+          "fighter": "Cory Sandhagen",
+          "title": "Read the lean with caution — ranking favors Sandhagen",
+          "explanation": "Sandhagen is the #2 bantamweight contender; Bautista is #5. Sandhagen has the deeper top-of-division résumé and a more proven late-round shape. The model leans the other way on aggregate rates — the lean toward Bautista should be read as the model under-weighting opponent-tier context.",
+          "confidence": "medium",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "a3ab1979192b647c": {
       "routeId": "royval-kavanagh",
@@ -308,7 +341,18 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "paths": { "fighterA": [], "fighterB": [] }
+      "paths": { "fighterA": [], "fighterB": [] },
+      "contextNotes": [
+        {
+          "type": "age-mileage",
+          "fighter": "Robert Whittaker",
+          "title": "Former Middleweight champion with significant title-fight mileage",
+          "explanation": "Whittaker is a former Middleweight champion whose recent results have been against elite contenders. Career mileage and recovery from top-tier title-fight wars are not factors the model can read directly. Treat this read as directional context rather than a strong call.",
+          "confidence": "medium",
+          "impactDirection": "hurts",
+          "modelImpact": "not included in model"
+        }
+      ]
     },
     "930317fde9dbc55e": {
       "routeId": "riley-kamaka",

@@ -11,6 +11,7 @@
  */
 
 import type { ReadStrength } from "@/lib/predictionViewModel";
+import type { RankingMismatch } from "@/lib/ranking-mismatch";
 
 // Half-width of the confidence band per read strength (percentage points)
 const BAND_HALF: Record<ReadStrength, number> = {
@@ -32,6 +33,12 @@ interface CallConfidenceBandProps {
   fighterAProb:      number;
   fighterBName:      string;
   fighterBProb:      number;
+  /**
+   * Auto-derived ranking mismatch. When present, the band renders a small
+   * "Ranking note" strip below the counter path so the disconnect between
+   * model lean and fighter ranking is visible to the reader.
+   */
+  rankingMismatch?:  RankingMismatch | null;
 }
 
 export function CallConfidenceBand({
@@ -45,6 +52,7 @@ export function CallConfidenceBand({
   fighterAProb,
   fighterBName,
   fighterBProb,
+  rankingMismatch,
 }: CallConfidenceBandProps) {
   const half    = BAND_HALF[readStrength];
   const pin     = winnerProbability ?? 50;
@@ -150,6 +158,27 @@ export function CallConfidenceBand({
           <p className="mt-1 text-sm leading-snug text-foreground">
             <span className="font-medium">{loserName}</span>
             <span className="text-muted"> stays live if the matchup plays differently.</span>
+          </p>
+        </div>
+      )}
+
+      {/* ── Ranking note — auto-fires when model lean ≠ ranking ───────────
+          Structural disclosure: when the model leans on the lower-ranked
+          fighter by a meaningful margin (e.g. Lopes #2 vs Garcia #9 →
+          model says Garcia 75%), surface that disconnect so the reader
+          sees it alongside the lean rather than discovering it on their
+          own. Never modifies the locked prediction or model math. */}
+      {!isTooCloseToCall && rankingMismatch && (
+        <div className={`rounded-xl border px-4 py-3 ${
+          rankingMismatch.tier === "strong"
+            ? "border-accent/30 bg-accent/[0.05]"
+            : "border-line bg-surface-2/50"
+        }`}>
+          <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+            ranking note · not in model
+          </p>
+          <p className="mt-1 text-sm leading-snug text-foreground">
+            {rankingMismatch.copy}
           </p>
         </div>
       )}

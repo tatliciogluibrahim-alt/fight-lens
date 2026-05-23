@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-23T03:26:41.357Z",
+  "generatedAt": "2026-05-23T03:59:23.429Z",
   "event": {
     "id": "ufc-freedom-250",
     "ufcstatsId": "48544433372ecfa6",
@@ -25155,6 +25155,15 @@
       "manualRead": null,
       "contextNotes": [
         {
+          "type": "debut-or-promotion-jump",
+          "fighter": "Josh Hokit",
+          "title": "Small UFC sample — model lean is shakier than the number looks",
+          "explanation": "Hokit's UFC sample is small. His per-fight rates are good, but the model weights rate stats without much discount for sample size, so the lean toward Hokit reads more confident than the underlying data really supports. Read the percentage as directional, not a strong signal.",
+          "confidence": "high",
+          "impactDirection": "unclear",
+          "modelImpact": "not included in model"
+        },
+        {
           "type": "short-notice",
           "fighter": "Josh Hokit",
           "title": "Short-notice / compressed camp",
@@ -44504,9 +44513,9 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Diego Lopes",
-          "title": "Stats weighed down by an elite-tier title-fight loss",
-          "explanation": "Lopes's recent loss to Alexander Volkanovski in a featherweight title fight drags his aggregate striking and absorption numbers in a way that does not reflect his level against the broader division. The model treats that loss the same as any other, which under-weights the opponent tier.",
-          "confidence": "medium",
+          "title": "Lopes has only lost to elite opposition — model lean toward Garcia is hard to defend",
+          "explanation": "Lopes is the #2 featherweight contender. His only UFC losses have come against Alexander Volkanovski (twice in title fights) and Movsar Evloev — all elite-tier featherweights. Garcia is #9 with a much thinner résumé. Those Volkanovski and Evloev losses drag Lopes's aggregate striking and absorption numbers in a way that does not reflect his actual level against the rest of the division. The model treats those losses the same as any other loss and under-weights the opponent-tier gap. Read the lean toward Garcia with that structural disclosure in mind — ranking and résumé point the other way.",
+          "confidence": "high",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
         }

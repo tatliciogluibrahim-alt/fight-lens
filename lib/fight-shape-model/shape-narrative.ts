@@ -363,9 +363,14 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
 
   cards.push({
     kind: "biggest-edge",
-    title: "Biggest edge",
+    // When the biggest separator is itself a thin-signal axis (both scores
+    // under the floor), the "Biggest edge" label visually contradicts the
+    // softened body copy. Title the card honestly instead — "Relative gap"
+    // — so the badge matches the message.
+    title: overallWeak || biggestTier === "thin" || biggestTier === "too-close"
+      ? "Relative gap"
+      : "Biggest edge",
     axisLabel: biggest.label,
-    // Use softened body copy when the leader's absolute score is below the floor
     body: overallWeak || biggestTier === "thin" || biggestTier === "too-close"
       ? biggestEdgeBodyWeak(biggest, biggestLeader)
       : biggestTier === "relative"

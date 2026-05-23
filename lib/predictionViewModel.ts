@@ -24,6 +24,7 @@ import type { FightOutcomeModelOutput, OutcomeScenario } from "@/lib/fight-outco
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import { getNamedCallSide, isTooCloseToCall, type PredictionSide } from "@/lib/predictionThresholds";
+import { detectRankingMismatch, type RankingMismatch } from "@/lib/ranking-mismatch";
 
 // ─── Public types ─────────────────────────────────────────────────────────────
 
@@ -131,6 +132,16 @@ export interface PredictionViewModel {
 
   /** Plain-English data warnings carried through from the model */
   dataWarnings: string[];
+
+  /**
+   * Auto-derived ranking-mismatch signal. Non-null when the model lean lands
+   * on the lower-ranked fighter by a meaningful margin (e.g. Lopes #2 vs
+   * Garcia #9 → model says Garcia 75%). UI surfaces this as a small
+   * "Ranking note" near the call so the disconnect is visible.
+   *
+   * Presentation-only — never modifies the locked prediction or model math.
+   */
+  rankingMismatch: RankingMismatch | null;
 }
 
 export interface PredictionRecordCallView {
@@ -333,15 +344,15 @@ function buildPublicScenarios({
 
   const loserPath = topPathLabel(fight, predictedLoser);
   const counterPathDescription = loserPath
-    ? `${predictedLoser.name}'s counter path is ${loserPath}. The public call still leans ${predictedWinner.name}, but ${predictedLoser.name} has ${loserProbability}% in the model.`
-    : `${predictedLoser.name} still has ${loserProbability}% in the model. That path matters if the matchup plays differently than the model expects, even with the public call leaning ${predictedWinner.name}.`;
+    ? `${predictedLoser.name}'s counter path is ${loserPath}. The model still leans ${predictedWinner.name}, but ${predictedLoser.name} carries ${loserProbability}% in the read.`
+    : `${predictedLoser.name} stays live at ${loserProbability}% if the matchup plays differently than the model expects.`;
 
   return [
     {
       id: "lean",
       title: "the call",
       fighterLabel: predictedWinner.name,
-      description: `${predictedWinner.name} is the model call at ${winnerProbability}%. This is a ${readStrengthLabel(readStrength)} signal-based forecast, not a guarantee.`,
+      description: `${predictedWinner.name} is the model lean at ${winnerProbability}%. ${readStrengthLabel(readStrength).charAt(0).toUpperCase() + readStrengthLabel(readStrength).slice(1)} directional read — not a guarantee.`,
     },
     {
       id: "upset",
@@ -545,6 +556,13 @@ export function buildPredictionViewModel({
     }
   }
 
+  const rankingMismatch = detectRankingMismatch({
+    fighterA: fight.fighters.fighterA,
+    fighterB: fight.fighters.fighterB,
+    predictedWinnerId: predictedWinner?.id ?? null,
+    winnerProbability,
+  });
+
   return {
     eventId,
     fightId: fight.id,
@@ -580,6 +598,7 @@ export function buildPredictionViewModel({
     methodCorrect,
     sourceType,
     dataWarnings: outcomeModel.dataWarnings,
+    rankingMismatch,
   };
 }
 

@@ -79,7 +79,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
                 <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
                   <div
                     className={`h-full rounded-full transition-all ${
-                      isTop ? "bg-accent/65" : "bg-muted/35"
+                      isTop ? "bg-accent/80" : "bg-muted/55"
                     }`}
                     style={{ width: `${m.value}%` }}
                   />
@@ -194,6 +194,7 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
             fighterAProb={vm.fighterA.winProbability}
             fighterBName={vm.fighterB.name}
             fighterBProb={vm.fighterB.winProbability}
+            rankingMismatch={vm.rankingMismatch}
           />
         </div>
 
