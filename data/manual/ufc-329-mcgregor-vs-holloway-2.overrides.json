@@ -264,10 +264,10 @@
           "type": "long-layoff",
           "fighter": "Conor McGregor",
           "title": "Multi-year competitive layoff",
-          "explanation": "McGregor has not competed in a UFC bout in several years — by far the largest single factor in this matchup and one the model cannot read. Layoff effects on timing, durability, and pace are structural context, not a scored input.",
+          "explanation": "McGregor has not competed in a UFC bout in several years — the largest single factor in this matchup. The model partially reads this: long inactivity shrinks his recent-form score toward neutral. What it cannot read is what a layoff that long does to timing, durability, and fight-night speed — that part stays manual context.",
           "confidence": "high",
           "impactDirection": "hurts",
-          "modelImpact": "not included in model"
+          "modelImpact": "manual context only"
         }
       ]
     },
@@ -306,7 +306,7 @@
           "type": "debut-or-promotion-jump",
           "fighter": "Cory Sandhagen",
           "title": "Read the lean with caution — ranking favors Sandhagen",
-          "explanation": "Sandhagen is the #2 bantamweight contender; Bautista is #5. Sandhagen has the deeper top-of-division résumé and a more proven late-round shape. The model leans the other way on aggregate rates — the lean toward Bautista should be read as the model under-weighting opponent-tier context.",
+          "explanation": "Sandhagen is the #2 bantamweight contender; Bautista is #5. Sandhagen has the deeper top-of-division résumé and a more proven late-round shape. The model leans the other way on aggregate rates — read the Bautista lean knowing the model does not weight opponent-tier context at all.",
           "confidence": "medium",
           "impactDirection": "helps",
           "modelImpact": "not included in model"

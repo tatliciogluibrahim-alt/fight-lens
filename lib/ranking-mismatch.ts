@@ -100,7 +100,7 @@ export function detectRankingMismatch({
 
   const copy =
     tier === "strong"
-      ? `Ranking note · model leans ${lowerRanked.name.split(" ").pop()} (${leanLabel}) over higher-ranked ${higherRanked.name.split(" ").pop()} (${favorLabel}). Read the lean knowing the model may be under-weighting opponent tier.`
+      ? `Ranking note · model leans ${lowerRanked.name.split(" ").pop()} (${leanLabel}) over higher-ranked ${higherRanked.name.split(" ").pop()} (${favorLabel}). Read the lean knowing the model does not weight opponent tier in its win probability.`
       : `Ranking note · model lean lands on the lower-ranked fighter (${lowerRanked.name.split(" ").pop()} ${leanLabel} over ${higherRanked.name.split(" ").pop()} ${favorLabel}). Read as directional.`;
 
   return {

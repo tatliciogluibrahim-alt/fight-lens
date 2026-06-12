@@ -60,9 +60,9 @@ const modelRows = [
     body: "Uses profile rates and recent control evidence to show which style creates a matchup edge. It is not an outcome score."
   },
   {
-    label: "Opponent Quality Adjusted Form",
+    label: "Recency-Weighted Form",
     status: "partial",
-    body: "Uses recent sourced results, methods, and recency. Opponent tiers are held out until that context is modeled cleanly."
+    body: "Uses recent sourced results, methods, and recency, with long layoffs shrinking the score toward neutral. Opponent tiers are not modeled — they are held out until that context can be added cleanly."
   },
   {
     label: "Round Sustainability",
@@ -237,6 +237,15 @@ export default function MethodologyPage() {
                   When the model&apos;s win probability for each fighter is below 52%, no named call
                   is shown. Both paths remain viable. This is not a broken state — it is the model
                   being honest about low separation rather than forcing a named call.
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Why leans look conservative vs. market</p>
+                <p className="mt-1 text-sm leading-6 text-muted">
+                  The model&apos;s probability conversion compresses outputs into a practical
+                  ~25–75% range by construction. Markets can price a fighter at 85%+; this model
+                  cannot. When a lean reads softer than market pricing, that is usually the
+                  architecture, not a per-fight disagreement.
                 </p>
               </div>
             </div>
