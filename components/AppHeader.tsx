@@ -6,11 +6,14 @@ import { PrototypeBadge } from "./PrototypeBadge";
 
 const links = [
   { href: "/", label: "home", mobileVisible: true },
-  { href: "/events", label: "events", mobileVisible: true },
+  // "cards" matches the mobile tab label and the product copy ("Current Card",
+  // "Open card", "Browse all cards") — desktop previously said "events", which
+  // described the same destination with a different word.
+  { href: "/events", label: "cards", mobileVisible: true },
   { href: "/record", label: "record", mobileVisible: true },
-  // "case study" and "how it works" are hidden from the mobile nav to prevent
-  // label clipping. Both remain available via the footer on all screen sizes.
-  { href: "/case-study", label: "case study", mobileVisible: false },
+  // "how it works" is hidden from the mobile nav to prevent label clipping.
+  // The case study lives in the footer only — keeping it out of primary nav
+  // keeps the app reading as a product, not a portfolio artifact.
   { href: "/methodology", label: "how it works", mobileVisible: false },
 ];
 
@@ -50,8 +53,7 @@ function isActivePath(pathname: string, href: string) {
     pathname === href ||
     (href === "/events" && pathname.startsWith("/events")) ||
     (href === "/record" && (pathname.startsWith("/record") || pathname.startsWith("/backtests"))) ||
-    (href === "/methodology" && pathname.startsWith("/methodology")) ||
-    (href === "/case-study" && pathname.startsWith("/case-study"))
+    (href === "/methodology" && pathname.startsWith("/methodology"))
   );
 }
 

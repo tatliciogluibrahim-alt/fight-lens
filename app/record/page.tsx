@@ -4,6 +4,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracyMetrics } from "@/lib/accuracy";
+import { getAllEvents } from "@/lib/events/registry";
 import { computeAccuracyMetrics } from "@/lib/accuracy/calculator";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
@@ -13,10 +14,10 @@ export const metadata: Metadata = {
   description: "Every Fight Lens call logged before the fight and scored after the official result."
 };
 
-function eventSlug(eventName: string): string | null {
-  const match = eventName.match(/UFC\s+(\d+)/i);
-  return match ? `ufc-${match[1]}` : null;
-}
+// Fight → event routing comes from the event registry, not from parsing the
+// event display name. The old name-regex (/UFC\s+(\d+)/) silently broke for
+// "UFC Freedom 250: …" (no link at all) and mis-routed "UFC 329: …" to a
+// different event id. Registry lookup is exact for every routeable fight.
 
 function methodLabel(method: string): string {
   switch (method) {
@@ -69,7 +70,7 @@ function ResultStateChip({
 
 // ─── Prediction row ───────────────────────────────────────────────────────────
 
-function PredictionRow({ record }: { record: PredictionRecord }) {
+function PredictionRow({ record, eventId }: { record: PredictionRecord; eventId?: string | null }) {
   const { outcome, fighters } = record;
   const call = getPredictionRecordCall(record);
 
@@ -92,9 +93,8 @@ function PredictionRow({ record }: { record: PredictionRecord }) {
     }
   }
 
-  const slug = eventSlug(record.event);
-  const href = slug
-    ? `/events/${slug}/${record.fightId}`
+  const href = eventId
+    ? `/events/${eventId}/${record.fightId}`
     : record.isBacktestReconstruction
       ? `/backtests/${record.fightId}`
       : null;
@@ -162,6 +162,12 @@ export default function RecordPage() {
   const backtestMetrics = computeAccuracyMetrics(backtestReconstructions);
   const byEvent = groupByEvent(lockedCalls);
 
+  // Exact fight → event-id routing for "View read" links.
+  const fightEventIds = new Map<string, string>();
+  for (const ev of getAllEvents()) {
+    for (const f of ev.fights) fightEventIds.set(f.id, ev.event.id);
+  }
+
   const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
   const pendingCount = lockedCalls.filter((r) => r.outcome === null).length;
   const correctCount = metrics.winnerAccuracy != null
@@ -192,8 +198,8 @@ export default function RecordPage() {
               Named-call accuracy excludes too-close-to-call fights. Historical validation stays separate.
             </p>
             <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
-              Lock policy: calls lock when the card is published on this site, and are never
-              edited once a result is recorded.
+              Logged pre-fight: calls are logged when the card is published on this site, and are
+              never edited once a result is recorded.
             </p>
 
             {/* Ledger row — 4 stats, public accountability feel */}
@@ -244,7 +250,7 @@ export default function RecordPage() {
                   </p>
                 </div>
                 {records.map((record) => (
-                  <PredictionRow key={record.fightId} record={record} />
+                  <PredictionRow key={record.fightId} record={record} eventId={fightEventIds.get(record.fightId)} />
                 ))}
               </div>
             ))}
@@ -309,7 +315,7 @@ export default function RecordPage() {
             {backtestReconstructions.length > 0 && (
               <div className="mt-5 overflow-hidden rounded-xl border border-line bg-background/30">
                 {backtestReconstructions.map((record) => (
-                  <PredictionRow key={record.fightId} record={record} />
+                  <PredictionRow key={record.fightId} record={record} eventId={fightEventIds.get(record.fightId)} />
                 ))}
               </div>
             )}

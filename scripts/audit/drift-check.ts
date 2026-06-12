@@ -8,7 +8,7 @@ import { buildFightShapeModel } from "../../lib/fight-shape-model/model";
 import { buildFightOutcomeModel } from "../../lib/fight-outcome-model/model";
 
 const ROOT = path.resolve(__dirname, "../..");
-const events = ["ufc-freedom-250", "ufc-329-mcgregor-vs-holloway-2"];
+const events = ["ufc-freedom-250", "ufc-329"];
 let drifts = 0, checked = 0;
 
 for (const ev of events) {

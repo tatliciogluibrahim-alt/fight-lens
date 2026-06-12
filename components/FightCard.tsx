@@ -81,6 +81,16 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
   const probB = vm?.fighterB.winProbability ?? null;
   const methodTop = vm?.methodLean ?? null;
 
+  // Surface the strongest model-sanity signal at list level so a card can be
+  // scanned without opening every fight: a model warning (manual context
+  // challenges the lean) outranks a data-caution confidence label.
+  const sanity = fight.modelSanity;
+  const sanityChip = sanity?.modelWarning
+    ? { label: "model warning", accent: true }
+    : sanity?.modelConfidenceLabel === "Data caution" || sanity?.modelConfidenceLabel === "Low"
+      ? { label: "data caution", accent: false }
+      : null;
+
   // On mobile, only show the ResultChip when the fight has a scored outcome —
   // "Pending" is implied by context so we suppress it to reduce clutter.
   const showMobileResultChip = vm && vm.resultState === "scored";
@@ -132,6 +142,17 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
                 {methodTop}
                 <span className="opacity-60"> lean</span>
               </p>
+            )}
+            {sanityChip && (
+              <span
+                className={`inline-flex w-fit items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${
+                  sanityChip.accent
+                    ? "border-accent/30 bg-accent/[0.06] text-accent"
+                    : "border-line bg-surface-2 text-subtle"
+                }`}
+              >
+                {sanityChip.label}
+              </span>
             )}
           </div>
         )}
@@ -228,6 +249,18 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
             {methodTop && (
               <span className="text-subtle">
                 {methodTop}<span className="opacity-60"> lean</span>
+              </span>
+            )}
+
+            {sanityChip && (
+              <span
+                className={`inline-flex items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${
+                  sanityChip.accent
+                    ? "border-accent/30 bg-accent/[0.06] text-accent"
+                    : "border-line bg-surface-2 text-subtle"
+                }`}
+              >
+                {sanityChip.label}
               </span>
             )}
 
