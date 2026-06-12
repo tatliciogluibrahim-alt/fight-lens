@@ -15,6 +15,7 @@ import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registry";
 import { MobileFightRead } from "@/components/MobileFightRead";
 import { ContextualNotes } from "@/components/ContextualNotes";
+import { ModelContextFooter } from "@/components/ModelSanity";
 import { RoundMomentumFlow } from "@/components/RoundMomentumFlow";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -211,7 +212,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
               panels={{
                 call: (
                   <div className="space-y-6">
-                    <TheCall viewModel={vm} />
+                    <TheCall viewModel={vm} modelSanity={fight.modelSanity} />
                     {/*
                       ContextualNotes sits inside the call section on desktop so
                       manual context (the "not in model" disclosures) reads next
@@ -221,6 +222,8 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                       explains why the lean looks the way it does.
                     */}
                     <ContextualNotes notes={fight.contextNotes} />
+                    {/* Market sanity + blind-spot tags — after manual context */}
+                    <ModelContextFooter sanity={fight.modelSanity} />
                     <RoundMomentumFlow
                       fighterA={fighterA}
                       fighterB={fighterB}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { CardFilterTabs } from "@/components/CardFilterTabs";
+import { CardModelSanity } from "@/components/ModelSanity";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
 import { getAllEventIds, getEvent } from "@/lib/events/registry";
@@ -56,6 +57,13 @@ export default async function EventPage({ params }: EventPageProps) {
       <AppHeader />
       <main>
         <EventHero event={event} lockedPredictions={eventLockedPredictions} />
+        {/* Card-level model read — renders only when the event carries a
+            manual cardSummary (currently UFC Freedom 250 only). */}
+        <CardModelSanity
+          summary={event.event.cardSummary}
+          blindSpots={event.event.cardBlindSpots}
+          environmentNote={event.event.environmentNote}
+        />
         <CardFilterTabs
           eventId={event.event.id}
           fights={event.fights}

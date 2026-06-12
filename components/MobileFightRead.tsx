@@ -21,6 +21,7 @@ import { FightResultBanner } from "./FightResultBanner";
 import { ContextualNotes } from "./ContextualNotes";
 import { CallConfidenceBand } from "./CallConfidenceBand";
 import { RoundMomentumFlow } from "./RoundMomentumFlow";
+import { ModelContextFooter, ModelSanityLead, SharpInsight } from "./ModelSanity";
 
 interface MobileFightReadProps {
   fight: SourcedFight;
@@ -154,7 +155,7 @@ function MobileMethodLean({ vm }: { vm: PredictionViewModel }) {
   return (
     <div className="rounded-2xl border border-line bg-surface/70 p-5">
       <div className="flex items-center justify-between gap-3">
-        <p className="mono-label">most likely finish</p>
+        <p className="mono-label">projected finish</p>
         <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/60">
           directional only
         </span>
@@ -303,8 +304,16 @@ export function MobileFightRead({
       {/* 2 · Model call */}
       <MobileCallCard vm={vm} />
 
-      {/* 3 · Method lean */}
+      {/* 2b · Model-sanity lead: warning + confidence/analyst line */}
+      {hasPred && <ModelSanityLead sanity={fight.modelSanity} />}
+
+      {/* 3 · Projected finish */}
       {hasPred && <MobileMethodLean vm={vm} />}
+
+      {/* 3b · Sharpest insight — one manual sentence */}
+      {hasPred && fight.modelSanity?.strongestInsight && (
+        <SharpInsight text={fight.modelSanity.strongestInsight} />
+      )}
 
       {/* 4 · Why it leans · what flips it */}
       {hasPred && vm.scenarios.length > 0 && <MobileScenarios vm={vm} />}
@@ -322,6 +331,9 @@ export function MobileFightRead({
       )}
 
       <ContextualNotes notes={fight.contextNotes} />
+
+      {/* 4c · Market sanity + model blind-spot tags — after manual context */}
+      {hasPred && <ModelContextFooter sanity={fight.modelSanity} />}
 
       {/* 5 · Fight shape — StyleComparisonBars renders its own mobile compact
           card with a single expand toggle; scroll anchor preserved via id. */}

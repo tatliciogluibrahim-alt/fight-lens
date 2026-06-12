@@ -403,6 +403,7 @@ function buildFight(sourceFight, override, profilesById, detailsById, manualFigh
     fightShapeSummary: override?.fightShapeSummary ?? null,
     manualRead: override?.manualRead ?? null,
     contextNotes: override?.contextNotes ?? null,
+    modelSanity: override?.modelSanity ?? null,
     fighters: { fighterA, fighterB },
     keyEdges: keyEdgesFromProfiles(fighterA, fighterB),
     paths: override?.paths ?? null,
@@ -473,6 +474,9 @@ async function buildNormalizedEvent(eventId) {
       mainEvent: eventOverride.mainEvent,
       featuredBouts: eventOverride.featuredBouts,
       promotion: "UFC",
+      cardSummary: eventOverride.cardSummary ?? null,
+      cardBlindSpots: eventOverride.cardBlindSpots ?? null,
+      environmentNote: eventOverride.environmentNote ?? null,
       source: eventOverride.source ?? sourceEvent.source
     },
     assetPolicy: overrides.assetPolicy,

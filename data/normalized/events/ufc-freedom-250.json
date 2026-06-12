@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-23T03:59:23.429Z",
+  "generatedAt": "2026-06-12T15:47:07.148Z",
   "event": {
     "id": "ufc-freedom-250",
     "ufcstatsId": "48544433372ecfa6",
@@ -22,6 +22,15 @@
       }
     ],
     "promotion": "UFC",
+    "cardSummary": "Fight Lens leans with the model on most of UFC Freedom 250, but the card exposes three major blind spots: opponent-tier weighting, age/mileage, and fight-week context. Lopes/Garcia is the clearest warning case: the model favors Garcia, while ranking, résumé, and market context point back toward Lopes.",
+    "cardBlindSpots": [
+      "Opponent-tier weighting",
+      "Age and accumulated damage",
+      "Division/weight translation",
+      "Small-sample confidence",
+      "Outdoor fight-week environment"
+    ],
+    "environmentNote": "Outdoor White House conditions may make cardio, sweat, pace, and footing more relevant than usual. This is not included in the model.",
     "source": {
       "provenance": "sourced",
       "sourceName": "ufc.com event page + ufcstats",
@@ -58,13 +67,34 @@
         {
           "type": "age-mileage",
           "fighter": "Justin Gaethje",
-          "title": "37 years old with title-fight mileage",
-          "explanation": "Gaethje is 37 with two submission losses in championship-level fights (Khabib, Oliveira). His durability and chin carry more question marks than his record alone suggests. The model does not apply an age or accumulated-damage factor.",
+          "title": "37 with deep title-fight mileage and a long damage history",
+          "explanation": "Gaethje's losses to Khabib and Oliveira were submissions, not clean striking collapses — this is not a 'chin is gone' read. The sharper concern is age, accumulated damage, and whether he can survive clean pocket exchanges against Topuria's speed and accuracy. The model does not apply an age or accumulated-damage factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium",
+        "dataFlags": [
+          "age_mileage",
+          "style_specific_blindspot",
+          "market_divergence"
+        ],
+        "strongestInsight": "Gaethje can still make this ugly, but every extended pocket exchange gives Topuria the cleaner, faster finishing window.",
+        "analystCheck": [
+          "back_model_direction",
+          "model_underconfident"
+        ],
+        "analystCheckCopy": "Model lean is directionally defensible, but likely conservative relative to market and manual age/mileage context.",
+        "marketContext": {
+          "marketFavorite": "Ilia Topuria",
+          "marketImpliedSummary": "Market pricing implies Topuria is a much stronger favorite than the model's 65%.",
+          "modelVsMarket": "Model is more conservative than market.",
+          "displayCopy": "Topuria is priced far stronger than Fight Lens' 65% model lean. Treat the model as conservative here."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "ilia-topuria",
@@ -8543,12 +8573,33 @@
           "type": "weight-class-up",
           "fighter": "Alex Pereira",
           "title": "First career Heavyweight bout",
-          "explanation": "Pereira's UFC career has been at Middleweight and Light Heavyweight, holding titles in both. Heavyweight is a new division for him, and Gane is a natural heavyweight. The size gap and walk-in weight are not variables the model reads — this is structural context, not a scored input.",
+          "explanation": "Pereira has held UFC titles at Middleweight and Light Heavyweight. Heavyweight is new territory for him, while Gane is a natural heavyweight with five-round heavyweight experience. The model does not see walk-in weight, added mass, division change, or how Pereira's speed and cardio translate at heavyweight.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium-low",
+        "dataFlags": [
+          "division_change",
+          "style_specific_blindspot",
+          "outdoor_environment",
+          "market_divergence"
+        ],
+        "strongestInsight": "This is not just smaller striker vs bigger heavyweight — it is whether Gane can make Pereira carry heavyweight minutes without giving him clean entry reads.",
+        "analystCheck": [
+          "pass_or_reduce_confidence"
+        ],
+        "analystCheckCopy": "Gane 60% is defensible on natural-heavyweight and pace logic, but the market is much closer to even. Treat as a live two-way read.",
+        "marketContext": {
+          "marketFavorite": "Ciryl Gane",
+          "marketImpliedSummary": "Market pricing is close to a coin flip — the model's 60% Gane lean is firmer than the market's read.",
+          "modelVsMarket": "Model is more pro-Gane than market.",
+          "displayCopy": "Pricing sits near even. The model's 60% Gane lean is firmer than the market — treat this as a live two-way fight."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "alex-pereira",
@@ -16264,7 +16315,7 @@
           "type": "debut-or-promotion-jump",
           "fighter": "Aiemann Zahabi",
           "title": "On a 7-win streak, most recently a decision over Chito Vera",
-          "explanation": "Zahabi enters on a 7-win streak, with his most recent win a decision over Marlon \"Chito\" Vera. The run is decision-heavy and includes a split-decision win over José Aldo that was widely seen as contested by media scorecards. The model weights the streak without adjusting for competition quality or how clearly the decisions were earned.",
+          "explanation": "Zahabi's seven-fight streak is real — most recently a decision over Marlon \"Chito\" Vera — but the run is decision-heavy and less clearly predictive against O'Malley's length, speed, and shot selection. The Aldo split decision was widely seen as contested by media scorecards.",
           "confidence": "medium",
           "impactDirection": "unclear",
           "modelImpact": "not included in model"
@@ -16272,13 +16323,34 @@
         {
           "type": "recent-ko-loss",
           "fighter": "Sean O'Malley",
-          "title": "Two losses are both specifically to Merab's grappling — not predictive here",
-          "explanation": "O'Malley's last two losses were submission and decision losses to Merab Dvalishvili, who uses elite wrestling to neutralize strikers. Zahabi is primarily a standup fighter. The model weights those losses equally to any loss — the stylistic context is not captured.",
+          "title": "Both recent losses came against the Merab archetype — not present here",
+          "explanation": "O'Malley's recent losses came against Merab Dvalishvili's elite wrestling-pressure archetype. Zahabi does not present the same wrestling problem, so the model may be over-penalizing O'Malley's recent results.",
           "confidence": "high",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium",
+        "dataFlags": [
+          "style_specific_blindspot",
+          "opponent_tier_mismatch",
+          "market_divergence"
+        ],
+        "strongestInsight": "The model is probably reading O'Malley's Merab losses too literally in a matchup where Zahabi does not bring the Merab problem.",
+        "analystCheck": [
+          "back_model_direction",
+          "model_underconfident"
+        ],
+        "analystCheckCopy": "O'Malley 56% may be directionally right but too soft. The matchup context supports O'Malley more strongly than the raw recent-loss signal.",
+        "marketContext": {
+          "marketFavorite": "Sean O'Malley",
+          "marketImpliedSummary": "Market pricing implies O'Malley is a heavy favorite — far stronger than the model's 56%.",
+          "modelVsMarket": "Model is much more conservative than market.",
+          "displayCopy": "O'Malley is priced as a heavy favorite, well beyond the model's 56% lean. The style context supports the stronger read."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "sean-o-malley",
@@ -25167,7 +25239,7 @@
           "type": "short-notice",
           "fighter": "Josh Hokit",
           "title": "Short-notice / compressed camp",
-          "explanation": "Hokit accepted this fight on short notice. A compressed heavyweight camp affects conditioning and game-plan depth in later rounds — context the model's stat profile does not capture.",
+          "explanation": "Hokit accepted this fight on short notice, which adds more uncertainty unless he was already in camp. A compressed heavyweight camp affects conditioning and game-plan depth in later rounds — context the model's stat profile does not capture.",
           "confidence": "medium",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -25176,12 +25248,33 @@
           "type": "age-mileage",
           "fighter": "Derrick Lewis",
           "title": "29-13 veteran heavyweight · one-punch power, late-round questions",
-          "explanation": "Lewis is a 29-13 long-tenured UFC heavyweight. His one-punch finishing remains a real threat in any round, while his ability to sustain pace and pressure across a full fight has been a recurring structural question. Round-count varies fight to fight. The model does not apply a career-stage or mileage factor.",
+          "explanation": "Lewis is a 29-13 long-tenured UFC heavyweight — a low-volume, high-danger fighter whose finishing threat can stay live deep into ugly minutes. Sustained pace across a full fight has been a recurring structural question. The model does not apply a career-stage or mileage factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Data caution",
+        "dataFlags": [
+          "small_sample",
+          "short_notice",
+          "style_specific_blindspot"
+        ],
+        "strongestInsight": "Hokit can be the correct model side while still being the wrong fight for the app to sound precise.",
+        "analystCheck": [
+          "back_model_direction",
+          "pass_or_reduce_confidence"
+        ],
+        "analystCheckCopy": "Back the Hokit direction, reduce precision — the small UFC sample makes the 71% read look sharper than the underlying data.",
+        "marketContext": {
+          "marketFavorite": "Josh Hokit",
+          "marketImpliedSummary": "Market pricing also favors Hokit strongly; the model is directionally aligned, slightly more conservative.",
+          "modelVsMarket": "Model is directionally aligned with market, slightly more conservative.",
+          "displayCopy": "The market also favors Hokit strongly. Direction aligned — but the small-sample caution still applies."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "josh-hokit",
@@ -31609,12 +31702,34 @@
           "type": "age-mileage",
           "fighter": "Michael Chandler",
           "title": "40 years old · 1 win in his last 6 lightweight bouts",
-          "explanation": "Chandler turns 40 in 2026 and has lost 5 of his last 6 — to Pimblett, Oliveira (twice), Poirier, and Gaethje. His only win in that stretch was over Tony Ferguson, himself on a long losing streak by then. Late-round pace and durability are recurring questions at this stage of his career. The model does not apply a career-stage or recent-results decay factor.",
+          "explanation": "Chandler turns 40 in 2026 and has lost 5 of his last 6, but most of that skid came against elite lightweights — Pimblett, Oliveira (twice), Poirier, and Gaethje; his only win in the stretch was over a declining Tony Ferguson. The decline signal is still real: durability, pace, and late-round decision-making are recurring concerns. His early explosiveness remains the main danger if he can force chaos before Ruffy settles.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium",
+        "dataFlags": [
+          "age_mileage",
+          "opponent_tier_mismatch",
+          "style_specific_blindspot",
+          "market_divergence"
+        ],
+        "strongestInsight": "Chandler's decline matters most after the opening storm; Ruffy's read depends on surviving the first burst and making the fight cleaner over time.",
+        "analystCheck": [
+          "back_model_direction",
+          "model_underconfident"
+        ],
+        "analystCheckCopy": "Ruffy 58% is directionally defensible but likely too soft relative to market and Chandler's age/mileage context.",
+        "marketContext": {
+          "marketFavorite": "Mauricio Ruffy",
+          "marketImpliedSummary": "Market pricing implies Ruffy is a much stronger favorite than the model's 58%.",
+          "modelVsMarket": "Model is much more conservative than market.",
+          "displayCopy": "Ruffy is priced far stronger than the model's 58% lean. Age and mileage context leans the same way."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "mauricio-ruffy",
@@ -38429,7 +38544,39 @@
       "matchupQuestion": null,
       "fightShapeSummary": null,
       "manualRead": null,
-      "contextNotes": null,
+      "contextNotes": [
+        {
+          "type": "debut-or-promotion-jump",
+          "fighter": "Bo Nickal",
+          "title": "Elite wrestling ceiling, still-developing MMA sample",
+          "explanation": "Nickal's wrestling ceiling is the clearest weapon in the fight, but his high-level MMA sample is still developing and his first career loss to Reinier de Ridder exposed questions when he cannot immediately dictate grappling terms. Daukaus is experienced and opportunistic enough to punish sloppy entries or extended transitions.",
+          "confidence": "medium",
+          "impactDirection": "unclear",
+          "modelImpact": "not included in model"
+        }
+      ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium",
+        "dataFlags": [
+          "small_sample",
+          "style_specific_blindspot",
+          "opponent_tier_mismatch",
+          "market_divergence"
+        ],
+        "strongestInsight": "Nickal has the clearest single weapon, but Daukaus is the veteran test that can expose prospect assumptions if the first takedown layer stalls.",
+        "analystCheck": [
+          "back_model_direction",
+          "pass_or_reduce_confidence"
+        ],
+        "analystCheckCopy": "Nickal direction is defensible, but 63% may be a healthier expression of risk than the heavier market lean.",
+        "marketContext": {
+          "marketFavorite": "Bo Nickal",
+          "marketImpliedSummary": "Market pricing implies Nickal is a stronger favorite than the model's 63%.",
+          "modelVsMarket": "Model is more conservative than market.",
+          "displayCopy": "Nickal is priced stronger than the model's 63%. The softer number may be the healthier expression of prospect risk."
+        },
+        "modelWarning": null
+      },
       "fighters": {
         "fighterA": {
           "id": "bo-nickal",
@@ -44514,12 +44661,33 @@
           "type": "debut-or-promotion-jump",
           "fighter": "Diego Lopes",
           "title": "Lopes has only lost to elite opposition — model lean toward Garcia is hard to defend",
-          "explanation": "Lopes is the #2 featherweight contender. His only UFC losses have come against Alexander Volkanovski (twice in title fights) and Movsar Evloev — all elite-tier featherweights. Garcia is #9 with a much thinner résumé. Those Volkanovski and Evloev losses drag Lopes's aggregate striking and absorption numbers in a way that does not reflect his actual level against the rest of the division. The model treats those losses the same as any other loss and under-weights the opponent-tier gap. Read the lean toward Garcia with that structural disclosure in mind — ranking and résumé point the other way.",
+          "explanation": "Lopes is ranked #2 and his UFC losses are against elite featherweight opposition — Volkanovski twice in title fights, and Movsar Evloev. Garcia is dangerous, but his résumé is thinner relative to Lopes's top-tier sample. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form.",
           "confidence": "high",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
         }
       ],
+      "modelSanity": {
+        "modelConfidenceLabel": "Low",
+        "dataFlags": [
+          "opponent_tier_mismatch",
+          "ranking_mismatch",
+          "market_divergence",
+          "style_specific_blindspot"
+        ],
+        "strongestInsight": "The model is reading damage from elite losses as weakness, when a serious analyst would read those fights as evidence that Lopes belongs near the top of the division.",
+        "analystCheck": [
+          "fade_model_direction"
+        ],
+        "analystCheckCopy": "Highest-risk model lean on the card. Manual context strongly challenges the Garcia 75% lean.",
+        "marketContext": {
+          "marketFavorite": "Diego Lopes",
+          "marketImpliedSummary": "Market pricing favors Lopes — the opposite direction from the model's 75% Garcia lean.",
+          "modelVsMarket": "Model is directionally opposite market.",
+          "displayCopy": "The market favors Lopes while the model leans Garcia. This is the clearest model-vs-market split on the card."
+        },
+        "modelWarning": "Strong model warning — ranking, résumé, and market context all challenge the Garcia 75% lean. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form."
+      },
       "fighters": {
         "fighterA": {
           "id": "diego-lopes",

@@ -1,9 +1,13 @@
 import type { OutcomeScenario } from "@/lib/fight-outcome-model/types";
 import type { PredictionViewModel } from "@/lib/predictionViewModel";
+import type { FightModelSanity } from "@/lib/sourced-event";
 import { CallConfidenceBand } from "./CallConfidenceBand";
+import { ModelSanityLead, SharpInsight } from "./ModelSanity";
 
 interface TheCallProps {
   viewModel: PredictionViewModel;
+  /** Manual model-sanity layer (confidence label, warning, insight). Optional. */
+  modelSanity?: FightModelSanity | null;
 }
 
 // ─── Method lean ──────────────────────────────────────────────────────────────
@@ -31,7 +35,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
   return (
     <div className="rounded-2xl border border-line bg-background/40 p-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="mono-label">most likely finish type</p>
+        <p className="mono-label">projected finish</p>
         <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-subtle/70">
           directional only
         </span>
@@ -129,7 +133,7 @@ function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
 // the way it does and what could flip it — it does not repeat the big
 // winner/probability card.
 
-export function TheCall({ viewModel: vm }: TheCallProps) {
+export function TheCall({ viewModel: vm, modelSanity = null }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     // Hide the "data pending" placeholder on mobile — FightReadSnapshot already
     // surfaces the pending state above the fold. Showing a large empty card
@@ -198,8 +202,18 @@ export function TheCall({ viewModel: vm }: TheCallProps) {
           />
         </div>
 
-        {/* Method lean */}
+        {/* Model-sanity lead: warning banner + confidence/analyst line.
+            Sits between the lean and the projected finish so a reader sees
+            "how much to trust this number" before the method breakdown. */}
+        <ModelSanityLead sanity={modelSanity} />
+
+        {/* Projected finish */}
         <MethodLean viewModel={vm} />
+
+        {/* Sharpest single insight on the matchup — manual, one sentence */}
+        {modelSanity?.strongestInsight ? (
+          <SharpInsight text={modelSanity.strongestInsight} />
+        ) : null}
 
         {/* The call / Counter path / What breaks the call */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

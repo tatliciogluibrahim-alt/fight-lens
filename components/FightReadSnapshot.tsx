@@ -92,7 +92,7 @@ export function FightReadSnapshot({ viewModel: vm }: FightReadSnapshotProps) {
         </Cell>
 
         {/* Method lean — half-width on mobile, 1/5 on desktop */}
-        <Cell label="most likely finish type" span="col-span-1 lg:col-span-1">
+        <Cell label="projected finish" span="col-span-1 lg:col-span-1">
           <p className="text-sm font-medium tracking-tight text-foreground sm:text-base">
             {vm.methodLean ?? "—"}
           </p>

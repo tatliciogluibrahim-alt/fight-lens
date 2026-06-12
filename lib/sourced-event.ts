@@ -28,6 +28,51 @@ export interface ContextualFightNote {
   modelImpact: "not included in model" | "manual context only";
 }
 
+/**
+ * Model-sanity layer — manual, per-fight transparency metadata that wraps the
+ * model lean without ever changing it. Authored in the event overrides file,
+ * passed through normalization verbatim. Everything here is context AROUND
+ * the prediction: confidence labeling, blind-spot flags, market sanity checks,
+ * and analyst direction. The locked model output stays untouched.
+ */
+export type ModelConfidenceLabel = "Strong" | "Medium" | "Medium-low" | "Low" | "Data caution";
+
+export type ModelDataFlag =
+  | "small_sample"
+  | "opponent_tier_mismatch"
+  | "ranking_mismatch"
+  | "age_mileage"
+  | "division_change"
+  | "short_notice"
+  | "outdoor_environment"
+  | "market_divergence"
+  | "style_specific_blindspot";
+
+export type AnalystCheckDirection =
+  | "back_model_direction"
+  | "fade_model_direction"
+  | "pass_or_reduce_confidence"
+  | "model_underconfident"
+  | "model_overconfident";
+
+export interface FightMarketContext {
+  marketFavorite: string;
+  marketImpliedSummary: string;
+  modelVsMarket: string;
+  displayCopy: string;
+}
+
+export interface FightModelSanity {
+  modelConfidenceLabel: ModelConfidenceLabel;
+  dataFlags: ModelDataFlag[];
+  strongestInsight: string | null;
+  analystCheck: AnalystCheckDirection[];
+  analystCheckCopy: string | null;
+  marketContext: FightMarketContext | null;
+  /** When present, the fight renders a visible model-warning banner. */
+  modelWarning?: string | null;
+}
+
 export interface SourcedLandedAttempted {
   landed: number | null;
   attempted: number | null;
@@ -182,6 +227,7 @@ export interface SourcedFight {
   fightShapeSummary: string | null;
   manualRead: string | null;
   contextNotes?: ContextualFightNote[] | null;
+  modelSanity?: FightModelSanity | null;
   result?: {
     winner: string;
     method: string;
@@ -215,6 +261,12 @@ export interface SourcedEvent {
     mainEvent?: { fighterA: string; fighterB: string } | null;
     featuredBouts?: Array<{ fighterA: string; fighterB: string }>;
     promotion: string;
+    /** Card-level model-sanity read — one compact paragraph, manual. */
+    cardSummary?: string | null;
+    /** Card-level model blind spots, manual. Short noun phrases. */
+    cardBlindSpots?: string[] | null;
+    /** Environment note (e.g. outdoor venue). Outside model, manual. */
+    environmentNote?: string | null;
   };
   modeling: {
     principle: string;
