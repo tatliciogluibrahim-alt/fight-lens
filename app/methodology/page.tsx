@@ -262,6 +262,21 @@ export default function MethodologyPage() {
             </div>
 
             <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
+              <p className="text-sm font-semibold text-foreground">June 2026 — manual model-sanity layer</p>
+              <p className="mt-1 text-sm leading-6 text-muted">
+                Fights can now carry a manual sanity layer around the model lean: a
+                <span className="text-foreground"> data-confidence label</span> (Strong → Data caution),
+                <span className="text-foreground"> model blind-spot flags</span> (small sample, opponent tier,
+                division change, and similar),
+                a dated <span className="text-foreground">market snapshot</span> for context, and an
+                <span className="text-foreground"> analyst check</span> sentence. None of it changes the
+                locked prediction — it tells you how much weight the number deserves. When the manual
+                label is more cautious than the model&apos;s own read, the displayed confidence range
+                widens to match; it never narrows.
+              </p>
+            </div>
+
+            <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
               <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=253, 20-event corpus)</p>
               <p className="mt-1 text-sm leading-6 text-muted">
                 The historical backtest covers 253 fights across 20 completed events. Winner

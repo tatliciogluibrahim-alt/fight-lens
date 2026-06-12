@@ -191,6 +191,10 @@ export default function RecordPage() {
               Public Model Record is logged before the fight and scored after the official result.
               Named-call accuracy excludes too-close-to-call fights. Historical validation stays separate.
             </p>
+            <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
+              Lock policy: calls lock when the card is published on this site, and are never
+              edited once a result is recorded.
+            </p>
 
             {/* Ledger row — 4 stats, public accountability feel */}
             <div className="mt-6 grid max-w-2xl grid-cols-2 gap-2 text-center sm:grid-cols-4">

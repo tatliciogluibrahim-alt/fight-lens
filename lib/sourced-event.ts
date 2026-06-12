@@ -60,6 +60,8 @@ export interface FightMarketContext {
   marketImpliedSummary: string;
   modelVsMarket: string;
   displayCopy: string;
+  /** When the market pricing was observed, e.g. "May 2026". Pricing moves — date the snapshot. */
+  asOf?: string | null;
 }
 
 export interface FightModelSanity {

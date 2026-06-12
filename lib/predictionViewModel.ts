@@ -487,10 +487,41 @@ export function buildPredictionViewModel({
   const publicPredictionSource = buildPublicPredictionSource(sourceType, callState);
 
   // ── Read strength ──────────────────────────────────────────────────────────
-  const readStrength = readStrengthFrom(
+  const autoReadStrength = readStrengthFrom(
     callState === "noLean" ? Math.max(probA, probB) : winnerProbability,
     outcomeModel.confidence,
   );
+
+  // Manual sanity floor: when the fight carries a manual model-confidence
+  // label that is more cautious than the auto-derived read strength, the
+  // displayed strength downgrades to match. This keeps the confidence band
+  // width and the scenario copy consistent with the Data-caution / Low pill —
+  // previously Hokit (71% → auto "strong") rendered a tight ±5 band directly
+  // above a "Data caution" warning, contradicting it. The floor only ever
+  // WIDENS the displayed band; it never narrows it. Display-only — the locked
+  // probability and the public record are untouched.
+  const MANUAL_STRENGTH_FLOOR: Record<string, ReadStrength> = {
+    "Strong": "strong",
+    "Medium": "usable",
+    "Medium-low": "thin",
+    "Low": "thin",
+    "Data caution": "thin",
+  };
+  const STRENGTH_CAUTION_RANK: Record<ReadStrength, number> = {
+    strong: 0,
+    usable: 1,
+    thin: 2,
+    "data-pending": 3,
+  };
+  const manualFloor = fight.modelSanity?.modelConfidenceLabel
+    ? MANUAL_STRENGTH_FLOOR[fight.modelSanity.modelConfidenceLabel] ?? null
+    : null;
+  const readStrength: ReadStrength =
+    autoReadStrength === "data-pending" || manualFloor == null
+      ? autoReadStrength
+      : STRENGTH_CAUTION_RANK[manualFloor] > STRENGTH_CAUTION_RANK[autoReadStrength]
+        ? manualFloor
+        : autoReadStrength;
 
   // ── Method ────────────────────────────────────────────────────────────────
   const methodDistribution = {

@@ -90,6 +90,7 @@ export function MarketContextNote({ market }: { market: FightMarketContext }) {
     <div className="rounded-xl border border-line bg-surface-2/40 px-4 py-3">
       <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
         market context · not in model
+        {market.asOf ? ` · ${market.asOf.toLowerCase()} snapshot` : ""}
       </p>
       <p className="mt-1 text-sm leading-snug text-muted">{market.displayCopy}</p>
     </div>
