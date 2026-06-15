@@ -18,7 +18,8 @@
     "audit:predictions": "npm_config_cache=.npm-cache npx tsx scripts/audit/predictions.ts",
     "backtest:elo": "npm_config_cache=.npm-cache npx tsx scripts/backtest/elo-baseline.ts",
     "audit:drift": "npm_config_cache=.npm-cache npx tsx scripts/audit/drift-check.ts",
-    "validate:freedom-250": "npm_config_cache=.npm-cache npx tsx scripts/validate-freedom-250-receipts.ts"
+    "validate:freedom-250": "npm_config_cache=.npm-cache npx tsx scripts/validate-freedom-250-receipts.ts",
+    "model:v03-compare": "npm_config_cache=.npm-cache npx tsx scripts/backtest/v03-candidate-comparison.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-12T22:29:07.765Z",
+  "generatedAt": "2026-06-15T19:30:16.014Z",
   "event": {
     "id": "ufc-329",
     "ufcstatsId": "fccb0fee256b7b4d",
@@ -8,9 +8,16 @@
     "date": "July 11, 2026",
     "location": "Las Vegas, Nevada, USA",
     "promotion": "UFC",
-    "cardSummary": null,
-    "cardBlindSpots": null,
+    "cardSummary": "UFC 329 is the first card forecast under the post-Freedom-250 calibration lens. The model leans cleanly where activity and style align (Holloway, Saint-Denis), reads the deepest fights as coin-flips (Sandhagen/Bautista, Whittaker/Krylov, Steveson/Ellison), and re-exposes its biggest blind spot on Royval/Kavanagh — a Lopes/Garcia-style resume inversion flagged before the bell. Market snapshots for this card are not yet recorded.",
+    "cardBlindSpots": [
+      "Opponent-tier weighting",
+      "Layoff / ring rust (McGregor)",
+      "Age and title-fight mileage",
+      "Small-sample wrestling pedigree (Steveson)",
+      "Style-archetype matchups"
+    ],
     "environmentNote": null,
+    "cardReceipt": null,
     "source": {
       "provenance": "sourced",
       "sourceName": "ufcstats",
@@ -54,7 +61,21 @@
           "modelImpact": "manual context only"
         }
       ],
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium-low",
+        "dataFlags": [
+          "age_mileage",
+          "style_specific_blindspot"
+        ],
+        "strongestInsight": "The model can read Holloway's volume and activity edge, but McGregor's multi-year layoff is the variable that actually decides the ceiling — and that sits outside the model.",
+        "analystCheck": [
+          "back_model_direction"
+        ],
+        "analystCheckCopy": "Holloway 61% is defensible on volume and activity, but treat it as a read with one enormous unknown: which McGregor shows up after the layoff.",
+        "marketContext": null,
+        "modelWarning": null
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "conor-mcgregor",
@@ -9244,7 +9265,20 @@
           "modelImpact": "not included in model"
         }
       ],
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium",
+        "dataFlags": [
+          "style_specific_blindspot"
+        ],
+        "strongestInsight": "Saint-Denis's grappling-pressure archetype is exactly the style that has historically troubled Pimblett — a single-signal edge the rate stats only partly capture.",
+        "analystCheck": [
+          "back_model_direction"
+        ],
+        "analystCheckCopy": "Saint-Denis 58% lines up with the style read; the live path is Pimblett's durability and finishing if it stays scrappy.",
+        "marketContext": null,
+        "modelWarning": null
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "benoit-saint-denis",
@@ -17053,7 +17087,21 @@
           "modelImpact": "not included in model"
         }
       ],
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium-low",
+        "dataFlags": [
+          "opponent_tier_mismatch",
+          "ranking_mismatch"
+        ],
+        "strongestInsight": "The model reads this even, but Sandhagen (#2) carries the deeper top-of-division resume over Bautista (#5) — opponent-tier context the win probability does not weight.",
+        "analystCheck": [
+          "model_underconfident"
+        ],
+        "analystCheckCopy": "Model reads it even; ranking and resume lean Sandhagen. This is exactly the opponent-tier blind spot the v0.3 calibration targets.",
+        "marketContext": null,
+        "modelWarning": null
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "cory-sandhagen",
@@ -26780,7 +26828,22 @@
       "fightShapeSummary": null,
       "manualRead": null,
       "contextNotes": null,
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Low",
+        "dataFlags": [
+          "opponent_tier_mismatch",
+          "ranking_mismatch",
+          "small_sample"
+        ],
+        "strongestInsight": "The model leans Kavanagh, but Royval is the ranked, proven flyweight (#5) and Kavanagh is unranked with a thinner sample — a Lopes/Garcia-style resume inversion.",
+        "analystCheck": [
+          "fade_model_direction"
+        ],
+        "analystCheckCopy": "Read this lean with caution. The model favors the lower-ranked fighter on aggregate form — the same opponent-tier trap that flipped on Lopes/Garcia.",
+        "marketContext": null,
+        "modelWarning": "The model leans the unranked fighter (Kavanagh) over the ranked, proven Royval (#5). Ranking and resume point the other way — the same opponent-tier inversion the model missed on Lopes/Garcia."
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "brandon-royval",
@@ -35314,7 +35377,20 @@
       "fightShapeSummary": null,
       "manualRead": null,
       "contextNotes": null,
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Data caution",
+        "dataFlags": [
+          "small_sample"
+        ],
+        "strongestInsight": "Steveson's elite wrestling pedigree is undeniable, but his MMA sample is tiny — the model reads it even because it cannot lean on a thin record.",
+        "analystCheck": [
+          "pass_or_reduce_confidence"
+        ],
+        "analystCheckCopy": "Genuine coin-flip from the model. Steveson's wrestling ceiling is real but unscored; small sample keeps this a pick-em.",
+        "marketContext": null,
+        "modelWarning": null
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "gable-steveson",
@@ -36022,7 +36098,21 @@
           "modelImpact": "not included in model"
         }
       ],
-      "modelSanity": null,
+      "modelSanity": {
+        "modelConfidenceLabel": "Medium-low",
+        "dataFlags": [
+          "age_mileage",
+          "opponent_tier_mismatch"
+        ],
+        "strongestInsight": "The model reads it even, but Whittaker is a former middleweight champion (#3) with the deeper resume over Krylov (#6) — offset by title-fight mileage the model does not weigh.",
+        "analystCheck": [
+          "model_underconfident"
+        ],
+        "analystCheckCopy": "Model reads it even; resume leans Whittaker, mileage is the counter. Treat as a live pick-em with Whittaker the more proven name.",
+        "marketContext": null,
+        "modelWarning": null
+      },
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "robert-whittaker",
@@ -43668,6 +43758,7 @@
       "manualRead": null,
       "contextNotes": null,
       "modelSanity": null,
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "luke-riley",
@@ -48436,6 +48527,7 @@
       "manualRead": null,
       "contextNotes": null,
       "modelSanity": null,
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "damian-pinas",
@@ -52893,6 +52985,7 @@
       "manualRead": null,
       "contextNotes": null,
       "modelSanity": null,
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "cody-garbrandt",
@@ -60444,6 +60537,7 @@
       "manualRead": null,
       "contextNotes": null,
       "modelSanity": null,
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "tracy-cortez",
@@ -68297,6 +68391,7 @@
       "manualRead": null,
       "contextNotes": null,
       "modelSanity": null,
+      "postFightReceipt": null,
       "fighters": {
         "fighterA": {
           "id": "ode-osbourne",
