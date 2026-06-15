@@ -91,6 +91,19 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
       ? { label: "data caution", accent: false }
       : null;
 
+  // Once scored, the receipt label replaces the pre-fight sanity chip in the
+  // scan row. Tone is computed from the call result, not the label string.
+  const scored = !!vm?.isScored;
+  const receiptLabel = scored ? fight.postFightReceipt?.receiptLabel ?? null : null;
+  const receiptTone: "correct" | "wrong" | "neutral" =
+    vm?.modelCorrect === false ? "wrong" : vm?.modelCorrect === true ? "correct" : "neutral";
+  const receiptChipClass =
+    receiptTone === "wrong"
+      ? "border-wrong/30 bg-wrong-soft text-wrong"
+      : receiptTone === "correct"
+        ? "border-success/30 bg-success-soft text-success"
+        : "border-line bg-surface-2 text-subtle";
+
   // On mobile, only show the ResultChip when the fight has a scored outcome —
   // "Pending" is implied by context so we suppress it to reduce clutter.
   const showMobileResultChip = vm && vm.resultState === "scored";
@@ -143,7 +156,11 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
                 <span className="opacity-60"> lean</span>
               </p>
             )}
-            {sanityChip && (
+            {receiptLabel ? (
+              <span className={`inline-flex w-fit items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${receiptChipClass}`}>
+                {receiptLabel}
+              </span>
+            ) : sanityChip ? (
               <span
                 className={`inline-flex w-fit items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${
                   sanityChip.accent
@@ -153,7 +170,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
               >
                 {sanityChip.label}
               </span>
-            )}
+            ) : null}
           </div>
         )}
         {!hasPred && (
@@ -252,7 +269,11 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
               </span>
             )}
 
-            {sanityChip && (
+            {receiptLabel ? (
+              <span className={`inline-flex items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${receiptChipClass}`}>
+                {receiptLabel}
+              </span>
+            ) : sanityChip ? (
               <span
                 className={`inline-flex items-center rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.12em] ${
                   sanityChip.accent
@@ -262,7 +283,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
               >
                 {sanityChip.label}
               </span>
-            )}
+            ) : null}
 
             {vm && (
               <span className="ml-auto">

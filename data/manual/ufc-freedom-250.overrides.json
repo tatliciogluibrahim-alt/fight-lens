@@ -33,6 +33,31 @@
       "sourceName": "ufc.com event page + ufcstats",
       "sourceUrl": "https://www.ufc.com/event/ufc-freedom-250",
       "fetchedAt": "2026-05-22T01:48:03.000Z"
+    },
+    "cardReceipt": {
+      "status": "scored",
+      "rawWinnerRecord": {
+        "correct": 5,
+        "total": 7
+      },
+      "finishBucketRecord": {
+        "correct": 6,
+        "total": 7
+      },
+      "cleanReadCount": 4,
+      "missedReadCount": 1,
+      "warningCorrectCount": 1,
+      "biggestModelWin": "Pereira/Gane",
+      "biggestModelMiss": "Topuria/Gaethje",
+      "bestTransparencyMoment": "Lopes/Garcia",
+      "summary": "UFC Freedom 250 was the cleanest stress test yet for Fight Lens. The raw model went 5/7 on winner direction and leaned correctly into the KO/TKO-heavy shape of the card. The main event was the biggest miss: Gaethje's attritional durability broke the Topuria read. The best transparency moment was Lopes/Garcia — the raw model missed, but the warning layer flagged the opponent-tier trap before the fight.",
+      "mainLessons": [
+        "Opponent-tier weighting must improve.",
+        "Age and mileage need two-way interpretation.",
+        "Warning-layer scoring should be separate from raw model scoring.",
+        "Finish-bucket scoring should be separate from winner scoring."
+      ],
+      "qaStatus": "needs_stats_review"
     }
   },
   "assetPolicy": {
@@ -359,6 +384,32 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Missed Read",
+        "fightShapeGrade": "partial",
+        "warningLayerGrade": "missed_warning",
+        "receiptSummary": "Fight Lens leaned Topuria, but Gaethje survived the dangerous early windows and turned the fight into the attritional damage battle the model — and the manual layer — did not price.",
+        "whatModelGotRight": [
+          "Read the matchup as a KO/TKO fight, not a decision",
+          "Topuria's early danger was real",
+          "The finish-heavy shape of the card"
+        ],
+        "whatModelMissed": [
+          "Gaethje's attritional durability and composure under early damage",
+          "The pre-fight note read Gaethje's mileage as decline — the fight showed it as war-tested survival",
+          "Late-damage accumulation and corner-stoppage risk to Topuria"
+        ],
+        "modelLesson": "Age and mileage cannot be read only as decline. Some veterans carry war-tested durability that flips a fight if they survive the early danger.",
+        "vNextSignals": [
+          "attrition_durability",
+          "veteran_recovery",
+          "damage_absorption_context",
+          "late_damage_compounding"
+        ],
+        "mediaNarrative": "Gaethje absorbed Topuria's sharpest early work, stayed composed, and broke the champion down over four rounds before a corner stoppage.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     },
     "5727d5be8c373346": {
@@ -398,6 +449,30 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Clean Read",
+        "fightShapeGrade": "clean",
+        "warningLayerGrade": "correct_warning",
+        "receiptSummary": "Gane validated the model lean and the heavyweight-translation context. Pereira's power stayed live, but Gane's natural-heavyweight frame, range and pace carried it.",
+        "whatModelGotRight": [
+          "Gane winner direction",
+          "KO/TKO method bucket",
+          "The division-change context flagged Pereira's heavyweight risk, and it mattered"
+        ],
+        "whatModelMissed": [
+          "Pereira's live counter threat deserves more specific description in future reads"
+        ],
+        "modelLesson": "Division-change context deserves stronger structured weighting when prior success came at a different weight and the opponent is a natural-division specialist.",
+        "vNextSignals": [
+          "division_change",
+          "weight_translation",
+          "natural_division_experience",
+          "five_round_division_experience"
+        ],
+        "mediaNarrative": "Gane denied Pereira's bid for a title in a third division, finding a second-round finish behind his natural-heavyweight frame.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     },
     "60de0423ae6ed097": {
@@ -446,6 +521,31 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Correct, Method Miss",
+        "fightShapeGrade": "partial",
+        "warningLayerGrade": "correct_warning",
+        "underconfident": true,
+        "receiptSummary": "Right side, wrong finish. The Merab-specific-loss correction was the key pre-fight context — but the model projected a decision and underplayed O'Malley's finishing upside.",
+        "whatModelGotRight": [
+          "O'Malley winner direction",
+          "Correctly separated O'Malley's Merab losses from this matchup — Zahabi is not that archetype"
+        ],
+        "whatModelMissed": [
+          "O'Malley's finishing upside in a striker-vs-striker matchup",
+          "Projected a decision; the length, speed and range edge produced a finish",
+          "The 56% number was too conservative"
+        ],
+        "modelLesson": "Losses to a singular archetype should be discounted when the next opponent does not replicate that style — and a clear range/speed edge should raise finish probability.",
+        "vNextSignals": [
+          "style_specific_loss_correction",
+          "opponent_archetype_similarity",
+          "finish_upside_from_range_advantage"
+        ],
+        "mediaNarrative": "O'Malley returned with a second-round finish in a matchup that never posed the wrestling problem his recent losses came from.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     },
     "30cdb851f6c63444": {
@@ -503,6 +603,29 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Clean Read",
+        "fightShapeGrade": "clean",
+        "warningLayerGrade": "not_applicable",
+        "receiptSummary": "Clean read with valid caution. The model side and finish shape landed, and the pre-fight small-sample and Lewis-power cautions were still the right product behavior.",
+        "whatModelGotRight": [
+          "Hokit winner direction",
+          "KO/TKO method bucket",
+          "Lewis's power was a real but insufficient counter-path"
+        ],
+        "whatModelMissed": [
+          "If stats show wrestling/control as decisive, future reads should name it"
+        ],
+        "modelLesson": "Small-sample warnings should lower pre-fight certainty, not direction. A dominant performance validates the rate profile without erasing the original caution.",
+        "vNextSignals": [
+          "small_sample_discount",
+          "performance_validation",
+          "heavyweight_power_tail_risk"
+        ],
+        "mediaNarrative": "Hokit used pace and athleticism to neutralize Lewis's one-shot power and finish in the second.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     },
     "9a9b30b3165b62e4": {
@@ -543,6 +666,35 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Clean Read",
+        "fightShapeGrade": "clean",
+        "warningLayerGrade": "correct_warning",
+        "underconfident": true,
+        "receiptSummary": "Correct side, correct finish, underconfident number. The model respected Chandler's resume more than the fight showed it should have.",
+        "whatModelGotRight": [
+          "Ruffy winner direction",
+          "KO/TKO method bucket",
+          "Chandler's early burst was the main live path",
+          "Chandler's age/mileage context mattered"
+        ],
+        "whatModelMissed": [
+          "Size of the gap — Ruffy at 58% was too soft",
+          "Speed and range mismatch",
+          "Durability decline under clean finishing pressure"
+        ],
+        "modelLesson": "Age, losing form and durability risk can justify stronger confidence when the opponent is a fast rising finisher — even if the older fighter's resume is elite.",
+        "vNextSignals": [
+          "age_mileage",
+          "recent_form_decay",
+          "durability_decline",
+          "early_burst_tail_risk",
+          "name_value_overweighting"
+        ],
+        "mediaNarrative": "Ruffy punished Chandler's early entries and ended it inside a round.",
+        "statSummary": null,
+        "qaStatus": "needs_source_review"
       }
     },
     "00e8d4b961a65d21": {
@@ -583,6 +735,30 @@
           "asOf": "May 2026"
         },
         "modelWarning": null
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Clean Read",
+        "fightShapeGrade": "clean",
+        "warningLayerGrade": "not_applicable",
+        "receiptSummary": "Clean read. Nickal won the expected direction while showing more finishing development than a pure wrestling read implied.",
+        "whatModelGotRight": [
+          "Nickal winner direction",
+          "KO/TKO method bucket",
+          "Wrestling threat remained the organizing weapon",
+          "Daukaus's veteran danger did not break the read"
+        ],
+        "whatModelMissed": [
+          "Nickal's striking and ground-damage finishing may be ahead of the model's prospect read"
+        ],
+        "modelLesson": "When a prospect wins through an expanding skill layer, the model should capture skill expansion, not just result quality.",
+        "vNextSignals": [
+          "prospect_sample",
+          "skill_expansion",
+          "wrestling_to_damage_transition"
+        ],
+        "mediaNarrative": "Nickal finished in the first, flashing finishing layers beyond the wrestling-only expectation.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     },
     "127ba4a1ccb3d4a6": {
@@ -622,6 +798,34 @@
           "asOf": "May 2026"
         },
         "modelWarning": "Strong model warning — ranking, résumé, and market context all challenge the Garcia 75% lean. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form."
+      },
+      "postFightReceipt": {
+        "receiptLabel": "Model Miss, Warning Correct",
+        "fightShapeGrade": "partial",
+        "warningLayerGrade": "correct_warning",
+        "receiptSummary": "The raw model badly over-favored Garcia, but Fight Lens warned before the fight that ranking, resume and opponent-tier context challenged the model. The clearest proof the warning layer matters.",
+        "whatModelGotRight": [
+          "KO/TKO fight shape",
+          "Flagged the exact reason not to trust the Garcia number — ranking and opponent tier",
+          "High volatility was real"
+        ],
+        "whatModelMissed": [
+          "Lopes's elite-opposition resume — the raw model under-weighted it",
+          "Treated losses to Volkanovski and Evloev as ordinary losses",
+          "Over-rewarded Garcia's cleaner aggregate form against a thinner resume"
+        ],
+        "modelLesson": "Opponent-tier adjustment is the model's highest-priority vNext fix. Losses to elite fighters are not the same negative signal as losses to ordinary competition.",
+        "vNextSignals": [
+          "opponent_tier_weighting",
+          "ranking_mismatch",
+          "elite_loss_context",
+          "resume_strength",
+          "aggregate_stat_distortion",
+          "manual_warning_success"
+        ],
+        "mediaNarrative": "Garcia's early danger did not override Lopes's level; Lopes weathered it and finished in the second.",
+        "statSummary": null,
+        "qaStatus": "needs_stats_review"
       }
     }
   }

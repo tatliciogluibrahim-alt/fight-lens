@@ -22,6 +22,7 @@ import { ContextualNotes } from "./ContextualNotes";
 import { CallConfidenceBand } from "./CallConfidenceBand";
 import { RoundMomentumFlow } from "./RoundMomentumFlow";
 import { ModelContextFooter, ModelSanityLead, SharpInsight } from "./ModelSanity";
+import { PostFightReceiptCard } from "./PostFightReceipt";
 
 interface MobileFightReadProps {
   fight: SourcedFight;
@@ -301,7 +302,10 @@ export function MobileFightRead({
         </div>
       )}
 
-      {/* 2 · Model call */}
+      {/* 1b · Post-fight receipt — honest verdict + lesson, above the preserved call */}
+      {vm.isScored && <PostFightReceiptCard viewModel={vm} receipt={fight.postFightReceipt} />}
+
+      {/* 2 · Model call (preserved pre-fight lean) */}
       <MobileCallCard vm={vm} />
 
       {/* 2b · Model-sanity lead: warning + confidence/analyst line */}

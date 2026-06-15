@@ -70,7 +70,7 @@ function ResultStateChip({
 
 // ─── Prediction row ───────────────────────────────────────────────────────────
 
-function PredictionRow({ record, eventId }: { record: PredictionRecord; eventId?: string | null }) {
+function PredictionRow({ record, eventId, receiptLabel }: { record: PredictionRecord; eventId?: string | null; receiptLabel?: string | null }) {
   const { outcome, fighters } = record;
   const call = getPredictionRecordCall(record);
 
@@ -122,6 +122,19 @@ function PredictionRow({ record, eventId }: { record: PredictionRecord; eventId?
       {/* Verdict */}
       <div className="flex flex-wrap items-center gap-3">
         <ResultStateChip state={state} />
+        {receiptLabel && (
+          <span
+            className={`inline-flex items-center rounded-full border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.12em] ${
+              state === "correct"
+                ? "border-success/30 bg-success-soft text-success"
+                : state === "incorrect"
+                  ? "border-wrong/30 bg-wrong-soft text-wrong"
+                  : "border-line bg-surface-2 text-subtle"
+            }`}
+          >
+            {receiptLabel}
+          </span>
+        )}
         {resultLine && (
           <p className="text-xs text-muted">{resultLine}</p>
         )}
@@ -162,10 +175,17 @@ export default function RecordPage() {
   const backtestMetrics = computeAccuracyMetrics(backtestReconstructions);
   const byEvent = groupByEvent(lockedCalls);
 
-  // Exact fight → event-id routing for "View read" links.
+  // Exact fight → event-id routing for "View read" links, plus the post-fight
+  // receipt label per fight and the card-level receipt per event name.
   const fightEventIds = new Map<string, string>();
+  const receiptLabelByFightId = new Map<string, string>();
+  const cardReceiptByEventName = new Map<string, ReturnType<typeof getAllEvents>[number]["event"]["cardReceipt"]>();
   for (const ev of getAllEvents()) {
-    for (const f of ev.fights) fightEventIds.set(f.id, ev.event.id);
+    if (ev.event.cardReceipt) cardReceiptByEventName.set(ev.event.name, ev.event.cardReceipt);
+    for (const f of ev.fights) {
+      fightEventIds.set(f.id, ev.event.id);
+      if (f.postFightReceipt) receiptLabelByFightId.set(f.id, f.postFightReceipt.receiptLabel);
+    }
   }
 
   const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
@@ -242,18 +262,33 @@ export default function RecordPage() {
         <section className="section-shell py-6 md:py-10">
           <p className="mono-label mb-5">prediction log</p>
           <div className="space-y-4">
-            {Array.from(byEvent.entries()).map(([eventName, records]) => (
+            {Array.from(byEvent.entries()).map(([eventName, records]) => {
+              const cardReceipt = cardReceiptByEventName.get(eventName);
+              return (
               <div key={eventName} className="overflow-hidden rounded-2xl border border-line bg-surface/70">
-                <div className="border-b border-line bg-surface-2/40 px-5 py-3">
+                <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5 border-b border-line bg-surface-2/40 px-5 py-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">
                     {eventName}
                   </p>
+                  {cardReceipt && (
+                    <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
+                      {cardReceipt.rawWinnerRecord.correct}/{cardReceipt.rawWinnerRecord.total} winner
+                      {" · "}{cardReceipt.finishBucketRecord.correct}/{cardReceipt.finishBucketRecord.total} finish
+                      {" · "}<span className="text-accent">best transparency: {cardReceipt.bestTransparencyMoment}</span>
+                    </p>
+                  )}
                 </div>
                 {records.map((record) => (
-                  <PredictionRow key={record.fightId} record={record} eventId={fightEventIds.get(record.fightId)} />
+                  <PredictionRow
+                    key={record.fightId}
+                    record={record}
+                    eventId={fightEventIds.get(record.fightId)}
+                    receiptLabel={receiptLabelByFightId.get(record.fightId)}
+                  />
                 ))}
               </div>
-            ))}
+              );
+            })}
           </div>
 
           <p className="mt-6 text-[11px] uppercase tracking-[0.1em] text-subtle/70">

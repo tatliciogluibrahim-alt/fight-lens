@@ -75,6 +75,65 @@ export interface FightModelSanity {
   modelWarning?: string | null;
 }
 
+/**
+ * Post-fight receipt — the honest, manual post-result layer that wraps a
+ * scored fight. It NEVER changes the locked pre-fight prediction. Winner /
+ * finish-bucket correctness is computed live from the locked prediction plus
+ * the recorded outcome (see predictionViewModel: modelCorrect / methodCorrect),
+ * so this object carries only the qualitative read: the editorial label, what
+ * the model got right and missed, the lesson, and the vNext signals.
+ *
+ * "Predict the fight. Show the blind spots. Keep the receipt." — this is the
+ * receipt. Misses are shown, not hidden; wins are not overclaimed.
+ */
+export type ReceiptLabel =
+  | "Clean Read"
+  | "Correct, Method Miss"
+  | "Correct, Underconfident"
+  | "Correct, Overconfident"
+  | "Partial Read"
+  | "Missed Read"
+  | "Model Miss, Warning Correct"
+  | "Model Miss";
+
+export type FightShapeGrade = "clean" | "partial" | "missed" | "not_scored";
+
+export type WarningLayerGrade = "correct_warning" | "missed_warning" | "not_applicable";
+
+export type ReceiptQaStatus = "verified" | "needs_stats_review" | "needs_source_review";
+
+export interface PostFightReceipt {
+  receiptLabel: ReceiptLabel;
+  fightShapeGrade: FightShapeGrade;
+  warningLayerGrade: WarningLayerGrade;
+  /** Surfaces an "Underconfident" supporting badge when true. */
+  underconfident?: boolean;
+  receiptSummary: string;
+  whatModelGotRight: string[];
+  whatModelMissed: string[];
+  modelLesson: string;
+  vNextSignals: string[];
+  mediaNarrative: string | null;
+  statSummary: string | null;
+  qaStatus: ReceiptQaStatus;
+}
+
+export interface CardReceipt {
+  status: "scored";
+  rawWinnerRecord: { correct: number; total: number };
+  finishBucketRecord: { correct: number; total: number };
+  cleanReadCount: number;
+  missedReadCount: number;
+  /** Contrarian warnings vindicated — a manual warning that challenged the model lean and proved right. */
+  warningCorrectCount: number;
+  biggestModelWin: string;
+  biggestModelMiss: string;
+  bestTransparencyMoment: string;
+  summary: string;
+  mainLessons: string[];
+  qaStatus: ReceiptQaStatus;
+}
+
 export interface SourcedLandedAttempted {
   landed: number | null;
   attempted: number | null;
@@ -230,6 +289,7 @@ export interface SourcedFight {
   manualRead: string | null;
   contextNotes?: ContextualFightNote[] | null;
   modelSanity?: FightModelSanity | null;
+  postFightReceipt?: PostFightReceipt | null;
   result?: {
     winner: string;
     method: string;
@@ -269,6 +329,8 @@ export interface SourcedEvent {
     cardBlindSpots?: string[] | null;
     /** Environment note (e.g. outdoor venue). Outside model, manual. */
     environmentNote?: string | null;
+    /** Card-level post-fight receipt — present only once the event is scored. */
+    cardReceipt?: CardReceipt | null;
   };
   modeling: {
     principle: string;

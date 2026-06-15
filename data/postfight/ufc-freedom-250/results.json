@@ -1,0 +1,95 @@
+{
+  "eventId": "ufc-freedom-250",
+  "eventName": "UFC Freedom 250: Topuria vs. Gaethje",
+  "eventDate": "2026-06-14",
+  "recordedAt": "2026-06-15T06:30:00.000Z",
+  "status": "official_results_provided",
+  "qaStatus": "needs_stats_review",
+  "note": "Winner / method bucket / round provided by product owner from the live card. Exact stoppage TIMES and UFCStats totals are NOT yet transcribed — left blank and flagged for human UFCStats confirmation. Method wording uses UFC/UFCStats buckets as source of truth; media wording is narrative only.",
+  "sources": {
+    "ufcOfficial": "https://www.ufc.com/event/ufc-freedom-250",
+    "ufcstatsEvent": "https://www.ufcstats.com/ (locate UFC Freedom 250 event page — needs human confirmation of exact ticker)",
+    "espn": "https://www.espn.com/mma/fightcenter/_/id/600058854/league/ufc",
+    "cbs": "https://www.cbssports.com/ufc/news/ufc-white-house-fight-card-date-odds-ilia-topuria-justin-gaethje-alex-pereira/",
+    "mediaPlayByPlay": "MMA Fighting / Uncrowned / MMA Mania (narrative context only)"
+  },
+  "fights": [
+    {
+      "fightId": "topuria-gaethje",
+      "winner": "fighterB",
+      "winnerName": "Justin Gaethje",
+      "loserName": "Ilia Topuria",
+      "method": "ko_tko",
+      "methodDetail": "TKO (corner stoppage)",
+      "round": 4,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "pereira-gane",
+      "winner": "fighterB",
+      "winnerName": "Ciryl Gane",
+      "loserName": "Alex Pereira",
+      "method": "ko_tko",
+      "methodDetail": "TKO (punches)",
+      "round": 2,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "o-malley-zahabi",
+      "winner": "fighterA",
+      "winnerName": "Sean O'Malley",
+      "loserName": "Aiemann Zahabi",
+      "method": "ko_tko",
+      "methodDetail": "TKO (punches)",
+      "round": 2,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "hokit-lewis",
+      "winner": "fighterA",
+      "winnerName": "Josh Hokit",
+      "loserName": "Derrick Lewis",
+      "method": "ko_tko",
+      "methodDetail": "TKO (punches)",
+      "round": 2,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "ruffy-chandler",
+      "winner": "fighterA",
+      "winnerName": "Mauricio Ruffy",
+      "loserName": "Michael Chandler",
+      "method": "ko_tko",
+      "methodDetail": "KO/TKO (punches or finishing sequence — exact official wording needs confirmation)",
+      "round": 1,
+      "time": "",
+      "qaStatus": "needs_source_review"
+    },
+    {
+      "fightId": "nickal-daukaus",
+      "winner": "fighterA",
+      "winnerName": "Bo Nickal",
+      "loserName": "Kyle Daukaus",
+      "method": "ko_tko",
+      "methodDetail": "TKO (punches)",
+      "round": 1,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "lopes-garcia",
+      "winner": "fighterA",
+      "winnerName": "Diego Lopes",
+      "loserName": "Steve Garcia",
+      "method": "ko_tko",
+      "methodDetail": "KO/TKO (punches)",
+      "round": 2,
+      "time": "",
+      "qaStatus": "needs_stats_review"
+    }
+  ]
+}

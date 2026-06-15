@@ -16,6 +16,7 @@ import { getAllFightParams, getEvent, getEventFight } from "@/lib/events/registr
 import { MobileFightRead } from "@/components/MobileFightRead";
 import { ContextualNotes } from "@/components/ContextualNotes";
 import { ModelContextFooter } from "@/components/ModelSanity";
+import { PostFightReceiptCard } from "@/components/PostFightReceipt";
 import { RoundMomentumFlow } from "@/components/RoundMomentumFlow";
 import type { SourcedFighter } from "@/lib/sourced-event";
 
@@ -188,6 +189,17 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           {vm.isScored && (
             <div className="mt-4 overflow-hidden rounded-xl border border-line">
               <FightResultBanner viewModel={vm} />
+            </div>
+          )}
+
+          {/*
+            Post-fight receipt — the honest verdict + lesson. Sits between the
+            result and the preserved pre-fight call: result → receipt grade →
+            "here's exactly what we logged before the bell" (TheCall, unchanged).
+          */}
+          {vm.isScored && (
+            <div className="mt-4">
+              <PostFightReceiptCard viewModel={vm} receipt={fight.postFightReceipt} />
             </div>
           )}
 

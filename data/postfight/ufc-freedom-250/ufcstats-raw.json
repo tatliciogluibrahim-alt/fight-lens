@@ -1,0 +1,26 @@
+{
+  "eventId": "ufc-freedom-250",
+  "status": "needs_human_ufcstats_review",
+  "note": "Placeholder. No UFCStats totals have been scraped or transcribed. Do NOT treat any number here as official until a human confirms it against the UFCStats fight-detail pages. Exact stats (significant strikes landed/attempted, total strikes, takedowns, control time, knockdowns, submission attempts, round-by-round) must be filled in manually or by a reviewed scrape — not invented.",
+  "expectedFields": [
+    "significantStrikes.landed",
+    "significantStrikes.attempted",
+    "totalStrikes.landed",
+    "totalStrikes.attempted",
+    "takedowns.landed",
+    "takedowns.attempted",
+    "controlTimeSeconds",
+    "knockdowns",
+    "submissionAttempts",
+    "roundByRound"
+  ],
+  "fights": [
+    { "fightId": "topuria-gaethje", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "pereira-gane", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "o-malley-zahabi", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "hokit-lewis", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "ruffy-chandler", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "nickal-daukaus", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null },
+    { "fightId": "lopes-garcia", "status": "needs_human_ufcstats_review", "fighterA": null, "fighterB": null }
+  ]
+}

@@ -404,6 +404,7 @@ function buildFight(sourceFight, override, profilesById, detailsById, manualFigh
     manualRead: override?.manualRead ?? null,
     contextNotes: override?.contextNotes ?? null,
     modelSanity: override?.modelSanity ?? null,
+    postFightReceipt: override?.postFightReceipt ?? null,
     fighters: { fighterA, fighterB },
     keyEdges: keyEdgesFromProfiles(fighterA, fighterB),
     paths: override?.paths ?? null,
@@ -477,6 +478,7 @@ async function buildNormalizedEvent(eventId) {
       cardSummary: eventOverride.cardSummary ?? null,
       cardBlindSpots: eventOverride.cardBlindSpots ?? null,
       environmentNote: eventOverride.environmentNote ?? null,
+      cardReceipt: eventOverride.cardReceipt ?? null,
       source: eventOverride.source ?? sourceEvent.source
     },
     assetPolicy: overrides.assetPolicy,

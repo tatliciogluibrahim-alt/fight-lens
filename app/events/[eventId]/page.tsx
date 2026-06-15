@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { CardFilterTabs } from "@/components/CardFilterTabs";
 import { CardModelSanity } from "@/components/ModelSanity";
+import { CardReceiptModule } from "@/components/PostFightReceipt";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { EventHero } from "@/components/EventHero";
 import { getAllEventIds, getEvent } from "@/lib/events/registry";
@@ -57,8 +58,10 @@ export default async function EventPage({ params }: EventPageProps) {
       <AppHeader />
       <main>
         <EventHero event={event} lockedPredictions={eventLockedPredictions} />
-        {/* Card-level model read — renders only when the event carries a
-            manual cardSummary (currently UFC Freedom 250 only). */}
+        {/* Card receipt — post-fight scored summary. Renders only once the
+            event carries a cardReceipt (after results are recorded). */}
+        <CardReceiptModule receipt={event.event.cardReceipt} />
+        {/* Card-level model read — the pre-fight read, still shown as context. */}
         <CardModelSanity
           summary={event.event.cardSummary}
           blindSpots={event.event.cardBlindSpots}
