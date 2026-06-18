@@ -1,0 +1,404 @@
+{
+  "id": "c6b040021b4ceb0f",
+  "url": "http://www.ufcstats.com/fight-details/c6b040021b4ceb0f",
+  "event": {
+    "id": "b0550072e5f0afa7",
+    "name": "UFC 236: Holloway vs. Poirier 2",
+    "url": "http://www.ufcstats.com/event-details/b0550072e5f0afa7"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a0f0004aadf10b71",
+      "name": "Alexandre Pantoja",
+      "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "5aedf14771ca82d2",
+      "name": "Wilson Reis",
+      "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a0f0004aadf10b71",
+        "name": "Alexandre Pantoja",
+        "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+      },
+      {
+        "id": "5aedf14771ca82d2",
+        "name": "Wilson Reis",
+        "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 33,
+          "raw": "23 of 33"
+        },
+        "significantStrikePercent": 70,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 36,
+          "raw": "26 of 36"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:14",
+        "controlSeconds": 14
+      },
+      {
+        "fighter": {
+          "id": "5aedf14771ca82d2",
+          "name": "Wilson Reis",
+          "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "significantStrikePercent": 17,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:47",
+        "controlSeconds": 47
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "5aedf14771ca82d2",
+          "name": "Wilson Reis",
+          "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 36,
+            "raw": "26 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "5aedf14771ca82d2",
+            "name": "Wilson Reis",
+            "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "significantStrikePercent": 17,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a0f0004aadf10b71",
+        "name": "Alexandre Pantoja",
+        "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+      },
+      {
+        "id": "5aedf14771ca82d2",
+        "name": "Wilson Reis",
+        "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 33,
+          "raw": "23 of 33"
+        },
+        "significantStrikePercent": 70,
+        "head": {
+          "landed": 19,
+          "attempted": 28,
+          "raw": "19 of 28"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 21,
+          "raw": "16 of 21"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5aedf14771ca82d2",
+          "name": "Wilson Reis",
+          "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "significantStrikePercent": 17,
+        "head": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "5aedf14771ca82d2",
+          "name": "Wilson Reis",
+          "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 19,
+            "attempted": 28,
+            "raw": "19 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 21,
+            "raw": "16 of 21"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5aedf14771ca82d2",
+            "name": "Wilson Reis",
+            "url": "http://www.ufcstats.com/fighter-details/5aedf14771ca82d2"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "significantStrikePercent": 17,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.435Z"
+  }
+}

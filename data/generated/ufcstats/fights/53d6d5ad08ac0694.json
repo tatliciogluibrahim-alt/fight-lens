@@ -1,0 +1,764 @@
+{
+  "id": "53d6d5ad08ac0694",
+  "url": "http://www.ufcstats.com/fight-details/53d6d5ad08ac0694",
+  "event": {
+    "id": "e4bb7e483c4ad318",
+    "name": "UFC 286: Edwards vs. Usman 3",
+    "url": "http://www.ufcstats.com/event-details/e4bb7e483c4ad318"
+  },
+  "title": "Women's Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "aa0c573da7119292",
+      "name": "Juliana Miller",
+      "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "4798e823ada58fe9",
+      "name": "Veronica Hardy",
+      "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Lukasz Bosacki",
+    "details": "Chris Lee 27 - 30.Vito Paolillo 27 - 30.Paul Sutherland 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "aa0c573da7119292",
+        "name": "Juliana Miller",
+        "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+      },
+      {
+        "id": "4798e823ada58fe9",
+        "name": "Veronica Hardy",
+        "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 79,
+          "raw": "30 of 79"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 49,
+          "attempted": 98,
+          "raw": "49 of 98"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 3,
+        "reversals": 0,
+        "control": "1:19",
+        "controlSeconds": 79
+      },
+      {
+        "fighter": {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 77,
+          "raw": "62 of 77"
+        },
+        "significantStrikePercent": 81,
+        "totalStrikes": {
+          "landed": 78,
+          "attempted": 95,
+          "raw": "78 of 95"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "7:36",
+        "controlSeconds": 456
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 51,
+            "raw": "25 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:46",
+          "controlSeconds": 46
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 35,
+            "raw": "26 of 35"
+          },
+          "significantStrikePercent": 74,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 41,
+            "raw": "32 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:42",
+          "controlSeconds": 42
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "significantStrikePercent": 84,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 24,
+            "raw": "20 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:45",
+          "controlSeconds": 225
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "significantStrikePercent": 21,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 23,
+            "raw": "20 of 23"
+          },
+          "significantStrikePercent": 87,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 30,
+            "raw": "26 of 30"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:09",
+          "controlSeconds": 189
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "aa0c573da7119292",
+        "name": "Juliana Miller",
+        "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+      },
+      {
+        "id": "4798e823ada58fe9",
+        "name": "Veronica Hardy",
+        "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 79,
+          "raw": "30 of 79"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 20,
+          "attempted": 63,
+          "raw": "20 of 63"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 22,
+          "attempted": 65,
+          "raw": "22 of 65"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        },
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 77,
+          "raw": "62 of 77"
+        },
+        "significantStrikePercent": 81,
+        "head": {
+          "landed": 39,
+          "attempted": 52,
+          "raw": "39 of 52"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 14,
+          "raw": "12 of 14"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 11,
+          "raw": "11 of 11"
+        },
+        "distance": {
+          "landed": 32,
+          "attempted": 43,
+          "raw": "32 of 43"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "ground": {
+          "landed": 25,
+          "attempted": 28,
+          "raw": "25 of 28"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 12,
+            "attempted": 35,
+            "raw": "12 of 35"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 35,
+            "raw": "26 of 35"
+          },
+          "significantStrikePercent": 74,
+          "head": {
+            "landed": 19,
+            "attempted": 27,
+            "raw": "19 of 27"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "significantStrikePercent": 84,
+          "head": {
+            "landed": 14,
+            "attempted": 17,
+            "raw": "14 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "aa0c573da7119292",
+          "name": "Juliana Miller",
+          "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+        },
+        {
+          "id": "4798e823ada58fe9",
+          "name": "Veronica Hardy",
+          "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa0c573da7119292",
+            "name": "Juliana Miller",
+            "url": "http://www.ufcstats.com/fighter-details/aa0c573da7119292"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "significantStrikePercent": 21,
+          "head": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4798e823ada58fe9",
+            "name": "Veronica Hardy",
+            "url": "http://www.ufcstats.com/fighter-details/4798e823ada58fe9"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 23,
+            "raw": "20 of 23"
+          },
+          "significantStrikePercent": 87,
+          "head": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 13,
+            "raw": "13 of 13"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.631Z"
+  }
+}

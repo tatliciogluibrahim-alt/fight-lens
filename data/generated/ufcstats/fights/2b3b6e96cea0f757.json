@@ -1,0 +1,764 @@
+{
+  "id": "2b3b6e96cea0f757",
+  "url": "http://www.ufcstats.com/fight-details/2b3b6e96cea0f757",
+  "event": {
+    "id": "119ebea97e914dcf",
+    "name": "UFC 192: Cormier vs Gustafsson",
+    "url": "http://www.ufcstats.com/event-details/119ebea97e914dcf"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "202b0467521c9d6f",
+      "name": "Viktor Pesta",
+      "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "1:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": "Punches to Head From Mount"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "202b0467521c9d6f",
+        "name": "Viktor Pesta",
+        "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 63,
+          "raw": "41 of 63"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 74,
+          "raw": "51 of 74"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:29",
+        "controlSeconds": 89
+      },
+      {
+        "fighter": {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "significantStrikePercent": 62,
+        "totalStrikes": {
+          "landed": 47,
+          "attempted": 61,
+          "raw": "47 of 61"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 13,
+          "raw": "5 of 13"
+        },
+        "takedownPercent": 38,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "7:11",
+        "controlSeconds": 431
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 26,
+            "raw": "22 of 26"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedownPercent": 43,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:05",
+          "controlSeconds": 245
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 35,
+            "raw": "24 of 35"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 40,
+            "raw": "28 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:40",
+          "controlSeconds": 40
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 33,
+            "raw": "24 of 33"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "takedownPercent": 40,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:05",
+          "controlSeconds": 185
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 27,
+            "raw": "19 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "202b0467521c9d6f",
+        "name": "Viktor Pesta",
+        "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 63,
+          "raw": "41 of 63"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 36,
+          "attempted": 58,
+          "raw": "36 of 58"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "ground": {
+          "landed": 28,
+          "attempted": 40,
+          "raw": "28 of 40"
+        }
+      },
+      {
+        "fighter": {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "significantStrikePercent": 62,
+        "head": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 35,
+            "raw": "24 of 35"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 20,
+            "attempted": 31,
+            "raw": "20 of 31"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          }
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          }
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.531Z"
+  }
+}

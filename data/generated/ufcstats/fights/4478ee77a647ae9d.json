@@ -1,0 +1,764 @@
+{
+  "id": "4478ee77a647ae9d",
+  "url": "http://www.ufcstats.com/fight-details/4478ee77a647ae9d",
+  "event": {
+    "id": "398b440e73d55b8b",
+    "name": "UFC Fight Night: Hermansson vs. Vettori",
+    "url": "http://www.ufcstats.com/event-details/398b440e73d55b8b"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "327d5f279895110d",
+      "name": "Roman Dolidze",
+      "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "6ebe96a116e79e52",
+      "name": "John Allan",
+      "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Chris Lee 29 - 28.Dave Hagen 27 - 30.Mike Bell 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "327d5f279895110d",
+        "name": "Roman Dolidze",
+        "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+      },
+      {
+        "id": "6ebe96a116e79e52",
+        "name": "John Allan",
+        "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 109,
+          "raw": "51 of 109"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 118,
+          "attempted": 205,
+          "raw": "118 of 205"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "takedownPercent": 60,
+        "submissionAttempts": 3,
+        "reversals": 0,
+        "control": "7:16",
+        "controlSeconds": 436
+      },
+      {
+        "fighter": {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 86,
+          "raw": "29 of 86"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 117,
+          "raw": "48 of 117"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 38,
+            "raw": "11 of 38"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 47,
+            "raw": "19 of 47"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 3,
+          "reversals": 0,
+          "control": "2:05",
+          "controlSeconds": 125
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 57,
+            "raw": "25 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 49,
+            "attempted": 79,
+            "raw": "49 of 79"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:30",
+          "controlSeconds": 210
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 47,
+            "raw": "28 of 47"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 50,
+            "attempted": 79,
+            "raw": "50 of 79"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:41",
+          "controlSeconds": 101
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "327d5f279895110d",
+        "name": "Roman Dolidze",
+        "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+      },
+      {
+        "id": "6ebe96a116e79e52",
+        "name": "John Allan",
+        "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 109,
+          "raw": "51 of 109"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 31,
+          "attempted": 81,
+          "raw": "31 of 81"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 23,
+          "raw": "15 of 23"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 100,
+          "raw": "47 of 100"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 86,
+          "raw": "29 of 86"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 15,
+          "attempted": 64,
+          "raw": "15 of 64"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 13,
+          "raw": "5 of 13"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 84,
+          "raw": "28 of 84"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 38,
+            "raw": "11 of 38"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 5,
+            "attempted": 28,
+            "raw": "5 of 28"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 36,
+            "raw": "10 of 36"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "327d5f279895110d",
+          "name": "Roman Dolidze",
+          "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+        },
+        {
+          "id": "6ebe96a116e79e52",
+          "name": "John Allan",
+          "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "327d5f279895110d",
+            "name": "Roman Dolidze",
+            "url": "http://www.ufcstats.com/fighter-details/327d5f279895110d"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 47,
+            "raw": "28 of 47"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 18,
+            "attempted": 35,
+            "raw": "18 of 35"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 46,
+            "raw": "28 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6ebe96a116e79e52",
+            "name": "John Allan",
+            "url": "http://www.ufcstats.com/fighter-details/6ebe96a116e79e52"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 26,
+            "raw": "7 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.754Z"
+  }
+}

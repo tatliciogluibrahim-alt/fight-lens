@@ -1,0 +1,584 @@
+{
+  "id": "b80c6eba11c54778",
+  "url": "http://www.ufcstats.com/fight-details/b80c6eba11c54778",
+  "event": {
+    "id": "ee0b69e307c857e5",
+    "name": "UFC Fight Night: Burns vs. Brady",
+    "url": "http://www.ufcstats.com/event-details/ee0b69e307c857e5"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "06626b6287e1ae1e",
+      "name": "Chris Padilla",
+      "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a13d755965a4ec9f",
+      "name": "Rongzhu",
+      "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "TKO - Doctor's Stoppage",
+    "round": 2,
+    "time": "4:14",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": "Eye injury to Rongzhu"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "06626b6287e1ae1e",
+        "name": "Chris Padilla",
+        "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+      },
+      {
+        "id": "a13d755965a4ec9f",
+        "name": "Rongzhu",
+        "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 105,
+          "raw": "68 of 105"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 73,
+          "attempted": 110,
+          "raw": "73 of 110"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 88,
+          "raw": "49 of 88"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 49,
+          "attempted": 88,
+          "raw": "49 of 88"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:12",
+        "controlSeconds": 12
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "06626b6287e1ae1e",
+            "name": "Chris Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 53,
+            "raw": "35 of 53"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 53,
+            "raw": "35 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "a13d755965a4ec9f",
+            "name": "Rongzhu",
+            "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 54,
+            "raw": "27 of 54"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 54,
+            "raw": "27 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "06626b6287e1ae1e",
+            "name": "Chris Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 52,
+            "raw": "33 of 52"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 57,
+            "raw": "38 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "a13d755965a4ec9f",
+            "name": "Rongzhu",
+            "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "06626b6287e1ae1e",
+        "name": "Chris Padilla",
+        "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+      },
+      {
+        "id": "a13d755965a4ec9f",
+        "name": "Rongzhu",
+        "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 105,
+          "raw": "68 of 105"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 36,
+          "attempted": 51,
+          "raw": "36 of 51"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 42,
+          "raw": "24 of 42"
+        },
+        "distance": {
+          "landed": 62,
+          "attempted": 98,
+          "raw": "62 of 98"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        },
+        "significantStrikes": {
+          "landed": 49,
+          "attempted": 88,
+          "raw": "49 of 88"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 26,
+          "attempted": 61,
+          "raw": "26 of 61"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "distance": {
+          "landed": 43,
+          "attempted": 81,
+          "raw": "43 of 81"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "06626b6287e1ae1e",
+            "name": "Chris Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 53,
+            "raw": "35 of 53"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "distance": {
+            "landed": 35,
+            "attempted": 53,
+            "raw": "35 of 53"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a13d755965a4ec9f",
+            "name": "Rongzhu",
+            "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 54,
+            "raw": "27 of 54"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 15,
+            "attempted": 38,
+            "raw": "15 of 38"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 54,
+            "raw": "27 of 54"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "06626b6287e1ae1e",
+          "name": "Chris Padilla",
+          "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+        },
+        {
+          "id": "a13d755965a4ec9f",
+          "name": "Rongzhu",
+          "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "06626b6287e1ae1e",
+            "name": "Chris Padilla",
+            "url": "http://www.ufcstats.com/fighter-details/06626b6287e1ae1e"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 52,
+            "raw": "33 of 52"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 20,
+            "attempted": 29,
+            "raw": "20 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 45,
+            "raw": "27 of 45"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a13d755965a4ec9f",
+            "name": "Rongzhu",
+            "url": "http://www.ufcstats.com/fighter-details/a13d755965a4ec9f"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.498Z"
+  }
+}

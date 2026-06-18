@@ -1,0 +1,584 @@
+{
+  "id": "9e5bbbacf1d92cb4",
+  "url": "http://www.ufcstats.com/fight-details/9e5bbbacf1d92cb4",
+  "event": {
+    "id": "509697e08673d2e5",
+    "name": "UFC Fight Night: Font vs. Aldo",
+    "url": "http://www.ufcstats.com/event-details/509697e08673d2e5"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5442f1bc4b47eaf3",
+      "name": "Chris Curtis",
+      "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2f181c0467965b98",
+      "name": "Brendan Allen",
+      "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:58",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Knees to Body In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5442f1bc4b47eaf3",
+        "name": "Chris Curtis",
+        "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+      },
+      {
+        "id": "2f181c0467965b98",
+        "name": "Brendan Allen",
+        "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 90,
+          "raw": "61 of 90"
+        },
+        "significantStrikePercent": 68,
+        "totalStrikes": {
+          "landed": 64,
+          "attempted": 96,
+          "raw": "64 of 96"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:43",
+        "controlSeconds": 43
+      },
+      {
+        "fighter": {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 71,
+          "raw": "43 of 71"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 44,
+          "attempted": 72,
+          "raw": "44 of 72"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 49,
+            "raw": "31 of 49"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 55,
+            "raw": "34 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:26",
+          "controlSeconds": 26
+        },
+        {
+          "fighter": {
+            "id": "2f181c0467965b98",
+            "name": "Brendan Allen",
+            "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 45,
+            "raw": "22 of 45"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 41,
+            "raw": "30 of 41"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 41,
+            "raw": "30 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        },
+        {
+          "fighter": {
+            "id": "2f181c0467965b98",
+            "name": "Brendan Allen",
+            "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 26,
+            "raw": "21 of 26"
+          },
+          "significantStrikePercent": 81,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 26,
+            "raw": "21 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5442f1bc4b47eaf3",
+        "name": "Chris Curtis",
+        "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+      },
+      {
+        "id": "2f181c0467965b98",
+        "name": "Brendan Allen",
+        "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 90,
+          "raw": "61 of 90"
+        },
+        "significantStrikePercent": 68,
+        "head": {
+          "landed": 38,
+          "attempted": 65,
+          "raw": "38 of 65"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 22,
+          "raw": "20 of 22"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 49,
+          "attempted": 76,
+          "raw": "49 of 76"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 71,
+          "raw": "43 of 71"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 26,
+          "attempted": 53,
+          "raw": "26 of 53"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "distance": {
+          "landed": 39,
+          "attempted": 66,
+          "raw": "39 of 66"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 49,
+            "raw": "31 of 49"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 22,
+            "attempted": 39,
+            "raw": "22 of 39"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 46,
+            "raw": "29 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2f181c0467965b98",
+            "name": "Brendan Allen",
+            "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 45,
+            "raw": "22 of 45"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 11,
+            "attempted": 33,
+            "raw": "11 of 33"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 44,
+            "raw": "22 of 44"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 41,
+            "raw": "30 of 41"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 16,
+            "attempted": 26,
+            "raw": "16 of 26"
+          },
+          "body": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2f181c0467965b98",
+            "name": "Brendan Allen",
+            "url": "http://www.ufcstats.com/fighter-details/2f181c0467965b98"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 26,
+            "raw": "21 of 26"
+          },
+          "significantStrikePercent": 81,
+          "head": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 22,
+            "raw": "17 of 22"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.495Z"
+  }
+}

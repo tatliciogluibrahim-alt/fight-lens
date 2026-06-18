@@ -316,6 +316,95 @@ function extractMissingFlags(features: AsOfFightFeatures): string[] {
   return flags;
 }
 
+// ─── Calibration CSV export ───────────────────────────────────────────────────
+//
+// One row per scored fight (directional outcomes only). All values come from the
+// as-of backtest path: predicted_prob_a and raw_delta are the model's as-of
+// prediction (career averages recomputed from history strictly before the event
+// date), NOT the current-snapshot stats.
+
+// Deterministic 0/1 parity from a string — used to symmetrize A/B assignment.
+function hashParity(s: string): 0 | 1 {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return (h & 1) as 0 | 1;
+}
+
+function writeCalibrationCsv(
+  rows: BacktestRow[],
+  skipReport: Array<{ event: string; fightId: string; reason: string }>,
+): void {
+  const header = [
+    "fight_id", "fighter_a", "fighter_b", "predicted_prob_a", "outcome_a",
+    "raw_delta", "fight_date", "close_flag", "asof_frozen",
+  ];
+  const esc = (s: string) => (/[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s);
+  const lines: string[] = [header.join(",")];
+  const dates: string[] = [];
+  let caveats = 0;
+  let outcomeASum = 0;
+  let written = 0;
+
+  for (const r of rows) {
+    if (!r.outcome) continue;
+    const w = r.outcome.winner;
+    if (w !== "fighterA" && w !== "fighterB") continue; // directional only
+
+    // ── Symmetrization (CRITICAL) ──────────────────────────────────────────────
+    // The normalized event data lists the WINNER first, so raw fighterA wins ~98%
+    // of fights. Pairing a ~0.5 prediction against an outcome that's almost always
+    // 1 is confounded with position, not skill, and is useless for calibration.
+    // We deterministically swap A/B for ~half the fights (seeded by fight_id) so
+    // that outcome_a ≈ 50% and the dataset is calibration-valid. predicted_prob_a,
+    // outcome_a, raw_delta, and the fighter labels are all flipped consistently;
+    // close_flag is invariant under p → 1−p.
+    const swap = hashParity(r.fightId) === 1;
+    const probARaw = r.prediction.fighterAWinProbability / 100;
+    const probA = swap ? 1 - probARaw : probARaw;
+    const outcomeA = (w === "fighterA") === !swap ? 1 : 0;
+    const rawDelta = r.prediction.rawDelta;
+    const rawDeltaOut = rawDelta == null ? null : swap ? -rawDelta : rawDelta;
+    const nameA = swap ? r.fighters.fighterB : r.fighters.fighterA;
+    const nameB = swap ? r.fighters.fighterA : r.fighters.fighterB;
+
+    const closeFlag = Math.abs(probA - 0.5) < 0.10 ? 1 : 0;
+    const asofFrozen = r.leakageReport.passed ? 1 : 0; // 1 = firewall clean; 0 = thin-history caveat
+    if (!asofFrozen) caveats++;
+    outcomeASum += outcomeA;
+    written++;
+    dates.push(r.asOfDate);
+
+    lines.push([
+      esc(r.fightId),
+      esc(nameA),
+      esc(nameB),
+      probA.toFixed(4),
+      String(outcomeA),
+      rawDeltaOut != null ? rawDeltaOut.toFixed(6) : "",
+      r.asOfDate,
+      String(closeFlag),
+      String(asofFrozen),
+    ].join(","));
+  }
+
+  const outPath = repoPath("scripts/backtest/export_calibration_253.csv");
+  fs.writeFileSync(outPath, lines.join("\n") + "\n");
+
+  const sorted = [...dates].sort();
+  const dateSkips = skipReport.filter((s) => /date/i.test(s.reason)).length;
+  console.log(`\n=== Calibration CSV export ===`);
+  console.log(`Wrote ${written} fight rows → ${path.relative(REPO_ROOT, outPath)}`);
+  console.log(`Date range: ${sorted[0] ?? "n/a"} → ${sorted[sorted.length - 1] ?? "n/a"}`);
+  console.log(`Symmetrized A/B (seeded by fight_id): outcome_a base rate is now ${(100 * outcomeASum / Math.max(written, 1)).toFixed(1)}% (was ~98% winner-first before symmetrization).`);
+  console.log(`as-of caveats: ${caveats} row(s) flagged asof_frozen=0 — this is THIN PRE-FIGHT HISTORY, not future-data leakage (the date firewall still applied).`);
+  console.log(`fights excluded from corpus for unparseable event date: ${dateSkips}`);
+  console.log(
+    `AS-OF CONFIRMATION: UFCStats inputs are FROZEN at fight date — career averages ` +
+    `(slpm, sapm, takedown rates, etc.) are recomputed from each fighter's prior bouts ` +
+    `filtered to strictly before the event date, NOT pulled as-of today.`,
+  );
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -458,6 +547,9 @@ async function main() {
   }
 
   console.log(`\n=== Processed ${rows.length} fights with outcomes ===\n`);
+
+  // Export the calibration CSV for external model review.
+  writeCalibrationCsv(rows, skipReport);
 
   if (rows.length === 0) {
     console.error("No fights scored. Cannot write output files.");

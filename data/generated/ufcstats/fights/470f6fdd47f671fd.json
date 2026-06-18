@@ -1,0 +1,404 @@
+{
+  "id": "470f6fdd47f671fd",
+  "url": "http://www.ufcstats.com/fight-details/470f6fdd47f671fd",
+  "event": {
+    "id": "56f4b81ec4db61af",
+    "name": "UFC on FX: Belfort vs Bisping",
+    "url": "http://www.ufcstats.com/event-details/56f4b81ec4db61af"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64a50dad704d1d49",
+      "name": "Edson Barboza",
+      "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "7413b80dbb0f8f9f",
+      "name": "Lucas Martins",
+      "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:38",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mario Yamasaki",
+    "details": "Punches to Head On GroundSubmission to Strikes"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "7413b80dbb0f8f9f",
+        "name": "Lucas Martins",
+        "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 45,
+          "raw": "26 of 45"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 49,
+          "raw": "29 of 49"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "7413b80dbb0f8f9f",
+          "name": "Lucas Martins",
+          "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 31,
+          "raw": "12 of 31"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 31,
+          "raw": "12 of 31"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "7413b80dbb0f8f9f",
+          "name": "Lucas Martins",
+          "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 45,
+            "raw": "26 of 45"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 49,
+            "raw": "29 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "7413b80dbb0f8f9f",
+            "name": "Lucas Martins",
+            "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "7413b80dbb0f8f9f",
+        "name": "Lucas Martins",
+        "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 45,
+          "raw": "26 of 45"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 15,
+          "attempted": 30,
+          "raw": "15 of 30"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 36,
+          "raw": "20 of 36"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7413b80dbb0f8f9f",
+          "name": "Lucas Martins",
+          "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 31,
+          "raw": "12 of 31"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 9,
+          "attempted": 27,
+          "raw": "9 of 27"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 31,
+          "raw": "12 of 31"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "7413b80dbb0f8f9f",
+          "name": "Lucas Martins",
+          "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 45,
+            "raw": "26 of 45"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7413b80dbb0f8f9f",
+            "name": "Lucas Martins",
+            "url": "http://www.ufcstats.com/fighter-details/7413b80dbb0f8f9f"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.550Z"
+  }
+}

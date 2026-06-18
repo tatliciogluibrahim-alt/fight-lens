@@ -1,0 +1,584 @@
+{
+  "id": "b6bd31215bd7ec1f",
+  "url": "http://www.ufcstats.com/fight-details/b6bd31215bd7ec1f",
+  "event": {
+    "id": "d1d20e651e6cbc02",
+    "name": "UFC Fight Night: Dos Santos vs. Tuivasa",
+    "url": "http://www.ufcstats.com/event-details/d1d20e651e6cbc02"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c62fbc117d57b943",
+      "name": "Tai Tuivasa",
+      "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "63def5a5662a6917",
+      "name": "Junior Dos Santos",
+      "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:30",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punches to Head From Mount"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c62fbc117d57b943",
+        "name": "Tai Tuivasa",
+        "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+      },
+      {
+        "id": "63def5a5662a6917",
+        "name": "Junior Dos Santos",
+        "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 42,
+          "raw": "16 of 42"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 46,
+          "raw": "16 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:16",
+        "controlSeconds": 76
+      },
+      {
+        "fighter": {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 65,
+          "raw": "26 of 65"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 37,
+          "attempted": 77,
+          "raw": "37 of 77"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:47",
+        "controlSeconds": 47
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:57",
+          "controlSeconds": 57
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 42,
+            "raw": "16 of 42"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 52,
+            "raw": "25 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c62fbc117d57b943",
+        "name": "Tai Tuivasa",
+        "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+      },
+      {
+        "id": "63def5a5662a6917",
+        "name": "Junior Dos Santos",
+        "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 42,
+          "raw": "16 of 42"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 9,
+          "attempted": 33,
+          "raw": "9 of 33"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 32,
+          "raw": "10 of 32"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 65,
+          "raw": "26 of 65"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 20,
+          "attempted": 55,
+          "raw": "20 of 55"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 37,
+          "raw": "15 of 37"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 27,
+          "raw": "11 of 27"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 6,
+            "attempted": 25,
+            "raw": "6 of 25"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 22,
+            "raw": "6 of 22"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 42,
+            "raw": "16 of 42"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 16,
+            "attempted": 41,
+            "raw": "16 of 41"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.778Z"
+  }
+}

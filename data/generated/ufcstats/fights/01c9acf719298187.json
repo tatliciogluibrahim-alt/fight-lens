@@ -1,0 +1,764 @@
+{
+  "id": "01c9acf719298187",
+  "url": "http://www.ufcstats.com/fight-details/01c9acf719298187",
+  "event": {
+    "id": "620be7e0712d431b",
+    "name": "UFC Fight Night: Poirier vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/620be7e0712d431b"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0c6d9ea8306c029e",
+      "name": "Brad Tavares",
+      "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "4e06913c91da5200",
+      "name": "Krzysztof Jotko",
+      "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "2:16",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Al Guinee",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "4e06913c91da5200",
+        "name": "Krzysztof Jotko",
+        "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 96,
+          "raw": "46 of 96"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 115,
+          "raw": "62 of 115"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:33",
+        "controlSeconds": 153
+      },
+      {
+        "fighter": {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 74,
+          "raw": "24 of 74"
+        },
+        "significantStrikePercent": 32,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 90,
+          "raw": "40 of 90"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:46",
+        "controlSeconds": 46
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 45,
+            "raw": "18 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:33",
+          "controlSeconds": 33
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 38,
+            "raw": "24 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:56",
+          "controlSeconds": 116
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 36,
+            "raw": "22 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 32,
+            "raw": "20 of 32"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 32,
+            "raw": "20 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 25,
+            "raw": "5 of 25"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 25,
+            "raw": "5 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "4e06913c91da5200",
+        "name": "Krzysztof Jotko",
+        "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 96,
+          "raw": "46 of 96"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 23,
+          "attempted": 64,
+          "raw": "23 of 64"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "leg": {
+          "landed": 17,
+          "attempted": 17,
+          "raw": "17 of 17"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 76,
+          "raw": "33 of 76"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 74,
+          "raw": "24 of 74"
+        },
+        "significantStrikePercent": 32,
+        "head": {
+          "landed": 18,
+          "attempted": 62,
+          "raw": "18 of 62"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 55,
+          "raw": "13 of 55"
+        },
+        "clinch": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 3,
+            "attempted": 22,
+            "raw": "3 of 22"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 36,
+            "raw": "12 of 36"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 17,
+            "raw": "4 of 17"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 17,
+            "raw": "4 of 17"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "4e06913c91da5200",
+          "name": "Krzysztof Jotko",
+          "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 32,
+            "raw": "20 of 32"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4e06913c91da5200",
+            "name": "Krzysztof Jotko",
+            "url": "http://www.ufcstats.com/fighter-details/4e06913c91da5200"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 25,
+            "raw": "5 of 25"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 5,
+            "attempted": 25,
+            "raw": "5 of 25"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.470Z"
+  }
+}

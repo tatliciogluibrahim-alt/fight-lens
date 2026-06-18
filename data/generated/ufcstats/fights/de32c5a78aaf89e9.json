@@ -1,0 +1,404 @@
+{
+  "id": "de32c5a78aaf89e9",
+  "url": "http://www.ufcstats.com/fight-details/de32c5a78aaf89e9",
+  "event": {
+    "id": "03b1e846b09f721d",
+    "name": "UFC 227: Dillashaw vs. Garbrandt 2",
+    "url": "http://www.ufcstats.com/event-details/03b1e846b09f721d"
+  },
+  "title": "UFC Bantamweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8c7c61b176e3994",
+      "name": "Cody Garbrandt",
+      "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "c849740a3ff51931",
+      "name": "TJ Dillashaw",
+      "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:10",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "c849740a3ff51931",
+        "name": "TJ Dillashaw",
+        "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 43,
+          "raw": "17 of 43"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 43,
+          "raw": "17 of 43"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "c849740a3ff51931",
+          "name": "TJ Dillashaw",
+          "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 72,
+          "raw": "45 of 72"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 78,
+          "raw": "51 of 78"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:30",
+        "controlSeconds": 30
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "c849740a3ff51931",
+          "name": "TJ Dillashaw",
+          "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 43,
+            "raw": "17 of 43"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 43,
+            "raw": "17 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "c849740a3ff51931",
+            "name": "TJ Dillashaw",
+            "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 72,
+            "raw": "45 of 72"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 51,
+            "attempted": 78,
+            "raw": "51 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "c849740a3ff51931",
+        "name": "TJ Dillashaw",
+        "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 43,
+          "raw": "17 of 43"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 14,
+          "attempted": 37,
+          "raw": "14 of 37"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 39,
+          "raw": "14 of 39"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c849740a3ff51931",
+          "name": "TJ Dillashaw",
+          "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 72,
+          "raw": "45 of 72"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 37,
+          "attempted": 60,
+          "raw": "37 of 60"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 38,
+          "raw": "16 of 38"
+        },
+        "clinch": {
+          "landed": 15,
+          "attempted": 16,
+          "raw": "15 of 16"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 18,
+          "raw": "14 of 18"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "c849740a3ff51931",
+          "name": "TJ Dillashaw",
+          "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 43,
+            "raw": "17 of 43"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 14,
+            "attempted": 37,
+            "raw": "14 of 37"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c849740a3ff51931",
+            "name": "TJ Dillashaw",
+            "url": "http://www.ufcstats.com/fighter-details/c849740a3ff51931"
+          },
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 72,
+            "raw": "45 of 72"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 37,
+            "attempted": 60,
+            "raw": "37 of 60"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 38,
+            "raw": "16 of 38"
+          },
+          "clinch": {
+            "landed": 15,
+            "attempted": 16,
+            "raw": "15 of 16"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 18,
+            "raw": "14 of 18"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.503Z"
+  }
+}

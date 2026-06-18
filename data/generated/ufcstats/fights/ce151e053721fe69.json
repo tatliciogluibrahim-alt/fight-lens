@@ -1,0 +1,404 @@
+{
+  "id": "ce151e053721fe69",
+  "url": "http://www.ufcstats.com/fight-details/ce151e053721fe69",
+  "event": {
+    "id": "e15d0a2519d6a0b5",
+    "name": "UFC Fight Night: Santos vs. Walker",
+    "url": "http://www.ufcstats.com/event-details/e15d0a2519d6a0b5"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3a46b268013afede",
+      "name": "Kevin Holland",
+      "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede",
+      "nickname": null,
+      "result": "NC"
+    },
+    {
+      "id": "d6c0cdd7e467c440",
+      "name": "Kyle Daukaus",
+      "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440",
+      "nickname": null,
+      "result": "NC"
+    }
+  ],
+  "result": {
+    "method": "Overturned",
+    "round": 1,
+    "time": "3:43",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Daukaus submission overturned on replay"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3a46b268013afede",
+        "name": "Kevin Holland",
+        "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+      },
+      {
+        "id": "d6c0cdd7e467c440",
+        "name": "Kyle Daukaus",
+        "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a46b268013afede",
+          "name": "Kevin Holland",
+          "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 28,
+          "raw": "24 of 28"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:04",
+        "controlSeconds": 64
+      },
+      {
+        "fighter": {
+          "id": "d6c0cdd7e467c440",
+          "name": "Kyle Daukaus",
+          "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 13,
+          "raw": "9 of 13"
+        },
+        "significantStrikePercent": 69,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 3,
+        "reversals": 0,
+        "control": "2:10",
+        "controlSeconds": 130
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a46b268013afede",
+          "name": "Kevin Holland",
+          "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+        },
+        {
+          "id": "d6c0cdd7e467c440",
+          "name": "Kyle Daukaus",
+          "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a46b268013afede",
+            "name": "Kevin Holland",
+            "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 28,
+            "raw": "24 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:04",
+          "controlSeconds": 64
+        },
+        {
+          "fighter": {
+            "id": "d6c0cdd7e467c440",
+            "name": "Kyle Daukaus",
+            "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 25,
+            "raw": "19 of 25"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 3,
+          "reversals": 0,
+          "control": "2:10",
+          "controlSeconds": 130
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3a46b268013afede",
+        "name": "Kevin Holland",
+        "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+      },
+      {
+        "id": "d6c0cdd7e467c440",
+        "name": "Kyle Daukaus",
+        "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a46b268013afede",
+          "name": "Kevin Holland",
+          "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d6c0cdd7e467c440",
+          "name": "Kyle Daukaus",
+          "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 13,
+          "raw": "9 of 13"
+        },
+        "significantStrikePercent": 69,
+        "head": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "3a46b268013afede",
+          "name": "Kevin Holland",
+          "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+        },
+        {
+          "id": "d6c0cdd7e467c440",
+          "name": "Kyle Daukaus",
+          "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a46b268013afede",
+            "name": "Kevin Holland",
+            "url": "http://www.ufcstats.com/fighter-details/3a46b268013afede"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d6c0cdd7e467c440",
+            "name": "Kyle Daukaus",
+            "url": "http://www.ufcstats.com/fighter-details/d6c0cdd7e467c440"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.643Z"
+  }
+}

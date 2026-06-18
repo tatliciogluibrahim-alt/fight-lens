@@ -1,0 +1,764 @@
+{
+  "id": "fd3e8f61d8fda839",
+  "url": "http://www.ufcstats.com/fight-details/fd3e8f61d8fda839",
+  "event": {
+    "id": "94a5aaf573f780ad",
+    "name": "UFC Fight Night: Rodriguez vs. Stephens",
+    "url": "http://www.ufcstats.com/event-details/94a5aaf573f780ad"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "792be9a24df82ed6",
+      "name": "Brandon Moreno",
+      "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6",
+      "nickname": null,
+      "result": "D"
+    },
+    {
+      "id": "b1d19449397541dc",
+      "name": "Askar Askarov",
+      "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc",
+      "nickname": null,
+      "result": "D"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Junichiro Kamijo 29 - 28.Bladimir Puga 27 - 30.Sal D'amato 28 - 28."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "b1d19449397541dc",
+        "name": "Askar Askarov",
+        "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 82,
+          "raw": "34 of 82"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 120,
+          "raw": "70 of 120"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "6:25",
+        "controlSeconds": 385
+      },
+      {
+        "fighter": {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 63,
+          "raw": "30 of 63"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 53,
+          "attempted": 90,
+          "raw": "53 of 90"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "takedownPercent": 36,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:59",
+        "controlSeconds": 239
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 36,
+            "raw": "14 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:39",
+          "controlSeconds": 99
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 37,
+            "raw": "25 of 37"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:32",
+          "controlSeconds": 92
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:27",
+          "controlSeconds": 27
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 36,
+            "raw": "13 of 36"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:17",
+          "controlSeconds": 137
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 43,
+            "raw": "36 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:19",
+          "controlSeconds": 259
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 17,
+            "raw": "15 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "b1d19449397541dc",
+        "name": "Askar Askarov",
+        "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 82,
+          "raw": "34 of 82"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 28,
+          "attempted": 69,
+          "raw": "28 of 69"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 12,
+          "raw": "6 of 12"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 55,
+          "raw": "18 of 55"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 63,
+          "raw": "30 of 63"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 24,
+          "attempted": 56,
+          "raw": "24 of 56"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 39,
+          "raw": "9 of 39"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 20,
+          "raw": "17 of 20"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 7,
+            "attempted": 29,
+            "raw": "7 of 29"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 25,
+            "raw": "4 of 25"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "b1d19449397541dc",
+          "name": "Askar Askarov",
+          "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1d19449397541dc",
+            "name": "Askar Askarov",
+            "url": "http://www.ufcstats.com/fighter-details/b1d19449397541dc"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.474Z"
+  }
+}

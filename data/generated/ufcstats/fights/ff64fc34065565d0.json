@@ -1,0 +1,764 @@
+{
+  "id": "ff64fc34065565d0",
+  "url": "http://www.ufcstats.com/fight-details/ff64fc34065565d0",
+  "event": {
+    "id": "aae0897825336b1a",
+    "name": "UFC Fight Night: Condit vs Alves",
+    "url": "http://www.ufcstats.com/event-details/aae0897825336b1a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "07225ba28ae309b6",
+      "name": "Charles Oliveira",
+      "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "6fb1ba67bef41b37",
+      "name": "Nik Lentz",
+      "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 3,
+    "time": "1:10",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin MacDonald",
+    "details": "Guillotine Choke After Drop to Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "07225ba28ae309b6",
+        "name": "Charles Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+      },
+      {
+        "id": "6fb1ba67bef41b37",
+        "name": "Nik Lentz",
+        "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 84,
+          "raw": "64 of 84"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 84,
+          "attempted": 105,
+          "raw": "84 of 105"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:58",
+        "controlSeconds": 118
+      },
+      {
+        "fighter": {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 69,
+          "raw": "37 of 69"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 58,
+          "attempted": 95,
+          "raw": "58 of 95"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 10,
+          "raw": "2 of 10"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "6:21",
+        "controlSeconds": 381
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 60,
+            "raw": "45 of 60"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 52,
+            "attempted": 68,
+            "raw": "52 of 68"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:26",
+          "controlSeconds": 86
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 45,
+            "raw": "27 of 45"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 53,
+            "raw": "34 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:57",
+          "controlSeconds": 117
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "significantStrikePercent": 86,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 27,
+            "raw": "25 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 35,
+            "raw": "23 of 35"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:05",
+          "controlSeconds": 245
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "significantStrikePercent": 70,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "07225ba28ae309b6",
+        "name": "Charles Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+      },
+      {
+        "id": "6fb1ba67bef41b37",
+        "name": "Nik Lentz",
+        "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        "significantStrikes": {
+          "landed": 64,
+          "attempted": 84,
+          "raw": "64 of 84"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 36,
+          "attempted": 51,
+          "raw": "36 of 51"
+        },
+        "body": {
+          "landed": 25,
+          "attempted": 28,
+          "raw": "25 of 28"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 20,
+          "raw": "13 of 20"
+        },
+        "clinch": {
+          "landed": 23,
+          "attempted": 27,
+          "raw": "23 of 27"
+        },
+        "ground": {
+          "landed": 28,
+          "attempted": 37,
+          "raw": "28 of 37"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 69,
+          "raw": "37 of 69"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 24,
+          "attempted": 53,
+          "raw": "24 of 53"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 41,
+          "raw": "19 of 41"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 21,
+          "raw": "12 of 21"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 60,
+            "raw": "45 of 60"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 26,
+            "attempted": 40,
+            "raw": "26 of 40"
+          },
+          "body": {
+            "landed": 19,
+            "attempted": 20,
+            "raw": "19 of 20"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "clinch": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "ground": {
+            "landed": 21,
+            "attempted": 29,
+            "raw": "21 of 29"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 45,
+            "raw": "27 of 45"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 18,
+            "raw": "11 of 18"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "significantStrikePercent": 86,
+          "head": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "07225ba28ae309b6",
+          "name": "Charles Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+        },
+        {
+          "id": "6fb1ba67bef41b37",
+          "name": "Nik Lentz",
+          "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "07225ba28ae309b6",
+            "name": "Charles Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/07225ba28ae309b6"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "significantStrikePercent": 70,
+          "head": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6fb1ba67bef41b37",
+            "name": "Nik Lentz",
+            "url": "http://www.ufcstats.com/fighter-details/6fb1ba67bef41b37"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "head": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.489Z"
+  }
+}

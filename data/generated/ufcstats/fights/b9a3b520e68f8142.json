@@ -1,0 +1,584 @@
+{
+  "id": "b9a3b520e68f8142",
+  "url": "http://www.ufcstats.com/fight-details/b9a3b520e68f8142",
+  "event": {
+    "id": "aa3153a9941b4d44",
+    "name": "UFC Fight Night: Magny vs. Ponzinibbio",
+    "url": "http://www.ufcstats.com/event-details/aa3153a9941b4d44"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7c7332319c14094c",
+      "name": "Marlon Vera",
+      "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d05412b513b19621",
+      "name": "Guido Cannetti",
+      "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:31",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Eduardo Herdy",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7c7332319c14094c",
+        "name": "Marlon Vera",
+        "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+      },
+      {
+        "id": "d05412b513b19621",
+        "name": "Guido Cannetti",
+        "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 35,
+          "raw": "24 of 35"
+        },
+        "significantStrikePercent": 69,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 48,
+          "raw": "36 of 48"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:21",
+        "controlSeconds": 81
+      },
+      {
+        "fighter": {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 42,
+          "raw": "24 of 42"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 37,
+          "attempted": 56,
+          "raw": "37 of 56"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:48",
+        "controlSeconds": 168
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7c7332319c14094c",
+            "name": "Marlon Vera",
+            "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 26,
+            "raw": "20 of 26"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        },
+        {
+          "fighter": {
+            "id": "d05412b513b19621",
+            "name": "Guido Cannetti",
+            "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 49,
+            "raw": "34 of 49"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:32",
+          "controlSeconds": 152
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7c7332319c14094c",
+            "name": "Marlon Vera",
+            "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        },
+        {
+          "fighter": {
+            "id": "d05412b513b19621",
+            "name": "Guido Cannetti",
+            "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7c7332319c14094c",
+        "name": "Marlon Vera",
+        "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+      },
+      {
+        "id": "d05412b513b19621",
+        "name": "Guido Cannetti",
+        "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 35,
+          "raw": "24 of 35"
+        },
+        "significantStrikePercent": 69,
+        "head": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "clinch": {
+          "landed": 17,
+          "attempted": 19,
+          "raw": "17 of 19"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        },
+        "significantStrikes": {
+          "landed": 24,
+          "attempted": 42,
+          "raw": "24 of 42"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 11,
+          "attempted": 25,
+          "raw": "11 of 25"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7c7332319c14094c",
+            "name": "Marlon Vera",
+            "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d05412b513b19621",
+            "name": "Guido Cannetti",
+            "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+        },
+        {
+          "id": "d05412b513b19621",
+          "name": "Guido Cannetti",
+          "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7c7332319c14094c",
+            "name": "Marlon Vera",
+            "url": "http://www.ufcstats.com/fighter-details/7c7332319c14094c"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d05412b513b19621",
+            "name": "Guido Cannetti",
+            "url": "http://www.ufcstats.com/fighter-details/d05412b513b19621"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.676Z"
+  }
+}

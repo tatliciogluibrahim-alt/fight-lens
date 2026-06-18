@@ -1,0 +1,404 @@
+{
+  "id": "c770192a9f3261cd",
+  "url": "http://www.ufcstats.com/fight-details/c770192a9f3261cd",
+  "event": {
+    "id": "c0c1bc0766df4c00",
+    "name": "UFC Fight Night: Ngannou vs. Dos Santos",
+    "url": "http://www.ufcstats.com/event-details/c0c1bc0766df4c00"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a495f599e787614f",
+      "name": "Alonzo Menifield",
+      "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "eabf206b162b3b83",
+      "name": "Paul Craig",
+      "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:19",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punch to Head On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "eabf206b162b3b83",
+        "name": "Paul Craig",
+        "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 22,
+          "raw": "8 of 22"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:22",
+        "controlSeconds": 82
+      },
+      {
+        "fighter": {
+          "id": "eabf206b162b3b83",
+          "name": "Paul Craig",
+          "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 28,
+          "raw": "21 of 28"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:12",
+        "controlSeconds": 12
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "eabf206b162b3b83",
+          "name": "Paul Craig",
+          "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        },
+        {
+          "fighter": {
+            "id": "eabf206b162b3b83",
+            "name": "Paul Craig",
+            "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 28,
+            "raw": "21 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "eabf206b162b3b83",
+        "name": "Paul Craig",
+        "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 22,
+          "raw": "8 of 22"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 6,
+          "attempted": 20,
+          "raw": "6 of 20"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 17,
+          "raw": "3 of 17"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eabf206b162b3b83",
+          "name": "Paul Craig",
+          "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "eabf206b162b3b83",
+          "name": "Paul Craig",
+          "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 17,
+            "raw": "3 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eabf206b162b3b83",
+            "name": "Paul Craig",
+            "url": "http://www.ufcstats.com/fighter-details/eabf206b162b3b83"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.445Z"
+  }
+}

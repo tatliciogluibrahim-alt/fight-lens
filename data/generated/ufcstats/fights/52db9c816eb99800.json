@@ -1,0 +1,584 @@
+{
+  "id": "52db9c816eb99800",
+  "url": "http://www.ufcstats.com/fight-details/52db9c816eb99800",
+  "event": {
+    "id": "30e8b4505f5ccf92",
+    "name": "The Ultimate Fighter: A New World Champion Finale",
+    "url": "http://www.ufcstats.com/event-details/30e8b4505f5ccf92"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6ac9bc2953c47345",
+      "name": "Gerald Meerschaert",
+      "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b9664eae2ac75262",
+      "name": "Eric Spicely",
+      "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Kick to Body At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "b9664eae2ac75262",
+        "name": "Eric Spicely",
+        "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 85,
+          "raw": "36 of 85"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 95,
+          "raw": "45 of 95"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:21",
+        "controlSeconds": 21
+      },
+      {
+        "fighter": {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 59,
+          "attempted": 81,
+          "raw": "59 of 81"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:41",
+        "controlSeconds": 221
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 42,
+            "raw": "21 of 42"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 51,
+            "raw": "29 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:21",
+          "controlSeconds": 21
+        },
+        {
+          "fighter": {
+            "id": "b9664eae2ac75262",
+            "name": "Eric Spicely",
+            "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 50,
+            "attempted": 61,
+            "raw": "50 of 61"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:34",
+          "controlSeconds": 214
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 44,
+            "raw": "16 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "b9664eae2ac75262",
+            "name": "Eric Spicely",
+            "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "b9664eae2ac75262",
+        "name": "Eric Spicely",
+        "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 85,
+          "raw": "36 of 85"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 30,
+          "attempted": 77,
+          "raw": "30 of 77"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 82,
+          "raw": "33 of 82"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 15,
+          "attempted": 28,
+          "raw": "15 of 28"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 24,
+          "raw": "11 of 24"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 42,
+            "raw": "21 of 42"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9664eae2ac75262",
+            "name": "Eric Spicely",
+            "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "b9664eae2ac75262",
+          "name": "Eric Spicely",
+          "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 10,
+            "attempted": 36,
+            "raw": "10 of 36"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 41,
+            "raw": "13 of 41"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b9664eae2ac75262",
+            "name": "Eric Spicely",
+            "url": "http://www.ufcstats.com/fighter-details/b9664eae2ac75262"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.560Z"
+  }
+}

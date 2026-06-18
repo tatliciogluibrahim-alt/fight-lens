@@ -1,0 +1,764 @@
+{
+  "id": "037c68d03c970609",
+  "url": "http://www.ufcstats.com/fight-details/037c68d03c970609",
+  "event": {
+    "id": "daa89f01e1c0f42a",
+    "name": "UFC Fight Night: Emmett vs. Stephens",
+    "url": "http://www.ufcstats.com/event-details/daa89f01e1c0f42a"
+  },
+  "title": "Women's Strawweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f0feeb2192937424",
+      "name": "Angela Hill",
+      "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b4192a975027aab6",
+      "name": "Maryna Moroz",
+      "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jorge Alonso",
+    "details": "Chris Lee 27 - 30.Dave Tirelli 27 - 30.Eric Colon 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f0feeb2192937424",
+        "name": "Angela Hill",
+        "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+      },
+      {
+        "id": "b4192a975027aab6",
+        "name": "Maryna Moroz",
+        "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 114,
+          "attempted": 209,
+          "raw": "114 of 209"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 121,
+          "attempted": 216,
+          "raw": "121 of 216"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:01",
+        "controlSeconds": 121
+      },
+      {
+        "fighter": {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 321,
+          "raw": "84 of 321"
+        },
+        "significantStrikePercent": 26,
+        "totalStrikes": {
+          "landed": 100,
+          "attempted": 339,
+          "raw": "100 of 339"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:31",
+        "controlSeconds": 31
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 73,
+            "raw": "38 of 73"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 74,
+            "raw": "39 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:28",
+          "controlSeconds": 28
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 104,
+            "raw": "26 of 104"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 113,
+            "raw": "33 of 113"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 54,
+            "raw": "29 of 54"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 59,
+            "raw": "34 of 59"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:10",
+          "controlSeconds": 70
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 87,
+            "raw": "19 of 87"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 94,
+            "raw": "26 of 94"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:31",
+          "controlSeconds": 31
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 82,
+            "raw": "47 of 82"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 48,
+            "attempted": 83,
+            "raw": "48 of 83"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 130,
+            "raw": "39 of 130"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 132,
+            "raw": "41 of 132"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f0feeb2192937424",
+        "name": "Angela Hill",
+        "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+      },
+      {
+        "id": "b4192a975027aab6",
+        "name": "Maryna Moroz",
+        "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        "significantStrikes": {
+          "landed": 114,
+          "attempted": 209,
+          "raw": "114 of 209"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 63,
+          "attempted": 144,
+          "raw": "63 of 144"
+        },
+        "body": {
+          "landed": 26,
+          "attempted": 37,
+          "raw": "26 of 37"
+        },
+        "leg": {
+          "landed": 25,
+          "attempted": 28,
+          "raw": "25 of 28"
+        },
+        "distance": {
+          "landed": 89,
+          "attempted": 182,
+          "raw": "89 of 182"
+        },
+        "clinch": {
+          "landed": 22,
+          "attempted": 24,
+          "raw": "22 of 24"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        },
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 321,
+          "raw": "84 of 321"
+        },
+        "significantStrikePercent": 26,
+        "head": {
+          "landed": 39,
+          "attempted": 241,
+          "raw": "39 of 241"
+        },
+        "body": {
+          "landed": 32,
+          "attempted": 62,
+          "raw": "32 of 62"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "distance": {
+          "landed": 78,
+          "attempted": 304,
+          "raw": "78 of 304"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 16,
+          "raw": "6 of 16"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 73,
+            "raw": "38 of 73"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 20,
+            "attempted": 47,
+            "raw": "20 of 47"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 64,
+            "raw": "30 of 64"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 104,
+            "raw": "26 of 104"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 12,
+            "attempted": 77,
+            "raw": "12 of 77"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 96,
+            "raw": "23 of 96"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 54,
+            "raw": "29 of 54"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 17,
+            "attempted": 39,
+            "raw": "17 of 39"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 42,
+            "raw": "18 of 42"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 87,
+            "raw": "19 of 87"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 9,
+            "attempted": 68,
+            "raw": "9 of 68"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 80,
+            "raw": "17 of 80"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+        },
+        {
+          "id": "b4192a975027aab6",
+          "name": "Maryna Moroz",
+          "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f0feeb2192937424",
+            "name": "Angela Hill",
+            "url": "http://www.ufcstats.com/fighter-details/f0feeb2192937424"
+          },
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 82,
+            "raw": "47 of 82"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 26,
+            "attempted": 58,
+            "raw": "26 of 58"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          },
+          "distance": {
+            "landed": 41,
+            "attempted": 76,
+            "raw": "41 of 76"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b4192a975027aab6",
+            "name": "Maryna Moroz",
+            "url": "http://www.ufcstats.com/fighter-details/b4192a975027aab6"
+          },
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 130,
+            "raw": "39 of 130"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 18,
+            "attempted": 96,
+            "raw": "18 of 96"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "distance": {
+            "landed": 38,
+            "attempted": 128,
+            "raw": "38 of 128"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.455Z"
+  }
+}

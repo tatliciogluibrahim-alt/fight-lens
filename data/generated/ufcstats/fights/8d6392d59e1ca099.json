@@ -1,0 +1,764 @@
+{
+  "id": "8d6392d59e1ca099",
+  "url": "http://www.ufcstats.com/fight-details/8d6392d59e1ca099",
+  "event": {
+    "id": "30a09e43f15f1d75",
+    "name": "UFC Fight Night: Rockhold vs Philippou",
+    "url": "http://www.ufcstats.com/event-details/30a09e43f15f1d75"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0c6d9ea8306c029e",
+      "name": "Brad Tavares",
+      "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "9450848a71d53776",
+      "name": "Lorenz Larkin",
+      "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Richard Bertrand 28 - 29.Derek Cleary 28 - 29.Glenn Trowbridge 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "9450848a71d53776",
+        "name": "Lorenz Larkin",
+        "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 112,
+          "raw": "45 of 112"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 132,
+          "raw": "62 of 132"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "takedownPercent": 22,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:11",
+        "controlSeconds": 191
+      },
+      {
+        "fighter": {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 113,
+          "raw": "39 of 113"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 43,
+          "attempted": 117,
+          "raw": "43 of 117"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:42",
+        "controlSeconds": 42
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 37,
+            "raw": "15 of 37"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 40,
+            "raw": "18 of 40"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 53,
+            "raw": "30 of 53"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:44",
+          "controlSeconds": 104
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:19",
+          "controlSeconds": 19
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:58",
+          "controlSeconds": 58
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 67,
+            "raw": "23 of 67"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 71,
+            "raw": "27 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:23",
+          "controlSeconds": 23
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "9450848a71d53776",
+        "name": "Lorenz Larkin",
+        "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 112,
+          "raw": "45 of 112"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 19,
+          "attempted": 64,
+          "raw": "19 of 64"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 27,
+          "raw": "11 of 27"
+        },
+        "leg": {
+          "landed": 15,
+          "attempted": 21,
+          "raw": "15 of 21"
+        },
+        "distance": {
+          "landed": 44,
+          "attempted": 106,
+          "raw": "44 of 106"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        },
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 113,
+          "raw": "39 of 113"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 28,
+          "attempted": 96,
+          "raw": "28 of 96"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 76,
+          "raw": "21 of 76"
+        },
+        "clinch": {
+          "landed": 18,
+          "attempted": 37,
+          "raw": "18 of 37"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 37,
+            "raw": "15 of 37"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 37,
+            "raw": "15 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 3,
+            "attempted": 20,
+            "raw": "3 of 20"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "9450848a71d53776",
+          "name": "Lorenz Larkin",
+          "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 39,
+            "raw": "14 of 39"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9450848a71d53776",
+            "name": "Lorenz Larkin",
+            "url": "http://www.ufcstats.com/fighter-details/9450848a71d53776"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 67,
+            "raw": "23 of 67"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 21,
+            "attempted": 65,
+            "raw": "21 of 65"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 30,
+            "raw": "5 of 30"
+          },
+          "clinch": {
+            "landed": 18,
+            "attempted": 37,
+            "raw": "18 of 37"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.472Z"
+  }
+}

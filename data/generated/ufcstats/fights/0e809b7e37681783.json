@@ -1,0 +1,584 @@
+{
+  "id": "0e809b7e37681783",
+  "url": "http://www.ufcstats.com/fight-details/0e809b7e37681783",
+  "event": {
+    "id": "542db012217ecb83",
+    "name": "UFC Fight Night: Overeem vs. Sakai",
+    "url": "http://www.ufcstats.com/event-details/542db012217ecb83"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a495f599e787614f",
+      "name": "Alonzo Menifield",
+      "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "50db8711c70196cd",
+      "name": "Ovince Saint Preux",
+      "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:07",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 40,
+          "raw": "19 of 40"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 43,
+          "raw": "21 of 43"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:36",
+        "controlSeconds": 36
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 80,
+          "raw": "33 of 80"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 80,
+          "raw": "33 of 80"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 40,
+          "raw": "19 of 40"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 12,
+          "attempted": 31,
+          "raw": "12 of 31"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 38,
+          "raw": "17 of 38"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 80,
+          "raw": "33 of 80"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 12,
+          "attempted": 44,
+          "raw": "12 of 44"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 31,
+          "raw": "17 of 31"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 80,
+          "raw": "33 of 80"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 23,
+            "raw": "11 of 23"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.444Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "42ad1437a1280294",
+  "url": "http://www.ufcstats.com/fight-details/42ad1437a1280294",
+  "event": {
+    "id": "20e403a1acfef130",
+    "name": "UFC 209: Woodley vs. Thompson 2",
+    "url": "http://www.ufcstats.com/event-details/20e403a1acfef130"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c9cf753cfdf77fc2",
+      "name": "Marcin Tybura",
+      "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e5bda12faabfc850",
+      "name": "Luis Henrique",
+      "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "3:46",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punches to Head From Mount"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      },
+      {
+        "id": "e5bda12faabfc850",
+        "name": "Luis Henrique",
+        "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 66,
+          "raw": "50 of 66"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 144,
+          "attempted": 174,
+          "raw": "144 of 174"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:53",
+        "controlSeconds": 173
+      },
+      {
+        "fighter": {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "significantStrikePercent": 56,
+        "totalStrikes": {
+          "landed": 59,
+          "attempted": 78,
+          "raw": "59 of 78"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "takedownPercent": 27,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "8:24",
+        "controlSeconds": 504
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 44,
+            "raw": "35 of 44"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:35",
+          "controlSeconds": 95
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 27,
+            "raw": "22 of 27"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:34",
+          "controlSeconds": 154
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 42,
+            "raw": "33 of 42"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 32,
+            "raw": "25 of 32"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:57",
+          "controlSeconds": 237
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 35,
+            "raw": "30 of 35"
+          },
+          "significantStrikePercent": 86,
+          "totalStrikes": {
+            "landed": 76,
+            "attempted": 88,
+            "raw": "76 of 88"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:18",
+          "controlSeconds": 78
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:53",
+          "controlSeconds": 113
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      },
+      {
+        "id": "e5bda12faabfc850",
+        "name": "Luis Henrique",
+        "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 66,
+          "raw": "50 of 66"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 41,
+          "attempted": 57,
+          "raw": "41 of 57"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 25,
+          "raw": "11 of 25"
+        },
+        "clinch": {
+          "landed": 20,
+          "attempted": 21,
+          "raw": "20 of 21"
+        },
+        "ground": {
+          "landed": 19,
+          "attempted": 20,
+          "raw": "19 of 20"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "significantStrikePercent": 56,
+        "head": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "e5bda12faabfc850",
+          "name": "Luis Henrique",
+          "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 35,
+            "raw": "30 of 35"
+          },
+          "significantStrikePercent": 86,
+          "head": {
+            "landed": 28,
+            "attempted": 33,
+            "raw": "28 of 33"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 19,
+            "raw": "18 of 19"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5bda12faabfc850",
+            "name": "Luis Henrique",
+            "url": "http://www.ufcstats.com/fighter-details/e5bda12faabfc850"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.673Z"
+  }
+}

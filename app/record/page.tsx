@@ -7,6 +7,7 @@ import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracy
 import { getAllEvents } from "@/lib/events/registry";
 import { computeAccuracyMetrics } from "@/lib/accuracy/calculator";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
+import { parseModelMinorVersion } from "@/lib/predictionThresholds";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
 export const metadata: Metadata = {
@@ -196,6 +197,19 @@ export default function RecordPage() {
   const completedCardCount = Array.from(groupByEvent(lockedCalls).values())
     .filter((records) => records.every((r) => r.outcome !== null)).length;
 
+  // Model-version provenance. Each call is scored against the named-call
+  // threshold of the version it was locked under; records preserve modelVersion.
+  const versionLabel = Array.from(
+    new Set(
+      lockedCalls
+        .map((r) => parseModelMinorVersion(r.modelVersion))
+        .filter((m): m is number => m != null),
+    ),
+  )
+    .sort((a, b) => a - b)
+    .map((m) => `v0.${m}`)
+    .join(" + ");
+
   return (
     <>
       <AppHeader />
@@ -220,6 +234,12 @@ export default function RecordPage() {
             <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
               Logged pre-fight: calls are logged when the card is published on this site, and are
               never edited once a result is recorded.
+            </p>
+            <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
+              Scored by model version{versionLabel ? ` (${versionLabel})` : ""}: each call is judged
+              against the named-call threshold of the version it was locked under — v0.2 and earlier
+              at 52%, v0.3+ at 58% with temperature recalibration — so past calls never shift when
+              the model is updated.
             </p>
 
             {/* Ledger row — 4 stats, public accountability feel */}

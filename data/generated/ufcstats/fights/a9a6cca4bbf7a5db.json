@@ -1,0 +1,584 @@
+{
+  "id": "a9a6cca4bbf7a5db",
+  "url": "http://www.ufcstats.com/fight-details/a9a6cca4bbf7a5db",
+  "event": {
+    "id": "8ad022dd81224f61",
+    "name": "UFC Fight Night: Burns vs. Morales",
+    "url": "http://www.ufcstats.com/event-details/8ad022dd81224f61"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "72f890c5d421e705",
+      "name": "Matheus Camilo",
+      "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "5eb50529a8418b77",
+      "name": "Gabe Green",
+      "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "3:43",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "72f890c5d421e705",
+        "name": "Matheus Camilo",
+        "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+      },
+      {
+        "id": "5eb50529a8418b77",
+        "name": "Gabe Green",
+        "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 48,
+          "raw": "33 of 48"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 67,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:30",
+        "controlSeconds": 150
+      },
+      {
+        "fighter": {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 27,
+          "raw": "12 of 27"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 57,
+          "raw": "36 of 57"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:12",
+        "controlSeconds": 132
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "72f890c5d421e705",
+            "name": "Matheus Camilo",
+            "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 43,
+            "raw": "30 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:26",
+          "controlSeconds": 86
+        },
+        {
+          "fighter": {
+            "id": "5eb50529a8418b77",
+            "name": "Gabe Green",
+            "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "72f890c5d421e705",
+            "name": "Matheus Camilo",
+            "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:04",
+          "controlSeconds": 64
+        },
+        {
+          "fighter": {
+            "id": "5eb50529a8418b77",
+            "name": "Gabe Green",
+            "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 27,
+            "raw": "19 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:03",
+          "controlSeconds": 123
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "72f890c5d421e705",
+        "name": "Matheus Camilo",
+        "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+      },
+      {
+        "id": "5eb50529a8418b77",
+        "name": "Gabe Green",
+        "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 27,
+          "raw": "13 of 27"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 6,
+          "attempted": 16,
+          "raw": "6 of 16"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 24,
+          "raw": "12 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 27,
+          "raw": "12 of 27"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 4,
+          "attempted": 16,
+          "raw": "4 of 16"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "72f890c5d421e705",
+            "name": "Matheus Camilo",
+            "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5eb50529a8418b77",
+            "name": "Gabe Green",
+            "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "72f890c5d421e705",
+          "name": "Matheus Camilo",
+          "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+        },
+        {
+          "id": "5eb50529a8418b77",
+          "name": "Gabe Green",
+          "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "72f890c5d421e705",
+            "name": "Matheus Camilo",
+            "url": "http://www.ufcstats.com/fighter-details/72f890c5d421e705"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5eb50529a8418b77",
+            "name": "Gabe Green",
+            "url": "http://www.ufcstats.com/fighter-details/5eb50529a8418b77"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.682Z"
+  }
+}

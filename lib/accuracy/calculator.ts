@@ -25,7 +25,7 @@ import type {
   ModelGrade,
   PredictionRecord,
 } from "./types";
-import { getNamedCallSide } from "@/lib/predictionThresholds";
+import { getNamedCallSide, resolveNamedCallThreshold } from "@/lib/predictionThresholds";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -50,6 +50,7 @@ function resolvedRecords(records: PredictionRecord[]) {
       getNamedCallSide(
         r.prediction.fighterAWinProbability,
         r.prediction.fighterBWinProbability,
+        resolveNamedCallThreshold(r.modelVersion),
       ) !== null,
   );
 }
@@ -148,6 +149,7 @@ export function computeAccuracyMetrics(records: PredictionRecord[]): AccuracyMet
     const namedSide = getNamedCallSide(
       r.prediction.fighterAWinProbability,
       r.prediction.fighterBWinProbability,
+      resolveNamedCallThreshold(r.modelVersion),
     );
     const favWon =
       (namedSide === "fighterA" && r.outcome.winner === "fighterA") ||

@@ -1,0 +1,404 @@
+{
+  "id": "5d5abb5dade718de",
+  "url": "http://www.ufcstats.com/fight-details/5d5abb5dade718de",
+  "event": {
+    "id": "2dc7f1762dc0a7ef",
+    "name": "UFC 203: Miocic vs. Overeem",
+    "url": "http://www.ufcstats.com/event-details/2dc7f1762dc0a7ef"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "519e4fe37ce9ff75",
+      "name": "Drew Dober",
+      "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e45cfa47f504033a",
+      "name": "Jason Gonzalez",
+      "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:45",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jerry Poe",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "519e4fe37ce9ff75",
+        "name": "Drew Dober",
+        "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+      },
+      {
+        "id": "e45cfa47f504033a",
+        "name": "Jason Gonzalez",
+        "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "519e4fe37ce9ff75",
+          "name": "Drew Dober",
+          "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 41,
+          "raw": "20 of 41"
+        },
+        "significantStrikePercent": 49,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 45,
+          "raw": "23 of 45"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "e45cfa47f504033a",
+          "name": "Jason Gonzalez",
+          "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "519e4fe37ce9ff75",
+          "name": "Drew Dober",
+          "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+        },
+        {
+          "id": "e45cfa47f504033a",
+          "name": "Jason Gonzalez",
+          "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "519e4fe37ce9ff75",
+            "name": "Drew Dober",
+            "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "e45cfa47f504033a",
+            "name": "Jason Gonzalez",
+            "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "519e4fe37ce9ff75",
+        "name": "Drew Dober",
+        "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+      },
+      {
+        "id": "e45cfa47f504033a",
+        "name": "Jason Gonzalez",
+        "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "519e4fe37ce9ff75",
+          "name": "Drew Dober",
+          "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 41,
+          "raw": "20 of 41"
+        },
+        "significantStrikePercent": 49,
+        "head": {
+          "landed": 14,
+          "attempted": 34,
+          "raw": "14 of 34"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 29,
+          "raw": "15 of 29"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e45cfa47f504033a",
+          "name": "Jason Gonzalez",
+          "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 6,
+          "attempted": 25,
+          "raw": "6 of 25"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 29,
+          "raw": "9 of 29"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "519e4fe37ce9ff75",
+          "name": "Drew Dober",
+          "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+        },
+        {
+          "id": "e45cfa47f504033a",
+          "name": "Jason Gonzalez",
+          "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "519e4fe37ce9ff75",
+            "name": "Drew Dober",
+            "url": "http://www.ufcstats.com/fighter-details/519e4fe37ce9ff75"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 14,
+            "attempted": 34,
+            "raw": "14 of 34"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e45cfa47f504033a",
+            "name": "Jason Gonzalez",
+            "url": "http://www.ufcstats.com/fighter-details/e45cfa47f504033a"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 6,
+            "attempted": 25,
+            "raw": "6 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 29,
+            "raw": "9 of 29"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.541Z"
+  }
+}

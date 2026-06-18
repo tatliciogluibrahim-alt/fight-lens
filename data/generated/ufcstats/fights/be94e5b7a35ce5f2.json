@@ -1,0 +1,764 @@
+{
+  "id": "be94e5b7a35ce5f2",
+  "url": "http://www.ufcstats.com/fight-details/be94e5b7a35ce5f2",
+  "event": {
+    "id": "3f7c14c7eca7195d",
+    "name": "UFC 258: Usman vs. Burns",
+    "url": "http://www.ufcstats.com/event-details/3f7c14c7eca7195d"
+  },
+  "title": "UFC Welterweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "23024fdfc966410a",
+      "name": "Gilbert Burns",
+      "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "f1b2aa7853d1ed6e",
+      "name": "Kamaru Usman",
+      "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:34",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punches to Head On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "23024fdfc966410a",
+        "name": "Gilbert Burns",
+        "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+      },
+      {
+        "id": "f1b2aa7853d1ed6e",
+        "name": "Kamaru Usman",
+        "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 108,
+          "raw": "45 of 108"
+        },
+        "significantStrikePercent": 42,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 124,
+          "raw": "55 of 124"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 136,
+          "raw": "83 of 136"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 93,
+          "attempted": 149,
+          "raw": "93 of 149"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:05",
+        "controlSeconds": 125
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 56,
+            "raw": "22 of 56"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 71,
+            "raw": "32 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 53,
+            "raw": "31 of 53"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 65,
+            "raw": "40 of 65"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:43",
+          "controlSeconds": 103
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 50,
+            "raw": "21 of 50"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 51,
+            "raw": "21 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 65,
+            "raw": "39 of 65"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 66,
+            "raw": "40 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "23024fdfc966410a",
+        "name": "Gilbert Burns",
+        "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+      },
+      {
+        "id": "f1b2aa7853d1ed6e",
+        "name": "Kamaru Usman",
+        "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        "significantStrikes": {
+          "landed": 45,
+          "attempted": 108,
+          "raw": "45 of 108"
+        },
+        "significantStrikePercent": 42,
+        "head": {
+          "landed": 18,
+          "attempted": 75,
+          "raw": "18 of 75"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 14,
+          "raw": "13 of 14"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 19,
+          "raw": "14 of 19"
+        },
+        "distance": {
+          "landed": 44,
+          "attempted": 104,
+          "raw": "44 of 104"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        },
+        "significantStrikes": {
+          "landed": 83,
+          "attempted": 136,
+          "raw": "83 of 136"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 56,
+          "attempted": 105,
+          "raw": "56 of 105"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "leg": {
+          "landed": 16,
+          "attempted": 16,
+          "raw": "16 of 16"
+        },
+        "distance": {
+          "landed": 54,
+          "attempted": 100,
+          "raw": "54 of 100"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 26,
+          "attempted": 32,
+          "raw": "26 of 32"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 56,
+            "raw": "22 of 56"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 12,
+            "attempted": 43,
+            "raw": "12 of 43"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 52,
+            "raw": "21 of 52"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 53,
+            "raw": "31 of 53"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 10,
+            "attempted": 31,
+            "raw": "10 of 31"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 13,
+            "attempted": 13,
+            "raw": "13 of 13"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 15,
+            "attempted": 16,
+            "raw": "15 of 16"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 50,
+            "raw": "21 of 50"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 6,
+            "attempted": 32,
+            "raw": "6 of 32"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 50,
+            "raw": "21 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 65,
+            "raw": "39 of 65"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 33,
+            "attempted": 57,
+            "raw": "33 of 57"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 39,
+            "attempted": 64,
+            "raw": "39 of 64"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "23024fdfc966410a",
+          "name": "Gilbert Burns",
+          "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+        },
+        {
+          "id": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "23024fdfc966410a",
+            "name": "Gilbert Burns",
+            "url": "http://www.ufcstats.com/fighter-details/23024fdfc966410a"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f1b2aa7853d1ed6e",
+            "name": "Kamaru Usman",
+            "url": "http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.562Z"
+  }
+}

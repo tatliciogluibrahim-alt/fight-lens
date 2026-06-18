@@ -1,0 +1,764 @@
+{
+  "id": "1521f94cafdfd783",
+  "url": "http://www.ufcstats.com/fight-details/1521f94cafdfd783",
+  "event": {
+    "id": "a7a79b8efbceaaac",
+    "name": "UFC Fight Night: Ngannou vs. Velasquez",
+    "url": "http://www.ufcstats.com/event-details/a7a79b8efbceaaac"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6d4b63c767106d3a",
+      "name": "Vicente Luque",
+      "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a331233f597090a5",
+      "name": "Bryan Barberena",
+      "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:54",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Knee to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "a331233f597090a5",
+        "name": "Bryan Barberena",
+        "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 163,
+          "attempted": 241,
+          "raw": "163 of 241"
+        },
+        "significantStrikePercent": 68,
+        "totalStrikes": {
+          "landed": 164,
+          "attempted": 242,
+          "raw": "164 of 242"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "0:40",
+        "controlSeconds": 40
+      },
+      {
+        "fighter": {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 169,
+          "attempted": 355,
+          "raw": "169 of 355"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 195,
+          "attempted": 382,
+          "raw": "195 of 382"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:31",
+        "controlSeconds": 31
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 64,
+            "raw": "37 of 64"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 64,
+            "raw": "37 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 67,
+            "raw": "30 of 67"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 82,
+            "raw": "44 of 82"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:31",
+          "controlSeconds": 31
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 55,
+            "attempted": 83,
+            "raw": "55 of 83"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 56,
+            "attempted": 84,
+            "raw": "56 of 84"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 73,
+            "attempted": 140,
+            "raw": "73 of 140"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 78,
+            "attempted": 145,
+            "raw": "78 of 145"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 71,
+            "attempted": 94,
+            "raw": "71 of 94"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 71,
+            "attempted": 94,
+            "raw": "71 of 94"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 66,
+            "attempted": 148,
+            "raw": "66 of 148"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 73,
+            "attempted": 155,
+            "raw": "73 of 155"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "a331233f597090a5",
+        "name": "Bryan Barberena",
+        "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "significantStrikes": {
+          "landed": 163,
+          "attempted": 241,
+          "raw": "163 of 241"
+        },
+        "significantStrikePercent": 68,
+        "head": {
+          "landed": 132,
+          "attempted": 209,
+          "raw": "132 of 209"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 17,
+          "raw": "17 of 17"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 15,
+          "raw": "14 of 15"
+        },
+        "distance": {
+          "landed": 140,
+          "attempted": 216,
+          "raw": "140 of 216"
+        },
+        "clinch": {
+          "landed": 16,
+          "attempted": 17,
+          "raw": "16 of 17"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        },
+        "significantStrikes": {
+          "landed": 169,
+          "attempted": 355,
+          "raw": "169 of 355"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 146,
+          "attempted": 324,
+          "raw": "146 of 324"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 23,
+          "raw": "16 of 23"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "distance": {
+          "landed": 147,
+          "attempted": 319,
+          "raw": "147 of 319"
+        },
+        "clinch": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 64,
+            "raw": "37 of 64"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 28,
+            "attempted": 55,
+            "raw": "28 of 55"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 63,
+            "raw": "36 of 63"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 67,
+            "raw": "30 of 67"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 23,
+            "attempted": 60,
+            "raw": "23 of 60"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 50,
+            "raw": "20 of 50"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 55,
+            "attempted": 83,
+            "raw": "55 of 83"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 48,
+            "attempted": 76,
+            "raw": "48 of 76"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 44,
+            "attempted": 70,
+            "raw": "44 of 70"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "significantStrikes": {
+            "landed": 73,
+            "attempted": 140,
+            "raw": "73 of 140"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 63,
+            "attempted": 125,
+            "raw": "63 of 125"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 64,
+            "attempted": 124,
+            "raw": "64 of 124"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 16,
+            "raw": "9 of 16"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "a331233f597090a5",
+          "name": "Bryan Barberena",
+          "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 71,
+            "attempted": 94,
+            "raw": "71 of 94"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 56,
+            "attempted": 78,
+            "raw": "56 of 78"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 60,
+            "attempted": 83,
+            "raw": "60 of 83"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a331233f597090a5",
+            "name": "Bryan Barberena",
+            "url": "http://www.ufcstats.com/fighter-details/a331233f597090a5"
+          },
+          "significantStrikes": {
+            "landed": 66,
+            "attempted": 148,
+            "raw": "66 of 148"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 60,
+            "attempted": 139,
+            "raw": "60 of 139"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 63,
+            "attempted": 145,
+            "raw": "63 of 145"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.793Z"
+  }
+}

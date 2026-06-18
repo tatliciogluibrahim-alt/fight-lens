@@ -18,7 +18,11 @@
  */
 import type { FightOutcomeModelOutput, OutcomeScenario } from "./types";
 import type { PredictionRecord } from "@/lib/accuracy/types";
-import { getNamedCallSide, isTooCloseToCall } from "@/lib/predictionThresholds";
+import {
+  getNamedCallSide,
+  isTooCloseToCall,
+  resolveNamedCallThreshold,
+} from "@/lib/predictionThresholds";
 
 function leanLabel(prob: number): "strong lean" | "lean" | "slight lean" | "no lean" {
   if (prob >= 70) return "strong lean";
@@ -64,8 +68,11 @@ export function pinToLockedPrediction(
   const pA = prediction.prediction.fighterAWinProbability;
   const pB = prediction.prediction.fighterBWinProbability;
   const { decision, koTko, submission } = prediction.prediction.methodBreakdown;
-  const tooClose = isTooCloseToCall(pA, pB);
-  const namedSide = getNamedCallSide(pA, pB);
+  // Evaluate the named call against the threshold of the version this prediction
+  // was locked under — not the current live threshold.
+  const threshold = resolveNamedCallThreshold(prediction.modelVersion);
+  const tooClose = isTooCloseToCall(pA, pB, threshold);
+  const namedSide = getNamedCallSide(pA, pB, threshold);
 
   const lockedFavoriteName =
     namedSide === "fighterA"
@@ -76,6 +83,9 @@ export function pinToLockedPrediction(
 
   return {
     ...liveModel,
+    // Stamp the locked call's own version so downstream threshold resolution
+    // (view model, audits) evaluates it against the version it was locked under.
+    modelVersion: prediction.modelVersion,
     tooClose,
     methodBreakdown: { decision, koTko, submission },
     fighterA: {

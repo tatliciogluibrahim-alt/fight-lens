@@ -1,0 +1,404 @@
+{
+  "id": "eda397c27787afa4",
+  "url": "http://www.ufcstats.com/fight-details/eda397c27787afa4",
+  "event": {
+    "id": "8f6a18831a120817",
+    "name": "UFC Fight Night: Santos vs. Hill",
+    "url": "http://www.ufcstats.com/event-details/8f6a18831a120817"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0d65c432720accb9",
+      "name": "Michal Oleksiejczuk",
+      "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d156513a19acf856",
+      "name": "Sam Alvey",
+      "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:56",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "d156513a19acf856",
+        "name": "Sam Alvey",
+        "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 57,
+          "raw": "40 of 57"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      },
+      {
+        "fighter": {
+          "id": "d156513a19acf856",
+          "name": "Sam Alvey",
+          "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "significantStrikePercent": 27,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "d156513a19acf856",
+          "name": "Sam Alvey",
+          "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 57,
+            "raw": "40 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:57",
+          "controlSeconds": 57
+        },
+        {
+          "fighter": {
+            "id": "d156513a19acf856",
+            "name": "Sam Alvey",
+            "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "d156513a19acf856",
+        "name": "Sam Alvey",
+        "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 18,
+          "attempted": 33,
+          "raw": "18 of 33"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 19,
+          "raw": "10 of 19"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 12,
+          "attempted": 17,
+          "raw": "12 of 17"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d156513a19acf856",
+          "name": "Sam Alvey",
+          "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "significantStrikePercent": 27,
+        "head": {
+          "landed": 1,
+          "attempted": 9,
+          "raw": "1 of 9"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 11,
+          "raw": "3 of 11"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "d156513a19acf856",
+          "name": "Sam Alvey",
+          "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 12,
+            "attempted": 17,
+            "raw": "12 of 17"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d156513a19acf856",
+            "name": "Sam Alvey",
+            "url": "http://www.ufcstats.com/fighter-details/d156513a19acf856"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.700Z"
+  }
+}

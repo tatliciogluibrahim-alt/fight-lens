@@ -1,0 +1,404 @@
+{
+  "id": "f3efc6121c5323ff",
+  "url": "http://www.ufcstats.com/fight-details/f3efc6121c5323ff",
+  "event": {
+    "id": "18f5669a92e99d92",
+    "name": "UFC Fight Night: Kattar vs. Ige",
+    "url": "http://www.ufcstats.com/event-details/18f5669a92e99d92"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "396fe87b84ac2e1c",
+      "name": "Lerone Murphy",
+      "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "1ae8f3c723aacff4",
+      "name": "Ricardo Ramos",
+      "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rich Mitchell",
+    "details": "Punches to Head From Half Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "396fe87b84ac2e1c",
+        "name": "Lerone Murphy",
+        "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+      },
+      {
+        "id": "1ae8f3c723aacff4",
+        "name": "Ricardo Ramos",
+        "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 40,
+          "raw": "22 of 40"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 42,
+          "raw": "24 of 42"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:22",
+        "controlSeconds": 82
+      },
+      {
+        "fighter": {
+          "id": "1ae8f3c723aacff4",
+          "name": "Ricardo Ramos",
+          "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 29,
+          "raw": "10 of 29"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 29,
+          "raw": "10 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        {
+          "id": "1ae8f3c723aacff4",
+          "name": "Ricardo Ramos",
+          "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "396fe87b84ac2e1c",
+            "name": "Lerone Murphy",
+            "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 42,
+            "raw": "24 of 42"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        },
+        {
+          "fighter": {
+            "id": "1ae8f3c723aacff4",
+            "name": "Ricardo Ramos",
+            "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:57",
+          "controlSeconds": 57
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "396fe87b84ac2e1c",
+        "name": "Lerone Murphy",
+        "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+      },
+      {
+        "id": "1ae8f3c723aacff4",
+        "name": "Ricardo Ramos",
+        "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 40,
+          "raw": "22 of 40"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 25,
+          "raw": "17 of 25"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1ae8f3c723aacff4",
+          "name": "Ricardo Ramos",
+          "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 29,
+          "raw": "10 of 29"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 3,
+          "attempted": 17,
+          "raw": "3 of 17"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 25,
+          "raw": "7 of 25"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "396fe87b84ac2e1c",
+          "name": "Lerone Murphy",
+          "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+        },
+        {
+          "id": "1ae8f3c723aacff4",
+          "name": "Ricardo Ramos",
+          "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "396fe87b84ac2e1c",
+            "name": "Lerone Murphy",
+            "url": "http://www.ufcstats.com/fighter-details/396fe87b84ac2e1c"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 25,
+            "raw": "17 of 25"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1ae8f3c723aacff4",
+            "name": "Ricardo Ramos",
+            "url": "http://www.ufcstats.com/fighter-details/1ae8f3c723aacff4"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 3,
+            "attempted": 17,
+            "raw": "3 of 17"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.665Z"
+  }
+}

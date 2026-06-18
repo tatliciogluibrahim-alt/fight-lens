@@ -1,0 +1,764 @@
+{
+  "id": "e8d087f822be7b02",
+  "url": "http://www.ufcstats.com/fight-details/e8d087f822be7b02",
+  "event": {
+    "id": "243b07fc65ccbb16",
+    "name": "UFC Fight Night: Magny vs Gastelum",
+    "url": "http://www.ufcstats.com/event-details/243b07fc65ccbb16"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "056c493bbd76a918",
+      "name": "Henry Cejudo",
+      "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b102c26727306ab6",
+      "name": "Jussier Formiga",
+      "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mario Yamasaki",
+    "details": "Derek Cleary 27 - 30.Eric Colon 27 - 30.Roy Silbert 29 - 28."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "b102c26727306ab6",
+        "name": "Jussier Formiga",
+        "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 110,
+          "raw": "43 of 110"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 71,
+          "attempted": 140,
+          "raw": "71 of 140"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 67,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:16",
+        "controlSeconds": 76
+      },
+      {
+        "fighter": {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 87,
+          "raw": "25 of 87"
+        },
+        "significantStrikePercent": 29,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 102,
+          "raw": "39 of 102"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 48,
+            "raw": "20 of 48"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 29,
+            "raw": "9 of 29"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 40,
+            "raw": "11 of 40"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 42,
+            "raw": "33 of 42"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:05",
+          "controlSeconds": 65
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "b102c26727306ab6",
+        "name": "Jussier Formiga",
+        "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 110,
+          "raw": "43 of 110"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 11,
+          "attempted": 63,
+          "raw": "11 of 63"
+        },
+        "body": {
+          "landed": 30,
+          "attempted": 39,
+          "raw": "30 of 39"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 69,
+          "raw": "14 of 69"
+        },
+        "clinch": {
+          "landed": 29,
+          "attempted": 41,
+          "raw": "29 of 41"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 87,
+          "raw": "25 of 87"
+        },
+        "significantStrikePercent": 29,
+        "head": {
+          "landed": 12,
+          "attempted": 66,
+          "raw": "12 of 66"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 17,
+          "raw": "11 of 17"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 71,
+          "raw": "13 of 71"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 3,
+            "attempted": 27,
+            "raw": "3 of 27"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 30,
+            "raw": "5 of 30"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 29,
+            "raw": "9 of 29"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 4,
+            "attempted": 21,
+            "raw": "4 of 21"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 22,
+            "raw": "4 of 22"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 46,
+            "raw": "14 of 46"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 5,
+            "attempted": 29,
+            "raw": "5 of 29"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 33,
+            "raw": "8 of 33"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 40,
+            "raw": "11 of 40"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 7,
+            "attempted": 32,
+            "raw": "7 of 32"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 36,
+            "raw": "8 of 36"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b102c26727306ab6",
+          "name": "Jussier Formiga",
+          "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "clinch": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b102c26727306ab6",
+            "name": "Jussier Formiga",
+            "url": "http://www.ufcstats.com/fighter-details/b102c26727306ab6"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 1,
+            "attempted": 13,
+            "raw": "1 of 13"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 13,
+            "raw": "1 of 13"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.572Z"
+  }
+}

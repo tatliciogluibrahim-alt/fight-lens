@@ -1,0 +1,404 @@
+{
+  "id": "23ea24013d15c09c",
+  "url": "http://www.ufcstats.com/fight-details/23ea24013d15c09c",
+  "event": {
+    "id": "a7724f51e32e763e",
+    "name": "UFC Fight Night: Brunson vs. Machida",
+    "url": "http://www.ufcstats.com/event-details/a7724f51e32e763e"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0a1942069c9ad6b6",
+      "name": "Jack Hermansson",
+      "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "dea070ed4a2a8281",
+      "name": "Thiago Santos",
+      "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:59",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jerin Valel",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "dea070ed4a2a8281",
+        "name": "Thiago Santos",
+        "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 28,
+          "raw": "5 of 28"
+        },
+        "significantStrikePercent": 18,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 28,
+          "raw": "5 of 28"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:35",
+        "controlSeconds": 35
+      },
+      {
+        "fighter": {
+          "id": "dea070ed4a2a8281",
+          "name": "Thiago Santos",
+          "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 79,
+          "raw": "28 of 79"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 80,
+          "raw": "29 of 80"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "dea070ed4a2a8281",
+          "name": "Thiago Santos",
+          "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 28,
+            "raw": "5 of 28"
+          },
+          "significantStrikePercent": 18,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 28,
+            "raw": "5 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "dea070ed4a2a8281",
+            "name": "Thiago Santos",
+            "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 79,
+            "raw": "28 of 79"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 80,
+            "raw": "29 of 80"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "dea070ed4a2a8281",
+        "name": "Thiago Santos",
+        "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 28,
+          "raw": "5 of 28"
+        },
+        "significantStrikePercent": 18,
+        "head": {
+          "landed": 4,
+          "attempted": 21,
+          "raw": "4 of 21"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 28,
+          "raw": "5 of 28"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "dea070ed4a2a8281",
+          "name": "Thiago Santos",
+          "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 79,
+          "raw": "28 of 79"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 22,
+          "attempted": 66,
+          "raw": "22 of 66"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 9,
+          "raw": "5 of 9"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 56,
+          "raw": "17 of 56"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 16,
+          "raw": "7 of 16"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "dea070ed4a2a8281",
+          "name": "Thiago Santos",
+          "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 28,
+            "raw": "5 of 28"
+          },
+          "significantStrikePercent": 18,
+          "head": {
+            "landed": 4,
+            "attempted": 21,
+            "raw": "4 of 21"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 28,
+            "raw": "5 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dea070ed4a2a8281",
+            "name": "Thiago Santos",
+            "url": "http://www.ufcstats.com/fighter-details/dea070ed4a2a8281"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 79,
+            "raw": "28 of 79"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 22,
+            "attempted": 66,
+            "raw": "22 of 66"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 56,
+            "raw": "17 of 56"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.587Z"
+  }
+}

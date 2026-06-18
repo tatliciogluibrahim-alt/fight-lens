@@ -1,0 +1,764 @@
+{
+  "id": "6a7347d1da8a2b87",
+  "url": "http://www.ufcstats.com/fight-details/6a7347d1da8a2b87",
+  "event": {
+    "id": "27541033b97c076d",
+    "name": "UFC 261: Usman vs. Masvidal 2",
+    "url": "http://www.ufcstats.com/event-details/27541033b97c076d"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b8bbdeff718dbb7d",
+      "name": "Pat Sabatini",
+      "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2ebfbe72ed703925",
+      "name": "Tristan Connelly",
+      "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Josh Rutgers",
+    "details": "Chris Lee 27 - 30.Troy Wincapaw 28 - 29.Eric Colon 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b8bbdeff718dbb7d",
+        "name": "Pat Sabatini",
+        "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+      },
+      {
+        "id": "2ebfbe72ed703925",
+        "name": "Tristan Connelly",
+        "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 45,
+          "raw": "26 of 45"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 73,
+          "attempted": 98,
+          "raw": "73 of 98"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "9:58",
+        "controlSeconds": 598
+      },
+      {
+        "fighter": {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 50,
+          "raw": "19 of 50"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 87,
+          "attempted": 125,
+          "raw": "87 of 125"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:20",
+        "controlSeconds": 80
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 43,
+            "raw": "33 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:05",
+          "controlSeconds": 245
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 38,
+            "raw": "30 of 38"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:18",
+          "controlSeconds": 258
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "significantStrikePercent": 27,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 61,
+            "raw": "47 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:35",
+          "controlSeconds": 95
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 27,
+            "raw": "12 of 27"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 49,
+            "raw": "34 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:20",
+          "controlSeconds": 80
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b8bbdeff718dbb7d",
+        "name": "Pat Sabatini",
+        "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+      },
+      {
+        "id": "2ebfbe72ed703925",
+        "name": "Tristan Connelly",
+        "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 45,
+          "raw": "26 of 45"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 18,
+          "attempted": 36,
+          "raw": "18 of 36"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 27,
+          "raw": "11 of 27"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 12,
+          "raw": "11 of 12"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 50,
+          "raw": "19 of 50"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 10,
+          "attempted": 41,
+          "raw": "10 of 41"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 42,
+          "raw": "14 of 42"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 9,
+            "attempted": 13,
+            "raw": "9 of 13"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 15,
+            "raw": "8 of 15"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "significantStrikePercent": 27,
+          "head": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "2ebfbe72ed703925",
+          "name": "Tristan Connelly",
+          "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2ebfbe72ed703925",
+            "name": "Tristan Connelly",
+            "url": "http://www.ufcstats.com/fighter-details/2ebfbe72ed703925"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 27,
+            "raw": "12 of 27"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.727Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "fa7cde1e2d3ae338",
+  "url": "http://www.ufcstats.com/fight-details/fa7cde1e2d3ae338",
+  "event": {
+    "id": "602bb270f2bdbf02",
+    "name": "UFC Fight Night: Jacare vs. Brunson 2",
+    "url": "http://www.ufcstats.com/event-details/602bb270f2bdbf02"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "65f09bacd3957381",
+      "name": "Cory Sandhagen",
+      "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "bf0e700106d00e55",
+      "name": "Austin Arnett",
+      "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:48",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Joseph Hawes",
+    "details": "Punches to Body At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "65f09bacd3957381",
+        "name": "Cory Sandhagen",
+        "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+      },
+      {
+        "id": "bf0e700106d00e55",
+        "name": "Austin Arnett",
+        "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 80,
+          "attempted": 147,
+          "raw": "80 of 147"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 108,
+          "attempted": 179,
+          "raw": "108 of 179"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "1:55",
+        "controlSeconds": 115
+      },
+      {
+        "fighter": {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 90,
+          "raw": "32 of 90"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 95,
+          "raw": "35 of 95"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:08",
+        "controlSeconds": 68
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65f09bacd3957381",
+            "name": "Cory Sandhagen",
+            "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 86,
+            "raw": "48 of 86"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 61,
+            "attempted": 101,
+            "raw": "61 of 101"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:06",
+          "controlSeconds": 66
+        },
+        {
+          "fighter": {
+            "id": "bf0e700106d00e55",
+            "name": "Austin Arnett",
+            "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 63,
+            "raw": "23 of 63"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 67,
+            "raw": "26 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65f09bacd3957381",
+            "name": "Cory Sandhagen",
+            "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 61,
+            "raw": "32 of 61"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 78,
+            "raw": "47 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:49",
+          "controlSeconds": 49
+        },
+        {
+          "fighter": {
+            "id": "bf0e700106d00e55",
+            "name": "Austin Arnett",
+            "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:31",
+          "controlSeconds": 31
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "65f09bacd3957381",
+        "name": "Cory Sandhagen",
+        "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+      },
+      {
+        "id": "bf0e700106d00e55",
+        "name": "Austin Arnett",
+        "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        "significantStrikes": {
+          "landed": 80,
+          "attempted": 147,
+          "raw": "80 of 147"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 47,
+          "attempted": 104,
+          "raw": "47 of 104"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 32,
+          "raw": "23 of 32"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "distance": {
+          "landed": 45,
+          "attempted": 90,
+          "raw": "45 of 90"
+        },
+        "clinch": {
+          "landed": 20,
+          "attempted": 33,
+          "raw": "20 of 33"
+        },
+        "ground": {
+          "landed": 15,
+          "attempted": 24,
+          "raw": "15 of 24"
+        }
+      },
+      {
+        "fighter": {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 90,
+          "raw": "32 of 90"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 29,
+          "attempted": 84,
+          "raw": "29 of 84"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 84,
+          "raw": "31 of 84"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65f09bacd3957381",
+            "name": "Cory Sandhagen",
+            "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+          },
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 86,
+            "raw": "48 of 86"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 26,
+            "attempted": 60,
+            "raw": "26 of 60"
+          },
+          "body": {
+            "landed": 16,
+            "attempted": 19,
+            "raw": "16 of 19"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 60,
+            "raw": "30 of 60"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bf0e700106d00e55",
+            "name": "Austin Arnett",
+            "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 63,
+            "raw": "23 of 63"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 20,
+            "attempted": 59,
+            "raw": "20 of 59"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+        },
+        {
+          "id": "bf0e700106d00e55",
+          "name": "Austin Arnett",
+          "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "65f09bacd3957381",
+            "name": "Cory Sandhagen",
+            "url": "http://www.ufcstats.com/fighter-details/65f09bacd3957381"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 61,
+            "raw": "32 of 61"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "clinch": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bf0e700106d00e55",
+            "name": "Austin Arnett",
+            "url": "http://www.ufcstats.com/fighter-details/bf0e700106d00e55"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.507Z"
+  }
+}

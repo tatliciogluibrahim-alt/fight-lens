@@ -1,0 +1,764 @@
+{
+  "id": "6b07c3a9a95493cf",
+  "url": "http://www.ufcstats.com/fight-details/6b07c3a9a95493cf",
+  "event": {
+    "id": "f54200f1dfb9b5d4",
+    "name": "UFC 185: Pettis vs Dos Anjos",
+    "url": "http://www.ufcstats.com/event-details/f54200f1dfb9b5d4"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "056c493bbd76a918",
+      "name": "Henry Cejudo",
+      "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b2e3aca4cd363477",
+      "name": "Chris Cariaso",
+      "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Steve Armstrong 27 - 30.Derek Cleary 27 - 30.Sal D'amato 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "b2e3aca4cd363477",
+        "name": "Chris Cariaso",
+        "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 93,
+          "raw": "50 of 93"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 111,
+          "attempted": 162,
+          "raw": "111 of 162"
+        },
+        "takedowns": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "takedownPercent": 86,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "9:31",
+        "controlSeconds": 571
+      },
+      {
+        "fighter": {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 71,
+          "raw": "22 of 71"
+        },
+        "significantStrikePercent": 31,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 92,
+          "raw": "41 of 92"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:43",
+        "controlSeconds": 43
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 48,
+            "attempted": 59,
+            "raw": "48 of 59"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:18",
+          "controlSeconds": 198
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 33,
+            "raw": "20 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 35,
+            "raw": "13 of 35"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 51,
+            "raw": "24 of 51"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:49",
+          "controlSeconds": 169
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 29,
+            "raw": "7 of 29"
+          },
+          "significantStrikePercent": 24,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 30,
+            "raw": "19 of 30"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 52,
+            "raw": "39 of 52"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:24",
+          "controlSeconds": 204
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "b2e3aca4cd363477",
+        "name": "Chris Cariaso",
+        "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "significantStrikes": {
+          "landed": 50,
+          "attempted": 93,
+          "raw": "50 of 93"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 28,
+          "attempted": 62,
+          "raw": "28 of 62"
+        },
+        "body": {
+          "landed": 21,
+          "attempted": 29,
+          "raw": "21 of 29"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 52,
+          "raw": "19 of 52"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 17,
+          "raw": "12 of 17"
+        },
+        "ground": {
+          "landed": 19,
+          "attempted": 24,
+          "raw": "19 of 24"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 71,
+          "raw": "22 of 71"
+        },
+        "significantStrikePercent": 31,
+        "head": {
+          "landed": 11,
+          "attempted": 50,
+          "raw": "11 of 50"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 17,
+          "raw": "10 of 17"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 60,
+          "raw": "17 of 60"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 11,
+          "raw": "5 of 11"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 35,
+            "raw": "13 of 35"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 9,
+            "attempted": 27,
+            "raw": "9 of 27"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 28,
+            "raw": "9 of 28"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 29,
+            "raw": "7 of 29"
+          },
+          "significantStrikePercent": 24,
+          "head": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 26,
+            "raw": "6 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "b2e3aca4cd363477",
+          "name": "Chris Cariaso",
+          "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 30,
+            "raw": "19 of 30"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b2e3aca4cd363477",
+            "name": "Chris Cariaso",
+            "url": "http://www.ufcstats.com/fighter-details/b2e3aca4cd363477"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.573Z"
+  }
+}

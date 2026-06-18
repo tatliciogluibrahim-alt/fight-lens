@@ -1,0 +1,764 @@
+{
+  "id": "977a758d869f9e7a",
+  "url": "http://www.ufcstats.com/fight-details/977a758d869f9e7a",
+  "event": {
+    "id": "6e3282d57d2467a0",
+    "name": "UFC 206: Holloway vs. Pettis",
+    "url": "http://www.ufcstats.com/event-details/6e3282d57d2467a0"
+  },
+  "title": "UFC Interim Featherweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "150ff4cc642270b9",
+      "name": "Max Holloway",
+      "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "cbb682f5fcc44bfc",
+      "name": "Anthony Pettis",
+      "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:50",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Yves Lavigne",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "cbb682f5fcc44bfc",
+        "name": "Anthony Pettis",
+        "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 94,
+          "attempted": 208,
+          "raw": "94 of 208"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 98,
+          "attempted": 212,
+          "raw": "98 of 212"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:37",
+        "controlSeconds": 37
+      },
+      {
+        "fighter": {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 158,
+          "raw": "53 of 158"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 160,
+          "raw": "55 of 160"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:24",
+        "controlSeconds": 84
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 58,
+            "raw": "23 of 58"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 58,
+            "raw": "23 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 63,
+            "raw": "26 of 63"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 66,
+            "raw": "29 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 51,
+            "raw": "15 of 51"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 52,
+            "raw": "16 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:54",
+          "controlSeconds": 54
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 87,
+            "raw": "45 of 87"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 88,
+            "raw": "46 of 88"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:26",
+          "controlSeconds": 26
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 51,
+            "raw": "19 of 51"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 52,
+            "raw": "20 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "cbb682f5fcc44bfc",
+        "name": "Anthony Pettis",
+        "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "significantStrikes": {
+          "landed": 94,
+          "attempted": 208,
+          "raw": "94 of 208"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 48,
+          "attempted": 143,
+          "raw": "48 of 143"
+        },
+        "body": {
+          "landed": 29,
+          "attempted": 41,
+          "raw": "29 of 41"
+        },
+        "leg": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "distance": {
+          "landed": 76,
+          "attempted": 188,
+          "raw": "76 of 188"
+        },
+        "clinch": {
+          "landed": 16,
+          "attempted": 18,
+          "raw": "16 of 18"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        },
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 158,
+          "raw": "53 of 158"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 25,
+          "attempted": 100,
+          "raw": "25 of 100"
+        },
+        "body": {
+          "landed": 17,
+          "attempted": 44,
+          "raw": "17 of 44"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "distance": {
+          "landed": 53,
+          "attempted": 156,
+          "raw": "53 of 156"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 58,
+            "raw": "23 of 58"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 11,
+            "attempted": 36,
+            "raw": "11 of 36"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 14,
+            "raw": "10 of 14"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 58,
+            "raw": "23 of 58"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 9,
+            "attempted": 36,
+            "raw": "9 of 36"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 13,
+            "raw": "4 of 13"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 63,
+            "raw": "26 of 63"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 9,
+            "attempted": 41,
+            "raw": "9 of 41"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 52,
+            "raw": "16 of 52"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 51,
+            "raw": "15 of 51"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 8,
+            "attempted": 31,
+            "raw": "8 of 31"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 16,
+            "raw": "4 of 16"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 50,
+            "raw": "15 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "cbb682f5fcc44bfc",
+          "name": "Anthony Pettis",
+          "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 87,
+            "raw": "45 of 87"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 28,
+            "attempted": 66,
+            "raw": "28 of 66"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 18,
+            "raw": "15 of 18"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 78,
+            "raw": "37 of 78"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cbb682f5fcc44bfc",
+            "name": "Anthony Pettis",
+            "url": "http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 51,
+            "raw": "19 of 51"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 8,
+            "attempted": 33,
+            "raw": "8 of 33"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 15,
+            "raw": "9 of 15"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.685Z"
+  }
+}

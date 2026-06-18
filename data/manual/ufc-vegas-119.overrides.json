@@ -1,0 +1,83 @@
+{
+  "eventId": "ufc-vegas-119",
+  "sourceEventFile": "data/generated/ufcstats/events/ufc-vegas-119.json",
+  "event": {
+    "shortName": "UFC Vegas 119",
+    "name": "UFC Fight Night: Kape vs. Horiguchi",
+    "date": "June 20, 2026",
+    "location": "Las Vegas, Nevada, USA",
+    "venue": "Meta APEX",
+    "broadcast": "Paramount+",
+    "mainCardTime": null,
+    "mainEvent": { "fighterA": "Manel Kape", "fighterB": "Kyoji Horiguchi" },
+    "featuredBouts": [
+      { "fighterA": "Ion Cutelaba", "fighterB": "Navajo Stirling" },
+      { "fighterA": "Vinicius Oliveira", "fighterB": "Andre Fili" }
+    ],
+    "cardSummary": "First card built entirely under the v0.3 calibration lens (T=0.824 + 58% named-call threshold). Three main-card fights are modeled from cached UFCStats profiles; two (Rodriguez/Amil, Baghdasaryan/Magomedov) are held as data-pending because their fighters are not in the cache and the live scraper is unavailable. No numbers are shown where data is insufficient.",
+    "cardBlindSpots": [
+      "Prior cross-promotional result (Horiguchi submitted Kape, 2017 RIZIN)",
+      "Reach interaction at flyweight",
+      "Finish-streak form spikes",
+      "Age / cross-promotional title mileage",
+      "Two bouts unmodeled (fighters absent from data cache)"
+    ],
+    "environmentNote": null,
+    "source": { "provenance": "manual", "sourceName": "manual-card-entry", "sourceUrl": "", "fetchedAt": "2026-06-17T00:00:00.000Z" }
+  },
+  "assetPolicy": {
+    "fighterImages": "Manual licensed assets only. Do not scrape or copy fighter images into the repo.",
+    "fallback": "Use abstract asset slots with small country markers until licensed images are provided."
+  },
+  "fighters": {},
+  "fights": {
+    "kape-horiguchi": {
+      "routeId": "kape-horiguchi",
+      "cardPlacement": "Main Event",
+      "rounds": 5,
+      "weightClass": "Flyweight",
+      "contextNotes": [
+        {
+          "type": "prior-result",
+          "fighter": "Kyoji Horiguchi",
+          "title": "Horiguchi submitted Kape in 2017 RIZIN",
+          "explanation": "The two fought in December 2017 at the RIZIN World Grand Prix semifinals — Horiguchi won via arm-triangle choke in round 3. The model treats them as strangers because UFCStats only carries UFC fight history. The prior result is real signal that the model cannot see.",
+          "confidence": "medium",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "recent-form",
+          "fighter": "Manel Kape",
+          "title": "Three straight finishes including KO of Royval",
+          "explanation": "Kape's last three fights are all finishes (KO Royval Dec, TKO Almabayev, body kick Silva). Recent form exceeds career averages. The model's form score captures W/L recency but not the finish-streak pattern explicitly.",
+          "confidence": "medium",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "age-mileage",
+          "fighter": "Kyoji Horiguchi",
+          "title": "35 with deep cross-promotional title-fight history",
+          "explanation": "Horiguchi has championship-level mileage across UFC, RIZIN, and Bellator since 2010. Same architecture gap as Topuria-Gaethje — the model cannot distinguish war-tested durability from decline. Recent UFC wins (Ulanbekov sub, Albazi decision) suggest the gas tank is intact.",
+          "confidence": "medium",
+          "impactDirection": "unclear",
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "style-matchup",
+          "fighter": "Manel Kape",
+          "title": "5-inch reach advantage at flyweight",
+          "explanation": "A 5-inch reach gap is enormous at 125 lbs and conditions how the fight plays out. Kape's southpaw cross and lead-hand control use this reach. The model treats reach as a static physical attribute with no interaction with fight dynamics.",
+          "confidence": "medium",
+          "impactDirection": "helps",
+          "modelImpact": "not included in model"
+        }
+      ]
+    },
+    "cutelaba-stirling": { "routeId": "cutelaba-stirling", "cardPlacement": "Main Card", "rounds": 3, "weightClass": "Light Heavyweight" },
+    "rodriguez-amil": { "routeId": "rodriguez-amil", "cardPlacement": "Main Card", "rounds": 3, "weightClass": "Featherweight" },
+    "baghdasaryan-magomedov": { "routeId": "baghdasaryan-magomedov", "cardPlacement": "Main Card", "rounds": 3, "weightClass": "Featherweight" },
+    "oliveira-fili": { "routeId": "oliveira-fili", "cardPlacement": "Main Card", "rounds": 3, "weightClass": "Featherweight" }
+  }
+}

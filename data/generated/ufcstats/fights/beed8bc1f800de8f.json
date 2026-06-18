@@ -1,0 +1,404 @@
+{
+  "id": "beed8bc1f800de8f",
+  "url": "http://www.ufcstats.com/fight-details/beed8bc1f800de8f",
+  "event": {
+    "id": "d632d156c0549e07",
+    "name": "UFC Fight Night: Minotauro vs Nelson",
+    "url": "http://www.ufcstats.com/event-details/d632d156c0549e07"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "08af939f41b5a57b",
+      "name": "Beneil Dariush",
+      "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "22aa91e402d0fe1f",
+      "name": "Ramsey Nijem",
+      "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Neil Hall",
+    "details": "Punches to Head From Half Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "22aa91e402d0fe1f",
+        "name": "Ramsey Nijem",
+        "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 20,
+          "raw": "9 of 20"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 25,
+          "raw": "14 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:29",
+        "controlSeconds": 29
+      },
+      {
+        "fighter": {
+          "id": "22aa91e402d0fe1f",
+          "name": "Ramsey Nijem",
+          "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 51,
+          "raw": "34 of 51"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 92,
+          "attempted": 121,
+          "raw": "92 of 121"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:37",
+        "controlSeconds": 97
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "22aa91e402d0fe1f",
+          "name": "Ramsey Nijem",
+          "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 25,
+            "raw": "14 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        },
+        {
+          "fighter": {
+            "id": "22aa91e402d0fe1f",
+            "name": "Ramsey Nijem",
+            "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 51,
+            "raw": "34 of 51"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 92,
+            "attempted": 121,
+            "raw": "92 of 121"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:37",
+          "controlSeconds": 97
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "22aa91e402d0fe1f",
+        "name": "Ramsey Nijem",
+        "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 20,
+          "raw": "9 of 20"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "22aa91e402d0fe1f",
+          "name": "Ramsey Nijem",
+          "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+        },
+        "significantStrikes": {
+          "landed": 34,
+          "attempted": 51,
+          "raw": "34 of 51"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 25,
+          "attempted": 39,
+          "raw": "25 of 39"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 15,
+          "attempted": 28,
+          "raw": "15 of 28"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 19,
+          "attempted": 22,
+          "raw": "19 of 22"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "22aa91e402d0fe1f",
+          "name": "Ramsey Nijem",
+          "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "22aa91e402d0fe1f",
+            "name": "Ramsey Nijem",
+            "url": "http://www.ufcstats.com/fighter-details/22aa91e402d0fe1f"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 51,
+            "raw": "34 of 51"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 25,
+            "attempted": 39,
+            "raw": "25 of 39"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 19,
+            "attempted": 22,
+            "raw": "19 of 22"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.467Z"
+  }
+}

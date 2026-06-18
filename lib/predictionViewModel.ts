@@ -23,7 +23,12 @@ import type { FightShapeModelOutput } from "@/lib/fight-shape-model/types";
 import type { FightOutcomeModelOutput, OutcomeScenario } from "@/lib/fight-outcome-model/types";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
-import { getNamedCallSide, isTooCloseToCall, type PredictionSide } from "@/lib/predictionThresholds";
+import {
+  getNamedCallSide,
+  isTooCloseToCall,
+  resolveNamedCallThreshold,
+  type PredictionSide,
+} from "@/lib/predictionThresholds";
 import { detectRankingMismatch, type RankingMismatch } from "@/lib/ranking-mismatch";
 
 // ─── Public types ─────────────────────────────────────────────────────────────
@@ -372,7 +377,7 @@ function buildPublicScenarios({
 export function getPredictionRecordCall(record: PredictionRecord): PredictionRecordCallView {
   const pA = record.prediction.fighterAWinProbability;
   const pB = record.prediction.fighterBWinProbability;
-  const predictedSide = getNamedCallSide(pA, pB);
+  const predictedSide = getNamedCallSide(pA, pB, resolveNamedCallThreshold(record.modelVersion));
   const hasNamedCall = predictedSide !== null;
   const predictedWinnerName =
     predictedSide === "fighterA"
@@ -460,8 +465,12 @@ export function buildPredictionViewModel({
   }
 
   // ── Public call state / predicted winner ──────────────────────────────────
+  // For locked calls, outcomeModel.modelVersion is the version the call was
+  // locked under (stamped by pinToLockedPrediction); for live reads it is the
+  // current model version. Either way the threshold matches the probabilities.
+  const namedCallThreshold = resolveNamedCallThreshold(outcomeModel.modelVersion);
   const namedSide =
-    sourceType === "pending" ? null : getNamedCallSide(probA, probB);
+    sourceType === "pending" ? null : getNamedCallSide(probA, probB, namedCallThreshold);
   const callState: PublicCallState =
     sourceType === "pending"
       ? "insufficientData"

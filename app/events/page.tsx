@@ -5,6 +5,7 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { getAllEvents } from "@/lib/events/registry";
 import { getLockedPredictions } from "@/lib/accuracy";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
+import { classifyEvents, eventStatus, type EventStatus } from "@/lib/events/classify";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 
@@ -13,8 +14,6 @@ export const metadata: Metadata = {
   description:
     "Browse every UFC card Fight Lens has modeled, from the current forecast to scored past cards.",
 };
-
-type EventStatus = "cardBuilding" | "callsLogged" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   eventPredictions: PredictionRecord[];
@@ -36,14 +35,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
     if (!prediction.outcome || prediction.outcome.winner === "draw" || prediction.outcome.winner === "nc") return false;
     return getPredictionRecordCall(prediction).predictedSide === prediction.outcome.winner;
   });
-  const status: EventStatus =
-    eventPredictions.length === 0
-      ? "cardBuilding"
-      : resolved.length === 0
-        ? "callsLogged"
-        : resolved.length < eventPredictions.length
-          ? "pendingOutcomes"
-          : "completed";
+  const status: EventStatus = eventStatus(event, predictions);
   const countLabel =
     status === "completed"
       ? `${resolved.length} scored · ${correct.length}/${resolved.length} correct`
@@ -227,9 +219,11 @@ function EventCard({
 export default function EventsIndexPage() {
   const events = getAllEvents();
   const allPredictions = getLockedPredictions();
-  const nextEvent = events[0] ?? null;
-  const upcomingEvents = events.slice(1).filter((event) => eventStats(event, allPredictions).status !== "completed");
-  const pastEvents = events.filter((event) => eventStats(event, allPredictions).status === "completed");
+  // Bucket by status/date — a completed card never occupies the next-card slot.
+  const { current: nextEvent, upcoming: upcomingEvents, past: pastEvents } = classifyEvents(
+    events,
+    allPredictions,
+  );
 
   return (
     <>

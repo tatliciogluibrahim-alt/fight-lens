@@ -4,6 +4,7 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { HomeEventSelector, type HomeEventOption } from "@/components/HomeEventSelector";
 import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
 import { getAllEvents, getLatestEvent, findMainEventFight } from "@/lib/events/registry";
+import { classifyEvents, eventStatus, type EventStatus } from "@/lib/events/classify";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
@@ -26,8 +27,6 @@ const startSteps = [
     body: "Every pre-fight call is logged before the bell and scored after the official result.",
   },
 ];
-
-type EventStatus = "cardBuilding" | "callsLogged" | "pendingOutcomes" | "completed";
 
 type EventStats = {
   predictions: PredictionRecord[];
@@ -88,14 +87,7 @@ function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): Event
     return calledSide === prediction.outcome.winner;
   });
 
-  const status: EventStatus =
-    eventPredictions.length === 0
-      ? "cardBuilding"
-      : resolved.length === 0
-        ? "callsLogged"
-        : resolved.length < eventPredictions.length
-          ? "pendingOutcomes"
-          : "completed";
+  const status: EventStatus = eventStatus(event, predictions);
 
   const countLabel =
     status === "completed"
@@ -315,7 +307,10 @@ export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
   const predictions = getLockedPredictions();
   const events = getAllEvents();
-  const latestEvent = getLatestEvent();
+  // Current card = soonest non-completed event; fall back to most-recent only if
+  // every card is already scored. A completed card never leads the home page.
+  const classified = classifyEvents(events, predictions);
+  const latestEvent = classified.current ?? getLatestEvent();
   const latestStats = eventStats(latestEvent, predictions);
   const mainFight = findMainEventFight(latestEvent);
   const mainFightPrediction = mainFight
@@ -331,8 +326,8 @@ export default function Home() {
   const correctCount = accuracyMetrics.winnerAccuracy != null
     ? Math.round((accuracyMetrics.winnerAccuracy / 100) * accuracyMetrics.resolvedCount)
     : null;
-  const upcomingEvent = events.slice(1).find((event) => eventStats(event, predictions).status !== "completed") ?? null;
-  const pastScoredEvent = events.find((event) => eventStats(event, predictions).status === "completed") ?? null;
+  const upcomingEvent = classified.upcoming[0] ?? null;
+  const pastScoredEvent = classified.past[0] ?? null;
   const discoveryOptions = [
     selectorOption(latestEvent, predictions, "Next card", "Open card"),
     upcomingEvent ? selectorOption(upcomingEvent, predictions, "Upcoming card", "Open card") : null,

@@ -1,0 +1,404 @@
+{
+  "id": "1a637fbda4bdf575",
+  "url": "http://www.ufcstats.com/fight-details/1a637fbda4bdf575",
+  "event": {
+    "id": "155a02a8b4311057",
+    "name": "UFC Fight Night: Edgar vs Swanson",
+    "url": "http://www.ufcstats.com/event-details/155a02a8b4311057"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e93b04e308913c2e",
+      "name": "Dooho Choi",
+      "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "85d0fafb8b75d634",
+      "name": "Juan Manuel Puig",
+      "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mario Yamasaki",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e93b04e308913c2e",
+        "name": "Dooho Choi",
+        "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+      },
+      {
+        "id": "85d0fafb8b75d634",
+        "name": "Juan Manuel Puig",
+        "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "85d0fafb8b75d634",
+          "name": "Juan Manuel Puig",
+          "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "significantStrikePercent": 0,
+        "totalStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "85d0fafb8b75d634",
+          "name": "Juan Manuel Puig",
+          "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "85d0fafb8b75d634",
+            "name": "Juan Manuel Puig",
+            "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e93b04e308913c2e",
+        "name": "Dooho Choi",
+        "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+      },
+      {
+        "id": "85d0fafb8b75d634",
+        "name": "Juan Manuel Puig",
+        "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        }
+      },
+      {
+        "fighter": {
+          "id": "85d0fafb8b75d634",
+          "name": "Juan Manuel Puig",
+          "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+        },
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "significantStrikePercent": 0,
+        "head": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e93b04e308913c2e",
+          "name": "Dooho Choi",
+          "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+        },
+        {
+          "id": "85d0fafb8b75d634",
+          "name": "Juan Manuel Puig",
+          "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e93b04e308913c2e",
+            "name": "Dooho Choi",
+            "url": "http://www.ufcstats.com/fighter-details/e93b04e308913c2e"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          }
+        },
+        {
+          "fighter": {
+            "id": "85d0fafb8b75d634",
+            "name": "Juan Manuel Puig",
+            "url": "http://www.ufcstats.com/fighter-details/85d0fafb8b75d634"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.538Z"
+  }
+}

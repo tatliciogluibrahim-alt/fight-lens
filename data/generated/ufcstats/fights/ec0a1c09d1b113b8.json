@@ -1,0 +1,404 @@
+{
+  "id": "ec0a1c09d1b113b8",
+  "url": "http://www.ufcstats.com/fight-details/ec0a1c09d1b113b8",
+  "event": {
+    "id": "5de61b03868035ff",
+    "name": "UFC Fight Night: Gonzaga vs Cro Cop 2",
+    "url": "http://www.ufcstats.com/event-details/5de61b03868035ff"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f1fac969a1d70b08",
+      "name": "Leon Edwards",
+      "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "fd5b6598a3b70c0a",
+      "name": "Seth Baczynski",
+      "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:08",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Grant Waterman",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f1fac969a1d70b08",
+        "name": "Leon Edwards",
+        "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+      },
+      {
+        "id": "fd5b6598a3b70c0a",
+        "name": "Seth Baczynski",
+        "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1fac969a1d70b08",
+          "name": "Leon Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "fd5b6598a3b70c0a",
+          "name": "Seth Baczynski",
+          "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "significantStrikePercent": 0,
+        "totalStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1fac969a1d70b08",
+          "name": "Leon Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+        },
+        {
+          "id": "fd5b6598a3b70c0a",
+          "name": "Seth Baczynski",
+          "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1fac969a1d70b08",
+            "name": "Leon Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "fd5b6598a3b70c0a",
+            "name": "Seth Baczynski",
+            "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f1fac969a1d70b08",
+        "name": "Leon Edwards",
+        "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+      },
+      {
+        "id": "fd5b6598a3b70c0a",
+        "name": "Seth Baczynski",
+        "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1fac969a1d70b08",
+          "name": "Leon Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "fd5b6598a3b70c0a",
+          "name": "Seth Baczynski",
+          "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+        },
+        "significantStrikes": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "significantStrikePercent": 0,
+        "head": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f1fac969a1d70b08",
+          "name": "Leon Edwards",
+          "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+        },
+        {
+          "id": "fd5b6598a3b70c0a",
+          "name": "Seth Baczynski",
+          "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1fac969a1d70b08",
+            "name": "Leon Edwards",
+            "url": "http://www.ufcstats.com/fighter-details/f1fac969a1d70b08"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fd5b6598a3b70c0a",
+            "name": "Seth Baczynski",
+            "url": "http://www.ufcstats.com/fighter-details/fd5b6598a3b70c0a"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.664Z"
+  }
+}

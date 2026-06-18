@@ -1,0 +1,584 @@
+{
+  "id": "d22c19fd92426567",
+  "url": "http://www.ufcstats.com/fight-details/d22c19fd92426567",
+  "event": {
+    "id": "b0550072e5f0afa7",
+    "name": "UFC 236: Holloway vs. Poirier 2",
+    "url": "http://www.ufcstats.com/event-details/b0550072e5f0afa7"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1091d4d957141094",
+      "name": "Nikita Krylov",
+      "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "50db8711c70196cd",
+      "name": "Ovince Saint Preux",
+      "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "2:30",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Blake Grice",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 44,
+          "raw": "27 of 44"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 79,
+          "raw": "60 of 79"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "2:23",
+        "controlSeconds": 143
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 12,
+          "raw": "8 of 12"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "takedownPercent": 38,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:14",
+        "controlSeconds": 194
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 48,
+            "raw": "33 of 48"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:06",
+          "controlSeconds": 66
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "2:37",
+          "controlSeconds": 157
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 31,
+            "raw": "27 of 31"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:17",
+          "controlSeconds": 77
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:37",
+          "controlSeconds": 37
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "50db8711c70196cd",
+        "name": "Ovince Saint Preux",
+        "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 44,
+          "raw": "27 of 44"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 15,
+          "attempted": 27,
+          "raw": "15 of 27"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 32,
+          "raw": "17 of 32"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "50db8711c70196cd",
+          "name": "Ovince Saint Preux",
+          "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "50db8711c70196cd",
+            "name": "Ovince Saint Preux",
+            "url": "http://www.ufcstats.com/fighter-details/50db8711c70196cd"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.719Z"
+  }
+}

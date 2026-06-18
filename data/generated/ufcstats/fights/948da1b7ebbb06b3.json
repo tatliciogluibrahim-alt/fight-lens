@@ -1,0 +1,404 @@
+{
+  "id": "948da1b7ebbb06b3",
+  "url": "http://www.ufcstats.com/fight-details/948da1b7ebbb06b3",
+  "event": {
+    "id": "d4f364dd076bb0e2",
+    "name": "UFC Fight Night: Ortega vs. The Korean Zombie",
+    "url": "http://www.ufcstats.com/event-details/d4f364dd076bb0e2"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "476fe566d2df676e",
+      "name": "Modestas Bukauskas",
+      "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "70e1f8a821b72c8b",
+      "name": "Jimmy Crute",
+      "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:01",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Anders Ohlsson",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "70e1f8a821b72c8b",
+        "name": "Jimmy Crute",
+        "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 25,
+          "raw": "18 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:25",
+        "controlSeconds": 25
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "70e1f8a821b72c8b",
+            "name": "Jimmy Crute",
+            "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 24,
+            "raw": "17 of 24"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "70e1f8a821b72c8b",
+        "name": "Jimmy Crute",
+        "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 2,
+          "attempted": 11,
+          "raw": "2 of 11"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 17,
+          "raw": "7 of 17"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 8,
+          "attempted": 14,
+          "raw": "8 of 14"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 21,
+          "raw": "14 of 21"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70e1f8a821b72c8b",
+            "name": "Jimmy Crute",
+            "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 24,
+            "raw": "17 of 24"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 21,
+            "raw": "14 of 21"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.704Z"
+  }
+}

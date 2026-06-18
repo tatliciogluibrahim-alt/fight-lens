@@ -1,0 +1,584 @@
+{
+  "id": "037d2f426c916ffc",
+  "url": "http://www.ufcstats.com/fight-details/037d2f426c916ffc",
+  "event": {
+    "id": "44aa652b181bcf68",
+    "name": "UFC Fight Night: Blaydes vs. Dos Santos",
+    "url": "http://www.ufcstats.com/event-details/44aa652b181bcf68"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fa6796c55d6c5440",
+      "name": "Curtis Blaydes",
+      "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "63def5a5662a6917",
+      "name": "Junior Dos Santos",
+      "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:06",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "63def5a5662a6917",
+        "name": "Junior Dos Santos",
+        "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 60,
+          "raw": "28 of 60"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 62,
+          "raw": "29 of 62"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:19",
+        "controlSeconds": 19
+      },
+      {
+        "fighter": {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 30,
+          "raw": "7 of 30"
+        },
+        "significantStrikePercent": 23,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 30,
+          "raw": "7 of 30"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:17",
+          "controlSeconds": 17
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "63def5a5662a6917",
+        "name": "Junior Dos Santos",
+        "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 60,
+          "raw": "28 of 60"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 20,
+          "attempted": 51,
+          "raw": "20 of 51"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 51,
+          "raw": "19 of 51"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 30,
+          "raw": "7 of 30"
+        },
+        "significantStrikePercent": 23,
+        "head": {
+          "landed": 3,
+          "attempted": 23,
+          "raw": "3 of 23"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 30,
+          "raw": "7 of 30"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 38,
+            "raw": "14 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 18,
+            "raw": "2 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "63def5a5662a6917",
+          "name": "Junior Dos Santos",
+          "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 13,
+            "raw": "5 of 13"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "63def5a5662a6917",
+            "name": "Junior Dos Santos",
+            "url": "http://www.ufcstats.com/fighter-details/63def5a5662a6917"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.516Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "9ed0c3acc436eb56",
+  "url": "http://www.ufcstats.com/fight-details/9ed0c3acc436eb56",
+  "event": {
+    "id": "1507214bbc7a79e2",
+    "name": "UFC 212: Aldo vs. Holloway",
+    "url": "http://www.ufcstats.com/event-details/1507214bbc7a79e2"
+  },
+  "title": "UFC Featherweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "150ff4cc642270b9",
+      "name": "Max Holloway",
+      "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d0f3959b4a9747e6",
+      "name": "Jose Aldo",
+      "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:13",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "John McCarthy",
+    "details": "Punches to Head From Back Control"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "d0f3959b4a9747e6",
+        "name": "Jose Aldo",
+        "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 104,
+          "attempted": 207,
+          "raw": "104 of 207"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 128,
+          "attempted": 234,
+          "raw": "128 of 234"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:04",
+        "controlSeconds": 124
+      },
+      {
+        "fighter": {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 113,
+          "raw": "55 of 113"
+        },
+        "significantStrikePercent": 49,
+        "totalStrikes": {
+          "landed": 56,
+          "attempted": 115,
+          "raw": "56 of 115"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 78,
+            "raw": "28 of 78"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 78,
+            "raw": "28 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 64,
+            "attempted": 97,
+            "raw": "64 of 97"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 88,
+            "attempted": 124,
+            "raw": "88 of 124"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:04",
+          "controlSeconds": 124
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 25,
+            "raw": "8 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "d0f3959b4a9747e6",
+        "name": "Jose Aldo",
+        "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "significantStrikes": {
+          "landed": 104,
+          "attempted": 207,
+          "raw": "104 of 207"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 87,
+          "attempted": 185,
+          "raw": "87 of 185"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 21,
+          "raw": "16 of 21"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 61,
+          "attempted": 149,
+          "raw": "61 of 149"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 41,
+          "attempted": 55,
+          "raw": "41 of 55"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 113,
+          "raw": "55 of 113"
+        },
+        "significantStrikePercent": 49,
+        "head": {
+          "landed": 41,
+          "attempted": 93,
+          "raw": "41 of 93"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 53,
+          "attempted": 111,
+          "raw": "53 of 111"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 32,
+            "raw": "12 of 32"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 35,
+            "raw": "19 of 35"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 13,
+            "attempted": 27,
+            "raw": "13 of 27"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 78,
+            "raw": "28 of 78"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 21,
+            "attempted": 68,
+            "raw": "21 of 68"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 78,
+            "raw": "28 of 78"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 23,
+            "attempted": 47,
+            "raw": "23 of 47"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 55,
+            "raw": "29 of 55"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "d0f3959b4a9747e6",
+          "name": "Jose Aldo",
+          "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 64,
+            "attempted": 97,
+            "raw": "64 of 97"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 59,
+            "attempted": 92,
+            "raw": "59 of 92"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 40,
+            "raw": "21 of 40"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 41,
+            "attempted": 55,
+            "raw": "41 of 55"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d0f3959b4a9747e6",
+            "name": "Jose Aldo",
+            "url": "http://www.ufcstats.com/fighter-details/d0f3959b4a9747e6"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 22,
+            "raw": "6 of 22"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.685Z"
+  }
+}

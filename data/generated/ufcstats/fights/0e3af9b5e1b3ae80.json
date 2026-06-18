@@ -1,0 +1,764 @@
+{
+  "id": "0e3af9b5e1b3ae80",
+  "url": "http://www.ufcstats.com/fight-details/0e3af9b5e1b3ae80",
+  "event": {
+    "id": "fc9a9559a05f2704",
+    "name": "UFC Fight Night: Benavidez vs. Figueiredo",
+    "url": "http://www.ufcstats.com/event-details/fc9a9559a05f2704"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "60425d07ef4b91a7",
+      "name": "Kyler Phillips",
+      "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "002ca196477ce572",
+      "name": "Gabriel Silva",
+      "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Sal D'amato 27 - 30.Lisa Cuellar 27 - 30.Brian Costello 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "60425d07ef4b91a7",
+        "name": "Kyler Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+      },
+      {
+        "id": "002ca196477ce572",
+        "name": "Gabriel Silva",
+        "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 89,
+          "attempted": 168,
+          "raw": "89 of 168"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 112,
+          "attempted": 195,
+          "raw": "112 of 195"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "5:52",
+        "controlSeconds": 352
+      },
+      {
+        "fighter": {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 97,
+          "raw": "31 of 97"
+        },
+        "significantStrikePercent": 32,
+        "totalStrikes": {
+          "landed": 43,
+          "attempted": 112,
+          "raw": "43 of 112"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "2:28",
+        "controlSeconds": 148
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 102,
+            "raw": "51 of 102"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 52,
+            "attempted": 103,
+            "raw": "52 of 103"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 74,
+            "raw": "24 of 74"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 82,
+            "raw": "30 of 82"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:49",
+          "controlSeconds": 49
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 31,
+            "raw": "17 of 31"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:13",
+          "controlSeconds": 133
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 46,
+            "raw": "30 of 46"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 61,
+            "raw": "43 of 61"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:37",
+          "controlSeconds": 217
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 20,
+            "raw": "7 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "60425d07ef4b91a7",
+        "name": "Kyler Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+      },
+      {
+        "id": "002ca196477ce572",
+        "name": "Gabriel Silva",
+        "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        "significantStrikes": {
+          "landed": 89,
+          "attempted": 168,
+          "raw": "89 of 168"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 66,
+          "attempted": 139,
+          "raw": "66 of 139"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 58,
+          "attempted": 124,
+          "raw": "58 of 124"
+        },
+        "clinch": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "ground": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        }
+      },
+      {
+        "fighter": {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 97,
+          "raw": "31 of 97"
+        },
+        "significantStrikePercent": 32,
+        "head": {
+          "landed": 22,
+          "attempted": 85,
+          "raw": "22 of 85"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 89,
+          "raw": "27 of 89"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 102,
+            "raw": "51 of 102"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 35,
+            "attempted": 80,
+            "raw": "35 of 80"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 45,
+            "attempted": 91,
+            "raw": "45 of 91"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 74,
+            "raw": "24 of 74"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 17,
+            "attempted": 64,
+            "raw": "17 of 64"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 69,
+            "raw": "22 of 69"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "60425d07ef4b91a7",
+          "name": "Kyler Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+        },
+        {
+          "id": "002ca196477ce572",
+          "name": "Gabriel Silva",
+          "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "60425d07ef4b91a7",
+            "name": "Kyler Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/60425d07ef4b91a7"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 46,
+            "raw": "30 of 46"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 24,
+            "attempted": 40,
+            "raw": "24 of 40"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          }
+        },
+        {
+          "fighter": {
+            "id": "002ca196477ce572",
+            "name": "Gabriel Silva",
+            "url": "http://www.ufcstats.com/fighter-details/002ca196477ce572"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 4,
+            "attempted": 16,
+            "raw": "4 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.659Z"
+  }
+}

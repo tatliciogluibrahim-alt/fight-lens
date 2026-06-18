@@ -1,0 +1,404 @@
+{
+  "id": "8d68863242695224",
+  "url": "http://www.ufcstats.com/fight-details/8d68863242695224",
+  "event": {
+    "id": "81ddc98fceb30086",
+    "name": "UFC Fight Night: Dern vs. Ribas 2",
+    "url": "http://www.ufcstats.com/event-details/81ddc98fceb30086"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "9384e71bca6c409d",
+      "name": "Marco Tulio",
+      "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "260bd4cef10b033f",
+      "name": "Ihor Potieria",
+      "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:04",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": "Punches to Head On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "9384e71bca6c409d",
+        "name": "Marco Tulio",
+        "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+      },
+      {
+        "id": "260bd4cef10b033f",
+        "name": "Ihor Potieria",
+        "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9384e71bca6c409d",
+          "name": "Marco Tulio",
+          "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 54,
+          "raw": "29 of 54"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 62,
+          "raw": "34 of 62"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:26",
+        "controlSeconds": 26
+      },
+      {
+        "fighter": {
+          "id": "260bd4cef10b033f",
+          "name": "Ihor Potieria",
+          "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9384e71bca6c409d",
+          "name": "Marco Tulio",
+          "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+        },
+        {
+          "id": "260bd4cef10b033f",
+          "name": "Ihor Potieria",
+          "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9384e71bca6c409d",
+            "name": "Marco Tulio",
+            "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 54,
+            "raw": "29 of 54"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 62,
+            "raw": "34 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:26",
+          "controlSeconds": 26
+        },
+        {
+          "fighter": {
+            "id": "260bd4cef10b033f",
+            "name": "Ihor Potieria",
+            "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "9384e71bca6c409d",
+        "name": "Marco Tulio",
+        "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+      },
+      {
+        "id": "260bd4cef10b033f",
+        "name": "Ihor Potieria",
+        "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9384e71bca6c409d",
+          "name": "Marco Tulio",
+          "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 54,
+          "raw": "29 of 54"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 20,
+          "attempted": 41,
+          "raw": "20 of 41"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 37,
+          "raw": "17 of 37"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        }
+      },
+      {
+        "fighter": {
+          "id": "260bd4cef10b033f",
+          "name": "Ihor Potieria",
+          "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "9384e71bca6c409d",
+          "name": "Marco Tulio",
+          "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+        },
+        {
+          "id": "260bd4cef10b033f",
+          "name": "Ihor Potieria",
+          "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9384e71bca6c409d",
+            "name": "Marco Tulio",
+            "url": "http://www.ufcstats.com/fighter-details/9384e71bca6c409d"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 54,
+            "raw": "29 of 54"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 20,
+            "attempted": 41,
+            "raw": "20 of 41"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 37,
+            "raw": "17 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          }
+        },
+        {
+          "fighter": {
+            "id": "260bd4cef10b033f",
+            "name": "Ihor Potieria",
+            "url": "http://www.ufcstats.com/fighter-details/260bd4cef10b033f"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.673Z"
+  }
+}

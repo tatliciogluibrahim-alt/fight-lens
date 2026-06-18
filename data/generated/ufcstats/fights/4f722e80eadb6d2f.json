@@ -1,0 +1,584 @@
+{
+  "id": "4f722e80eadb6d2f",
+  "url": "http://www.ufcstats.com/fight-details/4f722e80eadb6d2f",
+  "event": {
+    "id": "8a1b4330c7957961",
+    "name": "UFC Fight Night: Miocic vs Hunt",
+    "url": "http://www.ufcstats.com/event-details/8a1b4330c7957961"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "193b9d1858bc4df3",
+      "name": "Dan Hooker",
+      "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ef7fa30364cbe7f2",
+      "name": "Hatsu Hioki",
+      "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:13",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John Sharp",
+    "details": "Kick to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "193b9d1858bc4df3",
+        "name": "Dan Hooker",
+        "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+      },
+      {
+        "id": "ef7fa30364cbe7f2",
+        "name": "Hatsu Hioki",
+        "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 61,
+          "raw": "21 of 61"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 74,
+          "raw": "34 of 74"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 92,
+          "raw": "32 of 92"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 98,
+          "raw": "38 of 98"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "takedownPercent": 40,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:00",
+        "controlSeconds": 120
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "ef7fa30364cbe7f2",
+            "name": "Hatsu Hioki",
+            "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 41,
+            "raw": "16 of 41"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:58",
+          "controlSeconds": 58
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 36,
+            "raw": "14 of 36"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 41,
+            "raw": "19 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "ef7fa30364cbe7f2",
+            "name": "Hatsu Hioki",
+            "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 57,
+            "raw": "22 of 57"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:02",
+          "controlSeconds": 62
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "193b9d1858bc4df3",
+        "name": "Dan Hooker",
+        "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+      },
+      {
+        "id": "ef7fa30364cbe7f2",
+        "name": "Hatsu Hioki",
+        "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 61,
+          "raw": "21 of 61"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 18,
+          "attempted": 49,
+          "raw": "18 of 49"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 55,
+          "raw": "17 of 55"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 92,
+          "raw": "32 of 92"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 23,
+          "attempted": 70,
+          "raw": "23 of 70"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 21,
+          "raw": "8 of 21"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 32,
+          "attempted": 92,
+          "raw": "32 of 92"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ef7fa30364cbe7f2",
+            "name": "Hatsu Hioki",
+            "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 10,
+            "attempted": 29,
+            "raw": "10 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 10,
+            "raw": "4 of 10"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "193b9d1858bc4df3",
+          "name": "Dan Hooker",
+          "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+        },
+        {
+          "id": "ef7fa30364cbe7f2",
+          "name": "Hatsu Hioki",
+          "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "193b9d1858bc4df3",
+            "name": "Dan Hooker",
+            "url": "http://www.ufcstats.com/fighter-details/193b9d1858bc4df3"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 36,
+            "raw": "14 of 36"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 32,
+            "raw": "11 of 32"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ef7fa30364cbe7f2",
+            "name": "Hatsu Hioki",
+            "url": "http://www.ufcstats.com/fighter-details/ef7fa30364cbe7f2"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 13,
+            "attempted": 41,
+            "raw": "13 of 41"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.521Z"
+  }
+}

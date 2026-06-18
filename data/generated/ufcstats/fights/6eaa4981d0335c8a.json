@@ -1,0 +1,404 @@
+{
+  "id": "6eaa4981d0335c8a",
+  "url": "http://www.ufcstats.com/fight-details/6eaa4981d0335c8a",
+  "event": {
+    "id": "c3c38c86f5ab9b5c",
+    "name": "UFC 254: Khabib vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/c3c38c86f5ab9b5c"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c62fbc117d57b943",
+      "name": "Tai Tuivasa",
+      "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ebc1f40e00e0c481",
+      "name": "Stefan Struve",
+      "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:59",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c62fbc117d57b943",
+        "name": "Tai Tuivasa",
+        "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+      },
+      {
+        "id": "ebc1f40e00e0c481",
+        "name": "Stefan Struve",
+        "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 42,
+          "raw": "27 of 42"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 63,
+          "raw": "48 of 63"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:44",
+        "controlSeconds": 104
+      },
+      {
+        "fighter": {
+          "id": "ebc1f40e00e0c481",
+          "name": "Stefan Struve",
+          "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "significantStrikePercent": 68,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "ebc1f40e00e0c481",
+          "name": "Stefan Struve",
+          "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 42,
+            "raw": "27 of 42"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 48,
+            "attempted": 63,
+            "raw": "48 of 63"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:44",
+          "controlSeconds": 104
+        },
+        {
+          "fighter": {
+            "id": "ebc1f40e00e0c481",
+            "name": "Stefan Struve",
+            "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c62fbc117d57b943",
+        "name": "Tai Tuivasa",
+        "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+      },
+      {
+        "id": "ebc1f40e00e0c481",
+        "name": "Stefan Struve",
+        "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 42,
+          "raw": "27 of 42"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 15,
+          "attempted": 28,
+          "raw": "15 of 28"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 28,
+          "raw": "14 of 28"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ebc1f40e00e0c481",
+          "name": "Stefan Struve",
+          "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "significantStrikePercent": 68,
+        "head": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c62fbc117d57b943",
+          "name": "Tai Tuivasa",
+          "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+        },
+        {
+          "id": "ebc1f40e00e0c481",
+          "name": "Stefan Struve",
+          "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c62fbc117d57b943",
+            "name": "Tai Tuivasa",
+            "url": "http://www.ufcstats.com/fighter-details/c62fbc117d57b943"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 42,
+            "raw": "27 of 42"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ebc1f40e00e0c481",
+            "name": "Stefan Struve",
+            "url": "http://www.ufcstats.com/fighter-details/ebc1f40e00e0c481"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.778Z"
+  }
+}

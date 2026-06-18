@@ -1,0 +1,944 @@
+{
+  "id": "cd96998e837b0da1",
+  "url": "http://www.ufcstats.com/fight-details/cd96998e837b0da1",
+  "event": {
+    "id": "90e7447d8b7f3f35",
+    "name": "UFC Fight Night: Lewis vs. Hunt",
+    "url": "http://www.ufcstats.com/event-details/90e7447d8b7f3f35"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "eef9b891edbd4604",
+      "name": "Mark Hunt",
+      "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 4,
+    "time": "3:51",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punches to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "eef9b891edbd4604",
+        "name": "Mark Hunt",
+        "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 139,
+          "raw": "51 of 139"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 140,
+          "raw": "52 of 140"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 125,
+          "raw": "59 of 125"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 59,
+          "attempted": 125,
+          "raw": "59 of 125"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 41,
+            "raw": "17 of 41"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 41,
+            "raw": "17 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 44,
+            "raw": "10 of 44"
+          },
+          "significantStrikePercent": 23,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 44,
+            "raw": "10 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 38,
+            "raw": "24 of 38"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 38,
+            "raw": "24 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "eef9b891edbd4604",
+        "name": "Mark Hunt",
+        "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 51,
+          "attempted": 139,
+          "raw": "51 of 139"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 34,
+          "attempted": 112,
+          "raw": "34 of 112"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 19,
+          "raw": "14 of 19"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 134,
+          "raw": "50 of 134"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        },
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 125,
+          "raw": "59 of 125"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 37,
+          "attempted": 91,
+          "raw": "37 of 91"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 24,
+          "raw": "12 of 24"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "distance": {
+          "landed": 52,
+          "attempted": 118,
+          "raw": "52 of 118"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 2,
+            "attempted": 15,
+            "raw": "2 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 41,
+            "raw": "17 of 41"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 12,
+            "attempted": 33,
+            "raw": "12 of 33"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 40,
+            "raw": "17 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 33,
+            "raw": "14 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 44,
+            "raw": "10 of 44"
+          },
+          "significantStrikePercent": 23,
+          "head": {
+            "landed": 6,
+            "attempted": 36,
+            "raw": "6 of 36"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 41,
+            "raw": "9 of 41"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 35,
+            "raw": "15 of 35"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 38,
+            "raw": "24 of 38"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.530Z"
+  }
+}

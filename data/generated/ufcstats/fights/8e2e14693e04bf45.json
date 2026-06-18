@@ -1,0 +1,764 @@
+{
+  "id": "8e2e14693e04bf45",
+  "url": "http://www.ufcstats.com/fight-details/8e2e14693e04bf45",
+  "event": {
+    "id": "ad32471f01e7b1a5",
+    "name": "UFC 119: Mir vs Cro Cop",
+    "url": "http://www.ufcstats.com/event-details/ad32471f01e7b1a5"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "18968f97ad34f15c",
+      "name": "Jeremy Stephens",
+      "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "ccd1299e0345e0ce",
+      "name": "Melvin Guillard",
+      "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Josh Rosenthal",
+    "details": "Kelvin Caldwell 29 - 28.Sal D'amato 28 - 29.Otto Torriero 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "ccd1299e0345e0ce",
+        "name": "Melvin Guillard",
+        "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 155,
+          "raw": "62 of 155"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 62,
+          "attempted": 155,
+          "raw": "62 of 155"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 73,
+          "attempted": 168,
+          "raw": "73 of 168"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 73,
+          "attempted": 168,
+          "raw": "73 of 168"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 49,
+            "raw": "26 of 49"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 49,
+            "raw": "26 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 53,
+            "raw": "18 of 53"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 53,
+            "raw": "18 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 60,
+            "raw": "22 of 60"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 60,
+            "raw": "22 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 56,
+            "raw": "26 of 56"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 56,
+            "raw": "26 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 59,
+            "raw": "25 of 59"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 59,
+            "raw": "25 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "ccd1299e0345e0ce",
+        "name": "Melvin Guillard",
+        "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "significantStrikes": {
+          "landed": 62,
+          "attempted": 155,
+          "raw": "62 of 155"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 18,
+          "attempted": 83,
+          "raw": "18 of 83"
+        },
+        "body": {
+          "landed": 18,
+          "attempted": 25,
+          "raw": "18 of 25"
+        },
+        "leg": {
+          "landed": 26,
+          "attempted": 47,
+          "raw": "26 of 47"
+        },
+        "distance": {
+          "landed": 62,
+          "attempted": 154,
+          "raw": "62 of 154"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        },
+        "significantStrikes": {
+          "landed": 73,
+          "attempted": 168,
+          "raw": "73 of 168"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 42,
+          "attempted": 132,
+          "raw": "42 of 132"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 27,
+          "raw": "23 of 27"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 72,
+          "attempted": 166,
+          "raw": "72 of 166"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 5,
+            "attempted": 22,
+            "raw": "5 of 22"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 45,
+            "raw": "18 of 45"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 49,
+            "raw": "26 of 49"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 49,
+            "raw": "26 of 49"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 53,
+            "raw": "18 of 53"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 5,
+            "attempted": 32,
+            "raw": "5 of 32"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 53,
+            "raw": "18 of 53"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 60,
+            "raw": "22 of 60"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 9,
+            "attempted": 45,
+            "raw": "9 of 45"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 59,
+            "raw": "22 of 59"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "ccd1299e0345e0ce",
+          "name": "Melvin Guillard",
+          "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 56,
+            "raw": "26 of 56"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 19,
+            "raw": "12 of 19"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 56,
+            "raw": "26 of 56"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ccd1299e0345e0ce",
+            "name": "Melvin Guillard",
+            "url": "http://www.ufcstats.com/fighter-details/ccd1299e0345e0ce"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 59,
+            "raw": "25 of 59"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 17,
+            "attempted": 51,
+            "raw": "17 of 51"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.604Z"
+  }
+}

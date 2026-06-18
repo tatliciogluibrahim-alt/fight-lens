@@ -1,0 +1,404 @@
+{
+  "id": "62e6eadbb2805760",
+  "url": "http://www.ufcstats.com/fight-details/62e6eadbb2805760",
+  "event": {
+    "id": "e49c2db95e572dc8",
+    "name": "UFC Fight Night: Thompson vs. Neal",
+    "url": "http://www.ufcstats.com/event-details/e49c2db95e572dc8"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7f6ed67d3ed3c036",
+      "name": "Cody Durden",
+      "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "09e62c450e754913",
+      "name": "Jimmy Flick",
+      "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:18",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jerin Valel",
+    "details": "Flying Triangle"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      },
+      {
+        "id": "09e62c450e754913",
+        "name": "Jimmy Flick",
+        "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 32,
+          "raw": "21 of 32"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 43,
+          "raw": "30 of 43"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:21",
+        "controlSeconds": 81
+      },
+      {
+        "fighter": {
+          "id": "09e62c450e754913",
+          "name": "Jimmy Flick",
+          "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 15,
+          "raw": "7 of 15"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "09e62c450e754913",
+          "name": "Jimmy Flick",
+          "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 32,
+            "raw": "21 of 32"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 43,
+            "raw": "30 of 43"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:21",
+          "controlSeconds": 81
+        },
+        {
+          "fighter": {
+            "id": "09e62c450e754913",
+            "name": "Jimmy Flick",
+            "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7f6ed67d3ed3c036",
+        "name": "Cody Durden",
+        "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+      },
+      {
+        "id": "09e62c450e754913",
+        "name": "Jimmy Flick",
+        "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 32,
+          "raw": "21 of 32"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "09e62c450e754913",
+          "name": "Jimmy Flick",
+          "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 14,
+          "raw": "6 of 14"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7f6ed67d3ed3c036",
+          "name": "Cody Durden",
+          "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+        },
+        {
+          "id": "09e62c450e754913",
+          "name": "Jimmy Flick",
+          "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7f6ed67d3ed3c036",
+            "name": "Cody Durden",
+            "url": "http://www.ufcstats.com/fighter-details/7f6ed67d3ed3c036"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 32,
+            "raw": "21 of 32"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "09e62c450e754913",
+            "name": "Jimmy Flick",
+            "url": "http://www.ufcstats.com/fighter-details/09e62c450e754913"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.502Z"
+  }
+}

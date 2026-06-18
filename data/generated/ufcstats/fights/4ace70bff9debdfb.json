@@ -1,0 +1,584 @@
+{
+  "id": "4ace70bff9debdfb",
+  "url": "http://www.ufcstats.com/fight-details/4ace70bff9debdfb",
+  "event": {
+    "id": "db1f2ed63b54b9a7",
+    "name": "UFC 196: McGregor vs Diaz",
+    "url": "http://www.ufcstats.com/event-details/db1f2ed63b54b9a7"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f4c49976c75c5ab2",
+      "name": "Conor McGregor",
+      "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "8355922d564b152c",
+      "name": "Nate Diaz",
+      "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:12",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      },
+      {
+        "id": "8355922d564b152c",
+        "name": "Nate Diaz",
+        "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 140,
+          "raw": "61 of 140"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 66,
+          "attempted": 145,
+          "raw": "66 of 145"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:39",
+        "controlSeconds": 39
+      },
+      {
+        "fighter": {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 77,
+          "attempted": 152,
+          "raw": "77 of 152"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 89,
+          "attempted": 169,
+          "raw": "89 of 169"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:12",
+        "controlSeconds": 72
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 74,
+            "raw": "28 of 74"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 78,
+            "raw": "32 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:35",
+          "controlSeconds": 35
+        },
+        {
+          "fighter": {
+            "id": "8355922d564b152c",
+            "name": "Nate Diaz",
+            "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 62,
+            "raw": "23 of 62"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 68,
+            "raw": "26 of 68"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 66,
+            "raw": "33 of 66"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 67,
+            "raw": "34 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "8355922d564b152c",
+            "name": "Nate Diaz",
+            "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 54,
+            "attempted": 90,
+            "raw": "54 of 90"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 63,
+            "attempted": 101,
+            "raw": "63 of 101"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:47",
+          "controlSeconds": 47
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f4c49976c75c5ab2",
+        "name": "Conor McGregor",
+        "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+      },
+      {
+        "id": "8355922d564b152c",
+        "name": "Nate Diaz",
+        "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 140,
+          "raw": "61 of 140"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 47,
+          "attempted": 117,
+          "raw": "47 of 117"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "distance": {
+          "landed": 56,
+          "attempted": 133,
+          "raw": "56 of 133"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        },
+        "significantStrikes": {
+          "landed": 77,
+          "attempted": 152,
+          "raw": "77 of 152"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 65,
+          "attempted": 131,
+          "raw": "65 of 131"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 13,
+          "raw": "9 of 13"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "distance": {
+          "landed": 62,
+          "attempted": 133,
+          "raw": "62 of 133"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 74,
+            "raw": "28 of 74"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 18,
+            "attempted": 58,
+            "raw": "18 of 58"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8355922d564b152c",
+            "name": "Nate Diaz",
+            "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 62,
+            "raw": "23 of 62"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 16,
+            "attempted": 50,
+            "raw": "16 of 50"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 61,
+            "raw": "23 of 61"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f4c49976c75c5ab2",
+          "name": "Conor McGregor",
+          "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+        },
+        {
+          "id": "8355922d564b152c",
+          "name": "Nate Diaz",
+          "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f4c49976c75c5ab2",
+            "name": "Conor McGregor",
+            "url": "http://www.ufcstats.com/fighter-details/f4c49976c75c5ab2"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 66,
+            "raw": "33 of 66"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 29,
+            "attempted": 59,
+            "raw": "29 of 59"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 30,
+            "attempted": 62,
+            "raw": "30 of 62"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8355922d564b152c",
+            "name": "Nate Diaz",
+            "url": "http://www.ufcstats.com/fighter-details/8355922d564b152c"
+          },
+          "significantStrikes": {
+            "landed": 54,
+            "attempted": 90,
+            "raw": "54 of 90"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 49,
+            "attempted": 81,
+            "raw": "49 of 81"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 39,
+            "attempted": 72,
+            "raw": "39 of 72"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.505Z"
+  }
+}

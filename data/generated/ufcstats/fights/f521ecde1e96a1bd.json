@@ -1,0 +1,404 @@
+{
+  "id": "f521ecde1e96a1bd",
+  "url": "http://www.ufcstats.com/fight-details/f521ecde1e96a1bd",
+  "event": {
+    "id": "8d477c3fbe001f9d",
+    "name": "UFC Fight Night: Sandhagen vs. Song",
+    "url": "http://www.ufcstats.com/event-details/8d477c3fbe001f9d"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b8bbdeff718dbb7d",
+      "name": "Pat Sabatini",
+      "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "29af297d9f1de0f8",
+      "name": "Damon Jackson",
+      "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": "Punches to Head From Back Control"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b8bbdeff718dbb7d",
+        "name": "Pat Sabatini",
+        "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+      },
+      {
+        "id": "29af297d9f1de0f8",
+        "name": "Damon Jackson",
+        "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "29af297d9f1de0f8",
+          "name": "Damon Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 27,
+          "raw": "16 of 27"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:32",
+        "controlSeconds": 32
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "29af297d9f1de0f8",
+          "name": "Damon Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "29af297d9f1de0f8",
+            "name": "Damon Jackson",
+            "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:32",
+          "controlSeconds": 32
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b8bbdeff718dbb7d",
+        "name": "Pat Sabatini",
+        "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+      },
+      {
+        "id": "29af297d9f1de0f8",
+        "name": "Damon Jackson",
+        "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "29af297d9f1de0f8",
+          "name": "Damon Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 15,
+          "raw": "7 of 15"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b8bbdeff718dbb7d",
+          "name": "Pat Sabatini",
+          "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+        },
+        {
+          "id": "29af297d9f1de0f8",
+          "name": "Damon Jackson",
+          "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b8bbdeff718dbb7d",
+            "name": "Pat Sabatini",
+            "url": "http://www.ufcstats.com/fighter-details/b8bbdeff718dbb7d"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "29af297d9f1de0f8",
+            "name": "Damon Jackson",
+            "url": "http://www.ufcstats.com/fighter-details/29af297d9f1de0f8"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.727Z"
+  }
+}

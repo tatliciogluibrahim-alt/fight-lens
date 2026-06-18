@@ -1,0 +1,404 @@
+{
+  "id": "2e042964c6498e7a",
+  "url": "http://www.ufcstats.com/fight-details/2e042964c6498e7a",
+  "event": {
+    "id": "5d7c18191b8aa432",
+    "name": "UFC Fight Night: Belfort vs Henderson 2",
+    "url": "http://www.ufcstats.com/event-details/5d7c18191b8aa432"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "18968f97ad34f15c",
+      "name": "Jeremy Stephens",
+      "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b71ce838b01f2cad",
+      "name": "Rony Jason",
+      "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:40",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin MacDonald",
+    "details": "Kick to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "b71ce838b01f2cad",
+        "name": "Rony Jason",
+        "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "b71ce838b01f2cad",
+          "name": "Rony Jason",
+          "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "significantStrikePercent": 20,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "b71ce838b01f2cad",
+          "name": "Rony Jason",
+          "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "b71ce838b01f2cad",
+            "name": "Rony Jason",
+            "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "b71ce838b01f2cad",
+        "name": "Rony Jason",
+        "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b71ce838b01f2cad",
+          "name": "Rony Jason",
+          "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "significantStrikePercent": 20,
+        "head": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "b71ce838b01f2cad",
+          "name": "Rony Jason",
+          "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b71ce838b01f2cad",
+            "name": "Rony Jason",
+            "url": "http://www.ufcstats.com/fighter-details/b71ce838b01f2cad"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.603Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "43b416cf0c75dbd7",
+  "url": "http://www.ufcstats.com/fight-details/43b416cf0c75dbd7",
+  "event": {
+    "id": "3d481aa374c954a1",
+    "name": "UFC 197: Jones vs Saint Preux",
+    "url": "http://www.ufcstats.com/event-details/3d481aa374c954a1"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8fd808923cffff82",
+      "name": "Andre Fili",
+      "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "cbf5e6f231b55443",
+      "name": "Yair Rodriguez",
+      "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Kick to Head At DistanceSwitch Kick"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8fd808923cffff82",
+        "name": "Andre Fili",
+        "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+      },
+      {
+        "id": "cbf5e6f231b55443",
+        "name": "Yair Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 31,
+          "raw": "11 of 31"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 40,
+          "raw": "20 of 40"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      },
+      {
+        "fighter": {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 53,
+          "raw": "25 of 53"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 68,
+          "raw": "39 of 68"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:55",
+        "controlSeconds": 235
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "cbf5e6f231b55443",
+            "name": "Yair Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:02",
+          "controlSeconds": 182
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "cbf5e6f231b55443",
+            "name": "Yair Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8fd808923cffff82",
+        "name": "Andre Fili",
+        "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+      },
+      {
+        "id": "cbf5e6f231b55443",
+        "name": "Yair Rodriguez",
+        "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 31,
+          "raw": "11 of 31"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 6,
+          "attempted": 24,
+          "raw": "6 of 24"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 27,
+          "raw": "9 of 27"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 53,
+          "raw": "25 of 53"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 11,
+          "attempted": 37,
+          "raw": "11 of 37"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 16,
+          "attempted": 37,
+          "raw": "16 of 37"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 16,
+          "raw": "9 of 16"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cbf5e6f231b55443",
+            "name": "Yair Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 6,
+            "attempted": 22,
+            "raw": "6 of 22"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "cbf5e6f231b55443",
+          "name": "Yair Rodriguez",
+          "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "cbf5e6f231b55443",
+            "name": "Yair Rodriguez",
+            "url": "http://www.ufcstats.com/fighter-details/cbf5e6f231b55443"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 19,
+            "raw": "8 of 19"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.450Z"
+  }
+}

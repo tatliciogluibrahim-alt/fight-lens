@@ -51,4 +51,10 @@ export interface FightOutcomeModelOutput {
   confidence: OutcomeModelConfidence;
   modelVersion: string;
   dataWarnings: string[];
+  /**
+   * Diagnostic only: the pre-logistic weighted delta (fighter A perspective).
+   * winProbabilityA = logistic(rawDelta, 3.5). Exposed for backtest/calibration
+   * export. Nothing in the live app consumes it; it does not affect any output.
+   */
+  rawDelta: number;
 }

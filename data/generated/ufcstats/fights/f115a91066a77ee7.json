@@ -1,0 +1,404 @@
+{
+  "id": "f115a91066a77ee7",
+  "url": "http://www.ufcstats.com/fight-details/f115a91066a77ee7",
+  "event": {
+    "id": "3a24769a4855040a",
+    "name": "UFC 275: Teixeira vs. Prochazka",
+    "url": "http://www.ufcstats.com/event-details/3a24769a4855040a"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6b453bc35a823c3f",
+      "name": "Jack Della Maddalena",
+      "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "abd5fb12437eda21",
+      "name": "Ramazan Emeev",
+      "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:32",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John Sharp",
+    "details": "Punch to Body At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6b453bc35a823c3f",
+        "name": "Jack Della Maddalena",
+        "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+      },
+      {
+        "id": "abd5fb12437eda21",
+        "name": "Ramazan Emeev",
+        "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b453bc35a823c3f",
+          "name": "Jack Della Maddalena",
+          "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 36,
+          "raw": "18 of 36"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 36,
+          "raw": "18 of 36"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "abd5fb12437eda21",
+          "name": "Ramazan Emeev",
+          "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "significantStrikePercent": 29,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:25",
+        "controlSeconds": 25
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6b453bc35a823c3f",
+          "name": "Jack Della Maddalena",
+          "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+        },
+        {
+          "id": "abd5fb12437eda21",
+          "name": "Ramazan Emeev",
+          "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b453bc35a823c3f",
+            "name": "Jack Della Maddalena",
+            "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "abd5fb12437eda21",
+            "name": "Ramazan Emeev",
+            "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6b453bc35a823c3f",
+        "name": "Jack Della Maddalena",
+        "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+      },
+      {
+        "id": "abd5fb12437eda21",
+        "name": "Ramazan Emeev",
+        "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6b453bc35a823c3f",
+          "name": "Jack Della Maddalena",
+          "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 36,
+          "raw": "18 of 36"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 11,
+          "attempted": 26,
+          "raw": "11 of 26"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 29,
+          "raw": "11 of 29"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        }
+      },
+      {
+        "fighter": {
+          "id": "abd5fb12437eda21",
+          "name": "Ramazan Emeev",
+          "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "significantStrikePercent": 29,
+        "head": {
+          "landed": 6,
+          "attempted": 22,
+          "raw": "6 of 22"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6b453bc35a823c3f",
+          "name": "Jack Della Maddalena",
+          "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+        },
+        {
+          "id": "abd5fb12437eda21",
+          "name": "Ramazan Emeev",
+          "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6b453bc35a823c3f",
+            "name": "Jack Della Maddalena",
+            "url": "http://www.ufcstats.com/fighter-details/6b453bc35a823c3f"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 36,
+            "raw": "18 of 36"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 11,
+            "attempted": 26,
+            "raw": "11 of 26"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "abd5fb12437eda21",
+            "name": "Ramazan Emeev",
+            "url": "http://www.ufcstats.com/fighter-details/abd5fb12437eda21"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 6,
+            "attempted": 22,
+            "raw": "6 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.584Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "7fc5f1dc2df84ac7",
+  "url": "http://www.ufcstats.com/fight-details/7fc5f1dc2df84ac7",
+  "event": {
+    "id": "754968e325d6f60d",
+    "name": "UFC Fight Night: Walker vs. Zhang",
+    "url": "http://www.ufcstats.com/event-details/754968e325d6f60d"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "709fadb644ee3f51",
+      "name": "Diyar Nurgozhay",
+      "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "02f484417a6fa69d",
+      "name": "Uran Satybaldiev",
+      "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:45",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Vitor Ribeiro",
+    "details": "Ezekiel Choke From Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "709fadb644ee3f51",
+        "name": "Diyar Nurgozhay",
+        "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+      },
+      {
+        "id": "02f484417a6fa69d",
+        "name": "Uran Satybaldiev",
+        "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "709fadb644ee3f51",
+          "name": "Diyar Nurgozhay",
+          "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 19,
+          "raw": "13 of 19"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      },
+      {
+        "fighter": {
+          "id": "02f484417a6fa69d",
+          "name": "Uran Satybaldiev",
+          "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "1:10",
+        "controlSeconds": 70
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "709fadb644ee3f51",
+          "name": "Diyar Nurgozhay",
+          "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+        },
+        {
+          "id": "02f484417a6fa69d",
+          "name": "Uran Satybaldiev",
+          "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "709fadb644ee3f51",
+            "name": "Diyar Nurgozhay",
+            "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        },
+        {
+          "fighter": {
+            "id": "02f484417a6fa69d",
+            "name": "Uran Satybaldiev",
+            "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "1:10",
+          "controlSeconds": 70
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "709fadb644ee3f51",
+        "name": "Diyar Nurgozhay",
+        "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+      },
+      {
+        "id": "02f484417a6fa69d",
+        "name": "Uran Satybaldiev",
+        "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "709fadb644ee3f51",
+          "name": "Diyar Nurgozhay",
+          "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "02f484417a6fa69d",
+          "name": "Uran Satybaldiev",
+          "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "head": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "709fadb644ee3f51",
+          "name": "Diyar Nurgozhay",
+          "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+        },
+        {
+          "id": "02f484417a6fa69d",
+          "name": "Uran Satybaldiev",
+          "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "709fadb644ee3f51",
+            "name": "Diyar Nurgozhay",
+            "url": "http://www.ufcstats.com/fighter-details/709fadb644ee3f51"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "02f484417a6fa69d",
+            "name": "Uran Satybaldiev",
+            "url": "http://www.ufcstats.com/fighter-details/02f484417a6fa69d"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.533Z"
+  }
+}

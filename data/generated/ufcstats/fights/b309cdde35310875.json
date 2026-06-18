@@ -1,0 +1,404 @@
+{
+  "id": "b309cdde35310875",
+  "url": "http://www.ufcstats.com/fight-details/b309cdde35310875",
+  "event": {
+    "id": "9649d75defe0dedb",
+    "name": "UFC Fight Night: Barboza vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/9649d75defe0dedb"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64a50dad704d1d49",
+      "name": "Edson Barboza",
+      "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "9e8f6c728eb01124",
+      "name": "Justin Gaethje",
+      "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:30",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Keith Peterson",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 32,
+          "raw": "13 of 32"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 32,
+          "raw": "13 of 32"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 35,
+          "raw": "20 of 35"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:44",
+        "controlSeconds": 44
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 32,
+            "raw": "13 of 32"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 32,
+            "raw": "13 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 35,
+            "raw": "20 of 35"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 32,
+          "raw": "13 of 32"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 6,
+          "attempted": 21,
+          "raw": "6 of 21"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 30,
+          "raw": "11 of 30"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 35,
+          "raw": "20 of 35"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 13,
+          "attempted": 28,
+          "raw": "13 of 28"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 32,
+            "raw": "13 of 32"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 6,
+            "attempted": 21,
+            "raw": "6 of 21"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 35,
+            "raw": "20 of 35"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.547Z"
+  }
+}

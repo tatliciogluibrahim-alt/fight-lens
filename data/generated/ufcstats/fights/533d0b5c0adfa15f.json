@@ -1,0 +1,764 @@
+{
+  "id": "533d0b5c0adfa15f",
+  "url": "http://www.ufcstats.com/fight-details/533d0b5c0adfa15f",
+  "event": {
+    "id": "fc9a9559a05f2704",
+    "name": "UFC Fight Night: Benavidez vs. Figueiredo",
+    "url": "http://www.ufcstats.com/event-details/fc9a9559a05f2704"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6a96ad1bc34fb113",
+      "name": "Ismail Naurdiev",
+      "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "45f7cb591c3ab00b",
+      "name": "Sean Brady",
+      "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Scott Howard",
+    "details": "Brian Costello 28 - 29.Chris Lee 27 - 29.Lisa Cuellar 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6a96ad1bc34fb113",
+        "name": "Ismail Naurdiev",
+        "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+      },
+      {
+        "id": "45f7cb591c3ab00b",
+        "name": "Sean Brady",
+        "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 87,
+          "raw": "37 of 87"
+        },
+        "significantStrikePercent": 43,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 88,
+          "raw": "38 of 88"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      },
+      {
+        "fighter": {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 91,
+          "raw": "47 of 91"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 125,
+          "attempted": 191,
+          "raw": "125 of 191"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedownPercent": 44,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "7:56",
+        "controlSeconds": 476
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 66,
+            "raw": "28 of 66"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 66,
+            "raw": "28 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 47,
+            "raw": "34 of 47"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:46",
+          "controlSeconds": 226
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 72,
+            "attempted": 99,
+            "raw": "72 of 99"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:10",
+          "controlSeconds": 250
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6a96ad1bc34fb113",
+        "name": "Ismail Naurdiev",
+        "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+      },
+      {
+        "id": "45f7cb591c3ab00b",
+        "name": "Sean Brady",
+        "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 87,
+          "raw": "37 of 87"
+        },
+        "significantStrikePercent": 43,
+        "head": {
+          "landed": 16,
+          "attempted": 64,
+          "raw": "16 of 64"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 10,
+          "raw": "10 of 10"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 13,
+          "raw": "11 of 13"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 79,
+          "raw": "33 of 79"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 8,
+          "raw": "4 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 91,
+          "raw": "47 of 91"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 30,
+          "attempted": 71,
+          "raw": "30 of 71"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 17,
+          "raw": "14 of 17"
+        },
+        "distance": {
+          "landed": 32,
+          "attempted": 73,
+          "raw": "32 of 73"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 17,
+          "raw": "14 of 17"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 66,
+            "raw": "28 of 66"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 12,
+            "attempted": 48,
+            "raw": "12 of 48"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 59,
+            "raw": "24 of 59"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 9,
+            "attempted": 33,
+            "raw": "9 of 33"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 45,
+            "raw": "19 of 45"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 12,
+            "attempted": 20,
+            "raw": "12 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6a96ad1bc34fb113",
+          "name": "Ismail Naurdiev",
+          "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+        },
+        {
+          "id": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6a96ad1bc34fb113",
+            "name": "Ismail Naurdiev",
+            "url": "http://www.ufcstats.com/fighter-details/6a96ad1bc34fb113"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "45f7cb591c3ab00b",
+            "name": "Sean Brady",
+            "url": "http://www.ufcstats.com/fighter-details/45f7cb591c3ab00b"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.582Z"
+  }
+}

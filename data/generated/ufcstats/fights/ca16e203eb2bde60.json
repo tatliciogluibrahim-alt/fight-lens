@@ -1,0 +1,404 @@
+{
+  "id": "ca16e203eb2bde60",
+  "url": "http://www.ufcstats.com/fight-details/ca16e203eb2bde60",
+  "event": {
+    "id": "8dc4f34c1f50d00d",
+    "name": "UFC Fight Night: Nelson vs Story",
+    "url": "http://www.ufcstats.com/event-details/8dc4f34c1f50d00d"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "150ff4cc642270b9",
+      "name": "Max Holloway",
+      "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "3f52ce18fb98008f",
+      "name": "Akira Corassani",
+      "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:11",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kristian Hacklou",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "3f52ce18fb98008f",
+        "name": "Akira Corassani",
+        "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 51,
+          "raw": "31 of 51"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 62,
+          "raw": "38 of 62"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "3f52ce18fb98008f",
+          "name": "Akira Corassani",
+          "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 29,
+          "raw": "11 of 29"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 29,
+          "raw": "11 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "3f52ce18fb98008f",
+          "name": "Akira Corassani",
+          "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 51,
+            "raw": "31 of 51"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 38,
+            "attempted": 62,
+            "raw": "38 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "3f52ce18fb98008f",
+            "name": "Akira Corassani",
+            "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "3f52ce18fb98008f",
+        "name": "Akira Corassani",
+        "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 51,
+          "raw": "31 of 51"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 25,
+          "attempted": 42,
+          "raw": "25 of 42"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 36,
+          "raw": "20 of 36"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        }
+      },
+      {
+        "fighter": {
+          "id": "3f52ce18fb98008f",
+          "name": "Akira Corassani",
+          "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 29,
+          "raw": "11 of 29"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 8,
+          "attempted": 23,
+          "raw": "8 of 23"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 26,
+          "raw": "10 of 26"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "3f52ce18fb98008f",
+          "name": "Akira Corassani",
+          "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 51,
+            "raw": "31 of 51"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 25,
+            "attempted": 42,
+            "raw": "25 of 42"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 36,
+            "raw": "20 of 36"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          }
+        },
+        {
+          "fighter": {
+            "id": "3f52ce18fb98008f",
+            "name": "Akira Corassani",
+            "url": "http://www.ufcstats.com/fighter-details/3f52ce18fb98008f"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.686Z"
+  }
+}

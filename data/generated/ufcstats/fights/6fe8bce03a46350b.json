@@ -1,0 +1,404 @@
+{
+  "id": "6fe8bce03a46350b",
+  "url": "http://www.ufcstats.com/fight-details/6fe8bce03a46350b",
+  "event": {
+    "id": "4c12aa7ca246e7a4",
+    "name": "UFC 250: Nunes vs. Spencer",
+    "url": "http://www.ufcstats.com/event-details/4c12aa7ca246e7a4"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6ac9bc2953c47345",
+      "name": "Gerald Meerschaert",
+      "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "2e585c701f72fe55",
+      "name": "Ian Heinisch",
+      "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:14",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "2e585c701f72fe55",
+        "name": "Ian Heinisch",
+        "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "2e585c701f72fe55",
+          "name": "Ian Heinisch",
+          "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 25,
+          "raw": "20 of 25"
+        },
+        "significantStrikePercent": 80,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 27,
+          "raw": "22 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "2e585c701f72fe55",
+          "name": "Ian Heinisch",
+          "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "2e585c701f72fe55",
+            "name": "Ian Heinisch",
+            "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 25,
+            "raw": "20 of 25"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 27,
+            "raw": "22 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:13",
+          "controlSeconds": 13
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "2e585c701f72fe55",
+        "name": "Ian Heinisch",
+        "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2e585c701f72fe55",
+          "name": "Ian Heinisch",
+          "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 25,
+          "raw": "20 of 25"
+        },
+        "significantStrikePercent": 80,
+        "head": {
+          "landed": 17,
+          "attempted": 22,
+          "raw": "17 of 22"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 15,
+          "attempted": 20,
+          "raw": "15 of 20"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "2e585c701f72fe55",
+          "name": "Ian Heinisch",
+          "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2e585c701f72fe55",
+            "name": "Ian Heinisch",
+            "url": "http://www.ufcstats.com/fighter-details/2e585c701f72fe55"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 25,
+            "raw": "20 of 25"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 17,
+            "attempted": 22,
+            "raw": "17 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.559Z"
+  }
+}

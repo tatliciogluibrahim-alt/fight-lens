@@ -1,0 +1,404 @@
+{
+  "id": "b2d05ae88f820421",
+  "url": "http://www.ufcstats.com/fight-details/b2d05ae88f820421",
+  "event": {
+    "id": "df05aa15b2d66f57",
+    "name": "UFC Fight Night: Maia vs. Askren",
+    "url": "http://www.ufcstats.com/event-details/df05aa15b2d66f57"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "08af939f41b5a57b",
+      "name": "Beneil Dariush",
+      "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "764342d39cdaa54a",
+      "name": "Frank Camacho",
+      "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:02",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin Sataki",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "764342d39cdaa54a",
+        "name": "Frank Camacho",
+        "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "significantStrikePercent": 72,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 19,
+          "raw": "14 of 19"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:45",
+        "controlSeconds": 45
+      },
+      {
+        "fighter": {
+          "id": "764342d39cdaa54a",
+          "name": "Frank Camacho",
+          "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "764342d39cdaa54a",
+          "name": "Frank Camacho",
+          "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "764342d39cdaa54a",
+            "name": "Frank Camacho",
+            "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "08af939f41b5a57b",
+        "name": "Beneil Dariush",
+        "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+      },
+      {
+        "id": "764342d39cdaa54a",
+        "name": "Frank Camacho",
+        "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "significantStrikePercent": 72,
+        "head": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "764342d39cdaa54a",
+          "name": "Frank Camacho",
+          "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "08af939f41b5a57b",
+          "name": "Beneil Dariush",
+          "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+        },
+        {
+          "id": "764342d39cdaa54a",
+          "name": "Frank Camacho",
+          "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "08af939f41b5a57b",
+            "name": "Beneil Dariush",
+            "url": "http://www.ufcstats.com/fighter-details/08af939f41b5a57b"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "764342d39cdaa54a",
+            "name": "Frank Camacho",
+            "url": "http://www.ufcstats.com/fighter-details/764342d39cdaa54a"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.465Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "8b9bdacca749ec90",
+  "url": "http://www.ufcstats.com/fight-details/8b9bdacca749ec90",
+  "event": {
+    "id": "a1153013cb5f628f",
+    "name": "UFC Fight Night: Overeem vs. Volkov",
+    "url": "http://www.ufcstats.com/event-details/a1153013cb5f628f"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "279566840aa55bf2",
+      "name": "Alexander Volkov",
+      "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b4ad3a06ee4d660c",
+      "name": "Alistair Overeem",
+      "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:06",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "279566840aa55bf2",
+        "name": "Alexander Volkov",
+        "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+      },
+      {
+        "id": "b4ad3a06ee4d660c",
+        "name": "Alistair Overeem",
+        "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 88,
+          "raw": "54 of 88"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 54,
+          "attempted": 88,
+          "raw": "54 of 88"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      },
+      {
+        "fighter": {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "279566840aa55bf2",
+            "name": "Alexander Volkov",
+            "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 53,
+            "raw": "33 of 53"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 53,
+            "raw": "33 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "b4ad3a06ee4d660c",
+            "name": "Alistair Overeem",
+            "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "279566840aa55bf2",
+            "name": "Alexander Volkov",
+            "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "b4ad3a06ee4d660c",
+            "name": "Alistair Overeem",
+            "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "279566840aa55bf2",
+        "name": "Alexander Volkov",
+        "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+      },
+      {
+        "id": "b4ad3a06ee4d660c",
+        "name": "Alistair Overeem",
+        "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 88,
+          "raw": "54 of 88"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 47,
+          "attempted": 81,
+          "raw": "47 of 81"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 65,
+          "raw": "40 of 65"
+        },
+        "clinch": {
+          "landed": 11,
+          "attempted": 18,
+          "raw": "11 of 18"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 3,
+          "attempted": 13,
+          "raw": "3 of 13"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "279566840aa55bf2",
+            "name": "Alexander Volkov",
+            "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 53,
+            "raw": "33 of 53"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 26,
+            "attempted": 46,
+            "raw": "26 of 46"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b4ad3a06ee4d660c",
+            "name": "Alistair Overeem",
+            "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+        },
+        {
+          "id": "b4ad3a06ee4d660c",
+          "name": "Alistair Overeem",
+          "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "279566840aa55bf2",
+            "name": "Alexander Volkov",
+            "url": "http://www.ufcstats.com/fighter-details/279566840aa55bf2"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 31,
+            "raw": "18 of 31"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b4ad3a06ee4d660c",
+            "name": "Alistair Overeem",
+            "url": "http://www.ufcstats.com/fighter-details/b4ad3a06ee4d660c"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.433Z"
+  }
+}

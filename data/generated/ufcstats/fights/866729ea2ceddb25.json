@@ -1,0 +1,404 @@
+{
+  "id": "866729ea2ceddb25",
+  "url": "http://www.ufcstats.com/fight-details/866729ea2ceddb25",
+  "event": {
+    "id": "03b1e846b09f721d",
+    "name": "UFC 227: Dillashaw vs. Garbrandt 2",
+    "url": "http://www.ufcstats.com/event-details/03b1e846b09f721d"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "ab2b4ff41d6ebe0f",
+      "name": "Alex Perez",
+      "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d2036f31c035e0d1",
+      "name": "Jose Torres",
+      "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:46",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Frank Trigg",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "ab2b4ff41d6ebe0f",
+        "name": "Alex Perez",
+        "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+      },
+      {
+        "id": "d2036f31c035e0d1",
+        "name": "Jose Torres",
+        "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ab2b4ff41d6ebe0f",
+          "name": "Alex Perez",
+          "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 162,
+          "raw": "84 of 162"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 88,
+          "attempted": 166,
+          "raw": "88 of 166"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "d2036f31c035e0d1",
+          "name": "Jose Torres",
+          "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 76,
+          "raw": "29 of 76"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 77,
+          "raw": "30 of 77"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "ab2b4ff41d6ebe0f",
+          "name": "Alex Perez",
+          "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+        },
+        {
+          "id": "d2036f31c035e0d1",
+          "name": "Jose Torres",
+          "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ab2b4ff41d6ebe0f",
+            "name": "Alex Perez",
+            "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 84,
+            "attempted": 162,
+            "raw": "84 of 162"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 88,
+            "attempted": 166,
+            "raw": "88 of 166"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "d2036f31c035e0d1",
+            "name": "Jose Torres",
+            "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 76,
+            "raw": "29 of 76"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 77,
+            "raw": "30 of 77"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "ab2b4ff41d6ebe0f",
+        "name": "Alex Perez",
+        "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+      },
+      {
+        "id": "d2036f31c035e0d1",
+        "name": "Jose Torres",
+        "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "ab2b4ff41d6ebe0f",
+          "name": "Alex Perez",
+          "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+        },
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 162,
+          "raw": "84 of 162"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 67,
+          "attempted": 139,
+          "raw": "67 of 139"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 64,
+          "attempted": 133,
+          "raw": "64 of 133"
+        },
+        "clinch": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d2036f31c035e0d1",
+          "name": "Jose Torres",
+          "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+        },
+        "significantStrikes": {
+          "landed": 29,
+          "attempted": 76,
+          "raw": "29 of 76"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 22,
+          "attempted": 67,
+          "raw": "22 of 67"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 71,
+          "raw": "25 of 71"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "ab2b4ff41d6ebe0f",
+          "name": "Alex Perez",
+          "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+        },
+        {
+          "id": "d2036f31c035e0d1",
+          "name": "Jose Torres",
+          "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "ab2b4ff41d6ebe0f",
+            "name": "Alex Perez",
+            "url": "http://www.ufcstats.com/fighter-details/ab2b4ff41d6ebe0f"
+          },
+          "significantStrikes": {
+            "landed": 84,
+            "attempted": 162,
+            "raw": "84 of 162"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 67,
+            "attempted": 139,
+            "raw": "67 of 139"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 64,
+            "attempted": 133,
+            "raw": "64 of 133"
+          },
+          "clinch": {
+            "landed": 20,
+            "attempted": 29,
+            "raw": "20 of 29"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d2036f31c035e0d1",
+            "name": "Jose Torres",
+            "url": "http://www.ufcstats.com/fighter-details/d2036f31c035e0d1"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 76,
+            "raw": "29 of 76"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 22,
+            "attempted": 67,
+            "raw": "22 of 67"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 71,
+            "raw": "25 of 71"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.426Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "40781a64c4cea877",
+  "url": "http://www.ufcstats.com/fight-details/40781a64c4cea877",
+  "event": {
+    "id": "f21a3d68fb9df387",
+    "name": "UFC Fight Night: Andrade vs. Blanchfield",
+    "url": "http://www.ufcstats.com/event-details/f21a3d68fb9df387"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b62d5280966b2460",
+      "name": "Clayton Carpenter",
+      "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "4a043165cf47cab2",
+      "name": "Juancamilo Ronderos",
+      "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:13",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b62d5280966b2460",
+        "name": "Clayton Carpenter",
+        "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+      },
+      {
+        "id": "4a043165cf47cab2",
+        "name": "Juancamilo Ronderos",
+        "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b62d5280966b2460",
+          "name": "Clayton Carpenter",
+          "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 3,
+        "reversals": 1,
+        "control": "1:19",
+        "controlSeconds": 79
+      },
+      {
+        "fighter": {
+          "id": "4a043165cf47cab2",
+          "name": "Juancamilo Ronderos",
+          "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "significantStrikePercent": 14,
+        "totalStrikes": {
+          "landed": 46,
+          "attempted": 56,
+          "raw": "46 of 56"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:22",
+        "controlSeconds": 82
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b62d5280966b2460",
+          "name": "Clayton Carpenter",
+          "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+        },
+        {
+          "id": "4a043165cf47cab2",
+          "name": "Juancamilo Ronderos",
+          "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b62d5280966b2460",
+            "name": "Clayton Carpenter",
+            "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 3,
+          "reversals": 1,
+          "control": "1:19",
+          "controlSeconds": 79
+        },
+        {
+          "fighter": {
+            "id": "4a043165cf47cab2",
+            "name": "Juancamilo Ronderos",
+            "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 56,
+            "raw": "46 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:22",
+          "controlSeconds": 82
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b62d5280966b2460",
+        "name": "Clayton Carpenter",
+        "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+      },
+      {
+        "id": "4a043165cf47cab2",
+        "name": "Juancamilo Ronderos",
+        "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b62d5280966b2460",
+          "name": "Clayton Carpenter",
+          "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4a043165cf47cab2",
+          "name": "Juancamilo Ronderos",
+          "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "significantStrikePercent": 14,
+        "head": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b62d5280966b2460",
+          "name": "Clayton Carpenter",
+          "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+        },
+        {
+          "id": "4a043165cf47cab2",
+          "name": "Juancamilo Ronderos",
+          "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b62d5280966b2460",
+            "name": "Clayton Carpenter",
+            "url": "http://www.ufcstats.com/fighter-details/b62d5280966b2460"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a043165cf47cab2",
+            "name": "Juancamilo Ronderos",
+            "url": "http://www.ufcstats.com/fighter-details/4a043165cf47cab2"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "significantStrikePercent": 14,
+          "head": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.500Z"
+  }
+}

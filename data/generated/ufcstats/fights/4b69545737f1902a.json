@@ -1,0 +1,584 @@
+{
+  "id": "4b69545737f1902a",
+  "url": "http://www.ufcstats.com/fight-details/4b69545737f1902a",
+  "event": {
+    "id": "e5c9de15bb58b1c6",
+    "name": "UFC Fight Night: Saffiedine vs Lim",
+    "url": "http://www.ufcstats.com/event-details/e5c9de15bb58b1c6"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "150ff4cc642270b9",
+      "name": "Max Holloway",
+      "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "db5dc7cb80d7d418",
+      "name": "Will Chope",
+      "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:27",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Leon Roberts",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "db5dc7cb80d7d418",
+        "name": "Will Chope",
+        "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 74,
+          "attempted": 139,
+          "raw": "74 of 139"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 79,
+          "attempted": 145,
+          "raw": "79 of 145"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:16",
+        "controlSeconds": 16
+      },
+      {
+        "fighter": {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 121,
+          "raw": "33 of 121"
+        },
+        "significantStrikePercent": 27,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 122,
+          "raw": "34 of 122"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:01",
+        "controlSeconds": 61
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 81,
+            "raw": "37 of 81"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 81,
+            "raw": "37 of 81"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "db5dc7cb80d7d418",
+            "name": "Will Chope",
+            "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 102,
+            "raw": "26 of 102"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 102,
+            "raw": "26 of 102"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 58,
+            "raw": "37 of 58"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 42,
+            "attempted": 64,
+            "raw": "42 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "db5dc7cb80d7d418",
+            "name": "Will Chope",
+            "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      },
+      {
+        "id": "db5dc7cb80d7d418",
+        "name": "Will Chope",
+        "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "significantStrikes": {
+          "landed": 74,
+          "attempted": 139,
+          "raw": "74 of 139"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 58,
+          "attempted": 119,
+          "raw": "58 of 119"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 18,
+          "raw": "14 of 18"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 73,
+          "raw": "30 of 73"
+        },
+        "clinch": {
+          "landed": 41,
+          "attempted": 61,
+          "raw": "41 of 61"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 121,
+          "raw": "33 of 121"
+        },
+        "significantStrikePercent": 27,
+        "head": {
+          "landed": 23,
+          "attempted": 104,
+          "raw": "23 of 104"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 111,
+          "raw": "28 of 111"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 81,
+            "raw": "37 of 81"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 30,
+            "attempted": 71,
+            "raw": "30 of 71"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 61,
+            "raw": "23 of 61"
+          },
+          "clinch": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "db5dc7cb80d7d418",
+            "name": "Will Chope",
+            "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 102,
+            "raw": "26 of 102"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 18,
+            "attempted": 90,
+            "raw": "18 of 90"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 97,
+            "raw": "25 of 97"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        {
+          "id": "db5dc7cb80d7d418",
+          "name": "Will Chope",
+          "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 37,
+            "attempted": 58,
+            "raw": "37 of 58"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 28,
+            "attempted": 48,
+            "raw": "28 of 48"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "clinch": {
+            "landed": 27,
+            "attempted": 41,
+            "raw": "27 of 41"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "db5dc7cb80d7d418",
+            "name": "Will Chope",
+            "url": "http://www.ufcstats.com/fighter-details/db5dc7cb80d7d418"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.686Z"
+  }
+}

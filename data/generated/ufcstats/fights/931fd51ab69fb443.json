@@ -1,0 +1,764 @@
+{
+  "id": "931fd51ab69fb443",
+  "url": "http://www.ufcstats.com/fight-details/931fd51ab69fb443",
+  "event": {
+    "id": "bfe95ec546692b13",
+    "name": "UFC Fight Night: Blaydes vs. Lewis",
+    "url": "http://www.ufcstats.com/event-details/bfe95ec546692b13"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7026eca45f65377b",
+      "name": "Jared Gordon",
+      "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "0de720c0f1d4ab9c",
+      "name": "Danny Chavez",
+      "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Eric Colon 27 - 30.Junichiro Kamijo 27 - 30.Chris Lee 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7026eca45f65377b",
+        "name": "Jared Gordon",
+        "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+      },
+      {
+        "id": "0de720c0f1d4ab9c",
+        "name": "Danny Chavez",
+        "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 82,
+          "attempted": 131,
+          "raw": "82 of 131"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 138,
+          "attempted": 191,
+          "raw": "138 of 191"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "takedownPercent": 29,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:07",
+        "controlSeconds": 367
+      },
+      {
+        "fighter": {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 113,
+          "raw": "39 of 113"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 42,
+          "attempted": 116,
+          "raw": "42 of 116"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 61,
+            "raw": "36 of 61"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 61,
+            "raw": "36 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 32,
+            "raw": "19 of 32"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 57,
+            "attempted": 74,
+            "raw": "57 of 74"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:32",
+          "controlSeconds": 212
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 21,
+            "raw": "9 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 38,
+            "raw": "27 of 38"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 45,
+            "attempted": 56,
+            "raw": "45 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:29",
+          "controlSeconds": 149
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 44,
+            "raw": "11 of 44"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 46,
+            "raw": "13 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7026eca45f65377b",
+        "name": "Jared Gordon",
+        "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+      },
+      {
+        "id": "0de720c0f1d4ab9c",
+        "name": "Danny Chavez",
+        "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        "significantStrikes": {
+          "landed": 82,
+          "attempted": 131,
+          "raw": "82 of 131"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 41,
+          "attempted": 89,
+          "raw": "41 of 89"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 20,
+          "raw": "19 of 20"
+        },
+        "leg": {
+          "landed": 22,
+          "attempted": 22,
+          "raw": "22 of 22"
+        },
+        "distance": {
+          "landed": 67,
+          "attempted": 110,
+          "raw": "67 of 110"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 13,
+          "raw": "9 of 13"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        },
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 113,
+          "raw": "39 of 113"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 23,
+          "attempted": 91,
+          "raw": "23 of 91"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "distance": {
+          "landed": 38,
+          "attempted": 112,
+          "raw": "38 of 112"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "significantStrikes": {
+            "landed": 36,
+            "attempted": 61,
+            "raw": "36 of 61"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 15,
+            "attempted": 39,
+            "raw": "15 of 39"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 15,
+            "attempted": 15,
+            "raw": "15 of 15"
+          },
+          "distance": {
+            "landed": 34,
+            "attempted": 59,
+            "raw": "34 of 59"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 32,
+            "raw": "19 of 32"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 13,
+            "attempted": 26,
+            "raw": "13 of 26"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7026eca45f65377b",
+          "name": "Jared Gordon",
+          "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+        },
+        {
+          "id": "0de720c0f1d4ab9c",
+          "name": "Danny Chavez",
+          "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7026eca45f65377b",
+            "name": "Jared Gordon",
+            "url": "http://www.ufcstats.com/fighter-details/7026eca45f65377b"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 38,
+            "raw": "27 of 38"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 30,
+            "raw": "22 of 30"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0de720c0f1d4ab9c",
+            "name": "Danny Chavez",
+            "url": "http://www.ufcstats.com/fighter-details/0de720c0f1d4ab9c"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 44,
+            "raw": "11 of 44"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 7,
+            "attempted": 37,
+            "raw": "7 of 37"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 43,
+            "raw": "10 of 43"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.598Z"
+  }
+}

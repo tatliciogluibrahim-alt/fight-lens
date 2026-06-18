@@ -1,0 +1,764 @@
+{
+  "id": "5e1370a92ce8abb0",
+  "url": "http://www.ufcstats.com/fight-details/5e1370a92ce8abb0",
+  "event": {
+    "id": "bd4389b71fdc0ce2",
+    "name": "The Ultimate Fighter: Tournament of Champions Finale",
+    "url": "http://www.ufcstats.com/event-details/bd4389b71fdc0ce2"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "056c493bbd76a918",
+      "name": "Henry Cejudo",
+      "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "80eacd4da0617c57",
+      "name": "Joseph Benavidez",
+      "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Yves Lavigne",
+    "details": "Marcos Rosales 29 - 27.Glenn Trowbridge 26 - 30.Derek Cleary 27 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "80eacd4da0617c57",
+        "name": "Joseph Benavidez",
+        "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 195,
+          "raw": "68 of 195"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 197,
+          "raw": "70 of 197"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "takedownPercent": 14,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:13",
+        "controlSeconds": 13
+      },
+      {
+        "fighter": {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 69,
+          "attempted": 232,
+          "raw": "69 of 232"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 69,
+          "attempted": 232,
+          "raw": "69 of 232"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 66,
+            "raw": "21 of 66"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 66,
+            "raw": "21 of 66"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 69,
+            "raw": "22 of 69"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 69,
+            "raw": "22 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 64,
+            "raw": "21 of 64"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 64,
+            "raw": "21 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 76,
+            "raw": "22 of 76"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 76,
+            "raw": "22 of 76"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 65,
+            "raw": "26 of 65"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 67,
+            "raw": "28 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 87,
+            "raw": "25 of 87"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 87,
+            "raw": "25 of 87"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "056c493bbd76a918",
+        "name": "Henry Cejudo",
+        "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+      },
+      {
+        "id": "80eacd4da0617c57",
+        "name": "Joseph Benavidez",
+        "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 195,
+          "raw": "68 of 195"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 29,
+          "attempted": 143,
+          "raw": "29 of 143"
+        },
+        "body": {
+          "landed": 29,
+          "attempted": 39,
+          "raw": "29 of 39"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "distance": {
+          "landed": 59,
+          "attempted": 176,
+          "raw": "59 of 176"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        },
+        "significantStrikes": {
+          "landed": 69,
+          "attempted": 232,
+          "raw": "69 of 232"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 39,
+          "attempted": 172,
+          "raw": "39 of 172"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 35,
+          "raw": "19 of 35"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 25,
+          "raw": "11 of 25"
+        },
+        "distance": {
+          "landed": 68,
+          "attempted": 228,
+          "raw": "68 of 228"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 66,
+            "raw": "21 of 66"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 9,
+            "attempted": 47,
+            "raw": "9 of 47"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 51,
+            "raw": "16 of 51"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 15,
+            "raw": "5 of 15"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 69,
+            "raw": "22 of 69"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 8,
+            "attempted": 47,
+            "raw": "8 of 47"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 65,
+            "raw": "21 of 65"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 64,
+            "raw": "21 of 64"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 10,
+            "attempted": 51,
+            "raw": "10 of 51"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 62,
+            "raw": "19 of 62"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 76,
+            "raw": "22 of 76"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 13,
+            "attempted": 54,
+            "raw": "13 of 54"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "distance": {
+            "landed": 22,
+            "attempted": 76,
+            "raw": "22 of 76"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "056c493bbd76a918",
+          "name": "Henry Cejudo",
+          "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+        },
+        {
+          "id": "80eacd4da0617c57",
+          "name": "Joseph Benavidez",
+          "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "056c493bbd76a918",
+            "name": "Henry Cejudo",
+            "url": "http://www.ufcstats.com/fighter-details/056c493bbd76a918"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 65,
+            "raw": "26 of 65"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 10,
+            "attempted": 45,
+            "raw": "10 of 45"
+          },
+          "body": {
+            "landed": 14,
+            "attempted": 18,
+            "raw": "14 of 18"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 63,
+            "raw": "24 of 63"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "80eacd4da0617c57",
+            "name": "Joseph Benavidez",
+            "url": "http://www.ufcstats.com/fighter-details/80eacd4da0617c57"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 87,
+            "raw": "25 of 87"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 18,
+            "attempted": 71,
+            "raw": "18 of 71"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 87,
+            "raw": "25 of 87"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.572Z"
+  }
+}

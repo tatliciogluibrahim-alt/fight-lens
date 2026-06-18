@@ -1,0 +1,404 @@
+{
+  "id": "30523303e8d85c25",
+  "url": "http://www.ufcstats.com/fight-details/30523303e8d85c25",
+  "event": {
+    "id": "4565d435005319c0",
+    "name": "UFC 245: Usman vs. Covington",
+    "url": "http://www.ufcstats.com/event-details/4565d435005319c0"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64facb6cc564262d",
+      "name": "Punahele Soriano",
+      "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "1cf7ccf64a5bf24e",
+      "name": "Oskar Piechota",
+      "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:17",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "1cf7ccf64a5bf24e",
+        "name": "Oskar Piechota",
+        "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 44,
+          "raw": "26 of 44"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 46,
+          "raw": "26 of 46"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:14",
+        "controlSeconds": 74
+      },
+      {
+        "fighter": {
+          "id": "1cf7ccf64a5bf24e",
+          "name": "Oskar Piechota",
+          "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 17,
+          "raw": "8 of 17"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:18",
+        "controlSeconds": 18
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "1cf7ccf64a5bf24e",
+          "name": "Oskar Piechota",
+          "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 46,
+            "raw": "26 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:14",
+          "controlSeconds": 74
+        },
+        {
+          "fighter": {
+            "id": "1cf7ccf64a5bf24e",
+            "name": "Oskar Piechota",
+            "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "1cf7ccf64a5bf24e",
+        "name": "Oskar Piechota",
+        "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 44,
+          "raw": "26 of 44"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 20,
+          "attempted": 37,
+          "raw": "20 of 37"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 19,
+          "raw": "10 of 19"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1cf7ccf64a5bf24e",
+          "name": "Oskar Piechota",
+          "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 17,
+          "raw": "8 of 17"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "1cf7ccf64a5bf24e",
+          "name": "Oskar Piechota",
+          "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 19,
+            "raw": "10 of 19"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1cf7ccf64a5bf24e",
+            "name": "Oskar Piechota",
+            "url": "http://www.ufcstats.com/fighter-details/1cf7ccf64a5bf24e"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.735Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "fd60e75303622e5e",
+  "url": "http://www.ufcstats.com/fight-details/fd60e75303622e5e",
+  "event": {
+    "id": "c95fbc085e17a532",
+    "name": "UFC Fight Night: Vieira vs. Tate",
+    "url": "http://www.ufcstats.com/event-details/c95fbc085e17a532"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e132d47bd9efbbe0",
+      "name": "Rafa Garcia",
+      "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a29db9cd4f9ccea5",
+      "name": "Natan Levy",
+      "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Sal D'amato 28 - 29.Bryan Miner 28 - 29.Junichiro Kamijo 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e132d47bd9efbbe0",
+        "name": "Rafa Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+      },
+      {
+        "id": "a29db9cd4f9ccea5",
+        "name": "Natan Levy",
+        "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 91,
+          "raw": "35 of 91"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 55,
+          "attempted": 117,
+          "raw": "55 of 117"
+        },
+        "takedowns": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "takedownPercent": 58,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:37",
+        "controlSeconds": 337
+      },
+      {
+        "fighter": {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 127,
+          "raw": "47 of 127"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 56,
+          "attempted": 136,
+          "raw": "56 of 136"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "takedownPercent": 43,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:48",
+        "controlSeconds": 48
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 32,
+            "raw": "20 of 32"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:14",
+          "controlSeconds": 134
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 44,
+            "raw": "13 of 44"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 47,
+            "raw": "16 of 47"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:58",
+          "controlSeconds": 58
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 40,
+            "raw": "17 of 40"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 40,
+            "raw": "17 of 40"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:48",
+          "controlSeconds": 48
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 32,
+            "raw": "11 of 32"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 45,
+            "raw": "20 of 45"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:25",
+          "controlSeconds": 145
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 43,
+            "raw": "17 of 43"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 49,
+            "raw": "23 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e132d47bd9efbbe0",
+        "name": "Rafa Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+      },
+      {
+        "id": "a29db9cd4f9ccea5",
+        "name": "Natan Levy",
+        "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 91,
+          "raw": "35 of 91"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 21,
+          "attempted": 74,
+          "raw": "21 of 74"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 83,
+          "raw": "31 of 83"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 127,
+          "raw": "47 of 127"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 21,
+          "attempted": 94,
+          "raw": "21 of 94"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 26,
+          "raw": "19 of 26"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 45,
+          "attempted": 121,
+          "raw": "45 of 121"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 24,
+            "raw": "13 of 24"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 7,
+            "attempted": 17,
+            "raw": "7 of 17"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 23,
+            "raw": "12 of 23"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 44,
+            "raw": "13 of 44"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 6,
+            "attempted": 32,
+            "raw": "6 of 32"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 41,
+            "raw": "12 of 41"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 35,
+            "raw": "11 of 35"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 6,
+            "attempted": 28,
+            "raw": "6 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 33,
+            "raw": "11 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 40,
+            "raw": "17 of 40"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 5,
+            "attempted": 27,
+            "raw": "5 of 27"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 39,
+            "raw": "17 of 39"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e132d47bd9efbbe0",
+          "name": "Rafa Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+        },
+        {
+          "id": "a29db9cd4f9ccea5",
+          "name": "Natan Levy",
+          "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e132d47bd9efbbe0",
+            "name": "Rafa Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/e132d47bd9efbbe0"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 32,
+            "raw": "11 of 32"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 8,
+            "attempted": 29,
+            "raw": "8 of 29"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 27,
+            "raw": "8 of 27"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a29db9cd4f9ccea5",
+            "name": "Natan Levy",
+            "url": "http://www.ufcstats.com/fighter-details/a29db9cd4f9ccea5"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 43,
+            "raw": "17 of 43"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 10,
+            "attempted": 35,
+            "raw": "10 of 35"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 41,
+            "raw": "16 of 41"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.736Z"
+  }
+}

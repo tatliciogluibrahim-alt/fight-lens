@@ -1,0 +1,404 @@
+{
+  "id": "8d9b460143ae19bc",
+  "url": "http://www.ufcstats.com/fight-details/8d9b460143ae19bc",
+  "event": {
+    "id": "990060b2a68a7b82",
+    "name": "UFC Fight Night: Almeida vs Garbrandt",
+    "url": "http://www.ufcstats.com/event-details/990060b2a68a7b82"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8c7c61b176e3994",
+      "name": "Cody Garbrandt",
+      "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2b074403b7c6cdb4",
+      "name": "Thomas Almeida",
+      "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:53",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "John McCarthy",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "2b074403b7c6cdb4",
+        "name": "Thomas Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 48,
+          "raw": "21 of 48"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 49,
+          "raw": "22 of 49"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "2b074403b7c6cdb4",
+          "name": "Thomas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "2b074403b7c6cdb4",
+          "name": "Thomas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 49,
+            "raw": "22 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "2b074403b7c6cdb4",
+            "name": "Thomas Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "2b074403b7c6cdb4",
+        "name": "Thomas Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 48,
+          "raw": "21 of 48"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 47,
+          "raw": "20 of 47"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2b074403b7c6cdb4",
+          "name": "Thomas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+        },
+        "significantStrikes": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 9,
+          "attempted": 23,
+          "raw": "9 of 23"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 25,
+          "raw": "10 of 25"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "2b074403b7c6cdb4",
+          "name": "Thomas Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 18,
+            "attempted": 43,
+            "raw": "18 of 43"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 47,
+            "raw": "20 of 47"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2b074403b7c6cdb4",
+            "name": "Thomas Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/2b074403b7c6cdb4"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.504Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "a3dd2249d046cf9d",
+  "url": "http://www.ufcstats.com/fight-details/a3dd2249d046cf9d",
+  "event": {
+    "id": "b45d6b73f4ca4467",
+    "name": "UFC Fight Night: Dos Santos vs. Ivanov",
+    "url": "http://www.ufcstats.com/event-details/b45d6b73f4ca4467"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8da10db80131bec",
+      "name": "Niko Price",
+      "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "c6aee362c7a7d482",
+      "name": "Randy Brown",
+      "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:09",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punch to Head From Bottom"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 39,
+          "raw": "12 of 39"
+        },
+        "significantStrikePercent": 31,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 81,
+          "raw": "40 of 81"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "1:44",
+        "controlSeconds": 104
+      },
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 37,
+          "raw": "13 of 37"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 43,
+          "raw": "18 of 43"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:38",
+        "controlSeconds": 98
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "significantStrikePercent": 21,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 59,
+            "raw": "29 of 59"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 22,
+            "raw": "11 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 39,
+          "raw": "12 of 39"
+        },
+        "significantStrikePercent": 31,
+        "head": {
+          "landed": 9,
+          "attempted": 33,
+          "raw": "9 of 33"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 23,
+          "raw": "2 of 23"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 37,
+          "raw": "13 of 37"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 9,
+          "attempted": 29,
+          "raw": "9 of 29"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 22,
+          "raw": "7 of 22"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 29,
+            "raw": "6 of 29"
+          },
+          "significantStrikePercent": 21,
+          "head": {
+            "landed": 3,
+            "attempted": 23,
+            "raw": "3 of 23"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 19,
+            "raw": "2 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.722Z"
+  }
+}

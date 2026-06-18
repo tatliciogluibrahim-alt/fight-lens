@@ -1,0 +1,584 @@
+{
+  "id": "3e2f00991f511607",
+  "url": "http://www.ufcstats.com/fight-details/3e2f00991f511607",
+  "event": {
+    "id": "00a905a4a4a2b071",
+    "name": "UFC Fight Night: Gane vs. Tuivasa",
+    "url": "http://www.ufcstats.com/event-details/00a905a4a4a2b071"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c2299ec916bc7c56",
+      "name": "Benoit Saint Denis",
+      "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b909a9a9688b5284",
+      "name": "Gabriel Miranda",
+      "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:16",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c2299ec916bc7c56",
+        "name": "Benoit Saint Denis",
+        "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+      },
+      {
+        "id": "b909a9a9688b5284",
+        "name": "Gabriel Miranda",
+        "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        "kd": 3,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 67,
+          "raw": "42 of 67"
+        },
+        "significantStrikePercent": 63,
+        "totalStrikes": {
+          "landed": 81,
+          "attempted": 110,
+          "raw": "81 of 110"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:17",
+        "controlSeconds": 197
+      },
+      {
+        "fighter": {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 37,
+          "raw": "20 of 37"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 53,
+          "raw": "33 of 53"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:20",
+        "controlSeconds": 20
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 56,
+            "raw": "35 of 56"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 74,
+            "attempted": 99,
+            "raw": "74 of 99"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:14",
+          "controlSeconds": 194
+        },
+        {
+          "fighter": {
+            "id": "b909a9a9688b5284",
+            "name": "Gabriel Miranda",
+            "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 50,
+            "raw": "31 of 50"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:20",
+          "controlSeconds": 20
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "b909a9a9688b5284",
+            "name": "Gabriel Miranda",
+            "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c2299ec916bc7c56",
+        "name": "Benoit Saint Denis",
+        "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+      },
+      {
+        "id": "b909a9a9688b5284",
+        "name": "Gabriel Miranda",
+        "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 67,
+          "raw": "42 of 67"
+        },
+        "significantStrikePercent": 63,
+        "head": {
+          "landed": 35,
+          "attempted": 59,
+          "raw": "35 of 59"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 43,
+          "raw": "24 of 43"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 22,
+          "raw": "16 of 22"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 37,
+          "raw": "20 of 37"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 13,
+          "attempted": 30,
+          "raw": "13 of 30"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 34,
+          "raw": "17 of 34"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 56,
+            "raw": "35 of 56"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 29,
+            "attempted": 49,
+            "raw": "29 of 49"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 35,
+            "raw": "20 of 35"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b909a9a9688b5284",
+            "name": "Gabriel Miranda",
+            "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 34,
+            "raw": "18 of 34"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 31,
+            "raw": "15 of 31"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c2299ec916bc7c56",
+          "name": "Benoit Saint Denis",
+          "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+        },
+        {
+          "id": "b909a9a9688b5284",
+          "name": "Gabriel Miranda",
+          "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c2299ec916bc7c56",
+            "name": "Benoit Saint Denis",
+            "url": "http://www.ufcstats.com/fighter-details/c2299ec916bc7c56"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b909a9a9688b5284",
+            "name": "Gabriel Miranda",
+            "url": "http://www.ufcstats.com/fighter-details/b909a9a9688b5284"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.468Z"
+  }
+}

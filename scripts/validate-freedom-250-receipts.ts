@@ -13,6 +13,7 @@
  */
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { resolveNamedCallThreshold } from "../lib/predictionThresholds";
 
 const ROOT = path.resolve(__dirname, "..");
 const EVENT = "ufc-freedom-250";
@@ -31,9 +32,10 @@ const LOCKED: Record<string, [number, number]> = {
   "lopes-garcia": [25, 75],
 };
 
-const NAMED_CALL_THRESHOLD = 52;
-function namedSide(a: number, b: number): "fighterA" | "fighterB" | null {
-  if (Math.max(a, b) < NAMED_CALL_THRESHOLD) return null;
+// Threshold is resolved per-record from its model version via predictionThresholds.ts
+// (Freedom 250 calls are v0.2 → 52), never hardcoded here.
+function namedSide(a: number, b: number, threshold: number): "fighterA" | "fighterB" | null {
+  if (Math.max(a, b) < threshold) return null;
   return a > b ? "fighterA" : "fighterB";
 }
 function topBucket(m: { decision: number; koTko: number; submission: number }) {
@@ -74,7 +76,7 @@ for (const fightId of Object.keys(LOCKED)) {
   if (!pred.outcome || !receipt) continue;
 
   // Compute correctness from data
-  const call = namedSide(pred.prediction.fighterAWinProbability, pred.prediction.fighterBWinProbability);
+  const call = namedSide(pred.prediction.fighterAWinProbability, pred.prediction.fighterBWinProbability, resolveNamedCallThreshold(pred.modelVersion));
   const winnerCorrect = call != null && pred.outcome.winner === call;
   const predictedFinish = topBucket(pred.prediction.methodBreakdown) !== "decision";
   const finishBucketCorrect = predictedFinish === isFinishMethod(pred.outcome.method);
@@ -110,7 +112,7 @@ ok(event.event.cardReceipt?.finishBucketRecord?.correct === finishCorrectCount, 
 {
   const r = fightsByRoute["lopes-garcia"].postFightReceipt;
   const p = JSON.parse(readFileSync(path.join(ROOT, "data/predictions/lopes-garcia.json"), "utf8"));
-  const call = namedSide(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability);
+  const call = namedSide(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability, resolveNamedCallThreshold(p.modelVersion));
   ok(call === "fighterB" && p.outcome.winner === "fighterA", "Lopes/Garcia should be a raw winner miss (called Garcia, Lopes won)");
   ok(r.warningLayerGrade === "correct_warning", "Lopes/Garcia warningLayerGrade should be correct_warning");
   ok(r.receiptLabel === "Model Miss, Warning Correct", "Lopes/Garcia label should be 'Model Miss, Warning Correct'");
@@ -118,7 +120,7 @@ ok(event.event.cardReceipt?.finishBucketRecord?.correct === finishCorrectCount, 
 // 13. Topuria/Gaethje = winner miss
 {
   const p = JSON.parse(readFileSync(path.join(ROOT, "data/predictions/topuria-gaethje.json"), "utf8"));
-  const call = namedSide(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability);
+  const call = namedSide(p.prediction.fighterAWinProbability, p.prediction.fighterBWinProbability, resolveNamedCallThreshold(p.modelVersion));
   ok(call === "fighterA" && p.outcome.winner === "fighterB", "Topuria/Gaethje should be a winner miss (called Topuria, Gaethje won)");
   ok(fightsByRoute["topuria-gaethje"].postFightReceipt.receiptLabel === "Missed Read", "Topuria/Gaethje label should be 'Missed Read'");
 }

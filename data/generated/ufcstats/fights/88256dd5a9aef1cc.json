@@ -1,0 +1,584 @@
+{
+  "id": "88256dd5a9aef1cc",
+  "url": "http://www.ufcstats.com/fight-details/88256dd5a9aef1cc",
+  "event": {
+    "id": "8a9c6c4301f6d088",
+    "name": "UFC Fight Night: Costa vs. Vettori",
+    "url": "http://www.ufcstats.com/event-details/8a9c6c4301f6d088"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d1c65d2cf2925ddd",
+      "name": "Gregory Rodrigues",
+      "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "285ae0b4a68221f4",
+      "name": "JunYong Park",
+      "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:13",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      },
+      {
+        "id": "285ae0b4a68221f4",
+        "name": "JunYong Park",
+        "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 90,
+          "raw": "68 of 90"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 75,
+          "attempted": 98,
+          "raw": "75 of 98"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:20",
+        "controlSeconds": 200
+      },
+      {
+        "fighter": {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 109,
+          "raw": "56 of 109"
+        },
+        "significantStrikePercent": 51,
+        "totalStrikes": {
+          "landed": 59,
+          "attempted": 112,
+          "raw": "59 of 112"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:29",
+        "controlSeconds": 29
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 42,
+            "raw": "33 of 42"
+          },
+          "significantStrikePercent": 79,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 49,
+            "raw": "39 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:25",
+          "controlSeconds": 145
+        },
+        {
+          "fighter": {
+            "id": "285ae0b4a68221f4",
+            "name": "JunYong Park",
+            "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 48,
+            "raw": "35 of 48"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 49,
+            "raw": "36 of 49"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:55",
+          "controlSeconds": 55
+        },
+        {
+          "fighter": {
+            "id": "285ae0b4a68221f4",
+            "name": "JunYong Park",
+            "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 77,
+            "raw": "38 of 77"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 78,
+            "raw": "39 of 78"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d1c65d2cf2925ddd",
+        "name": "Gregory Rodrigues",
+        "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+      },
+      {
+        "id": "285ae0b4a68221f4",
+        "name": "JunYong Park",
+        "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        "significantStrikes": {
+          "landed": 68,
+          "attempted": 90,
+          "raw": "68 of 90"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 53,
+          "attempted": 73,
+          "raw": "53 of 73"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 16,
+          "raw": "15 of 16"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 57,
+          "attempted": 77,
+          "raw": "57 of 77"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        },
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 109,
+          "raw": "56 of 109"
+        },
+        "significantStrikePercent": 51,
+        "head": {
+          "landed": 50,
+          "attempted": 103,
+          "raw": "50 of 103"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 54,
+          "attempted": 106,
+          "raw": "54 of 106"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 42,
+            "raw": "33 of 42"
+          },
+          "significantStrikePercent": 79,
+          "head": {
+            "landed": 21,
+            "attempted": 28,
+            "raw": "21 of 28"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 31,
+            "raw": "24 of 31"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "285ae0b4a68221f4",
+            "name": "JunYong Park",
+            "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+        },
+        {
+          "id": "285ae0b4a68221f4",
+          "name": "JunYong Park",
+          "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1c65d2cf2925ddd",
+            "name": "Gregory Rodrigues",
+            "url": "http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 48,
+            "raw": "35 of 48"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 32,
+            "attempted": 45,
+            "raw": "32 of 45"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 33,
+            "attempted": 46,
+            "raw": "33 of 46"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "285ae0b4a68221f4",
+            "name": "JunYong Park",
+            "url": "http://www.ufcstats.com/fighter-details/285ae0b4a68221f4"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 77,
+            "raw": "38 of 77"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 38,
+            "attempted": 77,
+            "raw": "38 of 77"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 74,
+            "raw": "36 of 74"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.570Z"
+  }
+}

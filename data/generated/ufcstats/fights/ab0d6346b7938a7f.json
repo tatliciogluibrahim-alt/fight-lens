@@ -1,0 +1,404 @@
+{
+  "id": "ab0d6346b7938a7f",
+  "url": "http://www.ufcstats.com/fight-details/ab0d6346b7938a7f",
+  "event": {
+    "id": "3138fab619faf4d1",
+    "name": "UFC 170: Rousey vs McMann",
+    "url": "http://www.ufcstats.com/event-details/3138fab619faf4d1"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e1147d3d2dabe1ce",
+      "name": "Robert Whittaker",
+      "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "4a28cb716c19157a",
+      "name": "Stephen Thompson",
+      "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:43",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mario Yamasaki",
+    "details": "Punches to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e1147d3d2dabe1ce",
+        "name": "Robert Whittaker",
+        "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+      },
+      {
+        "id": "4a28cb716c19157a",
+        "name": "Stephen Thompson",
+        "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 66,
+          "raw": "19 of 66"
+        },
+        "significantStrikePercent": 29,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 66,
+          "raw": "19 of 66"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 80,
+          "raw": "38 of 80"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 81,
+          "raw": "39 of 81"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 66,
+            "raw": "19 of 66"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 66,
+            "raw": "19 of 66"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 80,
+            "raw": "38 of 80"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 81,
+            "raw": "39 of 81"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e1147d3d2dabe1ce",
+        "name": "Robert Whittaker",
+        "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+      },
+      {
+        "id": "4a28cb716c19157a",
+        "name": "Stephen Thompson",
+        "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 66,
+          "raw": "19 of 66"
+        },
+        "significantStrikePercent": 29,
+        "head": {
+          "landed": 17,
+          "attempted": 64,
+          "raw": "17 of 64"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 64,
+          "raw": "18 of 64"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        },
+        "significantStrikes": {
+          "landed": 38,
+          "attempted": 80,
+          "raw": "38 of 80"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 28,
+          "attempted": 63,
+          "raw": "28 of 63"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 65,
+          "raw": "25 of 65"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "4a28cb716c19157a",
+          "name": "Stephen Thompson",
+          "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 66,
+            "raw": "19 of 66"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 17,
+            "attempted": 64,
+            "raw": "17 of 64"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 64,
+            "raw": "18 of 64"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a28cb716c19157a",
+            "name": "Stephen Thompson",
+            "url": "http://www.ufcstats.com/fighter-details/4a28cb716c19157a"
+          },
+          "significantStrikes": {
+            "landed": 38,
+            "attempted": 80,
+            "raw": "38 of 80"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 28,
+            "attempted": 63,
+            "raw": "28 of 63"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 25,
+            "attempted": 65,
+            "raw": "25 of 65"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.750Z"
+  }
+}

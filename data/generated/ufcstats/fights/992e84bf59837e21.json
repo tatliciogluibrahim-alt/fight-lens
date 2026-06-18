@@ -1,0 +1,404 @@
+{
+  "id": "992e84bf59837e21",
+  "url": "http://www.ufcstats.com/fight-details/992e84bf59837e21",
+  "event": {
+    "id": "236a37d96d476164",
+    "name": "UFC Fight Night: Lemos vs. Andrade",
+    "url": "http://www.ufcstats.com/event-details/236a37d96d476164"
+  },
+  "title": "Catch Weight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8e9eb3fc86db0f7d",
+      "name": "Marc-Andre Barriault",
+      "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "c878270af633eb11",
+      "name": "Jordan Wright",
+      "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:36",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Guillotine Choke From Bottom Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8e9eb3fc86db0f7d",
+        "name": "Marc-Andre Barriault",
+        "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+      },
+      {
+        "id": "c878270af633eb11",
+        "name": "Jordan Wright",
+        "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e9eb3fc86db0f7d",
+          "name": "Marc-Andre Barriault",
+          "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 21,
+          "raw": "17 of 21"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "c878270af633eb11",
+          "name": "Jordan Wright",
+          "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        },
+        "significantStrikePercent": 92,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 17,
+          "raw": "16 of 17"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:32",
+        "controlSeconds": 92
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e9eb3fc86db0f7d",
+          "name": "Marc-Andre Barriault",
+          "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+        },
+        {
+          "id": "c878270af633eb11",
+          "name": "Jordan Wright",
+          "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e9eb3fc86db0f7d",
+            "name": "Marc-Andre Barriault",
+            "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 21,
+            "raw": "17 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "c878270af633eb11",
+            "name": "Jordan Wright",
+            "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "significantStrikePercent": 92,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 17,
+            "raw": "16 of 17"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:32",
+          "controlSeconds": 92
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8e9eb3fc86db0f7d",
+        "name": "Marc-Andre Barriault",
+        "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+      },
+      {
+        "id": "c878270af633eb11",
+        "name": "Jordan Wright",
+        "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e9eb3fc86db0f7d",
+          "name": "Marc-Andre Barriault",
+          "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "clinch": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c878270af633eb11",
+          "name": "Jordan Wright",
+          "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 13,
+          "raw": "12 of 13"
+        },
+        "significantStrikePercent": 92,
+        "head": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8e9eb3fc86db0f7d",
+          "name": "Marc-Andre Barriault",
+          "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+        },
+        {
+          "id": "c878270af633eb11",
+          "name": "Jordan Wright",
+          "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e9eb3fc86db0f7d",
+            "name": "Marc-Andre Barriault",
+            "url": "http://www.ufcstats.com/fighter-details/8e9eb3fc86db0f7d"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c878270af633eb11",
+            "name": "Jordan Wright",
+            "url": "http://www.ufcstats.com/fighter-details/c878270af633eb11"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "significantStrikePercent": 92,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.669Z"
+  }
+}

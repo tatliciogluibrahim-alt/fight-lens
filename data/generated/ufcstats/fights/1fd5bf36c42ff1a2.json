@@ -1,0 +1,584 @@
+{
+  "id": "1fd5bf36c42ff1a2",
+  "url": "http://www.ufcstats.com/fight-details/1fd5bf36c42ff1a2",
+  "event": {
+    "id": "7cf20446453f852b",
+    "name": "UFC Fight Night: Machida vs. Anders",
+    "url": "http://www.ufcstats.com/event-details/7cf20446453f852b"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "aa72b0f831d0bfe5",
+      "name": "Deiveson Figueiredo",
+      "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2fe9032955c2e013",
+      "name": "Joseph Morales",
+      "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "4:34",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Eduardo Herdy",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "aa72b0f831d0bfe5",
+        "name": "Deiveson Figueiredo",
+        "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+      },
+      {
+        "id": "2fe9032955c2e013",
+        "name": "Joseph Morales",
+        "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 62,
+          "raw": "31 of 62"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 44,
+          "attempted": 76,
+          "raw": "44 of 76"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "6:03",
+        "controlSeconds": 363
+      },
+      {
+        "fighter": {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 32,
+          "raw": "9 of 32"
+        },
+        "significantStrikePercent": 28,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 35,
+          "raw": "11 of 35"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa72b0f831d0bfe5",
+            "name": "Deiveson Figueiredo",
+            "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 33,
+            "raw": "22 of 33"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "4:15",
+          "controlSeconds": 255
+        },
+        {
+          "fighter": {
+            "id": "2fe9032955c2e013",
+            "name": "Joseph Morales",
+            "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa72b0f831d0bfe5",
+            "name": "Deiveson Figueiredo",
+            "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 43,
+            "raw": "22 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:48",
+          "controlSeconds": 108
+        },
+        {
+          "fighter": {
+            "id": "2fe9032955c2e013",
+            "name": "Joseph Morales",
+            "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 23,
+            "raw": "8 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "aa72b0f831d0bfe5",
+        "name": "Deiveson Figueiredo",
+        "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+      },
+      {
+        "id": "2fe9032955c2e013",
+        "name": "Joseph Morales",
+        "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 62,
+          "raw": "31 of 62"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 25,
+          "attempted": 51,
+          "raw": "25 of 51"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 27,
+          "raw": "11 of 27"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 20,
+          "attempted": 35,
+          "raw": "20 of 35"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 32,
+          "raw": "9 of 32"
+        },
+        "significantStrikePercent": 28,
+        "head": {
+          "landed": 5,
+          "attempted": 24,
+          "raw": "5 of 24"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 20,
+          "raw": "7 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 11,
+          "raw": "2 of 11"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa72b0f831d0bfe5",
+            "name": "Deiveson Figueiredo",
+            "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 12,
+            "attempted": 21,
+            "raw": "12 of 21"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2fe9032955c2e013",
+            "name": "Joseph Morales",
+            "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+        },
+        {
+          "id": "2fe9032955c2e013",
+          "name": "Joseph Morales",
+          "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "aa72b0f831d0bfe5",
+            "name": "Deiveson Figueiredo",
+            "url": "http://www.ufcstats.com/fighter-details/aa72b0f831d0bfe5"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 16,
+            "attempted": 33,
+            "raw": "16 of 33"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2fe9032955c2e013",
+            "name": "Joseph Morales",
+            "url": "http://www.ufcstats.com/fighter-details/2fe9032955c2e013"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.528Z"
+  }
+}

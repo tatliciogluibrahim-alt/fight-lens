@@ -1,0 +1,404 @@
+{
+  "id": "92c49cb075f612d7",
+  "url": "http://www.ufcstats.com/fight-details/92c49cb075f612d7",
+  "event": {
+    "id": "3974fa35c917af1d",
+    "name": "UFC 267: Blachowicz vs. Teixeira",
+    "url": "http://www.ufcstats.com/event-details/3974fa35c917af1d"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0d65c432720accb9",
+      "name": "Michal Oleksiejczuk",
+      "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "0d980975001ae3d8",
+      "name": "Shamil Gamzatov",
+      "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:31",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "0d980975001ae3d8",
+        "name": "Shamil Gamzatov",
+        "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 55,
+          "raw": "32 of 55"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 32,
+          "attempted": 55,
+          "raw": "32 of 55"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "0d980975001ae3d8",
+          "name": "Shamil Gamzatov",
+          "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "0d980975001ae3d8",
+          "name": "Shamil Gamzatov",
+          "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 55,
+            "raw": "32 of 55"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 55,
+            "raw": "32 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "0d980975001ae3d8",
+            "name": "Shamil Gamzatov",
+            "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "0d980975001ae3d8",
+        "name": "Shamil Gamzatov",
+        "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 55,
+          "raw": "32 of 55"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 27,
+          "attempted": 48,
+          "raw": "27 of 48"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 29,
+          "attempted": 48,
+          "raw": "29 of 48"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0d980975001ae3d8",
+          "name": "Shamil Gamzatov",
+          "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 16,
+          "attempted": 45,
+          "raw": "16 of 45"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 34,
+          "attempted": 65,
+          "raw": "34 of 65"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "0d980975001ae3d8",
+          "name": "Shamil Gamzatov",
+          "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 55,
+            "raw": "32 of 55"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 27,
+            "attempted": 48,
+            "raw": "27 of 48"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 48,
+            "raw": "29 of 48"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0d980975001ae3d8",
+            "name": "Shamil Gamzatov",
+            "url": "http://www.ufcstats.com/fighter-details/0d980975001ae3d8"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 16,
+            "attempted": 45,
+            "raw": "16 of 45"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 34,
+            "attempted": 65,
+            "raw": "34 of 65"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.700Z"
+  }
+}

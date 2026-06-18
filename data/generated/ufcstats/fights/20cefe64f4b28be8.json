@@ -1,0 +1,404 @@
+{
+  "id": "20cefe64f4b28be8",
+  "url": "http://www.ufcstats.com/fight-details/20cefe64f4b28be8",
+  "event": {
+    "id": "a0a680fe2f6cc8e6",
+    "name": "UFC Fight Night: Kattar vs. Emmett",
+    "url": "http://www.ufcstats.com/event-details/a0a680fe2f6cc8e6"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0232cabbc30a2372",
+      "name": "Adrian Yanez",
+      "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "1a08b01fdabb6ae2",
+      "name": "Tony Kelley",
+      "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:49",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kerry Hatley",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0232cabbc30a2372",
+        "name": "Adrian Yanez",
+        "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+      },
+      {
+        "id": "1a08b01fdabb6ae2",
+        "name": "Tony Kelley",
+        "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0232cabbc30a2372",
+          "name": "Adrian Yanez",
+          "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 68,
+          "raw": "36 of 68"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "1a08b01fdabb6ae2",
+          "name": "Tony Kelley",
+          "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 49,
+          "raw": "20 of 49"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 50,
+          "raw": "21 of 50"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0232cabbc30a2372",
+          "name": "Adrian Yanez",
+          "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+        },
+        {
+          "id": "1a08b01fdabb6ae2",
+          "name": "Tony Kelley",
+          "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0232cabbc30a2372",
+            "name": "Adrian Yanez",
+            "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 68,
+            "raw": "36 of 68"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "1a08b01fdabb6ae2",
+            "name": "Tony Kelley",
+            "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 50,
+            "raw": "21 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0232cabbc30a2372",
+        "name": "Adrian Yanez",
+        "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+      },
+      {
+        "id": "1a08b01fdabb6ae2",
+        "name": "Tony Kelley",
+        "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0232cabbc30a2372",
+          "name": "Adrian Yanez",
+          "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+        },
+        "significantStrikes": {
+          "landed": 35,
+          "attempted": 67,
+          "raw": "35 of 67"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 29,
+          "attempted": 60,
+          "raw": "29 of 60"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 29,
+          "attempted": 60,
+          "raw": "29 of 60"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1a08b01fdabb6ae2",
+          "name": "Tony Kelley",
+          "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 49,
+          "raw": "20 of 49"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 12,
+          "attempted": 29,
+          "raw": "12 of 29"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 16,
+          "raw": "6 of 16"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 48,
+          "raw": "20 of 48"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0232cabbc30a2372",
+          "name": "Adrian Yanez",
+          "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+        },
+        {
+          "id": "1a08b01fdabb6ae2",
+          "name": "Tony Kelley",
+          "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0232cabbc30a2372",
+            "name": "Adrian Yanez",
+            "url": "http://www.ufcstats.com/fighter-details/0232cabbc30a2372"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 29,
+            "attempted": 60,
+            "raw": "29 of 60"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 60,
+            "raw": "29 of 60"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1a08b01fdabb6ae2",
+            "name": "Tony Kelley",
+            "url": "http://www.ufcstats.com/fighter-details/1a08b01fdabb6ae2"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 12,
+            "attempted": 29,
+            "raw": "12 of 29"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 48,
+            "raw": "20 of 48"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.419Z"
+  }
+}

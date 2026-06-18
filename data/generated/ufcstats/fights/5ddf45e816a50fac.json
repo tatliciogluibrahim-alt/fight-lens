@@ -1,0 +1,404 @@
+{
+  "id": "5ddf45e816a50fac",
+  "url": "http://www.ufcstats.com/fight-details/5ddf45e816a50fac",
+  "event": {
+    "id": "d0d43cb9b14f231c",
+    "name": "UFC 256: Figueiredo vs. Moreno",
+    "url": "http://www.ufcstats.com/event-details/d0d43cb9b14f231c"
+  },
+  "title": "Women's Strawweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e94085e821bd81de",
+      "name": "Sam Hughes",
+      "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "31ef8b67e13495b3",
+      "name": "Tecia Pennington",
+      "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "TKO - Doctor's Stoppage",
+    "round": 1,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Eye Injury"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e94085e821bd81de",
+        "name": "Sam Hughes",
+        "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+      },
+      {
+        "id": "31ef8b67e13495b3",
+        "name": "Tecia Pennington",
+        "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e94085e821bd81de",
+          "name": "Sam Hughes",
+          "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 53,
+          "raw": "20 of 53"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 59,
+          "raw": "26 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:51",
+        "controlSeconds": 51
+      },
+      {
+        "fighter": {
+          "id": "31ef8b67e13495b3",
+          "name": "Tecia Pennington",
+          "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 103,
+          "raw": "52 of 103"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 103,
+          "raw": "52 of 103"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e94085e821bd81de",
+          "name": "Sam Hughes",
+          "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+        },
+        {
+          "id": "31ef8b67e13495b3",
+          "name": "Tecia Pennington",
+          "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e94085e821bd81de",
+            "name": "Sam Hughes",
+            "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 53,
+            "raw": "20 of 53"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 59,
+            "raw": "26 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:51",
+          "controlSeconds": 51
+        },
+        {
+          "fighter": {
+            "id": "31ef8b67e13495b3",
+            "name": "Tecia Pennington",
+            "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 52,
+            "attempted": 103,
+            "raw": "52 of 103"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 52,
+            "attempted": 103,
+            "raw": "52 of 103"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e94085e821bd81de",
+        "name": "Sam Hughes",
+        "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+      },
+      {
+        "id": "31ef8b67e13495b3",
+        "name": "Tecia Pennington",
+        "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e94085e821bd81de",
+          "name": "Sam Hughes",
+          "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 53,
+          "raw": "20 of 53"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 9,
+          "attempted": 33,
+          "raw": "9 of 33"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 17,
+          "raw": "9 of 17"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 52,
+          "raw": "19 of 52"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "31ef8b67e13495b3",
+          "name": "Tecia Pennington",
+          "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+        },
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 103,
+          "raw": "52 of 103"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 27,
+          "attempted": 71,
+          "raw": "27 of 71"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 15,
+          "raw": "12 of 15"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 101,
+          "raw": "50 of 101"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e94085e821bd81de",
+          "name": "Sam Hughes",
+          "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+        },
+        {
+          "id": "31ef8b67e13495b3",
+          "name": "Tecia Pennington",
+          "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e94085e821bd81de",
+            "name": "Sam Hughes",
+            "url": "http://www.ufcstats.com/fighter-details/e94085e821bd81de"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 53,
+            "raw": "20 of 53"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 9,
+            "attempted": 33,
+            "raw": "9 of 33"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 52,
+            "raw": "19 of 52"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "31ef8b67e13495b3",
+            "name": "Tecia Pennington",
+            "url": "http://www.ufcstats.com/fighter-details/31ef8b67e13495b3"
+          },
+          "significantStrikes": {
+            "landed": 52,
+            "attempted": 103,
+            "raw": "52 of 103"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 27,
+            "attempted": 71,
+            "raw": "27 of 71"
+          },
+          "body": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "distance": {
+            "landed": 50,
+            "attempted": 101,
+            "raw": "50 of 101"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.761Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "04c9ebe419195f8b",
+  "url": "http://www.ufcstats.com/fight-details/04c9ebe419195f8b",
+  "event": {
+    "id": "6b8f28da9a483049",
+    "name": "UFC Fight Night: Dos Anjos vs. Lee",
+    "url": "http://www.ufcstats.com/event-details/6b8f28da9a483049"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "595db60957de51d3",
+      "name": "Michel Pereira",
+      "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a6cba6bb66c1a8c9",
+      "name": "Danny Roberts",
+      "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "1:47",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Todd Ronald Anderson",
+    "details": "Flying Knee Head"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "595db60957de51d3",
+        "name": "Michel Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+      },
+      {
+        "id": "a6cba6bb66c1a8c9",
+        "name": "Danny Roberts",
+        "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "a6cba6bb66c1a8c9",
+          "name": "Danny Roberts",
+          "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "a6cba6bb66c1a8c9",
+          "name": "Danny Roberts",
+          "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "a6cba6bb66c1a8c9",
+            "name": "Danny Roberts",
+            "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "595db60957de51d3",
+        "name": "Michel Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+      },
+      {
+        "id": "a6cba6bb66c1a8c9",
+        "name": "Danny Roberts",
+        "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a6cba6bb66c1a8c9",
+          "name": "Danny Roberts",
+          "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "a6cba6bb66c1a8c9",
+          "name": "Danny Roberts",
+          "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a6cba6bb66c1a8c9",
+            "name": "Danny Roberts",
+            "url": "http://www.ufcstats.com/fighter-details/a6cba6bb66c1a8c9"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.702Z"
+  }
+}

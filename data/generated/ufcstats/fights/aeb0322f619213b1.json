@@ -1,0 +1,404 @@
+{
+  "id": "aeb0322f619213b1",
+  "url": "http://www.ufcstats.com/fight-details/aeb0322f619213b1",
+  "event": {
+    "id": "e96d8538d3f9d0ed",
+    "name": "UFC Fight Night: Lewis vs. Dos Santos",
+    "url": "http://www.ufcstats.com/event-details/e96d8538d3f9d0ed"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8da10db80131bec",
+      "name": "Niko Price",
+      "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "4b47e71384a9522f",
+      "name": "Tim Means",
+      "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:50",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Rob Hinds",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "4b47e71384a9522f",
+        "name": "Tim Means",
+        "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 67,
+          "raw": "32 of 67"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 36,
+          "attempted": 73,
+          "raw": "36 of 73"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 48,
+          "raw": "31 of 48"
+        },
+        "significantStrikePercent": 65,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 54,
+          "raw": "35 of 54"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:50",
+        "controlSeconds": 110
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 67,
+            "raw": "32 of 67"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 73,
+            "raw": "36 of 73"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 48,
+            "raw": "31 of 48"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 54,
+            "raw": "35 of 54"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:50",
+          "controlSeconds": 110
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "4b47e71384a9522f",
+        "name": "Tim Means",
+        "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 67,
+          "raw": "32 of 67"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 21,
+          "attempted": 48,
+          "raw": "21 of 48"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 9,
+          "raw": "3 of 9"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "distance": {
+          "landed": 23,
+          "attempted": 52,
+          "raw": "23 of 52"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 48,
+          "raw": "31 of 48"
+        },
+        "significantStrikePercent": 65,
+        "head": {
+          "landed": 27,
+          "attempted": 44,
+          "raw": "27 of 44"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 39,
+          "raw": "24 of 39"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "4b47e71384a9522f",
+          "name": "Tim Means",
+          "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 32,
+            "attempted": 67,
+            "raw": "32 of 67"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 21,
+            "attempted": 48,
+            "raw": "21 of 48"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 52,
+            "raw": "23 of 52"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4b47e71384a9522f",
+            "name": "Tim Means",
+            "url": "http://www.ufcstats.com/fighter-details/4b47e71384a9522f"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 48,
+            "raw": "31 of 48"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 27,
+            "attempted": 44,
+            "raw": "27 of 44"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 39,
+            "raw": "24 of 39"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.722Z"
+  }
+}

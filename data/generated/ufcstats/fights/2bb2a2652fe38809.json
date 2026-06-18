@@ -1,0 +1,584 @@
+{
+  "id": "2bb2a2652fe38809",
+  "url": "http://www.ufcstats.com/fight-details/2bb2a2652fe38809",
+  "event": {
+    "id": "ac9521250dc1a14c",
+    "name": "UFC Fight Night: Te Huna vs Marquardt",
+    "url": "http://www.ufcstats.com/event-details/ac9521250dc1a14c"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "84b3e7d38f2d2ec5",
+      "name": "Neil Magny",
+      "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a4dc47001f202bcd",
+      "name": "Rodrigo de Lima",
+      "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:32",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John Sharp",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "84b3e7d38f2d2ec5",
+        "name": "Neil Magny",
+        "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+      },
+      {
+        "id": "a4dc47001f202bcd",
+        "name": "Rodrigo de Lima",
+        "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 57,
+          "raw": "31 of 57"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:39",
+        "controlSeconds": 39
+      },
+      {
+        "fighter": {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 41,
+          "raw": "30 of 41"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "3:42",
+        "controlSeconds": 222
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "84b3e7d38f2d2ec5",
+            "name": "Neil Magny",
+            "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        },
+        {
+          "fighter": {
+            "id": "a4dc47001f202bcd",
+            "name": "Rodrigo de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 33,
+            "raw": "30 of 33"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "3:42",
+          "controlSeconds": 222
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "84b3e7d38f2d2ec5",
+            "name": "Neil Magny",
+            "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 47,
+            "raw": "29 of 47"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 49,
+            "raw": "30 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "a4dc47001f202bcd",
+            "name": "Rodrigo de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "84b3e7d38f2d2ec5",
+        "name": "Neil Magny",
+        "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+      },
+      {
+        "id": "a4dc47001f202bcd",
+        "name": "Rodrigo de Lima",
+        "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 29,
+          "attempted": 54,
+          "raw": "29 of 54"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 30,
+          "attempted": 55,
+          "raw": "30 of 55"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 0,
+          "attempted": 8,
+          "raw": "0 of 8"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 12,
+          "raw": "3 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "84b3e7d38f2d2ec5",
+            "name": "Neil Magny",
+            "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "head": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a4dc47001f202bcd",
+            "name": "Rodrigo de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+        },
+        {
+          "id": "a4dc47001f202bcd",
+          "name": "Rodrigo de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "84b3e7d38f2d2ec5",
+            "name": "Neil Magny",
+            "url": "http://www.ufcstats.com/fighter-details/84b3e7d38f2d2ec5"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 47,
+            "raw": "29 of 47"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 28,
+            "attempted": 46,
+            "raw": "28 of 46"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 47,
+            "raw": "29 of 47"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a4dc47001f202bcd",
+            "name": "Rodrigo de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/a4dc47001f202bcd"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.715Z"
+  }
+}

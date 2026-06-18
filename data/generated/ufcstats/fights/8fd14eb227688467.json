@@ -1,0 +1,764 @@
+{
+  "id": "8fd14eb227688467",
+  "url": "http://www.ufcstats.com/fight-details/8fd14eb227688467",
+  "event": {
+    "id": "d7907a9a968e4d29",
+    "name": "UFC Fight Night: Nelson vs. Ponzinibbio",
+    "url": "http://www.ufcstats.com/event-details/d7907a9a968e4d29"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a0f0004aadf10b71",
+      "name": "Alexandre Pantoja",
+      "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "49a74b9fb2e45fdf",
+      "name": "Neil Seery",
+      "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 3,
+    "time": "2:31",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Grant Waterman",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a0f0004aadf10b71",
+        "name": "Alexandre Pantoja",
+        "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+      },
+      {
+        "id": "49a74b9fb2e45fdf",
+        "name": "Neil Seery",
+        "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 119,
+          "attempted": 227,
+          "raw": "119 of 227"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 131,
+          "attempted": 239,
+          "raw": "131 of 239"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "4:26",
+        "controlSeconds": 266
+      },
+      {
+        "fighter": {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 82,
+          "attempted": 183,
+          "raw": "82 of 183"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 90,
+          "attempted": 192,
+          "raw": "90 of 192"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 99,
+            "raw": "45 of 99"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 100,
+            "raw": "46 of 100"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 78,
+            "raw": "29 of 78"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 82,
+            "raw": "32 of 82"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 67,
+            "attempted": 113,
+            "raw": "67 of 113"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 70,
+            "attempted": 116,
+            "raw": "70 of 116"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:49",
+          "controlSeconds": 109
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 90,
+            "raw": "47 of 90"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 49,
+            "attempted": 92,
+            "raw": "49 of 92"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:16",
+          "controlSeconds": 136
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a0f0004aadf10b71",
+        "name": "Alexandre Pantoja",
+        "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+      },
+      {
+        "id": "49a74b9fb2e45fdf",
+        "name": "Neil Seery",
+        "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        "significantStrikes": {
+          "landed": 119,
+          "attempted": 227,
+          "raw": "119 of 227"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 57,
+          "attempted": 145,
+          "raw": "57 of 145"
+        },
+        "body": {
+          "landed": 38,
+          "attempted": 54,
+          "raw": "38 of 54"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 28,
+          "raw": "24 of 28"
+        },
+        "distance": {
+          "landed": 83,
+          "attempted": 182,
+          "raw": "83 of 182"
+        },
+        "clinch": {
+          "landed": 35,
+          "attempted": 44,
+          "raw": "35 of 44"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        },
+        "significantStrikes": {
+          "landed": 82,
+          "attempted": 183,
+          "raw": "82 of 183"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 72,
+          "attempted": 170,
+          "raw": "72 of 170"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 68,
+          "attempted": 160,
+          "raw": "68 of 160"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 19,
+          "raw": "12 of 19"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 99,
+            "raw": "45 of 99"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 18,
+            "attempted": 63,
+            "raw": "18 of 63"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "leg": {
+            "landed": 15,
+            "attempted": 18,
+            "raw": "15 of 18"
+          },
+          "distance": {
+            "landed": 37,
+            "attempted": 88,
+            "raw": "37 of 88"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 78,
+            "raw": "29 of 78"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 24,
+            "attempted": 73,
+            "raw": "24 of 73"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 76,
+            "raw": "28 of 76"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "significantStrikes": {
+            "landed": 67,
+            "attempted": 113,
+            "raw": "67 of 113"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 35,
+            "attempted": 70,
+            "raw": "35 of 70"
+          },
+          "body": {
+            "landed": 25,
+            "attempted": 35,
+            "raw": "25 of 35"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 40,
+            "attempted": 80,
+            "raw": "40 of 80"
+          },
+          "clinch": {
+            "landed": 27,
+            "attempted": 33,
+            "raw": "27 of 33"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "significantStrikes": {
+            "landed": 47,
+            "attempted": 90,
+            "raw": "47 of 90"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 43,
+            "attempted": 83,
+            "raw": "43 of 83"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 73,
+            "raw": "36 of 73"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 17,
+            "raw": "11 of 17"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+        },
+        {
+          "id": "49a74b9fb2e45fdf",
+          "name": "Neil Seery",
+          "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a0f0004aadf10b71",
+            "name": "Alexandre Pantoja",
+            "url": "http://www.ufcstats.com/fighter-details/a0f0004aadf10b71"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 15,
+            "raw": "7 of 15"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "49a74b9fb2e45fdf",
+            "name": "Neil Seery",
+            "url": "http://www.ufcstats.com/fighter-details/49a74b9fb2e45fdf"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 15,
+            "raw": "6 of 15"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.436Z"
+  }
+}

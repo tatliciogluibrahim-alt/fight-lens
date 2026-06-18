@@ -1,0 +1,404 @@
+{
+  "id": "8a9c8f1d53d8c664",
+  "url": "http://www.ufcstats.com/fight-details/8a9c8f1d53d8c664",
+  "event": {
+    "id": "d4da8995fc91e7ef",
+    "name": "UFC Fight Night: Cejudo vs. Dillashaw",
+    "url": "http://www.ufcstats.com/event-details/d4da8995fc91e7ef"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a495f599e787614f",
+      "name": "Alonzo Menifield",
+      "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "acb36c908d415c4a",
+      "name": "Vinicius Moreira",
+      "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:56",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "acb36c908d415c4a",
+        "name": "Vinicius Moreira",
+        "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 60,
+          "raw": "33 of 60"
+        },
+        "significantStrikePercent": 55,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 62,
+          "raw": "35 of 62"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:29",
+        "controlSeconds": 29
+      },
+      {
+        "fighter": {
+          "id": "acb36c908d415c4a",
+          "name": "Vinicius Moreira",
+          "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 21,
+          "raw": "11 of 21"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:20",
+        "controlSeconds": 80
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "acb36c908d415c4a",
+          "name": "Vinicius Moreira",
+          "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 60,
+            "raw": "33 of 60"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 62,
+            "raw": "35 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        },
+        {
+          "fighter": {
+            "id": "acb36c908d415c4a",
+            "name": "Vinicius Moreira",
+            "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 22,
+            "raw": "12 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:20",
+          "controlSeconds": 80
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a495f599e787614f",
+        "name": "Alonzo Menifield",
+        "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+      },
+      {
+        "id": "acb36c908d415c4a",
+        "name": "Vinicius Moreira",
+        "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 60,
+          "raw": "33 of 60"
+        },
+        "significantStrikePercent": 55,
+        "head": {
+          "landed": 32,
+          "attempted": 59,
+          "raw": "32 of 59"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 46,
+          "raw": "24 of 46"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        }
+      },
+      {
+        "fighter": {
+          "id": "acb36c908d415c4a",
+          "name": "Vinicius Moreira",
+          "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 21,
+          "raw": "11 of 21"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+        },
+        {
+          "id": "acb36c908d415c4a",
+          "name": "Vinicius Moreira",
+          "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a495f599e787614f",
+            "name": "Alonzo Menifield",
+            "url": "http://www.ufcstats.com/fighter-details/a495f599e787614f"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 60,
+            "raw": "33 of 60"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 32,
+            "attempted": 59,
+            "raw": "32 of 59"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 46,
+            "raw": "24 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          }
+        },
+        {
+          "fighter": {
+            "id": "acb36c908d415c4a",
+            "name": "Vinicius Moreira",
+            "url": "http://www.ufcstats.com/fighter-details/acb36c908d415c4a"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.445Z"
+  }
+}

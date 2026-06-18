@@ -40,6 +40,14 @@ Safe defaults:
                          Recent completed fight links to consider per fighter.
   --max-history-fight-details 40
                          Total unique history fight detail pages to fetch.
+
+Backfill mode (no profile re-fetching):
+  --backfill-history-details
+                         Read already-scraped fighters/*.json and fetch any
+                         completed history fight whose detail page is not yet
+                         in fights/. Resumable — re-run to continue.
+  --budget 50            Cap fight-detail fetches per run; stops cleanly and
+                         reports how many remain.
 `);
 }
 
@@ -54,7 +62,9 @@ function parseArgs(argv) {
     maxFighters: 6,
     includeHistoryFights: false,
     maxHistoryFightsPerFighter: 5,
-    maxHistoryFightDetails: 40
+    maxHistoryFightDetails: 40,
+    backfillHistoryDetails: false,
+    budget: 50
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -97,6 +107,11 @@ function parseArgs(argv) {
       index += 1;
     } else if (arg === "--max-history-fight-details") {
       args.maxHistoryFightDetails = Number(next);
+      index += 1;
+    } else if (arg === "--backfill-history-details") {
+      args.backfillHistoryDetails = true;
+    } else if (arg === "--budget") {
+      args.budget = Number(next);
       index += 1;
     } else {
       throw new Error(`Unknown argument: ${arg}`);
@@ -659,6 +674,16 @@ async function ingestFighter(url, options) {
 async function ingestFight(url, options) {
   const fetched = await fetchHtml(url, options);
   const fight = parseFightDetails(fetched.body, url, fetched.metadata.fetchedAt);
+
+  // A real fight detail page always has fighter blocks. Zero fighters means the
+  // page was not the expected fight detail — e.g. an anti-bot JS challenge served
+  // with HTTP 200 ("Checking your browser…"). Never write that to the fights/
+  // contract (it would collide on a slug like "event" and corrupt the corpus).
+  if (fight.fighters.length === 0) {
+    console.warn(`  Skipped ${fight.id}: page returned no fighter data (likely a bot challenge / JS gate).`);
+    return null;
+  }
+
   const fightTitle = `${fight.event.name || "event"}-${fight.fighters.map((fighter) => fighter.name).join("-vs-")}`;
   const fightPath = path.join(OUTPUT_ROOT, "fights", `${slugify(fightTitle) || fight.id}.json`);
   await writeJson(fightPath, fight);
@@ -691,11 +716,117 @@ async function ingestHistoryFightDetails(profiles, options) {
   }
 }
 
+// ─── Backfill: fetch missing history fight-detail pages ──────────────────────
+//
+// Reads already-scraped fighter profiles (no re-fetching), finds every
+// completed history bout whose fight-detail file does not exist yet, and
+// fetches up to --budget of them. The dedup key is the UFCStats fight id:
+// a fighter profile's history row carries `fightId = idFromUrl(fightUrl)`, and
+// a fight-detail file carries the same `id`. Resumable: each fetched page is
+// written to fights/, so a re-run reuses cache and skips what's done.
+
+async function readJsonDir(dir) {
+  let files;
+  try {
+    files = (await fs.readdir(dir)).filter((name) => name.endsWith(".json"));
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+  const records = [];
+  for (const file of files) {
+    const record = await readJsonIfExists(path.join(dir, file));
+    if (record) records.push(record);
+  }
+  return records;
+}
+
+async function backfillHistoryDetails(options) {
+  const budget =
+    Number.isFinite(options.budget) && options.budget > 0 ? Math.floor(options.budget) : 50;
+
+  // In backfill mode --budget is the authoritative per-run request cap. Lift the
+  // internal network guard to match so it does not trip before the budget.
+  options.maxRequests = Math.max(options.maxRequests, budget);
+
+  const profiles = await readJsonDir(path.join(OUTPUT_ROOT, "fighters"));
+  const detailFiles = await readJsonDir(path.join(OUTPUT_ROOT, "fights"));
+  const existingIds = new Set(detailFiles.map((detail) => detail.id).filter(Boolean));
+
+  // Unique completed history fights with no detail file yet (fightId -> fightUrl).
+  const missing = new Map();
+  for (const profile of profiles) {
+    for (const fight of profile?.fightHistory ?? []) {
+      if (!isCompletedHistoryFight(fight)) continue;
+      if (!fight.fightId || !fight.fightUrl) continue;
+      if (existingIds.has(fight.fightId)) continue;
+      if (!missing.has(fight.fightId)) missing.set(fight.fightId, fight.fightUrl);
+    }
+  }
+
+  const missingCount = missing.size;
+  console.log(
+    `\nBackfill: ${detailFiles.length} fight-detail files exist · ${missingCount} missing across ${profiles.length} fighter profiles.`
+  );
+
+  let written = 0;
+  let blocked = 0;
+  if (missingCount > 0) {
+    let processed = 0;
+    for (const [fightId, fightUrl] of missing) {
+      if (processed >= budget) break;
+      processed += 1;
+      let detail = null;
+      try {
+        detail = await ingestFight(fightUrl, options);
+      } catch (error) {
+        console.error(`  Skipped ${fightId}: ${error.message}`);
+        // If the network guard tripped, stop cleanly instead of spinning.
+        if (/max-requests/.test(error.message)) break;
+        blocked += 1;
+        continue;
+      }
+      if (detail) {
+        written += 1;
+      } else {
+        blocked += 1;
+        // The page was a non-fight (challenge/error). Drop its cached copy so a
+        // future run retries it once the site is reachable again, rather than
+        // permanently serving the challenge from cache.
+        await fs.rm(cachePathForUrl(fightUrl), { force: true });
+      }
+    }
+  }
+
+  const remaining = Math.max(0, missingCount - written);
+  console.log(`\n=== Backfill summary ===`);
+  console.log(`Fight-detail files before run: ${detailFiles.length}`);
+  console.log(`Missing before run:            ${missingCount}`);
+  console.log(`Written this run:              ${written} (budget ${budget})`);
+  console.log(`Blocked this run:              ${blocked} (no fighter data — bot challenge / JS gate)`);
+  console.log(`Remaining after run:           ${remaining}`);
+  if (blocked > 0) {
+    console.log(`\nNOTE: UFCStats served a JS bot-challenge (HTTP 200, no fight HTML) for the blocked pages.`);
+    console.log(`Existing cached fight-detail files are unaffected. New fetches cannot be parsed until the`);
+    console.log(`site is reachable without a JS challenge — a network/anti-bot limit, not a code issue.`);
+  } else if (remaining > 0) {
+    console.log(`Re-run the same command to continue — cached pages are reused, so progress is resumable.`);
+  }
+}
+
 async function main() {
   const options = parseArgs(process.argv.slice(2));
 
   if (options.help) {
     showHelp();
+    return;
+  }
+
+  if (options.backfillHistoryDetails) {
+    await fs.mkdir(OUTPUT_ROOT, { recursive: true });
+    await fs.mkdir(CACHE_DIR, { recursive: true });
+    await backfillHistoryDetails(options);
+    console.log(`\nDone. Network requests this run: ${state.networkRequests}. Cached pages were reused when available.`);
     return;
   }
 

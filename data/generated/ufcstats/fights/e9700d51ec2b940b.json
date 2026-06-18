@@ -1,0 +1,584 @@
+{
+  "id": "e9700d51ec2b940b",
+  "url": "http://www.ufcstats.com/fight-details/e9700d51ec2b940b",
+  "event": {
+    "id": "20821819c401ced8",
+    "name": "UFC 230: Cormier vs. Lewis",
+    "url": "http://www.ufcstats.com/event-details/20821819c401ced8"
+  },
+  "title": "UFC Heavyweight Title Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d967f0128c323de6",
+      "name": "Daniel Cormier",
+      "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "2:14",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "d967f0128c323de6",
+        "name": "Daniel Cormier",
+        "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 13,
+          "raw": "4 of 13"
+        },
+        "significantStrikePercent": 31,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 42,
+          "attempted": 54,
+          "raw": "42 of 54"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "5:10",
+        "controlSeconds": 310
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d967f0128c323de6",
+            "name": "Daniel Cormier",
+            "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "significantStrikePercent": 74,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 45,
+            "raw": "35 of 45"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:10",
+          "controlSeconds": 250
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "significantStrikePercent": 10,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d967f0128c323de6",
+            "name": "Daniel Cormier",
+            "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:00",
+          "controlSeconds": 60
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "d967f0128c323de6",
+        "name": "Daniel Cormier",
+        "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 13,
+          "raw": "4 of 13"
+        },
+        "significantStrikePercent": 31,
+        "head": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 13,
+          "raw": "4 of 13"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        },
+        "significantStrikes": {
+          "landed": 19,
+          "attempted": 25,
+          "raw": "19 of 25"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 16,
+          "attempted": 22,
+          "raw": "16 of 22"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 18,
+          "raw": "14 of 18"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d967f0128c323de6",
+            "name": "Daniel Cormier",
+            "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "significantStrikePercent": 74,
+          "head": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "d967f0128c323de6",
+          "name": "Daniel Cormier",
+          "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "significantStrikePercent": 10,
+          "head": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d967f0128c323de6",
+            "name": "Daniel Cormier",
+            "url": "http://www.ufcstats.com/fighter-details/d967f0128c323de6"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "significantStrikePercent": 83,
+          "head": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.530Z"
+  }
+}

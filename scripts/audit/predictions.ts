@@ -14,7 +14,7 @@ import {
   getLockedPredictions,
 } from "@/lib/accuracy";
 import { getAllEvents } from "@/lib/events/registry";
-import { NAMED_CALL_MIN_PROBABILITY } from "@/lib/predictionThresholds";
+import { resolveNamedCallThreshold } from "@/lib/predictionThresholds";
 import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
 import type { PredictionRecord } from "@/lib/accuracy/types";
 
@@ -89,9 +89,12 @@ function auditRoute(event: SourcedEvent, fight: SourcedFight, record: Prediction
   }
 
   const isDataPending = vm.callState === "insufficientData" || vm.callState === "pending";
-  if (!isDataPending && Math.max(vm.fighterA.winProbability, vm.fighterB.winProbability) < NAMED_CALL_MIN_PROBABILITY) {
+  // Resolve the threshold for the version this call was locked under (v0.2 → 52,
+  // v0.3 → 58), so a 56% v0.2 call correctly stays a named call.
+  const namedThreshold = resolveNamedCallThreshold(vm.modelVersion);
+  if (!isDataPending && Math.max(vm.fighterA.winProbability, vm.fighterB.winProbability) < namedThreshold) {
     if (vm.predictedWinner || vm.callState !== "noLean" || vm.displayedCallLabel !== "Too close to call") {
-      fail(route, event.event.name, fight.id, "no-lean-threshold", `top probability below ${NAMED_CALL_MIN_PROBABILITY}% produced callState=${vm.callState}, winner=${vm.predictedWinner?.name ?? "none"}, label="${vm.displayedCallLabel}"`);
+      fail(route, event.event.name, fight.id, "no-lean-threshold", `top probability below ${namedThreshold}% produced callState=${vm.callState}, winner=${vm.predictedWinner?.name ?? "none"}, label="${vm.displayedCallLabel}"`);
     }
   }
 

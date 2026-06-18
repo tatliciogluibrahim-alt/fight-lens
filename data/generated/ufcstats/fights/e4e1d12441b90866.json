@@ -1,0 +1,404 @@
+{
+  "id": "e4e1d12441b90866",
+  "url": "http://www.ufcstats.com/fight-details/e4e1d12441b90866",
+  "event": {
+    "id": "20821819c401ced8",
+    "name": "UFC 230: Cormier vs. Lewis",
+    "url": "http://www.ufcstats.com/event-details/20821819c401ced8"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1338e2c7480bdf9e",
+      "name": "Israel Adesanya",
+      "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "b1a3e0aca758b322",
+      "name": "Derek Brunson",
+      "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:51",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "b1a3e0aca758b322",
+        "name": "Derek Brunson",
+        "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "kd": 3,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 23,
+          "raw": "13 of 23"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 25,
+          "raw": "15 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      },
+      {
+        "fighter": {
+          "id": "b1a3e0aca758b322",
+          "name": "Derek Brunson",
+          "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 14,
+          "raw": "3 of 14"
+        },
+        "significantStrikePercent": 21,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 23,
+          "raw": "9 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 7,
+          "raw": "0 of 7"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:34",
+        "controlSeconds": 94
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "b1a3e0aca758b322",
+          "name": "Derek Brunson",
+          "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "kd": 3,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 25,
+            "raw": "15 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "b1a3e0aca758b322",
+            "name": "Derek Brunson",
+            "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "significantStrikePercent": 21,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 7,
+            "raw": "0 of 7"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:34",
+          "controlSeconds": 94
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "b1a3e0aca758b322",
+        "name": "Derek Brunson",
+        "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 23,
+          "raw": "13 of 23"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 9,
+          "attempted": 16,
+          "raw": "9 of 16"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 19,
+          "raw": "11 of 19"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b1a3e0aca758b322",
+          "name": "Derek Brunson",
+          "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 14,
+          "raw": "3 of 14"
+        },
+        "significantStrikePercent": 21,
+        "head": {
+          "landed": 2,
+          "attempted": 11,
+          "raw": "2 of 11"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 13,
+          "raw": "2 of 13"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "b1a3e0aca758b322",
+          "name": "Derek Brunson",
+          "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 9,
+            "attempted": 16,
+            "raw": "9 of 16"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b1a3e0aca758b322",
+            "name": "Derek Brunson",
+            "url": "http://www.ufcstats.com/fighter-details/b1a3e0aca758b322"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 14,
+            "raw": "3 of 14"
+          },
+          "significantStrikePercent": 21,
+          "head": {
+            "landed": 2,
+            "attempted": 11,
+            "raw": "2 of 11"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 13,
+            "raw": "2 of 13"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.584Z"
+  }
+}

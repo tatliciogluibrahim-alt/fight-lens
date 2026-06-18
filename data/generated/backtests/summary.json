@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-05-20T14:58:51.577Z",
+  "generatedAt": "2026-06-17T03:50:48.092Z",
   "modelVersion": "outcome-v0.2",
   "summary": {
-    "totalFights": 253,
-    "scoredFights": 253,
+    "totalFights": 260,
+    "scoredFights": 260,
     "winnerAccuracy": 66,
-    "methodAccuracy": 58,
+    "methodAccuracy": 60,
     "brierScore": 0.219,
     "calibrationBuckets": [
       {
         "rangeLabel": "50–60%",
         "predictedMidpoint": 0.55,
-        "actualWinRate": 0.6148148148148148,
-        "count": 135
+        "actualWinRate": 0.5971223021582733,
+        "count": 139
       },
       {
         "rangeLabel": "60–70%",
         "predictedMidpoint": 0.65,
-        "actualWinRate": 0.6140350877192983,
-        "count": 57
+        "actualWinRate": 0.6521739130434783,
+        "count": 69
       },
       {
         "rangeLabel": "70–80%",
         "predictedMidpoint": 0.75,
-        "actualWinRate": 0.6428571428571429,
-        "count": 28
+        "actualWinRate": 0.7407407407407407,
+        "count": 27
       },
       {
         "rangeLabel": "80%+",
         "predictedMidpoint": 0.9,
-        "actualWinRate": 0.9393939393939394,
-        "count": 33
+        "actualWinRate": 0.92,
+        "count": 25
       }
     ],
-    "generatedAt": "2026-05-20T14:58:51.573Z",
+    "generatedAt": "2026-06-17T03:50:48.089Z",
     "modelVersion": "outcome-v0.2",
     "caveats": [
       "Backtest calibration may differ from live model record due to data vintage.",
@@ -51,16 +51,16 @@
         "leakageSafe": true,
         "officialComparison": true,
         "rule": "Use filtered UFCStats history only; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback behavior.",
-        "picked": 233,
-        "noPick": 20,
+        "picked": 238,
+        "noPick": 22,
         "coverage": 92,
-        "correctPicked": 147,
+        "correctPicked": 150,
         "pickAccuracy": 63,
         "allFightAccuracy": 58,
         "brierScore": 0.235,
         "modelCorrectOnPicked": 153,
-        "modelAccuracyOnPicked": 66,
-        "modelVsBaselineDeltaOnPicked": 3
+        "modelAccuracyOnPicked": 64,
+        "modelVsBaselineDeltaOnPicked": 1
       },
       "recordBaselines": {
         "asof-absolute-wl": {
@@ -69,16 +69,16 @@
           "leakageSafe": true,
           "officialComparison": true,
           "rule": "Use filtered pre-fight history only; pick higher wins-minus-losses; no-pick on equal net W-L.",
-          "picked": 206,
-          "noPick": 47,
-          "coverage": 81,
-          "correctPicked": 122,
+          "picked": 212,
+          "noPick": 48,
+          "coverage": 82,
+          "correctPicked": 125,
           "pickAccuracy": 59,
           "allFightAccuracy": 48,
-          "brierScore": 0.243,
-          "modelCorrectOnPicked": 132,
-          "modelAccuracyOnPicked": 64,
-          "modelVsBaselineDeltaOnPicked": 5
+          "brierScore": 0.244,
+          "modelCorrectOnPicked": 131,
+          "modelAccuracyOnPicked": 62,
+          "modelVsBaselineDeltaOnPicked": 3
         },
         "asof-win-pct-min3": {
           "id": "asof-win-pct-min3",
@@ -86,14 +86,14 @@
           "leakageSafe": true,
           "officialComparison": true,
           "rule": "Use filtered pre-fight history only; require at least 3 directional fights for each fighter; pick higher W-L win percentage.",
-          "picked": 146,
-          "noPick": 107,
+          "picked": 151,
+          "noPick": 109,
           "coverage": 58,
-          "correctPicked": 87,
+          "correctPicked": 90,
           "pickAccuracy": 60,
-          "allFightAccuracy": 34,
+          "allFightAccuracy": 35,
           "brierScore": 0.245,
-          "modelCorrectOnPicked": 90,
+          "modelCorrectOnPicked": 94,
           "modelAccuracyOnPicked": 62,
           "modelVsBaselineDeltaOnPicked": 2
         },
@@ -103,16 +103,16 @@
           "leakageSafe": true,
           "officialComparison": true,
           "rule": "Use filtered UFCStats history only; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback behavior.",
-          "picked": 233,
-          "noPick": 20,
+          "picked": 238,
+          "noPick": 22,
           "coverage": 92,
-          "correctPicked": 147,
+          "correctPicked": 150,
           "pickAccuracy": 63,
           "allFightAccuracy": 58,
           "brierScore": 0.235,
           "modelCorrectOnPicked": 153,
-          "modelAccuracyOnPicked": 66,
-          "modelVsBaselineDeltaOnPicked": 3
+          "modelAccuracyOnPicked": 64,
+          "modelVsBaselineDeltaOnPicked": 1
         },
         "asof-win-pct-no-small-edge": {
           "id": "asof-win-pct-no-small-edge",
@@ -120,22 +120,22 @@
           "leakageSafe": true,
           "officialComparison": true,
           "rule": "Use filtered pre-fight history only; require at least 1 directional fight each and a win-rate gap above 5 points.",
-          "picked": 188,
-          "noPick": 65,
+          "picked": 193,
+          "noPick": 67,
           "coverage": 74,
-          "correctPicked": 120,
+          "correctPicked": 123,
           "pickAccuracy": 64,
           "allFightAccuracy": 47,
           "brierScore": 0.237,
-          "modelCorrectOnPicked": 121,
-          "modelAccuracyOnPicked": 64,
-          "modelVsBaselineDeltaOnPicked": 0
+          "modelCorrectOnPicked": 122,
+          "modelAccuracyOnPicked": 63,
+          "modelVsBaselineDeltaOnPicked": -1
         }
       },
       "legacyProfileRecord": {
-        "accuracy": 71,
-        "scoredFights": 253,
-        "correct": 179,
+        "accuracy": 70,
+        "scoredFights": 260,
+        "correct": 183,
         "leakageSafe": false,
         "deprecated": true,
         "label": "Legacy profile-record baseline",
@@ -146,9 +146,9 @@
         "pickAccuracy": 63,
         "coverage": 92,
         "brierScore": 0.235,
-        "scoredFights": 253,
-        "picked": 233,
-        "correct": 147,
+        "scoredFights": 260,
+        "picked": 238,
+        "correct": 150,
         "leakageSafe": true,
         "baselineId": "asof-ufc-win-pct-any-history",
         "label": "As-of UFC win percentage, any history",
@@ -156,38 +156,38 @@
       },
       "moreExperience": {
         "accuracy": 40,
-        "scoredFights": 253,
-        "correct": 100
+        "scoredFights": 260,
+        "correct": 103
       },
       "ufcFavouriteWinRate": 0.67
     },
     "brierAssessment": "Beats the official leakage-safe as-of record baseline on Brier; still early and needs more validation.",
-    "missingDataRate": 40
+    "missingDataRate": 34
   },
   "accuracyByConfidenceBucket": [
     {
       "label": "50-60%",
-      "count": 135,
+      "count": 139,
       "correct": 83,
-      "accuracy": 61
+      "accuracy": 60
     },
     {
       "label": "60-70%",
-      "count": 57,
-      "correct": 35,
-      "accuracy": 61
+      "count": 69,
+      "correct": 45,
+      "accuracy": 65
     },
     {
       "label": "70-80%",
-      "count": 28,
-      "correct": 18,
-      "accuracy": 64
+      "count": 27,
+      "correct": 20,
+      "accuracy": 74
     },
     {
       "label": "80%+",
-      "count": 33,
-      "correct": 31,
-      "accuracy": 94
+      "count": 25,
+      "correct": 23,
+      "accuracy": 92
     }
   ]
 }

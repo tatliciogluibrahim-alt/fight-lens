@@ -1,0 +1,764 @@
+{
+  "id": "8ea70cfd5d3aa5ee",
+  "url": "http://www.ufcstats.com/fight-details/8ea70cfd5d3aa5ee",
+  "event": {
+    "id": "579fcdfcabd23a7b",
+    "name": "UFC Fight Night: Brown vs Silva",
+    "url": "http://www.ufcstats.com/event-details/579fcdfcabd23a7b"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "98aa60cf58071fd6",
+      "name": "Kyoji Horiguchi",
+      "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "bffeb123b21c9aad",
+      "name": "Darrell Montague",
+      "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Gary Copeland",
+    "details": "Sal D'amato 27 - 30.Rick Winter 27 - 30.Chris Lee 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "98aa60cf58071fd6",
+        "name": "Kyoji Horiguchi",
+        "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+      },
+      {
+        "id": "bffeb123b21c9aad",
+        "name": "Darrell Montague",
+        "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 65,
+          "attempted": 147,
+          "raw": "65 of 147"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 82,
+          "attempted": 169,
+          "raw": "82 of 169"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:47",
+        "controlSeconds": 167
+      },
+      {
+        "fighter": {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 105,
+          "raw": "26 of 105"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 114,
+          "raw": "35 of 114"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:57",
+        "controlSeconds": 57
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 63,
+            "raw": "31 of 63"
+          },
+          "significantStrikePercent": 49,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 83,
+            "raw": "46 of 83"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:30",
+          "controlSeconds": 90
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:19",
+          "controlSeconds": 19
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 60,
+            "raw": "26 of 60"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:17",
+          "controlSeconds": 77
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 48,
+            "raw": "8 of 48"
+          },
+          "significantStrikePercent": 17,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 49,
+            "raw": "9 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "98aa60cf58071fd6",
+        "name": "Kyoji Horiguchi",
+        "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+      },
+      {
+        "id": "bffeb123b21c9aad",
+        "name": "Darrell Montague",
+        "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        "significantStrikes": {
+          "landed": 65,
+          "attempted": 147,
+          "raw": "65 of 147"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 51,
+          "attempted": 122,
+          "raw": "51 of 122"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 38,
+          "attempted": 105,
+          "raw": "38 of 105"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 24,
+          "attempted": 38,
+          "raw": "24 of 38"
+        }
+      },
+      {
+        "fighter": {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 105,
+          "raw": "26 of 105"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 16,
+          "attempted": 80,
+          "raw": "16 of 80"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 18,
+          "raw": "5 of 18"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 101,
+          "raw": "25 of 101"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 23,
+            "raw": "5 of 23"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 15,
+            "raw": "2 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 22,
+            "raw": "5 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 63,
+            "raw": "31 of 63"
+          },
+          "significantStrikePercent": 49,
+          "head": {
+            "landed": 24,
+            "attempted": 53,
+            "raw": "24 of 53"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 51,
+            "raw": "21 of 51"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 34,
+            "raw": "13 of 34"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 9,
+            "attempted": 25,
+            "raw": "9 of 25"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 33,
+            "raw": "13 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+        },
+        {
+          "id": "bffeb123b21c9aad",
+          "name": "Darrell Montague",
+          "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "98aa60cf58071fd6",
+            "name": "Kyoji Horiguchi",
+            "url": "http://www.ufcstats.com/fighter-details/98aa60cf58071fd6"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 58,
+            "raw": "24 of 58"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 22,
+            "attempted": 51,
+            "raw": "22 of 51"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 28,
+            "raw": "7 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          }
+        },
+        {
+          "fighter": {
+            "id": "bffeb123b21c9aad",
+            "name": "Darrell Montague",
+            "url": "http://www.ufcstats.com/fighter-details/bffeb123b21c9aad"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 48,
+            "raw": "8 of 48"
+          },
+          "significantStrikePercent": 17,
+          "head": {
+            "landed": 5,
+            "attempted": 40,
+            "raw": "5 of 40"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 46,
+            "raw": "7 of 46"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.659Z"
+  }
+}

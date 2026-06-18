@@ -1,0 +1,584 @@
+{
+  "id": "4838bf4ca76c1c6b",
+  "url": "http://www.ufcstats.com/fight-details/4838bf4ca76c1c6b",
+  "event": {
+    "id": "a7724f51e32e763e",
+    "name": "UFC Fight Night: Brunson vs. Machida",
+    "url": "http://www.ufcstats.com/event-details/a7724f51e32e763e"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8da10db80131bec",
+      "name": "Niko Price",
+      "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "6d4b63c767106d3a",
+      "name": "Vicente Luque",
+      "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "4:08",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Fernando Portella",
+    "details": "D'Arce Choke After Drop to Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 99,
+          "raw": "25 of 99"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 100,
+          "raw": "26 of 100"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 113,
+          "raw": "61 of 113"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 61,
+          "attempted": 113,
+          "raw": "61 of 113"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 59,
+            "raw": "15 of 59"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 59,
+            "raw": "15 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 40,
+            "raw": "10 of 40"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 41,
+            "raw": "11 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8da10db80131bec",
+        "name": "Niko Price",
+        "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+      },
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 99,
+          "raw": "25 of 99"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 21,
+          "attempted": 90,
+          "raw": "21 of 90"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 95,
+          "raw": "24 of 95"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "significantStrikes": {
+          "landed": 61,
+          "attempted": 113,
+          "raw": "61 of 113"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 39,
+          "attempted": 86,
+          "raw": "39 of 86"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "leg": {
+          "landed": 19,
+          "attempted": 21,
+          "raw": "19 of 21"
+        },
+        "distance": {
+          "landed": 57,
+          "attempted": 104,
+          "raw": "57 of 104"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 59,
+            "raw": "15 of 59"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 13,
+            "attempted": 54,
+            "raw": "13 of 54"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 55,
+            "raw": "14 of 55"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 55,
+            "raw": "30 of 55"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 19,
+            "attempted": 41,
+            "raw": "19 of 41"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 29,
+            "attempted": 54,
+            "raw": "29 of 54"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8da10db80131bec",
+          "name": "Niko Price",
+          "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8da10db80131bec",
+            "name": "Niko Price",
+            "url": "http://www.ufcstats.com/fighter-details/d8da10db80131bec"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 40,
+            "raw": "10 of 40"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 8,
+            "attempted": 36,
+            "raw": "8 of 36"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 40,
+            "raw": "10 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 20,
+            "attempted": 45,
+            "raw": "20 of 45"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 50,
+            "raw": "28 of 50"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.722Z"
+  }
+}

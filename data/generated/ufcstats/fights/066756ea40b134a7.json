@@ -1,0 +1,584 @@
+{
+  "id": "066756ea40b134a7",
+  "url": "http://www.ufcstats.com/fight-details/066756ea40b134a7",
+  "event": {
+    "id": "a79bfbc01b2264d6",
+    "name": "UFC 242: Khabib vs. Poirier",
+    "url": "http://www.ufcstats.com/event-details/a79bfbc01b2264d6"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fa6796c55d6c5440",
+      "name": "Curtis Blaydes",
+      "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2f5cbecbbe18bac4",
+      "name": "Shamil Abdurakhimov",
+      "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "2:22",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Elbow to Head From Half Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "2f5cbecbbe18bac4",
+        "name": "Shamil Abdurakhimov",
+        "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 43,
+          "raw": "25 of 43"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 46,
+          "attempted": 74,
+          "raw": "46 of 74"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "6:08",
+        "controlSeconds": 368
+      },
+      {
+        "fighter": {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 43,
+            "raw": "25 of 43"
+          },
+          "takedowns": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:02",
+          "controlSeconds": 242
+        },
+        {
+          "fighter": {
+            "id": "2f5cbecbbe18bac4",
+            "name": "Shamil Abdurakhimov",
+            "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:06",
+          "controlSeconds": 126
+        },
+        {
+          "fighter": {
+            "id": "2f5cbecbbe18bac4",
+            "name": "Shamil Abdurakhimov",
+            "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "2f5cbecbbe18bac4",
+        "name": "Shamil Abdurakhimov",
+        "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 43,
+          "raw": "25 of 43"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 23,
+          "attempted": 41,
+          "raw": "23 of 41"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 10,
+          "raw": "2 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 23,
+          "attempted": 33,
+          "raw": "23 of 33"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2f5cbecbbe18bac4",
+            "name": "Shamil Abdurakhimov",
+            "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "2f5cbecbbe18bac4",
+          "name": "Shamil Abdurakhimov",
+          "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2f5cbecbbe18bac4",
+            "name": "Shamil Abdurakhimov",
+            "url": "http://www.ufcstats.com/fighter-details/2f5cbecbbe18bac4"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.517Z"
+  }
+}

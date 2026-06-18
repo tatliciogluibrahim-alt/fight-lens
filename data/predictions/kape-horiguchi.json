@@ -1,0 +1,21 @@
+{
+  "fightId": "kape-horiguchi",
+  "event": "UFC Fight Night: Kape vs. Horiguchi",
+  "fighters": {
+    "fighterA": "Manel Kape",
+    "fighterB": "Kyoji Horiguchi"
+  },
+  "generatedAt": "2026-06-18T13:56:50.272Z",
+  "modelVersion": "outcome-v0.3",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 43,
+    "fighterBWinProbability": 57,
+    "methodBreakdown": {
+      "decision": 57,
+      "koTko": 32,
+      "submission": 11
+    }
+  },
+  "outcome": null
+}

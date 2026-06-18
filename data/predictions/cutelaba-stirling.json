@@ -1,0 +1,21 @@
+{
+  "fightId": "cutelaba-stirling",
+  "event": "UFC Fight Night: Kape vs. Horiguchi",
+  "fighters": {
+    "fighterA": "Ion Cutelaba",
+    "fighterB": "Navajo Stirling"
+  },
+  "generatedAt": "2026-06-18T13:56:50.272Z",
+  "modelVersion": "outcome-v0.3",
+  "isBacktestReconstruction": false,
+  "prediction": {
+    "fighterAWinProbability": 29,
+    "fighterBWinProbability": 71,
+    "methodBreakdown": {
+      "decision": 53,
+      "koTko": 28,
+      "submission": 19
+    }
+  },
+  "outcome": null
+}

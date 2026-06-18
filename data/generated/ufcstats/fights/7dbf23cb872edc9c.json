@@ -1,0 +1,764 @@
+{
+  "id": "7dbf23cb872edc9c",
+  "url": "http://www.ufcstats.com/fight-details/7dbf23cb872edc9c",
+  "event": {
+    "id": "18f5669a92e99d92",
+    "name": "UFC Fight Night: Kattar vs. Ige",
+    "url": "http://www.ufcstats.com/event-details/18f5669a92e99d92"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c96d9178c9ed9e62",
+      "name": "Tim Elliott",
+      "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "20999e27ddd94bda",
+      "name": "Ryan Benoit",
+      "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Ben Cartlidge 28 - 29.David Lethaby 28 - 29.Clemens Werner 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c96d9178c9ed9e62",
+        "name": "Tim Elliott",
+        "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+      },
+      {
+        "id": "20999e27ddd94bda",
+        "name": "Ryan Benoit",
+        "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 67,
+          "attempted": 169,
+          "raw": "67 of 169"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 90,
+          "attempted": 193,
+          "raw": "90 of 193"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 13,
+          "raw": "1 of 13"
+        },
+        "takedownPercent": 8,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "2:42",
+        "controlSeconds": 162
+      },
+      {
+        "fighter": {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 122,
+          "raw": "55 of 122"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 64,
+          "attempted": 131,
+          "raw": "64 of 131"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:22",
+        "controlSeconds": 22
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 61,
+            "raw": "22 of 61"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 63,
+            "raw": "24 of 63"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 50,
+            "raw": "23 of 50"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 69,
+            "raw": "41 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 35,
+            "raw": "21 of 35"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 61,
+            "raw": "25 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:53",
+          "controlSeconds": 53
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 54,
+            "raw": "19 of 54"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 62,
+            "raw": "27 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c96d9178c9ed9e62",
+        "name": "Tim Elliott",
+        "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+      },
+      {
+        "id": "20999e27ddd94bda",
+        "name": "Ryan Benoit",
+        "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        "significantStrikes": {
+          "landed": 67,
+          "attempted": 169,
+          "raw": "67 of 169"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 31,
+          "attempted": 100,
+          "raw": "31 of 100"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 40,
+          "raw": "16 of 40"
+        },
+        "leg": {
+          "landed": 20,
+          "attempted": 29,
+          "raw": "20 of 29"
+        },
+        "distance": {
+          "landed": 44,
+          "attempted": 139,
+          "raw": "44 of 139"
+        },
+        "clinch": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        },
+        "significantStrikes": {
+          "landed": 55,
+          "attempted": 122,
+          "raw": "55 of 122"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 39,
+          "attempted": 97,
+          "raw": "39 of 97"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 22,
+          "raw": "13 of 22"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 107,
+          "raw": "47 of 107"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 61,
+            "raw": "22 of 61"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 4,
+            "attempted": 25,
+            "raw": "4 of 25"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 57,
+            "raw": "21 of 57"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 11,
+            "attempted": 27,
+            "raw": "11 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 50,
+            "raw": "23 of 50"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          }
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 34,
+            "raw": "20 of 34"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 16,
+            "attempted": 28,
+            "raw": "16 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 32,
+            "raw": "18 of 32"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+        },
+        {
+          "id": "20999e27ddd94bda",
+          "name": "Ryan Benoit",
+          "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c96d9178c9ed9e62",
+            "name": "Tim Elliott",
+            "url": "http://www.ufcstats.com/fighter-details/c96d9178c9ed9e62"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 58,
+            "raw": "22 of 58"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 13,
+            "attempted": 43,
+            "raw": "13 of 43"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 43,
+            "raw": "10 of 43"
+          },
+          "clinch": {
+            "landed": 12,
+            "attempted": 15,
+            "raw": "12 of 15"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "20999e27ddd94bda",
+            "name": "Ryan Benoit",
+            "url": "http://www.ufcstats.com/fighter-details/20999e27ddd94bda"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 54,
+            "raw": "19 of 54"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 12,
+            "attempted": 42,
+            "raw": "12 of 42"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 41,
+            "raw": "13 of 41"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.784Z"
+  }
+}

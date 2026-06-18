@@ -1,0 +1,404 @@
+{
+  "id": "301f230c90c4bd7d",
+  "url": "http://www.ufcstats.com/fight-details/301f230c90c4bd7d",
+  "event": {
+    "id": "93bf96be327fcd98",
+    "name": "UFC 279: Diaz vs. Ferguson",
+    "url": "http://www.ufcstats.com/event-details/93bf96be327fcd98"
+  },
+  "title": "Catch Weight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "41e83a89929d1327",
+      "name": "Jailton Almeida",
+      "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "82529ce93cd9a2cf",
+      "name": "Anton Turkalj",
+      "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "4:27",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "41e83a89929d1327",
+        "name": "Jailton Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+      },
+      {
+        "id": "82529ce93cd9a2cf",
+        "name": "Anton Turkalj",
+        "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "41e83a89929d1327",
+          "name": "Jailton Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 31,
+          "raw": "23 of 31"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "4:14",
+        "controlSeconds": 254
+      },
+      {
+        "fighter": {
+          "id": "82529ce93cd9a2cf",
+          "name": "Anton Turkalj",
+          "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "totalStrikes": {
+          "landed": 19,
+          "attempted": 22,
+          "raw": "19 of 22"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "41e83a89929d1327",
+          "name": "Jailton Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+        },
+        {
+          "id": "82529ce93cd9a2cf",
+          "name": "Anton Turkalj",
+          "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "41e83a89929d1327",
+            "name": "Jailton Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 24,
+            "raw": "17 of 24"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 31,
+            "raw": "23 of 31"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "4:14",
+          "controlSeconds": 254
+        },
+        {
+          "fighter": {
+            "id": "82529ce93cd9a2cf",
+            "name": "Anton Turkalj",
+            "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 22,
+            "raw": "19 of 22"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "41e83a89929d1327",
+        "name": "Jailton Almeida",
+        "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+      },
+      {
+        "id": "82529ce93cd9a2cf",
+        "name": "Anton Turkalj",
+        "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "41e83a89929d1327",
+          "name": "Jailton Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 24,
+          "raw": "17 of 24"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 17,
+          "attempted": 22,
+          "raw": "17 of 22"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 21,
+          "raw": "17 of 21"
+        }
+      },
+      {
+        "fighter": {
+          "id": "82529ce93cd9a2cf",
+          "name": "Anton Turkalj",
+          "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "significantStrikePercent": 100,
+        "head": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "41e83a89929d1327",
+          "name": "Jailton Almeida",
+          "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+        },
+        {
+          "id": "82529ce93cd9a2cf",
+          "name": "Anton Turkalj",
+          "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "41e83a89929d1327",
+            "name": "Jailton Almeida",
+            "url": "http://www.ufcstats.com/fighter-details/41e83a89929d1327"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 24,
+            "raw": "17 of 24"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 17,
+            "attempted": 22,
+            "raw": "17 of 22"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 21,
+            "raw": "17 of 21"
+          }
+        },
+        {
+          "fighter": {
+            "id": "82529ce93cd9a2cf",
+            "name": "Anton Turkalj",
+            "url": "http://www.ufcstats.com/fighter-details/82529ce93cd9a2cf"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.589Z"
+  }
+}

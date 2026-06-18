@@ -1,0 +1,584 @@
+{
+  "id": "3fe9e895b2a45049",
+  "url": "http://www.ufcstats.com/fight-details/3fe9e895b2a45049",
+  "event": {
+    "id": "232c582f29f8f65e",
+    "name": "UFC Fight Night: Rodriguez vs. Caceres",
+    "url": "http://www.ufcstats.com/event-details/232c582f29f8f65e"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c9cf753cfdf77fc2",
+      "name": "Marcin Tybura",
+      "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "202b0467521c9d6f",
+      "name": "Viktor Pesta",
+      "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:53",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John McCarthy",
+    "details": "Kick to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      },
+      {
+        "id": "202b0467521c9d6f",
+        "name": "Viktor Pesta",
+        "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 62,
+          "raw": "15 of 62"
+        },
+        "significantStrikePercent": 24,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 67,
+          "raw": "20 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 42,
+          "raw": "3 of 42"
+        },
+        "significantStrikePercent": 7,
+        "totalStrikes": {
+          "landed": 4,
+          "attempted": 43,
+          "raw": "4 of 43"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:29",
+        "controlSeconds": 29
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 52,
+            "raw": "13 of 52"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 57,
+            "raw": "18 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 36,
+            "raw": "3 of 36"
+          },
+          "significantStrikePercent": 8,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 37,
+            "raw": "4 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:29",
+          "controlSeconds": 29
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "significantStrikePercent": 20,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      },
+      {
+        "id": "202b0467521c9d6f",
+        "name": "Viktor Pesta",
+        "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 62,
+          "raw": "15 of 62"
+        },
+        "significantStrikePercent": 24,
+        "head": {
+          "landed": 11,
+          "attempted": 54,
+          "raw": "11 of 54"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 59,
+          "raw": "14 of 59"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 42,
+          "raw": "3 of 42"
+        },
+        "significantStrikePercent": 7,
+        "head": {
+          "landed": 2,
+          "attempted": 41,
+          "raw": "2 of 41"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 41,
+          "raw": "3 of 41"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 52,
+            "raw": "13 of 52"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 10,
+            "attempted": 45,
+            "raw": "10 of 45"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 49,
+            "raw": "12 of 49"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 36,
+            "raw": "3 of 36"
+          },
+          "significantStrikePercent": 8,
+          "head": {
+            "landed": 2,
+            "attempted": 35,
+            "raw": "2 of 35"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 35,
+            "raw": "3 of 35"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        {
+          "id": "202b0467521c9d6f",
+          "name": "Viktor Pesta",
+          "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "significantStrikePercent": 20,
+          "head": {
+            "landed": 1,
+            "attempted": 9,
+            "raw": "1 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "202b0467521c9d6f",
+            "name": "Viktor Pesta",
+            "url": "http://www.ufcstats.com/fighter-details/202b0467521c9d6f"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.673Z"
+  }
+}

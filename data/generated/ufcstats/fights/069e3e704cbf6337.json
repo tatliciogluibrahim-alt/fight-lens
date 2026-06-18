@@ -1,0 +1,764 @@
+{
+  "id": "069e3e704cbf6337",
+  "url": "http://www.ufcstats.com/fight-details/069e3e704cbf6337",
+  "event": {
+    "id": "b5882371e2a3900d",
+    "name": "UFC 234: Adesanya vs. Silva",
+    "url": "http://www.ufcstats.com/event-details/b5882371e2a3900d"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5987b2458f4b5290",
+      "name": "Ricky Simon",
+      "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "94527830000ab715",
+      "name": "Rani Yahya",
+      "url": "http://www.ufcstats.com/fighter-details/94527830000ab715",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Steve Perceval",
+    "details": "Mark Craig 27 - 30.Albert Shen 27 - 30.Anthony Dimitriou 25 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5987b2458f4b5290",
+        "name": "Ricky Simon",
+        "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+      },
+      {
+        "id": "94527830000ab715",
+        "name": "Rani Yahya",
+        "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 137,
+          "raw": "54 of 137"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 66,
+          "attempted": 150,
+          "raw": "66 of 150"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "takedownPercent": 80,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:49",
+        "controlSeconds": 229
+      },
+      {
+        "fighter": {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 186,
+          "raw": "47 of 186"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 52,
+          "attempted": 195,
+          "raw": "52 of 195"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 9,
+          "raw": "0 of 9"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 50,
+            "raw": "21 of 50"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 62,
+            "raw": "21 of 62"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 64,
+            "raw": "22 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 43,
+            "raw": "11 of 43"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 48,
+            "raw": "16 of 48"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:04",
+          "controlSeconds": 64
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 82,
+            "raw": "19 of 82"
+          },
+          "significantStrikePercent": 23,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 85,
+            "raw": "21 of 85"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 52,
+            "raw": "29 of 52"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:00",
+          "controlSeconds": 120
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 42,
+            "raw": "7 of 42"
+          },
+          "significantStrikePercent": 17,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 46,
+            "raw": "9 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5987b2458f4b5290",
+        "name": "Ricky Simon",
+        "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+      },
+      {
+        "id": "94527830000ab715",
+        "name": "Rani Yahya",
+        "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        "significantStrikes": {
+          "landed": 54,
+          "attempted": 137,
+          "raw": "54 of 137"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 40,
+          "attempted": 116,
+          "raw": "40 of 116"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 16,
+          "raw": "9 of 16"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 38,
+          "attempted": 114,
+          "raw": "38 of 114"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 23,
+          "raw": "16 of 23"
+        }
+      },
+      {
+        "fighter": {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 186,
+          "raw": "47 of 186"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 29,
+          "attempted": 159,
+          "raw": "29 of 159"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 186,
+          "raw": "47 of 186"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 49,
+            "raw": "20 of 49"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 12,
+            "attempted": 39,
+            "raw": "12 of 39"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 43,
+            "raw": "15 of 43"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 62,
+            "raw": "21 of 62"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 11,
+            "attempted": 46,
+            "raw": "11 of 46"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 62,
+            "raw": "21 of 62"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 43,
+            "raw": "11 of 43"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 8,
+            "attempted": 37,
+            "raw": "8 of 37"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 37,
+            "raw": "8 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 82,
+            "raw": "19 of 82"
+          },
+          "significantStrikePercent": 23,
+          "head": {
+            "landed": 12,
+            "attempted": 72,
+            "raw": "12 of 72"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 82,
+            "raw": "19 of 82"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5987b2458f4b5290",
+          "name": "Ricky Simon",
+          "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+        },
+        {
+          "id": "94527830000ab715",
+          "name": "Rani Yahya",
+          "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5987b2458f4b5290",
+            "name": "Ricky Simon",
+            "url": "http://www.ufcstats.com/fighter-details/5987b2458f4b5290"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 34,
+            "raw": "15 of 34"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "94527830000ab715",
+            "name": "Rani Yahya",
+            "url": "http://www.ufcstats.com/fighter-details/94527830000ab715"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 42,
+            "raw": "7 of 42"
+          },
+          "significantStrikePercent": 17,
+          "head": {
+            "landed": 6,
+            "attempted": 41,
+            "raw": "6 of 41"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 42,
+            "raw": "7 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.745Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "358f816aff469270",
+  "url": "http://www.ufcstats.com/fight-details/358f816aff469270",
+  "event": {
+    "id": "307064d3e0f036c2",
+    "name": "UFC Fight Night: Holloway vs. Kattar",
+    "url": "http://www.ufcstats.com/event-details/307064d3e0f036c2"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64facb6cc564262d",
+      "name": "Punahele Soriano",
+      "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "866fd7b1a6c90e7f",
+      "name": "Dusko Todorovic",
+      "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:48",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "866fd7b1a6c90e7f",
+        "name": "Dusko Todorovic",
+        "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 66,
+          "raw": "30 of 66"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 32,
+          "attempted": 69,
+          "raw": "32 of 69"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:38",
+        "controlSeconds": 38
+      },
+      {
+        "fighter": {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 57,
+          "raw": "22 of 57"
+        },
+        "significantStrikePercent": 39,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 59,
+          "raw": "23 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 66,
+            "raw": "30 of 66"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 32,
+            "attempted": 69,
+            "raw": "32 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        },
+        {
+          "fighter": {
+            "id": "866fd7b1a6c90e7f",
+            "name": "Dusko Todorovic",
+            "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 57,
+            "raw": "22 of 57"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 59,
+            "raw": "23 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64facb6cc564262d",
+        "name": "Punahele Soriano",
+        "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+      },
+      {
+        "id": "866fd7b1a6c90e7f",
+        "name": "Dusko Todorovic",
+        "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 66,
+          "raw": "30 of 66"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 25,
+          "attempted": 60,
+          "raw": "25 of 60"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 51,
+          "raw": "21 of 51"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 57,
+          "raw": "22 of 57"
+        },
+        "significantStrikePercent": 39,
+        "head": {
+          "landed": 15,
+          "attempted": 49,
+          "raw": "15 of 49"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 53,
+          "raw": "18 of 53"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64facb6cc564262d",
+          "name": "Punahele Soriano",
+          "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+        },
+        {
+          "id": "866fd7b1a6c90e7f",
+          "name": "Dusko Todorovic",
+          "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64facb6cc564262d",
+            "name": "Punahele Soriano",
+            "url": "http://www.ufcstats.com/fighter-details/64facb6cc564262d"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 66,
+            "raw": "30 of 66"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 25,
+            "attempted": 60,
+            "raw": "25 of 60"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 51,
+            "raw": "21 of 51"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "866fd7b1a6c90e7f",
+            "name": "Dusko Todorovic",
+            "url": "http://www.ufcstats.com/fighter-details/866fd7b1a6c90e7f"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 57,
+            "raw": "22 of 57"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 15,
+            "attempted": 49,
+            "raw": "15 of 49"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 53,
+            "raw": "18 of 53"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.735Z"
+  }
+}

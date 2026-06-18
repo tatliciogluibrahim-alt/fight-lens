@@ -1,0 +1,404 @@
+{
+  "id": "bfc9989751bd0d04",
+  "url": "http://www.ufcstats.com/fight-details/bfc9989751bd0d04",
+  "event": {
+    "id": "89a407032911e27e",
+    "name": "UFC Fight Night: Holloway vs. The Korean Zombie",
+    "url": "http://www.ufcstats.com/event-details/89a407032911e27e"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fc08099550072fe4",
+      "name": "Waldo Cortes Acosta",
+      "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "0c25d0a5e8cdbf19",
+      "name": "Lukasz Brzeski",
+      "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:01",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Craig",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fc08099550072fe4",
+        "name": "Waldo Cortes Acosta",
+        "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+      },
+      {
+        "id": "0c25d0a5e8cdbf19",
+        "name": "Lukasz Brzeski",
+        "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 45,
+          "raw": "15 of 45"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 16,
+          "attempted": 46,
+          "raw": "16 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:01",
+        "controlSeconds": 1
+      },
+      {
+        "fighter": {
+          "id": "0c25d0a5e8cdbf19",
+          "name": "Lukasz Brzeski",
+          "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 15,
+          "attempted": 23,
+          "raw": "15 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        {
+          "id": "0c25d0a5e8cdbf19",
+          "name": "Lukasz Brzeski",
+          "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        },
+        {
+          "fighter": {
+            "id": "0c25d0a5e8cdbf19",
+            "name": "Lukasz Brzeski",
+            "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fc08099550072fe4",
+        "name": "Waldo Cortes Acosta",
+        "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+      },
+      {
+        "id": "0c25d0a5e8cdbf19",
+        "name": "Lukasz Brzeski",
+        "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        "significantStrikes": {
+          "landed": 15,
+          "attempted": 45,
+          "raw": "15 of 45"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 9,
+          "attempted": 36,
+          "raw": "9 of 36"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 42,
+          "raw": "12 of 42"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "0c25d0a5e8cdbf19",
+          "name": "Lukasz Brzeski",
+          "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "distance": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+        },
+        {
+          "id": "0c25d0a5e8cdbf19",
+          "name": "Lukasz Brzeski",
+          "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fc08099550072fe4",
+            "name": "Waldo Cortes Acosta",
+            "url": "http://www.ufcstats.com/fighter-details/fc08099550072fe4"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 45,
+            "raw": "15 of 45"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 9,
+            "attempted": 36,
+            "raw": "9 of 36"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 42,
+            "raw": "12 of 42"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "0c25d0a5e8cdbf19",
+            "name": "Lukasz Brzeski",
+            "url": "http://www.ufcstats.com/fighter-details/0c25d0a5e8cdbf19"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.798Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "b4f88d65b47c2a39",
+  "url": "http://www.ufcstats.com/fight-details/b4f88d65b47c2a39",
+  "event": {
+    "id": "2a470ad41c22c25a",
+    "name": "UFC Fight Night: Lewis vs. Daukaus",
+    "url": "http://www.ufcstats.com/event-details/2a470ad41c22c25a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "f1d64ae34e088832",
+      "name": "Charles Jourdain",
+      "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "5f6f049d54728e88",
+      "name": "Andre Ewell",
+      "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": "Bryan Miner 26 - 30.Sal D'amato 27 - 30.Junichiro Kamijo 27 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "f1d64ae34e088832",
+        "name": "Charles Jourdain",
+        "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+      },
+      {
+        "id": "5f6f049d54728e88",
+        "name": "Andre Ewell",
+        "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 137,
+          "attempted": 228,
+          "raw": "137 of 228"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 150,
+          "attempted": 246,
+          "raw": "150 of 246"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:27",
+        "controlSeconds": 147
+      },
+      {
+        "fighter": {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 171,
+          "raw": "56 of 171"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 59,
+          "attempted": 176,
+          "raw": "59 of 176"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:35",
+        "controlSeconds": 35
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 43,
+            "raw": "25 of 43"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 46,
+            "raw": "28 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 62,
+            "raw": "23 of 62"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 65,
+            "raw": "25 of 65"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:35",
+          "controlSeconds": 35
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 60,
+            "attempted": 91,
+            "raw": "60 of 91"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 64,
+            "attempted": 97,
+            "raw": "64 of 97"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:08",
+          "controlSeconds": 68
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 55,
+            "raw": "18 of 55"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 52,
+            "attempted": 94,
+            "raw": "52 of 94"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 58,
+            "attempted": 103,
+            "raw": "58 of 103"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:19",
+          "controlSeconds": 79
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 54,
+            "raw": "15 of 54"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 55,
+            "raw": "15 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "f1d64ae34e088832",
+        "name": "Charles Jourdain",
+        "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+      },
+      {
+        "id": "5f6f049d54728e88",
+        "name": "Andre Ewell",
+        "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        "significantStrikes": {
+          "landed": 137,
+          "attempted": 228,
+          "raw": "137 of 228"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 70,
+          "attempted": 149,
+          "raw": "70 of 149"
+        },
+        "body": {
+          "landed": 34,
+          "attempted": 40,
+          "raw": "34 of 40"
+        },
+        "leg": {
+          "landed": 33,
+          "attempted": 39,
+          "raw": "33 of 39"
+        },
+        "distance": {
+          "landed": 95,
+          "attempted": 175,
+          "raw": "95 of 175"
+        },
+        "clinch": {
+          "landed": 26,
+          "attempted": 31,
+          "raw": "26 of 31"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 22,
+          "raw": "16 of 22"
+        }
+      },
+      {
+        "fighter": {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        },
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 171,
+          "raw": "56 of 171"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 26,
+          "attempted": 132,
+          "raw": "26 of 132"
+        },
+        "body": {
+          "landed": 16,
+          "attempted": 25,
+          "raw": "16 of 25"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 14,
+          "raw": "14 of 14"
+        },
+        "distance": {
+          "landed": 55,
+          "attempted": 168,
+          "raw": "55 of 168"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 43,
+            "raw": "25 of 43"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 42,
+            "raw": "24 of 42"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 62,
+            "raw": "23 of 62"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 10,
+            "attempted": 47,
+            "raw": "10 of 47"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 60,
+            "raw": "23 of 60"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 60,
+            "attempted": 91,
+            "raw": "60 of 91"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 35,
+            "attempted": 63,
+            "raw": "35 of 63"
+          },
+          "body": {
+            "landed": 12,
+            "attempted": 12,
+            "raw": "12 of 12"
+          },
+          "leg": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "distance": {
+            "landed": 39,
+            "attempted": 64,
+            "raw": "39 of 64"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 22,
+            "raw": "16 of 22"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 55,
+            "raw": "18 of 55"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 6,
+            "attempted": 40,
+            "raw": "6 of 40"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 54,
+            "raw": "17 of 54"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "f1d64ae34e088832",
+          "name": "Charles Jourdain",
+          "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+        },
+        {
+          "id": "5f6f049d54728e88",
+          "name": "Andre Ewell",
+          "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "f1d64ae34e088832",
+            "name": "Charles Jourdain",
+            "url": "http://www.ufcstats.com/fighter-details/f1d64ae34e088832"
+          },
+          "significantStrikes": {
+            "landed": 52,
+            "attempted": 94,
+            "raw": "52 of 94"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 28,
+            "attempted": 68,
+            "raw": "28 of 68"
+          },
+          "body": {
+            "landed": 14,
+            "attempted": 16,
+            "raw": "14 of 16"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 69,
+            "raw": "32 of 69"
+          },
+          "clinch": {
+            "landed": 20,
+            "attempted": 25,
+            "raw": "20 of 25"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "5f6f049d54728e88",
+            "name": "Andre Ewell",
+            "url": "http://www.ufcstats.com/fighter-details/5f6f049d54728e88"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 54,
+            "raw": "15 of 54"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 10,
+            "attempted": 45,
+            "raw": "10 of 45"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 54,
+            "raw": "15 of 54"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.485Z"
+  }
+}

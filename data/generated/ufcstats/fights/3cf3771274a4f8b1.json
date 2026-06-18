@@ -1,0 +1,584 @@
+{
+  "id": "3cf3771274a4f8b1",
+  "url": "http://www.ufcstats.com/fight-details/3cf3771274a4f8b1",
+  "event": {
+    "id": "35080a7f406f9ab3",
+    "name": "UFC Fight Night: Yan vs. Dvalishvili",
+    "url": "http://www.ufcstats.com/event-details/35080a7f406f9ab3"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4e6738062d469256",
+      "name": "Sedriques Dumas",
+      "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "ca43de99b07b6b40",
+      "name": "Josh Fremd",
+      "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "3:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Guillotine Choke From Half Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "ca43de99b07b6b40",
+        "name": "Josh Fremd",
+        "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 44,
+          "raw": "20 of 44"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 47,
+          "raw": "23 of 47"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 61,
+          "raw": "33 of 61"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 48,
+          "attempted": 78,
+          "raw": "48 of 78"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "4:27",
+        "controlSeconds": 267
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 50,
+            "raw": "27 of 50"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 58,
+            "raw": "33 of 58"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:41",
+          "controlSeconds": 161
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 20,
+            "raw": "15 of 20"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "1:46",
+          "controlSeconds": 106
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4e6738062d469256",
+        "name": "Sedriques Dumas",
+        "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+      },
+      {
+        "id": "ca43de99b07b6b40",
+        "name": "Josh Fremd",
+        "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 44,
+          "raw": "20 of 44"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 8,
+          "attempted": 26,
+          "raw": "8 of 26"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 43,
+          "raw": "19 of 43"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 61,
+          "raw": "33 of 61"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 21,
+          "attempted": 48,
+          "raw": "21 of 48"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 27,
+          "attempted": 55,
+          "raw": "27 of 55"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 30,
+            "raw": "14 of 30"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 7,
+            "attempted": 20,
+            "raw": "7 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 29,
+            "raw": "13 of 29"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 50,
+            "raw": "27 of 50"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 16,
+            "attempted": 38,
+            "raw": "16 of 38"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "4e6738062d469256",
+          "name": "Sedriques Dumas",
+          "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+        },
+        {
+          "id": "ca43de99b07b6b40",
+          "name": "Josh Fremd",
+          "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4e6738062d469256",
+            "name": "Sedriques Dumas",
+            "url": "http://www.ufcstats.com/fighter-details/4e6738062d469256"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ca43de99b07b6b40",
+            "name": "Josh Fremd",
+            "url": "http://www.ufcstats.com/fighter-details/ca43de99b07b6b40"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.770Z"
+  }
+}

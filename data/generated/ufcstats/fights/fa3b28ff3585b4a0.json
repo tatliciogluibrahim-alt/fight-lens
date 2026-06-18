@@ -1,0 +1,404 @@
+{
+  "id": "fa3b28ff3585b4a0",
+  "url": "http://www.ufcstats.com/fight-details/fa3b28ff3585b4a0",
+  "event": {
+    "id": "48e093ea1f43a053",
+    "name": "UFC 268: Usman vs. Covington 2",
+    "url": "http://www.ufcstats.com/event-details/48e093ea1f43a053"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5442f1bc4b47eaf3",
+      "name": "Chris Curtis",
+      "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "547afe1017e72dbe",
+      "name": "Phil Hawes",
+      "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:27",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Todd Ronald Anderson",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5442f1bc4b47eaf3",
+        "name": "Chris Curtis",
+        "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+      },
+      {
+        "id": "547afe1017e72dbe",
+        "name": "Phil Hawes",
+        "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 36,
+          "raw": "21 of 36"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 37,
+          "raw": "22 of 37"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      },
+      {
+        "fighter": {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 48,
+          "attempted": 90,
+          "raw": "48 of 90"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 49,
+          "attempted": 91,
+          "raw": "49 of 91"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 36,
+            "raw": "21 of 36"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 37,
+            "raw": "22 of 37"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        },
+        {
+          "fighter": {
+            "id": "547afe1017e72dbe",
+            "name": "Phil Hawes",
+            "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 90,
+            "raw": "48 of 90"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 49,
+            "attempted": 91,
+            "raw": "49 of 91"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5442f1bc4b47eaf3",
+        "name": "Chris Curtis",
+        "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+      },
+      {
+        "id": "547afe1017e72dbe",
+        "name": "Phil Hawes",
+        "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 36,
+          "raw": "21 of 36"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 15,
+          "attempted": 27,
+          "raw": "15 of 27"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 8,
+          "raw": "5 of 8"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 33,
+          "raw": "18 of 33"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        },
+        "significantStrikes": {
+          "landed": 48,
+          "attempted": 90,
+          "raw": "48 of 90"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 24,
+          "attempted": 63,
+          "raw": "24 of 63"
+        },
+        "body": {
+          "landed": 15,
+          "attempted": 18,
+          "raw": "15 of 18"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "distance": {
+          "landed": 46,
+          "attempted": 85,
+          "raw": "46 of 85"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5442f1bc4b47eaf3",
+          "name": "Chris Curtis",
+          "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+        },
+        {
+          "id": "547afe1017e72dbe",
+          "name": "Phil Hawes",
+          "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5442f1bc4b47eaf3",
+            "name": "Chris Curtis",
+            "url": "http://www.ufcstats.com/fighter-details/5442f1bc4b47eaf3"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 36,
+            "raw": "21 of 36"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 15,
+            "attempted": 27,
+            "raw": "15 of 27"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 33,
+            "raw": "18 of 33"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "547afe1017e72dbe",
+            "name": "Phil Hawes",
+            "url": "http://www.ufcstats.com/fighter-details/547afe1017e72dbe"
+          },
+          "significantStrikes": {
+            "landed": 48,
+            "attempted": 90,
+            "raw": "48 of 90"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 24,
+            "attempted": 63,
+            "raw": "24 of 63"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 18,
+            "raw": "15 of 18"
+          },
+          "leg": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "distance": {
+            "landed": 46,
+            "attempted": 85,
+            "raw": "46 of 85"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.496Z"
+  }
+}

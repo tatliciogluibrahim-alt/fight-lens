@@ -1,0 +1,764 @@
+{
+  "id": "8b8f9485214f9e48",
+  "url": "http://www.ufcstats.com/fight-details/8b8f9485214f9e48",
+  "event": {
+    "id": "865aa315ea62c511",
+    "name": "UFC 208: Holm vs. De Randamie",
+    "url": "http://www.ufcstats.com/event-details/865aa315ea62c511"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d1941565abf50b16",
+      "name": "Jim Miller",
+      "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "029eaff01e6bb8f0",
+      "name": "Dustin Poirier",
+      "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Majority",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Todd Ronald Anderson",
+    "details": "Eric Colon 28 - 28.Chris Lee 27 - 30.Derek Cleary 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d1941565abf50b16",
+        "name": "Jim Miller",
+        "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+      },
+      {
+        "id": "029eaff01e6bb8f0",
+        "name": "Dustin Poirier",
+        "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 135,
+          "raw": "71 of 135"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 83,
+          "attempted": 150,
+          "raw": "83 of 150"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "takedownPercent": 17,
+        "submissionAttempts": 3,
+        "reversals": 0,
+        "control": "1:22",
+        "controlSeconds": 82
+      },
+      {
+        "fighter": {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 97,
+          "attempted": 216,
+          "raw": "97 of 216"
+        },
+        "significantStrikePercent": 45,
+        "totalStrikes": {
+          "landed": 122,
+          "attempted": 243,
+          "raw": "122 of 243"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "3:58",
+        "controlSeconds": 238
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 54,
+            "raw": "22 of 54"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 57,
+            "raw": "24 of 57"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:34",
+          "controlSeconds": 34
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 70,
+            "raw": "30 of 70"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 74,
+            "raw": "34 of 74"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:31",
+          "controlSeconds": 31
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 52,
+            "raw": "33 of 52"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 55,
+            "raw": "36 of 55"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:22",
+          "controlSeconds": 22
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 108,
+            "raw": "51 of 108"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 58,
+            "attempted": 115,
+            "raw": "58 of 115"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:41",
+          "controlSeconds": 41
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 38,
+            "raw": "23 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 3,
+          "reversals": 0,
+          "control": "0:26",
+          "controlSeconds": 26
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 38,
+            "raw": "16 of 38"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 54,
+            "raw": "30 of 54"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:46",
+          "controlSeconds": 166
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d1941565abf50b16",
+        "name": "Jim Miller",
+        "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+      },
+      {
+        "id": "029eaff01e6bb8f0",
+        "name": "Dustin Poirier",
+        "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        "significantStrikes": {
+          "landed": 71,
+          "attempted": 135,
+          "raw": "71 of 135"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 36,
+          "attempted": 98,
+          "raw": "36 of 98"
+        },
+        "body": {
+          "landed": 20,
+          "attempted": 20,
+          "raw": "20 of 20"
+        },
+        "leg": {
+          "landed": 15,
+          "attempted": 17,
+          "raw": "15 of 17"
+        },
+        "distance": {
+          "landed": 56,
+          "attempted": 118,
+          "raw": "56 of 118"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 15,
+          "raw": "13 of 15"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        },
+        "significantStrikes": {
+          "landed": 97,
+          "attempted": 216,
+          "raw": "97 of 216"
+        },
+        "significantStrikePercent": 45,
+        "head": {
+          "landed": 79,
+          "attempted": 186,
+          "raw": "79 of 186"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 16,
+          "raw": "8 of 16"
+        },
+        "distance": {
+          "landed": 80,
+          "attempted": 185,
+          "raw": "80 of 185"
+        },
+        "clinch": {
+          "landed": 13,
+          "attempted": 21,
+          "raw": "13 of 21"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 10,
+          "raw": "4 of 10"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 54,
+            "raw": "22 of 54"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 10,
+            "attempted": 42,
+            "raw": "10 of 42"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 50,
+            "raw": "18 of 50"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 70,
+            "raw": "30 of 70"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 19,
+            "attempted": 56,
+            "raw": "19 of 56"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 61,
+            "raw": "23 of 61"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "significantStrikes": {
+            "landed": 33,
+            "attempted": 52,
+            "raw": "33 of 52"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 19,
+            "attempted": 38,
+            "raw": "19 of 38"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 43,
+            "raw": "26 of 43"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "significantStrikes": {
+            "landed": 51,
+            "attempted": 108,
+            "raw": "51 of 108"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 45,
+            "attempted": 97,
+            "raw": "45 of 97"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "distance": {
+            "landed": 44,
+            "attempted": 96,
+            "raw": "44 of 96"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d1941565abf50b16",
+          "name": "Jim Miller",
+          "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+        },
+        {
+          "id": "029eaff01e6bb8f0",
+          "name": "Dustin Poirier",
+          "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d1941565abf50b16",
+            "name": "Jim Miller",
+            "url": "http://www.ufcstats.com/fighter-details/d1941565abf50b16"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "029eaff01e6bb8f0",
+            "name": "Dustin Poirier",
+            "url": "http://www.ufcstats.com/fighter-details/029eaff01e6bb8f0"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 38,
+            "raw": "16 of 38"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 15,
+            "attempted": 33,
+            "raw": "15 of 33"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 28,
+            "raw": "13 of 28"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.609Z"
+  }
+}

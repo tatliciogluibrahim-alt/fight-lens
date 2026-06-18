@@ -1,0 +1,764 @@
+{
+  "id": "15f48dd8cf8ae455",
+  "url": "http://www.ufcstats.com/fight-details/15f48dd8cf8ae455",
+  "event": {
+    "id": "b3fb8d2293e17a59",
+    "name": "UFC on FOX: Johnson vs. Bader",
+    "url": "http://www.ufcstats.com/event-details/b3fb8d2293e17a59"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c6aee362c7a7d482",
+      "name": "Randy Brown",
+      "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "8f0d576beba1cfcd",
+      "name": "Matt Dwyer",
+      "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Liam Kerrigan",
+    "details": "Derek Cleary 28 - 29.Eric Colon 28 - 29.Dave Tirelli 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "8f0d576beba1cfcd",
+        "name": "Matt Dwyer",
+        "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 48,
+          "attempted": 108,
+          "raw": "48 of 108"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 61,
+          "attempted": 122,
+          "raw": "61 of 122"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:30",
+        "controlSeconds": 210
+      },
+      {
+        "fighter": {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 97,
+          "raw": "46 of 97"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 50,
+          "attempted": 101,
+          "raw": "50 of 101"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "takedownPercent": 13,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:50",
+        "controlSeconds": 170
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 40,
+            "raw": "13 of 40"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 40,
+            "raw": "13 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 26,
+            "raw": "16 of 26"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 36,
+            "raw": "25 of 36"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:45",
+          "controlSeconds": 105
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:29",
+          "controlSeconds": 89
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 42,
+            "raw": "19 of 42"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:45",
+          "controlSeconds": 105
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:21",
+          "controlSeconds": 81
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "8f0d576beba1cfcd",
+        "name": "Matt Dwyer",
+        "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "significantStrikes": {
+          "landed": 48,
+          "attempted": 108,
+          "raw": "48 of 108"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 31,
+          "attempted": 84,
+          "raw": "31 of 84"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 12,
+          "raw": "10 of 12"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "distance": {
+          "landed": 23,
+          "attempted": 77,
+          "raw": "23 of 77"
+        },
+        "clinch": {
+          "landed": 23,
+          "attempted": 29,
+          "raw": "23 of 29"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 97,
+          "raw": "46 of 97"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 16,
+          "attempted": 62,
+          "raw": "16 of 62"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 23,
+          "attempted": 24,
+          "raw": "23 of 24"
+        },
+        "distance": {
+          "landed": 34,
+          "attempted": 79,
+          "raw": "34 of 79"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 18,
+          "raw": "12 of 18"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 40,
+            "raw": "13 of 40"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 4,
+            "attempted": 27,
+            "raw": "4 of 27"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 8,
+            "raw": "5 of 8"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 40,
+            "raw": "13 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 4,
+            "attempted": 29,
+            "raw": "4 of 29"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 46,
+            "raw": "18 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 26,
+            "raw": "16 of 26"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 11,
+            "attempted": 19,
+            "raw": "11 of 19"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "clinch": {
+            "landed": 12,
+            "attempted": 12,
+            "raw": "12 of 12"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 28,
+            "raw": "18 of 28"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 6,
+            "attempted": 14,
+            "raw": "6 of 14"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 16,
+            "raw": "8 of 16"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "8f0d576beba1cfcd",
+          "name": "Matt Dwyer",
+          "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 42,
+            "raw": "19 of 42"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 16,
+            "attempted": 38,
+            "raw": "16 of 38"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "clinch": {
+            "landed": 11,
+            "attempted": 17,
+            "raw": "11 of 17"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8f0d576beba1cfcd",
+            "name": "Matt Dwyer",
+            "url": "http://www.ufcstats.com/fighter-details/8f0d576beba1cfcd"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 17,
+            "raw": "8 of 17"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.741Z"
+  }
+}

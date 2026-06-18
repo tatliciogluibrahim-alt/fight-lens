@@ -1,0 +1,764 @@
+{
+  "id": "8b87b341bcd130ee",
+  "url": "http://www.ufcstats.com/fight-details/8b87b341bcd130ee",
+  "event": {
+    "id": "dd992d569aaebee6",
+    "name": "UFC 123: Rampage vs Machida",
+    "url": "http://www.ufcstats.com/event-details/dd992d569aaebee6"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64a50dad704d1d49",
+      "name": "Edson Barboza",
+      "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e26882820f9e8df5",
+      "name": "Mike Lullo",
+      "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:26",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Fennell",
+    "details": "Kicks to Leg At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "e26882820f9e8df5",
+        "name": "Mike Lullo",
+        "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 69,
+          "raw": "43 of 69"
+        },
+        "significantStrikePercent": 62,
+        "totalStrikes": {
+          "landed": 44,
+          "attempted": 70,
+          "raw": "44 of 70"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "5:13",
+        "controlSeconds": 313
+      },
+      {
+        "fighter": {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 45,
+          "raw": "12 of 45"
+        },
+        "significantStrikePercent": 27,
+        "totalStrikes": {
+          "landed": 68,
+          "attempted": 104,
+          "raw": "68 of 104"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:10",
+        "controlSeconds": 10
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 33,
+            "raw": "19 of 33"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 33,
+            "raw": "19 of 33"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:15",
+          "controlSeconds": 135
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 27,
+            "raw": "6 of 27"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 59,
+            "raw": "37 of 59"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 34,
+            "raw": "22 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:51",
+          "controlSeconds": 171
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 43,
+            "raw": "30 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "e26882820f9e8df5",
+        "name": "Mike Lullo",
+        "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 69,
+          "raw": "43 of 69"
+        },
+        "significantStrikePercent": 62,
+        "head": {
+          "landed": 16,
+          "attempted": 38,
+          "raw": "16 of 38"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 26,
+          "raw": "24 of 26"
+        },
+        "distance": {
+          "landed": 43,
+          "attempted": 67,
+          "raw": "43 of 67"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        },
+        "significantStrikes": {
+          "landed": 12,
+          "attempted": 45,
+          "raw": "12 of 45"
+        },
+        "significantStrikePercent": 27,
+        "head": {
+          "landed": 9,
+          "attempted": 36,
+          "raw": "9 of 36"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 45,
+          "raw": "12 of 45"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 33,
+            "raw": "19 of 33"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 12,
+            "raw": "11 of 12"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 31,
+            "raw": "19 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 27,
+            "raw": "6 of 27"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 27,
+            "raw": "6 of 27"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e26882820f9e8df5",
+          "name": "Mike Lullo",
+          "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e26882820f9e8df5",
+            "name": "Mike Lullo",
+            "url": "http://www.ufcstats.com/fighter-details/e26882820f9e8df5"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.550Z"
+  }
+}

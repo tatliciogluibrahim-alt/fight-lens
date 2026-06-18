@@ -1,0 +1,764 @@
+{
+  "id": "3333fdbe86a763fb",
+  "url": "http://www.ufcstats.com/fight-details/3333fdbe86a763fb",
+  "event": {
+    "id": "3c241737a6069b9f",
+    "name": "UFC 160: Velasquez vs Silva 2",
+    "url": "http://www.ufcstats.com/event-details/3c241737a6069b9f"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e1147d3d2dabe1ce",
+      "name": "Robert Whittaker",
+      "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2e25c1d983c26311",
+      "name": "Colton Smith",
+      "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "0:41",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e1147d3d2dabe1ce",
+        "name": "Robert Whittaker",
+        "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+      },
+      {
+        "id": "2e25c1d983c26311",
+        "name": "Colton Smith",
+        "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 113,
+          "raw": "53 of 113"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 54,
+          "attempted": 114,
+          "raw": "54 of 114"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:14",
+        "controlSeconds": 14
+      },
+      {
+        "fighter": {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 91,
+          "raw": "33 of 91"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 91,
+          "raw": "33 of 91"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 6,
+          "raw": "0 of 6"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 56,
+            "raw": "28 of 56"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 57,
+            "raw": "29 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 43,
+            "raw": "12 of 43"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 43,
+            "raw": "12 of 43"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e1147d3d2dabe1ce",
+        "name": "Robert Whittaker",
+        "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+      },
+      {
+        "id": "2e25c1d983c26311",
+        "name": "Colton Smith",
+        "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        "significantStrikes": {
+          "landed": 53,
+          "attempted": 113,
+          "raw": "53 of 113"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 53,
+          "attempted": 113,
+          "raw": "53 of 113"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 40,
+          "attempted": 88,
+          "raw": "40 of 88"
+        },
+        "clinch": {
+          "landed": 11,
+          "attempted": 22,
+          "raw": "11 of 22"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 91,
+          "raw": "33 of 91"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 18,
+          "attempted": 69,
+          "raw": "18 of 69"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "distance": {
+          "landed": 26,
+          "attempted": 80,
+          "raw": "26 of 80"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 17,
+            "attempted": 45,
+            "raw": "17 of 45"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 40,
+            "raw": "15 of 40"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 11,
+            "attempted": 28,
+            "raw": "11 of 28"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 33,
+            "raw": "16 of 33"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 56,
+            "raw": "28 of 56"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 28,
+            "attempted": 56,
+            "raw": "28 of 56"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 19,
+            "attempted": 39,
+            "raw": "19 of 39"
+          },
+          "clinch": {
+            "landed": 9,
+            "attempted": 17,
+            "raw": "9 of 17"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 43,
+            "raw": "12 of 43"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 7,
+            "attempted": 35,
+            "raw": "7 of 35"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 39,
+            "raw": "9 of 39"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+        },
+        {
+          "id": "2e25c1d983c26311",
+          "name": "Colton Smith",
+          "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1147d3d2dabe1ce",
+            "name": "Robert Whittaker",
+            "url": "http://www.ufcstats.com/fighter-details/e1147d3d2dabe1ce"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 8,
+            "attempted": 12,
+            "raw": "8 of 12"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2e25c1d983c26311",
+            "name": "Colton Smith",
+            "url": "http://www.ufcstats.com/fighter-details/2e25c1d983c26311"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "head": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.750Z"
+  }
+}

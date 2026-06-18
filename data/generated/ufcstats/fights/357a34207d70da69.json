@@ -1,0 +1,764 @@
+{
+  "id": "357a34207d70da69",
+  "url": "http://www.ufcstats.com/fight-details/357a34207d70da69",
+  "event": {
+    "id": "a79bfbc01b2264d6",
+    "name": "UFC 242: Khabib vs. Poirier",
+    "url": "http://www.ufcstats.com/event-details/a79bfbc01b2264d6"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "64a50dad704d1d49",
+      "name": "Edson Barboza",
+      "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "e5010b1b94ca5755",
+      "name": "Paul Felder",
+      "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Split",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Howie Booth 30 - 27.David Lethaby 28 - 29.Maria Makhmutova 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "e5010b1b94ca5755",
+        "name": "Paul Felder",
+        "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 114,
+          "raw": "60 of 114"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 77,
+          "attempted": 133,
+          "raw": "77 of 133"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedownPercent": 33,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:50",
+        "controlSeconds": 110
+      },
+      {
+        "fighter": {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 154,
+          "raw": "56 of 154"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 75,
+          "attempted": 174,
+          "raw": "75 of 174"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:03",
+        "controlSeconds": 123
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 54,
+            "raw": "24 of 54"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 54,
+            "raw": "24 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 51,
+            "raw": "13 of 51"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 54,
+            "raw": "16 of 54"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 37,
+            "attempted": 52,
+            "raw": "37 of 52"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:29",
+          "controlSeconds": 89
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 57,
+            "raw": "31 of 57"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 57,
+            "raw": "23 of 57"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 63,
+            "raw": "28 of 63"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:33",
+          "controlSeconds": 33
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "64a50dad704d1d49",
+        "name": "Edson Barboza",
+        "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+      },
+      {
+        "id": "e5010b1b94ca5755",
+        "name": "Paul Felder",
+        "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        "significantStrikes": {
+          "landed": 60,
+          "attempted": 114,
+          "raw": "60 of 114"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 27,
+          "attempted": 74,
+          "raw": "27 of 74"
+        },
+        "body": {
+          "landed": 19,
+          "attempted": 24,
+          "raw": "19 of 24"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 16,
+          "raw": "14 of 16"
+        },
+        "distance": {
+          "landed": 55,
+          "attempted": 109,
+          "raw": "55 of 109"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        },
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 154,
+          "raw": "56 of 154"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 41,
+          "attempted": 137,
+          "raw": "41 of 137"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "distance": {
+          "landed": 51,
+          "attempted": 147,
+          "raw": "51 of 147"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 54,
+            "raw": "24 of 54"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 10,
+            "attempted": 35,
+            "raw": "10 of 35"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 54,
+            "raw": "24 of 54"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 51,
+            "raw": "13 of 51"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 9,
+            "attempted": 46,
+            "raw": "9 of 46"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 50,
+            "raw": "12 of 50"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 34,
+            "raw": "21 of 34"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 46,
+            "raw": "20 of 46"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 13,
+            "attempted": 39,
+            "raw": "13 of 39"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 40,
+            "raw": "16 of 40"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "64a50dad704d1d49",
+          "name": "Edson Barboza",
+          "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+        },
+        {
+          "id": "e5010b1b94ca5755",
+          "name": "Paul Felder",
+          "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "64a50dad704d1d49",
+            "name": "Edson Barboza",
+            "url": "http://www.ufcstats.com/fighter-details/64a50dad704d1d49"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 26,
+            "raw": "15 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e5010b1b94ca5755",
+            "name": "Paul Felder",
+            "url": "http://www.ufcstats.com/fighter-details/e5010b1b94ca5755"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 57,
+            "raw": "23 of 57"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 19,
+            "attempted": 52,
+            "raw": "19 of 52"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 57,
+            "raw": "23 of 57"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.547Z"
+  }
+}

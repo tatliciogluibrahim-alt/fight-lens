@@ -1,0 +1,584 @@
+{
+  "id": "1cd5d5e271b646a3",
+  "url": "http://www.ufcstats.com/fight-details/1cd5d5e271b646a3",
+  "event": {
+    "id": "15515e797aedc137",
+    "name": "UFC 221: Romero vs. Rockhold",
+    "url": "http://www.ufcstats.com/event-details/15515e797aedc137"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1338e2c7480bdf9e",
+      "name": "Israel Adesanya",
+      "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "826475cc758e60e6",
+      "name": "Rob Wilkinson",
+      "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "3:37",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Steve Perceval",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "826475cc758e60e6",
+        "name": "Rob Wilkinson",
+        "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 75,
+          "raw": "52 of 75"
+        },
+        "significantStrikePercent": 69,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 94,
+          "raw": "70 of 94"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 46,
+          "raw": "22 of 46"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 59,
+          "raw": "33 of 59"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 15,
+          "raw": "3 of 15"
+        },
+        "takedownPercent": 20,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "4:07",
+        "controlSeconds": 247
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 31,
+            "raw": "24 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "826475cc758e60e6",
+            "name": "Rob Wilkinson",
+            "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 27,
+            "raw": "17 of 27"
+          },
+          "significantStrikePercent": 63,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 37,
+            "raw": "26 of 37"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 10,
+            "raw": "2 of 10"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:22",
+          "controlSeconds": 202
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 59,
+            "raw": "42 of 59"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 63,
+            "raw": "46 of 63"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "826475cc758e60e6",
+            "name": "Rob Wilkinson",
+            "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 22,
+            "raw": "7 of 22"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1338e2c7480bdf9e",
+        "name": "Israel Adesanya",
+        "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+      },
+      {
+        "id": "826475cc758e60e6",
+        "name": "Rob Wilkinson",
+        "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 75,
+          "raw": "52 of 75"
+        },
+        "significantStrikePercent": 69,
+        "head": {
+          "landed": 35,
+          "attempted": 56,
+          "raw": "35 of 56"
+        },
+        "body": {
+          "landed": 13,
+          "attempted": 13,
+          "raw": "13 of 13"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 45,
+          "raw": "28 of 45"
+        },
+        "clinch": {
+          "landed": 24,
+          "attempted": 30,
+          "raw": "24 of 30"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 46,
+          "raw": "22 of 46"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 6,
+          "attempted": 22,
+          "raw": "6 of 22"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 26,
+          "raw": "7 of 26"
+        },
+        "clinch": {
+          "landed": 15,
+          "attempted": 20,
+          "raw": "15 of 20"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "826475cc758e60e6",
+            "name": "Rob Wilkinson",
+            "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 27,
+            "raw": "17 of 27"
+          },
+          "significantStrikePercent": 63,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+        },
+        {
+          "id": "826475cc758e60e6",
+          "name": "Rob Wilkinson",
+          "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1338e2c7480bdf9e",
+            "name": "Israel Adesanya",
+            "url": "http://www.ufcstats.com/fighter-details/1338e2c7480bdf9e"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 59,
+            "raw": "42 of 59"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 30,
+            "attempted": 46,
+            "raw": "30 of 46"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 10,
+            "raw": "10 of 10"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 21,
+            "attempted": 32,
+            "raw": "21 of 32"
+          },
+          "clinch": {
+            "landed": 21,
+            "attempted": 27,
+            "raw": "21 of 27"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "826475cc758e60e6",
+            "name": "Rob Wilkinson",
+            "url": "http://www.ufcstats.com/fighter-details/826475cc758e60e6"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 4,
+            "attempted": 14,
+            "raw": "4 of 14"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 15,
+            "raw": "3 of 15"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.584Z"
+  }
+}

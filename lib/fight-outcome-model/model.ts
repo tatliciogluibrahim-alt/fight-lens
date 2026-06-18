@@ -21,9 +21,24 @@ import type {
   OutcomeModelConfidence,
   OutcomeScenario,
 } from "./types";
-import { isTooCloseToCall } from "@/lib/predictionThresholds";
+import {
+  isTooCloseToCall,
+  resolveNamedCallThreshold,
+  parseModelMinorVersion,
+  CALIBRATED_MODEL_MINOR,
+} from "@/lib/predictionThresholds";
 
-const MODEL_VERSION = "outcome-v0.2";
+// Current model version. v0.3 adds temperature recalibration (T=0.824) and the
+// 58% named-call threshold. Predictions locked under an earlier version are
+// re-run against that version's frozen logic (see options.modelVersion below),
+// so historical calls never drift when the live model changes.
+const MODEL_VERSION = "outcome-v0.3";
+
+/** Whether a given model version applies the T=0.824 temperature recalibration. */
+function usesTemperatureRecalibration(modelVersion: string): boolean {
+  const minor = parseModelMinorVersion(modelVersion);
+  return minor == null ? true : minor >= CALIBRATED_MODEL_MINOR;
+}
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -53,6 +68,20 @@ function isSub(f: SourcedFightHistoryItem) {
 /** Logistic function — maps a delta in [-1, +1] to a probability in (0, 1) */
 function logistic(delta: number, k = 3.5): number {
   return 1 / (1 + Math.exp(-k * delta));
+}
+
+/**
+ * Temperature recalibration, T = 0.824, fitted on n=188 frozen backtest fights.
+ * Applied as a post-processing step AFTER the logistic. With T < 1 it divides
+ * the logit by 0.824, pushing probabilities away from 0.5 (sharper, more
+ * confident). rawDelta and the logistic are unchanged; only the final
+ * probability is recalibrated.
+ */
+const RECALIBRATION_TEMPERATURE = 0.824;
+function temperatureRecalibrate(p: number, T = RECALIBRATION_TEMPERATURE): number {
+  const clamped = Math.min(1 - 1e-9, Math.max(1e-9, p));
+  const logit = Math.log(clamped / (1 - clamped));
+  return 1 / (1 + Math.exp(-(logit / T)));
 }
 
 /** Clamp a number to [0, 100] and round */
@@ -215,7 +244,11 @@ function buildScenarios(
 export function buildFightOutcomeModel(
   fight: SourcedFight,
   shapeModel: FightShapeModelOutput,
+  options?: { modelVersion?: string },
 ): FightOutcomeModelOutput {
+  const modelVersion = options?.modelVersion ?? MODEL_VERSION;
+  const applyTemperature = usesTemperatureRecalibration(modelVersion);
+  const namedCallThreshold = resolveNamedCallThreshold(modelVersion);
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const warnings: string[] = [];
@@ -278,7 +311,11 @@ export function buildFightOutcomeModel(
       absorptionWeight * absorptionDelta) /
     Math.max(totalWeight, 0.001);
 
-  const winProbA = logistic(rawDelta, 3.5);
+  // Temperature recalibration T=0.824 fitted on n=188 frozen backtest fights —
+  // post-processing after the logistic. v0.3+ only; legacy versions (v0.1/v0.2)
+  // use the raw logistic so their locked calls reproduce exactly.
+  const baseWinProbA = logistic(rawDelta, 3.5);
+  const winProbA = applyTemperature ? temperatureRecalibrate(baseWinProbA) : baseWinProbA;
   const winProbB = 1 - winProbA;
 
   // ── Finish profiles ───────────────────────────────────────────────────────
@@ -334,6 +371,7 @@ export function buildFightOutcomeModel(
   const tooClose = isTooCloseToCall(
     outcomeA.winProbability,
     outcomeB.winProbability,
+    namedCallThreshold,
   );
 
   // ── Confidence ────────────────────────────────────────────────────────────
@@ -360,7 +398,8 @@ export function buildFightOutcomeModel(
     swingFactorLabel: swing.label,
     swingFactorDescription: swing.description,
     confidence,
-    modelVersion: MODEL_VERSION,
+    modelVersion,
     dataWarnings: warnings,
+    rawDelta,
   };
 }

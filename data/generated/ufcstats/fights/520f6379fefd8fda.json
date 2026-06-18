@@ -1,0 +1,404 @@
+{
+  "id": "520f6379fefd8fda",
+  "url": "http://www.ufcstats.com/fight-details/520f6379fefd8fda",
+  "event": {
+    "id": "03b1e846b09f721d",
+    "name": "UFC 227: Dillashaw vs. Garbrandt 2",
+    "url": "http://www.ufcstats.com/event-details/03b1e846b09f721d"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d247691a6c0e9034",
+      "name": "Cub Swanson",
+      "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "b6452706b373eea1",
+      "name": "Renato Moicano",
+      "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "4:15",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Blake Grice",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "b6452706b373eea1",
+        "name": "Renato Moicano",
+        "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 38,
+          "raw": "20 of 38"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 38,
+          "raw": "20 of 38"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 47,
+          "raw": "17 of 47"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 53,
+          "raw": "23 of 53"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:21",
+        "controlSeconds": 81
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 47,
+            "raw": "17 of 47"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 53,
+            "raw": "23 of 53"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:21",
+          "controlSeconds": 81
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d247691a6c0e9034",
+        "name": "Cub Swanson",
+        "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+      },
+      {
+        "id": "b6452706b373eea1",
+        "name": "Renato Moicano",
+        "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 38,
+          "raw": "20 of 38"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 5,
+          "attempted": 19,
+          "raw": "5 of 19"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 12,
+          "attempted": 14,
+          "raw": "12 of 14"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 38,
+          "raw": "20 of 38"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 47,
+          "raw": "17 of 47"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 14,
+          "attempted": 42,
+          "raw": "14 of 42"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 33,
+          "raw": "8 of 33"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d247691a6c0e9034",
+          "name": "Cub Swanson",
+          "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+        },
+        {
+          "id": "b6452706b373eea1",
+          "name": "Renato Moicano",
+          "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d247691a6c0e9034",
+            "name": "Cub Swanson",
+            "url": "http://www.ufcstats.com/fighter-details/d247691a6c0e9034"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 12,
+            "attempted": 14,
+            "raw": "12 of 14"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "b6452706b373eea1",
+            "name": "Renato Moicano",
+            "url": "http://www.ufcstats.com/fighter-details/b6452706b373eea1"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 47,
+            "raw": "17 of 47"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 14,
+            "attempted": 42,
+            "raw": "14 of 42"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 33,
+            "raw": "8 of 33"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.508Z"
+  }
+}

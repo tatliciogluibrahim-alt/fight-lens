@@ -1,0 +1,584 @@
+{
+  "id": "1de342e9309c5f0f",
+  "url": "http://www.ufcstats.com/fight-details/1de342e9309c5f0f",
+  "event": {
+    "id": "0db9d2486d564a3c",
+    "name": "UFC Fight Night: Barboza vs. Chikadze",
+    "url": "http://www.ufcstats.com/event-details/0db9d2486d564a3c"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6ac9bc2953c47345",
+      "name": "Gerald Meerschaert",
+      "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ea7e5bc78d9de658",
+      "name": "Makhmud Muradov",
+      "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:49",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "ea7e5bc78d9de658",
+        "name": "Makhmud Muradov",
+        "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 56,
+          "raw": "32 of 56"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 39,
+          "attempted": 65,
+          "raw": "39 of 65"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 10,
+          "raw": "3 of 10"
+        },
+        "takedownPercent": 30,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:55",
+        "controlSeconds": 55
+      },
+      {
+        "fighter": {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 99,
+          "raw": "40 of 99"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 100,
+          "raw": "41 of 100"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:16",
+        "controlSeconds": 16
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 37,
+            "raw": "23 of 37"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 46,
+            "raw": "30 of 46"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:25",
+          "controlSeconds": 25
+        },
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 68,
+            "raw": "29 of 68"
+          },
+          "significantStrikePercent": 43,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 69,
+            "raw": "30 of 69"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:16",
+          "controlSeconds": 16
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        },
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6ac9bc2953c47345",
+        "name": "Gerald Meerschaert",
+        "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+      },
+      {
+        "id": "ea7e5bc78d9de658",
+        "name": "Makhmud Muradov",
+        "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        "significantStrikes": {
+          "landed": 32,
+          "attempted": 56,
+          "raw": "32 of 56"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 23,
+          "attempted": 45,
+          "raw": "23 of 45"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 32,
+          "attempted": 55,
+          "raw": "32 of 55"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 99,
+          "raw": "40 of 99"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 27,
+          "attempted": 81,
+          "raw": "27 of 81"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 13,
+          "raw": "8 of 13"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 36,
+          "attempted": 92,
+          "raw": "36 of 92"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 37,
+            "raw": "23 of 37"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 37,
+            "raw": "23 of 37"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "significantStrikes": {
+            "landed": 29,
+            "attempted": 68,
+            "raw": "29 of 68"
+          },
+          "significantStrikePercent": 43,
+          "head": {
+            "landed": 20,
+            "attempted": 55,
+            "raw": "20 of 55"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 64,
+            "raw": "26 of 64"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6ac9bc2953c47345",
+          "name": "Gerald Meerschaert",
+          "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+        },
+        {
+          "id": "ea7e5bc78d9de658",
+          "name": "Makhmud Muradov",
+          "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6ac9bc2953c47345",
+            "name": "Gerald Meerschaert",
+            "url": "http://www.ufcstats.com/fighter-details/6ac9bc2953c47345"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 18,
+            "raw": "9 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ea7e5bc78d9de658",
+            "name": "Makhmud Muradov",
+            "url": "http://www.ufcstats.com/fighter-details/ea7e5bc78d9de658"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 31,
+            "raw": "11 of 31"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 7,
+            "attempted": 26,
+            "raw": "7 of 26"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 28,
+            "raw": "10 of 28"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.558Z"
+  }
+}

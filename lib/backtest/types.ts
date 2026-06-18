@@ -58,6 +58,8 @@ export interface BacktestPrediction {
   confidence: "high" | "medium" | "low" | "insufficient";
   modelVersion: string;
   leakageChecked: boolean;
+  /** Diagnostic: pre-logistic weighted delta (fighter A perspective). */
+  rawDelta?: number;
 }
 
 /** A scored backtest — actual outcome paired with the prediction */

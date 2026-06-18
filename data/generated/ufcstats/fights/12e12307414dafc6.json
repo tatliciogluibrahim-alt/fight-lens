@@ -1,0 +1,404 @@
+{
+  "id": "12e12307414dafc6",
+  "url": "http://www.ufcstats.com/fight-details/12e12307414dafc6",
+  "event": {
+    "id": "de25520d54eab12d",
+    "name": "UFC Fight Night: Blaydes vs. Ngannou 2",
+    "url": "http://www.ufcstats.com/event-details/de25520d54eab12d"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fa6796c55d6c5440",
+      "name": "Curtis Blaydes",
+      "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "8d03ce87ca14e778",
+      "name": "Francis Ngannou",
+      "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:45",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "8d03ce87ca14e778",
+        "name": "Francis Ngannou",
+        "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "significantStrikePercent": 13,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "8d03ce87ca14e778",
+          "name": "Francis Ngannou",
+          "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "significantStrikePercent": 76,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "8d03ce87ca14e778",
+          "name": "Francis Ngannou",
+          "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "8d03ce87ca14e778",
+            "name": "Francis Ngannou",
+            "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "8d03ce87ca14e778",
+        "name": "Francis Ngannou",
+        "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "significantStrikePercent": 13,
+        "head": {
+          "landed": 1,
+          "attempted": 7,
+          "raw": "1 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 8,
+          "raw": "1 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "8d03ce87ca14e778",
+          "name": "Francis Ngannou",
+          "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 17,
+          "raw": "13 of 17"
+        },
+        "significantStrikePercent": 76,
+        "head": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "8d03ce87ca14e778",
+          "name": "Francis Ngannou",
+          "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "significantStrikePercent": 13,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "8d03ce87ca14e778",
+            "name": "Francis Ngannou",
+            "url": "http://www.ufcstats.com/fighter-details/8d03ce87ca14e778"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 17,
+            "raw": "13 of 17"
+          },
+          "significantStrikePercent": 76,
+          "head": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.517Z"
+  }
+}

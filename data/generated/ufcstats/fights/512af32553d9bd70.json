@@ -1,0 +1,404 @@
+{
+  "id": "512af32553d9bd70",
+  "url": "http://www.ufcstats.com/fight-details/512af32553d9bd70",
+  "event": {
+    "id": "27541033b97c076d",
+    "name": "UFC 261: Usman vs. Masvidal 2",
+    "url": "http://www.ufcstats.com/event-details/27541033b97c076d"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c6aee362c7a7d482",
+      "name": "Randy Brown",
+      "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "57b10fca4f9c9a7a",
+      "name": "Alex Oliveira",
+      "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:50",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Rear Naked ChokeOne-arm RNC"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "57b10fca4f9c9a7a",
+        "name": "Alex Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 32,
+          "raw": "16 of 32"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 39,
+          "raw": "23 of 39"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:23",
+        "controlSeconds": 83
+      },
+      {
+        "fighter": {
+          "id": "57b10fca4f9c9a7a",
+          "name": "Alex Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "57b10fca4f9c9a7a",
+          "name": "Alex Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 32,
+            "raw": "16 of 32"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 39,
+            "raw": "23 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:23",
+          "controlSeconds": 83
+        },
+        {
+          "fighter": {
+            "id": "57b10fca4f9c9a7a",
+            "name": "Alex Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c6aee362c7a7d482",
+        "name": "Randy Brown",
+        "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+      },
+      {
+        "id": "57b10fca4f9c9a7a",
+        "name": "Alex Oliveira",
+        "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        "significantStrikes": {
+          "landed": 16,
+          "attempted": 32,
+          "raw": "16 of 32"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 10,
+          "attempted": 24,
+          "raw": "10 of 24"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 21,
+          "raw": "8 of 21"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        }
+      },
+      {
+        "fighter": {
+          "id": "57b10fca4f9c9a7a",
+          "name": "Alex Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 12,
+          "raw": "7 of 12"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c6aee362c7a7d482",
+          "name": "Randy Brown",
+          "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+        },
+        {
+          "id": "57b10fca4f9c9a7a",
+          "name": "Alex Oliveira",
+          "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c6aee362c7a7d482",
+            "name": "Randy Brown",
+            "url": "http://www.ufcstats.com/fighter-details/c6aee362c7a7d482"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 32,
+            "raw": "16 of 32"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 21,
+            "raw": "8 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "57b10fca4f9c9a7a",
+            "name": "Alex Oliveira",
+            "url": "http://www.ufcstats.com/fighter-details/57b10fca4f9c9a7a"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "significantStrikePercent": 58,
+          "head": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.739Z"
+  }
+}

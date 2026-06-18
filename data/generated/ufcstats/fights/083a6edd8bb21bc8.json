@@ -1,0 +1,404 @@
+{
+  "id": "083a6edd8bb21bc8",
+  "url": "http://www.ufcstats.com/fight-details/083a6edd8bb21bc8",
+  "event": {
+    "id": "6b8f28da9a483049",
+    "name": "UFC Fight Night: Dos Anjos vs. Lee",
+    "url": "http://www.ufcstats.com/event-details/6b8f28da9a483049"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "6d4b63c767106d3a",
+      "name": "Vicente Luque",
+      "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "714e1e0681ddb703",
+      "name": "Derrick Krantz",
+      "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:52",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "714e1e0681ddb703",
+        "name": "Derrick Krantz",
+        "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 25,
+          "raw": "18 of 25"
+        },
+        "significantStrikePercent": 72,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 25,
+          "raw": "18 of 25"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:36",
+        "controlSeconds": 36
+      },
+      {
+        "fighter": {
+          "id": "714e1e0681ddb703",
+          "name": "Derrick Krantz",
+          "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 18,
+          "raw": "6 of 18"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 23,
+          "raw": "9 of 23"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:36",
+        "controlSeconds": 96
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "714e1e0681ddb703",
+          "name": "Derrick Krantz",
+          "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:36",
+          "controlSeconds": 36
+        },
+        {
+          "fighter": {
+            "id": "714e1e0681ddb703",
+            "name": "Derrick Krantz",
+            "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 23,
+            "raw": "9 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:36",
+          "controlSeconds": 96
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      },
+      {
+        "id": "714e1e0681ddb703",
+        "name": "Derrick Krantz",
+        "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 25,
+          "raw": "18 of 25"
+        },
+        "significantStrikePercent": 72,
+        "head": {
+          "landed": 14,
+          "attempted": 20,
+          "raw": "14 of 20"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 17,
+          "raw": "10 of 17"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        }
+      },
+      {
+        "fighter": {
+          "id": "714e1e0681ddb703",
+          "name": "Derrick Krantz",
+          "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+        },
+        "significantStrikes": {
+          "landed": 6,
+          "attempted": 18,
+          "raw": "6 of 18"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 5,
+          "attempted": 16,
+          "raw": "5 of 16"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 17,
+          "raw": "5 of 17"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        {
+          "id": "714e1e0681ddb703",
+          "name": "Derrick Krantz",
+          "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 25,
+            "raw": "18 of 25"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 14,
+            "attempted": 20,
+            "raw": "14 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 17,
+            "raw": "10 of 17"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          }
+        },
+        {
+          "fighter": {
+            "id": "714e1e0681ddb703",
+            "name": "Derrick Krantz",
+            "url": "http://www.ufcstats.com/fighter-details/714e1e0681ddb703"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.793Z"
+  }
+}

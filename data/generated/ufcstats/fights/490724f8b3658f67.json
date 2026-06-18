@@ -1,0 +1,404 @@
+{
+  "id": "490724f8b3658f67",
+  "url": "http://www.ufcstats.com/fight-details/490724f8b3658f67",
+  "event": {
+    "id": "4834ff149dc9542a",
+    "name": "UFC Fight Night: Cowboy vs. Gaethje",
+    "url": "http://www.ufcstats.com/event-details/4834ff149dc9542a"
+  },
+  "title": "Lightweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "9e8f6c728eb01124",
+      "name": "Justin Gaethje",
+      "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "1d00756835ca67c9",
+      "name": "Donald Cerrone",
+      "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:18",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Jerin Valel",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      },
+      {
+        "id": "1d00756835ca67c9",
+        "name": "Donald Cerrone",
+        "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 61,
+          "raw": "40 of 61"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 61,
+          "raw": "40 of 61"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 52,
+          "raw": "17 of 52"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 52,
+          "raw": "17 of 52"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 61,
+            "raw": "40 of 61"
+          },
+          "significantStrikePercent": 66,
+          "totalStrikes": {
+            "landed": 40,
+            "attempted": 61,
+            "raw": "40 of 61"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "1d00756835ca67c9",
+            "name": "Donald Cerrone",
+            "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "9e8f6c728eb01124",
+        "name": "Justin Gaethje",
+        "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+      },
+      {
+        "id": "1d00756835ca67c9",
+        "name": "Donald Cerrone",
+        "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 61,
+          "raw": "40 of 61"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 27,
+          "attempted": 44,
+          "raw": "27 of 44"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 15,
+          "raw": "13 of 15"
+        },
+        "distance": {
+          "landed": 36,
+          "attempted": 55,
+          "raw": "36 of 55"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 52,
+          "raw": "17 of 52"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 12,
+          "attempted": 45,
+          "raw": "12 of 45"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 52,
+          "raw": "17 of 52"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "9e8f6c728eb01124",
+          "name": "Justin Gaethje",
+          "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+        },
+        {
+          "id": "1d00756835ca67c9",
+          "name": "Donald Cerrone",
+          "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "9e8f6c728eb01124",
+            "name": "Justin Gaethje",
+            "url": "http://www.ufcstats.com/fighter-details/9e8f6c728eb01124"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 61,
+            "raw": "40 of 61"
+          },
+          "significantStrikePercent": 66,
+          "head": {
+            "landed": 27,
+            "attempted": 44,
+            "raw": "27 of 44"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 55,
+            "raw": "36 of 55"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1d00756835ca67c9",
+            "name": "Donald Cerrone",
+            "url": "http://www.ufcstats.com/fighter-details/1d00756835ca67c9"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 12,
+            "attempted": 45,
+            "raw": "12 of 45"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 52,
+            "raw": "17 of 52"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.631Z"
+  }
+}

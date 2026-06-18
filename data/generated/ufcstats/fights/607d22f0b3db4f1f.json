@@ -1,0 +1,764 @@
+{
+  "id": "607d22f0b3db4f1f",
+  "url": "http://www.ufcstats.com/fight-details/607d22f0b3db4f1f",
+  "event": {
+    "id": "d56bb6dff2ae77eb",
+    "name": "UFC Fight Night: Cowboy vs Cowboy",
+    "url": "http://www.ufcstats.com/event-details/d56bb6dff2ae77eb"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0d8011111be000b2",
+      "name": "Sean Strickland",
+      "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a2b12c3f3d60ff69",
+      "name": "Alex Garcia",
+      "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "4:25",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Bill Bookwalter",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0d8011111be000b2",
+        "name": "Sean Strickland",
+        "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+      },
+      {
+        "id": "a2b12c3f3d60ff69",
+        "name": "Alex Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 173,
+          "raw": "84 of 173"
+        },
+        "significantStrikePercent": 49,
+        "totalStrikes": {
+          "landed": 113,
+          "attempted": 206,
+          "raw": "113 of 206"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:48",
+        "controlSeconds": 168
+      },
+      {
+        "fighter": {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 67,
+          "raw": "23 of 67"
+        },
+        "significantStrikePercent": 34,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 94,
+          "raw": "41 of 94"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "takedownPercent": 43,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:31",
+        "controlSeconds": 211
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 44,
+            "attempted": 62,
+            "raw": "44 of 62"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:48",
+          "controlSeconds": 168
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:52",
+          "controlSeconds": 112
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 62,
+            "raw": "31 of 62"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 67,
+            "raw": "35 of 67"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 43,
+            "raw": "20 of 43"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:56",
+          "controlSeconds": 56
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 77,
+            "raw": "34 of 77"
+          },
+          "significantStrikePercent": 44,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 77,
+            "raw": "34 of 77"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:43",
+          "controlSeconds": 43
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0d8011111be000b2",
+        "name": "Sean Strickland",
+        "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+      },
+      {
+        "id": "a2b12c3f3d60ff69",
+        "name": "Alex Garcia",
+        "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        "significantStrikes": {
+          "landed": 84,
+          "attempted": 173,
+          "raw": "84 of 173"
+        },
+        "significantStrikePercent": 49,
+        "head": {
+          "landed": 67,
+          "attempted": 154,
+          "raw": "67 of 154"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 14,
+          "raw": "13 of 14"
+        },
+        "distance": {
+          "landed": 63,
+          "attempted": 143,
+          "raw": "63 of 143"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        },
+        "ground": {
+          "landed": 14,
+          "attempted": 22,
+          "raw": "14 of 22"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 67,
+          "raw": "23 of 67"
+        },
+        "significantStrikePercent": 34,
+        "head": {
+          "landed": 20,
+          "attempted": 61,
+          "raw": "20 of 61"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 50,
+          "raw": "13 of 50"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 15,
+          "raw": "8 of 15"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 17,
+            "attempted": 32,
+            "raw": "17 of 32"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 14,
+            "attempted": 22,
+            "raw": "14 of 22"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 62,
+            "raw": "31 of 62"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "distance": {
+            "landed": 31,
+            "attempted": 62,
+            "raw": "31 of 62"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 30,
+            "raw": "10 of 30"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 9,
+            "attempted": 29,
+            "raw": "9 of 29"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 29,
+            "raw": "9 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+        },
+        {
+          "id": "a2b12c3f3d60ff69",
+          "name": "Alex Garcia",
+          "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d8011111be000b2",
+            "name": "Sean Strickland",
+            "url": "http://www.ufcstats.com/fighter-details/0d8011111be000b2"
+          },
+          "significantStrikes": {
+            "landed": 34,
+            "attempted": 77,
+            "raw": "34 of 77"
+          },
+          "significantStrikePercent": 44,
+          "head": {
+            "landed": 31,
+            "attempted": 72,
+            "raw": "31 of 72"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 32,
+            "attempted": 75,
+            "raw": "32 of 75"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a2b12c3f3d60ff69",
+            "name": "Alex Garcia",
+            "url": "http://www.ufcstats.com/fighter-details/a2b12c3f3d60ff69"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 23,
+            "raw": "6 of 23"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 20,
+            "raw": "4 of 20"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.767Z"
+  }
+}

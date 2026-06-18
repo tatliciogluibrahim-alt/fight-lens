@@ -1,0 +1,764 @@
+{
+  "id": "ad3aa9520131ff2e",
+  "url": "http://www.ufcstats.com/fight-details/ad3aa9520131ff2e",
+  "event": {
+    "id": "0db9d2486d564a3c",
+    "name": "UFC Fight Night: Barboza vs. Chikadze",
+    "url": "http://www.ufcstats.com/event-details/0db9d2486d564a3c"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "5f61780fe5e9b6d0",
+      "name": "Andre Petroski",
+      "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ce175eaafe867d1f",
+      "name": "Micheal Gillmore",
+      "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "3:12",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Elbows to Head From Mount"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      },
+      {
+        "id": "ce175eaafe867d1f",
+        "name": "Micheal Gillmore",
+        "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 80,
+          "raw": "46 of 80"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 91,
+          "attempted": 131,
+          "raw": "91 of 131"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 9,
+          "raw": "4 of 9"
+        },
+        "takedownPercent": 44,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "7:38",
+        "controlSeconds": 458
+      },
+      {
+        "fighter": {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 52,
+          "raw": "31 of 52"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 38,
+          "attempted": 59,
+          "raw": "38 of 59"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:03",
+        "controlSeconds": 3
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "significantStrikePercent": 45,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 37,
+            "raw": "24 of 37"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:54",
+          "controlSeconds": 234
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 11,
+            "raw": "9 of 11"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 37,
+            "raw": "19 of 37"
+          },
+          "significantStrikePercent": 51,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 38,
+            "raw": "20 of 38"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:51",
+          "controlSeconds": 51
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 44,
+            "raw": "25 of 44"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 47,
+            "raw": "28 of 47"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:03",
+          "controlSeconds": 3
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 21,
+            "raw": "17 of 21"
+          },
+          "significantStrikePercent": 81,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 56,
+            "raw": "47 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:53",
+          "controlSeconds": 173
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "5f61780fe5e9b6d0",
+        "name": "Andre Petroski",
+        "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+      },
+      {
+        "id": "ce175eaafe867d1f",
+        "name": "Micheal Gillmore",
+        "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 80,
+          "raw": "46 of 80"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 36,
+          "attempted": 69,
+          "raw": "36 of 69"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 17,
+          "attempted": 42,
+          "raw": "17 of 42"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 29,
+          "attempted": 38,
+          "raw": "29 of 38"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 52,
+          "raw": "31 of 52"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 14,
+          "attempted": 34,
+          "raw": "14 of 34"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 14,
+          "raw": "13 of 14"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 49,
+          "raw": "28 of 49"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 22,
+            "raw": "10 of 22"
+          },
+          "significantStrikePercent": 45,
+          "head": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 37,
+            "raw": "19 of 37"
+          },
+          "significantStrikePercent": 51,
+          "head": {
+            "landed": 12,
+            "attempted": 29,
+            "raw": "12 of 29"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 44,
+            "raw": "25 of 44"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 42,
+            "raw": "23 of 42"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "5f61780fe5e9b6d0",
+          "name": "Andre Petroski",
+          "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+        },
+        {
+          "id": "ce175eaafe867d1f",
+          "name": "Micheal Gillmore",
+          "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "5f61780fe5e9b6d0",
+            "name": "Andre Petroski",
+            "url": "http://www.ufcstats.com/fighter-details/5f61780fe5e9b6d0"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 21,
+            "raw": "17 of 21"
+          },
+          "significantStrikePercent": 81,
+          "head": {
+            "landed": 16,
+            "attempted": 20,
+            "raw": "16 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 19,
+            "raw": "17 of 19"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ce175eaafe867d1f",
+            "name": "Micheal Gillmore",
+            "url": "http://www.ufcstats.com/fighter-details/ce175eaafe867d1f"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.451Z"
+  }
+}

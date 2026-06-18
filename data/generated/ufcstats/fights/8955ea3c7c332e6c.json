@@ -1,0 +1,404 @@
+{
+  "id": "8955ea3c7c332e6c",
+  "url": "http://www.ufcstats.com/fight-details/8955ea3c7c332e6c",
+  "event": {
+    "id": "e49c2db95e572dc8",
+    "name": "UFC Fight Night: Thompson vs. Neal",
+    "url": "http://www.ufcstats.com/event-details/e49c2db95e572dc8"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "05339613bf8e9808",
+      "name": "Rob Font",
+      "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "fea79f9bc8c68769",
+      "name": "Marlon Moraes",
+      "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:47",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punches to Head On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "05339613bf8e9808",
+        "name": "Rob Font",
+        "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+      },
+      {
+        "id": "fea79f9bc8c68769",
+        "name": "Marlon Moraes",
+        "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "05339613bf8e9808",
+          "name": "Rob Font",
+          "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 37,
+          "raw": "30 of 37"
+        },
+        "significantStrikePercent": 81,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 41,
+          "raw": "33 of 41"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:38",
+        "controlSeconds": 38
+      },
+      {
+        "fighter": {
+          "id": "fea79f9bc8c68769",
+          "name": "Marlon Moraes",
+          "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "significantStrikePercent": 75,
+        "totalStrikes": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedownPercent": 67,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:31",
+        "controlSeconds": 151
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "05339613bf8e9808",
+          "name": "Rob Font",
+          "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+        },
+        {
+          "id": "fea79f9bc8c68769",
+          "name": "Marlon Moraes",
+          "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "05339613bf8e9808",
+            "name": "Rob Font",
+            "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 37,
+            "raw": "30 of 37"
+          },
+          "significantStrikePercent": 81,
+          "totalStrikes": {
+            "landed": 33,
+            "attempted": 41,
+            "raw": "33 of 41"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:38",
+          "controlSeconds": 38
+        },
+        {
+          "fighter": {
+            "id": "fea79f9bc8c68769",
+            "name": "Marlon Moraes",
+            "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 16,
+            "raw": "12 of 16"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:31",
+          "controlSeconds": 151
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "05339613bf8e9808",
+        "name": "Rob Font",
+        "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+      },
+      {
+        "id": "fea79f9bc8c68769",
+        "name": "Marlon Moraes",
+        "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "05339613bf8e9808",
+          "name": "Rob Font",
+          "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 37,
+          "raw": "30 of 37"
+        },
+        "significantStrikePercent": 81,
+        "head": {
+          "landed": 27,
+          "attempted": 34,
+          "raw": "27 of 34"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 18,
+          "raw": "13 of 18"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 16,
+          "attempted": 18,
+          "raw": "16 of 18"
+        }
+      },
+      {
+        "fighter": {
+          "id": "fea79f9bc8c68769",
+          "name": "Marlon Moraes",
+          "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 12,
+          "raw": "9 of 12"
+        },
+        "significantStrikePercent": 75,
+        "head": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "05339613bf8e9808",
+          "name": "Rob Font",
+          "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+        },
+        {
+          "id": "fea79f9bc8c68769",
+          "name": "Marlon Moraes",
+          "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "05339613bf8e9808",
+            "name": "Rob Font",
+            "url": "http://www.ufcstats.com/fighter-details/05339613bf8e9808"
+          },
+          "significantStrikes": {
+            "landed": 30,
+            "attempted": 37,
+            "raw": "30 of 37"
+          },
+          "significantStrikePercent": 81,
+          "head": {
+            "landed": 27,
+            "attempted": 34,
+            "raw": "27 of 34"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 18,
+            "raw": "13 of 18"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 18,
+            "raw": "16 of 18"
+          }
+        },
+        {
+          "fighter": {
+            "id": "fea79f9bc8c68769",
+            "name": "Marlon Moraes",
+            "url": "http://www.ufcstats.com/fighter-details/fea79f9bc8c68769"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 12,
+            "raw": "9 of 12"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.746Z"
+  }
+}

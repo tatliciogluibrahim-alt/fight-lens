@@ -1,0 +1,764 @@
+{
+  "id": "0f279b25ccbecc76",
+  "url": "http://www.ufcstats.com/fight-details/0f279b25ccbecc76",
+  "event": {
+    "id": "542db012217ecb83",
+    "name": "UFC Fight Night: Overeem vs. Sakai",
+    "url": "http://www.ufcstats.com/event-details/542db012217ecb83"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "595db60957de51d3",
+      "name": "Michel Pereira",
+      "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "7f0f171414d0a287",
+      "name": "Zelim Imadaev",
+      "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 3,
+    "time": "4:39",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Chris Tognoni",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "595db60957de51d3",
+        "name": "Michel Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+      },
+      {
+        "id": "7f0f171414d0a287",
+        "name": "Zelim Imadaev",
+        "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 88,
+          "attempted": 153,
+          "raw": "88 of 153"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 88,
+          "attempted": 154,
+          "raw": "88 of 154"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:11",
+        "controlSeconds": 11
+      },
+      {
+        "fighter": {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 90,
+          "raw": "23 of 90"
+        },
+        "significantStrikePercent": 26,
+        "totalStrikes": {
+          "landed": 24,
+          "attempted": 91,
+          "raw": "24 of 91"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:08",
+        "controlSeconds": 8
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 53,
+            "raw": "28 of 53"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 53,
+            "raw": "28 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 39,
+            "raw": "10 of 39"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 39,
+            "raw": "10 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 61,
+            "raw": "39 of 61"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 62,
+            "raw": "39 of 62"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:11",
+          "controlSeconds": 11
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 31,
+            "raw": "7 of 31"
+          },
+          "significantStrikePercent": 23,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 32,
+            "raw": "8 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "595db60957de51d3",
+        "name": "Michel Pereira",
+        "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+      },
+      {
+        "id": "7f0f171414d0a287",
+        "name": "Zelim Imadaev",
+        "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        "significantStrikes": {
+          "landed": 88,
+          "attempted": 153,
+          "raw": "88 of 153"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 39,
+          "attempted": 95,
+          "raw": "39 of 95"
+        },
+        "body": {
+          "landed": 38,
+          "attempted": 45,
+          "raw": "38 of 45"
+        },
+        "leg": {
+          "landed": 11,
+          "attempted": 13,
+          "raw": "11 of 13"
+        },
+        "distance": {
+          "landed": 82,
+          "attempted": 145,
+          "raw": "82 of 145"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 90,
+          "raw": "23 of 90"
+        },
+        "significantStrikePercent": 26,
+        "head": {
+          "landed": 10,
+          "attempted": 73,
+          "raw": "10 of 73"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 22,
+          "attempted": 86,
+          "raw": "22 of 86"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "body": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 37,
+            "raw": "20 of 37"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 1,
+            "attempted": 15,
+            "raw": "1 of 15"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "significantStrikes": {
+            "landed": 28,
+            "attempted": 53,
+            "raw": "28 of 53"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 12,
+            "attempted": 34,
+            "raw": "12 of 34"
+          },
+          "body": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 26,
+            "attempted": 50,
+            "raw": "26 of 50"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 39,
+            "raw": "10 of 39"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 6,
+            "attempted": 33,
+            "raw": "6 of 33"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 36,
+            "raw": "9 of 36"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "595db60957de51d3",
+          "name": "Michel Pereira",
+          "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+        },
+        {
+          "id": "7f0f171414d0a287",
+          "name": "Zelim Imadaev",
+          "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "595db60957de51d3",
+            "name": "Michel Pereira",
+            "url": "http://www.ufcstats.com/fighter-details/595db60957de51d3"
+          },
+          "significantStrikes": {
+            "landed": 39,
+            "attempted": 61,
+            "raw": "39 of 61"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "body": {
+            "landed": 17,
+            "attempted": 18,
+            "raw": "17 of 18"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 36,
+            "attempted": 58,
+            "raw": "36 of 58"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7f0f171414d0a287",
+            "name": "Zelim Imadaev",
+            "url": "http://www.ufcstats.com/fighter-details/7f0f171414d0a287"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 31,
+            "raw": "7 of 31"
+          },
+          "significantStrikePercent": 23,
+          "head": {
+            "landed": 3,
+            "attempted": 25,
+            "raw": "3 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 31,
+            "raw": "7 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.702Z"
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "id": "b12bc15f384ecc42",
+  "url": "http://www.ufcstats.com/fight-details/b12bc15f384ecc42",
+  "event": {
+    "id": "bfe95ec546692b13",
+    "name": "UFC Fight Night: Blaydes vs. Lewis",
+    "url": "http://www.ufcstats.com/event-details/bfe95ec546692b13"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fa6796c55d6c5440",
+      "name": "Curtis Blaydes",
+      "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:26",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 52,
+          "raw": "28 of 52"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 28,
+          "attempted": 52,
+          "raw": "28 of 52"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:15",
+        "controlSeconds": 15
+      },
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 23,
+          "raw": "7 of 23"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 23,
+          "raw": "7 of 23"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        },
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 52,
+          "raw": "28 of 52"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 18,
+          "attempted": 42,
+          "raw": "18 of 42"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 47,
+          "raw": "25 of 47"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 23,
+          "raw": "7 of 23"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 6,
+          "attempted": 21,
+          "raw": "6 of 21"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 20,
+          "raw": "4 of 20"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 44,
+            "raw": "26 of 44"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 16,
+            "attempted": 34,
+            "raw": "16 of 34"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 41,
+            "raw": "23 of 41"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 4,
+            "attempted": 18,
+            "raw": "4 of 18"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 19,
+            "raw": "4 of 19"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.516Z"
+  }
+}

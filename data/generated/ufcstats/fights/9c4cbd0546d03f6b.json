@@ -1,0 +1,764 @@
+{
+  "id": "9c4cbd0546d03f6b",
+  "url": "http://www.ufcstats.com/fight-details/9c4cbd0546d03f6b",
+  "event": {
+    "id": "4956f60b7fa57c1a",
+    "name": "UFC 205: Alvarez vs McGregor",
+    "url": "http://www.ufcstats.com/event-details/4956f60b7fa57c1a"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "18968f97ad34f15c",
+      "name": "Jeremy Stephens",
+      "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "f2688492b9a525a3",
+      "name": "Frankie Edgar",
+      "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": "Glenn Trowbridge 27 - 30.Cardo Urso 27 - 30.Sal D'amato 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "f2688492b9a525a3",
+        "name": "Frankie Edgar",
+        "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 146,
+          "raw": "33 of 146"
+        },
+        "significantStrikePercent": 23,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 154,
+          "raw": "41 of 154"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 76,
+          "raw": "40 of 76"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 81,
+          "raw": "45 of 81"
+        },
+        "takedowns": {
+          "landed": 5,
+          "attempted": 14,
+          "raw": "5 of 14"
+        },
+        "takedownPercent": 36,
+        "submissionAttempts": 2,
+        "reversals": 1,
+        "control": "4:48",
+        "controlSeconds": 288
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 39,
+            "raw": "5 of 39"
+          },
+          "significantStrikePercent": 13,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 40,
+            "raw": "6 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "significantStrikePercent": 30,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 21,
+            "raw": "7 of 21"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:16",
+          "controlSeconds": 76
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 60,
+            "raw": "20 of 60"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 62,
+            "raw": "22 of 62"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "takedownPercent": 40,
+          "submissionAttempts": 2,
+          "reversals": 1,
+          "control": "1:28",
+          "controlSeconds": 88
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 47,
+            "raw": "8 of 47"
+          },
+          "significantStrikePercent": 17,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 52,
+            "raw": "13 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 29,
+            "raw": "17 of 29"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedownPercent": 67,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:04",
+          "controlSeconds": 124
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "f2688492b9a525a3",
+        "name": "Frankie Edgar",
+        "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "significantStrikes": {
+          "landed": 33,
+          "attempted": 146,
+          "raw": "33 of 146"
+        },
+        "significantStrikePercent": 23,
+        "head": {
+          "landed": 23,
+          "attempted": 133,
+          "raw": "23 of 133"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "distance": {
+          "landed": 25,
+          "attempted": 136,
+          "raw": "25 of 136"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        },
+        "significantStrikes": {
+          "landed": 40,
+          "attempted": 76,
+          "raw": "40 of 76"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 29,
+          "attempted": 62,
+          "raw": "29 of 62"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 65,
+          "raw": "33 of 65"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 39,
+            "raw": "5 of 39"
+          },
+          "significantStrikePercent": 13,
+          "head": {
+            "landed": 1,
+            "attempted": 33,
+            "raw": "1 of 33"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 38,
+            "raw": "5 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 20,
+            "raw": "6 of 20"
+          },
+          "significantStrikePercent": 30,
+          "head": {
+            "landed": 4,
+            "attempted": 15,
+            "raw": "4 of 15"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 60,
+            "raw": "20 of 60"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 17,
+            "attempted": 56,
+            "raw": "17 of 56"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 52,
+            "raw": "13 of 52"
+          },
+          "clinch": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 30,
+            "raw": "20 of 30"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 26,
+            "raw": "18 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "f2688492b9a525a3",
+          "name": "Frankie Edgar",
+          "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 47,
+            "raw": "8 of 47"
+          },
+          "significantStrikePercent": 17,
+          "head": {
+            "landed": 5,
+            "attempted": 44,
+            "raw": "5 of 44"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 46,
+            "raw": "7 of 46"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "f2688492b9a525a3",
+            "name": "Frankie Edgar",
+            "url": "http://www.ufcstats.com/fighter-details/f2688492b9a525a3"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 12,
+            "attempted": 24,
+            "raw": "12 of 24"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.602Z"
+  }
+}

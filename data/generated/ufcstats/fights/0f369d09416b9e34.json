@@ -1,0 +1,764 @@
+{
+  "id": "0f369d09416b9e34",
+  "url": "http://www.ufcstats.com/fight-details/0f369d09416b9e34",
+  "event": {
+    "id": "c32eab6c2119e989",
+    "name": "UFC Fight Night: Poirier vs. Hooker",
+    "url": "http://www.ufcstats.com/event-details/c32eab6c2119e989"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "52c2ae6d2f2d2613",
+      "name": "Youssef Zalal",
+      "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ebef46976554f975",
+      "name": "Jordan Griffin",
+      "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Adalaide Byrd 28 - 29.Mike Bell 28 - 29.Dave Hagen 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "52c2ae6d2f2d2613",
+        "name": "Youssef Zalal",
+        "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+      },
+      {
+        "id": "ebef46976554f975",
+        "name": "Jordan Griffin",
+        "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 112,
+          "raw": "59 of 112"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 70,
+          "attempted": 123,
+          "raw": "70 of 123"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "4:23",
+        "controlSeconds": 263
+      },
+      {
+        "fighter": {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 69,
+          "raw": "28 of 69"
+        },
+        "significantStrikePercent": 41,
+        "totalStrikes": {
+          "landed": 33,
+          "attempted": 74,
+          "raw": "33 of 74"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "takedownPercent": 25,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "5:34",
+        "controlSeconds": 334
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 30,
+            "raw": "12 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:13",
+          "controlSeconds": 73
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "significantStrikePercent": 16,
+          "totalStrikes": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:54",
+          "controlSeconds": 114
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 31,
+            "raw": "13 of 31"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 22,
+            "attempted": 40,
+            "raw": "22 of 40"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:39",
+          "controlSeconds": 99
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 24,
+            "raw": "8 of 24"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 12,
+            "attempted": 28,
+            "raw": "12 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "1:55",
+          "controlSeconds": 115
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 52,
+            "raw": "35 of 52"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 53,
+            "raw": "36 of 53"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:31",
+          "controlSeconds": 91
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 26,
+            "raw": "17 of 26"
+          },
+          "significantStrikePercent": 65,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "takedownPercent": 20,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:45",
+          "controlSeconds": 105
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "52c2ae6d2f2d2613",
+        "name": "Youssef Zalal",
+        "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+      },
+      {
+        "id": "ebef46976554f975",
+        "name": "Jordan Griffin",
+        "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        "significantStrikes": {
+          "landed": 59,
+          "attempted": 112,
+          "raw": "59 of 112"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 42,
+          "attempted": 85,
+          "raw": "42 of 85"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 18,
+          "raw": "11 of 18"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 9,
+          "raw": "6 of 9"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 98,
+          "raw": "47 of 98"
+        },
+        "clinch": {
+          "landed": 12,
+          "attempted": 12,
+          "raw": "12 of 12"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 69,
+          "raw": "28 of 69"
+        },
+        "significantStrikePercent": 41,
+        "head": {
+          "landed": 26,
+          "attempted": 67,
+          "raw": "26 of 67"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 28,
+          "attempted": 67,
+          "raw": "28 of 67"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "significantStrikePercent": 38,
+          "head": {
+            "landed": 7,
+            "attempted": 18,
+            "raw": "7 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 29,
+            "raw": "11 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "significantStrikePercent": 16,
+          "head": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 19,
+            "raw": "3 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 31,
+            "raw": "13 of 31"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 24,
+            "raw": "8 of 24"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 7,
+            "attempted": 23,
+            "raw": "7 of 23"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "52c2ae6d2f2d2613",
+          "name": "Youssef Zalal",
+          "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+        },
+        {
+          "id": "ebef46976554f975",
+          "name": "Jordan Griffin",
+          "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "52c2ae6d2f2d2613",
+            "name": "Youssef Zalal",
+            "url": "http://www.ufcstats.com/fighter-details/52c2ae6d2f2d2613"
+          },
+          "significantStrikes": {
+            "landed": 35,
+            "attempted": 52,
+            "raw": "35 of 52"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 28,
+            "attempted": 44,
+            "raw": "28 of 44"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 43,
+            "raw": "27 of 43"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ebef46976554f975",
+            "name": "Jordan Griffin",
+            "url": "http://www.ufcstats.com/fighter-details/ebef46976554f975"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 26,
+            "raw": "17 of 26"
+          },
+          "significantStrikePercent": 65,
+          "head": {
+            "landed": 16,
+            "attempted": 25,
+            "raw": "16 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 26,
+            "raw": "17 of 26"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.804Z"
+  }
+}

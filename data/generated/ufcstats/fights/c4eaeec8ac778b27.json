@@ -1,0 +1,404 @@
+{
+  "id": "c4eaeec8ac778b27",
+  "url": "http://www.ufcstats.com/fight-details/c4eaeec8ac778b27",
+  "event": {
+    "id": "4565d435005319c0",
+    "name": "UFC 245: Usman vs. Covington",
+    "url": "http://www.ufcstats.com/event-details/4565d435005319c0"
+  },
+  "title": "Women's Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b9706f80d005036c",
+      "name": "Ketlen Vieira",
+      "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "578ef12674df1e6a",
+      "name": "Irene Aldana",
+      "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:51",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Jason Herzog",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b9706f80d005036c",
+        "name": "Ketlen Vieira",
+        "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+      },
+      {
+        "id": "578ef12674df1e6a",
+        "name": "Irene Aldana",
+        "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b9706f80d005036c",
+          "name": "Ketlen Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 76,
+          "raw": "20 of 76"
+        },
+        "significantStrikePercent": 26,
+        "totalStrikes": {
+          "landed": 20,
+          "attempted": 76,
+          "raw": "20 of 76"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "578ef12674df1e6a",
+          "name": "Irene Aldana",
+          "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 71,
+          "raw": "26 of 71"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 26,
+          "attempted": 71,
+          "raw": "26 of 71"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b9706f80d005036c",
+          "name": "Ketlen Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+        },
+        {
+          "id": "578ef12674df1e6a",
+          "name": "Irene Aldana",
+          "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9706f80d005036c",
+            "name": "Ketlen Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 76,
+            "raw": "20 of 76"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 76,
+            "raw": "20 of 76"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "578ef12674df1e6a",
+            "name": "Irene Aldana",
+            "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b9706f80d005036c",
+        "name": "Ketlen Vieira",
+        "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+      },
+      {
+        "id": "578ef12674df1e6a",
+        "name": "Irene Aldana",
+        "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b9706f80d005036c",
+          "name": "Ketlen Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 76,
+          "raw": "20 of 76"
+        },
+        "significantStrikePercent": 26,
+        "head": {
+          "landed": 19,
+          "attempted": 75,
+          "raw": "19 of 75"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 76,
+          "raw": "20 of 76"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "578ef12674df1e6a",
+          "name": "Irene Aldana",
+          "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 71,
+          "raw": "26 of 71"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 13,
+          "attempted": 52,
+          "raw": "13 of 52"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 69,
+          "raw": "24 of 69"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b9706f80d005036c",
+          "name": "Ketlen Vieira",
+          "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+        },
+        {
+          "id": "578ef12674df1e6a",
+          "name": "Irene Aldana",
+          "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9706f80d005036c",
+            "name": "Ketlen Vieira",
+            "url": "http://www.ufcstats.com/fighter-details/b9706f80d005036c"
+          },
+          "significantStrikes": {
+            "landed": 20,
+            "attempted": 76,
+            "raw": "20 of 76"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 19,
+            "attempted": 75,
+            "raw": "19 of 75"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 76,
+            "raw": "20 of 76"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "578ef12674df1e6a",
+            "name": "Irene Aldana",
+            "url": "http://www.ufcstats.com/fighter-details/578ef12674df1e6a"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 71,
+            "raw": "26 of 71"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 13,
+            "attempted": 52,
+            "raw": "13 of 52"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 24,
+            "attempted": 69,
+            "raw": "24 of 69"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.642Z"
+  }
+}

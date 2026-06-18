@@ -1,0 +1,404 @@
+{
+  "id": "b43dfe6743160a66",
+  "url": "http://www.ufcstats.com/fight-details/b43dfe6743160a66",
+  "event": {
+    "id": "a196332ee4aa8a82",
+    "name": "UFC Fight Night: Lineker vs. Dodson",
+    "url": "http://www.ufcstats.com/event-details/a196332ee4aa8a82"
+  },
+  "title": "Flyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "792be9a24df82ed6",
+      "name": "Brandon Moreno",
+      "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "d2bc285ead803db0",
+      "name": "Louis Smolka",
+      "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:23",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Guillotine Choke After Drop to Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "d2bc285ead803db0",
+        "name": "Louis Smolka",
+        "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "significantStrikePercent": 73,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 24,
+          "raw": "21 of 24"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:37",
+        "controlSeconds": 97
+      },
+      {
+        "fighter": {
+          "id": "d2bc285ead803db0",
+          "name": "Louis Smolka",
+          "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 17,
+          "attempted": 23,
+          "raw": "17 of 23"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:18",
+        "controlSeconds": 18
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "d2bc285ead803db0",
+          "name": "Louis Smolka",
+          "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 24,
+            "raw": "21 of 24"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "1:37",
+          "controlSeconds": 97
+        },
+        {
+          "fighter": {
+            "id": "d2bc285ead803db0",
+            "name": "Louis Smolka",
+            "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 23,
+            "raw": "17 of 23"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:18",
+          "controlSeconds": 18
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "792be9a24df82ed6",
+        "name": "Brandon Moreno",
+        "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+      },
+      {
+        "id": "d2bc285ead803db0",
+        "name": "Louis Smolka",
+        "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "significantStrikePercent": 73,
+        "head": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d2bc285ead803db0",
+          "name": "Louis Smolka",
+          "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 6,
+          "attempted": 12,
+          "raw": "6 of 12"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+        },
+        {
+          "id": "d2bc285ead803db0",
+          "name": "Louis Smolka",
+          "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "792be9a24df82ed6",
+            "name": "Brandon Moreno",
+            "url": "http://www.ufcstats.com/fighter-details/792be9a24df82ed6"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d2bc285ead803db0",
+            "name": "Louis Smolka",
+            "url": "http://www.ufcstats.com/fighter-details/d2bc285ead803db0"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 6,
+            "attempted": 12,
+            "raw": "6 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.475Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "e6031b5937294176",
+  "url": "http://www.ufcstats.com/fight-details/e6031b5937294176",
+  "event": {
+    "id": "0e2c2daf11b5d8f2",
+    "name": "UFC Fight Night: Garcia vs. Onama",
+    "url": "http://www.ufcstats.com/event-details/0e2c2daf11b5d8f2"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8e382b585a92affe",
+      "name": "Phil Rowe",
+      "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "4a07b1988477502c",
+      "name": "Seokhyeon Ko",
+      "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Eric McMahon",
+    "details": "David Lethaby 26 - 30.Eric Colon 27 - 30.David Sutherland 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8e382b585a92affe",
+        "name": "Phil Rowe",
+        "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+      },
+      {
+        "id": "4a07b1988477502c",
+        "name": "Seokhyeon Ko",
+        "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "significantStrikePercent": 57,
+        "totalStrikes": {
+          "landed": 11,
+          "attempted": 15,
+          "raw": "11 of 15"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 42,
+          "raw": "36 of 42"
+        },
+        "significantStrikePercent": 86,
+        "totalStrikes": {
+          "landed": 124,
+          "attempted": 157,
+          "raw": "124 of 157"
+        },
+        "takedowns": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "13:10",
+        "controlSeconds": 790
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "significantStrikePercent": 87,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 45,
+            "raw": "36 of 45"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:30",
+          "controlSeconds": 270
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "significantStrikePercent": 0,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 7,
+            "raw": "4 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "significantStrikePercent": 79,
+          "totalStrikes": {
+            "landed": 47,
+            "attempted": 60,
+            "raw": "47 of 60"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:32",
+          "controlSeconds": 272
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "significantStrikePercent": 75,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "significantStrikePercent": 92,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 52,
+            "raw": "41 of 52"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:08",
+          "controlSeconds": 248
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8e382b585a92affe",
+        "name": "Phil Rowe",
+        "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+      },
+      {
+        "id": "4a07b1988477502c",
+        "name": "Seokhyeon Ko",
+        "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "significantStrikePercent": 57,
+        "head": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 7,
+          "raw": "4 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        },
+        "significantStrikes": {
+          "landed": 36,
+          "attempted": 42,
+          "raw": "36 of 42"
+        },
+        "significantStrikePercent": 86,
+        "head": {
+          "landed": 27,
+          "attempted": 33,
+          "raw": "27 of 33"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 9,
+          "attempted": 9,
+          "raw": "9 of 9"
+        },
+        "distance": {
+          "landed": 12,
+          "attempted": 16,
+          "raw": "12 of 16"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 24,
+          "attempted": 26,
+          "raw": "24 of 26"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 15,
+            "raw": "13 of 15"
+          },
+          "significantStrikePercent": 87,
+          "head": {
+            "landed": 11,
+            "attempted": 13,
+            "raw": "11 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 12,
+            "raw": "10 of 12"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "significantStrikePercent": 0,
+          "head": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "significantStrikePercent": 79,
+          "head": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 9,
+            "raw": "9 of 9"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8e382b585a92affe",
+          "name": "Phil Rowe",
+          "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+        },
+        {
+          "id": "4a07b1988477502c",
+          "name": "Seokhyeon Ko",
+          "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8e382b585a92affe",
+            "name": "Phil Rowe",
+            "url": "http://www.ufcstats.com/fighter-details/8e382b585a92affe"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "significantStrikePercent": 75,
+          "head": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "4a07b1988477502c",
+            "name": "Seokhyeon Ko",
+            "url": "http://www.ufcstats.com/fighter-details/4a07b1988477502c"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 13,
+            "raw": "12 of 13"
+          },
+          "significantStrikePercent": 92,
+          "head": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.729Z"
+  }
+}

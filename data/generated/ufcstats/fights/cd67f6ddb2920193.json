@@ -1,0 +1,764 @@
+{
+  "id": "cd67f6ddb2920193",
+  "url": "http://www.ufcstats.com/fight-details/cd67f6ddb2920193",
+  "event": {
+    "id": "15515e797aedc137",
+    "name": "UFC 221: Romero vs. Rockhold",
+    "url": "http://www.ufcstats.com/event-details/15515e797aedc137"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "fa6796c55d6c5440",
+      "name": "Curtis Blaydes",
+      "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "eef9b891edbd4604",
+      "name": "Mark Hunt",
+      "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John Sharp",
+    "details": "26 - 30.26 - 30.27 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "eef9b891edbd4604",
+        "name": "Mark Hunt",
+        "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 105,
+          "raw": "56 of 105"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 126,
+          "attempted": 184,
+          "raw": "126 of 184"
+        },
+        "takedowns": {
+          "landed": 10,
+          "attempted": 14,
+          "raw": "10 of 14"
+        },
+        "takedownPercent": 71,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "9:35",
+        "controlSeconds": 575
+      },
+      {
+        "fighter": {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 35,
+          "attempted": 53,
+          "raw": "35 of 53"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 35,
+            "raw": "9 of 35"
+          },
+          "significantStrikePercent": 26,
+          "totalStrikes": {
+            "landed": 29,
+            "attempted": 60,
+            "raw": "29 of 60"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedownPercent": 75,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:16",
+          "controlSeconds": 136
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 25,
+            "raw": "15 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 32,
+            "raw": "16 of 32"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 53,
+            "raw": "36 of 53"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "takedownPercent": 25,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:37",
+          "controlSeconds": 157
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 20,
+            "raw": "13 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:01",
+          "controlSeconds": 1
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 38,
+            "raw": "31 of 38"
+          },
+          "significantStrikePercent": 82,
+          "totalStrikes": {
+            "landed": 61,
+            "attempted": 71,
+            "raw": "61 of 71"
+          },
+          "takedowns": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:42",
+          "controlSeconds": 282
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:05",
+          "controlSeconds": 5
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "fa6796c55d6c5440",
+        "name": "Curtis Blaydes",
+        "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+      },
+      {
+        "id": "eef9b891edbd4604",
+        "name": "Mark Hunt",
+        "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        "significantStrikes": {
+          "landed": 56,
+          "attempted": 105,
+          "raw": "56 of 105"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 46,
+          "attempted": 95,
+          "raw": "46 of 95"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 54,
+          "raw": "11 of 54"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 44,
+          "attempted": 50,
+          "raw": "44 of 50"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 32,
+          "raw": "14 of 32"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 13,
+          "attempted": 31,
+          "raw": "13 of 31"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 29,
+          "raw": "11 of 29"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 35,
+            "raw": "9 of 35"
+          },
+          "significantStrikePercent": 26,
+          "head": {
+            "landed": 6,
+            "attempted": 32,
+            "raw": "6 of 32"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 31,
+            "raw": "6 of 31"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 20,
+            "raw": "10 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 32,
+            "raw": "16 of 32"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 10,
+            "attempted": 26,
+            "raw": "10 of 26"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 21,
+            "raw": "5 of 21"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 11,
+            "attempted": 11,
+            "raw": "11 of 11"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 8,
+            "raw": "1 of 8"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+        },
+        {
+          "id": "eef9b891edbd4604",
+          "name": "Mark Hunt",
+          "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "fa6796c55d6c5440",
+            "name": "Curtis Blaydes",
+            "url": "http://www.ufcstats.com/fighter-details/fa6796c55d6c5440"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 38,
+            "raw": "31 of 38"
+          },
+          "significantStrikePercent": 82,
+          "head": {
+            "landed": 30,
+            "attempted": 37,
+            "raw": "30 of 37"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 30,
+            "attempted": 35,
+            "raw": "30 of 35"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eef9b891edbd4604",
+            "name": "Mark Hunt",
+            "url": "http://www.ufcstats.com/fighter-details/eef9b891edbd4604"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.517Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "f6d6b660e1578744",
+  "url": "http://www.ufcstats.com/fight-details/f6d6b660e1578744",
+  "event": {
+    "id": "073eee4e62f0d988",
+    "name": "UFC Fight Night: McGregor vs Brandao",
+    "url": "http://www.ufcstats.com/event-details/073eee4e62f0d988"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1091d4d957141094",
+      "name": "Nikita Krylov",
+      "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "7bc96507e4b38d3b",
+      "name": "Cody Donovan",
+      "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:57",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punches to Head From Back Control"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "7bc96507e4b38d3b",
+        "name": "Cody Donovan",
+        "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 70,
+          "raw": "42 of 70"
+        },
+        "significantStrikePercent": 60,
+        "totalStrikes": {
+          "landed": 80,
+          "attempted": 114,
+          "raw": "80 of 114"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 2,
+        "control": "1:52",
+        "controlSeconds": 112
+      },
+      {
+        "fighter": {
+          "id": "7bc96507e4b38d3b",
+          "name": "Cody Donovan",
+          "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 39,
+          "raw": "21 of 39"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 50,
+          "raw": "31 of 50"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "1:33",
+        "controlSeconds": 93
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "7bc96507e4b38d3b",
+          "name": "Cody Donovan",
+          "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 70,
+            "raw": "42 of 70"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 80,
+            "attempted": 114,
+            "raw": "80 of 114"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 2,
+          "control": "1:52",
+          "controlSeconds": 112
+        },
+        {
+          "fighter": {
+            "id": "7bc96507e4b38d3b",
+            "name": "Cody Donovan",
+            "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 50,
+            "raw": "31 of 50"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "1:33",
+          "controlSeconds": 93
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "7bc96507e4b38d3b",
+        "name": "Cody Donovan",
+        "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "significantStrikes": {
+          "landed": 42,
+          "attempted": 70,
+          "raw": "42 of 70"
+        },
+        "significantStrikePercent": 60,
+        "head": {
+          "landed": 29,
+          "attempted": 52,
+          "raw": "29 of 52"
+        },
+        "body": {
+          "landed": 9,
+          "attempted": 14,
+          "raw": "9 of 14"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 24,
+          "raw": "11 of 24"
+        },
+        "clinch": {
+          "landed": 21,
+          "attempted": 31,
+          "raw": "21 of 31"
+        },
+        "ground": {
+          "landed": 10,
+          "attempted": 15,
+          "raw": "10 of 15"
+        }
+      },
+      {
+        "fighter": {
+          "id": "7bc96507e4b38d3b",
+          "name": "Cody Donovan",
+          "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 39,
+          "raw": "21 of 39"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 17,
+          "attempted": 34,
+          "raw": "17 of 34"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 13,
+          "raw": "6 of 13"
+        },
+        "clinch": {
+          "landed": 14,
+          "attempted": 23,
+          "raw": "14 of 23"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "7bc96507e4b38d3b",
+          "name": "Cody Donovan",
+          "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "significantStrikes": {
+            "landed": 42,
+            "attempted": 70,
+            "raw": "42 of 70"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 29,
+            "attempted": 52,
+            "raw": "29 of 52"
+          },
+          "body": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 24,
+            "raw": "11 of 24"
+          },
+          "clinch": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          }
+        },
+        {
+          "fighter": {
+            "id": "7bc96507e4b38d3b",
+            "name": "Cody Donovan",
+            "url": "http://www.ufcstats.com/fighter-details/7bc96507e4b38d3b"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 39,
+            "raw": "21 of 39"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 17,
+            "attempted": 34,
+            "raw": "17 of 34"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 13,
+            "raw": "6 of 13"
+          },
+          "clinch": {
+            "landed": 14,
+            "attempted": 23,
+            "raw": "14 of 23"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.720Z"
+  }
+}

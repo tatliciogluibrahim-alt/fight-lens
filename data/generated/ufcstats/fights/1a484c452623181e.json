@@ -1,0 +1,404 @@
+{
+  "id": "1a484c452623181e",
+  "url": "http://www.ufcstats.com/fight-details/1a484c452623181e",
+  "event": {
+    "id": "831b937811804dad",
+    "name": "UFC Fight Night: Covington vs. Woodley",
+    "url": "http://www.ufcstats.com/event-details/831b937811804dad"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "c21f26bbde777573",
+      "name": "Johnny Walker",
+      "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "a67f5afa8d6a1b80",
+      "name": "Ryan Spann",
+      "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:43",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punches to Head On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "c21f26bbde777573",
+        "name": "Johnny Walker",
+        "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+      },
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 30,
+          "raw": "26 of 30"
+        },
+        "significantStrikePercent": 87,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 34,
+          "raw": "30 of 34"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 1,
+        "control": "0:40",
+        "controlSeconds": 40
+      },
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "totalStrikes": {
+          "landed": 10,
+          "attempted": 16,
+          "raw": "10 of 16"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:46",
+        "controlSeconds": 106
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c21f26bbde777573",
+            "name": "Johnny Walker",
+            "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 30,
+            "raw": "26 of 30"
+          },
+          "significantStrikePercent": 87,
+          "totalStrikes": {
+            "landed": 30,
+            "attempted": 34,
+            "raw": "30 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:40",
+          "controlSeconds": 40
+        },
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:46",
+          "controlSeconds": 106
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "c21f26bbde777573",
+        "name": "Johnny Walker",
+        "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+      },
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        "significantStrikes": {
+          "landed": 26,
+          "attempted": 30,
+          "raw": "26 of 30"
+        },
+        "significantStrikePercent": 87,
+        "head": {
+          "landed": 24,
+          "attempted": 27,
+          "raw": "24 of 27"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 22,
+          "attempted": 25,
+          "raw": "22 of 25"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "significantStrikePercent": 54,
+        "head": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 7,
+          "raw": "3 of 7"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "c21f26bbde777573",
+          "name": "Johnny Walker",
+          "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+        },
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "c21f26bbde777573",
+            "name": "Johnny Walker",
+            "url": "http://www.ufcstats.com/fighter-details/c21f26bbde777573"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 30,
+            "raw": "26 of 30"
+          },
+          "significantStrikePercent": 87,
+          "head": {
+            "landed": 24,
+            "attempted": 27,
+            "raw": "24 of 27"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 22,
+            "attempted": 25,
+            "raw": "22 of 25"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "significantStrikePercent": 54,
+          "head": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 7,
+            "raw": "3 of 7"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.620Z"
+  }
+}

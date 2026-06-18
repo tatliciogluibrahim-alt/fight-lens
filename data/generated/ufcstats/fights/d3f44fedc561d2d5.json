@@ -1,0 +1,584 @@
+{
+  "id": "d3f44fedc561d2d5",
+  "url": "http://www.ufcstats.com/fight-details/d3f44fedc561d2d5",
+  "event": {
+    "id": "b26d3e3746fb4024",
+    "name": "UFC 247: Jones vs. Reyes",
+    "url": "http://www.ufcstats.com/event-details/b26d3e3746fb4024"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "bc711b6dd95c1af6",
+      "name": "Mario Bautista",
+      "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "46e0d677f91bacc0",
+      "name": "Miles Johns",
+      "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "1:41",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Flying Knee Head"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "bc711b6dd95c1af6",
+        "name": "Mario Bautista",
+        "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+      },
+      {
+        "id": "46e0d677f91bacc0",
+        "name": "Miles Johns",
+        "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 67,
+          "raw": "18 of 67"
+        },
+        "significantStrikePercent": 27,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 67,
+          "raw": "18 of 67"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "significantStrikePercent": 30,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bc711b6dd95c1af6",
+            "name": "Mario Bautista",
+            "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 38,
+            "raw": "4 of 38"
+          },
+          "significantStrikePercent": 11,
+          "totalStrikes": {
+            "landed": 4,
+            "attempted": 38,
+            "raw": "4 of 38"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "46e0d677f91bacc0",
+            "name": "Miles Johns",
+            "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bc711b6dd95c1af6",
+            "name": "Mario Bautista",
+            "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 29,
+            "raw": "14 of 29"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 29,
+            "raw": "14 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "46e0d677f91bacc0",
+            "name": "Miles Johns",
+            "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "significantStrikePercent": 32,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "bc711b6dd95c1af6",
+        "name": "Mario Bautista",
+        "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+      },
+      {
+        "id": "46e0d677f91bacc0",
+        "name": "Miles Johns",
+        "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 67,
+          "raw": "18 of 67"
+        },
+        "significantStrikePercent": 27,
+        "head": {
+          "landed": 18,
+          "attempted": 64,
+          "raw": "18 of 64"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 57,
+          "raw": "9 of 57"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "significantStrikePercent": 30,
+        "head": {
+          "landed": 11,
+          "attempted": 42,
+          "raw": "11 of 42"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bc711b6dd95c1af6",
+            "name": "Mario Bautista",
+            "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 38,
+            "raw": "4 of 38"
+          },
+          "significantStrikePercent": 11,
+          "head": {
+            "landed": 4,
+            "attempted": 36,
+            "raw": "4 of 36"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 38,
+            "raw": "4 of 38"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "46e0d677f91bacc0",
+            "name": "Miles Johns",
+            "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "significantStrikePercent": 28,
+          "head": {
+            "landed": 6,
+            "attempted": 24,
+            "raw": "6 of 24"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 25,
+            "raw": "7 of 25"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+        },
+        {
+          "id": "46e0d677f91bacc0",
+          "name": "Miles Johns",
+          "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "bc711b6dd95c1af6",
+            "name": "Mario Bautista",
+            "url": "http://www.ufcstats.com/fighter-details/bc711b6dd95c1af6"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 29,
+            "raw": "14 of 29"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "46e0d677f91bacc0",
+            "name": "Miles Johns",
+            "url": "http://www.ufcstats.com/fighter-details/46e0d677f91bacc0"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "significantStrikePercent": 32,
+          "head": {
+            "landed": 5,
+            "attempted": 18,
+            "raw": "5 of 18"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 19,
+            "raw": "6 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.675Z"
+  }
+}

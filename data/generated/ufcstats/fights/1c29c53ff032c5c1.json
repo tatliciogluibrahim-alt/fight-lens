@@ -1,0 +1,764 @@
+{
+  "id": "1c29c53ff032c5c1",
+  "url": "http://www.ufcstats.com/fight-details/1c29c53ff032c5c1",
+  "event": {
+    "id": "ef61d9f5176b3200",
+    "name": "UFC Fight Night: Gane vs. Spivac",
+    "url": "http://www.ufcstats.com/event-details/ef61d9f5176b3200"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "e1d40e8782d80bc2",
+      "name": "William Gomis",
+      "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "eb70e786bbdf1d16",
+      "name": "Yanis Ghemmouri",
+      "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "2:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Loic Pora",
+    "details": "Kick to Body At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "e1d40e8782d80bc2",
+        "name": "William Gomis",
+        "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+      },
+      {
+        "id": "eb70e786bbdf1d16",
+        "name": "Yanis Ghemmouri",
+        "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 88,
+          "raw": "52 of 88"
+        },
+        "significantStrikePercent": 59,
+        "totalStrikes": {
+          "landed": 61,
+          "attempted": 99,
+          "raw": "61 of 99"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "0:55",
+        "controlSeconds": 55
+      },
+      {
+        "fighter": {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 73,
+          "raw": "28 of 73"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 40,
+          "attempted": 88,
+          "raw": "40 of 88"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 4,
+          "raw": "0 of 4"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:42",
+        "controlSeconds": 162
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 46,
+            "raw": "27 of 46"
+          },
+          "significantStrikePercent": 59,
+          "totalStrikes": {
+            "landed": 27,
+            "attempted": 46,
+            "raw": "27 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "significantStrikePercent": 41,
+          "totalStrikes": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "0:55",
+          "controlSeconds": 55
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 30,
+            "raw": "15 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:32",
+          "controlSeconds": 92
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 19,
+            "raw": "15 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:10",
+          "controlSeconds": 70
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "e1d40e8782d80bc2",
+        "name": "William Gomis",
+        "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+      },
+      {
+        "id": "eb70e786bbdf1d16",
+        "name": "Yanis Ghemmouri",
+        "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        "significantStrikes": {
+          "landed": 52,
+          "attempted": 88,
+          "raw": "52 of 88"
+        },
+        "significantStrikePercent": 59,
+        "head": {
+          "landed": 10,
+          "attempted": 30,
+          "raw": "10 of 30"
+        },
+        "body": {
+          "landed": 6,
+          "attempted": 15,
+          "raw": "6 of 15"
+        },
+        "leg": {
+          "landed": 36,
+          "attempted": 43,
+          "raw": "36 of 43"
+        },
+        "distance": {
+          "landed": 47,
+          "attempted": 82,
+          "raw": "47 of 82"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 73,
+          "raw": "28 of 73"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 0,
+          "attempted": 24,
+          "raw": "0 of 24"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 21,
+          "attempted": 38,
+          "raw": "21 of 38"
+        },
+        "distance": {
+          "landed": 24,
+          "attempted": 69,
+          "raw": "24 of 69"
+        },
+        "clinch": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "significantStrikes": {
+            "landed": 27,
+            "attempted": 46,
+            "raw": "27 of 46"
+          },
+          "significantStrikePercent": 59,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "leg": {
+            "landed": 24,
+            "attempted": 28,
+            "raw": "24 of 28"
+          },
+          "distance": {
+            "landed": 27,
+            "attempted": 46,
+            "raw": "27 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "significantStrikePercent": 41,
+          "head": {
+            "landed": 0,
+            "attempted": 11,
+            "raw": "0 of 11"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 25,
+            "raw": "14 of 25"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 39,
+            "raw": "16 of 39"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 3,
+            "attempted": 12,
+            "raw": "3 of 12"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 12,
+            "attempted": 25,
+            "raw": "12 of 25"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 22,
+            "raw": "8 of 22"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 0,
+            "attempted": 7,
+            "raw": "0 of 7"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 9,
+            "raw": "4 of 9"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 19,
+            "raw": "5 of 19"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "e1d40e8782d80bc2",
+          "name": "William Gomis",
+          "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+        },
+        {
+          "id": "eb70e786bbdf1d16",
+          "name": "Yanis Ghemmouri",
+          "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "e1d40e8782d80bc2",
+            "name": "William Gomis",
+            "url": "http://www.ufcstats.com/fighter-details/e1d40e8782d80bc2"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 15,
+            "raw": "11 of 15"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "eb70e786bbdf1d16",
+            "name": "Yanis Ghemmouri",
+            "url": "http://www.ufcstats.com/fighter-details/eb70e786bbdf1d16"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 0,
+            "attempted": 6,
+            "raw": "0 of 6"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 11,
+            "raw": "3 of 11"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.801Z"
+  }
+}

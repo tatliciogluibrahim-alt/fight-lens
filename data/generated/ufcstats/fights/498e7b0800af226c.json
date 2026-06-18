@@ -1,0 +1,584 @@
+{
+  "id": "498e7b0800af226c",
+  "url": "http://www.ufcstats.com/fight-details/498e7b0800af226c",
+  "event": {
+    "id": "c046100aea0dba9a",
+    "name": "UFC 232: Jones vs. Gustafsson 2",
+    "url": "http://www.ufcstats.com/event-details/c046100aea0dba9a"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "3a314d9fa7c6825d",
+      "name": "Douglas Silva de Andrade",
+      "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d661ce4da776fc20",
+      "name": "Petr Yan",
+      "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": "toCorner Stoppage"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "3a314d9fa7c6825d",
+        "name": "Douglas Silva de Andrade",
+        "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+      },
+      {
+        "id": "d661ce4da776fc20",
+        "name": "Petr Yan",
+        "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 77,
+          "raw": "28 of 77"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 28,
+          "attempted": 77,
+          "raw": "28 of 77"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 76,
+          "attempted": 118,
+          "raw": "76 of 118"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 101,
+          "attempted": 145,
+          "raw": "101 of 145"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "takedownPercent": 75,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:35",
+        "controlSeconds": 215
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a314d9fa7c6825d",
+            "name": "Douglas Silva de Andrade",
+            "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 52,
+            "raw": "18 of 52"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 52,
+            "raw": "18 of 52"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d661ce4da776fc20",
+            "name": "Petr Yan",
+            "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 56,
+            "raw": "31 of 56"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 35,
+            "attempted": 60,
+            "raw": "35 of 60"
+          },
+          "takedowns": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:33",
+          "controlSeconds": 33
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a314d9fa7c6825d",
+            "name": "Douglas Silva de Andrade",
+            "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "d661ce4da776fc20",
+            "name": "Petr Yan",
+            "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 62,
+            "raw": "45 of 62"
+          },
+          "significantStrikePercent": 73,
+          "totalStrikes": {
+            "landed": 66,
+            "attempted": 85,
+            "raw": "66 of 85"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:02",
+          "controlSeconds": 182
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "3a314d9fa7c6825d",
+        "name": "Douglas Silva de Andrade",
+        "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+      },
+      {
+        "id": "d661ce4da776fc20",
+        "name": "Petr Yan",
+        "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 77,
+          "raw": "28 of 77"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 13,
+          "attempted": 44,
+          "raw": "13 of 44"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 20,
+          "raw": "10 of 20"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 13,
+          "raw": "5 of 13"
+        },
+        "distance": {
+          "landed": 26,
+          "attempted": 75,
+          "raw": "26 of 75"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        },
+        "significantStrikes": {
+          "landed": 76,
+          "attempted": 118,
+          "raw": "76 of 118"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 49,
+          "attempted": 86,
+          "raw": "49 of 86"
+        },
+        "body": {
+          "landed": 23,
+          "attempted": 27,
+          "raw": "23 of 27"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 42,
+          "attempted": 78,
+          "raw": "42 of 78"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 8,
+          "raw": "8 of 8"
+        },
+        "ground": {
+          "landed": 26,
+          "attempted": 32,
+          "raw": "26 of 32"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a314d9fa7c6825d",
+            "name": "Douglas Silva de Andrade",
+            "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 52,
+            "raw": "18 of 52"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 8,
+            "attempted": 28,
+            "raw": "8 of 28"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 14,
+            "raw": "7 of 14"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 10,
+            "raw": "3 of 10"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 51,
+            "raw": "17 of 51"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d661ce4da776fc20",
+            "name": "Petr Yan",
+            "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 56,
+            "raw": "31 of 56"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 14,
+            "attempted": 35,
+            "raw": "14 of 35"
+          },
+          "body": {
+            "landed": 15,
+            "attempted": 18,
+            "raw": "15 of 18"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 28,
+            "attempted": 52,
+            "raw": "28 of 52"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "3a314d9fa7c6825d",
+          "name": "Douglas Silva de Andrade",
+          "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+        },
+        {
+          "id": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "3a314d9fa7c6825d",
+            "name": "Douglas Silva de Andrade",
+            "url": "http://www.ufcstats.com/fighter-details/3a314d9fa7c6825d"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 5,
+            "attempted": 16,
+            "raw": "5 of 16"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 24,
+            "raw": "9 of 24"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d661ce4da776fc20",
+            "name": "Petr Yan",
+            "url": "http://www.ufcstats.com/fighter-details/d661ce4da776fc20"
+          },
+          "significantStrikes": {
+            "landed": 45,
+            "attempted": 62,
+            "raw": "45 of 62"
+          },
+          "significantStrikePercent": 73,
+          "head": {
+            "landed": 35,
+            "attempted": 51,
+            "raw": "35 of 51"
+          },
+          "body": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 26,
+            "raw": "14 of 26"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 8,
+            "raw": "8 of 8"
+          },
+          "ground": {
+            "landed": 23,
+            "attempted": 28,
+            "raw": "23 of 28"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.538Z"
+  }
+}

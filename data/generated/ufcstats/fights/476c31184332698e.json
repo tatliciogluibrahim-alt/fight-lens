@@ -1,0 +1,584 @@
+{
+  "id": "476c31184332698e",
+  "url": "http://www.ufcstats.com/fight-details/476c31184332698e",
+  "event": {
+    "id": "1bf49bf829964144",
+    "name": "UFC Fight Night: Hermansson vs. Cannonier",
+    "url": "http://www.ufcstats.com/event-details/1bf49bf829964144"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0a1942069c9ad6b6",
+      "name": "Jack Hermansson",
+      "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "13a0275fa13c4d26",
+      "name": "Jared Cannonier",
+      "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 2,
+    "time": "0:27",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "13a0275fa13c4d26",
+        "name": "Jared Cannonier",
+        "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 42,
+          "raw": "20 of 42"
+        },
+        "significantStrikePercent": 48,
+        "totalStrikes": {
+          "landed": 22,
+          "attempted": 45,
+          "raw": "22 of 45"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "takedownPercent": 17,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:45",
+        "controlSeconds": 45
+      },
+      {
+        "fighter": {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 53,
+          "raw": "28 of 53"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 29,
+          "attempted": 54,
+          "raw": "29 of 54"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:22",
+        "controlSeconds": 22
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 42,
+            "raw": "20 of 42"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:45",
+          "controlSeconds": 45
+        },
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 11,
+            "attempted": 33,
+            "raw": "11 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:10",
+          "controlSeconds": 10
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 21,
+            "raw": "18 of 21"
+          },
+          "significantStrikePercent": 86,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 21,
+            "raw": "18 of 21"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:12",
+          "controlSeconds": 12
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0a1942069c9ad6b6",
+        "name": "Jack Hermansson",
+        "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+      },
+      {
+        "id": "13a0275fa13c4d26",
+        "name": "Jared Cannonier",
+        "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        "significantStrikes": {
+          "landed": 20,
+          "attempted": 42,
+          "raw": "20 of 42"
+        },
+        "significantStrikePercent": 48,
+        "head": {
+          "landed": 5,
+          "attempted": 21,
+          "raw": "5 of 21"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "leg": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "distance": {
+          "landed": 19,
+          "attempted": 41,
+          "raw": "19 of 41"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        },
+        "significantStrikes": {
+          "landed": 28,
+          "attempted": 53,
+          "raw": "28 of 53"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 21,
+          "attempted": 43,
+          "raw": "21 of 43"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "distance": {
+          "landed": 10,
+          "attempted": 34,
+          "raw": "10 of 34"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 17,
+          "raw": "17 of 17"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 39,
+            "raw": "18 of 39"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 5,
+            "attempted": 20,
+            "raw": "5 of 20"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "leg": {
+            "landed": 11,
+            "attempted": 14,
+            "raw": "11 of 14"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 38,
+            "raw": "17 of 38"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 4,
+            "attempted": 23,
+            "raw": "4 of 23"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 30,
+            "raw": "9 of 30"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0a1942069c9ad6b6",
+          "name": "Jack Hermansson",
+          "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+        },
+        {
+          "id": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0a1942069c9ad6b6",
+            "name": "Jack Hermansson",
+            "url": "http://www.ufcstats.com/fighter-details/0a1942069c9ad6b6"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "13a0275fa13c4d26",
+            "name": "Jared Cannonier",
+            "url": "http://www.ufcstats.com/fighter-details/13a0275fa13c4d26"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 21,
+            "raw": "18 of 21"
+          },
+          "significantStrikePercent": 86,
+          "head": {
+            "landed": 17,
+            "attempted": 20,
+            "raw": "17 of 20"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 17,
+            "attempted": 17,
+            "raw": "17 of 17"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.586Z"
+  }
+}

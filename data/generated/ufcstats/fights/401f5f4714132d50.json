@@ -1,0 +1,764 @@
+{
+  "id": "401f5f4714132d50",
+  "url": "http://www.ufcstats.com/fight-details/401f5f4714132d50",
+  "event": {
+    "id": "4c27ca8c8481f79a",
+    "name": "UFC Fight Night: Smith vs. Spann",
+    "url": "http://www.ufcstats.com/event-details/4c27ca8c8481f79a"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "b9437600497350f3",
+      "name": "Joaquin Buckley",
+      "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "61fb8098ccf81c7f",
+      "name": "Antonio Arroyo",
+      "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "2:26",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Mark Smith",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      },
+      {
+        "id": "61fb8098ccf81c7f",
+        "name": "Antonio Arroyo",
+        "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 102,
+          "raw": "41 of 102"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 45,
+          "attempted": 107,
+          "raw": "45 of 107"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "takedownPercent": 17,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:18",
+        "controlSeconds": 78
+      },
+      {
+        "fighter": {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 46,
+          "raw": "21 of 46"
+        },
+        "significantStrikePercent": 46,
+        "totalStrikes": {
+          "landed": 30,
+          "attempted": 57,
+          "raw": "30 of 57"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:24",
+        "controlSeconds": 24
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedownPercent": 33,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 35,
+            "raw": "15 of 35"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:55",
+          "controlSeconds": 55
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "significantStrikePercent": 56,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 29,
+            "raw": "19 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 15,
+            "attempted": 28,
+            "raw": "15 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:15",
+          "controlSeconds": 15
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:14",
+          "controlSeconds": 14
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "b9437600497350f3",
+        "name": "Joaquin Buckley",
+        "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+      },
+      {
+        "id": "61fb8098ccf81c7f",
+        "name": "Antonio Arroyo",
+        "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 102,
+          "raw": "41 of 102"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 12,
+          "attempted": 59,
+          "raw": "12 of 59"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 22,
+          "raw": "12 of 22"
+        },
+        "leg": {
+          "landed": 17,
+          "attempted": 21,
+          "raw": "17 of 21"
+        },
+        "distance": {
+          "landed": 34,
+          "attempted": 95,
+          "raw": "34 of 95"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "ground": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 46,
+          "raw": "21 of 46"
+        },
+        "significantStrikePercent": 46,
+        "head": {
+          "landed": 4,
+          "attempted": 22,
+          "raw": "4 of 22"
+        },
+        "body": {
+          "landed": 10,
+          "attempted": 17,
+          "raw": "10 of 17"
+        },
+        "leg": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "distance": {
+          "landed": 21,
+          "attempted": 45,
+          "raw": "21 of 45"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 44,
+            "raw": "15 of 44"
+          },
+          "significantStrikePercent": 34,
+          "head": {
+            "landed": 2,
+            "attempted": 24,
+            "raw": "2 of 24"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 11,
+            "raw": "5 of 11"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 10,
+            "raw": "1 of 10"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 17,
+            "raw": "6 of 17"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 31,
+            "raw": "12 of 31"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 2,
+            "attempted": 17,
+            "raw": "2 of 17"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "leg": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 30,
+            "raw": "11 of 30"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "significantStrikePercent": 56,
+          "head": {
+            "landed": 1,
+            "attempted": 7,
+            "raw": "1 of 7"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 18,
+            "raw": "10 of 18"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+        },
+        {
+          "id": "61fb8098ccf81c7f",
+          "name": "Antonio Arroyo",
+          "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "b9437600497350f3",
+            "name": "Joaquin Buckley",
+            "url": "http://www.ufcstats.com/fighter-details/b9437600497350f3"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 8,
+            "attempted": 18,
+            "raw": "8 of 18"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 23,
+            "raw": "10 of 23"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "61fb8098ccf81c7f",
+            "name": "Antonio Arroyo",
+            "url": "http://www.ufcstats.com/fighter-details/61fb8098ccf81c7f"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.616Z"
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "id": "83955de599b2d874",
+  "url": "http://www.ufcstats.com/fight-details/83955de599b2d874",
+  "event": {
+    "id": "ad044be25c94dcfd",
+    "name": "UFC Fight Night: Hall vs. Silva",
+    "url": "http://www.ufcstats.com/event-details/ad044be25c94dcfd"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8fd808923cffff82",
+      "name": "Andre Fili",
+      "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d9c6f19f958643e9",
+      "name": "Bryce Mitchell",
+      "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Keith Peterson",
+    "details": "Chris Lee 28 - 29.Dave Hagen 27 - 30.Sal D'amato 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8fd808923cffff82",
+        "name": "Andre Fili",
+        "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+      },
+      {
+        "id": "d9c6f19f958643e9",
+        "name": "Bryce Mitchell",
+        "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 72,
+          "raw": "27 of 72"
+        },
+        "significantStrikePercent": 38,
+        "totalStrikes": {
+          "landed": 51,
+          "attempted": 97,
+          "raw": "51 of 97"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 2,
+        "control": "0:34",
+        "controlSeconds": 34
+      },
+      {
+        "fighter": {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 69,
+          "raw": "46 of 69"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 100,
+          "attempted": 135,
+          "raw": "100 of 135"
+        },
+        "takedowns": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "takedownPercent": 54,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "10:12",
+        "controlSeconds": 612
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:10",
+          "controlSeconds": 10
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 21,
+            "raw": "15 of 21"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 35,
+            "raw": "28 of 35"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "takedownPercent": 75,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:00",
+          "controlSeconds": 240
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 49,
+            "raw": "19 of 49"
+          },
+          "significantStrikePercent": 39,
+          "totalStrikes": {
+            "landed": 20,
+            "attempted": 50,
+            "raw": "20 of 50"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:08",
+          "controlSeconds": 8
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 38,
+            "raw": "26 of 38"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "takedownPercent": 17,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "2:07",
+          "controlSeconds": 127
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 33,
+            "raw": "23 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 1,
+          "control": "0:16",
+          "controlSeconds": 16
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 46,
+            "attempted": 62,
+            "raw": "46 of 62"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:05",
+          "controlSeconds": 245
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8fd808923cffff82",
+        "name": "Andre Fili",
+        "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+      },
+      {
+        "id": "d9c6f19f958643e9",
+        "name": "Bryce Mitchell",
+        "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        "significantStrikes": {
+          "landed": 27,
+          "attempted": 72,
+          "raw": "27 of 72"
+        },
+        "significantStrikePercent": 38,
+        "head": {
+          "landed": 19,
+          "attempted": 62,
+          "raw": "19 of 62"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 23,
+          "attempted": 67,
+          "raw": "23 of 67"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        },
+        "significantStrikes": {
+          "landed": 46,
+          "attempted": 69,
+          "raw": "46 of 69"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 28,
+          "attempted": 49,
+          "raw": "28 of 49"
+        },
+        "body": {
+          "landed": 14,
+          "attempted": 15,
+          "raw": "14 of 15"
+        },
+        "leg": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "distance": {
+          "landed": 29,
+          "attempted": 42,
+          "raw": "29 of 42"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 17,
+          "attempted": 27,
+          "raw": "17 of 27"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 21,
+            "raw": "15 of 21"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "significantStrikes": {
+            "landed": 19,
+            "attempted": 49,
+            "raw": "19 of 49"
+          },
+          "significantStrikePercent": 39,
+          "head": {
+            "landed": 13,
+            "attempted": 42,
+            "raw": "13 of 42"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 46,
+            "raw": "16 of 46"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "distance": {
+            "landed": 17,
+            "attempted": 27,
+            "raw": "17 of 27"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8fd808923cffff82",
+          "name": "Andre Fili",
+          "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+        },
+        {
+          "id": "d9c6f19f958643e9",
+          "name": "Bryce Mitchell",
+          "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8fd808923cffff82",
+            "name": "Andre Fili",
+            "url": "http://www.ufcstats.com/fighter-details/8fd808923cffff82"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 14,
+            "raw": "5 of 14"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 4,
+            "attempted": 12,
+            "raw": "4 of 12"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 13,
+            "raw": "4 of 13"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d9c6f19f958643e9",
+            "name": "Bryce Mitchell",
+            "url": "http://www.ufcstats.com/fighter-details/d9c6f19f958643e9"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 19,
+            "raw": "13 of 19"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 10,
+            "attempted": 16,
+            "raw": "10 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 9,
+            "raw": "7 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.448Z"
+  }
+}

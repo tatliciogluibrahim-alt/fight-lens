@@ -1,0 +1,764 @@
+{
+  "id": "f73dfeb48b09e6a6",
+  "url": "http://www.ufcstats.com/fight-details/f73dfeb48b09e6a6",
+  "event": {
+    "id": "d181689653115b6a",
+    "name": "UFC Fight Night: Cerrone vs. Medeiros",
+    "url": "http://www.ufcstats.com/event-details/d181689653115b6a"
+  },
+  "title": "Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d3df1add9d9a7efb",
+      "name": "Derrick Lewis",
+      "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "c9cf753cfdf77fc2",
+      "name": "Marcin Tybura",
+      "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 3,
+    "time": "2:48",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 45,
+          "raw": "30 of 45"
+        },
+        "significantStrikePercent": 67,
+        "totalStrikes": {
+          "landed": 32,
+          "attempted": 47,
+          "raw": "32 of 47"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:16",
+        "controlSeconds": 136
+      },
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 56,
+          "raw": "37 of 56"
+        },
+        "significantStrikePercent": 66,
+        "totalStrikes": {
+          "landed": 83,
+          "attempted": 104,
+          "raw": "83 of 104"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 1,
+        "reversals": 1,
+        "control": "7:12",
+        "controlSeconds": 432
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:10",
+          "controlSeconds": 130
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 26,
+            "attempted": 31,
+            "raw": "26 of 31"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 1,
+          "control": "2:20",
+          "controlSeconds": 140
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "significantStrikePercent": 68,
+          "totalStrikes": {
+            "landed": 43,
+            "attempted": 54,
+            "raw": "43 of 54"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "3:50",
+          "controlSeconds": 230
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 62,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 14,
+            "raw": "9 of 14"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 19,
+            "raw": "14 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:02",
+          "controlSeconds": 62
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d3df1add9d9a7efb",
+        "name": "Derrick Lewis",
+        "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+      },
+      {
+        "id": "c9cf753cfdf77fc2",
+        "name": "Marcin Tybura",
+        "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        "significantStrikes": {
+          "landed": 30,
+          "attempted": 45,
+          "raw": "30 of 45"
+        },
+        "significantStrikePercent": 67,
+        "head": {
+          "landed": 27,
+          "attempted": 42,
+          "raw": "27 of 42"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "clinch": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "ground": {
+          "landed": 20,
+          "attempted": 28,
+          "raw": "20 of 28"
+        }
+      },
+      {
+        "fighter": {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        },
+        "significantStrikes": {
+          "landed": 37,
+          "attempted": 56,
+          "raw": "37 of 56"
+        },
+        "significantStrikePercent": 66,
+        "head": {
+          "landed": 19,
+          "attempted": 32,
+          "raw": "19 of 32"
+        },
+        "body": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "leg": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 20,
+          "raw": "9 of 20"
+        },
+        "clinch": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "ground": {
+          "landed": 23,
+          "attempted": 31,
+          "raw": "23 of 31"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 27,
+            "raw": "18 of 27"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 16,
+            "attempted": 25,
+            "raw": "16 of 25"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 16,
+            "attempted": 24,
+            "raw": "16 of 24"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 5,
+            "attempted": 9,
+            "raw": "5 of 9"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "significantStrikePercent": 80,
+          "head": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 31,
+            "raw": "21 of 31"
+          },
+          "significantStrikePercent": 68,
+          "head": {
+            "landed": 12,
+            "attempted": 18,
+            "raw": "12 of 18"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 9,
+            "raw": "3 of 9"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 18,
+            "attempted": 22,
+            "raw": "18 of 22"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+        },
+        {
+          "id": "c9cf753cfdf77fc2",
+          "name": "Marcin Tybura",
+          "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d3df1add9d9a7efb",
+            "name": "Derrick Lewis",
+            "url": "http://www.ufcstats.com/fighter-details/d3df1add9d9a7efb"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 13,
+            "raw": "8 of 13"
+          },
+          "significantStrikePercent": 62,
+          "head": {
+            "landed": 7,
+            "attempted": 12,
+            "raw": "7 of 12"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          }
+        },
+        {
+          "fighter": {
+            "id": "c9cf753cfdf77fc2",
+            "name": "Marcin Tybura",
+            "url": "http://www.ufcstats.com/fighter-details/c9cf753cfdf77fc2"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 15,
+            "raw": "10 of 15"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.530Z"
+  }
+}

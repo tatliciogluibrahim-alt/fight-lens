@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-05-20T14:58:51.577Z",
+  "generatedAt": "2026-06-17T03:50:48.092Z",
   "modelVersion": "outcome-v0.2",
   "calibrationBuckets": [
     {
       "rangeLabel": "50–60%",
       "predictedMidpoint": 0.55,
-      "actualWinRate": 0.6148148148148148,
-      "count": 135
+      "actualWinRate": 0.5971223021582733,
+      "count": 139
     },
     {
       "rangeLabel": "60–70%",
       "predictedMidpoint": 0.65,
-      "actualWinRate": 0.6140350877192983,
-      "count": 57
+      "actualWinRate": 0.6521739130434783,
+      "count": 69
     },
     {
       "rangeLabel": "70–80%",
       "predictedMidpoint": 0.75,
-      "actualWinRate": 0.6428571428571429,
-      "count": 28
+      "actualWinRate": 0.7407407407407407,
+      "count": 27
     },
     {
       "rangeLabel": "80%+",
       "predictedMidpoint": 0.9,
-      "actualWinRate": 0.9393939393939394,
-      "count": 33
+      "actualWinRate": 0.92,
+      "count": 25
     }
   ],
   "winnerAccuracy": 66,
-  "methodAccuracy": 58,
+  "methodAccuracy": 60,
   "brierScore": 0.219,
   "caveats": [
     "Backtest calibration may differ from live model record due to data vintage.",

@@ -1,0 +1,404 @@
+{
+  "id": "79be3a6d483ad64a",
+  "url": "http://www.ufcstats.com/fight-details/79be3a6d483ad64a",
+  "event": {
+    "id": "1c7cce2f5c17160d",
+    "name": "UFC Fight Night: Gustafsson vs. Teixeira",
+    "url": "http://www.ufcstats.com/event-details/1c7cce2f5c17160d"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0845c81e37d3bcb3",
+      "name": "Volkan Oezdemir",
+      "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "67f272324a030d00",
+      "name": "Misha Cirkunov",
+      "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:28",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Kevin Sataki",
+    "details": "Punch to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0845c81e37d3bcb3",
+        "name": "Volkan Oezdemir",
+        "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+      },
+      {
+        "id": "67f272324a030d00",
+        "name": "Misha Cirkunov",
+        "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:02",
+        "controlSeconds": 2
+      },
+      {
+        "fighter": {
+          "id": "67f272324a030d00",
+          "name": "Misha Cirkunov",
+          "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "significantStrikePercent": 47,
+        "totalStrikes": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        {
+          "id": "67f272324a030d00",
+          "name": "Misha Cirkunov",
+          "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0845c81e37d3bcb3",
+            "name": "Volkan Oezdemir",
+            "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:02",
+          "controlSeconds": 2
+        },
+        {
+          "fighter": {
+            "id": "67f272324a030d00",
+            "name": "Misha Cirkunov",
+            "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "totalStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0845c81e37d3bcb3",
+        "name": "Volkan Oezdemir",
+        "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+      },
+      {
+        "id": "67f272324a030d00",
+        "name": "Misha Cirkunov",
+        "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 5,
+          "attempted": 7,
+          "raw": "5 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 5,
+          "raw": "3 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        }
+      },
+      {
+        "fighter": {
+          "id": "67f272324a030d00",
+          "name": "Misha Cirkunov",
+          "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+        },
+        "significantStrikes": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "significantStrikePercent": 47,
+        "head": {
+          "landed": 7,
+          "attempted": 16,
+          "raw": "7 of 16"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 19,
+          "raw": "9 of 19"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0845c81e37d3bcb3",
+          "name": "Volkan Oezdemir",
+          "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+        },
+        {
+          "id": "67f272324a030d00",
+          "name": "Misha Cirkunov",
+          "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0845c81e37d3bcb3",
+            "name": "Volkan Oezdemir",
+            "url": "http://www.ufcstats.com/fighter-details/0845c81e37d3bcb3"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 5,
+            "raw": "3 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "67f272324a030d00",
+            "name": "Misha Cirkunov",
+            "url": "http://www.ufcstats.com/fighter-details/67f272324a030d00"
+          },
+          "significantStrikes": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "significantStrikePercent": 47,
+          "head": {
+            "landed": 7,
+            "attempted": 16,
+            "raw": "7 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.798Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "32ad75f6c8ca7e9f",
+  "url": "http://www.ufcstats.com/fight-details/32ad75f6c8ca7e9f",
+  "event": {
+    "id": "e7bc606d269896aa",
+    "name": "UFC Fight Night: Bisping vs. Gastelum",
+    "url": "http://www.ufcstats.com/event-details/e7bc606d269896aa"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "8c0580d4fff106c1",
+      "name": "Kelvin Gastelum",
+      "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2b93ebd9f5417ad2",
+      "name": "Michael Bisping",
+      "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "2:30",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "8c0580d4fff106c1",
+        "name": "Kelvin Gastelum",
+        "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+      },
+      {
+        "id": "2b93ebd9f5417ad2",
+        "name": "Michael Bisping",
+        "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8c0580d4fff106c1",
+          "name": "Kelvin Gastelum",
+          "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 52,
+        "totalStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:06",
+        "controlSeconds": 6
+      },
+      {
+        "fighter": {
+          "id": "2b93ebd9f5417ad2",
+          "name": "Michael Bisping",
+          "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "significantStrikePercent": 29,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "8c0580d4fff106c1",
+          "name": "Kelvin Gastelum",
+          "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+        },
+        {
+          "id": "2b93ebd9f5417ad2",
+          "name": "Michael Bisping",
+          "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8c0580d4fff106c1",
+            "name": "Kelvin Gastelum",
+            "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:06",
+          "controlSeconds": 6
+        },
+        {
+          "fighter": {
+            "id": "2b93ebd9f5417ad2",
+            "name": "Michael Bisping",
+            "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "significantStrikePercent": 29,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "8c0580d4fff106c1",
+        "name": "Kelvin Gastelum",
+        "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+      },
+      {
+        "id": "2b93ebd9f5417ad2",
+        "name": "Michael Bisping",
+        "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "8c0580d4fff106c1",
+          "name": "Kelvin Gastelum",
+          "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+        },
+        "significantStrikes": {
+          "landed": 14,
+          "attempted": 27,
+          "raw": "14 of 27"
+        },
+        "significantStrikePercent": 52,
+        "head": {
+          "landed": 7,
+          "attempted": 19,
+          "raw": "7 of 19"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 9,
+          "attempted": 20,
+          "raw": "9 of 20"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2b93ebd9f5417ad2",
+          "name": "Michael Bisping",
+          "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+        },
+        "significantStrikes": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "significantStrikePercent": 29,
+        "head": {
+          "landed": 5,
+          "attempted": 22,
+          "raw": "5 of 22"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 24,
+          "raw": "7 of 24"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "8c0580d4fff106c1",
+          "name": "Kelvin Gastelum",
+          "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+        },
+        {
+          "id": "2b93ebd9f5417ad2",
+          "name": "Michael Bisping",
+          "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "8c0580d4fff106c1",
+            "name": "Kelvin Gastelum",
+            "url": "http://www.ufcstats.com/fighter-details/8c0580d4fff106c1"
+          },
+          "significantStrikes": {
+            "landed": 14,
+            "attempted": 27,
+            "raw": "14 of 27"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 7,
+            "attempted": 19,
+            "raw": "7 of 19"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 9,
+            "attempted": 20,
+            "raw": "9 of 20"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2b93ebd9f5417ad2",
+            "name": "Michael Bisping",
+            "url": "http://www.ufcstats.com/fighter-details/2b93ebd9f5417ad2"
+          },
+          "significantStrikes": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "significantStrikePercent": 29,
+          "head": {
+            "landed": 5,
+            "attempted": 22,
+            "raw": "5 of 22"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 24,
+            "raw": "7 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.636Z"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "d1621b3da377f34b",
+  "url": "http://www.ufcstats.com/fight-details/d1621b3da377f34b",
+  "event": {
+    "id": "4c27ca8c8481f79a",
+    "name": "UFC Fight Night: Smith vs. Spann",
+    "url": "http://www.ufcstats.com/event-details/4c27ca8c8481f79a"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "a67f5afa8d6a1b80",
+      "name": "Ryan Spann",
+      "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "d4c9dcd330403612",
+      "name": "Anthony Smith",
+      "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:47",
+    "timeFormat": "5 Rnd (5-5-5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      },
+      {
+        "id": "d4c9dcd330403612",
+        "name": "Anthony Smith",
+        "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "totalStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:30",
+        "controlSeconds": 30
+      },
+      {
+        "fighter": {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        },
+        "kd": 2,
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "significantStrikePercent": 61,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 29,
+          "raw": "18 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:38",
+        "controlSeconds": 98
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "totalStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:30",
+          "controlSeconds": 30
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "kd": 2,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "significantStrikePercent": 61,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 29,
+            "raw": "18 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      },
+      {
+        "id": "d4c9dcd330403612",
+        "name": "Anthony Smith",
+        "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "significantStrikes": {
+          "landed": 8,
+          "attempted": 20,
+          "raw": "8 of 20"
+        },
+        "significantStrikePercent": 40,
+        "head": {
+          "landed": 5,
+          "attempted": 17,
+          "raw": "5 of 17"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 6,
+          "attempted": 18,
+          "raw": "6 of 18"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        },
+        "significantStrikes": {
+          "landed": 17,
+          "attempted": 28,
+          "raw": "17 of 28"
+        },
+        "significantStrikePercent": 61,
+        "head": {
+          "landed": 11,
+          "attempted": 21,
+          "raw": "11 of 21"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 20,
+          "raw": "11 of 20"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        {
+          "id": "d4c9dcd330403612",
+          "name": "Anthony Smith",
+          "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "significantStrikes": {
+            "landed": 8,
+            "attempted": 20,
+            "raw": "8 of 20"
+          },
+          "significantStrikePercent": 40,
+          "head": {
+            "landed": 5,
+            "attempted": 17,
+            "raw": "5 of 17"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 6,
+            "attempted": 18,
+            "raw": "6 of 18"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "d4c9dcd330403612",
+            "name": "Anthony Smith",
+            "url": "http://www.ufcstats.com/fighter-details/d4c9dcd330403612"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 28,
+            "raw": "17 of 28"
+          },
+          "significantStrikePercent": 61,
+          "head": {
+            "landed": 11,
+            "attempted": 21,
+            "raw": "11 of 21"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 20,
+            "raw": "11 of 20"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.756Z"
+  }
+}

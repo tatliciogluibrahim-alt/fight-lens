@@ -1,0 +1,404 @@
+{
+  "id": "2b417eb1ffa56ac1",
+  "url": "http://www.ufcstats.com/fight-details/2b417eb1ffa56ac1",
+  "event": {
+    "id": "33b2f68ef95252e0",
+    "name": "UFC Fight Night: Felder vs. Hooker",
+    "url": "http://www.ufcstats.com/event-details/33b2f68ef95252e0"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0d65c432720accb9",
+      "name": "Michal Oleksiejczuk",
+      "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "70e1f8a821b72c8b",
+      "name": "Jimmy Crute",
+      "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "3:29",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "John Sharp",
+    "details": "Kimura From Side Control"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "70e1f8a821b72c8b",
+        "name": "Jimmy Crute",
+        "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 23,
+          "raw": "13 of 23"
+        },
+        "takedowns": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "takedownPercent": 80,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "3:01",
+        "controlSeconds": 181
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "70e1f8a821b72c8b",
+            "name": "Jimmy Crute",
+            "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 23,
+            "raw": "13 of 23"
+          },
+          "takedowns": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "takedownPercent": 80,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "3:01",
+          "controlSeconds": 181
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0d65c432720accb9",
+        "name": "Michal Oleksiejczuk",
+        "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+      },
+      {
+        "id": "70e1f8a821b72c8b",
+        "name": "Jimmy Crute",
+        "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        "significantStrikes": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 3,
+          "attempted": 6,
+          "raw": "3 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "significantStrikePercent": 25,
+        "head": {
+          "landed": 2,
+          "attempted": 7,
+          "raw": "2 of 7"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 6,
+          "raw": "2 of 6"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 2,
+          "raw": "0 of 2"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0d65c432720accb9",
+          "name": "Michal Oleksiejczuk",
+          "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+        },
+        {
+          "id": "70e1f8a821b72c8b",
+          "name": "Jimmy Crute",
+          "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0d65c432720accb9",
+            "name": "Michal Oleksiejczuk",
+            "url": "http://www.ufcstats.com/fighter-details/0d65c432720accb9"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 3,
+            "attempted": 6,
+            "raw": "3 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "70e1f8a821b72c8b",
+            "name": "Jimmy Crute",
+            "url": "http://www.ufcstats.com/fighter-details/70e1f8a821b72c8b"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "significantStrikePercent": 25,
+          "head": {
+            "landed": 2,
+            "attempted": 7,
+            "raw": "2 of 7"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 6,
+            "raw": "2 of 6"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.700Z"
+  }
+}

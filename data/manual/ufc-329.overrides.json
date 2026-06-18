@@ -473,13 +473,22 @@
       },
       "contextNotes": [
         {
-          "type": "long-layoff",
+          "type": "injury-return",
           "fighter": "Conor McGregor",
-          "title": "Multi-year competitive layoff",
-          "explanation": "McGregor has not competed in a UFC bout in several years — the largest single factor in this matchup. The model partially reads this: long inactivity shrinks his recent-form score toward neutral. What it cannot read is what a layoff that long does to timing, durability, and fight-night speed — that part stays manual context.",
+          "title": "5-year layoff with mid-layoff broken leg surgery",
+          "explanation": "McGregor's last fight was July 2021 (broken leg vs Poirier at UFC 264). A 5-year competitive absence including major surgery and recovery. The model's form score handles inactivity via layoff shrinkage, but cannot price the specific deterioration from this kind of injury history. The market (Holloway -325) is pricing this aggressively. Read the model lean as what stats alone say without the injury context.",
           "confidence": "high",
           "impactDirection": "hurts",
-          "modelImpact": "manual context only"
+          "modelImpact": "not included in model"
+        },
+        {
+          "type": "weight-class-up",
+          "fighter": "Max Holloway",
+          "title": "First welterweight appearance after a career at featherweight and brief lightweight",
+          "explanation": "Holloway's career stats are from featherweight (and one fight at lightweight). This is his welterweight debut, against an opponent who naturally carries the weight. Reach, power tolerance, and pace dynamics shift at welterweight — none captured by the model.",
+          "confidence": "medium",
+          "impactDirection": "unclear",
+          "modelImpact": "not included in model"
         }
       ],
       "modelSanity": {

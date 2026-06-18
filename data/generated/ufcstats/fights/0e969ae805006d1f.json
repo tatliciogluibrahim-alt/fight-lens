@@ -1,0 +1,404 @@
+{
+  "id": "0e969ae805006d1f",
+  "url": "http://www.ufcstats.com/fight-details/0e969ae805006d1f",
+  "event": {
+    "id": "18f5669a92e99d92",
+    "name": "UFC Fight Night: Kattar vs. Ige",
+    "url": "http://www.ufcstats.com/event-details/18f5669a92e99d92"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "476fe566d2df676e",
+      "name": "Modestas Bukauskas",
+      "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "79325a3c1a5c3bf4",
+      "name": "Andreas Michailidis",
+      "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Daniel Movahedi",
+    "details": "toReferee Stoppage Between Rounds"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "79325a3c1a5c3bf4",
+        "name": "Andreas Michailidis",
+        "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 49,
+          "raw": "18 of 49"
+        },
+        "significantStrikePercent": 37,
+        "totalStrikes": {
+          "landed": 18,
+          "attempted": 49,
+          "raw": "18 of 49"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "79325a3c1a5c3bf4",
+          "name": "Andreas Michailidis",
+          "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "79325a3c1a5c3bf4",
+          "name": "Andreas Michailidis",
+          "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 49,
+            "raw": "18 of 49"
+          },
+          "significantStrikePercent": 37,
+          "totalStrikes": {
+            "landed": 18,
+            "attempted": 49,
+            "raw": "18 of 49"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "79325a3c1a5c3bf4",
+            "name": "Andreas Michailidis",
+            "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "476fe566d2df676e",
+        "name": "Modestas Bukauskas",
+        "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+      },
+      {
+        "id": "79325a3c1a5c3bf4",
+        "name": "Andreas Michailidis",
+        "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        "significantStrikes": {
+          "landed": 18,
+          "attempted": 49,
+          "raw": "18 of 49"
+        },
+        "significantStrikePercent": 37,
+        "head": {
+          "landed": 11,
+          "attempted": 40,
+          "raw": "11 of 40"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 6,
+          "raw": "4 of 6"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "distance": {
+          "landed": 11,
+          "attempted": 42,
+          "raw": "11 of 42"
+        },
+        "clinch": {
+          "landed": 7,
+          "attempted": 7,
+          "raw": "7 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "79325a3c1a5c3bf4",
+          "name": "Andreas Michailidis",
+          "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+        },
+        "significantStrikes": {
+          "landed": 23,
+          "attempted": 46,
+          "raw": "23 of 46"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 8,
+          "attempted": 26,
+          "raw": "8 of 26"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 11,
+          "raw": "7 of 11"
+        },
+        "leg": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        },
+        "distance": {
+          "landed": 23,
+          "attempted": 45,
+          "raw": "23 of 45"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "476fe566d2df676e",
+          "name": "Modestas Bukauskas",
+          "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+        },
+        {
+          "id": "79325a3c1a5c3bf4",
+          "name": "Andreas Michailidis",
+          "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "476fe566d2df676e",
+            "name": "Modestas Bukauskas",
+            "url": "http://www.ufcstats.com/fighter-details/476fe566d2df676e"
+          },
+          "significantStrikes": {
+            "landed": 18,
+            "attempted": 49,
+            "raw": "18 of 49"
+          },
+          "significantStrikePercent": 37,
+          "head": {
+            "landed": 11,
+            "attempted": 40,
+            "raw": "11 of 40"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 42,
+            "raw": "11 of 42"
+          },
+          "clinch": {
+            "landed": 7,
+            "attempted": 7,
+            "raw": "7 of 7"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "79325a3c1a5c3bf4",
+            "name": "Andreas Michailidis",
+            "url": "http://www.ufcstats.com/fighter-details/79325a3c1a5c3bf4"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 8,
+            "attempted": 26,
+            "raw": "8 of 26"
+          },
+          "body": {
+            "landed": 7,
+            "attempted": 11,
+            "raw": "7 of 11"
+          },
+          "leg": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 45,
+            "raw": "23 of 45"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.704Z"
+  }
+}

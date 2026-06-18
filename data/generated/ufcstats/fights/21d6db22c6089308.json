@@ -1,0 +1,404 @@
+{
+  "id": "21d6db22c6089308",
+  "url": "http://www.ufcstats.com/fight-details/21d6db22c6089308",
+  "event": {
+    "id": "2ce6541127b0e232",
+    "name": "UFC Fight Night: Holloway vs Oliveira",
+    "url": "http://www.ufcstats.com/event-details/2ce6541127b0e232"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "1091d4d957141094",
+      "name": "Nikita Krylov",
+      "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "ab943cd2c3c17825",
+      "name": "Marcos Rogerio de Lima",
+      "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:29",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Rear Naked Choke"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "ab943cd2c3c17825",
+        "name": "Marcos Rogerio de Lima",
+        "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 29,
+          "raw": "21 of 29"
+        },
+        "significantStrikePercent": 72,
+        "totalStrikes": {
+          "landed": 34,
+          "attempted": 46,
+          "raw": "34 of 46"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:57",
+        "controlSeconds": 117
+      },
+      {
+        "fighter": {
+          "id": "ab943cd2c3c17825",
+          "name": "Marcos Rogerio de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 2,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "ab943cd2c3c17825",
+          "name": "Marcos Rogerio de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 29,
+            "raw": "21 of 29"
+          },
+          "significantStrikePercent": 72,
+          "totalStrikes": {
+            "landed": 34,
+            "attempted": 46,
+            "raw": "34 of 46"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:57",
+          "controlSeconds": 117
+        },
+        {
+          "fighter": {
+            "id": "ab943cd2c3c17825",
+            "name": "Marcos Rogerio de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 2,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "1091d4d957141094",
+        "name": "Nikita Krylov",
+        "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+      },
+      {
+        "id": "ab943cd2c3c17825",
+        "name": "Marcos Rogerio de Lima",
+        "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 29,
+          "raw": "21 of 29"
+        },
+        "significantStrikePercent": 72,
+        "head": {
+          "landed": 16,
+          "attempted": 23,
+          "raw": "16 of 23"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "clinch": {
+          "landed": 10,
+          "attempted": 11,
+          "raw": "10 of 11"
+        },
+        "ground": {
+          "landed": 4,
+          "attempted": 5,
+          "raw": "4 of 5"
+        }
+      },
+      {
+        "fighter": {
+          "id": "ab943cd2c3c17825",
+          "name": "Marcos Rogerio de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+        },
+        "significantStrikes": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 3,
+          "attempted": 8,
+          "raw": "3 of 8"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 5,
+          "attempted": 10,
+          "raw": "5 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+        },
+        {
+          "id": "ab943cd2c3c17825",
+          "name": "Marcos Rogerio de Lima",
+          "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "1091d4d957141094",
+            "name": "Nikita Krylov",
+            "url": "http://www.ufcstats.com/fighter-details/1091d4d957141094"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 29,
+            "raw": "21 of 29"
+          },
+          "significantStrikePercent": 72,
+          "head": {
+            "landed": 16,
+            "attempted": 23,
+            "raw": "16 of 23"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 13,
+            "raw": "7 of 13"
+          },
+          "clinch": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "ground": {
+            "landed": 4,
+            "attempted": 5,
+            "raw": "4 of 5"
+          }
+        },
+        {
+          "fighter": {
+            "id": "ab943cd2c3c17825",
+            "name": "Marcos Rogerio de Lima",
+            "url": "http://www.ufcstats.com/fighter-details/ab943cd2c3c17825"
+          },
+          "significantStrikes": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 3,
+            "attempted": 8,
+            "raw": "3 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 5,
+            "attempted": 10,
+            "raw": "5 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.720Z"
+  }
+}

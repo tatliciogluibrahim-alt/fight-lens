@@ -1,0 +1,404 @@
+{
+  "id": "2fa88b72973478b6",
+  "url": "http://www.ufcstats.com/fight-details/2fa88b72973478b6",
+  "event": {
+    "id": "60ba33c3f555a7a3",
+    "name": "UFC Fight Night: Blachowicz vs. Rakic",
+    "url": "http://www.ufcstats.com/event-details/60ba33c3f555a7a3"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "cd13728ae1151f46",
+      "name": "Ion Cutelaba",
+      "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "a67f5afa8d6a1b80",
+      "name": "Ryan Spann",
+      "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 1,
+    "time": "2:22",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Guillotine Choke Standing"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "cd13728ae1151f46",
+        "name": "Ion Cutelaba",
+        "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+      },
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "cd13728ae1151f46",
+          "name": "Ion Cutelaba",
+          "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "takedowns": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "1:11",
+        "controlSeconds": 71
+      },
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "significantStrikePercent": 36,
+        "totalStrikes": {
+          "landed": 5,
+          "attempted": 12,
+          "raw": "5 of 12"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "cd13728ae1151f46",
+          "name": "Ion Cutelaba",
+          "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+        },
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "cd13728ae1151f46",
+            "name": "Ion Cutelaba",
+            "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "takedowns": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:11",
+          "controlSeconds": 71
+        },
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "significantStrikePercent": 36,
+          "totalStrikes": {
+            "landed": 5,
+            "attempted": 12,
+            "raw": "5 of 12"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "cd13728ae1151f46",
+        "name": "Ion Cutelaba",
+        "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+      },
+      {
+        "id": "a67f5afa8d6a1b80",
+        "name": "Ryan Spann",
+        "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "cd13728ae1151f46",
+          "name": "Ion Cutelaba",
+          "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+        },
+        "significantStrikes": {
+          "landed": 2,
+          "attempted": 9,
+          "raw": "2 of 9"
+        },
+        "significantStrikePercent": 22,
+        "head": {
+          "landed": 2,
+          "attempted": 8,
+          "raw": "2 of 8"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 5,
+          "raw": "1 of 5"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        },
+        "significantStrikes": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "significantStrikePercent": 36,
+        "head": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 4,
+          "attempted": 11,
+          "raw": "4 of 11"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "cd13728ae1151f46",
+          "name": "Ion Cutelaba",
+          "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+        },
+        {
+          "id": "a67f5afa8d6a1b80",
+          "name": "Ryan Spann",
+          "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "cd13728ae1151f46",
+            "name": "Ion Cutelaba",
+            "url": "http://www.ufcstats.com/fighter-details/cd13728ae1151f46"
+          },
+          "significantStrikes": {
+            "landed": 2,
+            "attempted": 9,
+            "raw": "2 of 9"
+          },
+          "significantStrikePercent": 22,
+          "head": {
+            "landed": 2,
+            "attempted": 8,
+            "raw": "2 of 8"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "a67f5afa8d6a1b80",
+            "name": "Ryan Spann",
+            "url": "http://www.ufcstats.com/fighter-details/a67f5afa8d6a1b80"
+          },
+          "significantStrikes": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "significantStrikePercent": 36,
+          "head": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 4,
+            "attempted": 11,
+            "raw": "4 of 11"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.578Z"
+  }
+}

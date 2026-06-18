@@ -1,0 +1,584 @@
+{
+  "id": "7fd810af30144119",
+  "url": "http://www.ufcstats.com/fight-details/7fd810af30144119",
+  "event": {
+    "id": "18f5669a92e99d92",
+    "name": "UFC Fight Night: Kattar vs. Ige",
+    "url": "http://www.ufcstats.com/event-details/18f5669a92e99d92"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "767755fd74662dbf",
+      "name": "Khamzat Chimaev",
+      "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "e9ac7bfb65c25497",
+      "name": "John Phillips",
+      "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Submission",
+    "round": 2,
+    "time": "1:12",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "D'Arce Choke On Ground"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "767755fd74662dbf",
+        "name": "Khamzat Chimaev",
+        "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+      },
+      {
+        "id": "e9ac7bfb65c25497",
+        "name": "John Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 52,
+          "raw": "43 of 52"
+        },
+        "significantStrikePercent": 83,
+        "totalStrikes": {
+          "landed": 124,
+          "attempted": 140,
+          "raw": "124 of 140"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "5:54",
+        "controlSeconds": 354
+      },
+      {
+        "fighter": {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "totalStrikes": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 49,
+            "raw": "40 of 49"
+          },
+          "significantStrikePercent": 82,
+          "totalStrikes": {
+            "landed": 118,
+            "attempted": 133,
+            "raw": "118 of 133"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "4:55",
+          "controlSeconds": 295
+        },
+        {
+          "fighter": {
+            "id": "e9ac7bfb65c25497",
+            "name": "John Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "totalStrikes": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "0:59",
+          "controlSeconds": 59
+        },
+        {
+          "fighter": {
+            "id": "e9ac7bfb65c25497",
+            "name": "John Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "totalStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "767755fd74662dbf",
+        "name": "Khamzat Chimaev",
+        "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+      },
+      {
+        "id": "e9ac7bfb65c25497",
+        "name": "John Phillips",
+        "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        "significantStrikes": {
+          "landed": 43,
+          "attempted": 52,
+          "raw": "43 of 52"
+        },
+        "significantStrikePercent": 83,
+        "head": {
+          "landed": 40,
+          "attempted": 49,
+          "raw": "40 of 49"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 42,
+          "attempted": 51,
+          "raw": "42 of 51"
+        }
+      },
+      {
+        "fighter": {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "significantStrikePercent": 50,
+        "head": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "significantStrikes": {
+            "landed": 40,
+            "attempted": 49,
+            "raw": "40 of 49"
+          },
+          "significantStrikePercent": 82,
+          "head": {
+            "landed": 37,
+            "attempted": 46,
+            "raw": "37 of 46"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 39,
+            "attempted": 48,
+            "raw": "39 of 48"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e9ac7bfb65c25497",
+            "name": "John Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+        },
+        {
+          "id": "e9ac7bfb65c25497",
+          "name": "John Phillips",
+          "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "767755fd74662dbf",
+            "name": "Khamzat Chimaev",
+            "url": "http://www.ufcstats.com/fighter-details/767755fd74662dbf"
+          },
+          "significantStrikes": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "significantStrikePercent": 100,
+          "head": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          }
+        },
+        {
+          "fighter": {
+            "id": "e9ac7bfb65c25497",
+            "name": "John Phillips",
+            "url": "http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497"
+          },
+          "significantStrikes": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "significantStrikePercent": null,
+          "head": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.646Z"
+  }
+}

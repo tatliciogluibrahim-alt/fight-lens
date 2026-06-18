@@ -41,6 +41,10 @@ import pinasAlmeida from "@/data/predictions/pinas-almeida.json";
 import garbrandtYanez from "@/data/predictions/garbrandt-yanez.json";
 import cortezWang from "@/data/predictions/cortez-wang.json";
 import osbourneDurden from "@/data/predictions/osbourne-durden.json";
+// UFC Vegas 119: Kape vs. Horiguchi (modeled fights only; 2 bouts data-pending)
+import kapeHoriguchi from "@/data/predictions/kape-horiguchi.json";
+import cutelabaStirling from "@/data/predictions/cutelaba-stirling.json";
+import oliveiraFili from "@/data/predictions/oliveira-fili.json";
 import { computeAccuracyMetrics } from "./calculator";
 import type { AccuracyMetrics, PredictionRecord } from "./types";
 
@@ -79,6 +83,10 @@ const allRecords: PredictionRecord[] = [
   garbrandtYanez as PredictionRecord,
   cortezWang as PredictionRecord,
   osbourneDurden as PredictionRecord,
+  // UFC Vegas 119
+  kapeHoriguchi as PredictionRecord,
+  cutelabaStirling as PredictionRecord,
+  oliveiraFili as PredictionRecord,
 ];
 
 /**

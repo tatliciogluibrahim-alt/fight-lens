@@ -1,0 +1,764 @@
+{
+  "id": "9b0de83b4e504bf6",
+  "url": "http://www.ufcstats.com/fight-details/9b0de83b4e504bf6",
+  "event": {
+    "id": "2f8f3c69522db931",
+    "name": "UFC Fight Night: De Randamie vs. Ladd",
+    "url": "http://www.ufcstats.com/event-details/2f8f3c69522db931"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "7acbb0972e75281a",
+      "name": "Marvin Vettori",
+      "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "dbc17725b887860a",
+      "name": "Cezar Ferreira",
+      "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Herb Dean",
+    "details": "Mike Bell 27 - 30.Ron McCarthy 27 - 30.Derek Cleary 27 - 30."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "7acbb0972e75281a",
+        "name": "Marvin Vettori",
+        "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+      },
+      {
+        "id": "dbc17725b887860a",
+        "name": "Cezar Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 78,
+          "attempted": 148,
+          "raw": "78 of 148"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 106,
+          "attempted": 176,
+          "raw": "106 of 176"
+        },
+        "takedowns": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "takedownPercent": 50,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:34",
+        "controlSeconds": 154
+      },
+      {
+        "fighter": {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 88,
+          "raw": "39 of 88"
+        },
+        "significantStrikePercent": 44,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 90,
+          "raw": "41 of 90"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 5,
+          "raw": "0 of 5"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:09",
+        "controlSeconds": 9
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 62,
+            "raw": "39 of 62"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:49",
+          "controlSeconds": 49
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "significantStrikePercent": 57,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 44,
+            "raw": "24 of 44"
+          },
+          "significantStrikePercent": 55,
+          "totalStrikes": {
+            "landed": 36,
+            "attempted": 56,
+            "raw": "36 of 56"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "takedownPercent": 50,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "significantStrikePercent": 46,
+          "totalStrikes": {
+            "landed": 14,
+            "attempted": 28,
+            "raw": "14 of 28"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "significantStrikePercent": 31,
+          "totalStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 4,
+            "raw": "0 of 4"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:09",
+          "controlSeconds": 9
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "7acbb0972e75281a",
+        "name": "Marvin Vettori",
+        "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+      },
+      {
+        "id": "dbc17725b887860a",
+        "name": "Cezar Ferreira",
+        "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        "significantStrikes": {
+          "landed": 78,
+          "attempted": 148,
+          "raw": "78 of 148"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 69,
+          "attempted": 137,
+          "raw": "69 of 137"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 9,
+          "raw": "7 of 9"
+        },
+        "leg": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "distance": {
+          "landed": 50,
+          "attempted": 107,
+          "raw": "50 of 107"
+        },
+        "clinch": {
+          "landed": 20,
+          "attempted": 30,
+          "raw": "20 of 30"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        }
+      },
+      {
+        "fighter": {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        },
+        "significantStrikes": {
+          "landed": 39,
+          "attempted": 88,
+          "raw": "39 of 88"
+        },
+        "significantStrikePercent": 44,
+        "head": {
+          "landed": 17,
+          "attempted": 54,
+          "raw": "17 of 54"
+        },
+        "body": {
+          "landed": 7,
+          "attempted": 13,
+          "raw": "7 of 13"
+        },
+        "leg": {
+          "landed": 15,
+          "attempted": 21,
+          "raw": "15 of 21"
+        },
+        "distance": {
+          "landed": 33,
+          "attempted": 81,
+          "raw": "33 of 81"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 23,
+            "attempted": 46,
+            "raw": "23 of 46"
+          },
+          "significantStrikePercent": 50,
+          "head": {
+            "landed": 21,
+            "attempted": 42,
+            "raw": "21 of 42"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 13,
+            "attempted": 31,
+            "raw": "13 of 31"
+          },
+          "clinch": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 9,
+            "raw": "6 of 9"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "significantStrikes": {
+            "landed": 17,
+            "attempted": 30,
+            "raw": "17 of 30"
+          },
+          "significantStrikePercent": 57,
+          "head": {
+            "landed": 2,
+            "attempted": 12,
+            "raw": "2 of 12"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 7,
+            "raw": "5 of 7"
+          },
+          "leg": {
+            "landed": 10,
+            "attempted": 11,
+            "raw": "10 of 11"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 29,
+            "raw": "16 of 29"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 24,
+            "attempted": 44,
+            "raw": "24 of 44"
+          },
+          "significantStrikePercent": 55,
+          "head": {
+            "landed": 22,
+            "attempted": 42,
+            "raw": "22 of 42"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 14,
+            "attempted": 32,
+            "raw": "14 of 32"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "ground": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "significantStrikes": {
+            "landed": 12,
+            "attempted": 26,
+            "raw": "12 of 26"
+          },
+          "significantStrikePercent": 46,
+          "head": {
+            "landed": 6,
+            "attempted": 16,
+            "raw": "6 of 16"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "leg": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 24,
+            "raw": "10 of 24"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "7acbb0972e75281a",
+          "name": "Marvin Vettori",
+          "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+        },
+        {
+          "id": "dbc17725b887860a",
+          "name": "Cezar Ferreira",
+          "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "7acbb0972e75281a",
+            "name": "Marvin Vettori",
+            "url": "http://www.ufcstats.com/fighter-details/7acbb0972e75281a"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 26,
+            "attempted": 53,
+            "raw": "26 of 53"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 23,
+            "attempted": 44,
+            "raw": "23 of 44"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 14,
+            "raw": "8 of 14"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "dbc17725b887860a",
+            "name": "Cezar Ferreira",
+            "url": "http://www.ufcstats.com/fighter-details/dbc17725b887860a"
+          },
+          "significantStrikes": {
+            "landed": 10,
+            "attempted": 32,
+            "raw": "10 of 32"
+          },
+          "significantStrikePercent": 31,
+          "head": {
+            "landed": 9,
+            "attempted": 26,
+            "raw": "9 of 26"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 28,
+            "raw": "7 of 28"
+          },
+          "clinch": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.680Z"
+  }
+}

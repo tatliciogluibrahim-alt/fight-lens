@@ -16,7 +16,10 @@ export type ContextualNoteType =
   | "late-replacement"
   | "debut-or-promotion-jump"
   | "recent-ko-loss"
-  | "injury-return";
+  | "injury-return"
+  | "prior-result"
+  | "recent-form"
+  | "style-matchup";
 
 export interface ContextualFightNote {
   type: ContextualNoteType;

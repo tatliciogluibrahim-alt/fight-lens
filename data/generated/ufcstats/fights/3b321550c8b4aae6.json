@@ -1,0 +1,764 @@
+{
+  "id": "3b321550c8b4aae6",
+  "url": "http://www.ufcstats.com/fight-details/3b321550c8b4aae6",
+  "event": {
+    "id": "354808cf38d9d73c",
+    "name": "UFC 194: Aldo vs McGregor",
+    "url": "http://www.ufcstats.com/event-details/354808cf38d9d73c"
+  },
+  "title": "Featherweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "18968f97ad34f15c",
+      "name": "Jeremy Stephens",
+      "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "150ff4cc642270b9",
+      "name": "Max Holloway",
+      "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "Decision - Unanimous",
+    "round": 3,
+    "time": "5:00",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": null,
+    "details": "Chris Lee 27 - 30.Glenn Trowbridge 27 - 30.Junichiro Kamijo 28 - 29."
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 95,
+          "raw": "47 of 95"
+        },
+        "significantStrikePercent": 49,
+        "totalStrikes": {
+          "landed": 60,
+          "attempted": 110,
+          "raw": "60 of 110"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 12,
+          "raw": "0 of 12"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "2:09",
+        "controlSeconds": 129
+      },
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 57,
+          "attempted": 99,
+          "raw": "57 of 99"
+        },
+        "significantStrikePercent": 58,
+        "totalStrikes": {
+          "landed": 79,
+          "attempted": 122,
+          "raw": "79 of 122"
+        },
+        "takedowns": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "takedownPercent": 100,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "3:26",
+        "controlSeconds": 206
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 25,
+            "raw": "15 of 25"
+          },
+          "significantStrikePercent": 60,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 30,
+            "raw": "19 of 30"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 36,
+            "raw": "21 of 36"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:10",
+          "controlSeconds": 70
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 26,
+            "raw": "11 of 26"
+          },
+          "significantStrikePercent": 42,
+          "totalStrikes": {
+            "landed": 17,
+            "attempted": 33,
+            "raw": "17 of 33"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 5,
+            "raw": "0 of 5"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 31,
+            "raw": "16 of 31"
+          },
+          "significantStrikePercent": 52,
+          "totalStrikes": {
+            "landed": 19,
+            "attempted": 34,
+            "raw": "19 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "1:38",
+          "controlSeconds": 98
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "significantStrikePercent": 48,
+          "totalStrikes": {
+            "landed": 24,
+            "attempted": 47,
+            "raw": "24 of 47"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 2,
+            "raw": "0 of 2"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "2:09",
+          "controlSeconds": 129
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "significantStrikePercent": 67,
+          "totalStrikes": {
+            "landed": 39,
+            "attempted": 52,
+            "raw": "39 of 52"
+          },
+          "takedowns": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "takedownPercent": 100,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:38",
+          "controlSeconds": 38
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "18968f97ad34f15c",
+        "name": "Jeremy Stephens",
+        "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+      },
+      {
+        "id": "150ff4cc642270b9",
+        "name": "Max Holloway",
+        "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        "significantStrikes": {
+          "landed": 47,
+          "attempted": 95,
+          "raw": "47 of 95"
+        },
+        "significantStrikePercent": 49,
+        "head": {
+          "landed": 12,
+          "attempted": 55,
+          "raw": "12 of 55"
+        },
+        "body": {
+          "landed": 11,
+          "attempted": 14,
+          "raw": "11 of 14"
+        },
+        "leg": {
+          "landed": 24,
+          "attempted": 26,
+          "raw": "24 of 26"
+        },
+        "distance": {
+          "landed": 45,
+          "attempted": 85,
+          "raw": "45 of 85"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 10,
+          "raw": "2 of 10"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        },
+        "significantStrikes": {
+          "landed": 57,
+          "attempted": 99,
+          "raw": "57 of 99"
+        },
+        "significantStrikePercent": 58,
+        "head": {
+          "landed": 40,
+          "attempted": 77,
+          "raw": "40 of 77"
+        },
+        "body": {
+          "landed": 12,
+          "attempted": 17,
+          "raw": "12 of 17"
+        },
+        "leg": {
+          "landed": 5,
+          "attempted": 5,
+          "raw": "5 of 5"
+        },
+        "distance": {
+          "landed": 42,
+          "attempted": 81,
+          "raw": "42 of 81"
+        },
+        "clinch": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "ground": {
+          "landed": 9,
+          "attempted": 10,
+          "raw": "9 of 10"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 25,
+            "raw": "15 of 25"
+          },
+          "significantStrikePercent": 60,
+          "head": {
+            "landed": 0,
+            "attempted": 8,
+            "raw": "0 of 8"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 15,
+            "raw": "14 of 15"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 24,
+            "raw": "15 of 24"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 9,
+            "attempted": 19,
+            "raw": "9 of 19"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 8,
+            "raw": "4 of 8"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 15,
+            "attempted": 29,
+            "raw": "15 of 29"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 26,
+            "raw": "11 of 26"
+          },
+          "significantStrikePercent": 42,
+          "head": {
+            "landed": 2,
+            "attempted": 14,
+            "raw": "2 of 14"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 6,
+            "raw": "4 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "distance": {
+            "landed": 10,
+            "attempted": 21,
+            "raw": "10 of 21"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 5,
+            "raw": "1 of 5"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 16,
+            "attempted": 31,
+            "raw": "16 of 31"
+          },
+          "significantStrikePercent": 52,
+          "head": {
+            "landed": 10,
+            "attempted": 25,
+            "raw": "10 of 25"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 11,
+            "attempted": 25,
+            "raw": "11 of 25"
+          },
+          "clinch": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "18968f97ad34f15c",
+          "name": "Jeremy Stephens",
+          "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+        },
+        {
+          "id": "150ff4cc642270b9",
+          "name": "Max Holloway",
+          "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "18968f97ad34f15c",
+            "name": "Jeremy Stephens",
+            "url": "http://www.ufcstats.com/fighter-details/18968f97ad34f15c"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 44,
+            "raw": "21 of 44"
+          },
+          "significantStrikePercent": 48,
+          "head": {
+            "landed": 10,
+            "attempted": 33,
+            "raw": "10 of 33"
+          },
+          "body": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          },
+          "leg": {
+            "landed": 5,
+            "attempted": 5,
+            "raw": "5 of 5"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 40,
+            "raw": "20 of 40"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "150ff4cc642270b9",
+            "name": "Max Holloway",
+            "url": "http://www.ufcstats.com/fighter-details/150ff4cc642270b9"
+          },
+          "significantStrikes": {
+            "landed": 26,
+            "attempted": 39,
+            "raw": "26 of 39"
+          },
+          "significantStrikePercent": 67,
+          "head": {
+            "landed": 21,
+            "attempted": 33,
+            "raw": "21 of 33"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "leg": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "distance": {
+            "landed": 16,
+            "attempted": 27,
+            "raw": "16 of 27"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 9,
+            "attempted": 10,
+            "raw": "9 of 10"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.602Z"
+  }
+}

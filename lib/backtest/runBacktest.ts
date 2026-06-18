@@ -134,8 +134,13 @@ export function runBacktest(features: AsOfFightFeatures): BacktestPrediction {
   // Step 1: Build fight shape model (SPI, form, round sustainability)
   const shapeModel = buildFightShapeModel(fight);
 
-  // Step 2: Build outcome model (win probabilities, method breakdown)
-  const outcomeModel = buildFightOutcomeModel(fight, shapeModel);
+  // Step 2: Build outcome model (win probabilities, method breakdown).
+  // Pinned to v0.2 — the backtest is the frozen corpus the T=0.824 recalibration
+  // was FITTED on, so it stays pre-temperature (raw logistic). The recalibration
+  // is forward-only: it applies to live v0.3 calls, not to its own fitting set.
+  const outcomeModel = buildFightOutcomeModel(fight, shapeModel, {
+    modelVersion: BACKTEST_MODEL_VERSION,
+  });
 
   return {
     fightId: features.fightId,
@@ -150,6 +155,7 @@ export function runBacktest(features: AsOfFightFeatures): BacktestPrediction {
     confidence: mapConfidence(outcomeModel.confidence),
     modelVersion: BACKTEST_MODEL_VERSION,
     leakageChecked: true,
+    rawDelta: outcomeModel.rawDelta,
   };
 }
 

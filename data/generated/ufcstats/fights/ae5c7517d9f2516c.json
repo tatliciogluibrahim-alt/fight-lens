@@ -1,0 +1,404 @@
+{
+  "id": "ae5c7517d9f2516c",
+  "url": "http://www.ufcstats.com/fight-details/ae5c7517d9f2516c",
+  "event": {
+    "id": "99bf06f20491cb54",
+    "name": "UFC Fight Night: Chiesa vs. Lee",
+    "url": "http://www.ufcstats.com/event-details/99bf06f20491cb54"
+  },
+  "title": "Light Heavyweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "2e19380f34871c6a",
+      "name": "Dominick Reyes",
+      "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "2d447cc91bdaa545",
+      "name": "Joachim Christensen",
+      "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "0:29",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Gary Ritter",
+    "details": "Punches to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "2e19380f34871c6a",
+        "name": "Dominick Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+      },
+      {
+        "id": "2d447cc91bdaa545",
+        "name": "Joachim Christensen",
+        "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "significantStrikePercent": 81,
+        "totalStrikes": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:07",
+        "controlSeconds": 7
+      },
+      {
+        "fighter": {
+          "id": "2d447cc91bdaa545",
+          "name": "Joachim Christensen",
+          "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "significantStrikePercent": 33,
+        "totalStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "2d447cc91bdaa545",
+          "name": "Joachim Christensen",
+          "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "significantStrikePercent": 81,
+          "totalStrikes": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:07",
+          "controlSeconds": 7
+        },
+        {
+          "fighter": {
+            "id": "2d447cc91bdaa545",
+            "name": "Joachim Christensen",
+            "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "totalStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "2e19380f34871c6a",
+        "name": "Dominick Reyes",
+        "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+      },
+      {
+        "id": "2d447cc91bdaa545",
+        "name": "Joachim Christensen",
+        "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        "significantStrikes": {
+          "landed": 13,
+          "attempted": 16,
+          "raw": "13 of 16"
+        },
+        "significantStrikePercent": 81,
+        "head": {
+          "landed": 10,
+          "attempted": 13,
+          "raw": "10 of 13"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 7,
+          "attempted": 10,
+          "raw": "7 of 10"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 6,
+          "raw": "6 of 6"
+        }
+      },
+      {
+        "fighter": {
+          "id": "2d447cc91bdaa545",
+          "name": "Joachim Christensen",
+          "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+        },
+        "significantStrikes": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "significantStrikePercent": 33,
+        "head": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "body": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "leg": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "distance": {
+          "landed": 1,
+          "attempted": 3,
+          "raw": "1 of 3"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+        },
+        {
+          "id": "2d447cc91bdaa545",
+          "name": "Joachim Christensen",
+          "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "2e19380f34871c6a",
+            "name": "Dominick Reyes",
+            "url": "http://www.ufcstats.com/fighter-details/2e19380f34871c6a"
+          },
+          "significantStrikes": {
+            "landed": 13,
+            "attempted": 16,
+            "raw": "13 of 16"
+          },
+          "significantStrikePercent": 81,
+          "head": {
+            "landed": 10,
+            "attempted": 13,
+            "raw": "10 of 13"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 7,
+            "attempted": 10,
+            "raw": "7 of 10"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 6,
+            "raw": "6 of 6"
+          }
+        },
+        {
+          "fighter": {
+            "id": "2d447cc91bdaa545",
+            "name": "Joachim Christensen",
+            "url": "http://www.ufcstats.com/fighter-details/2d447cc91bdaa545"
+          },
+          "significantStrikes": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "significantStrikePercent": 33,
+          "head": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "body": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "leg": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "distance": {
+            "landed": 1,
+            "attempted": 3,
+            "raw": "1 of 3"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.538Z"
+  }
+}

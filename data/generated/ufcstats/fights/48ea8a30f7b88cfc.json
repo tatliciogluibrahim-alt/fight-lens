@@ -1,0 +1,404 @@
+{
+  "id": "48ea8a30f7b88cfc",
+  "url": "http://www.ufcstats.com/fight-details/48ea8a30f7b88cfc",
+  "event": {
+    "id": "1ef0eae31904e534",
+    "name": "UFC 229: Khabib vs. McGregor",
+    "url": "http://www.ufcstats.com/event-details/1ef0eae31904e534"
+  },
+  "title": "Welterweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "4d8fa64202cee4c1",
+      "name": "Jalin Turner",
+      "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "6d4b63c767106d3a",
+      "name": "Vicente Luque",
+      "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "3:52",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Dan Miragliotta",
+    "details": "Punches to Head From Guard"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "4d8fa64202cee4c1",
+        "name": "Jalin Turner",
+        "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+      },
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4d8fa64202cee4c1",
+          "name": "Jalin Turner",
+          "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "--",
+        "controlSeconds": null
+      },
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 64,
+          "raw": "41 of 64"
+        },
+        "significantStrikePercent": 64,
+        "totalStrikes": {
+          "landed": 41,
+          "attempted": 64,
+          "raw": "41 of 64"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "4d8fa64202cee4c1",
+          "name": "Jalin Turner",
+          "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4d8fa64202cee4c1",
+            "name": "Jalin Turner",
+            "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "--",
+          "controlSeconds": null
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 64,
+            "raw": "41 of 64"
+          },
+          "significantStrikePercent": 64,
+          "totalStrikes": {
+            "landed": 41,
+            "attempted": 64,
+            "raw": "41 of 64"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "4d8fa64202cee4c1",
+        "name": "Jalin Turner",
+        "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+      },
+      {
+        "id": "6d4b63c767106d3a",
+        "name": "Vicente Luque",
+        "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "4d8fa64202cee4c1",
+          "name": "Jalin Turner",
+          "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+        },
+        "significantStrikes": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 25,
+          "attempted": 50,
+          "raw": "25 of 50"
+        },
+        "body": {
+          "landed": 5,
+          "attempted": 6,
+          "raw": "5 of 6"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 58,
+          "raw": "31 of 58"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        },
+        "significantStrikes": {
+          "landed": 41,
+          "attempted": 64,
+          "raw": "41 of 64"
+        },
+        "significantStrikePercent": 64,
+        "head": {
+          "landed": 25,
+          "attempted": 48,
+          "raw": "25 of 48"
+        },
+        "body": {
+          "landed": 2,
+          "attempted": 2,
+          "raw": "2 of 2"
+        },
+        "leg": {
+          "landed": 14,
+          "attempted": 14,
+          "raw": "14 of 14"
+        },
+        "distance": {
+          "landed": 31,
+          "attempted": 51,
+          "raw": "31 of 51"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 4,
+          "raw": "2 of 4"
+        },
+        "ground": {
+          "landed": 8,
+          "attempted": 9,
+          "raw": "8 of 9"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "4d8fa64202cee4c1",
+          "name": "Jalin Turner",
+          "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+        },
+        {
+          "id": "6d4b63c767106d3a",
+          "name": "Vicente Luque",
+          "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "4d8fa64202cee4c1",
+            "name": "Jalin Turner",
+            "url": "http://www.ufcstats.com/fighter-details/4d8fa64202cee4c1"
+          },
+          "significantStrikes": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 25,
+            "attempted": 50,
+            "raw": "25 of 50"
+          },
+          "body": {
+            "landed": 5,
+            "attempted": 6,
+            "raw": "5 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "distance": {
+            "landed": 31,
+            "attempted": 58,
+            "raw": "31 of 58"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6d4b63c767106d3a",
+            "name": "Vicente Luque",
+            "url": "http://www.ufcstats.com/fighter-details/6d4b63c767106d3a"
+          },
+          "significantStrikes": {
+            "landed": 41,
+            "attempted": 64,
+            "raw": "41 of 64"
+          },
+          "significantStrikePercent": 64,
+          "head": {
+            "landed": 25,
+            "attempted": 48,
+            "raw": "25 of 48"
+          },
+          "body": {
+            "landed": 2,
+            "attempted": 2,
+            "raw": "2 of 2"
+          },
+          "leg": {
+            "landed": 14,
+            "attempted": 14,
+            "raw": "14 of 14"
+          },
+          "distance": {
+            "landed": 31,
+            "attempted": 51,
+            "raw": "31 of 51"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 4,
+            "raw": "2 of 4"
+          },
+          "ground": {
+            "landed": 8,
+            "attempted": 9,
+            "raw": "8 of 9"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.592Z"
+  }
+}

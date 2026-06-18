@@ -1,0 +1,404 @@
+{
+  "id": "39fa341fb9161d6f",
+  "url": "http://www.ufcstats.com/fight-details/39fa341fb9161d6f",
+  "event": {
+    "id": "2d5fbe2103f97053",
+    "name": "UFC 235: Jones vs. Smith",
+    "url": "http://www.ufcstats.com/event-details/2d5fbe2103f97053"
+  },
+  "title": "Bantamweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "d8c7c61b176e3994",
+      "name": "Cody Garbrandt",
+      "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994",
+      "nickname": null,
+      "result": "L"
+    },
+    {
+      "id": "6bd02119599741a4",
+      "name": "Pedro Munhoz",
+      "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4",
+      "nickname": null,
+      "result": "W"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:52",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Marc Goddard",
+    "details": "Punch to Head At Distance"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "6bd02119599741a4",
+        "name": "Pedro Munhoz",
+        "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "kd": 0,
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 60,
+          "raw": "21 of 60"
+        },
+        "significantStrikePercent": 35,
+        "totalStrikes": {
+          "landed": 21,
+          "attempted": 60,
+          "raw": "21 of 60"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:04",
+        "controlSeconds": 4
+      },
+      {
+        "fighter": {
+          "id": "6bd02119599741a4",
+          "name": "Pedro Munhoz",
+          "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 47,
+          "raw": "25 of 47"
+        },
+        "significantStrikePercent": 53,
+        "totalStrikes": {
+          "landed": 28,
+          "attempted": 51,
+          "raw": "28 of 51"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 1,
+          "raw": "0 of 1"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:21",
+        "controlSeconds": 21
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "6bd02119599741a4",
+          "name": "Pedro Munhoz",
+          "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "kd": 0,
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 60,
+            "raw": "21 of 60"
+          },
+          "significantStrikePercent": 35,
+          "totalStrikes": {
+            "landed": 21,
+            "attempted": 60,
+            "raw": "21 of 60"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:04",
+          "controlSeconds": 4
+        },
+        {
+          "fighter": {
+            "id": "6bd02119599741a4",
+            "name": "Pedro Munhoz",
+            "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 47,
+            "raw": "25 of 47"
+          },
+          "significantStrikePercent": 53,
+          "totalStrikes": {
+            "landed": 28,
+            "attempted": 51,
+            "raw": "28 of 51"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 1,
+            "raw": "0 of 1"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:21",
+          "controlSeconds": 21
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "d8c7c61b176e3994",
+        "name": "Cody Garbrandt",
+        "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+      },
+      {
+        "id": "6bd02119599741a4",
+        "name": "Pedro Munhoz",
+        "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        "significantStrikes": {
+          "landed": 21,
+          "attempted": 60,
+          "raw": "21 of 60"
+        },
+        "significantStrikePercent": 35,
+        "head": {
+          "landed": 19,
+          "attempted": 50,
+          "raw": "19 of 50"
+        },
+        "body": {
+          "landed": 1,
+          "attempted": 6,
+          "raw": "1 of 6"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 4,
+          "raw": "1 of 4"
+        },
+        "distance": {
+          "landed": 20,
+          "attempted": 59,
+          "raw": "20 of 59"
+        },
+        "clinch": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "ground": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        }
+      },
+      {
+        "fighter": {
+          "id": "6bd02119599741a4",
+          "name": "Pedro Munhoz",
+          "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+        },
+        "significantStrikes": {
+          "landed": 25,
+          "attempted": 47,
+          "raw": "25 of 47"
+        },
+        "significantStrikePercent": 53,
+        "head": {
+          "landed": 16,
+          "attempted": 36,
+          "raw": "16 of 36"
+        },
+        "body": {
+          "landed": 3,
+          "attempted": 3,
+          "raw": "3 of 3"
+        },
+        "leg": {
+          "landed": 6,
+          "attempted": 8,
+          "raw": "6 of 8"
+        },
+        "distance": {
+          "landed": 18,
+          "attempted": 38,
+          "raw": "18 of 38"
+        },
+        "clinch": {
+          "landed": 1,
+          "attempted": 2,
+          "raw": "1 of 2"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 7,
+          "raw": "6 of 7"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "d8c7c61b176e3994",
+          "name": "Cody Garbrandt",
+          "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+        },
+        {
+          "id": "6bd02119599741a4",
+          "name": "Pedro Munhoz",
+          "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "d8c7c61b176e3994",
+            "name": "Cody Garbrandt",
+            "url": "http://www.ufcstats.com/fighter-details/d8c7c61b176e3994"
+          },
+          "significantStrikes": {
+            "landed": 21,
+            "attempted": 60,
+            "raw": "21 of 60"
+          },
+          "significantStrikePercent": 35,
+          "head": {
+            "landed": 19,
+            "attempted": 50,
+            "raw": "19 of 50"
+          },
+          "body": {
+            "landed": 1,
+            "attempted": 6,
+            "raw": "1 of 6"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 4,
+            "raw": "1 of 4"
+          },
+          "distance": {
+            "landed": 20,
+            "attempted": 59,
+            "raw": "20 of 59"
+          },
+          "clinch": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "ground": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          }
+        },
+        {
+          "fighter": {
+            "id": "6bd02119599741a4",
+            "name": "Pedro Munhoz",
+            "url": "http://www.ufcstats.com/fighter-details/6bd02119599741a4"
+          },
+          "significantStrikes": {
+            "landed": 25,
+            "attempted": 47,
+            "raw": "25 of 47"
+          },
+          "significantStrikePercent": 53,
+          "head": {
+            "landed": 16,
+            "attempted": 36,
+            "raw": "16 of 36"
+          },
+          "body": {
+            "landed": 3,
+            "attempted": 3,
+            "raw": "3 of 3"
+          },
+          "leg": {
+            "landed": 6,
+            "attempted": 8,
+            "raw": "6 of 8"
+          },
+          "distance": {
+            "landed": 18,
+            "attempted": 38,
+            "raw": "18 of 38"
+          },
+          "clinch": {
+            "landed": 1,
+            "attempted": 2,
+            "raw": "1 of 2"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 7,
+            "raw": "6 of 7"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.503Z"
+  }
+}

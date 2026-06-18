@@ -1,0 +1,404 @@
+{
+  "id": "fbc7d73f7bf60b9c",
+  "url": "http://www.ufcstats.com/fight-details/fbc7d73f7bf60b9c",
+  "event": {
+    "id": "d1152823307d7e7c",
+    "name": "UFC 125: Resolution",
+    "url": "http://www.ufcstats.com/event-details/d1152823307d7e7c"
+  },
+  "title": "Middleweight Bout",
+  "status": "completed",
+  "fighters": [
+    {
+      "id": "0c6d9ea8306c029e",
+      "name": "Brad Tavares",
+      "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e",
+      "nickname": null,
+      "result": "W"
+    },
+    {
+      "id": "1652f3213655b935",
+      "name": "Phil Baroni",
+      "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935",
+      "nickname": null,
+      "result": "L"
+    }
+  ],
+  "result": {
+    "method": "KO/TKO",
+    "round": 1,
+    "time": "4:20",
+    "timeFormat": "3 Rnd (5-5-5)",
+    "referee": "Josh Rosenthal",
+    "details": "Punches to Head In Clinch"
+  },
+  "matchupPreview": null,
+  "totals": {
+    "kind": "totals",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "1652f3213655b935",
+        "name": "Phil Baroni",
+        "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        },
+        "significantStrikePercent": 71,
+        "totalStrikes": {
+          "landed": 25,
+          "attempted": 34,
+          "raw": "25 of 34"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 3,
+          "raw": "0 of 3"
+        },
+        "takedownPercent": 0,
+        "submissionAttempts": 0,
+        "reversals": 0,
+        "control": "0:44",
+        "controlSeconds": 44
+      },
+      {
+        "fighter": {
+          "id": "1652f3213655b935",
+          "name": "Phil Baroni",
+          "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+        },
+        "kd": 1,
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "significantStrikePercent": 69,
+        "totalStrikes": {
+          "landed": 23,
+          "attempted": 29,
+          "raw": "23 of 29"
+        },
+        "takedowns": {
+          "landed": 0,
+          "attempted": 0,
+          "raw": "0 of 0"
+        },
+        "takedownPercent": null,
+        "submissionAttempts": 1,
+        "reversals": 0,
+        "control": "1:49",
+        "controlSeconds": 109
+      }
+    ]
+  },
+  "roundStats": [
+    {
+      "round": 1,
+      "kind": "round",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "1652f3213655b935",
+          "name": "Phil Baroni",
+          "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          },
+          "significantStrikePercent": 71,
+          "totalStrikes": {
+            "landed": 25,
+            "attempted": 34,
+            "raw": "25 of 34"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 3,
+            "raw": "0 of 3"
+          },
+          "takedownPercent": 0,
+          "submissionAttempts": 0,
+          "reversals": 0,
+          "control": "0:44",
+          "controlSeconds": 44
+        },
+        {
+          "fighter": {
+            "id": "1652f3213655b935",
+            "name": "Phil Baroni",
+            "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+          },
+          "kd": 1,
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "significantStrikePercent": 69,
+          "totalStrikes": {
+            "landed": 23,
+            "attempted": 29,
+            "raw": "23 of 29"
+          },
+          "takedowns": {
+            "landed": 0,
+            "attempted": 0,
+            "raw": "0 of 0"
+          },
+          "takedownPercent": null,
+          "submissionAttempts": 1,
+          "reversals": 0,
+          "control": "1:49",
+          "controlSeconds": 109
+        }
+      ]
+    }
+  ],
+  "significantStrikes": {
+    "kind": "significantStrikes",
+    "fighters": [
+      {
+        "id": "0c6d9ea8306c029e",
+        "name": "Brad Tavares",
+        "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+      },
+      {
+        "id": "1652f3213655b935",
+        "name": "Phil Baroni",
+        "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+      }
+    ],
+    "stats": [
+      {
+        "fighter": {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        "significantStrikes": {
+          "landed": 22,
+          "attempted": 31,
+          "raw": "22 of 31"
+        },
+        "significantStrikePercent": 71,
+        "head": {
+          "landed": 15,
+          "attempted": 23,
+          "raw": "15 of 23"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 3,
+          "attempted": 4,
+          "raw": "3 of 4"
+        },
+        "distance": {
+          "landed": 8,
+          "attempted": 11,
+          "raw": "8 of 11"
+        },
+        "clinch": {
+          "landed": 8,
+          "attempted": 10,
+          "raw": "8 of 10"
+        },
+        "ground": {
+          "landed": 6,
+          "attempted": 10,
+          "raw": "6 of 10"
+        }
+      },
+      {
+        "fighter": {
+          "id": "1652f3213655b935",
+          "name": "Phil Baroni",
+          "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+        },
+        "significantStrikes": {
+          "landed": 11,
+          "attempted": 16,
+          "raw": "11 of 16"
+        },
+        "significantStrikePercent": 69,
+        "head": {
+          "landed": 6,
+          "attempted": 11,
+          "raw": "6 of 11"
+        },
+        "body": {
+          "landed": 4,
+          "attempted": 4,
+          "raw": "4 of 4"
+        },
+        "leg": {
+          "landed": 1,
+          "attempted": 1,
+          "raw": "1 of 1"
+        },
+        "distance": {
+          "landed": 2,
+          "attempted": 5,
+          "raw": "2 of 5"
+        },
+        "clinch": {
+          "landed": 2,
+          "attempted": 3,
+          "raw": "2 of 3"
+        },
+        "ground": {
+          "landed": 7,
+          "attempted": 8,
+          "raw": "7 of 8"
+        }
+      }
+    ]
+  },
+  "significantStrikesByRound": [
+    {
+      "round": 1,
+      "kind": "significantStrikes",
+      "fighters": [
+        {
+          "id": "0c6d9ea8306c029e",
+          "name": "Brad Tavares",
+          "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+        },
+        {
+          "id": "1652f3213655b935",
+          "name": "Phil Baroni",
+          "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+        }
+      ],
+      "stats": [
+        {
+          "fighter": {
+            "id": "0c6d9ea8306c029e",
+            "name": "Brad Tavares",
+            "url": "http://www.ufcstats.com/fighter-details/0c6d9ea8306c029e"
+          },
+          "significantStrikes": {
+            "landed": 22,
+            "attempted": 31,
+            "raw": "22 of 31"
+          },
+          "significantStrikePercent": 71,
+          "head": {
+            "landed": 15,
+            "attempted": 23,
+            "raw": "15 of 23"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 3,
+            "attempted": 4,
+            "raw": "3 of 4"
+          },
+          "distance": {
+            "landed": 8,
+            "attempted": 11,
+            "raw": "8 of 11"
+          },
+          "clinch": {
+            "landed": 8,
+            "attempted": 10,
+            "raw": "8 of 10"
+          },
+          "ground": {
+            "landed": 6,
+            "attempted": 10,
+            "raw": "6 of 10"
+          }
+        },
+        {
+          "fighter": {
+            "id": "1652f3213655b935",
+            "name": "Phil Baroni",
+            "url": "http://www.ufcstats.com/fighter-details/1652f3213655b935"
+          },
+          "significantStrikes": {
+            "landed": 11,
+            "attempted": 16,
+            "raw": "11 of 16"
+          },
+          "significantStrikePercent": 69,
+          "head": {
+            "landed": 6,
+            "attempted": 11,
+            "raw": "6 of 11"
+          },
+          "body": {
+            "landed": 4,
+            "attempted": 4,
+            "raw": "4 of 4"
+          },
+          "leg": {
+            "landed": 1,
+            "attempted": 1,
+            "raw": "1 of 1"
+          },
+          "distance": {
+            "landed": 2,
+            "attempted": 5,
+            "raw": "2 of 5"
+          },
+          "clinch": {
+            "landed": 2,
+            "attempted": 3,
+            "raw": "2 of 3"
+          },
+          "ground": {
+            "landed": 7,
+            "attempted": 8,
+            "raw": "7 of 8"
+          }
+        }
+      ]
+    }
+  ],
+  "source": {
+    "provenance": "sourced",
+    "sourceName": "greco1899/scrape_ufc_stats",
+    "sourceUrl": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/main/ufc_fight_stats.csv",
+    "fetchedAt": "2026-06-17T03:43:32.473Z"
+  }
+}
