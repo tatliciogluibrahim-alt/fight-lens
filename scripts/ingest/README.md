@@ -47,10 +47,63 @@ Completed fight detail with round-level stats:
 npm run ingest:ufcstats -- --fight-url http://www.ufcstats.com/fight-details/394b0347b0438622
 ```
 
+## Headless Mode (JS anti-bot challenge)
+
+As of July 2026 ufcstats.com serves a JavaScript "proof-of-work" anti-bot gate
+to plain HTTP clients. A normal fetch gets a ~3KB stub that reads
+"Checking your browser… This site requires JavaScript" and contains **zero fight
+rows**. You can confirm it yourself:
+
+```txt
+curl -s 'http://www.ufcstats.com/event-details/fccb0fee256b7b4d' | head -c 200
+```
+
+When that happens, add `--headless`. It fetches through a real headless Chromium
+(Playwright) that runs the challenge JS, solves the nonce, and returns the real
+HTML. The same cheerio parsing, cache, and output pipeline run unchanged — only
+the transport differs. There is a ready-made script that bakes in the flag:
+
+```txt
+npm run ingest:ufcstats:headless -- --event-url http://www.ufcstats.com/event-details/fccb0fee256b7b4d
+```
+
+Or add `--headless` to any normal invocation:
+
+```txt
+npm run ingest:ufcstats -- --headless --fighter-url http://www.ufcstats.com/fighter-details/767755fd74662dbf
+```
+
+Notes:
+
+- **One-time setup:** `npm install` then `npx playwright install chromium` (a
+  Chromium binary, ~150MB, downloads to your machine cache, not the repo).
+- The challenge is solved **once per run**. The browser context stays alive, so
+  every page after the first reuses the cookie and skips the challenge (about
+  0.5s per page instead of ~1.5s). Solving once for a full card is normal.
+- A cached challenge stub is **never** treated as a valid cache hit. If an older
+  plain-fetch run poisoned the cache with a "Checking your browser…" page, the
+  headless run ignores it and re-fetches automatically (even without `--refresh`).
+- If the challenge does not resolve (site down, slow, or the challenge changed),
+  the run **throws a clear error and writes no data** rather than saving an empty
+  page. Retry, or raise `--headless-timeout-ms`.
+- `--refresh` still forces a fresh fetch; a good cached page still short-circuits
+  the browser otherwise.
+
+Dry-run to a scratch folder (does not touch committed `data/`):
+
+```txt
+UFCSTATS_OUTPUT_DIR=/tmp/ufcstats-dry npm run ingest:ufcstats:headless -- --event-url <url>
+```
+
 ## Safety Options
 
 ```txt
 --refresh              Fetch fresh pages instead of using cached JSON snapshots.
+--headless             Fetch via a real headless browser that solves the JS
+                       anti-bot challenge. Use when plain fetch returns a
+                       "Checking your browser…" stub with 0 fight rows.
+--headless-timeout-ms 30000
+                       Max wait for the challenge to resolve per page.
 --delay-ms 900         Wait between public website requests.
 --max-requests 12      Stop before too many network requests happen.
 --max-fights 3         Limit detail fetches from an event page.
@@ -125,3 +178,5 @@ The UI now has fighter image slots, but the ingestion utility does not scrape ph
 - Upcoming UFCStats fight pages may only provide a matchup preview, not round-level stats.
 - Completed fight pages are where round-level stats are usually available.
 - If UFCStats markup changes, the script should fail visibly instead of inventing data.
+- If a fetch returns 0 fight rows, UFCStats is likely serving its JS anti-bot
+  challenge to plain HTTP. Re-run with `--headless` (see "Headless Mode" above).

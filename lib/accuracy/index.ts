@@ -111,14 +111,27 @@ function isHistoricalBacktest(record: PredictionRecord): boolean {
   return Boolean(record.isBacktestReconstruction);
 }
 
+/** True when the bout was scrapped before it happened (fighter withdrawal, bout pulled). */
+export function isCancelledCall(record: PredictionRecord): boolean {
+  return Boolean(record.cancelled);
+}
+
 /** All records (locked + historical backtest). Avoid using for public metrics. */
 export function getAllPredictions(): PredictionRecord[] {
   return allRecords;
 }
 
-/** Locked pre-fight calls only — the public Model Record. */
+/** Locked pre-fight calls only — the public Model Record (includes cancelled, shown as such). */
 export function getLockedPredictions(): PredictionRecord[] {
   return allRecords.filter(isLockedCall);
+}
+
+/**
+ * Live locked calls — cancelled bouts removed. Use for the "calls logged"
+ * count and anywhere a scrapped bout should not surface as a live prediction.
+ */
+export function getLiveLockedPredictions(): PredictionRecord[] {
+  return allRecords.filter((r) => isLockedCall(r) && !isCancelledCall(r));
 }
 
 /** Historical backtest reconstructions — show separately, labeled clearly. */
@@ -132,7 +145,7 @@ export function getHistoricalBacktestReconstructions(): PredictionRecord[] {
  * logged before the fights happened.
  */
 export function getAccuracyMetrics(): AccuracyMetrics {
-  return computeAccuracyMetrics(getLockedPredictions());
+  return computeAccuracyMetrics(getLiveLockedPredictions());
 }
 
 export function getPredictionByFightId(fightId: string): PredictionRecord | null {

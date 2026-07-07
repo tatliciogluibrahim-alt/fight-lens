@@ -2,8 +2,19 @@
 
 **Status: DORMANT. Measured, NOT shipped. Do not wire into the live model.**
 
-The live model stays `outcome-v0.2`. Every locked call (Freedom 250 and UFC 329) is unchanged.
-This is the "scaffold → backtest → decide" gate the Priority-1 vNext item called for.
+> NAMING RECONCILIATION (2026-07-07): the id "v0.3" was overloaded. This document's
+> "v0.3" is the DORMANT opponent-tier candidate below, which was never shipped. The
+> CODE, however, shipped a DIFFERENT `outcome-v0.3` (a T=0.824 temperature
+> recalibration) that appeared in no doc. That temperature recal is what the 14
+> `outcome-v0.3` locked calls were made under, and it stays frozen so those calls
+> reproduce. The live model is now `outcome-v0.4`, which turns the temperature OFF (the
+> backtest showed it hurts calibration) and is documented in MODEL_STATUS.md /
+> MODEL_EXPERIMENTS.md. The opponent-tier idea below remains dormant and unshipped; it is
+> NOT part of v0.4. When a résumé-trajectory model is ready it should ship as v0.5+, not
+> reuse the "v0.3" name.
+
+The opponent-tier candidate below leaves every locked call unchanged. This is the
+"scaffold -> backtest -> decide" gate the Priority-1 vNext item called for.
 
 ## What was built
 

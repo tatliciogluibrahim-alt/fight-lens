@@ -12,7 +12,25 @@ import { buildFightOutcomeModel } from "@/lib/fight-outcome-model/model";
 import type { SourcedFight, SourcedFighter } from "@/lib/sourced-event";
 import type { AsOfFightFeatures, AsOfFighterFeatures, BacktestPrediction } from "./types";
 
-const BACKTEST_MODEL_VERSION = "outcome-v0.2";
+// Default backtest version = the current SHIPPED live model. The backtest now
+// evaluates the configuration that actually ships (v0.4: raw logistic, no
+// temperature, matchup-aware method, missing-data handling). The before/after
+// A/B overrides this via env (BACKTEST_VERSION / BACKTEST_TEMP, handled in
+// scripts/backtest/run.ts) to score older configs (v0.2 raw, v0.3 temperature).
+const BACKTEST_MODEL_VERSION = "outcome-v0.4";
+
+export interface RunBacktestOptions {
+  /** Override the model version the outcome model runs at (default: shipped live). */
+  modelVersion?: string;
+  /** Temperature override for the calibration A/B (T=1 is a no-op). */
+  temperature?: number | null;
+  /**
+   * When explicitly false, measure layoff against today (the pre-fix live
+   * behavior) instead of the fight date. Only used to isolate the as-of fix in
+   * the before/after comparison. Defaults to the corrected as-of behavior.
+   */
+  layoffAsOf?: boolean;
+}
 
 // ─── Reconstruct a minimal SourcedFighter from as-of features ────────────────
 //
@@ -128,18 +146,27 @@ function mapConfidence(
  * @param features - Leakage-checked as-of features for both fighters
  * @returns BacktestPrediction with win probabilities and method breakdown
  */
-export function runBacktest(features: AsOfFightFeatures): BacktestPrediction {
+export function runBacktest(
+  features: AsOfFightFeatures,
+  options?: RunBacktestOptions,
+): BacktestPrediction {
   const fight = reconstructFight(features);
+  const modelVersion = options?.modelVersion ?? BACKTEST_MODEL_VERSION;
 
-  // Step 1: Build fight shape model (SPI, form, round sustainability)
-  const shapeModel = buildFightShapeModel(fight);
+  // Step 1: Build fight shape model (SPI, form, round sustainability).
+  // AS-OF FIX: pass the fight date so layoff shrinkage is measured relative to
+  // when the fight happened, not today. Without this, older backtest fights get
+  // a fake multi-year layoff and their form is wrongly shrunk toward the prior.
+  const shapeModel = buildFightShapeModel(fight, {
+    asOf: options?.layoffAsOf === false ? null : features.asOfDate,
+  });
 
-  // Step 2: Build outcome model (win probabilities, method breakdown).
-  // Pinned to v0.2 — the backtest is the frozen corpus the T=0.824 recalibration
-  // was FITTED on, so it stays pre-temperature (raw logistic). The recalibration
-  // is forward-only: it applies to live v0.3 calls, not to its own fitting set.
+  // Step 2: Build outcome model (win probabilities, method breakdown) at the
+  // requested version, so the backtest can score the shipped live config and
+  // the A/B variants.
   const outcomeModel = buildFightOutcomeModel(fight, shapeModel, {
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion,
+    temperature: options?.temperature,
   });
 
   return {
@@ -153,7 +180,7 @@ export function runBacktest(features: AsOfFightFeatures): BacktestPrediction {
       submission: outcomeModel.methodBreakdown.submission,
     },
     confidence: mapConfidence(outcomeModel.confidence),
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion,
     leakageChecked: true,
     rawDelta: outcomeModel.rawDelta,
   };

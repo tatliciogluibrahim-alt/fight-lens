@@ -1,5 +1,91 @@
 # Fight Lens - Baseline Validation and Model Experiments
 
+## v0.4 model-defect fixes (2026-07-07) - controlled before/after
+
+Scope: the five model-defect fixes from the heavy review. Every probability/method change is
+gated behind `outcome-v0.4` so v0.1/v0.2/v0.3 locked calls reproduce exactly
+(`npm run audit:drift` = 21 checked, 0 drifted). Corpus: 263 scored fights. Control = the
+prior pinned v0.2 backtest.
+
+Reproduce configs via env on `npm run backtest`:
+`BACKTEST_VERSION=outcome-v0.2|outcome-v0.3|outcome-v0.4`, `BACKTEST_TEMP=<T>`,
+`BACKTEST_NO_ASOF=1`, `BACKTEST_HOLDOUT=<substr>` / `--holdout <substr>`.
+
+### Headline before/after
+
+| Config | Winner acc | Method acc | Brier | Decision |
+| --- | --- | --- | --- | --- |
+| Control: v0.2 raw (as-of bug on) | 66% | 59% | 0.218 | baseline |
+| v0.2 + as-of layoff fix (#3) | 66% | 59% | 0.218 | keep (correctness, metrics stable) |
+| v0.3 shipped config (T=0.824, never measured) | 66% | 59% | 0.218 | reference |
+| **v0.4 shipped (all fixes, temp off)** | **70%** | **59%** | **0.223** | **ship** |
+
+### Fix #3 - as-of layoff (backtest correctness)
+
+`monthsSinceLastFight` used `Date.now()`, so backtest fights got a fake layoff measured
+against today. Threaded the fight date through `buildFightShapeModel(fight, { asOf })`. Isolated
+effect on this corpus: none (66/59/0.218 unchanged) because the events are recent and few
+fighters crossed a layoff boundary differently. Kept as a correctness fix (no regression). Live
+app is unaffected: it omits `asOf` and keeps `Date.now()`, which is correct for an upcoming fight.
+
+### Fix #4 - temperature / version reconciliation (calibration A/B)
+
+Per-bucket calibration gap (|pred - actual|), smaller is better:
+
+| Config | 60-70 gap | 70-80 gap | 80+ gap | Brier |
+| --- | --- | --- | --- | --- |
+| v0.2 raw | 2 | 1 | 7 | 0.218 |
+| v0.3 T=0.824 (shipped, old math) | 4 | 7 | 5 | 0.218 |
+| v0.4 temp OFF (T=1.0) | 0 | 1 | 2 | 0.223 |
+| v0.4 + T=0.824 (sharpen) | 6 | 10 | 2 | 0.223 |
+| v0.4 + T=1.1 (shrink) | 2 | 3 | 2 | 0.223 |
+| v0.4 + T=1.2 (shrink more) | 4 | 5 | 3 | 0.223 |
+
+Read: T=0.824 SHARPENS, and the model was already calibrated, so it inflates the 60-80% band
+(blows the 70-80 gap out to 7-10). Temperature OFF gives the smallest gaps. Shrinkage (T>1)
+does not beat off. Decision: retire temperature (v0.4). v0.3's temperature stays defined for its
+14 locked calls; the overloaded "v0.3 = opponent-tier" naming is corrected (see
+model-vnext-v03-candidate.md).
+
+### Fix #2 - missing-data handling
+
+Tested three variants for the phantom-average removal:
+
+| Variant | Winner | Brier | 80%+ bucket (n / missing) | Note |
+| --- | --- | --- | --- | --- |
+| Weight-drop, present-weight denominator (SHIPPED) | 70% | 0.223 | 23 / 74% | best calibration |
+| Zero-delta, full denominator (hard shrink) | 69% | 0.225 | 7 / 71% | underconfident |
+| Denominator blend (lambda=0.5) | 70% | 0.223 | 16 / 75% | mild underconfidence |
+
+All three improve winner accuracy (+3 to +4) by removing the spurious edge an imputed
+league-average handed the fighter-with-data, and all three move Brier +0.005 to +0.007. The
++0.005 is ~0.3 of the Brier standard error on n=263 (noise), while winner accuracy and
+calibration both improve, so the shipped weight-drop is a net improvement, not a regression.
+The hard-shrink variants dropped the 80%+ bucket's missing-data share the most but made the
+model underconfident (the thin-data 80%+ calls are 91% accurate - real mismatches, not
+miscalibration), so they were rejected. The shipped fix keeps those calls but caps their
+confidence label (read-strength penalty) rather than faking a shrink. The factor WEIGHTS were
+not retuned.
+
+### Fix #1 - matchup-aware method head
+
+Method accuracy (coarse finish-vs-decision) held at 59% (= control). The submission-0 artifact
+(13 of 35 locked calls, 0% submission) is eliminated: 0 hard-0 submissions in the 263-fight
+backtest. Ambiguous top-method display ties (e.g. whittaker-krylov 42/42) are eliminated: 0
+top-ties, via a deterministic largest-remainder rounding plus a documented tie-break
+(larger unrounded float, then ko > sub > decision).
+
+### Fix #5 - out-of-sample holdout
+
+UFC 328 held out and scored standalone: winner 54% / method 54% / Brier 0.25 / n=13. Rest of
+corpus (excl. 328): winner 70% / Brier 0.221. The 70% full-corpus headline is IN-SAMPLE; the
+event whose fights the weights were visibly tuned on scores near coin-flip out-of-sample on a
+small sample. Reported via `--holdout ufc-328` / `BACKTEST_HOLDOUT`.
+
+---
+
+# Fight Lens - Baseline Validation and Model Experiments (prior pass)
+
 Generated: 2026-05-20T00:10:01.495Z
 
 ## Scope

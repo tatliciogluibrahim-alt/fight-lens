@@ -81,7 +81,7 @@ function ReadLadder() {
     {
       index: "03",
       title: "late data is confidence.",
-      body: "Sparse late-round history lowers certainty in the model; it does not mark a fighter as weak late."
+      body: "Sparse late-round history lowers certainty in the model. It does not mark a fighter as weak late."
     }
   ];
 
@@ -269,7 +269,7 @@ export default function IslamJdmBacktestPage() {
             <p className="mono-label">pre-fight model vs actual</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">what held, what broke.</h2>
             <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-              The model does not call outcomes. It maps routes. Here, the control route held; the
+              The model does not call outcomes. It maps routes. Here, the control route held. The
               JDM volume route flipped once wrestling pressure shaped the exchanges.
             </p>
           </div>

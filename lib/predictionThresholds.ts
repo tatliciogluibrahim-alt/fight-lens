@@ -6,12 +6,43 @@
 // threshold of the model version it was locked under, so historical calls never
 // shift when the live model changes:
 //   - v0.1 / v0.2 (legacy): 52%, raw logistic, no temperature recalibration.
-//   - v0.3+ (current): 58%, applied to the temperature-recalibrated probability.
-export const NAMED_CALL_MIN_PROBABILITY = 58; // current model (v0.3+)
+//   - v0.3: 58%, applied to the T=0.824 temperature-recalibrated probability.
+//   - v0.4 (current live): 58%, raw logistic, temperature OFF. Adds matchup-aware
+//     method head and missing-data weight-dropping. See lib/fight-outcome-model/model.ts
+//     and docs/MODEL_STATUS.md for the backtested reconciliation.
+export const NAMED_CALL_MIN_PROBABILITY = 58; // current model (v0.3+ / v0.4)
 export const LEGACY_NAMED_CALL_MIN_PROBABILITY = 52; // v0.2 and earlier
 
-/** Minor version at which the v0.3 calibration (T=0.824 + 58% threshold) begins. */
+/** Minor version at which the 58% named-call threshold begins (v0.3 and v0.4). */
 export const CALIBRATED_MODEL_MINOR = 3;
+
+// ── Version-scoped MODEL BEHAVIOR gates (not thresholds) ──────────────────────
+// These pin which model math each version runs so a locked call always
+// reproduces. Changing live behavior means a NEW minor, never editing an
+// existing one — that is the forward-only integrity guarantee.
+//
+// TEMPERATURE_RECAL_MINOR: the ONLY version that applies the T=0.824 logit
+// sharpening is v0.3. It was an isolated experiment; the backtest showed it
+// hurts calibration on an already-calibrated raw model, so v0.4 turns it off
+// (see docs/MODEL_EXPERIMENTS.md). v0.1/v0.2 never used it; v0.4+ does not.
+export const TEMPERATURE_RECAL_MINOR = 3;
+
+// MATCHUP_AWARE_METHOD_MINOR: v0.4+ runs the matchup-aware method head (opponent
+// finish-resistance + submission floor + deterministic tie-break) and the
+// missing-data factor-dropping / shrinkage. v0.1–v0.3 keep the frozen legacy
+// method blend and average imputation.
+export const MATCHUP_AWARE_METHOD_MINOR = 4;
+
+/** True when this model version applies the T=0.824 temperature recalibration (v0.3 only). */
+export function usesTemperatureRecalibration(modelVersion?: string | null): boolean {
+  return parseModelMinorVersion(modelVersion) === TEMPERATURE_RECAL_MINOR;
+}
+
+/** True when this model version runs the v0.4+ matchup-aware method + missing-data handling. */
+export function usesMatchupAwareModel(modelVersion?: string | null): boolean {
+  const minor = parseModelMinorVersion(modelVersion);
+  return minor != null && minor >= MATCHUP_AWARE_METHOD_MINOR;
+}
 
 export type PredictionSide = "fighterA" | "fighterB";
 

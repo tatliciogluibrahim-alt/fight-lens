@@ -123,7 +123,7 @@ Preferred language:
 - Lens
 - Fight Shape
 - Style Clash
-- Pressure Point
+- Style Pressure Index (the product settled on this; do not use the bare phrase "pressure point", which is banned in docs/NEXT_STEPS.md)
 - Round Trend
 - Résumé Heat
 - Key Edge

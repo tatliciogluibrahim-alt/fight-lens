@@ -6,7 +6,7 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 export const metadata: Metadata = {
   title: "Case Study | Fight Lens",
   description:
-    "Fight Lens is a prototype for transparent MMA fight analysis — pre-fight calls that are explainable, logged, and scored. Portfolio case study and product decisions.",
+    "Fight Lens is a prototype for transparent MMA fight analysis, pre-fight calls that are explainable, logged, and scored. Portfolio case study and product decisions.",
 };
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -33,7 +33,7 @@ const modules = [
   },
   {
     label: "style fingerprint",
-    body: "A radar of style signals on a shared 0–100 spine. Style map only — not a winner forecast.",
+    body: "A radar of style signals on a shared 0–100 spine. Style map only, not a winner forecast.",
   },
   {
     label: "manual context",
@@ -97,7 +97,7 @@ const nextDecisions = [
   {
     tag: "01",
     title: "Freeze as portfolio artifact",
-    body: "Preserve 2–3 polished cards and the methodology story. Use Fight Lens as a finished prototype case study — no further product expansion.",
+    body: "Preserve 2–3 polished cards and the methodology story. Use Fight Lens as a finished prototype case study, no further product expansion.",
   },
   {
     tag: "02",
@@ -179,7 +179,7 @@ export default function CaseStudyPage() {
           <SectionLabel
             kicker="problem"
             title="MMA analysis is fragmented. Predictions disappear."
-            lede="Stats live on one site. Podcasts and social chatter live somewhere else. Betting markets sit on top. After the fight, most takes disappear — there is no clean way to see who was right, who was wrong, and why."
+            lede="Stats live on one site. Podcasts and social chatter live somewhere else. Betting markets sit on top. After the fight, most takes disappear. There is no clean way to see who was right, who was wrong, and why."
           />
         </section>
 
@@ -188,7 +188,7 @@ export default function CaseStudyPage() {
           <div className="rounded-2xl border border-line bg-surface/60 p-6 md:p-8">
             <p className="mono-label">product insight</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
-              the opportunity is not prediction accuracy. it is trust.
+              the hard part is trust, not prediction accuracy.
             </h2>
             <ul className="mt-5 grid gap-3 text-sm leading-6 text-muted md:grid-cols-2 md:text-base md:leading-7">
               <li className="flex gap-2"><span className="text-accent">·</span> What the model thinks</li>
@@ -200,7 +200,7 @@ export default function CaseStudyPage() {
           </div>
         </section>
 
-        {/* ── 4. Prototype system — 7 modules ────────────────────────────── */}
+        {/* ── 4. Prototype system, 7 modules ─────────────────────────────── */}
         <section className="section-shell py-6 md:py-10">
           <SectionLabel
             kicker="prototype system"
@@ -243,7 +243,7 @@ export default function CaseStudyPage() {
 
         {/* ── 6. What this is / what this is not ─────────────────────────── */}
         <section className="section-shell py-6 md:py-10">
-          <SectionLabel kicker="scope" title="what this is — and what it is not." />
+          <SectionLabel kicker="scope" title="what this is, and what it is not." />
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-line bg-surface/70 p-6">
               <p className="mono-label text-foreground">what this is</p>

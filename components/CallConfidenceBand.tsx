@@ -1,9 +1,9 @@
 /*
- * CallConfidenceBand — visual probability display for the model call.
+ * CallConfidenceBand, visual probability display for the model call.
  *
  * Renders the pick name + probability as the visual anchor, then a horizontal
  * track showing the model's confidence range around that call. The band
- * is derived from readStrength, not a statistical CI — labeled "model range"
+ * is derived from readStrength, not a statistical CI, labeled "model range"
  * to be honest about what it represents.
  *
  * Used in both MobileFightRead and TheCall (desktop). No betting language.
@@ -28,7 +28,7 @@ interface CallConfidenceBandProps {
   loserProbability:  number | null;  // 0–100
   readStrength:      ReadStrength;
   isTooCloseToCall:  boolean;
-  /** For noLean display — both fighters shown side by side */
+  /** For noLean display, both fighters shown side by side */
   fighterAName:      string;
   fighterAProb:      number;
   fighterBName:      string;
@@ -113,7 +113,7 @@ export function CallConfidenceBand({
               />
             ))}
 
-            {/* Confidence fill — gradient from transparent → accent/20 → transparent */}
+            {/* Confidence fill, gradient from transparent → accent/20 → transparent */}
             <div
               className="absolute border-x border-accent/35"
               style={{
@@ -122,16 +122,15 @@ export function CallConfidenceBand({
                 left:   `${lo}%`,
                 right:  `${100 - hi}%`,
                 background:
-                  "linear-gradient(90deg, rgba(143,215,247,0.04), rgba(143,215,247,0.18) 50%, rgba(143,215,247,0.04))",
+                  "linear-gradient(90deg, rgba(154, 217, 255,0.04), rgba(154, 217, 255,0.18) 50%, rgba(154, 217, 255,0.04))",
               }}
             />
 
-            {/* Probability pin */}
+            {/* Probability pin, flat, no glow (keeps it film-room, not sportsbook slider) */}
             <div
               className="absolute top-[3px] bottom-[3px] w-0.5 -translate-x-1/2 rounded-full bg-accent"
               style={{
-                left:      `${pin}%`,
-                boxShadow: "0 0 10px rgba(143,215,247,0.55)",
+                left: `${pin}%`,
               }}
             >
               {/* Pin head dot */}
@@ -139,7 +138,7 @@ export function CallConfidenceBand({
             </div>
           </div>
 
-          {/* Labels row — tightened: 5 ticks compressed to confidence range only */}
+          {/* Labels row, tightened: 5 ticks compressed to confidence range only */}
           <div className="flex justify-between font-mono text-[9px] uppercase tracking-[0.12em] text-subtle/55">
             <span>{lo}% lo</span>
             <span className="text-accent/70">confidence range</span>
@@ -148,7 +147,7 @@ export function CallConfidenceBand({
         </div>
       )}
 
-      {/* ── Counter path — tightened ──────────────────────────────────── */}
+      {/* ── Counter path, tightened ──────────────────────────────────── */}
       {!isTooCloseToCall && loserName != null && loserProbability != null && (
         <div className="rounded-xl border border-line bg-background/35 px-4 py-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
@@ -162,7 +161,7 @@ export function CallConfidenceBand({
         </div>
       )}
 
-      {/* ── Ranking note — auto-fires when model lean ≠ ranking ───────────
+      {/* ── Ranking note, auto-fires when model lean ≠ ranking ───────────
           Structural disclosure: when the model leans on the lower-ranked
           fighter by a meaningful margin (e.g. Lopes #2 vs Garcia #9 →
           model says Garcia 75%), surface that disconnect so the reader

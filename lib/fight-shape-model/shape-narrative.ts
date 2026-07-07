@@ -148,7 +148,7 @@ function biggestEdgeBody(row: AxisRow, leader: string): string {
     case "wrestling":
       return `${lead} can force more grappling sequences than the opponent has answered for.`;
     case "td defense":
-      return `${lead} denies the takedown more cleanly — forces the fight to stay standing where pace and power apply.`;
+      return `${lead} denies the takedown more cleanly, which forces the fight to stay standing where pace and power apply.`;
     case "control":
       return `${lead} turns grips into controlled minutes more often.`;
     case "submission":
@@ -165,17 +165,17 @@ function biggestEdgeBody(row: AxisRow, leader: string): string {
 function closestBody(row: AxisRow): string {
   switch (row.shortLabel) {
     case "output":
-      return "The output read is tight — neither side runs away with the volume picture.";
+      return "The output read is tight. Neither side runs away with the volume picture.";
     case "strike defense":
       return "The defensive read is much tighter than the bigger gap elsewhere.";
     case "wrestling":
-      return "The wrestling picture reads close — entries and denials look similar on tape.";
+      return "The wrestling picture reads close. Entries and denials look similar on tape.";
     case "td defense":
       return "Takedown denial profiles read similarly. This is where exchanges could reset.";
     case "control":
       return "Control work reads close. Whoever finds a grip first sets the pace.";
     case "submission":
-      return "Submission danger looks similar — neither side leans on the finish.";
+      return "Submission danger looks similar. Neither side leans on the finish.";
     case "cardio":
       return "Cardio reads close. Neither fighter's late-round shape pulls decisively.";
     case "opposition":
@@ -205,13 +205,13 @@ function swingBody(row: AxisRow, underdog: string): string {
     case "opposition":
       return `${lead}'s tested resume reads as the harder one. Keep it in context after the call.`;
     default:
-      return `${lead} carries the ${row.shortLabel.toLowerCase()} edge — worth watching.`;
+      return `${lead} carries the ${row.shortLabel.toLowerCase()} edge, worth watching.`;
   }
 }
 
 function watchingBody(row: AxisRow, leader: string): string {
   const lead = lastName(leader);
-  return `${lead} shows the relative ${row.shortLabel.toLowerCase()} edge here — useful context, not a strong weapon by itself.`;
+  return `${lead} shows the relative ${row.shortLabel.toLowerCase()} edge here. Useful context, not a strong weapon by itself.`;
 }
 
 // Used when the biggest-edge leader score is below the display floor —
@@ -219,7 +219,7 @@ function watchingBody(row: AxisRow, leader: string): string {
 // Both scores are low, so the copy must not frame this as a meaningful weapon.
 function biggestEdgeBodyWeak(row: AxisRow, leader: string): string {
   const lead = lastName(leader);
-  return `${lead} has the relative ${row.shortLabel.toLowerCase()} edge, but both scores are low. Treat this as a thin style path — not a key weapon on its own.`;
+  return `${lead} has the relative ${row.shortLabel.toLowerCase()} edge, but both scores are low. Treat this as a thin style path, not a key weapon on its own.`;
 }
 
 function biggestEdgeBodyRelative(row: AxisRow, leader: string): string {
@@ -237,7 +237,7 @@ function buildHeadline(
 ): string {
   const tightAll = rows.every((r) => r.absDelta < 8);
   if (tightAll) {
-    return "On shape, this matchup reads close — small edges across the board, no axis pulling decisively. Style-only read.";
+    return "On shape, this matchup reads close. Small edges across the board, no axis pulling decisively. Style-only read.";
   }
 
   const tier = classifyAxisSignal(biggest);
@@ -257,7 +257,7 @@ function buildHeadline(
     // TD defense as the clearest gap often means one fighter keeps the fight
     // standing — make that explicit rather than just naming the axis.
     if (axis === "td defense") {
-      return `${lead} has the clearer takedown denial edge — that keeps exchanges standing where the output picture applies.`;
+      return `${lead} has the clearer takedown denial edge that keeps exchanges standing where the output picture applies.`;
     }
     return `${lead}'s ${axis} is the clearest style signal. Use it after the call to understand where the matchup tilts.`;
   }
@@ -289,7 +289,7 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
 
   if (rows.length === 0) {
     return {
-      headline: "Shape read pending — at least one fighter has limited recent UFC samples.",
+      headline: "Shape read pending. At least one fighter has limited recent UFC samples.",
       cards: [],
       caveat: null,
     };
@@ -427,7 +427,7 @@ export function buildShapeNarrative(args: NarrativeArgs): ShapeNarrative {
 
   const caveat =
     rows.length < 4
-      ? `Limited sample — only ${rows.length} of ${TOTAL_AXES} axes have sourced data on both sides. The read gets thinner where samples are short.`
+      ? `Limited sample. Only ${rows.length} of ${TOTAL_AXES} axes have sourced data on both sides. The read gets thinner where samples are short.`
       : null;
 
   return { headline, cards, caveat };

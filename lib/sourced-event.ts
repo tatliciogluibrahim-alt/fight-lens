@@ -342,7 +342,67 @@ export interface SourcedEvent {
   fights: SourcedFight[];
 }
 
-export const sourcedEvent = normalizedEventJson as SourcedEvent;
+/**
+ * Lightweight runtime shape check for normalized event JSON.
+ *
+ * The normalized JSON is generated OUTSIDE TypeScript (scripts/ingest), so a
+ * drifted or truncated file would slip past a plain `as SourcedEvent` cast and
+ * crash opaquely deep inside a render (e.g. "cannot read name of undefined").
+ * This asserts the handful of fields the app dereferences on every event/fight
+ * and throws a READABLE error that names the offending file instead.
+ *
+ * Deliberately NOT a full schema validator (no zod) — just the load-bearing
+ * fields. Returns the value typed as SourcedEvent so callers drop their casts.
+ */
+export function assertSourcedEvent(json: unknown, fileLabel: string): SourcedEvent {
+  const prefix = `Invalid normalized event JSON in ${fileLabel}:`;
+
+  if (!json || typeof json !== "object") {
+    throw new Error(`${prefix} expected an object at the top level.`);
+  }
+  const root = json as { event?: unknown; fights?: unknown };
+
+  if (!root.event || typeof root.event !== "object") {
+    throw new Error(`${prefix} missing "event" object.`);
+  }
+  const event = root.event as { id?: unknown; name?: unknown };
+  if (typeof event.id !== "string" || event.id.length === 0) {
+    throw new Error(`${prefix} missing or empty "event.id".`);
+  }
+  if (typeof event.name !== "string" || event.name.length === 0) {
+    throw new Error(`${prefix} missing or empty "event.name".`);
+  }
+
+  if (!Array.isArray(root.fights)) {
+    throw new Error(`${prefix} "fights" must be an array.`);
+  }
+
+  root.fights.forEach((fight, i) => {
+    if (!fight || typeof fight !== "object") {
+      throw new Error(`${prefix} fights[${i}] is not an object.`);
+    }
+    const fighters = (fight as { fighters?: unknown }).fighters;
+    if (!fighters || typeof fighters !== "object") {
+      throw new Error(`${prefix} fights[${i}] is missing "fighters".`);
+    }
+    const { fighterA, fighterB } = fighters as { fighterA?: unknown; fighterB?: unknown };
+    const nameOf = (side: unknown) =>
+      side && typeof side === "object" ? (side as { name?: unknown }).name : undefined;
+    if (typeof nameOf(fighterA) !== "string" || nameOf(fighterA) === "") {
+      throw new Error(`${prefix} fights[${i}].fighters.fighterA is missing a name.`);
+    }
+    if (typeof nameOf(fighterB) !== "string" || nameOf(fighterB) === "") {
+      throw new Error(`${prefix} fights[${i}].fighters.fighterB is missing a name.`);
+    }
+  });
+
+  return json as SourcedEvent;
+}
+
+export const sourcedEvent = assertSourcedEvent(
+  normalizedEventJson,
+  "data/normalized/events/ufc-328.json",
+);
 export const sourcedFights = sourcedEvent.fights;
 
 export function getSourcedFight(fightId: string): SourcedFight | undefined {

@@ -30,19 +30,34 @@ import type {
 const MODEL_VERSION = "fight-shape-v0.2";
 
 /**
- * Returns months elapsed since the fighter's most recent recorded fight.
+ * Returns months elapsed since the fighter's most recent recorded fight,
+ * measured relative to `asOfMs` (defaults to now for the live app).
  * Parses the UFCStats date format: "Jul. 10, 2021" or "Mar. 07, 2026".
  * Returns null if the date cannot be parsed.
+ *
+ * BACKTEST CORRECTNESS: the live app measures layoff against today, which is
+ * correct when predicting an upcoming fight. In a backtest the "as-of" moment
+ * is the fight date, not today, so callers pass the fight date. Measuring an
+ * old backtest fight against today would invent a multi-year layoff and wrongly
+ * shrink that fighter's form.
  */
-function monthsSinceLastFight(fighter: SourcedFighter): number | null {
+function monthsSinceLastFight(fighter: SourcedFighter, asOfMs: number = Date.now()): number | null {
   const last = fighter.lastFive?.[0];
   if (!last?.date) return null;
   // Normalize "Jul. 10, 2021" → "Jul 10 2021"
   const normalized = String(last.date).replace(/\./g, "").replace(/\s+/g, " ").trim();
   const parsed = new Date(normalized);
   if (isNaN(parsed.getTime())) return null;
-  const diffMs = Date.now() - parsed.getTime();
+  const diffMs = asOfMs - parsed.getTime();
   return diffMs / (1000 * 60 * 60 * 24 * 30.4375);
+}
+
+/** Parse an ISO/UFCStats date string to epoch ms, or null when unparseable. */
+function parseAsOfMs(asOf: string | null | undefined): number | null {
+  if (!asOf) return null;
+  const normalized = String(asOf).replace(/\./g, "").replace(/\s+/g, " ").trim();
+  const parsed = new Date(normalized);
+  return isNaN(parsed.getTime()) ? null : parsed.getTime();
 }
 
 /**
@@ -213,7 +228,10 @@ function resultScore(fight: SourcedFightHistoryItem) {
   return clampScore(score) ?? 50;
 }
 
-function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricScore {
+function opponentQualityAdjustedFormFor(
+  fighter: SourcedFighter,
+  asOfMs: number = Date.now(),
+): FighterMetricScore {
   const confidence = formMetricConfidence(fighter);
 
   if (confidence === "Insufficient") {
@@ -243,12 +261,12 @@ function opponentQualityAdjustedFormFor(fighter: SourcedFighter): FighterMetricS
   // Rationale: stale evidence should regress toward the mean. A fighter who
   // last fought 5 years ago has an uncertain current form — their historical
   // result shape is real but its predictive weight is diminished.
-  const layoffMonths = monthsSinceLastFight(fighter);
+  const layoffMonths = monthsSinceLastFight(fighter, asOfMs);
   const shrink = layoffShrinkFactor(layoffMonths);
   const clamped = raw != null ? clampScore(50 + (raw - 50) * shrink) : null;
   const hasLongLayoff = layoffMonths != null && layoffMonths > 12;
   const layoffLabel = hasLongLayoff
-    ? `${Math.round(layoffMonths)}mo layoff — form shrunk toward prior`
+    ? `${Math.round(layoffMonths)}mo layoff, form shrunk toward prior`
     : null;
 
   const formFactors = [
@@ -491,7 +509,7 @@ function publicSummary(fight: SourcedFight, pressureA: FighterMetricScore, press
       const nameLow = scoreA >= scoreB ? fighterB.name : fighterA.name;
 
       if (diff < 8) {
-        return `Both fighters work through ${factorA} — the style edge between them is narrow on this axis.`;
+        return `Both fighters work through ${factorA}, and the style edge between them is narrow on this axis.`;
       }
       return `Both fighters rely on ${factorA}, but ${nameHigh} carries a measurable edge over ${nameLow} on this axis.`;
     }
@@ -522,14 +540,25 @@ function warningsFor(fight: SourcedFight, roundA: RoundSustainabilityScore, roun
   return warnings;
 }
 
-export function buildFightShapeModel(fight: SourcedFight): FightShapeModelOutput {
+export function buildFightShapeModel(
+  fight: SourcedFight,
+  options?: {
+    /**
+     * As-of date for layoff computation. Live app omits it (uses today, which is
+     * correct for an upcoming fight). Backtests pass the fight date so layoff is
+     * measured relative to when the fight happened, not today.
+     */
+    asOf?: string | null;
+  },
+): FightShapeModelOutput {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
+  const asOfMs = parseAsOfMs(options?.asOf) ?? Date.now();
 
   const styleA = stylePressureFor(fighterA, fighterB);
   const styleB = stylePressureFor(fighterB, fighterA);
-  const formA = opponentQualityAdjustedFormFor(fighterA);
-  const formB = opponentQualityAdjustedFormFor(fighterB);
+  const formA = opponentQualityAdjustedFormFor(fighterA, asOfMs);
+  const formB = opponentQualityAdjustedFormFor(fighterB, asOfMs);
   const roundA = roundSustainabilityFor(fighterA);
   const roundB = roundSustainabilityFor(fighterB);
   const pathA = pathReliabilityFor(fighterA, styleA, formA, roundA);

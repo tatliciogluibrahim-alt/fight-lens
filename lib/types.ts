@@ -117,7 +117,6 @@ export interface LensModelOutputBase {
 export interface FightShapeLensOutput extends LensModelOutputBase {
   kind: "fight-shape";
   visibility: "public";
-  pressurePoints: string[];
 }
 
 export interface StyleClashLensOutput extends LensModelOutputBase {

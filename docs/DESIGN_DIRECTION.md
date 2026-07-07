@@ -9,7 +9,7 @@ Fight Lens should feel like a premium fight film-room dashboard for creators and
 Use:
 - dark tactical surfaces
 - crisp spacing and strong type hierarchy
-- restrained rust/accent color
+- restrained ice-blue accent color (shipped: --accent #9AD9FF on a midnight ground; the "rust" idea was dropped)
 - subtle borders and quiet depth
 - real flags or graceful fallbacks
 - fighter asset slots that feel photo-ready without pretending to use licensed photos

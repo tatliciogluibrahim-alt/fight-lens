@@ -5,10 +5,17 @@ import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { fetchViaBrowser, closeBrowser, looksLikeChallenge } from "./ufcstats-browser.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
-const OUTPUT_ROOT = path.join(REPO_ROOT, "data/generated/ufcstats");
+
+// Where normalized output and the page cache are written. Defaults to the real
+// data folder. Set UFCSTATS_OUTPUT_DIR to redirect everything to a scratch dir
+// (e.g. a dry/validation run) so nothing under the committed data/ is touched.
+const OUTPUT_ROOT = process.env.UFCSTATS_OUTPUT_DIR
+  ? path.resolve(REPO_ROOT, process.env.UFCSTATS_OUTPUT_DIR)
+  : path.join(REPO_ROOT, "data/generated/ufcstats");
 const CACHE_DIR = path.join(OUTPUT_ROOT, "cache");
 const UFCSTATS_BASE = "http://www.ufcstats.com";
 const DEFAULT_DELAY_MS = 900;
@@ -30,6 +37,13 @@ Usage:
 
 Safe defaults:
   --refresh              Fetch fresh pages instead of using cached JSON snapshots.
+  --headless             Fetch through a real headless browser (Playwright) that
+                         solves the UFCStats JS anti-bot challenge. Use this when
+                         plain fetch returns a "Checking your browser…" stub with
+                         0 fight rows. Solves the challenge once, reuses the
+                         cookie for every page in the run.
+  --headless-timeout-ms 30000
+                         Max wait for the challenge to resolve per page.
   --delay-ms 900         Wait between public website requests.
   --max-requests 12      Stop before too many network requests happen.
   --max-fights 3         Limit detail fetches from an event page.
@@ -54,6 +68,8 @@ Backfill mode (no profile re-fetching):
 function parseArgs(argv) {
   const args = {
     refresh: false,
+    headless: false,
+    headlessTimeoutMs: 30000,
     includeFights: false,
     includeFighters: false,
     delayMs: DEFAULT_DELAY_MS,
@@ -75,6 +91,11 @@ function parseArgs(argv) {
       args.help = true;
     } else if (arg === "--refresh") {
       args.refresh = true;
+    } else if (arg === "--headless") {
+      args.headless = true;
+    } else if (arg === "--headless-timeout-ms") {
+      args.headlessTimeoutMs = Number(next);
+      index += 1;
     } else if (arg === "--include-fights") {
       args.includeFights = true;
     } else if (arg === "--include-fighters") {
@@ -186,7 +207,11 @@ async function fetchHtml(url, options) {
   const cachePath = cachePathForUrl(normalizedUrl);
   const cached = await readJsonIfExists(cachePath);
 
-  if (cached && !options.refresh) {
+  // A cached page only counts as a real hit if it is not a poisoned anti-bot
+  // stub. UFCStats' "Checking your browser…" challenge is served with HTTP 200,
+  // so an earlier plain-fetch run may have cached a useless stub. We never let
+  // that short-circuit a real fetch — the tool self-heals by re-fetching.
+  if (cached && !options.refresh && !looksLikeChallenge(cached.body)) {
     return {
       body: cached.body,
       metadata: cached.metadata
@@ -205,24 +230,44 @@ async function fetchHtml(url, options) {
   state.networkRequests += 1;
   state.lastRequestAt = Date.now();
 
-  const response = await fetch(normalizedUrl, {
-    headers: {
-      "user-agent": "Fight Lens UFCStats ingestion (local development)",
-      accept: "text/html,application/xhtml+xml"
+  // Two transports, same cache/parse pipeline downstream:
+  //   --headless  → real Chromium that solves the JS challenge (Playwright)
+  //   default     → plain HTTP fetch (fast, but blocked by the challenge)
+  let body;
+  let status;
+  let contentType;
+
+  if (options.headless) {
+    const result = await fetchViaBrowser(normalizedUrl, {
+      timeoutMs: options.headlessTimeoutMs
+    });
+    body = result.body;
+    status = result.status;
+    contentType = result.contentType;
+  } else {
+    const response = await fetch(normalizedUrl, {
+      headers: {
+        "user-agent": "Fight Lens UFCStats ingestion (local development)",
+        accept: "text/html,application/xhtml+xml"
+      }
+    });
+
+    body = await response.text();
+
+    if (!response.ok) {
+      throw new Error(`UFCStats request failed: ${response.status} ${response.statusText} for ${normalizedUrl}`);
     }
-  });
 
-  const body = await response.text();
-
-  if (!response.ok) {
-    throw new Error(`UFCStats request failed: ${response.status} ${response.statusText} for ${normalizedUrl}`);
+    status = response.status;
+    contentType = response.headers.get("content-type");
   }
 
   const metadata = {
     url: normalizedUrl,
     fetchedAt: new Date().toISOString(),
-    status: response.status,
-    contentType: response.headers.get("content-type"),
+    status,
+    contentType,
+    transport: options.headless ? "playwright" : "fetch",
     parserVersion: 1
   };
 
@@ -845,9 +890,12 @@ async function main() {
   console.log(`Done. Network requests this run: ${state.networkRequests}. Cached pages were reused when available.`);
 }
 
-main().catch((error) => {
-  console.error("\nIngestion stopped safely.");
-  console.error(error.message);
-  console.error("\nGenerated app data was not normalized. The last valid normalized JSON remains in place.");
-  process.exitCode = 1;
-});
+main()
+  .catch((error) => {
+    console.error("\nIngestion stopped safely.");
+    console.error(error.message);
+    console.error("\nGenerated app data was not normalized. The last valid normalized JSON remains in place.");
+    process.exitCode = 1;
+  })
+  // Always tear down the headless browser (no-op when --headless was not used).
+  .finally(() => closeBrowser());

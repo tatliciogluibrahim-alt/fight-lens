@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: MatchupPageProps): Promise<Me
     title: `${nameA} vs. ${nameB} | ${event.event.name} | Fight Lens`,
     description: `${wc} matchup analysis. Win probabilities, method breakdown, and scenario paths for ${nameA} vs. ${nameB} at ${event.event.name}.`,
     openGraph: {
-      title: `${nameA} vs. ${nameB} — Fight Lens`,
+      title: `${nameA} vs. ${nameB}, Fight Lens`,
       description: `${wc} · ${event.event.name}. Directional model lean with win probability, method lean, and counter path.`,
       type: "article",
     },
@@ -124,6 +124,43 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
   const fighterA = fight.fighters.fighterA;
   const fighterB = fight.fighters.fighterB;
   const prediction = getPredictionByFightId(fightId);
+
+  // Cancelled bout (fighter withdrawal): a shared link should land on an honest
+  // notice, not a stale pre-fight call for a fight that will not happen.
+  if (prediction?.cancelled) {
+    return (
+      <>
+        <AppHeader />
+        <main className="section-shell py-6 md:py-10">
+          <Link
+            href={`/events/${eventId}`}
+            className="font-mono text-xs uppercase tracking-[0.14em] text-subtle hover:text-foreground"
+          >
+            ← back to {(event.event.shortName ?? "card").toLowerCase()}
+          </Link>
+          <div className="mt-8 max-w-xl rounded-2xl border border-line bg-surface/60 p-6 md:p-8">
+            <p className="mono-label accent-rail">bout cancelled</p>
+            <h1 className="mt-3 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">
+              {fighterA.name} vs. {fighterB.name} is off the card.
+            </h1>
+            <p className="mt-3 text-sm leading-6 text-muted">{prediction.cancelled.reason}</p>
+            <p className="mt-3 text-xs leading-5 text-subtle">
+              The pre-fight call stays in the record for transparency, marked cancelled. A cancelled
+              bout never resolves, so it does not count toward accuracy.
+            </p>
+            <Link
+              href={`/events/${eventId}`}
+              className="tap-target mt-5 inline-flex items-center justify-center rounded-full border border-line bg-surface-2/70 px-4 text-xs font-medium text-muted transition hover:border-accent/40 hover:text-foreground"
+            >
+              View current card
+            </Link>
+          </div>
+        </main>
+        <DisclaimerFooter />
+      </>
+    );
+  }
+
   const {
     fightShapeModel,
     viewModel: vm,
@@ -146,7 +183,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         </Link>
 
         {/* ════════════════════════════════════════════════════════════════════
-            MOBILE read — visible only below sm (640 px)
+            MOBILE read, visible only below sm (640 px)
             Flow: matchup header → call → method lean → scenarios →
                   shape accordion → record proof.
             ════════════════════════════════════════════════════════════════════ */}
@@ -162,12 +199,12 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
         </div>
 
         {/* ════════════════════════════════════════════════════════════════════
-            DESKTOP read — visible only at sm+ (640 px and up)
+            DESKTOP read, visible only at sm+ (640 px and up)
             Fighter hero → snapshot → call/shape/details sections.
             ════════════════════════════════════════════════════════════════════ */}
         <div className="hidden sm:block">
           {/*
-            Fight Feature Hero — the cinematic, editorial opening of every
+            Fight Feature Hero, the cinematic, editorial opening of every
             fight page. Replaces the previous fighter-hero grid. Uses the
             style fingerprint silhouettes as ambient watermarks, massive
             editorial type for fighter names, and an editorial-style model
@@ -193,7 +230,7 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
           )}
 
           {/*
-            Post-fight receipt — the honest verdict + lesson. Sits between the
+            Post-fight receipt, the honest verdict + lesson. Sits between the
             result and the preserved pre-fight call: result → receipt grade →
             "here's exactly what we logged before the bell" (TheCall, unchanged).
           */}
@@ -203,17 +240,28 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
             </div>
           )}
 
-          {/* Tale of the tape — head-to-head physicals strip below the hero */}
+          {/* Accountability loop: on an unplayed fight, name where the result lands. */}
+          {!vm.isScored && (
+            <div className="mt-4 flex items-center gap-3 rounded-xl border border-dashed border-line bg-surface/40 px-5 py-4">
+              <span className="size-1.5 rounded-full bg-subtle/60" />
+              <p className="text-xs leading-5 text-subtle">
+                Outcome pending. The result and the post-fight receipt drop here after the
+                official decision, scored against the call logged above.
+              </p>
+            </div>
+          )}
+
+          {/* Tale of the tape, head-to-head physicals strip below the hero */}
           <TaleOfTheTapeRow fighterA={fighterA} fighterB={fighterB} />
 
           {/*
            * Phase 2: FightReadSnapshot removed on desktop. It duplicated the
            * model call + method lean + counter path that TheCall renders
-           * immediately below — three call surfaces stacked was too heavy.
+           * immediately below, three call surfaces stacked was too heavy.
            * TheCall is now the single source of the model lean above the fold.
            */}
 
-          {/* Analysis sections — one scroll page, hash anchors preserved */}
+          {/* Analysis sections, one scroll page, hash anchors preserved */}
           <div className="fl-animate-fade-up fl-delay-400 mt-5 md:mt-6">
             <FightPageTabs
               tabs={[
@@ -228,13 +276,13 @@ export default async function MatchupPage({ params }: MatchupPageProps) {
                     {/*
                       ContextualNotes sits inside the call section on desktop so
                       manual context (the "not in model" disclosures) reads next
-                      to the lean — matching the mobile flow. Burying it in the
+                      to the lean, matching the mobile flow. Burying it in the
                       "details" section forced a serious reader to scroll past
                       shape + form/resume just to see the disclaimer that often
                       explains why the lean looks the way it does.
                     */}
                     <ContextualNotes notes={fight.contextNotes} />
-                    {/* Market sanity + blind-spot tags — after manual context */}
+                    {/* Market sanity + blind-spot tags, after manual context */}
                     <ModelContextFooter sanity={fight.modelSanity} />
                     <RoundMomentumFlow
                       fighterA={fighterA}

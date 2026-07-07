@@ -46,7 +46,7 @@ export function HomeEventSelector({ events }: { events: HomeEventOption[] }) {
               key={event.id}
               className={`overflow-hidden rounded-2xl border transition ${
                 isActive
-                  ? "border-accent/55 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.04] shadow-[0_0_0_1px_rgba(143,215,247,0.12),0_4px_20px_rgba(143,215,247,0.06)]"
+                  ? "border-accent/55 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.04]"
                   : "border-line bg-surface/60 hover:border-line-strong hover:bg-surface/80"
               }`}
             >

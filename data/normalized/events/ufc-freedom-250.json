@@ -47,7 +47,7 @@
       "biggestModelWin": "Pereira/Gane",
       "biggestModelMiss": "Topuria/Gaethje",
       "bestTransparencyMoment": "Lopes/Garcia",
-      "summary": "UFC Freedom 250 was the cleanest stress test yet for Fight Lens. The raw model went 5/7 on winner direction and leaned correctly into the KO/TKO-heavy shape of the card. The main event was the biggest miss: Gaethje's attritional durability broke the Topuria read. The best transparency moment was Lopes/Garcia — the raw model missed, but the warning layer flagged the opponent-tier trap before the fight.",
+      "summary": "UFC Freedom 250 was the cleanest stress test yet for Fight Lens. The raw model went 5/7 on winner direction and leaned correctly into the KO/TKO-heavy shape of the card. The main event was the biggest miss: Gaethje's attritional durability broke the Topuria read. The best transparency moment was Lopes/Garcia. The raw model missed, but the warning layer flagged the opponent-tier trap before the fight.",
       "mainLessons": [
         "Opponent-tier weighting must improve.",
         "Age and mileage need two-way interpretation.",
@@ -93,7 +93,7 @@
           "type": "age-mileage",
           "fighter": "Justin Gaethje",
           "title": "37 with deep title-fight mileage and a long damage history",
-          "explanation": "Gaethje's losses to Khabib and Oliveira were submissions, not clean striking collapses — this is not a 'chin is gone' read. The sharper concern is age, accumulated damage, and whether he can survive clean pocket exchanges against Topuria's speed and accuracy. The model does not apply an age or accumulated-damage factor.",
+          "explanation": "Gaethje's losses to Khabib and Oliveira were submissions, not clean striking collapses. This is not a 'chin is gone' read. The sharper concern is age, accumulated damage, and whether he can survive clean pocket exchanges against Topuria's speed and accuracy. The model does not apply an age or accumulated-damage factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -125,7 +125,7 @@
         "receiptLabel": "Missed Read",
         "fightShapeGrade": "partial",
         "warningLayerGrade": "missed_warning",
-        "receiptSummary": "Fight Lens leaned Topuria, but Gaethje survived the dangerous early windows and turned the fight into the attritional damage battle the model — and the manual layer — did not price.",
+        "receiptSummary": "Fight Lens leaned Topuria, but Gaethje survived the dangerous early windows and turned the fight into the attritional damage battle the model, and the manual layer, did not price.",
         "whatModelGotRight": [
           "Read the matchup as a KO/TKO fight, not a decision",
           "Topuria's early danger was real",
@@ -133,7 +133,7 @@
         ],
         "whatModelMissed": [
           "Gaethje's attritional durability and composure under early damage",
-          "The pre-fight note read Gaethje's mileage as decline — the fight showed it as war-tested survival",
+          "The pre-fight note read Gaethje's mileage as decline. The fight showed it as war-tested survival",
           "Late-damage accumulation and corner-stoppage risk to Topuria"
         ],
         "modelLesson": "Age and mileage cannot be read only as decline. Some veterans carry war-tested durability that flips a fight if they survive the early danger.",
@@ -11339,16 +11339,16 @@
           "outdoor_environment",
           "market_divergence"
         ],
-        "strongestInsight": "This is not just smaller striker vs bigger heavyweight — it is whether Gane can make Pereira carry heavyweight minutes without giving him clean entry reads.",
+        "strongestInsight": "This runs deeper than a smaller striker against a bigger heavyweight. The fight turns on whether Gane can make Pereira carry heavyweight minutes without giving him clean entry reads.",
         "analystCheck": [
           "pass_or_reduce_confidence"
         ],
         "analystCheckCopy": "Gane 60% is defensible on natural-heavyweight and pace logic, but the market is much closer to even. Treat as a live two-way read.",
         "marketContext": {
           "marketFavorite": "Ciryl Gane",
-          "marketImpliedSummary": "Market pricing is close to a coin flip — the model's 60% Gane lean is firmer than the market's read.",
+          "marketImpliedSummary": "Market pricing is close to a coin flip. The model's 60% Gane lean is firmer than the market's read.",
           "modelVsMarket": "Model is more pro-Gane than market.",
-          "displayCopy": "Pricing sits near even. The model's 60% Gane lean is firmer than the market — treat this as a live two-way fight.",
+          "displayCopy": "Pricing sits near even. The model's 60% Gane lean is firmer than the market. Treat this as a live two-way fight.",
           "asOf": "May 2026"
         },
         "modelWarning": null
@@ -22634,7 +22634,7 @@
           "type": "debut-or-promotion-jump",
           "fighter": "Aiemann Zahabi",
           "title": "On a 7-win streak, most recently a decision over Chito Vera",
-          "explanation": "Zahabi's seven-fight streak is real — most recently a decision over Marlon \"Chito\" Vera — but the run is decision-heavy and less clearly predictive against O'Malley's length, speed, and shot selection. The Aldo split decision was widely seen as contested by media scorecards.",
+          "explanation": "Zahabi's seven-fight streak is real, most recently a decision over Marlon \"Chito\" Vera, but the run is decision-heavy and less clearly predictive against O'Malley's length, speed, and shot selection. The Aldo split decision was widely seen as contested by media scorecards.",
           "confidence": "medium",
           "impactDirection": "unclear",
           "modelImpact": "not included in model"
@@ -22642,7 +22642,7 @@
         {
           "type": "recent-ko-loss",
           "fighter": "Sean O'Malley",
-          "title": "Both recent losses came against the Merab archetype — not present here",
+          "title": "Both recent losses came against the Merab archetype, not present here",
           "explanation": "O'Malley's recent losses came against Merab Dvalishvili's elite wrestling-pressure archetype. Zahabi does not present the same wrestling problem, so the model may be over-penalizing O'Malley's recent results.",
           "confidence": "high",
           "impactDirection": "helps",
@@ -22664,7 +22664,7 @@
         "analystCheckCopy": "O'Malley 56% may be directionally right but too soft. The matchup context supports O'Malley more strongly than the raw recent-loss signal.",
         "marketContext": {
           "marketFavorite": "Sean O'Malley",
-          "marketImpliedSummary": "Market pricing implies O'Malley is a heavy favorite — far stronger than the model's 56%.",
+          "marketImpliedSummary": "Market pricing implies O'Malley is a heavy favorite, far stronger than the model's 56%.",
           "modelVsMarket": "Model is much more conservative than market.",
           "displayCopy": "O'Malley is priced as a heavy favorite, well beyond the model's 56% lean. The style context supports the stronger read.",
           "asOf": "May 2026"
@@ -22676,17 +22676,17 @@
         "fightShapeGrade": "partial",
         "warningLayerGrade": "correct_warning",
         "underconfident": true,
-        "receiptSummary": "Right side, wrong finish. The Merab-specific-loss correction was the key pre-fight context — but the model projected a decision and underplayed O'Malley's finishing upside.",
+        "receiptSummary": "Right side, wrong finish. The Merab-specific-loss correction was the key pre-fight context, but the model projected a decision and underplayed O'Malley's finishing upside.",
         "whatModelGotRight": [
           "O'Malley winner direction",
-          "Correctly separated O'Malley's Merab losses from this matchup — Zahabi is not that archetype"
+          "Correctly separated O'Malley's Merab losses from this matchup. Zahabi is not that archetype"
         ],
         "whatModelMissed": [
           "O'Malley's finishing upside in a striker-vs-striker matchup",
-          "Projected a decision; the length, speed and range edge produced a finish",
+          "Projected a decision. The length, speed and range edge produced a finish",
           "The 56% number was too conservative"
         ],
-        "modelLesson": "Losses to a singular archetype should be discounted when the next opponent does not replicate that style — and a clear range/speed edge should raise finish probability.",
+        "modelLesson": "Losses to a singular archetype should be discounted when the next opponent does not replicate that style, and a clear range/speed edge should raise finish probability.",
         "vNextSignals": [
           "style_specific_loss_correction",
           "opponent_archetype_similarity",
@@ -34274,7 +34274,7 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Josh Hokit",
-          "title": "Small UFC sample — model lean is shakier than the number looks",
+          "title": "Small UFC sample, model lean is shakier than the number looks",
           "explanation": "Hokit's UFC sample is small. His per-fight rates are good, but the model weights rate stats without much discount for sample size, so the lean toward Hokit reads more confident than the underlying data really supports. Read the percentage as directional, not a strong signal.",
           "confidence": "high",
           "impactDirection": "unclear",
@@ -34284,7 +34284,7 @@
           "type": "short-notice",
           "fighter": "Josh Hokit",
           "title": "Short-notice / compressed camp",
-          "explanation": "Hokit accepted this fight on short notice, which adds more uncertainty unless he was already in camp. A compressed heavyweight camp affects conditioning and game-plan depth in later rounds — context the model's stat profile does not capture.",
+          "explanation": "Hokit accepted this fight on short notice, which adds more uncertainty unless he was already in camp. A compressed heavyweight camp affects conditioning and game-plan depth in later rounds, context the model's stat profile does not capture.",
           "confidence": "medium",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -34293,7 +34293,7 @@
           "type": "age-mileage",
           "fighter": "Derrick Lewis",
           "title": "29-13 veteran heavyweight · one-punch power, late-round questions",
-          "explanation": "Lewis is a 29-13 long-tenured UFC heavyweight — a low-volume, high-danger fighter whose finishing threat can stay live deep into ugly minutes. Sustained pace across a full fight has been a recurring structural question. The model does not apply a career-stage or mileage factor.",
+          "explanation": "Lewis is a 29-13 long-tenured UFC heavyweight, a low-volume, high-danger fighter whose finishing threat can stay live deep into ugly minutes. Sustained pace across a full fight has been a recurring structural question. The model does not apply a career-stage or mileage factor.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -34311,12 +34311,12 @@
           "back_model_direction",
           "pass_or_reduce_confidence"
         ],
-        "analystCheckCopy": "Back the Hokit direction, reduce precision — the small UFC sample makes the 71% read look sharper than the underlying data.",
+        "analystCheckCopy": "Back the Hokit direction, reduce precision. The small UFC sample makes the 71% read look sharper than the underlying data.",
         "marketContext": {
           "marketFavorite": "Josh Hokit",
-          "marketImpliedSummary": "Market pricing also favors Hokit strongly; the model is directionally aligned, slightly more conservative.",
+          "marketImpliedSummary": "Market pricing also favors Hokit strongly. The model is directionally aligned, slightly more conservative.",
           "modelVsMarket": "Model is directionally aligned with market, slightly more conservative.",
-          "displayCopy": "The market also favors Hokit strongly. Direction aligned — but the small-sample caution still applies.",
+          "displayCopy": "The market also favors Hokit strongly. Direction aligned, but the small-sample caution still applies.",
           "asOf": "May 2026"
         },
         "modelWarning": null
@@ -47072,7 +47072,7 @@
           "type": "age-mileage",
           "fighter": "Michael Chandler",
           "title": "40 years old · 1 win in his last 6 lightweight bouts",
-          "explanation": "Chandler turns 40 in 2026 and has lost 5 of his last 6, but most of that skid came against elite lightweights — Pimblett, Oliveira (twice), Poirier, and Gaethje; his only win in the stretch was over a declining Tony Ferguson. The decline signal is still real: durability, pace, and late-round decision-making are recurring concerns. His early explosiveness remains the main danger if he can force chaos before Ruffy settles.",
+          "explanation": "Chandler turns 40 in 2026 and has lost 5 of his last 6, but most of that skid came against elite lightweights: Pimblett, Oliveira (twice), Poirier, and Gaethje. His only win in the stretch was over a declining Tony Ferguson. The decline signal is still real: durability, pace, and late-round decision-making are recurring concerns. His early explosiveness remains the main danger if he can force chaos before Ruffy settles.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -47086,7 +47086,7 @@
           "style_specific_blindspot",
           "market_divergence"
         ],
-        "strongestInsight": "Chandler's decline matters most after the opening storm; Ruffy's read depends on surviving the first burst and making the fight cleaner over time.",
+        "strongestInsight": "Chandler's decline matters most after the opening storm. Ruffy's read depends on surviving the first burst and making the fight cleaner over time.",
         "analystCheck": [
           "back_model_direction",
           "model_underconfident"
@@ -47114,11 +47114,11 @@
           "Chandler's age/mileage context mattered"
         ],
         "whatModelMissed": [
-          "Size of the gap — Ruffy at 58% was too soft",
+          "Size of the gap, Ruffy at 58% was too soft",
           "Speed and range mismatch",
           "Durability decline under clean finishing pressure"
         ],
-        "modelLesson": "Age, losing form and durability risk can justify stronger confidence when the opponent is a fast rising finisher — even if the older fighter's resume is elite.",
+        "modelLesson": "Age, losing form and durability risk can justify stronger confidence when the opponent is a fast rising finisher, even if the older fighter's resume is elite.",
         "vNextSignals": [
           "age_mileage",
           "recent_form_decay",
@@ -61692,8 +61692,8 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Diego Lopes",
-          "title": "Lopes has only lost to elite opposition — model lean toward Garcia is hard to defend",
-          "explanation": "Lopes is ranked #2 and his UFC losses are against elite featherweight opposition — Volkanovski twice in title fights, and Movsar Evloev. Garcia is dangerous, but his résumé is thinner relative to Lopes's top-tier sample. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form.",
+          "title": "Lopes has only lost to elite opposition, model lean toward Garcia is hard to defend",
+          "explanation": "Lopes is ranked #2 and his UFC losses are against elite featherweight opposition: Volkanovski twice in title fights, and Movsar Evloev. Garcia is dangerous, but his résumé is thinner relative to Lopes's top-tier sample. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form.",
           "confidence": "high",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
@@ -61714,12 +61714,12 @@
         "analystCheckCopy": "Highest-risk model lean on the card. Manual context strongly challenges the Garcia 75% lean.",
         "marketContext": {
           "marketFavorite": "Diego Lopes",
-          "marketImpliedSummary": "Market pricing favors Lopes — the opposite direction from the model's 75% Garcia lean.",
+          "marketImpliedSummary": "Market pricing favors Lopes, the opposite direction from the model's 75% Garcia lean.",
           "modelVsMarket": "Model is directionally opposite market.",
           "displayCopy": "The market favors Lopes while the model leans Garcia. This is the clearest model-vs-market split on the card.",
           "asOf": "May 2026"
         },
-        "modelWarning": "Strong model warning — ranking, résumé, and market context all challenge the Garcia 75% lean. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form."
+        "modelWarning": "Strong model warning. Ranking, résumé, and market context all challenge the Garcia 75% lean. The model appears to over-penalize Lopes for elite-opposition losses and over-reward Garcia's cleaner aggregate form."
       },
       "postFightReceipt": {
         "receiptLabel": "Model Miss, Warning Correct",
@@ -61728,11 +61728,11 @@
         "receiptSummary": "The raw model badly over-favored Garcia, but Fight Lens warned before the fight that ranking, resume and opponent-tier context challenged the model. The clearest proof the warning layer matters.",
         "whatModelGotRight": [
           "KO/TKO fight shape",
-          "Flagged the exact reason not to trust the Garcia number — ranking and opponent tier",
+          "Flagged the exact reason not to trust the Garcia number, ranking and opponent tier",
           "High volatility was real"
         ],
         "whatModelMissed": [
-          "Lopes's elite-opposition resume — the raw model under-weighted it",
+          "Lopes's elite-opposition resume: the raw model under-weighted it",
           "Treated losses to Volkanovski and Evloev as ordinary losses",
           "Over-rewarded Garcia's cleaner aggregate form against a thinner resume"
         ],
@@ -61745,7 +61745,7 @@
           "aggregate_stat_distortion",
           "manual_warning_success"
         ],
-        "mediaNarrative": "Garcia's early danger did not override Lopes's level; Lopes weathered it and finished in the second.",
+        "mediaNarrative": "Garcia's early danger did not override Lopes's level. Lopes weathered it and finished in the second.",
         "statSummary": null,
         "qaStatus": "needs_stats_review"
       },

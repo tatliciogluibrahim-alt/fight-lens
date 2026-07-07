@@ -1,7 +1,7 @@
 "use client";
 
 /*
- * MobileFightRead — premium mobile fight intelligence card.
+ * MobileFightRead, premium mobile fight intelligence card.
  *
  * Renders the full fight-read experience for narrow viewports (< 640 px).
  * Flow: matchup header → model call → method lean → why/flip scenarios →
@@ -9,7 +9,7 @@
  *
  * All prediction data reads from the canonical viewModel.
  * No independent probability or method computation here.
- * Desktop layout is completely separate — this component is sm:hidden only.
+ * Desktop layout is completely separate, this component is sm:hidden only.
  */
 
 import { useState } from "react";
@@ -52,7 +52,7 @@ function MobileMatchupHeader({
 }) {
   const calledA = vm.predictedWinner?.id === fighterA.id;
   const calledB = vm.predictedWinner?.id === fighterB.id;
-  // Neither fighter is highlighted — probabilities too close to name a winner.
+  // Neither fighter is highlighted, probabilities too close to name a winner.
   const noLean = !calledA && !calledB;
 
   return (
@@ -95,7 +95,7 @@ function MobileMatchupHeader({
 // ─── 2. Model call card ───────────────────────────────────────────────────────
 
 function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
-  // Pending state — no call data yet
+  // Pending state, no call data yet
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
     return (
       <div id="section-call" className="scroll-mt-16 rounded-2xl border border-line bg-surface/70 p-5">
@@ -111,7 +111,7 @@ function MobileCallCard({ vm }: { vm: PredictionViewModel }) {
 
   return (
     <div id="section-call" className="scroll-mt-16 overflow-hidden rounded-2xl border border-accent/25 bg-gradient-to-br from-surface via-surface/95 to-surface-2/80">
-      {/* Top edge accent rail — broadcast feel */}
+      {/* Top edge accent rail, broadcast feel */}
       <span
         aria-hidden="true"
         className="block h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"
@@ -208,7 +208,7 @@ function MobileScenarios({ vm }: { vm: PredictionViewModel }) {
   // Mobile redundancy cut: scenarios[0] "the call" repeats the MobileCallCard
   // above, and scenarios[1] "counter path" repeats the counter-path block
   // inside the CallConfidenceBand. Only scenarios[2] "what breaks the call"
-  // is genuinely unique on this scroll. Show only that one on mobile —
+  // is genuinely unique on this scroll. Show only that one on mobile , 
   // saves ~2 stacked cards of vertical space without losing information.
   const swing = vm.scenarios.find((s) => s.id === "swing");
   if (!swing) return null;
@@ -232,7 +232,7 @@ function MobileScenarios({ vm }: { vm: PredictionViewModel }) {
 // Removed MobileShapeAccordion wrapper. StyleComparisonBars already renders a
 // smart compact mobile summary (axis leader + biggest edge + swing path) with
 // its own single "expand shape map" toggle for the full radar + insights. The
-// outer wrapper meant users tapped one accordion just to reveal another one —
+// outer wrapper meant users tapped one accordion just to reveal another one , 
 // classic double-accordion. Rendered directly now, with a stable scroll anchor
 // preserved via the id attribute on the inner section header.
 
@@ -295,14 +295,14 @@ export function MobileFightRead({
         vm={vm}
       />
 
-      {/* Result banner — shown between matchup and call when fight is scored */}
+      {/* Result banner, shown between matchup and call when fight is scored */}
       {vm.isScored && (
         <div className="overflow-hidden rounded-2xl border border-line">
           <FightResultBanner viewModel={vm} />
         </div>
       )}
 
-      {/* 1b · Post-fight receipt — honest verdict + lesson, above the preserved call */}
+      {/* 1b · Post-fight receipt, honest verdict + lesson, above the preserved call */}
       {vm.isScored && <PostFightReceiptCard viewModel={vm} receipt={fight.postFightReceipt} />}
 
       {/* 2 · Model call (preserved pre-fight lean) */}
@@ -314,7 +314,7 @@ export function MobileFightRead({
       {/* 3 · Projected finish */}
       {hasPred && <MobileMethodLean vm={vm} />}
 
-      {/* 3b · Sharpest insight — one manual sentence */}
+      {/* 3b · Sharpest insight, one manual sentence */}
       {hasPred && fight.modelSanity?.strongestInsight && (
         <SharpInsight text={fight.modelSanity.strongestInsight} />
       )}
@@ -336,10 +336,10 @@ export function MobileFightRead({
 
       <ContextualNotes notes={fight.contextNotes} />
 
-      {/* 4c · Market sanity + model blind-spot tags — after manual context */}
+      {/* 4c · Market sanity + model blind-spot tags, after manual context */}
       {hasPred && <ModelContextFooter sanity={fight.modelSanity} />}
 
-      {/* 5 · Fight shape — StyleComparisonBars renders its own mobile compact
+      {/* 5 · Fight shape, StyleComparisonBars renders its own mobile compact
           card with a single expand toggle; scroll anchor preserved via id. */}
       <div id="section-shape" className="scroll-mt-16">
         <StyleComparisonBars

@@ -98,6 +98,7 @@ function computeCalibration(records: ReturnType<typeof resolvedRecords>): Calibr
       const namedSide = getNamedCallSide(
         r.prediction.fighterAWinProbability,
         r.prediction.fighterBWinProbability,
+        resolveNamedCallThreshold(r.modelVersion),
       );
       const winnerMatchesFav =
         (namedSide === "fighterA" && r.outcome.winner === "fighterA") ||

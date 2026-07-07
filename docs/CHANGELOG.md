@@ -1,5 +1,51 @@
 # Fight Lens — Changelog
 
+## July 2026
+
+### Heavy review pass — shipped the laundry list
+
+A six-lens review (design, copy, ux, model, data provenance, code health) with adversarial verification, then implemented across parallel workstreams. Full ship gate green: lint 0 warnings, typecheck clean, 42/42 tests, build 50 static pages, audit 36/36 routes, backtest 0 drift.
+
+**Trust surface (P0/P1):**
+- **Fixed the calibration display bug.** `computeCalibration` called `getNamedCallSide` without the versioned threshold, so legacy 52–58% calls sat in the bucket denominator but could never be counted correct. The 50–60% band on `/record` was showing 25% actual when the true figure is 75%. Now passes `resolveNamedCallThreshold(r.modelVersion)`, matching the other call sites. Locked by a regression test that fails if the arg is ever dropped again.
+- **`/record` historical validation now reads the real backtest** (70% winner across 263 fights, Brier 0.223, from `summary.json`) instead of a lone 1-fight reconstruction shown as 100%. Added a small-sample honesty caveat on the live named-call accuracy (22 scored, not yet distinguishable from backing the favorite). Removed the hardcoded `outcome-v0.2` version stamps in favor of the computed version label.
+- **Deleted the stale `app/events/ufc-328/` route tree** (and its two orphaned components). The flagship card is now served by the dynamic `[eventId]` tree with the full mobile layout and receipt modules, not a divergent desktop-only copy.
+
+**Cancelled bouts (Ode Osbourne withdrawal):**
+- Added a `cancelled` state to `PredictionRecord`. Marked `osbourne-durden` cancelled (Osbourne withdrew, re-booked as Costa vs. Durden, which the model has not read). Forward-only: the logged call stays in the record marked cancelled, but a cancelled bout never resolves, so it is excluded from accuracy, dropped from the live card, and removed from the public "calls logged" count (33, not 34). A shared link to it lands on an honest cancelled notice instead of a stale pre-fight call.
+
+**Model (all gated behind new `outcome-v0.4`; 35 locked v0.1–v0.3 calls reproduce exactly, `audit:drift` 0 drifted):**
+- **Method head is matchup-aware** now (opponent finish-resistance + submission vulnerability), with a submission floor and a deterministic tie-break. The "submission 0%" artifact went from 13/35 to 0 hard-zeros; ambiguous top-method ties went to 0.
+- **Missing features drop the factor weight** instead of imputing a phantom league-average, plus a real confidence penalty on thin-data calls. Winner accuracy 66% → 70%.
+- **Retired the temperature recalibration** (T=0.824 sharpened the already-overconfident 60–80% band, the wrong direction). Reconciled the overloaded "v0.3" naming; docs updated.
+- **Fixed the backtest layoff bug** (used wall-clock `Date.now()` instead of the fight's as-of date).
+- **Added an out-of-sample holdout** (`--holdout`). UFC 328, the event whose fights the weights were visibly tuned on, scores 54% out-of-sample vs 70% in-sample. The 70% headline is now labeled in-sample.
+
+**Anti-AI copy + design:**
+- Em dashes removed from every user-facing string across app, components, lib, and the data layer (163 → 0). Fixed "pick-em" betting parlance on the UFC 329 card, prose semicolons, manufactured-contrast headlines, and filler ("unlock"/"leverage"). Fixed The Call showing "Holloway 61%" next to a 63% model call. Reconciled the "Pressure Point" doc contradiction and deleted the dead `pressurePoints` field.
+- Aligned the drifted hardcoded accent literals to the `--accent` token, raised `--subtle` to clear WCAG AA, removed the three sportsbook-adjacent accent glows, renamed the misleading `--font-geist-*` tokens to honest `--font-sans`/`--font-mono`, and fixed the rust/gold/amber drift between the design doc and the shipped ice-blue accent.
+
+**Provenance + infrastructure:**
+- Un-gated the methodology provenance labels (mock/manual/sourced/derived) from debug mode. Added a "card data as of" freshness line with a staleness caveat, a branded 404, and a pending-outcome placeholder that names where the receipt lands.
+- **Headless-browser ingester** (`npm run ingest:ufcstats:headless`) that solves the UFCStats JS anti-bot challenge via Playwright, unblocking card refreshes (validated 14 real UFC 329 rows). Added the first test suite (vitest), a pre-flight guard on `apply-results` (loud fail on a mistyped fight id, with an `--allow-missing` escape hatch), `assertSourcedEvent` at the data boundary, a country-flag miss warning, and dependency hygiene (removed dead `dom-to-image-more`, moved `cheerio` to devDependencies).
+
+**Deliberately deferred (need your eye, not a blind change):** the repeated feature-surface treatment across core blocks, the trailing-period headline scaffold, the home first-paint hero height, the mobile radar's manual-input flag, and the full per-fight `sourceMix` strip.
+
+---
+
+### UFC Vegas 119 outcomes scored (append-only)
+
+Recorded official results for UFC Fight Night: Kape vs. Horiguchi (June 20, 2026) onto the three locked pre-fight calls. Append-only: only the `outcome` block was written, no `prediction` block was touched.
+
+- Sourced winner, method, round, and stoppage time from UFC.com's official results article, cross-checked against CBS Sports and MMA media. Written to `data/postfight/ufc-vegas-119/results.json`, applied via `scripts/postfight/apply-results.mjs` (dry-run first, then live). UFCStats stat totals remain `needs_stats_review`.
+- Results: Kape def. Horiguchi (TKO R3, 2:42), Stirling def. Cutelaba (TKO R2, 3:23), Oliveira def. Fili (TKO R2, 4:56). The other two Vegas 119 bouts (Rodriguez/Amil, Baghdasaryan/Magomedov) were never locked calls and stay out of the record.
+- Model scoring on these three: winner **2/3** (missed Kape, hit Stirling and Oliveira), method **0/3** — the method model called decision on all three and all three finished by TKO inside the distance.
+- Public Model Record after this: 22 resolved named calls, 77% winner accuracy, 45% method accuracy, Brier 0.218. Grade stays hidden (gated at 30 scored calls; currently 22). The 50–60% confidence bucket now reads 3/11 (27%) — a low-confidence-band calibration concern flagged for review, not a display bug.
+
+**Provenance:** `sourced` (winner/method/round/time from UFC.com). No model math, thresholds, or prediction values changed. Data-layer change only.
+
+---
+
 ## May 2026
 
 ### Mobile UX + visual hierarchy pass

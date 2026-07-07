@@ -8,7 +8,7 @@ function flagEmoji(countryCode: string) {
   const normalized = countryCode.trim().toUpperCase();
 
   if (!/^[A-Z]{2}$/.test(normalized)) {
-    return normalized === "TBD" ? "—" : normalized.slice(0, 3);
+    return normalized === "TBD" ? ", " : normalized.slice(0, 3);
   }
 
   return Array.from(normalized)

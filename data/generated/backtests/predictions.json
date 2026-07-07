@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-17T03:50:48.090Z",
-  "modelVersion": "outcome-v0.2",
-  "totalFights": 260,
+  "generatedAt": "2026-07-07T14:14:53.511Z",
+  "modelVersion": "outcome-v0.4",
+  "totalFights": 263,
   "predictions": [
     {
       "fightId": "islam-makhachev-jack-della-maddalena",
@@ -15,9 +15,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 39,
-          "koTko": 20,
-          "submission": 41
+          "decision": 42,
+          "koTko": 28,
+          "submission": 30
         },
         "confidence": "low"
       },
@@ -26,7 +26,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.062Z"
+        "recordedAt": "2026-07-07T14:14:53.484Z"
       },
       "score": {
         "correct": true,
@@ -162,8 +162,8 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 80,
-          "koTko": 10,
+          "decision": 78,
+          "koTko": 12,
           "submission": 10
         },
         "confidence": "low"
@@ -173,7 +173,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.064Z"
+        "recordedAt": "2026-07-07T14:14:53.487Z"
       },
       "score": {
         "correct": false,
@@ -309,9 +309,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 45,
-          "koTko": 30,
-          "submission": 25
+          "decision": 44,
+          "koTko": 34,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -320,7 +320,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:27",
-        "recordedAt": "2026-06-17T03:50:48.065Z"
+        "recordedAt": "2026-07-07T14:14:53.487Z"
       },
       "score": {
         "correct": true,
@@ -456,9 +456,9 @@
         "fighterAWinProbability": 43,
         "fighterBWinProbability": 57,
         "methodBreakdown": {
-          "decision": 38,
-          "koTko": 62,
-          "submission": 0
+          "decision": 57,
+          "koTko": 35,
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -467,12 +467,12 @@
         "method": "ko_tko",
         "round": 2,
         "time": "1:28",
-        "recordedAt": "2026-06-17T03:50:48.065Z"
+        "recordedAt": "2026-07-07T14:14:53.488Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.3249000000000001,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -603,9 +603,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 55,
-          "koTko": 15,
-          "submission": 30
+          "decision": 51,
+          "koTko": 26,
+          "submission": 23
         },
         "confidence": "low"
       },
@@ -614,7 +614,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "0:16",
-        "recordedAt": "2026-06-17T03:50:48.065Z"
+        "recordedAt": "2026-07-07T14:14:53.488Z"
       },
       "score": {
         "correct": false,
@@ -750,9 +750,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 14,
-          "submission": 57
+          "decision": 37,
+          "koTko": 22,
+          "submission": 41
         },
         "confidence": "low"
       },
@@ -761,7 +761,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "2:24",
-        "recordedAt": "2026-06-17T03:50:48.065Z"
+        "recordedAt": "2026-07-07T14:14:53.488Z"
       },
       "score": {
         "correct": true,
@@ -897,9 +897,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 71,
-          "submission": 0
+          "decision": 31,
+          "koTko": 56,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -908,7 +908,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.065Z"
+        "recordedAt": "2026-07-07T14:14:53.488Z"
       },
       "score": {
         "correct": true,
@@ -1044,9 +1044,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 74,
-          "koTko": 0,
-          "submission": 26
+          "decision": 77,
+          "koTko": 7,
+          "submission": 16
         },
         "confidence": "low"
       },
@@ -1055,7 +1055,7 @@
         "method": "submission",
         "round": 2,
         "time": "4:44",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
         "correct": true,
@@ -1188,12 +1188,12 @@
         "fighterB": "Malcolm Wellmaker"
       },
       "prediction": {
-        "fighterAWinProbability": 29,
-        "fighterBWinProbability": 71,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 18,
-          "koTko": 77,
-          "submission": 5
+          "decision": 39,
+          "koTko": 47,
+          "submission": 14
         },
         "confidence": "insufficient"
       },
@@ -1202,11 +1202,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.5041,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -1348,9 +1348,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 26,
-          "submission": 74
+          "decision": 10,
+          "koTko": 41,
+          "submission": 49
         },
         "confidence": "low"
       },
@@ -1359,7 +1359,7 @@
         "method": "submission",
         "round": 1,
         "time": "0:50",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
         "correct": true,
@@ -1495,9 +1495,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 59,
-          "koTko": 11,
-          "submission": 30
+          "decision": 56,
+          "koTko": 22,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -1506,7 +1506,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
         "correct": false,
@@ -1642,9 +1642,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 30,
-          "koTko": 55,
-          "submission": 15
+          "decision": 55,
+          "koTko": 28,
+          "submission": 17
         },
         "confidence": "low"
       },
@@ -1653,12 +1653,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.20249999999999996,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -1786,12 +1786,12 @@
         "fighterB": "Eric McConico"
       },
       "prediction": {
-        "fighterAWinProbability": 76,
-        "fighterBWinProbability": 24,
+        "fighterAWinProbability": 78,
+        "fighterBWinProbability": 22,
         "methodBreakdown": {
           "decision": 24,
-          "koTko": 38,
-          "submission": 38
+          "koTko": 45,
+          "submission": 31
         },
         "confidence": "low"
       },
@@ -1800,11 +1800,11 @@
         "method": "ko_tko",
         "round": 3,
         "time": "1:38",
-        "recordedAt": "2026-06-17T03:50:48.066Z"
+        "recordedAt": "2026-07-07T14:14:53.489Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0576,
+        "brierContribution": 0.04839999999999999,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -1935,11 +1935,11 @@
         "fighterB": "Viacheslav Borshchev"
       },
       "prediction": {
-        "fighterAWinProbability": 60,
-        "fighterBWinProbability": 40,
+        "fighterAWinProbability": 46,
+        "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 78,
-          "koTko": 12,
+          "decision": 79,
+          "koTko": 11,
           "submission": 10
         },
         "confidence": "insufficient"
@@ -1949,11 +1949,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.071Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
-        "correct": true,
-        "brierContribution": 0.16000000000000003,
+        "correct": false,
+        "brierContribution": 0.2916,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -2087,9 +2087,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 89,
-          "koTko": 0,
-          "submission": 11
+          "decision": 86,
+          "koTko": 5,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -2098,7 +2098,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.071Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": false,
@@ -2234,8 +2234,8 @@
         "fighterAWinProbability": 65,
         "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 73,
-          "koTko": 13,
+          "decision": 72,
+          "koTko": 14,
           "submission": 14
         },
         "confidence": "low"
@@ -2245,7 +2245,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "0:26",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": true,
@@ -2381,9 +2381,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 45,
-          "koTko": 42,
-          "submission": 13
+          "decision": 63,
+          "koTko": 27,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -2392,12 +2392,12 @@
         "method": "ko_tko",
         "round": 2,
         "time": "2:24",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.25,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -2528,9 +2528,9 @@
         "fighterAWinProbability": 56,
         "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 14,
-          "koTko": 72,
-          "submission": 14
+          "decision": 45,
+          "koTko": 43,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -2539,7 +2539,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": true,
@@ -2675,9 +2675,9 @@
         "fighterAWinProbability": 73,
         "fighterBWinProbability": 27,
         "methodBreakdown": {
-          "decision": 21,
-          "koTko": 61,
-          "submission": 18
+          "decision": 22,
+          "koTko": 59,
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -2686,7 +2686,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:25",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": true,
@@ -2823,8 +2823,8 @@
         "fighterBWinProbability": 69,
         "methodBreakdown": {
           "decision": 15,
-          "koTko": 52,
-          "submission": 33
+          "koTko": 51,
+          "submission": 34
         },
         "confidence": "low"
       },
@@ -2833,7 +2833,7 @@
         "method": "submission",
         "round": 1,
         "time": "2:30",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": false,
@@ -2969,9 +2969,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 66,
-          "koTko": 11,
-          "submission": 23
+          "decision": 75,
+          "koTko": 13,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -2980,7 +2980,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.490Z"
       },
       "score": {
         "correct": true,
@@ -3116,9 +3116,9 @@
         "fighterAWinProbability": 61,
         "fighterBWinProbability": 39,
         "methodBreakdown": {
-          "decision": 48,
-          "koTko": 42,
-          "submission": 10
+          "decision": 52,
+          "koTko": 34,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -3127,12 +3127,12 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:59",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.1521,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -3263,9 +3263,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 56,
-          "koTko": 22,
-          "submission": 22
+          "decision": 67,
+          "koTko": 19,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -3274,7 +3274,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": false,
@@ -3410,9 +3410,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 25,
-          "koTko": 75,
-          "submission": 0
+          "decision": 37,
+          "koTko": 54,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -3421,7 +3421,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:24",
-        "recordedAt": "2026-06-17T03:50:48.072Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -3554,12 +3554,12 @@
         "fighterB": "Ibo Aslan"
       },
       "prediction": {
-        "fighterAWinProbability": 66,
-        "fighterBWinProbability": 34,
+        "fighterAWinProbability": 71,
+        "fighterBWinProbability": 29,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 16,
+          "koTko": 69,
+          "submission": 15
         },
         "confidence": "insufficient"
       },
@@ -3568,11 +3568,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:29",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.11559999999999998,
+        "brierContribution": 0.08410000000000002,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -3708,9 +3708,9 @@
         "fighterAWinProbability": 83,
         "fighterBWinProbability": 17,
         "methodBreakdown": {
-          "decision": 10,
-          "koTko": 87,
-          "submission": 3
+          "decision": 15,
+          "koTko": 70,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -3719,7 +3719,7 @@
         "method": "submission",
         "round": 1,
         "time": "1:09",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -3855,9 +3855,9 @@
         "fighterAWinProbability": 58,
         "fighterBWinProbability": 42,
         "methodBreakdown": {
-          "decision": 70,
-          "koTko": 30,
-          "submission": 0
+          "decision": 68,
+          "koTko": 26,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -3866,7 +3866,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "0:21",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -4002,9 +4002,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 52,
-          "koTko": 26,
-          "submission": 22
+          "decision": 46,
+          "koTko": 31,
+          "submission": 23
         },
         "confidence": "low"
       },
@@ -4013,12 +4013,12 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.2916,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -4150,8 +4150,8 @@
         "fighterBWinProbability": 36,
         "methodBreakdown": {
           "decision": 67,
-          "koTko": 33,
-          "submission": 0
+          "koTko": 28,
+          "submission": 5
         },
         "confidence": "low"
       },
@@ -4160,7 +4160,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -4296,9 +4296,9 @@
         "fighterAWinProbability": 68,
         "fighterBWinProbability": 32,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 83,
-          "submission": 0
+          "decision": 23,
+          "koTko": 65,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -4307,7 +4307,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "3:14",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -4443,9 +4443,9 @@
         "fighterAWinProbability": 61,
         "fighterBWinProbability": 39,
         "methodBreakdown": {
-          "decision": 88,
+          "decision": 85,
           "koTko": 12,
-          "submission": 0
+          "submission": 3
         },
         "confidence": "low"
       },
@@ -4454,7 +4454,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.491Z"
       },
       "score": {
         "correct": true,
@@ -4590,9 +4590,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 70,
-          "submission": 11
+          "decision": 34,
+          "koTko": 52,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -4601,7 +4601,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": false,
@@ -4737,8 +4737,8 @@
         "fighterAWinProbability": 74,
         "fighterBWinProbability": 26,
         "methodBreakdown": {
-          "decision": 73,
-          "koTko": 18,
+          "decision": 70,
+          "koTko": 21,
           "submission": 9
         },
         "confidence": "low"
@@ -4748,7 +4748,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -4884,9 +4884,9 @@
         "fighterAWinProbability": 77,
         "fighterBWinProbability": 23,
         "methodBreakdown": {
-          "decision": 12,
-          "koTko": 88,
-          "submission": 0
+          "decision": 38,
+          "koTko": 53,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -4895,7 +4895,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -5031,8 +5031,8 @@
         "fighterAWinProbability": 61,
         "fighterBWinProbability": 39,
         "methodBreakdown": {
-          "decision": 30,
-          "koTko": 40,
+          "decision": 22,
+          "koTko": 48,
           "submission": 30
         },
         "confidence": "low"
@@ -5042,7 +5042,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "4:57",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -5178,9 +5178,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 77,
-          "submission": 0
+          "decision": 40,
+          "koTko": 50,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -5189,7 +5189,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:16",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -5322,12 +5322,12 @@
         "fighterB": "Denzel Freeman"
       },
       "prediction": {
-        "fighterAWinProbability": 80,
-        "fighterBWinProbability": 20,
+        "fighterAWinProbability": 66,
+        "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 20,
-          "koTko": 80,
-          "submission": 0
+          "decision": 42,
+          "koTko": 49,
+          "submission": 9
         },
         "confidence": "insufficient"
       },
@@ -5336,11 +5336,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "4:59",
-        "recordedAt": "2026-06-17T03:50:48.073Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.03999999999999998,
+        "brierContribution": 0.11559999999999998,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -5473,12 +5473,12 @@
         "fighterB": "Adam Fugitt"
       },
       "prediction": {
-        "fighterAWinProbability": 48,
-        "fighterBWinProbability": 52,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 74,
-          "koTko": 26,
-          "submission": 0
+          "decision": 71,
+          "koTko": 24,
+          "submission": 5
         },
         "confidence": "insufficient"
       },
@@ -5487,11 +5487,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "4:59",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.27040000000000003,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -5632,9 +5632,9 @@
         "fighterAWinProbability": 71,
         "fighterBWinProbability": 29,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 50,
-          "submission": 0
+          "decision": 61,
+          "koTko": 33,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -5643,7 +5643,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -5779,9 +5779,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 31,
-          "koTko": 33,
-          "submission": 36
+          "decision": 33,
+          "koTko": 37,
+          "submission": 30
         },
         "confidence": "low"
       },
@@ -5790,7 +5790,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:45",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -5926,9 +5926,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 37,
-          "koTko": 63,
-          "submission": 0
+          "decision": 39,
+          "koTko": 51,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -5937,7 +5937,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:30",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -6070,12 +6070,12 @@
         "fighterB": "Tai Tuivasa"
       },
       "prediction": {
-        "fighterAWinProbability": 68,
-        "fighterBWinProbability": 32,
+        "fighterAWinProbability": 74,
+        "fighterBWinProbability": 26,
         "methodBreakdown": {
-          "decision": 21,
-          "koTko": 74,
-          "submission": 5
+          "decision": 18,
+          "koTko": 65,
+          "submission": 17
         },
         "confidence": "insufficient"
       },
@@ -6084,11 +6084,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.10239999999999996,
+        "brierContribution": 0.06760000000000001,
         "methodCorrect": false
       },
       "leakagePassed": true,
@@ -6222,9 +6222,9 @@
         "fighterAWinProbability": 62,
         "fighterBWinProbability": 38,
         "methodBreakdown": {
-          "decision": 69,
-          "koTko": 31,
-          "submission": 0
+          "decision": 62,
+          "koTko": 32,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -6233,7 +6233,7 @@
         "method": "submission",
         "round": 1,
         "time": "3:02",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": true,
@@ -6366,12 +6366,12 @@
         "fighterB": "Junior Tafa"
       },
       "prediction": {
-        "fighterAWinProbability": 40,
-        "fighterBWinProbability": 60,
+        "fighterAWinProbability": 36,
+        "fighterBWinProbability": 64,
         "methodBreakdown": {
-          "decision": 20,
-          "koTko": 60,
-          "submission": 20
+          "decision": 18,
+          "koTko": 54,
+          "submission": 28
         },
         "confidence": "insufficient"
       },
@@ -6380,11 +6380,11 @@
         "method": "submission",
         "round": 2,
         "time": "3:18",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.492Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.36,
+        "brierContribution": 0.4096,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -6519,9 +6519,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 20,
+          "koTko": 67,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -6530,7 +6530,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:08",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -6663,12 +6663,12 @@
         "fighterB": "Torrez Finney"
       },
       "prediction": {
-        "fighterAWinProbability": 36,
-        "fighterBWinProbability": 64,
+        "fighterAWinProbability": 66,
+        "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 56,
-          "koTko": 28,
-          "submission": 16
+          "decision": 64,
+          "koTko": 27,
+          "submission": 9
         },
         "confidence": "insufficient"
       },
@@ -6677,11 +6677,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.4096,
+        "correct": true,
+        "brierContribution": 0.11559999999999998,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -6815,9 +6815,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 14,
-          "submission": 23
+          "decision": 68,
+          "koTko": 17,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -6826,7 +6826,7 @@
         "method": "submission",
         "round": 2,
         "time": "3:31",
-        "recordedAt": "2026-06-17T03:50:48.074Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -6962,9 +6962,9 @@
         "fighterAWinProbability": 41,
         "fighterBWinProbability": 59,
         "methodBreakdown": {
-          "decision": 15,
-          "koTko": 15,
-          "submission": 70
+          "decision": 37,
+          "koTko": 25,
+          "submission": 38
         },
         "confidence": "low"
       },
@@ -6973,7 +6973,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -7109,9 +7109,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 17,
-          "submission": 33
+          "decision": 54,
+          "koTko": 22,
+          "submission": 24
         },
         "confidence": "insufficient"
       },
@@ -7120,7 +7120,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -7273,9 +7273,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 50,
-          "submission": 0
+          "decision": 53,
+          "koTko": 40,
+          "submission": 7
         },
         "confidence": "insufficient"
       },
@@ -7284,7 +7284,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "3:48",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -7437,9 +7437,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 50,
-          "submission": 0
+          "decision": 53,
+          "koTko": 40,
+          "submission": 7
         },
         "confidence": "insufficient"
       },
@@ -7448,7 +7448,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -7601,9 +7601,9 @@
         "fighterAWinProbability": 34,
         "fighterBWinProbability": 66,
         "methodBreakdown": {
-          "decision": 45,
-          "koTko": 44,
-          "submission": 11
+          "decision": 46,
+          "koTko": 41,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -7612,7 +7612,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -7748,9 +7748,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 38,
-          "koTko": 25,
-          "submission": 37
+          "decision": 46,
+          "koTko": 29,
+          "submission": 25
         },
         "confidence": "low"
       },
@@ -7759,7 +7759,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -7895,9 +7895,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 76,
-          "koTko": 12,
-          "submission": 12
+          "decision": 80,
+          "koTko": 11,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -7906,7 +7906,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -8042,9 +8042,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 41,
-          "koTko": 59,
-          "submission": 0
+          "decision": 42,
+          "koTko": 46,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -8053,7 +8053,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "1:53",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -8189,9 +8189,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 39,
-          "koTko": 40,
-          "submission": 21
+          "decision": 30,
+          "koTko": 48,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -8200,7 +8200,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:47",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": true,
@@ -8336,9 +8336,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 59,
-          "koTko": 41,
-          "submission": 0
+          "decision": 61,
+          "koTko": 33,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -8347,7 +8347,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.493Z"
       },
       "score": {
         "correct": false,
@@ -8483,9 +8483,9 @@
         "fighterAWinProbability": 80,
         "fighterBWinProbability": 20,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 60,
-          "submission": 40
+          "decision": 7,
+          "koTko": 56,
+          "submission": 37
         },
         "confidence": "low"
       },
@@ -8494,7 +8494,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
@@ -8630,9 +8630,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 49,
-          "koTko": 0,
-          "submission": 51
+          "decision": 63,
+          "koTko": 10,
+          "submission": 27
         },
         "confidence": "low"
       },
@@ -8641,12 +8641,12 @@
         "method": "submission",
         "round": 2,
         "time": "0:40",
-        "recordedAt": "2026-06-17T03:50:48.075Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.24009999999999998,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": false,
       "missingDataFlags": [
@@ -8779,9 +8779,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 16,
-          "koTko": 0,
-          "submission": 84
+          "decision": 28,
+          "koTko": 16,
+          "submission": 56
         },
         "confidence": "low"
       },
@@ -8790,7 +8790,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": false,
@@ -8926,9 +8926,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 78,
-          "koTko": 11,
-          "submission": 11
+          "decision": 69,
+          "koTko": 15,
+          "submission": 16
         },
         "confidence": "low"
       },
@@ -8937,7 +8937,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
@@ -9070,12 +9070,12 @@
         "fighterB": "Rafael Tobias"
       },
       "prediction": {
-        "fighterAWinProbability": 67,
-        "fighterBWinProbability": 33,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 67,
-          "submission": 33
+          "decision": 10,
+          "koTko": 44,
+          "submission": 46
         },
         "confidence": "insufficient"
       },
@@ -9084,11 +9084,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.10889999999999997,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -9226,12 +9226,12 @@
         "fighterB": "Luke Fernandez"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 16,
+          "koTko": 71,
+          "submission": 13
         },
         "confidence": "insufficient"
       },
@@ -9240,11 +9240,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:42",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.2916,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -9385,9 +9385,9 @@
         "fighterAWinProbability": 66,
         "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 27,
+          "decision": 21,
           "koTko": 60,
-          "submission": 13
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -9396,7 +9396,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:45",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
@@ -9532,9 +9532,9 @@
         "fighterAWinProbability": 37,
         "fighterBWinProbability": 63,
         "methodBreakdown": {
-          "decision": 49,
-          "koTko": 51,
-          "submission": 0
+          "decision": 64,
+          "koTko": 30,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -9543,12 +9543,12 @@
         "method": "ko_tko",
         "round": 3,
         "time": "1:23",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.39690000000000003,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -9679,9 +9679,9 @@
         "fighterAWinProbability": 84,
         "fighterBWinProbability": 16,
         "methodBreakdown": {
-          "decision": 5,
-          "koTko": 95,
-          "submission": 0
+          "decision": 11,
+          "koTko": 76,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -9690,7 +9690,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
@@ -9826,9 +9826,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 21,
-          "koTko": 79,
-          "submission": 0
+          "decision": 19,
+          "koTko": 69,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -9837,7 +9837,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.494Z"
       },
       "score": {
         "correct": true,
@@ -9973,9 +9973,9 @@
         "fighterAWinProbability": 58,
         "fighterBWinProbability": 42,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 60,
-          "submission": 21
+          "decision": 15,
+          "koTko": 57,
+          "submission": 28
         },
         "confidence": "low"
       },
@@ -9984,7 +9984,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "4:06",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": true,
@@ -10117,12 +10117,12 @@
         "fighterB": "Patricio Pitbull"
       },
       "prediction": {
-        "fighterAWinProbability": 85,
-        "fighterBWinProbability": 15,
+        "fighterAWinProbability": 73,
+        "fighterBWinProbability": 27,
         "methodBreakdown": {
-          "decision": 69,
-          "koTko": 17,
-          "submission": 14
+          "decision": 75,
+          "koTko": 15,
+          "submission": 10
         },
         "confidence": "insufficient"
       },
@@ -10131,11 +10131,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.022500000000000006,
+        "brierContribution": 0.0729,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -10269,9 +10269,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 41,
-          "koTko": 36,
-          "submission": 23
+          "decision": 45,
+          "koTko": 29,
+          "submission": 26
         },
         "confidence": "low"
       },
@@ -10280,7 +10280,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": false,
@@ -10416,9 +10416,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 71,
-          "koTko": 29,
-          "submission": 0
+          "decision": 77,
+          "koTko": 19,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -10427,7 +10427,7 @@
         "method": "submission",
         "round": 2,
         "time": "4:19",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": true,
@@ -10563,9 +10563,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 75,
-          "koTko": 0,
-          "submission": 25
+          "decision": 80,
+          "koTko": 7,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -10574,7 +10574,7 @@
         "method": "submission",
         "round": 2,
         "time": "2:29",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": false,
@@ -10710,9 +10710,9 @@
         "fighterAWinProbability": 47,
         "fighterBWinProbability": 53,
         "methodBreakdown": {
-          "decision": 77,
-          "koTko": 0,
-          "submission": 23
+          "decision": 80,
+          "koTko": 5,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -10721,7 +10721,7 @@
         "method": "submission",
         "round": 1,
         "time": "4:08",
-        "recordedAt": "2026-06-17T03:50:48.076Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": false,
@@ -10857,9 +10857,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 81,
-          "submission": 19
+          "decision": 25,
+          "koTko": 57,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -10868,7 +10868,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.077Z"
+        "recordedAt": "2026-07-07T14:14:53.495Z"
       },
       "score": {
         "correct": true,
@@ -11004,9 +11004,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 17,
-          "submission": 20
+          "decision": 69,
+          "koTko": 19,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -11151,9 +11151,9 @@
         "fighterAWinProbability": 63,
         "fighterBWinProbability": 37,
         "methodBreakdown": {
-          "decision": 38,
-          "koTko": 53,
-          "submission": 9
+          "decision": 45,
+          "koTko": 43,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -11298,8 +11298,8 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 37,
-          "koTko": 51,
+          "decision": 54,
+          "koTko": 34,
           "submission": 12
         },
         "confidence": "low"
@@ -11314,7 +11314,7 @@
       "score": {
         "correct": false,
         "brierContribution": 0.2601,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -11445,9 +11445,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 33,
-          "submission": 38
+          "decision": 26,
+          "koTko": 43,
+          "submission": 31
         },
         "confidence": "low"
       },
@@ -11592,9 +11592,9 @@
         "fighterAWinProbability": 66,
         "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 65,
-          "koTko": 29,
-          "submission": 6
+          "decision": 71,
+          "koTko": 21,
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -11739,9 +11739,9 @@
         "fighterAWinProbability": 56,
         "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 55,
+          "decision": 46,
           "koTko": 45,
-          "submission": 0
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -11755,7 +11755,7 @@
       "score": {
         "correct": true,
         "brierContribution": 0.19359999999999997,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -11883,12 +11883,12 @@
         "fighterB": "Yaroslav Amosov"
       },
       "prediction": {
-        "fighterAWinProbability": 41,
-        "fighterBWinProbability": 59,
+        "fighterAWinProbability": 54,
+        "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 11,
-          "koTko": 20,
-          "submission": 69
+          "decision": 26,
+          "koTko": 35,
+          "submission": 39
         },
         "confidence": "insufficient"
       },
@@ -11900,8 +11900,8 @@
         "recordedAt": "2026-05-09T23:00:00.000Z"
       },
       "score": {
-        "correct": true,
-        "brierContribution": 0.16809999999999997,
+        "correct": false,
+        "brierContribution": 0.2916,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -12035,9 +12035,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 58,
-          "koTko": 16,
-          "submission": 26
+          "decision": 54,
+          "koTko": 22,
+          "submission": 24
         },
         "confidence": "low"
       },
@@ -12182,8 +12182,8 @@
         "fighterAWinProbability": 39,
         "fighterBWinProbability": 61,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 74,
+          "decision": 27,
+          "koTko": 47,
           "submission": 26
         },
         "confidence": "low"
@@ -12329,9 +12329,9 @@
         "fighterAWinProbability": 27,
         "fighterBWinProbability": 73,
         "methodBreakdown": {
-          "decision": 32,
-          "koTko": 68,
-          "submission": 0
+          "decision": 42,
+          "koTko": 46,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -12476,9 +12476,9 @@
         "fighterAWinProbability": 56,
         "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 61,
-          "koTko": 11,
-          "submission": 28
+          "decision": 63,
+          "koTko": 19,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -12620,12 +12620,12 @@
         "fighterB": "Djorden Santos"
       },
       "prediction": {
-        "fighterAWinProbability": 60,
-        "fighterBWinProbability": 40,
+        "fighterAWinProbability": 59,
+        "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 40,
-          "koTko": 40,
-          "submission": 20
+          "decision": 56,
+          "koTko": 29,
+          "submission": 15
         },
         "confidence": "insufficient"
       },
@@ -12638,8 +12638,8 @@
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.16000000000000003,
-        "methodCorrect": true
+        "brierContribution": 0.16810000000000003,
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [
@@ -12772,9 +12772,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 45,
-          "submission": 36
+          "decision": 39,
+          "koTko": 37,
+          "submission": 24
         },
         "confidence": "low"
       },
@@ -12919,9 +12919,9 @@
         "fighterAWinProbability": 48,
         "fighterBWinProbability": 52,
         "methodBreakdown": {
-          "decision": 12,
-          "koTko": 64,
-          "submission": 24
+          "decision": 21,
+          "koTko": 54,
+          "submission": 25
         },
         "confidence": "low"
       },
@@ -12930,7 +12930,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:18",
-        "recordedAt": "2026-06-17T03:50:48.077Z"
+        "recordedAt": "2026-07-07T14:14:53.496Z"
       },
       "score": {
         "correct": false,
@@ -13066,9 +13066,9 @@
         "fighterAWinProbability": 42,
         "fighterBWinProbability": 58,
         "methodBreakdown": {
-          "decision": 67,
+          "decision": 76,
           "koTko": 12,
-          "submission": 21
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -13077,7 +13077,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:42",
-        "recordedAt": "2026-06-17T03:50:48.077Z"
+        "recordedAt": "2026-07-07T14:14:53.496Z"
       },
       "score": {
         "correct": false,
@@ -13213,9 +13213,9 @@
         "fighterAWinProbability": 60,
         "fighterBWinProbability": 40,
         "methodBreakdown": {
-          "decision": 60,
-          "koTko": 0,
-          "submission": 40
+          "decision": 49,
+          "koTko": 16,
+          "submission": 35
         },
         "confidence": "low"
       },
@@ -13224,12 +13224,12 @@
         "method": "submission",
         "round": 1,
         "time": "1:03",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.496Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.16000000000000003,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -13357,12 +13357,12 @@
         "fighterB": "Julian Erosa"
       },
       "prediction": {
-        "fighterAWinProbability": 85,
-        "fighterBWinProbability": 15,
+        "fighterAWinProbability": 93,
+        "fighterBWinProbability": 7,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 90,
-          "submission": 10
+          "decision": 6,
+          "koTko": 78,
+          "submission": 16
         },
         "confidence": "insufficient"
       },
@@ -13371,11 +13371,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:33",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.496Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.022500000000000006,
+        "brierContribution": 0.004899999999999993,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -13510,9 +13510,9 @@
         "fighterAWinProbability": 67,
         "fighterBWinProbability": 33,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 92,
-          "submission": 8
+          "decision": 21,
+          "koTko": 64,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -13521,7 +13521,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "3:39",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -13657,8 +13657,8 @@
         "fighterAWinProbability": 70,
         "fighterBWinProbability": 30,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 54,
+          "decision": 22,
+          "koTko": 55,
           "submission": 23
         },
         "confidence": "low"
@@ -13668,7 +13668,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "0:24",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -13801,12 +13801,12 @@
         "fighterB": "Ignacio Bahamondes"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 45,
+        "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 28,
-          "koTko": 46,
-          "submission": 26
+          "decision": 36,
+          "koTko": 39,
+          "submission": 25
         },
         "confidence": "low"
       },
@@ -13815,11 +13815,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.2916,
+        "brierContribution": 0.30250000000000005,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -13953,9 +13953,9 @@
         "fighterAWinProbability": 33,
         "fighterBWinProbability": 67,
         "methodBreakdown": {
-          "decision": 37,
-          "koTko": 7,
-          "submission": 56
+          "decision": 53,
+          "koTko": 17,
+          "submission": 30
         },
         "confidence": "low"
       },
@@ -13964,12 +13964,12 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:56",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.4488999999999999,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": false,
       "missingDataFlags": [],
@@ -14097,12 +14097,12 @@
         "fighterB": "Marcin Tybura"
       },
       "prediction": {
-        "fighterAWinProbability": 45,
-        "fighterBWinProbability": 55,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 47,
-          "koTko": 27,
-          "submission": 26
+          "decision": 48,
+          "koTko": 31,
+          "submission": 21
         },
         "confidence": "insufficient"
       },
@@ -14111,11 +14111,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.30250000000000005,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -14257,9 +14257,9 @@
         "fighterAWinProbability": 73,
         "fighterBWinProbability": 27,
         "methodBreakdown": {
-          "decision": 67,
-          "koTko": 24,
-          "submission": 9
+          "decision": 73,
+          "koTko": 17,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -14268,7 +14268,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:11",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -14404,9 +14404,9 @@
         "fighterAWinProbability": 70,
         "fighterBWinProbability": 30,
         "methodBreakdown": {
-          "decision": 68,
-          "koTko": 32,
-          "submission": 0
+          "decision": 60,
+          "koTko": 34,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -14415,7 +14415,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:05",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -14551,9 +14551,9 @@
         "fighterAWinProbability": 72,
         "fighterBWinProbability": 28,
         "methodBreakdown": {
-          "decision": 76,
-          "koTko": 0,
-          "submission": 24
+          "decision": 79,
+          "koTko": 7,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -14562,7 +14562,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -14698,8 +14698,8 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 44,
-          "koTko": 45,
+          "decision": 52,
+          "koTko": 37,
           "submission": 11
         },
         "confidence": "low"
@@ -14709,12 +14709,12 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.2916,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -14845,9 +14845,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 77,
-          "submission": 0
+          "decision": 39,
+          "koTko": 52,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -14856,7 +14856,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:29",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -14992,9 +14992,9 @@
         "fighterAWinProbability": 63,
         "fighterBWinProbability": 37,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 26,
+          "koTko": 63,
+          "submission": 11
         },
         "confidence": "insufficient"
       },
@@ -15003,7 +15003,7 @@
         "method": "submission",
         "round": 2,
         "time": "4:08",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -15138,12 +15138,12 @@
         "fighterB": "Christian Edwards"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 46,
-          "koTko": 34,
-          "submission": 20
+          "decision": 43,
+          "koTko": 38,
+          "submission": 19
         },
         "confidence": "insufficient"
       },
@@ -15152,11 +15152,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.2916,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -15298,9 +15298,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 84,
-          "koTko": 16,
-          "submission": 0
+          "decision": 77,
+          "koTko": 19,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -15309,7 +15309,7 @@
         "method": "submission",
         "round": 2,
         "time": "2:25",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.497Z"
       },
       "score": {
         "correct": true,
@@ -15445,9 +15445,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 50,
-          "submission": 0
+          "decision": 65,
+          "koTko": 29,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -15456,7 +15456,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:31",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -15592,9 +15592,9 @@
         "fighterAWinProbability": 43,
         "fighterBWinProbability": 57,
         "methodBreakdown": {
-          "decision": 26,
-          "koTko": 9,
-          "submission": 65
+          "decision": 40,
+          "koTko": 19,
+          "submission": 41
         },
         "confidence": "low"
       },
@@ -15603,7 +15603,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.078Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": false,
@@ -15736,12 +15736,12 @@
         "fighterB": "Artur Minev"
       },
       "prediction": {
-        "fighterAWinProbability": 73,
-        "fighterBWinProbability": 27,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 5,
-          "submission": 78
+          "decision": 40,
+          "koTko": 22,
+          "submission": 38
         },
         "confidence": "insufficient"
       },
@@ -15750,11 +15750,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "2:51",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0729,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -15897,9 +15897,9 @@
         "fighterAWinProbability": 28,
         "fighterBWinProbability": 72,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 93,
+          "koTko": 5,
+          "submission": 2
         },
         "confidence": "low"
       },
@@ -15908,7 +15908,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": false,
@@ -16044,9 +16044,9 @@
         "fighterAWinProbability": 38,
         "fighterBWinProbability": 62,
         "methodBreakdown": {
-          "decision": 62,
-          "koTko": 38,
-          "submission": 0
+          "decision": 57,
+          "koTko": 35,
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -16055,7 +16055,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "0:44",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": false,
@@ -16191,9 +16191,9 @@
         "fighterAWinProbability": 68,
         "fighterBWinProbability": 32,
         "methodBreakdown": {
-          "decision": 68,
-          "koTko": 32,
-          "submission": 0
+          "decision": 74,
+          "koTko": 20,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -16202,7 +16202,7 @@
         "method": "submission",
         "round": 2,
         "time": "4:36",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -16338,9 +16338,9 @@
         "fighterAWinProbability": 65,
         "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 90,
+          "koTko": 6,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -16349,7 +16349,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -16482,12 +16482,12 @@
         "fighterB": "Shauna Bannon"
       },
       "prediction": {
-        "fighterAWinProbability": 32,
-        "fighterBWinProbability": 68,
+        "fighterAWinProbability": 23,
+        "fighterBWinProbability": 77,
         "methodBreakdown": {
-          "decision": 34,
-          "koTko": 0,
-          "submission": 66
+          "decision": 45,
+          "koTko": 14,
+          "submission": 41
         },
         "confidence": "insufficient"
       },
@@ -16496,11 +16496,11 @@
         "method": "submission",
         "round": 3,
         "time": "3:08",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.4623999999999999,
+        "brierContribution": 0.5929,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -16634,9 +16634,9 @@
         "fighterAWinProbability": 42,
         "fighterBWinProbability": 58,
         "methodBreakdown": {
-          "decision": 77,
-          "koTko": 23,
-          "submission": 0
+          "decision": 70,
+          "koTko": 24,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -16645,7 +16645,7 @@
         "method": "submission",
         "round": 2,
         "time": "4:46",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": false,
@@ -16782,8 +16782,8 @@
         "fighterBWinProbability": 38,
         "methodBreakdown": {
           "decision": 65,
-          "koTko": 10,
-          "submission": 25
+          "koTko": 14,
+          "submission": 21
         },
         "confidence": "low"
       },
@@ -16792,7 +16792,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -16928,9 +16928,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 16,
-          "koTko": 69,
-          "submission": 15
+          "decision": 33,
+          "koTko": 51,
+          "submission": 16
         },
         "confidence": "low"
       },
@@ -16939,7 +16939,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -17075,9 +17075,9 @@
         "fighterAWinProbability": 60,
         "fighterBWinProbability": 40,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 15,
+          "koTko": 67,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -17086,7 +17086,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -17223,8 +17223,8 @@
         "fighterBWinProbability": 33,
         "methodBreakdown": {
           "decision": 78,
-          "koTko": 0,
-          "submission": 22
+          "koTko": 6,
+          "submission": 16
         },
         "confidence": "low"
       },
@@ -17233,7 +17233,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -17369,9 +17369,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 46,
-          "koTko": 54,
-          "submission": 0
+          "decision": 60,
+          "koTko": 33,
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -17380,12 +17380,12 @@
         "method": "ko_tko",
         "round": 2,
         "time": "1:42",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.21159999999999995,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -17516,9 +17516,9 @@
         "fighterAWinProbability": 85,
         "fighterBWinProbability": 15,
         "methodBreakdown": {
-          "decision": 15,
-          "koTko": 85,
-          "submission": 0
+          "decision": 43,
+          "koTko": 48,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -17527,7 +17527,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.498Z"
       },
       "score": {
         "correct": true,
@@ -17663,9 +17663,9 @@
         "fighterAWinProbability": 42,
         "fighterBWinProbability": 58,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 91,
+          "koTko": 6,
+          "submission": 3
         },
         "confidence": "low"
       },
@@ -17674,7 +17674,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:42",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": false,
@@ -17810,9 +17810,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 72,
-          "koTko": 0,
-          "submission": 28
+          "decision": 74,
+          "koTko": 8,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -17821,7 +17821,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -17954,12 +17954,12 @@
         "fighterB": "Gianni Vazquez"
       },
       "prediction": {
-        "fighterAWinProbability": 72,
-        "fighterBWinProbability": 28,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 89,
-          "koTko": 6,
-          "submission": 5
+          "decision": 77,
+          "koTko": 14,
+          "submission": 9
         },
         "confidence": "insufficient"
       },
@@ -17968,11 +17968,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.07840000000000001,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -18114,9 +18114,9 @@
         "fighterAWinProbability": 69,
         "fighterBWinProbability": 31,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 25,
-          "submission": 25
+          "decision": 57,
+          "koTko": 23,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -18125,7 +18125,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -18258,12 +18258,12 @@
         "fighterB": "Muin Gafurov"
       },
       "prediction": {
-        "fighterAWinProbability": 40,
-        "fighterBWinProbability": 60,
+        "fighterAWinProbability": 37,
+        "fighterBWinProbability": 63,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 91,
+          "koTko": 6,
+          "submission": 3
         },
         "confidence": "low"
       },
@@ -18272,11 +18272,11 @@
         "method": "submission",
         "round": 3,
         "time": "4:59",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.36,
+        "brierContribution": 0.39690000000000003,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -18410,9 +18410,9 @@
         "fighterAWinProbability": 74,
         "fighterBWinProbability": 26,
         "methodBreakdown": {
-          "decision": 74,
+          "decision": 66,
           "koTko": 26,
-          "submission": 0
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -18421,7 +18421,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -18557,9 +18557,9 @@
         "fighterAWinProbability": 58,
         "fighterBWinProbability": 42,
         "methodBreakdown": {
-          "decision": 72,
-          "koTko": 14,
-          "submission": 14
+          "decision": 70,
+          "koTko": 19,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -18568,7 +18568,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "2:08",
-        "recordedAt": "2026-06-17T03:50:48.079Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -18704,9 +18704,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 37,
-          "koTko": 0,
-          "submission": 63
+          "decision": 60,
+          "koTko": 10,
+          "submission": 30
         },
         "confidence": "low"
       },
@@ -18715,12 +18715,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.30250000000000005,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -18848,12 +18848,12 @@
         "fighterB": "Mandel Nallo"
       },
       "prediction": {
-        "fighterAWinProbability": 18,
-        "fighterBWinProbability": 82,
+        "fighterAWinProbability": 13,
+        "fighterBWinProbability": 87,
         "methodBreakdown": {
-          "decision": 18,
-          "koTko": 82,
-          "submission": 0
+          "decision": 17,
+          "koTko": 70,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -18862,11 +18862,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:05",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.6724000000000001,
+        "brierContribution": 0.7569,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -19000,9 +19000,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 57,
-          "koTko": 0,
-          "submission": 43
+          "decision": 69,
+          "koTko": 8,
+          "submission": 23
         },
         "confidence": "low"
       },
@@ -19011,7 +19011,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -19147,9 +19147,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 79,
-          "koTko": 21,
-          "submission": 0
+          "decision": 81,
+          "koTko": 15,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -19158,7 +19158,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
@@ -19291,12 +19291,12 @@
         "fighterB": "Dennis Buzukja"
       },
       "prediction": {
-        "fighterAWinProbability": 62,
-        "fighterBWinProbability": 38,
+        "fighterAWinProbability": 64,
+        "fighterBWinProbability": 36,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 81,
-          "submission": 0
+          "decision": 43,
+          "koTko": 49,
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -19305,11 +19305,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:20",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.1444,
+        "brierContribution": 0.1296,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -19440,12 +19440,12 @@
         "fighterB": "Julien Leblanc"
       },
       "prediction": {
-        "fighterAWinProbability": 30,
-        "fighterBWinProbability": 70,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "decision": 60,
+          "koTko": 25,
+          "submission": 15
         },
         "confidence": "insufficient"
       },
@@ -19454,11 +19454,11 @@
         "method": "submission",
         "round": 1,
         "time": "2:22",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.499Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.48999999999999994,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -19597,12 +19597,12 @@
         "fighterB": "Tanner Boser"
       },
       "prediction": {
-        "fighterAWinProbability": 36,
-        "fighterBWinProbability": 64,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 55,
-          "koTko": 39,
-          "submission": 6
+          "decision": 64,
+          "koTko": 28,
+          "submission": 8
         },
         "confidence": "insufficient"
       },
@@ -19611,11 +19611,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:43",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.4096,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -19758,9 +19758,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 55,
-          "koTko": 45,
-          "submission": 0
+          "decision": 53,
+          "koTko": 37,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -19769,7 +19769,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": false,
@@ -19905,9 +19905,9 @@
         "fighterAWinProbability": 41,
         "fighterBWinProbability": 59,
         "methodBreakdown": {
-          "decision": 67,
-          "koTko": 33,
-          "submission": 0
+          "decision": 74,
+          "koTko": 22,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -19916,7 +19916,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": false,
@@ -20049,12 +20049,12 @@
         "fighterB": "Jamie Siraj"
       },
       "prediction": {
-        "fighterAWinProbability": 49,
-        "fighterBWinProbability": 51,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "decision": 59,
+          "koTko": 23,
+          "submission": 18
         },
         "confidence": "insufficient"
       },
@@ -20063,11 +20063,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:43",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.2601,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -20210,9 +20210,9 @@
         "fighterAWinProbability": 32,
         "fighterBWinProbability": 68,
         "methodBreakdown": {
-          "decision": 51,
-          "koTko": 49,
-          "submission": 0
+          "decision": 63,
+          "koTko": 31,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -20221,7 +20221,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "3:17",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": false,
@@ -20357,9 +20357,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 67,
-          "koTko": 22,
-          "submission": 11
+          "decision": 58,
+          "koTko": 30,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -20368,7 +20368,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:29",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
@@ -20504,9 +20504,9 @@
         "fighterAWinProbability": 39,
         "fighterBWinProbability": 61,
         "methodBreakdown": {
-          "decision": 50,
-          "koTko": 20,
-          "submission": 30
+          "decision": 59,
+          "koTko": 19,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -20515,7 +20515,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": false,
@@ -20648,12 +20648,12 @@
         "fighterB": "Ollie Schmid"
       },
       "prediction": {
-        "fighterAWinProbability": 65,
-        "fighterBWinProbability": 35,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 22,
-          "koTko": 72,
-          "submission": 6
+          "decision": 39,
+          "koTko": 47,
+          "submission": 14
         },
         "confidence": "insufficient"
       },
@@ -20662,11 +20662,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:47",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.12249999999999998,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -20805,12 +20805,12 @@
         "fighterB": "Shamil Gaziev"
       },
       "prediction": {
-        "fighterAWinProbability": 81,
-        "fighterBWinProbability": 19,
+        "fighterAWinProbability": 87,
+        "fighterBWinProbability": 13,
         "methodBreakdown": {
-          "decision": 6,
-          "koTko": 94,
-          "submission": 0
+          "decision": 10,
+          "koTko": 77,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -20819,11 +20819,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "3:44",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.03609999999999998,
+        "brierContribution": 0.016900000000000002,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -20957,9 +20957,9 @@
         "fighterAWinProbability": 37,
         "fighterBWinProbability": 63,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "decision": 53,
+          "koTko": 27,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -20968,7 +20968,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": false,
@@ -21104,9 +21104,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 33,
+          "koTko": 57,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -21115,7 +21115,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.080Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
@@ -21248,12 +21248,12 @@
         "fighterB": "Kevin Christian"
       },
       "prediction": {
-        "fighterAWinProbability": 63,
-        "fighterBWinProbability": 37,
+        "fighterAWinProbability": 66,
+        "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 63,
-          "submission": 37
+          "decision": 5,
+          "koTko": 56,
+          "submission": 39
         },
         "confidence": "low"
       },
@@ -21262,11 +21262,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:42",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.1369,
+        "brierContribution": 0.11559999999999998,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -21401,9 +21401,9 @@
         "fighterAWinProbability": 73,
         "fighterBWinProbability": 27,
         "methodBreakdown": {
-          "decision": 49,
-          "koTko": 24,
-          "submission": 27
+          "decision": 51,
+          "koTko": 31,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -21412,12 +21412,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.500Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.0729,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -21548,9 +21548,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 82,
+          "decision": 83,
           "koTko": 10,
-          "submission": 8
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -21559,7 +21559,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -21695,9 +21695,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 31,
-          "koTko": 10,
-          "submission": 59
+          "decision": 34,
+          "koTko": 26,
+          "submission": 40
         },
         "confidence": "insufficient"
       },
@@ -21706,7 +21706,7 @@
         "method": "submission",
         "round": 3,
         "time": "1:50",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -21853,9 +21853,9 @@
         "fighterAWinProbability": 36,
         "fighterBWinProbability": 64,
         "methodBreakdown": {
-          "decision": 55,
-          "koTko": 21,
-          "submission": 24
+          "decision": 54,
+          "koTko": 23,
+          "submission": 23
         },
         "confidence": "low"
       },
@@ -21864,7 +21864,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
@@ -21997,12 +21997,12 @@
         "fighterB": "Dom Mar Fan"
       },
       "prediction": {
-        "fighterAWinProbability": 16,
-        "fighterBWinProbability": 84,
+        "fighterAWinProbability": 9,
+        "fighterBWinProbability": 91,
         "methodBreakdown": {
-          "decision": 84,
-          "koTko": 16,
-          "submission": 0
+          "decision": 85,
+          "koTko": 11,
+          "submission": 4
         },
         "confidence": "insufficient"
       },
@@ -22011,11 +22011,11 @@
         "method": "submission",
         "round": 1,
         "time": "3:56",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.7055999999999999,
+        "brierContribution": 0.8281000000000001,
         "methodCorrect": false
       },
       "leakagePassed": true,
@@ -22149,9 +22149,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 15,
-          "koTko": 85,
-          "submission": 0
+          "decision": 34,
+          "koTko": 54,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -22160,7 +22160,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:33",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -22296,9 +22296,9 @@
         "fighterAWinProbability": 58,
         "fighterBWinProbability": 42,
         "methodBreakdown": {
-          "decision": 71,
-          "koTko": 29,
-          "submission": 0
+          "decision": 67,
+          "koTko": 26,
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -22307,7 +22307,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -22443,9 +22443,9 @@
         "fighterAWinProbability": 65,
         "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 77,
-          "submission": 0
+          "decision": 32,
+          "koTko": 56,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -22454,7 +22454,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -22587,12 +22587,12 @@
         "fighterB": "Harry Hardwick"
       },
       "prediction": {
-        "fighterAWinProbability": 83,
-        "fighterBWinProbability": 17,
+        "fighterAWinProbability": 90,
+        "fighterBWinProbability": 10,
         "methodBreakdown": {
           "decision": 11,
-          "koTko": 86,
-          "submission": 3
+          "koTko": 75,
+          "submission": 14
         },
         "confidence": "insufficient"
       },
@@ -22601,11 +22601,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.028900000000000012,
+        "brierContribution": 0.009999999999999995,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -22740,9 +22740,9 @@
         "fighterAWinProbability": 33,
         "fighterBWinProbability": 67,
         "methodBreakdown": {
-          "decision": 34,
-          "koTko": 33,
-          "submission": 33
+          "decision": 33,
+          "koTko": 35,
+          "submission": 32
         },
         "confidence": "low"
       },
@@ -22751,7 +22751,7 @@
         "method": "submission",
         "round": 1,
         "time": "4:24",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
@@ -22887,9 +22887,9 @@
         "fighterAWinProbability": 58,
         "fighterBWinProbability": 42,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 53,
-          "submission": 28
+          "decision": 40,
+          "koTko": 42,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -22898,7 +22898,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -23034,9 +23034,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 61,
-          "koTko": 13,
-          "submission": 26
+          "decision": 71,
+          "koTko": 15,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -23045,7 +23045,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": true,
@@ -23178,12 +23178,12 @@
         "fighterB": "Steven Asplund"
       },
       "prediction": {
-        "fighterAWinProbability": 35,
-        "fighterBWinProbability": 65,
+        "fighterAWinProbability": 32,
+        "fighterBWinProbability": 68,
         "methodBreakdown": {
-          "decision": 12,
-          "koTko": 76,
-          "submission": 12
+          "decision": 16,
+          "koTko": 65,
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -23192,11 +23192,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.42250000000000004,
+        "brierContribution": 0.4623999999999999,
         "methodCorrect": false
       },
       "leakagePassed": true,
@@ -23330,9 +23330,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 85,
-          "koTko": 15,
-          "submission": 0
+          "decision": 80,
+          "koTko": 16,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -23341,7 +23341,7 @@
         "method": "submission",
         "round": 2,
         "time": "1:04",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
@@ -23477,9 +23477,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 36,
-          "koTko": 64,
-          "submission": 0
+          "decision": 38,
+          "koTko": 52,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -23488,7 +23488,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "4:12",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.501Z"
       },
       "score": {
         "correct": false,
@@ -23624,9 +23624,9 @@
         "fighterAWinProbability": 47,
         "fighterBWinProbability": 53,
         "methodBreakdown": {
-          "decision": 69,
-          "koTko": 31,
-          "submission": 0
+          "decision": 66,
+          "koTko": 28,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -23635,7 +23635,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.081Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": false,
@@ -23768,12 +23768,12 @@
         "fighterB": "Montse Rendon"
       },
       "prediction": {
-        "fighterAWinProbability": 75,
-        "fighterBWinProbability": 25,
+        "fighterAWinProbability": 85,
+        "fighterBWinProbability": 15,
         "methodBreakdown": {
-          "decision": 25,
-          "koTko": 0,
-          "submission": 75
+          "decision": 41,
+          "koTko": 16,
+          "submission": 43
         },
         "confidence": "insufficient"
       },
@@ -23782,11 +23782,11 @@
         "method": "submission",
         "round": 1,
         "time": "2:07",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0625,
+        "brierContribution": 0.022500000000000006,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -23917,12 +23917,12 @@
         "fighterB": "Luan Lacerda"
       },
       "prediction": {
-        "fighterAWinProbability": 58,
-        "fighterBWinProbability": 42,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 58,
-          "koTko": 0,
-          "submission": 42
+          "decision": 53,
+          "koTko": 14,
+          "submission": 33
         },
         "confidence": "insufficient"
       },
@@ -23931,11 +23931,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.17640000000000003,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -24076,8 +24076,8 @@
         "fighterAWinProbability": 61,
         "fighterBWinProbability": 39,
         "methodBreakdown": {
-          "decision": 90,
-          "koTko": 0,
+          "decision": 85,
+          "koTko": 5,
           "submission": 10
         },
         "confidence": "low"
@@ -24087,7 +24087,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
@@ -24223,9 +24223,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 91,
-          "koTko": 9,
-          "submission": 0
+          "decision": 84,
+          "koTko": 12,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -24234,7 +24234,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
@@ -24367,12 +24367,12 @@
         "fighterB": "Michael Aswell Jr."
       },
       "prediction": {
-        "fighterAWinProbability": 36,
-        "fighterBWinProbability": 64,
+        "fighterAWinProbability": 33,
+        "fighterBWinProbability": 67,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 24,
+          "koTko": 65,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -24381,11 +24381,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.4096,
+        "brierContribution": 0.4488999999999999,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -24520,9 +24520,9 @@
         "fighterAWinProbability": 48,
         "fighterBWinProbability": 52,
         "methodBreakdown": {
-          "decision": 48,
-          "koTko": 26,
-          "submission": 26
+          "decision": 60,
+          "koTko": 23,
+          "submission": 17
         },
         "confidence": "low"
       },
@@ -24531,12 +24531,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.27040000000000003,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -24667,9 +24667,9 @@
         "fighterAWinProbability": 65,
         "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 35,
-          "koTko": 65,
-          "submission": 0
+          "decision": 36,
+          "koTko": 54,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -24678,7 +24678,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "0:28",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
@@ -24814,9 +24814,9 @@
         "fighterAWinProbability": 62,
         "fighterBWinProbability": 38,
         "methodBreakdown": {
-          "decision": 41,
-          "koTko": 59,
-          "submission": 0
+          "decision": 61,
+          "koTko": 32,
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -24825,12 +24825,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.1444,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -24961,9 +24961,9 @@
         "fighterAWinProbability": 27,
         "fighterBWinProbability": 73,
         "methodBreakdown": {
-          "decision": 27,
-          "koTko": 73,
-          "submission": 0
+          "decision": 48,
+          "koTko": 44,
+          "submission": 8
         },
         "confidence": "low"
       },
@@ -24972,7 +24972,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "0:31",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": false,
@@ -25105,12 +25105,12 @@
         "fighterB": "Axel Sola"
       },
       "prediction": {
-        "fighterAWinProbability": 43,
-        "fighterBWinProbability": 57,
+        "fighterAWinProbability": 29,
+        "fighterBWinProbability": 71,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 71,
-          "submission": 0
+          "decision": 48,
+          "koTko": 44,
+          "submission": 8
         },
         "confidence": "insufficient"
       },
@@ -25119,11 +25119,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.3249000000000001,
+        "brierContribution": 0.5041,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -25254,12 +25254,12 @@
         "fighterB": "Losene Keita"
       },
       "prediction": {
-        "fighterAWinProbability": 64,
-        "fighterBWinProbability": 36,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 87,
-          "koTko": 7,
-          "submission": 6
+          "decision": 79,
+          "koTko": 13,
+          "submission": 8
         },
         "confidence": "insufficient"
       },
@@ -25268,11 +25268,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.1296,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -25414,9 +25414,9 @@
         "fighterAWinProbability": 63,
         "fighterBWinProbability": 37,
         "methodBreakdown": {
-          "decision": 24,
-          "koTko": 70,
-          "submission": 6
+          "decision": 27,
+          "koTko": 56,
+          "submission": 17
         },
         "confidence": "low"
       },
@@ -25425,7 +25425,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
@@ -25558,12 +25558,12 @@
         "fighterB": "Antonio Trocoli"
       },
       "prediction": {
-        "fighterAWinProbability": 95,
-        "fighterBWinProbability": 5,
+        "fighterAWinProbability": 94,
+        "fighterBWinProbability": 6,
         "methodBreakdown": {
-          "decision": 3,
-          "koTko": 96,
-          "submission": 1
+          "decision": 9,
+          "koTko": 73,
+          "submission": 18
         },
         "confidence": "insufficient"
       },
@@ -25572,11 +25572,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.502Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0025000000000000044,
+        "brierContribution": 0.0036000000000000064,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -25707,12 +25707,12 @@
         "fighterB": "Louie Sutherland"
       },
       "prediction": {
-        "fighterAWinProbability": 88,
-        "fighterBWinProbability": 12,
+        "fighterAWinProbability": 92,
+        "fighterBWinProbability": 8,
         "methodBreakdown": {
-          "decision": 8,
-          "koTko": 90,
-          "submission": 2
+          "decision": 9,
+          "koTko": 73,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -25721,11 +25721,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:48",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0144,
+        "brierContribution": 0.006399999999999993,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -25860,9 +25860,9 @@
         "fighterAWinProbability": 56,
         "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 84,
-          "koTko": 9,
-          "submission": 7
+          "decision": 76,
+          "koTko": 15,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -25871,7 +25871,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -26004,12 +26004,12 @@
         "fighterB": "Ravena Oliveira"
       },
       "prediction": {
-        "fighterAWinProbability": 64,
-        "fighterBWinProbability": 36,
+        "fighterAWinProbability": 73,
+        "fighterBWinProbability": 27,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "decision": 65,
+          "koTko": 19,
+          "submission": 16
         },
         "confidence": "insufficient"
       },
@@ -26018,11 +26018,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "1:17",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.1296,
+        "brierContribution": 0.0729,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -26156,9 +26156,9 @@
         "fighterAWinProbability": 54,
         "fighterBWinProbability": 46,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 36,
-          "submission": 35
+          "decision": 20,
+          "koTko": 44,
+          "submission": 36
         },
         "confidence": "low"
       },
@@ -26167,7 +26167,7 @@
         "method": "submission",
         "round": 2,
         "time": "3:14",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -26303,9 +26303,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 71,
-          "koTko": 16,
-          "submission": 13
+          "decision": 76,
+          "koTko": 13,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -26314,7 +26314,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -26450,9 +26450,9 @@
         "fighterAWinProbability": 95,
         "fighterBWinProbability": 5,
         "methodBreakdown": {
-          "decision": 2,
-          "koTko": 48,
-          "submission": 50
+          "decision": 7,
+          "koTko": 57,
+          "submission": 36
         },
         "confidence": "low"
       },
@@ -26461,7 +26461,7 @@
         "method": "submission",
         "round": 1,
         "time": "2:52",
-        "recordedAt": "2026-06-17T03:50:48.082Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -26597,9 +26597,9 @@
         "fighterAWinProbability": 62,
         "fighterBWinProbability": 38,
         "methodBreakdown": {
-          "decision": 90,
-          "koTko": 10,
-          "submission": 0
+          "decision": 83,
+          "koTko": 13,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -26608,7 +26608,7 @@
         "method": "ko_tko",
         "round": 3,
         "time": "1:44",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -26741,12 +26741,12 @@
         "fighterB": "Manolo Zecchini"
       },
       "prediction": {
-        "fighterAWinProbability": 86,
-        "fighterBWinProbability": 14,
+        "fighterAWinProbability": 93,
+        "fighterBWinProbability": 7,
         "methodBreakdown": {
-          "decision": 95,
-          "koTko": 3,
-          "submission": 2
+          "decision": 87,
+          "koTko": 9,
+          "submission": 4
         },
         "confidence": "insufficient"
       },
@@ -26755,11 +26755,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:57",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.019600000000000003,
+        "brierContribution": 0.004899999999999993,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -26894,9 +26894,9 @@
         "fighterAWinProbability": 80,
         "fighterBWinProbability": 20,
         "methodBreakdown": {
-          "decision": 93,
-          "koTko": 4,
-          "submission": 3
+          "decision": 87,
+          "koTko": 8,
+          "submission": 5
         },
         "confidence": "low"
       },
@@ -26905,7 +26905,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -27038,12 +27038,12 @@
         "fighterB": "Guilherme Pat"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 34,
+        "fighterBWinProbability": 66,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 90,
+          "koTko": 7,
+          "submission": 3
         },
         "confidence": "insufficient"
       },
@@ -27052,11 +27052,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.2916,
+        "brierContribution": 0.4355999999999999,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -27191,9 +27191,9 @@
         "fighterAWinProbability": 70,
         "fighterBWinProbability": 30,
         "methodBreakdown": {
-          "decision": 19,
-          "koTko": 76,
-          "submission": 5
+          "decision": 28,
+          "koTko": 56,
+          "submission": 16
         },
         "confidence": "low"
       },
@@ -27202,7 +27202,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:56",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -27338,9 +27338,9 @@
         "fighterAWinProbability": 33,
         "fighterBWinProbability": 67,
         "methodBreakdown": {
-          "decision": 67,
-          "koTko": 0,
-          "submission": 33
+          "decision": 72,
+          "koTko": 8,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -27349,7 +27349,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "0:52",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": false,
@@ -27485,9 +27485,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 78,
-          "koTko": 12,
-          "submission": 10
+          "decision": 75,
+          "koTko": 14,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -27496,7 +27496,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:24",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -27632,9 +27632,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 56,
-          "submission": 44
+          "decision": 11,
+          "koTko": 52,
+          "submission": 37
         },
         "confidence": "low"
       },
@@ -27643,7 +27643,7 @@
         "method": "submission",
         "round": 3,
         "time": "3:27",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": false,
@@ -27779,9 +27779,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 49,
-          "submission": 34
+          "decision": 50,
+          "koTko": 30,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -27790,12 +27790,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.24009999999999998,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -27923,12 +27923,12 @@
         "fighterB": "Dakota Hope"
       },
       "prediction": {
-        "fighterAWinProbability": 55,
-        "fighterBWinProbability": 45,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 83,
-          "koTko": 9,
-          "submission": 8
+          "decision": 77,
+          "koTko": 14,
+          "submission": 9
         },
         "confidence": "insufficient"
       },
@@ -27937,11 +27937,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.20249999999999996,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -28084,8 +28084,8 @@
         "fighterBWinProbability": 46,
         "methodBreakdown": {
           "decision": 82,
-          "koTko": 18,
-          "submission": 0
+          "koTko": 14,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -28094,7 +28094,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -28230,9 +28230,9 @@
         "fighterAWinProbability": 72,
         "fighterBWinProbability": 28,
         "methodBreakdown": {
-          "decision": 76,
-          "koTko": 24,
-          "submission": 0
+          "decision": 80,
+          "koTko": 16,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -28241,7 +28241,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.503Z"
       },
       "score": {
         "correct": true,
@@ -28377,9 +28377,9 @@
         "fighterAWinProbability": 67,
         "fighterBWinProbability": 33,
         "methodBreakdown": {
-          "decision": 89,
-          "koTko": 0,
-          "submission": 11
+          "decision": 84,
+          "koTko": 6,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -28388,7 +28388,7 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:55",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
@@ -28524,9 +28524,9 @@
         "fighterAWinProbability": 48,
         "fighterBWinProbability": 52,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 0,
-          "submission": 100
+          "decision": 29,
+          "koTko": 20,
+          "submission": 51
         },
         "confidence": "low"
       },
@@ -28535,7 +28535,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": false,
@@ -28668,12 +28668,12 @@
         "fighterB": "Kevin Borjas"
       },
       "prediction": {
-        "fighterAWinProbability": 90,
-        "fighterBWinProbability": 10,
+        "fighterAWinProbability": 96,
+        "fighterBWinProbability": 4,
         "methodBreakdown": {
-          "decision": 10,
-          "koTko": 90,
-          "submission": 0
+          "decision": 31,
+          "koTko": 59,
+          "submission": 10
         },
         "confidence": "insufficient"
       },
@@ -28682,11 +28682,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "4:21",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.009999999999999995,
+        "brierContribution": 0.001600000000000003,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -28821,9 +28821,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 30,
-          "koTko": 62,
-          "submission": 8
+          "decision": 51,
+          "koTko": 37,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -28832,12 +28832,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.2304,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": false,
       "missingDataFlags": [],
@@ -28965,12 +28965,12 @@
         "fighterB": "Jose Daniel Medina"
       },
       "prediction": {
-        "fighterAWinProbability": 88,
-        "fighterBWinProbability": 12,
+        "fighterAWinProbability": 93,
+        "fighterBWinProbability": 7,
         "methodBreakdown": {
-          "decision": 7,
-          "koTko": 91,
-          "submission": 2
+          "decision": 19,
+          "koTko": 67,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -28979,11 +28979,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "0:41",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0144,
+        "brierContribution": 0.004899999999999993,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -29118,8 +29118,8 @@
         "fighterBWinProbability": 38,
         "methodBreakdown": {
           "decision": 50,
-          "koTko": 19,
-          "submission": 31
+          "koTko": 22,
+          "submission": 28
         },
         "confidence": "low"
       },
@@ -29128,7 +29128,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.083Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
@@ -29261,12 +29261,12 @@
         "fighterB": "Kris Moutinho"
       },
       "prediction": {
-        "fighterAWinProbability": 81,
-        "fighterBWinProbability": 19,
+        "fighterAWinProbability": 88,
+        "fighterBWinProbability": 12,
         "methodBreakdown": {
-          "decision": 53,
-          "koTko": 44,
-          "submission": 3
+          "decision": 41,
+          "koTko": 48,
+          "submission": 11
         },
         "confidence": "insufficient"
       },
@@ -29275,12 +29275,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.03609999999999998,
-        "methodCorrect": true
+        "brierContribution": 0.0144,
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [
@@ -29410,12 +29410,12 @@
         "fighterB": "Douglas Silva de Andrade"
       },
       "prediction": {
-        "fighterAWinProbability": 85,
-        "fighterBWinProbability": 15,
+        "fighterAWinProbability": 90,
+        "fighterBWinProbability": 10,
         "methodBreakdown": {
-          "decision": 5,
-          "koTko": 90,
-          "submission": 5
+          "decision": 34,
+          "koTko": 54,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -29424,11 +29424,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "4:59",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.022500000000000006,
+        "brierContribution": 0.009999999999999995,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -29559,12 +29559,12 @@
         "fighterB": "Ernesta Kareckaite"
       },
       "prediction": {
-        "fighterAWinProbability": 39,
-        "fighterBWinProbability": 61,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 86,
-          "koTko": 8,
-          "submission": 6
+          "decision": 80,
+          "koTko": 12,
+          "submission": 8
         },
         "confidence": "insufficient"
       },
@@ -29573,11 +29573,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.3721,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -29719,9 +29719,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 77,
-          "submission": 0
+          "decision": 33,
+          "koTko": 57,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -29730,7 +29730,7 @@
         "method": "submission",
         "round": 1,
         "time": "2:29",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": false,
@@ -29863,12 +29863,12 @@
         "fighterB": "Wes Schultz"
       },
       "prediction": {
-        "fighterAWinProbability": 54,
-        "fighterBWinProbability": 46,
+        "fighterAWinProbability": 68,
+        "fighterBWinProbability": 32,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 54,
-          "submission": 46
+          "decision": 8,
+          "koTko": 62,
+          "submission": 30
         },
         "confidence": "insufficient"
       },
@@ -29877,11 +29877,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:30",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.21159999999999995,
+        "brierContribution": 0.10239999999999996,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -30017,9 +30017,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 57,
-          "koTko": 43,
-          "submission": 0
+          "decision": 63,
+          "koTko": 31,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -30028,7 +30028,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:18",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.504Z"
       },
       "score": {
         "correct": true,
@@ -30164,9 +30164,9 @@
         "fighterAWinProbability": 52,
         "fighterBWinProbability": 48,
         "methodBreakdown": {
-          "decision": 41,
-          "koTko": 59,
-          "submission": 0
+          "decision": 59,
+          "koTko": 34,
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -30175,12 +30175,12 @@
         "method": "ko_tko",
         "round": 2,
         "time": "1:29",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.2304,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -30308,12 +30308,12 @@
         "fighterB": "Cesar Almeida"
       },
       "prediction": {
-        "fighterAWinProbability": 86,
-        "fighterBWinProbability": 14,
+        "fighterAWinProbability": 91,
+        "fighterBWinProbability": 9,
         "methodBreakdown": {
-          "decision": 7,
-          "koTko": 93,
-          "submission": 0
+          "decision": 34,
+          "koTko": 56,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -30322,11 +30322,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.019600000000000003,
+        "brierContribution": 0.008099999999999994,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -30460,9 +30460,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 29,
-          "koTko": 43,
-          "submission": 28
+          "decision": 41,
+          "koTko": 39,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -30471,7 +30471,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:14",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
@@ -30604,12 +30604,12 @@
         "fighterB": "Lance Gibson Jr."
       },
       "prediction": {
-        "fighterAWinProbability": 73,
-        "fighterBWinProbability": 27,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 53,
-          "koTko": 42,
-          "submission": 5
+          "decision": 58,
+          "koTko": 31,
+          "submission": 11
         },
         "confidence": "insufficient"
       },
@@ -30618,11 +30618,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.0729,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -30761,12 +30761,12 @@
         "fighterB": "Neil Magny"
       },
       "prediction": {
-        "fighterAWinProbability": 42,
-        "fighterBWinProbability": 58,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 27,
-          "koTko": 47,
-          "submission": 26
+          "decision": 34,
+          "koTko": 41,
+          "submission": 25
         },
         "confidence": "insufficient"
       },
@@ -30775,11 +30775,11 @@
         "method": "submission",
         "round": 1,
         "time": "3:14",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.3364000000000001,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -30918,12 +30918,12 @@
         "fighterB": "Isaac Thomson"
       },
       "prediction": {
-        "fighterAWinProbability": 47,
-        "fighterBWinProbability": 53,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 33,
-          "koTko": 42,
-          "submission": 25
+          "decision": 45,
+          "koTko": 35,
+          "submission": 20
         },
         "confidence": "insufficient"
       },
@@ -30932,11 +30932,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.28090000000000004,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -31075,12 +31075,12 @@
         "fighterB": "Sean Sharaf"
       },
       "prediction": {
-        "fighterAWinProbability": 89,
-        "fighterBWinProbability": 11,
+        "fighterAWinProbability": 95,
+        "fighterBWinProbability": 5,
         "methodBreakdown": {
-          "decision": 7,
-          "koTko": 91,
-          "submission": 2
+          "decision": 8,
+          "koTko": 78,
+          "submission": 14
         },
         "confidence": "insufficient"
       },
@@ -31089,11 +31089,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "3:49",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.012099999999999998,
+        "brierContribution": 0.0025000000000000044,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -31229,9 +31229,9 @@
         "fighterAWinProbability": 38,
         "fighterBWinProbability": 62,
         "methodBreakdown": {
-          "decision": 9,
-          "koTko": 72,
-          "submission": 19
+          "decision": 33,
+          "koTko": 47,
+          "submission": 20
         },
         "confidence": "low"
       },
@@ -31240,7 +31240,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": false,
@@ -31377,8 +31377,8 @@
         "fighterBWinProbability": 50,
         "methodBreakdown": {
           "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "koTko": 22,
+          "submission": 15
         },
         "confidence": "insufficient"
       },
@@ -31387,7 +31387,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
@@ -31542,9 +31542,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 100,
-          "koTko": 0,
-          "submission": 0
+          "decision": 91,
+          "koTko": 6,
+          "submission": 3
         },
         "confidence": "low"
       },
@@ -31553,7 +31553,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:05",
-        "recordedAt": "2026-06-17T03:50:48.084Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
@@ -31689,9 +31689,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 60,
-          "koTko": 0,
-          "submission": 40
+          "decision": 66,
+          "koTko": 12,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -31700,7 +31700,7 @@
         "method": "decision",
         "round": 5,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
@@ -31836,9 +31836,9 @@
         "fighterAWinProbability": 40,
         "fighterBWinProbability": 60,
         "methodBreakdown": {
-          "decision": 60,
-          "koTko": 20,
-          "submission": 20
+          "decision": 62,
+          "koTko": 23,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -31847,7 +31847,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": false,
@@ -31983,9 +31983,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 63,
-          "koTko": 37,
-          "submission": 0
+          "decision": 67,
+          "koTko": 28,
+          "submission": 5
         },
         "confidence": "low"
       },
@@ -31994,7 +31994,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": true,
@@ -32130,8 +32130,8 @@
         "fighterAWinProbability": 40,
         "fighterBWinProbability": 60,
         "methodBreakdown": {
-          "decision": 87,
-          "koTko": 0,
+          "decision": 80,
+          "koTko": 7,
           "submission": 13
         },
         "confidence": "low"
@@ -32141,7 +32141,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.505Z"
       },
       "score": {
         "correct": false,
@@ -32277,9 +32277,9 @@
         "fighterAWinProbability": 46,
         "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 62,
-          "koTko": 27,
-          "submission": 11
+          "decision": 72,
+          "koTko": 19,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -32288,7 +32288,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
@@ -32421,12 +32421,12 @@
         "fighterB": "Marcus Buchecha"
       },
       "prediction": {
-        "fighterAWinProbability": 48,
-        "fighterBWinProbability": 52,
+        "fighterAWinProbability": 46,
+        "fighterBWinProbability": 54,
         "methodBreakdown": {
-          "decision": 33,
-          "koTko": 11,
-          "submission": 56
+          "decision": 43,
+          "koTko": 23,
+          "submission": 34
         },
         "confidence": "insufficient"
       },
@@ -32435,11 +32435,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "2:10",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.27040000000000003,
+        "brierContribution": 0.2916,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -32570,12 +32570,12 @@
         "fighterB": "Rodolfo Vieira"
       },
       "prediction": {
-        "fighterAWinProbability": 46,
-        "fighterBWinProbability": 54,
+        "fighterAWinProbability": 47,
+        "fighterBWinProbability": 53,
         "methodBreakdown": {
-          "decision": 64,
-          "koTko": 0,
-          "submission": 36
+          "decision": 55,
+          "koTko": 15,
+          "submission": 30
         },
         "confidence": "low"
       },
@@ -32584,11 +32584,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.2916,
+        "brierContribution": 0.28090000000000004,
         "methodCorrect": true
       },
       "leakagePassed": true,
@@ -32722,9 +32722,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 80,
-          "koTko": 11,
-          "submission": 9
+          "decision": 69,
+          "koTko": 17,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -32733,7 +32733,7 @@
         "method": "submission",
         "round": 1,
         "time": "2:14",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
@@ -32866,12 +32866,12 @@
         "fighterB": "Mayra Bueno Silva"
       },
       "prediction": {
-        "fighterAWinProbability": 61,
-        "fighterBWinProbability": 39,
+        "fighterAWinProbability": 47,
+        "fighterBWinProbability": 53,
         "methodBreakdown": {
-          "decision": 85,
-          "koTko": 8,
-          "submission": 7
+          "decision": 77,
+          "koTko": 14,
+          "submission": 9
         },
         "confidence": "insufficient"
       },
@@ -32880,11 +32880,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
-        "correct": true,
-        "brierContribution": 0.1521,
+        "correct": false,
+        "brierContribution": 0.28090000000000004,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -33018,9 +33018,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 0,
-          "submission": 100
+          "decision": 10,
+          "koTko": 17,
+          "submission": 73
         },
         "confidence": "low"
       },
@@ -33029,7 +33029,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
@@ -33162,12 +33162,12 @@
         "fighterB": "Lucas Brennan"
       },
       "prediction": {
-        "fighterAWinProbability": 52,
-        "fighterBWinProbability": 48,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 56,
-          "koTko": 10,
-          "submission": 34
+          "decision": 61,
+          "koTko": 16,
+          "submission": 23
         },
         "confidence": "insufficient"
       },
@@ -33176,11 +33176,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.2304,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -33319,11 +33319,11 @@
         "fighterB": "Max Griffin"
       },
       "prediction": {
-        "fighterAWinProbability": 45,
-        "fighterBWinProbability": 55,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 84,
-          "koTko": 9,
+          "decision": 82,
+          "koTko": 11,
           "submission": 7
         },
         "confidence": "insufficient"
@@ -33333,11 +33333,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
-        "correct": false,
-        "brierContribution": 0.30250000000000005,
+        "correct": true,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -33478,9 +33478,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 51,
+          "decision": 65,
           "koTko": 16,
-          "submission": 33
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -33489,7 +33489,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
@@ -33625,9 +33625,9 @@
         "fighterAWinProbability": 44,
         "fighterBWinProbability": 56,
         "methodBreakdown": {
-          "decision": 41,
-          "koTko": 37,
-          "submission": 22
+          "decision": 52,
+          "koTko": 34,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -33636,12 +33636,12 @@
         "method": "ko_tko",
         "round": 3,
         "time": "2:23",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.31360000000000005,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -33772,9 +33772,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 16,
+          "koTko": 69,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -33783,7 +33783,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:19",
-        "recordedAt": "2026-06-17T03:50:48.085Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
@@ -33919,9 +33919,9 @@
         "fighterAWinProbability": 59,
         "fighterBWinProbability": 41,
         "methodBreakdown": {
-          "decision": 23,
-          "koTko": 53,
-          "submission": 24
+          "decision": 39,
+          "koTko": 43,
+          "submission": 18
         },
         "confidence": "low"
       },
@@ -33930,7 +33930,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "4:56",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
@@ -34063,12 +34063,12 @@
         "fighterB": "Ante Delija"
       },
       "prediction": {
-        "fighterAWinProbability": 48,
-        "fighterBWinProbability": 52,
+        "fighterAWinProbability": 33,
+        "fighterBWinProbability": 67,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 52,
-          "submission": 48
+          "decision": 5,
+          "koTko": 63,
+          "submission": 32
         },
         "confidence": "insufficient"
       },
@@ -34077,11 +34077,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": false,
-        "brierContribution": 0.27040000000000003,
+        "brierContribution": 0.4488999999999999,
         "methodCorrect": false
       },
       "leakagePassed": true,
@@ -34212,12 +34212,12 @@
         "fighterB": "Josiah Harrell"
       },
       "prediction": {
-        "fighterAWinProbability": 86,
-        "fighterBWinProbability": 14,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 9,
-          "koTko": 60,
-          "submission": 31
+          "decision": 40,
+          "koTko": 38,
+          "submission": 22
         },
         "confidence": "insufficient"
       },
@@ -34226,11 +34226,11 @@
         "method": "ko_tko",
         "round": 1,
         "time": "3:01",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.019600000000000003,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -34372,9 +34372,9 @@
         "fighterAWinProbability": 51,
         "fighterBWinProbability": 49,
         "methodBreakdown": {
-          "decision": 33,
-          "koTko": 0,
-          "submission": 67
+          "decision": 37,
+          "koTko": 19,
+          "submission": 44
         },
         "confidence": "low"
       },
@@ -34383,7 +34383,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.506Z"
       },
       "score": {
         "correct": true,
@@ -34519,9 +34519,9 @@
         "fighterAWinProbability": 50,
         "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 34,
-          "koTko": 66,
-          "submission": 0
+          "decision": 35,
+          "koTko": 55,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -34530,7 +34530,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -34666,9 +34666,9 @@
         "fighterAWinProbability": 78,
         "fighterBWinProbability": 22,
         "methodBreakdown": {
-          "decision": 22,
-          "koTko": 78,
-          "submission": 0
+          "decision": 32,
+          "koTko": 57,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -34677,7 +34677,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -34813,9 +34813,9 @@
         "fighterAWinProbability": 55,
         "fighterBWinProbability": 45,
         "methodBreakdown": {
-          "decision": 15,
-          "koTko": 52,
-          "submission": 33
+          "decision": 49,
+          "koTko": 32,
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -34824,7 +34824,7 @@
         "method": "submission",
         "round": 2,
         "time": "2:44",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -34960,9 +34960,9 @@
         "fighterAWinProbability": 64,
         "fighterBWinProbability": 36,
         "methodBreakdown": {
-          "decision": 43,
-          "koTko": 30,
-          "submission": 27
+          "decision": 51,
+          "koTko": 28,
+          "submission": 21
         },
         "confidence": "low"
       },
@@ -34971,12 +34971,12 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
         "brierContribution": 0.1296,
-        "methodCorrect": false
+        "methodCorrect": true
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -35104,12 +35104,12 @@
         "fighterB": "Phil Rowe"
       },
       "prediction": {
-        "fighterAWinProbability": 56,
-        "fighterBWinProbability": 44,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 0,
-          "koTko": 100,
-          "submission": 0
+          "decision": 28,
+          "koTko": 61,
+          "submission": 11
         },
         "confidence": "insufficient"
       },
@@ -35118,11 +35118,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.19359999999999997,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -35264,8 +35264,8 @@
         "fighterBWinProbability": 72,
         "methodBreakdown": {
           "decision": 34,
-          "koTko": 9,
-          "submission": 57
+          "koTko": 18,
+          "submission": 48
         },
         "confidence": "low"
       },
@@ -35274,7 +35274,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": false,
@@ -35410,9 +35410,9 @@
         "fighterAWinProbability": 66,
         "fighterBWinProbability": 34,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 83,
-          "submission": 0
+          "decision": 34,
+          "koTko": 56,
+          "submission": 10
         },
         "confidence": "low"
       },
@@ -35421,7 +35421,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -35557,9 +35557,9 @@
         "fighterAWinProbability": 60,
         "fighterBWinProbability": 40,
         "methodBreakdown": {
-          "decision": 57,
-          "koTko": 43,
-          "submission": 0
+          "decision": 62,
+          "koTko": 32,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -35568,7 +35568,7 @@
         "method": "submission",
         "round": 2,
         "time": "3:34",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -35704,9 +35704,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 88,
-          "koTko": 12,
-          "submission": 0
+          "decision": 86,
+          "koTko": 11,
+          "submission": 3
         },
         "confidence": "low"
       },
@@ -35715,7 +35715,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -35851,9 +35851,9 @@
         "fighterAWinProbability": 57,
         "fighterBWinProbability": 43,
         "methodBreakdown": {
-          "decision": 62,
-          "koTko": 19,
-          "submission": 19
+          "decision": 59,
+          "koTko": 26,
+          "submission": 15
         },
         "confidence": "low"
       },
@@ -35862,7 +35862,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:27",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -35998,9 +35998,9 @@
         "fighterAWinProbability": 45,
         "fighterBWinProbability": 55,
         "methodBreakdown": {
-          "decision": 70,
-          "koTko": 0,
-          "submission": 30
+          "decision": 62,
+          "koTko": 13,
+          "submission": 25
         },
         "confidence": "low"
       },
@@ -36009,7 +36009,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "2:46",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": false,
@@ -36145,9 +36145,9 @@
         "fighterAWinProbability": 70,
         "fighterBWinProbability": 30,
         "methodBreakdown": {
-          "decision": 43,
-          "koTko": 50,
-          "submission": 7
+          "decision": 47,
+          "koTko": 42,
+          "submission": 11
         },
         "confidence": "low"
       },
@@ -36156,7 +36156,7 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:22",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -36292,9 +36292,9 @@
         "fighterAWinProbability": 53,
         "fighterBWinProbability": 47,
         "methodBreakdown": {
-          "decision": 76,
-          "koTko": 0,
-          "submission": 24
+          "decision": 70,
+          "koTko": 8,
+          "submission": 22
         },
         "confidence": "low"
       },
@@ -36303,7 +36303,7 @@
         "method": "submission",
         "round": 3,
         "time": "2:18",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
@@ -36436,12 +36436,12 @@
         "fighterB": "Bogdan Grad"
       },
       "prediction": {
-        "fighterAWinProbability": 51,
-        "fighterBWinProbability": 49,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 57,
-          "koTko": 35,
-          "submission": 8
+          "decision": 58,
+          "koTko": 31,
+          "submission": 11
         },
         "confidence": "insufficient"
       },
@@ -36450,11 +36450,11 @@
         "method": "ko_tko",
         "round": 2,
         "time": "0:30",
-        "recordedAt": "2026-06-17T03:50:48.086Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.24009999999999998,
+        "brierContribution": 0.25,
         "methodCorrect": false
       },
       "leakagePassed": false,
@@ -36593,12 +36593,12 @@
         "fighterB": "Saygid Izagakhmaev"
       },
       "prediction": {
-        "fighterAWinProbability": 53,
-        "fighterBWinProbability": 47,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 65,
-          "koTko": 27,
-          "submission": 8
+          "decision": 70,
+          "koTko": 23,
+          "submission": 7
         },
         "confidence": "insufficient"
       },
@@ -36607,11 +36607,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.507Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.22089999999999999,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -36753,9 +36753,9 @@
         "fighterAWinProbability": 49,
         "fighterBWinProbability": 51,
         "methodBreakdown": {
-          "decision": 49,
-          "koTko": 51,
-          "submission": 0
+          "decision": 46,
+          "koTko": 45,
+          "submission": 9
         },
         "confidence": "low"
       },
@@ -36764,7 +36764,7 @@
         "method": "submission",
         "round": 3,
         "time": "0:22",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": false,
@@ -36897,12 +36897,12 @@
         "fighterB": "Rafael Cerqueira"
       },
       "prediction": {
-        "fighterAWinProbability": 87,
-        "fighterBWinProbability": 13,
+        "fighterAWinProbability": 91,
+        "fighterBWinProbability": 9,
         "methodBreakdown": {
-          "decision": 9,
-          "koTko": 89,
-          "submission": 2
+          "decision": 10,
+          "koTko": 76,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -36911,11 +36911,11 @@
         "method": "submission",
         "round": 1,
         "time": "0:33",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.016900000000000002,
+        "brierContribution": 0.008099999999999994,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -37047,12 +37047,12 @@
         "fighterB": "Bekzat Almakhan"
       },
       "prediction": {
-        "fighterAWinProbability": 81,
-        "fighterBWinProbability": 19,
+        "fighterAWinProbability": 84,
+        "fighterBWinProbability": 16,
         "methodBreakdown": {
-          "decision": 81,
-          "koTko": 19,
-          "submission": 0
+          "decision": 80,
+          "koTko": 16,
+          "submission": 4
         },
         "confidence": "low"
       },
@@ -37061,11 +37061,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.03609999999999998,
+        "brierContribution": 0.02560000000000001,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -37199,9 +37199,9 @@
         "fighterAWinProbability": 48,
         "fighterBWinProbability": 52,
         "methodBreakdown": {
-          "decision": 48,
-          "koTko": 52,
-          "submission": 0
+          "decision": 64,
+          "koTko": 30,
+          "submission": 6
         },
         "confidence": "low"
       },
@@ -37210,12 +37210,12 @@
         "method": "ko_tko",
         "round": 1,
         "time": "1:26",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": false,
         "brierContribution": 0.27040000000000003,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -37343,12 +37343,12 @@
         "fighterB": "Shem Rock"
       },
       "prediction": {
-        "fighterAWinProbability": 61,
-        "fighterBWinProbability": 39,
+        "fighterAWinProbability": 50,
+        "fighterBWinProbability": 50,
         "methodBreakdown": {
-          "decision": 65,
-          "koTko": 28,
-          "submission": 7
+          "decision": 64,
+          "koTko": 26,
+          "submission": 10
         },
         "confidence": "insufficient"
       },
@@ -37357,11 +37357,11 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": true,
-        "brierContribution": 0.1521,
+        "brierContribution": 0.25,
         "methodCorrect": true
       },
       "leakagePassed": false,
@@ -37504,8 +37504,8 @@
         "fighterBWinProbability": 50,
         "methodBreakdown": {
           "decision": 63,
-          "koTko": 20,
-          "submission": 17
+          "koTko": 22,
+          "submission": 15
         },
         "confidence": "insufficient"
       },
@@ -37514,7 +37514,7 @@
         "method": "decision",
         "round": 3,
         "time": "5:00",
-        "recordedAt": "2026-06-17T03:50:48.087Z"
+        "recordedAt": "2026-07-07T14:14:53.508Z"
       },
       "score": {
         "correct": true,
@@ -37669,9 +37669,9 @@
         "fighterAWinProbability": 65,
         "fighterBWinProbability": 35,
         "methodBreakdown": {
-          "decision": 39,
-          "koTko": 48,
-          "submission": 13
+          "decision": 32,
+          "koTko": 49,
+          "submission": 19
         },
         "confidence": "low"
       },
@@ -37816,9 +37816,9 @@
         "fighterAWinProbability": 40,
         "fighterBWinProbability": 60,
         "methodBreakdown": {
-          "decision": 20,
-          "koTko": 80,
-          "submission": 0
+          "decision": 31,
+          "koTko": 57,
+          "submission": 12
         },
         "confidence": "low"
       },
@@ -37963,9 +37963,9 @@
         "fighterAWinProbability": 56,
         "fighterBWinProbability": 44,
         "methodBreakdown": {
-          "decision": 73,
-          "koTko": 27,
-          "submission": 0
+          "decision": 69,
+          "koTko": 26,
+          "submission": 5
         },
         "confidence": "low"
       },
@@ -38110,9 +38110,9 @@
         "fighterAWinProbability": 72,
         "fighterBWinProbability": 28,
         "methodBreakdown": {
-          "decision": 18,
-          "koTko": 82,
-          "submission": 0
+          "decision": 15,
+          "koTko": 72,
+          "submission": 13
         },
         "confidence": "low"
       },
@@ -38257,9 +38257,9 @@
         "fighterAWinProbability": 61,
         "fighterBWinProbability": 39,
         "methodBreakdown": {
-          "decision": 15,
-          "koTko": 85,
-          "submission": 0
+          "decision": 19,
+          "koTko": 67,
+          "submission": 14
         },
         "confidence": "low"
       },
@@ -38404,9 +38404,9 @@
         "fighterAWinProbability": 67,
         "fighterBWinProbability": 33,
         "methodBreakdown": {
-          "decision": 17,
-          "koTko": 44,
-          "submission": 39
+          "decision": 25,
+          "koTko": 46,
+          "submission": 29
         },
         "confidence": "low"
       },
@@ -38551,9 +38551,9 @@
         "fighterAWinProbability": 26,
         "fighterBWinProbability": 74,
         "methodBreakdown": {
-          "decision": 32,
-          "koTko": 68,
-          "submission": 0
+          "decision": 55,
+          "koTko": 38,
+          "submission": 7
         },
         "confidence": "low"
       },
@@ -38567,7 +38567,7 @@
       "score": {
         "correct": false,
         "brierContribution": 0.5476,
-        "methodCorrect": true
+        "methodCorrect": false
       },
       "leakagePassed": true,
       "missingDataFlags": [],
@@ -38682,6 +38682,447 @@
             "totalDirectional": 11,
             "winPct": 0.8181818181818182,
             "netWins": 7
+          }
+        }
+      }
+    },
+    {
+      "fightId": "kape-horiguchi",
+      "event": "UFC Fight Night: Kape vs. Horiguchi",
+      "asOfDate": "2026-06-20",
+      "fighters": {
+        "fighterA": "Manel Kape",
+        "fighterB": "Kyoji Horiguchi"
+      },
+      "prediction": {
+        "fighterAWinProbability": 44,
+        "fighterBWinProbability": 56,
+        "methodBreakdown": {
+          "decision": 56,
+          "koTko": 30,
+          "submission": 14
+        },
+        "confidence": "low"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "ko_tko",
+        "round": 3,
+        "time": "2:42",
+        "recordedAt": "2026-07-07T02:31:32.000Z"
+      },
+      "score": {
+        "correct": false,
+        "brierContribution": 0.31360000000000005,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [],
+      "recordBaselines": {
+        "asof-absolute-wl": {
+          "id": "asof-absolute-wl",
+          "label": "As-of absolute W-L record",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; pick higher wins-minus-losses; no-pick on equal net W-L.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "better absolute pre-fight W-L record",
+          "recordA": {
+            "wins": 7,
+            "losses": 3,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.7,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 9,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.9,
+            "netWins": 8
+          }
+        },
+        "asof-win-pct-min3": {
+          "id": "asof-win-pct-min3",
+          "label": "As-of win percentage, min 3 fights each",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 3 directional fights for each fighter; pick higher W-L win percentage.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 7,
+            "losses": 3,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.7,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 9,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.9,
+            "netWins": 8
+          }
+        },
+        "asof-ufc-win-pct-any-history": {
+          "id": "asof-ufc-win-pct-any-history",
+          "label": "As-of UFC win percentage, any history",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered UFCStats history only; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback behavior.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 7,
+            "losses": 3,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.7,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 9,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.9,
+            "netWins": 8
+          }
+        },
+        "asof-win-pct-no-small-edge": {
+          "id": "asof-win-pct-no-small-edge",
+          "label": "As-of win percentage, no small edge",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 1 directional fight each and a win-rate gap above 5 points.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 7,
+            "losses": 3,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.7,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 9,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 10,
+            "winPct": 0.9,
+            "netWins": 8
+          }
+        }
+      }
+    },
+    {
+      "fightId": "cutelaba-stirling",
+      "event": "UFC Fight Night: Kape vs. Horiguchi",
+      "asOfDate": "2026-06-20",
+      "fighters": {
+        "fighterA": "Ion Cutelaba",
+        "fighterB": "Navajo Stirling"
+      },
+      "prediction": {
+        "fighterAWinProbability": 33,
+        "fighterBWinProbability": 67,
+        "methodBreakdown": {
+          "decision": 47,
+          "koTko": 32,
+          "submission": 21
+        },
+        "confidence": "low"
+      },
+      "outcome": {
+        "winner": "fighterB",
+        "method": "ko_tko",
+        "round": 2,
+        "time": "3:23",
+        "recordedAt": "2026-07-07T02:31:32.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.10890000000000001,
+        "methodCorrect": true
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [],
+      "recordBaselines": {
+        "asof-absolute-wl": {
+          "id": "asof-absolute-wl",
+          "label": "As-of absolute W-L record",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; pick higher wins-minus-losses; no-pick on equal net W-L.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "better absolute pre-fight W-L record",
+          "recordA": {
+            "wins": 9,
+            "losses": 10,
+            "draws": 1,
+            "noContests": 0,
+            "totalDirectional": 19,
+            "winPct": 0.47368421052631576,
+            "netWins": -1
+          },
+          "recordB": {
+            "wins": 5,
+            "losses": 0,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 5,
+            "winPct": 1,
+            "netWins": 5
+          }
+        },
+        "asof-win-pct-min3": {
+          "id": "asof-win-pct-min3",
+          "label": "As-of win percentage, min 3 fights each",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 3 directional fights for each fighter; pick higher W-L win percentage.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 9,
+            "losses": 10,
+            "draws": 1,
+            "noContests": 0,
+            "totalDirectional": 19,
+            "winPct": 0.47368421052631576,
+            "netWins": -1
+          },
+          "recordB": {
+            "wins": 5,
+            "losses": 0,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 5,
+            "winPct": 1,
+            "netWins": 5
+          }
+        },
+        "asof-ufc-win-pct-any-history": {
+          "id": "asof-ufc-win-pct-any-history",
+          "label": "As-of UFC win percentage, any history",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered UFCStats history only; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback behavior.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 9,
+            "losses": 10,
+            "draws": 1,
+            "noContests": 0,
+            "totalDirectional": 19,
+            "winPct": 0.47368421052631576,
+            "netWins": -1
+          },
+          "recordB": {
+            "wins": 5,
+            "losses": 0,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 5,
+            "winPct": 1,
+            "netWins": 5
+          }
+        },
+        "asof-win-pct-no-small-edge": {
+          "id": "asof-win-pct-no-small-edge",
+          "label": "As-of win percentage, no small edge",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 1 directional fight each and a win-rate gap above 5 points.",
+          "pick": "fighterB",
+          "probabilityA": 0.4,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 9,
+            "losses": 10,
+            "draws": 1,
+            "noContests": 0,
+            "totalDirectional": 19,
+            "winPct": 0.47368421052631576,
+            "netWins": -1
+          },
+          "recordB": {
+            "wins": 5,
+            "losses": 0,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 5,
+            "winPct": 1,
+            "netWins": 5
+          }
+        }
+      }
+    },
+    {
+      "fightId": "oliveira-fili",
+      "event": "UFC Fight Night: Kape vs. Horiguchi",
+      "asOfDate": "2026-06-20",
+      "fighters": {
+        "fighterA": "Vinicius Oliveira",
+        "fighterB": "Andre Fili"
+      },
+      "prediction": {
+        "fighterAWinProbability": 64,
+        "fighterBWinProbability": 36,
+        "methodBreakdown": {
+          "decision": 78,
+          "koTko": 17,
+          "submission": 5
+        },
+        "confidence": "low"
+      },
+      "outcome": {
+        "winner": "fighterA",
+        "method": "ko_tko",
+        "round": 2,
+        "time": "4:56",
+        "recordedAt": "2026-07-07T02:31:32.000Z"
+      },
+      "score": {
+        "correct": true,
+        "brierContribution": 0.1296,
+        "methodCorrect": false
+      },
+      "leakagePassed": true,
+      "missingDataFlags": [],
+      "recordBaselines": {
+        "asof-absolute-wl": {
+          "id": "asof-absolute-wl",
+          "label": "As-of absolute W-L record",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; pick higher wins-minus-losses; no-pick on equal net W-L.",
+          "pick": "fighterA",
+          "probabilityA": 0.6,
+          "reason": "better absolute pre-fight W-L record",
+          "recordA": {
+            "wins": 5,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 6,
+            "winPct": 0.8333333333333334,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 13,
+            "losses": 12,
+            "draws": 0,
+            "noContests": 1,
+            "totalDirectional": 25,
+            "winPct": 0.52,
+            "netWins": 1
+          }
+        },
+        "asof-win-pct-min3": {
+          "id": "asof-win-pct-min3",
+          "label": "As-of win percentage, min 3 fights each",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 3 directional fights for each fighter; pick higher W-L win percentage.",
+          "pick": "fighterA",
+          "probabilityA": 0.6,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 5,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 6,
+            "winPct": 0.8333333333333334,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 13,
+            "losses": 12,
+            "draws": 0,
+            "noContests": 1,
+            "totalDirectional": 25,
+            "winPct": 0.52,
+            "netWins": 1
+          }
+        },
+        "asof-ufc-win-pct-any-history": {
+          "id": "asof-ufc-win-pct-any-history",
+          "label": "As-of UFC win percentage, any history",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered UFCStats history only; compare W-L win percentage, treating no prior directional history as 0% to mirror the legacy fallback behavior.",
+          "pick": "fighterA",
+          "probabilityA": 0.6,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 5,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 6,
+            "winPct": 0.8333333333333334,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 13,
+            "losses": 12,
+            "draws": 0,
+            "noContests": 1,
+            "totalDirectional": 25,
+            "winPct": 0.52,
+            "netWins": 1
+          }
+        },
+        "asof-win-pct-no-small-edge": {
+          "id": "asof-win-pct-no-small-edge",
+          "label": "As-of win percentage, no small edge",
+          "leakageSafe": true,
+          "officialComparison": true,
+          "rule": "Use filtered pre-fight history only; require at least 1 directional fight each and a win-rate gap above 5 points.",
+          "pick": "fighterA",
+          "probabilityA": 0.6,
+          "reason": "higher pre-fight win percentage",
+          "recordA": {
+            "wins": 5,
+            "losses": 1,
+            "draws": 0,
+            "noContests": 0,
+            "totalDirectional": 6,
+            "winPct": 0.8333333333333334,
+            "netWins": 4
+          },
+          "recordB": {
+            "wins": 13,
+            "losses": 12,
+            "draws": 0,
+            "noContests": 1,
+            "totalDirectional": 25,
+            "winPct": 0.52,
+            "netWins": 1
           }
         }
       }

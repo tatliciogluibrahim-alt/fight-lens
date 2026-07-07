@@ -27,6 +27,19 @@ function eventBroadcastLine(event: SourcedEvent) {
   return event.event.broadcast ?? event.event.mainCardTime ?? null;
 }
 
+// Freshness: fight cards change (withdrawals, replacements) after we capture
+// them. Surface when the card data was captured, and warn when a still-upcoming
+// card was captured more than ~10 days before fight week.
+function eventFreshness(event: SourcedEvent): { asOf: string; stale: boolean } | null {
+  if (!event.generatedAt) return null;
+  const captured = new Date(event.generatedAt);
+  if (Number.isNaN(captured.getTime())) return null;
+  const asOf = captured.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  const completed = Boolean(event.event.cardReceipt);
+  const daysSince = (Date.now() - captured.getTime()) / (1000 * 60 * 60 * 24);
+  return { asOf, stale: !completed && daysSince > 10 };
+}
+
 function eventStatusChip(event: SourcedEvent, lockedPredictions: PredictionRecord[]) {
   if (lockedPredictions.length === 0) {
     return (
@@ -71,6 +84,7 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
 
   const statusChip = eventStatusChip(event, lockedPredictions);
   const broadcastLine = eventBroadcastLine(event);
+  const freshness = eventFreshness(event);
 
   return (
     <section className="section-shell py-5 md:py-10">
@@ -89,6 +103,12 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
             </p>
             {event.event.venue ? <p className="mt-1 text-xs text-subtle">{event.event.venue}</p> : null}
             {broadcastLine ? <p className="mt-1 text-xs text-subtle">{broadcastLine}</p> : null}
+            {freshness ? (
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
+                card data as of {freshness.asOf}
+                {freshness.stale ? " · lineup may have changed" : ""}
+              </p>
+            ) : null}
           </div>
           <div className="border-t border-line/60 bg-background/25 px-4 py-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">
@@ -153,9 +173,15 @@ export function EventHero({ event, lockedPredictions = [] }: EventHeroProps) {
 
           <p className="mt-5 text-sm text-subtle">
             {event.fights.length > 0
-              ? "Choose a fight below — each read starts with the model lean."
-              : "Fight card pending. Model leans unlock once fight data is available."}
+              ? "Choose a fight below. Each read starts with the model lean."
+              : "Fight card pending. Model leans become available once fight data is loaded."}
           </p>
+          {freshness ? (
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
+              card data as of {freshness.asOf}
+              {freshness.stale ? " · lineup may have changed" : ""}
+            </p>
+          ) : null}
         </div>
       </div>
     </section>

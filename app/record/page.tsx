@@ -5,10 +5,10 @@ import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { ModelAccuracyCard } from "@/components/ModelAccuracyCard";
 import { getLockedPredictions, getHistoricalBacktestReconstructions, getAccuracyMetrics } from "@/lib/accuracy";
 import { getAllEvents } from "@/lib/events/registry";
-import { computeAccuracyMetrics } from "@/lib/accuracy/calculator";
 import { getPredictionRecordCall } from "@/lib/predictionViewModel";
 import { parseModelMinorVersion } from "@/lib/predictionThresholds";
 import type { PredictionRecord } from "@/lib/accuracy/types";
+import backtestSummary from "@/data/generated/backtests/summary.json";
 
 export const metadata: Metadata = {
   title: "Model Record | Fight Lens",
@@ -34,7 +34,7 @@ function methodLabel(method: string): string {
 function ResultStateChip({
   state,
 }: {
-  state: "correct" | "incorrect" | "pending" | "noresult";
+  state: "correct" | "incorrect" | "pending" | "noresult" | "cancelled";
 }) {
   const config = {
     correct: {
@@ -57,6 +57,11 @@ function ResultStateChip({
       className: "border-line bg-surface-2/70 text-muted",
       dot: "bg-muted/50",
     },
+    cancelled: {
+      label: "Bout cancelled",
+      className: "border-line bg-surface-2/70 text-subtle",
+      dot: "bg-subtle/50",
+    },
   }[state];
 
   return (
@@ -75,10 +80,13 @@ function PredictionRow({ record, eventId, receiptLabel }: { record: PredictionRe
   const { outcome, fighters } = record;
   const call = getPredictionRecordCall(record);
 
-  let state: "correct" | "incorrect" | "pending" | "noresult" = "pending";
+  let state: "correct" | "incorrect" | "pending" | "noresult" | "cancelled" = "pending";
   let resultLine: string | null = null;
 
-  if (outcome) {
+  if (record.cancelled) {
+    state = "cancelled";
+    resultLine = record.cancelled.reason;
+  } else if (outcome) {
     if (outcome.winner === "draw" || outcome.winner === "nc") {
       state = "noresult";
       resultLine = `${outcome.winner === "draw" ? "Draw" : "No Contest"} · ${methodLabel(outcome.method)} · R${outcome.round}`;
@@ -87,10 +95,10 @@ function PredictionRow({ record, eventId, receiptLabel }: { record: PredictionRe
       state = correct === null ? "noresult" : correct ? "correct" : "incorrect";
       const actualWinner = outcome.winner === "fighterA" ? fighters.fighterA : fighters.fighterB;
       resultLine = correct === null
-        ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — no named call`
+        ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round}, no named call`
         : correct
         ? `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round}`
-        : `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round} — called ${call.predictedWinnerName}`;
+        : `${actualWinner} won · ${methodLabel(outcome.method)} · R${outcome.round}, called ${call.predictedWinnerName}`;
     }
   }
 
@@ -105,7 +113,7 @@ function PredictionRow({ record, eventId, receiptLabel }: { record: PredictionRe
       {/* Names + call */}
       <div className="min-w-0">
         <p className="truncate text-sm font-semibold">
-          {fighters.fighterA} <span className="font-normal text-subtle">vs</span> {fighters.fighterB}
+          {fighters.fighterA} <span className="font-normal text-subtle">vs.</span> {fighters.fighterB}
         </p>
         <p className="mt-1 text-xs text-muted">
           {call.hasNamedCall ? (
@@ -150,7 +158,7 @@ function PredictionRow({ record, eventId, receiptLabel }: { record: PredictionRe
           View read
         </Link>
       ) : (
-        <span className="text-xs text-subtle">—</span>
+        <span className="text-xs text-subtle">no read</span>
       )}
     </div>
   );
@@ -168,12 +176,14 @@ function groupByEvent(records: PredictionRecord[]): Map<string, PredictionRecord
 
 export default function RecordPage() {
   const metrics = getAccuracyMetrics();
-  // Public Model Record shows LOCKED calls only — pre-fight predictions
+  // Public Model Record shows LOCKED calls only, pre-fight predictions
   // committed before the bell. Historical backtest reconstructions live
   // below in a separate, clearly labeled section.
   const lockedCalls = getLockedPredictions();
   const backtestReconstructions = getHistoricalBacktestReconstructions();
-  const backtestMetrics = computeAccuracyMetrics(backtestReconstructions);
+  // Historical validation headline reads from the full generated backtest
+  // corpus (one source of truth), not the lone islam-jdm reconstruction row.
+  const backtest = backtestSummary.summary;
   const byEvent = groupByEvent(lockedCalls);
 
   // Exact fight → event-id routing for "View read" links, plus the post-fight
@@ -189,12 +199,15 @@ export default function RecordPage() {
     }
   }
 
-  const resolvedCount = lockedCalls.filter((r) => r.outcome !== null).length;
-  const pendingCount = lockedCalls.filter((r) => r.outcome === null).length;
+  // Cancelled bouts (fighter withdrawal) are logged history but not live calls:
+  // they never resolve, so they are excluded from the counts and shown as cancelled.
+  const liveCalls = lockedCalls.filter((r) => !r.cancelled);
+  const cancelledCount = lockedCalls.filter((r) => r.cancelled).length;
+  const pendingCount = liveCalls.filter((r) => r.outcome === null).length;
   const correctCount = metrics.winnerAccuracy != null
     ? Math.round((metrics.winnerAccuracy / 100) * metrics.resolvedCount)
     : null;
-  const completedCardCount = Array.from(groupByEvent(lockedCalls).values())
+  const completedCardCount = Array.from(groupByEvent(liveCalls).values())
     .filter((records) => records.every((r) => r.outcome !== null)).length;
 
   // Model-version provenance. Each call is scored against the named-call
@@ -237,23 +250,22 @@ export default function RecordPage() {
             </p>
             <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
               Scored by model version{versionLabel ? ` (${versionLabel})` : ""}: each call is judged
-              against the named-call threshold of the version it was locked under — v0.2 and earlier
-              at 52%, v0.3+ at 58% with temperature recalibration — so past calls never shift when
-              the model is updated.
+              against the named-call threshold of the version it was locked under, so past calls
+              never shift when the model is updated.
             </p>
 
-            {/* Ledger row — 4 stats, public accountability feel */}
+            {/* Ledger row, 4 stats, public accountability feel */}
             <div className="mt-6 grid max-w-2xl grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
-                <p className="data-text text-2xl text-foreground">{lockedCalls.length}</p>
+                <p className="data-text text-2xl text-foreground">{liveCalls.length}</p>
                 <p className="mono-label mt-1 whitespace-nowrap">calls logged</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
-                <p className="data-text text-2xl text-foreground">{correctCount ?? "—"}</p>
+                <p className="data-text text-2xl text-foreground">{correctCount ?? ", "}</p>
                 <p className="mono-label mt-1">correct</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
-                <p className="data-text text-2xl text-accent">{metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}</p>
+                <p className="data-text text-2xl text-accent">{metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : ", "}</p>
                 <p className="mono-label mt-1">accuracy</p>
               </div>
               <div className="rounded-xl border border-line bg-surface/70 px-2 py-3">
@@ -265,6 +277,14 @@ export default function RecordPage() {
               <p className="mt-3 text-xs text-subtle">
                 {completedCardCount} completed card{completedCardCount === 1 ? "" : "s"}
                 {pendingCount > 0 ? ` · ${pendingCount} call${pendingCount === 1 ? "" : "s"} awaiting result` : ""}
+                {cancelledCount > 0 ? ` · ${cancelledCount} cancelled bout${cancelledCount === 1 ? "" : "s"}` : ""}
+              </p>
+            )}
+            {metrics.resolvedCount > 0 && metrics.resolvedCount < 30 && (
+              <p className="mt-2 max-w-2xl text-xs leading-5 text-subtle">
+                Read at small n: {metrics.resolvedCount} scored calls is not yet enough to
+                separate this from simply backing the favorite. Treat the accuracy figure as
+                directional until the sample grows.
               </p>
             )}
             <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.12em] text-subtle/70">
@@ -312,11 +332,11 @@ export default function RecordPage() {
           </div>
 
           <p className="mt-6 text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-            directional model lean · not a guarantee · outcome-v0.2
+            directional model lean · not a guarantee{versionLabel ? ` · ${versionLabel}` : ""}
           </p>
         </section>
 
-        {/* Historical validation — clearly separated from the public Model Record */}
+        {/* Historical validation, clearly separated from the public Model Record */}
         <section className="section-shell py-6 md:py-10">
           <div className="rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
             <p className="mono-label">historical validation</p>
@@ -326,18 +346,19 @@ export default function RecordPage() {
 
             <div className="mt-4 grid gap-3 sm:grid-cols-[220px_1fr] sm:items-stretch">
               <div className="rounded-xl border border-line bg-background/40 p-4">
-                <p className="data-text text-3xl text-muted">
-                  {backtestMetrics.winnerAccuracy != null ? `${backtestMetrics.winnerAccuracy}%` : "—"}
-                </p>
-                <p className="mono-label mt-2">historical named-call</p>
+                <p className="data-text text-3xl text-muted">{backtest.winnerAccuracy}%</p>
+                <p className="mono-label mt-2">winner accuracy</p>
                 <p className="mt-1 text-xs leading-5 text-subtle">
-                  Computed from {backtestReconstructions.length} retroactive reconstruction{backtestReconstructions.length === 1 ? "" : "s"}.
+                  Reconstructed across {backtest.scoredFights} fights using only as-of data.
+                  Brier {backtest.brierScore} · method {backtest.methodAccuracy}%.
                 </p>
               </div>
               <div className="rounded-xl border border-line bg-background/25 p-4">
                 <p className="text-xs font-semibold text-foreground">Separate dataset</p>
                 <p className="mt-1 text-xs leading-5 text-muted">
-                  These rows test whether the model behaves sensibly on past fights. They were not public calls and never count toward the public record above.
+                  A retroactive run over {backtest.scoredFights} completed fights, using only data
+                  available before each bell. These were not public calls and never count toward the
+                  record above. The single reconstruction rows below are a worked example, not the headline.
                 </p>
               </div>
             </div>
@@ -355,7 +376,7 @@ export default function RecordPage() {
                 <p className="text-xs font-semibold text-foreground">Historical Validation (this section)</p>
                 <p className="mt-1 text-xs leading-5 text-muted">
                   Retroactive model checks shown as labeled reconstruction rows.
-                  Never publicly logged — used to test the model, not to claim calls.
+                  Never publicly logged, used to test the model, not to claim calls.
                 </p>
               </div>
             </div>
@@ -363,24 +384,24 @@ export default function RecordPage() {
             <p className="mt-4 max-w-2xl text-sm leading-6 text-muted">
               These retroactive runs use only data that was available before each fight.
               They are <span className="text-foreground font-medium">not</span> the same
-              as logged calls — they were never published before the bell, so they do not
+              as logged calls, they were never published before the bell, so they do not
               count toward the public Model Record above.
             </p>
 
             {backtestReconstructions.length > 0 && (
-              <div className="mt-5 overflow-hidden rounded-xl border border-line bg-background/30">
-                {backtestReconstructions.map((record) => (
-                  <PredictionRow key={record.fightId} record={record} eventId={fightEventIds.get(record.fightId)} />
-                ))}
-              </div>
+              <>
+                <p className="mt-5 mono-label">worked example</p>
+                <div className="mt-2 overflow-hidden rounded-xl border border-line bg-background/30">
+                  {backtestReconstructions.map((record) => (
+                    <PredictionRow key={record.fightId} record={record} eventId={fightEventIds.get(record.fightId)} />
+                  ))}
+                </div>
+              </>
             )}
 
             <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
               <p className="text-[11px] uppercase tracking-[0.1em] text-subtle/70">
-                historical backtest corpus · n={backtestReconstructions.length} fights
-                {backtestMetrics.winnerAccuracy != null
-                  ? ` · ${backtestMetrics.winnerAccuracy}% named-call accuracy`
-                  : " · accuracy pending outcomes"}
+                historical backtest corpus · n={backtest.scoredFights} fights · {backtest.winnerAccuracy}% winner accuracy · brier {backtest.brierScore}
               </p>
               <a
                 href="/methodology"

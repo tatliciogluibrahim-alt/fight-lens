@@ -62,7 +62,7 @@ const modelRows = [
   {
     label: "Recency-Weighted Form",
     status: "partial",
-    body: "Uses recent sourced results, methods, and recency, with long layoffs shrinking the score toward neutral. Opponent tiers are not modeled — they are held out until that context can be added cleanly."
+    body: "Uses recent sourced results, methods, and recency, with long layoffs shrinking the score toward neutral. Opponent tiers are not modeled, they are held out until that context can be added cleanly."
   },
   {
     label: "Round Sustainability",
@@ -90,10 +90,10 @@ function NumberPill({ children }: { children: React.ReactNode }) {
 }
 
 export default function MethodologyPage() {
-  const showDebug = process.env.NEXT_PUBLIC_DEBUG_MODE === "true";
-  const metricGridClass = showDebug
-    ? "grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr_92px] lg:items-start"
-    : "grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr] lg:items-start";
+  // Provenance (mock / manual / sourced / derived) is a product promise, so it
+  // ships in the real build, not behind the debug flag it used to hide behind.
+  const metricGridClass =
+    "grid gap-4 border-b border-line p-5 last:border-b-0 lg:grid-cols-[72px_190px_1fr_1fr_92px] lg:items-start";
 
   return (
     <>
@@ -114,8 +114,8 @@ export default function MethodologyPage() {
             </h1>
             <p className="mt-6 max-w-3xl text-base leading-7 text-muted md:text-lg md:leading-8">
               Fight Lens turns public stats, reviewed context, and computed signals into a
-              model lean. The goal is not certainty — it is to show the shape of the matchup
-              clearly enough that a creator, analyst, or serious fan can explain what matters.
+              model lean. The goal is to show the shape of the matchup clearly enough that a
+              creator, analyst, or serious fan can explain what matters, not to promise certainty.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-xl border border-line/60 bg-surface/40 px-4 py-3">
               <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">early prototype · ongoing development</span>
@@ -123,7 +123,7 @@ export default function MethodologyPage() {
               <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-subtle">not betting advice</span>
             </div>
             <p className="mt-3 text-xs leading-5 text-subtle">
-              For the product thinking behind Fight Lens — problem, constraint, and next decisions —
+              For the product thinking behind Fight Lens, problem, constraint, and next decisions , 
               see the{" "}
               <Link href="/case-study" className="text-foreground underline decoration-line underline-offset-4 hover:text-accent">
                 case study
@@ -146,7 +146,7 @@ export default function MethodologyPage() {
               <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-wrong/70" />
               <p className="mono-label">what it does not know</p>
               <p className="mt-3 text-sm leading-6 text-muted">
-                Camp news, injuries, weight cuts, mid-fight adjustments, or judging quirks —
+                Camp news, injuries, weight cuts, mid-fight adjustments, or judging quirks , 
                 anything outside public stat records. Signal-based, not omniscient.
               </p>
             </div>
@@ -154,14 +154,14 @@ export default function MethodologyPage() {
               <span className="pointer-events-none absolute left-0 top-0 h-px w-12 bg-success/70" />
               <p className="mono-label">how to read it</p>
               <p className="mt-3 text-sm leading-6 text-muted">
-                Read the model lean first, then read strength. Method lean is directional — not
+                Read the model lean first, then read strength. Method lean is directional, not
                 a second winner forecast. Style fingerprint shows how the matchup tilts, separate
                 from the call. This is analysis, not betting advice.
               </p>
             </div>
           </div>
 
-          {/* Data stance — kept, but de-emphasized into a quieter strip */}
+          {/* Data stance, kept, but de-emphasized into a quieter strip */}
           <div className="mt-8 rounded-2xl border border-line bg-surface/50 p-5 md:p-6">
             <p className="mono-label">data stance</p>
             <div className="mt-4 grid gap-x-6 gap-y-3 sm:grid-cols-3">
@@ -203,14 +203,14 @@ export default function MethodologyPage() {
                 <p className="text-sm font-semibold text-foreground">How calls are scored</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
                   Win calls are scored as correct or incorrect against the official result.
-                  Method (finish vs. decision) is tracked directionally — separately from the
+                  Method (finish vs. decision) is tracked directionally, separately from the
                   winner call, because it&apos;s a coarser read.
                 </p>
               </div>
               <div>
                 <p className="text-sm font-semibold text-foreground">What read strength means</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
-                  Strong, usable, or thin — a plain-English summary of how confident the model is.
+                  Strong, usable, or thin, a plain-English summary of how confident the model is.
                   &quot;Thin&quot; means treat the call as directional only. Read strength sits next to
                   every win probability, not buried.
                 </p>
@@ -226,7 +226,7 @@ export default function MethodologyPage() {
               <div>
                 <p className="text-sm font-semibold text-foreground">Why forecasts are not guarantees</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
-                  Fights are noisy. Even a well-calibrated 70% call loses ~3 in 10 times — that&apos;s
+                  Fights are noisy. Even a well-calibrated 70% call loses ~3 in 10 times, that&apos;s
                   the model working correctly, not failing. The model record is the only place to
                   read accuracy honestly.
                 </p>
@@ -235,7 +235,7 @@ export default function MethodologyPage() {
                 <p className="text-sm font-semibold text-foreground">What &quot;too close to call&quot; means</p>
                 <p className="mt-1 text-sm leading-6 text-muted">
                   When the model&apos;s win probability for each fighter is below 52%, no named call
-                  is shown. Both paths remain viable. This is not a broken state — it is the model
+                  is shown. Both paths remain viable. This is not a broken state, it is the model
                   being honest about low separation rather than forcing a named call.
                 </p>
               </div>
@@ -251,18 +251,18 @@ export default function MethodologyPage() {
             </div>
 
             <div className="mt-6 rounded-xl border border-line bg-background/40 p-4">
-              <p className="text-sm font-semibold text-foreground">May 2026 — data repair</p>
+              <p className="text-sm font-semibold text-foreground">May 2026, data repair</p>
               <p className="mt-1 text-sm leading-6 text-muted">
                 Earlier backtests fell back to UFC averages for three defensive stats (sapm,
                 striking defense, takedown defense) because opponent totals weren&apos;t stored in
                 each fighter&apos;s history. After adding opponent totals into the pipeline, those
                 stats now come from prior bouts where the fight detail data is available.
-                Coverage is partial today — it improves as more events get ingested.
+                Coverage is partial today, it improves as more events get ingested.
               </p>
             </div>
 
             <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
-              <p className="text-sm font-semibold text-foreground">June 2026 — manual model-sanity layer</p>
+              <p className="text-sm font-semibold text-foreground">June 2026, manual model-sanity layer</p>
               <p className="mt-1 text-sm leading-6 text-muted">
                 Fights can now carry a manual sanity layer around the model lean: a
                 <span className="text-foreground"> data-confidence label</span> (Strong → Data caution),
@@ -270,22 +270,22 @@ export default function MethodologyPage() {
                 division change, and similar),
                 a dated <span className="text-foreground">market snapshot</span> for context, and an
                 <span className="text-foreground"> analyst check</span> sentence. None of it changes the
-                locked prediction — it tells you how much weight the number deserves. When the manual
+                locked prediction, it tells you how much weight the number deserves. When the manual
                 label is more cautious than the model&apos;s own read, the displayed confidence range
                 widens to match; it never narrows.
               </p>
             </div>
 
             <div className="mt-4 rounded-xl border border-line bg-background/40 p-4">
-              <p className="text-sm font-semibold text-foreground">May 2026 — expanded historical backtest (n=253, 20-event corpus)</p>
+              <p className="text-sm font-semibold text-foreground">May 2026, expanded historical backtest (n=253, 20-event corpus)</p>
               <p className="mt-1 text-sm leading-6 text-muted">
                 The historical backtest covers 253 fights across 20 completed events. Winner
                 accuracy is 66%, method accuracy 58%, and Brier 0.219. Against the official
                 leakage-safe as-of record baseline (63% directional-call / 58% all-fight, Brier 0.235),
-                v0.2 is directionally ahead — but the corpus is still early and no model grade
+                v0.2 is directionally ahead, but the corpus is still early and no model grade
                 is published yet. The 60–80% confidence buckets show some overconfidence. More
                 logged public calls are needed before any grade unlocks.
-                These backtests are <span className="text-foreground">retroactive validation runs</span> —
+                These backtests are <span className="text-foreground">retroactive validation runs</span> , 
                 they are not the same as logged pre-fight calls, and are listed separately on the
                 Model Record page.
               </p>
@@ -350,11 +350,9 @@ export default function MethodologyPage() {
                 <p className="data-text text-xs leading-6 text-subtle">
                   {metric.inputs.join(" / ")}
                 </p>
-                {showDebug ? (
-                  <p className="data-text text-xs uppercase tracking-[0.12em] text-accent">
-                    {metric.provenance}
-                  </p>
-                ) : null}
+                <p className="data-text text-xs uppercase tracking-[0.12em] text-accent">
+                  {metric.provenance}
+                </p>
               </div>
             ))}
           </div>
@@ -391,7 +389,7 @@ export default function MethodologyPage() {
             <div className="p-5 space-y-4 text-sm leading-6 text-muted">
               <p>
                 The Brier score measures the mean squared error of the model&apos;s win
-                probabilities against actual outcomes. <span className="text-foreground">Lower is better</span> —
+                probabilities against actual outcomes. <span className="text-foreground">Lower is better</span> , 
                 but the number matters most against a baseline.
               </p>
               <p>
@@ -399,7 +397,7 @@ export default function MethodologyPage() {
                 calling 50/50. Anything below that means the model is contributing real signal.
                 A score in the high teens or low twenties on UFC fights is a reasonable target;
                 a confident, well-calibrated model could land lower. There is no universal
-                &quot;good/bad&quot; range — context matters.
+                &quot;good/bad&quot; range, context matters.
               </p>
               <p>
                 Brier penalises overconfidence more than a simple win/loss record does.
@@ -408,7 +406,7 @@ export default function MethodologyPage() {
               </p>
               <p>
                 Brier is tracked internally and reported here only. The main record page shows
-                call accuracy and method accuracy — numbers a fan can read at a glance.
+                call accuracy and method accuracy, numbers a fan can read at a glance.
               </p>
             </div>
           </div>

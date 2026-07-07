@@ -1,5 +1,5 @@
 /**
- * terminology — centralized public language for Fight Lens
+ * terminology, centralized public language for Fight Lens
  *
  * All copy that appears in the UI should come from this file,
  * or at least be consistent with the labels defined here.
@@ -30,7 +30,7 @@ export const TERMS = {
   /** When the model has a slight preference */
   MODEL_LEAN: "model lean",
 
-  /** Predicted win probability — always shown as a range or specific number */
+  /** Predicted win probability, always shown as a range or specific number */
   WIN_PROBABILITY: "win probability",
 
   /** The model's method prediction (finish/decision direction) */
@@ -57,16 +57,16 @@ export const TERMS = {
   /** Standard disclaimer for all predictions */
   NOT_A_GUARANTEE: "not a guarantee",
 
-  /** All predictions locked before the first bell — no editing after */
+  /** All predictions locked before the first bell, no editing after */
   LOCKED_BEFORE_FIGHT: "locked before the fight",
 
   /** The model uses public signals, not personal judgment */
   SIGNAL_BASED: "signal-based",
 
-  /** Used in accuracy tracking — how often the top pick was right */
+  /** Used in accuracy tracking, how often the top pick was right */
   CALL_ACCURACY: "call accuracy",
 
-  /** Used in accuracy tracking — finish vs. decision direction */
+  /** Used in accuracy tracking, finish vs. decision direction */
   METHOD_ACCURACY: "finish vs. decision read",
 } as const;
 

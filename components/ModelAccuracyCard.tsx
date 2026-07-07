@@ -14,8 +14,8 @@ const gradeConfig: Record<ModelGrade, { color: string; label: string }> = {
   A: { color: "text-accent", label: "Strong read accuracy" },
   B: { color: "text-foreground", label: "Solid read accuracy" },
   C: { color: "text-muted", label: "Developing read accuracy" },
-  D: { color: "text-subtle", label: "Near-random — more fights needed" },
-  F: { color: "text-subtle", label: "Overclaiming — needs recalibration" },
+  D: { color: "text-subtle", label: "Near-random, more fights needed" },
+  F: { color: "text-subtle", label: "Overclaiming, needs recalibration" },
 };
 
 // ─── Compact badge (for homepage) ────────────────────────────────────────────
@@ -98,7 +98,7 @@ function CalibrationTable({ metrics }: { metrics: AccuracyMetrics }) {
         })}
       </div>
       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/60">
-        directional only at small n — calibration stabilizes after more scored calls
+        directional only at small n, calibration stabilizes after more scored calls
       </p>
     </div>
   );
@@ -125,7 +125,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
             tracking.
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            Accuracy numbers build as fights resolve. {metrics.totalPredictions} call{metrics.totalPredictions !== 1 ? "s" : ""} locked — outcomes pending.
+            Accuracy numbers build as fights resolve. {metrics.totalPredictions} call{metrics.totalPredictions !== 1 ? "s" : ""} locked, outcomes pending.
           </p>
         </div>
       </div>
@@ -149,14 +149,14 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
               <p className="mt-2 text-sm text-muted">{gradeDisplay.label}</p>
             ) : (
               <p className="mt-2 text-sm text-muted">
-                {metrics.resolvedCount} fights scored — grade unlocks at 30.
+                {metrics.resolvedCount} fights scored, grade unlocks at 30.
               </p>
             )}
           </div>
 
           <div className="rounded-xl border border-accent/25 bg-background/45 p-4">
             <p className="data-text text-5xl leading-none text-accent md:text-6xl">
-              {metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : "—"}
+              {metrics.winnerAccuracy != null ? `${metrics.winnerAccuracy}%` : ", "}
             </p>
             <p className="mono-label mt-2">named-call accuracy</p>
             <p className="mt-1 text-sm text-muted">
@@ -194,7 +194,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
 
           <div className="rounded-xl border border-line bg-background/35 p-4">
             <p className="data-text text-3xl text-foreground">
-              {metrics.methodAccuracy != null ? `${metrics.methodAccuracy}%` : "—"}
+              {metrics.methodAccuracy != null ? `${metrics.methodAccuracy}%` : ", "}
             </p>
             <p className="mono-label mt-2">method read</p>
             <p className="mt-1 text-xs text-subtle">Directional only. Small sample.</p>
@@ -207,7 +207,7 @@ export function ModelAccuracyCard({ metrics, compact = false }: ModelAccuracyCar
         {!compact && <CalibrationTable metrics={metrics} />}
 
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-subtle/70">
-          directional model lean · not a guarantee · outcome-v0.2
+          directional model lean · not a guarantee
           {metrics.lastUpdated
             ? ` · updated ${new Date(metrics.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" })}`
             : ""}

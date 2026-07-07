@@ -14,9 +14,9 @@ interface TheCallProps {
 //
 // Secondary to the winner forecast. Rendered as a compact text-row breakdown
 // so the three method rows read clearly without faint bar lines.
-// No amber — this is not a winner signal.
+// No amber, this is not a winner signal.
 
-// Threshold below which a method is considered "thin" signal — shown as a
+// Threshold below which a method is considered "thin" signal, shown as a
 // minimal dot marker rather than a filled bar so the visual hierarchy is clear.
 const METHOD_THIN_THRESHOLD = 8;
 
@@ -41,7 +41,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
         </span>
       </div>
 
-      {/* Top method — primary read */}
+      {/* Top method, primary read */}
       <p className="mt-3 text-xl font-semibold tracking-tight text-foreground">
         {top.label}
       </p>
@@ -50,7 +50,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
         Proportional bar rows.
         - Top method: accent-tinted fill at the actual percentage width.
         - Secondary methods: muted fill at the actual percentage width.
-        - Thin methods (<8%): dot marker only — no fill bar so it never
+        - Thin methods (<8%): dot marker only, no fill bar so it never
           looks equal to an 80% KO/TKO bar.
       */}
       <div className="mt-4 space-y-3">
@@ -75,7 +75,7 @@ function MethodLean({ viewModel }: { viewModel: PredictionViewModel }) {
 
               {/* Proportional bar track */}
               {thin ? (
-                /* Thin: tiny dot marker — no bar, prevents visual equality with strong methods */
+                /* Thin: tiny dot marker, no bar, prevents visual equality with strong methods */
                 <div className="flex h-1.5 items-center">
                   <div className="h-1.5 w-1.5 rounded-full bg-subtle/30" />
                 </div>
@@ -130,12 +130,12 @@ function ScenarioCard({ scenario }: { scenario: OutcomeScenario }) {
 //
 // "why the model leans this way." is the SUPPORTING section. The FightReadSnapshot above the
 // fold is the primary call display. This section explains why the model leans
-// the way it does and what could flip it — it does not repeat the big
+// the way it does and what could flip it, it does not repeat the big
 // winner/probability card.
 
 export function TheCall({ viewModel: vm, modelSanity = null }: TheCallProps) {
   if (vm.callState === "insufficientData" || vm.callState === "pending") {
-    // Hide the "data pending" placeholder on mobile — FightReadSnapshot already
+    // Hide the "data pending" placeholder on mobile, FightReadSnapshot already
     // surfaces the pending state above the fold. Showing a large empty card
     // makes the product look unfinished on small screens.
     return (
@@ -210,7 +210,7 @@ export function TheCall({ viewModel: vm, modelSanity = null }: TheCallProps) {
         {/* Projected finish */}
         <MethodLean viewModel={vm} />
 
-        {/* Sharpest single insight on the matchup — manual, one sentence */}
+        {/* Sharpest single insight on the matchup, manual, one sentence */}
         {modelSanity?.strongestInsight ? (
           <SharpInsight text={modelSanity.strongestInsight} />
         ) : null}

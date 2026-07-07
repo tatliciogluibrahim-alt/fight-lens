@@ -1,11 +1,11 @@
 /*
- * RoundMomentumFlow — projected round-by-round win probability chart.
+ * RoundMomentumFlow, projected round-by-round win probability chart.
  *
  * Uses each fighter's historical round model (earlyThreat / lateEvidence /
  * per-round scores) to project how the probability might shift across rounds
  * if the fight plays out as the model expects.
  *
- * Labeled explicitly as "projected momentum" — this is derived from historical
+ * Labeled explicitly as "projected momentum", this is derived from historical
  * round data, NOT a per-round prediction or guarantee. If a fighter's round
  * model lacks enough data, a pending state is shown instead.
  *
@@ -13,7 +13,7 @@
  * Normalize so they sum to 1. sigA/sigB come from fighter.roundModel.roundScores
  * (0–100 scale), falling back to earlyThreat / lateEvidence when null.
  *
- * All probabilities flow from the canonical predictionViewModel —
+ * All probabilities flow from the canonical predictionViewModel , 
  * no independent winner computation here.
  */
 
@@ -27,7 +27,7 @@ export interface RoundMomentumFlowProps {
   fighterAWinProbability: number;
   /** Fighter B's win probability 0–100, from vm.fighterB.winProbability */
   fighterBWinProbability: number;
-  /** The canonical predicted winner id — used to color the chart only */
+  /** The canonical predicted winner id, used to color the chart only */
   predictedWinnerId:     string | null;
 }
 
@@ -145,8 +145,8 @@ export function RoundMomentumFlow({
 
   // Color: predicted winner gets accent, other fighter gets muted foreground
   const aIsWinner = predictedWinnerId === fighterA.id;
-  const aStroke   = aIsWinner ? "var(--accent)"   : "rgba(226,232,240,0.45)";
-  const bStroke   = aIsWinner ? "rgba(226,232,240,0.45)" : "var(--accent)";
+  const aStroke   = aIsWinner ? "var(--accent)"   : "rgba(241, 246, 251,0.45)";
+  const bStroke   = aIsWinner ? "rgba(241, 246, 251,0.45)" : "var(--accent)";
   const aFillId   = "rmFlowFillA";
   const bFillId   = "rmFlowFillB";
 
@@ -160,7 +160,7 @@ export function RoundMomentumFlow({
           <div>
             <p className="mono-label">round momentum</p>
             <p className="mt-1 text-sm text-muted">
-              Projected from historical round data — not per-round predictions.
+              Projected from historical round data, not per-round predictions.
             </p>
           </div>
           {/* Legend */}
@@ -190,7 +190,7 @@ export function RoundMomentumFlow({
           className="w-full"
           style={{ height: "auto", display: "block" }}
           role="img"
-          aria-label={`Round momentum projection — ${fighterA.name} vs ${fighterB.name}`}
+          aria-label={`Round momentum projection, ${fighterA.name} vs ${fighterB.name}`}
         >
           <defs>
             <linearGradient id={aFillId} x1="0" y1="0" x2="0" y2="1">
@@ -209,13 +209,13 @@ export function RoundMomentumFlow({
               <line
                 x1={PAD.l} x2={W - PAD.r}
                 y1={yAt(p)} y2={yAt(p)}
-                stroke={p === 0.5 ? "rgba(143,215,247,0.20)" : "rgba(143,215,247,0.07)"}
+                stroke={p === 0.5 ? "rgba(154, 217, 255,0.20)" : "rgba(154, 217, 255,0.07)"}
                 strokeDasharray={p === 0.5 ? "4 4" : "0"}
               />
               <text
                 x={PAD.l - 8} y={yAt(p) + 4}
                 textAnchor="end"
-                fill="rgba(143,215,247,0.35)"
+                fill="rgba(154, 217, 255,0.35)"
                 fontSize="10"
                 fontFamily="monospace"
                 letterSpacing="0.06em"
@@ -231,13 +231,13 @@ export function RoundMomentumFlow({
               <line
                 x1={xAt(i, n)} x2={xAt(i, n)}
                 y1={PAD.t} y2={H - PAD.b}
-                stroke="rgba(143,215,247,0.05)"
+                stroke="rgba(154, 217, 255,0.05)"
                 strokeDasharray="2 4"
               />
               <text
                 x={xAt(i, n)} y={H - PAD.b + 18}
                 textAnchor="middle"
-                fill="rgba(143,215,247,0.40)"
+                fill="rgba(154, 217, 255,0.40)"
                 fontSize="10"
                 fontFamily="monospace"
                 letterSpacing="0.1em"

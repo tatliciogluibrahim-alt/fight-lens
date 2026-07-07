@@ -4,7 +4,7 @@ import type { ContextualFightNote } from "@/lib/sourced-event";
  * No color-coded direction chips here. The success/wrong palette belongs to
  * scored outcomes only. Context notes explicitly do not change the model call,
  * so treating "hurts" as red and "helps" as green creates a false parallel
- * signal. All chips use the same neutral treatment — copy carries the meaning.
+ * signal. All chips use the same neutral treatment, copy carries the meaning.
  *
  * Chip order: confidence first (more meaningful), direction second (qualifier).
  */
@@ -30,11 +30,11 @@ export function ContextualNotes({ notes }: { notes?: ContextualFightNote[] | nul
           <article key={`${note.fighter}-${note.type}-${note.title}`} className="rounded-2xl border border-line bg-background/35 p-4">
             <div className="flex flex-wrap items-center gap-2">
               <span className="mono-label text-foreground">{note.fighter}</span>
-              {/* Confidence leads — it tells you how much weight to put on the note */}
+              {/* Confidence leads, it tells you how much weight to put on the note */}
               <span className={`${CHIP} text-muted`}>
                 {note.confidence}
               </span>
-              {/* Direction is a qualifier, not a verdict — same neutral styling */}
+              {/* Direction is a qualifier, not a verdict, same neutral styling */}
               <span className={`${CHIP} text-subtle`}>
                 {note.impactDirection}
               </span>

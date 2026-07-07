@@ -4,12 +4,12 @@ import { formatRanking, getCountryDisplay } from "@/lib/display";
 import { getStyleRadarDimensions, hasEnoughStyleRadarData } from "@/lib/style-radar";
 
 /**
- * FightFeatureHero — the cinematic, editorial opening of a fight page.
+ * FightFeatureHero, the cinematic, editorial opening of a fight page.
  *
  * Design ethos: stop opening with a stats dashboard. Open with a magazine-cover
  * moment where the data is the visual story. Massive editorial typography
  * carries the matchup. The style fingerprint polygons of both fighters render
- * as low-opacity ambient watermarks behind the names — the radar shape becomes
+ * as low-opacity ambient watermarks behind the names, the radar shape becomes
  * scenography, not a chart. The model lean appears as a quiet editorial
  * callout, not a card.
  *
@@ -39,7 +39,7 @@ function flagEmoji(code: string | undefined): string | null {
 
 // ─── Ambient style-fingerprint watermark ─────────────────────────────────────
 // Renders the fighter's radar polygon as a soft background motif. No labels,
-// no axes, no ticks — just the silhouette. Sized large and floated behind the
+// no axes, no ticks, just the silhouette. Sized large and floated behind the
 // name so the type stays the hero and the data becomes ambient scenography.
 
 function FingerprintWatermark({
@@ -94,14 +94,14 @@ function FingerprintWatermark({
       >
         <defs>
           <radialGradient id={`fp-glow-${side}`} cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="rgba(143,215,247,0.18)" />
-            <stop offset="60%" stopColor="rgba(143,215,247,0.04)" />
-            <stop offset="100%" stopColor="rgba(143,215,247,0)" />
+            <stop offset="0%" stopColor="rgba(154, 217, 255,0.18)" />
+            <stop offset="60%" stopColor="rgba(154, 217, 255,0.04)" />
+            <stop offset="100%" stopColor="rgba(154, 217, 255,0)" />
           </radialGradient>
         </defs>
         {/* Soft accent halo behind the silhouette */}
         <circle cx={CENTER} cy={CENTER} r={RADIUS + 30} fill={`url(#fp-glow-${side})`} />
-        {/* Outer guide ring — quiet hexagonal/octagonal frame */}
+        {/* Outer guide ring, quiet hexagonal/octagonal frame */}
         <polygon
           points={guidePoints}
           fill="none"
@@ -112,7 +112,7 @@ function FingerprintWatermark({
         {/* The fighter's actual style silhouette */}
         <polygon
           points={polygonPoints}
-          fill="rgba(226,232,240,0.04)"
+          fill="rgba(241, 246, 251,0.04)"
           stroke="var(--foreground)"
           strokeOpacity={0.22}
           strokeWidth={1.4}
@@ -182,14 +182,14 @@ function FighterColumn({
         isRight ? "lg:items-end lg:text-right" : "lg:items-start"
       }`}
     >
-      {/* Top metadata block — country + ranking */}
+      {/* Top metadata block, country + ranking */}
       <div className={`flex flex-col gap-3 ${isRight ? "lg:items-end" : "lg:items-start"}`}>
         <CountryMarker fighter={fighter} align={align} />
         <RankingChip ranking={fighter.ranking} align={align} />
       </div>
 
       {/*
-        Name treatment — editorial. Stays on one line on lg+ via a tight
+        Name treatment, editorial. Stays on one line on lg+ via a tight
         font-stretch and conservative max-width; gracefully breaks on smaller
         widths. Tracking is pulled in heavily for that magazine-cover feel.
       */}
@@ -201,7 +201,7 @@ function FighterColumn({
         {fighter.name}
       </h2>
 
-      {/* Bottom metadata block — record + the call accent line */}
+      {/* Bottom metadata block, record + the call accent line */}
       <div className={`flex flex-col gap-2 ${isRight ? "lg:items-end" : "lg:items-start"}`}>
         {fighter.record && (
           <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">{fighter.record}</p>
@@ -265,7 +265,7 @@ export function FightFeatureHero({
       aria-label="Fight feature"
       className="relative overflow-hidden rounded-2xl border border-line bg-gradient-to-b from-surface via-surface to-background/95 shadow-glow"
     >
-      {/* Background grid pattern — premium technical texture */}
+      {/* Background grid pattern, premium technical texture */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -277,7 +277,7 @@ export function FightFeatureHero({
       />
 
       {/*
-        Corner registration marks removed — at narrow widths they overlapped
+        Corner registration marks removed, at narrow widths they overlapped
         the metadata strip text ("UFC FREEDOM 250: …" / "HEAVYWEIGHT … MAIN
         CARD"), and the rounded outer border was already framing the hero.
         Less chrome lets the editorial type carry the moment.
@@ -295,12 +295,12 @@ export function FightFeatureHero({
         </p>
       </div>
 
-      {/* Ambient style fingerprint watermarks — one per fighter, drift to edges */}
+      {/* Ambient style fingerprint watermarks, one per fighter, drift to edges */}
       <FingerprintWatermark fighter={fighterA} side="left" />
       <FingerprintWatermark fighter={fighterB} side="right" />
 
       {/*
-        The cinematic body — 3-column grid on lg+ (Fighter A | VS | Fighter B).
+        The cinematic body, 3-column grid on lg+ (Fighter A | VS | Fighter B).
         Stacks on mobile with VS becoming a thin horizontal divider in the seam.
       */}
       <div className="relative grid gap-0 lg:grid-cols-[1fr_140px_1fr] lg:items-stretch">
@@ -312,7 +312,7 @@ export function FightFeatureHero({
         />
 
         {/*
-          VS centre + editorial call callout — borders + bg removed so the
+          VS centre + editorial call callout, borders + bg removed so the
           column reads as an open seam between the two fighters, not a
           separate boxed compartment. The VS itself stays as the visual
           fulcrum that the call callout anchors on.

@@ -1,0 +1,73 @@
+{
+  "eventId": "ufc-vegas-119",
+  "eventName": "UFC Fight Night: Kape vs. Horiguchi",
+  "eventDate": "2026-06-20",
+  "recordedAt": "2026-07-07T02:31:32.000Z",
+  "status": "official_results_provided",
+  "qaStatus": "needs_stats_review",
+  "note": "Winner / method / round / stoppage time sourced from UFC.com's official main card results article, cross-checked against CBS Sports and MMA media coverage. UFCStats totals (sig strikes, control, KD, TD) are NOT yet transcribed. Method wording uses UFC.com's published wording; confirm exact UFCStats ticker during stats review.",
+  "sources": {
+    "ufcOfficial": "https://www.ufc.com/news/ufc-fight-night-kape-vs-horiguchi-main-card-results-highlights-interviews",
+    "ufcEvent": "https://www.ufc.com/event/ufc-fight-night-june-20-2026",
+    "espn": "https://www.espn.com/mma/fightcenter/_/id/600059467/league/ufc",
+    "cbs": "https://www.cbssports.com/ufc/news/ufc-fight-night-results-manel-kape-kyoji-horiguchi-live-updates-highlights-analysis/live/",
+    "mediaPlayByPlay": "Forbes / MMA Mania / Lowkick MMA (narrative context only)"
+  },
+  "fights": [
+    {
+      "fightId": "kape-horiguchi",
+      "winner": "fighterA",
+      "winnerName": "Manel Kape",
+      "loserName": "Kyoji Horiguchi",
+      "method": "ko_tko",
+      "methodDetail": "TKO (strikes)",
+      "round": 3,
+      "time": "2:42",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "cutelaba-stirling",
+      "winner": "fighterB",
+      "winnerName": "Navajo Stirling",
+      "loserName": "Ion Cutelaba",
+      "method": "ko_tko",
+      "methodDetail": "TKO (strikes)",
+      "round": 2,
+      "time": "3:23",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "rodriguez-amil",
+      "winner": "fighterA",
+      "winnerName": "Christian Rodriguez",
+      "loserName": "Hyder Amil",
+      "method": "submission",
+      "methodDetail": "Submission (guillotine choke)",
+      "round": 1,
+      "time": "3:43",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "baghdasaryan-magomedov",
+      "winner": "fighterB",
+      "winnerName": "Murtazali Magomedov",
+      "loserName": "Melsik Baghdasaryan",
+      "method": "submission",
+      "methodDetail": "Submission (twister)",
+      "round": 1,
+      "time": "1:17",
+      "qaStatus": "needs_stats_review"
+    },
+    {
+      "fightId": "oliveira-fili",
+      "winner": "fighterA",
+      "winnerName": "Vinicius Oliveira",
+      "loserName": "Andre Fili",
+      "method": "ko_tko",
+      "methodDetail": "TKO (strikes)",
+      "round": 2,
+      "time": "4:56",
+      "qaStatus": "needs_stats_review"
+    }
+  ]
+}

@@ -104,7 +104,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
         ? "border-success/30 bg-success-soft text-success"
         : "border-line bg-surface-2 text-subtle";
 
-  // On mobile, only show the ResultChip when the fight has a scored outcome —
+  // On mobile, only show the ResultChip when the fight has a scored outcome , 
   // "Pending" is implied by context so we suppress it to reduce clutter.
   const showMobileResultChip = vm && vm.resultState === "scored";
 
@@ -112,13 +112,13 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
     <div className="border-b border-line last:border-b-0">
 
       {/* ════════════════════════════════════════════════════════════════════
-          MOBILE card layout — visible only below sm (640 px)
+          MOBILE card layout, visible only below sm (640 px)
           Stacked fighter names (full text, wrapping), compact prediction row,
           full-width "View read" CTA. No flags, no records, no expand button.
           ════════════════════════════════════════════════════════════════════ */}
       <div className="sm:hidden p-4">
 
-        {/* Fighter matchup — stacked, full names, wrapping text */}
+        {/* Fighter matchup, stacked, full names, wrapping text */}
         <div>
           <p className={`text-base font-semibold leading-snug tracking-tight ${favA ? "text-accent" : "text-foreground"}`}>
             {fighterA.name}
@@ -129,14 +129,14 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           </p>
         </div>
 
-        {/* Metadata — weight class · rounds · card placement */}
+        {/* Metadata, weight class · rounds · card placement */}
         <p className="mt-2 data-text text-xs text-subtle">
           {(fight.weightClass ?? "weight pending").toLowerCase()}
           {" · "}{fight.rounds}R
           {" · "}{fight.cardPlacement.toLowerCase()}
         </p>
 
-        {/* Prediction — only when a call is available */}
+        {/* Prediction, only when a call is available */}
         {hasPred && (
           <div className="mt-3 space-y-1">
             {vm.isNamedCall && vm.predictedWinner ? (
@@ -180,14 +180,14 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           </p>
         )}
 
-        {/* Result chip — only when scored, not for pending */}
+        {/* Result chip, only when scored, not for pending */}
         {showMobileResultChip && (
           <div className="mt-2">
             <ResultChip viewModel={vm} />
           </div>
         )}
 
-        {/* CTA — full width, easy tap target */}
+        {/* CTA, full width, easy tap target */}
         <Link
           href={`/events/${eventId}/${fight.id}`}
           className="tap-target mt-3 flex w-full items-center justify-center rounded-full border border-line-strong bg-surface-2 text-sm font-medium text-foreground transition hover:border-accent/40 hover:bg-accent/10"
@@ -197,14 +197,14 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
       </div>
 
       {/* ════════════════════════════════════════════════════════════════════
-          DESKTOP row layout — visible only at sm+ (640 px and up)
+          DESKTOP row layout, visible only at sm+ (640 px and up)
           Side-by-side fighters with VS/probability in center, call meta row,
           expand button + View read CTA.
           ════════════════════════════════════════════════════════════════════ */}
       <div className="hidden sm:block">
         <div className="p-5">
 
-          {/* Fighters — always side-by-side at desktop */}
+          {/* Fighters, always side-by-side at desktop */}
           <div className="flex items-start gap-3">
             {/* Fighter A */}
             <div className="min-w-0 flex-1">
@@ -293,7 +293,7 @@ export function FightCard({ fight, eventId, predictionViewModel }: FightCardProp
           </div>
 
           {/*
-            Action row — single "View read" CTA.
+            Action row, single "View read" CTA.
             Removed the "+" expand-in-place: it duplicated win-probability and
             method-lean bars that already live in full on the fight detail
             page. Card list now drives users straight to the read.

@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-17T03:50:48.092Z",
-  "modelVersion": "outcome-v0.2",
+  "generatedAt": "2026-07-07T14:14:53.514Z",
+  "modelVersion": "outcome-v0.4",
   "calibrationBuckets": [
     {
       "rangeLabel": "50–60%",
       "predictedMidpoint": 0.55,
-      "actualWinRate": 0.5971223021582733,
-      "count": 139
+      "actualWinRate": 0.6754966887417219,
+      "count": 151
     },
     {
       "rangeLabel": "60–70%",
       "predictedMidpoint": 0.65,
-      "actualWinRate": 0.6521739130434783,
-      "count": 69
+      "actualWinRate": 0.6451612903225806,
+      "count": 62
     },
     {
       "rangeLabel": "70–80%",
@@ -23,13 +23,13 @@
     {
       "rangeLabel": "80%+",
       "predictedMidpoint": 0.9,
-      "actualWinRate": 0.92,
-      "count": 25
+      "actualWinRate": 0.9130434782608695,
+      "count": 23
     }
   ],
-  "winnerAccuracy": 66,
-  "methodAccuracy": 60,
-  "brierScore": 0.219,
+  "winnerAccuracy": 70,
+  "methodAccuracy": 59,
+  "brierScore": 0.223,
   "caveats": [
     "Backtest calibration may differ from live model record due to data vintage.",
     "As-of features reflect UFCStats data available before each fight date.",

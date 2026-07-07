@@ -39,7 +39,14 @@ export default async function EventPage({ params }: EventPageProps) {
   const predictions = getAllPredictions();
   const lockedPredictions = getLockedPredictions();
   const predictionByFightId = new Map(predictions.map((p) => [p.fightId, p]));
-  const predictionViewModels = event.fights.map((fight) =>
+
+  // Cancelled bouts (fighter withdrawal) are pulled from the live card, the
+  // fight is not happening. The accountability trail lives on /record.
+  const liveFights = event.fights.filter(
+    (fight) => !predictionByFightId.get(fight.id)?.cancelled,
+  );
+
+  const predictionViewModels = liveFights.map((fight) =>
     buildPredictionViewModelBundle({
       eventId: event.event.id,
       fight,
@@ -47,10 +54,10 @@ export default async function EventPage({ params }: EventPageProps) {
     }).viewModel,
   );
 
-  // Locked predictions for this event only — used to show status chip
-  const eventFightIds = new Set(event.fights.map((f) => f.id));
-  const eventLockedPredictions = lockedPredictions.filter((p) =>
-    eventFightIds.has(p.fightId),
+  // Locked predictions for this event only, used to show status chip
+  const eventFightIds = new Set(liveFights.map((f) => f.id));
+  const eventLockedPredictions = lockedPredictions.filter(
+    (p) => eventFightIds.has(p.fightId) && !p.cancelled,
   );
 
   return (
@@ -58,10 +65,10 @@ export default async function EventPage({ params }: EventPageProps) {
       <AppHeader />
       <main>
         <EventHero event={event} lockedPredictions={eventLockedPredictions} />
-        {/* Card receipt — post-fight scored summary. Renders only once the
+        {/* Card receipt, post-fight scored summary. Renders only once the
             event carries a cardReceipt (after results are recorded). */}
         <CardReceiptModule receipt={event.event.cardReceipt} />
-        {/* Card-level model read — the pre-fight read, still shown as context. */}
+        {/* Card-level model read, the pre-fight read, still shown as context. */}
         <CardModelSanity
           summary={event.event.cardSummary}
           blindSpots={event.event.cardBlindSpots}
@@ -69,7 +76,7 @@ export default async function EventPage({ params }: EventPageProps) {
         />
         <CardFilterTabs
           eventId={event.event.id}
-          fights={event.fights}
+          fights={liveFights}
           predictions={predictions}
           predictionViewModels={predictionViewModels}
         />

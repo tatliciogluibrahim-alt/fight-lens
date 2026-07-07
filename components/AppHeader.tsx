@@ -7,12 +7,12 @@ import { PrototypeBadge } from "./PrototypeBadge";
 const links = [
   { href: "/", label: "home", mobileVisible: true },
   // "cards" matches the mobile tab label and the product copy ("Current Card",
-  // "Open card", "Browse all cards") — desktop previously said "events", which
+  // "Open card", "Browse all cards"), desktop previously said "events", which
   // described the same destination with a different word.
   { href: "/events", label: "cards", mobileVisible: true },
   { href: "/record", label: "record", mobileVisible: true },
   // "how it works" is hidden from the mobile nav to prevent label clipping.
-  // The case study lives in the footer only — keeping it out of primary nav
+  // The case study lives in the footer only, keeping it out of primary nav
   // keeps the app reading as a product, not a portfolio artifact.
   { href: "/methodology", label: "how it works", mobileVisible: false },
 ];
@@ -63,19 +63,19 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/60 bg-background/85 backdrop-blur-xl">
       {/*
-        Single-row layout always — no flex-wrap — so the header stays at a
+        Single-row layout always, no flex-wrap, so the header stays at a
         fixed height (h-14 = 56px) on all screen sizes. Phase 2: trimmed
         from h-16 → h-14 to reduce vertical chrome and reclaim above-the-fold
         space on fight detail pages.
       */}
       <nav className="section-shell flex h-14 items-center justify-between gap-3">
-        {/* Logo — tighter, single-line wordmark */}
+        {/* Logo, tighter, single-line wordmark */}
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <span className="lens-mark size-6" />
           <span className="text-[15px] font-semibold leading-none tracking-[-0.03em]">fight lens</span>
         </Link>
 
-        {/* Nav pills — right-aligned, scrollable on narrow screens */}
+        {/* Nav pills, right-aligned, scrollable on narrow screens */}
         <div className="hidden min-w-0 shrink items-center justify-end gap-2 sm:flex">
           <div className="nav-pill-scroll flex items-center gap-1 overflow-x-auto rounded-full border border-line bg-surface/80 p-1">
             {links.map((link) => {

@@ -9,16 +9,16 @@ import type {
  * Model-sanity display layer.
  *
  * Renders the manual transparency metadata that wraps a model lean:
- *   - ModelWarningBanner  — visible warning when manual context challenges the lean
- *   - DataWarningPill     — model confidence label (Strong … Data caution)
- *   - SharpInsight        — the one-sentence sharpest read on the fight
- *   - MarketContextNote   — analytical market sanity check (never sportsbook UI)
- *   - ContextTag          — compact blind-spot flag chips
+ *   - ModelWarningBanner , visible warning when manual context challenges the lean
+ *   - DataWarningPill    , model confidence label (Strong … Data caution)
+ *   - SharpInsight       , the one-sentence sharpest read on the fight
+ *   - MarketContextNote  , analytical market sanity check (never sportsbook UI)
+ *   - ContextTag         , compact blind-spot flag chips
  *
  * Composition helpers:
- *   - ModelSanityLead     — warning + confidence/analyst line (directly after the lean)
- *   - ModelContextFooter  — market context + flag chips (after manual context)
- *   - CardModelSanity     — card-level summary module for the event page
+ *   - ModelSanityLead    , warning + confidence/analyst line (directly after the lean)
+ *   - ModelContextFooter , market context + flag chips (after manual context)
+ *   - CardModelSanity    , card-level summary module for the event page
  *
  * Palette rules follow ContextualNotes: success/wrong colors belong to scored
  * outcomes only. Everything here uses neutral chips + the accent for the
@@ -37,7 +37,7 @@ const FLAG_LABELS: Record<ModelDataFlag, string> = {
   style_specific_blindspot: "style blind spot",
 };
 
-// Confidence labels that warrant a more present treatment — these are the
+// Confidence labels that warrant a more present treatment, these are the
 // "read this number carefully" states.
 const CAUTION_LABELS: ModelConfidenceLabel[] = ["Low", "Data caution"];
 
@@ -98,7 +98,7 @@ export function MarketContextNote({ market }: { market: FightMarketContext }) {
 }
 
 /**
- * Lead block — renders immediately after the model lean:
+ * Lead block, renders immediately after the model lean:
  * warning banner (when present) + confidence pill + analyst-check sentence.
  */
 export function ModelSanityLead({ sanity }: { sanity?: FightModelSanity | null }) {
@@ -125,7 +125,7 @@ export function ModelSanityLead({ sanity }: { sanity?: FightModelSanity | null }
 }
 
 /**
- * Footer block — renders after manual context:
+ * Footer block, renders after manual context:
  * market sanity line + blind-spot flag chips.
  */
 export function ModelContextFooter({ sanity }: { sanity?: FightModelSanity | null }) {

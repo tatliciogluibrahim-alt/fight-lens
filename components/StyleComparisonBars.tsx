@@ -58,7 +58,7 @@ function ShapeCard({ card }: { card: NarrativeAxisCard }) {
   );
 }
 
-// ─── Overlay radar — both fighters on one chart ───────────────────────────────
+// ─── Overlay radar, both fighters on one chart ───────────────────────────────
 //
 // Renders two polygons on the same axes so the shapes can be compared directly.
 // Off-white = Fighter A, muted slate = Fighter B. Neither color is a winner forecast.
@@ -90,7 +90,7 @@ function OverlayRadar({
   const dimsB = getStyleRadarDimensions(profileB);
   // Render the polygon for any fighter with ≥ 3 axes of data.
   // Missing axes use 0 as a display-safe fallback (pts() already handles this).
-  // Removed .every() — a single missing axis was silently collapsing the whole shape.
+  // Removed .every(), a single missing axis was silently collapsing the whole shape.
   const canFillA = hasEnoughStyleRadarData(profileA);
   const canFillB = hasEnoughStyleRadarData(profileB);
   const count = dimsA.length;
@@ -118,7 +118,7 @@ function OverlayRadar({
         aria-label={`${nameA} vs ${nameB} style comparison radar`}
       >
       {/* Background halo */}
-      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(226,232,240,0.018)" />
+      <circle cx={CENTER} cy={CENTER} r={RADIUS + 20} fill="rgba(241, 246, 251,0.018)" />
       <circle
         cx={CENTER} cy={CENTER} r={RADIUS + 30}
         fill="none" stroke="var(--line)" strokeOpacity={0.4} strokeDasharray="2 8"
@@ -148,7 +148,7 @@ function OverlayRadar({
             tabIndex={0}
             aria-label={`Compare ${dim.label}`}
             aria-pressed={active}
-            className="cursor-pointer focus:outline-none [&>circle.fl-hit]:hover:fill-[rgba(143,215,247,0.06)]"
+            className="cursor-pointer focus:outline-none [&>circle.fl-hit]:hover:fill-[rgba(154, 217, 255,0.06)]"
             onClick={() => onAxisSelect(active ? null : dim.key)}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
@@ -163,7 +163,7 @@ function OverlayRadar({
               pointerEvents="none"
             />
             {/*
-              Hit target — generous radius (36) so labels are easy to tap on
+              Hit target, generous radius (36) so labels are easy to tap on
               mobile and click on desktop. Previously r=22 made the labels
               hard to hit. Visible on hover via a soft accent fill so the
               interactive affordance is obvious.
@@ -171,7 +171,7 @@ function OverlayRadar({
             <circle
               className="fl-hit transition-colors"
               cx={lp.x} cy={lp.y} r={36}
-              fill={active ? "rgba(143,215,247,0.10)" : "transparent"}
+              fill={active ? "rgba(154, 217, 255,0.10)" : "transparent"}
             />
             <text
               x={lp.x} y={lp.y}
@@ -196,7 +196,7 @@ function OverlayRadar({
       {canFillB && (
         <polygon
           points={toStr(pts(dimsB))}
-          fill="rgba(139,154,180,0.12)"
+          fill="rgba(167, 180, 196,0.12)"
           stroke="var(--muted)"
           strokeWidth={focus === "a" ? 1.2 : 2}
           opacity={focus === "a" ? 0.32 : 1}
@@ -206,11 +206,11 @@ function OverlayRadar({
         />
       )}
 
-      {/* Fighter A shape — drawn last; not styled as a winner call */}
+      {/* Fighter A shape, drawn last; not styled as a winner call */}
       {canFillA && (
         <polygon
           points={toStr(pts(dimsA))}
-          fill="rgba(226,232,240,0.08)"
+          fill="rgba(241, 246, 251,0.08)"
           stroke="var(--foreground)"
           strokeWidth={focus === "b" ? 1.2 : 2.4}
           opacity={focus === "b" ? 0.32 : 1}
@@ -277,12 +277,12 @@ function OverlayRadar({
             <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 text-center">
               <div>
                 <p className="truncate text-xs text-muted">{nameA}</p>
-                <p className="data-text mt-1 text-2xl text-foreground">{aValue ?? "—"}</p>
+                <p className="data-text mt-1 text-2xl text-foreground">{aValue ?? ", "}</p>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-subtle">vs</p>
               <div>
                 <p className="truncate text-xs text-muted">{nameB}</p>
-                <p className="data-text mt-1 text-2xl text-muted">{bValue ?? "—"}</p>
+                <p className="data-text mt-1 text-2xl text-muted">{bValue ?? ", "}</p>
               </div>
             </div>
           </div>
@@ -305,7 +305,7 @@ export function StyleComparisonBars({
 }: StyleComparisonBarsProps) {
   const [focus, setFocus] = useState<"a" | "b" | "both">("both");
   const [activeAxis, setActiveAxis] = useState<string | null>(null);
-  // Mobile expand/collapse — shape is collapsed by default on small screens
+  // Mobile expand/collapse, shape is collapsed by default on small screens
   const [mobileShapeOpen, setMobileShapeOpen] = useState(false);
   const fighterADimensions = getStyleRadarDimensions(fighterA.styleProfile);
   const fighterBDimensions = getStyleRadarDimensions(fighterB.styleProfile);
@@ -345,7 +345,7 @@ export function StyleComparisonBars({
     );
   }
 
-  // Sort by absolute delta — most-separating axes first
+  // Sort by absolute delta, most-separating axes first
   const sortedRows = [...comparableRows].sort((rowL, rowR) => {
     const a = rowL.a.hasData && rowL.b?.hasData
       ? Math.abs((rowL.a.value ?? 0) - (rowL.b.value ?? 0)) : -1;
@@ -428,7 +428,7 @@ export function StyleComparisonBars({
           </span>
         </button>
 
-        {/* Expanded content — full radar + narrative */}
+        {/* Expanded content, full radar + narrative */}
         {mobileShapeOpen && (
           <div className="border-t border-line p-4 space-y-5">
             {/* Overlay radar */}
@@ -556,7 +556,7 @@ export function StyleComparisonBars({
 
         {/*
           ── Axis breakdown ────────────────────────────────────────────────────
-          Collapsed by default. Sorted by absolute delta — strongest signals first.
+          Collapsed by default. Sorted by absolute delta, strongest signals first.
         */}
         <details className="group overflow-hidden rounded-2xl border border-line bg-background/25">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4">
@@ -581,7 +581,7 @@ export function StyleComparisonBars({
                 const bValue = b?.hasData ? (b.value ?? null) : null;
                 // Bars are drawn on an absolute 0–100 scale so the bar width
                 // matches the printed score. Previously normalized to the pair
-                // max — a 79 vs 47 split rendered the 79 as a full bar even
+                // max, a 79 vs 47 split rendered the 79 as a full bar even
                 // though the score is 79/100, which was visually misleading.
                 const bothPresent = aValue != null && bValue != null;
                 const delta = bothPresent ? Math.abs(aValue - bValue) : null;
@@ -590,7 +590,7 @@ export function StyleComparisonBars({
                   <div key={a.key} className="border-b border-line px-5 py-4 last:border-b-0">
                     <div className="mb-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
                       <span className="data-text text-sm tabular-nums text-foreground">
-                        {aValue != null ? aValue : "—"}
+                        {aValue != null ? aValue : ", "}
                       </span>
                       <div className="flex w-20 flex-col items-center gap-0.5">
                         <span className="text-center font-mono text-[9px] uppercase tracking-[0.14em] text-subtle">
@@ -603,7 +603,7 @@ export function StyleComparisonBars({
                         ) : null}
                       </div>
                       <span className="data-text text-right text-sm tabular-nums text-muted">
-                        {bValue != null ? bValue : "—"}
+                        {bValue != null ? bValue : ", "}
                       </span>
                     </div>
 
@@ -627,8 +627,8 @@ export function StyleComparisonBars({
                     </div>
 
                     {(a.provenance === "manual" || b?.provenance === "manual") ? (
-                      <p className="data-text mt-1.5 text-[9px] uppercase tracking-[0.08em] text-subtle/60">
-                        manually weighted
+                      <p className="data-text mt-1.5 text-[10px] uppercase tracking-[0.08em] text-subtle">
+                        manual input
                       </p>
                     ) : null}
                   </div>

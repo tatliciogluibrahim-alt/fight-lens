@@ -8,7 +8,7 @@
     "date": "July 11, 2026",
     "location": "Las Vegas, Nevada, USA",
     "promotion": "UFC",
-    "cardSummary": "UFC 329 is the first card forecast under the post-Freedom-250 calibration lens. The model leans cleanly where activity and style align (Holloway, Saint-Denis), reads the deepest fights as coin-flips (Sandhagen/Bautista, Whittaker/Krylov, Steveson/Ellison), and re-exposes its biggest blind spot on Royval/Kavanagh — a Lopes/Garcia-style resume inversion flagged before the bell. Market snapshots for this card are not yet recorded.",
+    "cardSummary": "UFC 329 is the first card forecast under the post-Freedom-250 calibration lens. The model leans cleanly where activity and style align (Holloway, Saint-Denis), reads the deepest fights as coin-flips (Sandhagen/Bautista, Whittaker/Krylov, Steveson/Ellison), and re-exposes its biggest blind spot on Royval/Kavanagh, a Lopes/Garcia-style resume inversion flagged before the bell. Market snapshots for this card are not yet recorded.",
     "cardBlindSpots": [
       "Opponent-tier weighting",
       "Layoff / ring rust (McGregor)",
@@ -55,7 +55,7 @@
           "type": "injury-return",
           "fighter": "Conor McGregor",
           "title": "5-year layoff with mid-layoff broken leg surgery",
-          "explanation": "McGregor's last fight was July 2021 (broken leg vs Poirier at UFC 264). A 5-year competitive absence including major surgery and recovery. The model's form score handles inactivity via layoff shrinkage, but cannot price the specific deterioration from this kind of injury history. The market (Holloway -325) is pricing this aggressively. Read the model lean as what stats alone say without the injury context.",
+          "explanation": "McGregor's last fight was July 2021 (broken leg vs. Poirier at UFC 264). A 5-year competitive absence including major surgery and recovery. The model's form score handles inactivity via layoff shrinkage, but cannot price the specific deterioration from this kind of injury history. The market (Holloway -325) is pricing this aggressively. Read the model lean as what stats alone say without the injury context.",
           "confidence": "high",
           "impactDirection": "hurts",
           "modelImpact": "not included in model"
@@ -64,7 +64,7 @@
           "type": "weight-class-up",
           "fighter": "Max Holloway",
           "title": "First welterweight appearance after a career at featherweight and brief lightweight",
-          "explanation": "Holloway's career stats are from featherweight (and one fight at lightweight). This is his welterweight debut, against an opponent who naturally carries the weight. Reach, power tolerance, and pace dynamics shift at welterweight — none captured by the model.",
+          "explanation": "Holloway's career stats are from featherweight (and one fight at lightweight). This is his welterweight debut, against an opponent who naturally carries the weight. Reach, power tolerance, and pace dynamics shift at welterweight, none captured by the model.",
           "confidence": "medium",
           "impactDirection": "unclear",
           "modelImpact": "not included in model"
@@ -76,11 +76,11 @@
           "age_mileage",
           "style_specific_blindspot"
         ],
-        "strongestInsight": "The model can read Holloway's volume and activity edge, but McGregor's multi-year layoff is the variable that actually decides the ceiling — and that sits outside the model.",
+        "strongestInsight": "The model can read Holloway's volume and activity edge, but McGregor's multi-year layoff is the variable that actually decides the ceiling, and that sits outside the model.",
         "analystCheck": [
           "back_model_direction"
         ],
-        "analystCheckCopy": "Holloway 61% is defensible on volume and activity, but treat it as a read with one enormous unknown: which McGregor shows up after the layoff.",
+        "analystCheckCopy": "Holloway 63% is defensible on volume and activity, but treat it as a read with one enormous unknown: which McGregor shows up after the layoff.",
         "marketContext": null,
         "modelWarning": null
       },
@@ -19515,11 +19515,11 @@
         "dataFlags": [
           "style_specific_blindspot"
         ],
-        "strongestInsight": "Saint-Denis's grappling-pressure archetype is exactly the style that has historically troubled Pimblett — a single-signal edge the rate stats only partly capture.",
+        "strongestInsight": "Saint-Denis's grappling-pressure archetype is exactly the style that has historically troubled Pimblett, a single-signal edge the rate stats only partly capture.",
         "analystCheck": [
           "back_model_direction"
         ],
-        "analystCheckCopy": "Saint-Denis 58% lines up with the style read; the live path is Pimblett's durability and finishing if it stays scrappy.",
+        "analystCheckCopy": "Saint-Denis 58% lines up with the style read. The live path is Pimblett's durability and finishing if it stays scrappy.",
         "marketContext": null,
         "modelWarning": null
       },
@@ -28353,8 +28353,8 @@
         {
           "type": "debut-or-promotion-jump",
           "fighter": "Cory Sandhagen",
-          "title": "Model reads it even — résumé context favors Sandhagen",
-          "explanation": "Sandhagen is the #2 bantamweight contender; Bautista is #5. The model reads this matchup dead even on aggregate rates. Sandhagen's deeper top-of-division résumé and more proven late-round shape are exactly the opponent-tier context the model does not weight at all.",
+          "title": "Model reads it even, résumé context favors Sandhagen",
+          "explanation": "Sandhagen is the #2 bantamweight contender. Bautista is #5. The model reads this matchup dead even on aggregate rates. Sandhagen's deeper top-of-division résumé and more proven late-round shape are exactly the opponent-tier context the model does not weight at all.",
           "confidence": "medium",
           "impactDirection": "helps",
           "modelImpact": "not included in model"
@@ -28366,11 +28366,11 @@
           "opponent_tier_mismatch",
           "ranking_mismatch"
         ],
-        "strongestInsight": "The model reads this even, but Sandhagen (#2) carries the deeper top-of-division resume over Bautista (#5) — opponent-tier context the win probability does not weight.",
+        "strongestInsight": "The model reads this even, but Sandhagen (#2) carries the deeper top-of-division resume over Bautista (#5), opponent-tier context the win probability does not weight.",
         "analystCheck": [
           "model_underconfident"
         ],
-        "analystCheckCopy": "Model reads it even; ranking and resume lean Sandhagen. This is exactly the opponent-tier blind spot the v0.3 calibration targets.",
+        "analystCheckCopy": "Model reads it even. Ranking and resume lean Sandhagen. This is exactly the opponent-tier blind spot the v0.3 calibration targets.",
         "marketContext": null,
         "modelWarning": null
       },
@@ -42093,13 +42093,13 @@
           "ranking_mismatch",
           "small_sample"
         ],
-        "strongestInsight": "The model leans Kavanagh, but Royval is the ranked, proven flyweight (#5) and Kavanagh is unranked with a thinner sample — a Lopes/Garcia-style resume inversion.",
+        "strongestInsight": "The model leans Kavanagh, but Royval is the ranked, proven flyweight (#5) and Kavanagh is unranked with a thinner sample, a Lopes/Garcia-style resume inversion.",
         "analystCheck": [
           "fade_model_direction"
         ],
-        "analystCheckCopy": "Read this lean with caution. The model favors the lower-ranked fighter on aggregate form — the same opponent-tier trap that flipped on Lopes/Garcia.",
+        "analystCheckCopy": "Read this lean with caution. The model favors the lower-ranked fighter on aggregate form, the same opponent-tier trap that flipped on Lopes/Garcia.",
         "marketContext": null,
-        "modelWarning": "The model leans the unranked fighter (Kavanagh) over the ranked, proven Royval (#5). Ranking and resume point the other way — the same opponent-tier inversion the model missed on Lopes/Garcia."
+        "modelWarning": "The model leans the unranked fighter (Kavanagh) over the ranked, proven Royval (#5). Ranking and resume point the other way, the same opponent-tier inversion the model missed on Lopes/Garcia."
       },
       "postFightReceipt": null,
       "fighters": {
@@ -51346,11 +51346,11 @@
         "dataFlags": [
           "small_sample"
         ],
-        "strongestInsight": "Steveson's elite wrestling pedigree is undeniable, but his MMA sample is tiny — the model reads it even because it cannot lean on a thin record.",
+        "strongestInsight": "Steveson's elite wrestling pedigree is undeniable, but his MMA sample is tiny. The model reads it even because it cannot lean on a thin record.",
         "analystCheck": [
           "pass_or_reduce_confidence"
         ],
-        "analystCheckCopy": "Genuine coin-flip from the model. Steveson's wrestling ceiling is real but unscored; small sample keeps this a pick-em.",
+        "analystCheckCopy": "Genuine coin-flip from the model. Steveson's wrestling ceiling is real but unscored. The small sample keeps the read even.",
         "marketContext": null,
         "modelWarning": null
       },
@@ -52068,11 +52068,11 @@
           "age_mileage",
           "opponent_tier_mismatch"
         ],
-        "strongestInsight": "The model reads it even, but Whittaker is a former middleweight champion (#3) with the deeper resume over Krylov (#6) — offset by title-fight mileage the model does not weigh.",
+        "strongestInsight": "The model reads it even, but Whittaker is a former middleweight champion (#3) with the deeper resume over Krylov (#6), offset by title-fight mileage the model does not weigh.",
         "analystCheck": [
           "model_underconfident"
         ],
-        "analystCheckCopy": "Model reads it even; resume leans Whittaker, mileage is the counter. Treat as a live pick-em with Whittaker the more proven name.",
+        "analystCheckCopy": "Model reads it even. Resume leans Whittaker, mileage is the counter. Treat this as a genuinely even fight, with Whittaker the more proven name.",
         "marketContext": null,
         "modelWarning": null
       },

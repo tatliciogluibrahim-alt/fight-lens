@@ -45,7 +45,7 @@ function writeJsonAtomic(filePath: string, data: unknown): void {
 // Note: these are pure TypeScript with no React/Next.js imports, so tsx works fine.
 
 import { buildAsOfFeaturesFromSourcedFight } from "@/lib/backtest/buildAsOfFeatures";
-import { runBacktest, BACKTEST_MODEL_VERSION } from "@/lib/backtest/runBacktest";
+import { runBacktest, BACKTEST_MODEL_VERSION, type RunBacktestOptions } from "@/lib/backtest/runBacktest";
 import { scorePrediction } from "@/lib/backtest/scorePredictions";
 import { computeBacktestCalibration } from "@/lib/backtest/calibration";
 import { checkForLeakage } from "@/lib/backtest/leakageChecks";
@@ -407,8 +407,54 @@ function writeCalibrationCsv(
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
+// ─── Run configuration (env-parametrized for A/B and holdout reporting) ───────
+//
+// Defaults reproduce the shipped live model. Overrides let the same pipeline
+// score the before/after comparison configs without duplicating the loader:
+//   BACKTEST_VERSION=outcome-v0.2   → score an older model version
+//   BACKTEST_TEMP=0.824             → apply a temperature override (T=1 = off)
+//   BACKTEST_NO_ASOF=1              → measure layoff against today (pre-#3 bug)
+//   BACKTEST_HOLDOUT=ufc-328        → also report an out-of-sample holdout block
+interface BacktestRunConfig {
+  modelVersionOverride?: string;
+  runBacktestOptions: RunBacktestOptions;
+  holdout: string | null;
+  label: string;
+}
+
+function resolveRunConfig(): BacktestRunConfig {
+  const argHoldout = (() => {
+    const i = process.argv.indexOf("--holdout");
+    return i >= 0 ? process.argv[i + 1] ?? null : null;
+  })();
+  const versionOverride = process.env.BACKTEST_VERSION || undefined;
+  const tempRaw = process.env.BACKTEST_TEMP;
+  const temperature = tempRaw != null && tempRaw !== "" ? Number(tempRaw) : undefined;
+  const layoffAsOf = process.env.BACKTEST_NO_ASOF === "1" ? false : undefined;
+  const holdout = process.env.BACKTEST_HOLDOUT || argHoldout || null;
+
+  const options: RunBacktestOptions = {};
+  if (versionOverride) options.modelVersion = versionOverride;
+  if (temperature != null && Number.isFinite(temperature)) options.temperature = temperature;
+  if (layoffAsOf === false) options.layoffAsOf = false;
+
+  const bits = [
+    versionOverride ?? BACKTEST_MODEL_VERSION,
+    temperature != null ? `T=${temperature}` : "T=off",
+    layoffAsOf === false ? "asof=off" : "asof=on",
+  ];
+  return {
+    modelVersionOverride: versionOverride,
+    runBacktestOptions: options,
+    holdout,
+    label: bits.join(" · "),
+  };
+}
+
 async function main() {
   console.log("\n=== Fight Lens Backtest Runner ===\n");
+  const runConfig = resolveRunConfig();
+  console.log(`Config: ${runConfig.label}${runConfig.holdout ? ` · holdout=${runConfig.holdout}` : ""}\n`);
 
   // Step 1: Load data
   console.log("Loading normalized events...");
@@ -490,7 +536,7 @@ async function main() {
       // Step 5: Run the model
       let prediction: BacktestPrediction;
       try {
-        prediction = runBacktest(features);
+        prediction = runBacktest(features, runConfig.runBacktestOptions);
       } catch (err) {
         console.error(`    ERROR running model: ${(err as Error).message}`);
         continue;
@@ -558,8 +604,10 @@ async function main() {
 
   // ─── Calibration summary ──────────────────────────────────────────────────
 
+  // The version actually scored (override when running an A/B config).
+  const effectiveVersion = runConfig.modelVersionOverride ?? BACKTEST_MODEL_VERSION;
   const results = rows.map((r) => r.score);
-  const summary = computeBacktestCalibration(results, BACKTEST_MODEL_VERSION);
+  const summary = computeBacktestCalibration(results, effectiveVersion);
 
   // ─── Baseline comparison ──────────────────────────────────────────────────
 
@@ -721,7 +769,7 @@ async function main() {
 
   writeJsonAtomic(path.join(outDir, "predictions.json"), {
     generatedAt: new Date().toISOString(),
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion: effectiveVersion,
     totalFights: rows.length,
     predictions: predictionsOutput,
   });
@@ -729,7 +777,7 @@ async function main() {
 
   writeJsonAtomic(path.join(outDir, "summary.json"), {
     generatedAt: new Date().toISOString(),
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion: effectiveVersion,
     summary: fullSummary,
     accuracyByConfidenceBucket: confidenceBuckets,
   });
@@ -737,7 +785,7 @@ async function main() {
 
   writeJsonAtomic(path.join(outDir, "calibration.json"), {
     generatedAt: new Date().toISOString(),
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion: effectiveVersion,
     calibrationBuckets: summary.calibrationBuckets,
     winnerAccuracy: summary.winnerAccuracy,
     methodAccuracy: summary.methodAccuracy,
@@ -859,7 +907,7 @@ async function main() {
 
   writeJsonAtomic(path.join(outDir, "event-performance.json"), {
     generatedAt: new Date().toISOString(),
-    modelVersion: BACKTEST_MODEL_VERSION,
+    modelVersion: effectiveVersion,
     eventCount: eventPerformance.length,
     events: eventPerformance,
   });
@@ -909,6 +957,38 @@ async function main() {
       `    ${ev.event} (${ev.asOfDate}): ${ev.winnerAccuracy ?? "n/a"}% on ${ev.scoredFights}/${ev.totalFights}` +
       ` · brier ${ev.brierScore ?? "n/a"} · method ${ev.methodAccuracy ?? "n/a"}%`,
     );
+  }
+
+  // ─── Out-of-sample holdout report ─────────────────────────────────────────
+  //
+  // The five factor weights were hand-tuned by inspecting fights inside this
+  // corpus (UFC 328 / Strickland are cited by name in model.ts), and the
+  // headline accuracy is scored on that same corpus, so it is IN-SAMPLE. To
+  // report an honest out-of-sample number, hold out an event the weights were
+  // visibly tuned on and score it standalone. Use --holdout <substr> or
+  // BACKTEST_HOLDOUT=<substr>.
+  if (runConfig.holdout) {
+    const needle = runConfig.holdout.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const matches = (name: string) => name.toLowerCase().replace(/[^a-z0-9]/g, "").includes(needle);
+    const holdoutRows = scoredRows.filter((r) => matches(r.event));
+    const restRows = scoredRows.filter((r) => !matches(r.event));
+
+    const acc = (list: typeof scoredRows) =>
+      list.length ? Math.round((list.filter((r) => r.score.correct).length / list.length) * 100) : null;
+    const methodAcc = (list: typeof scoredRows) => {
+      const scored = list.filter((r) => r.score.methodCorrect !== null);
+      return scored.length ? Math.round((scored.filter((r) => r.score.methodCorrect).length / scored.length) * 100) : null;
+    };
+    const brier = (list: typeof scoredRows) => {
+      const vals = list.map((r) => r.score.brierContribution).filter((v): v is number => v != null);
+      return vals.length ? Number((vals.reduce((s, v) => s + v, 0) / vals.length).toFixed(3)) : null;
+    };
+
+    console.log(`\n  === OUT-OF-SAMPLE HOLDOUT: "${runConfig.holdout}" ===`);
+    console.log(`  Held-out events matched: ${new Set(holdoutRows.map((r) => r.event)).size}, fights: ${holdoutRows.length}`);
+    console.log(`  HOLDOUT (out-of-sample): winner ${acc(holdoutRows) ?? "n/a"}% · method ${methodAcc(holdoutRows) ?? "n/a"}% · brier ${brier(holdoutRows) ?? "n/a"} · n=${holdoutRows.length}`);
+    console.log(`  REST OF CORPUS (excl. holdout): winner ${acc(restRows) ?? "n/a"}% · method ${methodAcc(restRows) ?? "n/a"}% · brier ${brier(restRows) ?? "n/a"} · n=${restRows.length}`);
+    console.log(`  FULL CORPUS (in-sample): winner ${summary.winnerAccuracy ?? "n/a"}% · method ${summary.methodAccuracy ?? "n/a"}% · brier ${summary.brierScore ?? "n/a"} · n=${scoredRows.length}`);
   }
 
   const sources = Array.from(outcomeSourceById.values());

@@ -219,7 +219,7 @@ function EventCard({
 export default function EventsIndexPage() {
   const events = getAllEvents();
   const allPredictions = getLockedPredictions();
-  // Bucket by status/date — a completed card never occupies the next-card slot.
+  // Bucket by status/date, a completed card never occupies the next-card slot.
   const { current: nextEvent, upcoming: upcomingEvents, past: pastEvents } = classifyEvents(
     events,
     allPredictions,

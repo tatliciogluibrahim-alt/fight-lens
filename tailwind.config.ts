@@ -25,8 +25,8 @@ const config: Config = {
         "wrong-soft": "var(--wrong-soft)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Arial", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "Consolas", "monospace"]
+        sans: ["var(--font-sans)", "Arial", "sans-serif"],
+        mono: ["var(--font-mono)", "Consolas", "monospace"]
       },
       boxShadow: {
         glow: "0 0 0 1px rgba(255,255,255,0.04), 0 16px 48px rgba(0,0,0,0.32)"

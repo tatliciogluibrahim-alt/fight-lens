@@ -11,7 +11,7 @@ interface FightPageTabsProps {
 }
 
 /**
- * FightPageTabs — renders all fight sections stacked on one scroll page.
+ * FightPageTabs, renders all fight sections stacked on one scroll page.
  *
  * The visible tab nav row has been removed. Each section retains its
  * #section-{id} anchor so existing deep-links (e.g. #section-call,

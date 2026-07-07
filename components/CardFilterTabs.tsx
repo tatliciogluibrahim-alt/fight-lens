@@ -36,7 +36,7 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
     return fights.filter((fight) => fight.cardPlacement === activeTab);
   }, [activeTab, fights]);
 
-  // Pre-compute the "top fight" ID — the first Main Card fight in the visible
+  // Pre-compute the "top fight" ID, the first Main Card fight in the visible
   // list. This fight gets premium visual treatment as the main event.
   const topFightId = useMemo(
     () => visibleFights.find((f) => f.cardPlacement === "Main Card")?.id ?? null,
@@ -87,7 +87,7 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
       </div>
 
       {/*
-        Mobile fight list — visual hierarchy by card placement + position.
+        Mobile fight list, visual hierarchy by card placement + position.
         First Main Card fight (main event): premium accent border + glow.
         Other Main Card fights: medium-strong border.
         Prelims / Early Prelims: standard compact row.
@@ -99,7 +99,7 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
           const isPrelim = fight.cardPlacement === "Prelims" || fight.cardPlacement === "Early Prelims";
 
           const wrapperClass = isTopFight
-            ? "overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.03] shadow-[0_0_0_1px_rgba(143,215,247,0.08)]"
+            ? "overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-surface via-surface/95 to-accent/[0.03] shadow-[0_0_0_1px_rgba(154, 217, 255,0.08)]"
             : isMainCard
               ? "overflow-hidden rounded-2xl border border-line-strong bg-surface/80"
               : isPrelim
@@ -126,7 +126,7 @@ export function CardFilterTabs({ fights, eventId, predictions = [], predictionVi
       </div>
 
       {/*
-        Desktop fight list — all fights in one card stack.
+        Desktop fight list, all fights in one card stack.
         Main Event row gets a subtle top-rail accent via wrapper.
       */}
       <div className="hidden overflow-hidden rounded-[1.35rem] border border-line bg-surface/80 sm:block">

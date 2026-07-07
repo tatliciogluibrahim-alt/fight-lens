@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --font-geist-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-geist-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  /* System stacks (no webfont is loaded, named honestly). If a display face is
+     added later for the fighter-name hero, wire it through --font-sans. */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
 
-  /* Base palette — midnight signal */
+  /* Base palette, midnight signal */
   --background: #06080D;
   --surface: #0D1018;
   --surface-2: #111722;
@@ -16,17 +18,17 @@
   /* Text */
   --foreground: #F1F6FB;
   --muted: #A7B4C4;
-  --subtle: #667286;
+  --subtle: #7E8B9C;
 
-  /* Accent — ice blue (model lean, active states) */
+  /* Accent, ice blue (model lean, active states) */
   --accent: #9AD9FF;
   --accent-soft: rgba(154, 217, 255, 0.12);
 
-  /* Success — green (correct prediction, confirmed win) */
+  /* Success, green (correct prediction, confirmed win) */
   --success: #34D399;
   --success-soft: rgba(52, 211, 153, 0.12);
 
-  /* Wrong — red (incorrect prediction) */
+  /* Wrong, red (incorrect prediction) */
   --wrong: #F87171;
   --wrong-soft: rgba(248, 113, 113, 0.10);
 }
@@ -123,9 +125,9 @@ summary::-webkit-details-marker {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  /* Quieter card top-edge sheen, no per-card amber glow */
+  /* Quieter card top-edge sheen, no per-card accent glow */
   background:
-    linear-gradient(90deg, transparent, rgba(226, 232, 240, 0.02), transparent) 0 0 / 100% 1px no-repeat;
+    linear-gradient(90deg, transparent, rgba(241, 246, 251, 0.02), transparent) 0 0 / 100% 1px no-repeat;
 }
 
 .module-card > *,
@@ -146,7 +148,7 @@ summary::-webkit-details-marker {
 /* ─── Typography utilities ───────────────────────────────────────────────── */
 
 .mono-label {
-  font-family: var(--font-geist-mono), Consolas, monospace;
+  font-family: var(--font-mono), Consolas, monospace;
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -154,14 +156,14 @@ summary::-webkit-details-marker {
 }
 
 .data-text {
-  font-family: var(--font-geist-mono), Consolas, monospace;
+  font-family: var(--font-mono), Consolas, monospace;
   font-variant-numeric: tabular-nums;
 }
 
 /* ─── Section header treatments ──────────────────────────────────────────── */
 
 /*
- * Broadcast-style accent rail: thin gold line that sits above a section header.
+ * Broadcast-style accent rail: thin ice-blue line that sits above a section header.
  * Use to "anchor" a key module (model call, fight shape) as a feature surface
  * instead of just another card. Subtle by default; do not stack them.
  */
@@ -176,7 +178,7 @@ summary::-webkit-details-marker {
 }
 
 /*
- * Status pill — small, mono, used for chip rows. Tone variants via modifiers.
+ * Status pill, small, mono, used for chip rows. Tone variants via modifiers.
  */
 .status-pill {
   display: inline-flex;
@@ -186,7 +188,7 @@ summary::-webkit-details-marker {
   border: 1px solid var(--line);
   background: rgba(23, 36, 53, 0.7);
   padding: 0.25rem 0.75rem;
-  font-family: var(--font-geist-mono), Consolas, monospace;
+  font-family: var(--font-mono), Consolas, monospace;
   font-size: 0.625rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -233,7 +235,7 @@ summary::-webkit-details-marker {
   bottom: 0;
   z-index: 50;
   display: none;
-  /* Slimmer vertical padding — keeps hit targets usable while reducing screen footprint */
+  /* Slimmer vertical padding, keeps hit targets usable while reducing screen footprint */
   padding: 0.35rem 0.75rem calc(0.35rem + env(safe-area-inset-bottom, 0px));
   background: linear-gradient(180deg, transparent, rgba(6, 8, 13, 0.94) 32%);
 }
@@ -255,7 +257,7 @@ summary::-webkit-details-marker {
 
 .mobile-tabbar-link {
   display: inline-flex;
-  /* Reduced from 44px — stays ≥ 40px which clears iOS minimum touch target */
+  /* Reduced from 44px, stays ≥ 40px which clears iOS minimum touch target */
   min-height: 40px;
   align-items: center;
   justify-content: center;
@@ -292,7 +294,7 @@ summary::-webkit-details-marker {
 
 /* ─── Motion system ──────────────────────────────────────────────────────────
  *
- * Tasteful entry motion for page modules. Sharp, fast, premium — never floaty.
+ * Tasteful entry motion for page modules. Sharp, fast, premium, never floaty.
  * Every animation respects prefers-reduced-motion via the override block below.
  * Use sparingly: hero, snapshot, radar, key stat modules.
  */
@@ -309,7 +311,7 @@ summary::-webkit-details-marker {
 .fl-delay-300 { animation-delay: 300ms; }
 .fl-delay-400 { animation-delay: 400ms; }
 
-/* Radar polygon bloom — the signature draw-in moment on the shape tab.
+/* Radar polygon bloom, the signature draw-in moment on the shape tab.
  * Scales from the centroid out, with a slight overshoot so it lands with
  * presence rather than fading flatly into place. */
 @keyframes fl-radar-bloom {
@@ -332,7 +334,7 @@ summary::-webkit-details-marker {
   animation-delay: 220ms;
 }
 
-/* Soft pulse for the centroid mark — adds a quiet active feel to the radar without
+/* Soft pulse for the centroid mark, adds a quiet active feel to the radar without
  * being noisy. Slower than the pending-state pulse-dot. */
 @keyframes fl-radar-centroid {
   0%, 100% { opacity: 0.55; }
@@ -358,7 +360,7 @@ summary::-webkit-details-marker {
   animation: fl-fade-up 380ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* HUD corner mark — used on broadcast-style feature surfaces. The colour and
+/* HUD corner mark, used on broadcast-style feature surfaces. The colour and
  * scale on the surface itself; we just define position + tint here so the
  * surface can stay clean. */
 .fl-hud-mark {
@@ -366,7 +368,7 @@ summary::-webkit-details-marker {
   position: absolute;
   width: 0.85rem;
   height: 0.85rem;
-  border-color: rgba(143, 215, 247, 0.25);
+  border-color: rgba(154, 217, 255, 0.25);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -393,7 +395,7 @@ summary::-webkit-details-marker {
 
 @media (max-width: 639px) {
   body {
-    /* Slightly reduced to match slimmer nav — keeps content clear of the bar */
+    /* Slightly reduced to match slimmer nav, keeps content clear of the bar */
     padding-bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
   }
 
@@ -421,11 +423,10 @@ summary::-webkit-details-marker {
   border: 2px solid var(--accent);
   border-radius: 0.25rem;
   transform: rotate(45deg);
-  /* Reduced glow so the gold sits as accent, not signage */
+  /* Flat mark, no outer glow, accent reads as a mark, not signage */
   box-shadow:
     inset 0 0 0 3px var(--surface-2),
-    inset 0 0 0 6px var(--accent),
-    0 0 12px rgba(143, 215, 247, 0.15);
+    inset 0 0 0 6px var(--accent);
 }
 
 /* ─── Radar card ──────────────────────────────────────────────────────────── */
@@ -450,8 +451,8 @@ summary::-webkit-details-marker {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(135deg, rgba(226, 232, 240, 0.035), transparent 32%),
-    radial-gradient(circle at 50% 42%, rgba(143, 215, 247, 0.025), transparent 18rem);
+    linear-gradient(135deg, rgba(241, 246, 251, 0.035), transparent 32%),
+    radial-gradient(circle at 50% 42%, rgba(154, 217, 255, 0.025), transparent 18rem);
 }
 
 .radar-card > * {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AppHeader } from "@/components/AppHeader";
 import { DisclaimerFooter } from "@/components/DisclaimerFooter";
 import { HomeEventSelector, type HomeEventOption } from "@/components/HomeEventSelector";
-import { getAccuracyMetrics, getLockedPredictions } from "@/lib/accuracy";
+import { getAccuracyMetrics, getLiveLockedPredictions } from "@/lib/accuracy";
 import { getAllEvents, getLatestEvent, findMainEventFight } from "@/lib/events/registry";
 import { classifyEvents, eventStatus, type EventStatus } from "@/lib/events/classify";
 import { buildPredictionViewModelBundle } from "@/lib/predictionViewModel";
@@ -16,7 +16,7 @@ const startSteps = [
   },
   {
     title: "Read the model lean",
-    body: "Each fight starts with the model lean, likely finish type, and what could flip the call. It is directional — not a guarantee.",
+    body: "Each fight starts with the model lean, likely finish type, and what could flip the call. It is directional, not a guarantee.",
   },
   {
     title: "Explore the style fingerprint",
@@ -70,7 +70,8 @@ function featuredBout(event: SourcedEvent) {
 
 function predictionsForEvent(event: SourcedEvent, predictions: PredictionRecord[]) {
   const fightIds = new Set(event.fights.map((fight) => fight.id));
-  return predictions.filter((prediction) => fightIds.has(prediction.fightId));
+  // Cancelled bouts are not live calls, keep them out of the card's counts.
+  return predictions.filter((prediction) => fightIds.has(prediction.fightId) && !prediction.cancelled);
 }
 
 function eventStats(event: SourcedEvent, predictions: PredictionRecord[]): EventStats {
@@ -137,7 +138,7 @@ function StatusPill({ stats }: { stats: EventStats }) {
 function MainEventLine({ event, fight }: { event: SourcedEvent; fight?: SourcedFight }) {
   const mainEvent = eventMainEvent(event, fight);
   if (!mainEvent) {
-    return <p className="mt-3 text-sm leading-6 text-muted">Model calls unlock once fight data is available.</p>;
+    return <p className="mt-3 text-sm leading-6 text-muted">Model calls become available once fight data is loaded.</p>;
   }
 
   return (
@@ -175,7 +176,7 @@ function RecordProofStrip({
       <div className="rounded-2xl border border-line bg-surface/70 p-3 md:p-4">
         <div className="grid grid-cols-[1fr_1fr_auto] items-center gap-2 sm:grid-cols-[auto_auto_auto_1fr_auto] sm:gap-4">
           <div className="rounded-xl border border-line bg-background/35 px-3 py-2">
-            <p className="data-text text-2xl leading-none text-accent">{winnerAccuracy != null ? String(winnerAccuracy) + "%" : "—"}</p>
+            <p className="data-text text-2xl leading-none text-accent">{winnerAccuracy != null ? String(winnerAccuracy) + "%" : ", "}</p>
             <p className="mono-label mt-1 whitespace-nowrap">named-call</p>
             {/* Sample caveat right next to the headline % so the early-prototype
                 sample size never reads as a finished benchmark. */}
@@ -190,7 +191,7 @@ function RecordProofStrip({
             <p className="mono-label mt-1">scored</p>
           </div>
           <div className="hidden rounded-xl border border-line bg-background/35 px-3 py-2 sm:block">
-            <p className="data-text text-2xl leading-none text-foreground">{correctCount ?? "—"}</p>
+            <p className="data-text text-2xl leading-none text-foreground">{correctCount ?? ", "}</p>
             <p className="mono-label mt-1">correct</p>
           </div>
           <div className="hidden min-w-0 sm:block">
@@ -274,7 +275,7 @@ function CurrentCardModule({
           ) : (
             <div className="rounded-2xl border border-line bg-background/35 p-4 md:min-w-[240px]">
               <p className="mono-label">model status</p>
-              <p className="mt-2 text-sm leading-6 text-muted">Model calls unlock once fight data is available.</p>
+              <p className="mt-2 text-sm leading-6 text-muted">Model calls become available once fight data is loaded.</p>
             </div>
           )}
         </div>
@@ -305,7 +306,7 @@ function selectorOption(event: SourcedEvent, predictions: PredictionRecord[], la
 
 export default function Home() {
   const accuracyMetrics = getAccuracyMetrics();
-  const predictions = getLockedPredictions();
+  const predictions = getLiveLockedPredictions();
   const events = getAllEvents();
   // Current card = soonest non-completed event; fall back to most-recent only if
   // every card is already scored. A completed card never leads the home page.
@@ -398,14 +399,14 @@ export default function Home() {
         />
 
         {/*
-          Portfolio framing module removed from home — it repeated the hero
+          Portfolio framing module removed from home, it repeated the hero
           subtitle ("Transparent UFC fight analysis…") and lives in full on
           the dedicated /case-study page. Home stays focused on: hero thesis,
           Current Card, Record proof, browse/start-here. Footer prototype-note
           chip preserves the "not betting advice / model lean" disclosure.
         */}
 
-        {/* Mobile: slim "browse more" link — homepage is already hero → card → record on small screens */}
+        {/* Mobile: slim "browse more" link, homepage is already hero → card → record on small screens */}
         <section className="sm:hidden section-shell pb-4">
           <Link
             href="/events"

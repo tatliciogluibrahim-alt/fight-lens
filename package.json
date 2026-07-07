@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "ingest:ufcstats": "node scripts/ingest/ufcstats.mjs",
+    "ingest:ufcstats:headless": "node scripts/ingest/ufcstats.mjs --headless",
     "normalize:data": "node scripts/ingest/build-normalized-event.mjs",
     "data:report": "node scripts/ingest/report-ufcstats.mjs",
     "model:report": "node scripts/ingest/report-fight-shape-model.mjs",
@@ -19,11 +20,10 @@
     "backtest:elo": "npm_config_cache=.npm-cache npx tsx scripts/backtest/elo-baseline.ts",
     "audit:drift": "npm_config_cache=.npm-cache npx tsx scripts/audit/drift-check.ts",
     "validate:freedom-250": "npm_config_cache=.npm-cache npx tsx scripts/validate-freedom-250-receipts.ts",
-    "model:v03-compare": "npm_config_cache=.npm-cache npx tsx scripts/backtest/v03-candidate-comparison.ts"
+    "model:v03-compare": "npm_config_cache=.npm-cache npx tsx scripts/backtest/v03-candidate-comparison.ts",
+    "test": "vitest run"
   },
   "dependencies": {
-    "cheerio": "^1.2.0",
-    "dom-to-image-more": "^3.7.2",
     "next": "16.2.4",
     "react": "18.3.1",
     "react-dom": "18.3.1"
@@ -33,10 +33,13 @@
     "@types/react": "18.3.20",
     "@types/react-dom": "18.3.6",
     "autoprefixer": "10.4.21",
+    "cheerio": "^1.2.0",
     "eslint": "9.39.1",
     "eslint-config-next": "16.2.4",
+    "playwright": "^1.61.1",
     "postcss": "8.5.10",
     "tailwindcss": "3.4.17",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vitest": "^4.1.10"
   }
 }

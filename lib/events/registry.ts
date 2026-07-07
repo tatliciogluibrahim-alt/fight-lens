@@ -13,16 +13,20 @@ import ufcVegas119Json from "@/data/normalized/events/ufc-vegas-119.json";
 import ufcFreedom250Json from "@/data/normalized/events/ufc-freedom-250.json";
 import ufc329Json from "@/data/normalized/events/ufc-329.json";
 import ufc328Json from "@/data/normalized/events/ufc-328.json";
-import type { SourcedEvent, SourcedFight } from "@/lib/sourced-event";
+import { assertSourcedEvent, type SourcedEvent, type SourcedFight } from "@/lib/sourced-event";
 
 // Most recently added first. The "current" card is resolved by date/status in
 // lib/events/classify.ts — not by array position — so a just-completed event
 // never sticks in the next-card slot.
+//
+// Each JSON is validated at load (assertSourcedEvent) instead of blindly cast,
+// so a drifted data file throws a readable error naming the file rather than
+// crashing opaquely mid-render.
 const orderedEvents: SourcedEvent[] = [
-  ufcVegas119Json as unknown as SourcedEvent,
-  ufcFreedom250Json as unknown as SourcedEvent,
-  ufc329Json as unknown as SourcedEvent,
-  ufc328Json as unknown as SourcedEvent,
+  assertSourcedEvent(ufcVegas119Json, "data/normalized/events/ufc-vegas-119.json"),
+  assertSourcedEvent(ufcFreedom250Json, "data/normalized/events/ufc-freedom-250.json"),
+  assertSourcedEvent(ufc329Json, "data/normalized/events/ufc-329.json"),
+  assertSourcedEvent(ufc328Json, "data/normalized/events/ufc-328.json"),
 ];
 
 export function getAllEvents(): SourcedEvent[] {

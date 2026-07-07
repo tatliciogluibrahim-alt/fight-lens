@@ -39,6 +39,17 @@ export interface PredictionRecord {
   };
   /** null = fight hasn't happened yet */
   outcome: FightOutcome | null;
+  /**
+   * Set when the bout is scrapped before it happens (fighter withdrawal,
+   * bout pulled). Forward-only: the call was logged, so the record stands,
+   * but a cancelled bout never resolves. It is excluded from the live
+   * "calls logged" count and from accuracy, and shown as cancelled, not pending.
+   */
+  cancelled?: {
+    reason: string;
+    /** ISO timestamp when the cancellation was recorded */
+    recordedAt: string;
+  } | null;
 }
 
 // ─── Accuracy metrics ─────────────────────────────────────────────────────────

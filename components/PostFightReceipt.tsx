@@ -4,16 +4,16 @@ import type { CardReceipt, PostFightReceipt } from "@/lib/sourced-event";
 /*
  * Post-fight receipt UI.
  *
- *   PostFightReceiptCard — the per-fight verdict on a scored fight.
- *   CardReceiptModule     — the card-level summary on the event page.
+ *   PostFightReceiptCard, the per-fight verdict on a scored fight.
+ *   CardReceiptModule    , the card-level summary on the event page.
  *
  * Honesty contract: winner / finish correctness comes from the view model
  * (computed from the locked prediction + recorded outcome), NOT from authored
- * JSON — so a receipt can never claim a win the model didn't make. The authored
+ * JSON, so a receipt can never claim a win the model didn't make. The authored
  * PostFightReceipt supplies only the qualitative read: label, right/missed,
  * lesson, narrative. Misses render in the wrong-state palette, not dressed up.
  *
- * Success/wrong colors belong to scored outcomes — which this is.
+ * Success/wrong colors belong to scored outcomes, which this is.
  */
 
 // ─── Badge ────────────────────────────────────────────────────────────────────
